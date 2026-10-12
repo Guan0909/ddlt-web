@@ -358,25 +358,27 @@ function twoOpt(order, origin, pinnedFirst) {
 
 // ---------- 时钟推演 ----------
 
-function simulateDay(bucket, origin, dateISO, startMin) {
+function simulateDay(bucket, origin, dateISO, startMin, commute) {
   const monday = isMonday(dateISO);
   const stops = orderStops(
     bucket.spots.filter(s => !(monday && s.closed_mon === true)),
     origin, bucket.pinned);
   const dropped = bucket.spots.filter(s => monday && s.closed_mon === true)
     .map(s => ({ spot: s, cause: '周一闭馆' }));
-  return runClock(stops, origin, dateISO, startMin, !!bucket.suburb, dropped);
+  return runClock(stops, origin, dateISO, startMin, !!bucket.suburb, dropped, commute);
 }
 
 // 微调重推演（上移/下移/删除/±15min/跨天移动后调用）：
 // stops 为用户调整后的显式顺序（spot 原字段，可直接改 dur），
 // 不重排序，只做全量时间校验与重算——排不下的站会进 dropped
+// opts.commute：可选通勤函数 (a, b) => {mode, label, km, min}，默认直线估算
 function retimeDay(stops, origin, dateISO, opts = {}) {
-  return runClock(stops, origin, dateISO, opts.startMin || DAY_START, !!opts.suburb, []);
+  return runClock(stops, origin, dateISO, opts.startMin || DAY_START, !!opts.suburb, [], opts.commute);
 }
 
 // 时钟推演主循环：stops 为已确定顺序的站点数组
-function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped) {
+function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped, commute) {
+  commute = commute || estimateCommute;
   let stops = stopsIn.slice();
   // 远郊日收束放宽：游览可至 20:30，到家上限 21:45；市区日 19:30 / 21:00
   const dayEnd = suburb ? 20 * 60 + 30 : DAY_END;
@@ -411,7 +413,7 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped) {
     let placed = false;
     for (let i = 0; i < stops.length; i++) {
       const s = stops[i];
-      const leg = estimateCommute(pos, pt(s.coord));
+      const leg = commute(pos, pt(s.coord));
       let arr = t + leg.min;
       let dur = s.dur || 90;
       const win = parseOpen(s.open);
@@ -458,7 +460,7 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped) {
 
   // 回程到达过晚：从末尾撤站重排（最多撤 2 站）
   for (let pop = 0; pop < 2 && placedStops.length; pop++) {
-    const back = estimateCommute(pos, origin);
+    const back = commute(pos, origin);
     if (t + back.min <= homeLimit) break;
     const last = placedStops.pop();
     dropped.push({ spot: last.spot, cause: '回程太晚' });
@@ -470,7 +472,7 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped) {
     pos = prev ? prev.coord : origin;
   }
 
-  const back = estimateCommute(pos, origin);
+  const back = commute(pos, origin);
   items.push({ type: 'commute', ...back, text: copy.commuteText(back) });
   items.push({ type: 'end', time: fmt(t + back.min), name: `回到${origin.name}`, sub: '全程结束' });
   km += back.km; commuteMin += back.min;
@@ -498,7 +500,7 @@ function genRoute(opts) {
     const dateISO = addDays(startDate, i);
     const startMin = (i === 0 && opts.startNow && opts.nowMin != null && opts.nowMin > DAY_START)
       ? opts.nowMin : DAY_START;
-    const sim = simulateDay(bucket, origin, dateISO, startMin);
+    const sim = simulateDay(bucket, origin, dateISO, startMin, opts.commute);
     const dirOf = ss => bearing8(origin, { lng: avg(ss, 'lng'), lat: avg(ss, 'lat') });
     return {
       day: i + 1,
