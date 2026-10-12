@@ -44,7 +44,7 @@
 <script src="assets/engine.bundle.js"></script>
 <script src="assets/app.js"></script>
 <script>
-(() => {
+(async () => {
   const route = DDN.loadRoute();
   if (!route || !route.dayPlans || !route.dayPlans.length) {
     location.replace('index.html');
@@ -106,9 +106,58 @@
   ctx.fillStyle = INK;
   ctx.fillRect(padX, 79.5, right - padX, 1);
 
-  // ---------- 地图框（无在线底图，全路线叠加投影） ----------
+  // ---------- 地图框：优先腾讯静态图真实底图（posterImg 代理），失败回退纸色示意图 ----------
   const mapX = padX, mapY = 92, mapW = right - padX;
   const mapH = days.length <= 3 ? 224 : Math.max(160, 224 - (days.length - 3) * 22);
+
+  // 收集所有日的点
+  const dayStops = days.map(dp => dp.items.filter(i => i.type === 'stop'));
+  const allPts = [{ lng: route.origin.lng, lat: route.origin.lat }];
+  dayStops.forEach(ss => ss.forEach(s => allPts.push({ lng: s.coord.lng, lat: s.coord.lat })));
+
+  // Web 墨卡托（与腾讯静态图同投影）：返回把 lng/lat 映到 mapW×mapH 的函数
+  const mercY = lat => {
+    const s = Math.sin(lat * Math.PI / 180);
+    return 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI);
+  };
+  function mercatorProjector(cLng, cLat, zoom, w, h) {
+    const worldSize = 256 * 2 ** zoom;
+    const cx = (cLng + 180) / 360 * worldSize;
+    const cy = mercY(cLat) * worldSize;
+    return p => ({
+      x: (p.lng + 180) / 360 * worldSize - cx + w / 2,
+      y: mercY(p.lat) * worldSize - cy + h / 2,
+    });
+  }
+  function fitZoom(pts, w, h, pad) {
+    const xs = pts.map(p => (p.lng + 180) / 360), ys = pts.map(p => mercY(p.lat));
+    const dx = Math.max(...xs) - Math.min(...xs) || 1e-6;
+    const dy = Math.max(...ys) - Math.min(...ys) || 1e-6;
+    const zx = (w - pad * 2) / (dx * 256), zy = (h - pad * 2) / (dy * 256);
+    return Math.max(9, Math.min(13, Math.floor(Math.log2(Math.min(zx, zy)))));
+  }
+
+  let proj = null, baseImg = null;
+  if (DDN.cloudAvailable()) {
+    try {
+      const lngs = allPts.map(p => p.lng), lats = allPts.map(p => p.lat);
+      const cLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
+      const cLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+      const zoom = fitZoom(allPts, mapW, mapH, 18);
+      const j = await DDN.cloudPost('posterImg', {
+        center: `${cLat.toFixed(6)},${cLng.toFixed(6)}`,   // 腾讯静态图 center 为「纬度,经度」
+        zoom, size: `${Math.round(mapW)}x${Math.round(mapH)}`, scale: 2,
+      }, 15000);
+      baseImg = await new Promise((res, rej) => {
+        const im = new Image();
+        im.onload = () => res(im);
+        im.onerror = rej;
+        im.src = 'data:image/png;base64,' + j.base64;
+      });
+      proj = mercatorProjector(cLng, cLat, zoom, mapW, mapH);
+    } catch (e) { /* 回退示意底图 */ }
+  }
+  if (!proj) proj = DDN.makeProjector(allPts, mapW, mapH, 18);
 
   rrect(mapX, mapY, mapW, mapH, 4);
   ctx.fillStyle = '#F3F5F0';
@@ -116,12 +165,14 @@
   ctx.save();
   rrect(mapX, mapY, mapW, mapH, 4);
   ctx.clip();
+  if (baseImg) {
+    ctx.globalAlpha = 0.9;
+    try { ctx.filter = 'grayscale(.72) sepia(.1) contrast(.94) brightness(1.03)'; } catch (e) {}
+    ctx.drawImage(baseImg, mapX, mapY, mapW, mapH);
+    try { ctx.filter = 'none'; } catch (e) {}
+    ctx.globalAlpha = 1;
+  }
 
-  // 收集所有日的点做统一投影
-  const dayStops = days.map(dp => dp.items.filter(i => i.type === 'stop'));
-  const allPts = [{ lng: route.origin.lng, lat: route.origin.lat }];
-  dayStops.forEach(ss => ss.forEach(s => allPts.push({ lng: s.coord.lng, lat: s.coord.lat })));
-  const proj = DDN.makeProjector(allPts, mapW, mapH, 18);
   const O = proj({ lng: route.origin.lng, lat: route.origin.lat });
 
   ctx.lineCap = 'round';
@@ -198,8 +249,8 @@
     ctx.fillText(r.t2, legX + 27 + w1 + 5, y + 8);
   });
 
-  // 右下占位标注
-  const attr = '地图数据 © 腾讯位置服务';
+  // 右下标注：真实底图归腾讯，示意底图如实说明
+  const attr = baseImg ? '地图数据 © 腾讯位置服务' : '示意底图 · 非真实地图';
   ctx.font = `400 7px ${SANS}`;
   const attrW = ctx.measureText(attr).width;
   rrect(mapX + mapW - 6 - attrW - 8, mapY + mapH - 5 - 12, attrW + 8, 12, 2);
@@ -289,6 +340,10 @@
     canvas.style.display = 'none';
     img.style.display = 'block';
   };
+  const tip = document.querySelector('.tip');
+  if (tip) tip.textContent = baseImg
+    ? '真实地图底图 © 腾讯位置服务 · 每天一条配色路线 · 无二维码全平台合规'
+    : '底图加载失败，已用示意底图 · 每天一条配色路线';
 
   // ---------- 保存图片 ----------
   document.getElementById('saveBtn').onclick = () => {
