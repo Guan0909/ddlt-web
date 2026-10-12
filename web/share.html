@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>分享 · 点定旅途路线</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page { padding-bottom: 130px; }
+  .vis-note { padding: 20px 28px 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.6; }
+  .share-hero { padding: 34px 28px 0; }
+  .from {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 11px; letter-spacing: .16em; color: var(--ink-2);
+    padding-bottom: 8px; border-bottom: .5px solid var(--hairline);
+  }
+  .from .ic { width: 13px; height: 13px; }
+  .share-hero h1 { font-family: var(--serif); font-size: 38px; margin-top: 26px; line-height: 1.15; }
+  .share-hero h1 em { font-style: italic; font-weight: 400; }
+  .share-hero .meta { font-size: 12.5px; color: var(--ink-2); margin-top: 12px; letter-spacing: .03em; }
+
+  .stats-line {
+    display: flex; gap: 0; margin: 26px 28px 0; padding: 13px 0;
+    border-top: .5px solid var(--hairline); border-bottom: .5px solid var(--hairline);
+  }
+  .stats-line div { flex: 1; text-align: center; }
+  .stats-line div + div { border-left: .5px solid var(--hairline); }
+  .stats-line b { font-family: var(--serif); font-size: 18px; display: block; }
+  .stats-line span { font-size: 9.5px; letter-spacing: .14em; color: var(--ink-3); }
+
+  .day-group { padding: 0 28px; }
+  .day-label {
+    display: flex; align-items: baseline; gap: 8px;
+    margin: 26px 0 4px;
+  }
+  .day-label b { font-family: var(--serif); font-size: 15px; }
+  .day-label span { font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3); }
+  .day-label i { width: 18px; height: 2.5px; border-radius: 2px; align-self: center; }
+
+  .mini {
+    display: flex; align-items: baseline; gap: 12px;
+    padding: 11px 2px; border-bottom: .5px solid var(--hairline);
+  }
+  .mini:last-child { border-bottom: none; }
+  .mini .t { font-size: 11px; color: var(--ink-3); width: 72px; flex: none; font-variant-numeric: tabular-nums; }
+  .mini .n { font-size: 14.5px; font-weight: 600; flex: 1; }
+  .mini .g { font-size: 10.5px; color: var(--ink-3); max-width: 40%; text-align: right; }
+
+  .brand {
+    margin: 44px 28px 0; padding-top: 18px;
+    border-top: .5px solid var(--hairline);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .brand b { font-family: var(--serif); font-size: 14px; letter-spacing: .28em; }
+  .brand span { font-size: 10.5px; color: var(--ink-3); }
+
+  .dock-row { display: flex; align-items: center; gap: 8px; }
+  .dock-row .btn-primary { flex: 1; }
+</style>
+</head>
+<body>
+<div class="page" id="page">
+
+  <div class="vis-note">这是一条只读分享链接，任何拿到链接的人都能查看</div>
+
+  <div id="content"></div>
+
+  <div class="dock" id="dock" hidden>
+    <div class="dock-row">
+      <button class="btn-text" id="makeBtn">制作我的路线</button>
+      <button class="btn-primary" id="cloneBtn">复制这条路线改成我的</button>
+    </div>
+  </div>
+
+</div>
+<script src="assets/engine.bundle.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(async () => {
+  // 读取顺序：URL ?id（云端 routeGet，128 位不可猜测 ID）→ localStorage 兜底
+  const id = new URLSearchParams(location.search).get('id') ||
+    (location.pathname.match(/\/share\/([0-9a-f]{32})/) || [])[1];
+  let route = null;
+  if (id && DDN.cloudAvailable()) {
+    try {
+      const j = await DDN.cloudPost('routeGet', { id }, 6000);
+      route = j.route;
+    } catch (e) { /* 云端读取失败走兜底 */ }
+  }
+  if (!route) route = DDN.loadShared();
+
+  const content = document.getElementById('content');
+  const dock = document.getElementById('dock');
+
+  if (!route || !route.dayPlans) {
+    const hero = DDN.el('div', 'share-hero');
+    const h = DDN.el('h1');
+    h.appendChild(document.createTextNode('这条分享，'));
+    h.appendChild(DDN.el('br'));
+    const em = DDN.el('em', null, '在这里打不开。');
+    h.appendChild(em);
+    hero.appendChild(h);
+    hero.appendChild(DDN.el('div', 'meta', '链接可能已失效，或还没有在本机生成过分享。'));
+    content.appendChild(hero);
+    dock.hidden = false;
+    document.getElementById('cloneBtn').style.display = 'none';
+    document.getElementById('makeBtn').className = 'btn-primary';
+    document.getElementById('makeBtn').style.flex = '1';
+    document.getElementById('makeBtn').onclick = () => { location.href = 'index.html'; };
+    return;
+  }
+
+  const spots = (await DDN.loadSpots(route.city || '成都').catch(() => null)) || [];
+  const spotById = sid => spots.find(s => s.id === sid) || null;
+
+  document.title = `分享 · ${route.city || ''}${DDN.dayCn(route.days)}日路线`;
+
+  // hero
+  const hero = DDN.el('div', 'share-hero');
+  const from = DDN.el('div', 'from');
+  from.appendChild(DDN.icon('share', 'ic'));
+  from.appendChild(document.createTextNode('好友分享的路线'));
+  hero.appendChild(from);
+  const h1 = DDN.el('h1');
+  h1.appendChild(document.createTextNode(`${route.city || ''}，`));
+  h1.appendChild(DDN.el('br'));
+  h1.appendChild(DDN.el('em', null, `${DDN.dayCn(route.days)}日漫游。`));
+  hero.appendChild(h1);
+  hero.appendChild(DDN.el('div', 'meta',
+    `${DDN.dateRange(route.startDate, route.days)} · 每日从${route.origin.name}出发返回`));
+  content.appendChild(hero);
+
+  // stats-line
+  const sl = DDN.el('div', 'stats-line');
+  const cell = (v, l) => {
+    const d = DDN.el('div');
+    d.appendChild(DDN.el('b', null, v));
+    d.appendChild(DDN.el('span', null, l));
+    return d;
+  };
+  sl.appendChild(cell(String(route.days), '天'));
+  sl.appendChild(cell(String(route.totals.stops), '站点'));
+  sl.appendChild(cell(String(route.totals.km), '公里'));
+  sl.appendChild(cell(DDN.fmtHour(route.totals.visitMin) + 'h', '游览'));
+  content.appendChild(sl);
+
+  // 按日分组 mini 行
+  const group = DDN.el('div', 'day-group');
+  for (const dp of route.dayPlans) {
+    const label = DDN.el('div', 'day-label');
+    const bar = DDN.el('i');
+    bar.style.background = dp.color;
+    label.appendChild(bar);
+    label.appendChild(DDN.el('b', null, `D${dp.day} · ${dp.label}`));
+    label.appendChild(DDN.el('span', null, `${dp.stats.km} KM`));
+    group.appendChild(label);
+    for (const it of dp.items) {
+      if (it.type !== 'stop') continue;
+      const mini = DDN.el('div', 'mini');
+      mini.appendChild(DDN.el('span', 't', `${it.arr}–${it.dep}`));
+      mini.appendChild(DDN.el('span', 'n', it.name));
+      const spot = spotById(it.id);
+      const g = spot && (spot.tags || [])[0] ? spot.tags[0] : String(it.reason || '').slice(0, 10);
+      if (g) mini.appendChild(DDN.el('span', 'g', g));
+      group.appendChild(mini);
+    }
+  }
+  content.appendChild(group);
+
+  // 品牌行
+  const brand = DDN.el('div', 'brand');
+  brand.appendChild(DDN.el('b', null, '点定旅途'));
+  brand.appendChild(DDN.el('span', null, '从任何地点 · 生成你的路线'));
+  content.appendChild(brand);
+
+  // dock
+  dock.hidden = false;
+  document.getElementById('makeBtn').onclick = () => { location.href = 'index.html'; };
+  document.getElementById('cloneBtn').onclick = () => {
+    const copy = JSON.parse(JSON.stringify(route));
+    const ok = Array.isArray(copy.__stops) &&
+      copy.__stops.length === copy.dayPlans.length &&
+      copy.__stops.every(a => Array.isArray(a));
+    if (ok) {
+      DDN.refreshSuburb(copy);
+      DDN.recalcTotals(copy);
+      if (!Array.isArray(copy.__startMin)) {
+        copy.__startMin = copy.dayPlans.map(dp => DDN.parseHM(dp.startTime));
+      }
+    } else {
+      DDN.rebuildStopsFromLib(copy, spots);   // 按 stop id 从 spots 库映射重建
+    }
+    DDN.saveRoute(copy);
+    location.href = 'result.html';
+  };
+})();
+</script>
+</body>
+</html>

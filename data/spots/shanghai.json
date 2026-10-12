@@ -1,0 +1,1569 @@
+{
+  "_meta": {
+    "city": "上海",
+    "version": "v1",
+    "generated": "2026-10-11",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "backfilled_at": "2026-10-11"
+  },
+  "spots": [
+    {
+      "id": "waitan",
+      "name": "外滩",
+      "cat": "夜景",
+      "tags": [
+        "万国建筑",
+        "夜景",
+        "免费",
+        "江景"
+      ],
+      "heat": 10,
+      "dur": 90,
+      "intro": "黄浦江畔的万国建筑群，上海的城市封面。",
+      "reason": "对岸三件套亮灯后才是外滩本体",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.49,
+        31.24
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "disney",
+      "name": "上海迪士尼度假区",
+      "cat": "亲子",
+      "tags": [
+        "烟花",
+        "早去",
+        "项目多"
+      ],
+      "heat": 10,
+      "dur": 420,
+      "intro": "中国大陆首座迪士尼乐园，城堡烟花秀压轴。",
+      "reason": "开门先冲飞跃地平线，晚上再看烟花",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.658,
+        31.144
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuyuan",
+      "name": "豫园",
+      "cat": "古迹",
+      "tags": [
+        "明代园林",
+        "江南园林",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 90,
+      "intro": "四百多年历史的明代江南古典园林。",
+      "reason": "一开门就进，独享九曲桥的清净",
+      "open": "08:30-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.492,
+        31.2272
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanghai-museum",
+      "name": "上海博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "青铜",
+        "免费",
+        "室内"
+      ],
+      "heat": 9.5,
+      "dur": 150,
+      "intro": "人民广场南侧，青铜器馆藏国内顶尖。",
+      "reason": "大克鼎和商鞅方升都在这",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.4705,
+        31.2287
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanjing-road",
+      "name": "南京路步行街",
+      "cat": "街区",
+      "tags": [
+        "百年商业街",
+        "夜景",
+        "免费"
+      ],
+      "heat": 9,
+      "dur": 90,
+      "intro": "中华商业第一街，一路直通外滩。",
+      "reason": "从西藏路逛到外滩正好入夜亮灯",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.477,
+        31.2354
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wukang-road",
+      "name": "武康路·武康大楼",
+      "cat": "街区",
+      "tags": [
+        "梧桐",
+        "老洋房",
+        "拍照"
+      ],
+      "heat": 9,
+      "dur": 75,
+      "intro": "梧桐掩映的名人文化街，武康大楼是地标。",
+      "reason": "梧桐树下慢慢走，转角都是老洋房",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.437,
+        31.211
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lujiazui",
+      "name": "陆家嘴·滨江大道",
+      "cat": "夜景",
+      "tags": [
+        "三件套",
+        "夜景",
+        "江景",
+        "免费"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "摩天楼群与滨江步道，与外滩隔江对望。",
+      "reason": "在滨江步道回望外滩万国建筑亮灯",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.502,
+        31.238
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhujiajiao",
+      "name": "朱家角古镇",
+      "cat": "古镇",
+      "tags": [
+        "水乡",
+        "放生桥",
+        "远郊"
+      ],
+      "heat": 8.5,
+      "dur": 240,
+      "intro": "上海保存最完整的水乡古镇，五孔放生桥。",
+      "reason": "坐手摇船穿过放生桥才是水乡",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.051,
+        31.108
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "上海自然博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "恐龙",
+        "亲子",
+        "室内"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "恐龙骨架与非洲草原标本震撼的自然殿堂。",
+      "reason": "孩子站在马门溪龙脚下不肯走",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.4595,
+        31.2355
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "astronomy-museum",
+      "name": "上海天文馆",
+      "cat": "博物馆",
+      "tags": [
+        "星空",
+        "亲子",
+        "远郊"
+      ],
+      "heat": 8.5,
+      "dur": 180,
+      "intro": "全球最大天文馆，悬浮球幕外观先出圈。",
+      "reason": "票难抢，抢到就值得专程跑一趟",
+      "open": "09:30-16:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        121.9278,
+        30.9043
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tianzifang",
+      "name": "田子坊",
+      "cat": "街区",
+      "tags": [
+        "弄堂",
+        "小店",
+        "拍照"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "石库门弄堂里的文艺小店聚集地。",
+      "reason": "钻进窄弄堂，抬头就是晾衣杆",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.457,
+        31.2097
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xintiandi",
+      "name": "新天地",
+      "cat": "街区",
+      "tags": [
+        "石库门",
+        "夜景",
+        "餐饮"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "石库门改建的时尚街区，挨着一大会址。",
+      "reason": "晚上坐在石库门老房子里喝一杯",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.475,
+        31.2196
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chenghuangmiao",
+      "name": "城隍庙·豫园商城",
+      "cat": "古迹",
+      "tags": [
+        "道教",
+        "夜景",
+        "小吃"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "六百年城隍庙，庙外是热闹的豫园商城。",
+      "reason": "入夜灯笼亮起，年味常年在线",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.494,
+        31.227
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jingan-temple",
+      "name": "静安寺",
+      "cat": "古迹",
+      "tags": [
+        "金顶",
+        "闹市",
+        "祈福"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "千年古刹立在南京西路闹市，金顶夺目。",
+      "reason": "地铁口一抬头就是金顶飞檐",
+      "open": "07:30-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.4453,
+        31.2235
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "china-art-museum",
+      "name": "中华艺术宫",
+      "cat": "博物馆",
+      "tags": [
+        "世博会中国馆",
+        "免费",
+        "室内"
+      ],
+      "heat": 8,
+      "dur": 120,
+      "intro": "世博会中国馆变身美术馆，动态清明上河图镇馆。",
+      "reason": "补上当年没排进中国馆的遗憾",
+      "open": "10:00-18:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.489,
+        31.184
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wild-animal-park",
+      "name": "上海野生动物园",
+      "cat": "亲子",
+      "tags": [
+        "猛兽投喂",
+        "车行区",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 240,
+      "intro": "乘车看猛兽的野生动物园，互动投喂很多。",
+      "reason": "坐车穿越猛兽区，老虎就在窗边",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.724,
+        31.055
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanghai-zoo",
+      "name": "上海动物园",
+      "cat": "亲子",
+      "tags": [
+        "性价比",
+        "老牌",
+        "地铁达"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "虹桥边的老牌城市动物园，西郊绿意浓。",
+      "reason": "四十块看熊猫的良心票价",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.3633,
+        31.194
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ocean-aquarium",
+      "name": "上海海洋水族馆",
+      "cat": "亲子",
+      "tags": [
+        "海底隧道",
+        "室内",
+        "陆家嘴"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "陆家嘴老牌水族馆，海底隧道贯穿鲨鱼区。",
+      "reason": "雨天遛娃，看鲨鱼游过头顶",
+      "open": "09:00-18:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.4997,
+        31.24
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "haichang-ocean",
+      "name": "上海海昌海洋公园",
+      "cat": "亲子",
+      "tags": [
+        "虎鲸",
+        "过山车",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 300,
+      "intro": "临港的海洋主题公园，虎鲸表演是招牌。",
+      "reason": "和天文馆打包，临港一日游",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.905,
+        30.896
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "happy-valley-sh",
+      "name": "上海欢乐谷",
+      "cat": "亲子",
+      "tags": [
+        "过山车",
+        "夜场",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 300,
+      "intro": "华东大型主题乐园，过山车爱好者的朝圣地。",
+      "reason": "绝顶雄风坐第一排才过瘾",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.233,
+        31.101
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "era-circus",
+      "name": "上海马戏城《时空之旅》",
+      "cat": "演出",
+      "tags": [
+        "杂技",
+        "晚上",
+        "亲子"
+      ],
+      "heat": 7.5,
+      "dur": 100,
+      "intro": "常年驻演的杂技大秀，摩托飞球压轴。",
+      "reason": "全程高能的海派杂技，值回票价",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.443,
+        31.269
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sleep-no-more",
+      "name": "《不眠之夜》沉浸式戏剧",
+      "cat": "演出",
+      "tags": [
+        "沉浸式",
+        "晚上",
+        "戴面具"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "纽约引进的沉浸式戏剧，戴面具跟演员跑楼。",
+      "reason": "跟着麦克白在五层楼里狂奔",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.4555,
+        31.2305
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanghai-grand-theatre",
+      "name": "上海大剧院",
+      "cat": "演出",
+      "tags": [
+        "建筑",
+        "歌剧",
+        "晚上"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "人民广场西侧的水晶宫殿式剧院。",
+      "reason": "挑一场演出，顺便看广场夜景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.4646,
+        31.229
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaihai-road",
+      "name": "淮海中路",
+      "cat": "商圈",
+      "tags": [
+        "摩登",
+        "老字号",
+        "梧桐"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "上海最摩登的百年商业街，梧桐成荫。",
+      "reason": "从光明邨一路逛吃到环贸",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.456,
+        31.219
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xujiahui",
+      "name": "徐家汇商圈",
+      "cat": "商圈",
+      "tags": [
+        "商场群",
+        "教堂旁",
+        "二次元"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "西南老牌商圈，商场与百年教堂并存。",
+      "reason": "逛完美罗城去教堂广场坐坐",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.437,
+        31.191
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qiantan-taikoo",
+      "name": "前滩太古里",
+      "cat": "商圈",
+      "tags": [
+        "开放式",
+        "滨江",
+        "屋顶跑道"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "前滩开放式街区商业，屋顶跑道很特别。",
+      "reason": "顶楼跑道看江景日落很出片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.485,
+        31.152
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huanghe-road",
+      "name": "黄河路美食街",
+      "cat": "美食",
+      "tags": [
+        "繁花",
+        "老字号",
+        "夜宵"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "《繁花》带火的老牌美食街，饭馆林立。",
+      "reason": "打卡宝总同款至真园原型",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.468,
+        31.2365
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yunnan-road",
+      "name": "云南南路美食街",
+      "cat": "美食",
+      "tags": [
+        "老字号",
+        "小吃",
+        "排骨年糕"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "老字号小吃一条街，鲜得来小绍兴都在。",
+      "reason": "排骨年糕配鸡鸭血汤的老套餐",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.479,
+        31.225
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wujiang-road",
+      "name": "吴江路小吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "夜市",
+        "生煎"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "南京西路旁的小吃街，生煎与网红店并存。",
+      "reason": "逛完太古汇顺路吃生煎撸串",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.458,
+        31.229
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changli-road",
+      "name": "昌里路夜市",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "烧烤",
+        "本地人"
+      ],
+      "heat": 6,
+      "dur": 80,
+      "intro": "浦东老牌夜宵街，烟火气十足。",
+      "reason": "浦东人民的深夜食堂",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.505,
+        31.175
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "korea-street",
+      "name": "虹泉路韩国街",
+      "cat": "美食",
+      "tags": [
+        "韩餐",
+        "烤肉",
+        "深夜"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "韩国街坊区，正宗韩餐与夜市摊位密集。",
+      "reason": "首尔街头即视感的烤肉夜宵",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.372,
+        31.161
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anfu-road",
+      "name": "安福路",
+      "cat": "街区",
+      "tags": [
+        "话剧",
+        "咖啡",
+        "潮人"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "话剧艺术中心所在的小马路，咖啡潮牌扎堆。",
+      "reason": "看话剧前在街边喝杯手冲",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.438,
+        31.216
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuyuan-road",
+      "name": "愚园路",
+      "cat": "街区",
+      "tags": [
+        "历史街区",
+        "小店",
+        "梧桐"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "百岁老马路更新范本，弄堂小店常逛常新。",
+      "reason": "骑辆共享单车从头逛到尾",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.425,
+        31.221
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sinan",
+      "name": "思南公馆",
+      "cat": "街区",
+      "tags": [
+        "花园洋房",
+        "市集",
+        "文艺"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "成片花园洋房改的文化街区，周末有市集。",
+      "reason": "梧桐洋房之间喝咖啡看展",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.464,
+        31.213
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "old-millfun",
+      "name": "1933老场坊",
+      "cat": "街区",
+      "tags": [
+        "工业风",
+        "拍照",
+        "屠宰场旧址"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "远东最大屠宰场改造的混凝土迷宫。",
+      "reason": "螺旋坡道随手拍工业风大片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.488,
+        31.254
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "columbia-circle",
+      "name": "上生新所",
+      "cat": "街区",
+      "tags": [
+        "海军俱乐部",
+        "泳池",
+        "茑屋书店"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "哥伦比亚乡村俱乐部旧址，茑屋书店入驻。",
+      "reason": "百年泳池边的书店和咖啡",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.424,
+        31.207
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhangyuan",
+      "name": "张园",
+      "cat": "街区",
+      "tags": [
+        "石库门",
+        "修缮重生",
+        "大牌快闪"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "晚清海上第一名园，修缮重开的石库门街区。",
+      "reason": "百年石库门里看大牌快闪",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.4605,
+        31.2275
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "north-bund",
+      "name": "北外滩滨江",
+      "cat": "夜景",
+      "tags": [
+        "江景",
+        "夜景",
+        "人少"
+      ],
+      "heat": 7,
+      "dur": 75,
+      "intro": "虹口段滨江，看陆家嘴全景的冷门机位。",
+      "reason": "比外滩人少一半的同款江景",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.497,
+        31.251
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huangpu-cruise",
+      "name": "黄浦江游船（十六铺码头）",
+      "cat": "夜景",
+      "tags": [
+        "游船",
+        "夜景",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 70,
+      "intro": "从江面看两岸天际线的经典夜游。",
+      "reason": "一船看尽浦西万国与浦东摩天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.498,
+        31.227
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "century-park",
+      "name": "世纪公园",
+      "cat": "公园",
+      "tags": [
+        "大草坪",
+        "樱花",
+        "遛娃"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "浦东最大城市公园，四季花事不断。",
+      "reason": "樱花季草坪野餐的浦东标配",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.552,
+        31.219
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gongqing-forest",
+      "name": "共青森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "水杉",
+        "小火车"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "市区里的森林氧吧，秋日水杉大道极美。",
+      "reason": "十一月水杉红叶是市区天花板",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.529,
+        31.322
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "twin-hills",
+      "name": "世博文化公园·双子山",
+      "cat": "公园",
+      "tags": [
+        "人造山",
+        "登高",
+        "新地标"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "市区首座人造山体，登顶俯瞰世博园。",
+      "reason": "爬一爬上海自己造的山",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.479,
+        31.184
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fuxing-park",
+      "name": "复兴公园",
+      "cat": "公园",
+      "tags": [
+        "法式",
+        "玫瑰园",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "上海唯一的法式古典公园，玫瑰园出名。",
+      "reason": "看阿姨爷叔的社交舞现场",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.466,
+        31.218
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanghai-botanical",
+      "name": "上海植物园",
+      "cat": "公园",
+      "tags": [
+        "花展",
+        "温室",
+        "樱花"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "市区老牌植物园，四季花展不断。",
+      "reason": "春天樱花大道人比花多",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.435,
+        31.148
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chenshan-botanical",
+      "name": "辰山植物园",
+      "cat": "公园",
+      "tags": [
+        "矿坑花园",
+        "温室",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 180,
+      "intro": "矿坑花园与超大温室是招牌的植物园。",
+      "reason": "矿坑花园的瀑布栈道很出片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.185,
+        31.078
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gucun-park",
+      "name": "顾村公园",
+      "cat": "公园",
+      "tags": [
+        "樱花",
+        "早去",
+        "摩天轮"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "上海樱花节主场，三月人潮汹涌。",
+      "reason": "三月早八点的樱花大道最清净",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.382,
+        31.339
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "binjiang-forest",
+      "name": "滨江森林公园",
+      "cat": "公园",
+      "tags": [
+        "长江口",
+        "森林",
+        "江边"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "黄浦江入长江口的江边森林公园。",
+      "reason": "走到江边看黄浦江汇入长江",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.543,
+        31.369
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingxi-country-park",
+      "name": "青西郊野公园",
+      "cat": "公园",
+      "tags": [
+        "水上森林",
+        "池杉",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "大莲湖畔的水上森林，深秋池杉火红。",
+      "reason": "木栈道穿行火红池杉林间",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.943,
+        31.077
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongping-forest",
+      "name": "东平国家森林公园",
+      "cat": "公园",
+      "tags": [
+        "崇明",
+        "森林",
+        "骑行"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "崇明岛上的华东最大平原人工森林。",
+      "reason": "林间骑车，呼吸好空气",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.475,
+        31.683
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qibao",
+      "name": "七宝古镇",
+      "cat": "古镇",
+      "tags": [
+        "地铁达",
+        "小吃",
+        "老街"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "离市区最近的千年古镇，老街小吃密集。",
+      "reason": "地铁直达的汤圆和蹄髈",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.3505,
+        31.1575
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanxiang",
+      "name": "南翔古镇",
+      "cat": "古镇",
+      "tags": [
+        "小笼",
+        "古塔",
+        "园林"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "小笼包发源地，双塔与古猗园相伴。",
+      "reason": "吃正宗南翔小笼再逛园林",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.313,
+        31.294
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guyi-garden",
+      "name": "古猗园",
+      "cat": "古迹",
+      "tags": [
+        "明代园林",
+        "荷花",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "明代江南名园，夏日荷花铺满水面。",
+      "reason": "比豫园人少十倍的古典园林",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.319,
+        31.288
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xinchang",
+      "name": "新场古镇",
+      "cat": "古镇",
+      "tags": [
+        "原生态",
+        "盐文化",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "浦东商业化很低的千年盐场古镇。",
+      "reason": "《色戒》取景的安静水乡",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.647,
+        31.043
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fengjing",
+      "name": "枫泾古镇",
+      "cat": "古镇",
+      "tags": [
+        "吴越分界",
+        "黄酒",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "吴越交界的千年水乡，三步两座桥。",
+      "reason": "低调水乡配黄酒吃丁蹄",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.012,
+        30.891
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhaojialou",
+      "name": "召稼楼古镇",
+      "cat": "古镇",
+      "tags": [
+        "农耕文化",
+        "小吃",
+        "焕新"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "上海农耕文化源头古镇，更新后重开。",
+      "reason": "焕新后的古镇小吃街更好逛",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.514,
+        31.058
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sheshan",
+      "name": "佘山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "天文台",
+        "大教堂",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 180,
+      "intro": "上海唯一的自然山林，山顶有教堂天文台。",
+      "reason": "上海之巅，喘口气就登顶",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.193,
+        31.096
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dianshan-lake",
+      "name": "淀山湖·彩虹桥",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "日落",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "上海最大天然淡水湖，彩虹桥伸入湖心。",
+      "reason": "沿彩虹桥走到湖中央看日落",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.024,
+        31.117
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chongming-dongtan",
+      "name": "崇明东滩湿地",
+      "cat": "山水",
+      "tags": [
+        "候鸟",
+        "芦苇",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "候鸟迁徙驿站，冬季观鸟圣地。",
+      "reason": "冬天看白头鹤飞过芦苇荡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.95,
+        31.51
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jinshan-beach",
+      "name": "金山城市沙滩",
+      "cat": "山水",
+      "tags": [
+        "沙滩",
+        "海水",
+        "夏天"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "围海净水的人工沙滩，上海人的海边平替。",
+      "reason": "不出上海踩浪花的夏日方案",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.341,
+        30.729
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "longhua-temple",
+      "name": "龙华寺",
+      "cat": "古迹",
+      "tags": [
+        "千年古刹",
+        "古塔",
+        "素面"
+      ],
+      "heat": 7,
+      "dur": 75,
+      "intro": "上海历史最久的古刹，龙华塔屹立千年。",
+      "reason": "吃碗素面再绕塔走三圈",
+      "open": "07:00-16:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.448,
+        31.173
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jade-buddha-temple",
+      "name": "玉佛禅寺",
+      "cat": "古迹",
+      "tags": [
+        "玉佛",
+        "市区",
+        "素斋"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "供奉两尊缅甸玉佛的市区名刹。",
+      "reason": "闹市里的玉佛与一碗素面",
+      "open": "08:00-16:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        121.436,
+        31.244
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "st-ignatius",
+      "name": "徐家汇天主堂",
+      "cat": "古迹",
+      "tags": [
+        "哥特式",
+        "红砖",
+        "拍照"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "远东第一大教堂，哥特式红砖双塔。",
+      "reason": "红砖双塔和老上海同框",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.4305,
+        31.1925
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zuibaichi",
+      "name": "醉白池公园",
+      "cat": "古迹",
+      "tags": [
+        "古典园林",
+        "小众",
+        "松江"
+      ],
+      "heat": 5.5,
+      "dur": 80,
+      "intro": "九百年历史的古典园林，松江文脉所在。",
+      "reason": "比市区园林清净的宋韵园子",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.229,
+        31.008
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guangfulin",
+      "name": "广富林文化遗址",
+      "cat": "古迹",
+      "tags": [
+        "水下博物馆",
+        "遗址",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "上海之根，博物馆屋顶半沉在湖面。",
+      "reason": "半沉水下的博物馆太好拍",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.208,
+        31.061
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanghai-history-museum",
+      "name": "上海历史博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "跑马总会大楼",
+        "免费",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 100,
+      "intro": "原跑马总会大楼里的城市通史馆。",
+      "reason": "一栋楼读懂上海一百年",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.467,
+        31.2305
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "expo-museum",
+      "name": "世博会博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "世博",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 100,
+      "intro": "全球唯一世博主题官方博物馆。",
+      "reason": "重温2010年那场盛会",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.483,
+        31.195
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "long-museum",
+      "name": "龙美术馆（西岸馆）",
+      "cat": "博物馆",
+      "tags": [
+        "煤漏斗",
+        "当代艺术",
+        "西岸"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "煤漏斗卸载桥下的工业风美术馆。",
+      "reason": "看完展沿西岸滨江散散步",
+      "open": null,
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.466,
+        31.177
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "museum-of-art-pudong",
+      "name": "浦东美术馆",
+      "cat": "博物馆",
+      "tags": [
+        "镜厅",
+        "夜景",
+        "当代艺术"
+      ],
+      "heat": 7.5,
+      "dur": 100,
+      "intro": "陆家嘴滨江的白盒子，镜厅直面外滩。",
+      "reason": "镜厅落地窗外就是外滩夜景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        121.4965,
+        31.2365
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sihang",
+      "name": "四行仓库抗战纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "八佰",
+        "抗战",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "《八佰》原型战场，弹孔墙触目惊心。",
+      "reason": "站在弹孔墙前上最生动的历史课",
+      "open": "09:00-16:30",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.475,
+        31.249
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "site-of-first-congress",
+      "name": "中共一大纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "红色",
+        "石库门",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 75,
+      "intro": "党的诞生地，石库门里的新馆展陈。",
+      "reason": "石库门里看开天辟地的大事变",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        121.4745,
+        31.221
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

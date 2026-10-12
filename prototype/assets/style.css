@@ -1,0 +1,92 @@
+/* 「点定旅途」原型共享样式 · v2 编辑感简约（editorial minimal） */
+:root {
+  --paper: #FAFBF8;
+  --card: #FFFFFF;
+  --ink: #182119;
+  --ink-2: #5F6B61;
+  --ink-3: #A8B0A4;
+  --hairline: #E3E8E0;
+  --d1: #3B7356;   /* Day1 主绿 */
+  --d2: #3E8E9E;   /* Day2 青 */
+  --d3: #B08A3E;   /* Day3 琥珀 */
+  --d4: #7A9E43;
+  --d5: #8C6A4A;
+  --radius: 14px;
+  --serif: Georgia, "Times New Roman", "Songti SC", "STSong", "SimSun", serif;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+          "Helvetica Neue", "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: var(--font);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--paper);
+  position: relative;
+}
+button { font-family: var(--font); border: none; background: none; cursor: pointer; color: inherit; }
+
+/* ---------- 字阶 ---------- */
+.display {
+  font-family: var(--serif);
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.sub { color: var(--ink-2); font-size: 13.5px; line-height: 1.65; }
+
+/* ---------- 细发丝分隔 ---------- */
+.hr { height: .5px; background: var(--hairline); border: none; }
+
+/* ---------- 底部操作栏 ---------- */
+.dock {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 22px calc(16px + env(safe-area-inset-bottom, 18px));
+  background: linear-gradient(to top, var(--paper) 62%, rgba(251,251,248,0));
+  z-index: 50;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 999px;
+  background: var(--d1);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  transition: opacity .15s, transform .1s;
+}
+.btn-primary:active { opacity: .85; }
+.btn-text {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: .04em;
+}
+
+/* ---------- 图标 ---------- */
+.ic { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.ic.lg { width: 21px; height: 21px; }

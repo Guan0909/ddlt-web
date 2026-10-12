@@ -1,0 +1,1624 @@
+{
+  "_meta": {
+    "city": "重庆",
+    "version": "v1",
+    "generated": "2026-10-11",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "backfilled_at": "2026-10-11"
+  },
+  "spots": [
+    {
+      "id": "hongyadong",
+      "name": "洪崖洞",
+      "cat": "夜景",
+      "tags": [
+        "吊脚楼",
+        "夜景",
+        "免费",
+        "人多"
+      ],
+      "heat": 10,
+      "dur": 120,
+      "intro": "11层吊脚楼依山而建，夜灯亮起如千与千寻。",
+      "reason": "天黑亮灯后从千厮门大桥拍全景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.578757,
+        29.562117
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8277595995704388095",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jiefangbei",
+      "name": "解放碑",
+      "cat": "商圈",
+      "tags": [
+        "地标",
+        "商圈",
+        "夜市近"
+      ],
+      "heat": 9,
+      "dur": 60,
+      "intro": "重庆人的精神地标，步行街与写字楼森林环绕。",
+      "reason": "住在附近最方便，顺路打卡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.575654,
+        29.557301
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8429672066111117789",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "bayi-food-street",
+      "name": "八一路好吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "夜市",
+        "解放碑旁"
+      ],
+      "heat": 8,
+      "dur": 80,
+      "intro": "解放碑旁的老牌好吃街，酸辣粉串串扎堆。",
+      "reason": "酸辣粉加山城汤圆的经典开局",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.5785,
+        29.5555
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangtze-cableway",
+      "name": "长江索道",
+      "cat": "街区",
+      "tags": [
+        "索道",
+        "过江",
+        "早去",
+        "夜景"
+      ],
+      "heat": 8.5,
+      "dur": 45,
+      "intro": "万里长江第一条空中走廊，空中看两岸。",
+      "reason": "赶早班索道不排队，夜景更绝",
+      "open": "07:30-22:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.586316,
+        29.556428
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "15030047597194120308",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "chaotianmen-raffles",
+      "name": "朝天门广场·来福士",
+      "cat": "商圈",
+      "tags": [
+        "两江交汇",
+        "地标",
+        "观景台"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "两江交汇的重庆零公里，来福士帆船楼坐镇。",
+      "reason": "看嘉陵江清浊交汇的分界线",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.587888,
+        29.566836
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "4555441290129159889",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "liangjiang-cruise",
+      "name": "两江夜游",
+      "cat": "夜景",
+      "tags": [
+        "游船",
+        "夜景",
+        "晚上"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "乘船夜游长江嘉陵江，看两岸立体灯海。",
+      "reason": "洪崖洞全景只有在江上最完整",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.588806,
+        29.566549
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "4154257486811603972",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "shibati",
+      "name": "十八梯传统风貌区",
+      "cat": "街区",
+      "tags": [
+        "老重庆",
+        "台阶",
+        "夜景"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "连接上下半城的老石梯，改造后的市井风貌区。",
+      "reason": "傍晚亮灯后的老梯坎最有味道",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.573075,
+        29.551036
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "18258373710429607464",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "shancheng-trail",
+      "name": "山城步道",
+      "cat": "街区",
+      "tags": [
+        "崖壁",
+        "步道",
+        "免费",
+        "早去"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "沿崖壁而建的老步道，串起老巷与江景。",
+      "reason": "清晨走第三步道，山城还没醒",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.566715,
+        29.550486
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "10341791553713888546",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "liziba",
+      "name": "李子坝轻轨穿楼",
+      "cat": "街区",
+      "tags": [
+        "轻轨穿楼",
+        "免费",
+        "打卡"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "2号线穿居民楼而过，8D重庆的名场面。",
+      "reason": "拍完上楼坐一站，体验穿楼瞬间",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.537866,
+        29.553263
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2406051094868415828",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "huguang-hall",
+      "name": "湖广会馆",
+      "cat": "古迹",
+      "tags": [
+        "会馆",
+        "明清建筑",
+        "黄墙"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "明清移民会馆建筑群，黄墙灰瓦临江而立。",
+      "reason": "闹市区里保存最好的清代会馆",
+      "open": "09:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.586818,
+        29.557793
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "5839718665844744572",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "luohan-temple",
+      "name": "罗汉寺",
+      "cat": "古迹",
+      "tags": [
+        "千年古刹",
+        "闹市",
+        "五百罗汉"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "北宋古刹藏身闹市，五百罗汉堂闻名。",
+      "reason": "《疯狂的石头》取景的反差寺庙",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.581806,
+        29.559942
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "14559671690940755872",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "tongyuanmen",
+      "name": "通远门城墙遗址",
+      "cat": "古迹",
+      "tags": [
+        "城墙",
+        "免费",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "重庆十七门中仅存的陆门，老城墙遗址公园。",
+      "reason": "重庆老城唯一的陆路城门",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.567294,
+        29.555434
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "5729031535936272646",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "baixiangju",
+      "name": "白象居",
+      "cat": "街区",
+      "tags": [
+        "老居民楼",
+        "摄影",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "24层无电梯老楼，三个高度连通三条街。",
+      "reason": "长江索道从窗前掠过的魔幻楼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.58523,
+        29.556148
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8537844630593561632",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "daijiaxiang",
+      "name": "戴家巷崖壁步道",
+      "cat": "街区",
+      "tags": [
+        "崖壁",
+        "洪崖洞旁",
+        "江景"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "洪崖洞旁的崖壁老巷步道，直面嘉陵江。",
+      "reason": "看洪崖洞不用挤人的侧翼机位",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.576617,
+        29.561699
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "7728882665765228380",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "crown-escalator",
+      "name": "皇冠大扶梯",
+      "cat": "街区",
+      "tags": [
+        "大扶梯",
+        "两路口",
+        "体验"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "亚洲第二长坡地扶梯，重庆人的日常通勤工具。",
+      "reason": "两块钱体验山城的垂直交通",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.549245,
+        29.552266
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "17784190748217470193",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "zhongshan-4th",
+      "name": "中山四路",
+      "cat": "街区",
+      "tags": [
+        "民国",
+        "黄葛树",
+        "安静"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "重庆最美街道，桂园与周公馆隐在黄葛树下。",
+      "reason": "人少清净的民国风情散步线",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.54747,
+        29.563167
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "17284759988724730050",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "sanxia-museum",
+      "name": "重庆中国三峡博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "三峡文物"
+      ],
+      "heat": 8.5,
+      "dur": 120,
+      "intro": "人民大礼堂对面，巴蜀与三峡文物重镇。",
+      "reason": "下午最热时进馆看汉代雕塑",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.55034,
+        29.56208
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8213064061767453738",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "peoples-hall",
+      "name": "重庆人民大礼堂",
+      "cat": "古迹",
+      "tags": [
+        "仿古建筑",
+        "地标",
+        "广场"
+      ],
+      "heat": 7.5,
+      "dur": 40,
+      "intro": "仿天坛造型的城市地标，绿瓦金顶气势足。",
+      "reason": "和三峡博物馆隔广场对望",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.548,
+        29.563
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wfc-observatory",
+      "name": "WFC会仙楼观景台",
+      "cat": "夜景",
+      "tags": [
+        "高空",
+        "夜景",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "339米高空的360度观景台，俯瞰两江四岸。",
+      "reason": "日落前上去，一次收获昼夜两种重庆",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.577859,
+        29.559065
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "6588290520040232294",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-art-museum",
+      "name": "重庆美术馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "国泰艺术中心"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "国泰艺术中心内的市级美术馆，红黑建筑醒目。",
+      "reason": "解放碑逛累后的免费空调展",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.57672,
+        29.56
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "436790455692286748",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jiaochangkou",
+      "name": "较场口夜市",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "晚上",
+        "本地人"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "渝中最老的夜市片区，烧烤小面开到深夜。",
+      "reason": "深夜食堂氛围最浓的渝中一角",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.576069,
+        29.553733
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "4117146171299802985",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "guanyinqiao",
+      "name": "观音桥步行街",
+      "cat": "商圈",
+      "tags": [
+        "商圈",
+        "本地人",
+        "潮流"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "江北第一商圈，本地年轻人浓度超过解放碑。",
+      "reason": "看重庆本地人真实的逛街日常",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.532599,
+        29.572171
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "18188491662876121101",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "beicang",
+      "name": "北仓文创街区",
+      "cat": "街区",
+      "tags": [
+        "文创",
+        "咖啡",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "老纺织仓库改的文创园，独立书店与咖啡店。",
+      "reason": "观音桥旁的安静文艺角落",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.538736,
+        29.578435
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "5559894323426757632",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jiujie",
+      "name": "不夜九街",
+      "cat": "夜景",
+      "tags": [
+        "夜生活",
+        "酒吧",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "重庆夜生活地标街区，酒吧大排档通宵营业。",
+      "reason": "凌晨两点的重庆依然人声鼎沸",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.542864,
+        29.579412
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "9470033962677933274",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-science-museum",
+      "name": "重庆科技馆",
+      "cat": "亲子",
+      "tags": [
+        "免费",
+        "室内",
+        "互动"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "江北嘴的互动科技馆，防灾与宇航展区好玩。",
+      "reason": "雨天遛娃备选，能泡大半天",
+      "open": "09:30-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.57781,
+        29.571021
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "15256982316578992551",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-grand-theatre",
+      "name": "重庆大剧院",
+      "cat": "演出",
+      "tags": [
+        "建筑",
+        "晚上",
+        "演出"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "江北嘴的巨型帆船造型剧院，夜景灯光出彩。",
+      "reason": "看场演出顺便拍大剧院夜景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.581396,
+        29.570032
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "6745060521296666657",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jiangbeizui",
+      "name": "江北嘴江滩公园",
+      "cat": "夜景",
+      "tags": [
+        "江滩",
+        "夜景",
+        "洪崖洞对岸"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "嘉陵江边的江滩，正对着洪崖洞与千厮门。",
+      "reason": "拍洪崖洞全景的最佳对岸机位",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.57564,
+        29.567497
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8062474575857811777",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "hongensi",
+      "name": "鸿恩寺森林公园",
+      "cat": "公园",
+      "tags": [
+        "鸿恩阁",
+        "夜景",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "江北的城市森林公园，山顶鸿恩阁俯瞰全城。",
+      "reason": "本地人看夜景的私藏制高点",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.508256,
+        29.56779
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "15383198678746663041",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "nanshan-yikeshu",
+      "name": "南山一棵树观景台",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "观景台",
+        "经典"
+      ],
+      "heat": 8.5,
+      "dur": 80,
+      "intro": "看渝中半岛夜景的老牌观景台，两江环抱。",
+      "reason": "重庆夜景明信片的标准取景地",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.567,
+        29.524
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanshan-botanical",
+      "name": "南山植物园",
+      "cat": "公园",
+      "tags": [
+        "樱花",
+        "温室",
+        "赏花"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "南山上的老牌植物园，春天樱花大道出名。",
+      "reason": "三四月樱花季山城人最挤",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.572,
+        29.532
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanshan-hotpot",
+      "name": "南山火锅一条街",
+      "cat": "美食",
+      "tags": [
+        "火锅",
+        "夜景",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "半山上的火锅聚集区，枇杷园一座山都是锅。",
+      "reason": "边吃火锅边看山下万家灯火",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.569,
+        29.528
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "laojundong",
+      "name": "老君洞",
+      "cat": "古迹",
+      "tags": [
+        "道观",
+        "山景",
+        "求签"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "南山明代道观，玉皇楼俯瞰渝中半岛。",
+      "reason": "比一棵树人少十倍的山城观景点",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.562,
+        29.522
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huangjueya",
+      "name": "黄桷垭老街",
+      "cat": "古镇",
+      "tags": [
+        "老街",
+        "三毛",
+        "茶马古道"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "南山上的千年老街，三毛出生地，旧驿道起点。",
+      "reason": "三毛故居旁喝一碗盖碗茶",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.575,
+        29.518
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanbin-road",
+      "name": "南滨路",
+      "cat": "夜景",
+      "tags": [
+        "滨江",
+        "夜景",
+        "散步"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "长江边的景观大道，正对渝中半岛天际线。",
+      "reason": "本地人饭后散步的江景长廊",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.58716,
+        29.54495
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2236756425798031625",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "danzishi",
+      "name": "弹子石老街·长嘉汇",
+      "cat": "街区",
+      "tags": [
+        "老街",
+        "两江交汇",
+        "夜景"
+      ],
+      "heat": 7.5,
+      "dur": 100,
+      "intro": "百年开埠老街改造，台阶式街区看两江交汇。",
+      "reason": "一街看两江，夜景比洪崖洞清净",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.596,
+        29.553
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "longmenhao",
+      "name": "龙门浩老街",
+      "cat": "街区",
+      "tags": [
+        "开埠",
+        "老建筑",
+        "江景"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "开埠时期的老街区，青砖建筑贴着崖壁江岸。",
+      "reason": "东水门大桥下的老重庆剪影",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.594751,
+        29.556022
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2318729130361073484",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "ciyun-temple",
+      "name": "慈云寺",
+      "cat": "古迹",
+      "tags": [
+        "古刹",
+        "江景",
+        "清净"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "长江边的唐代古刹，僧尼同寺的千年道场。",
+      "reason": "南滨路上的清净角落，人少",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.594718,
+        29.565294
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "12500450147553369606",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "ciqikou",
+      "name": "磁器口古镇",
+      "cat": "古镇",
+      "tags": [
+        "千年古镇",
+        "早去",
+        "小吃"
+      ],
+      "heat": 9,
+      "dur": 150,
+      "intro": "嘉陵江边的千年水码头古镇，一江两溪三山四街。",
+      "reason": "九点前到，才能看到真古镇",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.44967,
+        29.581181
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "4032538525850445788",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq1949",
+      "name": "《重庆·1949》大剧院",
+      "cat": "演出",
+      "tags": [
+        "实景演出",
+        "晚上",
+        "红色"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "磁器口旁的旋转舞台实景剧，重现重庆解放夜。",
+      "reason": "舞台会转的沉浸式演出，很震撼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.447157,
+        29.58126
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8198429546490465970",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "zhazidong",
+      "name": "渣滓洞·白公馆",
+      "cat": "古迹",
+      "tags": [
+        "红色",
+        "历史",
+        "歌乐山"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "歌乐山下的革命遗址群，《红岩》故事发生地。",
+      "reason": "课本里的红岩故事现场版",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.433658,
+        29.585084
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "14618923728023484076",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "gele-mountain",
+      "name": "歌乐山森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "登山",
+        "缆车"
+      ],
+      "heat": 6,
+      "dur": 180,
+      "intro": "沙坪坝的城市绿肺，可缆车登顶俯瞰大学城。",
+      "reason": "爬完山顺路去渣滓洞白公馆",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.434111,
+        29.575548
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "11132043879934994592",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "luozhongli-museum",
+      "name": "罗中立美术馆",
+      "cat": "博物馆",
+      "tags": [
+        "美术馆",
+        "彩色外墙",
+        "大学城"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "川美美术馆，彩色瓷砖外墙本身就是展品。",
+      "reason": "大学城里最上镜的一栋建筑",
+      "open": null,
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.301,
+        29.604
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "graffiti-street",
+      "name": "黄桷坪涂鸦一条街",
+      "cat": "街区",
+      "tags": [
+        "涂鸦",
+        "川美",
+        "拍照"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "川美老校区外的涂鸦街，整排居民楼都是画。",
+      "reason": "满街涂鸦随手拍都是大片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.521,
+        29.489
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jiaotong-teahouse",
+      "name": "交通茶馆",
+      "cat": "美食",
+      "tags": [
+        "老茶馆",
+        "市井",
+        "摄影"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "黄桷坪的百年老茶馆，保持着八九十年代原貌。",
+      "reason": "十块钱一碗茶坐一下午",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.542791,
+        29.489808
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "13363832408651620474",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-zoo",
+      "name": "重庆动物园",
+      "cat": "亲子",
+      "tags": [
+        "熊猫",
+        "老牌",
+        "性价比"
+      ],
+      "heat": 8,
+      "dur": 180,
+      "intro": "熊猫数量全国前列的老牌动物园，门票便宜。",
+      "reason": "二十多块钱看十几只熊猫",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.50627,
+        29.5039
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "419884419059437693",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-industrial-museum",
+      "name": "重庆工业博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "工业遗存",
+        "钢迁会",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 100,
+      "intro": "重钢旧址上的工业馆，老厂房机器全部保留。",
+      "reason": "巨大车间里的钢铁朋克现场",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.493056,
+        29.484313
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2881852933743785772",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-jianchuan",
+      "name": "重庆建川博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "抗战",
+        "防空洞",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "防空洞群里的博物馆聚落，抗战兵工主题为主。",
+      "reason": "在真正的防空洞里看抗战文物",
+      "open": "09:00-17:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.522565,
+        29.519641
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "5535597701475345116",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "hongyan-museum",
+      "name": "红岩革命纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "红色",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "红岩村的中共南方局旧址纪念馆，《红岩》原型地。",
+      "reason": "看完渣滓洞再来这补齐历史线",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.497298,
+        29.552455
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "14577394793719109616",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "cq-happy-valley",
+      "name": "重庆欢乐谷",
+      "cat": "亲子",
+      "tags": [
+        "过山车",
+        "乐园",
+        "夜场"
+      ],
+      "heat": 7.5,
+      "dur": 300,
+      "intro": "山地版欢乐谷，木质过山车穿山而建。",
+      "reason": "依山而建的过山车更刺激",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.602,
+        29.662
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hanhai-oceanpark",
+      "name": "汉海海洋公园",
+      "cat": "亲子",
+      "tags": [
+        "海洋馆",
+        "室内",
+        "水母"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "巴南的大型海洋馆，水母馆和白鲸表演受欢迎。",
+      "reason": "雨天遛娃的室内备选",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.521,
+        29.408
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sunac-town",
+      "name": "融创渝乐小镇",
+      "cat": "亲子",
+      "tags": [
+        "乐园",
+        "过山车",
+        "夜场"
+      ],
+      "heat": 6,
+      "dur": 240,
+      "intro": "大学城旁的开放式乐园，摩天轮与过山车齐全。",
+      "reason": "不收大门票，玩项目再买票",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.296,
+        29.612
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuanboyuan",
+      "name": "重庆园博园",
+      "cat": "公园",
+      "tags": [
+        "园林",
+        "大草坪",
+        "遛娃"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "园博会留下的超大园林公园，一天逛不完。",
+      "reason": "北方园林和江南园林一次看齐",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.582,
+        29.653
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "keyuan-4th",
+      "name": "科园四路美食街",
+      "cat": "美食",
+      "tags": [
+        "夜宵",
+        "本地人",
+        "大排档"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "九龙坡的本地人夜宵街，烧烤烤鱼是主角。",
+      "reason": "没有游客的本重庆夜味道",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.508,
+        29.528
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cq-nature-museum",
+      "name": "重庆自然博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "恐龙",
+        "亲子",
+        "北碚"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "北碚的自然馆新馆，恐龙化石与动物标本丰富。",
+      "reason": "恐龙迷值得专程跑一趟北碚",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        106.40822,
+        29.81912
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8101702555661152193",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jinyun-mountain",
+      "name": "缙云山",
+      "cat": "山水",
+      "tags": [
+        "登山",
+        "森林",
+        "北碚"
+      ],
+      "heat": 7.5,
+      "dur": 240,
+      "intro": "嘉陵江畔的国家级自然保护区，九峰连绵。",
+      "reason": "和重庆自然博物馆打包一日游",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.394631,
+        29.843357
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "6482277630179834478",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "diaoyu-fortress",
+      "name": "钓鱼城",
+      "cat": "古迹",
+      "tags": [
+        "南宋",
+        "古战场",
+        "合川"
+      ],
+      "heat": 7.5,
+      "dur": 210,
+      "intro": "改变世界史的南宋抗元古城，坚守36年。",
+      "reason": "上帝折鞭处，历史迷必朝圣",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.315378,
+        30.003889
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "926370235880400622",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "dazu-carvings",
+      "name": "大足石刻",
+      "cat": "古迹",
+      "tags": [
+        "世界遗产",
+        "石窟",
+        "远郊"
+      ],
+      "heat": 9.5,
+      "dur": 300,
+      "intro": "唐宋石窟艺术巅峰，宝顶山千手观音举世闻名。",
+      "reason": "千手观音金光再现，值回车程",
+      "open": "08:30-18:00",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        105.796243,
+        29.747517
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "17026555033409009313",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "wulong-tiankeng",
+      "name": "武隆天生三桥",
+      "cat": "山水",
+      "tags": [
+        "天坑",
+        "世界遗产",
+        "远郊"
+      ],
+      "heat": 9.5,
+      "dur": 420,
+      "intro": "世界最大天生桥群，《满城尽带黄金甲》取景地。",
+      "reason": "走到天坑底部才知什么叫壮观",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.79,
+        29.3
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fairy-mountain",
+      "name": "仙女山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "草原",
+        "滑雪",
+        "避暑"
+      ],
+      "heat": 8,
+      "dur": 360,
+      "intro": "武隆的高山草原，夏天避暑冬天滑雪。",
+      "reason": "和天生三桥打包的武隆两日游",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.767589,
+        29.417075
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "17495644356020323814",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "jinfo-mountain",
+      "name": "金佛山",
+      "cat": "山水",
+      "tags": [
+        "喀斯特",
+        "杜鹃",
+        "滑雪"
+      ],
+      "heat": 7.5,
+      "dur": 360,
+      "intro": "南川的世界自然遗产，桌山喀斯特地貌奇特。",
+      "reason": "春天满山杜鹃，冬天南国雪原",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.19,
+        29.055
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "heishan-valley",
+      "name": "黑山谷",
+      "cat": "山水",
+      "tags": [
+        "峡谷",
+        "瀑布",
+        "避暑"
+      ],
+      "heat": 7,
+      "dur": 300,
+      "intro": "万盛的原始峡谷，重庆夏天最火的避暑地之一。",
+      "reason": "峡谷里比市区凉快十度",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.004524,
+        28.937519
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "10185393357082219",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "simian-mountain",
+      "name": "四面山",
+      "cat": "山水",
+      "tags": [
+        "瀑布",
+        "丹霞",
+        "江津"
+      ],
+      "heat": 6.5,
+      "dur": 360,
+      "intro": "江津的丹霞瀑布群，望乡台瀑布高158米。",
+      "reason": "华夏第一高瀑水量足时很震撼",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.390571,
+        28.619035
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "4527779337796466509",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "gongtan-wujiang",
+      "name": "龚滩古镇·乌江画廊",
+      "cat": "古镇",
+      "tags": [
+        "乌江",
+        "吊脚楼",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 300,
+      "intro": "乌江边的千年盐码头，吊脚楼沿崖壁排开。",
+      "reason": "坐船看乌江画廊再住进老吊脚楼",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.35,
+        28.865
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongshan-old-town",
+      "name": "中山古镇",
+      "cat": "古镇",
+      "tags": [
+        "吊脚楼",
+        "原生态",
+        "江津"
+      ],
+      "heat": 6,
+      "dur": 240,
+      "intro": "江津的明清老街，吊脚楼保存完整游客少。",
+      "reason": "几乎没有商业化的真古镇",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.26,
+        28.83
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "longxing-old-town",
+      "name": "龙兴古镇",
+      "cat": "古镇",
+      "tags": [
+        "明清老街",
+        "宗祠",
+        "渝北"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "渝北的六百年古镇，祠堂寺庙保留原貌。",
+      "reason": "离主城最近的原生态古镇",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.792763,
+        29.694919
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2848996728842835343",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "tongjing-hotspring",
+      "name": "统景温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "峡谷",
+        "冬天"
+      ],
+      "heat": 6,
+      "dur": 240,
+      "intro": "渝北的老牌温泉，峡江温塘风光兼具。",
+      "reason": "冬天来泡峡谷里的天然温泉",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.826485,
+        29.85883
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "7184294661781781047",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "fengdu-ghost-city",
+      "name": "丰都鬼城",
+      "cat": "古迹",
+      "tags": [
+        "鬼文化",
+        "名山",
+        "三峡游"
+      ],
+      "heat": 6.5,
+      "dur": 210,
+      "intro": "以鬼文化闻名的千年名山，奈何桥阎王殿俱全。",
+      "reason": "中国唯一的鬼城主题乐园式古迹",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.723167,
+        29.882862
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "16702721570165119607",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "baiheliang",
+      "name": "白鹤梁水下博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "水下",
+        "题刻",
+        "涪陵"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "世界首座水下博物馆，看长江底千年水文题刻。",
+      "reason": "坐扶梯下到江底看千年石鱼",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        107.391987,
+        29.712258
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "10386515323507866727",
+      "refreshed_at": "2026-10-11"
+    }
+  ]
+}

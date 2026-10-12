@@ -1,0 +1,383 @@
+{
+  "city": "杭州",
+  "date": "2026-10-11",
+  "dryRun": false,
+  "total": 70,
+  "ok": [
+    {
+      "id": "duanqiao",
+      "name": "断桥残雪（白堤）",
+      "drift_m": 371,
+      "poi": "断桥残雪碑亭"
+    },
+    {
+      "id": "sudi",
+      "name": "苏堤春晓",
+      "drift_m": 36,
+      "poi": "杭州西湖风景名胜区-苏堤春晓"
+    },
+    {
+      "id": "leifengta",
+      "name": "雷峰塔",
+      "drift_m": 38,
+      "poi": "雷峰塔景区"
+    },
+    {
+      "id": "santanyinyue",
+      "name": "三潭印月",
+      "drift_m": 207,
+      "poi": "杭州西湖风景名胜区-三潭印月码头"
+    },
+    {
+      "id": "huagang",
+      "name": "花港观鱼",
+      "drift_m": 611,
+      "poi": "花港观鱼-印影亭"
+    },
+    {
+      "id": "quyuan",
+      "name": "曲院风荷",
+      "drift_m": 46,
+      "poi": "曲院风荷-绉云峰"
+    },
+    {
+      "id": "taiziwan",
+      "name": "太子湾公园",
+      "drift_m": 131,
+      "poi": "太子湾公园-北门"
+    },
+    {
+      "id": "xilingyinshe",
+      "name": "孤山·西泠印社",
+      "drift_m": 286,
+      "poi": "孤山公园"
+    },
+    {
+      "id": "yuewangmiao",
+      "name": "岳王庙",
+      "drift_m": 496,
+      "poi": "杭州西湖风景名胜区岳王庙-南门"
+    },
+    {
+      "id": "guozhuang",
+      "name": "郭庄",
+      "drift_m": 407,
+      "poi": "郭庄[公交站]"
+    },
+    {
+      "id": "beishanjie",
+      "name": "北山街",
+      "drift_m": 442,
+      "poi": "北山街历史文化街区"
+    },
+    {
+      "id": "baoshishan",
+      "name": "宝石山（保俶塔）",
+      "drift_m": 481,
+      "poi": "宝石山-前山地上停车场"
+    },
+    {
+      "id": "music-fountain",
+      "name": "西湖音乐喷泉",
+      "drift_m": 170,
+      "poi": "7天酒店杭州西湖音乐喷泉店-正门"
+    },
+    {
+      "id": "lingyin",
+      "name": "灵隐寺（飞来峰）",
+      "drift_m": 293,
+      "poi": "灵隐寺-飞来峰-雨花亭"
+    },
+    {
+      "id": "faxi",
+      "name": "法喜寺",
+      "drift_m": 321,
+      "poi": "法喜寺法物流通处"
+    },
+    {
+      "id": "yongfu",
+      "name": "永福寺",
+      "drift_m": 329,
+      "poi": "永福寺-大雄宝殿"
+    },
+    {
+      "id": "beigaofeng",
+      "name": "北高峰（灵顺寺）",
+      "drift_m": 882,
+      "poi": "北高峰跑步路线终点"
+    },
+    {
+      "id": "longjingcun",
+      "name": "龙井村",
+      "drift_m": 1297,
+      "poi": "龙井村-西南门"
+    },
+    {
+      "id": "shililangdang",
+      "name": "十里琅珰",
+      "drift_m": 543,
+      "poi": "十里琅珰小卖部"
+    },
+    {
+      "id": "jiuxi",
+      "name": "九溪烟树",
+      "drift_m": 911,
+      "poi": "九溪烟树-休息亭"
+    },
+    {
+      "id": "yunqi",
+      "name": "云栖竹径",
+      "drift_m": 879,
+      "poi": "杭州西湖风景名胜区-云栖竹径密云亭"
+    },
+    {
+      "id": "manjuelong",
+      "name": "满觉陇",
+      "drift_m": 394,
+      "poi": "下满觉陇"
+    }
+  ],
+  "mismatch": [],
+  "error": [
+    {
+      "id": "tea-museum",
+      "name": "中国茶叶博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xixi-wetland",
+      "name": "西溪国家湿地公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hangzhou-botanical",
+      "name": "杭州植物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qingzhiwu",
+      "name": "青芝坞",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "oeli",
+      "name": "天目里",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hefangjie",
+      "name": "河坊街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "nansongyujie",
+      "name": "南宋御街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "chenghuangge",
+      "name": "城隍阁（吴山）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hangzhou-museum",
+      "name": "杭州博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "huxueyan",
+      "name": "胡雪岩故居",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "mantoushan",
+      "name": "馒头山社区",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "baita-park",
+      "name": "白塔公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "liuheta",
+      "name": "六和塔",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gongchenqiao",
+      "name": "拱宸桥·桥西直街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xiaohezhi",
+      "name": "小河直街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dadaolu",
+      "name": "大兜路历史街区",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xiangji",
+      "name": "香积寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "canal-museum",
+      "name": "中国京杭大运河博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gongmei-museum",
+      "name": "杭州工艺美术博物馆群",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "canal-night-cruise",
+      "name": "运河夜游（武林门码头）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "city-balcony",
+      "name": "城市阳台（钱江新城）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dongman-museum",
+      "name": "中国动漫博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "changqiao-ocean",
+      "name": "长乔极地海洋公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xianghu",
+      "name": "湘湖",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "kuahuqiao-museum",
+      "name": "跨湖桥遗址博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xixing-oldtown",
+      "name": "西兴古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "laxi-street",
+      "name": "啦喜街（垃圾街）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "songcheng",
+      "name": "宋城·千古情",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yinxiang-xihu",
+      "name": "印象西湖·最忆是杭州",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zhejiang-museum",
+      "name": "浙江省博物馆（之江馆区）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "cirque-du-soleil",
+      "name": "太阳马戏 X 绮幻之境",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "liangzhu-site",
+      "name": "良渚古城遗址公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "liangzhu-museum",
+      "name": "良渚博物院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "liangzhu-village",
+      "name": "良渚文化村·大屋顶",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "tangqi",
+      "name": "塘栖古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "longmen-oldtown",
+      "name": "龙门古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "jingshan-temple",
+      "name": "径山寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qiandao-lake",
+      "name": "千岛湖",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qingshan-lake",
+      "name": "青山湖水上森林",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "daming-mountain",
+      "name": "大明山",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gaoyin-street",
+      "name": "高银街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shenglihe",
+      "name": "胜利河美食街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "wulin-night",
+      "name": "武林夜市",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zj-natural-museum",
+      "name": "浙江自然博物院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "silk-museum",
+      "name": "中国丝绸博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zj-science",
+      "name": "浙江科技馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hangzhou-zoo",
+      "name": "杭州动物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hubin-walk",
+      "name": "湖滨步行街（in77）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    }
+  ]
+}

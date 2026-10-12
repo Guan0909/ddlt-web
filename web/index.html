@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>点定旅途 · 起点</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page { padding: 0 28px 120px; }
+
+  .masthead {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 0 0;
+  }
+  .wordmark { font-family: var(--serif); font-size: 15px; font-weight: 700; letter-spacing: .3em; }
+  .city {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 13px; font-weight: 500; color: var(--ink);
+    padding-bottom: 2px; border-bottom: .5px solid var(--ink);
+  }
+  .city .ic { width: 14px; height: 14px; }
+
+  .hero { padding: 72px 0 0; }
+  .hero .display { font-size: 44px; line-height: 1.18; }
+  .hero .display em { font-style: italic; font-weight: 400; }
+  .hero .sub { margin-top: 18px; max-width: 260px; }
+
+  .search {
+    margin-top: 52px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 2px 14px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .search .ic { color: var(--ink-3); }
+  .search input {
+    flex: 1; border: none; outline: none; background: transparent;
+    font-size: 16.5px; font-family: var(--font); color: var(--ink);
+  }
+  .search input::placeholder { color: var(--ink-3); }
+  .locate {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 13px; font-weight: 500; color: var(--ink-2);
+  }
+  .locate .ic { width: 15px; height: 15px; color: var(--ink-2); }
+
+  .days { margin-top: 48px; }
+  .days-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-top: 18px;
+  }
+  .days-row button {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    font-family: var(--serif); font-size: 26px; color: var(--ink-3);
+    padding-bottom: 10px; position: relative; transition: color .15s;
+  }
+  .days-row button small { font-family: var(--font); font-size: 10px; letter-spacing: .2em; }
+  .days-row button.on { color: var(--ink); }
+  .days-row button.on::after {
+    content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 4px; height: 4px; border-radius: 50%; background: var(--ink);
+  }
+
+  .note { margin-top: 52px; padding-top: 18px; border-top: .5px solid var(--hairline); }
+  .note p { font-size: 12.5px; color: var(--ink-2); line-height: 1.8; }
+
+  .foot { margin-top: 44px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="wordmark">点定旅途</div>
+    <button class="city" id="cityBtn"></button>
+  </header>
+
+  <div class="hero">
+    <h1 class="display">今天，<br>从这里<em>出发。</em></h1>
+    <p class="sub">酒店、小区、某个景区门口——任何地点都行。路线、时间和通勤，交给我。</p>
+  </div>
+
+  <div class="search-wrap">
+    <div class="search">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="text" id="originInput" placeholder="酒店 / 小区 / 任意地点" autocomplete="off">
+      <button class="locate" id="locateBtn">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+        定位
+      </button>
+    </div>
+    <div class="suggest" id="suggest" hidden></div>
+  </div>
+
+  <section class="days">
+    <p class="label">玩几天 · DAYS</p>
+    <div class="days-row" id="daysRow">
+      <button data-n="1">1<small>天</small></button>
+      <button data-n="2">2<small>天</small></button>
+      <button data-n="3" class="on">3<small>天</small></button>
+      <button data-n="4">4<small>天</small></button>
+      <button data-n="5">5<small>天</small></button>
+    </div>
+  </section>
+
+  <div class="note">
+    <p>起点是景区也可以——它会自动成为第 1 站，接着往下排。从现在这一刻开始计时，随时生成，随时出发。</p>
+  </div>
+
+  <p class="foot" id="foot">已覆盖 60+ 热门旅游城市</p>
+
+  <div class="dock">
+    <button class="btn-primary" id="genBtn" disabled>
+      生成我的路线
+      <svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+</div>
+<script src="assets/engine.bundle.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const input = $('originInput'), suggest = $('suggest'), genBtn = $('genBtn');
+
+  let city = '成都';
+  let cityEntry = null;      // cities.json 中当前城市条目
+  let spots = null;          // 当前城市 spots 库
+  let days = 3;
+  let selectedSpot = null;   // 搜索建议选中的景点
+  let located = null;        // 定位结果 { name, lng, lat }
+  let suggested = null;      // 云端搜索建议选中的 POI { name, lng, lat }
+
+  // ---------- 天数 ----------
+  $('daysRow').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-n]');
+    if (!btn) return;
+    days = +btn.dataset.n;
+    [...$('daysRow').children].forEach(b => b.classList.toggle('on', b === btn));
+  });
+
+  // ---------- 城市切换 ----------
+  $('cityBtn').appendChild(DDN.icon('pin', 'ic'));
+  const cityName = DDN.el('span'); cityName.textContent = city;
+  $('cityBtn').appendChild(cityName);
+  $('cityBtn').onclick = () => {
+    DDN.openDrawer('切换城市', (body, close) => {
+      const regions = window.__cities.regions || {};
+      for (const region of Object.keys(regions)) {
+        body.appendChild(DDN.el('div', 'drawer-sub', region));
+        for (const name of regions[region]) {
+          const c = window.__cities.cities.find(x => x.name === name);
+          const item = DDN.el('button', 'drawer-item' + (c && c.status === 'done' ? '' : ' dim'));
+          item.appendChild(DDN.el('span', 'n', name));
+          item.appendChild(DDN.el('span', 'g', c && c.status === 'done' ? '已开通' : '即将开通'));
+          item.onclick = () => {
+            if (c && c.status === 'done') {
+              city = name; cityEntry = c; cityName.textContent = name;
+              input.value = ''; selectedSpot = null; located = null;
+              close();
+            } else {
+              close();
+              DDN.toast(`「${name}」即将开通，先陪你玩${city}`);
+            }
+          };
+          body.appendChild(item);
+        }
+      }
+    });
+  };
+
+  // ---------- 搜索建议（本地库子串匹配 + 云端关键词提示，textContent 渲染） ----------
+  function hideSuggest() { suggest.hidden = true; suggest.textContent = ''; }
+  function addSuggestItem(s, label, onPick) {
+    const b = DDN.el('button');
+    b.appendChild(DDN.el('span', null, s.name || s.title));
+    b.appendChild(DDN.el('small', null, label));
+    b.onmousedown = e => {   // 先于 input blur 触发
+      e.preventDefault();
+      onPick();
+      hideSuggest();
+    };
+    suggest.appendChild(b);
+  }
+  let cloudTimer = null;
+  function showSuggest(local, keyword) {
+    suggest.textContent = '';
+    for (const s of local) {
+      addSuggestItem(s, s.cat, () => {
+        selectedSpot = s; suggested = null; located = null;
+        input.value = s.name;
+      });
+    }
+    suggest.hidden = local.length === 0 && !(DDN.cloudAvailable() && keyword);
+    // 云端补充：本地结果少于 3 条时调关键词提示（6000/日，失败静默）
+    clearTimeout(cloudTimer);
+    if (DDN.cloudAvailable() && keyword && local.length < 3) {
+      cloudTimer = setTimeout(async () => {
+        try {
+          const j = await DDN.cloudPost('searchPoi', { keyword, region: city }, 4000);
+          const extra = (j.data || []).filter(d => !local.some(s => s.name === d.title)).slice(0, 6);
+          if (input.value.trim() !== keyword) return;   // 输入已变，丢弃过期建议
+          for (const d of extra) {
+            addSuggestItem(d, d.address || '地点', () => {
+              suggested = { name: d.title, lng: d.lng, lat: d.lat };
+              selectedSpot = null; located = null;
+              input.value = d.title;
+            });
+          }
+        } catch (e) { /* 静默 */ }
+      }, 300);
+    }
+  }
+  input.addEventListener('input', () => {
+    if (selectedSpot && input.value.trim() !== selectedSpot.name) selectedSpot = null;
+    if (suggested && input.value.trim() !== suggested.name) suggested = null;
+    if (located && input.value.trim() !== '当前位置') located = null;
+    const q = input.value.trim();
+    if (!q || !spots) { hideSuggest(); return; }
+    showSuggest(spots.filter(s => s.name.includes(q)).slice(0, 8), q);
+  });
+  input.addEventListener('blur', () => setTimeout(hideSuggest, 120));
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { hideSuggest(); input.blur(); }
+  });
+
+  // ---------- 定位：成功用坐标，失败/拒绝静默聚焦搜索框 ----------
+  $('locateBtn').onclick = () => {
+    if (!navigator.geolocation) { input.focus(); return; }
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        located = {
+          name: '当前位置',
+          lng: +pos.coords.longitude.toFixed(6),
+          lat: +pos.coords.latitude.toFixed(6),
+        };
+        selectedSpot = null;
+        input.value = '当前位置';
+        hideSuggest();
+      },
+      () => { input.focus(); },
+      { timeout: 8000 }
+    );
+  };
+
+  // ---------- 生成路线 ----------
+  function resolveOrigin() {
+    const text = input.value.trim();
+    if (selectedSpot && text === selectedSpot.name) {
+      return { name: selectedSpot.name, lng: selectedSpot.coord[0], lat: selectedSpot.coord[1], spotId: selectedSpot.id };
+    }
+    if (suggested && text === suggested.name) return suggested;
+    if (located && text === '当前位置') return located;
+    if (text) return { name: text, lng: cityEntry.center[0], lat: cityEntry.center[1] };
+    if (located) return located;
+    return { name: city + '市中心', lng: cityEntry.center[0], lat: cityEntry.center[1] };
+  }
+  genBtn.onclick = async () => {
+    if (!spots) return;
+    const origin = resolveOrigin();
+    const opts = {
+      spots, origin, days,
+      startDate: window.Engine.addDays(DDN.todayISO(), 1),  // 默认明早 09:00 出发
+      startNow: false,
+      city,
+    };
+    genBtn.disabled = true;
+    let route = null;
+    if (DDN.cloudAvailable()) {
+      try {
+        const j = await DDN.cloudGenRoute({ city, origin, days, startDate: opts.startDate, startNow: false });
+        route = j.route;
+        if (j.routeId) route.routeId = j.routeId;
+      } catch (e) { /* 云端失败回退本地引擎 */ }
+    }
+    if (!route) route = window.Engine.genRoute(opts);
+    DDN.attachStops(route, spots);
+    route.__nowMode = false;
+    DDN.saveRoute(route);
+    location.href = 'result.html';
+  };
+
+  // ---------- 初始化 ----------
+  (async () => {
+    try {
+      const cities = await DDN.loadCities();
+      window.__cities = cities;
+      cityEntry = cities.cities.find(c => c.name === city);
+      $('foot').textContent = `已覆盖 ${cities.cities.length}+ 热门旅游城市`;
+      spots = await DDN.loadSpots(city);
+      genBtn.disabled = !spots;
+    } catch (e) {
+      DDN.toast('数据加载失败，请刷新重试');
+    }
+  })();
+})();
+</script>
+</body>
+</html>

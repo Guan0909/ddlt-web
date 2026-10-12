@@ -1,0 +1,566 @@
+{
+  "_meta": {
+    "version": "v1",
+    "generated": "2026-10-10",
+    "note": "首批 60 个热门旅游城市。center 为市中心近似坐标 [lng, lat]，供城市判定与初始地图定位；cities 按大区归类。",
+    "status": "done=已完成富化 / pending=待生成"
+  },
+  "regions": {
+    "西南": [
+      "成都",
+      "重庆",
+      "昆明",
+      "大理",
+      "丽江",
+      "贵阳",
+      "拉萨",
+      "西双版纳",
+      "香格里拉"
+    ],
+    "华东": [
+      "上海",
+      "杭州",
+      "南京",
+      "苏州",
+      "无锡",
+      "扬州",
+      "绍兴",
+      "宁波",
+      "温州",
+      "合肥",
+      "黄山",
+      "厦门",
+      "福州",
+      "泉州",
+      "青岛",
+      "济南",
+      "威海",
+      "烟台",
+      "婺源"
+    ],
+    "华南": [
+      "广州",
+      "深圳",
+      "珠海",
+      "桂林",
+      "北海",
+      "三亚",
+      "海口"
+    ],
+    "华北": [
+      "北京",
+      "天津",
+      "大同",
+      "太原",
+      "呼和浩特"
+    ],
+    "华中": [
+      "武汉",
+      "长沙",
+      "郑州",
+      "洛阳",
+      "开封",
+      "宜昌",
+      "张家界",
+      "凤凰"
+    ],
+    "西北": [
+      "西安",
+      "兰州",
+      "西宁",
+      "敦煌",
+      "张掖",
+      "乌鲁木齐",
+      "喀什",
+      "银川"
+    ],
+    "东北": [
+      "哈尔滨",
+      "长春",
+      "沈阳",
+      "大连"
+    ]
+  },
+  "cities": [
+    {
+      "name": "成都",
+      "center": [
+        104.0668,
+        30.657
+      ],
+      "status": "done"
+    },
+    {
+      "name": "重庆",
+      "center": [
+        106.5516,
+        29.563
+      ],
+      "status": "done"
+    },
+    {
+      "name": "昆明",
+      "center": [
+        102.8332,
+        24.8801
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "大理",
+      "center": [
+        100.2676,
+        25.6065
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "丽江",
+      "center": [
+        100.227,
+        26.855
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "贵阳",
+      "center": [
+        106.6302,
+        26.647
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "拉萨",
+      "center": [
+        91.1119,
+        29.662
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "西双版纳",
+      "center": [
+        100.7979,
+        22.0021
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "香格里拉",
+      "center": [
+        99.7008,
+        27.8297
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "上海",
+      "center": [
+        121.4737,
+        31.2304
+      ],
+      "status": "done"
+    },
+    {
+      "name": "杭州",
+      "center": [
+        120.1551,
+        30.2741
+      ],
+      "status": "done"
+    },
+    {
+      "name": "南京",
+      "center": [
+        118.7969,
+        32.0603
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "苏州",
+      "center": [
+        120.5853,
+        31.2989
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "无锡",
+      "center": [
+        120.3119,
+        31.4912
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "扬州",
+      "center": [
+        119.4129,
+        32.3942
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "绍兴",
+      "center": [
+        120.5821,
+        30.0303
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "宁波",
+      "center": [
+        121.5503,
+        29.8746
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "温州",
+      "center": [
+        120.6994,
+        27.9949
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "合肥",
+      "center": [
+        117.283,
+        31.8612
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "黄山",
+      "center": [
+        118.3381,
+        29.7152
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "厦门",
+      "center": [
+        118.0894,
+        24.4798
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "福州",
+      "center": [
+        119.2965,
+        26.0745
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "泉州",
+      "center": [
+        118.6757,
+        24.8741
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "青岛",
+      "center": [
+        120.3826,
+        36.0671
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "济南",
+      "center": [
+        117.1201,
+        36.6512
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "威海",
+      "center": [
+        122.1204,
+        37.5131
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "烟台",
+      "center": [
+        121.4479,
+        37.4638
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "婺源",
+      "center": [
+        117.862,
+        29.2482
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "广州",
+      "center": [
+        113.2644,
+        23.1291
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "深圳",
+      "center": [
+        114.0579,
+        22.5431
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "珠海",
+      "center": [
+        113.5767,
+        22.2707
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "桂林",
+      "center": [
+        110.2902,
+        25.2736
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "北海",
+      "center": [
+        109.1201,
+        21.4811
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "三亚",
+      "center": [
+        109.5119,
+        18.2528
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "海口",
+      "center": [
+        110.1983,
+        20.044
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "北京",
+      "center": [
+        116.4074,
+        39.9042
+      ],
+      "status": "done"
+    },
+    {
+      "name": "天津",
+      "center": [
+        117.1901,
+        39.1256
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "大同",
+      "center": [
+        113.3001,
+        40.0768
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "太原",
+      "center": [
+        112.5489,
+        37.8706
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "呼和浩特",
+      "center": [
+        111.7492,
+        40.8426
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "武汉",
+      "center": [
+        114.3054,
+        30.5931
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "长沙",
+      "center": [
+        112.9388,
+        28.2282
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "郑州",
+      "center": [
+        113.6254,
+        34.7466
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "洛阳",
+      "center": [
+        112.454,
+        34.6197
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "开封",
+      "center": [
+        114.3076,
+        34.7972
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "宜昌",
+      "center": [
+        111.2865,
+        30.6919
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "张家界",
+      "center": [
+        110.4792,
+        29.1171
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "凤凰",
+      "center": [
+        109.599,
+        27.9483
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "西安",
+      "center": [
+        108.9402,
+        34.3416
+      ],
+      "status": "done"
+    },
+    {
+      "name": "兰州",
+      "center": [
+        103.8343,
+        36.0611
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "西宁",
+      "center": [
+        101.7782,
+        36.6171
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "敦煌",
+      "center": [
+        94.6616,
+        40.1421
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "张掖",
+      "center": [
+        100.4498,
+        38.9259
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "乌鲁木齐",
+      "center": [
+        87.6168,
+        43.8256
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "喀什",
+      "center": [
+        75.9938,
+        39.4677
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "银川",
+      "center": [
+        106.2309,
+        38.4872
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "哈尔滨",
+      "center": [
+        126.5349,
+        45.8038
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "长春",
+      "center": [
+        125.3235,
+        43.8171
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "沈阳",
+      "center": [
+        123.4315,
+        41.8057
+      ],
+      "status": "pending"
+    },
+    {
+      "name": "大连",
+      "center": [
+        121.6147,
+        38.914
+      ],
+      "status": "pending"
+    }
+  ]
+}

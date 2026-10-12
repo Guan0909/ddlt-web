@@ -1,0 +1,400 @@
+{
+  "city": "西安",
+  "date": "2026-10-11",
+  "dryRun": false,
+  "total": 68,
+  "ok": [
+    {
+      "id": "shuilu-an",
+      "name": "水陆庵",
+      "drift_m": 2035,
+      "poi": "水陆庵天然泉水总销商"
+    },
+    {
+      "id": "xian-incident",
+      "name": "西安事变纪念馆（张学良公馆）",
+      "drift_m": 180,
+      "poi": "西安事变纪念馆-张学良将军公馆"
+    },
+    {
+      "id": "expo-park",
+      "name": "西安世博园",
+      "drift_m": 660,
+      "poi": "西安世博园-长安塔"
+    },
+    {
+      "id": "shunchengxiang",
+      "name": "顺城巷",
+      "drift_m": 1124,
+      "poi": "顺城巷"
+    },
+    {
+      "id": "xiying-film",
+      "name": "西影电影圈子",
+      "drift_m": 1427,
+      "poi": "西影电影圈子地面停车场(出入口)"
+    },
+    {
+      "id": "shaanxi-nature",
+      "name": "陕西自然博物馆",
+      "drift_m": 793,
+      "poi": "陕西自然博物馆-售票处"
+    },
+    {
+      "id": "louguantai",
+      "name": "楼观台",
+      "drift_m": 1004,
+      "poi": "楼观台秦岭四宝基地"
+    },
+    {
+      "id": "dahu-1935",
+      "name": "大华·1935",
+      "drift_m": 220,
+      "poi": "大华·1935文化艺术区"
+    }
+  ],
+  "mismatch": [
+    {
+      "id": "yisushe-block",
+      "name": "易俗社文化街区",
+      "candidates": [
+        "易俗社文化街区",
+        "易俗社文化街区-西门",
+        "大嫂面屋(易俗社文化街区店)"
+      ]
+    },
+    {
+      "id": "g-park",
+      "name": "老城根G park",
+      "candidates": [
+        "老城根G park",
+        "老城根G-PARK水晶广场",
+        "方所(老城根G park店)"
+      ]
+    },
+    {
+      "id": "taiping-forest",
+      "name": "太平国家森林公园",
+      "candidates": [
+        "太平国家森林公园",
+        "太平国家森林公园-彩虹瀑布",
+        "太平国家森林公园-索道上站"
+      ]
+    },
+    {
+      "id": "xiangji-temple",
+      "name": "香积寺",
+      "candidates": [
+        "香积寺",
+        "香积寺景区[公交站]",
+        "香积寺逸夫中学"
+      ]
+    },
+    {
+      "id": "hancheng-lake",
+      "name": "汉城湖公园",
+      "candidates": [
+        "汉城湖旅游景区",
+        "应急避难场所(汉城湖公园)",
+        "汉城湖旅游风景区-游客服务中心"
+      ]
+    },
+    {
+      "id": "chanba-wetland",
+      "name": "浐灞国家湿地公园",
+      "candidates": [
+        "西安浐灞国家湿地公园",
+        "西安浐灞国家湿地公园-西门-草滩门",
+        "西安浐灞国家湿地公园-草滩门地上停车场"
+      ]
+    },
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "candidates": [
+        "茯茶镇",
+        "茯茶镇",
+        "茯茶镇"
+      ]
+    },
+    {
+      "id": "shijingli",
+      "name": "诗经里",
+      "candidates": [
+        "诗经里景区",
+        "诗经里创想源",
+        "诗经里[地铁站]"
+      ]
+    },
+    {
+      "id": "han-weiyang",
+      "name": "汉长安城未央宫遗址",
+      "candidates": [
+        "汉长安城未央宫国家考古遗址公园",
+        "汉长安城未央宫国家考古遗址公园-北门",
+        "汉长安城未央宫遗址椒房殿遗址"
+      ]
+    },
+    {
+      "id": "qinzhen",
+      "name": "秦镇（秦渡镇）",
+      "candidates": [
+        "秦镇味道桥头第一家",
+        "秦镇医院[公交站]",
+        "秦镇吕家米皮老店(秦镇老南街店)"
+      ]
+    }
+  ],
+  "error": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "mount-hua",
+      "name": "华山",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "drum-tower",
+      "name": "西安鼓楼",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "huaqing-palace",
+      "name": "华清宫",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "changhen-ge",
+      "name": "《长恨歌》实景演出",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yongningmen-night",
+      "name": "永宁门夜景·南门广场",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dayanta-fountain",
+      "name": "大雁塔北广场喷泉",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xiaozhai-seg",
+      "name": "赛格国际购物中心",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "meng-changan",
+      "name": "《梦长安》大唐迎宾盛礼",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "hanyangling-museum",
+      "name": "汉阳陵博物院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shaanxi-archaeology",
+      "name": "陕西考古博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "big-mosque",
+      "name": "化觉巷清真大寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shuyuanmen",
+      "name": "书院门",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dapiyuan",
+      "name": "大皮院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "秦岭野生动物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "tuoling-legend",
+      "name": "《驼铃传奇》秀",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "taibai-shan",
+      "name": "太白山国家森林公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "banpo-museum",
+      "name": "西安半坡博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "tang-west-market",
+      "name": "大唐西市博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "guanzhong-minsu",
+      "name": "关中民俗艺术博物院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "maoling-museum",
+      "name": "茂陵博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gaos-mansion",
+      "name": "高家大院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qujiang-pool",
+      "name": "曲江池遗址公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "kunming-pool",
+      "name": "昆明池·七夕公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xiaonanmen",
+      "name": "小南门早市夜市",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "cuihua-shan",
+      "name": "翠华山",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "nanwutai",
+      "name": "南五台",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "lishan",
+      "name": "骊山",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qinglong-temple",
+      "name": "青龙寺遗址景区",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    }
+  ]
+}

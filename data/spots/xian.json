@@ -1,0 +1,1544 @@
+{
+  "_meta": {
+    "city": "西安",
+    "version": "v1",
+    "generated": "2026-10-11",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "backfilled_at": "2026-10-11"
+  },
+  "spots": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑博物馆",
+      "cat": "古迹",
+      "tags": [
+        "世界奇迹",
+        "早去",
+        "请讲解"
+      ],
+      "heat": 10,
+      "dur": 240,
+      "intro": "八千陶俑地下军团，两千年前的秦帝国军阵。",
+      "reason": "一开门就进，一号坑包场级体验",
+      "open": "08:30-17:00",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        109.2785,
+        34.385
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "cat": "古迹",
+      "tags": [
+        "骑行",
+        "日落",
+        "夜景"
+      ],
+      "heat": 9.5,
+      "dur": 120,
+      "intro": "明代城墙完整一圈13.7公里，可骑车绕城。",
+      "reason": "傍晚上墙骑车，看落日压城头",
+      "open": "08:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.942,
+        34.253
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "国宝密集",
+        "免费预约",
+        "周一闭馆",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 150,
+      "intro": "华夏第一宝库，周秦汉唐国宝一次看够。",
+      "reason": "抢最早时段，何家村窖藏先去看",
+      "open": "09:00-17:30",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        108.9535,
+        34.2225
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "cat": "古迹",
+      "tags": [
+        "玄奘",
+        "唐塔",
+        "晨钟暮鼓"
+      ],
+      "heat": 9.5,
+      "dur": 90,
+      "intro": "玄奘译经之地，西安最标志性的唐塔。",
+      "reason": "登塔望长安，唐僧取经的起点",
+      "open": "08:00-17:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.9642,
+        34.2186
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "免费",
+        "演出多"
+      ],
+      "heat": 9.5,
+      "dur": 120,
+      "intro": "大雁塔南的唐风步行街，入夜梦回长安。",
+      "reason": "不倒翁和盛唐密盒都在这条街上",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.961,
+        34.209
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mount-hua",
+      "name": "华山",
+      "cat": "山水",
+      "tags": [
+        "五岳",
+        "长空栈道",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 420,
+      "intro": "奇险天下第一山，五岳之西岳。",
+      "reason": "西峰索道上北峰下，一天走五峰",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        110.084,
+        34.486
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "cat": "古迹",
+      "tags": [
+        "地标",
+        "夜景",
+        "城市中轴"
+      ],
+      "heat": 8.5,
+      "dur": 40,
+      "intro": "600年明代钟楼，西安城的正中心。",
+      "reason": "环岛一圈都是机位，夜景最出片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.9398,
+        34.341
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "drum-tower",
+      "name": "西安鼓楼",
+      "cat": "古迹",
+      "tags": [
+        "地标",
+        "夜景",
+        "回民街旁"
+      ],
+      "heat": 8,
+      "dur": 35,
+      "intro": "与钟楼相望的明代鼓楼，身后就是回坊。",
+      "reason": "逛回民街前顺路登楼看鼓",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.9335,
+        34.3395
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "晚上",
+        "人多"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "鼓楼后的清真小吃街，烟火气最浓。",
+      "reason": "红柳烤肉配镜糕，吃到扶墙",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.935,
+        34.344
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaqing-palace",
+      "name": "华清宫",
+      "cat": "古迹",
+      "tags": [
+        "杨贵妃",
+        "温泉",
+        "骊山"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "唐玄宗与杨贵妃的温泉行宫，背靠骊山。",
+      "reason": "看完兵马俑顺路来泡历史汤",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        109.212,
+        34.3615
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "书法圣地",
+        "碑石",
+        "城墙根"
+      ],
+      "heat": 8.5,
+      "dur": 100,
+      "intro": "九百年碑石森林，书法爱好者的麦加。",
+      "reason": "颜真卿柳公权的真迹就在眼前",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.943,
+        34.256
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "唐风园林",
+        "水秀"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "仿唐皇家园林，夜里的水幕光影秀出名。",
+      "reason": "紫云楼亮灯那一刻穿越回唐朝",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.974,
+        34.215
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changhen-ge",
+      "name": "《长恨歌》实景演出",
+      "cat": "演出",
+      "tags": [
+        "实景演出",
+        "晚上",
+        "提前订票"
+      ],
+      "heat": 8.5,
+      "dur": 100,
+      "intro": "华清宫九龙湖上演的帝妃爱情史诗。",
+      "reason": "骊山做幕布，实景演出天花板",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        109.213,
+        34.362
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "cat": "古迹",
+      "tags": [
+        "唐宫遗址",
+        "园区大",
+        "遗址博物馆"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "大唐帝国正殿遗址，千宫之宫的夯土台。",
+      "reason": "站在含元殿台基上脑补盛唐",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.964,
+        34.288
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "cat": "古迹",
+      "tags": [
+        "唐塔",
+        "免费预约",
+        "园林",
+        "周二闭馆"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "比大雁塔更清幽的唐代密檐塔。",
+      "reason": "人少安静的唐塔，配博物院正好",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.934,
+        34.2455
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "小雁塔旁",
+        "园林",
+        "周二闭馆"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "小雁塔下的城市博物馆，读懂古都千年。",
+      "reason": "看完小雁塔直接进馆续摊",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.9355,
+        34.243
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "cat": "古迹",
+      "tags": [
+        "佛骨舍利",
+        "地宫珍宝",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 180,
+      "intro": "供奉佛指舍利的皇家寺院，地宫珍宝惊艳。",
+      "reason": "地宫出土的金银器值回车程",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        107.901,
+        34.442
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yongningmen-night",
+      "name": "永宁门夜景·南门广场",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "免费",
+        "城墙"
+      ],
+      "heat": 8,
+      "dur": 50,
+      "intro": "南门广场看箭楼亮灯，护城河倒影入画。",
+      "reason": "西安夜景封面照出自这里",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.942,
+        34.251
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dayanta-fountain",
+      "name": "大雁塔北广场喷泉",
+      "cat": "夜景",
+      "tags": [
+        "喷泉",
+        "免费",
+        "夜景"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "亚洲大型音乐喷泉，古塔前的水幕矩阵。",
+      "reason": "晚上场次配大雁塔灯光最震撼",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.964,
+        34.224
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "cat": "美食",
+      "tags": [
+        "非遗小吃",
+        "摔碗酒",
+        "晚上"
+      ],
+      "heat": 8,
+      "dur": 80,
+      "intro": "陕西非遗美食街区，摔碗酒从这火遍全国。",
+      "reason": "摔一碗酒，尝遍陕南陕北",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.965,
+        34.258
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "cat": "美食",
+      "tags": [
+        "本地小吃",
+        "早市",
+        "夜市"
+      ],
+      "heat": 8,
+      "dur": 80,
+      "intro": "老西安人的食堂，从早市吃到夜宵。",
+      "reason": "跟着本地人排队准没错",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.927,
+        34.3485
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "cat": "街区",
+      "tags": [
+        "唐风",
+        "室内",
+        "换装"
+      ],
+      "heat": 8,
+      "dur": 120,
+      "intro": "室内沉浸式唐风市井街区，全天候演出。",
+      "reason": "换身汉服当一回长安人",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.958,
+        34.211
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaozhai-seg",
+      "name": "赛格国际购物中心",
+      "cat": "商圈",
+      "tags": [
+        "亚洲长梯",
+        "室内瀑布",
+        "地铁口"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "小寨地标商场，长扶梯和室内瀑布双网红。",
+      "reason": "坐亚洲第一长梯上楼吃饭",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.946,
+        34.229
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "meng-changan",
+      "name": "《梦长安》大唐迎宾盛礼",
+      "cat": "演出",
+      "tags": [
+        "城墙",
+        "晚上",
+        "唐风"
+      ],
+      "heat": 8,
+      "dur": 80,
+      "intro": "永宁门瓮城里的仿古迎宾入城仪式。",
+      "reason": "吊桥落下那一刻万国来朝",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.942,
+        34.252
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hanyangling-museum",
+      "name": "汉阳陵博物院",
+      "cat": "博物馆",
+      "tags": [
+        "地下遗址馆",
+        "汉代陶俑",
+        "银杏林"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "汉景帝阳陵，玻璃栈道下看汉代俑坑。",
+      "reason": "脚踩玻璃走在两千年前的陪葬坑上",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.94,
+        34.438
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaanxi-archaeology",
+      "name": "陕西考古博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "新馆",
+        "文物修复",
+        "互动",
+        "周三闭馆"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "全国首座考古学科博物馆，出土现场搬进馆。",
+      "reason": "看文物怎么从土里到展柜",
+      "open": "09:00-17:00",
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.888,
+        34.135
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "big-mosque",
+      "name": "化觉巷清真大寺",
+      "cat": "古迹",
+      "tags": [
+        "千年古寺",
+        "中式清真寺",
+        "回坊内"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "藏在回坊深处的千年古寺，中式庭院格局。",
+      "reason": "小吃街旁一秒清净的古寺",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.932,
+        34.341
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵",
+      "cat": "古迹",
+      "tags": [
+        "武则天",
+        "无字碑",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "唐高宗与武则天合葬陵，无字碑立千年。",
+      "reason": "司马道石像生走完像读唐史",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.241,
+        34.571
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuyuanmen",
+      "name": "书院门",
+      "cat": "街区",
+      "tags": [
+        "文房四宝",
+        "字画",
+        "碑林旁"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "关中书院所在的文玩字画老街。",
+      "reason": "淘一方印章刻个名字带走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.94,
+        34.255
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dapiyuan",
+      "name": "大皮院",
+      "cat": "美食",
+      "tags": [
+        "夜宵",
+        "本地人",
+        "泡馍"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "回坊深处的老牌小吃巷，夜宵据点。",
+      "reason": "泡馍配小炒，本地人的深夜食堂",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.9305,
+        34.344
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "cat": "公园",
+      "tags": [
+        "唐玄宗旧宫",
+        "免费",
+        "郁金香"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "唐玄宗理政旧宫改建的市民公园。",
+      "reason": "西安人从小划船到大的公园",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.976,
+        34.247
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "cat": "亲子",
+      "tags": [
+        "海洋馆",
+        "室内",
+        "企鹅"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "西北老牌海洋馆，企鹅白鲸都在。",
+      "reason": "大唐芙蓉园旁的遛娃标配",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.981,
+        34.208
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "秦岭野生动物园",
+      "cat": "亲子",
+      "tags": [
+        "猛兽投喂",
+        "秦岭脚下",
+        "园区大"
+      ],
+      "heat": 7.5,
+      "dur": 180,
+      "intro": "秦岭脚下的山地动物园，车行区看猛兽。",
+      "reason": "坐投喂车看老虎扒窗吃肉",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.832,
+        34.064
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tuoling-legend",
+      "name": "《驼铃传奇》秀",
+      "cat": "演出",
+      "tags": [
+        "丝路",
+        "室内",
+        "旋转观众席"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "会跑的旋转观众席，丝路驼队主题大秀。",
+      "reason": "狼群从头顶跑过时全场尖叫",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        109.066,
+        34.334
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "taibai-shan",
+      "name": "太白山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "秦岭主峰",
+        "大爷海",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 420,
+      "intro": "秦岭主峰拔仙台，六月积雪的高山秘境。",
+      "reason": "一日历四季，山顶还有冰川湖",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        107.748,
+        34.06
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "banpo-museum",
+      "name": "西安半坡博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "仰韶文化",
+        "遗址大厅",
+        "六千年"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "六千年前仰韶村落遗址，人面鱼纹盆出土地。",
+      "reason": "历史课本第一页的现场",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        109.021,
+        34.272
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tang-west-market",
+      "name": "大唐西市博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "丝路起点",
+        "遗址建馆",
+        "民营"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "建在唐长安西市遗址上的民营博物馆。",
+      "reason": "站在丝绸之路起点的车辙印上",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.897,
+        34.244
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanzhong-minsu",
+      "name": "关中民俗艺术博物院",
+      "cat": "博物馆",
+      "tags": [
+        "明清古宅",
+        "拴马桩",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "整体搬迁复建的四十座明清关中古民居。",
+      "reason": "八千根拴马桩排成阵，场面罕见",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        108.926,
+        34.056
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "maoling-museum",
+      "name": "茂陵博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "霍去病墓",
+        "马踏匈奴",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "汉武帝茂陵旁，霍去病墓石雕群在馆。",
+      "reason": "马踏匈奴原石，教科书配图真身",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        108.561,
+        34.328
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gaos-mansion",
+      "name": "高家大院",
+      "cat": "古迹",
+      "tags": [
+        "皮影戏",
+        "明清民居",
+        "回坊内"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "北院门里的明代榜眼府，可看皮影戏。",
+      "reason": "回坊逛累了进来听段皮影",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.934,
+        34.3435
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qujiang-pool",
+      "name": "曲江池遗址公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "环湖步道",
+        "夜景"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "唐代皇家游宴池苑，环湖步道夜景好。",
+      "reason": "傍晚绕湖一圈，看不夜城亮灯",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.977,
+        34.202
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kunming-pool",
+      "name": "昆明池·七夕公园",
+      "cat": "公园",
+      "tags": [
+        "汉武帝水师",
+        "鹊桥",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "汉武帝操练水军的古湖，今为七夕主题园。",
+      "reason": "巨型汉武楼船雕塑很出片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.744,
+        34.211
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "cat": "商圈",
+      "tags": [
+        "大雁塔旁",
+        "屋顶观景",
+        "潮牌"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "大雁塔旁的青年商场，屋顶花园望塔。",
+      "reason": "顶层露台免费拍大雁塔合影",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.968,
+        34.2165
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaonanmen",
+      "name": "小南门早市夜市",
+      "cat": "美食",
+      "tags": [
+        "早市",
+        "早去",
+        "城墙根"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "勿幕门下的清晨集市，油茶麻花配肘子。",
+      "reason": "七点前到，跟着大爷大妈吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.931,
+        34.252
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "cat": "亲子",
+      "tags": [
+        "过山车",
+        "乐园",
+        "夜场"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "西北大型主题乐园，过山车数量领先。",
+      "reason": "年轻人尖叫一整天的乐园",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.988,
+        34.535
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cuihua-shan",
+      "name": "翠华山",
+      "cat": "山水",
+      "tags": [
+        "山崩奇观",
+        "天池",
+        "避暑"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "山崩地质奇观公园，天池碧水映秦岭。",
+      "reason": "西安人避暑的后花园",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.983,
+        34.016
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanwutai",
+      "name": "南五台",
+      "cat": "山水",
+      "tags": [
+        "佛教名山",
+        "云海",
+        "登高"
+      ],
+      "heat": 7,
+      "dur": 210,
+      "intro": "终南山佛教名山，五峰登顶看云海。",
+      "reason": "登顶那一刻关中平原尽收眼底",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.941,
+        34.041
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lishan",
+      "name": "骊山",
+      "cat": "山水",
+      "tags": [
+        "烽火台",
+        "兵谏亭",
+        "索道"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "烽火戏诸侯发生地，西安事变兵谏亭。",
+      "reason": "坐索道上看华清宫全景",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        109.205,
+        34.368
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qinglong-temple",
+      "name": "青龙寺遗址景区",
+      "cat": "古迹",
+      "tags": [
+        "樱花",
+        "空海",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "密宗祖庭，空海求法处，三月樱花满城。",
+      "reason": "樱花季西安最美的免费景点",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.979,
+        34.232
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "cat": "古迹",
+      "tags": [
+        "藏传佛教",
+        "免费",
+        "城墙下"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "陕西唯一的藏传格鲁派寺院，康熙敕建。",
+      "reason": "城墙西北角的金顶小西藏",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.9285,
+        34.355
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuilu-an",
+      "name": "水陆庵",
+      "cat": "古迹",
+      "tags": [
+        "壁塑",
+        "小敦煌",
+        "蓝田"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "三千尊明代彩塑满墙，号称第二敦煌。",
+      "reason": "满墙壁塑密密麻麻，震撼到头皮发麻",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        109.319377,
+        34.165302
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "3043551103956539078",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "xian-incident",
+      "name": "西安事变纪念馆（张学良公馆）",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "民国公馆",
+        "室内",
+        "周一闭馆"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "张学良公馆旧址，改变中国命运的谈判地。",
+      "reason": "建国路上最沉甸甸的一栋小楼",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        108.967073,
+        34.257386
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "14180835595035818070",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "expo-park",
+      "name": "西安世博园",
+      "cat": "公园",
+      "tags": [
+        "长安塔",
+        "免费",
+        "园艺"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "2011世园会旧址，长安塔下的湖滨园。",
+      "reason": "浐灞边散步看长安塔倒影",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        109.060098,
+        34.32206
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "7940860109495007633",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "shunchengxiang",
+      "name": "顺城巷",
+      "cat": "街区",
+      "tags": [
+        "城墙根",
+        "咖啡",
+        "慢逛"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "贴着城墙根的老巷，酒吧咖啡馆扎堆。",
+      "reason": "城墙根下喝杯咖啡看大爷下棋",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.95023,
+        34.25202
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "11167312986927397109",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "xiying-film",
+      "name": "西影电影圈子",
+      "cat": "街区",
+      "tags": [
+        "电影博物馆",
+        "海报墙",
+        "文创"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "西影厂老厂区改造的电影主题街区。",
+      "reason": "大话西游海报墙前打个卡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.973478,
+        34.223043
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "2040948695299541955",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "yisushe-block",
+      "name": "易俗社文化街区",
+      "cat": "街区",
+      "tags": [
+        "秦腔",
+        "老字号",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "百年易俗社戏台所在，秦腔主题街区。",
+      "reason": "听一嗓子秦腔吼出老陕魂",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.9485,
+        34.346
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaanxi-nature",
+      "name": "陕西自然博物馆",
+      "cat": "亲子",
+      "tags": [
+        "恐龙",
+        "室内",
+        "电视塔旁"
+      ],
+      "heat": 6.5,
+      "dur": 100,
+      "intro": "电视塔旁的自然馆，恐龙化石与秦岭动物。",
+      "reason": "雨天遛娃备选，就在电视塔下",
+      "open": "09:00-17:00",
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.946544,
+        34.19738
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "8138657091502033495",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "g-park",
+      "name": "老城根G park",
+      "cat": "商圈",
+      "tags": [
+        "开放式街区",
+        "潮牌",
+        "夜景"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "城墙西北角外的开放式潮流街区。",
+      "reason": "年轻人夜生活聚集地",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.918,
+        34.3545
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "taiping-forest",
+      "name": "太平国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "瀑布群",
+        "紫荆花",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "秦岭北麓瀑布群，四月紫荆花海。",
+      "reason": "八瀑十八潭，夏天凉快十度",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        108.597,
+        33.991
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiangji-temple",
+      "name": "香积寺",
+      "cat": "古迹",
+      "tags": [
+        "净土祖庭",
+        "王维",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "净土宗祖庭，王维诗里的千年古刹。",
+      "reason": "不知香积寺，数里入云峰",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.869,
+        34.151
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "louguantai",
+      "name": "楼观台",
+      "cat": "古迹",
+      "tags": [
+        "道德经",
+        "老子",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "老子著《道德经》的说经台，道教祖庭。",
+      "reason": "终南山下问道，竹林深处隐居气",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        108.326752,
+        34.064386
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "1953007897915271817",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "hancheng-lake",
+      "name": "汉城湖公园",
+      "cat": "公园",
+      "tags": [
+        "大风阁",
+        "免费",
+        "汉文化"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "依汉长安城遗址而建的环湖公园。",
+      "reason": "大风阁登高看汉城墙遗址",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.883,
+        34.352
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chanba-wetland",
+      "name": "浐灞国家湿地公园",
+      "cat": "公园",
+      "tags": [
+        "候鸟",
+        "芦苇",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "渭河畔的城市湿地，秋冬候鸟成群。",
+      "reason": "芦苇栈道走一圈，野趣十足",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        109.06,
+        34.415
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dahu-1935",
+      "name": "大华·1935",
+      "cat": "街区",
+      "tags": [
+        "文创园",
+        "老纱厂",
+        "展览"
+      ],
+      "heat": 6,
+      "dur": 80,
+      "intro": "百年大华纱厂改造的文创艺术区。",
+      "reason": "老纱厂锯齿形屋顶很好拍",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.975383,
+        34.284954
+      ],
+      "coord_src": "tencent",
+      "tencent_poi_id": "6745653540425894479",
+      "refreshed_at": "2026-10-11"
+    },
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "cat": "古镇",
+      "tags": [
+        "茯茶",
+        "关中美食",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "泾河边的茯茶主题小镇，茶馆小吃密集。",
+      "reason": "一壶茯茶配辣子锅盔，很关中",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.923,
+        34.532
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shijingli",
+      "name": "诗经里",
+      "cat": "古镇",
+      "tags": [
+        "诗经主题",
+        "夜景",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 100,
+      "intro": "沣河畔的诗经主题小镇，夜游灯光雅致。",
+      "reason": "穿汉服走进诗经里的句子",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        108.716,
+        34.253
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "han-weiyang",
+      "name": "汉长安城未央宫遗址",
+      "cat": "古迹",
+      "tags": [
+        "汉宫遗址",
+        "世界遗产",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "大汉帝国皇宫遗址，丝绸之路的起点。",
+      "reason": "荒草高台，两千年长安的起点",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        108.856,
+        34.356
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qinzhen",
+      "name": "秦镇（秦渡镇）",
+      "cat": "古镇",
+      "tags": [
+        "米皮发源地",
+        "老街",
+        "鄠邑"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "秦渡镇老街，秦镇米皮的发源地。",
+      "reason": "为一碗正宗米皮跑一趟也值",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        108.641,
+        34.071
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

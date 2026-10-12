@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>分享 · 成都三日路线</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page { padding-bottom: 130px; }
+  .share-hero { padding: 60px 28px 0; }
+  .from {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 11px; letter-spacing: .16em; color: var(--ink-2);
+    padding-bottom: 8px; border-bottom: .5px solid var(--hairline);
+  }
+  .from .ic { width: 13px; height: 13px; }
+  .share-hero h1 { font-family: var(--serif); font-size: 38px; margin-top: 26px; line-height: 1.15; }
+  .share-hero h1 em { font-style: italic; font-weight: 400; }
+  .share-hero .meta { font-size: 12.5px; color: var(--ink-2); margin-top: 12px; letter-spacing: .03em; }
+
+  .stats-line {
+    display: flex; gap: 0; margin: 26px 28px 0; padding: 13px 0;
+    border-top: .5px solid var(--hairline); border-bottom: .5px solid var(--hairline);
+  }
+  .stats-line div { flex: 1; text-align: center; }
+  .stats-line div + div { border-left: .5px solid var(--hairline); }
+  .stats-line b { font-family: var(--serif); font-size: 18px; display: block; }
+  .stats-line span { font-size: 9.5px; letter-spacing: .14em; color: var(--ink-3); }
+
+  .day-group { padding: 0 28px; }
+  .day-label {
+    display: flex; align-items: baseline; gap: 8px;
+    margin: 26px 0 4px;
+  }
+  .day-label b { font-family: var(--serif); font-size: 15px; }
+  .day-label span { font-size: 10.5px; letter-spacing: .12em; color: var(--ink-3); }
+  .day-label i { width: 18px; height: 2.5px; border-radius: 2px; align-self: center; }
+
+  .mini {
+    display: flex; align-items: baseline; gap: 12px;
+    padding: 11px 2px; border-bottom: .5px solid var(--hairline);
+  }
+  .mini:last-child { border-bottom: none; }
+  .mini .t { font-size: 11px; color: var(--ink-3); width: 72px; flex: none; font-variant-numeric: tabular-nums; }
+  .mini .n { font-size: 14.5px; font-weight: 600; flex: 1; }
+  .mini .g { font-size: 10.5px; color: var(--ink-3); }
+
+  .brand {
+    margin: 44px 28px 0; padding-top: 18px;
+    border-top: .5px solid var(--hairline);
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .brand b { font-family: var(--serif); font-size: 14px; letter-spacing: .28em; }
+  .brand span { font-size: 10.5px; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="share-hero">
+    <div class="from">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+      阿杰分享的路线
+    </div>
+    <h1>成都，<br><em>三日漫游。</em></h1>
+    <div class="meta">10月9日–11日 · 每日从春熙路出发返回</div>
+  </div>
+
+  <div class="stats-line">
+    <div><b>3</b><span>天</span></div>
+    <div><b>11</b><span>站点</span></div>
+    <div><b>56.8</b><span>公里</span></div>
+    <div><b>19h</b><span>游览</span></div>
+  </div>
+
+  <div class="day-group">
+    <div class="day-label"><i style="background:var(--d1)"></i><b>D1 · 城西文化线</b><span>12.4 KM</span></div>
+    <div class="mini"><span class="t">09:30–11:30</span><span class="n">宽窄巷子</span><span class="g">历史街区</span></div>
+    <div class="mini"><span class="t">11:45–12:45</span><span class="n">人民公园 · 鹤鸣茶社</span><span class="g">本地人同款</span></div>
+    <div class="mini"><span class="t">13:55–15:25</span><span class="n">成都博物馆</span><span class="g">免费 · 室内</span></div>
+    <div class="mini"><span class="t">15:50–19:00</span><span class="n">武侯祠 → 锦里</span><span class="g">红墙 · 夜景晚餐</span></div>
+
+    <div class="day-label"><i style="background:var(--d2)"></i><b>D2 · 城北熊猫线</b><span>28.6 KM</span></div>
+    <div class="mini"><span class="t">08:30–12:00</span><span class="n">大熊猫繁育研究基地</span><span class="g">早去 · 最活跃</span></div>
+    <div class="mini"><span class="t">14:00–19:30</span><span class="n">东郊记忆 → 建设路小吃街</span><span class="g">文创园 · 晚餐</span></div>
+
+    <div class="day-label"><i style="background:var(--d3)"></i><b>D3 · 西郊遗址线</b><span>15.8 KM</span></div>
+    <div class="mini"><span class="t">09:30–13:00</span><span class="n">杜甫草堂 → 青羊宫</span><span class="g">诗圣故居 · 道观</span></div>
+    <div class="mini"><span class="t">14:30–17:30</span><span class="n">金沙遗址博物馆</span><span class="g">太阳神鸟</span></div>
+  </div>
+
+  <div class="brand">
+    <b>点定旅途</b>
+    <span>从任何地点 · 生成你的路线</span>
+  </div>
+
+  <div class="dock">
+    <button class="btn-primary" onclick="location.href='start.html'">制作我的路线</button>
+  </div>
+
+</div>
+</body>
+</html>

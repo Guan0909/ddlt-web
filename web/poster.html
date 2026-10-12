@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>点定旅途 · 海报预览</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  body { background: #101010; }
+  .page { background: #101010; display: flex; flex-direction: column; align-items: center; padding: 36px 0 60px; max-width: none; }
+  .hint { color: rgba(255,255,255,.42); font-size: 12px; letter-spacing: .18em; margin-bottom: 20px; }
+
+  /* 海报本体 3:4：内部 Canvas 750×1000 渲染，CSS 缩放显示（宽 ≤340px） */
+  .poster-view {
+    width: min(340px, 88vw);
+    border-radius: 6px;
+    box-shadow: 0 30px 70px rgba(0,0,0,.55);
+    display: block;
+  }
+
+  .save-btn {
+    margin-top: 26px; display: flex; align-items: center; gap: 8px;
+    background: #FAFBF8; color: #182119; font-size: 14px; font-weight: 600; letter-spacing: .06em;
+    padding: 14px 36px; border-radius: 999px; box-shadow: 0 12px 32px rgba(0,0,0,.45);
+  }
+  .save-btn .ic { width: 16px; height: 16px; }
+  .tip { color: rgba(255,255,255,.3); font-size: 11px; margin-top: 16px; letter-spacing: .05em; }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="hint">海报预览 · 3:4 · 长按可保存</p>
+
+  <canvas id="pc" class="poster-view" width="750" height="1000"></canvas>
+  <img id="pimg" class="poster-view" alt="点定旅途路线海报" style="display:none">
+
+  <button class="save-btn" id="saveBtn">
+    <svg class="ic" viewBox="0 0 24 24"><path d="M12 4v12M6.5 10.5 12 16l5.5-5.5"/><path d="M4 20h16"/></svg>
+    保存图片
+  </button>
+  <p class="tip">P3 离线示意底图 · 正式版底图为腾讯静态图 · 每天一条配色路线</p>
+</div>
+<script src="assets/engine.bundle.js"></script>
+<script src="assets/app.js"></script>
+<script>
+(() => {
+  const route = DDN.loadRoute();
+  if (!route || !route.dayPlans || !route.dayPlans.length) {
+    location.replace('index.html');
+    return;
+  }
+
+  // 设计坐标 340×453.33（3:4），Canvas 750×1000，等比放大绘制
+  const W = 340, H = 340 * 4 / 3;
+  const canvas = document.getElementById('pc');
+  const ctx = canvas.getContext('2d');
+  ctx.scale(canvas.width / W, canvas.height / H);
+
+  const SERIF = 'Georgia, "Times New Roman", "Songti SC", "STSong", "SimSun", serif';
+  const SANS = '-apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif';
+  const INK = '#182119', HAIR = '#E3E8E0', MUTE = '#9C998C';
+
+  function rrect(x, y, w, h, r) {
+    ctx.beginPath();
+    ctx.moveTo(x + r, y);
+    ctx.arcTo(x + w, y, x + w, y + h, r);
+    ctx.arcTo(x + w, y + h, x, y + h, r);
+    ctx.arcTo(x, y + h, x, y, r);
+    ctx.arcTo(x, y, x + w, y, r);
+    ctx.closePath();
+  }
+  function fitText(text, maxW) {
+    if (ctx.measureText(text).width <= maxW) return text;
+    let t = text;
+    while (t.length && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
+    return t + '…';
+  }
+
+  // ---------- 纸白底 ----------
+  ctx.fillStyle = '#FAFBF8';
+  ctx.fillRect(0, 0, W, H);
+
+  const padX = 24, right = W - padX;
+  const days = route.dayPlans;
+
+  // ---------- 头部：城市衬线大字 + 拼音占位 + 日期行 ----------
+  ctx.textBaseline = 'alphabetic';
+  ctx.textAlign = 'left';
+  ctx.fillStyle = INK;
+  ctx.font = `700 36px ${SERIF}`;
+  ctx.fillText(route.city || '', padX, 52);
+  ctx.font = `600 8.5px ${SANS}`;
+  try { ctx.letterSpacing = '4px'; } catch (e) {}
+  ctx.fillStyle = MUTE;
+  ctx.fillText(DDN.pinyinOf(route.city), padX, 67);
+  try { ctx.letterSpacing = '0px'; } catch (e) {}
+
+  ctx.textAlign = 'right';
+  ctx.font = `400 10px ${SANS}`;
+  ctx.fillStyle = '#6E6A5E';
+  ctx.fillText(DDN.dateRange(route.startDate, route.days), right, 40);
+  ctx.fillText(`${DDN.dayCn(route.days)}日漫游 · 每日环线`, right, 57);
+  ctx.textAlign = 'left';
+
+  ctx.fillStyle = INK;
+  ctx.fillRect(padX, 79.5, right - padX, 1);
+
+  // ---------- 地图框（无在线底图，全路线叠加投影） ----------
+  const mapX = padX, mapY = 92, mapW = right - padX;
+  const mapH = days.length <= 3 ? 224 : Math.max(160, 224 - (days.length - 3) * 22);
+
+  rrect(mapX, mapY, mapW, mapH, 4);
+  ctx.fillStyle = '#F3F5F0';
+  ctx.fill();
+  ctx.save();
+  rrect(mapX, mapY, mapW, mapH, 4);
+  ctx.clip();
+
+  // 收集所有日的点做统一投影
+  const dayStops = days.map(dp => dp.items.filter(i => i.type === 'stop'));
+  const allPts = [{ lng: route.origin.lng, lat: route.origin.lat }];
+  dayStops.forEach(ss => ss.forEach(s => allPts.push({ lng: s.coord.lng, lat: s.coord.lat })));
+  const proj = DDN.makeProjector(allPts, mapW, mapH, 18);
+  const O = proj({ lng: route.origin.lng, lat: route.origin.lat });
+
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  for (const dp of days) {
+    const ss = dayStops[days.indexOf(dp)];
+    if (!ss.length) continue;
+    const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O];
+    const trace = () => {
+      ctx.beginPath();
+      pts.forEach((p, i) => {
+        const x = mapX + p.x, y = mapY + p.y;
+        if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+      });
+    };
+    ctx.strokeStyle = 'rgba(255,255,255,.92)';
+    ctx.lineWidth = 5;
+    trace(); ctx.stroke();
+    ctx.strokeStyle = dp.color;
+    ctx.lineWidth = 2.6;
+    trace(); ctx.stroke();
+  }
+  // 站点彩点
+  for (const dp of days) {
+    for (const s of dayStops[days.indexOf(dp)]) {
+      const p = proj({ lng: s.coord.lng, lat: s.coord.lat });
+      ctx.beginPath();
+      ctx.arc(mapX + p.x, mapY + p.y, 3.6, 0, Math.PI * 2);
+      ctx.fillStyle = dp.color;
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.4;
+      ctx.stroke();
+    }
+  }
+  // 起点黑圆「起」
+  ctx.beginPath();
+  ctx.arc(mapX + O.x, mapY + O.y, 7, 0, Math.PI * 2);
+  ctx.fillStyle = INK;
+  ctx.fill();
+  ctx.strokeStyle = '#fff';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  ctx.fillStyle = '#fff';
+  ctx.font = `700 7px ${SANS}`;
+  ctx.textAlign = 'center';
+  ctx.fillText('起', mapX + O.x, mapY + O.y + 2.6);
+  ctx.textAlign = 'left';
+
+  // 图例（左上）：每日一色色条 + label
+  ctx.font = `700 9px ${SANS}`;
+  let legW = 0;
+  const legRows = days.map(dp => {
+    const t1 = `D${dp.day}`, t2 = DDN.themeOf(dp.label);
+    const w = 13 + 5 + ctx.measureText(t1).width + 5 + ctx.measureText(t2).width;
+    legW = Math.max(legW, w);
+    return { dp, t1, t2 };
+  });
+  const legX = mapX + 8, legY = mapY + 8, legRowH = 14;
+  rrect(legX, legY, legW + 18, legRows.length * legRowH + 12, 4);
+  ctx.fillStyle = 'rgba(251,251,246,.94)';
+  ctx.fill();
+  legRows.forEach((r, i) => {
+    const y = legY + 6 + i * legRowH;
+    rrect(legX + 9, y + 4, 13, 3, 1.5);
+    ctx.fillStyle = r.dp.color;
+    ctx.fill();
+    ctx.fillStyle = INK;
+    ctx.font = `700 9px ${SANS}`;
+    ctx.fillText(r.t1, legX + 27, y + 8);
+    const w1 = ctx.measureText(r.t1).width;
+    ctx.fillStyle = '#8A867A';
+    ctx.font = `500 9px ${SANS}`;
+    ctx.fillText(r.t2, legX + 27 + w1 + 5, y + 8);
+  });
+
+  // 右下占位标注
+  const attr = '地图数据 © 腾讯位置服务';
+  ctx.font = `400 7px ${SANS}`;
+  const attrW = ctx.measureText(attr).width;
+  rrect(mapX + mapW - 6 - attrW - 8, mapY + mapH - 5 - 12, attrW + 8, 12, 2);
+  ctx.fillStyle = 'rgba(255,255,255,.75)';
+  ctx.fill();
+  ctx.fillStyle = 'rgba(0,0,0,.45)';
+  ctx.textAlign = 'right';
+  ctx.fillText(attr, mapX + mapW - 10, mapY + mapH - 8);
+  ctx.textAlign = 'left';
+
+  ctx.restore();
+  rrect(mapX, mapY, mapW, mapH, 4);
+  ctx.strokeStyle = 'rgba(0,0,0,.18)';
+  ctx.lineWidth = .7;
+  ctx.stroke();
+
+  // ---------- 每日摘要行 ----------
+  const padB = 14, brandH = 22, statsH = 36;
+  const statsTop = H - padB - brandH - statsH;
+  const daysY = mapY + mapH + 8;
+  const rowH = Math.min(26, (statsTop - daysY) / days.length);
+  days.forEach((dp, i) => {
+    const mid = daysY + i * rowH + rowH * 0.68;
+    ctx.font = `700 12px ${SERIF}`;
+    ctx.fillStyle = dp.color;
+    ctx.fillText(`D${dp.day}`, padX, mid);
+    const kmText = dp.stats.km.toFixed(1);
+    ctx.font = `400 9px ${SANS}`;
+    const kmW = ctx.measureText(kmText).width;
+    ctx.fillStyle = MUTE;
+    ctx.textAlign = 'right';
+    ctx.fillText(kmText, right, mid);
+    ctx.textAlign = 'left';
+    const names = dayStops[i].map(s => s.name).join(' → ') || '（本日站点未排入）';
+    ctx.font = `600 10.5px ${SANS}`;
+    ctx.fillStyle = INK;
+    ctx.fillText(fitText(names, right - 52 - kmW - 10), 52, mid);
+    if (i < days.length - 1) {
+      ctx.fillStyle = HAIR;
+      ctx.fillRect(padX, daysY + (i + 1) * rowH - .25, right - padX, .5);
+    }
+  });
+
+  // ---------- 底部统计行 ----------
+  ctx.fillStyle = INK;
+  ctx.fillRect(padX, statsTop, right - padX, 1);
+  const stats = [
+    [String(route.days), '天'],
+    [String(route.totals.stops), '站点'],
+    [String(route.totals.km), '公里'],
+    [DDN.fmtHour(route.totals.visitMin) + 'h', '游览'],
+  ];
+  const cellW = (right - padX) / stats.length;
+  stats.forEach((s, i) => {
+    const cx = padX + cellW * i + cellW / 2;
+    ctx.textAlign = 'center';
+    ctx.font = `700 15px ${SERIF}`;
+    ctx.fillStyle = INK;
+    ctx.fillText(s[0], cx, statsTop + 18);
+    ctx.font = `400 8px ${SANS}`;
+    ctx.fillStyle = MUTE;
+    ctx.fillText(s[1], cx, statsTop + 30);
+    if (i > 0) {
+      ctx.fillStyle = HAIR;
+      ctx.fillRect(padX + cellW * i - .25, statsTop + 6, .5, 24);
+    }
+  });
+  ctx.textAlign = 'left';
+
+  // ---------- 品牌行 ----------
+  const brandY = H - padB;
+  ctx.font = `700 10px ${SERIF}`;
+  try { ctx.letterSpacing = '2.6px'; } catch (e) {}
+  ctx.fillStyle = INK;
+  ctx.fillText('点定旅途', padX, brandY);
+  try { ctx.letterSpacing = '0px'; } catch (e) {}
+  ctx.font = `400 8.5px ${SANS}`;
+  ctx.fillStyle = MUTE;
+  ctx.textAlign = 'right';
+  ctx.fillText('从任何地点 · 生成你的路线', right, brandY);
+  ctx.textAlign = 'left';
+
+  // ---------- 长按可保存：img 替换显示 ----------
+  const img = document.getElementById('pimg');
+  img.src = canvas.toDataURL('image/png');
+  img.onload = () => {
+    canvas.style.display = 'none';
+    img.style.display = 'block';
+  };
+
+  // ---------- 保存图片 ----------
+  document.getElementById('saveBtn').onclick = () => {
+    canvas.toBlob(blob => {
+      if (!blob) return;
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `点定旅途-${route.city || ''}${DDN.dayCn(route.days)}日路线.png`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+    }, 'image/png');
+  };
+})();
+</script>
+</body>
+</html>

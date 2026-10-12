@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>点定旅途 · 起点</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .page { padding: 0 28px 120px; }
+
+  .masthead {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 22px 0 0;
+  }
+  .wordmark { font-family: var(--serif); font-size: 15px; font-weight: 700; letter-spacing: .3em; }
+  .city {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 13px; font-weight: 500; color: var(--ink);
+    padding-bottom: 2px; border-bottom: .5px solid var(--ink);
+  }
+  .city .ic { width: 14px; height: 14px; }
+
+  .hero { padding: 72px 0 0; }
+  .hero .display { font-size: 44px; line-height: 1.18; }
+  .hero .display em { font-style: italic; font-weight: 400; }
+  .hero .sub { margin-top: 18px; max-width: 260px; }
+
+  .search {
+    margin-top: 52px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 16px 2px 14px;
+    border-bottom: 1px solid var(--ink);
+  }
+  .search .ic { color: var(--ink-3); }
+  .search input {
+    flex: 1; border: none; outline: none; background: transparent;
+    font-size: 16.5px; font-family: var(--font); color: var(--ink);
+  }
+  .search input::placeholder { color: var(--ink-3); }
+  .locate {
+    display: flex; align-items: center; gap: 5px;
+    font-size: 13px; font-weight: 500; color: var(--ink-2);
+  }
+  .locate .ic { width: 15px; height: 15px; color: var(--ink-2); }
+
+  .days { margin-top: 48px; }
+  .days-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-top: 18px;
+  }
+  .days-row button {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    font-family: var(--serif); font-size: 26px; color: var(--ink-3);
+    padding-bottom: 10px; position: relative; transition: color .15s;
+  }
+  .days-row button small { font-family: var(--font); font-size: 10px; letter-spacing: .2em; }
+  .days-row button.on { color: var(--ink); }
+  .days-row button.on::after {
+    content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 4px; height: 4px; border-radius: 50%; background: var(--ink);
+  }
+
+  .note { margin-top: 52px; padding-top: 18px; border-top: .5px solid var(--hairline); }
+  .note p { font-size: 12.5px; color: var(--ink-2); line-height: 1.8; }
+
+  .foot { margin-top: 44px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <div class="wordmark">点定旅途</div>
+    <button class="city">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg>
+      成都
+    </button>
+  </header>
+
+  <div class="hero">
+    <h1 class="display">今天，<br>从这里<em>出发。</em></h1>
+    <p class="sub">酒店、小区、某个景区门口——任何地点都行。路线、时间和通勤，交给我。</p>
+  </div>
+
+  <div class="search">
+    <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="text" placeholder="酒店 / 小区 / 任意地点">
+    <button class="locate">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+      定位
+    </button>
+  </div>
+
+  <section class="days">
+    <p class="label">玩几天 · DAYS</p>
+    <div class="days-row">
+      <button>1<small>天</small></button>
+      <button>2<small>天</small></button>
+      <button class="on">3<small>天</small></button>
+      <button>4<small>天</small></button>
+      <button>5<small>天</small></button>
+    </div>
+  </section>
+
+  <div class="note">
+    <p>起点是景区也可以——它会自动成为第 1 站，接着往下排。从现在这一刻开始计时，随时生成，随时出发。</p>
+  </div>
+
+  <p class="foot">已覆盖 60+ 热门旅游城市</p>
+
+  <div class="dock">
+    <button class="btn-primary" onclick="location.href='result.html'">
+      生成我的路线
+      <svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>
+  </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+{
+  "city": "上海",
+  "date": "2026-10-11",
+  "dryRun": false,
+  "total": 70,
+  "ok": [],
+  "mismatch": [],
+  "error": [
+    {
+      "id": "waitan",
+      "name": "外滩",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "disney",
+      "name": "上海迪士尼度假区",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yuyuan",
+      "name": "豫园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shanghai-museum",
+      "name": "上海博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "nanjing-road",
+      "name": "南京路步行街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "wukang-road",
+      "name": "武康路·武康大楼",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "lujiazui",
+      "name": "陆家嘴·滨江大道",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zhujiajiao",
+      "name": "朱家角古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "natural-history-museum",
+      "name": "上海自然博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "astronomy-museum",
+      "name": "上海天文馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "tianzifang",
+      "name": "田子坊",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xintiandi",
+      "name": "新天地",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "chenghuangmiao",
+      "name": "城隍庙·豫园商城",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "jingan-temple",
+      "name": "静安寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "china-art-museum",
+      "name": "中华艺术宫",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "wild-animal-park",
+      "name": "上海野生动物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shanghai-zoo",
+      "name": "上海动物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "ocean-aquarium",
+      "name": "上海海洋水族馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "haichang-ocean",
+      "name": "上海海昌海洋公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "happy-valley-sh",
+      "name": "上海欢乐谷",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "era-circus",
+      "name": "上海马戏城《时空之旅》",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "sleep-no-more",
+      "name": "《不眠之夜》沉浸式戏剧",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shanghai-grand-theatre",
+      "name": "上海大剧院",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "huaihai-road",
+      "name": "淮海中路",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xujiahui",
+      "name": "徐家汇商圈",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qiantan-taikoo",
+      "name": "前滩太古里",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "huanghe-road",
+      "name": "黄河路美食街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yunnan-road",
+      "name": "云南南路美食街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "wujiang-road",
+      "name": "吴江路小吃街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "changli-road",
+      "name": "昌里路夜市",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "korea-street",
+      "name": "虹泉路韩国街",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "anfu-road",
+      "name": "安福路",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "yuyuan-road",
+      "name": "愚园路",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "sinan",
+      "name": "思南公馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "old-millfun",
+      "name": "1933老场坊",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "columbia-circle",
+      "name": "上生新所",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zhangyuan",
+      "name": "张园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "north-bund",
+      "name": "北外滩滨江",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "huangpu-cruise",
+      "name": "黄浦江游船（十六铺码头）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "century-park",
+      "name": "世纪公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gongqing-forest",
+      "name": "共青森林公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "twin-hills",
+      "name": "世博文化公园·双子山",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "fuxing-park",
+      "name": "复兴公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shanghai-botanical",
+      "name": "上海植物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "chenshan-botanical",
+      "name": "辰山植物园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "gucun-park",
+      "name": "顾村公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "binjiang-forest",
+      "name": "滨江森林公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qingxi-country-park",
+      "name": "青西郊野公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dongping-forest",
+      "name": "东平国家森林公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "qibao",
+      "name": "七宝古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "nanxiang",
+      "name": "南翔古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "guyi-garden",
+      "name": "古猗园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "xinchang",
+      "name": "新场古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "fengjing",
+      "name": "枫泾古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zhaojialou",
+      "name": "召稼楼古镇",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "sheshan",
+      "name": "佘山国家森林公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "dianshan-lake",
+      "name": "淀山湖·彩虹桥",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "chongming-dongtan",
+      "name": "崇明东滩湿地",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "jinshan-beach",
+      "name": "金山城市沙滩",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "longhua-temple",
+      "name": "龙华寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "jade-buddha-temple",
+      "name": "玉佛禅寺",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "st-ignatius",
+      "name": "徐家汇天主堂",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zuibaichi",
+      "name": "醉白池公园",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "guangfulin",
+      "name": "广富林文化遗址",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "shanghai-history-museum",
+      "name": "上海历史博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "expo-museum",
+      "name": "世博会博物馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "long-museum",
+      "name": "龙美术馆（西岸馆）",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "museum-of-art-pudong",
+      "name": "浦东美术馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "sihang",
+      "name": "四行仓库抗战纪念馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "site-of-first-congress",
+      "name": "中共一大纪念馆",
+      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
+    }
+  ]
+}

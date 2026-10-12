@@ -1,0 +1,37 @@
+'use strict';
+// genRoute：起点 + 天数 → 引擎生成路线 → 真实通勤回填 → 存 routes（128 位 ID）→ 返回
+
+const engine = require('./engine/index');
+const store = require('./store');
+const { parseBody, ok, fail } = require('./http');
+const { loadSpots, refineWithRealCommute } = require('./routeKit');
+
+exports.main = async (event) => {
+  if (!(await store.rateLimit(event))) return fail('请求太频繁，请稍后再试', 429);
+  const body = parseBody(event);
+  if (!body || !body.city || !body.origin || body.origin.lng == null) return fail('参数不完整');
+  const spots = loadSpots(body.city);
+  if (!spots) return fail('该城市暂未开通');
+
+  const days = Math.min(5, Math.max(1, +body.days || 3));
+  const startDate = /^\d{4}-\d{2}-\d{2}$/.test(body.startDate || '')
+    ? body.startDate : engine.addDays(new Date().toISOString().slice(0, 10), 1);
+
+  try {
+    const route = engine.genRoute({
+      spots,
+      origin: { name: String(body.origin.name || '我的起点').slice(0, 40), lng: +body.origin.lng, lat: +body.origin.lat, spotId: body.origin.spotId || null },
+      days, startDate,
+      startNow: !!body.startNow,
+      nowMin: Number.isFinite(body.nowMin) ? body.nowMin : null,
+      city: body.city,
+    });
+    await refineWithRealCommute(route, spots);
+    route.dayStopIds = route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(i => i.id));
+    const routeId = await store.routeSave(route).catch(() => null);
+    return ok({ route, routeId });
+  } catch (e) {
+    console.error(e);
+    return fail('路线生成失败，请重试', 500);
+  }
+};

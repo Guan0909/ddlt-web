@@ -1,0 +1,162 @@
+/* 「点定旅途」共享样式 · v2 编辑感简约（editorial minimal） · 与 prototype/assets/style.css 保持一致并扩展 P3 组件 */
+:root {
+  --paper: #FAFBF8;
+  --card: #FFFFFF;
+  --ink: #182119;
+  --ink-2: #5F6B61;
+  --ink-3: #A8B0A4;
+  --hairline: #E3E8E0;
+  --d1: #3B7356;   /* Day1 主绿 */
+  --d2: #3E8E9E;   /* Day2 青 */
+  --d3: #B08A3E;   /* Day3 琥珀 */
+  --d4: #7A9E43;
+  --d5: #8C6A4A;
+  --radius: 14px;
+  --serif: Georgia, "Times New Roman", "Songti SC", "STSong", "SimSun", serif;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+          "Helvetica Neue", "Microsoft YaHei", "Segoe UI", sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: var(--font);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+.page {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--paper);
+  position: relative;
+}
+button { font-family: var(--font); border: none; background: none; cursor: pointer; color: inherit; }
+
+/* ---------- 字阶 ---------- */
+.display {
+  font-family: var(--serif);
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.sub { color: var(--ink-2); font-size: 13.5px; line-height: 1.65; }
+
+/* ---------- 细发丝分隔 ---------- */
+.hr { height: .5px; background: var(--hairline); border: none; }
+
+/* ---------- 底部操作栏 ---------- */
+.dock {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 22px calc(16px + env(safe-area-inset-bottom, 18px));
+  background: linear-gradient(to top, var(--paper) 62%, rgba(251,251,248,0));
+  z-index: 50;
+}
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 999px;
+  background: var(--d1);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  transition: opacity .15s, transform .1s;
+}
+.btn-primary:active { opacity: .85; }
+.btn-primary[disabled] { opacity: .45; pointer-events: none; }
+.btn-text {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: .04em;
+}
+
+/* ---------- 图标 ---------- */
+.ic { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.ic.lg { width: 21px; height: 21px; }
+
+/* ---------- P3 扩展：搜索建议下拉 ---------- */
+.search-wrap { position: relative; }
+.suggest {
+  position: absolute; left: 0; right: 0; top: calc(100% + 6px);
+  background: var(--card);
+  border: .5px solid var(--hairline);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 60;
+}
+.suggest button {
+  display: flex; align-items: baseline; gap: 10px;
+  width: 100%; text-align: left;
+  padding: 12px 14px;
+  font-size: 14.5px; font-weight: 600; color: var(--ink);
+}
+.suggest button + button { border-top: .5px solid var(--hairline); }
+.suggest button small { font-size: 11px; font-weight: 400; color: var(--ink-3); }
+.suggest button:active { background: var(--paper); }
+
+/* ---------- P3 扩展：底部抽屉（换一站 / 移到另天 / 城市切换） ---------- */
+.drawer-mask {
+  position: fixed; inset: 0;
+  background: rgba(24,33,25,.34);
+  z-index: 90;
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.drawer {
+  width: 100%; max-width: 400px; max-height: 64vh;
+  background: var(--paper);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 6px 22px calc(18px + env(safe-area-inset-bottom, 18px));
+  display: flex; flex-direction: column;
+}
+.drawer-head {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0 10px;
+  border-bottom: .5px solid var(--hairline);
+}
+.drawer-head b { font-family: var(--serif); font-size: 15px; letter-spacing: .04em; }
+.drawer-head button { font-size: 12.5px; color: var(--ink-2); }
+.drawer-body { overflow-y: auto; }
+.drawer-sub { padding: 12px 2px 4px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
+.drawer-item {
+  display: flex; align-items: baseline; gap: 10px;
+  width: 100%; text-align: left;
+  padding: 13px 2px;
+  border-bottom: .5px solid var(--hairline);
+}
+.drawer-item:last-child { border-bottom: none; }
+.drawer-item .n { flex: 1; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.drawer-item .g { font-size: 11px; color: var(--ink-3); letter-spacing: .04em; }
+.drawer-item.dim .n { color: var(--ink-3); font-weight: 500; }
+.drawer-item:active { opacity: .6; }
+
+/* ---------- P3 扩展：轻提示 ---------- */
+.toast {
+  position: fixed; left: 50%; bottom: 118px;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--ink); color: #fff;
+  font-size: 12.5px; letter-spacing: .04em;
+  padding: 10px 18px; border-radius: 999px;
+  z-index: 99; opacity: 0;
+  transition: opacity .2s, transform .2s;
+  pointer-events: none;
+  max-width: 320px; text-align: center;
+}
+.toast.show { opacity: .94; transform: translateX(-50%) translateY(0); }

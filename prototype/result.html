@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>点定旅途 · 成都三日</title>
+<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* 顶栏 */
+  .topbar {
+    position: sticky; top: 0; z-index: 40;
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 22px 12px;
+    background: rgba(251,251,248,.88);
+    backdrop-filter: saturate(150%) blur(18px);
+    -webkit-backdrop-filter: saturate(150%) blur(18px);
+    border-bottom: .5px solid var(--hairline);
+  }
+  .back-btn { display: flex; align-items: center; color: var(--ink); }
+  .topbar-title { flex: 1; }
+  .topbar-title b { font-family: var(--serif); font-size: 16.5px; display: block; letter-spacing: .02em; }
+  .topbar-title span { font-size: 11px; color: var(--ink-2); letter-spacing: .04em; }
+  .ai-flag { font-size: 10px; letter-spacing: .14em; color: var(--ink-3); border: .5px solid var(--hairline); padding: 4px 8px; border-radius: 999px; }
+
+  /* 全幅真实地图 */
+  .map-hero { position: relative; }
+  .map-hero svg { display: block; width: 100%; height: 280px; }
+  .map-fade {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 64px;
+    background: linear-gradient(to top, var(--paper), rgba(251,251,248,0));
+    pointer-events: none;
+  }
+  .map-attr { position: absolute; right: 8px; bottom: 66px; font-size: 8px; color: rgba(0,0,0,.4); background: rgba(255,255,255,.7); padding: 1px 4px; border-radius: 3px; }
+
+  /* 日切换：文字页签 */
+  .day-tabs { display: flex; gap: 26px; padding: 4px 22px 0; }
+  .day-tabs button {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+    padding: 8px 0 10px; position: relative; color: var(--ink-3);
+  }
+  .day-tabs button b { font-family: var(--serif); font-size: 17px; font-weight: 700; }
+  .day-tabs button small { font-size: 10.5px; letter-spacing: .1em; }
+  .day-tabs button.on { color: var(--ink); }
+  .day-tabs button.on::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+    height: 2px; background: var(--c); border-radius: 2px;
+  }
+
+  .anchor-note {
+    display: flex; align-items: center; gap: 7px;
+    padding: 14px 22px 0; font-size: 12.5px; color: var(--ink-2);
+  }
+  .anchor-note .ic { width: 13px; height: 13px; }
+  .anchor-note b { color: var(--ink); font-weight: 600; }
+  .anchor-note a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+  /* 统计：衬线大数字 + 发丝线 */
+  .stats {
+    display: flex; margin: 16px 22px 0; padding: 16px 0;
+    border-top: .5px solid var(--hairline); border-bottom: .5px solid var(--hairline);
+  }
+  .stats div { flex: 1; text-align: center; }
+  .stats div + div { border-left: .5px solid var(--hairline); }
+  .stats b { font-family: var(--serif); font-size: 21px; font-weight: 700; display: block; font-variant-numeric: tabular-nums; }
+  .stats b i { font-style: normal; font-size: 12px; color: var(--ink-2); margin-left: 1px; }
+  .stats span { font-size: 10px; letter-spacing: .14em; color: var(--ink-3); }
+
+  /* 时间轴 */
+  .timeline { margin: 10px 22px 0; position: relative; }
+  .timeline::before {
+    content: ""; position: absolute; left: 63.5px; top: 14px; bottom: 14px;
+    width: 1px; background: var(--hairline);
+  }
+  .t-item { display: flex; gap: 13px; position: relative; padding-bottom: 6px; }
+  .t-time { width: 40px; flex: none; text-align: right; padding-top: 15px; font-variant-numeric: tabular-nums; }
+  .t-time b { font-size: 13px; font-weight: 600; display: block; }
+  .t-time span { font-size: 9.5px; color: var(--ink-3); }
+  .t-node { width: 22px; flex: none; display: flex; justify-content: center; padding-top: 17px; z-index: 1; }
+  .t-node i {
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--paper); border: 2.5px solid var(--d1);
+    box-shadow: 0 0 0 3px var(--paper);
+  }
+  .t-node i.ink { background: var(--ink); border-color: var(--ink); }
+  .t-node i.tiny { width: 5px; height: 5px; border-width: 0; background: var(--ink-3); margin-top: 6px; }
+  .t-body { flex: 1; min-width: 0; padding: 10px 0 12px; border-bottom: .5px solid var(--hairline); }
+  .t-item:last-child .t-body { border-bottom: none; }
+
+  .stop-name { font-size: 16px; font-weight: 650; letter-spacing: .01em; display: flex; align-items: baseline; gap: 8px; }
+  .stop-name .flag { font-size: 10px; font-weight: 600; letter-spacing: .12em; color: var(--d1); }
+  .stop-name .flag.mint { color: var(--d2); }
+  .stop-tags { margin-top: 4px; font-size: 11.5px; color: var(--ink-3); letter-spacing: .05em; }
+  .stop-reason {
+    margin-top: 7px; font-family: var(--serif); font-style: italic;
+    font-size: 13px; color: var(--ink-2); line-height: 1.6;
+  }
+  .stop-clock {
+    margin-top: 8px; font-size: 11.5px; color: var(--ink-2);
+    display: flex; align-items: center; gap: 5px; font-variant-numeric: tabular-nums;
+  }
+  .stop-clock .ic { width: 12px; height: 12px; }
+
+  .notice {
+    margin-top: 8px; padding: 7px 0 7px 10px;
+    border-left: 2px solid var(--ink);
+    font-size: 11.5px; color: var(--ink-2); line-height: 1.5;
+  }
+
+  /* 通勤行 */
+  .commute { display: flex; align-items: center; gap: 8px; padding: 12px 0; }
+  .commute .ic { width: 15px; height: 15px; color: var(--ink-3); }
+  .commute .txt { flex: 1; font-size: 12.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .commute .txt b { color: var(--ink); font-weight: 600; }
+  .commute .go { display: flex; align-items: center; gap: 2px; font-size: 12px; font-weight: 600; color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* 起点/终点行 */
+  .endpoint b { font-size: 14px; font-weight: 650; }
+  .endpoint span { display: block; font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+
+  /* 微调区 */
+  .dur-row { display: flex; gap: 14px; margin-top: 9px; font-size: 11.5px; color: var(--ink-3); }
+  .dur-row span.on { color: var(--ink); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  .edit-bar {
+    margin-top: 10px; padding-top: 9px; border-top: .5px dashed var(--hairline);
+    display: flex; gap: 16px; font-size: 11.5px; color: var(--ink-2);
+  }
+  .edit-bar button { color: var(--ink-2); letter-spacing: .04em; }
+  .edit-bar button.danger { color: #B3402A; }
+
+  .page { padding-bottom: 118px; }
+  .dock-row { display: flex; align-items: center; gap: 8px; }
+  .dock-row .btn-primary { flex: 1; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="topbar">
+    <button class="back-btn" onclick="location.href='start.html'">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <div class="topbar-title">
+      <b>成都 · 三日</b>
+      <span>10月9日–11日 · 每日从春熙路出发返回</span>
+    </div>
+    <span class="ai-flag">AI 文案</span>
+  </header>
+
+  <!-- 全幅真实地图（原型 OSM 瓦片，正式版腾讯地图；低饱和处理，路线为唯一彩色） -->
+  <div class="map-hero">
+    <svg viewBox="128 236 252 172" preserveAspectRatio="xMidYMid slice">
+      <g style="filter:grayscale(.72) sepia(.1) contrast(.94) brightness(1.03)">
+        <image href="https://tile.openstreetmap.org/12/3231/1680.png" x="0"   y="0"   width="256" height="256"/>
+        <image href="https://tile.openstreetmap.org/12/3232/1680.png" x="256" y="0"   width="256" height="256"/>
+        <image href="https://tile.openstreetmap.org/12/3233/1680.png" x="512" y="0"   width="256" height="256"/>
+        <image href="https://tile.openstreetmap.org/12/3231/1681.png" x="0"   y="256" width="256" height="256"/>
+        <image href="https://tile.openstreetmap.org/12/3232/1681.png" x="256" y="256" width="256" height="256"/>
+        <image href="https://tile.openstreetmap.org/12/3233/1681.png" x="512" y="256" width="256" height="256"/>
+      </g>
+      <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
+        <path d="M296.8 319.4 L235.9 280.4 L255.1 299.7 L262.4 309.9 L214.3 368.8 L219 370.8"/>
+      </g>
+      <path d="M296.8 319.4 L235.9 280.4 L255.1 299.7 L262.4 309.9 L214.3 368.8 L219 370.8"
+            fill="none" stroke="#3B7356" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g font-family="-apple-system" font-weight="700" text-anchor="middle">
+        <circle cx="296.8" cy="319.4" r="8.5" fill="#182119" stroke="#fff" stroke-width="2.5"/>
+        <text x="296.8" y="322.6" font-size="8.5" fill="#fff">起</text>
+        <g fill="#3B7356" stroke="#fff" stroke-width="1.8">
+          <circle cx="235.9" cy="280.4" r="5.5"/><circle cx="255.1" cy="299.7" r="5.5"/>
+          <circle cx="262.4" cy="309.9" r="5.5"/><circle cx="214.3" cy="368.8" r="5.5"/>
+          <circle cx="219"   cy="370.8" r="5.5"/>
+        </g>
+      </g>
+      <g font-family="-apple-system,'PingFang SC'" font-size="10" font-weight="600" fill="#182119"
+         style="paint-order:stroke;stroke:#FBFBF8;stroke-width:3">
+        <text x="228" y="274" text-anchor="end">宽窄巷子</text>
+        <text x="255" y="292">人民公园</text>
+        <text x="272" y="306" text-anchor="start">成博</text>
+        <text x="297" y="337">春熙路</text>
+        <text x="216" y="388">武侯祠·锦里</text>
+      </g>
+    </svg>
+    <div class="map-fade"></div>
+    <div class="map-attr">© OpenStreetMap</div>
+  </div>
+
+  <!-- 日切换 -->
+  <div class="day-tabs">
+    <button class="on" style="--c:var(--d1)"><b>D1</b><small>城西文化</small></button>
+    <button style="--c:var(--d2)"><b>D2</b><small>熊猫基地</small></button>
+    <button style="--c:var(--d3)"><b>D3</b><small>西郊遗址</small></button>
+  </div>
+
+  <div class="anchor-note">
+    <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+    按 <b>明早 09:00</b> 出发排的 &nbsp;·&nbsp; <a href="#">现在就走 →</a>
+  </div>
+
+  <!-- 统计 -->
+  <div class="stats">
+    <div><b>12.4<i>km</i></b><span>全程</span></div>
+    <div><b>5</b><span>站点</span></div>
+    <div><b>7<i>h</i></b><span>游览</span></div>
+    <div><b>1.5<i>h</i></b><span>通勤</span></div>
+  </div>
+
+  <!-- 时间轴 -->
+  <div class="timeline">
+
+    <div class="t-item">
+      <div class="t-time"><b>09:00</b><span>出发</span></div>
+      <div class="t-node"><i class="ink"></i></div>
+      <div class="t-body endpoint"><b>春熙路亚朵酒店</b><span>起点 · 结束后返回这里</span></div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 20l-1.5 2M15 20l1.5 2"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/></svg>
+          <div class="txt"><b>地铁</b> · 约25分钟 · 3.5km · 不含候车</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>09:30</b><span>到达</span></div>
+      <div class="t-node"><i></i></div>
+      <div class="t-body">
+        <div class="stop-name">宽窄巷子 <span class="flag">热门</span></div>
+        <div class="stop-tags">历史街区 · 免费</div>
+        <p class="stop-reason">清晨人少的宽窄巷子最出片，十点前旅行团未到。</p>
+        <div class="stop-clock">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          09:30 到达 · 游览至 11:30（约 2 小时）
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16"/><path d="M4 16h16v3.5a.5.5 0 0 1-.5.5H18a.5.5 0 0 1-.5-.5V18h-11v1.5a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1-.5-.5z"/></svg>
+          <div class="txt"><b>打车</b> · 约 15 分钟 · 3.0 km</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>11:45</b><span>到达</span></div>
+      <div class="t-node"><i></i></div>
+      <div class="t-body">
+        <div class="stop-name">人民公园 · 鹤鸣茶社 <span class="flag mint">宝藏</span></div>
+        <div class="stop-tags">公园 · 茶社</div>
+        <p class="stop-reason">本地人也来的百年茶社，一杯盖碗茶坐一中午。</p>
+        <div class="stop-clock">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          11:45 到达 · 游览至 12:45（约 1 小时）
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>12:45</b><span>午餐</span></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body">
+        <div class="stop-name" style="font-size:14px">午餐时间 <span class="flag" style="color:var(--ink-3)">弹性 1 小时</span></div>
+        <p class="stop-reason" style="font-style:normal;font-family:var(--font)">人民公园周边：蹄花、甜水面、钟水饺。</p>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="13" cy="4.5" r="1.8"/><path d="M13 8l-2.5 5 3 3 1 5M13 8l3 2.5L18.5 12M10.5 13 8 16l-2 5"/></svg>
+          <div class="txt"><b>步行</b> · 约 12 分钟 · 800 m</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>13:55</b><span>到达</span></div>
+      <div class="t-node"><i></i></div>
+      <div class="t-body">
+        <div class="stop-name">成都博物馆 <span class="flag">热门</span></div>
+        <div class="stop-tags">博物馆 · 免费 · 室内</div>
+        <p class="stop-reason">镇馆之宝石犀与皮影展厅，下午最热时正好进馆。</p>
+        <div class="notice">周一闭馆，今天正常开放 · 16:30 停止入场，时间安排无冲突</div>
+        <div class="stop-clock">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          13:55 到达 · 游览至 15:25（约 1.5 小时）
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 20l-1.5 2M15 20l1.5 2"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/></svg>
+          <div class="txt"><b>地铁</b> · 约 20 分钟 · 4.6 km</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>15:50</b><span>到达</span></div>
+      <div class="t-node"><i></i></div>
+      <div class="t-body" style="border-left:2px solid var(--d1);padding-left:12px">
+        <div class="stop-name">武侯祠 <span class="flag">热门</span></div>
+        <div class="stop-tags">三国文化 · 红墙夹道</div>
+        <p class="stop-reason">下午四点的红墙竹影，是一天里光线最好的时刻。</p>
+        <div class="dur-row"><span>1h</span><span class="on">1.5h</span><span>2h</span><span>2.5h</span></div>
+        <div class="stop-clock">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          15:50 到达 · 游览至 17:20（约 1.5 小时）
+        </div>
+        <div class="edit-bar">
+          <button>上移</button><button>下移</button><button>换一站</button><button>移到明天</button>
+          <button class="danger">删除</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="13" cy="4.5" r="1.8"/><path d="M13 8l-2.5 5 3 3 1 5M13 8l3 2.5L18.5 12M10.5 13 8 16l-2 5"/></svg>
+          <div class="txt"><b>步行</b> · 约 3 分钟 · 200 m</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>17:25</b><span>到达</span></div>
+      <div class="t-node"><i></i></div>
+      <div class="t-body">
+        <div class="stop-name">锦里 <span class="flag">热门</span></div>
+        <div class="stop-tags">古街 · 夜景 · 小吃</div>
+        <p class="stop-reason">傍晚灯笼亮起时最热闹，晚餐直接在小吃街解决。</p>
+        <div class="stop-clock">
+          <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
+          17:25 到达 · 游览至 19:00（约 1.5 小时 · 含晚餐）
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"></div>
+      <div class="t-node"><i class="tiny"></i></div>
+      <div class="t-body" style="border-bottom:none;padding:0 0 4px">
+        <div class="commute">
+          <svg class="ic" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 20l-1.5 2M15 20l1.5 2"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/></svg>
+          <div class="txt"><b>地铁</b> · 约 30 分钟 · 6.2 km</div>
+          <a class="go">去这里</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="t-item">
+      <div class="t-time"><b>19:30</b><span>返回</span></div>
+      <div class="t-node"><i class="ink"></i></div>
+      <div class="t-body endpoint"><b>回到春熙路亚朵酒店</b><span>全程结束</span></div>
+    </div>
+
+  </div>
+
+  <div class="dock">
+    <div class="dock-row">
+      <button class="btn-text" onclick="location.href='share.html'">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+        分享
+      </button>
+      <button class="btn-primary" onclick="location.href='poster.html'">
+        <svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;width:15px;height:15px"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="1.6"/><path d="m21 15-4.5-4.5L9 18"/></svg>
+        生成海报
+      </button>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
