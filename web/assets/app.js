@@ -3,7 +3,7 @@
 window.DDN = (() => {
   const DAY_CN = ['一', '二', '三', '四', '五'];
   // 城市 → spots 数据文件（相对 web/*.html 页面路径）
-  const SPOT_FILES = { '成都': '../data/spots/chengdu.json' };
+  const SPOT_FILES = { '成都': '/data/spots/chengdu.json' };
   // 海报顶部拼音占位：映射不了的城市用 DECIDENOW.ASIA
   const PINYIN = { '成都': 'CHENGDU' };
   const SVGNS = 'http://www.w3.org/2000/svg';
@@ -47,7 +47,7 @@ window.DDN = (() => {
   // ---------- 数据加载 ----------
   const spotsCache = {};
   async function loadCities() {
-    const r = await fetch('../data/cities.json');
+    const r = await fetch('/data/cities.json');
     if (!r.ok) throw new Error('cities.json 加载失败');
     return r.json();
   }
@@ -151,7 +151,7 @@ window.DDN = (() => {
   // Vercel/正式域名：同源 /api/<fn>（rewrite → CloudBase HTTP 触发器）；
   // CloudBase 静态托管/本地预览：直连 CloudBase HTTP 服务地址（函数已带 CORS *）。
   // 任何一步失败都静默回退本地引擎，页面永远可用（红线：一切输出可降级）。
-  const API_BASE = /(^|\.)vercel\.app$|^decidenow\.asia$/.test(location.hostname)
+  const API_BASE = /(^|\.)vercel\.app$|(^|\.)decidenow\.asia$/.test(location.hostname)
     ? '/api'
     : 'https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com';
   function cloudAvailable() { return true; }   // CORS 已开，任意源可直连；失败由调用方 catch 回退

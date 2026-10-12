@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>分享 · 点定旅途路线</title>
-<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/svg+xml" href="/brand/logo-icon.svg">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   .page { padding-bottom: 130px; }
   .vis-note { padding: 20px 28px 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.6; }
@@ -74,8 +74,8 @@
   </div>
 
 </div>
-<script src="assets/engine.bundle.js"></script>
-<script src="assets/app.js"></script>
+<script src="/assets/engine.bundle.js"></script>
+<script src="/assets/app.js"></script>
 <script>
 (async () => {
   // 读取顺序：URL ?id（云端 routeGet，128 位不可猜测 ID）→ localStorage 兜底
@@ -107,7 +107,7 @@
     document.getElementById('cloneBtn').style.display = 'none';
     document.getElementById('makeBtn').className = 'btn-primary';
     document.getElementById('makeBtn').style.flex = '1';
-    document.getElementById('makeBtn').onclick = () => { location.href = 'index.html'; };
+    document.getElementById('makeBtn').onclick = () => { location.href = '/index.html'; };
     return;
   }
 
@@ -176,7 +176,7 @@
 
   // dock
   dock.hidden = false;
-  document.getElementById('makeBtn').onclick = () => { location.href = 'index.html'; };
+  document.getElementById('makeBtn').onclick = () => { location.href = '/index.html'; };
   document.getElementById('cloneBtn').onclick = () => {
     const copy = JSON.parse(JSON.stringify(route));
     const ok = Array.isArray(copy.__stops) &&
@@ -192,7 +192,7 @@
       DDN.rebuildStopsFromLib(copy, spots);   // 按 stop id 从 spots 库映射重建
     }
     DDN.saveRoute(copy);
-    location.href = 'result.html';
+    location.href = '/result.html';
   };
 })();
 </script>

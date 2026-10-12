@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>点定旅途 · 海报预览</title>
-<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/svg+xml" href="/brand/logo-icon.svg">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   body { background: #101010; }
   .page { background: #101010; display: flex; flex-direction: column; align-items: center; padding: 36px 0 60px; max-width: none; }
@@ -41,13 +41,13 @@
   </button>
   <p class="tip">P3 离线示意底图 · 正式版底图为腾讯静态图 · 每天一条配色路线</p>
 </div>
-<script src="assets/engine.bundle.js"></script>
-<script src="assets/app.js"></script>
+<script src="/assets/engine.bundle.js"></script>
+<script src="/assets/app.js"></script>
 <script>
 (async () => {
   const route = DDN.loadRoute();
   if (!route || !route.dayPlans || !route.dayPlans.length) {
-    location.replace('index.html');
+    location.replace('/index.html');
     return;
   }
 

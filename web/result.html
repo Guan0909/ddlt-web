@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>点定旅途 · 路线</title>
-<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/svg+xml" href="/brand/logo-icon.svg">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   /* 顶栏 */
   .topbar {
@@ -209,13 +209,13 @@
   </div>
 
 </div>
-<script src="assets/engine.bundle.js"></script>
-<script src="assets/app.js"></script>
+<script src="/assets/engine.bundle.js"></script>
+<script src="/assets/app.js"></script>
 <script>
 (() => {
   const route = DDN.loadRoute();
   if (!route || !route.dayPlans || !route.dayPlans.length) {
-    location.replace('index.html');
+    location.replace('/index.html');
     return;
   }
   const $ = id => document.getElementById(id);
@@ -225,7 +225,7 @@
   const spotById = id => spots.find(s => s.id === id) || null;
 
   // ---------- 顶栏 ----------
-  $('backBtn').onclick = () => { location.href = 'index.html'; };
+  $('backBtn').onclick = () => { location.href = '/index.html'; };
   $('ttTitle').textContent = `${route.city || ''} · ${DDN.dayCn(route.days)}日`;
   $('ttSub').textContent = `${DDN.dateRange(route.startDate, route.days)} · 每日从${route.origin.name}出发返回`;
   document.title = `点定旅途 · ${route.city || ''}${DDN.dayCn(route.days)}日`;
@@ -627,11 +627,11 @@
   $('shareBtn').onclick = () => {
     DDN.saveShared(route);
     // 有云端 routeId 时走只读 URL（128 位不可猜测 ID），否则本地手递手预览
-    location.href = route.routeId ? `share.html?id=${route.routeId}` : 'share.html';
+    location.href = route.routeId ? `/share.html?id=${route.routeId}` : 'share.html';
   };
   $('posterBtn').onclick = () => {
     DDN.saveRoute(route);
-    location.href = 'poster.html';
+    location.href = '/poster.html';
   };
 
   (async () => {

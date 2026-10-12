@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>点定旅途 · 起点</title>
-<link rel="icon" type="image/svg+xml" href="../brand/logo-icon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" type="image/svg+xml" href="/brand/logo-icon.svg">
+<link rel="stylesheet" href="/assets/style.css">
 <style>
   .page { padding: 0 28px 120px; }
 
@@ -117,8 +117,8 @@
   </div>
 
 </div>
-<script src="assets/engine.bundle.js"></script>
-<script src="assets/app.js"></script>
+<script src="/assets/engine.bundle.js"></script>
+<script src="/assets/app.js"></script>
 <script>
 (() => {
   const $ = id => document.getElementById(id);
@@ -278,7 +278,7 @@
     DDN.attachStops(route, spots);
     route.__nowMode = false;
     DDN.saveRoute(route);
-    location.href = 'result.html';
+    location.href = '/result.html';
   };
 
   // ---------- 初始化 ----------

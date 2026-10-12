@@ -1,13 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
     { "source": "/", "destination": "/web/index.html" },
-    { "source": "/result", "destination": "/web/result.html" },
-    { "source": "/share", "destination": "/web/share.html" },
+    { "source": "/index.html", "destination": "/web/index.html" },
+    { "source": "/result.html", "destination": "/web/result.html" },
+    { "source": "/share.html", "destination": "/web/share.html" },
     { "source": "/share/:id", "destination": "/web/share.html" },
-    { "source": "/poster", "destination": "/web/poster.html" },
+    { "source": "/poster.html", "destination": "/web/poster.html" },
+    { "source": "/privacy.html", "destination": "/web/privacy.html" },
+    { "source": "/assets/:path*", "destination": "/web/assets/:path*" },
     { "source": "/api/:fn", "destination": "https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com/:fn" }
   ]
 }
