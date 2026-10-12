@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-11"
+    "backfilled_at": "2026-10-12"
   },
   "spots": [
     {
@@ -1448,10 +1448,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        104.092,
-        30.639
+        104.085396,
+        30.645819
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LRY5WLW5",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "kuanxiangzi-paulo",

@@ -16,6 +16,7 @@ const path = require('path');
 
 const THROTTLE_MS = 200;
 const API = 'https://apis.map.qq.com/ws/place/v1/search';
+const AMAP_API = 'https://restapi.amap.com/v3/place/text';
 
 // ---- 几何（避免引 engine 依赖，脚本自洽） ----
 function haversineM(a, b) {
@@ -32,17 +33,30 @@ function norm(s) {
   return (s || '').replace(/[·（(【\[].*$/, '').replace(/\s+/g, '').toLowerCase();
 }
 
-async function searchPoi(keyword, city, key) {
-  const url = `${API}?keyword=${encodeURIComponent(keyword)}` +
-    `&boundary=${encodeURIComponent(`region(${city},0)`)}` +
-    `&page_size=10&page_index=1&key=${key}`;
+// 统一候选结构：{ id, title, location: { lng, lat } }
+async function searchPoi(keyword, city, key, provider) {
+  const url = provider === 'amap'
+    ? `${AMAP_API}?keywords=${encodeURIComponent(keyword)}&city=${encodeURIComponent(city)}&citylimit=true&offset=10&key=${key}`
+    : `${API}?keyword=${encodeURIComponent(keyword)}` +
+      `&boundary=${encodeURIComponent(`region(${city},0)`)}` +
+      `&page_size=10&page_index=1&key=${key}`;
   let lastErr;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
       const res = await fetch(url);
       const json = await res.json();
-      if (json.status === 0) return json.data || [];
-      lastErr = new Error(`腾讯接口 status=${json.status} ${json.message || ''}`);
+      if (provider === 'amap') {
+        if (json.status === '1' || json.infocode === '10000') {
+          return (json.pois || []).map(p => {
+            const [lng, lat] = String(p.location || '').split(',').map(Number);
+            return { id: p.id, title: p.name, location: { lng, lat } };
+          }).filter(p => p.location.lng && p.location.lat);
+        }
+        lastErr = new Error(`高德接口 infocode=${json.infocode} ${json.info || ''}`);
+      } else {
+        if (json.status === 0) return json.data || [];
+        lastErr = new Error(`腾讯接口 status=${json.status} ${json.message || ''}`);
+      }
     } catch (e) { lastErr = e; }
     if (attempt === 0) await sleep(500); // 重试 1 次
   }
@@ -73,13 +87,14 @@ async function main() {
   const file = args.find(a => !a.startsWith('--'));
   const dryRun = args.includes('--dry-run');
   const prune = args.includes('--prune');
+  const provider = args.includes('--provider') ? args[args.indexOf('--provider') + 1] : 'tencent';
   if (!file) {
-    console.error('用法：node scripts/backfill.js <spots.json> [--dry-run] [--prune]');
+    console.error('用法：node scripts/backfill.js <spots.json> [--dry-run] [--prune] [--provider tencent|amap]');
     process.exit(2);
   }
-  const key = process.env.TENCENT_WS_KEY;
+  const key = provider === 'amap' ? process.env.AMAP_WS_KEY : process.env.TENCENT_WS_KEY;
   if (!dryRun && !key) {
-    console.error('缺少环境变量 TENCENT_WS_KEY（离线 Key）。干跑请加 --dry-run。');
+    console.error(`缺少环境变量 ${provider === 'amap' ? 'AMAP_WS_KEY' : 'TENCENT_WS_KEY'}。干跑请加 --dry-run。`);
     process.exit(2);
   }
 
@@ -92,7 +107,7 @@ async function main() {
   const report = { city, date: today, dryRun, total: data.spots.length, ok: [], mismatch: [], error: [] };
 
   for (const spot of data.spots) {
-    if (spot.coord_src === 'tencent') { report.ok.push({ id: spot.id, skip: '已回填' }); continue; }
+    if (spot.coord_src && spot.coord_src !== 'estimate') { report.ok.push({ id: spot.id, skip: '已回填' }); continue; }
     if (dryRun) {
       if (!Array.isArray(spot.coord) || spot.coord.length !== 2) {
         report.error.push({ id: spot.id, name: spot.name, err: '缺估计坐标' });
@@ -104,14 +119,15 @@ async function main() {
       let hit = null, lastCands = [];
       for (const kw of nameVariants(spot.name)) {
         if (hit) break;
-        lastCands = await searchPoi(kw, city, key);
+        lastCands = await searchPoi(kw, city, key, provider);
         hit = pickMatch(lastCands, spot);
         if (!hit && kw !== spot.name) await sleep(THROTTLE_MS);
       }
       if (hit) {
         spot.coord = [+hit.cand.location.lng.toFixed(6), +hit.cand.location.lat.toFixed(6)];
-        spot.tencent_poi_id = hit.cand.id;
-        spot.coord_src = 'tencent';
+        if (provider === 'amap') spot.amap_poi_id = hit.cand.id;
+        else spot.tencent_poi_id = hit.cand.id;
+        spot.coord_src = provider;
         spot.refreshed_at = today;
         report.ok.push({ id: spot.id, name: spot.name, drift_m: Math.round(hit.dist), poi: hit.cand.title });
       } else {
@@ -126,7 +142,7 @@ async function main() {
     const before = data.spots.length;
     if (prune) {
       const bad = new Set(report.mismatch.map(m => m.id));
-      data.spots = data.spots.filter(s => !bad.has(s.id) || s.coord_src === 'tencent');
+      data.spots = data.spots.filter(s => !bad.has(s.id) || (s.coord_src && s.coord_src !== 'estimate'));
     }
     data._meta.backfilled_at = today;
     fs.writeFileSync(abs, JSON.stringify(data, null, 2) + '\n');

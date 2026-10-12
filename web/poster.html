@@ -13,7 +13,7 @@
 
   /* 海报本体 3:4：内部 Canvas 750×1000 渲染，CSS 缩放显示（宽 ≤340px） */
   .poster-view {
-    width: min(340px, 88vw);
+    width: min(400px, 92vw);
     border-radius: 6px;
     box-shadow: 0 30px 70px rgba(0,0,0,.55);
     display: block;
@@ -32,7 +32,7 @@
 <div class="page">
   <p class="hint">海报预览 · 3:4 · 长按可保存</p>
 
-  <canvas id="pc" class="poster-view" width="750" height="1000"></canvas>
+  <canvas id="pc" class="poster-view" width="900" height="1200"></canvas>
   <img id="pimg" class="poster-view" alt="点定旅途路线海报" style="display:none">
 
   <button class="save-btn" id="saveBtn">
@@ -108,7 +108,7 @@
 
   // ---------- 地图框：优先腾讯静态图真实底图（posterImg 代理），失败回退纸色示意图 ----------
   const mapX = padX, mapY = 92, mapW = right - padX;
-  const mapH = days.length <= 3 ? 224 : Math.max(160, 224 - (days.length - 3) * 22);
+  const mapH = days.length <= 3 ? 248 : Math.max(170, 248 - (days.length - 3) * 24);
 
   // 收集所有日的点
   const dayStops = days.map(dp => dp.items.filter(i => i.type === 'stop'));
@@ -120,6 +120,7 @@
     const s = Math.sin(lat * Math.PI / 180);
     return 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI);
   };
+  const mercYInv = y => Math.atan(Math.sinh(2 * Math.PI * (0.5 - y))) * 180 / Math.PI;
   function mercatorProjector(cLng, cLat, zoom, w, h) {
     const worldSize = 256 * 2 ** zoom;
     const cx = (cLng + 180) / 360 * worldSize;
@@ -137,6 +138,9 @@
     return Math.max(9, Math.min(13, Math.floor(Math.log2(Math.min(zx, zy)))));
   }
 
+  // 去水印：静态图多取底部 20px 再把图心北移半格，绘制时裁掉底部（含腾讯 logo 条），
+  // 来源标注改用我们自己的文字徽标（合规不变：「地图数据 © 腾讯位置服务」保留在图框右下）
+  const CROP = 20;
   let proj = null, baseImg = null;
   if (DDN.cloudAvailable()) {
     try {
@@ -144,9 +148,11 @@
       const cLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
       const cLat = (Math.min(...lats) + Math.max(...lats)) / 2;
       const zoom = fitZoom(allPts, mapW, mapH, 18);
+      const worldSize = 256 * 2 ** zoom;
+      const cLatShifted = mercYInv(mercY(cLat) + (CROP / 2) / worldSize);   // 图心北移，裁底后视野居中
       const j = await DDN.cloudPost('posterImg', {
-        center: `${cLat.toFixed(6)},${cLng.toFixed(6)}`,   // 腾讯静态图 center 为「纬度,经度」
-        zoom, size: `${Math.round(mapW)}x${Math.round(mapH)}`, scale: 2,
+        center: `${cLatShifted.toFixed(6)},${cLng.toFixed(6)}`,   // 腾讯静态图 center 为「纬度,经度」
+        zoom, size: `${Math.round(mapW)}x${Math.round(mapH + CROP)}`, scale: 2,
       }, 15000);
       baseImg = await new Promise((res, rej) => {
         const im = new Image();
@@ -168,7 +174,9 @@
   if (baseImg) {
     ctx.globalAlpha = 0.9;
     try { ctx.filter = 'grayscale(.72) sepia(.1) contrast(.94) brightness(1.03)'; } catch (e) {}
-    ctx.drawImage(baseImg, mapX, mapY, mapW, mapH);
+    // 源图裁掉底部水印条（等比：源高取与显示框同比例的上半部），不拉伸不变形
+    const srcH = baseImg.width * mapH / mapW;
+    ctx.drawImage(baseImg, 0, 0, baseImg.width, srcH, mapX, mapY, mapW, mapH);
     try { ctx.filter = 'none'; } catch (e) {}
     ctx.globalAlpha = 1;
   }

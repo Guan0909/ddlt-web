@@ -320,6 +320,17 @@
     const proj = DDN.makeProjector(pts, W, H, PAD);
     const P = pts.map(p => Object.assign({ pt: proj(p) }, p));
 
+    // 范围内全部景点：淡墨小点垫底（路线点保持唯一彩色，编辑感）
+    const inRoute = new Set(stopItems.map(s => s.id));
+    for (const s of spots) {
+      if (inRoute.has(s.id) || !s.coord) continue;
+      const q = proj({ lng: s.coord[0], lat: s.coord[1] });
+      if (q.x < 4 || q.x > W - 4 || q.y < 4 || q.y > H - 4) continue;
+      svg.appendChild(DDN.svgEl('circle', {
+        cx: q.x, cy: q.y, r: 2.4, fill: '#A8B0A4', opacity: .55,
+      }));
+    }
+
     // 路线：起点 → 各站 → 回到起点（白色衬底粗线 + 当日颜色细线）
     const pathPts = [P[0].pt, ...P.slice(1).map(p => p.pt), P[0].pt];
     const d = pathPts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');

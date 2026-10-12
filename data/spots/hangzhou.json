@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-11"
+    "backfilled_at": "2026-10-12"
   },
   "spots": [
     {
@@ -568,10 +568,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1177,
-        30.2225
+        120.113787,
+        30.220155
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0HK0HIW4V",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "xixi-wetland",
@@ -590,10 +592,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.0619,
-        30.2705
+        120.064523,
+        30.274484
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LBTH4YYO",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "hangzhou-botanical",
@@ -612,10 +616,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1178,
-        30.2555
+        120.117123,
+        30.255662
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B17WU1",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "qingzhiwu",
@@ -634,10 +640,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1235,
-        30.2617
+        120.123366,
+        30.258044
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGQA51Z",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "oeli",
@@ -656,10 +664,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1008,
-        30.283
+        120.09879,
+        30.267991
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MRYSPT6G",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "hefangjie",
@@ -678,10 +688,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1658,
-        30.2417
+        120.167253,
+        30.24004
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFIRVW3B",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "nansongyujie",
@@ -700,10 +712,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1678,
-        30.2445
+        120.170809,
+        30.24526
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KD7UNOP6",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "chenghuangge",
@@ -722,10 +736,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1618,
-        30.2398
+        120.16501,
+        30.237605
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH26IN5",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "hangzhou-museum",
@@ -744,10 +760,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.1619,
-        30.2427
+        120.166263,
+        30.239466
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF9V0XX",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "huxueyan",
@@ -766,10 +784,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1718,
-        30.2408
+        120.173032,
+        30.23753
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFM1Y0O3",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "mantoushan",
@@ -788,10 +808,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1608,
-        30.2312
+        120.168756,
+        30.224673
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH6WJ9Y",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "baita-park",
@@ -810,10 +832,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.147,
-        30.2185
+        120.141948,
+        30.199675
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFI6CEFQ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "liuheta",
@@ -832,10 +856,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1368,
-        30.2126
+        120.134349,
+        30.197157
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV10182478",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "gongchenqiao",
@@ -854,10 +880,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1428,
-        30.3172
+        120.139844,
+        30.318101
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B1BGM6",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "xiaohezhi",
@@ -876,10 +904,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1387,
-        30.3048
+        120.136206,
+        30.306633
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF9YRRI",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "dadaolu",
@@ -898,10 +928,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1508,
-        30.2952
+        120.14919,
+        30.295427
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHGJZB4",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "xiangji",
@@ -920,10 +952,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1528,
-        30.2968
+        120.149107,
+        30.29924
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BX10036007",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "canal-museum",
@@ -942,10 +976,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.1438,
-        30.3158
+        120.14133,
+        30.317404
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B07XI3",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "gongmei-museum",
@@ -964,10 +1000,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.1412,
-        30.3148
+        120.13693,
+        30.315645
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B0I02U",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "canal-night-cruise",
@@ -1008,10 +1046,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.2098,
-        30.2445
+        120.214316,
+        30.239862
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFILDZ4R",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "dongman-museum",
@@ -1052,10 +1092,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.21,
-        30.153
+        120.226542,
+        30.142778
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHVXHQK",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "xianghu",
@@ -1074,10 +1116,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.2032,
-        30.1492
+        120.21996,
+        30.142394
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFPCY3E",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "kuahuqiao-museum",
@@ -1096,10 +1140,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.2158,
-        30.1478
+        120.222341,
+        30.14159
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B17X6U",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "xixing-oldtown",
@@ -1118,10 +1164,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.2087,
-        30.1862
+        120.225636,
+        30.189371
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFG4FHRZ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "laxi-street",
@@ -1162,10 +1210,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1168,
-        30.1858
+        120.101232,
+        30.17008
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0L1550QI2",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "yinxiang-xihu",
@@ -1184,10 +1234,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1338,
-        30.2452
+        120.134306,
+        30.251082
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFT7Y7W",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "zhejiang-museum",
@@ -1206,10 +1258,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.0808,
-        30.1722
+        120.099696,
+        30.15991
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0K1UC6RMO",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "cirque-du-soleil",
@@ -1250,10 +1304,12 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        120.0108,
-        30.3952
+        120.001151,
+        30.389145
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0JRJXKV56",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "liangzhu-museum",
@@ -1272,10 +1328,12 @@
       "closed_mon": true,
       "suburb": true,
       "coord": [
-        120.0408,
-        30.3838
+        120.031103,
+        30.376679
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0HR5MBL5R",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "liangzhu-village",
@@ -1294,10 +1352,12 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        120.0348,
-        30.3708
+        120.032134,
+        30.364809
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGY1VCH",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "tangqi",
@@ -1316,10 +1376,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1828,
-        30.4732
+        120.184744,
+        30.475812
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV09292123",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "longmen-oldtown",
@@ -1338,10 +1400,12 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        119.9378,
-        29.9058
+        119.94716,
+        29.904296
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B0A7U0",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "jingshan-temple",
@@ -1360,10 +1424,12 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        119.7308,
-        30.3948
+        119.753795,
+        30.384781
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B0A93S",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "qiandao-lake",
@@ -1382,10 +1448,12 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        119.0428,
-        29.6068
+        119.042279,
+        29.61409
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B14BWS",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "qingshan-lake",
@@ -1426,10 +1494,12 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        118.9758,
-        30.0278
+        118.988201,
+        30.033182
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH357ZI",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "gaoyin-street",
@@ -1448,10 +1518,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1678,
-        30.2408
+        120.166803,
+        30.240671
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BZA3QQ01GW",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "shenglihe",
@@ -1470,10 +1542,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1658,
-        30.2928
+        120.154175,
+        30.297582
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0HURP3GOZ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "wulin-night",
@@ -1492,10 +1566,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1608,
-        30.2728
+        120.161425,
+        30.262125
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MABCSRRQ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "zj-natural-museum",
@@ -1514,10 +1590,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.1608,
-        30.2798
+        120.164581,
+        30.276814
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B15DKJ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "silk-museum",
@@ -1536,10 +1614,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        120.1428,
-        30.2208
+        120.150436,
+        30.222191
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLAUVWJ",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "zj-science",
@@ -1580,10 +1660,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.1308,
-        30.2208
+        120.133962,
+        30.21433
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHZR9B4",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "hubin-walk",
@@ -1602,10 +1684,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1628,
-        30.2518
+        120.164873,
+        30.251732
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0I6LSYW7Q",
+      "refreshed_at": "2026-10-12"
     }
   ]
 }

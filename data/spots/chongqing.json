@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-11"
+    "backfilled_at": "2026-10-12"
   },
   "spots": [
     {
@@ -1011,10 +1011,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        106.301,
-        29.604
+        106.300523,
+        29.601446
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLFPR5I",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "graffiti-street",
@@ -1033,10 +1035,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.521,
-        29.489
+        106.539867,
+        29.488979
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLNMAZT",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "jiaotong-teahouse",
@@ -1427,10 +1431,12 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        107.19,
-        29.055
+        107.197997,
+        29.06486
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B001786UY2",
+      "refreshed_at": "2026-10-12"
     },
     {
       "id": "heishan-valley",

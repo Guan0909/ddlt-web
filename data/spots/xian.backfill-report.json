@@ -1,66 +1,415 @@
 {
   "city": "西安",
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "dryRun": false,
   "total": 68,
   "ok": [
     {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑博物馆",
+      "drift_m": 332,
+      "poi": "秦始皇兵马俑博物馆游客中心"
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "drift_m": 466,
+      "poi": "西安城墙永宁门游客中心"
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "drift_m": 101,
+      "poi": "陕西历史博物馆停车场(出入口)"
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "drift_m": 41,
+      "poi": "大雁塔"
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "drift_m": 500,
+      "poi": "大唐不夜城新唐人街"
+    },
+    {
+      "id": "huaqing-palace",
+      "name": "华清宫",
+      "drift_m": 57,
+      "poi": "华清宫景区-三元洞"
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "drift_m": 917,
+      "poi": "西安碑林博物馆-第二室"
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "drift_m": 174,
+      "poi": "大唐芙蓉园-芙蓉湖"
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "drift_m": 55,
+      "poi": "大明宫国家遗址公园-含元殿遗址"
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "drift_m": 746,
+      "poi": "小雁塔(公交站)"
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "drift_m": 604,
+      "poi": "西安博物院西门售票处"
+    },
+    {
+      "id": "yongningmen-night",
+      "name": "永宁门夜景·南门广场",
+      "drift_m": 552,
+      "poi": "永宁门(地铁站)"
+    },
+    {
+      "id": "dayanta-fountain",
+      "name": "大雁塔北广场喷泉",
+      "drift_m": 335,
+      "poi": "大雁塔北广场"
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "drift_m": 887,
+      "poi": "永兴坊·安康鸡蛋粉皮"
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "drift_m": 741,
+      "poi": "长安十二时辰主题街区票务中心"
+    },
+    {
+      "id": "xiaozhai-seg",
+      "name": "赛格国际购物中心",
+      "drift_m": 578,
+      "poi": "科沃斯西安赛格国际购物中心店"
+    },
+    {
+      "id": "meng-changan",
+      "name": "《梦长安》大唐迎宾盛礼",
+      "drift_m": 477,
+      "poi": "梦长安·大唐迎宾盛礼"
+    },
+    {
+      "id": "shaanxi-archaeology",
+      "name": "陕西考古博物馆",
+      "drift_m": 1737,
+      "poi": "陕西考古博物馆-东北侧地上停车场"
+    },
+    {
+      "id": "shuyuanmen",
+      "name": "书院门",
+      "drift_m": 780,
+      "poi": "书院门牌坊"
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "drift_m": 823,
+      "poi": "兴庆宫公园-观景平台"
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "drift_m": 714,
+      "poi": "曲江海洋极地公园地下停车场(出口)"
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "秦岭野生动物园",
+      "drift_m": 2343,
+      "poi": "秦岭野生动物园(公交站)"
+    },
+    {
+      "id": "tang-west-market",
+      "name": "大唐西市博物馆",
+      "drift_m": 1043,
+      "poi": "大唐西市"
+    },
+    {
+      "id": "qujiang-pool",
+      "name": "曲江池遗址公园",
+      "drift_m": 267,
+      "poi": "曲江池遗址公园游客中心停车场"
+    },
+    {
+      "id": "kunming-pool",
+      "name": "昆明池·七夕公园",
+      "drift_m": 2269,
+      "poi": "昆明池七夕公园1号停车场"
+    },
+    {
+      "id": "cuihua-shan",
+      "name": "翠华山",
+      "drift_m": 2999,
+      "poi": "翠华山(公交站)"
+    },
+    {
+      "id": "nanwutai",
+      "name": "南五台",
+      "drift_m": 3054,
+      "poi": "西安市长安区南五台风景林场"
+    },
+    {
+      "id": "lishan",
+      "name": "骊山",
+      "drift_m": 717,
+      "poi": "骊山索道"
+    },
+    {
       "id": "shuilu-an",
-      "name": "水陆庵",
-      "drift_m": 2035,
-      "poi": "水陆庵天然泉水总销商"
+      "skip": "已回填"
     },
     {
       "id": "xian-incident",
-      "name": "西安事变纪念馆（张学良公馆）",
-      "drift_m": 180,
-      "poi": "西安事变纪念馆-张学良将军公馆"
+      "skip": "已回填"
     },
     {
       "id": "expo-park",
-      "name": "西安世博园",
-      "drift_m": 660,
-      "poi": "西安世博园-长安塔"
+      "skip": "已回填"
     },
     {
       "id": "shunchengxiang",
-      "name": "顺城巷",
-      "drift_m": 1124,
-      "poi": "顺城巷"
+      "skip": "已回填"
     },
     {
       "id": "xiying-film",
-      "name": "西影电影圈子",
-      "drift_m": 1427,
-      "poi": "西影电影圈子地面停车场(出入口)"
+      "skip": "已回填"
     },
     {
       "id": "shaanxi-nature",
-      "name": "陕西自然博物馆",
-      "drift_m": 793,
-      "poi": "陕西自然博物馆-售票处"
+      "skip": "已回填"
     },
     {
       "id": "louguantai",
-      "name": "楼观台",
-      "drift_m": 1004,
-      "poi": "楼观台秦岭四宝基地"
+      "skip": "已回填"
     },
     {
       "id": "dahu-1935",
-      "name": "大华·1935",
-      "drift_m": 220,
-      "poi": "大华·1935文化艺术区"
+      "skip": "已回填"
     }
   ],
   "mismatch": [
     {
+      "id": "mount-hua",
+      "name": "华山",
+      "candidates": [
+        "青华山旅游景区",
+        "华山国际酒店",
+        "华山通讯城"
+      ]
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "candidates": [
+        "西安钟楼",
+        "钟楼饭店",
+        "钟楼"
+      ]
+    },
+    {
+      "id": "drum-tower",
+      "name": "西安鼓楼",
+      "candidates": [
+        "西安鼓楼",
+        "钟鼓楼广场",
+        "西安城墙鼓楼"
+      ]
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "candidates": [
+        "回民街",
+        "西安钟楼回民街美居酒店",
+        "西安回民街家庭民宿"
+      ]
+    },
+    {
+      "id": "changhen-ge",
+      "name": "《长恨歌》实景演出",
+      "candidates": [
+        "长恨歌演出",
+        "长恨歌广场",
+        "西安千古情"
+      ]
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "candidates": [
+        "法门寺擀面皮",
+        "樊小胖法门寺擀面皮(赛格国际购物中心小寨店)",
+        "法门灵境图"
+      ]
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "candidates": [
+        "洒金桥",
+        "洒金桥(地铁站)",
+        "洒金桥美食街"
+      ]
+    },
+    {
+      "id": "hanyangling-museum",
+      "name": "汉阳陵博物院",
+      "candidates": [
+        "大唐西市博物馆",
+        "大华博物馆",
+        "汉景帝阳陵博物院东区"
+      ]
+    },
+    {
+      "id": "big-mosque",
+      "name": "化觉巷清真大寺",
+      "candidates": [
+        "西安化觉巷清真大寺",
+        "西安化觉巷清真大寺售票处",
+        "清真寺"
+      ]
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵",
+      "candidates": [
+        "西安乾陵生态园林有限公司",
+        "乾陵黑猪肉",
+        "乾陵乾县寿衣工厂店"
+      ]
+    },
+    {
+      "id": "dapiyuan",
+      "name": "大皮院",
+      "candidates": [
+        "大皮院",
+        "大皮院(公交站)",
+        "石家包子(大皮院总店)"
+      ]
+    },
+    {
+      "id": "tuoling-legend",
+      "name": "《驼铃传奇》秀",
+      "candidates": [
+        "《驼铃传奇》秀",
+        "驼铃演出取票点",
+        "西安千古情和驼铃传奇潮玩馆"
+      ]
+    },
+    {
+      "id": "taibai-shan",
+      "name": "太白山国家森林公园",
+      "candidates": [
+        "黑河国家森林公园",
+        "公共厕所",
+        "厚畛子古镇"
+      ]
+    },
+    {
+      "id": "banpo-museum",
+      "name": "西安半坡博物馆",
+      "candidates": [
+        "西安半坡博物馆",
+        "西安半坡博物馆售票处",
+        "西安半坡博物馆游客中心"
+      ]
+    },
+    {
+      "id": "guanzhong-minsu",
+      "name": "关中民俗艺术博物院",
+      "candidates": [
+        "西安关中民俗艺术博物院",
+        "西安关中民俗艺术博物院-西京雄镇",
+        "关中民俗艺术博物院-梨园"
+      ]
+    },
+    {
+      "id": "maoling-museum",
+      "name": "茂陵博物馆",
+      "candidates": [
+        "陕西考古博物馆",
+        "西安市钟鼓楼博物馆",
+        "大华博物馆"
+      ]
+    },
+    {
+      "id": "gaos-mansion",
+      "name": "高家大院",
+      "candidates": [
+        "高家大院",
+        "高家大院售票处",
+        "高家大院"
+      ]
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "candidates": [
+        "西安大悦城",
+        "西安大悦城店"
+      ]
+    },
+    {
+      "id": "xiaonanmen",
+      "name": "小南门早市夜市",
+      "candidates": [
+        "小南门夜市",
+        "钟楼小区美食街",
+        "洒金桥美食街"
+      ]
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "candidates": [
+        "小黄鸭欢乐世界游乐场",
+        "欢乐世界",
+        "汉邦欢乐世界"
+      ]
+    },
+    {
+      "id": "qinglong-temple",
+      "name": "青龙寺遗址景区",
+      "candidates": [
+        "青龙寺遗址博物馆",
+        "乐游原青龙寺",
+        "隋大兴唐长安城遗址青龙寺遗址"
+      ]
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "candidates": [
+        "广仁寺",
+        "广仁寺·钟楼",
+        "广仁寺(公交站)"
+      ]
+    },
+    {
       "id": "yisushe-block",
       "name": "易俗社文化街区",
       "candidates": [
-        "易俗社文化街区",
-        "易俗社文化街区-西门",
-        "大嫂面屋(易俗社文化街区店)"
+        "西羊市",
+        "易俗历史文化街区",
+        "回民街"
       ]
     },
     {
@@ -68,8 +417,8 @@
       "name": "老城根G park",
       "candidates": [
         "老城根G park",
-        "老城根G-PARK水晶广场",
-        "方所(老城根G park店)"
+        "老城根海(老城根G park店)",
+        "老城根G park下沉广场"
       ]
     },
     {
@@ -77,8 +426,8 @@
       "name": "太平国家森林公园",
       "candidates": [
         "太平国家森林公园",
-        "太平国家森林公园-彩虹瀑布",
-        "太平国家森林公园-索道上站"
+        "太平国家森林公园门户区停车场",
+        "太平国家森林公园售票处"
       ]
     },
     {
@@ -86,17 +435,17 @@
       "name": "香积寺",
       "candidates": [
         "香积寺",
-        "香积寺景区[公交站]",
-        "香积寺逸夫中学"
+        "香积寺公园",
+        "香积寺-客堂"
       ]
     },
     {
       "id": "hancheng-lake",
       "name": "汉城湖公园",
       "candidates": [
-        "汉城湖旅游景区",
-        "应急避难场所(汉城湖公园)",
-        "汉城湖旅游风景区-游客服务中心"
+        "汉城湖旅游风景区",
+        "汉城湖公园出口(二环北路西段北向)",
+        "汉城湖旅游风景区-汉城湖安门广场"
       ]
     },
     {
@@ -104,8 +453,8 @@
       "name": "浐灞国家湿地公园",
       "candidates": [
         "西安浐灞国家湿地公园",
-        "西安浐灞国家湿地公园-西门-草滩门",
-        "西安浐灞国家湿地公园-草滩门地上停车场"
+        "浐灞国家湿地公园起源门停车场(出入口)",
+        "浐灞国家湿地公园-湿地沙滩"
       ]
     },
     {
@@ -114,16 +463,16 @@
       "candidates": [
         "茯茶镇",
         "茯茶镇",
-        "茯茶镇"
+        "丝路金茯茯茶镇"
       ]
     },
     {
       "id": "shijingli",
       "name": "诗经里",
       "candidates": [
-        "诗经里景区",
-        "诗经里创想源",
-        "诗经里[地铁站]"
+        "诗经里",
+        "诗经里(公交站)",
+        "诗经里东门北停车场"
       ]
     },
     {
@@ -131,270 +480,19 @@
       "name": "汉长安城未央宫遗址",
       "candidates": [
         "汉长安城未央宫国家考古遗址公园",
-        "汉长安城未央宫国家考古遗址公园-北门",
-        "汉长安城未央宫遗址椒房殿遗址"
+        "汉长安城未央宫遗址椒房殿遗址",
+        "汉长安城未央宫遗址少府遗址"
       ]
     },
     {
       "id": "qinzhen",
       "name": "秦镇（秦渡镇）",
       "candidates": [
-        "秦镇味道桥头第一家",
-        "秦镇医院[公交站]",
-        "秦镇吕家米皮老店(秦镇老南街店)"
+        "秦镇(公交站)",
+        "秦镇",
+        "秦镇第一味米皮总店"
       ]
     }
   ],
-  "error": [
-    {
-      "id": "terracotta-army",
-      "name": "秦始皇兵马俑博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "city-wall",
-      "name": "西安城墙·永宁门",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "shaanxi-history",
-      "name": "陕西历史博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "dayanta",
-      "name": "大雁塔·大慈恩寺",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "datang-everbright",
-      "name": "大唐不夜城",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "mount-hua",
-      "name": "华山",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "bell-tower",
-      "name": "西安钟楼",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "drum-tower",
-      "name": "西安鼓楼",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "muslim-quarter",
-      "name": "回民街·北院门",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "huaqing-palace",
-      "name": "华清宫",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "beilin-museum",
-      "name": "西安碑林博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "tang-paradise",
-      "name": "大唐芙蓉园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "changhen-ge",
-      "name": "《长恨歌》实景演出",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "daming-palace",
-      "name": "大明宫国家遗址公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "xiaoyanta",
-      "name": "小雁塔",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "xian-museum",
-      "name": "西安博物院",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "famen-temple",
-      "name": "法门寺",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "yongningmen-night",
-      "name": "永宁门夜景·南门广场",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "dayanta-fountain",
-      "name": "大雁塔北广场喷泉",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "yongxing-fang",
-      "name": "永兴坊",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "sajinqiao",
-      "name": "洒金桥",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "changan-12",
-      "name": "长安十二时辰主题街区",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "xiaozhai-seg",
-      "name": "赛格国际购物中心",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "meng-changan",
-      "name": "《梦长安》大唐迎宾盛礼",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "hanyangling-museum",
-      "name": "汉阳陵博物院",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "shaanxi-archaeology",
-      "name": "陕西考古博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "big-mosque",
-      "name": "化觉巷清真大寺",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qianling",
-      "name": "乾陵",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "shuyuanmen",
-      "name": "书院门",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "dapiyuan",
-      "name": "大皮院",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "xingqing-palace",
-      "name": "兴庆宫公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qujiang-ocean",
-      "name": "曲江海洋极地公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qinling-zoo",
-      "name": "秦岭野生动物园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "tuoling-legend",
-      "name": "《驼铃传奇》秀",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "taibai-shan",
-      "name": "太白山国家森林公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "banpo-museum",
-      "name": "西安半坡博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "tang-west-market",
-      "name": "大唐西市博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "guanzhong-minsu",
-      "name": "关中民俗艺术博物院",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "maoling-museum",
-      "name": "茂陵博物馆",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "gaos-mansion",
-      "name": "高家大院",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qujiang-pool",
-      "name": "曲江池遗址公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "kunming-pool",
-      "name": "昆明池·七夕公园",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qujiang-joy-city",
-      "name": "曲江大悦城",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "xiaonanmen",
-      "name": "小南门早市夜市",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "lehua-cheng",
-      "name": "乐华恒业欢乐世界",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "cuihua-shan",
-      "name": "翠华山",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "nanwutai",
-      "name": "南五台",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "lishan",
-      "name": "骊山",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "qinglong-temple",
-      "name": "青龙寺遗址景区",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "guangren-temple",
-      "name": "广仁寺",
-      "err": "腾讯接口 status=121 此key每日调用量已达到上限"
-    }
-  ]
+  "error": []
 }

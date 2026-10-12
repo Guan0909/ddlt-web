@@ -46,11 +46,32 @@ function mealHint(kind) {
   return kind === 'lunch' ? '午餐时间，弹性 1 小时' : '晚餐时间，弹性 1 小时';
 }
 
-// 路线总推荐语（模板版，AI 文案的降级底座）
+// 路线总推荐语（离线手写多模式，AI 文案的降级底座；只陈述引擎已排好的事实）
 function buildNarrative(route) {
-  const themes = route.dayPlans.map(d => d.label.replace(/\s*·\s*/, ''));
-  const uniq = [...new Set(themes)];
-  return `${route.days} 天 ${route.totals.stops} 站，从${route.origin.name}出发：${uniq.join('、')}。每天环线，${route.dayPlans[0].startTime} 出发，收束回${route.origin.name}。`;
+  const days = route.dayPlans;
+  const n = route.days, stops = route.totals.stops;
+  const origin = route.origin.name;
+  const themes = [...new Set(days.map(d => d.label.replace(/\s*·\s*/, '')))].join('、');
+  const suburbDay = days.find(d => d.label.indexOf('远郊') >= 0);
+  const hasNight = days.some(d => d.items.some(i => i.type === 'stop' && (i.cat === '夜景' || i.cat === '演出')));
+  const hasMuseum = days.some(d => d.items.some(i => i.type === 'stop' && i.cat === '博物馆'));
+
+  if (n === 1) {
+    return `${stops} 站，一条环线。从${origin}出发，${themes}——时间刚好，不走回头路。`;
+  }
+  if (suburbDay && hasNight) {
+    return `${n} 天 ${stops} 站：城里慢慢逛，D${suburbDay.day} 赶早出城去${suburbDay.label.replace('远郊 · ', '')}。晚上别急着回，夜景留给灯亮之后。`;
+  }
+  if (suburbDay) {
+    return `${n} 天 ${stops} 站：${themes}。D${suburbDay.day} 留给城外，早点出发；其余日子从${origin}散步式环线。`;
+  }
+  if (hasNight) {
+    return `${n} 天 ${stops} 站：${themes}。白天看馆逛园子，入夜的那站特意排在最后——灯亮了才算数。`;
+  }
+  if (hasMuseum) {
+    return `${n} 天 ${stops} 站：${themes}。博物馆都躲开了闭馆日，午后最热的时段正好进馆。`;
+  }
+  return `${n} 天 ${stops} 站：${themes}。每天从${origin}出发，环线收回，不走回头路。`;
 }
 
 function commuteText(c) {
