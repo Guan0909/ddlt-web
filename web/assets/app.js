@@ -148,9 +148,13 @@ window.DDN = (() => {
     };
   }
   // ---------- 云函数适配层（P4）----------
-  // 同源 /api/<fn>（Vercel rewrite → CloudBase HTTP 触发器）。
+  // Vercel/正式域名：同源 /api/<fn>（rewrite → CloudBase HTTP 触发器）；
+  // CloudBase 静态托管/本地预览：直连 CloudBase HTTP 服务地址（函数已带 CORS *）。
   // 任何一步失败都静默回退本地引擎，页面永远可用（红线：一切输出可降级）。
-  const API_BASE = '/api';
+  const API_BASE = /(^|\.)vercel\.app$|^decidenow\.asia$/.test(location.hostname)
+    ? '/api'
+    : 'https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com';
+  function cloudAvailable() { return true; }   // CORS 已开，任意源可直连；失败由调用方 catch 回退
   async function cloudPost(fn, body, timeoutMs = 6000) {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), timeoutMs);
@@ -167,8 +171,6 @@ window.DDN = (() => {
       return j;
     } finally { clearTimeout(timer); }
   }
-  function cloudAvailable() { return !/^file:|^http:\/\/localhost/.test(location.href); }
-
   // 云端生成路线：返回 { route, routeId }；失败抛错由调用方回退
   async function cloudGenRoute(opts) {
     const j = await cloudPost('genRoute', opts, 9000);
