@@ -46,10 +46,17 @@ function mealHint(kind) {
   return kind === 'lunch' ? '午餐时间，弹性 1 小时' : '晚餐时间，弹性 1 小时';
 }
 
+// 路线总推荐语（模板版，AI 文案的降级底座）
+function buildNarrative(route) {
+  const themes = route.dayPlans.map(d => d.label.replace(/\s*·\s*/, ''));
+  const uniq = [...new Set(themes)];
+  return `${route.days} 天 ${route.totals.stops} 站，从${route.origin.name}出发：${uniq.join('、')}。每天环线，${route.dayPlans[0].startTime} 出发，收束回${route.origin.name}。`;
+}
+
 function commuteText(c) {
   const km = c.km >= 1 ? `${c.km.toFixed(1)}km` : `${Math.round(c.km * 1000)}m`;
   const note = c.mode === 'transit' ? ' · 不含候车' : '';
   return `${c.label} · 约${c.min}分钟 · ${km}${note}`;
 }
 
-module.exports = { flagOf, buildReason, buildNotice, buildDayLabel, mealHint, commuteText };
+module.exports = { flagOf, buildReason, buildNotice, buildDayLabel, mealHint, commuteText, buildNarrative };

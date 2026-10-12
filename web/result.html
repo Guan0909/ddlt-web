@@ -54,6 +54,34 @@
   .anchor-note b { color: var(--ink); font-weight: 600; }
   .anchor-note a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 
+  /* AI 叙事行：衬线斜体，模板先行，AI 返回后替换并亮标 */
+  .narrative {
+    margin: 8px 22px 0; font-family: var(--serif); font-style: italic;
+    font-size: 13px; color: var(--ink-2); line-height: 1.7;
+  }
+  .narrative:empty { display: none; }
+  .narrative .ai-tag {
+    font-family: var(--font); font-style: normal; font-size: 9.5px; letter-spacing: .12em;
+    color: var(--ink-3); border: .5px solid var(--hairline); border-radius: 999px;
+    padding: 2px 6px; margin-left: 6px; vertical-align: 1px;
+  }
+
+  /* 攻略提取（换一站抽屉内） */
+  .paste-box {
+    width: 100%; min-height: 68px; resize: none;
+    border: .5px solid var(--hairline); border-radius: 8px;
+    background: var(--card); padding: 10px 12px;
+    font-family: var(--font); font-size: 13px; color: var(--ink);
+    outline: none; margin-bottom: 8px;
+  }
+  .paste-box:focus { border-color: var(--ink-3); }
+  .paste-btn {
+    width: 100%; padding: 10px; margin-bottom: 10px;
+    border: .5px solid var(--ink); border-radius: 999px;
+    font-size: 12.5px; font-weight: 600; letter-spacing: .06em; color: var(--ink);
+  }
+  .paste-btn:disabled { opacity: .4; }
+
   /* 统计：衬线大数字 + 发丝线 */
   .stats {
     display: flex; margin: 16px 22px 0; padding: 16px 0;
@@ -159,6 +187,8 @@
   <div class="day-tabs" id="dayTabs"></div>
 
   <div class="anchor-note" id="anchorNote"></div>
+
+  <p class="narrative" id="narrative"></p>
 
   <div class="stats" id="statsBar"></div>
 
@@ -511,21 +541,57 @@
     const candidates = spots.filter(s => !used.has(s.id))
       .sort((a, b) => b.heat - a.heat).slice(0, 24);
     DDN.openDrawer('换一站', (body, close) => {
-      if (!candidates.length) {
-        body.appendChild(DDN.el('div', 'drawer-sub', '本城暂无可替换的站点'));
-        return;
+      // 攻略文本提取（P6）：AI 只在真实 POI 池匹配，失败/幻觉静默丢弃
+      const paste = DDN.el('textarea', 'paste-box');
+      paste.placeholder = '粘贴攻略文本，AI 帮你提取其中的地点…';
+      paste.maxLength = 500;
+      const pasteBtn = DDN.el('button', 'paste-btn', '提取地点');
+      body.appendChild(paste);
+      body.appendChild(pasteBtn);
+
+      const listBox = DDN.el('div');
+      body.appendChild(listBox);
+      function renderList(list, pinNote) {
+        listBox.textContent = '';
+        if (!list.length) {
+          listBox.appendChild(DDN.el('div', 'drawer-sub', '本城暂无可替换的站点'));
+          return;
+        }
+        for (const c of list) {
+          const item = DDN.el('button', 'drawer-item');
+          item.appendChild(DDN.el('span', 'n', c.name));
+          item.appendChild(DDN.el('span', 'g', [c.cat, (c.tags || [])[0]].filter(Boolean).join(' · ')));
+          item.onclick = () => {
+            route.__stops[cur][idx] = c;
+            close();
+            applyRetime(cur);
+          };
+          listBox.appendChild(item);
+        }
       }
-      for (const c of candidates) {
-        const item = DDN.el('button', 'drawer-item');
-        item.appendChild(DDN.el('span', 'n', c.name));
-        item.appendChild(DDN.el('span', 'g', [c.cat, (c.tags || [])[0]].filter(Boolean).join(' · ')));
-        item.onclick = () => {
-          route.__stops[cur][idx] = c;
-          close();
-          applyRetime(cur);
-        };
-        body.appendChild(item);
-      }
+      renderList(candidates);
+
+      pasteBtn.onclick = async () => {
+        const text = paste.value.trim();
+        if (!text) return;
+        pasteBtn.disabled = true;
+        pasteBtn.textContent = '提取中…';
+        try {
+          const j = await DDN.cloudPost('aiCopy', { kind: 'extract', city: route.city, text }, 5000);
+          const hit = (j.spotIds || []).map(id => spots.find(s => s.id === id)).filter(Boolean);
+          if (hit.length) {
+            const rest = candidates.filter(c => !hit.includes(c));
+            renderList([...hit, ...rest], true);
+            DDN.toast(`从攻略里认出 ${hit.length} 个地点，已置顶`);
+          } else {
+            DDN.toast('没认出库内地点，换个说法试试');
+          }
+        } catch (e) {
+          DDN.toast('提取暂不可用，列表不受影响');
+        }
+        pasteBtn.disabled = false;
+        pasteBtn.textContent = '提取地点';
+      };
     });
   }
   function openMoveDay(idx) {
@@ -535,12 +601,12 @@
         const item = DDN.el('button', 'drawer-item');
         item.appendChild(DDN.el('span', 'n', `D${dp.day} · ${DDN.themeOf(dp.label)}`));
         item.appendChild(DDN.el('span', 'g', `${dp.date.slice(5).replace('-', '/')} · ${dp.stats.stops} 站`));
-        item.onclick = () => {
+        item.onclick = async () => {
           const s = route.__stops[cur].splice(idx, 1)[0];
           route.__stops[i].push(s);
           close();
-          DDN.retime(route, cur);
-          DDN.retime(route, i);
+          await DDN.retime(route, cur);
+          await DDN.retime(route, i);
           DDN.saveRoute(route);
           renderDay();
           DDN.toast(`已移到 D${dp.day}`);
@@ -572,7 +638,27 @@
     try { spots = await DDN.loadSpots(route.city || '成都') || []; } catch (e) { spots = []; }
     renderAnchor();
     renderDay();
+    renderNarrative();
   })();
+
+  // ---------- AI 叙事：模板文案先出（红线：可降级），AI 返回后替换并亮「由 AI 生成」标 ----------
+  async function renderNarrative() {
+    const box = $('narrative');
+    box.textContent = window.EngineCopy.buildNarrative(route);
+    if (!DDN.cloudAvailable()) return;
+    try {
+      const j = await DDN.cloudPost('aiCopy', {
+        kind: 'narrative',
+        route: { city: route.city, days: route.days, origin: route.origin, dayPlans: route.dayPlans },
+      }, 4000);
+      if (j && j.text && !j.fallback) {
+        box.textContent = '';
+        box.appendChild(document.createTextNode(j.text));
+        const tag = DDN.el('span', 'ai-tag', '由 AI 生成');
+        box.appendChild(tag);
+      }
+    } catch (e) { /* 保持模板文案 */ }
+  }
 })();
 </script>
 </body>

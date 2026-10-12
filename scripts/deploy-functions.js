@@ -13,11 +13,13 @@ const { execSync } = require('child_process');
 const ROOT = path.join(__dirname, '..');
 const BUILD = path.join(ROOT, 'build');
 const ENV_ID = process.env.TCB_ENV_ID || 'ddlt-d7gvi23us2cc67847';
-const NEEDS_ENGINE = new Set(['genRoute', 'reRoute']);
-const ALL = ['searchPoi', 'genRoute', 'reRoute', 'routeGet', 'posterImg', 'feedback'];
+const NEEDS_ENGINE = new Set(['genRoute', 'reRoute', 'aiCopy']);
+const ALL = ['searchPoi', 'genRoute', 'reRoute', 'routeGet', 'posterImg', 'feedback', 'aiCopy'];
 const targets = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const fns = targets.length ? targets : ALL;
 const KEY = process.env.TENCENT_WS_KEY || '';
+const GLM_KEY = process.env.GLM_KEY || '';
+const DEEPSEEK_KEY = process.env.DEEPSEEK_KEY || '';
 
 const PKG = {
   name: 'ddlt-fn', private: true, version: '1.0.0', main: 'index.js',
@@ -35,7 +37,11 @@ fs.writeFileSync(path.join(BUILD, 'cloudbaserc.json'), JSON.stringify({
   envId: ENV_ID,
   functions: fns.map(name => ({
     name,
-    envVariables: KEY ? { TENCENT_WS_KEY: KEY } : {},
+    envVariables: {
+      ...(KEY ? { TENCENT_WS_KEY: KEY } : {}),
+      ...(GLM_KEY ? { GLM_KEY } : {}),
+      ...(DEEPSEEK_KEY ? { DEEPSEEK_KEY } : {}),
+    },
     timeout: 20,
     memorySize: 256,
   })),

@@ -107,7 +107,7 @@
     <p>起点是景区也可以——它会自动成为第 1 站，接着往下排。从现在这一刻开始计时，随时生成，随时出发。</p>
   </div>
 
-  <p class="foot" id="foot">已覆盖 60+ 热门旅游城市</p>
+  <p class="foot" id="foot"><span id="footCount">已覆盖 60+ 热门旅游城市</span> · <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:2px">隐私政策</a></p>
 
   <div class="dock">
     <button class="btn-primary" id="genBtn" disabled>
@@ -287,7 +287,7 @@
       const cities = await DDN.loadCities();
       window.__cities = cities;
       cityEntry = cities.cities.find(c => c.name === city);
-      $('foot').textContent = `已覆盖 ${cities.cities.length}+ 热门旅游城市`;
+      $('footCount').textContent = `已覆盖 ${cities.cities.length}+ 热门旅游城市`;
       spots = await DDN.loadSpots(city);
       genBtn.disabled = !spots;
     } catch (e) {
