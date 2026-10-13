@@ -154,11 +154,15 @@
           const item = DDN.el('button', 'drawer-item' + (c && c.status === 'done' ? '' : ' dim'));
           item.appendChild(DDN.el('span', 'n', name));
           item.appendChild(DDN.el('span', 'g', c && c.status === 'done' ? '已开通' : '即将开通'));
-          item.onclick = () => {
+          item.onclick = async () => {
             if (c && c.status === 'done') {
               city = name; cityEntry = c; cityName.textContent = name;
-              input.value = ''; selectedSpot = null; located = null;
+              input.value = ''; selectedSpot = null; located = null; suggested = null;
               close();
+              genBtn.disabled = true;
+              spots = await DDN.loadSpots(city).catch(() => null);
+              genBtn.disabled = !spots;
+              if (!spots) DDN.toast('城市数据加载失败，请刷新重试');
             } else {
               close();
               DDN.toast(`「${name}」即将开通，先陪你玩${city}`);

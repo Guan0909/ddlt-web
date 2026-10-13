@@ -2,10 +2,14 @@
 /* 点定旅途 P3 · 页面共享逻辑：数据加载、存储、投影、DOM/图标工具、微调重排 */
 window.DDN = (() => {
   const DAY_CN = ['一', '二', '三', '四', '五'];
-  // 城市 → spots 数据文件（相对 web/*.html 页面路径）
-  const SPOT_FILES = { '成都': '/data/spots/chengdu.json' };
+  // 城市 → spots 数据文件（已建库 6 城）
+  const SPOT_FILES = {
+    '成都': '/data/spots/chengdu.json', '北京': '/data/spots/beijing.json',
+    '重庆': '/data/spots/chongqing.json', '杭州': '/data/spots/hangzhou.json',
+    '上海': '/data/spots/shanghai.json', '西安': '/data/spots/xian.json',
+  };
   // 海报顶部拼音占位：映射不了的城市用 DECIDENOW.ASIA
-  const PINYIN = { '成都': 'CHENGDU' };
+  const PINYIN = { '成都': 'CHENGDU', '北京': 'BEIJING', '重庆': 'CHONGQING', '杭州': 'HANGZHOU', '上海': 'SHANGHAI', '西安': 'XIAN' };
   const SVGNS = 'http://www.w3.org/2000/svg';
 
   // ---------- DOM 工具 ----------
