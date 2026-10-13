@@ -130,8 +130,8 @@ window.DDN = (() => {
     if (baseMapCache[cacheKey]) return baseMapCache[cacheKey];
     const j = await cloudPost('posterImg', {
       center: `${cLat.toFixed(6)},${cLng.toFixed(6)}`, zoom,
-      size: `${Math.round(w)}x${Math.round(h)}`, scale: 2,
-    }, 12000);
+      size: `${Math.round(w)}x${Math.round(h)}`, scale: 1,
+    }, 15000);
     const img = await new Promise((res, rej) => {
       const im = new Image();
       im.onload = () => res(im);
