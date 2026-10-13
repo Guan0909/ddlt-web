@@ -7,13 +7,17 @@ const store = require('./store');
 const { parseBody, ok, fail } = require('./http');
 const { loadSpots } = require('./routeKit');
 
-const PROVIDER = process.env.AI_PROVIDER || 'glm';   // glm | deepseek
+const PROVIDER = process.env.AI_PROVIDER || 'deepseek';   // deepseek | glm
 const ENDPOINTS = {
   glm: { url: 'https://open.bigmodel.cn/api/paas/v4/chat/completions', model: 'glm-4-flash', envKey: 'GLM_KEY' },
-  deepseek: { url: 'https://api.deepseek.com/chat/completions', model: 'deepseek-chat', envKey: 'DEEPSEEK_KEY' },
+  deepseek: {
+    url: process.env.AI_BASE_URL || 'https://api.deepseek.com/chat/completions',
+    model: process.env.AI_MODEL || 'deepseek-chat',
+    envKey: 'DEEPSEEK_KEY',
+  },
 };
 
-async function chat(system, user) {
+async function chat(system, user, timeoutMs = 3000) {   // 红线：默认 3 秒超时回退
   const p = ENDPOINTS[PROVIDER];
   const key = process.env[p.envKey];
   if (!key) return null;
@@ -26,7 +30,7 @@ async function chat(system, user) {
       temperature: 0.7,
       max_tokens: 300,
     }),
-    signal: AbortSignal.timeout(3000),   // 红线：3 秒超时
+    signal: AbortSignal.timeout(timeoutMs),
   });
   if (!res.ok) throw new Error('AI HTTP ' + res.status);
   const j = await res.json();
@@ -43,7 +47,8 @@ async function narrative(body) {
   const text = await chat(
     '你是「点定旅途」的旅行编辑。根据给定的已定行程写一句总推荐语，≤60 字，编辑感、克制、不夸张，' +
     '只描述已给定的事实（城市、天数、站点、线路名），禁止编造景点、营业时间、价格、天气等任何新信息，禁止用表情符号。',
-    `城市：${r.city}，天数：${r.days}，起点：${r.origin && r.origin.name}\n${digest}`
+    `城市：${r.city}，天数：${r.days}，起点：${r.origin && r.origin.name}\n${digest}`,
+    5000   // 叙事非阻塞（模板已先出），放宽到 5s；提取仍为默认 3s
   );
   if (!text) return null;
   return text.replace(/\s+/g, '').slice(0, 80);   // 超长硬截断

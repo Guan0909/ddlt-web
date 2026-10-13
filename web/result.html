@@ -705,7 +705,7 @@
       const j = await DDN.cloudPost('aiCopy', {
         kind: 'narrative',
         route: { city: route.city, days: route.days, origin: route.origin, dayPlans: route.dayPlans },
-      }, 4000);
+      }, 6500);
       if (j && j.text && !j.fallback) {
         box.textContent = '';
         box.appendChild(document.createTextNode(j.text));

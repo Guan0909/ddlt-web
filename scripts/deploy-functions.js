@@ -20,6 +20,9 @@ const fns = targets.length ? targets : ALL;
 const KEY = process.env.TENCENT_WS_KEY || '';
 const GLM_KEY = process.env.GLM_KEY || '';
 const DEEPSEEK_KEY = process.env.DEEPSEEK_KEY || '';
+const AI_BASE_URL = process.env.AI_BASE_URL || '';
+const AI_MODEL = process.env.AI_MODEL || '';
+const AI_PROVIDER = process.env.AI_PROVIDER || '';
 
 const PKG = {
   name: 'ddlt-fn', private: true, version: '1.0.0', main: 'index.js',
@@ -41,6 +44,9 @@ fs.writeFileSync(path.join(BUILD, 'cloudbaserc.json'), JSON.stringify({
       ...(KEY ? { TENCENT_WS_KEY: KEY } : {}),
       ...(GLM_KEY ? { GLM_KEY } : {}),
       ...(DEEPSEEK_KEY ? { DEEPSEEK_KEY } : {}),
+      ...(AI_BASE_URL ? { AI_BASE_URL } : {}),
+      ...(AI_MODEL ? { AI_MODEL } : {}),
+      ...(AI_PROVIDER ? { AI_PROVIDER } : {}),
     },
     timeout: 20,
     memorySize: 256,
