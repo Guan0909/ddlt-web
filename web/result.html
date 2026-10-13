@@ -213,6 +213,7 @@
 
   <div class="map-hero">
     <svg id="mapSvg" viewBox="0 0 400 280" role="img" aria-label="当日路线地图"></svg>
+    <div id="glMap" style="display:none;width:100%;height:280px"></div>
     <div class="map-zoom"><button id="zoomIn">+</button><button id="zoomOut">−</button></div>
     <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
     <div class="map-fade"></div>
@@ -245,6 +246,8 @@
 </div>
 <script src="/assets/engine.bundle.js"></script>
 <script src="/assets/app.js"></script>
+<script src="/assets/config.js"></script>
+<script src="/assets/glmap.js"></script>
 <script>
 (() => {
   const route = DDN.loadRoute();
@@ -343,8 +346,19 @@
   const BW = 800, BH = 560;                    // 底图实际取图尺寸（2 倍，平移有冗余）
   const mapState = { day: -1, zoom: 12, cLng: 0, cLat: 0, offX: 0, offY: 0, proj: null, baseURI: null };
   let mapReq = 0, mapBusy = false;
+  let glCtl = null;   // 腾讯 GL 动态地图控制器（有 DDN_GL_KEY 时启用）
 
   async function renderMap() {
+    if (glCtl) {   // GL 动态地图路径
+      const dp = route.dayPlans[cur];
+      glCtl.setDay({
+        origin: route.origin,
+        stops: route.__stops[cur] || [],
+        others: spots,
+        color: dp.color,
+      });
+      return;
+    }
     const reqId = ++mapReq;
     const dp = route.dayPlans[cur];
     const stopItems = dp.items.filter(i => i.type === 'stop');
@@ -399,24 +413,25 @@
     const dp = route.dayPlans[cur];
     const inRoute = new Set(stopItems.map(s => s.id));
 
-    // 全部景点：淡点 + 小字标注（可点选加入今天；与路线点/已放标签碰撞时只留点）
+    // 全部景点：实心点 + 小字标注（可点选加入今天；与路线点/已放标签碰撞时只留点）
     const placed = P.map(p => ({ x: p.pt.x, y: p.pt.y, w: 34 }));
     for (const s of spots) {
       if (inRoute.has(s.id) || !s.coord) continue;
       const q = proj({ lng: s.coord[0], lat: s.coord[1] });
       const dot = DDN.svgEl('circle', {
-        cx: q.x, cy: q.y, r: 4, fill: '#A8B0A4', opacity: .65,
+        cx: q.x, cy: q.y, r: 3.4, fill: '#7d887f', opacity: .9,
+        stroke: '#FBFBF8', 'stroke-width': 1.2,
         class: 'spot-hit', 'data-id': s.id,
       });
       pan.appendChild(dot);
       const wHalf = s.name.length * 8.5 / 2 + 6;
-      const clash = placed.some(b => Math.abs(b.x - q.x) < (b.w + wHalf) && Math.abs(b.y - (q.y - 10)) < 11);
+      const clash = placed.some(b => Math.abs(b.x - q.x) < (b.w + wHalf) && Math.abs(b.y - (q.y - 10)) < 13);
       if (clash) continue;
       const t = DDN.svgEl('text', {
-        x: q.x, y: q.y - 8, 'font-size': 8.5, 'font-weight': 500,
-        fill: '#5F6B61', 'font-family': fontFam, 'text-anchor': 'middle', opacity: .85,
+        x: q.x, y: q.y - 8, 'font-size': 8.5, 'font-weight': 600,
+        fill: '#4a554d', 'font-family': fontFam, 'text-anchor': 'middle', opacity: .95,
         class: 'spot-hit', 'data-id': s.id,
-        style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:2.5',
+        style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
       });
       t.textContent = s.name;
       pan.appendChild(t);
@@ -451,7 +466,8 @@
       fill: '#182119', 'font-family': fontFam, 'text-anchor': 'middle',
       style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
     });
-    on.textContent = P[0].name;
+    const oname = P[0].name || '';
+    on.textContent = oname.length > 10 ? oname.slice(0, 9) + '…' : oname;
     pan.appendChild(on);
 
     if (baseURI) {
@@ -848,6 +864,18 @@
 
   (async () => {
     try { spots = await DDN.loadSpots(route.city || '成都') || []; } catch (e) { spots = []; }
+    // 有 GL Key 时优先真实瓦片地图（腾讯 GL），失败回退静态图交互地图
+    if (window.DDN_GL_KEY && window.DDNGL) {
+      try {
+        await DDNGL.load();
+        const box = $('glMap');
+        box.style.display = 'block';
+        $('mapSvg').style.display = 'none';
+        const zc = document.querySelector('.map-zoom');
+        if (zc) zc.style.display = 'none';   // GL 自带缩放控件
+        glCtl = DDNGL.create(box, { onSpotTap: s => confirmAddStop(s, route.dayPlans[cur]) });
+      } catch (e) { glCtl = null; }
+    }
     renderAnchor();
     renderDay();
     renderNarrative();
