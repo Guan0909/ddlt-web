@@ -21,7 +21,8 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
-    "photos_at": "2026-10-13"
+    "photos_at": "2026-10-13",
+    "rematch_at": "2026-10-13"
   },
   "spots": [
     {
@@ -92,10 +93,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.5785,
-        29.5555
+        106.577433,
+        29.5564
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KA5RCWGJ",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "yangtze-cableway",
@@ -464,10 +467,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.548,
-        29.563
+        106.553277,
+        29.561674
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B00170BPJJ",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "wfc-observatory",
@@ -1244,11 +1249,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.521,
-        29.408
+        106.545937,
+        29.392449
       ],
-      "coord_src": "estimate",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/7a44e991-44c3-468e-bd86-08cf82daa3b6.jpg"
+      "coord_src": "amap",
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/7a44e991-44c3-468e-bd86-08cf82daa3b6.jpg",
+      "amap_poi_id": "B0FFGG76GA",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "sunac-town",
@@ -1267,11 +1274,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        106.296,
-        29.612
+        106.360217,
+        29.63029
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/265e35f1808e1f36b17b9b6abe2f863a"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/265e35f1808e1f36b17b9b6abe2f863a",
+      "amap_poi_id": "B0FFMBYLV2",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "yuanboyuan",
@@ -1313,10 +1322,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.508,
-        29.528
+        106.492796,
+        29.530988
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0JG9A6VRI",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "cq-nature-museum",
@@ -1557,11 +1568,13 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        108.35,
-        28.865
+        108.354952,
+        28.927422
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/ddf6f9dbd4ff50410000003295530632?type=pic"
+      "coord_src": "amap",
+      "photo": "https://store.is.autonavi.com/showpic/ddf6f9dbd4ff50410000003295530632?type=pic",
+      "amap_poi_id": "B001786W3P",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "zhongshan-old-town",
@@ -1580,11 +1593,13 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        106.26,
-        28.83
+        106.328485,
+        28.840523
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/ebdbd7f8dd1930d0e95649385d1e3a1f"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/ebdbd7f8dd1930d0e95649385d1e3a1f",
+      "amap_poi_id": "B0FFF5OBFK",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "longxing-old-town",

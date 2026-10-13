@@ -21,7 +21,8 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
-    "photos_at": "2026-10-13"
+    "photos_at": "2026-10-13",
+    "rematch_at": "2026-10-13"
   },
   "spots": [
     {
@@ -512,10 +513,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        104.096,
-        30.674
+        104.102816,
+        30.671142
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFL1BJCX",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "yulin",
@@ -1048,11 +1051,13 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        103.61,
-        30.555
+        103.619753,
+        30.500369
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/2987ae62cdbbf9debe98890bffb49e3d"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/2987ae62cdbbf9debe98890bffb49e3d",
+      "amap_poi_id": "B001C80TG4",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "xiling",
@@ -1384,11 +1389,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        104.105,
-        30.455
+        104.08042,
+        30.393487
       ],
-      "coord_src": "estimate",
-      "photo": "https://aos-comment.amap.com/B0FFG7FDZE/comment/8F6EA243_8518_4868_A287_57E860FE72BF_L0_001_1170_145_1763824509732_18532322.jpg"
+      "coord_src": "amap",
+      "photo": "https://aos-comment.amap.com/B0FFG7FDZE/comment/8F6EA243_8518_4868_A287_57E860FE72BF_L0_001_1170_145_1763824509732_18532322.jpg",
+      "amap_poi_id": "B0FFGIJ63W",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "luxhu",

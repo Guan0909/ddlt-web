@@ -21,7 +21,8 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
-    "photos_at": "2026-10-13"
+    "photos_at": "2026-10-13",
+    "rematch_at": "2026-10-13"
   },
   "spots": [
     {
@@ -1113,11 +1114,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.2023,
-        30.1858
+        120.205558,
+        30.16208
       ],
-      "coord_src": "estimate",
-      "photo": "https://aos-comment.amap.com/B023B18961/comment/C18D8C0C_3238_478B_BACB_F7F046547778_L0_001_2000_150_1771992233353_49761563.jpg"
+      "coord_src": "amap",
+      "photo": "https://aos-comment.amap.com/B023B18961/comment/C18D8C0C_3238_478B_BACB_F7F046547778_L0_001_2000_150_1771992233353_49761563.jpg",
+      "amap_poi_id": "B023B18961",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "changqiao-ocean",
@@ -1236,11 +1239,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1835,
-        30.1765
+        120.155146,
+        30.170499
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/6d2c7cb111dd33336dbbad1f7435fa88"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/6d2c7cb111dd33336dbbad1f7435fa88",
+      "amap_poi_id": "B023B1722J",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "songcheng",
@@ -1334,10 +1339,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1818,
-        30.3258
+        120.181694,
+        30.325018
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFK4B7TM",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "liangzhu-site",
@@ -1704,10 +1711,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1618,
-        30.2808
+        120.164936,
+        30.276404
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023B0A1BX",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "hangzhou-zoo",

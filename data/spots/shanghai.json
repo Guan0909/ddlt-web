@@ -21,7 +21,8 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
-    "photos_at": "2026-10-13"
+    "photos_at": "2026-10-13",
+    "rematch_at": "2026-10-13"
   },
   "spots": [
     {
@@ -568,10 +569,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        121.4555,
-        31.2305
+        121.455839,
+        31.230132
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFK3FEES",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "shanghai-grand-theatre",
@@ -735,10 +738,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        121.458,
-        31.229
+        121.459605,
+        31.229731
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHRWLCX",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "changli-road",
@@ -1450,10 +1455,12 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        121.95,
-        31.51
+        121.951233,
+        31.516967
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B00156CLWX",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "jinshan-beach",

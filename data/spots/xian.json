@@ -21,7 +21,8 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
-    "photos_at": "2026-10-13"
+    "photos_at": "2026-10-13",
+    "rematch_at": "2026-10-13"
   },
   "spots": [
     {
@@ -334,10 +335,12 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        109.213,
-        34.362
+        109.212541,
+        34.363852
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF3O46M",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "daming-palace",
@@ -629,10 +632,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.94,
-        34.438
+        108.963053,
+        34.442693
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0L2A51MYF",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "shaanxi-archaeology",
@@ -891,11 +896,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        109.021,
-        34.272
+        109.053345,
+        34.272958
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/3e0da755a699d94376fb337e7ca463ca"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/3e0da755a699d94376fb337e7ca463ca",
+      "amap_poi_id": "B001D063YP",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "tang-west-market",
@@ -939,11 +946,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        108.926,
-        34.056
+        108.974905,
+        34.025589
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/5f310c245319e3916aac0bd259212cfa"
+      "coord_src": "amap",
+      "photo": "http://store.is.autonavi.com/showpic/5f310c245319e3916aac0bd259212cfa",
+      "amap_poi_id": "B001D0VP7I",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "maoling-museum",
@@ -1081,10 +1090,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.931,
-        34.252
+        108.935937,
+        34.252396
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFIPX4UZ",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "lehua-cheng",
@@ -1201,10 +1212,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.979,
-        34.232
+        108.98997,
+        34.232824
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFL62YLD",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "guangren-temple",
