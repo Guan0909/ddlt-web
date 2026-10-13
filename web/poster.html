@@ -257,16 +257,16 @@
     ctx.fillText(r.t2, legX + 27 + w1 + 5, y + 8);
   });
 
-  // 右下标注：真实底图归腾讯，示意底图如实说明
+  // 标注挪到图框右上（腾讯底图自带底部来源文字，避免叠字；示意底图则如实说明）
   const attr = baseImg ? '地图数据 © 腾讯位置服务' : '示意底图 · 非真实地图';
   ctx.font = `400 7px ${SANS}`;
   const attrW = ctx.measureText(attr).width;
-  rrect(mapX + mapW - 6 - attrW - 8, mapY + mapH - 5 - 12, attrW + 8, 12, 2);
+  rrect(mapX + mapW - 6 - attrW - 8, mapY + 5, attrW + 8, 12, 2);
   ctx.fillStyle = 'rgba(255,255,255,.75)';
   ctx.fill();
   ctx.fillStyle = 'rgba(0,0,0,.45)';
   ctx.textAlign = 'right';
-  ctx.fillText(attr, mapX + mapW - 10, mapY + mapH - 8);
+  ctx.fillText(attr, mapX + mapW - 10, mapY + 13);
   ctx.textAlign = 'left';
 
   ctx.restore();
