@@ -305,30 +305,64 @@
   }
 
   // ---------- 离线 SVG 地图：经纬度线性投影（equirectangular） ----------
-  function renderMap() {
+  let mapReq = 0;   // 切日竞态防护
+  async function renderMap() {
     const svg = $('mapSvg');
-    svg.textContent = '';
+    const reqId = ++mapReq;
     const W = 400, H = 280, PAD = 36;
-    svg.appendChild(DDN.svgEl('rect', { x: 0, y: 0, width: W, height: H, fill: '#F3F5F0' }));
 
     const dp = route.dayPlans[cur];
     const stopItems = dp.items.filter(i => i.type === 'stop');
     const pts = [
       { lng: route.origin.lng, lat: route.origin.lat, name: route.origin.name, origin: true },
-      ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat, name: s.name })),
+      ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat, name: s.name, id: s.id })),
     ];
-    const proj = DDN.makeProjector(pts, W, H, PAD);
-    const P = pts.map(p => Object.assign({ pt: proj(p) }, p));
 
-    // 范围内全部景点：淡墨小点垫底（路线点保持唯一彩色，编辑感）
+    // 真实底图（腾讯静态图，经 posterImg 代理）；失败回退纸色示意
+    let proj = null, baseURI = null;
+    if (DDN.cloudAvailable()) {
+      try {
+        const b = await DDN.fetchBaseMap(pts, W, H, PAD);
+        if (reqId !== mapReq) return;
+        proj = b.proj; baseURI = b.dataURI;
+      } catch (e) { /* 回退 */ }
+    }
+    if (!proj) proj = DDN.makeProjector(pts, W, H, PAD);
+
+    svg.textContent = '';
+    if (baseURI) {
+      svg.appendChild(DDN.svgEl('image', {
+        href: baseURI, x: 0, y: 0, width: W, height: H, preserveAspectRatio: 'none',
+        style: 'filter:grayscale(.72) sepia(.1) contrast(.94) brightness(1.03);opacity:.92',
+      }));
+    } else {
+      svg.appendChild(DDN.svgEl('rect', { x: 0, y: 0, width: W, height: H, fill: '#F3F5F0' }));
+    }
+
+    const P = pts.map(p => Object.assign({ pt: proj(p) }, p));
     const inRoute = new Set(stopItems.map(s => s.id));
+    const fontFam = "-apple-system,'PingFang SC','Microsoft YaHei'";
+
+    // 范围内全部景点：淡点 + 小字标注（与路线点/已放标签碰撞时只留点）
+    const placed = P.map(p => ({ x: p.pt.x, y: p.pt.y, w: 34 }));   // 路线点保护圈
     for (const s of spots) {
       if (inRoute.has(s.id) || !s.coord) continue;
       const q = proj({ lng: s.coord[0], lat: s.coord[1] });
-      if (q.x < 4 || q.x > W - 4 || q.y < 4 || q.y > H - 4) continue;
-      svg.appendChild(DDN.svgEl('circle', {
-        cx: q.x, cy: q.y, r: 2.4, fill: '#A8B0A4', opacity: .55,
-      }));
+      if (q.x < 6 || q.x > W - 6 || q.y < 6 || q.y > H - 6) continue;
+      svg.appendChild(DDN.svgEl('circle', { cx: q.x, cy: q.y, r: 2.2, fill: '#A8B0A4', opacity: .65 }));
+      const wHalf = s.name.length * 8.5 / 2 + 6;
+      const clash = placed.some(b =>
+        Math.abs(b.x - q.x) < (b.w + wHalf) && Math.abs(b.y - (q.y - 9)) < 11);
+      if (clash) continue;
+      const anchor = q.x > W - 60 ? 'end' : (q.x < 60 ? 'start' : 'middle');
+      const t = DDN.svgEl('text', {
+        x: q.x, y: q.y - 7, 'font-size': 8.5, 'font-weight': 500,
+        fill: '#5F6B61', 'font-family': fontFam, 'text-anchor': anchor, opacity: .85,
+        style: `paint-order:stroke;stroke:${baseURI ? '#FBFBF8' : '#F3F5F0'};stroke-width:2.5`,
+      });
+      t.textContent = s.name;
+      svg.appendChild(t);
+      placed.push({ x: q.x, y: q.y - 7, w: wHalf });
     }
 
     // 路线：起点 → 各站 → 回到起点（白色衬底粗线 + 当日颜色细线）
@@ -345,7 +379,6 @@
       }));
     }
 
-    const fontFam = "-apple-system,'PingFang SC','Microsoft YaHei'";
     // 起点黑圆「起」
     const o = P[0].pt;
     svg.appendChild(DDN.svgEl('circle', { cx: o.x, cy: o.y, r: 8.5, fill: '#182119', stroke: '#fff', 'stroke-width': 2.5 }));
@@ -354,13 +387,13 @@
     svg.appendChild(ot);
 
     // 站点彩点 + 站名标注（纸色描边，照原型 paint-order 技法）
-    P.slice(1).forEach((p, i) => {
+    P.slice(1).forEach((p) => {
       svg.appendChild(DDN.svgEl('circle', { cx: p.pt.x, cy: p.pt.y, r: 5.5, fill: dp.color, stroke: '#fff', 'stroke-width': 1.8 }));
       const anchor = p.pt.x > W - 70 ? 'end' : (p.pt.x < 70 ? 'start' : 'middle');
       const t = DDN.svgEl('text', {
         x: p.pt.x, y: p.pt.y - 11, 'font-size': 10, 'font-weight': 600,
         fill: '#182119', 'font-family': fontFam, 'text-anchor': anchor,
-        style: 'paint-order:stroke;stroke:#F3F5F0;stroke-width:3',
+        style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
       });
       t.textContent = p.name;
       svg.appendChild(t);
@@ -370,10 +403,21 @@
     const on = DDN.svgEl('text', {
       x: o.x, y: o.y + 22, 'font-size': 10, 'font-weight': 600,
       fill: '#182119', 'font-family': fontFam, 'text-anchor': oa,
-      style: 'paint-order:stroke;stroke:#F3F5F0;stroke-width:3',
+      style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
     });
     on.textContent = P[0].name;
     svg.appendChild(on);
+
+    // 来源标注
+    if (baseURI) {
+      const at = DDN.svgEl('text', {
+        x: W - 6, y: H - 6, 'font-size': 7, fill: 'rgba(0,0,0,.45)',
+        'font-family': fontFam, 'text-anchor': 'end',
+        style: 'paint-order:stroke;stroke:rgba(255,255,255,.8);stroke-width:2',
+      });
+      at.textContent = '地图数据 © 腾讯位置服务';
+      svg.appendChild(at);
+    }
   }
 
   // ---------- 时间轴 ----------

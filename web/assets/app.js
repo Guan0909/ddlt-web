@@ -98,7 +98,50 @@ window.DDN = (() => {
   // 日 label 形如「城西 · 文博线」→ Tab 小字取主题部分「城西文博」
   function themeOf(label) { return String(label || '').replace(/\s*·\s*/g, '').replace(/线$/, ''); }
 
-  // ---------- 投影：equirectangular + cos(平均纬度) 修正横轴 ----------
+  // ---------- Web 墨卡托（与腾讯静态图同投影）+ 底图拉取 ----------
+  const mercY = lat => {
+    const s = Math.sin(lat * Math.PI / 180);
+    return 0.5 - Math.log((1 + s) / (1 - s)) / (4 * Math.PI);
+  };
+  function mercatorProjector(cLng, cLat, zoom, w, h) {
+    const worldSize = 256 * 2 ** zoom;
+    const cx = (cLng + 180) / 360 * worldSize;
+    const cy = mercY(cLat) * worldSize;
+    return p => ({
+      x: (p.lng + 180) / 360 * worldSize - cx + w / 2,
+      y: mercY(p.lat) * worldSize - cy + h / 2,
+    });
+  }
+  function fitZoom(pts, w, h, pad) {
+    const xs = pts.map(p => (p.lng + 180) / 360), ys = pts.map(p => mercY(p.lat));
+    const dx = Math.max(...xs) - Math.min(...xs) || 1e-6;
+    const dy = Math.max(...ys) - Math.min(...ys) || 1e-6;
+    const zx = (w - pad * 2) / (dx * 256), zy = (h - pad * 2) / (dy * 256);
+    return Math.max(9, Math.min(13, Math.floor(Math.log2(Math.min(zx, zy)))));
+  }
+  // 拉真实底图：返回 { img(dataURI Image), proj }，失败返回 null（调用方回退纸色示意）
+  const baseMapCache = {};
+  async function fetchBaseMap(pts, w, h, pad = 18) {
+    const lngs = pts.map(p => p.lng), lats = pts.map(p => p.lat);
+    const cLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
+    const cLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+    const zoom = fitZoom(pts, w, h, pad);
+    const cacheKey = `${cLng.toFixed(4)},${cLat.toFixed(4)},${zoom},${w}x${h}`;
+    if (baseMapCache[cacheKey]) return baseMapCache[cacheKey];
+    const j = await cloudPost('posterImg', {
+      center: `${cLat.toFixed(6)},${cLng.toFixed(6)}`, zoom,
+      size: `${Math.round(w)}x${Math.round(h)}`, scale: 2,
+    }, 12000);
+    const img = await new Promise((res, rej) => {
+      const im = new Image();
+      im.onload = () => res(im);
+      im.onerror = rej;
+      im.src = 'data:image/png;base64,' + j.base64;
+    });
+    const out = { img, dataURI: img.src, proj: mercatorProjector(cLng, cLat, zoom, w, h) };
+    baseMapCache[cacheKey] = out;
+    return out;
+  }
   function makeProjector(points, w, h, pad) {
     const xs = [], ys = [];
     let latSum = 0;
@@ -263,7 +306,7 @@ window.DDN = (() => {
     loadCities, loadSpots,
     saveRoute, loadRoute, saveShared, loadShared,
     todayISO, parseHM, fmtHour, fmtDur, fmtHourCn, dateRange, dayCn, pinyinOf, themeOf,
-    makeProjector,
+    makeProjector, mercatorProjector, fitZoom, fetchBaseMap,
     attachStops, refreshSuburb, recalcTotals, retime, rebuildStopsFromLib,
     cloudPost, cloudAvailable, cloudGenRoute,
     toast, openDrawer,
