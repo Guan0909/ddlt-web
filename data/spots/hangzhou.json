@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-12"
+    "backfilled_at": "2026-10-13"
   },
   "spots": [
     {
@@ -1024,10 +1024,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        120.1588,
-        30.2828
+        120.164539,
+        30.274517
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "2316114784903911097",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "city-balcony",

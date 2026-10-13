@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-12"
+    "backfilled_at": "2026-10-13"
   },
   "spots": [
     {
@@ -616,10 +616,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        121.437,
-        31.191
+        121.438963,
+        31.192472
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "7059453274299144548",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "qiantan-taikoo",
@@ -662,10 +664,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        121.468,
-        31.2365
+        121.471468,
+        31.233312
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "3615671983661925228",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "yunnan-road",
@@ -750,10 +754,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        121.372,
-        31.161
+        121.373461,
+        31.169037
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "8773627002365487367",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "anfu-road",
@@ -1488,10 +1494,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        121.4305,
-        31.1925
+        121.437223,
+        31.190986
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "17014513559700132449",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "zuibaichi",
@@ -1558,10 +1566,12 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        121.467,
-        31.2305
+        121.470304,
+        31.231138
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "2199033976345",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "expo-museum",

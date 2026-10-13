@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-12"
+    "backfilled_at": "2026-10-13"
   },
   "spots": [
     {
@@ -1018,10 +1018,12 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.968,
-        34.2165
+        108.96246,
+        34.215799
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "9290935050946340178",
+      "refreshed_at": "2026-10-13"
     },
     {
       "id": "xiaonanmen",
