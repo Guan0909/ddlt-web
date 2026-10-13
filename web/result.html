@@ -31,6 +31,27 @@
     background: linear-gradient(to top, var(--paper), rgba(251,251,248,0));
     pointer-events: none;
   }
+  /* 动态地图控制 */
+  #mapSvg { touch-action: none; cursor: grab; }
+  #mapSvg.grabbing { cursor: grabbing; }
+  .map-zoom {
+    position: absolute; right: 12px; top: 12px; z-index: 5;
+    display: flex; flex-direction: column; gap: 6px;
+  }
+  .map-zoom button {
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(251,251,248,.94); border: .5px solid var(--hairline);
+    font-size: 17px; color: var(--ink); line-height: 1;
+    box-shadow: 0 2px 8px rgba(24,33,25,.08);
+  }
+  .map-hint {
+    position: absolute; left: 12px; bottom: 10px; z-index: 5;
+    font-size: 10px; letter-spacing: .06em; color: var(--ink-3);
+    background: rgba(251,251,248,.85); padding: 3px 8px; border-radius: 999px;
+    pointer-events: none;
+  }
+  .spot-hit { cursor: pointer; }
+  .drawer-photo { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
 
   /* 日切换：文字页签 */
   .day-tabs { display: flex; gap: 26px; padding: 4px 22px 0; overflow-x: auto; }
@@ -81,6 +102,17 @@
     font-size: 12.5px; font-weight: 600; letter-spacing: .06em; color: var(--ink);
   }
   .paste-btn:disabled { opacity: .4; }
+
+  /* 景点缩略图：卡片右上圆角小图，不占文字流 */
+  .t-body { position: relative; }
+  .stop-thumb {
+    position: absolute; right: 0; top: 10px;
+    width: 46px; height: 46px; object-fit: cover;
+    border-radius: 8px; background: var(--hairline);
+  }
+  .t-body:has(.stop-thumb) .stop-name,
+  .t-body:has(.stop-thumb) .stop-tags,
+  .t-body:has(.stop-thumb) .stop-reason { padding-right: 54px; }
 
   /* 统计：衬线大数字 + 发丝线 */
   .stats {
@@ -180,7 +212,9 @@
   </header>
 
   <div class="map-hero">
-    <svg id="mapSvg" viewBox="0 0 400 280" role="img" aria-label="当日路线示意图"></svg>
+    <svg id="mapSvg" viewBox="0 0 400 280" role="img" aria-label="当日路线地图"></svg>
+    <div class="map-zoom"><button id="zoomIn">+</button><button id="zoomOut">−</button></div>
+    <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
     <div class="map-fade"></div>
   </div>
 
@@ -304,13 +338,14 @@
     box.appendChild(statCell(DDN.fmtHour(t.commuteMin), 'h', '通勤'));
   }
 
-  // ---------- 离线 SVG 地图：经纬度线性投影（equirectangular） ----------
-  let mapReq = 0;   // 切日竞态防护
-  async function renderMap() {
-    const svg = $('mapSvg');
-    const reqId = ++mapReq;
-    const W = 400, H = 280, PAD = 36;
+  // ---------- 动态交互地图：大图拖拽平移（免重拉）+ 按钮缩放（重拉）+ 点选景点加入当天 ----------
+  const MW = 400, MH = 280, PAD = 36;          // 视口
+  const BW = 800, BH = 560;                    // 底图实际取图尺寸（2 倍，平移有冗余）
+  const mapState = { day: -1, zoom: 12, cLng: 0, cLat: 0, offX: 0, offY: 0, proj: null, baseURI: null };
+  let mapReq = 0, mapBusy = false;
 
+  async function renderMap() {
+    const reqId = ++mapReq;
     const dp = route.dayPlans[cur];
     const stopItems = dp.items.filter(i => i.type === 'stop');
     const pts = [
@@ -318,106 +353,219 @@
       ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat, name: s.name, id: s.id })),
     ];
 
-    // 真实底图（腾讯静态图，经 posterImg 代理）；失败回退纸色示意
-    let proj = null, baseURI = null;
-    if (DDN.cloudAvailable()) {
-      try {
-        const b = await DDN.fetchBaseMap(pts, W, H, PAD);
-        if (reqId !== mapReq) return;
-        proj = b.proj; baseURI = b.dataURI;
-      } catch (e) { /* 回退 */ }
+    // 换日才重拉底图并重置视野；同日微调只重绘覆盖层
+    if (mapState.day !== cur) {
+      const lngs = pts.map(p => p.lng), lats = pts.map(p => p.lat);
+      mapState.cLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
+      mapState.cLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+      mapState.zoom = DDN.fitZoom(pts, MW, MH, PAD);
+      mapState.offX = 0; mapState.offY = 0;
+      mapState.proj = null; mapState.baseURI = null;
+      if (DDN.cloudAvailable()) {
+        mapBusy = true;
+        try {
+          const b = await DDN.fetchBaseMap(pts, BW, BH, PAD * 2);
+          if (reqId !== mapReq) return;
+          mapState.proj = b.proj; mapState.baseURI = b.dataURI;
+        } catch (e) { /* 回退示意 */ }
+        mapBusy = false;
+      }
+      if (!mapState.proj) mapState.proj = DDN.makeProjector(pts, BW, BH, PAD * 2);
+      mapState.day = cur;
     }
-    if (!proj) proj = DDN.makeProjector(pts, W, H, PAD);
+    drawMap(stopItems, pts);
+  }
 
+  function drawMap(stopItems, pts) {
+    const svg = $('mapSvg');
     svg.textContent = '';
+    const { proj, baseURI, offX, offY } = mapState;
+    const fontFam = "-apple-system,'PingFang SC','Microsoft YaHei'";
+    const tx = -(BW / 2 - MW / 2 + offX), ty = -(BH / 2 - MH / 2 + offY);
+
+    const pan = DDN.svgEl('g', { id: 'panLayer', transform: `translate(${tx} ${ty})` });
+    svg.appendChild(pan);
+
     if (baseURI) {
-      svg.appendChild(DDN.svgEl('image', {
-        href: baseURI, x: 0, y: 0, width: W, height: H, preserveAspectRatio: 'none',
-        style: 'filter:grayscale(.72) sepia(.1) contrast(.94) brightness(1.03);opacity:.92',
+      pan.appendChild(DDN.svgEl('image', {
+        href: baseURI, x: 0, y: 0, width: BW, height: BH, preserveAspectRatio: 'none',
+        style: `filter:${DDN.MAP_SOFT_FILTER};opacity:.9`,
       }));
     } else {
-      svg.appendChild(DDN.svgEl('rect', { x: 0, y: 0, width: W, height: H, fill: '#F3F5F0' }));
+      pan.appendChild(DDN.svgEl('rect', { x: 0, y: 0, width: BW, height: BH, fill: '#F3F5F0' }));
     }
 
     const P = pts.map(p => Object.assign({ pt: proj(p) }, p));
+    const dp = route.dayPlans[cur];
     const inRoute = new Set(stopItems.map(s => s.id));
-    const fontFam = "-apple-system,'PingFang SC','Microsoft YaHei'";
 
-    // 范围内全部景点：淡点 + 小字标注（与路线点/已放标签碰撞时只留点）
-    const placed = P.map(p => ({ x: p.pt.x, y: p.pt.y, w: 34 }));   // 路线点保护圈
+    // 全部景点：淡点 + 小字标注（可点选加入今天；与路线点/已放标签碰撞时只留点）
+    const placed = P.map(p => ({ x: p.pt.x, y: p.pt.y, w: 34 }));
     for (const s of spots) {
       if (inRoute.has(s.id) || !s.coord) continue;
       const q = proj({ lng: s.coord[0], lat: s.coord[1] });
-      if (q.x < 6 || q.x > W - 6 || q.y < 6 || q.y > H - 6) continue;
-      svg.appendChild(DDN.svgEl('circle', { cx: q.x, cy: q.y, r: 2.2, fill: '#A8B0A4', opacity: .65 }));
+      const dot = DDN.svgEl('circle', {
+        cx: q.x, cy: q.y, r: 4, fill: '#A8B0A4', opacity: .65,
+        class: 'spot-hit', 'data-id': s.id,
+      });
+      pan.appendChild(dot);
       const wHalf = s.name.length * 8.5 / 2 + 6;
-      const clash = placed.some(b =>
-        Math.abs(b.x - q.x) < (b.w + wHalf) && Math.abs(b.y - (q.y - 9)) < 11);
+      const clash = placed.some(b => Math.abs(b.x - q.x) < (b.w + wHalf) && Math.abs(b.y - (q.y - 10)) < 11);
       if (clash) continue;
-      const anchor = q.x > W - 60 ? 'end' : (q.x < 60 ? 'start' : 'middle');
       const t = DDN.svgEl('text', {
-        x: q.x, y: q.y - 7, 'font-size': 8.5, 'font-weight': 500,
-        fill: '#5F6B61', 'font-family': fontFam, 'text-anchor': anchor, opacity: .85,
-        style: `paint-order:stroke;stroke:${baseURI ? '#FBFBF8' : '#F3F5F0'};stroke-width:2.5`,
+        x: q.x, y: q.y - 8, 'font-size': 8.5, 'font-weight': 500,
+        fill: '#5F6B61', 'font-family': fontFam, 'text-anchor': 'middle', opacity: .85,
+        class: 'spot-hit', 'data-id': s.id,
+        style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:2.5',
       });
       t.textContent = s.name;
-      svg.appendChild(t);
-      placed.push({ x: q.x, y: q.y - 7, w: wHalf });
+      pan.appendChild(t);
+      placed.push({ x: q.x, y: q.y - 8, w: wHalf });
     }
 
-    // 路线：起点 → 各站 → 回到起点（白色衬底粗线 + 当日颜色细线）
-    const pathPts = [P[0].pt, ...P.slice(1).map(p => p.pt), P[0].pt];
-    const d = pathPts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+    // 路线（中点二次贝塞尔平滑）
+    const d = DDN.smoothPathD([P[0].pt, ...P.slice(1).map(p => p.pt), P[0].pt]);
     if (P.length > 1) {
-      svg.appendChild(DDN.svgEl('path', {
-        d, fill: 'none', stroke: '#fff', 'stroke-width': 6,
-        'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .9,
-      }));
-      svg.appendChild(DDN.svgEl('path', {
-        d, fill: 'none', stroke: dp.color, 'stroke-width': 3.5,
-        'stroke-linecap': 'round', 'stroke-linejoin': 'round',
-      }));
+      pan.appendChild(DDN.svgEl('path', { d, fill: 'none', stroke: '#fff', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .85 }));
+      pan.appendChild(DDN.svgEl('path', { d, fill: 'none', stroke: dp.color, 'stroke-width': 3.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
     }
 
-    // 起点黑圆「起」
+    // 起点 + 站点
     const o = P[0].pt;
-    svg.appendChild(DDN.svgEl('circle', { cx: o.x, cy: o.y, r: 8.5, fill: '#182119', stroke: '#fff', 'stroke-width': 2.5 }));
-    const ot = DDN.svgEl('text', { x: o.x, y: o.y + 3.2, 'font-size': 8.5, fill: '#fff', 'font-family': '-apple-system', 'font-weight': 700, 'text-anchor': 'middle' });
+    pan.appendChild(DDN.svgEl('circle', { cx: o.x, cy: o.y, r: 8.5, fill: '#182119', stroke: '#fff', 'stroke-width': 2.5 }));
+    const ot = DDN.svgEl('text', { x: o.x, y: o.y + 3.2, 'font-size': 8.5, fill: '#fff', 'font-weight': 700, 'text-anchor': 'middle' });
     ot.textContent = '起';
-    svg.appendChild(ot);
-
-    // 站点彩点 + 站名标注（纸色描边，照原型 paint-order 技法）
-    P.slice(1).forEach((p) => {
-      svg.appendChild(DDN.svgEl('circle', { cx: p.pt.x, cy: p.pt.y, r: 5.5, fill: dp.color, stroke: '#fff', 'stroke-width': 1.8 }));
-      const anchor = p.pt.x > W - 70 ? 'end' : (p.pt.x < 70 ? 'start' : 'middle');
+    pan.appendChild(ot);
+    P.slice(1).forEach(p => {
+      pan.appendChild(DDN.svgEl('circle', { cx: p.pt.x, cy: p.pt.y, r: 5.5, fill: dp.color, stroke: '#fff', 'stroke-width': 1.8 }));
       const t = DDN.svgEl('text', {
         x: p.pt.x, y: p.pt.y - 11, 'font-size': 10, 'font-weight': 600,
-        fill: '#182119', 'font-family': fontFam, 'text-anchor': anchor,
+        fill: '#182119', 'font-family': fontFam, 'text-anchor': 'middle',
         style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
       });
       t.textContent = p.name;
-      svg.appendChild(t);
+      pan.appendChild(t);
     });
-    // 起点名标注（圆点下方）
-    const oa = o.x > W - 70 ? 'end' : (o.x < 70 ? 'start' : 'middle');
     const on = DDN.svgEl('text', {
       x: o.x, y: o.y + 22, 'font-size': 10, 'font-weight': 600,
-      fill: '#182119', 'font-family': fontFam, 'text-anchor': oa,
+      fill: '#182119', 'font-family': fontFam, 'text-anchor': 'middle',
       style: 'paint-order:stroke;stroke:#FBFBF8;stroke-width:3',
     });
     on.textContent = P[0].name;
-    svg.appendChild(on);
+    pan.appendChild(on);
 
-    // 来源标注
     if (baseURI) {
       const at = DDN.svgEl('text', {
-        x: W - 6, y: H - 6, 'font-size': 7, fill: 'rgba(0,0,0,.45)',
+        x: MW - 6, y: MH - 6, 'font-size': 7, fill: 'rgba(0,0,0,.45)',
         'font-family': fontFam, 'text-anchor': 'end',
         style: 'paint-order:stroke;stroke:rgba(255,255,255,.8);stroke-width:2',
       });
       at.textContent = '地图数据 © 腾讯位置服务';
-      svg.appendChild(at);
+      svg.appendChild(at);   // 固定在视口，不随平移
     }
+  }
+
+  // 拖拽/点选/缩放交互（只挂一次）
+  let mapBound = false;
+  function bindMap() {
+    if (mapBound) return;
+    mapBound = true;
+    const svg = $('mapSvg');
+    let dragging = false, moved = 0, sx = 0, sy = 0;
+
+    const toView = e => {
+      const r = svg.getBoundingClientRect();
+      return { x: (e.clientX - r.left) * MW / r.width, y: (e.clientY - r.top) * MH / r.height };
+    };
+    const applyPan = () => {
+      const g = $('panLayer');
+      if (g) g.setAttribute('transform',
+        `translate(${-(BW / 2 - MW / 2 + mapState.offX)} ${-(BH / 2 - MH / 2 + mapState.offY)})`);
+    };
+    svg.addEventListener('pointerdown', e => {
+      dragging = true; moved = 0; sx = e.clientX; sy = e.clientY;
+      svg.setPointerCapture(e.pointerId);
+      svg.classList.add('grabbing');
+    });
+    svg.addEventListener('pointermove', e => {
+      if (!dragging) return;
+      const r = svg.getBoundingClientRect();
+      const dx = (e.clientX - sx) * MW / r.width, dy = (e.clientY - sy) * MH / r.height;
+      moved += Math.abs(dx) + Math.abs(dy);
+      mapState.offX = Math.max(0, Math.min(BW - MW, mapState.offX - dx));
+      mapState.offY = Math.max(0, Math.min(BH - MH, mapState.offY - dy));
+      sx = e.clientX; sy = e.clientY;
+      applyPan();
+    });
+    svg.addEventListener('pointerup', e => {
+      dragging = false;
+      svg.classList.remove('grabbing');
+      if (moved < 6) {   // 视为点选：命中淡色景点 → 加入今天
+        const v = toView(e);
+        const bx = v.x + (BW / 2 - MW / 2) + mapState.offX;
+        const by = v.y + (BH / 2 - MH / 2) + mapState.offY;
+        const dp = route.dayPlans[cur];
+        const inRoute = new Set(route.__stops[cur].map(s => s.id));
+        let best = null, bd = 16 * 16;
+        for (const s of spots) {
+          if (inRoute.has(s.id) || !s.coord || !mapState.proj) continue;
+          const q = mapState.proj({ lng: s.coord[0], lat: s.coord[1] });
+          const dd = (q.x - bx) ** 2 + (q.y - by) ** 2;
+          if (dd < bd) { bd = dd; best = s; }
+        }
+        if (best) confirmAddStop(best, dp);
+      }
+    });
+    $('zoomIn').onclick = () => zoomBy(1);
+    $('zoomOut').onclick = () => zoomBy(-1);
+  }
+
+  async function zoomBy(dz) {
+    if (mapBusy) return;
+    const z = Math.max(9, Math.min(15, mapState.zoom + dz));
+    if (z === mapState.zoom) return;
+    mapState.zoom = z;
+    mapBusy = true;
+    try {
+      const j = await DDN.cloudPost('posterImg', {
+        center: `${mapState.cLat.toFixed(6)},${mapState.cLng.toFixed(6)}`,
+        zoom: z, size: `${BW}x${BH}`, scale: 1,
+      }, 15000);
+      const img = await new Promise((res, rej) => {
+        const im = new Image();
+        im.onload = () => res(im); im.onerror = rej;
+        im.src = 'data:image/png;base64,' + j.base64;
+      });
+      mapState.baseURI = img.src;
+      mapState.proj = DDN.mercatorProjector(mapState.cLng, mapState.cLat, z, BW, BH);
+    } catch (e) { /* 保持现状 */ }
+    mapBusy = false;
+    renderMap();
+  }
+
+  // 点选确认：加入当天行程（retimeDay 全量重校验）
+  function confirmAddStop(spot, dp) {
+    DDN.openDrawer('加入今天', (body, close) => {
+      const item = DDN.el('div', 'drawer-sub');
+      item.textContent = `把「${spot.name}」加到 D${dp.day}（${DDN.themeOf(dp.label)}）的末尾？时间轴会自动重排校验。`;
+      body.appendChild(item);
+      if (spot.photo) {
+        const im = DDN.el('img', 'drawer-photo');
+        im.src = spot.photo; im.alt = spot.name; im.referrerPolicy = 'no-referrer';
+        body.appendChild(im);
+      }
+      const go = DDN.el('button', 'btn-primary');
+      go.textContent = '加入今天';
+      go.style.marginTop = '10px';
+      go.onclick = async () => {
+        close();
+        route.__stops[cur].push(spot);
+        await applyRetime(cur);
+        renderMap();
+        DDN.toast(`已加入「${spot.name}」`);
+      };
+      body.appendChild(go);
+    });
   }
 
   // ---------- 时间轴 ----------
@@ -502,6 +650,15 @@
     body.appendChild(name);
 
     const spot = spotById(item.id);
+    // 景点缩略图（高德 POI 首图，低成本富化；无图不占位）
+    if (spot && spot.photo) {
+      const im = DDN.el('img', 'stop-thumb');
+      im.src = spot.photo;
+      im.alt = spot.name;
+      im.loading = 'lazy';
+      im.referrerPolicy = 'no-referrer';
+      body.appendChild(im);
+    }
     const tags = spot ? [spot.cat, ...(spot.tags || [])].slice(0, 3).join(' · ') : item.cat;
     body.appendChild(DDN.el('div', 'stop-tags', tags));
 
@@ -694,6 +851,7 @@
     renderAnchor();
     renderDay();
     renderNarrative();
+    bindMap();
   })();
 
   // ---------- AI 叙事：模板文案先出（红线：可降级），AI 返回后替换并亮「由 AI 生成」标 ----------

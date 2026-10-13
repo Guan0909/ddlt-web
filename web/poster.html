@@ -172,8 +172,8 @@
   rrect(mapX, mapY, mapW, mapH, 4);
   ctx.clip();
   if (baseImg) {
-    ctx.globalAlpha = 0.9;
-    try { ctx.filter = 'grayscale(.72) sepia(.1) contrast(.94) brightness(1.03)'; } catch (e) {}
+    ctx.globalAlpha = 0.88;
+    try { ctx.filter = DDN.MAP_SOFT_FILTER; } catch (e) {}
     // 源图裁掉底部水印条（等比：源高取与显示框同比例的上半部），不拉伸不变形
     const srcH = baseImg.width * mapH / mapW;
     ctx.drawImage(baseImg, 0, 0, baseImg.width, srcH, mapX, mapY, mapW, mapH);
@@ -188,20 +188,14 @@
   for (const dp of days) {
     const ss = dayStops[days.indexOf(dp)];
     if (!ss.length) continue;
-    const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O];
-    const trace = () => {
-      ctx.beginPath();
-      pts.forEach((p, i) => {
-        const x = mapX + p.x, y = mapY + p.y;
-        if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
-      });
-    };
+    const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O]
+      .map(p => ({ x: mapX + p.x, y: mapY + p.y }));
     ctx.strokeStyle = 'rgba(255,255,255,.92)';
-    ctx.lineWidth = 5;
-    trace(); ctx.stroke();
+    ctx.lineWidth = 5.5;
+    DDN.smoothTrace(ctx, pts); ctx.stroke();
     ctx.strokeStyle = dp.color;
-    ctx.lineWidth = 2.6;
-    trace(); ctx.stroke();
+    ctx.lineWidth = 2.8;
+    DDN.smoothTrace(ctx, pts); ctx.stroke();
   }
   // 站点彩点
   for (const dp of days) {

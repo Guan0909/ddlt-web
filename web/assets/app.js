@@ -165,7 +165,34 @@ window.DDN = (() => {
     });
   }
 
-  // ---------- 路线状态 ----------
+  // ---------- 路线平滑（中点二次贝塞尔）与柔和底图滤镜 ----------
+  // SVG path 字符串版
+  function smoothPathD(pts) {
+    if (!pts.length) return '';
+    if (pts.length < 3) return pts.map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ');
+    let d = `M${pts[0].x.toFixed(1)} ${pts[0].y.toFixed(1)}`;
+    for (let i = 1; i < pts.length - 1; i++) {
+      const mx = (pts[i].x + pts[i + 1].x) / 2, my = (pts[i].y + pts[i + 1].y) / 2;
+      d += ` Q${pts[i].x.toFixed(1)} ${pts[i].y.toFixed(1)} ${mx.toFixed(1)} ${my.toFixed(1)}`;
+    }
+    const last = pts[pts.length - 1];
+    return d + ` L${last.x.toFixed(1)} ${last.y.toFixed(1)}`;
+  }
+  // Canvas 描画版
+  function smoothTrace(ctx, pts) {
+    if (!pts.length) return;
+    ctx.beginPath();
+    ctx.moveTo(pts[0].x, pts[0].y);
+    if (pts.length < 3) { pts.slice(1).forEach(p => ctx.lineTo(p.x, p.y)); return; }
+    for (let i = 1; i < pts.length - 1; i++) {
+      const mx = (pts[i].x + pts[i + 1].x) / 2, my = (pts[i].y + pts[i + 1].y) / 2;
+      ctx.quadraticCurveTo(pts[i].x, pts[i].y, mx, my);
+    }
+    const last = pts[pts.length - 1];
+    ctx.lineTo(last.x, last.y);
+  }
+  // 柔和底图滤镜（比原滤镜更退后，路线才是唯一主角）
+  const MAP_SOFT_FILTER = 'grayscale(.8) sepia(.12) contrast(.9) brightness(1.05)';
   // genRoute 之后调用：按各日 items 顺序把 spot 对象挂到 route.__stops，供微调
   function attachStops(route, spots) {
     const byId = {};
@@ -307,6 +334,7 @@ window.DDN = (() => {
     saveRoute, loadRoute, saveShared, loadShared,
     todayISO, parseHM, fmtHour, fmtDur, fmtHourCn, dateRange, dayCn, pinyinOf, themeOf,
     makeProjector, mercatorProjector, fitZoom, fetchBaseMap,
+    smoothPathD, smoothTrace, MAP_SOFT_FILTER,
     attachStops, refreshSuburb, recalcTotals, retime, rebuildStopsFromLib,
     cloudPost, cloudAvailable, cloudGenRoute,
     toast, openDrawer,

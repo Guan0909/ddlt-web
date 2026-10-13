@@ -37,7 +37,7 @@ async function chat(system, user, timeoutMs = 3000) {   // 红线：默认 3 秒
   return (j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content || '').trim();
 }
 
-// ① 路线叙事：输入是引擎已排好的结构化路线，输出 ≤60 字总推荐语
+// ① 路线叙事：输入是引擎已排好的结构化路线，输出 60~90 字总推荐语（文体规范见 skills/travel-copy）
 async function narrative(body) {
   const r = body.route;
   if (!r || !r.dayPlans) return null;
@@ -45,13 +45,17 @@ async function narrative(body) {
     `D${d.day} ${d.label}：${d.items.filter(i => i.type === 'stop').map(i => i.name).join('、')}`
   ).join('\n');
   const text = await chat(
-    '你是「点定旅途」的旅行编辑。根据给定的已定行程写一句总推荐语，≤60 字，编辑感、克制、不夸张，' +
-    '只描述已给定的事实（城市、天数、站点、线路名），禁止编造景点、营业时间、价格、天气等任何新信息，禁止用表情符号。',
+    '你是「点定旅途」的旅行编辑，为已定行程写一段 60~90 字的总推荐语。\n' +
+    '红线：只描述给定事实（城市、天数、站点、线路名、起终点、通勤），禁止编造景点、时间、价格、天气、班次；' +
+    '禁止表情符号与"必打卡/绝绝子"类网络腔，不用夸张最高级。\n' +
+    '文体：克制陈述，名词动词多于形容词，把判断藏进顺序选择（如"博物馆排在午后最热时"）；' +
+    '两句以内说完，句读干净；多日行程要有"城里慢、城外赶"或"白天馆、入夜灯"的节奏感。\n' +
+    '样例语感：城里两天慢慢逛：博物馆排在午后，茶社留给上午；第三天赶早去都江堰。三国、诗圣和熊猫，一个都没绕路。',
     `城市：${r.city}，天数：${r.days}，起点：${r.origin && r.origin.name}\n${digest}`,
     5000   // 叙事非阻塞（模板已先出），放宽到 5s；提取仍为默认 3s
   );
   if (!text) return null;
-  return text.replace(/\s+/g, '').slice(0, 80);   // 超长硬截断
+  return text.replace(/\s+/g, '').slice(0, 100);   // 超长硬截断
 }
 
 // ② 攻略文本提取：JSON schema 约束 + spots 库白名单过滤（输入限 500 字）
