@@ -75,17 +75,16 @@ window.DDNGL = (() => {
           try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {}
           routeHalo = new TMap.MultiPolyline({
             map,
-            styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 7, lineCap: 'round' }) },
+            styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 9, lineCap: 'round' }) },
             geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
           });
           routeMain = new TMap.MultiPolyline({
             map,
-            styles: { main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }) },
+            styles: { main: new TMap.PolylineStyle({ color, width: 5.5, lineCap: 'round' }) },
             geometries: geoms,
           });
         }
-        document.title += ` RP${j.paths.filter(Boolean).length}/${legs.length}`;
-      } catch (e) { document.title += ' RP✗'; }
+      } catch (e) { /* 保持直线示意 */ }
     }
 
     // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color, legs?:[{from,to,mode}] })
@@ -101,12 +100,12 @@ window.DDNGL = (() => {
       const path = [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)];
       routeHalo = new TMap.MultiPolyline({
         map,
-        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 7, lineCap: 'round' }) },
+        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 9, lineCap: 'round' }) },
         geometries: [{ id: 'halo', styleId: 'halo', paths: path }],
       });
       routeMain = new TMap.MultiPolyline({
         map,
-        styles: { main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }) },
+        styles: { main: new TMap.PolylineStyle({ color, width: 5.5, lineCap: 'round' }) },
         geometries: [{ id: 'main', styleId: 'main', paths: path }],
       });
       if (legs && legs.length > 1 && DDN.cloudAvailable()) upgradeToRealPaths(legs, color, token);
