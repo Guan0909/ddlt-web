@@ -11,7 +11,11 @@ const PROVIDER = process.env.AI_PROVIDER || 'deepseek';   // deepseek | glm
 const ENDPOINTS = {
   glm: { url: 'https://open.bigmodel.cn/api/paas/v4/chat/completions', model: 'glm-4-flash', envKey: 'GLM_KEY' },
   deepseek: {
-    url: process.env.AI_BASE_URL || 'https://api.deepseek.com/chat/completions',
+    // AI_BASE_URL 可为根路径（https://host/v1）或完整路径（…/chat/completions），此处归一
+    url: (() => {
+      const b = (process.env.AI_BASE_URL || 'https://api.deepseek.com').replace(/\/+$/, '');
+      return b.endsWith('/chat/completions') ? b : b + '/chat/completions';
+    })(),
     model: process.env.AI_MODEL || 'deepseek-chat',
     envKey: 'DEEPSEEK_KEY',
   },
@@ -110,6 +114,7 @@ exports.main = async (event) => {
     }
     return fail('未知 kind');
   } catch (e) {
+    console.error(e);
     return ok({ text: null, spotIds: [], fallback: true });   // 任何异常都回退，绝不阻塞主流程
   }
 };

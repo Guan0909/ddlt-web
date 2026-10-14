@@ -65,7 +65,9 @@ function gridKey(lng, lat) {
   return `${g(lng)},${g(lat)}`;
 }
 function cacheId(fromLng, fromLat, toId, mode) {
-  return `${gridKey(fromLng, fromLat)}__${toId}__${mode}`;
+  // transit 曾按秒/分钟换算错（direction duration 实为分钟），换 key 版本使当日旧缓存失效
+  const m = mode === 'transit' ? 'transit2' : mode;
+  return `${gridKey(fromLng, fromLat)}__${toId}__${m}`;
 }
 function ttlOf(mode) {
   return mode === 'transit'

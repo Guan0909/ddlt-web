@@ -67,13 +67,14 @@ async function matrix(froms, tos, mode) {
 }
 
 // 单段路径规划（公交等需要线路细节时用）：mode = walking|driving|transit
+// 注意单位差异：direction 的 duration 为分钟；matrix 的 duration 为秒
 async function direction(from, to, mode) {
   const fmt = p => `${p.lat.toFixed(6)},${p.lng.toFixed(6)}`;
   const j = await call(`/ws/direction/v1/${mode}`, { from: fmt(from), to: fmt(to) });
   const r = j.result;
   const route = r && r.routes && r.routes[0];
   if (!route) throw new Error(`腾讯 ${mode} 路径规划无结果`);
-  return { km: +(route.distance / 1000).toFixed(2), min: Math.max(1, Math.round(route.duration / 60)), mode };
+  return { km: +(route.distance / 1000).toFixed(2), min: Math.max(1, Math.round(route.duration)), mode };
 }
 
 // 静态图（海报链路，posterImg 代理用）：返回图片 Buffer
