@@ -40,6 +40,8 @@ window.DDNGL = (() => {
       zoom: 12,
       viewMode: '2D',
       showBuilding: false,
+      // 简洁底图：只保留道路/底面与道路名，隐藏 POI 文字图标，避免与景点标注抢视觉
+      baseMap: { type: 'vector', features: ['base', 'label'] },
     });
     // 视觉柔化：与静态图同一滤镜，底图退后、路线为主角
     container.style.filter = DDN.MAP_SOFT_FILTER;
