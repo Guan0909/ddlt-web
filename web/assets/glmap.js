@@ -83,8 +83,8 @@ window.DDNGL = (() => {
             styles: { main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }) },
             geometries: geoms,
           });
-          document.title += ' RP✓';
         }
+        document.title += ` RP${j.paths.filter(Boolean).length}/${legs.length}`;
       } catch (e) { document.title += ' RP✗'; }
     }
 
