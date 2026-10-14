@@ -4,7 +4,7 @@
 
 const path = require('path');
 const data = require(path.join(__dirname, '..', 'data', 'spots', 'chengdu.json'));
-const { genRoute, retimeDay, estimateCommute, addDays, isMonday } = require('./index');
+const { genRoute, retimeDay, validateInputs, estimateCommute, addDays, isMonday } = require('./index');
 const { pt, haversineM } = require('./geo');
 
 const spots = data.spots;
@@ -67,13 +67,18 @@ function validate(route, opts) {
     }
   });
 
-  // 起点命中景点须为 D1 第 1 站
-  if (opts.origin.spotId) {
+  // 起点命中景点须为 D1 第 1 站（锚点闭馆降级场景除外）
+  if (opts.origin.spotId && !opts.skipAnchorAssert) {
     const first = route.dayPlans[0].items.find(i => i.type === 'stop');
     if (!first || first.id !== opts.origin.spotId) {
       errors.push(`锚点景点未成为 D1 第 1 站（实际：${first ? first.name : '无'}）`);
     }
   }
+
+  // 空日防御：任何一天至少 1 站
+  route.dayPlans.forEach(day => {
+    if (day.stats.stops === 0) errors.push(`D${day.day} 空日（0 站）`);
+  });
 
   return errors;
 }
@@ -152,6 +157,45 @@ const scenarios = [
     name: 'E6 西安 · 3 日',
     opts: { spots: require('../data/spots/xian.json').spots, city: '西安', origin: { name: '钟楼酒店', lng: 108.9402, lat: 34.3416 }, days: 3, startDate: '2026-10-13' },
   },
+  {
+    name: 'F1 杭州 · 5 日（超远远郊排除 + 空日保护）',
+    opts: { spots: require('../data/spots/hangzhou.json').spots, city: '杭州', origin: { name: '湖滨酒店', lng: 120.1551, lat: 30.2741 }, days: 5, startDate: '2026-10-13' },
+    checks: route => {
+      const errs = [];
+      if (route.dayPlans.some(d => d.stats.stops === 0)) errs.push('存在 0 站空日');
+      const qd = route.droppedAll.find(d => d.spot.id === 'qiandao-lake');
+      if (!qd || !/太远/.test(qd.cause)) errs.push('千岛湖（单程>165min）未被标记为太远排除');
+      if (route.dayPlans.flatMap(d => d.items).some(i => i.type === 'stop' && i.id === 'qiandao-lake')) {
+        errs.push('千岛湖仍被排入行程');
+      }
+      return errs;
+    },
+  },
+  {
+    name: 'F2 北京 · 锚点=故宫 · 周一起始 3 日（锚点闭馆降级）',
+    opts: { spots: require('../data/spots/beijing.json').spots, city: '北京', origin: { name: '故宫', lng: 116.3972, lat: 39.9169, spotId: 'gugong' }, days: 3, startDate: '2026-10-12', skipAnchorAssert: true },
+    checks: route => {
+      const errs = [];
+      const first = route.dayPlans[0] && route.dayPlans[0].items.find(i => i.type === 'stop');
+      if (first && first.id === 'gugong') errs.push('周一闭馆的锚点仍被钉为 D1 首站');
+      let ggDay = null;
+      route.dayPlans.forEach(d => d.items.forEach(i => { if (i.type === 'stop' && i.id === 'gugong') ggDay = d; }));
+      if (ggDay && isMonday(ggDay.date)) errs.push('故宫被排在周一');
+      return errs;
+    },
+  },
+  {
+    name: 'F3 成都 · 周一起始 3 日（闭馆点前向迁移）',
+    opts: { spots, city: '成都', origin: { name: '天府广场酒店', lng: 104.0665, lat: 30.6570 }, days: 3, startDate: '2026-10-12' },
+    checks: route => {
+      const errs = [];
+      let cmDay = null;
+      route.dayPlans.forEach(d => d.items.forEach(i => { if (i.type === 'stop' && i.id === 'chengdu-museum') cmDay = d; }));
+      if (!cmDay) errs.push('成都博物馆应迁移到非周一而非被丢弃');
+      else if (isMonday(cmDay.date)) errs.push('成都博物馆被排在周一');
+      return errs;
+    },
+  },
 ];
 
 let fail = 0;
@@ -182,6 +226,24 @@ let fail = 0;
   }
 }
 
+// ---------- 场景 G：输入校验（云函数与浏览器同源的 validateInputs） ----------
+{
+  console.log(`\n### G 输入校验：起点过偏 / 景点不够分配 / 正常起点放行`);
+  const errs = [];
+  const vFar = validateInputs(spots, { lng: 103.0, lat: 30.0 }, 3);
+  if (vFar.ok || vFar.code !== 'ORIGIN_TOO_FAR') errs.push(`远偏起点未拦截（实际 ${JSON.stringify(vFar)}）`);
+  const vFew = validateInputs(spots.slice(0, 3), { lng: 104.07, lat: 30.66 }, 3);
+  if (vFew.ok || vFew.code !== 'NOT_ENOUGH_SPOTS') errs.push(`景点不够分配未拦截（实际 ${JSON.stringify(vFew)}）`);
+  const vOk = validateInputs(spots, { lng: 104.07, lat: 30.66 }, 3);
+  if (!vOk.ok) errs.push('正常起点被误拦');
+  if (errs.length) {
+    fail += errs.length;
+    for (const e of errs) console.log(`  ✗ ${e}`);
+  } else {
+    console.log(`  ✓ 校验通过（三条规则）`);
+  }
+}
+
 for (const sc of scenarios) {
   const t0 = Date.now();
   const route = genRoute(sc.opts);
@@ -189,6 +251,7 @@ for (const sc of scenarios) {
   console.log(`\n### ${sc.name}（引擎耗时 ${ms}ms）`);
   printRoute(route);
   const errors = validate(route, sc.opts);
+  if (sc.checks) errors.push(...(sc.checks(route) || []));
   if (errors.length) {
     fail += errors.length;
     console.log(`\n  ✗ 校验未通过（${errors.length} 项）：`);

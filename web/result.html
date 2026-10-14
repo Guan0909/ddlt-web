@@ -252,7 +252,8 @@
 (() => {
   const route = DDN.loadRoute();
   if (!route || !route.dayPlans || !route.dayPlans.length) {
-    location.replace('/index.html');
+    try { sessionStorage.setItem('ddn_err', '路线数据不在了，重新生成一次吧'); } catch (e) {}
+    location.replace('/');
     return;
   }
   const $ = id => document.getElementById(id);

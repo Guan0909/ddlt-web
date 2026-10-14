@@ -11,21 +11,27 @@ exports.main = async (event) => {
   const body = parseBody(event);
   if (!body || !body.city || !body.origin || body.origin.lng == null) return fail('参数不完整');
   const spots = loadSpots(body.city);
-  if (!spots) return fail('该城市暂未开通');
+  if (!spots) return fail('该城市暂未开通', 400, { code: 'CITY_CLOSED' });
 
   const days = Math.min(5, Math.max(1, +body.days || 3));
   const startDate = /^\d{4}-\d{2}-\d{2}$/.test(body.startDate || '')
     ? body.startDate : engine.addDays(new Date().toISOString().slice(0, 10), 1);
 
+  // 输入校验（与浏览器端同一引擎规则）：起点过偏 / 周边景点不够分配
+  const origin = { name: String(body.origin.name || '我的起点').slice(0, 40), lng: +body.origin.lng, lat: +body.origin.lat, spotId: body.origin.spotId || null };
+  const v = engine.validateInputs(spots, origin, days);
+  if (!v.ok) return fail(v.message, 400, { code: v.code });
+
   try {
     const route = engine.genRoute({
       spots,
-      origin: { name: String(body.origin.name || '我的起点').slice(0, 40), lng: +body.origin.lng, lat: +body.origin.lat, spotId: body.origin.spotId || null },
+      origin,
       days, startDate,
       startNow: !!body.startNow,
       nowMin: Number.isFinite(body.nowMin) ? body.nowMin : null,
       city: body.city,
     });
+    if (!route.dayPlans.length) return fail('这条路线排不出来。换个起点，或减少天数试试。', 400, { code: 'PLAN_EMPTY' });
     await refineWithRealCommute(route, spots);
     route.dayStopIds = route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(i => i.id));
     const routeId = await store.routeSave(route).catch(() => null);

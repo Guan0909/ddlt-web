@@ -17,8 +17,8 @@ const MIME = {
 
 const REWRITES = [
   [/^\/$/, '/web/index.html'],
-  [/^\/(index|result|share|poster|privacy)$/, '/web/$1.html'],
-  [/^\/(index|result|share|poster|privacy)\.html$/, '/web/$1.html'],
+  [/^\/(index|result|loading|share|poster|privacy)$/, '/web/$1.html'],
+  [/^\/(index|result|loading|share|poster|privacy)\.html$/, '/web/$1.html'],
   [/^\/share\/[0-9a-f]{32}$/, '/web/share.html'],
   [/^\/assets\/(.+)$/, '/web/assets/$1'],
 ];

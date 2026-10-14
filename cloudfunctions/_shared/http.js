@@ -16,11 +16,11 @@ function ok(obj) {
   };
 }
 
-function fail(message, code = 400) {
+function fail(message, code = 400, extra) {
   return {
     statusCode: code,
     headers: { 'Content-Type': 'application/json; charset=utf-8', 'Access-Control-Allow-Origin': '*' },
-    body: JSON.stringify({ error: message }),
+    body: JSON.stringify({ error: message, ...(extra || {}) }),
   };
 }
 

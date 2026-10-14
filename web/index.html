@@ -248,7 +248,7 @@
     );
   };
 
-  // ---------- 生成路线 ----------
+  // ---------- 生成路线：存请求快照 → 跳加载页（解析/校验/生成集中在加载页完成） ----------
   function resolveOrigin() {
     const text = input.value.trim();
     if (selectedSpot && text === selectedSpot.name) {
@@ -256,37 +256,34 @@
     }
     if (suggested && text === suggested.name) return suggested;
     if (located && text === '当前位置') return located;
-    if (text) return { name: text, lng: cityEntry.center[0], lat: cityEntry.center[1] };
+    if (text) return { name: text.slice(0, 30) };   // 裸文本：无坐标，由加载页 searchPoi 强匹配解析
     if (located) return located;
     return { name: city + '市中心', lng: cityEntry.center[0], lat: cityEntry.center[1] };
   }
-  genBtn.onclick = async () => {
-    if (!spots) return;
-    const origin = resolveOrigin();
-    const opts = {
-      spots, origin, days,
-      startDate: window.Engine.addDays(DDN.todayISO(), 1),  // 默认明早 09:00 出发
-      startNow: false,
-      city,
-    };
-    genBtn.disabled = true;
-    let route = null;
-    if (DDN.cloudAvailable()) {
-      try {
-        const j = await DDN.cloudGenRoute({ city, origin, days, startDate: opts.startDate, startNow: false });
-        route = j.route;
-        if (j.routeId) route.routeId = j.routeId;
-      } catch (e) { /* 云端失败回退本地引擎 */ }
+  genBtn.onclick = () => {
+    if (!spots || !cityEntry) return;
+    try {
+      DDN.saveRequest({
+        city, days,
+        origin: resolveOrigin(),
+        startDate: window.Engine.addDays(DDN.todayISO(), 1),  // 默认明早 09:00 出发
+        startNow: false,
+      });
+      location.href = '/loading';
+    } catch (e) {
+      DDN.toast('出了点小问题，再试一次');
     }
-    if (!route) route = window.Engine.genRoute(opts);
-    DDN.attachStops(route, spots);
-    route.__nowMode = false;
-    DDN.saveRoute(route);
-    location.href = '/result.html';
   };
 
   // ---------- 初始化 ----------
   (async () => {
+    // 从加载页错误态返回：还原上次输入；结果页数据缺失跳回时给出提示
+    const backReq = DDN.loadRequest();
+    if (backReq && backReq.origin && backReq.origin.name && backReq.origin.name !== city + '市中心') {
+      input.value = backReq.origin.name;
+    }
+    const backErr = sessionStorage.getItem('ddn_err');
+    if (backErr) { sessionStorage.removeItem('ddn_err'); DDN.toast(backErr); }
     try {
       const cities = await DDN.loadCities();
       window.__cities = cities;

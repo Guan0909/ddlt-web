@@ -99,7 +99,7 @@ async function refineWithRealCommute(route, spots) {
     const suburb = stopObjs.every(s => s.suburb);
     const commute = await buildCommuteFn(route.origin, stopObjs, suburb);
     const sim = engine.retimeDay(stopObjs, route.origin, dp.date, {
-      suburb, startMin: toMin(dp.startTime),
+      suburb, startMin: toMin(dp.startTime), commute,
     });
     dp.items = sim.items;
     dp.dropped = sim.dropped;

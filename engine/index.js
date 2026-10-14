@@ -12,8 +12,11 @@ const LUNCH = { from: 11 * 60 + 30, latest: 13 * 60, dur: 60 };
 const DINNER = { from: 17 * 60 + 30, latest: 18 * 60 + 30, dur: 60 };
 const MAX_STOPS_PER_DAY = 5;
 const MAX_PER_CAT = 3;             // 粗筛分类多样性上限
-const SUBURB_GROUP_RADIUS_M = 20000; // 远郊打包半径
+const SUBURB_GROUP_RADIUS_M = 25000; // 远郊打包半径（与数据 schema 口径一致）
 const SUBURB_GROUP_MAX_MIN = 480;    // 远郊单日游览总时长上限
+const TOO_FAR_ONEWAY_MIN = 165;      // 单程估时上限：超过视为当天往返不现实
+const VALIDATE_NEAR_M = 30000;       // 起点校验：最近景点超过 30km → 起点太偏
+const VALIDATE_RANGE_M = 60000;      // 起点校验：60km 内可用景点数 ≤ 天数 → 不够分配
 
 const DAY_COLORS = ['#3B7356', '#3E8E9E', '#B08A3E', '#7A9E43', '#8C6A4A'];
 
@@ -58,7 +61,24 @@ function selectCandidates(spots, days) {
   const city = [], suburb = [];
   for (const s of spots) (s.suburb ? suburb : city).push(s);
 
-  const cap = days * MAX_STOPS_PER_DAY;
+  // 远郊打包：量到组内最近成员（而非组首），避免顺序敏感与超长假组
+  const groups = [];
+  for (const s of [...suburb].sort((a, b) => b.heat - a.heat)) {
+    const g = groups.find(g =>
+      Math.min(...g.map(x => haversineM(pt(x.coord), pt(s.coord)))) <= SUBURB_GROUP_RADIUS_M &&
+      g.reduce((t, x) => t + (x.dur || 90), 0) + (s.dur || 90) <= SUBURB_GROUP_MAX_MIN);
+    if (g) g.push(s); else groups.push([s]);
+  }
+  // 组排序取组内最高热度：单点高热度远郊不应被规模大的组挤掉
+  const groupHeat = g => Math.max(...g.map(s => s.heat));
+  groups.sort((a, b) => groupHeat(b) - groupHeat(a));
+
+  // 远郊日数节制：1~2 日全留市区，3 日 1 个远郊日，5 日至多 3 个
+  const suburbDayCount = Math.min(Math.max(days - 2, 0), 3);
+  const keptGroups = groups.slice(0, suburbDayCount);
+
+  // 城内候选上限按「实际市区日数」给足，而非总天数（避免 5 日游候选挤 2 天）
+  const cap = Math.max(1, days - keptGroups.length) * MAX_STOPS_PER_DAY;
   const catCount = {};
   const cityPicked = [];
   for (const s of [...city].sort((a, b) => b.heat - a.heat)) {
@@ -68,19 +88,7 @@ function selectCandidates(spots, days) {
     cityPicked.push(s);
   }
 
-  const groups = [];
-  for (const s of [...suburb].sort((a, b) => b.heat - a.heat)) {
-    const g = groups.find(g =>
-      haversineM(pt(g[0].coord), pt(s.coord)) <= SUBURB_GROUP_RADIUS_M &&
-      g.reduce((t, x) => t + (x.dur || 90), 0) + (s.dur || 90) <= SUBURB_GROUP_MAX_MIN);
-    if (g) g.push(s); else groups.push([s]);
-  }
-  const groupHeat = g => g.reduce((t, s) => t + s.heat, 0);
-  groups.sort((a, b) => groupHeat(b) - groupHeat(a));
-
-  // 远郊日数节制：1~2 日全留市区，3 日 1 个远郊日，5 日至多 3 个
-  const suburbDayCount = Math.min(Math.max(days - 2, 0), 3);
-  return { cityPicked, suburbGroups: groups.slice(0, suburbDayCount) };
+  return { cityPicked, suburbGroups: keptGroups };
 }
 
 // ---------- 分日 ----------
@@ -344,30 +352,94 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped, commute) 
 // opts: { spots, origin:{name,lng,lat,spotId?}, days, startDate:'YYYY-MM-DD', startNow:false, nowMin }
 function genRoute(opts) {
   const { spots, origin, days, startDate } = opts;
-  const anchorSpot = origin.spotId ? spots.find(s => s.id === origin.spotId) || null : null;
-  const candidates = selectCandidates(spots.filter(s => s !== anchorSpot), days);
+  let anchorSpot = origin.spotId ? spots.find(s => s.id === origin.spotId) || null : null;
+  // 锚点 D1 闭馆（如周一闭馆的博物馆）：降级为普通候选，起点仅作坐标，
+  // 该点由闭馆迁移挪到后续开放日，不再钉死 D1 第 1 站
+  if (anchorSpot && anchorSpot.closed_mon === true && isMonday(startDate)) anchorSpot = null;
+
+  // 超远远郊排除：单程估时超上限的点当天往返不现实，直接不入选（进未排入清单并明示）
+  const tooFar = [], usable = [];
+  for (const s of spots) {
+    if (anchorSpot && s.id === anchorSpot.id) continue;
+    if (estimateCommute(origin, pt(s.coord)).min > TOO_FAR_ONEWAY_MIN) tooFar.push(s);
+    else usable.push(s);
+  }
+  const candidates = selectCandidates(usable, days);
+
   if (anchorSpot && anchorSpot.suburb) {
-    // 远郊起点：并入所在分组
+    // 远郊起点：并入最近成员可达的分组；落单则与最近的城内候选拼成一日，避免一日一站
     const g = candidates.suburbGroups.find(g =>
-      haversineM(pt(g[0].coord), pt(anchorSpot.coord)) <= SUBURB_GROUP_RADIUS_M);
+      Math.min(...g.map(x => haversineM(pt(x.coord), pt(anchorSpot.coord)))) <= SUBURB_GROUP_RADIUS_M);
     if (g && !g.includes(anchorSpot)) g.push(anchorSpot);
-    else if (!g) candidates.suburbGroups.unshift([anchorSpot]);
+    else if (!g) {
+      const merged = [anchorSpot];
+      let sumMin = anchorSpot.dur || 90;
+      const used = [];
+      for (const s of [...candidates.cityPicked].sort((a, b) =>
+        haversineM(pt(a.coord), pt(anchorSpot.coord)) - haversineM(pt(b.coord), pt(anchorSpot.coord)))) {
+        if (merged.length >= MAX_STOPS_PER_DAY) break;
+        if (sumMin + (s.dur || 90) > SUBURB_GROUP_MAX_MIN) continue;
+        merged.push(s); used.push(s); sumMin += s.dur || 90;
+      }
+      candidates.cityPicked = candidates.cityPicked.filter(s => !used.includes(s));
+      candidates.suburbGroups.unshift(merged);
+    }
   }
   const { buckets, overflow } = planDays(candidates, days, anchorSpot);
 
-  const dayPlans = buckets.map((bucket, i) => {
-    const dateISO = addDays(startDate, i);
-    const startMin = (i === 0 && opts.startNow && opts.nowMin != null && opts.nowMin > DAY_START)
-      ? opts.nowMin : DAY_START;
-    const sim = simulateDay(bucket, origin, dateISO, startMin, opts.commute);
+  // 周一闭馆点前向迁移：挪到后续同类型日（容量允许），挪不动的留给时钟推演上报
+  for (let i = 0; i < buckets.length; i++) {
+    if (!isMonday(addDays(startDate, i))) continue;
+    for (const s of [...buckets[i].spots]) {
+      if (s.closed_mon !== true || s.id === buckets[i].pinned) continue;
+      for (let j = i + 1; j < buckets.length; j++) {
+        if (buckets[j].suburb !== buckets[i].suburb) continue;
+        const sumMin = buckets[j].spots.reduce((t, x) => t + (x.dur || 90), 0);
+        if (sumMin + (s.dur || 90) > SUBURB_GROUP_MAX_MIN) continue;
+        buckets[j].spots.push(s);
+        buckets[i].spots = buckets[i].spots.filter(x => x !== s);
+        break;
+      }
+    }
+  }
+
+  // 逐日推演 + 空日保护：0 站的日先用当日被裁点中热度最高者单点重试；
+  // 仍为空则移除该日——日期前移会改变周一口径，幸存日按新日期重推演（最多 3 轮收敛）
+  const emptyDropped = [];
+  let pairs = buckets.map(bucket => ({ bucket, sim: null, dateISO: null, startMin: DAY_START }));
+  for (let round = 0; round < 3; round++) {
+    pairs.forEach((p, i) => {
+      const dateISO = addDays(startDate, i);
+      const startMin = (i === 0 && opts.startNow && opts.nowMin != null && opts.nowMin > DAY_START)
+        ? opts.nowMin : DAY_START;
+      let sim = simulateDay(p.bucket, origin, dateISO, startMin, opts.commute);
+      if (sim.stats.stops === 0) {
+        const best = sim.dropped.filter(d => d.cause !== '周一闭馆').map(d => d.spot)
+          .sort((a, b) => b.heat - a.heat)[0];
+        if (best) {
+          const retry = runClock([best], origin, dateISO, startMin, !!p.bucket.suburb, [], opts.commute);
+          if (retry.stats.stops > 0) {
+            sim = { ...retry, dropped: [...sim.dropped.filter(d => d.spot !== best), ...retry.dropped] };
+          }
+        }
+      }
+      p.sim = sim; p.dateISO = dateISO; p.startMin = startMin;
+    });
+    const before = pairs.length;
+    emptyDropped.push(...pairs.filter(p => p.sim.stats.stops === 0).flatMap(p => p.sim.dropped));
+    pairs = pairs.filter(p => p.sim.stats.stops > 0);
+    if (pairs.length === before) break;
+  }
+
+  const dayPlans = pairs.map((p, i) => {
     const dirOf = ss => bearing8(origin, { lng: avg(ss, 'lng'), lat: avg(ss, 'lat') });
     return {
       day: i + 1,
-      date: dateISO,
+      date: p.dateISO,
       color: DAY_COLORS[i % DAY_COLORS.length],
-      label: copy.buildDayLabel(bucket.spots, origin, dirOf),
-      startTime: fmt(startMin),
-      ...sim,
+      label: copy.buildDayLabel(p.bucket.spots, origin, dirOf),
+      startTime: fmt(p.startMin),
+      ...p.sim,
     };
   });
 
@@ -387,6 +459,8 @@ function genRoute(opts) {
     totals,
     droppedAll: [
       ...dayPlans.flatMap(d => d.dropped.map(x => ({ day: d.day, ...x }))),
+      ...emptyDropped.map(x => ({ day: null, ...x })),
+      ...tooFar.map(s => ({ day: null, spot: s, cause: '太远，当天往返不现实' })),
       ...overflow.map(s => ({ day: null, spot: s, cause: '候选溢出' })),
     ],
   };
@@ -396,4 +470,30 @@ function avg(spots, key) {
   return spots.reduce((t, s) => t + pt(s.coord)[key], 0) / Math.max(1, spots.length);
 }
 
-module.exports = { genRoute, retimeDay, estimateCommute, fmt, addDays, isMonday, DAY_START, DAY_END };
+// 输入校验（云函数与浏览器 bundle 同源共用，杜绝两端口径漂移）：
+// ORIGIN_TOO_FAR —— 最近景点超过 30km，起点太偏；
+// NOT_ENOUGH_SPOTS —— 起点 60km 内可用景点数 ≤ 游玩天数，不够分配
+function validateInputs(spots, origin, days) {
+  const o = pt(origin);
+  const dists = (spots || []).filter(s => s && s.coord).map(s => haversineM(pt(s.coord), o));
+  if (!dists.length) {
+    return { ok: false, code: 'SPOTS_EMPTY', message: '这座城市的数据还没准备好，换座城市试试。' };
+  }
+  const nearest = Math.min(...dists);
+  if (nearest > VALIDATE_NEAR_M) {
+    return {
+      ok: false, code: 'ORIGIN_TOO_FAR',
+      message: `这个起点离可玩的地方有点远（最近景点约 ${Math.round(nearest / 1000)} 公里）。换个起点试试。`,
+    };
+  }
+  const inRange = dists.filter(d => d <= VALIDATE_RANGE_M).length;
+  if (inRange <= days) {
+    return {
+      ok: false, code: 'NOT_ENOUGH_SPOTS',
+      message: `这里目前收录了 ${inRange} 个景点，排不满 ${days} 天。减少天数，或换座城市。`,
+    };
+  }
+  return { ok: true };
+}
+
+module.exports = { genRoute, retimeDay, validateInputs, estimateCommute, fmt, addDays, isMonday, DAY_START, DAY_END };

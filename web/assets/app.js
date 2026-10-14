@@ -71,6 +71,9 @@ window.DDN = (() => {
   function loadRoute() { try { return JSON.parse(sessionStorage.getItem('ddn_route')); } catch (e) { return null; } }
   function saveShared(route) { localStorage.setItem('ddn_shared', JSON.stringify(route)); }
   function loadShared() { try { return JSON.parse(localStorage.getItem('ddn_shared')); } catch (e) { return null; } }
+  // 起点页 → 加载页的请求快照（origin 可能尚未解析出坐标，由加载页负责解析与校验）
+  function saveRequest(req) { sessionStorage.setItem('ddn_request', JSON.stringify(req)); }
+  function loadRequest() { try { return JSON.parse(sessionStorage.getItem('ddn_request')); } catch (e) { return null; } }
 
   // ---------- 时间/数字格式 ----------
   function todayISO() {
@@ -239,9 +242,16 @@ window.DDN = (() => {
         body: JSON.stringify(body),
         signal: ctrl.signal,
       });
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      const j = await r.json();
-      if (j && j.error) throw new Error(j.error);
+      let j = null;
+      try { j = await r.json(); } catch (e) { /* 非 JSON */ }
+      if (!r.ok) {
+        // 透传业务错误码：校验类错误（ORIGIN_*/NOT_ENOUGH_SPOTS/PLAN_EMPTY/CITY_CLOSED）调用方不得回退本地引擎
+        const err = new Error((j && j.error) || ('HTTP ' + r.status));
+        err.code = (j && j.code) || null;
+        err.httpStatus = r.status;
+        throw err;
+      }
+      if (j && j.error) { const err = new Error(j.error); err.code = j.code || null; throw err; }
       return j;
     } finally { clearTimeout(timer); }
   }
@@ -335,7 +345,7 @@ window.DDN = (() => {
     DAY_CN, SPOT_FILES,
     el, svgEl, icon,
     loadCities, loadSpots,
-    saveRoute, loadRoute, saveShared, loadShared,
+    saveRoute, loadRoute, saveShared, loadShared, saveRequest, loadRequest,
     todayISO, parseHM, fmtHour, fmtDur, fmtHourCn, dateRange, dayCn, pinyinOf, themeOf,
     makeProjector, mercatorProjector, fitZoom, fetchBaseMap,
     smoothPathD, smoothTrace, MAP_SOFT_FILTER,
