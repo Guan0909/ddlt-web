@@ -98,6 +98,35 @@ window.DDNGL = (() => {
       const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
       all.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
 
+      // 视野像素尺度：把标签净空换算成经纬度差值，密集区据此避让（右上角另留给 GL 缩放控件）
+      const w = container.clientWidth || 400, h = container.clientHeight || 280;
+      const padBase = Math.max(30, Math.min(52, Math.round(w * 0.13)));
+      const padRight = Math.round(w * 0.26);
+      const lngs = all.map(p => p.lng), lats = all.map(p => p.lat);
+      const spanLng = Math.max(Math.max(...lngs) - Math.min(...lngs), 1e-4);
+      const spanLat = Math.max(Math.max(...lats) - Math.min(...lats), 1e-4);
+      const k = Math.max(1, Math.min((w - padBase - padRight) / spanLng, (h - padBase * 2) / spanLat)); // px / 度
+      const labelWidth = (name, size) => Math.min(name.length, 9) * size + 6;
+      const crowded = (placed, lng, lat, wp) => placed.some(q =>
+        Math.abs(q.lng - lng) < (q.w + wp) / 2 / k && Math.abs(q.lat - lat) < 18 / k);
+
+      // 站点名先占位：必显，遇近邻换到点下方一档，避免同一片地上叠字
+      const placed = [];
+      const stopPts = [
+        { id: 'lborigin', lng: origin.lng, lat: origin.lat, name: origin.name },
+        ...stops.map(s => ({ id: 'lb' + s.id, lng: s.coord[0], lat: s.coord[1], name: s.name })),
+      ];
+      const stopLabelGeoms = stopPts.map(p => {
+        const wp = labelWidth(p.name, 12);
+        const near = crowded(placed, p.lng, p.lat, wp);
+        placed.push({ lng: p.lng, lat: p.lat, w: wp });
+        return {
+          id: p.id, styleId: near ? 'stopLabelAlt' : 'stopLabel',
+          position: new TMap.LatLng(p.lat, p.lng),
+          content: p.name.length > 10 ? p.name.slice(0, 9) + '…' : p.name,
+        };
+      });
+
       // 路线：先直线（白衬底 + 当日色），真实路径到达后升级
       const path = [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)];
       routeHalo = new TMap.MultiPolyline({
@@ -112,19 +141,14 @@ window.DDNGL = (() => {
       });
       if (legs && legs.length > 1 && DDN.cloudAvailable()) upgradeToRealPaths(legs, color, token);
 
-      // 其他景点：小点 + 小字，可点选。标签做贪心防叠：密集区只留点，避免文字糊成一团
+      // 其他景点：点全部保留（可点选加入当天），标签在密处让位，避免文字糊成一团
       const otherGeoms = [], otherLabels = [];
-      const lngs = all.map(p => p.lng), lats = all.map(p => p.lat);
-      const span = Math.max(Math.max(...lngs) - Math.min(...lngs), Math.max(...lats) - Math.min(...lats), 1e-4);
-      const thrLng = span * 0.06, thrLat = span * 0.045;   // 约合屏幕上 50~60px 的净空
-      const shown = stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }));
-      shown.push({ lng: origin.lng, lat: origin.lat });
       for (const s of others || []) {
         if (inRoute.has(s.id) || !s.coord) continue;
         otherGeoms.push({ id: s.id, styleId: 'spot', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } });
-        const crowded = shown.some(p => Math.abs(p.lng - s.coord[0]) < thrLng && Math.abs(p.lat - s.coord[1]) < thrLat);
-        if (crowded) continue;
-        shown.push({ lng: s.coord[0], lat: s.coord[1] });
+        const wp = labelWidth(s.name, 11);
+        if (crowded(placed, s.coord[0], s.coord[1], wp)) continue;
+        placed.push({ lng: s.coord[0], lat: s.coord[1], w: wp });
         otherLabels.push({ id: 'lb' + s.id, styleId: 'spotLabel', position: new TMap.LatLng(s.coord[1], s.coord[0]), content: s.name });
       }
       dotLayer = new TMap.MultiMarker({
@@ -132,26 +156,8 @@ window.DDNGL = (() => {
         styles: { spot: new TMap.MarkerStyle({ width: 12, height: 12, src: dotURI('#7d887f', 4.4, '#FBFBF8'), anchor: { x: 6, y: 6 } }) },
         geometries: otherGeoms,
       });
-      labelLayer = new TMap.MultiLabel({
-        map,
-        styles: {
-          spotLabel: new TMap.LabelStyle({
-            color: '#4a554d', size: 11, offset: { x: 0, y: -14 },
-            strokeColor: '#FBFBF8', strokeWidth: 3,
-          }),
-        },
-        geometries: otherLabels,
-      });
-      if (onSpotTap) {
-        for (const layer of [dotLayer, labelLayer]) {
-          layer.on('click', evt => {
-            const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
-            if (s) onSpotTap(s);
-          });
-        }
-      }
 
-      // 起点 + 站点标记与名称（站点名必显，近邻用上下两档错位，避免叠字）
+      // 起点 + 站点标记
       const stopGeoms = [
         { id: 'origin', styleId: 'origin', position: new TMap.LatLng(origin.lat, origin.lng) },
         ...stops.map(s => ({ id: s.id, styleId: 'stop', position: new TMap.LatLng(s.coord[1], s.coord[0]) })),
@@ -164,21 +170,7 @@ window.DDNGL = (() => {
         },
         geometries: stopGeoms,
       });
-      const stopPts = [
-        { id: 'lborigin', lng: origin.lng, lat: origin.lat, name: origin.name },
-        ...stops.map(s => ({ id: 'lb' + s.id, lng: s.coord[0], lat: s.coord[1], name: s.name })),
-      ];
-      const stopPlaced = [];
-      const stopLabelGeoms = stopPts.map(p => {
-        // 与已放站点名过近时换到下方一档
-        const near = stopPlaced.some(q => Math.abs(q.lng - p.lng) < thrLng && Math.abs(q.lat - p.lat) < thrLat);
-        stopPlaced.push({ lng: p.lng, lat: p.lat });
-        return {
-          id: p.id, styleId: near ? 'stopLabelAlt' : 'stopLabel',
-          position: new TMap.LatLng(p.lat, p.lng),
-          content: p.name.length > 10 ? p.name.slice(0, 9) + '…' : p.name,
-        };
-      });
+
       labelLayer = new TMap.MultiLabel({
         map,
         styles: {
@@ -197,13 +189,17 @@ window.DDNGL = (() => {
         },
         geometries: [...stopLabelGeoms, ...otherLabels],
       });
+      if (onSpotTap) {
+        for (const layer of [dotLayer, labelLayer]) {
+          layer.on('click', evt => {
+            const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
+            if (s) onSpotTap(s);
+          });
+        }
+      }
 
-      // 右上角有 GL 自带缩放控件，按容器宽度留出净空（窄屏同比缩小，避免过度留白）
       if (all.length > 1) {
-        const w = container.clientWidth || 400;
-        const base = Math.max(30, Math.min(52, Math.round(w * 0.13)));
-        const right = Math.round(w * 0.26);
-        map.fitBounds(bounds, { padding: { top: base, right, bottom: base, left: base } });
+        map.fitBounds(bounds, { padding: { top: padBase, right: padRight, bottom: padBase, left: padBase } });
       } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
     }
 
