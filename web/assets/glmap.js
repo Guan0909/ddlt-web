@@ -112,11 +112,19 @@ window.DDNGL = (() => {
       });
       if (legs && legs.length > 1 && DDN.cloudAvailable()) upgradeToRealPaths(legs, color, token);
 
-      // 其他景点：小点 + 小字，可点选
+      // 其他景点：小点 + 小字，可点选。标签做贪心防叠：密集区只留点，避免文字糊成一团
       const otherGeoms = [], otherLabels = [];
+      const lngs = all.map(p => p.lng), lats = all.map(p => p.lat);
+      const span = Math.max(Math.max(...lngs) - Math.min(...lngs), Math.max(...lats) - Math.min(...lats), 1e-4);
+      const thrLng = span * 0.06, thrLat = span * 0.045;   // 约合屏幕上 50~60px 的净空
+      const shown = stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }));
+      shown.push({ lng: origin.lng, lat: origin.lat });
       for (const s of others || []) {
         if (inRoute.has(s.id) || !s.coord) continue;
         otherGeoms.push({ id: s.id, styleId: 'spot', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } });
+        const crowded = shown.some(p => Math.abs(p.lng - s.coord[0]) < thrLng && Math.abs(p.lat - s.coord[1]) < thrLat);
+        if (crowded) continue;
+        shown.push({ lng: s.coord[0], lat: s.coord[1] });
         otherLabels.push({ id: 'lb' + s.id, styleId: 'spotLabel', position: new TMap.LatLng(s.coord[1], s.coord[0]), content: s.name });
       }
       dotLayer = new TMap.MultiMarker({
@@ -143,7 +151,7 @@ window.DDNGL = (() => {
         }
       }
 
-      // 起点 + 站点标记与名称
+      // 起点 + 站点标记与名称（站点名必显，近邻用上下两档错位，避免叠字）
       const stopGeoms = [
         { id: 'origin', styleId: 'origin', position: new TMap.LatLng(origin.lat, origin.lng) },
         ...stops.map(s => ({ id: s.id, styleId: 'stop', position: new TMap.LatLng(s.coord[1], s.coord[0]) })),
@@ -156,15 +164,30 @@ window.DDNGL = (() => {
         },
         geometries: stopGeoms,
       });
-      const stopLabelGeoms = [
-        { id: 'lborigin', styleId: 'stopLabel', position: new TMap.LatLng(origin.lat, origin.lng), content: origin.name.length > 10 ? origin.name.slice(0, 9) + '…' : origin.name },
-        ...stops.map(s => ({ id: 'lb' + s.id, styleId: 'stopLabel', position: new TMap.LatLng(s.coord[1], s.coord[0]), content: s.name })),
+      const stopPts = [
+        { id: 'lborigin', lng: origin.lng, lat: origin.lat, name: origin.name },
+        ...stops.map(s => ({ id: 'lb' + s.id, lng: s.coord[0], lat: s.coord[1], name: s.name })),
       ];
+      const stopPlaced = [];
+      const stopLabelGeoms = stopPts.map(p => {
+        // 与已放站点名过近时换到下方一档
+        const near = stopPlaced.some(q => Math.abs(q.lng - p.lng) < thrLng && Math.abs(q.lat - p.lat) < thrLat);
+        stopPlaced.push({ lng: p.lng, lat: p.lat });
+        return {
+          id: p.id, styleId: near ? 'stopLabelAlt' : 'stopLabel',
+          position: new TMap.LatLng(p.lat, p.lng),
+          content: p.name.length > 10 ? p.name.slice(0, 9) + '…' : p.name,
+        };
+      });
       labelLayer = new TMap.MultiLabel({
         map,
         styles: {
           stopLabel: new TMap.LabelStyle({
             color: '#182119', size: 12, offset: { x: 0, y: -16 },
+            strokeColor: '#FBFBF8', strokeWidth: 3, fontWeight: 600,
+          }),
+          stopLabelAlt: new TMap.LabelStyle({
+            color: '#182119', size: 12, offset: { x: 0, y: 22 },
             strokeColor: '#FBFBF8', strokeWidth: 3, fontWeight: 600,
           }),
           spotLabel: new TMap.LabelStyle({
@@ -175,8 +198,13 @@ window.DDNGL = (() => {
         geometries: [...stopLabelGeoms, ...otherLabels],
       });
 
-      if (all.length > 1) map.fitBounds(bounds, { padding: 46 });
-      else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
+      // 右上角有 GL 自带缩放控件，按容器宽度留出净空（窄屏同比缩小，避免过度留白）
+      if (all.length > 1) {
+        const w = container.clientWidth || 400;
+        const base = Math.max(30, Math.min(52, Math.round(w * 0.13)));
+        const right = Math.round(w * 0.26);
+        map.fitBounds(bounds, { padding: { top: base, right, bottom: base, left: base } });
+      } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
     }
 
     function destroy() { clearLayers(); try { map.destroy(); } catch (e) {} }
