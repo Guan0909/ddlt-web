@@ -114,7 +114,7 @@
       let origin = req.origin;
       if (origin.lng == null) {
         let j = null;
-        try { j = await DDN.cloudPost('searchPoi', { keyword: origin.name, region: req.city }, 4500); }
+        try { j = await DDN.cloudPost('searchPoi', { keyword: origin.name, region: req.city }, 8000); }
         catch (e) { throw new Error('网络不太稳，地点没有查到。再试一次。'); }
         const list = (j && j.data) || [];
         const q = origin.name.replace(/\s+/g, '');
