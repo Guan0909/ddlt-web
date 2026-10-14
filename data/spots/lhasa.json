@@ -1,0 +1,1556 @@
+{
+  "_meta": {
+    "city": "拉萨",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "potala",
+      "name": "布达拉宫",
+      "cat": "古迹",
+      "tags": [
+        "世界遗产",
+        "必去",
+        "早去"
+      ],
+      "heat": 10,
+      "dur": 150,
+      "intro": "藏地最神圣的宫堡，红白宫依山而建。",
+      "reason": "九点前排队人最少，内部限时参观",
+      "open": "09:00-16:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.117,
+        29.6577
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jokhang",
+      "name": "大昭寺",
+      "cat": "古迹",
+      "tags": [
+        "信仰中心",
+        "朝圣",
+        "早去"
+      ],
+      "heat": 10,
+      "dur": 90,
+      "intro": "藏传佛教信仰中心，门前长头不断。",
+      "reason": "清晨跟转经人绕一圈最有感觉",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1316,
+        29.6531
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "barkhor",
+      "name": "八廓街",
+      "cat": "街区",
+      "tags": [
+        "转经道",
+        "免费",
+        "夜景"
+      ],
+      "heat": 9.5,
+      "dur": 110,
+      "intro": "环大昭寺的千年转经道，老街商铺密布。",
+      "reason": "顺时针跟着人流走，藏味全在这",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.134,
+        29.6525
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ramoche",
+      "name": "小昭寺",
+      "cat": "古迹",
+      "tags": [
+        "等身像",
+        "人少"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "与大昭寺并称的早期寺院，供八岁等身像。",
+      "reason": "游客少，能安静看一尊国宝佛像",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1398,
+        29.6585
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "norbulingka",
+      "name": "罗布林卡",
+      "cat": "公园",
+      "tags": [
+        "世界遗产",
+        "园林",
+        "夏天"
+      ],
+      "heat": 9,
+      "dur": 120,
+      "intro": "历代达赖的夏宫，高原园林与宫殿群。",
+      "reason": "午后树荫里慢慢走，最舒服",
+      "open": "09:00-18:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1043,
+        29.6552
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tibet-museum",
+      "name": "西藏博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "文物"
+      ],
+      "heat": 8.5,
+      "dur": 110,
+      "intro": "读懂西藏历史与藏文化的第一站。",
+      "reason": "先看馆再看寺，处处都看得懂",
+      "open": "10:00-17:30",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        91.105,
+        29.656
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "drepung",
+      "name": "哲蚌寺",
+      "cat": "古迹",
+      "tags": [
+        "三大寺",
+        "雪顿节",
+        "早去"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "格鲁派最大寺院，白色僧舍铺满山坡。",
+      "reason": "雪顿节晒佛在后山，要凌晨占位",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.0503,
+        29.6748
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sera",
+      "name": "色拉寺",
+      "cat": "古迹",
+      "tags": [
+        "辩经",
+        "三大寺"
+      ],
+      "heat": 8.5,
+      "dur": 120,
+      "intro": "格鲁派三大寺之一，以辩经闻名。",
+      "reason": "下午三点去辩经院看僧人击掌",
+      "open": "09:00-16:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.133,
+        29.703
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chakpori",
+      "name": "药王山",
+      "cat": "古迹",
+      "tags": [
+        "摩崖石刻",
+        "观景台",
+        "早去"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "布宫对面的千佛崖与观景平台。",
+      "reason": "五十元人民币背面同款机位",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.113,
+        29.656
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dzongyab",
+      "name": "宗角禄康公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "湖景",
+        "早去"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "布达拉宫背后的龙王潭，湖面有倒影。",
+      "reason": "清晨湖边看布宫倒影，人还少",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1185,
+        29.661
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lhalu-wetland",
+      "name": "拉鲁湿地",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "观鸟",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "海拔最高的城市湿地，候鸟栖息地。",
+      "reason": "市区里的一片安静芦苇荡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.098,
+        29.67
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhaji",
+      "name": "扎基寺",
+      "cat": "古迹",
+      "tags": [
+        "财神庙",
+        "求财",
+        "早去"
+      ],
+      "heat": 7.5,
+      "dur": 40,
+      "intro": "拉萨香火最旺的财神庙，供酒求财。",
+      "reason": "本地人拎着青稞酒排队来拜",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.142,
+        29.682
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "canggu",
+      "name": "仓姑寺",
+      "cat": "古迹",
+      "tags": [
+        "尼姑寺",
+        "甜茶",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "八廓街旁的尼姑寺，院内可以喝甜茶。",
+      "reason": "在寺庙院子里喝壶甜茶坐半天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1345,
+        29.649
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "muru",
+      "name": "木如寺",
+      "cat": "古迹",
+      "tags": [
+        "印经院",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "老城里的印经院，经板堆满木架。",
+      "reason": "看师傅手工印经，没什么游客",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1362,
+        29.6545
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "danjielin",
+      "name": "丹杰林寺",
+      "cat": "古迹",
+      "tags": [
+        "四大林",
+        "小众",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "拉萨四大林之一，藏在老城巷子里。",
+      "reason": "拐进巷子就撞见的清静小寺",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1348,
+        29.6562
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cemeling",
+      "name": "策门林寺",
+      "cat": "古迹",
+      "tags": [
+        "四大林",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "老城北侧的小寺，本地信众常来。",
+      "reason": "顺路进来看一眼的安静院子",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.144,
+        29.6615
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gongdelin",
+      "name": "功德林寺",
+      "cat": "古迹",
+      "tags": [
+        "四大林",
+        "壁画"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "拉萨四大林之一，院内有古树与壁画。",
+      "reason": "转经道边藏得最深的寺院之一",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.1095,
+        29.6545
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiami-yuan",
+      "name": "下密院",
+      "cat": "古迹",
+      "tags": [
+        "密宗",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "小昭寺附近的密宗学府，诵经声不断。",
+      "reason": "路过听见诵经声，值得进门看看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        91.136,
+        29.657
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "pabongka",
+      "name": "帕邦喀",
+      "cat": "古迹",
+      "tags": [
+        "岩石寺",
+        "俯瞰拉萨",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "建在巨石上的宫堡寺院，可俯瞰拉萨。",
+      "reason": "俯瞰全城的好角度，人还不多",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.148,
+        29.705
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "niangre",
+      "name": "娘热民俗风情园",
+      "cat": "亲子",
+      "tags": [
+        "民俗",
+        "歌舞",
+        "亲子"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "娘热沟里的藏族民俗园，可看歌舞。",
+      "reason": "带小孩看藏戏歌舞，能坐一下午",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.155,
+        29.705
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yak-museum",
+      "name": "西藏牦牛博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "牦牛"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "全国唯一以牦牛为主题的博物馆。",
+      "reason": "从牦牛讲透高原人的生活",
+      "open": "10:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        91.14,
+        29.622
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "science-museum",
+      "name": "西藏自然科学博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "亲子",
+        "室内",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "柳梧新区的自然馆，恐龙与高原生态展。",
+      "reason": "高反休息日的室内备选",
+      "open": "10:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        91.149,
+        29.629
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "potala-treasure",
+      "name": "布达拉宫珍宝馆",
+      "cat": "博物馆",
+      "tags": [
+        "文物",
+        "室内",
+        "布宫山脚"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "雪城里的珍宝展厅，金铜造像与法器多。",
+      "reason": "进布宫前先看这里更看得懂",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1175,
+        29.656
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "amban-yamen",
+      "name": "清政府驻藏大臣衙门旧址",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "历史",
+        "八廓街内"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "八廓街内的清代衙门旧址，现为陈列馆。",
+      "reason": "逛八廓街时免费进来看半小时",
+      "open": "10:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        91.1325,
+        29.6545
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gendun-chophel",
+      "name": "根敦群培纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "小众",
+        "八廓街内"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "纪念藏族学者根敦群培的小型纪念馆。",
+      "reason": "在八廓街里读一段近代西藏",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1322,
+        29.6552
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "potala-square",
+      "name": "布达拉宫广场",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "免费",
+        "喷泉"
+      ],
+      "heat": 8.5,
+      "dur": 50,
+      "intro": "布宫正前方的广场，夜里灯光与倒影。",
+      "reason": "天黑后灯光亮起，倒影最好看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.116,
+        29.655
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yutok-road",
+      "name": "宇拓路步行街",
+      "cat": "夜景",
+      "tags": [
+        "步行街",
+        "夜市",
+        "夜景"
+      ],
+      "heat": 7.5,
+      "dur": 70,
+      "intro": "布宫与八廓街之间的老街，夜里最热闹。",
+      "reason": "晚上来吃小吃，顺路逛到八廓街",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.123,
+        29.654
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "barkhor-mall",
+      "name": "八廓商城",
+      "cat": "商圈",
+      "tags": [
+        "特产",
+        "室内",
+        "伴手礼"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "老城里的室内商厦，特产与伴手礼集中。",
+      "reason": "下雨天也能一次买齐伴手礼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1385,
+        29.6505
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shenli-plaza",
+      "name": "神力时代广场",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "餐饮",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "北京中路上的综合体，餐厅和超市齐全。",
+      "reason": "高反不舒服时来这吃饭补给",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.115,
+        29.647
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lhasa-dept-store",
+      "name": "拉萨百货大楼",
+      "cat": "商圈",
+      "tags": [
+        "老商场",
+        "日用",
+        "室内"
+      ],
+      "heat": 5,
+      "dur": 40,
+      "intro": "老牌百货，本地人常逛的日用品商场。",
+      "reason": "补充日用品和防晒装备很方便",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.121,
+        29.652
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "taiyang-island",
+      "name": "太阳岛",
+      "cat": "商圈",
+      "tags": [
+        "餐饮",
+        "购物",
+        "拉萨河边"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "拉萨河上的商业小岛，餐饮购物集中。",
+      "reason": "河边吃饭，看水看桥很舒服",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.107,
+        29.642
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianzu-island",
+      "name": "仙足岛",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "咖啡",
+        "拉萨河边"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "拉萨河边的安静小岛，咖啡馆与客栈聚集。",
+      "reason": "傍晚在河边喝一杯看日落",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.108,
+        29.636
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chongsaikang",
+      "name": "冲赛康",
+      "cat": "街区",
+      "tags": [
+        "老市场",
+        "藏面",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "拉萨最老的市集，藏面摊与杂货铺挤着。",
+      "reason": "早上来碗藏面，感受老拉萨烟火",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.129,
+        29.657
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zangyiyuan-road",
+      "name": "藏医院路",
+      "cat": "美食",
+      "tags": [
+        "小吃街",
+        "藏餐",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "藏餐与小吃集中的一条街，晚上最热闹。",
+      "reason": "一条街吃完藏面甜茶和酸奶",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.128,
+        29.655
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tianhai-night",
+      "name": "天海夜市",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "烧烤",
+        "本地人"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "拉萨人气夜市，烧烤与川味小吃混着藏餐。",
+      "reason": "本地人下班来撸串的地方",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.106,
+        29.648
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "deji-road",
+      "name": "德吉路",
+      "cat": "美食",
+      "tags": [
+        "餐饮街",
+        "酒吧"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "德吉路上的餐饮与酒吧一条街。",
+      "reason": "想换口味时来这条街找川菜",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.117,
+        29.646
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "makye-ame",
+      "name": "玛吉阿米",
+      "cat": "美食",
+      "tags": [
+        "仓央嘉措",
+        "观景",
+        "藏餐"
+      ],
+      "heat": 7.5,
+      "dur": 80,
+      "intro": "八廓街东南角的黄房子，有仓央嘉措传说。",
+      "reason": "坐在窗边看八廓街人流转经",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1345,
+        29.6527
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guangming-teahouse",
+      "name": "光明港琼甜茶馆",
+      "cat": "美食",
+      "tags": [
+        "甜茶",
+        "本地人",
+        "便宜"
+      ],
+      "heat": 7,
+      "dur": 50,
+      "intro": "甜茶馆里挤满本地人，一杯甜茶坐半天。",
+      "reason": "几毛一杯的甜茶，续到不想走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1315,
+        29.6535
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xueyu-restaurant",
+      "name": "雪域餐厅",
+      "cat": "美食",
+      "tags": [
+        "藏餐",
+        "老字号"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "藏医院路上的藏餐老店，牦牛肉和糌粑。",
+      "reason": "第一次吃藏餐从这里入门",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1285,
+        29.6555
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "namaste",
+      "name": "娜玛瑟德餐厅",
+      "cat": "美食",
+      "tags": [
+        "尼泊尔餐",
+        "舒适"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "尼泊尔风味餐厅，环境舒服份量大。",
+      "reason": "吃不惯藏餐时的稳妥选择",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.129,
+        29.6548
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "binhe-park",
+      "name": "滨河公园",
+      "cat": "公园",
+      "tags": [
+        "拉萨河",
+        "骑行",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "拉萨河沿岸的带状公园，步道与骑行道。",
+      "reason": "傍晚沿河散步，看对岸灯亮起",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.115,
+        29.64
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hebalin-mosque",
+      "name": "河坝林清真寺",
+      "cat": "古迹",
+      "tags": [
+        "清真寺",
+        "小众",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "八廓街附近的清真寺，藏式与伊斯兰混搭。",
+      "reason": "拉萨多元一面的小众注脚",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.138,
+        29.652
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tangbo-stele",
+      "name": "唐蕃会盟碑",
+      "cat": "古迹",
+      "tags": [
+        "唐代",
+        "大昭寺前",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "大昭寺门前的唐代石碑，汉藏会盟见证。",
+      "reason": "排队进大昭寺时顺便看一眼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.1318,
+        29.6532
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wencheng-theatre",
+      "name": "文成公主实景剧场",
+      "cat": "演出",
+      "tags": [
+        "实景剧",
+        "晚上",
+        "需预约"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "慈觉林山上的大型实景剧，演公主入藏。",
+      "reason": "高原夜色里看一场盛大演出",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.129,
+        29.608
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cijuelin",
+      "name": "中国西藏文化旅游创意园",
+      "cat": "街区",
+      "tags": [
+        "文创",
+        "演艺",
+        "慈觉林"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "慈觉林的文化旅游园区，藏式街区与剧场。",
+      "reason": "看演出前后顺便逛的藏风街区",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.125,
+        29.612
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tibet-opera-center",
+      "name": "西藏藏戏艺术中心",
+      "cat": "演出",
+      "tags": [
+        "藏戏",
+        "非遗",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "藏戏演出的专业剧场，雪顿节期间最热闹。",
+      "reason": "听不懂唱词也看得懂热闹",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.125,
+        29.65
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "naiqiong",
+      "name": "乃琼寺",
+      "cat": "古迹",
+      "tags": [
+        "护法殿",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "哲蚌寺旁的古老护法神殿，缩在小院里。",
+      "reason": "和哲蚌寺顺路打包看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.0555,
+        29.6745
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qusang",
+      "name": "曲桑寺",
+      "cat": "古迹",
+      "tags": [
+        "尼姑寺",
+        "山腰",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "娘热沟山腰的尼姑寺，院里能看到拉萨城。",
+      "reason": "徒步一小段，换来安静的视野",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        91.152,
+        29.712
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ganden",
+      "name": "甘丹寺",
+      "cat": "古迹",
+      "tags": [
+        "格鲁派祖寺",
+        "远郊",
+        "早去"
+      ],
+      "heat": 8,
+      "dur": 180,
+      "intro": "格鲁派祖寺，建在山脊上的庞大寺院群。",
+      "reason": "山脊上的寺院群，值得专程一趟",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        91.735,
+        29.65
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "drayerpa",
+      "name": "扎叶巴寺",
+      "cat": "古迹",
+      "tags": [
+        "崖壁寺",
+        "修行洞",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "悬崖上凿出的修行洞寺，小屋挂在山壁。",
+      "reason": "崖壁上的寺庙，远看像挂着的画",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91.42,
+        29.75
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "drolma-lhakang",
+      "name": "卓玛拉康",
+      "cat": "古迹",
+      "tags": [
+        "阿底峡",
+        "小众",
+        "顺路"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "聂塘的千年小寺，阿底峡大师圆寂地。",
+      "reason": "去羊湖路上的顺路一站",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.98,
+        29.47
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tsurphu",
+      "name": "楚布寺",
+      "cat": "古迹",
+      "tags": [
+        "噶举派",
+        "徒步",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "噶玛噶举派主寺，山沟里的古老道场。",
+      "reason": "寺院背后有徒步路线，人少清静",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        90.87,
+        29.82
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "reting",
+      "name": "热振寺",
+      "cat": "古迹",
+      "tags": [
+        "噶当派",
+        "柏树林",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 210,
+      "intro": "林周山沟里的噶当派祖寺，周有古柏。",
+      "reason": "柏树林围着寺院，安静得像别处",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91.34,
+        30.26
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "drigung-til",
+      "name": "直贡梯寺",
+      "cat": "古迹",
+      "tags": [
+        "直贡噶举",
+        "山腰",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 210,
+      "intro": "直贡噶举派主寺，建在山腰的寺院群。",
+      "reason": "沿河谷而上，寺群铺满整面山坡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        92.1,
+        29.95
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "songtsen-birthplace",
+      "name": "松赞干布出生地",
+      "cat": "古迹",
+      "tags": [
+        "松赞干布",
+        "纪念馆",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "墨竹工卡甲玛乡的松赞故里，有纪念馆。",
+      "reason": "顺着藏王朝的起点看一段历史",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91.62,
+        29.75
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tunba",
+      "name": "吞巴藏香村",
+      "cat": "古镇",
+      "tags": [
+        "藏香",
+        "古村",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "藏香发明者吞弥·桑布扎的故乡，家家制香。",
+      "reason": "看手工做藏香，闻一整天香味",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.2,
+        29.43
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qungmugangga",
+      "name": "琼穆岗嘎",
+      "cat": "山水",
+      "tags": [
+        "雪山",
+        "徒步",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 300,
+      "intro": "尼木境内的七千米雪山，拉萨最高峰。",
+      "reason": "晴天从拉萨河方向能望见雪顶",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        89.9,
+        29.55
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "namtso",
+      "name": "纳木错",
+      "cat": "山水",
+      "tags": [
+        "圣湖",
+        "星空",
+        "远郊"
+      ],
+      "heat": 9.5,
+      "dur": 360,
+      "intro": "西藏三大圣湖之一，念青唐古拉下的天湖。",
+      "reason": "翻过那根拉，湖蓝得不像真的",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91,
+        30.74
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "damxung-grassland",
+      "name": "羌塘草原",
+      "cat": "山水",
+      "tags": [
+        "草原",
+        "雪山",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "青藏公路穿过的高原草原，牛羊与雪山。",
+      "reason": "路上停车就能拍的辽阔草原",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91.05,
+        30.56
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangbajing",
+      "name": "羊八井地热温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "雪山",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "地热田上的高原温泉，雪山环着蒸汽。",
+      "reason": "泡在热水里看雪山冒蒸汽",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.53,
+        30.1
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nyainqentanglha",
+      "name": "念青唐古拉山观景台",
+      "cat": "山水",
+      "tags": [
+        "雪山",
+        "观景台",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "青藏公路旁的观景台，正对七千米雪峰。",
+      "reason": "停车几分钟换来一张雪山合影",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.9,
+        30.4
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lakenla",
+      "name": "那根拉山口",
+      "cat": "山水",
+      "tags": [
+        "垭口",
+        "海拔5190",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 40,
+      "intro": "往纳木错的最高垭口，海拔5190米。",
+      "reason": "站在垭口第一次看见纳木错",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        91.02,
+        30.63
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yamdrok",
+      "name": "羊卓雍措",
+      "cat": "山水",
+      "tags": [
+        "圣湖",
+        "盘山公路",
+        "远郊"
+      ],
+      "heat": 9.5,
+      "dur": 300,
+      "intro": "三大圣湖之一，翻过岗巴拉就见碧蓝湖面。",
+      "reason": "湖水蓝得不真实，值回一路盘山",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.7,
+        28.95
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gangbala",
+      "name": "岗巴拉山口",
+      "cat": "山水",
+      "tags": [
+        "观景台",
+        "羊湖",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "羊湖畔的观景垭口，湖与雪山一次看齐。",
+      "reason": "羊湖最经典的合影位，就在这",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.83,
+        29.13
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "puma-yumtso",
+      "name": "普莫雍错",
+      "cat": "山水",
+      "tags": [
+        "蓝冰",
+        "圣湖",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 270,
+      "intro": "海拔五千米的高原湖，冬季结蓝冰。",
+      "reason": "人极少的圣湖，冬天有蓝冰",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.3,
+        28.58
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mila-pass",
+      "name": "米拉山口",
+      "cat": "山水",
+      "tags": [
+        "垭口",
+        "经幡",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "川藏线上的高垭口，海拔5013米。",
+      "reason": "去林芝方向的路上，经幡密布",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        92.35,
+        29.83
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sijin-lhatso",
+      "name": "思金拉措",
+      "cat": "山水",
+      "tags": [
+        "财神湖",
+        "经幡",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "传说中的财神湖，四周挂满经幡。",
+      "reason": "去林芝路上顺路看一眼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        92.23,
+        29.77
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dezhong",
+      "name": "德仲温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "河谷",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "墨竹工卡山谷里的露天温泉，本地人爱去。",
+      "reason": "泡在河谷热泉里看星星",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        92.05,
+        29.92
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "riduo",
+      "name": "日多温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "318线上",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 120,
+      "intro": "米拉山下的温泉小镇，318线上的歇脚点。",
+      "reason": "长途路上的热水澡和热饭",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        92.13,
+        29.7
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "caina",
+      "name": "秀色才纳",
+      "cat": "亲子",
+      "tags": [
+        "采摘",
+        "花海",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 150,
+      "intro": "曲水才纳乡的高原农业园，可摘果看花海。",
+      "reason": "带小孩在高原摘一次草莓",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.87,
+        29.42
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

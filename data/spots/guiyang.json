@@ -1,0 +1,1521 @@
+{
+  "_meta": {
+    "city": "贵阳",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "jiaxiulou",
+      "name": "甲秀楼",
+      "cat": "古迹",
+      "tags": [
+        "地标",
+        "南明河",
+        "免费"
+      ],
+      "heat": 9.5,
+      "dur": 60,
+      "intro": "南明河鳌矶石上的明代楼阁，贵阳城徽。",
+      "reason": "傍晚灯亮时桥上桥下都好看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.63,
+        26.574
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cuiweiyuan",
+      "name": "翠微园",
+      "cat": "古迹",
+      "tags": [
+        "园林",
+        "甲秀楼旁",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "甲秀楼旁的明清园林建筑群，人少清净。",
+      "reason": "看完甲秀楼拐进来歇脚",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6307,
+        26.5735
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "cat": "古迹",
+      "tags": [
+        "明代",
+        "九檐",
+        "老城墙"
+      ],
+      "heat": 7,
+      "dur": 45,
+      "intro": "老城墙上的明代九檐阁楼，形制全国少见。",
+      "reason": "登阁看老城屋顶连成一片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6325,
+        26.5872
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangmingci",
+      "name": "阳明祠",
+      "cat": "古迹",
+      "tags": [
+        "王阳明",
+        "清幽",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "纪念王阳明的祠堂，藏在东山半坡上。",
+      "reason": "古树碑廊里安静读一段心学",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.641,
+        26.586
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qianmingsi",
+      "name": "黔明寺",
+      "cat": "古迹",
+      "tags": [
+        "闹市禅院",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "闹市中的百年禅院，进院就安静下来。",
+      "reason": "顺路进去烧柱香歇歇脚",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6345,
+        26.576
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dadeschool",
+      "name": "达德学校旧址",
+      "cat": "古迹",
+      "tags": [
+        "老街",
+        "教育史",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "百年新式学堂旧址，王若飞的母校。",
+      "reason": "民国校舍里的贵阳往事",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6295,
+        26.5805
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "cat": "公园",
+      "tags": [
+        "猴子",
+        "爬山",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 180,
+      "intro": "城中山林，野生猕猴成群，可爬山可坐索道。",
+      "reason": "一早上山，猴子最多人也清爽",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.6155,
+        26.601
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hongfusi",
+      "name": "弘福寺",
+      "cat": "古迹",
+      "tags": [
+        "祈福",
+        "黔灵山内",
+        "素斋"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "黔灵山上的贵州首刹，香火常年不断。",
+      "reason": "爬到山顶上一炷香喘口气",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.6178,
+        26.5978
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hebin-park",
+      "name": "河滨公园",
+      "cat": "公园",
+      "tags": [
+        "老公园",
+        "摩天轮",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "南明河边的老公园，有摩天轮和大草坪。",
+      "reason": "贵阳人童年的周末去处",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6278,
+        26.5716
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhucheng-square",
+      "name": "筑城广场",
+      "cat": "公园",
+      "tags": [
+        "广场",
+        "夜景",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "南明河畔的城市广场，夜里灯光好看。",
+      "reason": "傍晚沿河散步的起点",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6293,
+        26.5768
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanshanhu-park",
+      "name": "观山湖公园",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "骑行",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 80,
+      "intro": "观山湖区的大湖公园，环湖步道平整。",
+      "reason": "新城区的湖边慢跑与野餐",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.627,
+        26.631
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changpoling",
+      "name": "长坡岭国家森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "徒步",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "城北的原始次生林，步道清凉好走。",
+      "reason": "夏天躲太阳的森林步道",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.642,
+        26.669
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "quanshui-park",
+      "name": "泉湖公园",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "白云区",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "白云区的环湖公园，傍晚本地人扎堆。",
+      "reason": "住城北时最近的散步地",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.625,
+        26.683
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lucongguan",
+      "name": "鹿冲关森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "小众",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 70,
+      "intro": "云岩区的山林公园，人少树密。",
+      "reason": "想安静走一段山路就来这",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.665,
+        26.608
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ahahu",
+      "name": "阿哈湖国家湿地公园",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "环湖",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 100,
+      "intro": "国家级湿地公园，环湖骑行路况好。",
+      "reason": "城西南角的天然氧吧",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.665,
+        26.535
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaochehe",
+      "name": "小车河城市湿地公园",
+      "cat": "公园",
+      "tags": [
+        "溪流",
+        "樱花",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "南明河支流的溪谷公园，春天樱花道。",
+      "reason": "顺着溪水走一段消暑",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.668,
+        26.55
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhonghua-dashizi",
+      "name": "中华路·大十字商圈",
+      "cat": "商圈",
+      "tags": [
+        "逛街",
+        "小吃",
+        "地铁"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "贵阳老城最热闹的商业主街与路口。",
+      "reason": "逛完顺路吃碗肠旺面",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6302,
+        26.58
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaguoyuan-mall",
+      "name": "花果园购物中心",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "室内",
+        "餐饮多"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "花果园巨型社区里的核心商圈。",
+      "reason": "吃逛看电影一站解决",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.687,
+        26.568
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanshanhu-wanda",
+      "name": "观山湖万达广场",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "室内",
+        "亲子"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "观山湖区的大型购物中心，餐饮齐全。",
+      "reason": "住新城时的雨天备选",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.635,
+        26.627
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingyun-market",
+      "name": "青云市集",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "小吃",
+        "本地人"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "贵阳最热闹的夜市，老字号小吃集中。",
+      "reason": "九点以后才是它最热闹的时候",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6285,
+        26.568
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shanxilu",
+      "name": "陕西路夜市",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "烧烤",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 80,
+      "intro": "贵阳老牌夜市街，烧烤烙锅一条街。",
+      "reason": "凌晨还开着的烟火气",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.632,
+        26.593
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "caijiajie",
+      "name": "蔡家街",
+      "cat": "美食",
+      "tags": [
+        "肠旺面",
+        "小吃",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 50,
+      "intro": "老城小巷，肠旺面老店聚集地。",
+      "reason": "早上来一碗才不用排队",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6325,
+        26.582
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "erqilu",
+      "name": "二七路小吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "夜市",
+        "老牌"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "贵阳老牌小吃街，丝娃娃和烙锅都有。",
+      "reason": "一次吃齐贵阳小吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.633,
+        26.57
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huguolu",
+      "name": "护国路小吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "老城",
+        "晚上"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "老城里的粉面小吃街，本地人为主。",
+      "reason": "深夜的牛肉粉在这条街",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.629,
+        26.5795
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "taipinglu",
+      "name": "太平路",
+      "cat": "街区",
+      "tags": [
+        "网红",
+        "咖啡",
+        "小吃"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "老城新兴的网红小街，咖啡小店密集。",
+      "reason": "年轻人扎堆的拍照巷子",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.631,
+        26.5845
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "weilai-fangzhou",
+      "name": "中天未来方舟水街",
+      "cat": "街区",
+      "tags": [
+        "水街",
+        "夜景",
+        "餐饮"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "城东大型社区里的滨水商业街。",
+      "reason": "晚上灯带亮起沿水走走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.742,
+        26.587
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "duocai-guizhoucheng",
+      "name": "多彩贵州城",
+      "cat": "街区",
+      "tags": [
+        "文旅综合体",
+        "民族风",
+        "拍照"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "展示贵州民族文化的文旅街区与广场。",
+      "reason": "一次看遍贵州各民族建筑",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.745,
+        26.556
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "polar-ocean",
+      "name": "贵州极地海洋世界",
+      "cat": "亲子",
+      "tags": [
+        "海洋馆",
+        "室内",
+        "亲子"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "极地动物与海底隧道，孩子看得住。",
+      "reason": "下雨天遛娃首选",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.744,
+        26.5545
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "happy-world",
+      "name": "贵阳欢乐世界",
+      "cat": "亲子",
+      "tags": [
+        "游乐园",
+        "过山车",
+        "刺激"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "贵阳的大型主题乐园，过山车项目齐全。",
+      "reason": "刺激项目一天玩不完",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.635,
+        26.675
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kejiguan",
+      "name": "贵州省科技馆",
+      "cat": "亲子",
+      "tags": [
+        "互动",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 110,
+      "intro": "可以动手玩的科普展馆，周末名额紧。",
+      "reason": "带孩子泡一下午",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.63,
+        26.599
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yesheng-zoo",
+      "name": "贵阳森林野生动物园",
+      "cat": "亲子",
+      "tags": [
+        "动物",
+        "车行区",
+        "亲子"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "扎佐镇的山林动物园，可自驾车行区。",
+      "reason": "半天时间看遍猛兽",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.665,
+        26.825
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guizhou-museum",
+      "name": "贵州省博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "民族文物",
+        "免费",
+        "室内"
+      ],
+      "heat": 8.5,
+      "dur": 120,
+      "intro": "贵州历史与民族文物最全的省级馆。",
+      "reason": "先看馆再逛贵州更有意思",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.63,
+        26.643
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "minzu-museum",
+      "name": "贵州省民族博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "民族服饰",
+        "免费",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "各少数民族服饰与银饰的专题博物馆。",
+      "reason": "苗族银饰那层值得多站会儿",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.635,
+        26.588
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dizhi-museum",
+      "name": "贵州省地质博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "化石",
+        "喀斯特",
+        "室内"
+      ],
+      "heat": 7.5,
+      "dur": 110,
+      "intro": "喀斯特主题地质馆，恐龙化石藏品多。",
+      "reason": "海百合化石墙看一眼就服气",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.638,
+        26.633
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guizhou-art",
+      "name": "贵州美术馆",
+      "cat": "博物馆",
+      "tags": [
+        "美术",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "省级美术馆，常设贵州题材美术展。",
+      "reason": "看展避雨两不误",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        106.628,
+        26.638
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bigdata-center",
+      "name": "贵州大数据展示中心",
+      "cat": "博物馆",
+      "tags": [
+        "科技",
+        "免费",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "展示贵州大数据产业的国家级展厅。",
+      "reason": "对科技感兴趣的顺路一看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.64,
+        26.62
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "duocaifeng",
+      "name": "多彩贵州风",
+      "cat": "演出",
+      "tags": [
+        "民族歌舞",
+        "晚上",
+        "剧场"
+      ],
+      "heat": 7.5,
+      "dur": 100,
+      "intro": "贵阳驻场的大型民族歌舞演出，常年开演。",
+      "reason": "一个多小时看遍贵州歌舞",
+      "open": "19:30-21:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        106.632,
+        26.63
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guiyang-orchestra",
+      "name": "贵阳交响乐团",
+      "cat": "演出",
+      "tags": [
+        "音乐会",
+        "晚上",
+        "剧场"
+      ],
+      "heat": 6.5,
+      "dur": 100,
+      "intro": "国内少有的民营职业交响乐团，周末开演。",
+      "reason": "周末晚上听一场正经音乐会",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6312,
+        26.6295
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qianju",
+      "name": "贵州省黔剧院",
+      "cat": "演出",
+      "tags": [
+        "黔剧",
+        "地方戏",
+        "晚上"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "贵州地方剧种黔剧的省级演出团体。",
+      "reason": "看一场本地人自己的戏",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.633,
+        26.586
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xifeng-memorial",
+      "name": "息烽集中营革命历史纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "红色",
+        "室内",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "抗战时期最大的秘密监狱旧址，史料详实。",
+      "reason": "历史沉重，值得专程一趟",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.74,
+        27.09
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kongxuetang",
+      "name": "贵阳孔学堂",
+      "cat": "博物馆",
+      "tags": [
+        "儒学",
+        "建筑",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "十里河滩旁的仿古儒学建筑群，常办讲座。",
+      "reason": "建筑庄严，人少安静",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.656,
+        26.47
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangmingdong",
+      "name": "修文阳明洞",
+      "cat": "古迹",
+      "tags": [
+        "王阳明",
+        "悟道地",
+        "摩崖"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "王阳明龙场悟道处，山间摩崖石刻多。",
+      "reason": "心学爱好者的一趟朝圣",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.605,
+        26.832
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tianhetan",
+      "name": "天河潭",
+      "cat": "山水",
+      "tags": [
+        "溶洞",
+        "瀑布",
+        "远郊"
+      ],
+      "heat": 8.5,
+      "dur": 210,
+      "intro": "溶洞、瀑布与峡谷合一的喀斯特景区。",
+      "reason": "坐船进水洞那一段最惊艳",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        106.593,
+        26.396
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaxi-park",
+      "name": "花溪公园",
+      "cat": "公园",
+      "tags": [
+        "溪流",
+        "百步桥",
+        "近郊"
+      ],
+      "heat": 8.5,
+      "dur": 120,
+      "intro": "花溪河穿园而过，百步桥与麟山相映。",
+      "reason": "溪水边一坐就是一下午",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.673,
+        26.409
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shilihetan",
+      "name": "十里河滩",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "骑行",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "花溪河湿地，绿道平缓适合骑行。",
+      "reason": "春天一路都是花",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.662,
+        26.438
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "banqiao-art",
+      "name": "花溪板桥艺术村",
+      "cat": "街区",
+      "tags": [
+        "文创",
+        "老厂房",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 70,
+      "intro": "旧厂房改造的艺术村，画家工作室聚集。",
+      "reason": "人少安静的拍照替补",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.662,
+        26.442
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaxi-street",
+      "name": "花溪十字街",
+      "cat": "街区",
+      "tags": [
+        "老街",
+        "小吃",
+        "市井"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "花溪的步行老街，小吃摊与杂货铺混杂。",
+      "reason": "逛完公园来吃碗牛肉粉",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.67,
+        26.411
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingyan",
+      "name": "青岩古镇",
+      "cat": "古镇",
+      "tags": [
+        "明代古城",
+        "状元府",
+        "远郊"
+      ],
+      "heat": 9.5,
+      "dur": 210,
+      "intro": "由明代军事屯堡演变而来的高原古镇。",
+      "reason": "青石板路上慢慢磨一天",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.6837,
+        26.3238
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhenshan",
+      "name": "镇山村",
+      "cat": "古镇",
+      "tags": [
+        "布依村寨",
+        "石头房",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "花溪湖边的布依族石头村寨。",
+      "reason": "湖边石巷里吃一顿农家饭",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.622,
+        26.372
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yehuanggu",
+      "name": "花溪夜郎谷",
+      "cat": "街区",
+      "tags": [
+        "石头城堡",
+        "艺术",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "艺术家用石块垒出的夜郎主题城堡。",
+      "reason": "满墙奇奇怪怪的石头脸谱",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.59,
+        26.38
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gaopo",
+      "name": "高坡云顶草原",
+      "cat": "山水",
+      "tags": [
+        "草原",
+        "星空",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "贵阳最高处的草坡，风车与云海相连。",
+      "reason": "夏天扎营看星星最舒服",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.77,
+        26.22
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hongfenghu",
+      "name": "红枫湖",
+      "cat": "山水",
+      "tags": [
+        "湖岛",
+        "泛舟",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 180,
+      "intro": "贵州最大的人工湖，岛屿星罗棋布。",
+      "reason": "坐船穿岛比看照片好看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.43,
+        26.47
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shiguang-guizhou",
+      "name": "时光贵州",
+      "cat": "街区",
+      "tags": [
+        "民国风",
+        "拍照",
+        "小吃"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "清镇的复古风情小镇，仿民国街景。",
+      "reason": "拍照顺带吃点小吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.462,
+        26.525
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiangchou-guizhou",
+      "name": "乡愁贵州",
+      "cat": "街区",
+      "tags": [
+        "民俗",
+        "田园",
+        "亲子"
+      ],
+      "heat": 5.5,
+      "dur": 100,
+      "intro": "清镇的乡愁主题园区，田园展馆与手工体验。",
+      "reason": "带孩子体验农事",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.47,
+        26.54
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baihuahu",
+      "name": "百花湖",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "岛屿",
+        "近郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "百花湖岛屿散落，湖畔多有农家乐。",
+      "reason": "周末来湖边吃饭发呆",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.545,
+        26.66
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanjiang",
+      "name": "开阳南江大峡谷",
+      "cat": "山水",
+      "tags": [
+        "峡谷",
+        "漂流",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 300,
+      "intro": "喀斯特深切峡谷，夏天有漂流项目。",
+      "reason": "峡谷栈道走到底很凉快",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.98,
+        26.98
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianghuoyan",
+      "name": "开阳香火岩",
+      "cat": "山水",
+      "tags": [
+        "瀑布",
+        "峡谷",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 180,
+      "intro": "南江边的瀑布峡谷景区，人少清净。",
+      "reason": "和南江大峡谷打包一天",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.99,
+        26.96
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baimayu",
+      "name": "开阳白马峪温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "泡汤",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 180,
+      "intro": "开阳山间的温泉度假区，秋冬人多。",
+      "reason": "爬完山泡个汤解乏",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.89,
+        26.99
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xifeng-hotspring",
+      "name": "息烽温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "疗养",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 180,
+      "intro": "贵州老牌温泉，民国时期就已开发。",
+      "reason": "泡汤顺路看集中营旧址",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.75,
+        27.11
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingrengu",
+      "name": "乌当情人谷",
+      "cat": "山水",
+      "tags": [
+        "溪谷",
+        "戏水",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 150,
+      "intro": "乌当的溪谷景区，夏天可以下水玩。",
+      "reason": "城里人夏天的玩水点",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.8,
+        26.65
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiangzhigou",
+      "name": "乌当香纸沟",
+      "cat": "古镇",
+      "tags": [
+        "古法造纸",
+        "溪流",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 150,
+      "intro": "保留古法造纸技艺的山间村落。",
+      "reason": "看老师傅手工造纸的活化石",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.86,
+        26.71
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "pianpo",
+      "name": "乌当偏坡布依族乡",
+      "cat": "古镇",
+      "tags": [
+        "布依村寨",
+        "田园",
+        "小众"
+      ],
+      "heat": 5,
+      "dur": 120,
+      "intro": "布依族村寨，稻田与青瓦木楼相间。",
+      "reason": "周末乡村散步的清净处",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.85,
+        26.68
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guiyu-hotspring",
+      "name": "贵御温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "室内",
+        "近郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "乌当的温泉度假区，汤池种类多。",
+      "reason": "市区半小时就能泡汤",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.77,
+        26.63
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yudongxia",
+      "name": "乌当渔洞峡",
+      "cat": "山水",
+      "tags": [
+        "溪谷",
+        "徒步",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 120,
+      "intro": "乌当的峡谷溪流景区，步道沿水而行。",
+      "reason": "夏天踩水消暑",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.79,
+        26.64
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangchang",
+      "name": "乌当羊昌花画小镇",
+      "cat": "街区",
+      "tags": [
+        "花海",
+        "拍照",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 120,
+      "intro": "羊昌镇的花海小镇，季节花田连片。",
+      "reason": "赶上花期的话很出片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        106.88,
+        26.75
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaguoyuan-baigong",
+      "name": "花果园白宫夜景",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "打卡",
+        "灯光"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "花果园白宫建筑群的夜间灯光景观。",
+      "reason": "贵阳最像外滩的一段夜景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.6865,
+        26.5675
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jinrongcheng-night",
+      "name": "贵州金融城夜景",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "灯光秀",
+        "现代"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "金融城高楼群灯光联动的现代夜景。",
+      "reason": "新城区最有都市感的一面",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.648,
+        26.624
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanminghe-night",
+      "name": "南明河夜景带",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "沿河",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "甲秀楼到筑城广场一段的南明河灯光带。",
+      "reason": "沿河慢走看两岸灯影",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        106.632,
+        26.57
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

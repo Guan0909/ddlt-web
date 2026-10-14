@@ -1,0 +1,1526 @@
+{
+  "_meta": {
+    "city": "扬州",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "slender-west-lake",
+      "name": "瘦西湖",
+      "cat": "山水",
+      "tags": [
+        "五A",
+        "园林",
+        "坐船",
+        "早去"
+      ],
+      "heat": 10,
+      "dur": 180,
+      "intro": "两堤花柳全依水，一路楼台直到山。",
+      "reason": "清晨进门，五亭桥前几乎没人抢机位",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.412,
+        32.419
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongguan-street",
+      "name": "东关街",
+      "cat": "街区",
+      "tags": [
+        "古街",
+        "夜景",
+        "小吃",
+        "免费"
+      ],
+      "heat": 9.5,
+      "dur": 120,
+      "intro": "千年古街，盐商老宅与老字号小吃。",
+      "reason": "傍晚一路吃到东关古渡看灯",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.434,
+        32.3974
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "grand-canal-museum",
+      "name": "中国大运河博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "大运河",
+        "室内",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 150,
+      "intro": "三湾河畔的国家级运河主题博物馆。",
+      "reason": "免费但难约，早去先看五展厅",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        119.431,
+        32.366
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ge-garden",
+      "name": "个园",
+      "cat": "古迹",
+      "tags": [
+        "四季假山",
+        "盐商",
+        "园林"
+      ],
+      "heat": 9,
+      "dur": 75,
+      "intro": "清代盐商宅园，四季假山一园看尽。",
+      "reason": "竹影里穿四季假山，慢慢走才懂",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4377,
+        32.3977
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "he-garden",
+      "name": "何园",
+      "cat": "古迹",
+      "tags": [
+        "复道回廊",
+        "晚清",
+        "园林"
+      ],
+      "heat": 9,
+      "dur": 80,
+      "intro": "晚清第一园，千五百米复道回廊。",
+      "reason": "爬到回廊上拍水心亭最好看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4392,
+        32.3838
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yechun-teahouse",
+      "name": "冶春茶社",
+      "cat": "美食",
+      "tags": [
+        "早茶",
+        "早去",
+        "老字号",
+        "包子"
+      ],
+      "heat": 8.5,
+      "dur": 60,
+      "intro": "冶春园里的百年早茶，临水而坐。",
+      "reason": "六点半来排队，蟹黄汤包不等人",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4152,
+        32.4087
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daming-temple",
+      "name": "大明寺",
+      "cat": "古迹",
+      "tags": [
+        "鉴真",
+        "古寺",
+        "平山堂"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "鉴真和尚出家地，平山堂可远眺江南。",
+      "reason": "晴天上平山堂，江南群山一线",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4083,
+        32.4362
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongguan-ferry-night",
+      "name": "东关古渡·古运河夜游",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "游船",
+        "晚上"
+      ],
+      "heat": 8.5,
+      "dur": 80,
+      "intro": "东关街东端的古运河码头，夜航游船。",
+      "reason": "坐船看两岸灯，从东关到跃进桥",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4402,
+        32.3996
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuangbo-museum",
+      "name": "扬州双博馆",
+      "cat": "博物馆",
+      "tags": [
+        "雕版印刷",
+        "免费",
+        "室内"
+      ],
+      "heat": 8,
+      "dur": 110,
+      "intro": "扬州博物馆与雕版印刷博物馆合体。",
+      "reason": "看元代霁蓝釉白龙梅瓶真品",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        119.3905,
+        32.388
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fuchun-teahouse",
+      "name": "富春茶社",
+      "cat": "美食",
+      "tags": [
+        "早茶",
+        "早去",
+        "老字号"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "得胜桥的老茶社，三丁包是招牌。",
+      "reason": "一壶魁龙珠配上三丁包大煮干丝",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.431,
+        32.3906
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chunjiang-nightshow",
+      "name": "春江花月夜·瘦西湖夜游",
+      "cat": "演出",
+      "tags": [
+        "夜景",
+        "晚上",
+        "坐船"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "瘦西湖夜游实景演出，灯影里走湖。",
+      "reason": "晚上进瘦西湖，和白天完全两样",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.409,
+        32.413
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "cat": "古迹",
+      "tags": [
+        "地标",
+        "明代",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 45,
+      "intro": "明代三层楼阁，立在全城最热闹路口。",
+      "reason": "过马路抬头看一眼就够的城市标记",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4226,
+        32.3968
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "songjiacheng",
+      "name": "宋夹城考古遗址公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "绿道",
+        "城墙"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "宋代双城遗址改的体育休闲公园。",
+      "reason": "城墙绿道骑车一圈，风很舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.421,
+        32.428
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sishangting-food-street",
+      "name": "四望亭路美食街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "夜市",
+        "本地人"
+      ],
+      "heat": 7.5,
+      "dur": 75,
+      "intro": "老城区的本地口味街，价格实在。",
+      "reason": "本地人夜宵摊，比景区便宜一半",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.424,
+        32.39
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "pishi-street",
+      "name": "皮市街",
+      "cat": "街区",
+      "tags": [
+        "书店",
+        "咖啡",
+        "文艺"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "旧皮货市改的文艺小街，书店咖啡多。",
+      "reason": "浮生记书店门口拍一张就出片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.432,
+        32.3938
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guoqing-road",
+      "name": "国庆路·辕门桥",
+      "cat": "商圈",
+      "tags": [
+        "老街",
+        "购物",
+        "老字号"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "扬州老商业街，老字号店铺密集。",
+      "reason": "顺路买三和四美酱菜当手信",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4295,
+        32.3925
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "renfengli",
+      "name": "仁丰里",
+      "cat": "街区",
+      "tags": [
+        "老街",
+        "文艺",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "唐代里坊格局保留至今的老街巷。",
+      "reason": "皮市街旁边更适合慢慢逛的巷子",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4272,
+        32.3912
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hongqiaofang",
+      "name": "虹桥坊",
+      "cat": "街区",
+      "tags": [
+        "文创",
+        "夜市",
+        "瘦西湖旁"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "瘦西湖东侧的休闲街区，夜间热闹。",
+      "reason": "逛完瘦西湖在这里吃晚饭",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4145,
+        32.4045
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jinghuacheng",
+      "name": "京华城",
+      "cat": "商圈",
+      "tags": [
+        "购物",
+        "餐饮",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "扬州西区的大型商业综合体。",
+      "reason": "下雨天逛街吃饭的稳妥选择",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.3785,
+        32.3952
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gonghechun",
+      "name": "共和春茶社",
+      "cat": "美食",
+      "tags": [
+        "早茶",
+        "老字号",
+        "饺面"
+      ],
+      "heat": 7,
+      "dur": 45,
+      "intro": "甘泉路上的老牌茶社，饺面最经典。",
+      "reason": "一碗饺面解决扬州人的清晨",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4238,
+        32.393
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaobo-town",
+      "name": "邵伯古镇",
+      "cat": "古镇",
+      "tags": [
+        "运河",
+        "龙虾",
+        "近郊"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "运河边的千年古镇，邵伯龙虾出名。",
+      "reason": "古闸老街上吃一顿邵伯龙虾",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.529,
+        32.618
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuyuwan",
+      "name": "茱萸湾风景区",
+      "cat": "亲子",
+      "tags": [
+        "动物",
+        "亲子",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "运河湾头的老牌公园，兼有动物园。",
+      "reason": "带小孩半天的城市动物园",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4753,
+        32.4248
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sanwan-night",
+      "name": "运河三湾·剪影桥夜景",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "免费",
+        "运河"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "三湾的剪影桥与博物馆夜景。",
+      "reason": "晚上在三湾走一圈，桥和灯都好看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.43,
+        32.37
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuchengyi",
+      "name": "高邮盂城驿",
+      "cat": "古迹",
+      "tags": [
+        "驿站",
+        "明代",
+        "古街"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "全国保存最好的明代驿站之一。",
+      "reason": "顺着南门大街逛到运河边",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.4425,
+        32.7863
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shugang-west-peak",
+      "name": "蜀冈西峰生态公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "登高",
+        "森林"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "蜀冈西段的城市森林，可俯瞰全城。",
+      "reason": "本地人晨练看城景的地方",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.381,
+        32.423
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hanlingyuan",
+      "name": "汉广陵王墓博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "汉墓",
+        "黄肠题凑",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "西汉广陵王墓原址，黄肠题凑葬制。",
+      "reason": "下到墓室里看两千年前的木椁",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.3998,
+        32.4297
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shikefa",
+      "name": "史可法纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "梅花岭",
+        "明末",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "史公祠与梅花岭，扬州气节的纪念地。",
+      "reason": "梅花岭上读史可法绝笔",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.426,
+        32.4128
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baguai-museum",
+      "name": "扬州八怪纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "八怪",
+        "书画",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "金农故居，展示扬州八怪书画。",
+      "reason": "金农寄居室里看真迹",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4256,
+        32.401
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "caiyi-street",
+      "name": "彩衣街",
+      "cat": "街区",
+      "tags": [
+        "小吃",
+        "老巷",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "卖彩衣起家的老街，连着东关街。",
+      "reason": "穿过去正好接到东关街的人流",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.429,
+        32.399
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mingyue-lake",
+      "name": "明月湖",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "免费",
+        "日落"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "西区文化中心旁的人工湖公园。",
+      "reason": "傍晚湖边散步，正对双博馆",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.3856,
+        32.3873
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangzhou-theatre",
+      "name": "扬州大剧院",
+      "cat": "演出",
+      "tags": [
+        "演出",
+        "晚上",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 110,
+      "intro": "西区文化中心的剧院，常有戏曲演出。",
+      "reason": "想看扬剧清曲，先查演出排期",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.3925,
+        32.3865
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangzhou-science",
+      "name": "扬州科技馆",
+      "cat": "亲子",
+      "tags": [
+        "室内",
+        "互动",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "西区的互动科普馆，雨天遛娃去处。",
+      "reason": "下雨天直接改室内行程",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        119.398,
+        32.376
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guazhou-ferry",
+      "name": "瓜洲古渡公园",
+      "cat": "古迹",
+      "tags": [
+        "渡口",
+        "诗词",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "长江边古渡口，王安石泊船的地方。",
+      "reason": "站在江边读「春风又绿江南岸」",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.391,
+        32.229
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaobo-lake",
+      "name": "邵伯湖",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "渔村",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "运河西侧的宽阔湖面，渔村散落。",
+      "reason": "傍晚湖边看日落，安静得不像扬州",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.49,
+        32.66
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fenghuang-island",
+      "name": "凤凰岛生态旅游区",
+      "cat": "山水",
+      "tags": [
+        "湿地",
+        "露营",
+        "近郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "邵伯湖边的湿地景区，可露营烧烤。",
+      "reason": "湖边草地扎帐篷过半天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.5045,
+        32.4903
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zaolinwan",
+      "name": "仪征枣林湾·世博园",
+      "cat": "公园",
+      "tags": [
+        "园艺",
+        "园区大",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "世园会旧址，园林园艺展园成片。",
+      "reason": "春来看花，园子大到要骑车",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.1103,
+        32.285
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenyou-tai",
+      "name": "高邮文游台",
+      "cat": "古迹",
+      "tags": [
+        "苏轼",
+        "登高",
+        "园林"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "苏轼与秦观雅集处，高邮地标园林。",
+      "reason": "登台看高邮城全貌",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.45,
+        32.792
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianhe-temple",
+      "name": "仙鹤寺",
+      "cat": "古迹",
+      "tags": [
+        "清真寺",
+        "小众",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "与扬州同岁的古老清真寺，形似仙鹤。",
+      "reason": "闹市里安静得只剩脚步声",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4256,
+        32.3938
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "puhading-park",
+      "name": "普哈丁园",
+      "cat": "古迹",
+      "tags": [
+        "伊斯兰",
+        "墓园",
+        "清净"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "运河边的阿拉伯式墓园与园林。",
+      "reason": "异域感最强的扬州角落",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4263,
+        32.3834
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanyinshan",
+      "name": "蜀冈观音山",
+      "cat": "古迹",
+      "tags": [
+        "禅寺",
+        "山寺",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "蜀冈东峰上的尼众道场，山门清幽。",
+      "reason": "和大明寺一线，香客不多",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4068,
+        32.4409
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tangcheng-museum",
+      "name": "唐城遗址博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "唐城",
+        "遗址",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 55,
+      "intro": "唐代扬州子城遗址上的小型博物馆。",
+      "reason": "登上城垣能看到瘦西湖全景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4093,
+        32.4396
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清故居",
+      "cat": "古迹",
+      "tags": [
+        "名人故居",
+        "小巷",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "安乐巷内的朱自清故居，小小院落。",
+      "reason": "读《背影》的地方，五分钟就走完",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.43,
+        32.39
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wangshi-xiaoyuan",
+      "name": "汪氏小苑",
+      "cat": "古迹",
+      "tags": [
+        "盐商",
+        "小园林",
+        "安静"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "盐商汪氏的老宅，小院层层套叠。",
+      "reason": "比个园何园清静的小而美",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4405,
+        32.4005
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lu-family-house",
+      "name": "卢氏盐商住宅",
+      "cat": "古迹",
+      "tags": [
+        "盐商",
+        "大宅",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "晚清盐商卢氏大宅，现存最完整之一。",
+      "reason": "老宅里的砖雕木雕值得细看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4305,
+        32.3958
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wu-daotai",
+      "name": "吴道台宅第",
+      "cat": "古迹",
+      "tags": [
+        "官宅",
+        "藏书楼",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "晚清道台吴引孙宅第，测海楼藏书。",
+      "reason": "庭院深深，人也少得安静",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4266,
+        32.3912
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tianning-temple",
+      "name": "天宁寺·佛教文化博物馆",
+      "cat": "古迹",
+      "tags": [
+        "古寺",
+        "行宫",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "清代皇家行宫所在，今为佛教文化展馆。",
+      "reason": "和重宁寺挨着，顺路一起看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4181,
+        32.4113
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "runyang-forest",
+      "name": "润扬森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "江景",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "润扬大桥下的长江边森林公园。",
+      "reason": "江边看大桥，风大但视野开阔",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.397,
+        32.239
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jiangdu-water-hub",
+      "name": "江都水利枢纽",
+      "cat": "山水",
+      "tags": [
+        "水利工程",
+        "四A",
+        "银杏"
+      ],
+      "heat": 6,
+      "dur": 80,
+      "intro": "南水北调东线源头，四座抽水站。",
+      "reason": "秋末站区银杏大道金黄一片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.575,
+        32.418
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "beihu-wetland",
+      "name": "北湖湿地公园",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "观鸟",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 100,
+      "intro": "城北的湿地公园，芦苇水网密布。",
+      "reason": "带望远镜来看水鸟",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.42,
+        32.54
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qihe-badao",
+      "name": "七河八岛生态区",
+      "cat": "山水",
+      "tags": [
+        "岛屿",
+        "骑行",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "运河分汊形成的河岛湿地生态区。",
+      "reason": "一路骑行穿岛过桥，很解压",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.5,
+        32.435
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "naishan",
+      "name": "捺山地质公园",
+      "cat": "山水",
+      "tags": [
+        "火山",
+        "地质",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "新生代火山遗迹，石柱林很奇特。",
+      "reason": "看火山石柱，顺路采茶",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.135,
+        32.366
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhenguo-temple",
+      "name": "高邮镇国寺",
+      "cat": "古迹",
+      "tags": [
+        "运河",
+        "唐塔",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "运河西堤上的唐代方塔与寺庙。",
+      "reason": "运河中段的塔，落日时最好看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.4258,
+        32.7662
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gaoyou-lake-reed",
+      "name": "高邮湖芦苇荡湿地公园",
+      "cat": "山水",
+      "tags": [
+        "芦苇",
+        "湿地",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "高邮湖西岸的芦苇荡，可坐船穿行。",
+      "reason": "秋天芦花飞起来像下雪",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.3,
+        32.86
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wanfu-bridge-night",
+      "name": "万福大桥夜景",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "大桥",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "万福大桥夜间灯光横跨运河。",
+      "reason": "桥上俯瞰运河灯带最好看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.493,
+        32.44
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaopangu",
+      "name": "小盘谷",
+      "cat": "古迹",
+      "tags": [
+        "园林",
+        "假山",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "清代园林小品，假山曲径做得极巧。",
+      "reason": "游客极少的真古董园林",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.4382,
+        32.3925
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wantou-town",
+      "name": "湾头古镇",
+      "cat": "古镇",
+      "tags": [
+        "运河",
+        "玉器",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 80,
+      "intro": "古运河边的玉器小镇，尚有老街遗存。",
+      "reason": "顺路看运河闸口和老街",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.477,
+        32.421
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lotus-pond-park",
+      "name": "荷花池公园",
+      "cat": "公园",
+      "tags": [
+        "荷花",
+        "免费",
+        "本地人"
+      ],
+      "heat": 5.5,
+      "dur": 50,
+      "intro": "老城南的荷花池公园，夏日开满荷花。",
+      "reason": "清晨本地人打太极的免费园子",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.4225,
+        32.382
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiannv-park",
+      "name": "江都仙女公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "园林",
+        "本地人"
+      ],
+      "heat": 5.5,
+      "dur": 50,
+      "intro": "江都城区的古典园林公园。",
+      "reason": "江都行程里歇脚的地方",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.57,
+        32.428
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "puyuan",
+      "name": "朴园",
+      "cat": "公园",
+      "tags": [
+        "园林",
+        "盆景",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 70,
+      "intro": "朴席镇的江南式私家园林。",
+      "reason": "顺路看园子，人少清净",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.318,
+        32.288
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shierxu",
+      "name": "仪征十二圩历史文化街区",
+      "cat": "古镇",
+      "tags": [
+        "盐运",
+        "老街",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "清末淮盐转运要地，老街格局尚存。",
+      "reason": "老盐运码头遗迹还看得见",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        119.245,
+        32.229
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangzijin",
+      "name": "扬子津古渡公园",
+      "cat": "公园",
+      "tags": [
+        "古渡",
+        "免费",
+        "傍晚"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "古运河与仪扬河交汇处的古渡公园。",
+      "reason": "傍晚来吹风看船过闸",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        119.36,
+        32.33
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tianle-lake",
+      "name": "天乐湖温泉度假区",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "度假",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 210,
+      "intro": "仪征的温泉度假区，泡汤加住宿。",
+      "reason": "一天跑远郊后泡个温泉收尾",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.15,
+        32.335
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gaoyou-pawnshop",
+      "name": "高邮当铺博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "当铺",
+        "清代",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "清代当铺旧址，格局保存完整。",
+      "reason": "看看老当铺高高的柜台",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.4462,
+        32.789
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jieshou-town",
+      "name": "界首古镇",
+      "cat": "古镇",
+      "tags": [
+        "运河",
+        "老街",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 100,
+      "intro": "高邮北部的运河古镇，老街临水。",
+      "reason": "几乎没有游客的运河老码头",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.4,
+        32.915
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "longqiuzhuang",
+      "name": "龙虬庄遗址博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "新石器",
+        "遗址",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "江淮地区新石器时代聚落遗址。",
+      "reason": "看六千年前的稻作遗存",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.5,
+        32.81
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baoying-lake",
+      "name": "宝应湖国家湿地公园",
+      "cat": "山水",
+      "tags": [
+        "湿地",
+        "湖景",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 120,
+      "intro": "宝应湖畔的湿地公园，水杉芦荡。",
+      "reason": "扬州最北的一片水乡湿地",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.325,
+        33.17
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lingtang-mosque",
+      "name": "菱塘清真寺",
+      "cat": "古迹",
+      "tags": [
+        "清真寺",
+        "回族乡",
+        "远郊"
+      ],
+      "heat": 5,
+      "dur": 40,
+      "intro": "江苏现存最大的清真寺，在菱塘回族乡。",
+      "reason": "运河西岸的伊斯兰建筑群",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.2727,
+        32.691
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zongzhao-garden",
+      "name": "宝应纵棹园",
+      "cat": "公园",
+      "tags": [
+        "园林",
+        "荷花",
+        "免费"
+      ],
+      "heat": 5,
+      "dur": 45,
+      "intro": "清代宝应私家园林，荷花池为主体。",
+      "reason": "宝应县城里的小园子",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        119.312,
+        33.236
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

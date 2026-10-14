@@ -1,0 +1,1545 @@
+{
+  "_meta": {
+    "city": "绍兴",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "luxun-guli",
+      "name": "鲁迅故里",
+      "cat": "古迹",
+      "tags": [
+        "三味书屋",
+        "百草园",
+        "免费",
+        "早去"
+      ],
+      "heat": 10,
+      "dur": 150,
+      "intro": "三味书屋与百草园所在，绍兴最热门的古城片区。",
+      "reason": "跟着课本逛百草园，早去人少",
+      "open": "08:30-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5846,
+        30.0025
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "luxun-museum",
+      "name": "绍兴鲁迅纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "鲁迅故里内的纪念馆，手稿与老照片最多。",
+      "reason": "看完故居再进来补一层理解",
+      "open": "08:30-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5838,
+        30.0019
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shenyuan",
+      "name": "沈园",
+      "cat": "古迹",
+      "tags": [
+        "宋园",
+        "陆游",
+        "夜游"
+      ],
+      "heat": 9.5,
+      "dur": 70,
+      "intro": "陆游与唐琬题《钗头凤》的宋代园林。",
+      "reason": "在断墙前读一遍钗头凤",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5861,
+        30.0014
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shenyuan-night",
+      "name": "沈园之夜",
+      "cat": "演出",
+      "tags": [
+        "越剧",
+        "晚上",
+        "实景"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "沈园夜间的实景戏曲演出，灯影园林。",
+      "reason": "夜灯下的园林比白天更入戏",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5863,
+        30.0017
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cangqiao",
+      "name": "仓桥直街",
+      "cat": "街区",
+      "tags": [
+        "老街",
+        "小吃",
+        "黄酒",
+        "免费"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "临河老街，老台门与黄酒小馆一路排开。",
+      "reason": "傍晚沿河喝一碗黄酒配臭豆腐",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5805,
+        30.0072
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bazixiao",
+      "name": "八字桥历史街区",
+      "cat": "街区",
+      "tags": [
+        "宋桥",
+        "免费",
+        "清晨"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "南宋八字桥与水巷人家，游客很少。",
+      "reason": "清晨桥上只有洗菜的本地人",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5899,
+        30.0064
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shusheng-guli",
+      "name": "书圣故里",
+      "cat": "街区",
+      "tags": [
+        "王羲之",
+        "题扇桥",
+        "小吃"
+      ],
+      "heat": 8,
+      "dur": 100,
+      "intro": "蕺山下王羲之故居一带的老街保护区。",
+      "reason": "墨池边的老墙门随手一拍都好看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5881,
+        30.0104
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jishan-snack",
+      "name": "蕺山街·书圣故里小吃",
+      "cat": "美食",
+      "tags": [
+        "臭豆腐",
+        "小吃",
+        "老街"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "书圣故里的窄巷小吃一条街，臭豆腐香。",
+      "reason": "现炸臭豆腐配甜酱，边走边吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5875,
+        30.0096
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cai-yuanpei",
+      "name": "蔡元培故居",
+      "cat": "古迹",
+      "tags": [
+        "名人故居",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "北大校长蔡元培出生地，书圣故里内。",
+      "reason": "一座老台门看尽一个家族",
+      "open": "08:30-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5878,
+        30.0113
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qiujin-gu",
+      "name": "秋瑾故居",
+      "cat": "古迹",
+      "tags": [
+        "名人故居",
+        "免费",
+        "和畅堂"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "鉴湖女侠秋瑾生活过的和畅堂老宅。",
+      "reason": "读完秋瑾的诗再走一趟更有感触",
+      "open": "08:30-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5851,
+        30.0075
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingteng-shuwu",
+      "name": "青藤书屋",
+      "cat": "古迹",
+      "tags": [
+        "徐渭",
+        "小园",
+        "幽静"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "明代才子徐渭故居，青藤下一方小园。",
+      "reason": "窄巷里最安静的一处文人小院",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5811,
+        30.0033
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xuwei-art",
+      "name": "徐渭艺术馆",
+      "cat": "博物馆",
+      "tags": [
+        "书画",
+        "免费",
+        "室内"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "青藤书屋旁的新馆，专展徐渭书画与生平。",
+      "reason": "看大写意泼墨的原作真迹",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5806,
+        30.0039
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "datong-xuetang",
+      "name": "大通学堂",
+      "cat": "古迹",
+      "tags": [
+        "秋瑾",
+        "旧址",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "光复会练兵旧址，秋瑾主持的学堂。",
+      "reason": "近代史爱好者会停留很久",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5751,
+        30.0087
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangming-guli",
+      "name": "阳明故里",
+      "cat": "古迹",
+      "tags": [
+        "王阳明",
+        "新修",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "王阳明故居遗址所在的修缮街区。",
+      "reason": "白墙黑瓦配展陈，心学入门处",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5736,
+        30.0122
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xixiaohe",
+      "name": "西小河历史街区",
+      "cat": "街区",
+      "tags": [
+        "水巷",
+        "老台门",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "八字桥外的水巷人家，几乎全是原住民。",
+      "reason": "没有店招的绍兴，最像老照片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5757,
+        30.0117
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yingenmen",
+      "name": "迎恩门水街",
+      "cat": "街区",
+      "tags": [
+        "城墙",
+        "夜景",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 80,
+      "intro": "古城西门迎恩门重修的水街与城楼。",
+      "reason": "城门亮灯后沿水街慢慢走",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5701,
+        30.0143
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fushan-park",
+      "name": "府山公园",
+      "cat": "公园",
+      "tags": [
+        "越王台",
+        "登高",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "府山上的越王台与文种墓，全城制高点。",
+      "reason": "爬上去能俯瞰整片老城区",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5746,
+        30.0143
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaoxing-museum",
+      "name": "绍兴博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "越国"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "府山脚下的城市博物馆，越国文物最多。",
+      "reason": "先看馆再逛城，越国史一次补全",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5744,
+        30.0102
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fenghengjie",
+      "name": "府横街小吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "老城",
+        "本地人"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "老城小吃街，面饽饽、霉干菜烧饼都有。",
+      "reason": "本地人早饭午饭都在这解决",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5782,
+        30.0126
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongjie-night",
+      "name": "东街夜市",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "小吃",
+        "晚上"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "解放路东侧的夜市街，晚上才热闹。",
+      "reason": "逛完古城来吃点夜宵收尾",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5881,
+        30.0162
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianheng",
+      "name": "咸亨酒店",
+      "cat": "美食",
+      "tags": [
+        "黄酒",
+        "茴香豆",
+        "鲁迅中路"
+      ],
+      "heat": 8,
+      "dur": 70,
+      "intro": "孔乙己站过柜台的百年老店，黄酒管够。",
+      "reason": "温一壶黄酒，要碟茴香豆",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5837,
+        30.0032
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huangjiu-museum",
+      "name": "中国黄酒博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "黄酒",
+        "品鉴",
+        "室内"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "国内唯一黄酒专题馆，能尝四年陈原酒。",
+      "reason": "从酒坛看到酒旗，还能试喝",
+      "open": "08:30-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5794,
+        30.0152
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhou-enlai",
+      "name": "周恩来祖居",
+      "cat": "古迹",
+      "tags": [
+        "名人故居",
+        "免费",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "周恩来祖辈居住的老台门，现为陈列馆。",
+      "reason": "劳动路上的安静一站",
+      "open": "08:30-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5831,
+        30.0074
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jishan-park",
+      "name": "蕺山公园",
+      "cat": "公园",
+      "tags": [
+        "文笔塔",
+        "登高",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "蕺山上的文笔塔与书院遗址，可俯瞰老城。",
+      "reason": "傍晚登塔看屋顶连成一片",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5901,
+        30.0142
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "city-square",
+      "name": "绍兴城市广场·解放路",
+      "cat": "商圈",
+      "tags": [
+        "老城中心",
+        "商业街"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "老城商业中心，解放路商街与大剧院相邻。",
+      "reason": "逛街买伴手礼顺路打卡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5797,
+        30.0202
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "donghu",
+      "name": "东湖",
+      "cat": "山水",
+      "tags": [
+        "乌篷船",
+        "石宕",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 120,
+      "intro": "采石遗迹凿出的峭壁湖，乌篷船穿洞而过。",
+      "reason": "坐乌篷船贴石壁钻陶公洞",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.6152,
+        30.0013
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaoxing-theatre",
+      "name": "绍兴大剧院",
+      "cat": "演出",
+      "tags": [
+        "越剧",
+        "演出",
+        "晚上"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "绍兴规模最大的演出场馆，常有越剧季。",
+      "reason": "听一场原汁原味的越剧",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5791,
+        30.0193
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lvcheng-cruise",
+      "name": "环城河夜游",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "游船",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "环城河画舫夜游，串起十余座古桥。",
+      "reason": "船上看灯，桥上人看船",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.5811,
+        30.0011
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jianhu",
+      "name": "鉴湖·古纤道",
+      "cat": "山水",
+      "tags": [
+        "古纤道",
+        "水乡",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "鉴湖上的古纤道石板路，水天一色。",
+      "reason": "走一段纤道，看乌篷船贴着水面",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4971,
+        29.9981
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kuaijishan",
+      "name": "会稽山景区",
+      "cat": "山水",
+      "tags": [
+        "阳明洞天",
+        "登山",
+        "森林"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "会稽山北麓的阳明洞天与大禹陵一带山林。",
+      "reason": "绍兴人周末的登山路线",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5957,
+        29.9781
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dashuyuling",
+      "name": "大禹陵",
+      "cat": "古迹",
+      "tags": [
+        "祭禹",
+        "古建",
+        "早去"
+      ],
+      "heat": 9,
+      "dur": 130,
+      "intro": "大禹陵寝与祭禹广场，历代祭祀之所。",
+      "reason": "沿神道走上去，气势很足",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5933,
+        29.9871
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianglufeng",
+      "name": "香炉峰",
+      "cat": "山水",
+      "tags": [
+        "登山",
+        "寺院",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "会稽山香炉峰，石阶直上山顶寺。",
+      "reason": "一千多级台阶，顶上风很大",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5877,
+        29.9701
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hushan",
+      "name": "吼山风景区",
+      "cat": "山水",
+      "tags": [
+        "石景",
+        "桃花",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 120,
+      "intro": "越城东郊的采石奇石山，三月桃花最盛。",
+      "reason": "小众石景，春天来最划算",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6461,
+        29.9771
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lanting",
+      "name": "兰亭景区",
+      "cat": "古迹",
+      "tags": [
+        "书法",
+        "曲水流觞",
+        "近郊"
+      ],
+      "heat": 9,
+      "dur": 150,
+      "intro": "王羲之写《兰亭集序》处，竹影溪声。",
+      "reason": "在曲水边看拓碑，写字的人都懂",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4802,
+        29.9552
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lanting-museum",
+      "name": "兰亭书法博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "书法",
+        "免费",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "兰亭景区内的书法专题馆，藏拓本众多。",
+      "reason": "看各家临本，顺路进馆避雨",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.4822,
+        29.9549
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jinghu-wetland",
+      "name": "镜湖国家城市湿地公园",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "骑行",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 110,
+      "intro": "城北镜湖湿地，芦苇荡与白鹭常见。",
+      "reason": "带娃骑行看水鸟好去处",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5741,
+        30.0642
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaoxing-science",
+      "name": "绍兴科技馆",
+      "cat": "亲子",
+      "tags": [
+        "免费",
+        "室内",
+        "互动"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "镜湖新区的互动科技馆，雨天遛娃首选。",
+      "reason": "下雨天的备选，孩子能玩半天",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5711,
+        30.0648
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mingren-guan",
+      "name": "绍兴名人馆",
+      "cat": "博物馆",
+      "tags": [
+        "名人",
+        "免费",
+        "室内"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "从大禹到鲁迅，一馆看绍兴名人谱。",
+      "reason": "把绍兴的名人一次认全",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5721,
+        30.0631
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shaoxing-art",
+      "name": "绍兴美术馆",
+      "cat": "博物馆",
+      "tags": [
+        "书画",
+        "免费",
+        "新馆"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "镜湖新区的市美术馆，常设近现代书画。",
+      "reason": "安静看展，建筑也很出片",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.5802,
+        30.0588
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "didang-lake",
+      "name": "迪荡湖公园",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "新城",
+        "夜跑"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "城东新城的湖景公园，环湖步道开阔。",
+      "reason": "晚上环湖走一圈很舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.6042,
+        30.0291
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "didang-night",
+      "name": "迪荡湖夜景喷泉",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "喷泉",
+        "晚上"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "迪荡湖的夜灯与音乐喷泉，新城天际线。",
+      "reason": "湖面倒影里的绍兴另一面",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6051,
+        30.0283
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shimao",
+      "name": "绍兴世茂广场",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "室内",
+        "迪荡"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "迪荡新城的核心商场，餐饮影院集中。",
+      "reason": "下雨天逛街吃饭的落脚点",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5972,
+        30.0231
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "keqiao-old",
+      "name": "柯桥古镇",
+      "cat": "街区",
+      "tags": [
+        "运河",
+        "老街",
+        "柯桥"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "浙东运河边的柯桥老街与古纤道起点。",
+      "reason": "运河边看老码头和石桥",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4968,
+        30.0806
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingfangcheng",
+      "name": "中国轻纺城",
+      "cat": "商圈",
+      "tags": [
+        "面料市场",
+        "商贸"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "全球规模最大的纺织品集散中心。",
+      "reason": "看看一座城如何靠布生意起来",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.4927,
+        30.0801
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "keqiao-wanda",
+      "name": "柯桥万达广场",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "室内",
+        "餐饮"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "柯桥的主要商场，配套餐饮与影院。",
+      "reason": "柯桥片区吃饭购物的常规选择",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5036,
+        30.0901
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guazhu-lake",
+      "name": "瓜渚湖公园",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "樱花",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "柯桥城区的大湖公园，春天樱花成片。",
+      "reason": "柯桥人晚饭后的散步圈",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4895,
+        30.0791
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guazhu-night",
+      "name": "瓜渚湖音乐喷泉",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "喷泉",
+        "晚上"
+      ],
+      "heat": 6,
+      "dur": 50,
+      "intro": "瓜渚湖夜间的喷泉灯光秀。",
+      "reason": "看完夜景正好在湖边吃宵夜",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.4902,
+        30.0776
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "keyan",
+      "name": "柯岩风景区",
+      "cat": "山水",
+      "tags": [
+        "石佛",
+        "云骨",
+        "鉴湖"
+      ],
+      "heat": 9,
+      "dur": 180,
+      "intro": "采石场遗迹与鉴湖合一的景区，云骨奇石。",
+      "reason": "石佛和云骨两处最值得停",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4792,
+        29.9862
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "luzhen",
+      "name": "鲁镇",
+      "cat": "古镇",
+      "tags": [
+        "社戏",
+        "仿古",
+        "鲁迅笔下"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "按鲁迅小说复原的水乡小镇，有社戏台。",
+      "reason": "看一场水乡社戏很有味道",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.4749,
+        29.9837
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anchang",
+      "name": "安昌古镇",
+      "cat": "古镇",
+      "tags": [
+        "腊肠",
+        "酱货",
+        "水乡",
+        "近郊"
+      ],
+      "heat": 8.5,
+      "dur": 180,
+      "intro": "廊棚挂满腊肠酱鸭的运河古镇，年味浓。",
+      "reason": "冬天来最对，满街都是酱货",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4406,
+        30.1041
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yangshan-shifo",
+      "name": "羊山石佛",
+      "cat": "古迹",
+      "tags": [
+        "石佛",
+        "采石场",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 80,
+      "intro": "采石留下的石宕与隋唐石佛，游客稀少。",
+      "reason": "水石之间的大佛，几乎没人",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.4526,
+        30.0911
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongpu",
+      "name": "东浦黄酒小镇",
+      "cat": "古镇",
+      "tags": [
+        "黄酒",
+        "水乡",
+        "近郊"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "黄酒发源地之一的水乡小镇，酒坊林立。",
+      "reason": "在酿酒小镇闻一路酒香",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.5272,
+        30.0461
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaobaihua",
+      "name": "绍兴小百花越剧艺术中心",
+      "cat": "演出",
+      "tags": [
+        "越剧",
+        "演出",
+        "晚上"
+      ],
+      "heat": 6,
+      "dur": 110,
+      "intro": "绍兴小百花越剧团的驻场剧场，常有惠民场。",
+      "reason": "票价便宜的本地越剧班子",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.4946,
+        30.0816
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongfang-shanshui",
+      "name": "绍兴东方山水乐园",
+      "cat": "亲子",
+      "tags": [
+        "乐园",
+        "水世界",
+        "室内"
+      ],
+      "heat": 7.5,
+      "dur": 300,
+      "intro": "柯桥的大型室内外乐园，水上项目为主。",
+      "reason": "下雨也能玩，亲子一整天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.4831,
+        30.1013
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuji-xishi",
+      "name": "西施故里",
+      "cat": "古迹",
+      "tags": [
+        "西施",
+        "浣江",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "诸暨浣江边的西施故里景区与古越街。",
+      "reason": "美女传说与浣纱江一起看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.2397,
+        29.7033
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuji-wuxie",
+      "name": "五泄风景区",
+      "cat": "山水",
+      "tags": [
+        "瀑布",
+        "古寺",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 300,
+      "intro": "诸暨西北的五级瀑布与千年禅寺。",
+      "reason": "一泄到五泄，夏天最凉快",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.1276,
+        29.7873
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuji-xiangfei",
+      "name": "诸暨千年香榧林",
+      "cat": "山水",
+      "tags": [
+        "古树",
+        "香榧",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 180,
+      "intro": "赵家镇的千年香榧古树群，山雾常绕。",
+      "reason": "会稽山深处的古树森林",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.3502,
+        29.7701
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuji-baitahu",
+      "name": "诸暨白塔湖国家湿地公园",
+      "cat": "亲子",
+      "tags": [
+        "湿地",
+        "花海",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "诸暨北部的湿地公园，春夏有大片花田。",
+      "reason": "带娃看水鸟和花田",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.3102,
+        29.8501
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shengzhou-chongren",
+      "name": "崇仁古镇",
+      "cat": "古镇",
+      "tags": [
+        "台门",
+        "古镇",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "嵊州的老台门群落，宋代建制的老镇。",
+      "reason": "几乎没有商业味的真古镇",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.7182,
+        29.5172
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shengzhou-yueju-town",
+      "name": "嵊州越剧小镇",
+      "cat": "演出",
+      "tags": [
+        "越剧",
+        "小镇",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "越剧发源地施家岙的戏曲主题小镇。",
+      "reason": "白天看戏，晚上看水上演出",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.7692,
+        29.5332
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shengzhou-yueju-museum",
+      "name": "越剧博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "越剧",
+        "免费",
+        "室内"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "嵊州市区的越剧专题馆，戏服与老唱片多。",
+      "reason": "听一段老唱片里的女声",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        120.8198,
+        29.5887
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shengzhou-wangxizhi",
+      "name": "王羲之故居·金庭",
+      "cat": "古迹",
+      "tags": [
+        "书圣",
+        "墓园",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "嵊州金庭的书圣故里与王羲之墓园。",
+      "reason": "书法爱好者会专程来的地方",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.9332,
+        29.5412
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xinchang-dafosi",
+      "name": "新昌大佛寺",
+      "cat": "古迹",
+      "tags": [
+        "石雕大佛",
+        "古刹",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "南朝石窟大佛所在的千年禅寺，山寺一体。",
+      "reason": "走进山壁里看十六米大佛",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.8202,
+        29.4992
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xinchang-shijiufeng",
+      "name": "穿岩十九峰",
+      "cat": "山水",
+      "tags": [
+        "丹霞",
+        "玻璃栈道",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 240,
+      "intro": "新昌丹霞峰林，《射雕》取景地之一。",
+      "reason": "爬千丈幽谷看十九峰排开",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.7502,
+        29.4252
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xinchang-tianmu",
+      "name": "天姥山",
+      "cat": "山水",
+      "tags": [
+        "唐诗之路",
+        "云海",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "李白梦游的天姥山，云海与古驿道。",
+      "reason": "唐诗之路最出名的那一座",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.8742,
+        29.3892
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shangyu-caoe",
+      "name": "曹娥庙",
+      "cat": "古迹",
+      "tags": [
+        "孝女",
+        "碑刻",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "曹娥江畔的孝女庙，历代碑刻极多。",
+      "reason": "庙里碑廊值得慢慢读",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.8762,
+        30.0022
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shangyu-xiaode",
+      "name": "中华孝德园",
+      "cat": "古迹",
+      "tags": [
+        "大舜庙",
+        "孝德",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 100,
+      "intro": "上虞曹娥景区内的大舜庙与孝德文化园。",
+      "reason": "和曹娥庙连着一起看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.8802,
+        29.9962
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shangyu-fuzhi",
+      "name": "覆卮山",
+      "cat": "山水",
+      "tags": [
+        "梯田",
+        "石浪",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "上虞南部的千年梯田与冰川石浪。",
+      "reason": "石浪攀爬加梯田风光一次拿",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.9532,
+        29.8512
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shangyu-baimahu",
+      "name": "白马湖·春晖中学",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "名人",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "上虞白马湖畔的春晖中学，名家曾执教。",
+      "reason": "湖边散步，读一段民国教育史",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.9202,
+        29.9902
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

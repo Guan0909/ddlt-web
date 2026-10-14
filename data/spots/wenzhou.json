@@ -1,0 +1,1566 @@
+{
+  "_meta": {
+    "city": "温州",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "jiangxinyu",
+      "name": "江心屿",
+      "cat": "古迹",
+      "tags": [
+        "瓯江孤屿",
+        "双塔",
+        "早去"
+      ],
+      "heat": 9,
+      "dur": 120,
+      "intro": "瓯江中的千年孤岛，双塔与江心寺同框。",
+      "reason": "坐轮渡上岛，唐宋诗碑一路看",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.6958,
+        28.0268
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wuma-street",
+      "name": "五马街",
+      "cat": "街区",
+      "tags": [
+        "百年商街",
+        "老字号",
+        "夜景"
+      ],
+      "heat": 9,
+      "dur": 75,
+      "intro": "温州第一商业老街，骑楼里全是老字号。",
+      "reason": "晚上灯亮后逛，顺便吃纱帽河",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.6937,
+        28.0152
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chanjie",
+      "name": "禅街",
+      "cat": "街区",
+      "tags": [
+        "民国骑楼",
+        "小吃",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "连着五马街的民国风貌街，梧桐骑楼成排。",
+      "reason": "从五马街一路走过去正好",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6945,
+        28.012
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gongyuan-road",
+      "name": "公园路",
+      "cat": "街区",
+      "tags": [
+        "民国建筑",
+        "夜景",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 50,
+      "intro": "温州民国风貌街，青砖骑楼连成长排。",
+      "reason": "街口老照片墙能看到百年前温州",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.7002,
+        28.0168
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mochifang",
+      "name": "墨池坊",
+      "cat": "街区",
+      "tags": [
+        "王羲之",
+        "墨池",
+        "文艺"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "相传王羲之洗笔处，如今是文艺小巷。",
+      "reason": "安静的小巷，适合慢慢逛",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.7032,
+        28.0205
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuomen-street",
+      "name": "朔门古街",
+      "cat": "街区",
+      "tags": [
+        "古码头",
+        "市井",
+        "小吃"
+      ],
+      "heat": 7,
+      "dur": 50,
+      "intro": "瓯江边的古码头老街，烟火气十足。",
+      "reason": "老墙门里藏着本地人早餐摊",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6902,
+        28.0222
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuomen-port",
+      "name": "朔门古港遗址",
+      "cat": "古迹",
+      "tags": [
+        "宋代码头",
+        "考古",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "宋元温州港遗址，全国十大考古新发现之一。",
+      "reason": "站在千年前的海丝码头原址上",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6915,
+        28.0225
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingnianfang",
+      "name": "庆年坊历史街区",
+      "cat": "街区",
+      "tags": [
+        "老宅",
+        "市井",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "温州老城保存最完整的传统民居街区之一。",
+      "reason": "游客少，看原汁原味的老温州",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.701,
+        28.0132
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "songtaishan",
+      "name": "松台山",
+      "cat": "公园",
+      "tags": [
+        "净光塔",
+        "登高",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "老城中央的小山，山顶净光塔可望全城。",
+      "reason": "傍晚登塔看老城屋顶连成片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6882,
+        28.0135
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huagaishan",
+      "name": "华盖山",
+      "cat": "公园",
+      "tags": [
+        "古城墙",
+        "晨练",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "温州古城九山之一，山上有古城墙残段。",
+      "reason": "清晨山上全是晨练的本地人",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.702,
+        28.0158
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jiushanhu",
+      "name": "九山湖",
+      "cat": "公园",
+      "tags": [
+        "游泳",
+        "老城",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "老城里的湖，夏天本地人下湖游泳。",
+      "reason": "沿湖走一圈就是温州日常",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6808,
+        28.0048
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "cat": "公园",
+      "tags": [
+        "积谷山",
+        "老牌公园",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "老牌城市公园，内有积谷山与中山纪念堂。",
+      "reason": "逛完五马街进来歇脚",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.696,
+        28.0142
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "maanchi-park",
+      "name": "马鞍池公园",
+      "cat": "公园",
+      "tags": [
+        "郁金香",
+        "划船",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "市区老公园，春天郁金香花展很热闹。",
+      "reason": "三月看花，平时来划船发呆",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6877,
+        27.9952
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘街",
+      "cat": "街区",
+      "tags": [
+        "夜景",
+        "塘河",
+        "小吃"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "南塘河畔的仿古街区，晚上灯光最好看。",
+      "reason": "天黑后沿河走，两岸灯笼全亮",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6826,
+        27.9852
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bailuzhou",
+      "name": "白鹿洲公园",
+      "cat": "公园",
+      "tags": [
+        "塘河",
+        "露营",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "南塘河边的大草坪公园，可以搭帐篷。",
+      "reason": "周末草坪上全是野餐垫",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6778,
+        27.9822
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenzhou-museum",
+      "name": "温州博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "瓯窑"
+      ],
+      "heat": 8,
+      "dur": 100,
+      "intro": "市府路旁的综合博物馆，瓯窑青瓷是看点。",
+      "reason": "下雨天进馆最好的选择",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.7048,
+        27.9872
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenzhou-science",
+      "name": "温州科技馆",
+      "cat": "亲子",
+      "tags": [
+        "免费",
+        "室内",
+        "互动"
+      ],
+      "heat": 6.5,
+      "dur": 100,
+      "intro": "世纪广场旁的互动科技馆，适合遛娃。",
+      "reason": "空调足，孩子能玩一下午",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.7025,
+        27.988
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanxi-museum",
+      "name": "南戏博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "南戏",
+        "古戏台",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "南戏发源地的专题馆，院内保留老戏台。",
+      "reason": "运气好能赶上南戏折子戏",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.6908,
+        28.0165
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "math-museum",
+      "name": "温州数学名人馆",
+      "cat": "博物馆",
+      "tags": [
+        "数学家",
+        "白鹿洲",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 45,
+      "intro": "白鹿洲公园里，讲温州籍数学家的故事。",
+      "reason": "苏步青谷超豪都从温州走出",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.6786,
+        27.9816
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清旧居",
+      "cat": "古迹",
+      "tags": [
+        "民国",
+        "旧居",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "朱自清在温州教书时住过的老宅。",
+      "reason": "《绿》就是在这里写下的",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.69,
+        28.017
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenzhou-theater",
+      "name": "温州大剧院",
+      "cat": "演出",
+      "tags": [
+        "音乐厅",
+        "晚上",
+        "世纪广场"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "世纪广场旁的现代剧院，常年有巡演。",
+      "reason": "晚上看一场演出刚刚好",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.7032,
+        27.9892
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongnan-theater",
+      "name": "温州东南剧院",
+      "cat": "演出",
+      "tags": [
+        "老剧院",
+        "戏曲",
+        "晚上"
+      ],
+      "heat": 5.5,
+      "dur": 110,
+      "intro": "温州老牌剧院，常有瓯剧和越剧上演。",
+      "reason": "想听本地瓯剧就来这儿",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6946,
+        28.0112
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "oujiang-cruise",
+      "name": "瓯江夜游",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "游船",
+        "晚上"
+      ],
+      "heat": 8,
+      "dur": 100,
+      "intro": "从江心屿码头登船，两岸灯火一路看过去。",
+      "reason": "夜里的瓯江比白天好看十倍",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6955,
+        28.0232
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shamaohe",
+      "name": "纱帽河",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "夜市",
+        "五马街旁"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "五马街旁的小吃巷，温州味道最集中。",
+      "reason": "鱼丸汤和灯盏糕各来一份",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6939,
+        28.0138
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nantang-night",
+      "name": "南塘夜市",
+      "cat": "美食",
+      "tags": [
+        "夜宵",
+        "小吃",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 70,
+      "intro": "南塘街边的夜市摊，夜里十点还热闹。",
+      "reason": "夜里沿河吃一圈本地小吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6828,
+        27.9858
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wutian-old-street",
+      "name": "梧田老街",
+      "cat": "美食",
+      "tags": [
+        "老街",
+        "夜景",
+        "夜宵"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "瓯海梧田的滨河老街，改造后小吃店密集。",
+      "reason": "新修的老街，本地人也常来",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.6782,
+        27.9588
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mixc",
+      "name": "温州万象城",
+      "cat": "商圈",
+      "tags": [
+        "购物",
+        "室内",
+        "餐饮"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "瓯海的大型商业综合体，餐饮层最热闹。",
+      "reason": "下雨天逛街吃饭的稳妥选择",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.659,
+        27.953
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wanda-longwan",
+      "name": "龙湾万达广场",
+      "cat": "商圈",
+      "tags": [
+        "购物",
+        "室内",
+        "带娃"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "龙湾中心区的商业综合体，影院餐饮齐全。",
+      "reason": "瓯江口一带的雨天备选",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.818,
+        27.913
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sanyang-wetland",
+      "name": "三垟湿地",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "骑行",
+        "柑园"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "城市里的水网湿地，柑园橘树成片。",
+      "reason": "租辆自行车沿水网骑一圈",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.732,
+        27.959
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenzhou-park",
+      "name": "温州乐园",
+      "cat": "亲子",
+      "tags": [
+        "过山车",
+        "水上项目",
+        "近郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "浙南最大的主题乐园，夏天有水上项目。",
+      "reason": "带娃放电一整天",
+      "open": "09:00-17:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.69,
+        27.91
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenzhou-zoo",
+      "name": "温州动物园",
+      "cat": "亲子",
+      "tags": [
+        "景山",
+        "早去",
+        "性价比"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "景山上的老牌动物园，门票便宜动物齐全。",
+      "reason": "看熊猫不用挤，慢慢逛",
+      "open": "08:00-17:00",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        120.6762,
+        27.9962
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jingshan",
+      "name": "景山公园",
+      "cat": "公园",
+      "tags": [
+        "登高",
+        "俯瞰",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 70,
+      "intro": "城西的山体公园，能俯瞰整个温州城。",
+      "reason": "傍晚上去看全城灯火",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.67,
+        27.9985
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zeya",
+      "name": "泽雅",
+      "cat": "山水",
+      "tags": [
+        "古法造纸",
+        "竹海",
+        "早去"
+      ],
+      "heat": 6.5,
+      "dur": 210,
+      "intro": "瓯海西部山区，宋代造纸作坊群还在用。",
+      "reason": "看老师傅用古法做屏纸",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.545,
+        27.97
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "silianzhui",
+      "name": "四连碓造纸作坊",
+      "cat": "古迹",
+      "tags": [
+        "古法造纸",
+        "国保",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "泽雅山中的明代造纸作坊群，全国重点文保。",
+      "reason": "和泽雅景区一起打包看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.56,
+        27.95
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daluoshan",
+      "name": "大罗山",
+      "cat": "山水",
+      "tags": [
+        "登山",
+        "奇石",
+        "早去"
+      ],
+      "heat": 6.5,
+      "dur": 210,
+      "intro": "温州城的后山，石瀑与天然湖散在山间。",
+      "reason": "爬两小时就能俯瞰全城",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.775,
+        27.895
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yaoxi",
+      "name": "瑶溪",
+      "cat": "山水",
+      "tags": [
+        "溪谷",
+        "摩崖石刻",
+        "踩水"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "龙湾的溪谷景区，摩崖石刻沿溪分布。",
+      "reason": "夏天来踩水最凉快",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.815,
+        27.91
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yongchangbao",
+      "name": "永昌堡",
+      "cat": "古迹",
+      "tags": [
+        "明代抗倭",
+        "城堡",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 80,
+      "intro": "明代抗倭所建的水乡城堡，城墙护城河完整。",
+      "reason": "城里还住着人，生活气很足",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.8225,
+        27.8985
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianyan",
+      "name": "仙岩",
+      "cat": "山水",
+      "tags": [
+        "梅雨潭",
+        "朱自清",
+        "近郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "朱自清《绿》写的梅雨潭就在这山间。",
+      "reason": "去看那潭绿得发亮的潭水",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.705,
+        27.87
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yaokou",
+      "name": "瓯窑小镇",
+      "cat": "街区",
+      "tags": [
+        "瓯窑",
+        "手作",
+        "文创"
+      ],
+      "heat": 6,
+      "dur": 90,
+      "intro": "永嘉三江的瓯窑主题村落，可以动手做陶。",
+      "reason": "亲手拉一个瓯窑杯子带走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.716,
+        28.042
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shoe-museum",
+      "name": "中国鞋文化博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "鞋文化",
+        "温州制造",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "温州企业办在瓯江边的鞋文化专题博物馆。",
+      "reason": "温州靠鞋起家的那段往事",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        120.668,
+        28.048
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanxijiang",
+      "name": "楠溪江",
+      "cat": "山水",
+      "tags": [
+        "竹筏",
+        "古村",
+        "早去"
+      ],
+      "heat": 9,
+      "dur": 300,
+      "intro": "三百里江水，两岸是滩林与古村落。",
+      "reason": "坐竹筏漂一段，水清得见底",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.69,
+        28.175
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shiweiyan",
+      "name": "石桅岩",
+      "cat": "山水",
+      "tags": [
+        "峭壁",
+        "潭水",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 240,
+      "intro": "楠溪江支流的巨岩景区，岩峰直插水面。",
+      "reason": "进山门先坐一段竹筏进去",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.835,
+        28.245
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cangpo",
+      "name": "苍坡古村",
+      "cat": "古镇",
+      "tags": [
+        "宋代布局",
+        "笔街",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "南宋规划的村落，街巷按笔墨纸砚布局。",
+      "reason": "村口的笔街墨池很有讲究",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.68,
+        28.205
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "furong",
+      "name": "芙蓉古村",
+      "cat": "古镇",
+      "tags": [
+        "唐宋村落",
+        "芙蓉亭",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "楠溪江边的千年古村，芙蓉亭池水倒映。",
+      "reason": "比苍坡更安静，吃碗素面",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.658,
+        28.178
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lishui-street",
+      "name": "丽水街",
+      "cat": "街区",
+      "tags": [
+        "临水长廊",
+        "夜景",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "岩头镇的临水长廊街，傍晚一排红灯笼。",
+      "reason": "长廊下坐着看对岸山影",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.666,
+        28.183
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "linkeng",
+      "name": "林坑古村",
+      "cat": "古镇",
+      "tags": [
+        "山地村落",
+        "黑瓦木屋",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "永嘉北部的山地古村，黑瓦木屋层层叠叠。",
+      "reason": "整个村子安静得只剩溪水声",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.8,
+        28.29
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yandangshan",
+      "name": "雁荡山",
+      "cat": "山水",
+      "tags": [
+        "世界地质公园",
+        "奇峰",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 420,
+      "intro": "东南第一山，火山岩的峰嶂洞瀑齐聚。",
+      "reason": "灵峰夜景和大龙湫各留半天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.005,
+        28.39
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dalongqiu",
+      "name": "大龙湫",
+      "cat": "山水",
+      "tags": [
+        "瀑布",
+        "雁荡山",
+        "早去"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "雁荡山最著名的瀑布，落差近两百米。",
+      "reason": "雨水季去看才够壮观",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.043,
+        28.36
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lingfeng-night",
+      "name": "灵峰夜景",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "雁荡山",
+        "晚上"
+      ],
+      "heat": 8.5,
+      "dur": 70,
+      "intro": "雁荡山灵峰的剪影夜景，靠想象辨形状。",
+      "reason": "要跟着导游听才有意思",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.008,
+        28.402
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongyandang",
+      "name": "中雁荡山",
+      "cat": "山水",
+      "tags": [
+        "玉甑峰",
+        "人少",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "乐清中部的中雁荡，玉甑峰可俯瞰乐清湾。",
+      "reason": "比雁荡山清静太多",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.88,
+        28.07
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongtou",
+      "name": "洞头列岛",
+      "cat": "山水",
+      "tags": [
+        "海岛",
+        "跨海大桥",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 300,
+      "intro": "温州的海岛区，百岛的礁石与渔港。",
+      "reason": "自驾过跨海大桥上岛最爽",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.15,
+        27.84
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wanghailou",
+      "name": "望海楼",
+      "cat": "古迹",
+      "tags": [
+        "登高",
+        "海景",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "洞头本岛的仿古楼阁，登顶能看百岛。",
+      "reason": "风很大，但视野开阔得惊人",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.156,
+        27.846
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiandieyan",
+      "name": "仙叠岩",
+      "cat": "山水",
+      "tags": [
+        "礁石",
+        "栈道",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "洞头临海的礁石景区，栈道贴着崖壁走。",
+      "reason": "退潮时礁石间能捡小海螺",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.175,
+        27.835
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "banpingshan",
+      "name": "半屏山",
+      "cat": "山水",
+      "tags": [
+        "断崖",
+        "坐船",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "一半在海上、一半在岛上的断崖山。",
+      "reason": "坐船从海上看半屏最壮观",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.18,
+        27.815
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dashaa",
+      "name": "大沙岙海滩",
+      "cat": "公园",
+      "tags": [
+        "沙滩",
+        "游泳",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "洞头最好的沙滩，夏天可以下海游泳。",
+      "reason": "沙细水清，带娃挖沙正好",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.185,
+        27.825
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongtou-seafood",
+      "name": "东岙渔村海鲜排档",
+      "cat": "美食",
+      "tags": [
+        "海鲜",
+        "渔村",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "东岙渔村一整排海鲜排档，现点现做。",
+      "reason": "下午渔船回港，晚上正好吃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        121.16,
+        27.828
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongtou-militia",
+      "name": "洞头先锋女子民兵连纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "海霞",
+        "免费",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 50,
+      "intro": "洞头海霞村的女子民兵连纪念馆。",
+      "reason": "顺路看看那段守岛往事",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        121.145,
+        27.85
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanyandang",
+      "name": "南雁荡山",
+      "cat": "山水",
+      "tags": [
+        "溪谷",
+        "会文书院",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "平阳的南雁荡，奇峰夹溪，会文书院在此。",
+      "reason": "一路沿溪走，夏天最舒服",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.195,
+        27.64
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "subuqing",
+      "name": "苏步青励志教育馆",
+      "cat": "博物馆",
+      "tags": [
+        "数学家",
+        "平阳",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "平阳腾蛟的苏步青纪念馆，讲他一生求学。",
+      "reason": "顺路了解温州数学之乡",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": true,
+      "coord": [
+        120.355,
+        27.625
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanjidao",
+      "name": "南麂岛",
+      "cat": "山水",
+      "tags": [
+        "海岛",
+        "贝藻保护区",
+        "早去"
+      ],
+      "heat": 8,
+      "dur": 420,
+      "intro": "国家级海洋保护区，贝壳沙滩水极清。",
+      "reason": "夏天露营看日出，值得跑一趟",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        121.06,
+        27.46
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuliao",
+      "name": "渔寮大沙滩",
+      "cat": "山水",
+      "tags": [
+        "沙滩",
+        "日出",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 210,
+      "intro": "苍南沿海的长沙滩，滩缓浪平可露营。",
+      "reason": "看日出不用先爬山的那种沙滩",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.61,
+        27.22
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yucangshan",
+      "name": "玉苍山",
+      "cat": "山水",
+      "tags": [
+        "石海",
+        "森林",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "苍南的石头山，石海与云海都出名。",
+      "reason": "山上石头长得比树还多",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.37,
+        27.45
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wanyao",
+      "name": "碗窑古村",
+      "cat": "古镇",
+      "tags": [
+        "制瓷",
+        "瀑布",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "苍南明代制瓷村落，水碓和老窑都还在。",
+      "reason": "村口瀑布加老窑，一次看够",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.32,
+        27.43
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "siqian",
+      "name": "泗溪廊桥",
+      "cat": "古迹",
+      "tags": [
+        "木拱廊桥",
+        "非遗",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "泰顺泗溪的北涧桥与溪东桥，木拱廊桥双绝。",
+      "reason": "在桥上坐着看溪水最惬意",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.935,
+        27.535
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wuyanling",
+      "name": "乌岩岭",
+      "cat": "山水",
+      "tags": [
+        "原始林",
+        "浙南最高峰",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 300,
+      "intro": "泰顺西北的原始森林保护区，浙南第一高峰。",
+      "reason": "真正的深山老林徒步",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.73,
+        27.73
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baizhangji",
+      "name": "百丈漈",
+      "cat": "山水",
+      "tags": [
+        "瀑布",
+        "刘伯温",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 240,
+      "intro": "文成的阶梯瀑布，头一漈高两百多米。",
+      "reason": "雨水季三漈连看成一条白线",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        120.035,
+        27.825
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tonglingshan",
+      "name": "铜铃山",
+      "cat": "山水",
+      "tags": [
+        "壶穴",
+        "峡谷",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "文成西部的峡谷，流水凿出一串壶穴潭。",
+      "reason": "天然石潭像一口口大缸",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        119.97,
+        27.7
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "liubowen",
+      "name": "刘伯温故里",
+      "cat": "古迹",
+      "tags": [
+        "明代",
+        "古村",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "文成南田的刘基故居与庙祠，国家级景区。",
+      "reason": "顺路听一段刘伯温的传说",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.045,
+        27.91
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuhailou",
+      "name": "玉海楼",
+      "cat": "古迹",
+      "tags": [
+        "藏书楼",
+        "孙诒让",
+        "瑞安"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "瑞安的清代藏书楼，与孙诒让故居相连。",
+      "reason": "浙江四大藏书楼之一，人很少",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        120.652,
+        27.78
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhailiaoxi",
+      "name": "寨寮溪",
+      "cat": "山水",
+      "tags": [
+        "溪谷",
+        "竹筏",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 200,
+      "intro": "瑞安西部的溪谷景区，滩林连着竹筏码头。",
+      "reason": "夏天漂流避暑的本地选择",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        120.5,
+        27.77
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

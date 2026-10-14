@@ -1,0 +1,1479 @@
+{
+  "_meta": {
+    "city": "丽江",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "lijiang-old-town",
+      "name": "丽江古城（大研古城）",
+      "cat": "古镇",
+      "tags": [
+        "世界遗产",
+        "免费",
+        "慢逛"
+      ],
+      "heat": 10,
+      "dur": 240,
+      "intro": "八百年纳西古城，世界文化遗产核心区。",
+      "reason": "清晨八点前走进城门最安静",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2337,
+        26.8728
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sifangjie",
+      "name": "四方街",
+      "cat": "街区",
+      "tags": [
+        "古城中心",
+        "免费",
+        "打跳"
+      ],
+      "heat": 8.5,
+      "dur": 60,
+      "intro": "古城中心广场，茶马古道的老集市。",
+      "reason": "傍晚纳西老人围圈打跳最有味",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2342,
+        26.8737
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mufu",
+      "name": "木府",
+      "cat": "古迹",
+      "tags": [
+        "土司",
+        "明代建筑",
+        "早去"
+      ],
+      "heat": 9,
+      "dur": 90,
+      "intro": "纳西土司府邸，被称作丽江紫禁城。",
+      "reason": "开门就进，能躲开旅行团人流",
+      "open": "08:30-17:30",
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2336,
+        26.8694
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wangulou",
+      "name": "狮子山万古楼",
+      "cat": "古迹",
+      "tags": [
+        "俯瞰古城",
+        "日落",
+        "门票"
+      ],
+      "heat": 8.5,
+      "dur": 60,
+      "intro": "古城最高点，木楼可俯瞰整片屋顶。",
+      "reason": "日落前上塔，拍到古城加雪山",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2311,
+        26.8712
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dashuiche",
+      "name": "古城大水车",
+      "cat": "街区",
+      "tags": [
+        "打卡",
+        "免费",
+        "北门"
+      ],
+      "heat": 8,
+      "dur": 40,
+      "intro": "古城北门标志，木水车横跨玉河。",
+      "reason": "北门集合出发前顺手打个卡",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2318,
+        26.8778
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenchanggong",
+      "name": "文昌宫观景台",
+      "cat": "古迹",
+      "tags": [
+        "免费",
+        "俯瞰古城",
+        "日出"
+      ],
+      "heat": 7.5,
+      "dur": 40,
+      "intro": "狮子山脚的免费观景台，看古城全景。",
+      "reason": "不花钱也能拍全景加雪山",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2326,
+        26.8716
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xianwen-xiang",
+      "name": "现文巷（油纸伞街）",
+      "cat": "街区",
+      "tags": [
+        "拍照",
+        "夜景",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 40,
+      "intro": "倒挂油纸伞的老巷，白天夜里都好拍。",
+      "reason": "抬头一片油纸伞，随手出片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2325,
+        26.8725
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wuyi-street",
+      "name": "五一街",
+      "cat": "街区",
+      "tags": [
+        "小店",
+        "咖啡",
+        "文艺"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "古城最有生活气的街，小店和咖啡多。",
+      "reason": "躲开主街人流，慢慢逛小店",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.236,
+        26.8745
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qiyi-street",
+      "name": "七一街",
+      "cat": "街区",
+      "tags": [
+        "老宅",
+        "免费",
+        "顺路"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "古城东南向主街，两边都是老宅院。",
+      "reason": "从南门走到四方街的顺路线",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2352,
+        26.8716
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "nanmen-qiao",
+      "name": "南门桥（风铃街）",
+      "cat": "街区",
+      "tags": [
+        "风铃",
+        "免费",
+        "南门"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "古城南门的小桥流水，岸边挂满风铃。",
+      "reason": "进门先坐一会儿，听风铃响",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2318,
+        26.869
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dayan-huaxiang",
+      "name": "大研花巷",
+      "cat": "夜景",
+      "tags": [
+        "夜市",
+        "文创",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "古城东侧的文创夜市，非遗小店聚集。",
+      "reason": "夜里逛非遗手作和小吃摊",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2345,
+        26.87
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhenxing-xiang",
+      "name": "振兴巷（灯笼街）",
+      "cat": "夜景",
+      "tags": [
+        "灯笼",
+        "夜景",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "屋檐挂满东巴灯笼的一条窄巷。",
+      "reason": "灯笼亮起后巷子像一条光带",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.232,
+        26.873
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bar-street",
+      "name": "酒吧一条街（新华街）",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "晚上",
+        "酒吧街"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "临溪而建的酒吧街，入夜歌声不断。",
+      "reason": "不进店坐溪边石凳听歌也舒服",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2334,
+        26.8758
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongyi-market",
+      "name": "忠义市场",
+      "cat": "美食",
+      "tags": [
+        "本地市场",
+        "小吃",
+        "便宜"
+      ],
+      "heat": 8,
+      "dur": 60,
+      "intro": "古城南门旁的农贸市场，晚上变夜市。",
+      "reason": "十块钱鸡豆凉粉，比主街实在",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2323,
+        26.8712
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "gucheng-exhibition",
+      "name": "丽江古城历史文化展示馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 40,
+      "intro": "古城里的免费展馆，讲八百年建城史。",
+      "reason": "走累了进来吹风看老照片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.233,
+        26.8768
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lijiang-museum",
+      "name": "丽江东巴文化博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "东巴文化",
+        "免费",
+        "室内"
+      ],
+      "heat": 7.5,
+      "dur": 70,
+      "intro": "黑龙潭北侧的东巴文化博物馆，文物上万件。",
+      "reason": "看东巴经书和象形文字，雨天备选",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        100.2288,
+        26.8856
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiangshan-market",
+      "name": "象山市场（腊排骨一条街）",
+      "cat": "美食",
+      "tags": [
+        "腊排骨",
+        "本地人",
+        "晚餐"
+      ],
+      "heat": 7.5,
+      "dur": 75,
+      "intro": "新城腊排骨火锅聚集地，本地人常来。",
+      "reason": "本地人聚餐的腊排骨一条街",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2295,
+        26.8796
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huama-street",
+      "name": "花马街",
+      "cat": "美食",
+      "tags": [
+        "火锅",
+        "干锅",
+        "夜宵"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "古城区火锅一条街，红景天干锅最出名。",
+      "reason": "雪山回来喝一锅热汤暖胃",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2261,
+        26.8768
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qixing-street",
+      "name": "七星街",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "烧烤",
+        "新城"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "新城的商业街，夜市烧烤和小馆密集。",
+      "reason": "古城外吃夜宵的第一选择",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2233,
+        26.8786
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jinkai-plaza",
+      "name": "金凯广场",
+      "cat": "商圈",
+      "tags": [
+        "商场",
+        "餐饮",
+        "新城"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "新城综合商业广场，本地人的日常去处。",
+      "reason": "下雨天躲进商场吃一顿",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2215,
+        26.8795
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huadu-mall",
+      "name": "华都商贸城",
+      "cat": "商圈",
+      "tags": [
+        "小吃城",
+        "购物",
+        "七星街"
+      ],
+      "heat": 5.5,
+      "dur": 50,
+      "intro": "七星街旁的商贸城，楼里小吃摊很多。",
+      "reason": "新城一站式解决吃和买",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.223,
+        26.879
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "heilongtan",
+      "name": "黑龙潭公园（玉泉公园）",
+      "cat": "公园",
+      "tags": [
+        "雪山倒影",
+        "早去",
+        "门票"
+      ],
+      "heat": 9,
+      "dur": 90,
+      "intro": "玉泉汇成潭，晴天可见玉龙雪山倒影。",
+      "reason": "上午光好，雪山倒影最清楚",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2299,
+        26.8836
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qingxi-reservoir",
+      "name": "清溪水库",
+      "cat": "公园",
+      "tags": [
+        "雪山倒影",
+        "早去",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "城北水库，水面能照出整座玉龙雪山。",
+      "reason": "本地人散步点，比黑龙潭人少",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2438,
+        26.888
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongjihai",
+      "name": "中济海公园",
+      "cat": "公园",
+      "tags": [
+        "免费",
+        "湖景",
+        "遛弯"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "城西的城中湖公园，环湖步道很平缓。",
+      "reason": "傍晚绕湖走一圈，风很舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2158,
+        26.879
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenbi-lake",
+      "name": "文笔海",
+      "cat": "公园",
+      "tags": [
+        "湖景",
+        "倒影",
+        "人少"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "文笔山下的湖，晴天有雪山倒影。",
+      "reason": "安静的机位，几乎没人抢",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.244,
+        26.816
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lijiang-qianqiuqing",
+      "name": "丽江千古情景区",
+      "cat": "亲子",
+      "tags": [
+        "演出",
+        "园区",
+        "民族"
+      ],
+      "heat": 8,
+      "dur": 180,
+      "intro": "宋城打造的纳西主题园区，大秀压轴。",
+      "reason": "带娃看一场视觉炸裂的大秀",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2422,
+        26.8372
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lishuijinsha",
+      "name": "丽水金沙",
+      "cat": "演出",
+      "tags": [
+        "歌舞",
+        "晚上",
+        "民族"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "丽江老牌民族歌舞演出，服饰很华丽。",
+      "reason": "一场演出看懂纳西民俗",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.228,
+        26.88
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "naxi-music",
+      "name": "大研纳西古乐会",
+      "cat": "演出",
+      "tags": [
+        "古乐",
+        "晚上",
+        "非遗"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "宣科主持的纳西古乐演出，乐器古老。",
+      "reason": "听一场被称作音乐化石的古乐",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.234,
+        26.8745
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuhe",
+      "name": "束河古镇",
+      "cat": "古镇",
+      "tags": [
+        "茶马古道",
+        "安静",
+        "溪水"
+      ],
+      "heat": 8.5,
+      "dur": 180,
+      "intro": "茶马古道重镇，比大研安静一半。",
+      "reason": "石板路加溪水，适合住一晚慢逛",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2003,
+        26.9255
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "qinglong-bridge",
+      "name": "青龙桥",
+      "cat": "古迹",
+      "tags": [
+        "明代石桥",
+        "免费",
+        "束河"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "束河四百年的明代石拱桥，桥面磨亮。",
+      "reason": "清晨站桥上听溪水最舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.199,
+        26.925
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "jiuding-longtan",
+      "name": "九鼎龙潭",
+      "cat": "公园",
+      "tags": [
+        "溪水",
+        "免费",
+        "清凉"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "束河北端的泉潭，水草清透见底。",
+      "reason": "水边坐着发呆十分钟的好地方",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.1978,
+        26.9272
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shuhe-square",
+      "name": "束河四方听音广场",
+      "cat": "街区",
+      "tags": [
+        "篝火",
+        "免费",
+        "晚上"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "束河中心广场，晚上常有篝火打跳。",
+      "reason": "夜里跟纳西人一起跳一圈",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.1993,
+        26.9262
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chama-museum",
+      "name": "茶马古道博物馆（束河）",
+      "cat": "博物馆",
+      "tags": [
+        "茶马古道",
+        "免费",
+        "大觉宫"
+      ],
+      "heat": 6.5,
+      "dur": 50,
+      "intro": "束河大觉宫内的茶马古道专题馆。",
+      "reason": "看马帮老物件，读懂这条路",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.1985,
+        26.924
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "puji-temple",
+      "name": "普济寺",
+      "cat": "古迹",
+      "tags": [
+        "藏传佛教",
+        "清净",
+        "束河"
+      ],
+      "heat": 5.5,
+      "dur": 45,
+      "intro": "束河普济村的藏传佛教寺院，很清静。",
+      "reason": "几乎没游客，适合安静坐坐",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.189,
+        26.932
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baisha",
+      "name": "白沙古镇",
+      "cat": "古镇",
+      "tags": [
+        "原生态",
+        "雪山背景",
+        "免费"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "丽江最原生态的古镇，抬头就是雪山。",
+      "reason": "坐老街看雪山，比大研清净",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.2077,
+        26.9609
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baisha-murals",
+      "name": "白沙壁画",
+      "cat": "古迹",
+      "tags": [
+        "明代壁画",
+        "纳西",
+        "门票"
+      ],
+      "heat": 7,
+      "dur": 50,
+      "intro": "大宝积宫里的明代壁画，画风融合多族。",
+      "reason": "五百年前的画，颜色还在",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2085,
+        26.9618
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yufeng-temple",
+      "name": "玉峰寺",
+      "cat": "古迹",
+      "tags": [
+        "万朵山茶",
+        "喇嘛寺",
+        "门票"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "因一株万朵山茶闻名的清代喇嘛寺。",
+      "reason": "春节前后山茶开花最震撼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.1993,
+        26.966
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yushui-village",
+      "name": "玉水寨",
+      "cat": "山水",
+      "tags": [
+        "东巴圣地",
+        "溪瀑",
+        "门票"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "雪山半山的东巴圣地，三叠水最出名。",
+      "reason": "沿溪往上走，一路东巴神像",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.1927,
+        26.9827
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongba-valley",
+      "name": "东巴谷",
+      "cat": "山水",
+      "tags": [
+        "峡谷",
+        "森林",
+        "近郊"
+      ],
+      "heat": 6.5,
+      "dur": 90,
+      "intro": "纳西语好大一个谷，崖壁和古树林。",
+      "reason": "雪山路上顺游的清凉峡谷",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.205,
+        26.99
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dongba-wanshen",
+      "name": "东巴万神园",
+      "cat": "古迹",
+      "tags": [
+        "东巴",
+        "雕塑",
+        "雪山"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "三百多尊东巴木雕神像排满山坡。",
+      "reason": "以雪山为背景的露天神像长廊",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.19,
+        26.995
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "beiyue-temple",
+      "name": "北岳庙",
+      "cat": "古迹",
+      "tags": [
+        "三多神",
+        "唐代",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 45,
+      "intro": "祭祀纳西保护神三多的古老庙宇。",
+      "reason": "本地人过年都要来的地方",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2011,
+        26.9735
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yuhu-village",
+      "name": "玉湖村",
+      "cat": "古镇",
+      "tags": [
+        "石头房",
+        "雪山脚下",
+        "小众"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "雪山脚下的石头村，房子全用石头垒。",
+      "reason": "离雪山最近的一个村子",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.19,
+        27.018
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "locke-house",
+      "name": "洛克故居",
+      "cat": "博物馆",
+      "tags": [
+        "洛克",
+        "纳西",
+        "玉湖村"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "探险家洛克在玉湖村的旧居，现为陈列馆。",
+      "reason": "看一个外国人留下的丽江影像",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.1895,
+        27.0175
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhuyun-temple",
+      "name": "指云寺",
+      "cat": "古迹",
+      "tags": [
+        "藏传佛教",
+        "清净",
+        "免费"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "拉市海边的藏传佛教寺院，游客很少。",
+      "reason": "从拉市海绕过来，安静只剩风",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.159,
+        26.888
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenhai",
+      "name": "文海",
+      "cat": "山水",
+      "tags": [
+        "高山草甸",
+        "花海",
+        "小众"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "白沙后山的高山草甸湖，夏天开满野花。",
+      "reason": "七八月来看花海，其余看水",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.17,
+        26.98
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wenfeng-temple",
+      "name": "文峰寺",
+      "cat": "古迹",
+      "tags": [
+        "藏传佛教",
+        "文笔山",
+        "清净"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "文笔山腰的喇嘛寺，滇西北十三大寺之一。",
+      "reason": "上山路弯，寺里几乎看不到游客",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.236,
+        26.812
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "laoshihai",
+      "name": "拉市海",
+      "cat": "亲子",
+      "tags": [
+        "骑马",
+        "划船",
+        "湿地"
+      ],
+      "heat": 8,
+      "dur": 180,
+      "intro": "高原湿地，主打骑马走茶马古道和划船。",
+      "reason": "带娃骑马划船，先谈好价钱",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.14,
+        26.89
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanyinxia",
+      "name": "观音峡",
+      "cat": "亲子",
+      "tags": [
+        "玻璃栈道",
+        "滑道",
+        "近郊"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "七河镇的峡谷景区，有瀑布和玻璃栈道。",
+      "reason": "市区最近峡谷，半天可以往返",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        100.305,
+        26.73
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yulong-snow-mtn",
+      "name": "玉龙雪山",
+      "cat": "山水",
+      "tags": [
+        "冰川",
+        "大索道",
+        "早去",
+        "远郊"
+      ],
+      "heat": 10,
+      "dur": 300,
+      "intro": "北半球最南的现代冰川，纳西族神山。",
+      "reason": "索道上冰川，氧气瓶先备好",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.1818,
+        27.1
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lanyue-valley",
+      "name": "蓝月谷",
+      "cat": "山水",
+      "tags": [
+        "湖水",
+        "拍照",
+        "远郊"
+      ],
+      "heat": 9,
+      "dur": 90,
+      "intro": "雪山融水汇成的蓝色湖泊，又称白水河。",
+      "reason": "晴天中午水最蓝，别只在车上拍",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.188,
+        27.095
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yunshanping",
+      "name": "云杉坪",
+      "cat": "山水",
+      "tags": [
+        "云杉林",
+        "小索道",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 120,
+      "intro": "雪山半山的云杉草甸，纳西殉情传说地。",
+      "reason": "小索道上去，林子里比山下静",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.1855,
+        27.094
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "maoniuping",
+      "name": "牦牛坪",
+      "cat": "山水",
+      "tags": [
+        "高山草甸",
+        "中索道",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 150,
+      "intro": "海拔三千七的高山草甸，正对雪山主峰。",
+      "reason": "看雪山全貌最开阔的观景台",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.193,
+        27.118
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ganhaizi",
+      "name": "甘海子",
+      "cat": "山水",
+      "tags": [
+        "草甸",
+        "换乘",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "景区门户大草甸，观光车和索道在此换乘。",
+      "reason": "下车先拍一张雪山全景",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.194,
+        27.08
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "glacier-museum",
+      "name": "玉龙雪山冰川地质博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "冰川",
+        "室内",
+        "科普"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "甘海子集散地的冰川地质科普馆。",
+      "reason": "排队等索道时进来吹暖气看展",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.1935,
+        27.079
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yinxiang-lijiang",
+      "name": "印象丽江",
+      "cat": "演出",
+      "tags": [
+        "实景演出",
+        "雪山",
+        "白天"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "张艺谋团队的雪山实景演出，白天场。",
+      "reason": "露天剧场，背景就是真雪山",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.1925,
+        27.0805
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hutiaoxia",
+      "name": "虎跳峡（上虎跳）",
+      "cat": "山水",
+      "tags": [
+        "峡谷",
+        "徒步",
+        "远郊"
+      ],
+      "heat": 8.5,
+      "dur": 180,
+      "intro": "世界最深峡谷之一，江水在窄缝里咆哮。",
+      "reason": "下到江边看水，比观景台震撼",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.115,
+        27.185
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changjiang-first-bend",
+      "name": "长江第一湾",
+      "cat": "山水",
+      "tags": [
+        "金沙江",
+        "观景",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "金沙江在此掉头东北，拐出一个大回弯。",
+      "reason": "上坡到观景台才看得见全弯",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        99.963,
+        26.782
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "shigu-memorial",
+      "name": "红军长征过丽江纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "红色",
+        "免费",
+        "石鼓"
+      ],
+      "heat": 5.5,
+      "dur": 45,
+      "intro": "石鼓镇的红军渡江纪念馆，免费参观。",
+      "reason": "和长江第一湾一起打包看完",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        99.962,
+        26.78
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "laojunshan",
+      "name": "老君山黎明景区",
+      "cat": "山水",
+      "tags": [
+        "丹霞",
+        "千龟山",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "三江并流核心区的丹霞地貌，千龟山出名。",
+      "reason": "爬山脊看红色龟背石，人少景野",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        99.745,
+        26.755
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ninety-nine-lakes",
+      "name": "九十九龙潭",
+      "cat": "山水",
+      "tags": [
+        "高山湖泊",
+        "杜鹃",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 240,
+      "intro": "老君山上的成片冰蚀湖，五月杜鹃满山。",
+      "reason": "徒步一天的野线，先问路况",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        99.82,
+        26.95
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baoshan-shitoucheng",
+      "name": "宝山石头城",
+      "cat": "古镇",
+      "tags": [
+        "金沙江",
+        "巨石",
+        "徒步"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "百余户纳西人家，住江边一块巨石上。",
+      "reason": "沿石阶下到江边，才叫石头城",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.239,
+        27.459
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lugu-lake",
+      "name": "泸沽湖",
+      "cat": "山水",
+      "tags": [
+        "摩梭",
+        "高原湖",
+        "远郊"
+      ],
+      "heat": 9,
+      "dur": 270,
+      "intro": "云南四川交界的高原湖，摩梭人聚居地。",
+      "reason": "住一晚，早起看湖面起雾",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.786,
+        27.701
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lige-peninsula",
+      "name": "里格半岛",
+      "cat": "山水",
+      "tags": [
+        "半岛",
+        "日出",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "泸沽湖伸进湖心的半岛，客栈都临水。",
+      "reason": "早起在半岛看日出，水是镜子",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.793,
+        27.718
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zouhun-bridge",
+      "name": "走婚桥",
+      "cat": "古迹",
+      "tags": [
+        "摩梭",
+        "草海",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "草海上三百米的木桥，摩梭传说里的桥。",
+      "reason": "过桥就是草海，芦苇里全是水鸟",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.739,
+        27.638
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daluoshui",
+      "name": "大落水村",
+      "cat": "古镇",
+      "tags": [
+        "湖景",
+        "住宿",
+        "码头"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "泸沽湖最大的村子，客栈餐馆最集中。",
+      "reason": "环湖落脚首选，出门就是码头",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.809,
+        27.687
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mosuo-museum",
+      "name": "摩梭民俗博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "摩梭",
+        "民俗",
+        "泸沽湖"
+      ],
+      "heat": 6,
+      "dur": 60,
+      "intro": "大落水附近的摩梭民俗陈列馆。",
+      "reason": "先看展再进村，能读懂规矩",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        100.805,
+        27.689
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

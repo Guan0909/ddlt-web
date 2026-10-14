@@ -44,36 +44,62 @@ window.DDNGL = (() => {
     // 视觉柔化：与静态图同一滤镜，底图退后、路线为主角
     container.style.filter = DDN.MAP_SOFT_FILTER;
 
-    let stopLayer = null, dotLayer = null, labelLayer = null, routeLine = null;
+    let stopLayer = null, dotLayer = null, labelLayer = null, routeHalo = null, routeMain = null;
+    let pathToken = 0;
 
     function clearLayers() {
-      for (const l of [stopLayer, dotLayer, labelLayer, routeLine]) {
+      for (const l of [stopLayer, dotLayer, labelLayer, routeHalo, routeMain]) {
         if (l) { try { l.setMap(null); } catch (e) {} }
       }
-      stopLayer = dotLayer = labelLayer = routeLine = null;
+      stopLayer = dotLayer = labelLayer = routeHalo = routeMain = null;
     }
 
-    // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color })
-    function setDay({ origin, stops, others, color }) {
+    // 真实路网路径：先画直线，routePaths 返回后升级为真实路径
+    async function upgradeToRealPaths(legs, color, token) {
+      try {
+        const j = await DDN.cloudPost('routePaths', { legs }, 12000);
+        if (token !== pathToken || !j.paths) return;
+        const geoms = [];
+        j.paths.forEach((path, i) => {
+          if (!path || path.length < 2) {
+            const leg = legs[i];   // 单腿失败回退直线
+            geoms.push({ id: 'leg' + i, styleId: 'main', paths: [
+              new TMap.LatLng(leg.from.lat, leg.from.lng),
+              new TMap.LatLng(leg.to.lat, leg.to.lng)] });
+            return;
+          }
+          const ll = path.map(p => new TMap.LatLng(p[0], p[1]));
+          geoms.push({ id: 'leg' + i, styleId: 'main', paths: ll });
+        });
+        if (routeHalo && routeMain) {
+          routeHalo.setGeometries(geoms.map(g => ({ ...g, styleId: 'halo' })));
+          routeMain.setGeometries(geoms);
+        }
+      } catch (e) { /* 保持直线 */ }
+    }
+
+    // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color, legs?:[{from,to,mode}] })
+    function setDay({ origin, stops, others, color, legs }) {
       clearLayers();
+      const token = ++pathToken;
       const inRoute = new Set(stops.map(s => s.id));
       const bounds = new TMap.LatLngBounds();
       const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
       all.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
 
-      // 路线：白衬底 + 当日色
+      // 路线：先直线（白衬底 + 当日色），真实路径到达后升级
       const path = [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)];
-      routeLine = new TMap.MultiPolyline({
+      routeHalo = new TMap.MultiPolyline({
         map,
-        styles: {
-          halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 7, lineCap: 'round' }),
-          main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }),
-        },
-        geometries: [
-          { id: 'halo', styleId: 'halo', paths: path },
-          { id: 'main', styleId: 'main', paths: path },
-        ],
+        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 7, lineCap: 'round' }) },
+        geometries: [{ id: 'halo', styleId: 'halo', paths: path }],
       });
+      routeMain = new TMap.MultiPolyline({
+        map,
+        styles: { main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }) },
+        geometries: [{ id: 'main', styleId: 'main', paths: path }],
+      });
+      if (legs && legs.length > 1 && DDN.cloudAvailable()) upgradeToRealPaths(legs, color, token);
 
       // 其他景点：小点 + 小字，可点选
       const otherGeoms = [], otherLabels = [];

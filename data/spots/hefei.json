@@ -1,0 +1,1522 @@
+{
+  "_meta": {
+    "city": "合肥",
+    "version": "v1",
+    "generated": "2026-10-14",
+    "generator": "agent-offline（AI 助手直接产出，替代混元批量调用）",
+    "schema": {
+      "id": "拼音/英文短 id，全市唯一",
+      "name": "景点名",
+      "cat": "街区|博物馆|古迹|公园|商圈|美食|演出|亲子|古镇|山水|夜景",
+      "tags": "2~4 个特征标签",
+      "heat": "热度分 1~10（粗排序信号，非评分）",
+      "dur": "建议游玩分钟数",
+      "intro": "≤30 字简介",
+      "reason": "≤24 字推荐理由（路线卡片展示用）",
+      "open": "开放时间 'HH:MM-HH:MM' 或 null（未知）",
+      "closed_mon": "周一闭馆 true / 全年开放 false / 未知 null",
+      "suburb": "远郊 true（距市中心 >25km，引擎单独处理）",
+      "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
+      "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
+    },
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+  },
+  "spots": [
+    {
+      "id": "baogongyuan",
+      "name": "包公园",
+      "cat": "古迹",
+      "tags": [
+        "包公",
+        "园林",
+        "早去"
+      ],
+      "heat": 9.5,
+      "dur": 150,
+      "intro": "包公祠、包公墓、清风阁与浮庄连成一片。",
+      "reason": "沿包河走一圈，清风阁上看老城",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2986,
+        31.8571
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huaihe-road",
+      "name": "淮河路步行街",
+      "cat": "街区",
+      "tags": [
+        "老城",
+        "小吃",
+        "夜景"
+      ],
+      "heat": 9.5,
+      "dur": 120,
+      "intro": "合肥最热闹的老城商业街，李府就在街边。",
+      "reason": "晚上灯亮后边逛边吃小吃",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2950,
+        31.8665
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sanhe",
+      "name": "三河古镇",
+      "cat": "古镇",
+      "tags": [
+        "水乡",
+        "早去",
+        "米饺"
+      ],
+      "heat": 9.5,
+      "dur": 240,
+      "intro": "丰乐河与杭埠河交汇处的千年水乡古镇。",
+      "reason": "早去避开团客，一人巷最好拍",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.2447,
+        31.5477
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anhui-museum-new",
+      "name": "安徽博物院（新馆）",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "楚大鼎"
+      ],
+      "heat": 9,
+      "dur": 120,
+      "intro": "安徽最大的综合博物馆，楚大鼎在此。",
+      "reason": "下雨或暴晒时最好的去处",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        117.2186,
+        31.8215
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "leijie",
+      "name": "罍街",
+      "cat": "美食",
+      "tags": [
+        "夜市",
+        "小龙虾",
+        "晚上"
+      ],
+      "heat": 9,
+      "dur": 100,
+      "intro": "徽派风格的美食街区，本地人的夜宵据点。",
+      "reason": "晚上来，一条街吃到合肥味",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2030,
+        31.8250
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaoyaojin",
+      "name": "逍遥津公园",
+      "cat": "公园",
+      "tags": [
+        "三国",
+        "免费",
+        "早去"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "张辽威震逍遥津的古战场，今为城市公园。",
+      "reason": "早晨本地人晨练，湖边很清静",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2985,
+        31.8728
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "limu-house",
+      "name": "李鸿章故居",
+      "cat": "古迹",
+      "tags": [
+        "晚清",
+        "宅院",
+        "步行街"
+      ],
+      "heat": 8.5,
+      "dur": 75,
+      "intro": "淮河路步行街上的晚清重臣宅第，展陈完整。",
+      "reason": "逛街顺路进，两进院子不大",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.2948,
+        31.8652
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ningguo-road",
+      "name": "宁国路龙虾一条街",
+      "cat": "美食",
+      "tags": [
+        "小龙虾",
+        "夜宵",
+        "晚上"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "合肥吃小龙虾最出名的一条街。",
+      "reason": "夏天晚上两斤龙虾配啤酒",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2050,
+        31.83
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anhui-famous",
+      "name": "安徽名人馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "室内",
+        "人物"
+      ],
+      "heat": 8.5,
+      "dur": 100,
+      "intro": "从管仲到邓稼先，安徽名人一次看完。",
+      "reason": "和渡江纪念馆连着逛最省时间",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        117.313,
+        31.703
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dujiang-memorial",
+      "name": "渡江战役纪念馆",
+      "cat": "博物馆",
+      "tags": [
+        "免费",
+        "历史",
+        "湖景"
+      ],
+      "heat": 8.5,
+      "dur": 100,
+      "intro": "巢湖北岸的战史纪念馆，巨帆造型。",
+      "reason": "出馆就是巢湖大堤，可看落日",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        117.317,
+        31.706
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "swan-lake",
+      "name": "天鹅湖",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "晚上",
+        "免费"
+      ],
+      "heat": 8.5,
+      "dur": 90,
+      "intro": "政务区人工湖，对岸是合肥的天际线。",
+      "reason": "天黑后灯光亮起，湖边散步最好",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.217,
+        31.8195
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dashushan",
+      "name": "大蜀山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "爬山",
+        "免费",
+        "早去"
+      ],
+      "heat": 8.5,
+      "dur": 150,
+      "intro": "市区西边的森林山，登顶可望全城。",
+      "reason": "半小时登顶，傍晚看城市日落",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.18,
+        31.8565
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-zoo",
+      "name": "合肥野生动物园",
+      "cat": "亲子",
+      "tags": [
+        "动物",
+        "亲子",
+        "园区大"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "大蜀山南麓的老牌动物园，熊猫馆有名。",
+      "reason": "带小孩半天刚好，别忘带水",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.165,
+        31.848
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "mingjiao-temple",
+      "name": "明教寺",
+      "cat": "古迹",
+      "tags": [
+        "古教弩台",
+        "三国",
+        "闹市"
+      ],
+      "heat": 8,
+      "dur": 50,
+      "intro": "逍遥津旁的千年古寺，台基是曹操教弩台。",
+      "reason": "闹市里十分钟就能静下来",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2936,
+        31.8686
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hechai1972",
+      "name": "合柴1972",
+      "cat": "街区",
+      "tags": [
+        "文创",
+        "老厂房",
+        "拍照"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "旧监狱与老厂房改的文创园，人流不少。",
+      "reason": "周末市集和展览都在这里",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.233,
+        31.848
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-botanical",
+      "name": "合肥植物园",
+      "cat": "公园",
+      "tags": [
+        "花海",
+        "野餐",
+        "亲子"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "董铺水库旁的植物园，春秋两季最好。",
+      "reason": "春天樱花开时来野餐最舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.194,
+        31.879
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "chenghuang-temple",
+      "name": "合肥城隍庙",
+      "cat": "古迹",
+      "tags": [
+        "老城",
+        "小吃",
+        "市井"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "庐州府城隍庙，周边是老城小吃市场。",
+      "reason": "庙前小吃街是本地人的记忆",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.2875,
+        31.867
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhi-xincheng",
+      "name": "之心城",
+      "cat": "商圈",
+      "tags": [
+        "三里庵",
+        "吃饭",
+        "地铁旁"
+      ],
+      "heat": 7.5,
+      "dur": 80,
+      "intro": "三里庵商圈的主力商场，吃饭选择最多。",
+      "reason": "逛完大蜀山回来吃饭方便",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.255,
+        31.847
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "geo-museum",
+      "name": "安徽省地质博物馆",
+      "cat": "博物馆",
+      "tags": [
+        "恐龙",
+        "亲子",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "恐龙骨架与矿物标本，孩子最爱。",
+      "reason": "隔壁就是安徽博物院，可连着看",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        117.2205,
+        31.82
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-grand-theatre",
+      "name": "合肥大剧院",
+      "cat": "演出",
+      "tags": [
+        "演出",
+        "天鹅湖",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 120,
+      "intro": "天鹅湖畔的大剧院，话剧与音乐会常有。",
+      "reason": "晚上的演出正好配天鹅湖夜景",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.2258,
+        31.8185
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anhui-museum-old",
+      "name": "安徽博物院老馆",
+      "cat": "博物馆",
+      "tags": [
+        "老建筑",
+        "苏式",
+        "免费"
+      ],
+      "heat": 7.5,
+      "dur": 90,
+      "intro": "安庆路上的老馆，五十年代苏式展厅。",
+      "reason": "老城逛累了进来歇脚看展",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.2855,
+        31.861
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yintai-center",
+      "name": "银泰中心",
+      "cat": "商圈",
+      "tags": [
+        "老城",
+        "购物",
+        "地铁旁"
+      ],
+      "heat": 8,
+      "dur": 80,
+      "intro": "长江中路的老城旗舰商场，就在四牌楼。",
+      "reason": "逛街加吃饭一趟解决",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2878,
+        31.8618
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "wanxiang-city",
+      "name": "合肥万象城",
+      "cat": "商圈",
+      "tags": [
+        "政务区",
+        "购物",
+        "餐饮"
+      ],
+      "heat": 8,
+      "dur": 90,
+      "intro": "政务区最大的商场，品牌与餐饮齐全。",
+      "reason": "看完天鹅湖夜景过来吃饭",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.227,
+        31.8265
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "baohe-wanda",
+      "name": "合肥包河万达广场",
+      "cat": "商圈",
+      "tags": [
+        "马鞍山路",
+        "电影",
+        "餐饮"
+      ],
+      "heat": 7.5,
+      "dur": 70,
+      "intro": "马鞍山路旁的商场，影院和餐饮集中。",
+      "reason": "去滨湖路上的补给点",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.3062,
+        31.8395
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "binhu-forest",
+      "name": "滨湖国家森林公园",
+      "cat": "公园",
+      "tags": [
+        "森林",
+        "骑行",
+        "免费"
+      ],
+      "heat": 8,
+      "dur": 120,
+      "intro": "巢湖北岸的人工森林公园，可租车骑行。",
+      "reason": "带车来，森林里骑一下午",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.337,
+        31.764
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-sunac",
+      "name": "合肥融创乐园",
+      "cat": "亲子",
+      "tags": [
+        "游乐场",
+        "亲子",
+        "晚上"
+      ],
+      "heat": 8,
+      "dur": 240,
+      "intro": "滨湖的大型主题乐园，夜场灯光秀出名。",
+      "reason": "下午进场，玩到夜场灯光亮起",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.315,
+        31.735
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sanhe-yang",
+      "name": "杨振宁旧居",
+      "cat": "古迹",
+      "tags": [
+        "三河",
+        "名人",
+        "老宅"
+      ],
+      "heat": 6.5,
+      "dur": 40,
+      "intro": "三河古镇一人巷里的杨振宁旧居。",
+      "reason": "逛三河时顺路进去看看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.2455,
+        31.548
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changlinhe",
+      "name": "长临河古镇",
+      "cat": "古镇",
+      "tags": [
+        "老街",
+        "巢湖边",
+        "早去"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "巢湖北岸的老镇，一条青石街通到湖边。",
+      "reason": "走到渡口看湖，人比三河少",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.418,
+        31.678
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhegao",
+      "name": "柘皋古镇",
+      "cat": "古镇",
+      "tags": [
+        "早茶",
+        "老街",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 100,
+      "intro": "巢湖柘皋的老街，早茶是这里的招牌。",
+      "reason": "早起吃一顿柘皋早茶再逛老街",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.735,
+        31.748
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tongyang",
+      "name": "烔炀古镇",
+      "cat": "古镇",
+      "tags": [
+        "老街",
+        "巢湖边",
+        "小众"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "巢湖烔炀老街，与李克农故居相邻。",
+      "reason": "几乎没有游客的老街，很安静",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.66,
+        31.63
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhongmiao",
+      "name": "巢湖·中庙",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "古寺",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 120,
+      "intro": "巢湖北岸伸入湖中的半岛古庙。",
+      "reason": "庙前看巢湖，水天一色",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.52,
+        31.585
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "laoshan-island",
+      "name": "姥山岛",
+      "cat": "山水",
+      "tags": [
+        "岛屿",
+        "游船",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 150,
+      "intro": "巢湖里唯一的大岛，可看文峰塔。",
+      "reason": "从中庙码头坐船上岛",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.548,
+        31.59
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zipengshan",
+      "name": "紫蓬山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "爬山",
+        "森林",
+        "远郊"
+      ],
+      "heat": 7.5,
+      "dur": 180,
+      "intro": "肥西的森林公园，山上有西庐寺。",
+      "reason": "市区西南的登山备选，人不多",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        116.963,
+        31.707
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xilu-temple",
+      "name": "西庐寺",
+      "cat": "古迹",
+      "tags": [
+        "古寺",
+        "紫蓬山",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "紫蓬山半山的古寺，香火很旺。",
+      "reason": "登山途中歇脚吃斋饭",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        116.964,
+        31.708
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "liucheng-villa",
+      "name": "刘铭传故居",
+      "cat": "古迹",
+      "tags": [
+        "名人",
+        "淮军",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 70,
+      "intro": "台湾首任巡抚刘铭传的故居与墓园。",
+      "reason": "喜欢近代史的话值得专程",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        116.995,
+        31.743
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daishan-lake",
+      "name": "岱山湖",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "垂钓",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 180,
+      "intro": "肥东东北的湖边度假区，水面开阔。",
+      "reason": "自驾带帐篷来待半天",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.62,
+        31.99
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "fucha-mountain",
+      "name": "浮槎山",
+      "cat": "山水",
+      "tags": [
+        "爬山",
+        "茶园",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "肥东的名山，山上有古寺与茶园。",
+      "reason": "合肥东边少人走的登山路线",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.61,
+        31.87
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yefu-mountain",
+      "name": "冶父山国家森林公园",
+      "cat": "山水",
+      "tags": [
+        "爬山",
+        "古寺",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "庐江北部的森林公园，山顶有寺。",
+      "reason": "到庐江的话顺路上山",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.33,
+        31.305
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yinping-mountain",
+      "name": "银屏山",
+      "cat": "山水",
+      "tags": [
+        "溶洞",
+        "牡丹",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 120,
+      "intro": "巢湖南岸的银屏山，有牡丹与溶洞。",
+      "reason": "山下仙人洞可以顺路看看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.78,
+        31.53
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "bantang-hotspring",
+      "name": "半汤温泉",
+      "cat": "亲子",
+      "tags": [
+        "温泉",
+        "泡汤",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "巢湖半汤的老牌温泉镇，多家度假村。",
+      "reason": "冬天泡汤，住一晚更舒服",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.845,
+        31.64
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tangchi-hotspring",
+      "name": "汤池温泉",
+      "cat": "亲子",
+      "tags": [
+        "温泉",
+        "泡汤",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 240,
+      "intro": "庐江汤池镇的温泉，水质是招牌。",
+      "reason": "合肥开车一小时能到",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        117.29,
+        31.257
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "zhouyu-mu",
+      "name": "周瑜墓",
+      "cat": "古迹",
+      "tags": [
+        "三国",
+        "庐江",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 40,
+      "intro": "庐江县城内的周瑜墓园，三国迷必到。",
+      "reason": "去汤池温泉先顺路看一眼",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.29,
+        31.251
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "sanguo-xincheng",
+      "name": "三国新城遗址公园",
+      "cat": "古迹",
+      "tags": [
+        "三国",
+        "遗址",
+        "近郊"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "曹魏新城遗址，土城垣还看得出轮廓。",
+      "reason": "三十岗乡里，人少好走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.1525,
+        31.936
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "cuigang",
+      "name": "崔岗艺术村",
+      "cat": "街区",
+      "tags": [
+        "艺术村",
+        "咖啡",
+        "近郊"
+      ],
+      "heat": 5.5,
+      "dur": 80,
+      "intro": "三十岗的艺术家村落，老房子改成工作室。",
+      "reason": "周末来喝咖啡看展很安静",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.157,
+        31.944
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "non-heritage",
+      "name": "中国非物质文化遗产园",
+      "cat": "公园",
+      "tags": [
+        "非遗",
+        "表演",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "长丰岗集的非遗主题园，有民俗表演。",
+      "reason": "看一场非遗表演再走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        117.145,
+        32.06
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xiaolingnan",
+      "name": "小岭南",
+      "cat": "街区",
+      "tags": [
+        "乡村",
+        "民宿",
+        "远郊"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "蜀山区小庙镇的乡村文旅村。",
+      "reason": "带孩子体验农事，住民宿",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        116.99,
+        31.835
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "daxu",
+      "name": "大圩生态农业旅游区",
+      "cat": "公园",
+      "tags": [
+        "葡萄",
+        "采摘",
+        "亲子"
+      ],
+      "heat": 7,
+      "dur": 150,
+      "intro": "包河区大圩镇的葡萄园与农家乐。",
+      "reason": "七八月来自己摘葡萄",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.33,
+        31.788
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "tangxihe-park",
+      "name": "塘西河公园",
+      "cat": "公园",
+      "tags": [
+        "湿地",
+        "骑行",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "滨湖新区的河岸公园，草坪很大。",
+      "reason": "搭帐篷放风筝的周末去处",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.295,
+        31.732
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kuanghe-park",
+      "name": "匡河公园",
+      "cat": "公园",
+      "tags": [
+        "樱花",
+        "河边",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "政务区沿匡河的带状公园，春天有樱花。",
+      "reason": "看完天鹅湖沿河走一段",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.232,
+        31.83
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "luzhou-park",
+      "name": "庐州公园",
+      "cat": "公园",
+      "tags": [
+        "草坪",
+        "免费",
+        "遛娃"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "新站区的大型城市公园，草坪开阔。",
+      "reason": "城北少有的开阔绿地",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.345,
+        31.905
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huachong-park",
+      "name": "花冲公园",
+      "cat": "公园",
+      "tags": [
+        "老公园",
+        "晨练",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 50,
+      "intro": "瑶海区的老牌公园，清晨最热闹。",
+      "reason": "本地人晨练的日常公园",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.32,
+        31.876
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "huancheng-park",
+      "name": "环城公园",
+      "cat": "公园",
+      "tags": [
+        "环河",
+        "免费",
+        "早去"
+      ],
+      "heat": 7.5,
+      "dur": 60,
+      "intro": "老城环城河边的带状公园，串起多处景点。",
+      "reason": "从包公园沿河走到逍遥津",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.296,
+        31.869
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "xinghua-park",
+      "name": "杏花公园",
+      "cat": "公园",
+      "tags": [
+        "湖边",
+        "免费",
+        "晨练"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "老城北侧的公园，湖边树多凉快。",
+      "reason": "逛完城隍庙来歇脚",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.288,
+        31.88
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kexuedao",
+      "name": "科学岛",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "科研",
+        "免费"
+      ],
+      "heat": 5.5,
+      "dur": 90,
+      "intro": "董铺水库中的科研岛，三面环水。",
+      "reason": "环岛路上看水库，很清净",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.168,
+        31.905
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-sea-world",
+      "name": "合肥海洋世界",
+      "cat": "亲子",
+      "tags": [
+        "海洋馆",
+        "亲子",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "长江西路旁的海洋馆，有海底隧道。",
+      "reason": "下雨天带孩子的好去处",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.199,
+        31.844
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "hefei-science-museum",
+      "name": "合肥市科技馆",
+      "cat": "亲子",
+      "tags": [
+        "科技",
+        "亲子",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 120,
+      "intro": "黄山路的科技馆，动手展项多。",
+      "reason": "孩子能玩半天，先查开放日",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.24,
+        31.846
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "anhui-innovation",
+      "name": "安徽创新馆",
+      "cat": "博物馆",
+      "tags": [
+        "科技",
+        "免费",
+        "室内"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "滨湖的科技成果展馆，量子与人工智能展项多。",
+      "reason": "和渡江纪念馆一起安排在滨湖",
+      "open": "09:00-17:00",
+      "closed_mon": true,
+      "suburb": false,
+      "coord": [
+        117.324,
+        31.708
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "rongchuang-mao",
+      "name": "合肥融创茂",
+      "cat": "商圈",
+      "tags": [
+        "滨湖",
+        "购物",
+        "亲子"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "滨湖的大型商场，吃饭看电影都方便。",
+      "reason": "滨湖玩完就近吃饭",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.318,
+        31.738
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "1912-street",
+      "name": "合肥1912街区",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "酒吧",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "蜀山区的酒吧街区，夜里最热闹。",
+      "reason": "夜宵加一杯，收尾一天的行程",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.227,
+        31.836
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "feicui-lake",
+      "name": "翡翠湖",
+      "cat": "夜景",
+      "tags": [
+        "夜景",
+        "夜跑",
+        "免费"
+      ],
+      "heat": 7,
+      "dur": 80,
+      "intro": "经开区大学城的湖面，晚上灯带很亮。",
+      "reason": "绕湖夜跑一圈刚好",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.185,
+        31.762
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "ustc",
+      "name": "中国科学技术大学",
+      "cat": "街区",
+      "tags": [
+        "校园",
+        "樱花",
+        "免费"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "科大东区校园，春天的樱花大道出名。",
+      "reason": "三月底来，樱花下走一段",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.262,
+        31.841
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "banbian-street",
+      "name": "半边街",
+      "cat": "街区",
+      "tags": [
+        "大蜀山",
+        "咖啡",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "大蜀山南麓的半边街，书店与餐饮集中。",
+      "reason": "爬完山下来喝杯咖啡",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.178,
+        31.848
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "changjiang180",
+      "name": "长江180艺术街区",
+      "cat": "街区",
+      "tags": [
+        "工业风",
+        "文创",
+        "拍照"
+      ],
+      "heat": 7,
+      "dur": 70,
+      "intro": "瑶海区老厂房改的艺术街区。",
+      "reason": "老厂房红砖墙很出片",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.33,
+        31.858
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "datong-road",
+      "name": "大通路美食街",
+      "cat": "美食",
+      "tags": [
+        "小龙虾",
+        "夜宵",
+        "晚上"
+      ],
+      "heat": 7.5,
+      "dur": 80,
+      "intro": "瑶海区大通路的小龙虾一条街。",
+      "reason": "夏夜路边摆桌吃到很晚",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.318,
+        31.87
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "guanting-road",
+      "name": "官亭路小吃街",
+      "cat": "美食",
+      "tags": [
+        "小吃",
+        "学生街",
+        "晚上"
+      ],
+      "heat": 7,
+      "dur": 60,
+      "intro": "三里庵一带的学生小吃街，摊位密集。",
+      "reason": "十几块钱能吃得很饱",
+      "open": null,
+      "closed_mon": false,
+      "suburb": false,
+      "coord": [
+        117.2545,
+        31.8435
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "kaifu-temple",
+      "name": "开福寺",
+      "cat": "古迹",
+      "tags": [
+        "古寺",
+        "大蜀山",
+        "香火"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "大蜀山旁复建的唐代风格寺院。",
+      "reason": "建筑新但格局大，拍照好看",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.186,
+        31.862
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "lihongzhang-xiangtang",
+      "name": "李鸿章享堂",
+      "cat": "古迹",
+      "tags": [
+        "晚清",
+        "墓园",
+        "小众"
+      ],
+      "heat": 6.5,
+      "dur": 45,
+      "intro": "李鸿章墓地与享堂，规模很大。",
+      "reason": "近代史爱好者的小众去处",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.3345,
+        31.8355
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "dujiang-qianguwei",
+      "name": "渡江战役总前委旧址",
+      "cat": "古迹",
+      "tags": [
+        "红色",
+        "瑶岗",
+        "老宅"
+      ],
+      "heat": 6.5,
+      "dur": 60,
+      "intro": "肥东瑶岗村的总前委旧址，邓小平旧居在此。",
+      "reason": "顺路去肥东时可安排",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        117.424,
+        31.8205
+      ],
+      "coord_src": "estimate"
+    }
+  ]
+}

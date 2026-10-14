@@ -165,6 +165,30 @@
   }
   if (!proj) proj = DDN.makeProjector(allPts, mapW, mapH, 18);
 
+  // 真实路网路径（与结果页同一 routePaths 链路；失败/超时全天回退平滑示意线）
+  const dayLegs = days.map(dp => {
+    const ss = dayStops[days.indexOf(dp)];
+    const seq = [route.origin, ...ss.map(s => ({ lng: s.coord.lng, lat: s.coord.lat })), route.origin];
+    const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
+    const legs = [];
+    for (let i = 0; i < seq.length - 1; i++) legs.push({ from: seq[i], to: seq[i + 1], mode: modes[i] || 'drive' });
+    return legs;
+  });
+  let dayPaths = null;
+  if (DDN.cloudAvailable()) {
+    try {
+      const flat = dayLegs.flat();
+      if (flat.length) {
+        const j = await DDN.cloudPost('routePaths', { legs: flat }, 15000);
+        if (j.paths && j.paths.length === flat.length) {
+          dayPaths = [];
+          let k = 0;
+          for (const dl of dayLegs) { dayPaths.push(j.paths.slice(k, k + dl.length)); k += dl.length; }
+        }
+      }
+    } catch (e) { /* 回退 */ }
+  }
+
   rrect(mapX, mapY, mapW, mapH, 4);
   ctx.fillStyle = '#F3F5F0';
   ctx.fill();
@@ -186,16 +210,39 @@
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
   for (const dp of days) {
-    const ss = dayStops[days.indexOf(dp)];
+    const di = days.indexOf(dp);
+    const ss = dayStops[di];
     if (!ss.length) continue;
-    const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O]
-      .map(p => ({ x: mapX + p.x, y: mapY + p.y }));
-    ctx.strokeStyle = 'rgba(255,255,255,.92)';
-    ctx.lineWidth = 5.5;
-    DDN.smoothTrace(ctx, pts); ctx.stroke();
-    ctx.strokeStyle = dp.color;
-    ctx.lineWidth = 2.8;
-    DDN.smoothTrace(ctx, pts); ctx.stroke();
+    const legsPaths = dayPaths && dayPaths[di];
+    if (legsPaths && legsPaths.some(Boolean)) {
+      // 真实路网路径
+      const drawOne = () => legsPaths.forEach((lp, li) => {
+        const leg = dayLegs[di][li];
+        const raw = (lp && lp.length >= 2) ? lp : [[leg.from.lat, leg.from.lng], [leg.to.lat, leg.to.lng]];
+        ctx.beginPath();
+        raw.forEach((p, k) => {
+          const q = proj({ lng: p[1], lat: p[0] });
+          const x = mapX + q.x, y = mapY + q.y;
+          if (k === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        });
+        ctx.stroke();
+      });
+      ctx.strokeStyle = 'rgba(255,255,255,.92)';
+      ctx.lineWidth = 5.5;
+      drawOne();
+      ctx.strokeStyle = dp.color;
+      ctx.lineWidth = 2.8;
+      drawOne();
+    } else {
+      const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O]
+        .map(p => ({ x: mapX + p.x, y: mapY + p.y }));
+      ctx.strokeStyle = 'rgba(255,255,255,.92)';
+      ctx.lineWidth = 5.5;
+      DDN.smoothTrace(ctx, pts); ctx.stroke();
+      ctx.strokeStyle = dp.color;
+      ctx.lineWidth = 2.8;
+      DDN.smoothTrace(ctx, pts); ctx.stroke();
+    }
   }
   // 站点彩点
   for (const dp of days) {

@@ -351,11 +351,21 @@
   async function renderMap() {
     if (glCtl) {   // GL 动态地图路径
       const dp = route.dayPlans[cur];
+      // 组装腿（起点→各站→回起点）与各腿通勤方式，供真实路网路径
+      const seq = [
+        { lng: route.origin.lng, lat: route.origin.lat },
+        ...(route.__stops[cur] || []).map(s => ({ lng: s.coord[0], lat: s.coord[1] })),
+        { lng: route.origin.lng, lat: route.origin.lat },
+      ];
+      const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
+      const legs = [];
+      for (let i = 0; i < seq.length - 1; i++) legs.push({ from: seq[i], to: seq[i + 1], mode: modes[i] || 'drive' });
       glCtl.setDay({
         origin: route.origin,
         stops: route.__stops[cur] || [],
         others: spots,
         color: dp.color,
+        legs,
       });
       return;
     }
@@ -438,11 +448,36 @@
       placed.push({ x: q.x, y: q.y - 8, w: wHalf });
     }
 
-    // 路线（中点二次贝塞尔平滑）
+    // 路线（中点二次贝塞尔平滑）；真实路网路径到达后替换
     const d = DDN.smoothPathD([P[0].pt, ...P.slice(1).map(p => p.pt), P[0].pt]);
+    let haloEl = null, mainEl = null;
     if (P.length > 1) {
-      pan.appendChild(DDN.svgEl('path', { d, fill: 'none', stroke: '#fff', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .85 }));
-      pan.appendChild(DDN.svgEl('path', { d, fill: 'none', stroke: dp.color, 'stroke-width': 3.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }));
+      haloEl = DDN.svgEl('path', { d, fill: 'none', stroke: '#fff', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .85 });
+      mainEl = DDN.svgEl('path', { d, fill: 'none', stroke: dp.color, 'stroke-width': 3.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+      pan.appendChild(haloEl);
+      pan.appendChild(mainEl);
+    }
+
+    // 真实路网路径（routePaths 云函数，dist_cache 缓存；失败保持平滑示意线）
+    if (P.length > 1 && DDN.cloudAvailable()) {
+      const seq = [pts[0], ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat })), pts[0]];
+      const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
+      const legs = [];
+      for (let i = 0; i < seq.length - 1; i++) legs.push({ from: seq[i], to: seq[i + 1], mode: modes[i] || 'drive' });
+      const myReq = mapReq;
+      DDN.cloudPost('routePaths', { legs }, 12000).then(j => {
+        if (myReq !== mapReq || !j.paths || !haloEl || !mainEl) return;
+        let rd = '';
+        j.paths.forEach((path, i) => {
+          const raw = (path && path.length >= 2) ? path : [[legs[i].from.lat, legs[i].from.lng], [legs[i].to.lat, legs[i].to.lng]];
+          raw.forEach((p, k) => {
+            const q = mapState.proj({ lng: p[1], lat: p[0] });
+            rd += `${k === 0 ? 'M' : 'L'}${q.x.toFixed(1)} ${q.y.toFixed(1)} `;
+          });
+        });
+        haloEl.setAttribute('d', rd);
+        mainEl.setAttribute('d', rd);
+      }).catch(() => {});
     }
 
     // 起点 + 站点
@@ -882,10 +917,9 @@
     bindMap();
   })();
 
-  // ---------- AI 叙事：模板文案先出（红线：可降级），AI 返回后替换并亮「由 AI 生成」标 ----------
+  // ---------- AI 叙事：只显示在线生成的推荐语，未返回前整行隐藏（降级=不显示，不出错话） ----------
   async function renderNarrative() {
     const box = $('narrative');
-    box.textContent = window.EngineCopy.buildNarrative(route);
     if (!DDN.cloudAvailable()) return;
     try {
       const j = await DDN.cloudPost('aiCopy', {
@@ -898,7 +932,7 @@
         const tag = DDN.el('span', 'ai-tag', '由 AI 生成');
         box.appendChild(tag);
       }
-    } catch (e) { /* 保持模板文案 */ }
+    } catch (e) { /* 保持隐藏 */ }
   }
 })();
 </script>
