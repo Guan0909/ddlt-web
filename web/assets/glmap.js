@@ -72,8 +72,17 @@ window.DDNGL = (() => {
           geoms.push({ id: 'leg' + i, styleId: 'main', paths: ll });
         });
         if (routeHalo && routeMain) {
-          routeHalo.setGeometries(geoms.map(g => ({ ...g, styleId: 'halo' })));
-          routeMain.setGeometries(geoms);
+          try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {}
+          routeHalo = new TMap.MultiPolyline({
+            map,
+            styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 7, lineCap: 'round' }) },
+            geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
+          });
+          routeMain = new TMap.MultiPolyline({
+            map,
+            styles: { main: new TMap.PolylineStyle({ color, width: 4, lineCap: 'round' }) },
+            geometries: geoms,
+          });
           document.title += ' RP✓';
         }
       } catch (e) { document.title += ' RP✗'; }
