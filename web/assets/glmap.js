@@ -74,8 +74,9 @@ window.DDNGL = (() => {
         if (routeHalo && routeMain) {
           routeHalo.setGeometries(geoms.map(g => ({ ...g, styleId: 'halo' })));
           routeMain.setGeometries(geoms);
+          document.title += ' RP✓';
         }
-      } catch (e) { /* 保持直线 */ }
+      } catch (e) { document.title += ' RP✗'; }
     }
 
     // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color, legs?:[{from,to,mode}] })
