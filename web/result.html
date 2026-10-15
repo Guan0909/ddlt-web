@@ -927,7 +927,7 @@
     $('mapExpand').querySelector('.ic-open').hidden = on;
     $('mapExpand').querySelector('.ic-close').hidden = !on;
     $('mapExpand').setAttribute('aria-label', on ? '收起地图' : '放大地图');
-    if (glCtl && glCtl.map) { try { glCtl.map.checkResize(); } catch (e) {} }
+    // GL 会自行监听容器尺寸变化（resize 事件）重排；GL API 没有公开的手动重排方法
   };
 
   (async () => {

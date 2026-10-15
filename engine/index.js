@@ -77,8 +77,9 @@ function selectCandidates(spots, days) {
   const suburbDayCount = Math.min(Math.max(days - 2, 0), 3);
   const keptGroups = groups.slice(0, suburbDayCount);
 
-  // 城内候选上限按「实际市区日数」给足，而非总天数（避免 5 日游候选挤 2 天）
-  const cap = Math.max(1, days - keptGroups.length) * MAX_STOPS_PER_DAY;
+  // 城内候选上限：days×5。不要按「实际市区日数」缩——候选收紧会让稀疏方向的点（如熊猫基地）
+  // 无法单独成簇，被并进锚点所在的市区日，打乱「一日一区域」的分日质量
+  const cap = days * MAX_STOPS_PER_DAY;
   const catCount = {};
   const cityPicked = [];
   for (const s of [...city].sort((a, b) => b.heat - a.heat)) {
@@ -394,8 +395,11 @@ function genRoute(opts) {
       if (s.closed_mon !== true || s.id === buckets[i].pinned) continue;
       for (let j = i + 1; j < buckets.length; j++) {
         if (buckets[j].suburb !== buckets[i].suburb) continue;
+        // 容量阈值：远郊日 480（通勤长）；市区日放宽到 540——排不下由 runClock 裁最低价值点，
+        // 好过整点丢失一个高热度博物馆
+        const capMin = buckets[j].suburb ? SUBURB_GROUP_MAX_MIN : 540;
         const sumMin = buckets[j].spots.reduce((t, x) => t + (x.dur || 90), 0);
-        if (sumMin + (s.dur || 90) > SUBURB_GROUP_MAX_MIN) continue;
+        if (sumMin + (s.dur || 90) > capMin) continue;
         buckets[j].spots.push(s);
         buckets[i].spots = buckets[i].spots.filter(x => x !== s);
         break;
