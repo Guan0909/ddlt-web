@@ -40,11 +40,11 @@ window.DDNGL = (() => {
       zoom: 12,
       viewMode: '2D',
       showBuilding: false,
-      // 简洁底图：只保留道路/底面与道路名，隐藏 POI 文字图标，避免与景点标注抢视觉
-      baseMap: { type: 'vector', features: ['base', 'label'] },
+      // 控制台「个性化地图」发布的自定义样式（安静路网 + 精选 POI 文字）
+      ...(window.DDN_GL_STYLE_ID ? { mapStyleId: window.DDN_GL_STYLE_ID } : {}),
     });
-    // 视觉柔化：与静态图同一滤镜，底图退后、路线为主角
-    container.style.filter = DDN.MAP_SOFT_FILTER;
+    // 未配自定义样式时退回默认样式 + 柔化滤镜，保持品牌观感
+    if (!window.DDN_GL_STYLE_ID) container.style.filter = DDN.MAP_SOFT_FILTER;
 
     let stopLayer = null, dotLayer = null, labelLayer = null, routeHalo = null, routeMain = null;
     let pathToken = 0;
