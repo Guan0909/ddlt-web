@@ -62,8 +62,10 @@
   const INK = '#182119', HAIR = '#E3E8E0', MUTE = '#9C998C', PAPER = '#FAFBF8';
   // 底图观感：静态图接口不支持自定义样式，只能用 ctx.filter 把腾讯底图压向「纸白底 + 浅灰路网」
   // （对照 地图样式参数.md 的「简洁版本」：陆地 #FAFBF8、道路 #F5F6F4/#E4E7E2、行政区文字 #9AA39B）
-  const MAP_FILTER = 'saturate(.08) brightness(1.1) contrast(.8)';
-  const MAP_WASH = 'rgba(246,249,245,.3)';         // 纸色薄纱（滤镜不可用时加重，避免满屏彩色）
+  // 顺序要紧：先压对比再提亮。旧写法（先提亮后压对比）会把纸白削到 ≈230 的灰底，
+  // 与样式里陆地 #FAFBF8 差一档；改序后实测陆地回到 250 附近（纸白占比 0% → 63%，均亮 230 → 238）。
+  const MAP_FILTER = 'saturate(.10) contrast(.62) brightness(1.24)';
+  const MAP_WASH = 'rgba(246,249,245,.18)';        // 纸色薄纱（滤镜不可用时加重，避免满屏彩色）
 
   function rrect(x, y, w, h, r) {
     ctx.beginPath();
@@ -113,7 +115,8 @@
   ctx.fillText(city, padX, cityY);
   const cityW = ctx.measureText(city).width;
 
-  const dateLine = `${DDN.dateRange(route.startDate, totalDays)} · ${DDN.dayCn(totalDays)}日漫游 · 每日环线`;
+  // 与 §9.5「不画返程」一致：不写「每日环线」，写时刻表里真实存在的回程
+  const dateLine = `${DDN.dateRange(route.startDate, totalDays)} · ${DDN.dayCn(totalDays)}日漫游 · 每天回到起点`;
   ctx.font = `400 14px ${SANS}`;
   const dateW = ctx.measureText(dateLine).width;
   ctx.fillStyle = '#6E6A5E';

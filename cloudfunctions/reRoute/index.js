@@ -5,14 +5,14 @@
 const engine = require('./engine/index');
 const store = require('./store');
 const { parseBody, ok, fail } = require('./http');
-const { loadSpots, buildCommuteFn } = require('./routeKit');
+const { loadSpots, buildCommuteFn, validOrigin } = require('./routeKit');
 
 exports.main = async (event) => {
   if (!(await store.rateLimit(event))) return fail('请求太频繁，请稍后再试', 429);
   const body = parseBody(event);
-  if (!body || !body.city || !body.origin || !Array.isArray(body.stops) || !body.date) return fail('参数不完整');
+  if (!body || !body.city || !validOrigin(body.origin) || !Array.isArray(body.stops) || !body.date) return fail('参数不完整');
   const spots = loadSpots(body.city);
-  if (!spots) return fail('该城市暂未开通');
+  if (!spots) return fail('该城市暂未开通', 400, { code: 'CITY_CLOSED' });
 
   const spotById = Object.fromEntries(spots.map(s => [s.id, s]));
   const stopObjs = body.stops.slice(0, 8)

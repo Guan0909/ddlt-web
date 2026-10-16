@@ -4,6 +4,8 @@
 // 与云函数环境变量里的 WebService Key 双隔离。
 window.DDNGL = (() => {
   let readyPromise = null;
+  // 编辑模式的视野半径：以当天路线为中心 15km（远郊点不再把默认视野拉到 25km+ 级）
+  const EDIT_VIEW_RADIUS_KM = 15;
 
   function load() {
     if (window.TMap) return Promise.resolve();
@@ -58,6 +60,7 @@ window.DDNGL = (() => {
 
     let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null;
     let pathToken = 0;
+    let fitSeq = 0;           // 视野 fit 的序号：延迟执行时只认最后一次
     let curDay = null;        // { origin, stops, others, edit }，供缩放停稳后重建标签
     let lastLabelZoom = null; // 上次重建标签时的 zoom（未变化则跳过）
 
@@ -248,11 +251,19 @@ window.DDNGL = (() => {
       const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
       const othersAll = edit ? (others || []) : [];
 
-      // 视野：规划模式包住当天路线点；编辑模式包住全部景点（看全城）
+      // 视野：规划模式包住当天路线点；编辑模式以当天路线为中心、半径 15km——
+      // 全库淡点仍照画（缩小即可看到更远），但默认视野不再被西岭雪山这类远郊点拉飞。
+      // 与路线取并集：远郊日路线本身超过 30km 时，绝不把当天站点切出视野。
+      let fitPts = all;
+      if (edit) {
+        const lngs0 = all.map(p => p.lng), lats0 = all.map(p => p.lat);
+        const cLng = (Math.min(...lngs0) + Math.max(...lngs0)) / 2;
+        const cLat = (Math.min(...lats0) + Math.max(...lats0)) / 2;
+        const dLat = EDIT_VIEW_RADIUS_KM / 111.32;
+        const dLng = EDIT_VIEW_RADIUS_KM / (111.32 * Math.max(0.2, Math.cos(cLat * Math.PI / 180)));
+        fitPts = [...all, { lng: cLng - dLng, lat: cLat - dLat }, { lng: cLng + dLng, lat: cLat + dLat }];
+      }
       const bounds = new TMap.LatLngBounds();
-      const fitPts = edit
-        ? [...all, ...othersAll.filter(s => s.coord).map(s => ({ lng: s.coord[0], lat: s.coord[1] }))]
-        : all;
       fitPts.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
 
       // 视野像素尺度（fitBounds 应用前的推算值；idle 事件到达后会用真实 zoom 重建标签）
@@ -326,9 +337,16 @@ window.DDNGL = (() => {
       }
 
       if (!keepView) {
-        if (fitPts.length > 1) {
-          map.fitBounds(bounds, { padding: { top: padBase, right: padRight, bottom: padBase, left: padBase } });
-        } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
+        const myFit = ++fitSeq;
+        const doFit = () => {
+          if (myFit !== fitSeq) return;   // 已被更晚的一次 setDay 取代
+          if (fitPts.length > 1) {
+            map.fitBounds(bounds, { padding: { top: padBase, right: padRight, bottom: padBase, left: padBase } });
+          } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
+        };
+        // 等布局生效再 fit：GL 按自己缓存的容器尺寸算视野，而 #glMap 会在「规划 280px ↔ 编辑全屏」
+        // 之间切换。若在 resize 被 GL 处理前就算，视野会多拉出约 2 倍（实测 73.7km vs 39.6km 宽）。
+        requestAnimationFrame(() => requestAnimationFrame(doFit));
       }
     }
 

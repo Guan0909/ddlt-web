@@ -4,12 +4,12 @@
 const engine = require('./engine/index');
 const store = require('./store');
 const { parseBody, ok, fail } = require('./http');
-const { loadSpots, refineWithRealCommute } = require('./routeKit');
+const { loadSpots, refineWithRealCommute, validOrigin } = require('./routeKit');
 
 exports.main = async (event) => {
   if (!(await store.rateLimit(event))) return fail('请求太频繁，请稍后再试', 429);
   const body = parseBody(event);
-  if (!body || !body.city || !body.origin || body.origin.lng == null) return fail('参数不完整');
+  if (!body || !body.city || !validOrigin(body.origin)) return fail('参数不完整');
   const spots = loadSpots(body.city);
   if (!spots) return fail('该城市暂未开通', 400, { code: 'CITY_CLOSED' });
 

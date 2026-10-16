@@ -12,6 +12,14 @@ const CITY_FILES = {
   '杭州': 'hangzhou', '上海': 'shanghai', '西安': 'xian',
 };
 
+// 起点必须是有效的经纬度对：旧版云函数只校验 lng，lat 缺失或越界会让引擎算出 NaN 时刻表
+function validOrigin(o) {
+  if (!o) return false;
+  const lng = +o.lng, lat = +o.lat;
+  return Number.isFinite(lng) && Number.isFinite(lat) &&
+    lng >= -180 && lng <= 180 && lat >= -90 && lat <= 90;
+}
+
 function loadSpots(city) {
   const f = CITY_FILES[city];
   if (!f) return null;
@@ -114,4 +122,4 @@ async function refineWithRealCommute(route, spots) {
   return route;
 }
 
-module.exports = { loadSpots, refineWithRealCommute, buildCommuteFn, CITY_FILES };
+module.exports = { loadSpots, refineWithRealCommute, buildCommuteFn, CITY_FILES, validOrigin };

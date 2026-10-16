@@ -3,7 +3,8 @@
 // engine/ 与 data/spots/），安装依赖，然后逐个 tcb 部署为 HTTP 云函数（--httpFn --path）。
 //
 // 前置：本机已登录 CloudBase CLI（npx -p @cloudbase/cli tcb login）
-// 用法：TENCENT_WS_KEY=线上Key node scripts/deploy-functions.js [函数名...]
+// 用法：TENCENT_WS_KEY=线上Key node scripts/deploy-functions.js [函数名...] [--stage-only]
+// --stage-only：只按同样规则打包到 build/functions/，跳过 npm install 与 tcb deploy（本地回归用）
 // 安全：Key 只经环境变量传入，临时写入 build/cloudbaserc.json（build/ 已 gitignore，部署后可删）
 
 const fs = require('fs');
@@ -15,6 +16,7 @@ const BUILD = path.join(ROOT, 'build');
 const ENV_ID = process.env.TCB_ENV_ID || 'ddlt-d7gvi23us2cc67847';
 const NEEDS_ENGINE = new Set(['genRoute', 'reRoute', 'aiCopy']);
 const ALL = ['searchPoi', 'genRoute', 'reRoute', 'routeGet', 'posterImg', 'feedback', 'aiCopy', 'routePaths'];
+const STAGE_ONLY = process.argv.includes('--stage-only');
 const targets = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const fns = targets.length ? targets : ALL;
 const KEY = process.env.TENCENT_WS_KEY || '';
@@ -78,6 +80,7 @@ for (const fn of fns) {
   fs.writeFileSync(path.join(stage, 'package.json'), JSON.stringify(PKG, null, 2));
 
   console.log(`\n== ${fn} ==`);
+  if (STAGE_ONLY) { console.log('（--stage-only：打包完成，跳过依赖安装与部署）'); continue; }
   execSync('npm install --omit=dev --no-audit --no-fund --loglevel=error', { cwd: stage, stdio: 'inherit' });
   execSync(`npx -p @cloudbase/cli tcb fn deploy ${fn} --dir "${stage}" --force --path=/${fn} --install-dependency false`,
     { cwd: BUILD, stdio: 'inherit', env: { ...process.env, MSYS2_ARG_CONV_EXCL: '*' } });

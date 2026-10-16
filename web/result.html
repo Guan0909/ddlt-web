@@ -213,6 +213,9 @@
   .edit-bar button { color: var(--ink-2); letter-spacing: .04em; }
   .edit-bar button.danger { color: #B3402A; }
   .edit-bar button:disabled { opacity: .32; pointer-events: none; }
+  /* 「信息有误」反馈入口：贴右，与编辑动作拉开距离（privacy.html 承诺每卡都有） */
+  .edit-bar button.report { margin-left: auto; color: var(--ink-3); }
+  .edit-bar button.report:active { color: var(--ink); }
 
   /* 被挤掉的站（原型无此元素，低调呈现） */
   .dropped-note { margin: 6px 22px 0; font-size: 11.5px; color: var(--ink-2); line-height: 1.7; }
@@ -299,7 +302,8 @@
   // ---------- 顶栏 ----------
   $('backBtn').onclick = () => { location.href = '/index.html'; };
   $('ttTitle').textContent = `${route.city || ''} · ${DDN.dayCn(route.days)}日`;
-  $('ttSub').textContent = `${DDN.dateRange(route.startDate, route.days)} · 每日从${route.origin.name}出发返回`;
+  // 地图/海报不画返程段（§9.5），文案不承诺「环线」，只说时刻表里真实存在的「晚上回到这里」
+  $('ttSub').textContent = `${DDN.dateRange(route.startDate, route.days)} · 从${route.origin.name}出发，晚上回到这里`;
   document.title = `点定旅途 · ${route.city || ''}${DDN.dayCn(route.days)}日`;
 
   // ---------- 锚点说明条：明早排 / 现在就走 ----------
@@ -801,7 +805,9 @@
       route.__stops[cur].splice(idx, 1);
       applyRetime(cur);
     };
-    bar.append(up, down, swap, moveDay, del);
+    const report = DDN.el('button', 'report', '信息有误');
+    report.onclick = () => openFeedback(spot, item);
+    bar.append(up, down, swap, moveDay, del, report);
     body.appendChild(bar);
 
     wrap.appendChild(body);
@@ -893,6 +899,39 @@
         pasteBtn.disabled = false;
         pasteBtn.textContent = '提取地点';
       };
+    });
+  }
+  // 「信息有误」：只写 feedback 集合（不公开、不在页面展示，不属于 UGC 发布）；
+  // routeId 只在符合 32 位 hex 口径时才带上，本地生成的路线不带（与 routeGet 同一校验）
+  function openFeedback(spot, item) {
+    const name = spot ? spot.name : item.name;
+    DDN.openDrawer('信息有误 · ' + name, (body, close) => {
+      body.appendChild(DDN.el('div', 'drawer-sub', '哪里不对？名称、坐标、营业时间、简介都可以说'));
+      const ta = DDN.el('textarea', 'paste-box');
+      ta.placeholder = '例如：这家博物馆周一其实不闭馆';
+      ta.maxLength = 500;
+      const btn = DDN.el('button', 'paste-btn', '提交');
+      btn.onclick = async () => {
+        const text = ta.value.trim();
+        if (!text) { DDN.toast('先写两句再提交'); return; }
+        btn.disabled = true;
+        btn.textContent = '提交中…';
+        try {
+          await DDN.cloudPost('feedback', {
+            spotId: (spot && spot.id) || item.id || null,
+            routeId: /^[0-9a-f]{32}$/.test(route.routeId || '') ? route.routeId : null,
+            text,
+          }, 6000);
+          close();
+          DDN.toast('已收到，谢谢纠错');
+        } catch (e) {
+          btn.disabled = false;
+          btn.textContent = '提交';
+          DDN.toast((e && e.message) || '提交失败，稍后再试');
+        }
+      };
+      body.appendChild(ta);
+      body.appendChild(btn);
     });
   }
   function openMoveDay(idx) {
