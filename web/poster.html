@@ -271,6 +271,12 @@
   }
 
   // ---------- 路线 ----------
+  // 米制近似距离：与 routePaths 的端头吸附阈值（80m）同一口径
+  const metersOf = (a, b) => {
+    const x = (b.lng - a.lng) * 111320 * Math.cos((a.lat + b.lat) / 2 * Math.PI / 180);
+    const y = (b.lat - a.lat) * 111320;
+    return Math.hypot(x, y);
+  };
   const O = proj({ lng: route.origin.lng, lat: route.origin.lat });
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
@@ -298,6 +304,30 @@
       ctx.strokeStyle = dp.color;
       ctx.lineWidth = 3.6;
       drawOne();
+      // 「线点分离」补线：服务端已吸附 ≤120m；120~600m（实测远郊驾车 171~254m，路网只到景区门口）
+      // 用浅色虚线连到圆点，明确是「最后一段步行」，不冒充真实路网
+      ctx.save();
+      ctx.setLineDash([3, 3]);
+      ctx.lineWidth = 1.2;
+      ctx.strokeStyle = 'rgba(24,33,25,.38)';
+      legsPaths.forEach((lp, li) => {
+        const leg = dayLegs[di][li];
+        if (!leg || !lp || lp.length < 2) return;
+        const ends = [];
+        if (li === 0) ends.push([lp[0], leg.from]);
+        ends.push([lp[lp.length - 1], leg.to]);
+        for (const [tail, target] of ends) {
+          const d = metersOf({ lng: tail[1], lat: tail[0] }, target);
+          if (d <= 120 || d > 600) continue;
+          const a = proj({ lng: tail[1], lat: tail[0] });
+          const b = proj({ lng: target.lng, lat: target.lat });
+          ctx.beginPath();
+          ctx.moveTo(mapX + a.x, mapY + a.y);
+          ctx.lineTo(mapX + b.x, mapY + b.y);
+          ctx.stroke();
+        }
+      });
+      ctx.restore();
     } else {
       const pts = [O, ...dayStops[di].map(s => proj({ lng: s.coord.lng, lat: s.coord.lat }))]
         .map(p => ({ x: mapX + p.x, y: mapY + p.y }));

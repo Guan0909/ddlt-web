@@ -58,14 +58,14 @@ window.DDNGL = (() => {
     // 未配自定义样式时退回默认样式 + 柔化滤镜，保持品牌观感
     if (!window.DDN_GL_STYLE_ID) container.style.filter = DDN.MAP_SOFT_FILTER;
 
-    let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null;
+    let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null, routeLink = null;
     let pathToken = 0;
     let fitSeq = 0;           // 视野 fit 的序号：延迟执行时只认最后一次
     let curDay = null;        // { origin, stops, others, edit }，供缩放停稳后重建标签
     let lastLabelZoom = null; // 上次重建标签时的 zoom（未变化则跳过）
 
     function clearLayers() {
-      for (const l of [stopLayer, dotLayer, stopLabelLayer, spotLabelLayer, routeHalo, routeMain]) {
+      for (const l of [stopLayer, dotLayer, stopLabelLayer, spotLabelLayer, routeHalo, routeMain, routeLink]) {
         if (l) { try { l.setMap(null); } catch (e) {} }
       }
       stopLayer = dotLayer = stopLabelLayer = spotLabelLayer = routeMain = routeHalo = null;
@@ -199,19 +199,33 @@ window.DDNGL = (() => {
       try {
         const j = await DDN.cloudPost('routePaths', { legs }, 12000);
         if (token !== pathToken || !j.paths) return;
-        const geoms = [];
+        const geoms = [], links = [];
+        // 「线点分离」补线：服务端已把 ≤120m 的端头吸附掉；120~600m（实测远郊驾车 171~254m，
+        // 路网只到景区门口）用一条浅色细线连到圆点，明确表达「最后一段步行」，不冒充真实路网。
+        const LINK_MIN_M = 120, LINK_MAX_M = 600;
+        const addLink = (tail, target) => {
+          if (!tail || !target) return;
+          const d = metersBetween(tail.lng, tail.lat, target.lng, target.lat);
+          if (d <= LINK_MIN_M || d > LINK_MAX_M) return;
+          links.push({ id: 'link' + links.length, styleId: 'link', paths: [
+            new TMap.LatLng(tail.lat, tail.lng), new TMap.LatLng(target.lat, target.lng)] });
+        };
         j.paths.forEach((path, i) => {
+          const leg = legs[i];
           if (!path || path.length < 2) {
-            const leg = legs[i];   // 单腿失败回退直线
-            geoms.push({ id: 'leg' + i, styleId: 'main', paths: [
+            geoms.push({ id: 'leg' + i, styleId: 'main', paths: [   // 单腿失败回退直线
               new TMap.LatLng(leg.from.lat, leg.from.lng),
               new TMap.LatLng(leg.to.lat, leg.to.lng)] });
             return;
           }
           const ll = path.map(p => new TMap.LatLng(p[0], p[1]));
           geoms.push({ id: 'leg' + i, styleId: 'main', paths: ll });
+          const head = { lng: path[0][1], lat: path[0][0] };
+          const tail = { lng: path[path.length - 1][1], lat: path[path.length - 1][0] };
+          if (i === 0) addLink(head, leg.from);   // 起点侧
+          addLink(tail, leg.to);
         });
-        drawRoute(geoms, color);
+        drawRoute(geoms, color, links);
       } catch (e) {
         if (straightGeoms) drawRoute(straightGeoms, color);   // 整体失败：直线示意
       }
@@ -224,8 +238,22 @@ window.DDNGL = (() => {
       return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
     };
 
-    function drawRoute(geoms, color) {
+    // 补线样式：细、淡，明显弱于主路线；dashArray 不被支持时退回同色实线（仍然远弱于主线）
+    const LINK_COLOR = 'rgba(24,33,25,.34)';
+    function linkStyle() {
+      try { return new TMap.PolylineStyle({ color: LINK_COLOR, width: 2, lineCap: 'round', dashArray: [2, 2] }); }
+      catch (e) { return new TMap.PolylineStyle({ color: LINK_COLOR, width: 2, lineCap: 'round' }); }
+    }
+
+    function drawRoute(geoms, color, links) {
       if (routeHalo) { try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {} }
+      if (routeLink) { try { routeLink.setMap(null); } catch (e) {} }
+      routeLink = new TMap.MultiPolyline({
+        map,
+        isStopPropagation: true,
+        styles: { link: linkStyle() },
+        geometries: links || [],
+      });
       routeHalo = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,

@@ -11,7 +11,7 @@ const { execFileSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 const BUILD_FNS = path.join(ROOT, 'build', 'functions');
-const FNS = ['feedback', 'genRoute', 'reRoute'];
+const FNS = ['feedback', 'genRoute', 'reRoute', 'routePaths'];
 
 let pass = 0, fail = 0;
 function check(name, cond, detail) {
@@ -152,6 +152,31 @@ async function call(main, payload, opts = {}) {
   r = await call(feedback.main, { text: 'x' });
   check('限频 → 429', r.status === 429, JSON.stringify(r.status));
   state.rateOk = true;
+
+  // ---------- routePaths：几何处理（纯函数，不联网） ----------
+  console.log('\n### routePaths · 抽稀与端头吸附（纯函数）');
+  const geom = loadFn('routePaths').geom;
+  const dense = [];
+  for (let i = 0; i <= 100; i++) dense.push([30.65 + i * 0.0001, 104.05]);   // 每点约 11m 的直线
+  const thin = geom.rdp(dense, 12);
+  check('抽稀：1.1km 直线 101 点 → ≤3 点', thin.length <= 3, `实际 ${thin.length}`);
+  check('抽稀：首尾必须保留', thin[0][0] === dense[0][0] && thin[thin.length - 1][0] === dense[100][0]);
+  check('抽稀：L 形拐点不被抹平', geom.rdp([[30.65, 104.05], [30.65, 104.06], [30.66, 104.06]], 12).length === 3);
+  const from = { lat: 30.65, lng: 104.05 }, to = { lat: 30.66, lng: 104.06 };
+  const nearPts = [[30.6505, 104.0502], [30.6599, 104.0599]];   // 距 from/to 约 59m / 13m
+  const snapped = geom.snapEnds(nearPts, from, to);
+  check('吸附：≤120m 的端头接到请求坐标', snapped.length === 4 && snapped[0][0] === 30.65 && snapped[3][1] === 104.06, JSON.stringify(snapped));
+  check('吸附：>120m 不硬接（不伪造长直线）', geom.snapEnds([[30.66, 104.06], [30.67, 104.07]], from, to).length === 2);
+  const once = geom.finalizePath(nearPts, 'walk', from, to);
+  const twice = geom.finalizePath(once, 'walk', from, to);
+  const thrice = geom.finalizePath(twice, 'walk', from, to);
+  check('吸附：处理结果的端点精确落在请求坐标上',
+    once[0][0] === from.lat && once[0][1] === from.lng
+    && once[once.length - 1][0] === to.lat && once[once.length - 1][1] === to.lng, JSON.stringify(once));
+  check('处理稳定：继续处理不再变化（第 2、3 次一致）', JSON.stringify(twice) === JSON.stringify(thrice), JSON.stringify(thrice));
+  const devOf = (orig, simp) => Math.max(...orig.map(p => Math.min(...simp.slice(1).map((q, i) => geom.pointSegM(p, simp[i], q)))));
+  check('抽稀误差受控：相对原折线 ≤ 步行阈值 6m', devOf(nearPts, twice) <= 6.001, devOf(nearPts, twice).toFixed(2) + 'm');
+  check('阈值口径：步行 6m / 公交 8m / 驾车 12m', geom.TOL_M.walk === 6 && geom.TOL_M.transit === 8 && geom.TOL_M.drive === 12 && geom.SNAP_MAX_M === 120);
 
   console.log(`\n${'='.repeat(58)}`);
   console.log(fail ? `共 ${fail} 项校验失败（通过 ${pass} 项）` : `云函数全部用例通过（${pass} 项）`);
