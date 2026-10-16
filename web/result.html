@@ -47,6 +47,14 @@
   .map-hero.fullscreen .map-fade { display: none; }
   .map-hero.fullscreen .map-expand { top: max(12px, env(safe-area-inset-top)); }
   body.map-lock { overflow: hidden; }
+  /* 编辑模式：完成按钮浮在地图底部 */
+  .edit-done {
+    position: absolute; left: 50%; bottom: max(18px, env(safe-area-inset-bottom)); transform: translateX(-50%);
+    z-index: 8; padding: 12px 44px; border-radius: 999px;
+    background: var(--d1); color: #fff; font-size: 15px; font-weight: 600; letter-spacing: .1em;
+    box-shadow: 0 6px 20px rgba(59,115,86,.35);
+  }
+  .map-hero.fullscreen.editing .map-expand { display: none; }
   /* 动态地图控制 */
   #glMap { position: relative; z-index: 1; }   /* 自建层叠上下文，把 GL 内部高层级元素关在里面 */
   #mapSvg { touch-action: none; cursor: grab; }
@@ -235,6 +243,7 @@
       <svg class="ic ic-open" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
       <svg class="ic ic-close" viewBox="0 0 24 24" hidden><path d="M5 8h5V3M19 8h-5V3M5 16h5v5M19 16h-5v5"/></svg>
     </button>
+    <button class="edit-done" id="editDone" hidden>完成</button>
     <div class="map-zoom"><button id="zoomIn">+</button><button id="zoomOut">−</button></div>
     <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
     <div class="map-fade"></div>
@@ -253,6 +262,10 @@
 
   <div class="dock">
     <div class="dock-row">
+      <button class="btn-text" id="editBtn">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+        编辑旅途
+      </button>
       <button class="btn-text" id="shareBtn">
         <svg class="ic" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
         分享
@@ -369,8 +382,9 @@
   const mapState = { day: -1, zoom: 12, cLng: 0, cLat: 0, offX: 0, offY: 0, proj: null, baseURI: null };
   let mapReq = 0, mapBusy = false;
   let glCtl = null;   // 腾讯 GL 动态地图控制器（有 DDN_GL_KEY 时启用）
+  let editMode = false;   // 编辑旅途模式：全屏显示全部景点，点选加减当天站点
 
-  async function renderMap() {
+  async function renderMap(keepView) {
     if (glCtl) {   // GL 动态地图路径
       const dp = route.dayPlans[cur];
       // 组装腿（起点→各站→回起点）与各腿通勤方式，供真实路网路径
@@ -388,6 +402,8 @@
         others: spots,
         color: dp.color,
         legs,
+        mode: editMode ? 'edit' : 'plan',
+        keepView: !!keepView,
       });
       return;
     }
@@ -919,7 +935,7 @@
     location.href = '/poster.html';
   };
 
-  // 放大地图：全屏/收起切换（GL 容器尺寸变化后需 checkResize 重排）
+  // 放大地图：全屏/收起切换（GL 会自行监听容器尺寸变化重排，无需手动调用）
   $('mapExpand').onclick = () => {
     const hero = $('mapHero');
     const on = hero.classList.toggle('fullscreen');
@@ -927,8 +943,42 @@
     $('mapExpand').querySelector('.ic-open').hidden = on;
     $('mapExpand').querySelector('.ic-close').hidden = !on;
     $('mapExpand').setAttribute('aria-label', on ? '收起地图' : '放大地图');
-    // GL 会自行监听容器尺寸变化（resize 事件）重排；GL API 没有公开的手动重排方法
   };
+
+  // ---------- 编辑旅途：全屏选点模式 ----------
+  // 规划视图只显示当天路线与站点；进入编辑后展示全库景点，点淡点加入、点绿点移出，
+  // 完成后统一 retimeDay 重校验（真实通勤），路线按真实路网重绘
+  function setHint() {
+    document.querySelector('.map-hint').textContent = editMode
+      ? '点淡色圆点加入今天，点绿色圆点移出 · 完成后生成贴路路线'
+      : '「编辑旅途」可加减今天的景点';
+  }
+  function toggleSpotEdit(s) {
+    const arr = route.__stops[cur];
+    const i = arr.findIndex(x => x.id === s.id);
+    if (i >= 0) { arr.splice(i, 1); DDN.toast(`已移出「${s.name}」`); }
+    else { arr.push(s); DDN.toast(`已加入「${s.name}」，完成后重排`); }
+    renderMap(true);   // 保持视野，只重绘标记
+  }
+  $('editBtn').onclick = () => {
+    if (!glCtl) return;
+    editMode = true;
+    $('mapHero').classList.add('fullscreen', 'editing');
+    document.body.classList.add('map-lock');
+    $('editDone').hidden = false;
+    setHint();
+    renderMap();
+  };
+  $('editDone').onclick = async () => {
+    editMode = false;
+    $('editDone').hidden = true;
+    $('mapHero').classList.remove('fullscreen', 'editing');
+    document.body.classList.remove('map-lock');
+    setHint();
+    await applyRetime(cur);   // 时间轴全量重排校验
+    renderMap();
+  };
+  setHint();
 
   (async () => {
     try { spots = await DDN.loadSpots(route.city || '成都') || []; } catch (e) { spots = []; }
@@ -941,9 +991,13 @@
         $('mapSvg').style.display = 'none';
         const zc = document.querySelector('.map-zoom');
         if (zc) zc.style.display = 'none';   // GL 自带缩放控件
-        glCtl = DDNGL.create(box, { onSpotTap: s => confirmAddStop(s, route.dayPlans[cur]) });
+        glCtl = DDNGL.create(box, {
+          onSpotTap: s => confirmAddStop(s, route.dayPlans[cur]),
+          onSpotToggle: s => toggleSpotEdit(s),
+        });
       } catch (e) { glCtl = null; }
     }
+    if (!glCtl) $('editBtn').style.display = 'none';   // GL 不可用（回退静态图）时无编辑模式
     renderAnchor();
     renderDay();
     renderNarrative();

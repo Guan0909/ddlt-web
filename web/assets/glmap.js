@@ -41,8 +41,10 @@ window.DDNGL = (() => {
   }
   const normName = s => String(s || '').replace(/[\s（）()·\-—]/g, '');
 
-  // create(container, { onSpotTap }) → { setDay, destroy } 或创建失败抛错
-  function create(container, { onSpotTap } = {}) {
+  // create(container, { onSpotTap, onSpotToggle })
+  //   onSpotTap(spot)：规划模式下点底图 POI 命中库内点（加入抽屉）
+  //   onSpotToggle(spot, selected)：编辑模式下点景点（加入/移出切换）
+  function create(container, { onSpotTap, onSpotToggle } = {}) {
     const map = new TMap.Map(container, {
       center: new TMap.LatLng(30.657, 104.0668),
       zoom: 12,
@@ -56,22 +58,22 @@ window.DDNGL = (() => {
 
     let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null;
     let pathToken = 0;
-    let curDay = null;        // 当前一天的 { origin, stops, others }，供缩放停稳后重建标签
+    let curDay = null;        // { origin, stops, others, edit }，供缩放停稳后重建标签
     let lastLabelZoom = null; // 上次重建标签时的 zoom（未变化则跳过）
 
     function clearLayers() {
       for (const l of [stopLayer, dotLayer, stopLabelLayer, spotLabelLayer, routeHalo, routeMain]) {
         if (l) { try { l.setMap(null); } catch (e) {} }
       }
-      stopLayer = dotLayer = stopLabelLayer = spotLabelLayer = routeHalo = routeMain = null;
+      stopLayer = dotLayer = stopLabelLayer = spotLabelLayer = routeMain = routeHalo = null;
     }
 
-    // ---------- 标签层：站点名（必显）+ 其他景点名（zoom≥13 且避让底图文字） ----------
-    // k = px/度（setDay 时用包围盒推算的视野值；idle 时用当前 zoom 换算）
+    // ---------- 标签层：站点名（必显）+ 编辑模式下的其他景点名（碰撞避让交给 GL） ----------
+    // k = px/度（setDay 时用包围盒推算；idle 时用当前 zoom 换算）
     function rebuildLabels(k, zoom) {
       if (!curDay) return;
       lastLabelZoom = zoom;
-      const { origin, stops, others } = curDay;
+      const { origin, stops, others, edit } = curDay;
       const inRoute = new Set(stops.map(s => s.id));
       const labelWidth = (name, size) => Math.min(name.length, 9) * size + 6;
       const crowded = (placed, lng, lat, wp) => placed.some(q =>
@@ -94,9 +96,9 @@ window.DDNGL = (() => {
         };
       });
 
-      // 其他景点：低倍让位给底图风景名胜（zoom<13 不标字）；高倍出现并与底图文字碰撞避让
+      // 其他景点名：只在编辑模式给（规划视图只留路线与站点）；GL 碰撞避让自动消解重叠
       const spotGeoms = [];
-      if (zoom >= 13) {
+      if (edit) {
         for (const s of others || []) {
           if (inRoute.has(s.id) || !s.coord) continue;
           const wp = labelWidth(s.name, 11);
@@ -132,7 +134,7 @@ window.DDNGL = (() => {
       spotLabelLayer = new TMap.MultiLabel({
         map,
         isStopPropagation: true,
-        // 与底图 POI 文字避让：底图风景名胜已有名字的地方，我们的重复标签自动隐藏
+        // 与底图 POI 文字避让：底图已有名字的地方，我们的重复标签自动隐藏
         collisionOptions: { sameSource: true, crossSource: true, vectorBaseMapSource: true },
         styles: {
           spotLabel: new TMap.LabelStyle({
@@ -142,7 +144,12 @@ window.DDNGL = (() => {
         },
         geometries: spotGeoms,
       });
-      if (onSpotTap) {
+      if (edit && onSpotToggle) {
+        spotLabelLayer.on('click', evt => {
+          const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
+          if (s) onSpotToggle(s, false);
+        });
+      } else if (onSpotTap) {
         spotLabelLayer.on('click', evt => {
           const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
           if (s) onSpotTap(s);
@@ -158,7 +165,7 @@ window.DDNGL = (() => {
       rebuildLabels(256 * Math.pow(2, z) / 360, z);
     });
 
-    // ---------- 底图风景名胜点击拾取（evt.poi：名字+坐标，仅 click） ----------
+    // ---------- 底图 POI 点击拾取（evt.poi：名字+坐标，仅 click） ----------
     map.on('click', evt => {
       const poi = evt.poi;
       if (!poi || !curDay) return;
@@ -175,12 +182,17 @@ window.DDNGL = (() => {
         if (d < 120 && d < bd) { bd = d; best = s; }   // 纯距离兜底
       }
       if (!best) { DDN.toast('这个点不在我们的精选库'); return; }
-      if (curDay.stops.some(s => s.id === best.id)) { DDN.toast(`「${best.name}」今天已经排了`); return; }
+      const selected = curDay.stops.some(s => s.id === best.id);
+      if (curDay.edit) {
+        if (onSpotToggle) onSpotToggle(best, selected);
+        return;
+      }
+      if (selected) { DDN.toast(`「${best.name}」今天已经排了`); return; }
       if (onSpotTap) onSpotTap(best);
     });
 
-    // 真实路网路径：先画直线，routePaths 返回后升级为真实路径
-    async function upgradeToRealPaths(legs, color, token) {
+    // 真实路网路径（routePaths 云函数）；全部失败才回退直线示意
+    async function upgradeToRealPaths(legs, color, token, straightGeoms) {
       try {
         const j = await DDN.cloudPost('routePaths', { legs }, 12000);
         if (token !== pathToken || !j.paths) return;
@@ -196,99 +208,121 @@ window.DDNGL = (() => {
           const ll = path.map(p => new TMap.LatLng(p[0], p[1]));
           geoms.push({ id: 'leg' + i, styleId: 'main', paths: ll });
         });
-        if (routeHalo && routeMain) {
-          try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {}
-          routeHalo = new TMap.MultiPolyline({
-            map,
-            styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 9, lineCap: 'round' }) },
-            geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
-          });
-          routeMain = new TMap.MultiPolyline({
-            map,
-            styles: { main: new TMap.PolylineStyle({ color, width: 5.5, lineCap: 'round' }) },
-            geometries: geoms,
-          });
-        }
-      } catch (e) { /* 保持直线示意 */ }
+        drawRoute(geoms, color);
+      } catch (e) {
+        if (straightGeoms) drawRoute(straightGeoms, color);   // 整体失败：直线示意
+      }
     }
 
-    // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color, legs?:[{from,to,mode}] })
-    function setDay({ origin, stops, others, color, legs }) {
-      clearLayers();
-      const token = ++pathToken;
-      const inRoute = new Set(stops.map(s => s.id));
-      const bounds = new TMap.LatLngBounds();
-      const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
-      all.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
-
-      // 视野像素尺度（fitBounds 应用前的推算值；idle 事件到达后会用真实 zoom 重建标签）
-      const w = container.clientWidth || 400, h = container.clientHeight || 280;
-      const padBase = Math.max(30, Math.min(52, Math.round(w * 0.13)));
-      const padRight = Math.round(w * 0.26);
-      const lngs = all.map(p => p.lng), lats = all.map(p => p.lat);
-      const spanLng = Math.max(Math.max(...lngs) - Math.min(...lngs), 1e-4);
-      const spanLat = Math.max(Math.max(...lats) - Math.min(...lats), 1e-4);
-      const k = Math.max(1, Math.min((w - padBase - padRight) / spanLng, (h - padBase * 2) / spanLat)); // px / 度
-      const fitZoom = Math.log2(k * 360 / 256);
-
-      curDay = { origin, stops, others };
-      rebuildLabels(k, fitZoom);
-
-      // 路线：先直线（白衬底 + 当日色），真实路径到达后升级
-      const path = [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)];
+    function drawRoute(geoms, color) {
+      if (routeHalo) { try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {} }
       routeHalo = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
         styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 9, lineCap: 'round' }) },
-        geometries: [{ id: 'halo', styleId: 'halo', paths: path }],
+        geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
       });
       routeMain = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
         styles: { main: new TMap.PolylineStyle({ color, width: 5.5, lineCap: 'round' }) },
-        geometries: [{ id: 'main', styleId: 'main', paths: path }],
+        geometries: geoms,
       });
-      if (legs && legs.length > 1 && DDN.cloudAvailable()) upgradeToRealPaths(legs, color, token);
+    }
 
-      // 其他景点：点全部保留（可点选加入当天），标签由 rebuildLabels 按缩放与避让决定
-      const otherGeoms = [];
-      for (const s of others || []) {
-        if (inRoute.has(s.id) || !s.coord) continue;
-        otherGeoms.push({ id: s.id, styleId: 'spot', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } });
+    // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color,
+    //        legs?:[{from,to,mode}], mode?:'plan'|'edit', keepView?:bool })
+    // plan：只画路线+站点（其余景点不出现）；edit：画全部景点（无路线），站点更醒目，点击切换加入/移出
+    function setDay({ origin, stops, others, color, legs, mode, keepView }) {
+      clearLayers();
+      const token = ++pathToken;
+      const edit = mode === 'edit';
+      const inRoute = new Set(stops.map(s => s.id));
+      const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
+      const othersAll = edit ? (others || []) : [];
+
+      // 视野：规划模式包住当天路线点；编辑模式包住全部景点（看全城）
+      const bounds = new TMap.LatLngBounds();
+      const fitPts = edit
+        ? [...all, ...othersAll.filter(s => s.coord).map(s => ({ lng: s.coord[0], lat: s.coord[1] }))]
+        : all;
+      fitPts.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
+
+      // 视野像素尺度（fitBounds 应用前的推算值；idle 事件到达后会用真实 zoom 重建标签）
+      const w = container.clientWidth || 400, h = container.clientHeight || 280;
+      const padBase = Math.max(30, Math.min(52, Math.round(w * 0.13)));
+      const padRight = edit ? padBase : Math.round(w * 0.26);   // 编辑模式右上无缩放控件避让需求小些
+      const lngs = fitPts.map(p => p.lng), lats = fitPts.map(p => p.lat);
+      const spanLng = Math.max(Math.max(...lngs) - Math.min(...lngs), 1e-4);
+      const spanLat = Math.max(Math.max(...lats) - Math.min(...lats), 1e-4);
+      const k = Math.max(1, Math.min((w - padBase - padRight) / spanLng, (h - padBase * 2) / spanLat)); // px / 度
+      const fitZoom = Math.log2(k * 360 / 256);
+
+      curDay = { origin, stops, others, edit };   // others 全量保留：底图 POI 拾取匹配用；渲染层只在编辑模式画
+      rebuildLabels(k, fitZoom);
+
+      // 路线（仅规划模式）：真实路径到达前不画线（避免"看似贴路的假象"）；
+      // routePaths 整体失败时才回退直线示意
+      if (!edit && all.length > 1) {
+        const straightGeoms = [{
+          id: 'straight', styleId: 'main',
+          paths: [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)],
+        }];
+        if (legs && legs.length > 1 && DDN.cloudAvailable()) {
+          upgradeToRealPaths(legs, color, token, straightGeoms);
+        } else {
+          drawRoute(straightGeoms, color);
+        }
       }
-      dotLayer = new TMap.MultiMarker({
-        map,
-        isStopPropagation: true,
-        styles: { spot: new TMap.MarkerStyle({ width: 12, height: 12, src: dotURI('#7d887f', 4.4, '#FBFBF8'), anchor: { x: 6, y: 6 } }) },
-        geometries: otherGeoms,
-      });
 
-      // 起点 + 站点标记
+      // 其他景点（仅编辑模式）：全量淡点，点击切换加入
+      if (edit) {
+        const otherGeoms = [];
+        for (const s of othersAll) {
+          if (inRoute.has(s.id) || !s.coord) continue;
+          otherGeoms.push({ id: s.id, styleId: 'spot', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } });
+        }
+        dotLayer = new TMap.MultiMarker({
+          map,
+          isStopPropagation: true,
+          styles: { spot: new TMap.MarkerStyle({ width: 12, height: 12, src: dotURI('#9AA69C', 4.4, '#FBFBF8'), anchor: { x: 6, y: 6 } }) },
+          geometries: otherGeoms,
+        });
+        if (onSpotToggle) {
+          dotLayer.on('click', evt => {
+            const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
+            if (s) onSpotToggle(s, false);
+          });
+        }
+      }
+
+      // 起点 + 站点标记（编辑模式站点更大更醒目）
+      const stopSize = edit ? 26 : 20;
       const stopGeoms = [
         { id: 'origin', styleId: 'origin', position: new TMap.LatLng(origin.lat, origin.lng) },
-        ...stops.map(s => ({ id: s.id, styleId: 'stop', position: new TMap.LatLng(s.coord[1], s.coord[0]) })),
+        ...stops.map(s => ({ id: s.id, styleId: 'stop', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } })),
       ];
       stopLayer = new TMap.MultiMarker({
         map,
         isStopPropagation: true,
         styles: {
           origin: new TMap.MarkerStyle({ width: 34, height: 34, src: originURI(), anchor: { x: 17, y: 17 } }),
-          stop: new TMap.MarkerStyle({ width: 20, height: 20, src: dotURI(color, 7.5, '#fff'), anchor: { x: 10, y: 10 } }),
+          stop: new TMap.MarkerStyle({ width: stopSize, height: stopSize, src: dotURI(color, edit ? 10 : 7.5, '#fff'), anchor: { x: stopSize / 2, y: stopSize / 2 } }),
         },
         geometries: stopGeoms,
       });
-
-      if (onSpotTap) {
-        dotLayer.on('click', evt => {
+      if (edit && onSpotToggle) {
+        stopLayer.on('click', evt => {
           const s = evt.geometry && evt.geometry.properties && evt.geometry.properties.spot;
-          if (s) onSpotTap(s);
+          if (s) onSpotToggle(s, true);
         });
       }
 
-      // 右上角有 GL 自带缩放控件，按容器宽度留出净空（窄屏同比缩小，避免过度留白）
-      if (all.length > 1) {
-        map.fitBounds(bounds, { padding: { top: padBase, right: padRight, bottom: padBase, left: padBase } });
-      } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
+      if (!keepView) {
+        if (fitPts.length > 1) {
+          map.fitBounds(bounds, { padding: { top: padBase, right: padRight, bottom: padBase, left: padBase } });
+        } else { map.setCenter(new TMap.LatLng(origin.lat, origin.lng)); map.setZoom(14); }
+      }
     }
 
     function destroy() { clearLayers(); try { map.destroy(); } catch (e) {} }
