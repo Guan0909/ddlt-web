@@ -93,7 +93,16 @@ async function main() {
   console.log(`${city}：${data.spots.length} 个点位，其中 estimate ${targets.length} 个待复核`);
   if (dryRun) { console.log('（干跑，不调 API、不写文件）'); return; }
 
-  const report = { city, date: new Date().toISOString().slice(0, 10), fixed: [], skipped: [], errors: [] };
+  const today = new Date().toISOString().slice(0, 10);
+  // 与既有报告合并：同一 id 以本次结果为准，历史条目保留（数据留痕不该被下一次运行冲掉）
+  const reportPath0 = abs.replace(/\.json$/, '') + '.coord-repair-report.json';
+  let prev = { fixed: [], skipped: [], errors: [] };
+  try { prev = JSON.parse(fs.readFileSync(reportPath0, 'utf8')); } catch (e) {}
+  const report = { city, date: today, runs: [...new Set([...(prev.runs || [prev.date]).filter(Boolean), today])], fixed: [], skipped: [], errors: [] };
+  const mergeBy = (oldArr, newArr) => {
+    const seen = new Set(newArr.map(x => x.id));
+    return [...oldArr.filter(x => !seen.has(x.id)), ...newArr];
+  };
   let n = 0;
   for (const spot of targets) {
     n++;
@@ -177,7 +186,10 @@ async function main() {
     data._meta.coord_repaired_at = report.date;
     fs.writeFileSync(abs, JSON.stringify(data, null, 2) + '\n');
   }
-  const reportPath = abs.replace(/\.json$/, '') + '.coord-repair-report.json';
+  report.fixed = mergeBy(prev.fixed || [], report.fixed);
+  report.skipped = mergeBy(prev.skipped || [], report.skipped);
+  report.errors = mergeBy(prev.errors || [], report.errors);
+  const reportPath = reportPath0;
   fs.writeFileSync(reportPath, JSON.stringify(report, null, 2) + '\n');
   console.log(`\n${apply ? '已写入' : '未写入（加 --apply 才落盘）'}：可修 ${report.fixed.length} / 跳过 ${report.skipped.length} / 错误 ${report.errors.length}`);
   console.log('报告：' + path.relative(process.cwd(), reportPath));
