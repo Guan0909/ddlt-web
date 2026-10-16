@@ -3,295 +3,20 @@
   "date": "2026-10-16",
   "fixed": [
     {
-      "id": "bell-tower",
-      "name": "西安钟楼",
-      "before": [
-        108.9398,
-        34.341
-      ],
-      "after": [
-        108.94704,
-        34.25943
-      ],
-      "drift_m": 9095,
-      "tencent_poi_id": "4390159242788620918",
-      "agree_m": 1,
-      "tier": 1
-    },
-    {
-      "id": "drum-tower",
-      "name": "西安鼓楼",
-      "before": [
-        108.9335,
-        34.3395
-      ],
-      "after": [
-        108.943507,
-        34.259963
-      ],
-      "drift_m": 8892,
-      "tencent_poi_id": "18053060163101397045",
-      "agree_m": 27,
-      "tier": 1
-    },
-    {
-      "id": "muslim-quarter",
-      "name": "回民街·北院门",
-      "before": [
-        108.935,
-        34.344
-      ],
-      "after": [
-        108.943659,
-        34.262198
-      ],
-      "drift_m": 9131,
-      "tencent_poi_id": "8124746567700936037",
-      "agree_m": 720,
-      "tier": 2
-    },
-    {
-      "id": "sajinqiao",
-      "name": "洒金桥",
-      "before": [
-        108.927,
-        34.3485
-      ],
-      "after": [
-        108.933815,
-        34.26971
-      ],
-      "drift_m": 8783,
-      "tencent_poi_id": "12829014348175675351",
-      "agree_m": 385,
-      "tier": 2
-    },
-    {
-      "id": "big-mosque",
-      "name": "化觉巷清真大寺",
-      "before": [
-        108.932,
-        34.341
-      ],
-      "after": [
-        108.942406,
-        34.261974
-      ],
-      "drift_m": 8839,
-      "tencent_poi_id": "8985967719572979868",
-      "agree_m": 111,
-      "tier": 1
-    },
-    {
-      "id": "dapiyuan",
-      "name": "大皮院",
-      "before": [
-        108.9305,
-        34.344
-      ],
-      "after": [
-        108.940742,
-        34.264411
-      ],
-      "drift_m": 8900,
-      "tencent_poi_id": "18285973750810689517",
-      "agree_m": 14,
-      "tier": 1
-    },
-    {
-      "id": "tuoling-legend",
-      "name": "《驼铃传奇》秀",
-      "before": [
-        109.066,
-        34.334
-      ],
-      "after": [
-        109.020618,
-        34.352445
-      ],
-      "drift_m": 4644,
-      "tencent_poi_id": "6592749071948882180",
-      "agree_m": 100,
-      "tier": 1
-    },
-    {
-      "id": "gaos-mansion",
-      "name": "高家大院",
-      "before": [
-        108.934,
-        34.3435
-      ],
-      "after": [
-        108.943268,
-        34.262812
-      ],
-      "drift_m": 9012,
-      "tencent_poi_id": "8540350244397692475",
-      "agree_m": 2,
-      "tier": 1
-    },
-    {
-      "id": "guangren-temple",
-      "name": "广仁寺",
-      "before": [
-        108.9285,
-        34.355
-      ],
-      "after": [
-        108.925826,
-        34.274583
-      ],
-      "drift_m": 8945,
-      "tencent_poi_id": "838434444745600016",
-      "agree_m": 5,
-      "tier": 1
-    },
-    {
-      "id": "yisushe-block",
-      "name": "易俗社文化街区",
-      "before": [
-        108.9485,
-        34.346
-      ],
-      "after": [
-        108.947549,
-        34.260668
-      ],
-      "drift_m": 9489,
-      "tencent_poi_id": "17639991583837671755",
-      "agree_m": 152,
-      "tier": 1
-    },
-    {
-      "id": "g-park",
-      "name": "老城根G park",
-      "before": [
-        108.918,
-        34.3545
-      ],
-      "after": [
-        108.919322,
-        34.284859
-      ],
-      "drift_m": 7745,
-      "tencent_poi_id": "11295369013625181971",
-      "agree_m": 80,
-      "tier": 1
-    },
-    {
-      "id": "taiping-forest",
-      "name": "太平国家森林公园",
-      "before": [
-        108.597,
-        33.991
-      ],
-      "after": [
-        108.657871,
-        33.91729
-      ],
-      "drift_m": 9935,
-      "tencent_poi_id": "2802796809177683920",
-      "agree_m": 1373,
-      "tier": 2
-    },
-    {
-      "id": "xiangji-temple",
-      "name": "香积寺",
-      "before": [
-        108.869,
-        34.151
-      ],
-      "after": [
-        108.892609,
-        34.122794
-      ],
-      "drift_m": 3816,
-      "tencent_poi_id": "3115760142743085429",
-      "agree_m": 12,
-      "tier": 1
-    },
-    {
-      "id": "chanba-wetland",
-      "name": "浐灞国家湿地公园",
-      "before": [
-        109.06,
-        34.415
-      ],
-      "after": [
-        109.005259,
-        34.419987
-      ],
-      "drift_m": 5052,
-      "tencent_poi_id": "10417163419935596588",
-      "agree_m": 20,
-      "tier": 1
-    },
-    {
-      "id": "shijingli",
-      "name": "诗经里",
-      "before": [
-        108.716,
-        34.253
-      ],
-      "after": [
-        108.74792,
-        34.22742
-      ],
-      "drift_m": 4087,
-      "tencent_poi_id": "2199031851696",
-      "agree_m": 846,
-      "tier": 2
-    },
-    {
-      "id": "han-weiyang",
-      "name": "汉长安城未央宫遗址",
-      "before": [
-        108.856,
-        34.356
-      ],
-      "after": [
-        108.862934,
-        34.306958
-      ],
-      "drift_m": 5490,
-      "tencent_poi_id": "4635583792320136966",
-      "agree_m": 56,
-      "tier": 1
-    },
-    {
-      "id": "qinzhen",
-      "name": "秦镇（秦渡镇）",
-      "before": [
-        108.641,
-        34.071
-      ],
-      "after": [
-        108.748093,
-        34.106562
-      ],
-      "drift_m": 10625,
-      "tencent_poi_id": "8360984109519175453",
-      "agree_m": 748,
-      "tier": 2
-    }
-  ],
-  "skipped": [
-    {
       "id": "mount-hua",
       "name": "华山",
       "before": [
         110.084,
         34.486
       ],
-      "why": "双源不一致 84127m",
-      "tencent": [
-        108.225043,
-        33.811896
+      "provider": "amap",
+      "after": [
+        110.084789,
+        34.477861
       ],
-      "amap": [
-        108.948044,
-        34.273948
-      ]
+      "drift_m": 908,
+      "amap_poi_id": "B039100H8N",
+      "tier": "amap-exact"
     },
     {
       "id": "famen-temple",
@@ -300,32 +25,14 @@
         107.901,
         34.442
       ],
-      "why": "双源不一致 2323m",
-      "tencent": [
-        108.873786,
-        34.28836
+      "provider": "amap",
+      "after": [
+        107.903411,
+        34.438774
       ],
-      "amap": [
-        108.872249,
-        34.267506
-      ]
-    },
-    {
-      "id": "qianling",
-      "name": "乾陵",
-      "before": [
-        108.241,
-        34.571
-      ],
-      "why": "双源不一致 27720m",
-      "tencent": [
-        108.898084,
-        34.313303
-      ],
-      "amap": [
-        109.095711,
-        34.501881
-      ]
+      "drift_m": 421,
+      "amap_poi_id": "B0FFGWO56F",
+      "tier": "amap-exact"
     },
     {
       "id": "taibai-shan",
@@ -334,7 +41,14 @@
         107.748,
         34.06
       ],
-      "why": "腾讯未命中"
+      "provider": "amap",
+      "after": [
+        107.878659,
+        34.048156
+      ],
+      "drift_m": 12109,
+      "amap_poi_id": "B039500BA7",
+      "tier": "amap-exact"
     },
     {
       "id": "maoling-museum",
@@ -343,7 +57,26 @@
         108.561,
         34.328
       ],
-      "why": "双源均未命中"
+      "provider": "amap",
+      "after": [
+        108.586457,
+        34.338487
+      ],
+      "drift_m": 2612,
+      "amap_poi_id": "B038E00115",
+      "tier": "amap-exact"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "qianling",
+      "name": "乾陵",
+      "before": [
+        108.241,
+        34.571
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "lehua-cheng",
@@ -352,7 +85,8 @@
         108.988,
         34.535
       ],
-      "why": "腾讯未命中"
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "hancheng-lake",
@@ -361,7 +95,8 @@
         108.883,
         34.352
       ],
-      "why": "腾讯未命中"
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "futa-town",
@@ -370,15 +105,15 @@
         108.923,
         34.532
       ],
-      "why": "双源不一致 5309m",
-      "tencent": [
-        108.943584,
-        34.262912
-      ],
-      "amap": [
+      "provider": "amap",
+      "after": [
         109.001051,
         34.267802
-      ]
+      ],
+      "drift_m": 30238,
+      "amap_poi_id": "B0FFLO0JG8",
+      "tier": "amap-exact",
+      "why": "候选离估算 30238m > 20000m，疑似同名异地"
     }
   ],
   "errors": []

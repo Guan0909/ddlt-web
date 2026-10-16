@@ -1,23 +1,45 @@
 {
   "city": "上海",
   "date": "2026-10-16",
-  "fixed": [],
-  "skipped": [],
-  "errors": [
+  "fixed": [
+    {
+      "id": "zhaojialou",
+      "name": "召稼楼古镇",
+      "before": [
+        121.514,
+        31.058
+      ],
+      "provider": "amap",
+      "after": [
+        121.549645,
+        31.072955
+      ],
+      "drift_m": 3780,
+      "amap_poi_id": "B0FFFT5888",
+      "tier": "amap-exact"
+    }
+  ],
+  "skipped": [
     {
       "id": "yunnan-road",
       "name": "云南南路美食街",
-      "err": "腾讯 status=121 此key每日调用量已达到上限"
+      "before": [
+        121.479,
+        31.225
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "changli-road",
       "name": "昌里路夜市",
-      "err": "腾讯 status=121 此key每日调用量已达到上限"
-    },
-    {
-      "id": "zhaojialou",
-      "name": "召稼楼古镇",
-      "err": "腾讯 status=121 此key每日调用量已达到上限"
+      "before": [
+        121.505,
+        31.175
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
     }
-  ]
+  ],
+  "errors": []
 }

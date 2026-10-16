@@ -18,6 +18,7 @@ const CONFIRM_M = 300;        // 第一档：双源一致阈值（普通点）
 const CONFIRM_M_SUBURB = 600; // 第一档远郊放宽（POI 中心定义差异更大）
 const LOOSE_M = 1000;         // 第二档：双源一致阈值（仅当名称「完全相等」时才用）
 const LOOSE_M_SUBURB = 1500;  // 第二档远郊
+const MAX_MOVE_M = 20000;     // 只用高德时的位移上限：超过就当成同名异地，不落盘
 // 第二档存在的理由：街区/道路型 POI（回民街、洒金桥）两家给的「中心」天然差几百米，但两边都离我们的
 // 估算 9km 远——此时原值必错，取腾讯坐标远好于不修。名称必须完全相等，避免「同名异地」误修
 // （乾陵/华山/法门寺这类在别处同名 POI 的点，正是靠这一条挡住的）。
@@ -41,8 +42,8 @@ async function tencentSearch(kw, city, key) {
   if (j.status !== 0) throw new Error(`腾讯 status=${j.status} ${j.message || ''}`);
   return (j.data || []).map(d => ({ title: d.title, coord: [d.location.lng, d.location.lat], id: d.id, addr: d.address || '', cat: d.category || '' }));
 }
-async function amapSearch(kw, city, key) {
-  const url = `https://restapi.amap.com/v3/place/text?keywords=${encodeURIComponent(kw)}&city=${encodeURIComponent(city)}&citylimit=true&offset=10&key=${key}`;
+async function amapSearch(kw, city, key, nationwide) {
+  const url = `https://restapi.amap.com/v3/place/text?keywords=${encodeURIComponent(kw)}&city=${encodeURIComponent(city)}&citylimit=${nationwide ? 'false' : 'true'}&offset=10&key=${key}`;
   const j = await (await fetch(url)).json();
   if (j.status !== '1') throw new Error(`高德 infocode=${j.infocode} ${j.info || ''}`);
   return (j.pois || []).map(p => {
@@ -50,6 +51,13 @@ async function amapSearch(kw, city, key) {
     return { title: p.name, coord: [lng, lat], id: p.id, addr: p.address || '', cat: p.type || '' };
   }).filter(p => p.coord[0] && p.coord[1]);
 }
+// 只用高德时的名称判据（比双源模式更严）：必须完全相等，没有「互相包含」的余地
+function pickExact(cands, name) {
+  const names = [norm(name), norm(baseName(name))];
+  for (const c of cands) if (names.includes(norm(c.title))) return { c, score: 0 };
+  return null;
+}
+
 // 名称匹配：完全相等优先，其次互相包含
 function pickMatch(cands, name) {
   const want = norm(name);
@@ -71,8 +79,10 @@ async function main() {
   const dryRun = args.includes('--dry-run');
   const apply = args.includes('--apply');
   const TK = process.env.TENCENT_WS_KEY, AK = process.env.AMAP_WS_KEY;
-  if (!file) { console.error('用法：node scripts/repair-coords.js <spots.json> [--dry-run|--apply]'); process.exit(2); }
-  if (!dryRun && (!TK || !AK)) { console.error('需要 TENCENT_WS_KEY 与 AMAP_WS_KEY 环境变量（干跑请加 --dry-run）'); process.exit(2); }
+  const onlyAmap = args.includes('--provider') && args[args.indexOf('--provider') + 1] === 'amap';
+  if (!file) { console.error('用法：node scripts/repair-coords.js <spots.json> [--dry-run|--apply] [--provider amap]'); process.exit(2); }
+  if (!dryRun && !AK) { console.error('需要 AMAP_WS_KEY（双源模式还需 TENCENT_WS_KEY；干跑请加 --dry-run）'); process.exit(2); }
+  if (!dryRun && !onlyAmap && !TK) { console.error('双源模式需要 TENCENT_WS_KEY，或改用 --provider amap（只用高德，额度更高）'); process.exit(2); }
 
   const abs = path.resolve(file);
   const data = JSON.parse(fs.readFileSync(abs, 'utf8'));
@@ -89,6 +99,37 @@ async function main() {
     n++;
     await sleep(THROTTLE_MS);
     try {
+      // ---- 只用高德（额度更高）：名称必须完全相等 + 候选离估算 ≤ MAX_MOVE_M ----
+      if (onlyAmap) {
+        let hit = pickExact(await amapSearch(spot.name, city, AK, false), spot.name);
+        if (!hit) { await sleep(THROTTLE_MS); hit = pickExact(await amapSearch(baseName(spot.name), city, AK, false), spot.name); }
+        if (!hit) { await sleep(THROTTLE_MS); hit = pickExact(await amapSearch(spot.name, city, AK, true), spot.name); }  // 全国兜底（华山/法门寺这类在邻市的点）
+        const entry = { id: spot.id, name: spot.name, before: spot.coord.slice(), provider: 'amap' };
+        if (!hit) {
+          report.skipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
+          console.log(`  [${n}/${targets.length}] 跳过 ${spot.name}（高德未命中）`);
+          continue;
+        }
+        const drift = Math.round(hav(spot.coord, hit.c.coord));
+        entry.after = [+hit.c.coord[0].toFixed(6), +hit.c.coord[1].toFixed(6)];
+        entry.drift_m = drift;
+        entry.amap_poi_id = hit.c.id;
+        entry.tier = 'amap-exact';
+        if (drift > MAX_MOVE_M) {
+          report.skipped.push({ ...entry, why: `候选离估算 ${drift}m > ${MAX_MOVE_M}m，疑似同名异地` });
+          console.log(`  [${n}/${targets.length}] 跳过 ${spot.name}（高德候选离估算 ${drift}m，超 ${MAX_MOVE_M}m 上限）`);
+          continue;
+        }
+        report.fixed.push(entry);
+        if (apply) {
+          spot.coord = entry.after;
+          spot.coord_src = 'amap';
+          spot.amap_poi_id = hit.c.id;
+          spot.refreshed_at = report.date;
+        }
+        console.log(`  [${n}/${targets.length}] ${apply ? '修复' : '待修'} ${spot.name}：漂移 ${drift}m（高德·${hit.c.title}）`);
+        continue;
+      }
       const t = pickMatch(await tencentSearch(spot.name, city, TK), spot.name)
         || pickMatch(await tencentSearch(baseName(spot.name), city, TK), spot.name);
       await sleep(THROTTLE_MS);
