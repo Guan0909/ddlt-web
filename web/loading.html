@@ -112,28 +112,53 @@
       // ① 确认起点（裸文本 → 腾讯建议强匹配解析）
       setStage(0, 'on');
       let origin = req.origin;
+      let originCity = null;   // 解析出的起点所在城市（腾讯建议的 ad_info）
       if (origin.lng == null) {
         let j = null;
-        try { j = await DDN.cloudPost('searchPoi', { keyword: origin.name, region: req.city }, 8000); }
+        // region 留空 = 全国提示：不再把「上海地址」限制在默认城市里搜
+        try { j = await DDN.cloudPost('searchPoi', { keyword: origin.name, region: '' }, 8000); }
         catch (e) { throw new Error('网络不太稳，地点没有查到。再试一次。'); }
         const list = (j && j.data) || [];
         const q = origin.name.replace(/\s+/g, '');
         const hit = list.find(x => {
           const t = (x.title || '').replace(/\s+/g, '');
           return t && (t.includes(q) || q.includes(t));
-        });
+        }) || list[0];   // 没命中就取最相关的一条（腾讯按相关度排序），避免为了措辞差异卡住
         if (!hit) throw new Error(`没有找到「${origin.name}」。换个写法，或从建议里选一个。`);
         origin = { name: hit.title, lng: hit.lng, lat: hit.lat };
+        originCity = hit.city || null;
       }
       setStage(0, 'done', origin.name);
       await sleep(200);
 
       // ② 校验可行性（与云端同一引擎规则）
       setStage(1, 'on');
-      const spots = await DDN.loadSpots(req.city);
+      const normCity = s => String(s || '').replace(/市$/, '').replace(/(自治州|地区|盟)$/, '');
+      let city = req.city;
+      let spots = await DDN.loadSpots(city);
+      if (!spots && originCity) {   // 城市没开通但起点城市开通了：按起点的城市走
+        const cov = Object.keys(DDN.SPOT_FILES).find(c => normCity(originCity).startsWith(c));
+        if (cov) { city = cov; spots = await DDN.loadSpots(city); }
+      }
       if (!spots) throw new Error('这座城市暂未开通，换一座试试。');
-      const v = window.Engine.validateInputs(spots, origin, req.days);
+      let v = window.Engine.validateInputs(spots, origin, req.days);
+      // 起点落在所选城市之外（典型：默认城市 + 别的城市地址）→ 自动切换到装得下它的已开通城市
+      if (!v.ok) {
+        for (const c of Object.keys(DDN.SPOT_FILES)) {
+          if (c === city) continue;
+          const sp = await DDN.loadSpots(c).catch(() => null);
+          if (!sp) continue;
+          const v2 = window.Engine.validateInputs(sp, origin, req.days);
+          if (v2.ok) { city = c; spots = sp; v = v2; break; }
+        }
+      }
       if (!v.ok) throw new Error(v.message);
+      if (city !== req.city) {   // 切城成功：同步请求快照，后续生成/返回都按新城市
+        req.city = city;
+        DDN.saveRequest(req);
+        $('meta').textContent = `${city} · ${DDN.DAY_CN[(req.days || 3) - 1] || ''}日 · 从 ${origin.name} 出发`;
+        DDN.toast(`起点在${city}，已按${city}规划`);
+      }
       setStage(1, 'done');
       await sleep(200);
 

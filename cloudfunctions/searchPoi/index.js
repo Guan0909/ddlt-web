@@ -18,10 +18,12 @@ exports.main = async (event) => {
   }
 
   const kw = String(body.keyword || '').trim().slice(0, 30);
-  if (!kw || !body.region) return fail('缺参数');
+  if (!kw) return fail('缺参数');
+  // region 可空 = 全国提示（首页未选城市时不能把搜索限制在某个城市里）
+  const region = body.region ? String(body.region).slice(0, 10) : '';
   if (!(await store.tencentBudget())) return ok({ data: [], degraded: true });
   try {
-    return ok({ data: await lbs.suggestion(kw, String(body.region).slice(0, 10)) });
+    return ok({ data: await lbs.suggestion(kw, region) });
   } catch (e) {
     return ok({ data: [], degraded: true });   // 降级为空建议，前端回退本地库
   }

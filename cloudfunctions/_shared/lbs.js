@@ -32,14 +32,22 @@ async function call(path, params) {
 }
 
 // 关键词输入提示（线上起点搜索主用，6000/日）
+// region 可空：空 = 全国提示（首页未选城市时用，避免「默认成都搜上海」搜不到）
 async function suggestionRaw(keyword, region) {
-  return call('/ws/place/v1/suggestion', { keyword, region, page_size: 10 });
+  const params = { keyword, page_size: 10 };
+  if (region) params.region = region;
+  return call('/ws/place/v1/suggestion', params);
 }
 async function suggestion(keyword, region) {
   const j = await suggestionRaw(keyword, region);
   return (j.data || []).map(d => ({
     id: d.id, title: d.title, address: d.address || '',
     lng: d.location && d.location.lng, lat: d.location && d.location.lat,
+    // 城市/区县：前端据此自动切换城市。注意腾讯 suggestion 是**平铺字段**（province/city/district/adcode），
+    // 不是 ad_info 嵌套（ad_info 是 place/search 等接口的形态），两者都兜一下。
+    city: d.city || (d.ad_info && d.ad_info.city) || '',
+    district: d.district || (d.ad_info && d.ad_info.district) || '',
+    adcode: d.adcode || (d.ad_info && d.ad_info.adcode) || '',
   })).filter(d => d.lng != null);
 }
 
