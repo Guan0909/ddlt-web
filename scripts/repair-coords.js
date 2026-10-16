@@ -51,10 +51,63 @@ async function amapSearch(kw, city, key, nationwide) {
     return { title: p.name, coord: [lng, lat], id: p.id, addr: p.address || '', cat: p.type || '' };
   }).filter(p => p.coord[0] && p.coord[1]);
 }
+// 名称变体：POI 库里常带「景区/公园/观景台/欢乐世界」这类后缀，官方 POI 名未必带；
+// 也可能反过来（我们要「汉城湖公园」，高德叫「汉城湖旅游风景区」）。只做**去后缀**，不做模糊包含，
+// 以免像「乾陵黑猪肉」这种同名店铺被误当景点。
+const SUFFIXES = ['国家森林公园', '森林公园', '旅游风景区', '风景名胜区', '湿地公园', '欢乐世界', '文化街区',
+  '观景台', '博物馆', '步行街', '美食街', '风景区', '旅游区', '古镇', '景区', '公园', '夜市', '老街'];
+function nameVariants(name) {
+  const base = baseName(name);
+  const out = [name, base];
+  for (const s of SUFFIXES) {
+    if (name.endsWith(s) && name.length > s.length + 1) out.push(name.slice(0, -s.length));
+    if (base.endsWith(s) && base.length > s.length + 1) out.push(base.slice(0, -s.length));
+  }
+  return [...new Set(out.filter(Boolean))];
+}
+
 // 只用高德时的名称判据（比双源模式更严）：必须完全相等，没有「互相包含」的余地
-function pickExact(cands, name) {
-  const names = [norm(name), norm(baseName(name))];
-  for (const c of cands) if (names.includes(norm(c.title))) return { c, score: 0 };
+// 类目白名单：只在「本身是地点」的 POI 上做包含匹配，避免「乾陵黑猪肉」「云南南路小吃店」这类同名店铺
+const PLACE_CATS = /风景名胜|旅游景点|景点|公园|娱乐|休闲|体育|展馆|展览|度假|古镇|景区|寺/;
+// 反向排除：同名的小学/医院/公司/店铺常被包含匹配误收（实测「桠溪国际慢城」匹配到了「…慢城小学」）
+const NOT_PLACE = /学校|小学|中学|大学|医院|诊所|公司|工厂|有限|门店|便利店|超市|银行|小区|住宅|公寓|办事处|村委会|加油站|停车场|收费站|公交站|地铁站/;
+function pickExact(cands, name, loose) {
+  const vars = nameVariants(name).map(norm).filter(v => v.length >= 2);
+  // 带括号限定词的候选（「鸡鸣寺(地铁站)」「X-东门」「X(暂停开放)」）归一化后会与主名相同，
+  // 但它们是入口/站点而非本体：排到后面，让不带限定词的候选优先。
+  const ordered = [...cands].sort((a, b) => (/[（(]|-/.test(a.title) ? 1 : 0) - (/[（(]|-/.test(b.title) ? 1 : 0));
+  cands = ordered;
+  for (const c of cands) if (vars.includes(norm(c.title))) return { c, how: 'exact' };
+  // 官方名 = 我们的名字 + 已知后缀（「汉城湖」→「汉城湖旅游风景区」）
+  for (const c of cands) {
+    const t = norm(c.title);
+    for (const v of vars) if (SUFFIXES.some(s => t === v + norm(s))) return { c, how: 'suffix' };
+  }
+  if (loose) {
+    // 第三档：类目受控的包含匹配（挡住「乾陵黑猪肉」这类同名店铺）
+    for (const c of cands) {
+      const t = norm(c.title);
+      for (const v of vars) {
+        const cat = String(c.cat || '');
+        if (t.includes(v) && PLACE_CATS.test(cat) && !NOT_PLACE.test(cat) && !NOT_PLACE.test(c.title)) return { c, how: 'contains+cat' };
+      }
+    }
+    // 第四档：官方改名的情况（「桠溪国际慢城」→「南京高淳国际慢城」、「溧水天生桥」→「天生桥景区」）。
+    // 判据：与我们的名字有 ≥3 字连续公共子串 + 类目是景点类 + 非同名店铺/学校。
+    for (const c of cands) {
+      const t = norm(c.title), cat = String(c.cat || '');
+      if (!PLACE_CATS.test(cat) || NOT_PLACE.test(cat) || NOT_PLACE.test(c.title)) continue;
+      for (const v of vars) {
+        for (let len = Math.min(v.length, t.length); len >= 3; len--) {
+          let hitSub = false;
+          for (let i = 0; i + len <= v.length && !hitSub; i++) {
+            if (t.includes(v.slice(i, i + len))) hitSub = true;
+          }
+          if (hitSub) return { c, how: 'substr' + len };
+        }
+      }
+    }
+  }
   return null;
 }
 
@@ -99,6 +152,7 @@ async function main() {
   let prev = { fixed: [], skipped: [], errors: [] };
   try { prev = JSON.parse(fs.readFileSync(reportPath0, 'utf8')); } catch (e) {}
   const report = { city, date: today, runs: [...new Set([...(prev.runs || [prev.date]).filter(Boolean), today])], fixed: [], skipped: [], errors: [] };
+  const runSkipped = [];   // 仅本次运行：供 --prune-unmatched 判断「地图数据源里确实没有」
   const mergeBy = (oldArr, newArr) => {
     const seen = new Set(newArr.map(x => x.id));
     return [...oldArr.filter(x => !seen.has(x.id)), ...newArr];
@@ -110,12 +164,32 @@ async function main() {
     try {
       // ---- 只用高德（额度更高）：名称必须完全相等 + 候选离估算 ≤ MAX_MOVE_M ----
       if (onlyAmap) {
-        let hit = pickExact(await amapSearch(spot.name, city, AK, false), spot.name);
-        if (!hit) { await sleep(THROTTLE_MS); hit = pickExact(await amapSearch(baseName(spot.name), city, AK, false), spot.name); }
-        if (!hit) { await sleep(THROTTLE_MS); hit = pickExact(await amapSearch(spot.name, city, AK, true), spot.name); }  // 全国兜底（华山/法门寺这类在邻市的点）
+        // 依次尝试：本城（名称变体）→ 全国带城市偏置 → 全国不带 city（乾陵/乐华这类实际在邻市的点，
+        // 只要带 city 参数就会一直被本地同名店铺占满结果）
+        // 收集三轮搜索的命中，取「位移在 MAX_MOVE_M 内、离估算最近」的那个。
+        // 不能第一个命中就停：本城偏置常先给出同名异地（如茯茶镇），而正确结果在邻市（咸阳泾阳）。
+        const cands = [];
+        const attempts = [
+          ...nameVariants(spot.name).map(kw => [kw, city, false, false]),
+          ...nameVariants(spot.name).map(kw => [kw, city, true, true]),
+          ...nameVariants(spot.name).map(kw => [kw, '', true, true]),
+        ];
+        for (const [kw, c, nat, loose] of attempts) {
+          const h = pickExact(await amapSearch(kw, c, AK, nat), spot.name, loose);
+          await sleep(THROTTLE_MS);
+          if (h) {
+            h.drift = Math.round(hav(spot.coord, h.c.coord));
+            cands.push({ hit: h, how: h.how, kw });
+            if (h.drift <= MAX_MOVE_M) break;   // 已在合理范围内，不必再搜
+          }
+        }
+        const inRange = cands.filter(x => x.hit.drift <= MAX_MOVE_M).sort((a, b) => a.hit.drift - b.hit.drift)[0];
+        const hit = inRange ? inRange.hit : null;
+        const entryHow = inRange ? (inRange.how || 'exact') : 'exact';
         const entry = { id: spot.id, name: spot.name, before: spot.coord.slice(), provider: 'amap' };
         if (!hit) {
           report.skipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
+          runSkipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
           console.log(`  [${n}/${targets.length}] 跳过 ${spot.name}（高德未命中）`);
           continue;
         }
@@ -123,7 +197,7 @@ async function main() {
         entry.after = [+hit.c.coord[0].toFixed(6), +hit.c.coord[1].toFixed(6)];
         entry.drift_m = drift;
         entry.amap_poi_id = hit.c.id;
-        entry.tier = 'amap-exact';
+        entry.tier = 'amap-' + entryHow;
         if (drift > MAX_MOVE_M) {
           report.skipped.push({ ...entry, why: `候选离估算 ${drift}m > ${MAX_MOVE_M}m，疑似同名异地` });
           console.log(`  [${n}/${targets.length}] 跳过 ${spot.name}（高德候选离估算 ${drift}m，超 ${MAX_MOVE_M}m 上限）`);
@@ -184,6 +258,14 @@ async function main() {
 
   if (apply) {
     data._meta.coord_repaired_at = report.date;
+    // --prune-unmatched：按「以地图数据源为准」的策略，删掉本次确认在高德/腾讯都搜不到的估算点
+    if (args.includes('--prune-unmatched')) {
+      const gone = new Set(runSkipped.filter(s => /未命中/.test(s.why)).map(s => s.id));
+      const before = data.spots.length;
+      data.spots = data.spots.filter(s => !(gone.has(s.id) && s.coord_src === 'estimate'));
+      report.pruned = [...gone];
+      console.log(`按策略删除搜不到的景点：${before - data.spots.length} 个（${[...gone].join('、')}）`);
+    }
     fs.writeFileSync(abs, JSON.stringify(data, null, 2) + '\n');
   }
   report.fixed = mergeBy(prev.fixed || [], report.fixed);

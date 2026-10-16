@@ -1,5 +1,6 @@
 {
   "city": "上海",
+  "date": "2026-10-16",
   "runs": [
     "2026-10-16"
   ],
@@ -18,6 +19,38 @@
       ],
       "drift_m": 3780,
       "amap_poi_id": "B0FFFT5888",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunnan-road",
+      "name": "云南南路美食街",
+      "before": [
+        121.479,
+        31.225
+      ],
+      "provider": "amap",
+      "after": [
+        121.481056,
+        31.22723
+      ],
+      "drift_m": 316,
+      "amap_poi_id": "BZAFR0024G",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "changli-road",
+      "name": "昌里路夜市",
+      "before": [
+        121.505,
+        31.175
+      ],
+      "provider": "amap",
+      "after": [
+        121.49584,
+        31.17444
+      ],
+      "drift_m": 874,
+      "amap_poi_id": "BZAFR0022B",
       "tier": "amap-exact"
     }
   ],

@@ -1,5 +1,6 @@
 {
   "city": "重庆",
+  "date": "2026-10-16",
   "runs": [
     "2026-10-16"
   ],
@@ -131,6 +132,22 @@
       "tencent_poi_id": "17099275274232197624",
       "agree_m": 151,
       "tier": 1
+    },
+    {
+      "id": "nanshan-yikeshu",
+      "name": "南山一棵树观景台",
+      "before": [
+        106.567,
+        29.524
+      ],
+      "provider": "amap",
+      "after": [
+        106.602505,
+        29.545316
+      ],
+      "drift_m": 4173,
+      "amap_poi_id": "B0FFGAMI8G",
+      "tier": "amap-suffix"
     }
   ],
   "skipped": [

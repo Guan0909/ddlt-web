@@ -1,5 +1,6 @@
 {
   "city": "西安",
+  "date": "2026-10-16",
   "runs": [
     "2026-10-16"
   ],
@@ -338,6 +339,70 @@
       ],
       "drift_m": 2612,
       "amap_poi_id": "B038E00115",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵",
+      "before": [
+        108.241,
+        34.571
+      ],
+      "provider": "amap",
+      "after": [
+        108.219484,
+        34.572302
+      ],
+      "drift_m": 1975,
+      "amap_poi_id": "B038E01WUG",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "before": [
+        108.988,
+        34.535
+      ],
+      "provider": "amap",
+      "after": [
+        108.918418,
+        34.472564
+      ],
+      "drift_m": 9426,
+      "amap_poi_id": "B0FFL2JXHZ",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "hancheng-lake",
+      "name": "汉城湖公园",
+      "before": [
+        108.883,
+        34.352
+      ],
+      "provider": "amap",
+      "after": [
+        108.918796,
+        34.298276
+      ],
+      "drift_m": 6819,
+      "amap_poi_id": "B001D0WRTA",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "before": [
+        108.923,
+        34.532
+      ],
+      "provider": "amap",
+      "after": [
+        108.897797,
+        34.519545
+      ],
+      "drift_m": 2692,
+      "amap_poi_id": "B0FFGG4MG0",
       "tier": "amap-exact"
     }
   ],
