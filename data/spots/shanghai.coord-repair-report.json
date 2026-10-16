@@ -1,0 +1,23 @@
+{
+  "city": "上海",
+  "date": "2026-10-16",
+  "fixed": [],
+  "skipped": [],
+  "errors": [
+    {
+      "id": "yunnan-road",
+      "name": "云南南路美食街",
+      "err": "腾讯 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "changli-road",
+      "name": "昌里路夜市",
+      "err": "腾讯 status=121 此key每日调用量已达到上限"
+    },
+    {
+      "id": "zhaojialou",
+      "name": "召稼楼古镇",
+      "err": "腾讯 status=121 此key每日调用量已达到上限"
+    }
+  ]
+}

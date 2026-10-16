@@ -1,0 +1,146 @@
+{
+  "city": "重庆",
+  "date": "2026-10-16",
+  "fixed": [
+    {
+      "id": "nanshan-botanical",
+      "name": "南山植物园",
+      "before": [
+        106.572,
+        29.532
+      ],
+      "after": [
+        106.629441,
+        29.555351
+      ],
+      "drift_m": 6133,
+      "tencent_poi_id": "3770729903732863112",
+      "agree_m": 136,
+      "tier": 1
+    },
+    {
+      "id": "nanshan-hotpot",
+      "name": "南山火锅一条街",
+      "before": [
+        106.569,
+        29.528
+      ],
+      "after": [
+        106.589447,
+        29.496344
+      ],
+      "drift_m": 4038,
+      "tencent_poi_id": "14858198900453284119",
+      "agree_m": 7,
+      "tier": 1
+    },
+    {
+      "id": "laojundong",
+      "name": "老君洞",
+      "before": [
+        106.562,
+        29.522
+      ],
+      "after": [
+        106.602082,
+        29.542263
+      ],
+      "drift_m": 4485,
+      "tencent_poi_id": "8322721773661518574",
+      "agree_m": 0,
+      "tier": 1
+    },
+    {
+      "id": "huangjueya",
+      "name": "黄桷垭老街",
+      "before": [
+        106.575,
+        29.518
+      ],
+      "after": [
+        106.604193,
+        29.536273
+      ],
+      "drift_m": 3479,
+      "tencent_poi_id": "5795311758403592289",
+      "agree_m": 198,
+      "tier": 1
+    },
+    {
+      "id": "danzishi",
+      "name": "弹子石老街·长嘉汇",
+      "before": [
+        106.596,
+        29.553
+      ],
+      "after": [
+        106.58789,
+        29.579806
+      ],
+      "drift_m": 3082,
+      "tencent_poi_id": "4903531222909869275",
+      "agree_m": 16,
+      "tier": 1
+    },
+    {
+      "id": "cq-happy-valley",
+      "name": "重庆欢乐谷",
+      "before": [
+        106.602,
+        29.662
+      ],
+      "after": [
+        106.517198,
+        29.668936
+      ],
+      "drift_m": 8230,
+      "tencent_poi_id": "13839915278396328045",
+      "agree_m": 84,
+      "tier": 1
+    },
+    {
+      "id": "yuanboyuan",
+      "name": "重庆园博园",
+      "before": [
+        106.582,
+        29.653
+      ],
+      "after": [
+        106.551576,
+        29.678899
+      ],
+      "drift_m": 4115,
+      "tencent_poi_id": "10522563137579752695",
+      "agree_m": 160,
+      "tier": 1
+    },
+    {
+      "id": "wulong-tiankeng",
+      "name": "武隆天生三桥",
+      "before": [
+        107.79,
+        29.3
+      ],
+      "after": [
+        107.803602,
+        29.432832
+      ],
+      "drift_m": 14829,
+      "tencent_poi_id": "17099275274232197624",
+      "agree_m": 151,
+      "tier": 1
+    }
+  ],
+  "skipped": [
+    {
+      "id": "nanshan-yikeshu",
+      "name": "南山一棵树观景台",
+      "before": [
+        106.567,
+        29.524
+      ],
+      "why": "高德未命中"
+    }
+  ],
+  "errors": []
+}

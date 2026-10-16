@@ -22,7 +22,8 @@
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
     "photos_at": "2026-10-13",
-    "rematch_at": "2026-10-13"
+    "rematch_at": "2026-10-13",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
@@ -711,11 +712,13 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        104.108,
-        30.676
+        104.144301,
+        30.678213
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/31a0b4d97a84e7c1fd81262bbcddaef4"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/31a0b4d97a84e7c1fd81262bbcddaef4",
+      "tencent_poi_id": "1096506489349581869",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zoo",
@@ -930,11 +933,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        104.087,
-        30.319
+        103.97054,
+        30.31784
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/c7f52a244944ad3c980d93daf15663de"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/c7f52a244944ad3c980d93daf15663de",
+      "tencent_poi_id": "3985251501632989962",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "luodai",
@@ -978,11 +983,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        103.615,
-        30.745
+        103.55903,
+        30.814321
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/f6832aa4c85fe5286b81092d411f9e3a"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/f6832aa4c85fe5286b81092d411f9e3a",
+      "tencent_poi_id": "4093783107240830310",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "pingle",
@@ -1124,11 +1131,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        104.34,
-        30.52
+        104.260054,
+        30.350602
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/c0f93ddc9c65cf950f70fd7ff7c58551"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/c0f93ddc9c65cf950f70fd7ff7c58551",
+      "tencent_poi_id": "8391918158802269334",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "pengzhen",
@@ -1221,11 +1230,13 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        103.86,
-        30.81
+        103.930261,
+        30.895073
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/65c688651a3cdcf300de613ac2075704"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/65c688651a3cdcf300de613ac2075704",
+      "tencent_poi_id": "720423818795960185",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shujin",
@@ -1294,11 +1305,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        104.085,
-        30.59
+        104.082755,
+        30.559582
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/477074e8344065b93b637ee29a9672af"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/477074e8344065b93b637ee29a9672af",
+      "tencent_poi_id": "2230387241916622968",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jiangtan",
@@ -1317,11 +1330,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        104.089,
-        30.585
+        104.080884,
+        30.555553
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/7673f458c7378eeeb68d0ac6eff6db98"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/7673f458c7378eeeb68d0ac6eff6db98",
+      "tencent_poi_id": "15969743704004614932",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qinglong-lake",

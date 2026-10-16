@@ -22,7 +22,8 @@
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
     "photos_at": "2026-10-13",
-    "rematch_at": "2026-10-13"
+    "rematch_at": "2026-10-13",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
@@ -1538,11 +1539,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        119.8468,
-        30.2318
+        119.764545,
+        30.254528
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/0d18d4e7d1f4f3340447d84c143413e9"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/0d18d4e7d1f4f3340447d84c143413e9",
+      "tencent_poi_id": "2074893506557766113",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "daming-mountain",

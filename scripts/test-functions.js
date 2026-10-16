@@ -178,6 +178,55 @@ async function call(main, payload, opts = {}) {
   check('抽稀误差受控：相对原折线 ≤ 步行阈值 6m', devOf(nearPts, twice) <= 6.001, devOf(nearPts, twice).toFixed(2) + 'm');
   check('阈值口径：步行 6m / 公交 8m / 驾车 12m', geom.TOL_M.walk === 6 && geom.TOL_M.transit === 8 && geom.TOL_M.drive === 12 && geom.SNAP_MAX_M === 120);
 
+  // ---------- routeKit：真实时长排序再优化（纯函数，不联网） ----------
+  console.log('\n### routeKit · 日内排序再优化（分组约束 + 守卫）');
+  const rk = loadFn('genRoute');
+  const routeKit = require(path.join(BUILD_FNS, 'genRoute', 'routeKit.js'));
+  // 引擎产出的顺序形如：mid（含锚点）→ early → mid → late，这里照此构造
+  const stops6 = [
+    { id: 'a', name: 'A', cat: '古迹', tags: [], coord: [104.01, 30.01] },
+    { id: 'b', name: 'B', cat: '街区', tags: ['早去'], coord: [104.02, 30.02] },
+    { id: 'd', name: 'D', cat: '公园', tags: [], coord: [104.04, 30.04] },
+    { id: 'c', name: 'C', cat: '夜景', tags: [], coord: [104.03, 30.03] },
+  ];
+  check('分组：按「mid → early → mid → late」切段（组内才允许重排）',
+    JSON.stringify(routeKit.slotGroups(stops6).map(g => g.cls)) === JSON.stringify(['mid', 'early', 'mid', 'late']),
+    JSON.stringify(routeKit.slotGroups(stops6).map(g => g.cls)));
+  const origin0 = { lng: 104.0, lat: 30.0 };
+  const mk = (table) => ({ minutes: (a, b) => table[a.lng.toFixed(2) + ',' + a.lat.toFixed(2) + '>' + b.lng.toFixed(2) + ',' + b.lat.toFixed(2)] ?? 10 });
+  // 造一个「直线距离看不出来、真实时长很差」的顺序：A→B 极贵，A→D 便宜
+  const km = (a, b) => a.lng.toFixed(2) + ',' + a.lat.toFixed(2) + '>' + b.lng.toFixed(2) + ',' + b.lat.toFixed(2);
+  const table = {};
+  const set = (a, b, v) => { table[km(a, b)] = v; table[km(b, a)] = v; };
+  const A = { lng: 104.01, lat: 30.01 }, B = { lng: 104.02, lat: 30.02 }, C = { lng: 104.03, lat: 30.03 }, D = { lng: 104.04, lat: 30.04 };
+  set(origin0, A, 2); set(origin0, B, 40); set(origin0, C, 40); set(origin0, D, 40);
+  set(A, B, 40); set(B, C, 2); set(C, D, 2); set(A, D, 3); set(A, C, 40); set(B, D, 40);
+  const midStops = [
+    { id: 'a', name: 'A', cat: '古迹', tags: [], coord: [A.lng, A.lat] },
+    { id: 'b', name: 'B', cat: '街区', tags: [], coord: [B.lng, B.lat] },
+    { id: 'd', name: 'D', cat: '公园', tags: [], coord: [D.lng, D.lat] },
+  ];
+  const pt = s => (s.coord ? { lng: s.coord[0], lat: s.coord[1] } : { lng: s.lng, lat: s.lat });
+  const minsSpots = (x, y) => table[km(pt(x), pt(y))] ?? 10;
+  const before = routeKit.loopMinutes(midStops, origin0, minsSpots);
+  const reordered = routeKit.reorderByRealMinutes(midStops, origin0, mk(table));
+  const after = routeKit.loopMinutes(reordered, origin0, minsSpots);
+  check('再优化：真实时长明显更差时会被重排', after < before * 0.95 && after <= before - 3,
+    `${before} → ${after}（${reordered.map(s => s.name).join('→')}）`);
+  check('再优化：当天第 1 站被钉住（D1 锚点规则）', reordered[0].id === 'a', reordered.map(s => s.id).join(','));
+  const flat = { minutes: () => 10 };
+  const same = routeKit.reorderByRealMinutes(midStops, origin0, flat);
+  check('守卫：省得不够（<5% 或 <3min）时保持引擎顺序',
+    same.map(s => s.id).join(',') === midStops.map(s => s.id).join(','), same.map(s => s.id).join(','));
+  const lateGroup = [
+    { id: 'a', name: 'A', cat: '古迹', tags: [], coord: [A.lng, A.lat] },
+    { id: 'b', name: 'B', cat: '夜景', tags: [], coord: [B.lng, B.lat] },
+    { id: 'd', name: 'D', cat: '夜景', tags: [], coord: [D.lng, D.lat] },
+  ];
+  const keepLate = routeKit.reorderByRealMinutes(lateGroup, origin0, mk(table));
+  check('分组约束：夜景组的点不会被提前到前面', keepLate[keepLate.length - 1].cat === '夜景' && keepLate.findIndex(s => s.cat === '夜景') === 1,
+    keepLate.map(s => s.name).join('→'));
+
   console.log(`\n${'='.repeat(58)}`);
   console.log(fail ? `共 ${fail} 项校验失败（通过 ${pass} 项）` : `云函数全部用例通过（${pass} 项）`);
   process.exit(fail ? 1 : 0);

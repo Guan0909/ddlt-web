@@ -20,9 +20,10 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "backfilled_at": "2026-10-13",
+    "backfilled_at": "2026-10-16",
     "photos_at": "2026-10-13",
-    "rematch_at": "2026-10-13"
+    "rematch_at": "2026-10-13",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
@@ -191,11 +192,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.9398,
-        34.341
+        108.94704,
+        34.25943
       ],
-      "coord_src": "estimate",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/3b525983-7154-4c03-9423-6683ecfef221.jpg"
+      "coord_src": "tencent",
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/3b525983-7154-4c03-9423-6683ecfef221.jpg",
+      "tencent_poi_id": "4390159242788620918",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "drum-tower",
@@ -214,11 +217,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.9335,
-        34.3395
+        108.943507,
+        34.259963
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/6a0ee775f907dbd566bc65d211e8bd07"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/6a0ee775f907dbd566bc65d211e8bd07",
+      "tencent_poi_id": "18053060163101397045",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "muslim-quarter",
@@ -237,11 +242,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.935,
-        34.344
+        108.943659,
+        34.262198
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486",
+      "tencent_poi_id": "8124746567700936037",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "huaqing-palace",
@@ -534,11 +541,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.927,
-        34.3485
+        108.933815,
+        34.26971
       ],
-      "coord_src": "estimate",
-      "photo": "https://aos-comment.amap.com/B001D1388K/comment/a9e04045dccc46fbc7949803e930ba03_2048_2048_80.jpg"
+      "coord_src": "tencent",
+      "photo": "https://aos-comment.amap.com/B001D1388K/comment/a9e04045dccc46fbc7949803e930ba03_2048_2048_80.jpg",
+      "tencent_poi_id": "12829014348175675351",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "changan-12",
@@ -682,11 +691,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.932,
-        34.341
+        108.942406,
+        34.261974
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/6e54d5316d72db1298ffca984d3a36aa"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/6e54d5316d72db1298ffca984d3a36aa",
+      "tencent_poi_id": "8985967719572979868",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qianling",
@@ -753,11 +764,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.9305,
-        34.344
+        108.940742,
+        34.264411
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/cb82e73fffcb34804ff9e6cff9078d1a"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/cb82e73fffcb34804ff9e6cff9078d1a",
+      "tencent_poi_id": "18285973750810689517",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xingqing-palace",
@@ -851,11 +864,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        109.066,
-        34.334
+        109.020618,
+        34.352445
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/e542d8a83f54be8d7118f5cc6922c5eb"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/e542d8a83f54be8d7118f5cc6922c5eb",
+      "tencent_poi_id": "6592749071948882180",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "taibai-shan",
@@ -993,11 +1008,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.934,
-        34.3435
+        108.943268,
+        34.262812
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/4b579228b1b7b93f2000ee2686bc9612"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/4b579228b1b7b93f2000ee2686bc9612",
+      "tencent_poi_id": "8540350244397692475",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qujiang-pool",
@@ -1236,11 +1253,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.9285,
-        34.355
+        108.925826,
+        34.274583
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/c09b518f33c17363603a346f2e054ff7"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/c09b518f33c17363603a346f2e054ff7",
+      "tencent_poi_id": "838434444745600016",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shuilu-an",
@@ -1385,10 +1404,12 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.9485,
-        34.346
+        108.947549,
+        34.260668
       ],
-      "coord_src": "estimate"
+      "coord_src": "tencent",
+      "tencent_poi_id": "17639991583837671755",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shaanxi-nature",
@@ -1432,11 +1453,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.918,
-        34.3545
+        108.919322,
+        34.284859
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/d557836fcc02280d0000002735522368?type=pic"
+      "coord_src": "tencent",
+      "photo": "https://store.is.autonavi.com/showpic/d557836fcc02280d0000002735522368?type=pic",
+      "tencent_poi_id": "11295369013625181971",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "taiping-forest",
@@ -1455,11 +1478,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        108.597,
-        33.991
+        108.657871,
+        33.91729
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/b81889e644ac2173ee077f4b9937fc19"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/b81889e644ac2173ee077f4b9937fc19",
+      "tencent_poi_id": "2802796809177683920",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xiangji-temple",
@@ -1478,11 +1503,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.869,
-        34.151
+        108.892609,
+        34.122794
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/90e376bac865ec340000003569842502?type=pic"
+      "coord_src": "tencent",
+      "photo": "https://store.is.autonavi.com/showpic/90e376bac865ec340000003569842502?type=pic",
+      "tencent_poi_id": "3115760142743085429",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "louguantai",
@@ -1548,11 +1575,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        109.06,
-        34.415
+        109.005259,
+        34.419987
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/e7c4009a5af09ee78a47e74332562c11"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/e7c4009a5af09ee78a47e74332562c11",
+      "tencent_poi_id": "10417163419935596588",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dahu-1935",
@@ -1619,11 +1648,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.716,
-        34.253
+        108.74792,
+        34.22742
       ],
-      "coord_src": "estimate",
-      "photo": "https://aos-comment.amap.com/B0FFICEIL2/headerImg/5830d8a0518c10aaa0dd146136a4a204_2048_2048_80.jpg"
+      "coord_src": "tencent",
+      "photo": "https://aos-comment.amap.com/B0FFICEIL2/headerImg/5830d8a0518c10aaa0dd146136a4a204_2048_2048_80.jpg",
+      "tencent_poi_id": "2199031851696",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "han-weiyang",
@@ -1642,11 +1673,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.856,
-        34.356
+        108.862934,
+        34.306958
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/22668578c73cbc280000003362558303"
+      "coord_src": "tencent",
+      "photo": "https://store.is.autonavi.com/showpic/22668578c73cbc280000003362558303",
+      "tencent_poi_id": "4635583792320136966",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qinzhen",
@@ -1665,11 +1698,13 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        108.641,
-        34.071
+        108.748093,
+        34.106562
       ],
-      "coord_src": "estimate",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/e0c5cb1b-b62d-42b9-a092-64cbf526e1bc.jpg"
+      "coord_src": "tencent",
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/e0c5cb1b-b62d-42b9-a092-64cbf526e1bc.jpg",
+      "tencent_poi_id": "8360984109519175453",
+      "refreshed_at": "2026-10-16"
     }
   ]
 }

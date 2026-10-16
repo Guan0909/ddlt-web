@@ -22,7 +22,8 @@
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "backfilled_at": "2026-10-13",
     "photos_at": "2026-10-13",
-    "rematch_at": "2026-10-13"
+    "rematch_at": "2026-10-13",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
@@ -763,11 +764,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.572,
-        29.532
+        106.629441,
+        29.555351
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/0d66f662939501dcc4947e2e2e53c5d6"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/0d66f662939501dcc4947e2e2e53c5d6",
+      "tencent_poi_id": "3770729903732863112",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nanshan-hotpot",
@@ -786,11 +789,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.569,
-        29.528
+        106.589447,
+        29.496344
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/8226e8daddd691bc53d9988a34ce13ed"
+      "coord_src": "tencent",
+      "photo": "https://store.is.autonavi.com/showpic/8226e8daddd691bc53d9988a34ce13ed",
+      "tencent_poi_id": "14858198900453284119",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "laojundong",
@@ -809,11 +814,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.562,
-        29.522
+        106.602082,
+        29.542263
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/19632ee5a811c14891aa4b7a51c1657a"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/19632ee5a811c14891aa4b7a51c1657a",
+      "tencent_poi_id": "8322721773661518574",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "huangjueya",
@@ -832,11 +839,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.575,
-        29.518
+        106.604193,
+        29.536273
       ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/64c9653dd4cd2b564b43f7ce98aca70e"
+      "coord_src": "tencent",
+      "photo": "https://store.is.autonavi.com/showpic/64c9653dd4cd2b564b43f7ce98aca70e",
+      "tencent_poi_id": "5795311758403592289",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nanbin-road",
@@ -880,11 +889,13 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.596,
-        29.553
+        106.58789,
+        29.579806
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/61d46fc3a0ae5f57a17f395bfa250493"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/61d46fc3a0ae5f57a17f395bfa250493",
+      "tencent_poi_id": "4903531222909869275",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "longmenhao",
@@ -1226,11 +1237,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.602,
-        29.662
+        106.517198,
+        29.668936
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/5114909a94f282ed812b2f70f7600b4e"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/5114909a94f282ed812b2f70f7600b4e",
+      "tencent_poi_id": "13839915278396328045",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "hanhai-oceanpark",
@@ -1299,11 +1312,13 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.582,
-        29.653
+        106.551576,
+        29.678899
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/f93a392c0587b27cc4901829cfe56011"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/f93a392c0587b27cc4901829cfe56011",
+      "tencent_poi_id": "10522563137579752695",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "keyuan-4th",
@@ -1445,11 +1460,13 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        107.79,
-        29.3
+        107.803602,
+        29.432832
       ],
-      "coord_src": "estimate",
-      "photo": "http://store.is.autonavi.com/showpic/e6fe25b445e04e5d48344d4927386e0a"
+      "coord_src": "tencent",
+      "photo": "http://store.is.autonavi.com/showpic/e6fe25b445e04e5d48344d4927386e0a",
+      "tencent_poi_id": "17099275274232197624",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "fairy-mountain",

@@ -57,8 +57,9 @@ async function buildCommuteFn(origin, stopObjs, suburb) {
   }
 
   // 批量矩阵补齐步行/驾车缺失段（每模式 1 次调用，顺带把全矩阵写进缓存）
+  // froms 取「全部点」而非仅缺失腿的起点：同一次调用就能拿到全对时长，供日内排序再优化使用（不增加调用次数）
   for (const mode of ['walking', 'driving']) {
-    const froms = [...missing[mode]];
+    const froms = missing[mode].size ? pts.map((_, i) => i) : [];
     if (!froms.length) continue;
     if (!(await store.tencentBudget(1))) break;
     try {
@@ -87,7 +88,7 @@ async function buildCommuteFn(origin, stopObjs, suburb) {
     } catch (e) { /* 单段失败 → 回退估算 */ }
   }
 
-  return (a, b) => {
+  const fn = (a, b) => {
     const cell = cells[`${keyOf(a)}>${keyOf(b)}`];
     if (!cell) return engine.estimateCommute(a, b);
     const label = cell.mode === 'walking' ? '步行'
@@ -95,6 +96,73 @@ async function buildCommuteFn(origin, stopObjs, suburb) {
       : cell.km >= 60 ? '打车/城际' : '打车';
     return { mode: cell.mode === 'walking' ? 'walk' : cell.mode === 'transit' ? 'transit' : 'drive', label, km: cell.km, min: cell.min };
   };
+  // 供排序再优化读取「任意两点」的真实分钟（无数据的对回退引擎估算，口径一致）
+  fn.minutes = (a, b) => fn(a, b).min;
+  return fn;
+}
+
+// ---------- 日内排序再优化（真实路网时长） ----------
+// 引擎的日内顺序用直线距离 + 2-opt 得到，再按「早去/夜景」标签分组（slotFix）。直线距离看不见
+// 江河/立交/单行，真实路网时长可以。这里在**不打破 slotFix 分组**、**钉住当天第 1 站**的前提下，
+// 用真实分钟做组内 2-opt；只有省得够多（≥5% 且 ≥3 分钟）才采用，否则保持引擎顺序。
+const isEarlySpot = s => (s.tags || []).some(t => /早去|赶早/.test(t));
+const isLateSpot = s => s.cat === '夜景' || s.cat === '演出' || (s.tags || []).some(t => /夜景|晚上/.test(t));
+const ptOf = s => (s.coord ? { lng: s.coord[0], lat: s.coord[1] } : { lng: s.lng, lat: s.lat });
+
+function slotGroups(stops) {
+  const groups = [];
+  for (const s of stops) {
+    const cls = isEarlySpot(s) && !isLateSpot(s) ? 'early' : isLateSpot(s) ? 'late' : 'mid';
+    const last = groups[groups.length - 1];
+    if (last && last.cls === cls) last.items.push(s); else groups.push({ cls, items: [s] });
+  }
+  return groups;
+}
+// 组内 2-opt：prev/next 是组两端的锚点（保证跨界不改），顺序为开放的「环线段」
+function twoOptByMinutes(items, prev, next, mins) {
+  const arr = items.slice();
+  const at = i => (i < 0 ? prev : i >= arr.length ? next : arr[i]);
+  for (let iter = 0; iter < 20; iter++) {
+    let improved = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        const a = at(i - 1), b = at(i), c = at(j), d = at(j + 1);
+        if (!a || !d) continue;
+        if (mins(a, b) + mins(c, d) - mins(a, c) - mins(b, d) > 1) {
+          const seg = arr.slice(i, j + 1).reverse();
+          arr.splice(i, seg.length, ...seg);
+          improved = true;
+        }
+      }
+    }
+    if (!improved) break;
+  }
+  return arr;
+}
+function loopMinutes(order, origin, mins) {
+  let total = 0, prev = origin;
+  for (const s of order) { total += mins(prev, s); prev = s; }
+  return total + mins(prev, origin);   // 环线口径：含回起点（与引擎目标一致）
+}
+function reorderByRealMinutes(stops, origin, commute) {
+  if (stops.length < 3) return stops;
+  const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
+  const before = loopMinutes(stops, origin, mins);
+  const groups = slotGroups(stops);
+  const out = [];
+  groups.forEach((g, gi) => {
+    const prev = gi === 0 ? origin : groups[gi - 1].items[groups[gi - 1].items.length - 1];
+    const next = gi === groups.length - 1 ? origin : groups[gi + 1].items[0];
+    if (gi === 0 && g.items.length > 2) {
+      const head = g.items[0];   // 钉住当天第 1 站（D1 锚点规则）
+      out.push(head, ...twoOptByMinutes(g.items.slice(1), head, next, mins));
+    } else {
+      out.push(...twoOptByMinutes(g.items, prev, next, mins));
+    }
+  });
+  const after = loopMinutes(out, origin, mins);
+  if (before - after >= 3 && after <= before * 0.95) return out;
+  return stops;
 }
 
 // 用真实通勤重排已生成路线的每一天（retimeDay 强制全量重校验）
@@ -106,7 +174,8 @@ async function refineWithRealCommute(route, spots) {
     if (!stopObjs.length) continue;
     const suburb = stopObjs.every(s => s.suburb);
     const commute = await buildCommuteFn(route.origin, stopObjs, suburb);
-    const sim = engine.retimeDay(stopObjs, route.origin, dp.date, {
+    const ordered = reorderByRealMinutes(stopObjs, route.origin, commute);   // 真实时长再优化（带守卫）
+    const sim = engine.retimeDay(ordered, route.origin, dp.date, {
       suburb, startMin: toMin(dp.startTime), commute,
     });
     dp.items = sim.items;
@@ -122,4 +191,6 @@ async function refineWithRealCommute(route, spots) {
   return route;
 }
 
-module.exports = { loadSpots, refineWithRealCommute, buildCommuteFn, CITY_FILES, validOrigin };
+module.exports = { loadSpots, refineWithRealCommute, buildCommuteFn, CITY_FILES, validOrigin,
+  // 以下导出供本地回归直接验证排序再优化（云函数入口不受影响）
+  reorderByRealMinutes, slotGroups, twoOptByMinutes, loopMinutes };
