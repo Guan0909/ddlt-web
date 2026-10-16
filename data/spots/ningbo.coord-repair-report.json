@@ -1,0 +1,1064 @@
+{
+  "city": "宁波",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "tianyi-pavilion",
+      "name": "天一阁博物院",
+      "before": [
+        121.5392,
+        29.8735
+      ],
+      "provider": "amap",
+      "after": [
+        121.539591,
+        29.871055
+      ],
+      "drift_m": 274,
+      "amap_poi_id": "B023E05BNE",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "laowaitan",
+      "name": "老外滩",
+      "before": [
+        121.5587,
+        29.8802
+      ],
+      "provider": "amap",
+      "after": [
+        121.561048,
+        29.877803
+      ],
+      "drift_m": 350,
+      "amap_poi_id": "B0FFHOSTAZ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘老街",
+      "before": [
+        121.5361,
+        29.8611
+      ],
+      "provider": "amap",
+      "after": [
+        121.538131,
+        29.853527
+      ],
+      "drift_m": 865,
+      "amap_poi_id": "B023E0Y5SC",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dongqian-lake",
+      "name": "东钱湖",
+      "before": [
+        121.66,
+        29.785
+      ],
+      "provider": "amap",
+      "after": [
+        121.662194,
+        29.76452
+      ],
+      "drift_m": 2287,
+      "amap_poi_id": "B023E0579Q",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xuedou-mountain",
+      "name": "雪窦山",
+      "before": [
+        121.22,
+        29.69
+      ],
+      "provider": "amap",
+      "after": [
+        121.258417,
+        29.685926
+      ],
+      "drift_m": 3739,
+      "amap_poi_id": "B023E07FDK",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jiangshi-residence",
+      "name": "溪口·蒋氏故居",
+      "before": [
+        121.279,
+        29.689
+      ],
+      "provider": "amap",
+      "after": [
+        121.272244,
+        29.681016
+      ],
+      "drift_m": 1102,
+      "amap_poi_id": "B0JUJ6FNO5",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "film-city",
+      "name": "象山影视城",
+      "before": [
+        121.785,
+        29.395
+      ],
+      "provider": "amap",
+      "after": [
+        121.835731,
+        29.29005
+      ],
+      "drift_m": 12664,
+      "amap_poi_id": "B023E05C1E",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tianyi-square",
+      "name": "天一广场",
+      "before": [
+        121.551,
+        29.873
+      ],
+      "provider": "amap",
+      "after": [
+        121.552261,
+        29.869716
+      ],
+      "drift_m": 385,
+      "amap_poi_id": "B0FFGK8PRI",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "ningbo-museum",
+      "name": "宁波博物馆",
+      "before": [
+        121.5461,
+        29.8118
+      ],
+      "provider": "amap",
+      "after": [
+        121.542824,
+        29.814259
+      ],
+      "drift_m": 418,
+      "amap_poi_id": "BV10193196",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yuehu-park",
+      "name": "月湖公园",
+      "before": [
+        121.5438,
+        29.8674
+      ],
+      "provider": "amap",
+      "after": [
+        121.543597,
+        29.867182
+      ],
+      "drift_m": 31,
+      "amap_poi_id": "B023E05BX0",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ningbo-zoo",
+      "name": "宁波野生动物园",
+      "before": [
+        121.6401,
+        29.813
+      ],
+      "provider": "amap",
+      "after": [
+        121.674671,
+        29.80411
+      ],
+      "drift_m": 3479,
+      "amap_poi_id": "B023E05BXN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shipu",
+      "name": "石浦渔港古城",
+      "before": [
+        121.945,
+        29.207
+      ],
+      "provider": "amap",
+      "after": [
+        121.947088,
+        29.208449
+      ],
+      "drift_m": 259,
+      "amap_poi_id": "B023E05B0B",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hemu-du",
+      "name": "河姆渡遗址博物馆",
+      "before": [
+        121.328,
+        29.988
+      ],
+      "provider": "amap",
+      "after": [
+        121.350109,
+        29.961149
+      ],
+      "drift_m": 3667,
+      "amap_poi_id": "B0FFG2ZMMU",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "sanjiangkou",
+      "name": "三江口",
+      "before": [
+        121.5555,
+        29.8768
+      ],
+      "provider": "amap",
+      "after": [
+        121.568874,
+        29.880189
+      ],
+      "drift_m": 1343,
+      "amap_poi_id": "B0HRLX4QOP",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "drum-tower",
+      "name": "宁波鼓楼",
+      "before": [
+        121.5499,
+        29.876
+      ],
+      "provider": "amap",
+      "after": [
+        121.546596,
+        29.873675
+      ],
+      "drift_m": 410,
+      "amap_poi_id": "B023E05A3C",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baoguo-temple",
+      "name": "保国寺",
+      "before": [
+        121.528,
+        29.9417
+      ],
+      "provider": "amap",
+      "after": [
+        121.523705,
+        29.978382
+      ],
+      "drift_m": 4100,
+      "amap_poi_id": "BV10191777",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tiantong-temple",
+      "name": "天童寺",
+      "before": [
+        121.7923,
+        29.8082
+      ],
+      "provider": "amap",
+      "after": [
+        121.794822,
+        29.804083
+      ],
+      "drift_m": 518,
+      "amap_poi_id": "B023E010E3",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "东钱湖·小普陀",
+      "before": [
+        121.669,
+        29.793
+      ],
+      "provider": "amap",
+      "after": [
+        121.662194,
+        29.76452
+      ],
+      "drift_m": 3234,
+      "amap_poi_id": "B023E0579Q",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xuedou-temple",
+      "name": "雪窦寺",
+      "before": [
+        121.233,
+        29.684
+      ],
+      "provider": "amap",
+      "after": [
+        121.222139,
+        29.684634
+      ],
+      "drift_m": 1052,
+      "amap_poi_id": "B023E0584Y",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "cicheng",
+      "name": "慈城古县城",
+      "before": [
+        121.447,
+        29.9717
+      ],
+      "provider": "amap",
+      "after": [
+        121.450657,
+        29.984207
+      ],
+      "drift_m": 1435,
+      "amap_poi_id": "B023E07FCK",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qiantong",
+      "name": "前童古镇",
+      "before": [
+        121.34,
+        29.245
+      ],
+      "provider": "amap",
+      "after": [
+        121.35028,
+        29.224252
+      ],
+      "drift_m": 2513,
+      "amap_poi_id": "B023E05C1U",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "gulou-street",
+      "name": "鼓楼沿步行街",
+      "before": [
+        121.5499,
+        29.8762
+      ],
+      "provider": "amap",
+      "after": [
+        121.546788,
+        29.873733
+      ],
+      "drift_m": 407,
+      "amap_poi_id": "B0J3FD11TQ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hanling",
+      "name": "韩岭老街",
+      "before": [
+        121.6956,
+        29.7683
+      ],
+      "provider": "amap",
+      "after": [
+        121.664435,
+        29.735992
+      ],
+      "drift_m": 4686,
+      "amap_poi_id": "BV10328797",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "gang-museum",
+      "name": "中国港口博物馆",
+      "before": [
+        121.91,
+        29.83
+      ],
+      "provider": "amap",
+      "after": [
+        121.909509,
+        29.756117
+      ],
+      "drift_m": 8216,
+      "amap_poi_id": "B0FFF2L58Z",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "science-center",
+      "name": "宁波科学探索中心",
+      "before": [
+        121.6167,
+        29.8107
+      ],
+      "provider": "amap",
+      "after": [
+        121.617376,
+        29.858811
+      ],
+      "drift_m": 5350,
+      "amap_poi_id": "B0FFF005ZO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "romon",
+      "name": "罗蒙环球乐园",
+      "before": [
+        121.583,
+        29.839
+      ],
+      "provider": "amap",
+      "after": [
+        121.544449,
+        29.797471
+      ],
+      "drift_m": 5929,
+      "amap_poi_id": "B0FFFVJ1N4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "fangte",
+      "name": "方特东方神画",
+      "before": [
+        121.12,
+        30.29
+      ],
+      "provider": "amap",
+      "after": [
+        121.182521,
+        30.318987
+      ],
+      "drift_m": 6813,
+      "amap_poi_id": "B0FFG89PNF",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "zhousu-yuejiang",
+      "name": "舟宿夜江",
+      "before": [
+        121.535,
+        29.892
+      ],
+      "provider": "amap",
+      "after": [
+        121.543251,
+        29.848754
+      ],
+      "drift_m": 4874,
+      "amap_poi_id": "B023E05V4H",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "sanjiang-cruise",
+      "name": "三江夜游",
+      "before": [
+        121.554,
+        29.878
+      ],
+      "provider": "amap",
+      "after": [
+        121.561532,
+        29.877282
+      ],
+      "drift_m": 731,
+      "amap_poi_id": "B0G271GLR7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "songlanshan",
+      "name": "松兰山海滨",
+      "before": [
+        121.94,
+        29.45
+      ],
+      "provider": "amap",
+      "after": [
+        121.950771,
+        29.425295
+      ],
+      "drift_m": 2938,
+      "amap_poi_id": "B023E05BN3",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "ninghai-hotspring",
+      "name": "宁海森林温泉",
+      "before": [
+        121.33,
+        29.39
+      ],
+      "provider": "amap",
+      "after": [
+        121.34835,
+        29.388023
+      ],
+      "drift_m": 1791,
+      "amap_poi_id": "B023E05876",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "simingshan",
+      "name": "四明山国家森林公园",
+      "before": [
+        121,
+        29.78
+      ],
+      "provider": "amap",
+      "after": [
+        121.095706,
+        29.748743
+      ],
+      "drift_m": 9870,
+      "amap_poi_id": "B023E04F7I",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "minghe",
+      "name": "鸣鹤古镇",
+      "before": [
+        121.2652,
+        30.1218
+      ],
+      "provider": "amap",
+      "after": [
+        121.381095,
+        30.134759
+      ],
+      "drift_m": 11239,
+      "amap_poi_id": "B0FFFWXJAR",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shanglin-lake",
+      "name": "上林湖越窑博物馆",
+      "before": [
+        121.21,
+        30.12
+      ],
+      "provider": "amap",
+      "after": [
+        121.344718,
+        30.120075
+      ],
+      "drift_m": 12957,
+      "amap_poi_id": "B0HRJCNVHN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wangyangming",
+      "name": "王阳明故居",
+      "before": [
+        121.1547,
+        30.045
+      ],
+      "provider": "amap",
+      "after": [
+        121.152605,
+        30.050746
+      ],
+      "drift_m": 670,
+      "amap_poi_id": "B023E05XJB",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "zhaobaoshan",
+      "name": "招宝山",
+      "before": [
+        121.7305,
+        29.97
+      ],
+      "provider": "amap",
+      "after": [
+        121.723511,
+        29.95698
+      ],
+      "drift_m": 1597,
+      "amap_poi_id": "BV10964393",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qingan-hall",
+      "name": "庆安会馆",
+      "before": [
+        121.5596,
+        29.8774
+      ],
+      "provider": "amap",
+      "after": [
+        121.563004,
+        29.87198
+      ],
+      "drift_m": 686,
+      "amap_poi_id": "B023E04F6S",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tianfeng-tower",
+      "name": "天封塔",
+      "before": [
+        121.549,
+        29.866
+      ],
+      "provider": "amap",
+      "after": [
+        121.5509,
+        29.865328
+      ],
+      "drift_m": 198,
+      "amap_poi_id": "B023E02P0C",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ayuwang-temple",
+      "name": "阿育王寺",
+      "before": [
+        121.7568,
+        29.8473
+      ],
+      "provider": "amap",
+      "after": [
+        121.742647,
+        29.846239
+      ],
+      "drift_m": 1370,
+      "amap_poi_id": "B023E05C0D",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ningbo-bang",
+      "name": "宁波帮博物馆",
+      "before": [
+        121.6189,
+        29.971
+      ],
+      "provider": "amap",
+      "after": [
+        121.627435,
+        29.918423
+      ],
+      "drift_m": 5904,
+      "amap_poi_id": "B023E0Z44G",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "art-museum",
+      "name": "宁波美术馆",
+      "before": [
+        121.5578,
+        29.8813
+      ],
+      "provider": "amap",
+      "after": [
+        121.649038,
+        29.735074
+      ],
+      "drift_m": 18490,
+      "amap_poi_id": "B0M2MXU4Y2",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "culture-plaza",
+      "name": "宁波文化广场",
+      "before": [
+        121.618,
+        29.812
+      ],
+      "provider": "amap",
+      "after": [
+        121.61735,
+        29.8579
+      ],
+      "drift_m": 5104,
+      "amap_poi_id": "B023E0C2IA",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "grand-theatre",
+      "name": "宁波大剧院",
+      "before": [
+        121.536,
+        29.889
+      ],
+      "provider": "amap",
+      "after": [
+        121.548443,
+        29.89125
+      ],
+      "drift_m": 1225,
+      "amap_poi_id": "B023E0127F",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jiulong-lake",
+      "name": "九龙湖",
+      "before": [
+        121.586,
+        29.984
+      ],
+      "provider": "amap",
+      "after": [
+        121.547725,
+        30.039688
+      ],
+      "drift_m": 7206,
+      "amap_poi_id": "B0MUXA8VX8",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhedong-canyon",
+      "name": "浙东大峡谷",
+      "before": [
+        121.15,
+        29.23
+      ],
+      "provider": "amap",
+      "after": [
+        121.257812,
+        29.190653
+      ],
+      "drift_m": 11342,
+      "amap_poi_id": "B0G3LMFP8B",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "jiufeng",
+      "name": "九峰山",
+      "before": [
+        121.87,
+        29.89
+      ],
+      "provider": "amap",
+      "after": [
+        121.862341,
+        29.840393
+      ],
+      "drift_m": 5565,
+      "amap_poi_id": "B023E04UO0",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "meishan-bay",
+      "name": "梅山湾沙滩公园",
+      "before": [
+        121.89,
+        29.79
+      ],
+      "provider": "amap",
+      "after": [
+        121.916614,
+        29.754457
+      ],
+      "drift_m": 4714,
+      "amap_poi_id": "B0FFH9P1B1",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "liangzhu-park",
+      "name": "梁祝文化公园",
+      "before": [
+        121.464,
+        29.86
+      ],
+      "provider": "amap",
+      "after": [
+        121.482183,
+        29.903976
+      ],
+      "drift_m": 5195,
+      "amap_poi_id": "BV10193791",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "botanic-garden",
+      "name": "宁波植物园",
+      "before": [
+        121.63,
+        29.924
+      ],
+      "provider": "amap",
+      "after": [
+        121.609599,
+        29.945628
+      ],
+      "drift_m": 3106,
+      "amap_poi_id": "B0FFFDKBCW",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tengtou",
+      "name": "滕头村",
+      "before": [
+        121.418,
+        29.666
+      ],
+      "provider": "amap",
+      "after": [
+        121.390984,
+        29.700256
+      ],
+      "drift_m": 4617,
+      "amap_poi_id": "B023E04WDI",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hangzhouwan-wetland",
+      "name": "杭州湾国家湿地公园",
+      "before": [
+        121.16,
+        30.33
+      ],
+      "provider": "amap",
+      "after": [
+        121.159453,
+        30.314395
+      ],
+      "drift_m": 1736,
+      "amap_poi_id": "B023E13QX5",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tiangong",
+      "name": "天宫庄园",
+      "before": [
+        121.59,
+        29.795
+      ],
+      "provider": "amap",
+      "after": [
+        121.577321,
+        29.802811
+      ],
+      "drift_m": 1500,
+      "amap_poi_id": "B023E05D2C",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ocean-world",
+      "name": "宁波海洋世界",
+      "before": [
+        121.562,
+        29.848
+      ],
+      "provider": "amap",
+      "after": [
+        121.582695,
+        29.853068
+      ],
+      "drift_m": 2074,
+      "amap_poi_id": "B023E04MC6",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wenchuang-port",
+      "name": "宁波文创港",
+      "before": [
+        121.576,
+        29.9
+      ],
+      "provider": "amap",
+      "after": [
+        121.574627,
+        29.894132
+      ],
+      "drift_m": 666,
+      "amap_poi_id": "B0FFLEKO1Q",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yuehu-shengyuan",
+      "name": "月湖盛园",
+      "before": [
+        121.539,
+        29.866
+      ],
+      "provider": "amap",
+      "after": [
+        121.547983,
+        29.863394
+      ],
+      "drift_m": 913,
+      "amap_poi_id": "BV11038408",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yifu-theatre",
+      "name": "宁波逸夫剧院",
+      "before": [
+        121.548,
+        29.8735
+      ],
+      "provider": "amap",
+      "after": [
+        121.548199,
+        29.86833
+      ],
+      "drift_m": 575,
+      "amap_poi_id": "B023E02P2S",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jiangbei-church",
+      "name": "江北天主堂",
+      "before": [
+        121.5592,
+        29.8818
+      ],
+      "provider": "amap",
+      "after": [
+        121.449614,
+        29.986287
+      ],
+      "drift_m": 15700,
+      "amap_poi_id": "B0KR9UDTHR",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "qita-temple",
+      "name": "七塔禅寺",
+      "before": [
+        121.557,
+        29.8627
+      ],
+      "provider": "amap",
+      "after": [
+        121.56777,
+        29.8654
+      ],
+      "drift_m": 1081,
+      "amap_poi_id": "B023E05BWN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nansong-stone",
+      "name": "南宋石刻公园",
+      "before": [
+        121.649,
+        29.7645
+      ],
+      "provider": "amap",
+      "after": [
+        121.686839,
+        29.745834
+      ],
+      "drift_m": 4201,
+      "amap_poi_id": "B023E066IG",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baiyunzhuang",
+      "name": "白云庄",
+      "before": [
+        121.5305,
+        29.878
+      ],
+      "provider": "amap",
+      "after": [
+        121.524442,
+        29.874755
+      ],
+      "drift_m": 687,
+      "amap_poi_id": "B023E05XK3",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zoumatang",
+      "name": "走马塘古村",
+      "before": [
+        121.529,
+        29.7427
+      ],
+      "provider": "amap",
+      "after": [
+        121.485402,
+        29.719003
+      ],
+      "drift_m": 4966,
+      "amap_poi_id": "B0FFFNMSUL",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "zheng-17",
+      "name": "郑氏十七房",
+      "before": [
+        121.66,
+        30.01
+      ],
+      "provider": "amap",
+      "after": [
+        121.60531,
+        30.020988
+      ],
+      "drift_m": 5406,
+      "amap_poi_id": "B023E07A3K",
+      "tier": "amap-suffix"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "chenghuang-miao",
+      "name": "城隍庙小吃城",
+      "before": [
+        121.5447,
+        29.867
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "baisha-seafood",
+      "name": "白沙海鲜排档",
+      "before": [
+        121.558,
+        29.888
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "huaao-island",
+      "name": "花岙岛",
+      "before": [
+        121.87,
+        29.26
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "yinzhou-wanda",
+      "name": "鄞州万达广场",
+      "before": [
+        121.535,
+        29.808
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "nanbu-shuijie",
+      "name": "南部商务区水街",
+      "before": [
+        121.546,
+        29.8
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "longquanshan",
+      "name": "龙泉山",
+      "before": [
+        121.156,
+        30.042
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    }
+  ],
+  "errors": []
+}

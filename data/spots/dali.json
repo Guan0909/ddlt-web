@@ -19,14 +19,19 @@
       "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
-    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
       "id": "erhai-park",
       "name": "洱海公园",
       "cat": "公园",
-      "tags": ["免费", "湖景", "本地人"],
+      "tags": [
+        "免费",
+        "湖景",
+        "本地人"
+      ],
       "heat": 8,
       "dur": 90,
       "intro": "下关南端的湖滨公园，长堤正对苍山十九峰。",
@@ -34,14 +39,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2352, 25.5836],
-      "coord_src": "estimate"
+      "coord": [
+        100.247329,
+        25.603041
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368006Y0",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhou-museum",
       "name": "大理州博物馆",
       "cat": "博物馆",
-      "tags": ["免费", "室内", "南诏文物"],
+      "tags": [
+        "免费",
+        "室内",
+        "南诏文物"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "白族自治州综合馆，南诏大理国文物最多。",
@@ -49,14 +63,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [100.2262, 25.5908],
-      "coord_src": "estimate"
+      "coord": [
+        100.2319,
+        25.597322
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0GK0AADI1",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xingsheng-bridge",
       "name": "兴盛大桥",
       "cat": "夜景",
-      "tags": ["夜景", "晚上", "免费"],
+      "tags": [
+        "夜景",
+        "晚上",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 50,
       "intro": "下关城区跨西洱河的大桥，夜里灯带最亮。",
@@ -64,14 +87,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2372, 25.5988],
-      "coord_src": "estimate"
+      "coord": [
+        100.23244,
+        25.599051
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFIL6PW7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "longweiguan",
       "name": "龙尾关",
       "cat": "街区",
-      "tags": ["老街", "茶马古道", "免费"],
+      "tags": [
+        "老街",
+        "茶马古道",
+        "免费"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "下关最老的街，茶马古道从坡道下穿过。",
@@ -79,14 +111,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2285, 25.5892],
-      "coord_src": "estimate"
+      "coord": [
+        100.212261,
+        25.590521
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680I7MY",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "fotu-tower",
       "name": "佛图塔",
       "cat": "古迹",
-      "tags": ["南诏", "古塔", "小众"],
+      "tags": [
+        "南诏",
+        "古塔",
+        "小众"
+      ],
       "heat": 5,
       "dur": 40,
       "intro": "南诏时期的密檐砖塔，藏在村口田边。",
@@ -94,14 +135,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.2196, 25.6076],
+      "coord": [
+        100.2196,
+        25.6076
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dali-aquarium",
       "name": "大理海洋世界",
       "cat": "亲子",
-      "tags": ["室内", "遛娃", "表演"],
+      "tags": [
+        "室内",
+        "遛娃",
+        "表演"
+      ],
       "heat": 6.5,
       "dur": 180,
       "intro": "满江的海洋馆，白鲸和海豚表演是主打。",
@@ -109,14 +157,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2548, 25.6122],
-      "coord_src": "estimate"
+      "coord": [
+        100.316478,
+        25.681412
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFIPJP95",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "taiye-plaza",
       "name": "泰业城市广场",
       "cat": "商圈",
-      "tags": ["商场", "吃饭", "室内"],
+      "tags": [
+        "商场",
+        "吃饭",
+        "室内"
+      ],
       "heat": 6,
       "dur": 90,
       "intro": "下关的购物中心，吃饭补给都在这儿解决。",
@@ -124,14 +181,21 @@
       "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2346, 25.6052],
+      "coord": [
+        100.2346,
+        25.6052
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "aiqinhai-mall",
       "name": "大理爱琴海购物公园",
       "cat": "商圈",
-      "tags": ["商场", "室内", "亲子"],
+      "tags": [
+        "商场",
+        "室内",
+        "亲子"
+      ],
       "heat": 5.5,
       "dur": 90,
       "intro": "满江的购物公园，超市餐饮和儿童乐园都有。",
@@ -139,14 +203,21 @@
       "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.2565, 25.6210],
+      "coord": [
+        100.2565,
+        25.621
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "erhai-moon-wetland",
       "name": "洱海月湿地公园",
       "cat": "公园",
-      "tags": ["免费", "日落", "栈道"],
+      "tags": [
+        "免费",
+        "日落",
+        "栈道"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "下关北的湖滨湿地，芦苇栈道一直伸进洱海。",
@@ -154,14 +225,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.247, 25.6246],
-      "coord_src": "estimate"
+      "coord": [
+        100.231467,
+        25.610002
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368151LH",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gucheng-fuxing",
       "name": "大理古城复兴路",
       "cat": "街区",
-      "tags": ["古城", "免费", "夜景"],
+      "tags": [
+        "古城",
+        "免费",
+        "夜景"
+      ],
       "heat": 10,
       "dur": 180,
       "intro": "古城南北中轴，南门到五华楼一条主街。",
@@ -169,14 +249,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1647, 25.694],
-      "coord_src": "estimate"
+      "coord": [
+        100.164145,
+        25.687547
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680IAVE",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "renmin-road",
       "name": "大理古城人民路",
       "cat": "美食",
-      "tags": ["小吃", "夜市", "晚上"],
+      "tags": [
+        "小吃",
+        "夜市",
+        "晚上"
+      ],
       "heat": 8.5,
       "dur": 120,
       "intro": "古城最有生活气的一条街，小馆酒吧扎堆。",
@@ -184,14 +273,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1618, 25.6936],
-      "coord_src": "estimate"
+      "coord": [
+        100.164,
+        25.694836
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFZH0RQ",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yangren-street",
       "name": "大理古城洋人街",
       "cat": "商圈",
-      "tags": ["酒吧", "晚上", "老街"],
+      "tags": [
+        "酒吧",
+        "晚上",
+        "老街"
+      ],
       "heat": 7.5,
       "dur": 90,
       "intro": "护国路上的酒吧街，入夜后最热闹的一段。",
@@ -199,14 +297,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1609, 25.6953],
+      "coord": [
+        100.1609,
+        25.6953
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "honglongjing",
       "name": "红龙井",
       "cat": "夜景",
-      "tags": ["夜景", "晚上", "水街"],
+      "tags": [
+        "夜景",
+        "晚上",
+        "水街"
+      ],
       "heat": 7,
       "dur": 60,
       "intro": "古城西侧的水街，小桥流水配一排红灯笼。",
@@ -214,14 +319,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1632, 25.6923],
-      "coord_src": "estimate"
+      "coord": [
+        100.162325,
+        25.690475
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0MAT9X5X7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "sanyue-street",
       "name": "三月街",
       "cat": "街区",
-      "tags": ["赶集", "老街", "本地人"],
+      "tags": [
+        "赶集",
+        "老街",
+        "本地人"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "古城西门外老街，三月街民族节的主场。",
@@ -229,14 +343,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1596, 25.7004],
-      "coord_src": "estimate"
+      "coord": [
+        100.153299,
+        25.693274
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368159Z8",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "wuhua-tower",
       "name": "五华楼",
       "cat": "古迹",
-      "tags": ["地标", "登楼", "古城"],
+      "tags": [
+        "地标",
+        "登楼",
+        "古城"
+      ],
       "heat": 7.5,
       "dur": 40,
       "intro": "古城的标志城楼，登上去能俯瞰整条复兴路。",
@@ -244,14 +367,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1643, 25.6928],
-      "coord_src": "estimate"
+      "coord": [
+        100.162347,
+        25.69092
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800DK2",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "chongsheng-towers",
       "name": "崇圣寺三塔",
       "cat": "古迹",
-      "tags": ["地标", "早去", "门票"],
+      "tags": [
+        "地标",
+        "早去",
+        "门票"
+      ],
       "heat": 9.5,
       "dur": 180,
       "intro": "大理的招牌，三塔倒影是最经典的一张照片。",
@@ -259,14 +391,23 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1517, 25.7043],
-      "coord_src": "estimate"
+      "coord": [
+        100.147313,
+        25.705605
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0HKLRTS6R",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "santa-reflection",
       "name": "三塔倒影公园",
       "cat": "公园",
-      "tags": ["倒影", "早去", "拍照"],
+      "tags": [
+        "倒影",
+        "早去",
+        "拍照"
+      ],
       "heat": 6,
       "dur": 40,
       "intro": "专门看三塔倒影的小园子，抬头就是苍山。",
@@ -274,14 +415,23 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1556, 25.7018],
-      "coord_src": "estimate"
+      "coord": [
+        100.150023,
+        25.701939
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800C0O",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tianlong-babu",
       "name": "天龙八部影视城",
       "cat": "亲子",
-      "tags": ["影视城", "演出", "带娃"],
+      "tags": [
+        "影视城",
+        "演出",
+        "带娃"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "古城西边的影视基地，城墙街景都能拍。",
@@ -289,14 +439,23 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1408, 25.7005],
-      "coord_src": "estimate"
+      "coord": [
+        100.149121,
+        25.680112
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036815DC0",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dali-city-museum",
       "name": "大理市博物馆",
       "cat": "博物馆",
-      "tags": ["免费", "碑林", "室内"],
+      "tags": [
+        "免费",
+        "碑林",
+        "室内"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "杜文秀帅府旧址，碑林和白族文物都在院里。",
@@ -304,14 +463,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [100.1662, 25.6947],
-      "coord_src": "estimate"
+      "coord": [
+        100.301614,
+        25.678466
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680I1JP",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "feiyi-museum",
       "name": "大理非物质文化遗产博物馆",
       "cat": "博物馆",
-      "tags": ["免费", "室内", "非遗"],
+      "tags": [
+        "免费",
+        "室内",
+        "非遗"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "古城里的非遗馆，扎染木雕银器都能看到。",
@@ -319,14 +487,21 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [100.1651, 25.6902],
+      "coord": [
+        100.1651,
+        25.6902
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dianying-museum",
       "name": "大理农村电影历史博物馆",
       "cat": "博物馆",
-      "tags": ["免费", "室内", "小众"],
+      "tags": [
+        "免费",
+        "室内",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 50,
       "intro": "老电影机和胶片堆满一屋，怀旧气息很足。",
@@ -334,14 +509,21 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [100.1645, 25.6918],
+      "coord": [
+        100.1645,
+        25.6918
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "photo-museum",
       "name": "大理摄影博物馆",
       "cat": "博物馆",
-      "tags": ["摄影", "室内", "免费"],
+      "tags": [
+        "摄影",
+        "室内",
+        "免费"
+      ],
       "heat": 5,
       "dur": 50,
       "intro": "床单厂里的摄影馆，常换大理本地影像展。",
@@ -349,14 +531,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1614, 25.6865],
+      "coord": [
+        100.1614,
+        25.6865
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "yuer-park",
       "name": "玉洱园",
       "cat": "公园",
-      "tags": ["免费", "茶花", "歇脚"],
+      "tags": [
+        "免费",
+        "茶花",
+        "歇脚"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "古城里的老园林，冬天茶花开得最好。",
@@ -364,14 +553,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1635, 25.6971],
-      "coord_src": "estimate"
+      "coord": [
+        100.161226,
+        25.696642
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800FFR",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "chuangdanchang",
       "name": "床单厂艺术区",
       "cat": "街区",
-      "tags": ["文创", "咖啡", "小众"],
+      "tags": [
+        "文创",
+        "咖啡",
+        "小众"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "旧床单厂改的文创园，小店和展览都不错。",
@@ -379,14 +577,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1613, 25.6867],
+      "coord": [
+        100.1613,
+        25.6867
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "hongsheng-tower",
       "name": "弘圣寺塔",
       "cat": "古迹",
-      "tags": ["南诏", "古塔", "小众"],
+      "tags": [
+        "南诏",
+        "古塔",
+        "小众"
+      ],
       "heat": 5,
       "dur": 40,
       "intro": "古城西南的一塔，南诏时期的密檐砖塔。",
@@ -394,14 +599,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1598, 25.687],
-      "coord_src": "estimate"
+      "coord": [
+        100.157299,
+        25.685557
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368151D0",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gantong-temple",
       "name": "感通寺",
       "cat": "古迹",
-      "tags": ["苍山", "古寺", "素斋"],
+      "tags": [
+        "苍山",
+        "古寺",
+        "素斋"
+      ],
       "heat": 6,
       "dur": 80,
       "intro": "苍山半山的老寺，古树藤萝都有年岁。",
@@ -409,14 +623,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1853, 25.6548],
-      "coord_src": "estimate"
+      "coord": [
+        100.167018,
+        25.643118
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368007GX",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jizhao-nunnery",
       "name": "寂照庵",
       "cat": "古迹",
-      "tags": ["多肉", "素斋", "苍山"],
+      "tags": [
+        "多肉",
+        "素斋",
+        "苍山"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "苍山上的小庵，满院多肉和素斋出名。",
@@ -424,14 +647,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1868, 25.658],
-      "coord_src": "estimate"
+      "coord": [
+        100.16493,
+        25.643372
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFSA0F3",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qingbi-stream",
       "name": "清碧溪",
       "cat": "山水",
-      "tags": ["苍山", "溪谷", "凉快"],
+      "tags": [
+        "苍山",
+        "溪谷",
+        "凉快"
+      ],
       "heat": 6.5,
       "dur": 120,
       "intro": "苍山十八溪里水最清的一条，潭水碧绿。",
@@ -439,14 +671,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1836, 25.662],
-      "coord_src": "estimate"
+      "coord": [
+        100.210875,
+        25.674981
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGAWAY4",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gantong-cableway",
       "name": "苍山感通索道",
       "cat": "山水",
-      "tags": ["索道", "苍山", "省力"],
+      "tags": [
+        "索道",
+        "苍山",
+        "省力"
+      ],
       "heat": 7,
       "dur": 150,
       "intro": "上苍山最方便的索道，直通清碧溪和感通寺。",
@@ -454,14 +695,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.186, 25.656],
-      "coord_src": "estimate"
+      "coord": [
+        100.168239,
+        25.644417
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFICZ3B7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhonghe-temple",
       "name": "中和寺",
       "cat": "古迹",
-      "tags": ["苍山", "索道", "徒步"],
+      "tags": [
+        "苍山",
+        "索道",
+        "徒步"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "苍山中和峰的寺庙，玉带路的西端起点。",
@@ -469,14 +719,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1548, 25.694],
-      "coord_src": "estimate"
+      "coord": [
+        100.131788,
+        25.683648
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800GPS",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ximalatan-cableway",
       "name": "苍山洗马潭大索道",
       "cat": "山水",
-      "tags": ["索道", "苍山", "早去"],
+      "tags": [
+        "索道",
+        "苍山",
+        "早去"
+      ],
       "heat": 9,
       "dur": 240,
       "intro": "上苍山看洗马潭，海拔近四千米的高山湖。",
@@ -484,14 +743,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1425, 25.7055],
-      "coord_src": "estimate"
+      "coord": [
+        100.138798,
+        25.667764
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036815O42",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yudai-road",
       "name": "苍山玉带云游路",
       "cat": "山水",
-      "tags": ["徒步", "苍山", "免费"],
+      "tags": [
+        "徒步",
+        "苍山",
+        "免费"
+      ],
       "heat": 7,
       "dur": 240,
       "intro": "半山腰横切的步道，一路俯瞰整个洱海。",
@@ -499,14 +767,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.166, 25.68],
-      "coord_src": "estimate"
+      "coord": [
+        100.142998,
+        25.694201
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGO698V",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "taihe-city",
       "name": "太和城遗址",
       "cat": "古迹",
-      "tags": ["南诏", "遗址", "免费"],
+      "tags": [
+        "南诏",
+        "遗址",
+        "免费"
+      ],
       "heat": 5.5,
       "dur": 50,
       "intro": "南诏都城遗址，德化碑被称作云南第一碑。",
@@ -514,14 +791,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.1762, 25.652],
-      "coord_src": "estimate"
+      "coord": [
+        100.198061,
+        25.633246
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680I9BN",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "fengyangyi",
       "name": "凤阳邑村",
       "cat": "街区",
-      "tags": ["茶马古道", "石头村", "小众"],
+      "tags": [
+        "茶马古道",
+        "石头村",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 70,
       "intro": "茶马古道上的石头村，古道从村中穿过。",
@@ -529,14 +815,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1776, 25.638],
+      "coord": [
+        100.1776,
+        25.638
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "longkan-village",
       "name": "龙龛村",
       "cat": "夜景",
-      "tags": ["日落", "洱海", "免费"],
+      "tags": [
+        "日落",
+        "洱海",
+        "免费"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "才村旁的村子，码头看洱海日落最经典。",
@@ -544,14 +837,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.187, 25.6762],
-      "coord_src": "estimate"
+      "coord": [
+        100.190107,
+        25.687134
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0JA2ZGKA8",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "caicun-pier",
       "name": "才村码头",
       "cat": "街区",
-      "tags": ["骑行", "洱海", "免费"],
+      "tags": [
+        "骑行",
+        "洱海",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "洱海西岸的码头，生态廊道从这儿起头。",
@@ -559,14 +861,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.1815, 25.6723],
-      "coord_src": "estimate"
+      "coord": [
+        100.193637,
+        25.718727
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368000BB",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "erhai-greenway",
       "name": "洱海生态廊道",
       "cat": "公园",
-      "tags": ["骑行", "免费", "日落"],
+      "tags": [
+        "骑行",
+        "免费",
+        "日落"
+      ],
       "heat": 9.5,
       "dur": 240,
       "intro": "环湖西岸的塑胶道，木栈道一路贴着水走。",
@@ -574,14 +885,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.18, 25.685],
-      "coord_src": "estimate"
+      "coord": [
+        100.223557,
+        25.622667
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0G3JY36P7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "panxi-s-bend",
       "name": "磻溪村S湾",
       "cat": "街区",
-      "tags": ["网红", "早去", "拍照"],
+      "tags": [
+        "网红",
+        "早去",
+        "拍照"
+      ],
       "heat": 7.5,
       "dur": 90,
       "intro": "廊道最出片的一段，S形弯道贴在水面上。",
@@ -589,14 +909,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.16, 25.773],
-      "coord_src": "estimate"
+      "coord": [
+        100.149486,
+        25.774136
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0L3F16VNF",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gusheng-village",
       "name": "古生村",
       "cat": "街区",
-      "tags": ["白族村", "洱海", "小众"],
+      "tags": [
+        "白族村",
+        "洱海",
+        "小众"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "洱海边的白族村子，巷子尽头就是水。",
@@ -604,14 +933,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.147, 25.815],
-      "coord_src": "estimate"
+      "coord": [
+        100.144363,
+        25.813509
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0H25CMTBB",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xizhou",
       "name": "喜洲古镇",
       "cat": "古镇",
-      "tags": ["白族", "稻田", "早去"],
+      "tags": [
+        "白族",
+        "稻田",
+        "早去"
+      ],
       "heat": 9,
       "dur": 180,
       "intro": "白族第一镇，四方街和大片稻田都出片。",
@@ -619,14 +957,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1393, 25.8553],
-      "coord_src": "estimate"
+      "coord": [
+        100.131582,
+        25.85295
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH27SSH",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xizhou-sifangjie",
       "name": "喜洲四方街",
       "cat": "美食",
-      "tags": ["小吃", "喜洲粑粑", "集市"],
+      "tags": [
+        "小吃",
+        "喜洲粑粑",
+        "集市"
+      ],
       "heat": 7,
       "dur": 60,
       "intro": "喜洲的老集市，粑粑乳扇凉鸡米线都在这。",
@@ -634,14 +981,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1381, 25.8536],
-      "coord_src": "estimate"
+      "coord": [
+        100.131043,
+        25.853611
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0H6YXEKQ7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yan-family",
       "name": "严家大院",
       "cat": "古迹",
-      "tags": ["白族民居", "门票", "三坊一照壁"],
+      "tags": [
+        "白族民居",
+        "门票",
+        "三坊一照壁"
+      ],
       "heat": 6.5,
       "dur": 70,
       "intro": "喜洲白族商宅的代表，三坊一照壁的样板。",
@@ -649,14 +1005,23 @@
       "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1367, 25.8533],
-      "coord_src": "estimate"
+      "coord": [
+        100.132089,
+        25.852846
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFFPANT",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "haishe-park",
       "name": "海舌公园",
       "cat": "公园",
-      "tags": ["半岛", "拍照", "免费"],
+      "tags": [
+        "半岛",
+        "拍照",
+        "免费"
+      ],
       "heat": 7.5,
       "dur": 90,
       "intro": "伸进洱海的细长半岛，两边都是水。",
@@ -664,14 +1029,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.1502, 25.833],
-      "coord_src": "estimate"
+      "coord": [
+        100.15669,
+        25.870703
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFFK7HC",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "butterfly-spring",
       "name": "蝴蝶泉",
       "cat": "亲子",
-      "tags": ["泉水", "门票", "老牌"],
+      "tags": [
+        "泉水",
+        "门票",
+        "老牌"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "苍山脚下的老牌公园，泉水清得见底。",
@@ -679,14 +1053,23 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1268, 25.8758],
-      "coord_src": "estimate"
+      "coord": [
+        100.098652,
+        25.906777
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368000AS",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhoucheng-tiedye",
       "name": "周城·璞真白族扎染博物馆",
       "cat": "博物馆",
-      "tags": ["扎染", "体验", "非遗"],
+      "tags": [
+        "扎染",
+        "体验",
+        "非遗"
+      ],
       "heat": 6.5,
       "dur": 90,
       "intro": "白族扎染之乡，能看晾布也能自己扎一块。",
@@ -694,14 +1077,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.1219, 25.8623],
-      "coord_src": "estimate"
+      "coord": [
+        100.106812,
+        25.896902
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGMLXV8",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shangguang-flower",
       "name": "上关花公园",
       "cat": "公园",
-      "tags": ["花海", "门票", "苍山北"],
+      "tags": [
+        "花海",
+        "门票",
+        "苍山北"
+      ],
       "heat": 5.5,
       "dur": 80,
       "intro": "苍山北段的花园，山茶杜鹃开得热闹。",
@@ -709,14 +1101,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.143, 25.9222],
-      "coord_src": "estimate"
+      "coord": [
+        100.095162,
+        25.919936
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH6KTFC",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shuanglang",
       "name": "双廊古镇",
       "cat": "古镇",
-      "tags": ["日落", "民宿", "洱海"],
+      "tags": [
+        "日落",
+        "民宿",
+        "洱海"
+      ],
       "heat": 9,
       "dur": 240,
       "intro": "洱海东岸最出名的古镇，正对苍山日落。",
@@ -724,14 +1125,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1926, 25.9474],
-      "coord_src": "estimate"
+      "coord": [
+        100.194322,
+        25.908323
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036814RT7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yuji-island",
       "name": "玉几岛",
       "cat": "街区",
-      "tags": ["建筑", "洱海", "小众"],
+      "tags": [
+        "建筑",
+        "洱海",
+        "小众"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "双廊小半岛，太阳宫月亮宫都在岛上。",
@@ -739,14 +1149,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.1962, 25.951],
-      "coord_src": "estimate"
+      "coord": [
+        100.191622,
+        25.9061
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368159U4",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nanzhao-resort",
       "name": "南诏风情岛",
       "cat": "山水",
-      "tags": ["岛屿", "门票", "洱海"],
+      "tags": [
+        "岛屿",
+        "门票",
+        "洱海"
+      ],
       "heat": 6,
       "dur": 90,
       "intro": "双廊对面的小岛，沙壹母群雕和溶洞。",
@@ -754,14 +1173,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.1981, 25.9428],
-      "coord_src": "estimate"
+      "coord": [
+        100.19146,
+        25.902135
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368000AW",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shuanglang-haijie",
       "name": "双廊海街",
       "cat": "美食",
-      "tags": ["洱海鱼", "咖啡", "晚上"],
+      "tags": [
+        "洱海鱼",
+        "咖啡",
+        "晚上"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "双廊沿湖的一条食街，边吃边看水。",
@@ -769,14 +1197,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.1943, 25.9488],
-      "coord_src": "estimate"
+      "coord": [
+        100.194327,
+        25.905098
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0K1LMAYB6",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xiaoputuo",
       "name": "小普陀",
       "cat": "古迹",
-      "tags": ["小岛", "打卡", "洱海"],
+      "tags": [
+        "小岛",
+        "打卡",
+        "洱海"
+      ],
       "heat": 6.5,
       "dur": 50,
       "intro": "洱海里的袖珍小岛，上面一座小观音阁。",
@@ -784,14 +1221,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.2328, 25.9195],
-      "coord_src": "estimate"
+      "coord": [
+        100.223013,
+        25.807452
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368000B7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "wase-town",
       "name": "挖色镇",
       "cat": "街区",
-      "tags": ["渔村", "日落", "免费"],
+      "tags": [
+        "渔村",
+        "日落",
+        "免费"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "洱海东岸的渔村，码头和落日都好看。",
@@ -799,14 +1245,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.2264, 25.863],
-      "coord_src": "estimate"
+      "coord": [
+        100.225744,
+        25.828921
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0G2BB65EI",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "luwoshan",
       "name": "鹿卧山",
       "cat": "夜景",
-      "tags": ["日落", "爬山", "免费"],
+      "tags": [
+        "日落",
+        "爬山",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "挖色北边的小山，看洱海日落的野机位。",
@@ -814,14 +1269,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.221, 25.8782],
-      "coord_src": "estimate"
+      "coord": [
+        100.216806,
+        25.834984
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680HT56",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "lixiang-bang",
       "name": "理想邦",
       "cat": "街区",
-      "tags": ["建筑", "拍照", "洱海东岸"],
+      "tags": [
+        "建筑",
+        "拍照",
+        "洱海东岸"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "海东的白墙建筑群，被叫作大理圣托里尼。",
@@ -829,14 +1293,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.2465, 25.7935],
-      "coord_src": "estimate"
+      "coord": [
+        100.26993,
+        25.698271
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGJWJA3",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tianjing-pavilion",
       "name": "天镜阁",
       "cat": "古迹",
-      "tags": ["观景", "古迹", "洱海东岸"],
+      "tags": [
+        "观景",
+        "古迹",
+        "洱海东岸"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "海东半岛上的阁楼，正对苍山洱海全景。",
@@ -844,14 +1317,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.2447, 25.7565],
-      "coord_src": "estimate"
+      "coord": [
+        100.237521,
+        25.705409
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800CY4",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jinsuo-island",
       "name": "金梭岛",
       "cat": "山水",
-      "tags": ["岛屿", "渔村", "洱海东岸"],
+      "tags": [
+        "岛屿",
+        "渔村",
+        "洱海东岸"
+      ],
       "heat": 5.5,
       "dur": 90,
       "intro": "洱海里最大的岛，岛上还住着渔民。",
@@ -859,14 +1341,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.2372, 25.7385],
-      "coord_src": "estimate"
+      "coord": [
+        100.257743,
+        25.692907
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368009K7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shaxi",
       "name": "沙溪古镇",
       "cat": "古镇",
-      "tags": ["茶马古道", "古戏台", "远郊"],
+      "tags": [
+        "茶马古道",
+        "古戏台",
+        "远郊"
+      ],
       "heat": 8.5,
       "dur": 300,
       "intro": "茶马古道唯一幸存的集市，寺登街还在。",
@@ -874,14 +1365,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [99.8522, 26.3181],
-      "coord_src": "estimate"
+      "coord": [
+        99.849895,
+        26.315721
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680I3LO",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xingjiao-temple",
       "name": "沙溪兴教寺",
       "cat": "古迹",
-      "tags": ["明代壁画", "古建", "远郊"],
+      "tags": [
+        "明代壁画",
+        "古建",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 50,
       "intro": "寺登街上的明代古寺，壁画是大理独一份。",
@@ -889,14 +1389,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [99.8518, 26.3176],
-      "coord_src": "estimate"
+      "coord": [
+        99.852845,
+        26.31598
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800EDX",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shibao-mountain",
       "name": "石宝山",
       "cat": "古迹",
-      "tags": ["石窟", "南诏", "远郊"],
+      "tags": [
+        "石窟",
+        "南诏",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 240,
       "intro": "南诏大理国石窟群，石钟寺和狮子关。",
@@ -904,14 +1413,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [99.8285, 26.3665],
-      "coord_src": "estimate"
+      "coord": [
+        99.841732,
+        26.392967
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800CAN",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jianchuan-old-town",
       "name": "剑川古城",
       "cat": "古镇",
-      "tags": ["木雕", "老街", "远郊"],
+      "tags": [
+        "木雕",
+        "老街",
+        "远郊"
+      ],
       "heat": 5.5,
       "dur": 120,
       "intro": "剑川老城，木雕手艺和白族老宅成片。",
@@ -919,14 +1437,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [99.9052, 26.5372],
-      "coord_src": "estimate"
+      "coord": [
+        99.904066,
+        26.528288
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFJFGPN2",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qianshi-mountain",
       "name": "剑川千狮山",
       "cat": "山水",
-      "tags": ["石狮", "登山", "远郊"],
+      "tags": [
+        "石狮",
+        "登山",
+        "远郊"
+      ],
       "heat": 5,
       "dur": 180,
       "intro": "满山刻着石狮的山，登顶望剑川坝子。",
@@ -934,14 +1461,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [99.8892, 26.5462],
-      "coord_src": "estimate"
+      "coord": [
+        99.890855,
+        26.538917
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B036800ARE",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nuodeng",
       "name": "诺邓古村",
       "cat": "古镇",
-      "tags": ["盐井", "火腿", "远郊"],
+      "tags": [
+        "盐井",
+        "火腿",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 240,
       "intro": "千年盐井村，土掌房一层层叠上山。",
@@ -949,14 +1485,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [99.3462, 25.8962],
-      "coord_src": "estimate"
+      "coord": [
+        99.377706,
+        25.916204
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFTPILI",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jizushan",
       "name": "鸡足山",
       "cat": "山水",
-      "tags": ["佛教名山", "金顶", "远郊"],
+      "tags": [
+        "佛教名山",
+        "金顶",
+        "远郊"
+      ],
       "heat": 7.5,
       "dur": 300,
       "intro": "佛教名山，金顶日出和楞严塔都出名。",
@@ -964,14 +1509,23 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.3892, 25.9658],
-      "coord_src": "estimate"
+      "coord": [
+        100.387661,
+        25.956975
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680I2A8",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "weishan-old-town",
       "name": "巍山古城",
       "cat": "古镇",
-      "tags": ["南诏古都", "老街", "远郊"],
+      "tags": [
+        "南诏古都",
+        "老街",
+        "远郊"
+      ],
       "heat": 7.5,
       "dur": 240,
       "intro": "南诏发祥地，拱辰楼和古街都保存完整。",
@@ -979,14 +1533,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.489, 25.2312],
-      "coord_src": "estimate"
+      "coord": [
+        100.309123,
+        25.227725
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680ICRP",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "weibao-mountain",
       "name": "巍宝山",
       "cat": "山水",
-      "tags": ["道教", "古建", "远郊"],
+      "tags": [
+        "道教",
+        "古建",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 200,
       "intro": "巍山城南的道教名山，明清道观藏在林间。",
@@ -994,14 +1557,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.4085, 25.1885],
-      "coord_src": "estimate"
+      "coord": [
+        100.352216,
+        25.172636
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B03680HYLB",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "weishan-food-street",
       "name": "巍山南诏古街",
       "cat": "美食",
-      "tags": ["小吃", "耙肉饵丝", "远郊"],
+      "tags": [
+        "小吃",
+        "耙肉饵丝",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "巍山古城的吃街，饵丝蜜饯一根面都在这。",
@@ -1009,14 +1581,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.4884, 25.2298],
-      "coord_src": "estimate"
+      "coord": [
+        100.308625,
+        25.227425
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0MUV1XL4Z",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "wuliang-cherry",
       "name": "无量山樱花谷",
       "cat": "山水",
-      "tags": ["樱花", "限季", "远郊"],
+      "tags": [
+        "樱花",
+        "限季",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 240,
       "intro": "冬天开满樱花的茶山，全国最早的春景。",
@@ -1024,14 +1605,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.572, 24.7325],
-      "coord_src": "estimate"
+      "coord": [
+        100.527156,
+        24.764223
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGCTZ0M",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "eryuan-xihu",
       "name": "洱源西湖",
       "cat": "公园",
-      "tags": ["湿地", "划船", "远郊"],
+      "tags": [
+        "湿地",
+        "划船",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "洱源坝子里的水乡湿地，村子浮在水上。",
@@ -1039,14 +1629,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.0182, 26.0628],
+      "coord": [
+        100.0182,
+        26.0628
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "direshenguo",
       "name": "洱源地热国",
       "cat": "亲子",
-      "tags": ["温泉", "泡汤", "远郊"],
+      "tags": [
+        "温泉",
+        "泡汤",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 180,
       "intro": "洱源的温泉度假区，泡池多水也够热。",
@@ -1054,14 +1651,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [99.9532, 26.1235],
-      "coord_src": "estimate"
+      "coord": [
+        99.958775,
+        26.123236
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0368006LZ",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yunnanyi",
       "name": "云南驿古镇",
       "cat": "古镇",
-      "tags": ["驿站", "茶马古道", "远郊"],
+      "tags": [
+        "驿站",
+        "茶马古道",
+        "远郊"
+      ],
       "heat": 5,
       "dur": 120,
       "intro": "祥云的老驿站，马帮当年歇脚的地方。",
@@ -1069,8 +1675,13 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.7402, 25.3605],
-      "coord_src": "estimate"
+      "coord": [
+        100.693898,
+        25.421575
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFOG08U",
+      "refreshed_at": "2026-10-16"
     }
   ]
 }

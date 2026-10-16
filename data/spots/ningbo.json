@@ -19,14 +19,19 @@
       "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
-    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
       "id": "tianyi-pavilion",
       "name": "天一阁博物院",
       "cat": "古迹",
-      "tags": ["藏书楼", "园林", "早去"],
+      "tags": [
+        "藏书楼",
+        "园林",
+        "早去"
+      ],
       "heat": 10,
       "dur": 90,
       "intro": "亚洲现存最古老的私家藏书楼，书阁与园林一体。",
@@ -34,14 +39,23 @@
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5392, 29.8735],
-      "coord_src": "estimate"
+      "coord": [
+        121.539591,
+        29.871055
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05BNE",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "laowaitan",
       "name": "老外滩",
       "cat": "夜景",
-      "tags": ["夜景", "酒吧", "江边"],
+      "tags": [
+        "夜景",
+        "酒吧",
+        "江边"
+      ],
       "heat": 9,
       "dur": 90,
       "intro": "宁波的百年外滩，夜里是沿江酒吧街区。",
@@ -49,14 +63,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5587, 29.8802],
-      "coord_src": "estimate"
+      "coord": [
+        121.561048,
+        29.877803
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHOSTAZ",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nantang-street",
       "name": "南塘老街",
       "cat": "美食",
-      "tags": ["小吃", "古街", "晚上"],
+      "tags": [
+        "小吃",
+        "古街",
+        "晚上"
+      ],
       "heat": 9,
       "dur": 100,
       "intro": "南塘河边的小吃老街，宁波点心最集中。",
@@ -64,14 +87,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5361, 29.8611],
-      "coord_src": "estimate"
+      "coord": [
+        121.538131,
+        29.853527
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0Y5SC",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dongqian-lake",
       "name": "东钱湖",
       "cat": "山水",
-      "tags": ["骑行", "湖鲜", "大湖"],
+      "tags": [
+        "骑行",
+        "湖鲜",
+        "大湖"
+      ],
       "heat": 9,
       "dur": 180,
       "intro": "浙东最大的淡水湖，环湖骑行看山看水。",
@@ -79,14 +111,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.66, 29.785],
-      "coord_src": "estimate"
+      "coord": [
+        121.662194,
+        29.76452
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0579Q",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xuedou-mountain",
       "name": "雪窦山",
       "cat": "山水",
-      "tags": ["瀑布", "索道", "远郊"],
+      "tags": [
+        "瀑布",
+        "索道",
+        "远郊"
+      ],
       "heat": 9,
       "dur": 240,
       "intro": "奉化溪口的四明山支脉，千丈岩瀑布出名。",
@@ -94,14 +135,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.22, 29.69],
-      "coord_src": "estimate"
+      "coord": [
+        121.258417,
+        29.685926
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E07FDK",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jiangshi-residence",
       "name": "溪口·蒋氏故居",
       "cat": "古迹",
-      "tags": ["民国", "剡溪", "老宅"],
+      "tags": [
+        "民国",
+        "剡溪",
+        "老宅"
+      ],
       "heat": 8.5,
       "dur": 120,
       "intro": "蒋氏父子故里，民国建筑沿剡溪排开。",
@@ -109,14 +159,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.279, 29.689],
-      "coord_src": "estimate"
+      "coord": [
+        121.272244,
+        29.681016
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0JUJ6FNO5",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "film-city",
       "name": "象山影视城",
       "cat": "亲子",
-      "tags": ["影视", "换装", "早去"],
+      "tags": [
+        "影视",
+        "换装",
+        "早去"
+      ],
       "heat": 8.5,
       "dur": 240,
       "intro": "国内大型影视拍摄基地，常有实景演出。",
@@ -124,14 +183,23 @@
       "open": "08:30-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.785, 29.395],
-      "coord_src": "estimate"
+      "coord": [
+        121.835731,
+        29.29005
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05C1E",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tianyi-square",
       "name": "天一广场",
       "cat": "商圈",
-      "tags": ["购物", "喷泉", "地铁达"],
+      "tags": [
+        "购物",
+        "喷泉",
+        "地铁达"
+      ],
       "heat": 8.5,
       "dur": 80,
       "intro": "宁波最热闹的城市中心广场。",
@@ -139,14 +207,23 @@
       "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.551, 29.873],
-      "coord_src": "estimate"
+      "coord": [
+        121.552261,
+        29.869716
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGK8PRI",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ningbo-museum",
       "name": "宁波博物馆",
       "cat": "博物馆",
-      "tags": ["王澍", "瓦爿墙", "免费"],
+      "tags": [
+        "王澍",
+        "瓦爿墙",
+        "免费"
+      ],
       "heat": 8.5,
       "dur": 110,
       "intro": "王澍设计的瓦爿墙建筑，讲宁波通史。",
@@ -154,14 +231,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [121.5461, 29.8118],
-      "coord_src": "estimate"
+      "coord": [
+        121.542824,
+        29.814259
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV10193196",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yuehu-park",
       "name": "月湖公园",
       "cat": "公园",
-      "tags": ["免费", "老城", "散步"],
+      "tags": [
+        "免费",
+        "老城",
+        "散步"
+      ],
       "heat": 8,
       "dur": 70,
       "intro": "老城中心的千年月湖，亭台连着街巷。",
@@ -169,14 +255,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5438, 29.8674],
-      "coord_src": "estimate"
+      "coord": [
+        121.543597,
+        29.867182
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05BX0",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ningbo-zoo",
       "name": "宁波野生动物园",
       "cat": "亲子",
-      "tags": ["熊猫", "自驾区", "早去"],
+      "tags": [
+        "熊猫",
+        "自驾区",
+        "早去"
+      ],
       "heat": 7.5,
       "dur": 210,
       "intro": "东钱湖畔的动物园，有自驾车行区。",
@@ -184,14 +279,23 @@
       "open": "08:30-17:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.6401, 29.813],
-      "coord_src": "estimate"
+      "coord": [
+        121.674671,
+        29.80411
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05BXN",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shipu",
       "name": "石浦渔港古城",
       "cat": "古镇",
-      "tags": ["渔港", "海鲜", "老街"],
+      "tags": [
+        "渔港",
+        "海鲜",
+        "老街"
+      ],
       "heat": 7.5,
       "dur": 210,
       "intro": "象山石浦渔港边的山城老街。",
@@ -199,14 +303,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.945, 29.207],
-      "coord_src": "estimate"
+      "coord": [
+        121.947088,
+        29.208449
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05B0B",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "hemu-du",
       "name": "河姆渡遗址博物馆",
       "cat": "博物馆",
-      "tags": ["七千年", "稻作", "遗址"],
+      "tags": [
+        "七千年",
+        "稻作",
+        "遗址"
+      ],
       "heat": 7.5,
       "dur": 120,
       "intro": "七千年前稻作文明的遗址现场。",
@@ -214,14 +327,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [121.328, 29.988],
-      "coord_src": "estimate"
+      "coord": [
+        121.350109,
+        29.961149
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFG2ZMMU",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "sanjiangkou",
       "name": "三江口",
       "cat": "夜景",
-      "tags": ["夜景", "灯光秀", "江边"],
+      "tags": [
+        "夜景",
+        "灯光秀",
+        "江边"
+      ],
       "heat": 7.5,
       "dur": 60,
       "intro": "甬江、奉化江、余姚江交汇处的夜景。",
@@ -229,14 +351,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5555, 29.8768],
-      "coord_src": "estimate"
+      "coord": [
+        121.568874,
+        29.880189
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0HRLX4QOP",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "drum-tower",
       "name": "宁波鼓楼",
       "cat": "古迹",
-      "tags": ["城楼", "老城中心", "小吃"],
+      "tags": [
+        "城楼",
+        "老城中心",
+        "小吃"
+      ],
       "heat": 7,
       "dur": 45,
       "intro": "宁波仅存的古城楼，底下是老商业街。",
@@ -244,14 +375,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.5499, 29.876],
-      "coord_src": "estimate"
+      "coord": [
+        121.546596,
+        29.873675
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05A3C",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "baoguo-temple",
       "name": "保国寺",
       "cat": "古迹",
-      "tags": ["北宋大殿", "古建筑", "木构"],
+      "tags": [
+        "北宋大殿",
+        "古建筑",
+        "木构"
+      ],
       "heat": 7,
       "dur": 70,
       "intro": "江南最古老的木构大殿，千年无虫蛀之谜。",
@@ -259,14 +399,23 @@
       "open": "08:30-17:00",
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.528, 29.9417],
-      "coord_src": "estimate"
+      "coord": [
+        121.523705,
+        29.978382
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV10191777",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tiantong-temple",
       "name": "天童寺",
       "cat": "古迹",
-      "tags": ["千年古刹", "曹洞宗", "森林"],
+      "tags": [
+        "千年古刹",
+        "曹洞宗",
+        "森林"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "曹洞宗祖庭，藏在太白山森林深处。",
@@ -274,14 +423,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.7923, 29.8082],
-      "coord_src": "estimate"
+      "coord": [
+        121.794822,
+        29.804083
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E010E3",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xiaoputuo",
       "name": "东钱湖·小普陀",
       "cat": "古迹",
-      "tags": ["湖中岛", "霞屿", "春游"],
+      "tags": [
+        "湖中岛",
+        "霞屿",
+        "春游"
+      ],
       "heat": 7,
       "dur": 70,
       "intro": "东钱湖心的小岛，霞屿禅寺与长堤相连。",
@@ -289,14 +447,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.669, 29.793],
-      "coord_src": "estimate"
+      "coord": [
+        121.662194,
+        29.76452
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0579Q",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xuedou-temple",
       "name": "雪窦寺",
       "cat": "古迹",
-      "tags": ["弥勒道场", "露天大佛", "山中"],
+      "tags": [
+        "弥勒道场",
+        "露天大佛",
+        "山中"
+      ],
       "heat": 7,
       "dur": 70,
       "intro": "雪窦山中的弥勒道场，露天大佛高 56 米。",
@@ -304,14 +471,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.233, 29.684],
-      "coord_src": "estimate"
+      "coord": [
+        121.222139,
+        29.684634
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0584Y",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "cicheng",
       "name": "慈城古县城",
       "cat": "古镇",
-      "tags": ["古县城", "年糕", "孔庙"],
+      "tags": [
+        "古县城",
+        "年糕",
+        "孔庙"
+      ],
       "heat": 7,
       "dur": 180,
       "intro": "保存完整的江南古县城，县衙孔庙齐备。",
@@ -319,14 +495,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.447, 29.9717],
-      "coord_src": "estimate"
+      "coord": [
+        121.450657,
+        29.984207
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E07FCK",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qiantong",
       "name": "前童古镇",
       "cat": "古镇",
-      "tags": ["八卦水系", "卵石路", "三宝"],
+      "tags": [
+        "八卦水系",
+        "卵石路",
+        "三宝"
+      ],
       "heat": 7,
       "dur": 180,
       "intro": "宁海前童，家家门前流水绕着卵石巷。",
@@ -334,14 +519,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.34, 29.245],
-      "coord_src": "estimate"
+      "coord": [
+        121.35028,
+        29.224252
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05C1U",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gulou-street",
       "name": "鼓楼沿步行街",
       "cat": "街区",
-      "tags": ["小吃", "夜灯", "老城"],
+      "tags": [
+        "小吃",
+        "夜灯",
+        "老城"
+      ],
       "heat": 7,
       "dur": 60,
       "intro": "鼓楼下的老街，油赞子和汤圆都在这。",
@@ -349,14 +543,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.5499, 29.8762],
-      "coord_src": "estimate"
+      "coord": [
+        121.546788,
+        29.873733
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0J3FD11TQ",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "hanling",
       "name": "韩岭老街",
       "cat": "街区",
-      "tags": ["东钱湖", "古街", "咖啡"],
+      "tags": [
+        "东钱湖",
+        "古街",
+        "咖啡"
+      ],
       "heat": 7,
       "dur": 100,
       "intro": "东钱湖畔的老街，一半老屋一半咖啡店。",
@@ -364,14 +567,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.6956, 29.7683],
-      "coord_src": "estimate"
+      "coord": [
+        121.664435,
+        29.735992
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV10328797",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gang-museum",
       "name": "中国港口博物馆",
       "cat": "博物馆",
-      "tags": ["港口", "北仑", "免费"],
+      "tags": [
+        "港口",
+        "北仑",
+        "免费"
+      ],
       "heat": 7,
       "dur": 120,
       "intro": "北仑春晓的港口主题国家博物馆。",
@@ -379,14 +591,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": true,
-      "coord": [121.91, 29.83],
-      "coord_src": "estimate"
+      "coord": [
+        121.909509,
+        29.756117
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF2L58Z",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "science-center",
       "name": "宁波科学探索中心",
       "cat": "亲子",
-      "tags": ["互动", "室内", "预约"],
+      "tags": [
+        "互动",
+        "室内",
+        "预约"
+      ],
       "heat": 7,
       "dur": 150,
       "intro": "文化广场内的科普馆，展厅可以动手玩。",
@@ -394,14 +615,23 @@
       "open": "09:00-16:30",
       "closed_mon": true,
       "suburb": false,
-      "coord": [121.6167, 29.8107],
-      "coord_src": "estimate"
+      "coord": [
+        121.617376,
+        29.858811
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF005ZO",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "romon",
       "name": "罗蒙环球乐园",
       "cat": "亲子",
-      "tags": ["主题乐园", "过山车", "夜场"],
+      "tags": [
+        "主题乐园",
+        "过山车",
+        "夜场"
+      ],
       "heat": 7,
       "dur": 240,
       "intro": "鄞州的大型主题乐园，室内外项目都有。",
@@ -409,14 +639,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.583, 29.839],
-      "coord_src": "estimate"
+      "coord": [
+        121.544449,
+        29.797471
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFVJ1N4",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "fangte",
       "name": "方特东方神画",
       "cat": "亲子",
-      "tags": ["主题乐园", "神话", "夜场"],
+      "tags": [
+        "主题乐园",
+        "神话",
+        "夜场"
+      ],
       "heat": 7,
       "dur": 300,
       "intro": "杭州湾新区的国风神话主题乐园。",
@@ -424,14 +663,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.12, 30.29],
-      "coord_src": "estimate"
+      "coord": [
+        121.182521,
+        30.318987
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFG89PNF",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "chenghuang-miao",
       "name": "城隍庙小吃城",
       "cat": "美食",
-      "tags": ["小吃", "老城", "便宜"],
+      "tags": [
+        "小吃",
+        "老城",
+        "便宜"
+      ],
       "heat": 7,
       "dur": 70,
       "intro": "老城隍庙边的小吃聚集地。",
@@ -439,14 +687,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.5447, 29.867],
+      "coord": [
+        121.5447,
+        29.867
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "baisha-seafood",
       "name": "白沙海鲜排档",
       "cat": "美食",
-      "tags": ["海鲜", "排档", "江边"],
+      "tags": [
+        "海鲜",
+        "排档",
+        "江边"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "江北白沙一带的海鲜排档，现挑现做。",
@@ -454,14 +709,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.558, 29.888],
+      "coord": [
+        121.558,
+        29.888
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "zhousu-yuejiang",
       "name": "舟宿夜江",
       "cat": "美食",
-      "tags": ["夜宵", "江边", "小龙虾"],
+      "tags": [
+        "夜宵",
+        "江边",
+        "小龙虾"
+      ],
       "heat": 7,
       "dur": 100,
       "intro": "姚江边的夜宵街区，夏天尤其热闹。",
@@ -469,14 +731,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.535, 29.892],
-      "coord_src": "estimate"
+      "coord": [
+        121.543251,
+        29.848754
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05V4H",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "sanjiang-cruise",
       "name": "三江夜游",
       "cat": "夜景",
-      "tags": ["游船", "夜景", "晚上"],
+      "tags": [
+        "游船",
+        "夜景",
+        "晚上"
+      ],
       "heat": 7,
       "dur": 80,
       "intro": "乘游船看三江六岸的灯带。",
@@ -484,14 +755,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.554, 29.878],
-      "coord_src": "estimate"
+      "coord": [
+        121.561532,
+        29.877282
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0G271GLR7",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "songlanshan",
       "name": "松兰山海滨",
       "cat": "山水",
-      "tags": ["沙滩", "日出", "度假"],
+      "tags": [
+        "沙滩",
+        "日出",
+        "度假"
+      ],
       "heat": 6.5,
       "dur": 180,
       "intro": "象山松兰山的沙滩，海景连着礁石湾。",
@@ -499,14 +779,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.94, 29.45],
-      "coord_src": "estimate"
+      "coord": [
+        121.950771,
+        29.425295
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05BN3",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ninghai-hotspring",
       "name": "宁海森林温泉",
       "cat": "山水",
-      "tags": ["温泉", "森林", "泡汤"],
+      "tags": [
+        "温泉",
+        "森林",
+        "泡汤"
+      ],
       "heat": 6.5,
       "dur": 180,
       "intro": "天明山里的森林温泉，露天汤池。",
@@ -514,14 +803,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.33, 29.39],
-      "coord_src": "estimate"
+      "coord": [
+        121.34835,
+        29.388023
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05876",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "simingshan",
       "name": "四明山国家森林公园",
       "cat": "山水",
-      "tags": ["避暑", "红枫", "盘山路"],
+      "tags": [
+        "避暑",
+        "红枫",
+        "盘山路"
+      ],
       "heat": 6.5,
       "dur": 240,
       "intro": "余姚四明山主峰区，夏避暑秋看红枫。",
@@ -529,14 +827,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.0, 29.78],
-      "coord_src": "estimate"
+      "coord": [
+        121.095706,
+        29.748743
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E04F7I",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "minghe",
       "name": "鸣鹤古镇",
       "cat": "古镇",
-      "tags": ["白洋湖", "国药", "年糕"],
+      "tags": [
+        "白洋湖",
+        "国药",
+        "年糕"
+      ],
       "heat": 6.5,
       "dur": 150,
       "intro": "慈溪鸣鹤，白洋湖畔的国药古镇。",
@@ -544,14 +851,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.2652, 30.1218],
-      "coord_src": "estimate"
+      "coord": [
+        121.381095,
+        30.134759
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFWXJAR",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shanglin-lake",
       "name": "上林湖越窑博物馆",
       "cat": "博物馆",
-      "tags": ["越窑", "青瓷", "秘色瓷"],
+      "tags": [
+        "越窑",
+        "青瓷",
+        "秘色瓷"
+      ],
       "heat": 6.5,
       "dur": 90,
       "intro": "慈溪上林湖畔的越窑青瓷专题馆。",
@@ -559,14 +875,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": true,
-      "coord": [121.21, 30.12],
-      "coord_src": "estimate"
+      "coord": [
+        121.344718,
+        30.120075
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0HRJCNVHN",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "wangyangming",
       "name": "王阳明故居",
       "cat": "古迹",
-      "tags": ["阳明", "故居", "瑞云楼"],
+      "tags": [
+        "阳明",
+        "故居",
+        "瑞云楼"
+      ],
       "heat": 6.5,
       "dur": 50,
       "intro": "余姚王阳明出生地，瑞云楼与牌坊尚存。",
@@ -574,14 +899,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [121.1547, 30.045],
-      "coord_src": "estimate"
+      "coord": [
+        121.152605,
+        30.050746
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05XJB",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhaobaoshan",
       "name": "招宝山",
       "cat": "古迹",
-      "tags": ["海防", "江景", "登高"],
+      "tags": [
+        "海防",
+        "江景",
+        "登高"
+      ],
       "heat": 6.5,
       "dur": 80,
       "intro": "镇海口海防要塞，山上有威远城炮台。",
@@ -589,14 +923,23 @@
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.7305, 29.97],
-      "coord_src": "estimate"
+      "coord": [
+        121.723511,
+        29.95698
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV10964393",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qingan-hall",
       "name": "庆安会馆",
       "cat": "古迹",
-      "tags": ["天后宫", "木雕", "海事"],
+      "tags": [
+        "天后宫",
+        "木雕",
+        "海事"
+      ],
       "heat": 6.5,
       "dur": 50,
       "intro": "清代船商会馆，妈祖文化与木雕戏台。",
@@ -604,14 +947,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.5596, 29.8774],
-      "coord_src": "estimate"
+      "coord": [
+        121.563004,
+        29.87198
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E04F6S",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tianfeng-tower",
       "name": "天封塔",
       "cat": "古迹",
-      "tags": ["地标", "登塔", "老城"],
+      "tags": [
+        "地标",
+        "登塔",
+        "老城"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "唐代始建的城中心古塔，可登高看老城。",
@@ -619,14 +971,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.549, 29.866],
-      "coord_src": "estimate"
+      "coord": [
+        121.5509,
+        29.865328
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E02P0C",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ayuwang-temple",
       "name": "阿育王寺",
       "cat": "古迹",
-      "tags": ["舍利塔", "禅寺", "免费"],
+      "tags": [
+        "舍利塔",
+        "禅寺",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "供奉释迦舍利塔的千年古刹，规模宏大。",
@@ -634,14 +995,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.7568, 29.8473],
-      "coord_src": "estimate"
+      "coord": [
+        121.742647,
+        29.846239
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05C0D",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ningbo-bang",
       "name": "宁波帮博物馆",
       "cat": "博物馆",
-      "tags": ["商帮", "免费", "室内"],
+      "tags": [
+        "商帮",
+        "免费",
+        "室内"
+      ],
       "heat": 6.5,
       "dur": 90,
       "intro": "镇海庄市的宁波帮主题博物馆。",
@@ -649,14 +1019,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [121.6189, 29.971],
-      "coord_src": "estimate"
+      "coord": [
+        121.627435,
+        29.918423
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0Z44G",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "art-museum",
       "name": "宁波美术馆",
       "cat": "博物馆",
-      "tags": ["老外滩", "展览", "免费"],
+      "tags": [
+        "老外滩",
+        "展览",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 70,
       "intro": "老外滩码头改造的美术馆，有临江展厅。",
@@ -664,14 +1043,23 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [121.5578, 29.8813],
-      "coord_src": "estimate"
+      "coord": [
+        121.649038,
+        29.735074
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0M2MXU4Y2",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "culture-plaza",
       "name": "宁波文化广场",
       "cat": "商圈",
-      "tags": ["剧院", "书店", "亲子"],
+      "tags": [
+        "剧院",
+        "书店",
+        "亲子"
+      ],
       "heat": 6.5,
       "dur": 90,
       "intro": "东部新城的文化综合体，剧院书店齐全。",
@@ -679,14 +1067,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.618, 29.812],
-      "coord_src": "estimate"
+      "coord": [
+        121.61735,
+        29.8579
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0C2IA",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "grand-theatre",
       "name": "宁波大剧院",
       "cat": "演出",
-      "tags": ["剧院", "晚上", "江北"],
+      "tags": [
+        "剧院",
+        "晚上",
+        "江北"
+      ],
       "heat": 6.5,
       "dur": 120,
       "intro": "江北湾头的剧院，话剧音乐会常有。",
@@ -694,14 +1091,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.536, 29.889],
-      "coord_src": "estimate"
+      "coord": [
+        121.548443,
+        29.89125
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0127F",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jiulong-lake",
       "name": "九龙湖",
       "cat": "山水",
-      "tags": ["水库", "山色", "近郊"],
+      "tags": [
+        "水库",
+        "山色",
+        "近郊"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "镇海九龙湖，山水相间的度假区。",
@@ -709,14 +1115,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.586, 29.984],
-      "coord_src": "estimate"
+      "coord": [
+        121.547725,
+        30.039688
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0MUXA8VX8",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhedong-canyon",
       "name": "浙东大峡谷",
       "cat": "山水",
-      "tags": ["峡谷", "溪水", "徒步"],
+      "tags": [
+        "峡谷",
+        "溪水",
+        "徒步"
+      ],
       "heat": 6,
       "dur": 240,
       "intro": "宁海白溪上游的峡谷，溪水夹着石滩。",
@@ -724,14 +1139,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.15, 29.23],
-      "coord_src": "estimate"
+      "coord": [
+        121.257812,
+        29.190653
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0G3LMFP8B",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "huaao-island",
       "name": "花岙岛",
       "cat": "山水",
-      "tags": ["海上石林", "轮渡", "玄武岩"],
+      "tags": [
+        "海上石林",
+        "轮渡",
+        "玄武岩"
+      ],
       "heat": 6,
       "dur": 240,
       "intro": "象山南端的海岛，柱状节理石林奇观。",
@@ -739,14 +1163,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [121.87, 29.26],
+      "coord": [
+        121.87,
+        29.26
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "jiufeng",
       "name": "九峰山",
       "cat": "山水",
-      "tags": ["北仑", "登山", "梅园"],
+      "tags": [
+        "北仑",
+        "登山",
+        "梅园"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "北仑九峰山网岙景区，山路连着水库。",
@@ -754,14 +1185,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.87, 29.89],
-      "coord_src": "estimate"
+      "coord": [
+        121.862341,
+        29.840393
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E04UO0",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "meishan-bay",
       "name": "梅山湾沙滩公园",
       "cat": "山水",
-      "tags": ["沙滩", "露营", "看海"],
+      "tags": [
+        "沙滩",
+        "露营",
+        "看海"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "北仑梅山湾的人工沙滩，可以露营看海。",
@@ -769,14 +1209,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.89, 29.79],
-      "coord_src": "estimate"
+      "coord": [
+        121.916614,
+        29.754457
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH9P1B1",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "liangzhu-park",
       "name": "梁祝文化公园",
       "cat": "公园",
-      "tags": ["梁祝", "园林", "近郊"],
+      "tags": [
+        "梁祝",
+        "园林",
+        "近郊"
+      ],
       "heat": 6,
       "dur": 100,
       "intro": "梁山伯庙与化蝶故事的园林公园。",
@@ -784,14 +1233,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.464, 29.86],
-      "coord_src": "estimate"
+      "coord": [
+        121.482183,
+        29.903976
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV10193791",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "botanic-garden",
       "name": "宁波植物园",
       "cat": "公园",
-      "tags": ["花季", "亲子", "骑行"],
+      "tags": [
+        "花季",
+        "亲子",
+        "骑行"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "镇海的市级植物园，一年四季花展不断。",
@@ -799,14 +1257,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.63, 29.924],
-      "coord_src": "estimate"
+      "coord": [
+        121.609599,
+        29.945628
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFDKBCW",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tengtou",
       "name": "滕头村",
       "cat": "公园",
-      "tags": ["乡村", "生态", "亲子"],
+      "tags": [
+        "乡村",
+        "生态",
+        "亲子"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "奉化滕头生态村，白鸽与田园小火车。",
@@ -814,14 +1281,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.418, 29.666],
-      "coord_src": "estimate"
+      "coord": [
+        121.390984,
+        29.700256
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E04WDI",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "hangzhouwan-wetland",
       "name": "杭州湾国家湿地公园",
       "cat": "公园",
-      "tags": ["湿地", "候鸟", "芦苇"],
+      "tags": [
+        "湿地",
+        "候鸟",
+        "芦苇"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "慈溪杭州湾湿地，芦苇荡里藏着观鸟屋。",
@@ -829,14 +1305,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.16, 30.33],
-      "coord_src": "estimate"
+      "coord": [
+        121.159453,
+        30.314395
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E13QX5",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tiangong",
       "name": "天宫庄园",
       "cat": "亲子",
-      "tags": ["采摘", "草莓", "近郊"],
+      "tags": [
+        "采摘",
+        "草莓",
+        "近郊"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "鄞州湾底的采摘庄园，四季都有果子。",
@@ -844,14 +1329,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.59, 29.795],
-      "coord_src": "estimate"
+      "coord": [
+        121.577321,
+        29.802811
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05D2C",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ocean-world",
       "name": "宁波海洋世界",
       "cat": "亲子",
-      "tags": ["海洋馆", "表演", "室内"],
+      "tags": [
+        "海洋馆",
+        "表演",
+        "室内"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "市区里的海洋馆，海豚表演和水母展厅。",
@@ -859,14 +1353,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.562, 29.848],
-      "coord_src": "estimate"
+      "coord": [
+        121.582695,
+        29.853068
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E04MC6",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yinzhou-wanda",
       "name": "鄞州万达广场",
       "cat": "商圈",
-      "tags": ["购物", "餐饮", "室内"],
+      "tags": [
+        "购物",
+        "餐饮",
+        "室内"
+      ],
       "heat": 6,
       "dur": 90,
       "intro": "鄞州核心商圈，餐饮选择最多的一处。",
@@ -874,14 +1377,21 @@
       "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.535, 29.808],
+      "coord": [
+        121.535,
+        29.808
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "wenchuang-port",
       "name": "宁波文创港",
       "cat": "街区",
-      "tags": ["工业遗存", "滨江", "年轻人"],
+      "tags": [
+        "工业遗存",
+        "滨江",
+        "年轻人"
+      ],
       "heat": 6,
       "dur": 80,
       "intro": "甬江北岸老码头改造的文创园区。",
@@ -889,14 +1399,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.576, 29.9],
-      "coord_src": "estimate"
+      "coord": [
+        121.574627,
+        29.894132
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLEKO1Q",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yuehu-shengyuan",
       "name": "月湖盛园",
       "cat": "街区",
-      "tags": ["月湖畔", "餐饮", "晚上"],
+      "tags": [
+        "月湖畔",
+        "餐饮",
+        "晚上"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "月湖西侧的历史街区，餐馆开在老宅里。",
@@ -904,14 +1423,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.539, 29.866],
-      "coord_src": "estimate"
+      "coord": [
+        121.547983,
+        29.863394
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "BV11038408",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nanbu-shuijie",
       "name": "南部商务区水街",
       "cat": "街区",
-      "tags": ["夜景", "咖啡", "鄞州"],
+      "tags": [
+        "夜景",
+        "咖啡",
+        "鄞州"
+      ],
       "heat": 6,
       "dur": 70,
       "intro": "鄞州南部商务区的水街，夜里灯火好看。",
@@ -919,14 +1447,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.546, 29.8],
+      "coord": [
+        121.546,
+        29.8
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "yifu-theatre",
       "name": "宁波逸夫剧院",
       "cat": "演出",
-      "tags": ["甬剧", "地方戏", "老戏院"],
+      "tags": [
+        "甬剧",
+        "地方戏",
+        "老戏院"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "老戏院，以甬剧和越剧演出为主。",
@@ -934,14 +1469,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.548, 29.8735],
-      "coord_src": "estimate"
+      "coord": [
+        121.548199,
+        29.86833
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E02P2S",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jiangbei-church",
       "name": "江北天主堂",
       "cat": "古迹",
-      "tags": ["哥特式", "老外滩", "拍照"],
+      "tags": [
+        "哥特式",
+        "老外滩",
+        "拍照"
+      ],
       "heat": 6,
       "dur": 40,
       "intro": "1872 年重建的哥特式教堂，老外滩地标。",
@@ -949,14 +1493,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.5592, 29.8818],
-      "coord_src": "estimate"
+      "coord": [
+        121.449614,
+        29.986287
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0KR9UDTHR",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qita-temple",
       "name": "七塔禅寺",
       "cat": "古迹",
-      "tags": ["禅寺", "闹市", "免费"],
+      "tags": [
+        "禅寺",
+        "闹市",
+        "免费"
+      ],
       "heat": 6,
       "dur": 45,
       "intro": "闹市中的千年禅林，宁波四大丛林之一。",
@@ -964,14 +1517,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.557, 29.8627],
-      "coord_src": "estimate"
+      "coord": [
+        121.56777,
+        29.8654
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05BWN",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nansong-stone",
       "name": "南宋石刻公园",
       "cat": "古迹",
-      "tags": ["石刻", "南宋", "小众"],
+      "tags": [
+        "石刻",
+        "南宋",
+        "小众"
+      ],
       "heat": 6,
       "dur": 60,
       "intro": "江南最大的南宋墓道石刻群，石像成列。",
@@ -979,14 +1541,23 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [121.649, 29.7645],
-      "coord_src": "estimate"
+      "coord": [
+        121.686839,
+        29.745834
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E066IG",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "baiyunzhuang",
       "name": "白云庄",
       "cat": "古迹",
-      "tags": ["黄宗羲", "书院", "免费"],
+      "tags": [
+        "黄宗羲",
+        "书院",
+        "免费"
+      ],
       "heat": 5.5,
       "dur": 40,
       "intro": "黄宗羲讲学的甬上证人书院旧址。",
@@ -994,14 +1565,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.5305, 29.878],
-      "coord_src": "estimate"
+      "coord": [
+        121.524442,
+        29.874755
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E05XK3",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zoumatang",
       "name": "走马塘古村",
       "cat": "古镇",
-      "tags": ["进士村", "荷塘", "小众"],
+      "tags": [
+        "进士村",
+        "荷塘",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 90,
       "intro": "鄞州千年进士村，荷塘围着老宅院落。",
@@ -1009,14 +1589,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.529, 29.7427],
-      "coord_src": "estimate"
+      "coord": [
+        121.485402,
+        29.719003
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFNMSUL",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zheng-17",
       "name": "郑氏十七房",
       "cat": "古镇",
-      "tags": ["明清院落", "水系", "小众"],
+      "tags": [
+        "明清院落",
+        "水系",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 120,
       "intro": "镇海郑氏十七房，明清大宅沿河排开。",
@@ -1024,14 +1613,23 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [121.66, 30.01],
-      "coord_src": "estimate"
+      "coord": [
+        121.60531,
+        30.020988
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B023E07A3K",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "longquanshan",
       "name": "龙泉山",
       "cat": "公园",
-      "tags": ["余姚", "登高", "免费"],
+      "tags": [
+        "余姚",
+        "登高",
+        "免费"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "余姚城中的小山公园，山顶能看全城。",
@@ -1039,7 +1637,10 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [121.156, 30.042],
+      "coord": [
+        121.156,
+        30.042
+      ],
       "coord_src": "estimate"
     }
   ]

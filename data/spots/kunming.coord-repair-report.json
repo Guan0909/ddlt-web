@@ -1,0 +1,994 @@
+{
+  "city": "昆明",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "shilin",
+      "name": "石林风景区",
+      "before": [
+        103.325,
+        24.814
+      ],
+      "provider": "amap",
+      "after": [
+        103.325701,
+        24.812964
+      ],
+      "drift_m": 135,
+      "amap_poi_id": "B036705Y72",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "cuihu",
+      "name": "翠湖公园",
+      "before": [
+        102.706,
+        25.049
+      ],
+      "provider": "amap",
+      "after": [
+        102.703621,
+        25.048416
+      ],
+      "drift_m": 248,
+      "amap_poi_id": "B0367065BF",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dianchi-haigeng",
+      "name": "滇池·海埂大坝",
+      "before": [
+        102.662,
+        24.948
+      ],
+      "provider": "amap",
+      "after": [
+        102.714853,
+        24.912656
+      ],
+      "drift_m": 6622,
+      "amap_poi_id": "B0FFFPCY9E",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xishan-longmen",
+      "name": "西山龙门",
+      "before": [
+        102.639,
+        24.9522
+      ],
+      "provider": "amap",
+      "after": [
+        102.641725,
+        24.956075
+      ],
+      "drift_m": 511,
+      "amap_poi_id": "B0MR0RJLQK",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "jinma-biji",
+      "name": "金马碧鸡坊",
+      "before": [
+        102.7086,
+        25.0363
+      ],
+      "provider": "amap",
+      "after": [
+        102.709779,
+        25.033329
+      ],
+      "drift_m": 351,
+      "amap_poi_id": "B036711C9G",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "kunming-old-street",
+      "name": "昆明老街（文明街·光华街）",
+      "before": [
+        102.7145,
+        25.04
+      ],
+      "provider": "amap",
+      "after": [
+        102.709725,
+        25.040725
+      ],
+      "drift_m": 488,
+      "amap_poi_id": "B0MUYLS70F",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jiangwutang",
+      "name": "云南陆军讲武堂旧址",
+      "before": [
+        102.704,
+        25.0505
+      ],
+      "provider": "amap",
+      "after": [
+        102.701225,
+        25.047975
+      ],
+      "drift_m": 396,
+      "amap_poi_id": "B0LUA7P5LU",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunnan-museum",
+      "name": "云南省博物馆",
+      "before": [
+        102.7528,
+        24.9514
+      ],
+      "provider": "amap",
+      "after": [
+        102.753517,
+        24.949455
+      ],
+      "drift_m": 228,
+      "amap_poi_id": "B03670312C",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhuaxin-market",
+      "name": "篆新农贸市场",
+      "before": [
+        102.697,
+        25.032
+      ],
+      "provider": "amap",
+      "after": [
+        102.692801,
+        25.038923
+      ],
+      "drift_m": 878,
+      "amap_poi_id": "BV09537861",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "daguanlou",
+      "name": "大观楼",
+      "before": [
+        102.6725,
+        25.0273
+      ],
+      "provider": "amap",
+      "after": [
+        102.673887,
+        25.024196
+      ],
+      "drift_m": 372,
+      "amap_poi_id": "B03670747B",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nanping-street",
+      "name": "南屏街",
+      "before": [
+        102.712,
+        25.039
+      ],
+      "provider": "amap",
+      "after": [
+        102.711697,
+        25.03707
+      ],
+      "drift_m": 217,
+      "amap_poi_id": "B0FFF9IOLN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "guandu",
+      "name": "官渡古镇",
+      "before": [
+        102.7533,
+        24.9579
+      ],
+      "provider": "amap",
+      "after": [
+        102.755581,
+        24.955125
+      ],
+      "drift_m": 385,
+      "amap_poi_id": "B0367065CM",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunnan-minzucun",
+      "name": "云南民族村",
+      "before": [
+        102.674,
+        24.961
+      ],
+      "provider": "amap",
+      "after": [
+        102.660893,
+        24.96606
+      ],
+      "drift_m": 1436,
+      "amap_poi_id": "B036706Y83",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jindian",
+      "name": "金殿名胜区",
+      "before": [
+        102.765,
+        25.078
+      ],
+      "provider": "amap",
+      "after": [
+        102.771482,
+        25.08447
+      ],
+      "drift_m": 971,
+      "amap_poi_id": "B036711ANE",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "jiuxiang",
+      "name": "九乡风景区",
+      "before": [
+        103.3442,
+        25.0761
+      ],
+      "provider": "amap",
+      "after": [
+        103.370899,
+        25.080922
+      ],
+      "drift_m": 2742,
+      "amap_poi_id": "B036707I9Z",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "jiaozishan",
+      "name": "轿子雪山",
+      "before": [
+        102.852,
+        26.09
+      ],
+      "provider": "amap",
+      "after": [
+        102.82402,
+        26.054081
+      ],
+      "drift_m": 4875,
+      "amap_poi_id": "B0H1O9W0WF",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "railway-museum",
+      "name": "云南铁路博物馆",
+      "before": [
+        102.72,
+        25.06
+      ],
+      "provider": "amap",
+      "after": [
+        102.721465,
+        25.057228
+      ],
+      "drift_m": 342,
+      "amap_poi_id": "B0367062X0",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "heilongtan",
+      "name": "黑龙潭公园",
+      "before": [
+        102.732,
+        25.053
+      ],
+      "provider": "amap",
+      "after": [
+        102.750883,
+        25.142033
+      ],
+      "drift_m": 10081,
+      "amap_poi_id": "B036702DCF",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "kunming-botanical",
+      "name": "昆明植物园",
+      "before": [
+        102.74,
+        25.053
+      ],
+      "provider": "amap",
+      "after": [
+        102.742754,
+        25.137912
+      ],
+      "drift_m": 9446,
+      "amap_poi_id": "B03670000E",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "haigeng-park",
+      "name": "海埂公园",
+      "before": [
+        102.669,
+        24.956
+      ],
+      "provider": "amap",
+      "after": [
+        102.657495,
+        24.959348
+      ],
+      "drift_m": 1218,
+      "amap_poi_id": "B0KAF9N6BT",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yesheng-dongwuyuan",
+      "name": "云南野生动物园",
+      "before": [
+        102.726,
+        25.09
+      ],
+      "provider": "amap",
+      "after": [
+        102.786863,
+        25.096415
+      ],
+      "drift_m": 6170,
+      "amap_poi_id": "B03670000D",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunnan-theatre",
+      "name": "云南省大剧院",
+      "before": [
+        102.746,
+        24.957
+      ],
+      "provider": "amap",
+      "after": [
+        102.755568,
+        24.947264
+      ],
+      "drift_m": 1450,
+      "amap_poi_id": "B0FFF9KLPD",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "majia-dayuan",
+      "name": "马家大院（庭院剧场）",
+      "before": [
+        102.7155,
+        25.0405
+      ],
+      "provider": "amap",
+      "after": [
+        102.709134,
+        25.038435
+      ],
+      "drift_m": 681,
+      "amap_poi_id": "B0FFF43KZK",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wenlin-street",
+      "name": "文林街·文化巷",
+      "before": [
+        102.697,
+        25.056
+      ],
+      "provider": "amap",
+      "after": [
+        102.699376,
+        25.050872
+      ],
+      "drift_m": 618,
+      "amap_poi_id": "B0FFGQDT4P",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "changchongshan",
+      "name": "长虫山观景台",
+      "before": [
+        102.73,
+        25.103
+      ],
+      "provider": "amap",
+      "after": [
+        102.709983,
+        25.126335
+      ],
+      "drift_m": 3285,
+      "amap_poi_id": "B036707ENQ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shuncheng-street",
+      "name": "顺城街",
+      "before": [
+        102.7105,
+        25.0375
+      ],
+      "provider": "amap",
+      "after": [
+        102.708337,
+        25.035576
+      ],
+      "drift_m": 305,
+      "amap_poi_id": "BZ8DMU01V1",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dongxita",
+      "name": "东西寺塔",
+      "before": [
+        102.713,
+        25.0272
+      ],
+      "provider": "amap",
+      "after": [
+        102.708814,
+        25.028902
+      ],
+      "drift_m": 462,
+      "amap_poi_id": "B0FFGA3Q0C",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "shiboyuan",
+      "name": "昆明世博园",
+      "before": [
+        102.756,
+        25.06
+      ],
+      "provider": "amap",
+      "after": [
+        102.760496,
+        25.074235
+      ],
+      "drift_m": 1646,
+      "amap_poi_id": "B0367063QA",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "pubu-park",
+      "name": "昆明瀑布公园",
+      "before": [
+        102.725,
+        25.096
+      ],
+      "provider": "amap",
+      "after": [
+        102.764914,
+        25.127026
+      ],
+      "drift_m": 5296,
+      "amap_poi_id": "B0FFGE1KG8",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qiongzhusi",
+      "name": "筇竹寺",
+      "before": [
+        102.6229,
+        25.0689
+      ],
+      "provider": "amap",
+      "after": [
+        102.62444,
+        25.065245
+      ],
+      "drift_m": 435,
+      "amap_poi_id": "B036703197",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "gudian-mingcheng",
+      "name": "七彩云南·古滇名城（古滇湿地）",
+      "before": [
+        102.755,
+        24.73
+      ],
+      "provider": "amap",
+      "after": [
+        102.747804,
+        24.768494
+      ],
+      "drift_m": 4342,
+      "amap_poi_id": "B0M2O71VCH",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yangzonghai",
+      "name": "阳宗海",
+      "before": [
+        102.985,
+        24.935
+      ],
+      "provider": "amap",
+      "after": [
+        103.0033,
+        24.9552
+      ],
+      "drift_m": 2907,
+      "amap_poi_id": "B0LKNMP2DX",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "huanle-shijie",
+      "name": "七彩云南欢乐世界",
+      "before": [
+        102.76,
+        24.725
+      ],
+      "provider": "amap",
+      "after": [
+        102.740062,
+        24.769433
+      ],
+      "drift_m": 5335,
+      "amap_poi_id": "B0FFIS3KZL",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "rongchuang",
+      "name": "昆明融创乐园",
+      "before": [
+        102.75,
+        24.875
+      ],
+      "provider": "amap",
+      "after": [
+        102.651094,
+        25.015763
+      ],
+      "drift_m": 18559,
+      "amap_poi_id": "B0FFLIDNEI",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "kunming-zoo",
+      "name": "昆明动物园（圆通山）",
+      "before": [
+        102.7103,
+        25.0541
+      ],
+      "provider": "amap",
+      "after": [
+        102.710408,
+        25.053686
+      ],
+      "drift_m": 47,
+      "amap_poi_id": "B0367031Y7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "huating",
+      "name": "华亭寺",
+      "before": [
+        102.649,
+        24.965
+      ],
+      "provider": "amap",
+      "after": [
+        102.628091,
+        24.970276
+      ],
+      "drift_m": 2188,
+      "amap_poi_id": "B0FFIBX6O9",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "kunming-museum",
+      "name": "昆明市博物馆",
+      "before": [
+        102.7272,
+        25.0354
+      ],
+      "provider": "amap",
+      "after": [
+        102.728465,
+        25.032498
+      ],
+      "drift_m": 347,
+      "amap_poi_id": "B036700007",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "minzu-museum",
+      "name": "云南民族博物馆",
+      "before": [
+        102.678,
+        24.968
+      ],
+      "provider": "amap",
+      "after": [
+        102.6692,
+        24.965068
+      ],
+      "drift_m": 945,
+      "amap_poi_id": "B036703129",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "animal-museum",
+      "name": "昆明动物博物馆",
+      "before": [
+        102.7036,
+        25.0703
+      ],
+      "provider": "amap",
+      "after": [
+        102.704965,
+        25.067211
+      ],
+      "drift_m": 370,
+      "amap_poi_id": "B036709M2U",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "tanhuasi",
+      "name": "昙华寺",
+      "before": [
+        102.7461,
+        25.048
+      ],
+      "provider": "amap",
+      "after": [
+        102.746932,
+        25.045225
+      ],
+      "drift_m": 320,
+      "amap_poi_id": "B0KUB7Z128",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "anning-wenquan",
+      "name": "安宁温泉",
+      "before": [
+        102.43,
+        24.95
+      ],
+      "provider": "amap",
+      "after": [
+        102.450837,
+        24.960077
+      ],
+      "drift_m": 2381,
+      "amap_poi_id": "B0FFJATUH8",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nuohei-village",
+      "name": "糯黑石头寨",
+      "before": [
+        103.42,
+        24.64
+      ],
+      "provider": "amap",
+      "after": [
+        103.524665,
+        24.67287
+      ],
+      "drift_m": 11191,
+      "amap_poi_id": "B0MUOB3WJY",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunnan-art-museum",
+      "name": "云南美术馆",
+      "before": [
+        102.7105,
+        25.0425
+      ],
+      "provider": "amap",
+      "after": [
+        102.703961,
+        25.037301
+      ],
+      "drift_m": 876,
+      "amap_poi_id": "B0FFFOC1U8",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhenqingguan",
+      "name": "真庆观",
+      "before": [
+        102.7248,
+        25.0379
+      ],
+      "provider": "amap",
+      "after": [
+        102.726013,
+        25.034454
+      ],
+      "drift_m": 402,
+      "amap_poi_id": "B036709C9I",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shengli-tang",
+      "name": "抗战胜利纪念堂",
+      "before": [
+        102.7125,
+        25.0395
+      ],
+      "provider": "amap",
+      "after": [
+        102.707475,
+        25.040627
+      ],
+      "drift_m": 522,
+      "amap_poi_id": "B036706ZBO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "park1903",
+      "name": "公园1903",
+      "before": [
+        102.69,
+        24.98
+      ],
+      "provider": "amap",
+      "after": [
+        102.669958,
+        24.986763
+      ],
+      "drift_m": 2155,
+      "amap_poi_id": "B0367109VO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "laoyuhe-wetland",
+      "name": "捞渔河湿地公园",
+      "before": [
+        102.713,
+        24.883
+      ],
+      "provider": "amap",
+      "after": [
+        102.772324,
+        24.823351
+      ],
+      "drift_m": 8934,
+      "amap_poi_id": "BV10739923",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dongfeng-square",
+      "name": "昆明恒隆广场",
+      "before": [
+        102.72,
+        25.043
+      ],
+      "provider": "amap",
+      "after": [
+        102.721608,
+        25.036892
+      ],
+      "drift_m": 698,
+      "amap_poi_id": "B036711081",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nieer-mu",
+      "name": "聂耳墓",
+      "before": [
+        102.646,
+        24.962
+      ],
+      "provider": "amap",
+      "after": [
+        102.633664,
+        24.958294
+      ],
+      "drift_m": 1310,
+      "amap_poi_id": "B0FFGYWLPA",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "dounan-wetland",
+      "name": "斗南湿地公园",
+      "before": [
+        102.779,
+        24.885
+      ],
+      "provider": "amap",
+      "after": [
+        102.76954,
+        24.893031
+      ],
+      "drift_m": 1307,
+      "amap_poi_id": "B0FFGS2BFT",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baofeng-wetland",
+      "name": "宝丰湿地公园",
+      "before": [
+        102.742,
+        24.94
+      ],
+      "provider": "amap",
+      "after": [
+        102.725466,
+        24.922017
+      ],
+      "drift_m": 2603,
+      "amap_poi_id": "B03670ZCDY",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "haidong-wetland",
+      "name": "海东湿地公园",
+      "before": [
+        102.772,
+        24.92
+      ],
+      "provider": "amap",
+      "after": [
+        102.736075,
+        24.920175
+      ],
+      "drift_m": 3623,
+      "amap_poi_id": "B0MRV1EH58",
+      "tier": "amap-exact"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "yunnan-univ",
+      "name": "云南大学（东陆校区）",
+      "before": [
+        102.7,
+        25.0572
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "dounan-market",
+      "name": "斗南花市",
+      "before": [
+        102.78,
+        24.895
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "nanqiang-lane",
+      "name": "南强街巷",
+      "before": [
+        102.713,
+        25.033
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "lianda",
+      "name": "西南联大旧址（云南师大一二一校区）",
+      "before": [
+        102.699,
+        25.058
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "dongchuan-redland",
+      "name": "东川红土地",
+      "before": [
+        103.1,
+        26.12
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "yuantongsi",
+      "name": "圆通寺",
+      "before": [
+        102.7105,
+        25.0515
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "xiangyun-street",
+      "name": "祥云街小吃街",
+      "before": [
+        102.7145,
+        25.0355
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "leju-village",
+      "name": "乐居村",
+      "before": [
+        102.615,
+        25.08
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "chama-huajie",
+      "name": "茶马花街",
+      "before": [
+        102.662,
+        24.978
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "caoxisi",
+      "name": "曹溪寺",
+      "before": [
+        102.423,
+        24.956
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "luhan-gongguan",
+      "name": "卢汉公馆（云南起义纪念馆）",
+      "before": [
+        102.708,
+        25.047
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "m60",
+      "name": "M60 文化创意园",
+      "before": [
+        102.69,
+        25.092
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "tongde-plaza",
+      "name": "同德昆明广场",
+      "before": [
+        102.7215,
+        25.062
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "nieer-gu",
+      "name": "聂耳故居",
+      "before": [
+        102.712,
+        25.0345
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "kunming-wenmiao",
+      "name": "昆明文庙",
+      "before": [
+        102.714,
+        25.043
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    }
+  ],
+  "errors": []
+}

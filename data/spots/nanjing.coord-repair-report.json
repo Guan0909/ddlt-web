@@ -6,22 +6,6 @@
   ],
   "fixed": [
     {
-      "id": "yaxi",
-      "name": "桠溪国际慢城",
-      "before": [
-        119.05,
-        31.35
-      ],
-      "provider": "amap",
-      "after": [
-        119.091936,
-        31.379249
-      ],
-      "drift_m": 5141,
-      "amap_poi_id": "B0FFKMWWTK",
-      "tier": "amap-contains+cat"
-    },
-    {
       "id": "zhongshanling",
       "name": "中山陵",
       "before": [
@@ -292,6 +276,22 @@
       "drift_m": 425,
       "amap_poi_id": "B001909G6F",
       "tier": "amap-exact"
+    },
+    {
+      "id": "yihe-road",
+      "name": "颐和路民国公馆区",
+      "before": [
+        118.77,
+        32.063
+      ],
+      "provider": "amap",
+      "after": [
+        118.770087,
+        32.063981
+      ],
+      "drift_m": 109,
+      "amap_poi_id": "B00190BVB6",
+      "tier": "amap-substr3"
     },
     {
       "id": "kexiang",
@@ -742,6 +742,22 @@
       "tier": "amap-exact"
     },
     {
+      "id": "pukou-station",
+      "name": "浦口火车站历史文化街区",
+      "before": [
+        118.725,
+        32.088
+      ],
+      "provider": "amap",
+      "after": [
+        118.720209,
+        32.097647
+      ],
+      "drift_m": 1164,
+      "amap_poi_id": "B0FFHRRLNA",
+      "tier": "amap-substr5"
+    },
+    {
       "id": "yunjin",
       "name": "南京云锦博物馆",
       "before": [
@@ -870,6 +886,22 @@
       "tier": "amap-exact"
     },
     {
+      "id": "tianshengqiao",
+      "name": "溧水天生桥",
+      "before": [
+        118.98,
+        31.68
+      ],
+      "provider": "amap",
+      "after": [
+        118.988289,
+        31.644353
+      ],
+      "drift_m": 4041,
+      "amap_poi_id": "B00190D1IQ",
+      "tier": "amap-substr3"
+    },
+    {
       "id": "jinniu-lake",
       "name": "金牛湖",
       "before": [
@@ -980,6 +1012,38 @@
       "drift_m": 4229,
       "amap_poi_id": "B0FFF6ADZI",
       "tier": "amap-contains+cat"
+    },
+    {
+      "id": "yaxi",
+      "name": "桠溪国际慢城",
+      "before": [
+        119.05,
+        31.35
+      ],
+      "provider": "amap",
+      "after": [
+        119.100152,
+        31.412274
+      ],
+      "drift_m": 8403,
+      "amap_poi_id": "B0FFF65W13",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "yangliucun",
+      "name": "杨柳村古建筑群",
+      "before": [
+        118.92,
+        31.87
+      ],
+      "provider": "amap",
+      "after": [
+        118.92793,
+        31.85827
+      ],
+      "drift_m": 1504,
+      "amap_poi_id": "B00190AGNS",
+      "tier": "amap-substr4"
     }
   ],
   "skipped": [
@@ -1014,26 +1078,6 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
-      "id": "y1865",
-      "name": "晨光 1865 创意产业园",
-      "before": [
-        118.766,
-        32.017
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "ganyi",
-      "name": "甘熙故居·民俗博物馆",
-      "before": [
-        118.783,
-        32.0258
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
       "id": "yaxi",
       "name": "桠溪国际慢城",
       "before": [
@@ -1049,6 +1093,26 @@
       "before": [
         118.92,
         31.87
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "y1865",
+      "name": "晨光 1865 创意产业园",
+      "before": [
+        118.766,
+        32.017
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "ganyi",
+      "name": "甘熙故居·民俗博物馆",
+      "before": [
+        118.783,
+        32.0258
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"

@@ -67,6 +67,19 @@ function nameVariants(name) {
 }
 
 // 只用高德时的名称判据（比双源模式更严）：必须完全相等，没有「互相包含」的余地
+// 名称可采信性：高德结果里「售票处/停车场/地铁站/入口」是**子设施**，「…道路/交通地名」是纯地名词条。
+// 坐标可以采信子设施（它就在场馆范围内），但**名称只采信主体 POI**，否则会把「乐华恒业欢乐世界」
+// 改名成「…售票处」、「云南南路美食街」改成「云南南路（道路）」，属于产品降级。
+const SUB_POI = /售票处|停车场|停车点|公交站|地铁站|入口|出口|服务中心|游客中心|驿站|警务|厕所|暂停开放|附近|店$/;
+const ROAD_CAT = /地名地址|交通地名|道路/;
+const NAME_CATS = /风景名胜|旅游景点|景点|公园|娱乐|休闲|体育|展馆|展览|文化|博物馆|古镇|寺|景区|街区/;
+function nameAdoptable(cand) {
+  const t = String(cand.title || ''), cat = String(cand.cat || '');
+  if (SUB_POI.test(t)) return false;
+  if (ROAD_CAT.test(cat)) return false;
+  return NAME_CATS.test(cat);
+}
+
 // 类目白名单：只在「本身是地点」的 POI 上做包含匹配，避免「乾陵黑猪肉」「云南南路小吃店」这类同名店铺
 const PLACE_CATS = /风景名胜|旅游景点|景点|公园|娱乐|休闲|体育|展馆|展览|度假|古镇|景区|寺/;
 // 反向排除：同名的小学/医院/公司/店铺常被包含匹配误收（实测「桠溪国际慢城」匹配到了「…慢城小学」）
@@ -142,8 +155,11 @@ async function main() {
   const city = data._meta && data._meta.city;
   if (!city) { console.error('文件缺少 _meta.city'); process.exit(2); }
 
-  const targets = data.spots.filter(s => s.coord_src === 'estimate');
-  console.log(`${city}：${data.spots.length} 个点位，其中 estimate ${targets.length} 个待复核`);
+  const verifyAll = args.includes('--verify-all');   // 全库核验：连已回填的点也过一遍高德（真实性 + 名称以高德为准）
+  const targets = verifyAll ? data.spots.slice() : data.spots.filter(s => s.coord_src === 'estimate');
+  console.log(verifyAll
+    ? `${city}：全库核验 ${targets.length} 个点位（高德为准：存在性 + 名称）`
+    : `${city}：${data.spots.length} 个点位，其中 estimate ${targets.length} 个待复核`);
   if (dryRun) { console.log('（干跑，不调 API、不写文件）'); return; }
 
   const today = new Date().toISOString().slice(0, 10);
@@ -186,6 +202,7 @@ async function main() {
         const inRange = cands.filter(x => x.hit.drift <= MAX_MOVE_M).sort((a, b) => a.hit.drift - b.hit.drift)[0];
         const hit = inRange ? inRange.hit : null;
         const entryHow = inRange ? (inRange.how || 'exact') : 'exact';
+        const wasEstimate = spot.coord_src === 'estimate';
         const entry = { id: spot.id, name: spot.name, before: spot.coord.slice(), provider: 'amap' };
         if (!hit) {
           report.skipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
@@ -204,13 +221,25 @@ async function main() {
           continue;
         }
         report.fixed.push(entry);
+        // —— 高德为准的三件事：① 存在性核验 ② 名称对齐 ③ 坐标（estimate 必换；已回填的仅在漂移 ≤500m 时微调）——
+        const poi = hit.c.title;
+        const adoptName = nameAdoptable(hit.c) && norm(poi) !== norm(spot.name);
+        const moveCoord = wasEstimate || drift <= 500;
         if (apply) {
-          spot.coord = entry.after;
-          spot.coord_src = 'amap';
-          spot.amap_poi_id = hit.c.id;
+          if (moveCoord) { spot.coord = entry.after; spot.coord_src = 'amap'; }
+          if (!wasEstimate && drift > 500) entry.coord_conflict = { ours: spot.coord.slice(), amap: entry.after, drift_m: drift };
+          if (adoptName) { entry.renamed_from = spot.name; entry.renamed_to = poi; spot.name = poi; }
+          spot.amap_poi_id = spot.amap_poi_id || hit.c.id;
+          spot.verify_src = 'amap';
+          spot.verified_at = report.date;
           spot.refreshed_at = report.date;
         }
-        console.log(`  [${n}/${targets.length}] ${apply ? '修复' : '待修'} ${spot.name}：漂移 ${drift}m（高德·${hit.c.title}）`);
+        entry.poi_name = poi;
+        entry.name_adopted = !!adoptName;
+        entry.coord_moved = !!moveCoord;
+        console.log(`  [${n}/${targets.length}] ${apply ? '核验' : '待核验'} ${entry.renamed_from || spot.name}：漂移 ${drift}m（高德·${poi}）`
+          + (adoptName ? ` → 更名为「${poi}」` : '')
+          + (!moveCoord ? `（坐标保留，差异 ${drift}m 记入报告）` : ''));
         continue;
       }
       const t = pickMatch(await tencentSearch(spot.name, city, TK), spot.name)

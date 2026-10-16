@@ -1,0 +1,1014 @@
+{
+  "city": "丽江",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "lijiang-old-town",
+      "name": "丽江古城（大研古城）",
+      "before": [
+        100.2337,
+        26.8728
+      ],
+      "provider": "amap",
+      "after": [
+        100.235517,
+        26.870507
+      ],
+      "drift_m": 312,
+      "amap_poi_id": "B0378008PR",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "sifangjie",
+      "name": "四方街",
+      "before": [
+        100.2342,
+        26.8737
+      ],
+      "provider": "amap",
+      "after": [
+        100.233949,
+        26.872039
+      ],
+      "drift_m": 186,
+      "amap_poi_id": "B0G3RHAMHA",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "mufu",
+      "name": "木府",
+      "before": [
+        100.2336,
+        26.8694
+      ],
+      "provider": "amap",
+      "after": [
+        100.234889,
+        26.868913
+      ],
+      "drift_m": 139,
+      "amap_poi_id": "B0378157WC",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "wangulou",
+      "name": "狮子山万古楼",
+      "before": [
+        100.2311,
+        26.8712
+      ],
+      "provider": "amap",
+      "after": [
+        100.231338,
+        26.870249
+      ],
+      "drift_m": 108,
+      "amap_poi_id": "B037815BZ1",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "dashuiche",
+      "name": "古城大水车",
+      "before": [
+        100.2318,
+        26.8778
+      ],
+      "provider": "amap",
+      "after": [
+        100.233324,
+        26.876027
+      ],
+      "drift_m": 248,
+      "amap_poi_id": "B0FFF9GOOV",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "wenchanggong",
+      "name": "文昌宫观景台",
+      "before": [
+        100.2326,
+        26.8716
+      ],
+      "provider": "amap",
+      "after": [
+        100.232603,
+        26.874216
+      ],
+      "drift_m": 291,
+      "amap_poi_id": "B0FFK10I11",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "xianwen-xiang",
+      "name": "现文巷（油纸伞街）",
+      "before": [
+        100.2325,
+        26.8725
+      ],
+      "provider": "amap",
+      "after": [
+        100.234175,
+        26.871925
+      ],
+      "drift_m": 178,
+      "amap_poi_id": "B0MU36MW6Y",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "wuyi-street",
+      "name": "五一街",
+      "before": [
+        100.236,
+        26.8745
+      ],
+      "provider": "amap",
+      "after": [
+        100.238456,
+        26.87297
+      ],
+      "drift_m": 297,
+      "amap_poi_id": "B0FFIMYOV7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qiyi-street",
+      "name": "七一街",
+      "before": [
+        100.2352,
+        26.8716
+      ],
+      "provider": "amap",
+      "after": [
+        100.23511,
+        26.871357
+      ],
+      "drift_m": 28,
+      "amap_poi_id": "B0FFGQC3W8",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nanmen-qiao",
+      "name": "南门桥（风铃街）",
+      "before": [
+        100.2318,
+        26.869
+      ],
+      "provider": "amap",
+      "after": [
+        100.240744,
+        26.86947
+      ],
+      "drift_m": 889,
+      "amap_poi_id": "B0FFJOO499",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "dayan-huaxiang",
+      "name": "大研花巷",
+      "before": [
+        100.2345,
+        26.87
+      ],
+      "provider": "amap",
+      "after": [
+        100.236291,
+        26.874511
+      ],
+      "drift_m": 532,
+      "amap_poi_id": "B0FFIXONOV",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhongyi-market",
+      "name": "忠义市场",
+      "before": [
+        100.2323,
+        26.8712
+      ],
+      "provider": "amap",
+      "after": [
+        100.234642,
+        26.866085
+      ],
+      "drift_m": 614,
+      "amap_poi_id": "BV10290462",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "gucheng-exhibition",
+      "name": "丽江古城历史文化展示馆",
+      "before": [
+        100.233,
+        26.8768
+      ],
+      "provider": "amap",
+      "after": [
+        100.235802,
+        26.870701
+      ],
+      "drift_m": 733,
+      "amap_poi_id": "B037814E3H",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "lijiang-museum",
+      "name": "丽江东巴文化博物馆",
+      "before": [
+        100.2288,
+        26.8856
+      ],
+      "provider": "amap",
+      "after": [
+        100.232826,
+        26.887488
+      ],
+      "drift_m": 451,
+      "amap_poi_id": "B0378008PN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xiangshan-market",
+      "name": "象山市场（腊排骨一条街）",
+      "before": [
+        100.2295,
+        26.8796
+      ],
+      "provider": "amap",
+      "after": [
+        100.225288,
+        26.888189
+      ],
+      "drift_m": 1042,
+      "amap_poi_id": "BV10290414",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "huama-street",
+      "name": "花马街",
+      "before": [
+        100.2261,
+        26.8768
+      ],
+      "provider": "amap",
+      "after": [
+        100.227617,
+        26.888449
+      ],
+      "drift_m": 1304,
+      "amap_poi_id": "B03780I1F3",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qixing-street",
+      "name": "七星街",
+      "before": [
+        100.2233,
+        26.8786
+      ],
+      "provider": "amap",
+      "after": [
+        100.222665,
+        26.874108
+      ],
+      "drift_m": 503,
+      "amap_poi_id": "B0378002M6",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jinkai-plaza",
+      "name": "金凯广场",
+      "before": [
+        100.2215,
+        26.8795
+      ],
+      "provider": "amap",
+      "after": [
+        100.225807,
+        26.866302
+      ],
+      "drift_m": 1528,
+      "amap_poi_id": "B0378153XL",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "heilongtan",
+      "name": "黑龙潭公园（玉泉公园）",
+      "before": [
+        100.2299,
+        26.8836
+      ],
+      "provider": "amap",
+      "after": [
+        100.239852,
+        26.888448
+      ],
+      "drift_m": 1125,
+      "amap_poi_id": "B0FFF5TSNO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qingxi-reservoir",
+      "name": "清溪水库",
+      "before": [
+        100.2438,
+        26.888
+      ],
+      "provider": "amap",
+      "after": [
+        100.229823,
+        26.900557
+      ],
+      "drift_m": 1967,
+      "amap_poi_id": "B0FFG3BTUJ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhongjihai",
+      "name": "中济海公园",
+      "before": [
+        100.2158,
+        26.879
+      ],
+      "provider": "amap",
+      "after": [
+        100.208667,
+        26.894586
+      ],
+      "drift_m": 1872,
+      "amap_poi_id": "B0I11K3O5A",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lijiang-qianqiuqing",
+      "name": "丽江千古情景区",
+      "before": [
+        100.2422,
+        26.8372
+      ],
+      "provider": "amap",
+      "after": [
+        100.218666,
+        26.827705
+      ],
+      "drift_m": 2563,
+      "amap_poi_id": "B0FFIZ1ZFL",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lishuijinsha",
+      "name": "丽水金沙",
+      "before": [
+        100.228,
+        26.88
+      ],
+      "provider": "amap",
+      "after": [
+        100.230491,
+        26.879083
+      ],
+      "drift_m": 267,
+      "amap_poi_id": "B0FFI7LUK8",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "naxi-music",
+      "name": "大研纳西古乐会",
+      "before": [
+        100.234,
+        26.8745
+      ],
+      "provider": "amap",
+      "after": [
+        100.234194,
+        26.873714
+      ],
+      "drift_m": 89,
+      "amap_poi_id": "B0H0RRBYLP",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shuhe",
+      "name": "束河古镇",
+      "before": [
+        100.2003,
+        26.9255
+      ],
+      "provider": "amap",
+      "after": [
+        100.205679,
+        26.9196
+      ],
+      "drift_m": 845,
+      "amap_poi_id": "B03780HUIN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qinglong-bridge",
+      "name": "青龙桥",
+      "before": [
+        100.199,
+        26.925
+      ],
+      "provider": "amap",
+      "after": [
+        100.204096,
+        26.921657
+      ],
+      "drift_m": 627,
+      "amap_poi_id": "B0FFF3CSQK",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "jiuding-longtan",
+      "name": "九鼎龙潭",
+      "before": [
+        100.1978,
+        26.9272
+      ],
+      "provider": "amap",
+      "after": [
+        100.203975,
+        26.924006
+      ],
+      "drift_m": 708,
+      "amap_poi_id": "B0FFHBRWDZ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shuhe-square",
+      "name": "束河四方听音广场",
+      "before": [
+        100.1993,
+        26.9262
+      ],
+      "provider": "amap",
+      "after": [
+        100.204901,
+        26.916836
+      ],
+      "drift_m": 1180,
+      "amap_poi_id": "B0378000SM",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "chama-museum",
+      "name": "茶马古道博物馆（束河）",
+      "before": [
+        100.1985,
+        26.924
+      ],
+      "provider": "amap",
+      "after": [
+        100.204882,
+        26.922062
+      ],
+      "drift_m": 668,
+      "amap_poi_id": "B0378008J7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "puji-temple",
+      "name": "普济寺",
+      "before": [
+        100.189,
+        26.932
+      ],
+      "provider": "amap",
+      "after": [
+        100.181683,
+        26.896987
+      ],
+      "drift_m": 3960,
+      "amap_poi_id": "B03780HVI4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baisha",
+      "name": "白沙古镇",
+      "before": [
+        100.2077,
+        26.9609
+      ],
+      "provider": "amap",
+      "after": [
+        100.216933,
+        26.953303
+      ],
+      "drift_m": 1245,
+      "amap_poi_id": "B0378157X4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baisha-murals",
+      "name": "白沙壁画",
+      "before": [
+        100.2085,
+        26.9618
+      ],
+      "provider": "amap",
+      "after": [
+        100.217669,
+        26.955009
+      ],
+      "drift_m": 1182,
+      "amap_poi_id": "B0FFFEJE6E",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yufeng-temple",
+      "name": "玉峰寺",
+      "before": [
+        100.1993,
+        26.966
+      ],
+      "provider": "amap",
+      "after": [
+        100.197466,
+        26.990802
+      ],
+      "drift_m": 2764,
+      "amap_poi_id": "B0378008J4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yushui-village",
+      "name": "玉水寨",
+      "before": [
+        100.1927,
+        26.9827
+      ],
+      "provider": "amap",
+      "after": [
+        100.202552,
+        26.996853
+      ],
+      "drift_m": 1852,
+      "amap_poi_id": "BV10541965",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dongba-valley",
+      "name": "东巴谷",
+      "before": [
+        100.205,
+        26.99
+      ],
+      "provider": "amap",
+      "after": [
+        100.261078,
+        27.006035
+      ],
+      "drift_m": 5835,
+      "amap_poi_id": "B0378008F8",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "dongba-wanshen",
+      "name": "东巴万神园",
+      "before": [
+        100.19,
+        26.995
+      ],
+      "provider": "amap",
+      "after": [
+        100.210241,
+        26.998718
+      ],
+      "drift_m": 2048,
+      "amap_poi_id": "B0378008F1",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "beiyue-temple",
+      "name": "北岳庙",
+      "before": [
+        100.2011,
+        26.9735
+      ],
+      "provider": "amap",
+      "after": [
+        100.204395,
+        26.987293
+      ],
+      "drift_m": 1568,
+      "amap_poi_id": "B0378008JA",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yuhu-village",
+      "name": "玉湖村",
+      "before": [
+        100.19,
+        27.018
+      ],
+      "provider": "amap",
+      "after": [
+        100.213328,
+        27.009884
+      ],
+      "drift_m": 2481,
+      "amap_poi_id": "B0G2BY71AD",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "zhuyun-temple",
+      "name": "指云寺",
+      "before": [
+        100.159,
+        26.888
+      ],
+      "provider": "amap",
+      "after": [
+        100.102302,
+        26.858164
+      ],
+      "drift_m": 6529,
+      "amap_poi_id": "B0378008NN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wenhai",
+      "name": "文海",
+      "before": [
+        100.17,
+        26.98
+      ],
+      "provider": "amap",
+      "after": [
+        100.17198,
+        26.979501
+      ],
+      "drift_m": 204,
+      "amap_poi_id": "B0KRUH0GYR",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wenfeng-temple",
+      "name": "文峰寺",
+      "before": [
+        100.236,
+        26.812
+      ],
+      "provider": "amap",
+      "after": [
+        100.175791,
+        26.802668
+      ],
+      "drift_m": 6065,
+      "amap_poi_id": "B0FFL1V2O1",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "laoshihai",
+      "name": "拉市海",
+      "before": [
+        100.14,
+        26.89
+      ],
+      "provider": "amap",
+      "after": [
+        100.132848,
+        26.880759
+      ],
+      "drift_m": 1249,
+      "amap_poi_id": "B0I3LRY63D",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "guanyinxia",
+      "name": "观音峡",
+      "before": [
+        100.305,
+        26.73
+      ],
+      "provider": "amap",
+      "after": [
+        100.267984,
+        26.76879
+      ],
+      "drift_m": 5667,
+      "amap_poi_id": "B0378008X3",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yulong-snow-mtn",
+      "name": "玉龙雪山",
+      "before": [
+        100.1818,
+        27.1
+      ],
+      "provider": "amap",
+      "after": [
+        100.179253,
+        27.096143
+      ],
+      "drift_m": 497,
+      "amap_poi_id": "B03780HQXM",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lanyue-valley",
+      "name": "蓝月谷",
+      "before": [
+        100.188,
+        27.095
+      ],
+      "provider": "amap",
+      "after": [
+        100.245634,
+        27.123915
+      ],
+      "drift_m": 6548,
+      "amap_poi_id": "BV11567026",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yunshanping",
+      "name": "云杉坪",
+      "before": [
+        100.1855,
+        27.094
+      ],
+      "provider": "amap",
+      "after": [
+        100.235197,
+        27.129758
+      ],
+      "drift_m": 6325,
+      "amap_poi_id": "B0378000KO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "maoniuping",
+      "name": "牦牛坪",
+      "before": [
+        100.193,
+        27.118
+      ],
+      "provider": "amap",
+      "after": [
+        100.264188,
+        27.161823
+      ],
+      "drift_m": 8565,
+      "amap_poi_id": "BV11567023",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ganhaizi",
+      "name": "甘海子",
+      "before": [
+        100.194,
+        27.08
+      ],
+      "provider": "amap",
+      "after": [
+        100.257969,
+        27.108726
+      ],
+      "drift_m": 7092,
+      "amap_poi_id": "B03780I35H",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "glacier-museum",
+      "name": "玉龙雪山冰川地质博物馆",
+      "before": [
+        100.1935,
+        27.079
+      ],
+      "provider": "amap",
+      "after": [
+        100.258558,
+        27.098052
+      ],
+      "drift_m": 6780,
+      "amap_poi_id": "B0378008FA",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "yinxiang-lijiang",
+      "name": "印象丽江",
+      "before": [
+        100.1925,
+        27.0805
+      ],
+      "provider": "amap",
+      "after": [
+        100.258247,
+        27.097582
+      ],
+      "drift_m": 6780,
+      "amap_poi_id": "B0HBXXU1MR",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hutiaoxia",
+      "name": "虎跳峡（上虎跳）",
+      "before": [
+        100.115,
+        27.185
+      ],
+      "provider": "amap",
+      "after": [
+        100.173207,
+        27.271349
+      ],
+      "drift_m": 11194,
+      "amap_poi_id": "B0MUD6FSHJ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "changjiang-first-bend",
+      "name": "长江第一湾",
+      "before": [
+        99.963,
+        26.782
+      ],
+      "provider": "amap",
+      "after": [
+        99.960944,
+        26.867487
+      ],
+      "drift_m": 9508,
+      "amap_poi_id": "B0378008NA",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shigu-memorial",
+      "name": "红军长征过丽江纪念馆",
+      "before": [
+        99.962,
+        26.78
+      ],
+      "provider": "amap",
+      "after": [
+        99.957059,
+        26.866598
+      ],
+      "drift_m": 9642,
+      "amap_poi_id": "B03780HXWE",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baoshan-shitoucheng",
+      "name": "宝山石头城",
+      "before": [
+        100.239,
+        27.459
+      ],
+      "provider": "amap",
+      "after": [
+        100.431334,
+        27.470984
+      ],
+      "drift_m": 19023,
+      "amap_poi_id": "B0FFJFXS58",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lugu-lake",
+      "name": "泸沽湖",
+      "before": [
+        100.786,
+        27.701
+      ],
+      "provider": "amap",
+      "after": [
+        100.799872,
+        27.667123
+      ],
+      "drift_m": 4007,
+      "amap_poi_id": "B0G0ACV2B2",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lige-peninsula",
+      "name": "里格半岛",
+      "before": [
+        100.793,
+        27.718
+      ],
+      "provider": "amap",
+      "after": [
+        100.750206,
+        27.730356
+      ],
+      "drift_m": 4431,
+      "amap_poi_id": "B0FFFS1YJE",
+      "tier": "amap-suffix"
+    },
+    {
+      "id": "zouhun-bridge",
+      "name": "走婚桥",
+      "before": [
+        100.739,
+        27.638
+      ],
+      "provider": "amap",
+      "after": [
+        100.877773,
+        27.707666
+      ],
+      "drift_m": 15709,
+      "amap_poi_id": "B0FFLFQ2F8",
+      "tier": "amap-suffix"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "zhenxing-xiang",
+      "name": "振兴巷（灯笼街）",
+      "before": [
+        100.232,
+        26.873
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "bar-street",
+      "name": "酒吧一条街（新华街）",
+      "before": [
+        100.2334,
+        26.8758
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "huadu-mall",
+      "name": "华都商贸城",
+      "before": [
+        100.223,
+        26.879
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "wenbi-lake",
+      "name": "文笔海",
+      "before": [
+        100.244,
+        26.816
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "locke-house",
+      "name": "洛克故居",
+      "before": [
+        100.1895,
+        27.0175
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "laojunshan",
+      "name": "老君山黎明景区",
+      "before": [
+        99.745,
+        26.755
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "ninety-nine-lakes",
+      "name": "九十九龙潭",
+      "before": [
+        99.82,
+        26.95
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "daluoshui",
+      "name": "大落水村",
+      "before": [
+        100.809,
+        27.687
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "mosuo-museum",
+      "name": "摩梭民俗博物馆",
+      "before": [
+        100.805,
+        27.689
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    }
+  ],
+  "errors": []
+}

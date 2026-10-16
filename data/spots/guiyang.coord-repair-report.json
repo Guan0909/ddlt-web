@@ -1,0 +1,1052 @@
+{
+  "city": "贵阳",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "jiaxiulou",
+      "name": "甲秀楼",
+      "before": [
+        106.63,
+        26.574
+      ],
+      "provider": "amap",
+      "after": [
+        106.719721,
+        26.571358
+      ],
+      "drift_m": 8928,
+      "amap_poi_id": "B035301NFU",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "cuiweiyuan",
+      "name": "翠微园",
+      "before": [
+        106.6307,
+        26.5735
+      ],
+      "provider": "amap",
+      "after": [
+        106.720052,
+        26.570754
+      ],
+      "drift_m": 8891,
+      "amap_poi_id": "B035301I4Z",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "before": [
+        106.6325,
+        26.5872
+      ],
+      "provider": "amap",
+      "after": [
+        106.719288,
+        26.57869
+      ],
+      "drift_m": 8682,
+      "amap_poi_id": "B0FFFGLV23",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yangmingci",
+      "name": "阳明祠",
+      "before": [
+        106.641,
+        26.586
+      ],
+      "provider": "amap",
+      "after": [
+        106.725742,
+        26.583645
+      ],
+      "drift_m": 8431,
+      "amap_poi_id": "B035301XB4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dadeschool",
+      "name": "达德学校旧址",
+      "before": [
+        106.6295,
+        26.5805
+      ],
+      "provider": "amap",
+      "after": [
+        106.712921,
+        26.575907
+      ],
+      "drift_m": 8311,
+      "amap_poi_id": "B035301I5B",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "before": [
+        106.6155,
+        26.601
+      ],
+      "provider": "amap",
+      "after": [
+        106.69223,
+        26.598319
+      ],
+      "drift_m": 7635,
+      "amap_poi_id": "B03530P3K2",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hongfusi",
+      "name": "弘福寺",
+      "before": [
+        106.6178,
+        26.5978
+      ],
+      "provider": "amap",
+      "after": [
+        106.69193,
+        26.593629
+      ],
+      "drift_m": 7385,
+      "amap_poi_id": "B03530P3L7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "hebin-park",
+      "name": "河滨公园",
+      "before": [
+        106.6278,
+        26.5716
+      ],
+      "provider": "amap",
+      "after": [
+        106.70607,
+        26.568276
+      ],
+      "drift_m": 7793,
+      "amap_poi_id": "B035300FSN",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhucheng-square",
+      "name": "筑城广场",
+      "before": [
+        106.6293,
+        26.5768
+      ],
+      "provider": "amap",
+      "after": [
+        106.710122,
+        26.569851
+      ],
+      "drift_m": 8075,
+      "amap_poi_id": "B03530OT4B",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "guanshanhu-park",
+      "name": "观山湖公园",
+      "before": [
+        106.627,
+        26.631
+      ],
+      "provider": "amap",
+      "after": [
+        106.638004,
+        26.639578
+      ],
+      "drift_m": 1451,
+      "amap_poi_id": "B03530OZ78",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "changpoling",
+      "name": "长坡岭国家森林公园",
+      "before": [
+        106.642,
+        26.669
+      ],
+      "provider": "amap",
+      "after": [
+        106.671875,
+        26.655154
+      ],
+      "drift_m": 3344,
+      "amap_poi_id": "B035300E96",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "quanshui-park",
+      "name": "泉湖公园",
+      "before": [
+        106.625,
+        26.683
+      ],
+      "provider": "amap",
+      "after": [
+        106.618317,
+        26.671771
+      ],
+      "drift_m": 1414,
+      "amap_poi_id": "B0FFHJ9Y2M",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "lucongguan",
+      "name": "鹿冲关森林公园",
+      "before": [
+        106.665,
+        26.608
+      ],
+      "provider": "amap",
+      "after": [
+        106.707259,
+        26.626134
+      ],
+      "drift_m": 4660,
+      "amap_poi_id": "B035302O4C",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "ahahu",
+      "name": "阿哈湖国家湿地公园",
+      "before": [
+        106.665,
+        26.535
+      ],
+      "provider": "amap",
+      "after": [
+        106.646496,
+        26.539331
+      ],
+      "drift_m": 1903,
+      "amap_poi_id": "B0FFFSPCI2",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "xiaochehe",
+      "name": "小车河城市湿地公园",
+      "before": [
+        106.668,
+        26.55
+      ],
+      "provider": "amap",
+      "after": [
+        106.646496,
+        26.539331
+      ],
+      "drift_m": 2446,
+      "amap_poi_id": "B0FFFSPCI2",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "huaguoyuan-mall",
+      "name": "花果园购物中心",
+      "before": [
+        106.687,
+        26.568
+      ],
+      "provider": "amap",
+      "after": [
+        106.689877,
+        26.568394
+      ],
+      "drift_m": 289,
+      "amap_poi_id": "B03530QB54",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "guanshanhu-wanda",
+      "name": "观山湖万达广场",
+      "before": [
+        106.635,
+        26.627
+      ],
+      "provider": "amap",
+      "after": [
+        106.60845,
+        26.632796
+      ],
+      "drift_m": 2717,
+      "amap_poi_id": "B0JKD9743T",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "qingyun-market",
+      "name": "青云市集",
+      "before": [
+        106.6285,
+        26.568
+      ],
+      "provider": "amap",
+      "after": [
+        106.715094,
+        26.564177
+      ],
+      "drift_m": 8623,
+      "amap_poi_id": "B0HKPZ8N27",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shanxilu",
+      "name": "陕西路夜市",
+      "before": [
+        106.632,
+        26.593
+      ],
+      "provider": "amap",
+      "after": [
+        106.713614,
+        26.587568
+      ],
+      "drift_m": 8138,
+      "amap_poi_id": "B0FFH557OJ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "caijiajie",
+      "name": "蔡家街",
+      "before": [
+        106.6325,
+        26.582
+      ],
+      "provider": "amap",
+      "after": [
+        106.71719,
+        26.57895
+      ],
+      "drift_m": 8429,
+      "amap_poi_id": "BZ8VNQ01AQ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "erqilu",
+      "name": "二七路小吃街",
+      "before": [
+        106.633,
+        26.57
+      ],
+      "provider": "amap",
+      "after": [
+        106.707533,
+        26.557647
+      ],
+      "drift_m": 7539,
+      "amap_poi_id": "B0FFFGM3OE",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "taipinglu",
+      "name": "太平路",
+      "before": [
+        106.631,
+        26.5845
+      ],
+      "provider": "amap",
+      "after": [
+        106.71143,
+        26.581822
+      ],
+      "drift_m": 8004,
+      "amap_poi_id": "BZ8WNQ017Q",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "duocai-guizhoucheng",
+      "name": "多彩贵州城",
+      "before": [
+        106.745,
+        26.556
+      ],
+      "provider": "amap",
+      "after": [
+        106.789304,
+        26.52904
+      ],
+      "drift_m": 5330,
+      "amap_poi_id": "B03530P9KZ",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "polar-ocean",
+      "name": "贵州极地海洋世界",
+      "before": [
+        106.744,
+        26.5545
+      ],
+      "provider": "amap",
+      "after": [
+        106.790492,
+        26.529041
+      ],
+      "drift_m": 5422,
+      "amap_poi_id": "B0FFIPN1S0",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "happy-world",
+      "name": "贵阳欢乐世界",
+      "before": [
+        106.635,
+        26.675
+      ],
+      "provider": "amap",
+      "after": [
+        106.640073,
+        26.670643
+      ],
+      "drift_m": 699,
+      "amap_poi_id": "B03530P08K",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "kejiguan",
+      "name": "贵州省科技馆",
+      "before": [
+        106.63,
+        26.599
+      ],
+      "provider": "amap",
+      "after": [
+        106.697912,
+        26.512511
+      ],
+      "drift_m": 11752,
+      "amap_poi_id": "B0LDCXW61Q",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "yesheng-zoo",
+      "name": "贵阳森林野生动物园",
+      "before": [
+        106.665,
+        26.825
+      ],
+      "provider": "amap",
+      "after": [
+        106.693504,
+        26.86555
+      ],
+      "drift_m": 5322,
+      "amap_poi_id": "B03530RNBL",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "guizhou-museum",
+      "name": "贵州省博物馆",
+      "before": [
+        106.63,
+        26.643
+      ],
+      "provider": "amap",
+      "after": [
+        106.642467,
+        26.647605
+      ],
+      "drift_m": 1341,
+      "amap_poi_id": "B0FFFEFLJ5",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "minzu-museum",
+      "name": "贵州省民族博物馆",
+      "before": [
+        106.635,
+        26.588
+      ],
+      "provider": "amap",
+      "after": [
+        106.71273,
+        26.568152
+      ],
+      "drift_m": 8039,
+      "amap_poi_id": "B0FFFGLS6F",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "dizhi-museum",
+      "name": "贵州省地质博物馆",
+      "before": [
+        106.638,
+        26.633
+      ],
+      "provider": "amap",
+      "after": [
+        106.606919,
+        26.622894
+      ],
+      "drift_m": 3288,
+      "amap_poi_id": "B0FFINGJLO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "guizhou-art",
+      "name": "贵州美术馆",
+      "before": [
+        106.628,
+        26.638
+      ],
+      "provider": "amap",
+      "after": [
+        106.705411,
+        26.591585
+      ],
+      "drift_m": 9266,
+      "amap_poi_id": "B0FFICMVBX",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "duocaifeng",
+      "name": "多彩贵州风",
+      "before": [
+        106.632,
+        26.63
+      ],
+      "provider": "amap",
+      "after": [
+        106.719256,
+        26.563314
+      ],
+      "drift_m": 11413,
+      "amap_poi_id": "B0I1T7ETUC",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "guiyang-orchestra",
+      "name": "贵阳交响乐团",
+      "before": [
+        106.6312,
+        26.6295
+      ],
+      "provider": "amap",
+      "after": [
+        106.719271,
+        26.562998
+      ],
+      "drift_m": 11461,
+      "amap_poi_id": "B0FFFFP7YP",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qianju",
+      "name": "贵州省黔剧院",
+      "before": [
+        106.633,
+        26.586
+      ],
+      "provider": "amap",
+      "after": [
+        106.646458,
+        26.640629
+      ],
+      "drift_m": 6220,
+      "amap_poi_id": "B0FFG9XUC7",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xifeng-memorial",
+      "name": "息烽集中营革命历史纪念馆",
+      "before": [
+        106.74,
+        27.09
+      ],
+      "provider": "amap",
+      "after": [
+        106.741697,
+        27.03924
+      ],
+      "drift_m": 5647,
+      "amap_poi_id": "B035301FJ3",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "kongxuetang",
+      "name": "贵阳孔学堂",
+      "before": [
+        106.656,
+        26.47
+      ],
+      "provider": "amap",
+      "after": [
+        106.678035,
+        26.464389
+      ],
+      "drift_m": 2280,
+      "amap_poi_id": "B03530RNBF",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "yangmingdong",
+      "name": "修文阳明洞",
+      "before": [
+        106.605,
+        26.832
+      ],
+      "provider": "amap",
+      "after": [
+        106.610825,
+        26.845875
+      ],
+      "drift_m": 1648,
+      "amap_poi_id": "B0FFFEJ35H",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "tianhetan",
+      "name": "天河潭",
+      "before": [
+        106.593,
+        26.396
+      ],
+      "provider": "amap",
+      "after": [
+        106.579623,
+        26.447054
+      ],
+      "drift_m": 5831,
+      "amap_poi_id": "BV10284813",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "huaxi-park",
+      "name": "花溪公园",
+      "before": [
+        106.673,
+        26.409
+      ],
+      "provider": "amap",
+      "after": [
+        106.67221,
+        26.433012
+      ],
+      "drift_m": 2671,
+      "amap_poi_id": "B035300A51",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shilihetan",
+      "name": "十里河滩",
+      "before": [
+        106.662,
+        26.438
+      ],
+      "provider": "amap",
+      "after": [
+        106.672691,
+        26.477729
+      ],
+      "drift_m": 4544,
+      "amap_poi_id": "BV11293074",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "banqiao-art",
+      "name": "花溪板桥艺术村",
+      "before": [
+        106.662,
+        26.442
+      ],
+      "provider": "amap",
+      "after": [
+        106.664034,
+        26.389577
+      ],
+      "drift_m": 5833,
+      "amap_poi_id": "B0FFH3Y2UR",
+      "tier": "amap-substr5"
+    },
+    {
+      "id": "huaxi-street",
+      "name": "花溪十字街",
+      "before": [
+        106.67,
+        26.411
+      ],
+      "provider": "amap",
+      "after": [
+        106.676885,
+        26.432295
+      ],
+      "drift_m": 2465,
+      "amap_poi_id": "B0JDFCWPOO",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qingyan",
+      "name": "青岩古镇",
+      "before": [
+        106.6837,
+        26.3238
+      ],
+      "provider": "amap",
+      "after": [
+        106.686834,
+        26.331095
+      ],
+      "drift_m": 869,
+      "amap_poi_id": "B035300ESE",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "zhenshan",
+      "name": "镇山村",
+      "before": [
+        106.622,
+        26.372
+      ],
+      "provider": "amap",
+      "after": [
+        106.615054,
+        26.447495
+      ],
+      "drift_m": 8423,
+      "amap_poi_id": "B0FFMB373L",
+      "tier": "amap-contains+cat"
+    },
+    {
+      "id": "yehuanggu",
+      "name": "花溪夜郎谷",
+      "before": [
+        106.59,
+        26.38
+      ],
+      "provider": "amap",
+      "after": [
+        106.646181,
+        26.386902
+      ],
+      "drift_m": 5649,
+      "amap_poi_id": "B0FFFX3R8P",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "gaopo",
+      "name": "高坡云顶草原",
+      "before": [
+        106.77,
+        26.22
+      ],
+      "provider": "amap",
+      "after": [
+        106.863214,
+        26.274743
+      ],
+      "drift_m": 11112,
+      "amap_poi_id": "B035301FTO",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "hongfenghu",
+      "name": "红枫湖",
+      "before": [
+        106.43,
+        26.47
+      ],
+      "provider": "amap",
+      "after": [
+        106.39696,
+        26.489889
+      ],
+      "drift_m": 3963,
+      "amap_poi_id": "B035300443",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "shiguang-guizhou",
+      "name": "时光贵州",
+      "before": [
+        106.462,
+        26.525
+      ],
+      "provider": "amap",
+      "after": [
+        106.469858,
+        26.579451
+      ],
+      "drift_m": 6105,
+      "amap_poi_id": "BV10471637",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "xiangchou-guizhou",
+      "name": "乡愁贵州",
+      "before": [
+        106.47,
+        26.54
+      ],
+      "provider": "amap",
+      "after": [
+        106.406855,
+        26.584049
+      ],
+      "drift_m": 7964,
+      "amap_poi_id": "BV10975093",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "baihuahu",
+      "name": "百花湖",
+      "before": [
+        106.545,
+        26.66
+      ],
+      "provider": "amap",
+      "after": [
+        106.520034,
+        26.649105
+      ],
+      "drift_m": 2761,
+      "amap_poi_id": "B0FFFEDIK4",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "nanjiang",
+      "name": "开阳南江大峡谷",
+      "before": [
+        106.98,
+        26.98
+      ],
+      "provider": "amap",
+      "after": [
+        106.995755,
+        26.947475
+      ],
+      "drift_m": 3939,
+      "amap_poi_id": "B035301FVE",
+      "tier": "amap-substr5"
+    },
+    {
+      "id": "xianghuoyan",
+      "name": "开阳香火岩",
+      "before": [
+        106.99,
+        26.96
+      ],
+      "provider": "amap",
+      "after": [
+        106.919227,
+        26.949239
+      ],
+      "drift_m": 7116,
+      "amap_poi_id": "B0IAV7LC0I",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "baimayu",
+      "name": "开阳白马峪温泉",
+      "before": [
+        106.89,
+        26.99
+      ],
+      "provider": "amap",
+      "after": [
+        106.778133,
+        26.990062
+      ],
+      "drift_m": 11084,
+      "amap_poi_id": "B03530P8JW",
+      "tier": "amap-substr5"
+    },
+    {
+      "id": "xifeng-hotspring",
+      "name": "息烽温泉",
+      "before": [
+        106.75,
+        27.11
+      ],
+      "provider": "amap",
+      "after": [
+        106.853166,
+        27.197208
+      ],
+      "drift_m": 14079,
+      "amap_poi_id": "B035301FWW",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "qingrengu",
+      "name": "乌当情人谷",
+      "before": [
+        106.8,
+        26.65
+      ],
+      "provider": "amap",
+      "after": [
+        106.808403,
+        26.605794
+      ],
+      "drift_m": 4986,
+      "amap_poi_id": "B0FFGYAZIA",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "xiangzhigou",
+      "name": "乌当香纸沟",
+      "before": [
+        106.86,
+        26.71
+      ],
+      "provider": "amap",
+      "after": [
+        106.886056,
+        26.794172
+      ],
+      "drift_m": 9710,
+      "amap_poi_id": "B035301FX3",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "guiyu-hotspring",
+      "name": "贵御温泉",
+      "before": [
+        106.77,
+        26.63
+      ],
+      "provider": "amap",
+      "after": [
+        106.770685,
+        26.615689
+      ],
+      "drift_m": 1593,
+      "amap_poi_id": "B035302OOS",
+      "tier": "amap-exact"
+    },
+    {
+      "id": "yudongxia",
+      "name": "乌当渔洞峡",
+      "before": [
+        106.79,
+        26.64
+      ],
+      "provider": "amap",
+      "after": [
+        106.837886,
+        26.633503
+      ],
+      "drift_m": 4814,
+      "amap_poi_id": "B035300392",
+      "tier": "amap-substr3"
+    },
+    {
+      "id": "yangchang",
+      "name": "乌当羊昌花画小镇",
+      "before": [
+        106.88,
+        26.75
+      ],
+      "provider": "amap",
+      "after": [
+        106.889631,
+        26.830234
+      ],
+      "drift_m": 8973,
+      "amap_poi_id": "B0FFH5RA1C",
+      "tier": "amap-substr4"
+    },
+    {
+      "id": "huaguoyuan-baigong",
+      "name": "花果园白宫夜景",
+      "before": [
+        106.6865,
+        26.5675
+      ],
+      "provider": "amap",
+      "after": [
+        106.687582,
+        26.566334
+      ],
+      "drift_m": 168,
+      "amap_poi_id": "B03530OWFX",
+      "tier": "amap-substr3"
+    }
+  ],
+  "skipped": [
+    {
+      "id": "qianmingsi",
+      "name": "黔明寺",
+      "before": [
+        106.6345,
+        26.576
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "zhonghua-dashizi",
+      "name": "中华路·大十字商圈",
+      "before": [
+        106.6302,
+        26.58
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "huguolu",
+      "name": "护国路小吃街",
+      "before": [
+        106.629,
+        26.5795
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "weilai-fangzhou",
+      "name": "中天未来方舟水街",
+      "before": [
+        106.742,
+        26.587
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "bigdata-center",
+      "name": "贵州大数据展示中心",
+      "before": [
+        106.64,
+        26.62
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "pianpo",
+      "name": "乌当偏坡布依族乡",
+      "before": [
+        106.85,
+        26.68
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "jinrongcheng-night",
+      "name": "贵州金融城夜景",
+      "before": [
+        106.648,
+        26.624
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "nanminghe-night",
+      "name": "南明河夜景带",
+      "before": [
+        106.632,
+        26.57
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    }
+  ],
+  "errors": []
+}
