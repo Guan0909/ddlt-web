@@ -1390,6 +1390,27 @@
       "poi_name": "秦镇",
       "name_adopted": false,
       "coord_moved": false
+    },
+    {
+      "id": "xiaonanmen",
+      "name": "小南门早市夜市",
+      "before": [
+        108.935937,
+        34.252396
+      ],
+      "provider": "amap",
+      "after": [
+        108.935937,
+        34.252396
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B0FFIPX4UZ",
+      "tier": "amap-llm-around",
+      "renamed_from": "小南门早市夜市",
+      "renamed_to": "小南门夜市",
+      "poi_name": "小南门夜市",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1493,16 +1514,6 @@
       "why": "候选离估算 30238m > 20000m，疑似同名异地"
     },
     {
-      "id": "qujiang-joy-city",
-      "name": "曲江大悦城",
-      "before": [
-        108.96246,
-        34.215799
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
       "id": "xiaonanmen",
       "name": "小南门早市夜市",
       "before": [
@@ -1513,6 +1524,16 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "before": [
+        108.96246,
+        34.215799
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
       "id": "xiying-film",
       "name": "西影电影圈子",
       "before": [
@@ -1520,7 +1541,7 @@
         34.223043
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": []

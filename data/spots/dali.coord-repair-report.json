@@ -9,961 +9,1145 @@
       "id": "erhai-park",
       "name": "洱海公园",
       "before": [
-        100.2352,
-        25.5836
+        100.247329,
+        25.603041
       ],
       "provider": "amap",
       "after": [
         100.247329,
         25.603041
       ],
-      "drift_m": 2480,
+      "drift_m": 0,
       "amap_poi_id": "B0368006Y0",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "洱海公园",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "zhou-museum",
       "name": "大理州博物馆",
       "before": [
-        100.2262,
-        25.5908
+        100.2319,
+        25.597322
       ],
       "provider": "amap",
       "after": [
         100.2319,
         25.597322
       ],
-      "drift_m": 923,
+      "drift_m": 0,
       "amap_poi_id": "B0GK0AADI1",
-      "tier": "amap-substr4"
+      "tier": "amap-substr4",
+      "poi_name": "大理白族自治州博物馆游客中心-影视厅",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "xingsheng-bridge",
       "name": "兴盛大桥",
       "before": [
-        100.2372,
-        25.5988
+        100.23244,
+        25.599051
       ],
       "provider": "amap",
       "after": [
         100.23244,
         25.599051
       ],
-      "drift_m": 478,
+      "drift_m": 0,
       "amap_poi_id": "B0FFIL6PW7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "兴盛大桥",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "longweiguan",
       "name": "龙尾关",
       "before": [
-        100.2285,
-        25.5892
+        100.212261,
+        25.590521
       ],
       "provider": "amap",
       "after": [
         100.212261,
         25.590521
       ],
-      "drift_m": 1635,
+      "drift_m": 0,
       "amap_poi_id": "B03680I7MY",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "龙尾关遗址",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "dali-aquarium",
       "name": "大理海洋世界",
       "before": [
-        100.2548,
-        25.6122
+        100.316478,
+        25.681412
       ],
       "provider": "amap",
       "after": [
         100.316478,
         25.681412
       ],
-      "drift_m": 9872,
+      "drift_m": 0,
       "amap_poi_id": "B0FFIPJP95",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "大理海洋世界",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "erhai-moon-wetland",
       "name": "洱海月湿地公园",
       "before": [
-        100.247,
-        25.6246
+        100.231467,
+        25.610002
       ],
       "provider": "amap",
       "after": [
         100.231467,
         25.610002
       ],
-      "drift_m": 2250,
+      "drift_m": 0,
       "amap_poi_id": "B0368151LH",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "洱海月湿地公园",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "gucheng-fuxing",
       "name": "大理古城复兴路",
       "before": [
-        100.1647,
-        25.694
+        100.164145,
+        25.687547
       ],
       "provider": "amap",
       "after": [
         100.164145,
         25.687547
       ],
-      "drift_m": 720,
+      "drift_m": 0,
       "amap_poi_id": "B03680IAVE",
-      "tier": "amap-substr4"
+      "tier": "amap-substr4",
+      "poi_name": "大理古城-古城漫步",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "renmin-road",
       "name": "大理古城人民路",
       "before": [
-        100.1618,
-        25.6936
+        100.164,
+        25.694836
       ],
       "provider": "amap",
       "after": [
         100.164,
         25.694836
       ],
-      "drift_m": 260,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFZH0RQ",
-      "tier": "amap-substr4"
+      "tier": "amap-substr4",
+      "poi_name": "大理古城",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "honglongjing",
       "name": "红龙井",
       "before": [
-        100.1632,
-        25.6923
+        100.162325,
+        25.690475
       ],
       "provider": "amap",
       "after": [
         100.162325,
         25.690475
       ],
-      "drift_m": 221,
+      "drift_m": 0,
       "amap_poi_id": "B0MAT9X5X7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "红龙井",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "sanyue-street",
       "name": "三月街",
       "before": [
-        100.1596,
-        25.7004
+        100.153299,
+        25.693274
       ],
       "provider": "amap",
       "after": [
         100.153299,
         25.693274
       ],
-      "drift_m": 1013,
+      "drift_m": 0,
       "amap_poi_id": "B0368159Z8",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "三月街",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "wuhua-tower",
       "name": "五华楼",
       "before": [
-        100.1643,
-        25.6928
+        100.162347,
+        25.69092
       ],
       "provider": "amap",
       "after": [
         100.162347,
         25.69092
       ],
-      "drift_m": 286,
+      "drift_m": 0,
       "amap_poi_id": "B036800DK2",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "五华楼",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "chongsheng-towers",
       "name": "崇圣寺三塔",
       "before": [
-        100.1517,
-        25.7043
+        100.147313,
+        25.705605
       ],
       "provider": "amap",
       "after": [
         100.147313,
         25.705605
       ],
-      "drift_m": 463,
+      "drift_m": 0,
       "amap_poi_id": "B0HKLRTS6R",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "崇圣寺三塔",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "santa-reflection",
       "name": "三塔倒影公园",
       "before": [
-        100.1556,
-        25.7018
+        100.150023,
+        25.701939
       ],
       "provider": "amap",
       "after": [
         100.150023,
         25.701939
       ],
-      "drift_m": 559,
+      "drift_m": 0,
       "amap_poi_id": "B036800C0O",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "三塔倒影公园",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "tianlong-babu",
       "name": "天龙八部影视城",
       "before": [
-        100.1408,
-        25.7005
+        100.149121,
+        25.680112
       ],
       "provider": "amap",
       "after": [
         100.149121,
         25.680112
       ],
-      "drift_m": 2416,
+      "drift_m": 0,
       "amap_poi_id": "B036815DC0",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "天龙八部影视城",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "dali-city-museum",
       "name": "大理市博物馆",
       "before": [
-        100.1662,
-        25.6947
+        100.301614,
+        25.678466
       ],
       "provider": "amap",
       "after": [
         100.301614,
         25.678466
       ],
-      "drift_m": 13689,
+      "drift_m": 0,
       "amap_poi_id": "B03680I1JP",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "大理市",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "yuer-park",
       "name": "玉洱园",
       "before": [
-        100.1635,
-        25.6971
+        100.161226,
+        25.696642
       ],
       "provider": "amap",
       "after": [
         100.161226,
         25.696642
       ],
-      "drift_m": 233,
+      "drift_m": 0,
       "amap_poi_id": "B036800FFR",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "大理古城-玉洱园",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "hongsheng-tower",
       "name": "弘圣寺塔",
       "before": [
-        100.1598,
-        25.687
+        100.157299,
+        25.685557
       ],
       "provider": "amap",
       "after": [
         100.157299,
         25.685557
       ],
-      "drift_m": 298,
+      "drift_m": 0,
       "amap_poi_id": "B0368151D0",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "弘圣寺塔",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "gantong-temple",
       "name": "感通寺",
       "before": [
-        100.1853,
-        25.6548
+        100.167018,
+        25.643118
       ],
       "provider": "amap",
       "after": [
         100.167018,
         25.643118
       ],
-      "drift_m": 2246,
+      "drift_m": 0,
       "amap_poi_id": "B0368007GX",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "苍山景区-感通寺",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "jizhao-nunnery",
       "name": "寂照庵",
       "before": [
-        100.1868,
-        25.658
+        100.16493,
+        25.643372
       ],
       "provider": "amap",
       "after": [
         100.16493,
         25.643372
       ],
-      "drift_m": 2730,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFSA0F3",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "苍山景区-寂照庵",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "qingbi-stream",
       "name": "清碧溪",
       "before": [
-        100.1836,
-        25.662
+        100.210875,
+        25.674981
       ],
       "provider": "amap",
       "after": [
         100.210875,
         25.674981
       ],
-      "drift_m": 3091,
+      "drift_m": 0,
       "amap_poi_id": "B0FFGAWAY4",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "清碧溪",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "gantong-cableway",
       "name": "苍山感通索道",
       "before": [
-        100.186,
-        25.656
+        100.168239,
+        25.644417
       ],
       "provider": "amap",
       "after": [
         100.168239,
         25.644417
       ],
-      "drift_m": 2197,
+      "drift_m": 0,
       "amap_poi_id": "B0FFICZ3B7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "苍山感通索道(出站口)",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "zhonghe-temple",
       "name": "中和寺",
       "before": [
-        100.1548,
-        25.694
+        100.131788,
+        25.683648
       ],
       "provider": "amap",
       "after": [
         100.131788,
         25.683648
       ],
-      "drift_m": 2577,
+      "drift_m": 0,
       "amap_poi_id": "B036800GPS",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "苍山景区-中和寺",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "ximalatan-cableway",
       "name": "苍山洗马潭大索道",
       "before": [
-        100.1425,
-        25.7055
+        100.138798,
+        25.667764
       ],
       "provider": "amap",
       "after": [
         100.138798,
         25.667764
       ],
-      "drift_m": 4212,
+      "drift_m": 0,
       "amap_poi_id": "B036815O42",
-      "tier": "amap-substr3"
+      "tier": "amap-substr3",
+      "poi_name": "洗马潭索道",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "yudai-road",
       "name": "苍山玉带云游路",
       "before": [
-        100.166,
-        25.68
+        100.142998,
+        25.694201
       ],
       "provider": "amap",
       "after": [
         100.142998,
         25.694201
       ],
-      "drift_m": 2794,
+      "drift_m": 0,
       "amap_poi_id": "B0FFGO698V",
-      "tier": "amap-substr5"
+      "tier": "amap-substr5",
+      "poi_name": "玉带云游路",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "taihe-city",
       "name": "太和城遗址",
       "before": [
-        100.1762,
-        25.652
+        100.198061,
+        25.633246
       ],
       "provider": "amap",
       "after": [
         100.198061,
         25.633246
       ],
-      "drift_m": 3025,
+      "drift_m": 0,
       "amap_poi_id": "B03680I9BN",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "太和城遗址",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "longkan-village",
       "name": "龙龛村",
       "before": [
-        100.187,
-        25.6762
+        100.190107,
+        25.687134
       ],
       "provider": "amap",
       "after": [
         100.190107,
         25.687134
       ],
-      "drift_m": 1255,
+      "drift_m": 0,
       "amap_poi_id": "B0JA2ZGKA8",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "上龙龛村中心广场",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "caicun-pier",
       "name": "才村码头",
       "before": [
-        100.1815,
-        25.6723
+        100.193637,
+        25.718727
       ],
       "provider": "amap",
       "after": [
         100.193637,
         25.718727
       ],
-      "drift_m": 5304,
+      "drift_m": 0,
       "amap_poi_id": "B0368000BB",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "才村码头",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "erhai-greenway",
       "name": "洱海生态廊道",
       "before": [
-        100.18,
-        25.685
+        100.223557,
+        25.622667
       ],
       "provider": "amap",
       "after": [
         100.223557,
         25.622667
       ],
-      "drift_m": 8192,
+      "drift_m": 0,
       "amap_poi_id": "B0G3JY36P7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "洱海生态廊道",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "panxi-s-bend",
       "name": "磻溪村S湾",
       "before": [
-        100.16,
-        25.773
+        100.149486,
+        25.774136
       ],
       "provider": "amap",
       "after": [
         100.149486,
         25.774136
       ],
-      "drift_m": 1060,
+      "drift_m": 0,
       "amap_poi_id": "B0L3F16VNF",
-      "tier": "amap-substr4"
+      "tier": "amap-substr4",
+      "poi_name": "蟠溪村S湾",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "gusheng-village",
       "name": "古生村",
       "before": [
-        100.147,
-        25.815
+        100.144363,
+        25.813509
       ],
       "provider": "amap",
       "after": [
         100.144363,
         25.813509
       ],
-      "drift_m": 312,
+      "drift_m": 0,
       "amap_poi_id": "B0H25CMTBB",
-      "tier": "amap-suffix"
+      "tier": "amap-suffix",
+      "renamed_from": "古生村",
+      "renamed_to": "古生村景区",
+      "poi_name": "古生村景区",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
       "id": "xizhou",
       "name": "喜洲古镇",
       "before": [
-        100.1393,
-        25.8553
+        100.131582,
+        25.85295
       ],
       "provider": "amap",
       "after": [
         100.131582,
         25.85295
       ],
-      "drift_m": 815,
+      "drift_m": 0,
       "amap_poi_id": "B0FFH27SSH",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "喜洲古镇",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "xizhou-sifangjie",
       "name": "喜洲四方街",
       "before": [
-        100.1381,
-        25.8536
+        100.131043,
+        25.853611
       ],
       "provider": "amap",
       "after": [
         100.131043,
         25.853611
       ],
-      "drift_m": 706,
+      "drift_m": 0,
       "amap_poi_id": "B0H6YXEKQ7",
-      "tier": "amap-substr3"
+      "tier": "amap-substr3",
+      "poi_name": "喜洲古镇四方街活动中心",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "yan-family",
       "name": "严家大院",
       "before": [
-        100.1367,
-        25.8533
+        100.132089,
+        25.852846
       ],
       "provider": "amap",
       "after": [
         100.132089,
         25.852846
       ],
-      "drift_m": 464,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFFPANT",
-      "tier": "amap-suffix"
+      "tier": "amap-suffix",
+      "poi_name": "严家大院博物馆",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "haishe-park",
       "name": "海舌公园",
       "before": [
-        100.1502,
-        25.833
+        100.15669,
+        25.870703
       ],
       "provider": "amap",
       "after": [
         100.15669,
         25.870703
       ],
-      "drift_m": 4242,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFFK7HC",
-      "tier": "amap-contains+cat"
+      "tier": "amap-contains+cat",
+      "poi_name": "爱在海舌蜜月半岛",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "butterfly-spring",
       "name": "蝴蝶泉",
       "before": [
-        100.1268,
-        25.8758
+        100.098652,
+        25.906777
       ],
       "provider": "amap",
       "after": [
         100.098652,
         25.906777
       ],
-      "drift_m": 4449,
+      "drift_m": 0,
       "amap_poi_id": "B0368000AS",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "蝴蝶泉",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "zhoucheng-tiedye",
       "name": "周城·璞真白族扎染博物馆",
       "before": [
-        100.1219,
-        25.8623
+        100.106812,
+        25.896902
       ],
       "provider": "amap",
       "after": [
         100.106812,
         25.896902
       ],
-      "drift_m": 4133,
+      "drift_m": 0,
       "amap_poi_id": "B0FFGMLXV8",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "周城",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "shangguang-flower",
       "name": "上关花公园",
       "before": [
-        100.143,
-        25.9222
+        100.095162,
+        25.919936
       ],
       "provider": "amap",
       "after": [
         100.095162,
         25.919936
       ],
-      "drift_m": 4791,
+      "drift_m": 0,
       "amap_poi_id": "B0FFH6KTFC",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "上关花公园",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "shuanglang",
       "name": "双廊古镇",
       "before": [
-        100.1926,
-        25.9474
+        100.194322,
+        25.908323
       ],
       "provider": "amap",
       "after": [
         100.194322,
         25.908323
       ],
-      "drift_m": 4349,
+      "drift_m": 0,
       "amap_poi_id": "B036814RT7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "双廊古镇",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "yuji-island",
       "name": "玉几岛",
       "before": [
-        100.1962,
-        25.951
+        100.191622,
+        25.9061
       ],
       "provider": "amap",
       "after": [
         100.191622,
         25.9061
       ],
-      "drift_m": 5014,
+      "drift_m": 0,
       "amap_poi_id": "B0368159U4",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "玉几岛",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "nanzhao-resort",
       "name": "南诏风情岛",
       "before": [
-        100.1981,
-        25.9428
+        100.19146,
+        25.902135
       ],
       "provider": "amap",
       "after": [
         100.19146,
         25.902135
       ],
-      "drift_m": 4570,
+      "drift_m": 0,
       "amap_poi_id": "B0368000AW",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "南诏风情岛",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "shuanglang-haijie",
       "name": "双廊海街",
       "before": [
-        100.1943,
-        25.9488
+        100.194327,
+        25.905098
       ],
       "provider": "amap",
       "after": [
         100.194327,
         25.905098
       ],
-      "drift_m": 4859,
+      "drift_m": 0,
       "amap_poi_id": "B0K1LMAYB6",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "双廊海街",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "xiaoputuo",
       "name": "小普陀",
       "before": [
-        100.2328,
-        25.9195
+        100.223013,
+        25.807452
       ],
       "provider": "amap",
       "after": [
         100.223013,
         25.807452
       ],
-      "drift_m": 12498,
+      "drift_m": 0,
       "amap_poi_id": "B0368000B7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "小普陀",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "wase-town",
       "name": "挖色镇",
       "before": [
-        100.2264,
-        25.863
+        100.225744,
+        25.828921
       ],
       "provider": "amap",
       "after": [
         100.225744,
         25.828921
       ],
-      "drift_m": 3790,
+      "drift_m": 0,
       "amap_poi_id": "B0G2BB65EI",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "挖色镇",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "luwoshan",
       "name": "鹿卧山",
       "before": [
-        100.221,
-        25.8782
+        100.216806,
+        25.834984
       ],
       "provider": "amap",
       "after": [
         100.216806,
         25.834984
       ],
-      "drift_m": 4824,
+      "drift_m": 0,
       "amap_poi_id": "B03680HT56",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "鹿卧山",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "lixiang-bang",
       "name": "理想邦",
       "before": [
-        100.2465,
-        25.7935
+        100.26993,
+        25.698271
       ],
       "provider": "amap",
       "after": [
         100.26993,
         25.698271
       ],
-      "drift_m": 10846,
+      "drift_m": 0,
       "amap_poi_id": "B0FFGJWJA3",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "理想邦",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "tianjing-pavilion",
       "name": "天镜阁",
       "before": [
-        100.2447,
-        25.7565
+        100.237521,
+        25.705409
       ],
       "provider": "amap",
       "after": [
         100.237521,
         25.705409
       ],
-      "drift_m": 5726,
+      "drift_m": 0,
       "amap_poi_id": "B036800CY4",
-      "tier": "amap-suffix"
+      "tier": "amap-suffix",
+      "renamed_from": "天镜阁",
+      "renamed_to": "天镜阁景区",
+      "poi_name": "天镜阁景区",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
       "id": "jinsuo-island",
       "name": "金梭岛",
       "before": [
-        100.2372,
-        25.7385
+        100.257743,
+        25.692907
       ],
       "provider": "amap",
       "after": [
         100.257743,
         25.692907
       ],
-      "drift_m": 5472,
+      "drift_m": 0,
       "amap_poi_id": "B0368009K7",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "金梭岛",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "shaxi",
       "name": "沙溪古镇",
       "before": [
-        99.8522,
-        26.3181
+        99.849895,
+        26.315721
       ],
       "provider": "amap",
       "after": [
         99.849895,
         26.315721
       ],
-      "drift_m": 350,
+      "drift_m": 0,
       "amap_poi_id": "B03680I3LO",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "沙溪古镇",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "xingjiao-temple",
       "name": "沙溪兴教寺",
       "before": [
-        99.8518,
-        26.3176
+        99.852845,
+        26.31598
       ],
       "provider": "amap",
       "after": [
         99.852845,
         26.31598
       ],
-      "drift_m": 208,
+      "drift_m": 0,
       "amap_poi_id": "B036800EDX",
-      "tier": "amap-substr3"
+      "tier": "amap-substr3",
+      "poi_name": "兴教寺",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "shibao-mountain",
       "name": "石宝山",
       "before": [
-        99.8285,
-        26.3665
+        99.841732,
+        26.392967
       ],
       "provider": "amap",
       "after": [
         99.841732,
         26.392967
       ],
-      "drift_m": 3225,
+      "drift_m": 0,
       "amap_poi_id": "B036800CAN",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "石宝山",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "jianchuan-old-town",
       "name": "剑川古城",
       "before": [
-        99.9052,
-        26.5372
+        99.904066,
+        26.528288
       ],
       "provider": "amap",
       "after": [
         99.904066,
         26.528288
       ],
-      "drift_m": 997,
+      "drift_m": 0,
       "amap_poi_id": "B0FFJFGPN2",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "剑川古城",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "qianshi-mountain",
       "name": "剑川千狮山",
       "before": [
-        99.8892,
-        26.5462
+        99.890855,
+        26.538917
       ],
       "provider": "amap",
       "after": [
         99.890855,
         26.538917
       ],
-      "drift_m": 826,
+      "drift_m": 0,
       "amap_poi_id": "B036800ARE",
-      "tier": "amap-substr3"
+      "tier": "amap-substr3",
+      "poi_name": "满贤林千狮山",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "nuodeng",
       "name": "诺邓古村",
       "before": [
-        99.3462,
-        25.8962
+        99.377706,
+        25.916204
       ],
       "provider": "amap",
       "after": [
         99.377706,
         25.916204
       ],
-      "drift_m": 3857,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFTPILI",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "诺邓古村",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "jizushan",
       "name": "鸡足山",
       "before": [
-        100.3892,
-        25.9658
+        100.387661,
+        25.956975
       ],
       "provider": "amap",
       "after": [
         100.387661,
         25.956975
       ],
-      "drift_m": 993,
+      "drift_m": 0,
       "amap_poi_id": "B03680I2A8",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "鸡足山",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "weishan-old-town",
       "name": "巍山古城",
       "before": [
-        100.489,
-        25.2312
+        100.309123,
+        25.227725
       ],
       "provider": "amap",
       "after": [
         100.309123,
         25.227725
       ],
-      "drift_m": 18098,
+      "drift_m": 0,
       "amap_poi_id": "B03680ICRP",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "巍山古城",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "weibao-mountain",
       "name": "巍宝山",
       "before": [
-        100.4085,
-        25.1885
+        100.352216,
+        25.172636
       ],
       "provider": "amap",
       "after": [
         100.352216,
         25.172636
       ],
-      "drift_m": 5932,
+      "drift_m": 0,
       "amap_poi_id": "B03680HYLB",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "巍宝山",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "weishan-food-street",
       "name": "巍山南诏古街",
       "before": [
-        100.4884,
-        25.2298
+        100.308625,
+        25.227425
       ],
       "provider": "amap",
       "after": [
         100.308625,
         25.227425
       ],
-      "drift_m": 18085,
+      "drift_m": 0,
       "amap_poi_id": "B0MUV1XL4Z",
-      "tier": "amap-substr4"
+      "tier": "amap-substr4",
+      "poi_name": "南诏古街",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "wuliang-cherry",
       "name": "无量山樱花谷",
       "before": [
-        100.572,
-        24.7325
+        100.527156,
+        24.764223
       ],
       "provider": "amap",
       "after": [
         100.527156,
         24.764223
       ],
-      "drift_m": 5740,
+      "drift_m": 0,
       "amap_poi_id": "B0FFGCTZ0M",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "无量山樱花谷",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "direshenguo",
       "name": "洱源地热国",
       "before": [
-        99.9532,
-        26.1235
+        99.958775,
+        26.123236
       ],
       "provider": "amap",
       "after": [
         99.958775,
         26.123236
       ],
-      "drift_m": 557,
+      "drift_m": 0,
       "amap_poi_id": "B0368006LZ",
-      "tier": "amap-substr3"
+      "tier": "amap-substr3",
+      "poi_name": "大理地热国",
+      "name_adopted": false,
+      "coord_moved": true
     },
     {
       "id": "yunnanyi",
       "name": "云南驿古镇",
       "before": [
-        100.7402,
-        25.3605
+        100.693898,
+        25.421575
       ],
       "provider": "amap",
       "after": [
         100.693898,
         25.421575
       ],
-      "drift_m": 8231,
+      "drift_m": 0,
       "amap_poi_id": "B0FFFOG08U",
-      "tier": "amap-exact"
+      "tier": "amap-exact",
+      "poi_name": "云南驿",
+      "name_adopted": false,
+      "coord_moved": true
     }
   ],
   "skipped": [

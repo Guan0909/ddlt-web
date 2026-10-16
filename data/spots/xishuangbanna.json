@@ -19,14 +19,20 @@
       "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
-    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
       "id": "gaozhuang",
       "name": "告庄西双景",
       "cat": "街区",
-      "tags": ["夜景", "傣式建筑", "夜市", "免费"],
+      "tags": [
+        "夜景",
+        "傣式建筑",
+        "夜市",
+        "免费"
+      ],
       "heat": 9.5,
       "dur": 180,
       "intro": "澜沧江边的傣式度假区，金塔与夜市聚集。",
@@ -34,14 +40,22 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.821392, 22.007019],
+      "coord": [
+        100.821392,
+        22.007019
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "starlight-market",
       "name": "星光夜市（告庄西双景）",
       "cat": "夜景",
-      "tags": ["夜景", "晚上", "小吃", "免费"],
+      "tags": [
+        "夜景",
+        "晚上",
+        "小吃",
+        "免费"
+      ],
       "heat": 9.5,
       "dur": 120,
       "intro": "告庄内的巨型夜市，摊位铺满整片广场。",
@@ -49,14 +63,22 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.822100, 22.009700],
+      "coord": [
+        100.8221,
+        22.0097
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manting-park",
       "name": "曼听公园（曼听御花园）",
       "cat": "公园",
-      "tags": ["傣王御花园", "早去", "泼水", "门票"],
+      "tags": [
+        "傣王御花园",
+        "早去",
+        "泼水",
+        "门票"
+      ],
       "heat": 9.5,
       "dur": 120,
       "intro": "傣王御花园，澜沧江与流沙河交汇处。",
@@ -64,14 +86,22 @@
       "open": "08:00-18:30",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.805500, 21.990500],
+      "coord": [
+        100.8055,
+        21.9905
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "xtbg",
       "name": "中国科学院西双版纳热带植物园",
       "cat": "公园",
-      "tags": ["植物园", "王莲", "早去", "远郊"],
+      "tags": [
+        "植物园",
+        "王莲",
+        "早去",
+        "远郊"
+      ],
       "heat": 9.5,
       "dur": 300,
       "intro": "罗梭江葫芦岛上的万种热带植物园。",
@@ -79,14 +109,22 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.273887, 21.917224],
+      "coord": [
+        101.273887,
+        21.917224
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "wild-elephant-valley",
       "name": "野象谷（西双版纳）",
       "cat": "亲子",
-      "tags": ["大象", "早去", "雨林", "远郊"],
+      "tags": [
+        "大象",
+        "早去",
+        "雨林",
+        "远郊"
+      ],
       "heat": 9.5,
       "dur": 240,
       "intro": "勐养保护区里的亚洲象栖息地，有索道。",
@@ -94,14 +132,26 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.853731, 22.170060],
-      "coord_src": "estimate"
+      "coord": [
+        100.853731,
+        22.17006
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3000KJ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dai-park",
       "name": "傣族园（西双版纳）",
       "cat": "古镇",
-      "tags": ["泼水", "傣寨", "佛寺", "远郊"],
+      "tags": [
+        "泼水",
+        "傣寨",
+        "佛寺",
+        "远郊"
+      ],
       "heat": 9,
       "dur": 240,
       "intro": "橄榄坝的五个傣族村寨，天天有泼水。",
@@ -109,14 +159,21 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.927000, 21.855000],
+      "coord": [
+        100.927,
+        21.855
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "forest-park",
       "name": "原始森林公园（西双版纳）",
       "cat": "山水",
-      "tags": ["孔雀放飞", "雨林", "早去"],
+      "tags": [
+        "孔雀放飞",
+        "雨林",
+        "早去"
+      ],
       "heat": 8.5,
       "dur": 210,
       "intro": "离城最近的热带沟谷雨林，有孔雀放飞。",
@@ -124,14 +181,21 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.848000, 21.936000],
+      "coord": [
+        100.848,
+        21.936
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mengle-temple",
       "name": "勐泐大佛寺",
       "cat": "古迹",
-      "tags": ["大佛", "孔雀放飞", "俯瞰"],
+      "tags": [
+        "大佛",
+        "孔雀放飞",
+        "俯瞰"
+      ],
       "heat": 8.5,
       "dur": 120,
       "intro": "山顶寺院，49 米大佛俯瞰景洪全城。",
@@ -139,14 +203,25 @@
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.784000, 21.976000],
-      "coord_src": "estimate"
+      "coord": [
+        100.808365,
+        21.960496
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLO76MG",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zongfosi",
       "name": "总佛寺（西双版纳）",
       "cat": "古迹",
-      "tags": ["南传佛教", "金殿", "免费"],
+      "tags": [
+        "南传佛教",
+        "金殿",
+        "免费"
+      ],
       "heat": 8.5,
       "dur": 60,
       "intro": "西双版纳等级最高的南传佛教寺院。",
@@ -154,14 +229,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.806200, 21.988600],
+      "coord": [
+        100.8062,
+        21.9886
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "wangtianshu",
       "name": "望天树景区（西双版纳）",
       "cat": "山水",
-      "tags": ["空中走廊", "雨林", "远郊"],
+      "tags": [
+        "空中走廊",
+        "雨林",
+        "远郊"
+      ],
       "heat": 8.5,
       "dur": 240,
       "intro": "北纬 21° 的雨林秘境，有树冠空中走廊。",
@@ -169,14 +251,21 @@
       "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.650000, 21.570000],
+      "coord": [
+        101.65,
+        21.57
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "golden-pagoda",
       "name": "大金塔（告庄西双景）",
       "cat": "古迹",
-      "tags": ["金塔", "夜色", "拍照"],
+      "tags": [
+        "金塔",
+        "夜色",
+        "拍照"
+      ],
       "heat": 8,
       "dur": 45,
       "intro": "告庄中心的傣式金塔，夜里打灯。",
@@ -184,14 +273,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.820000, 22.008500],
+      "coord": [
+        100.82,
+        22.0085
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "six-country-water-market",
       "name": "六国水上市场（告庄西双景）",
       "cat": "美食",
-      "tags": ["水上市场", "小吃", "晚上"],
+      "tags": [
+        "水上市场",
+        "小吃",
+        "晚上"
+      ],
       "heat": 8,
       "dur": 90,
       "intro": "告庄里的水上摊位，卖六国风味小吃。",
@@ -199,14 +295,22 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.820500, 22.003500],
+      "coord": [
+        100.8205,
+        22.0035
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "riverside-night-market",
       "name": "江边夜市（景洪）",
       "cat": "美食",
-      "tags": ["傣味", "烧烤", "夜景", "晚上"],
+      "tags": [
+        "傣味",
+        "烧烤",
+        "夜景",
+        "晚上"
+      ],
       "heat": 8,
       "dur": 90,
       "intro": "澜沧江边的傣味夜市，烧烤最出名。",
@@ -214,14 +318,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.812000, 21.997000],
+      "coord": [
+        100.812,
+        21.997
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manting-bonfire-show",
       "name": "曼听公园篝火晚会（湄公河之夜）",
       "cat": "演出",
-      "tags": ["晚上", "歌舞", "篝火"],
+      "tags": [
+        "晚上",
+        "歌舞",
+        "篝火"
+      ],
       "heat": 8,
       "dur": 100,
       "intro": "曼听公园晚间的大型歌舞篝火晚会。",
@@ -229,14 +340,22 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.805500, 21.990500],
+      "coord": [
+        100.8055,
+        21.9905
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "jinuo-village",
-      "name": "基诺山寨",
+      "name": "基诺山寨景区",
       "cat": "古镇",
-      "tags": ["基诺族", "歌舞", "雨林", "远郊"],
+      "tags": [
+        "基诺族",
+        "歌舞",
+        "雨林",
+        "远郊"
+      ],
       "heat": 8,
       "dur": 210,
       "intro": "最后一个被确认民族的村寨式景区。",
@@ -244,14 +363,25 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.970000, 22.000000],
-      "coord_src": "estimate"
+      "coord": [
+        100.985375,
+        22.056305
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30031D",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tropical-flower-garden",
       "name": "热带花卉园（西双版纳）",
       "cat": "公园",
-      "tags": ["花卉", "室内", "拍照"],
+      "tags": [
+        "花卉",
+        "室内",
+        "拍照"
+      ],
       "heat": 7.5,
       "dur": 90,
       "intro": "景洪市区的热带花卉园，四季有花。",
@@ -259,14 +389,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.795500, 21.986500],
+      "coord": [
+        100.7955,
+        21.9865
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "poshui-square",
       "name": "泼水广场（景洪）",
       "cat": "街区",
-      "tags": ["地标", "免费", "泼水节"],
+      "tags": [
+        "地标",
+        "免费",
+        "泼水节"
+      ],
       "heat": 7.5,
       "dur": 45,
       "intro": "景洪市中心地标，泼水节的主场地。",
@@ -274,14 +411,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.793000, 21.998500],
+      "coord": [
+        100.793,
+        21.9985
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dai-show",
       "name": "傣秀剧场",
       "cat": "演出",
-      "tags": ["晚上", "大型演艺", "室内"],
+      "tags": [
+        "晚上",
+        "大型演艺",
+        "室内"
+      ],
       "heat": 7.5,
       "dur": 90,
       "intro": "度假区里的大型水舞台傣族主题演出。",
@@ -289,14 +433,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.777000, 21.974000],
+      "coord": [
+        100.777,
+        21.974
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manyuan-village",
       "name": "曼远村（蘑菇屋）",
       "cat": "古镇",
-      "tags": ["傣寨", "蘑菇屋", "远郊"],
+      "tags": [
+        "傣寨",
+        "蘑菇屋",
+        "远郊"
+      ],
       "heat": 7.5,
       "dur": 120,
       "intro": "勐罕镇的傣寨，《向往的生活》拍摄地。",
@@ -304,14 +455,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.961000, 21.914400],
+      "coord": [
+        100.961,
+        21.9144
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "nannuo-mountain",
       "name": "南糯山（半坡老寨）",
       "cat": "山水",
-      "tags": ["古茶树", "云海", "远郊"],
+      "tags": [
+        "古茶树",
+        "云海",
+        "远郊"
+      ],
       "heat": 7.5,
       "dur": 150,
       "intro": "勐海的千年古茶山，哈尼族村寨成片。",
@@ -319,14 +477,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.550000, 21.960000],
+      "coord": [
+        100.55,
+        21.96
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mengjinglai",
       "name": "勐景来（中缅第一寨）",
       "cat": "古镇",
-      "tags": ["傣寨", "界碑", "远郊"],
+      "tags": [
+        "傣寨",
+        "界碑",
+        "远郊"
+      ],
       "heat": 7.5,
       "dur": 120,
       "intro": "打洛江边的傣寨，被称中缅第一寨。",
@@ -334,14 +499,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.083000, 21.670000],
+      "coord": [
+        100.083,
+        21.67
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "banna-museum",
       "name": "西双版纳民族博物馆",
       "cat": "博物馆",
-      "tags": ["免费", "室内", "贝叶经"],
+      "tags": [
+        "免费",
+        "室内",
+        "贝叶经"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "流沙河南岸的傣式宫殿，藏贝叶经。",
@@ -349,14 +521,21 @@
       "open": "09:00-17:00",
       "closed_mon": true,
       "suburb": false,
-      "coord": [100.790000, 21.980000],
+      "coord": [
+        100.79,
+        21.98
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manjinglan-night-market",
       "name": "曼景兰夜市（傣味）",
       "cat": "美食",
-      "tags": ["傣味", "本地人", "晚上"],
+      "tags": [
+        "傣味",
+        "本地人",
+        "晚上"
+      ],
       "heat": 7,
       "dur": 80,
       "intro": "市区里的傣味夜宵聚集地，本地人常去。",
@@ -364,14 +543,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.803000, 22.001000],
+      "coord": [
+        100.803,
+        22.001
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "lantsang-bridge",
       "name": "澜沧江大桥（景洪）",
       "cat": "夜景",
-      "tags": ["夜景", "免费", "江风"],
+      "tags": [
+        "夜景",
+        "免费",
+        "江风"
+      ],
       "heat": 7,
       "dur": 40,
       "intro": "澜沧江上的老桥，入夜灯光连成线。",
@@ -379,14 +565,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.810000, 22.000000],
+      "coord": [
+        100.81,
+        22
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "rainforest-valley",
       "name": "雨林谷（西双版纳）",
       "cat": "山水",
-      "tags": ["雨林", "栈道", "远郊"],
+      "tags": [
+        "雨林",
+        "栈道",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 150,
       "intro": "勐养的雨林景区，栈道穿过沟谷。",
@@ -394,14 +587,22 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.870000, 22.120000],
+      "coord": [
+        100.87,
+        22.12
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dadugang-tea-garden",
       "name": "大渡岗万亩茶园",
       "cat": "山水",
-      "tags": ["茶园", "云海", "自驾", "远郊"],
+      "tags": [
+        "茶园",
+        "云海",
+        "自驾",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 120,
       "intro": "世界最大连片茶园，山峦像绿色波浪。",
@@ -409,14 +610,25 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.860000, 22.380000],
-      "coord_src": "estimate"
+      "coord": [
+        100.963073,
+        22.352934
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFJVENVL",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "manchunman-temple",
       "name": "曼春满佛寺（傣族园）",
       "cat": "古迹",
-      "tags": ["南传佛寺", "壁画", "远郊"],
+      "tags": [
+        "南传佛寺",
+        "壁画",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 40,
       "intro": "傣族园里的古佛寺，壁画保存完好。",
@@ -424,14 +636,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.928000, 21.854000],
+      "coord": [
+        100.928,
+        21.854
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "laobanzhang",
       "name": "老班章村（布朗山）",
       "cat": "山水",
-      "tags": ["古树茶", "村寨", "远郊"],
+      "tags": [
+        "古树茶",
+        "村寨",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 180,
       "intro": "布朗山深处的茶王村寨，古树茶园环绕。",
@@ -439,14 +658,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.133000, 21.817000],
+      "coord": [
+        100.133,
+        21.817
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "daluo-port",
       "name": "打洛口岸",
       "cat": "街区",
-      "tags": ["口岸", "界碑", "远郊"],
+      "tags": [
+        "口岸",
+        "界碑",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 60,
       "intro": "中缅边境口岸，旁边是翡翠和小商品市场。",
@@ -454,14 +680,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.070000, 21.680000],
+      "coord": [
+        100.07,
+        21.68
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manfeilong-pagoda",
       "name": "曼飞龙白塔（大勐龙）",
       "cat": "古迹",
-      "tags": ["白塔", "国保", "远郊"],
+      "tags": [
+        "白塔",
+        "国保",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 45,
       "intro": "大勐龙的傣式群塔，相传建于傣历年间。",
@@ -469,14 +702,22 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.610000, 21.640000],
+      "coord": [
+        100.61,
+        21.64
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "lvshilin",
       "name": "绿石林（勐仑）",
       "cat": "山水",
-      "tags": ["石林", "雨林", "徒步", "远郊"],
+      "tags": [
+        "石林",
+        "雨林",
+        "徒步",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 180,
       "intro": "勐仑的石灰岩雨林，石头上长森林。",
@@ -484,14 +725,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.300000, 21.890000],
+      "coord": [
+        101.3,
+        21.89
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dai-park-water-square",
       "name": "傣族园泼水广场",
       "cat": "亲子",
-      "tags": ["泼水", "亲子", "远郊"],
+      "tags": [
+        "泼水",
+        "亲子",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 60,
       "intro": "傣族园里的泼水场，每天固定两场。",
@@ -499,14 +747,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.928500, 21.853500],
+      "coord": [
+        100.9285,
+        21.8535
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "jingzhen-pavilion",
       "name": "景真八角亭",
       "cat": "古迹",
-      "tags": ["国保", "傣式", "远郊"],
+      "tags": [
+        "国保",
+        "傣式",
+        "远郊"
+      ],
       "heat": 7,
       "dur": 40,
       "intro": "勐遮景真村的国保八角亭，就在国道边。",
@@ -514,14 +769,25 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.303769, 21.957500],
-      "coord_src": "estimate"
+      "coord": [
+        100.304902,
+        21.954689
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3003NC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "mekong-cruise",
       "name": "澜沧江游船（景洪港）",
       "cat": "夜景",
-      "tags": ["夜景", "游船", "晚上"],
+      "tags": [
+        "夜景",
+        "游船",
+        "晚上"
+      ],
       "heat": 7,
       "dur": 90,
       "intro": "从景洪港出发的澜沧江夜游船。",
@@ -529,14 +795,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": false,
-      "coord": [100.815000, 21.995000],
+      "coord": [
+        100.815,
+        21.995
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "forest-culture-museum",
       "name": "热带雨林民族文化博物馆（版纳植物园）",
       "cat": "博物馆",
-      "tags": ["室内", "民族", "科普"],
+      "tags": [
+        "室内",
+        "民族",
+        "科普"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "植物园里的展馆，讲雨林与世居民族。",
@@ -544,14 +817,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.274000, 21.917000],
+      "coord": [
+        101.274,
+        21.917
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "peacock-culture-square",
       "name": "孔雀文化广场（告庄西双景）",
       "cat": "街区",
-      "tags": ["免费", "孔雀", "歌舞"],
+      "tags": [
+        "免费",
+        "孔雀",
+        "歌舞"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "告庄内的广场，常有孔雀和民族歌舞。",
@@ -559,14 +839,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.820000, 22.005000],
+      "coord": [
+        100.82,
+        22.005
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "minzu-folk-park",
       "name": "民族风情园（西双版纳）",
       "cat": "公园",
-      "tags": ["民族村寨", "免费", "民俗"],
+      "tags": [
+        "民族村寨",
+        "免费",
+        "民俗"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "市区里的民族村寨主题公园。",
@@ -574,14 +861,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.790500, 21.990500],
+      "coord": [
+        100.7905,
+        21.9905
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mange-temple",
       "name": "曼阁佛寺",
       "cat": "古迹",
-      "tags": ["古佛寺", "国保", "免费"],
+      "tags": [
+        "古佛寺",
+        "国保",
+        "免费"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "市中心老街巷里的古老佛寺。",
@@ -589,14 +883,25 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.797941, 22.024489],
-      "coord_src": "estimate"
+      "coord": [
+        100.797941,
+        22.024489
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B02B300ARC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dalan-plaza",
       "name": "达兰商业广场（告庄西双景）",
       "cat": "商圈",
-      "tags": ["商场", "室内", "小吃"],
+      "tags": [
+        "商场",
+        "室内",
+        "小吃"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "告庄内的商业广场，小店和小吃密集。",
@@ -604,14 +909,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.819500, 22.004500],
+      "coord": [
+        100.8195,
+        22.0045
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manzhang-village",
       "name": "曼掌村（勐养）",
       "cat": "古镇",
-      "tags": ["傣寨", "慢轮制陶", "远郊"],
+      "tags": [
+        "傣寨",
+        "慢轮制陶",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 120,
       "intro": "勐养的傣族村寨，以慢轮制陶出名。",
@@ -619,14 +931,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.880000, 22.140000],
+      "coord": [
+        100.88,
+        22.14
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "elephant-museum",
       "name": "亚洲象博物馆（野象谷）",
       "cat": "博物馆",
-      "tags": ["大象", "室内", "科普"],
+      "tags": [
+        "大象",
+        "室内",
+        "科普"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "野象谷内的展馆，讲亚洲象与保护。",
@@ -634,14 +953,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.856000, 22.169000],
+      "coord": [
+        100.856,
+        22.169
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "jinuo-museum",
       "name": "中国基诺族博物馆",
       "cat": "博物馆",
-      "tags": ["基诺族", "室内", "民俗"],
+      "tags": [
+        "基诺族",
+        "室内",
+        "民俗"
+      ],
       "heat": 6.5,
       "dur": 45,
       "intro": "基诺山巴坡村的两层民族博物馆。",
@@ -649,14 +975,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.970000, 22.000000],
+      "coord": [
+        100.97,
+        22
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manduan-temple",
       "name": "曼短佛寺",
       "cat": "古迹",
-      "tags": ["壁画", "国保", "远郊"],
+      "tags": [
+        "壁画",
+        "国保",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "勐海坝子里的古佛寺，壁画精美。",
@@ -664,14 +997,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.415000, 21.970000],
+      "coord": [
+        100.415,
+        21.97
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "dushu-chenglin",
       "name": "独树成林（打洛）",
       "cat": "山水",
-      "tags": ["榕树", "奇观", "远郊"],
+      "tags": [
+        "榕树",
+        "奇观",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 40,
       "intro": "打洛的一株大榕树，气根落地长成林。",
@@ -679,14 +1019,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.080000, 21.665000],
+      "coord": [
+        100.08,
+        21.665
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "yiwu-town",
       "name": "易武古镇",
       "cat": "古镇",
-      "tags": ["茶马古道", "古茶山", "远郊"],
+      "tags": [
+        "茶马古道",
+        "古茶山",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 150,
       "intro": "勐腊的茶马古道重镇，老茶号聚集。",
@@ -694,14 +1041,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.580000, 22.030000],
+      "coord": [
+        101.58,
+        22.03
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mohan-port",
       "name": "磨憨口岸",
       "cat": "街区",
-      "tags": ["口岸", "边境", "远郊"],
+      "tags": [
+        "口岸",
+        "边境",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 90,
       "intro": "中老边境口岸，对面就是老挝磨丁。",
@@ -709,14 +1063,25 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.683000, 21.183000],
-      "coord_src": "estimate"
+      "coord": [
+        101.684778,
+        21.183016
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30LUS7",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jinghong-old-street",
       "name": "景洪老街（嘎兰中路）",
       "cat": "街区",
-      "tags": ["老街", "市井", "小吃"],
+      "tags": [
+        "老街",
+        "市井",
+        "小吃"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "嘎兰中路一带的老城区，市井味最足。",
@@ -724,14 +1089,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.795000, 22.000000],
+      "coord": [
+        100.795,
+        22
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "sunac-park",
       "name": "西双版纳融创乐园（原万达主题乐园）",
       "cat": "亲子",
-      "tags": ["主题乐园", "亲子", "夜场"],
+      "tags": [
+        "主题乐园",
+        "亲子",
+        "夜场"
+      ],
       "heat": 6.5,
       "dur": 240,
       "intro": "度假区里的主题乐园，带水上项目。",
@@ -739,14 +1111,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.777000, 21.971000],
+      "coord": [
+        100.777,
+        21.971
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "binjiang-park",
       "name": "滨江公园（景洪）",
       "cat": "公园",
-      "tags": ["江景", "免费", "日落"],
+      "tags": [
+        "江景",
+        "免费",
+        "日落"
+      ],
       "heat": 6.5,
       "dur": 60,
       "intro": "澜沧江边的带状公园，正对告庄。",
@@ -754,14 +1133,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.818000, 22.002000],
+      "coord": [
+        100.818,
+        22.002
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mengyuan-xianjing",
       "name": "勐远仙境",
       "cat": "山水",
-      "tags": ["溶洞", "雨林", "远郊"],
+      "tags": [
+        "溶洞",
+        "雨林",
+        "远郊"
+      ],
       "heat": 6.5,
       "dur": 180,
       "intro": "勐腊的溶洞景区，洞外就是雨林。",
@@ -769,14 +1155,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.570000, 21.630000],
+      "coord": [
+        101.57,
+        21.63
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "nanyao-garden",
       "name": "南药园（西双版纳）",
       "cat": "公园",
-      "tags": ["药用植物", "小众", "免费"],
+      "tags": [
+        "药用植物",
+        "小众",
+        "免费"
+      ],
       "heat": 6,
       "dur": 60,
       "intro": "市区研究药用植物的小园子，很安静。",
@@ -784,14 +1177,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.788000, 21.984000],
+      "coord": [
+        100.788,
+        21.984
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "peacock-lake-park",
       "name": "孔雀湖公园（景洪）",
       "cat": "公园",
-      "tags": ["免费", "散步", "本地人"],
+      "tags": [
+        "免费",
+        "散步",
+        "本地人"
+      ],
       "heat": 6,
       "dur": 40,
       "intro": "市中心的湖心公园，傍晚最热闹。",
@@ -799,14 +1199,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.793500, 21.997500],
+      "coord": [
+        100.7935,
+        21.9975
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manjinglan-temple",
       "name": "曼景兰佛寺",
       "cat": "古迹",
-      "tags": ["傣式佛寺", "免费", "小众"],
+      "tags": [
+        "傣式佛寺",
+        "免费",
+        "小众"
+      ],
       "heat": 6,
       "dur": 40,
       "intro": "市区的傣式佛寺，金顶藏在巷子里。",
@@ -814,14 +1221,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.803200, 22.000600],
+      "coord": [
+        100.8032,
+        22.0006
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "rt-mart",
       "name": "大润发（景洪泼水广场店）",
       "cat": "商圈",
-      "tags": ["超市", "水果", "室内"],
+      "tags": [
+        "超市",
+        "水果",
+        "室内"
+      ],
       "heat": 6,
       "dur": 45,
       "intro": "泼水广场旁的超市，买热带水果方便。",
@@ -829,14 +1243,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.794000, 21.997000],
+      "coord": [
+        100.794,
+        21.997
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "manhena-village",
       "name": "曼贺纳自然村寨",
       "cat": "古镇",
-      "tags": ["傣寨", "竹楼", "免费"],
+      "tags": [
+        "傣寨",
+        "竹楼",
+        "免费"
+      ],
       "heat": 6,
       "dur": 90,
       "intro": "曼弄枫的傣族村寨，竹楼成片。",
@@ -844,14 +1265,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.782000, 21.970000],
+      "coord": [
+        100.782,
+        21.97
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "jiunmu-hot-spring",
       "name": "玖沐温泉谷",
       "cat": "亲子",
-      "tags": ["温泉", "亲子", "晚上"],
+      "tags": [
+        "温泉",
+        "亲子",
+        "晚上"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "曼弄枫的温泉，泡池散布在林子里。",
@@ -859,14 +1287,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.779000, 21.969000],
+      "coord": [
+        100.779,
+        21.969
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mengle-rain-park",
       "name": "勐泐雨林公园",
       "cat": "公园",
-      "tags": ["免费", "雨林", "散步"],
+      "tags": [
+        "免费",
+        "雨林",
+        "散步"
+      ],
       "heat": 6,
       "dur": 60,
       "intro": "大佛寺旁的市政公园，有雨林步道。",
@@ -874,14 +1309,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.787500, 21.980000],
+      "coord": [
+        100.7875,
+        21.98
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "nabanhe-reserve",
       "name": "纳板河（国家级自然保护区）",
       "cat": "山水",
-      "tags": ["雨林", "科考", "远郊"],
+      "tags": [
+        "雨林",
+        "科考",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 180,
       "intro": "景洪西北的原始雨林保护区，少有人去。",
@@ -889,14 +1331,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.630000, 22.170000],
+      "coord": [
+        100.63,
+        22.17
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "cuipingfeng",
       "name": "翠屏峰（勐仑）",
       "cat": "山水",
-      "tags": ["观景台", "雨林", "小众"],
+      "tags": [
+        "观景台",
+        "雨林",
+        "小众"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "勐仑的观景山，能俯瞰罗梭江和坝子。",
@@ -904,14 +1353,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [101.280000, 21.910000],
+      "coord": [
+        101.28,
+        21.91
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "nanla-river-rafting",
       "name": "南腊河（野趣漂流）",
       "cat": "山水",
-      "tags": ["漂流", "雨林", "远郊"],
+      "tags": [
+        "漂流",
+        "雨林",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 150,
       "intro": "勐腊的雨林漂流，水不深但够刺激。",
@@ -919,14 +1375,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [101.600000, 21.520000],
+      "coord": [
+        101.6,
+        21.52
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "zhanglang-village",
       "name": "章朗村（布朗山千年古寨）",
       "cat": "古镇",
-      "tags": ["布朗族", "古寨", "远郊"],
+      "tags": [
+        "布朗族",
+        "古寨",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 120,
       "intro": "布朗山里的千年布朗族村寨。",
@@ -934,14 +1397,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [100.250000, 21.870000],
+      "coord": [
+        100.25,
+        21.87
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "menghai-tea-factory",
       "name": "勐海茶厂（大益）",
       "cat": "街区",
-      "tags": ["普洱茶", "工厂", "远郊"],
+      "tags": [
+        "普洱茶",
+        "工厂",
+        "远郊"
+      ],
       "heat": 6,
       "dur": 90,
       "intro": "勐海的老茶厂，普洱茶工业参观地。",
@@ -949,14 +1419,21 @@
       "open": null,
       "closed_mon": null,
       "suburb": true,
-      "coord": [100.450000, 21.957000],
+      "coord": [
+        100.45,
+        21.957
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "liusha-river-park",
       "name": "流沙河公园",
       "cat": "公园",
-      "tags": ["免费", "河畔", "本地人"],
+      "tags": [
+        "免费",
+        "河畔",
+        "本地人"
+      ],
       "heat": 6,
       "dur": 50,
       "intro": "流沙河边的社区公园，树荫很密。",
@@ -964,14 +1441,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.788000, 21.982000],
+      "coord": [
+        100.788,
+        21.982
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mandou-temple",
       "name": "曼斗佛寺（曼斗寨）",
       "cat": "古迹",
-      "tags": ["傣寨佛寺", "免费", "小众"],
+      "tags": [
+        "傣寨佛寺",
+        "免费",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 40,
       "intro": "曼斗寨里的傣式佛寺，安静小巧。",
@@ -979,14 +1463,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.830000, 22.000000],
+      "coord": [
+        100.83,
+        22
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "gunaka-culture-park",
       "name": "古纳卡傣族文化园",
       "cat": "博物馆",
-      "tags": ["傣族文化", "室内", "免费"],
+      "tags": [
+        "傣族文化",
+        "室内",
+        "免费"
+      ],
       "heat": 5.5,
       "dur": 60,
       "intro": "曼贺纳旁的傣族文化展示园。",
@@ -994,14 +1485,21 @@
       "open": null,
       "closed_mon": false,
       "suburb": false,
-      "coord": [100.781000, 21.969000],
+      "coord": [
+        100.781,
+        21.969
+      ],
       "coord_src": "estimate"
     },
     {
       "id": "mandan-village",
       "name": "曼旦村（勐腊）",
       "cat": "古镇",
-      "tags": ["傣寨", "边境", "小众"],
+      "tags": [
+        "傣寨",
+        "边境",
+        "小众"
+      ],
       "heat": 5.5,
       "dur": 120,
       "intro": "勐腊的边境傣寨，几乎见不到游客。",
@@ -1009,7 +1507,10 @@
       "open": null,
       "closed_mon": false,
       "suburb": true,
-      "coord": [101.600000, 21.450000],
+      "coord": [
+        101.6,
+        21.45
+      ],
       "coord_src": "estimate"
     }
   ]

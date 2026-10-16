@@ -1,0 +1,442 @@
+{
+  "city": "西双版纳",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "wild-elephant-valley",
+      "name": "野象谷（西双版纳）",
+      "before": [
+        100.853731,
+        22.17006
+      ],
+      "provider": "amap",
+      "after": [
+        100.853731,
+        22.17006
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B02B3000KJ",
+      "tier": "amap-suffix",
+      "poi_name": "野象谷景区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mengle-temple",
+      "name": "勐泐大佛寺",
+      "before": [
+        100.784,
+        21.976
+      ],
+      "provider": "amap",
+      "after": [
+        100.808365,
+        21.960496
+      ],
+      "drift_m": 3047,
+      "amap_poi_id": "B0FFLO76MG",
+      "tier": "amap-exact",
+      "poi_name": "勐泐大佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "jinuo-village",
+      "name": "基诺山寨",
+      "before": [
+        100.97,
+        22
+      ],
+      "provider": "amap",
+      "after": [
+        100.985375,
+        22.056305
+      ],
+      "drift_m": 6458,
+      "amap_poi_id": "B02B30031D",
+      "tier": "amap-suffix",
+      "renamed_from": "基诺山寨",
+      "renamed_to": "基诺山寨景区",
+      "poi_name": "基诺山寨景区",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "dadugang-tea-garden",
+      "name": "大渡岗万亩茶园",
+      "before": [
+        100.86,
+        22.38
+      ],
+      "provider": "amap",
+      "after": [
+        100.963073,
+        22.352934
+      ],
+      "drift_m": 11018,
+      "amap_poi_id": "B0FFJVENVL",
+      "tier": "amap-exact",
+      "poi_name": "大渡岗万亩茶园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "jingzhen-pavilion",
+      "name": "景真八角亭",
+      "before": [
+        100.303769,
+        21.9575
+      ],
+      "provider": "amap",
+      "after": [
+        100.304902,
+        21.954689
+      ],
+      "drift_m": 334,
+      "amap_poi_id": "B02B3003NC",
+      "tier": "amap-exact",
+      "poi_name": "景真八角亭",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mange-temple",
+      "name": "曼阁佛寺",
+      "before": [
+        100.797941,
+        22.024489
+      ],
+      "provider": "amap",
+      "after": [
+        100.797941,
+        22.024489
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B02B300ARC",
+      "tier": "amap-exact",
+      "poi_name": "曼阁佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mohan-port",
+      "name": "磨憨口岸",
+      "before": [
+        101.683,
+        21.183
+      ],
+      "provider": "amap",
+      "after": [
+        101.684778,
+        21.183016
+      ],
+      "drift_m": 184,
+      "amap_poi_id": "B02B30LUS7",
+      "tier": "amap-exact",
+      "poi_name": "磨憨口岸",
+      "name_adopted": false,
+      "coord_moved": true
+    }
+  ],
+  "skipped": [],
+  "errors": [
+    {
+      "id": "gaozhuang",
+      "name": "告庄西双景",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "starlight-market",
+      "name": "星光夜市（告庄西双景）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manting-park",
+      "name": "曼听公园（曼听御花园）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "xtbg",
+      "name": "中国科学院西双版纳热带植物园",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "dai-park",
+      "name": "傣族园（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "forest-park",
+      "name": "原始森林公园（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "zongfosi",
+      "name": "总佛寺（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "wangtianshu",
+      "name": "望天树景区（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "golden-pagoda",
+      "name": "大金塔（告庄西双景）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "six-country-water-market",
+      "name": "六国水上市场（告庄西双景）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "riverside-night-market",
+      "name": "江边夜市（景洪）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manting-bonfire-show",
+      "name": "曼听公园篝火晚会（湄公河之夜）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "tropical-flower-garden",
+      "name": "热带花卉园（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "poshui-square",
+      "name": "泼水广场（景洪）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "dai-show",
+      "name": "傣秀剧场",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manyuan-village",
+      "name": "曼远村（蘑菇屋）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "nannuo-mountain",
+      "name": "南糯山（半坡老寨）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mengjinglai",
+      "name": "勐景来（中缅第一寨）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "banna-museum",
+      "name": "西双版纳民族博物馆",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manjinglan-night-market",
+      "name": "曼景兰夜市（傣味）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "lantsang-bridge",
+      "name": "澜沧江大桥（景洪）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "rainforest-valley",
+      "name": "雨林谷（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manchunman-temple",
+      "name": "曼春满佛寺（傣族园）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "laobanzhang",
+      "name": "老班章村（布朗山）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "daluo-port",
+      "name": "打洛口岸",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manfeilong-pagoda",
+      "name": "曼飞龙白塔（大勐龙）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "lvshilin",
+      "name": "绿石林（勐仑）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "dai-park-water-square",
+      "name": "傣族园泼水广场",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mekong-cruise",
+      "name": "澜沧江游船（景洪港）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "forest-culture-museum",
+      "name": "热带雨林民族文化博物馆（版纳植物园）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "peacock-culture-square",
+      "name": "孔雀文化广场（告庄西双景）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "minzu-folk-park",
+      "name": "民族风情园（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "dalan-plaza",
+      "name": "达兰商业广场（告庄西双景）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manzhang-village",
+      "name": "曼掌村（勐养）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "elephant-museum",
+      "name": "亚洲象博物馆（野象谷）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "jinuo-museum",
+      "name": "中国基诺族博物馆",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manduan-temple",
+      "name": "曼短佛寺",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "dushu-chenglin",
+      "name": "独树成林（打洛）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "jinghong-old-street",
+      "name": "景洪老街（嘎兰中路）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "sunac-park",
+      "name": "西双版纳融创乐园（原万达主题乐园）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "binjiang-park",
+      "name": "滨江公园（景洪）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mengyuan-xianjing",
+      "name": "勐远仙境",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "nanyao-garden",
+      "name": "南药园（西双版纳）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "peacock-lake-park",
+      "name": "孔雀湖公园（景洪）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manjinglan-temple",
+      "name": "曼景兰佛寺",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "rt-mart",
+      "name": "大润发（景洪泼水广场店）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "manhena-village",
+      "name": "曼贺纳自然村寨",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "jiunmu-hot-spring",
+      "name": "玖沐温泉谷",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mengle-rain-park",
+      "name": "勐泐雨林公园",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "nabanhe-reserve",
+      "name": "纳板河（国家级自然保护区）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "cuipingfeng",
+      "name": "翠屏峰（勐仑）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "nanla-river-rafting",
+      "name": "南腊河（野趣漂流）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "zhanglang-village",
+      "name": "章朗村（布朗山千年古寨）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "menghai-tea-factory",
+      "name": "勐海茶厂（大益）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "liusha-river-park",
+      "name": "流沙河公园",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mandou-temple",
+      "name": "曼斗佛寺（曼斗寨）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "gunaka-culture-park",
+      "name": "古纳卡傣族文化园",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    },
+    {
+      "id": "mandan-village",
+      "name": "曼旦村（勐腊）",
+      "err": "高德 infocode=10044 USER_DAILY_QUERY_OVER_LIMIT"
+    }
+  ]
+}

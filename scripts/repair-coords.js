@@ -23,6 +23,10 @@ const MAX_MOVE_M = 20000;     // 只用高德时的位移上限：超过就当�
 // 估算 9km 远——此时原值必错，取腾讯坐标远好于不修。名称必须完全相等，避免「同名异地」误修
 // （乾陵/华山/法门寺这类在别处同名 POI 的点，正是靠这一条挡住的）。
 const THROTTLE_MS = 400;   // 腾讯个人版 5 QPS：150ms 会偶发 status=121（提示写的是日配额，实为突发限流）
+const AROUND_RADIUS_M = 500;   // 周边召回半径：我们的坐标若正确，真实 POI 必在此范围内
+const AI_URL = process.env.AI_BASE_URL ? process.env.AI_BASE_URL.replace(/\/$/, '') + '/chat/completions'
+  : 'https://new.fluapi.com/v1/chat/completions';
+const AI_MODEL = process.env.AI_MODEL || 'deepseek-v4.1-flash';
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const hav = (a, b) => {
@@ -42,6 +46,47 @@ async function tencentSearch(kw, city, key) {
   if (j.status !== 0) throw new Error(`腾讯 status=${j.status} ${j.message || ''}`);
   return (j.data || []).map(d => ({ title: d.title, coord: [d.location.lng, d.location.lat], id: d.id, addr: d.address || '', cat: d.category || '' }));
 }
+// 高德周边搜索：给定坐标附近找 POI（用于「名字对不上但地方真实存在」的别名判定）
+async function amapAround(lng, lat, key, kw, radius) {
+  const u = 'https://restapi.amap.com/v3/place/around?location=' + lng + ',' + lat + '&radius=' + (radius || AROUND_RADIUS_M) +
+    (kw ? '&keywords=' + encodeURIComponent(kw) : '') + '&offset=20&key=' + key;
+  const j = await (await fetch(u)).json();
+  return (j.pois || []).map(p => {
+    const [plng, plat] = String(p.location || '').split(',').map(Number);
+    return { title: p.name, coord: [plng, plat], id: p.id, addr: p.address || '', cat: p.type || '' };
+  }).filter(p => p.coord[0]);
+}
+// LLM 裁判：只允许在给定候选里挑，或全部否决（{-1}）。幻觉无法引入新地点。
+// 返回 {pick, why} 或 null。**null 表示「裁判不可用」**（空回复/超时/解析失败），调用方必须
+// 与「裁判明确否决（pick = -1）」区分对待——不可用不能当作不存在，否则会误删真实景点。
+async function judgeAlias(spot, cands, city) {
+  const list = cands.slice(0, 30).map((c, i) => (i + 1) + '. ' + c.title + '｜' + (c.addr || '') + '｜' + (c.cat || '')).join('\n');
+  const body = {
+    model: AI_MODEL,
+    messages: [
+      { role: 'system', content: '你是地图 POI 匹配裁判。给定目标地点名与候选 POI（都在目标坐标附近），判断哪个候选**就是**这个地方。允许别名/简称/官方全称（如小吃街登记为「XX巷」、书店登记为「XX(成都店)」）；警惕只是同区域内的无关店铺。只输出 JSON：{"pick": 序号, "why": "简短理由"}；都不像则 {"pick": -1, "why": "..."}。' },
+      { role: 'user', content: '城市：' + city + '\n目标：' + spot.name + '（' + (spot.cat || '') + '，坐标 ' + spot.coord + '）\n候选：\n' + list },
+    ],
+    temperature: 0, max_tokens: 300,   // 之前 30 会把 JSON 截断成空串，导致「全否决」的假象
+  };
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const res = await fetch(AI_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + process.env.DEEPSEEK_KEY },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(20000),
+      });
+      const j = await res.json();
+      const raw = ((j.choices && j.choices[0] && j.choices[0].message.content) || '').trim();
+      const m = raw.match(/\{[\s\S]*\}/);
+      if (m) { const p = JSON.parse(m[0]); if (typeof p.pick === 'number') return p; }
+    } catch (e) { /* 重试一次 */ }
+    await sleep(600);
+  }
+  return null;
+}
+
 async function amapSearch(kw, city, key, nationwide) {
   const url = `https://restapi.amap.com/v3/place/text?keywords=${encodeURIComponent(kw)}&city=${encodeURIComponent(city)}&citylimit=${nationwide ? 'false' : 'true'}&offset=10&key=${key}`;
   const j = await (await fetch(url)).json();
@@ -175,7 +220,9 @@ async function main() {
   if (!city) { console.error('文件缺少 _meta.city'); process.exit(2); }
 
   const verifyAll = args.includes('--verify-all');   // 全库核验：连已回填的点也过一遍高德（真实性 + 名称以高德为准）
-  const targets = verifyAll ? data.spots.slice() : data.spots.filter(s => s.coord_src === 'estimate');
+  const rescueOnly = args.includes('--rescue-only'); // 只捞：跳过名称阶梯，直接用「周边召回 + LLM 裁判」处理未核验点
+  const targets = rescueOnly ? data.spots.filter(s => s.verify_src !== 'amap')
+    : verifyAll ? data.spots.slice() : data.spots.filter(s => s.coord_src === 'estimate');
   console.log(verifyAll
     ? `${city}：全库核验 ${targets.length} 个点位（高德为准：存在性 + 名称）`
     : `${city}：${data.spots.length} 个点位，其中 estimate ${targets.length} 个待复核`);
@@ -204,7 +251,7 @@ async function main() {
         // 收集三轮搜索的命中，取「位移在 MAX_MOVE_M 内、离估算最近」的那个。
         // 不能第一个命中就停：本城偏置常先给出同名异地（如茯茶镇），而正确结果在邻市（咸阳泾阳）。
         const cands = [];
-        const attempts = [
+        const attempts = rescueOnly ? [] : [
           ...nameVariants(spot.name).map(kw => [kw, city, false, false]),
           ...nameVariants(spot.name).map(kw => [kw, city, true, true]),
           ...nameVariants(spot.name).map(kw => [kw, '', true, true]),
@@ -219,13 +266,48 @@ async function main() {
           }
         }
         const inRange = cands.filter(x => x.hit.drift <= MAX_MOVE_M).sort((a, b) => a.hit.drift - b.hit.drift)[0];
-        const hit = inRange ? inRange.hit : null;
-        const entryHow = inRange ? (inRange.how || 'exact') : 'exact';
+        let hit = inRange ? inRange.hit : null;
+        let entryHow = inRange ? (inRange.how || 'exact') : 'exact';
         const wasEstimate = spot.coord_src === 'estimate';
         const entry = { id: spot.id, name: spot.name, before: spot.coord.slice(), provider: 'amap' };
+        // 名称对不上、但地方真实存在的情形（小吃街/夜市/商圈/演出场馆）：以我们的坐标为中心做高德
+        // 周边搜索（真实 POI 必在 500m 内），交给 LLM 只做「在候选里挑一个或全否」的裁判。
+        if (!hit && process.env.DEEPSEEK_KEY) {
+          try {
+            // 召回两路并集：① 坐标 500m 内全部 POI ② 用名称关键词在 2km 内搜（「方所」「建设」这类词
+            // 才能把场馆内的小店海里那条目标捞出来，纯按距离取前 25 条会被咖啡店占满）
+            const around = [];
+            const seen = new Set();
+            const push = arr => { for (const c of arr) { const k = c.id || c.title; if (!seen.has(k)) { seen.add(k); around.push(c); } } };
+            push(await amapAround(spot.coord[0], spot.coord[1], AK, ''));
+            await sleep(THROTTLE_MS);
+            const kws = [...new Set([...nameVariants(spot.name).map(v => v.slice(0, 4)), spot.name.slice(0, 2), spot.name.slice(0, 3)])];
+            for (const kw of kws.slice(0, 3)) {
+              push(await amapAround(spot.coord[0], spot.coord[1], AK, kw, 2000));
+              await sleep(THROTTLE_MS);
+            }
+            if (around.length) {
+              const verdict = await judgeAlias(spot, around, city);
+              if (verdict === null) {
+                entry.why = '裁判不可用（空回复/超时），保留待人工';
+                report.skipped.push({ ...entry, why: entry.why });
+                console.log(`  [${n}/${targets.length}] ${spot.name}：裁判不可用，保留待人工`);
+                continue;
+              }
+              const pick = verdict.pick;
+              if (pick > 0 && around[pick - 1]) {
+                hit = { c: around[pick - 1], how: 'llm-around' };
+                entryHow = 'llm-around';
+                console.log(`  [${n}/${targets.length}] ${spot.name}：裁判选中「${hit.c.title}」（${(verdict.why || '').slice(0, 40)}）`);
+              } else {
+                console.log(`  [${n}/${targets.length}] ${spot.name}：${around.length} 个候选，裁判判为都不像（${(verdict.why || '').slice(0, 40)}）`);
+              }
+            }
+          } catch (e) { console.log(`  [${n}/${targets.length}] ${spot.name}：周边召回失败 ${e.message}`); }
+        }
         if (!hit) {
-          report.skipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
-          runSkipped.push({ ...entry, why: '高德未命中（含全国兜底）' });
+          report.skipped.push({ ...entry, why: '高德未命中（名称阶梯 + 全国兜底 + 周边裁判）' });
+          runSkipped.push({ ...entry, why: '高德未命中（名称阶梯 + 全国兜底 + 周边裁判）' });
           console.log(`  [${n}/${targets.length}] 跳过 ${spot.name}（高德未命中）`);
           continue;
         }
@@ -242,7 +324,8 @@ async function main() {
         report.fixed.push(entry);
         // —— 高德为准的三件事：① 存在性核验 ② 名称对齐 ③ 坐标（estimate 必换；已回填的仅在漂移 ≤500m 时微调）——
         const poi = hit.c.title;
-        const adoptName = nameAdoptable(hit.c, spot.name);
+        const adoptName = nameAdoptable(hit.c, spot.name)
+          || (entryHow === 'llm-around' && !SUB_POI.test(String(hit.c.title || '')) && norm(hit.c.title) !== norm(spot.name));
         const moveCoord = wasEstimate || drift <= 500;
         if (apply) {
           if (moveCoord) { spot.coord = entry.after; spot.coord_src = 'amap'; }

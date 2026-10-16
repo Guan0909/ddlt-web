@@ -19,7 +19,8 @@
       "coord": "[lng, lat] 估计值，coord_src=estimate，待腾讯 API 回填校验",
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
-    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20"
+    "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
+    "coord_repaired_at": "2026-10-16"
   },
   "spots": [
     {
@@ -39,10 +40,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.117,
-        29.6577
+        91.118463,
+        29.654471
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01F68",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "jokhang",
@@ -61,10 +66,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1316,
-        29.6531
+        91.132802,
+        29.650209
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B00F2D",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "barkhor",
@@ -104,10 +113,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1398,
-        29.6585
+        91.131961,
+        29.655917
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01D16",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "norbulingka",
@@ -126,10 +139,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1043,
-        29.6552
+        91.092479,
+        29.651619
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01C57",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tibet-museum",
@@ -148,10 +165,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        91.105,
-        29.656
+        91.098894,
+        29.648382
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B00866",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "drepung",
@@ -170,10 +191,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.0503,
-        29.6748
+        91.049889,
+        29.673206
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0056D",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "sera",
@@ -191,10 +216,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.133,
-        29.703
+        91.134823,
+        29.695223
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B00980",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "chakpori",
@@ -213,10 +242,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.113,
-        29.656
+        91.112018,
+        29.650067
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01996",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dzongyab",
@@ -235,10 +268,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1185,
-        29.661
+        91.119844,
+        29.657284
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGCDAFQ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "lhalu-wetland",
@@ -257,10 +294,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.098,
-        29.67
+        91.094631,
+        29.670962
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B022TL",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "zhaji",
@@ -279,10 +320,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.142,
-        29.682
+        91.142104,
+        29.674025
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01194",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "canggu",
@@ -301,10 +346,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1345,
-        29.649
+        91.136127,
+        29.648001
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OBG0",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "muru",
@@ -322,10 +371,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1362,
-        29.6545
+        91.136561,
+        29.653115
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OCPC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "danjielin",
@@ -344,10 +397,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1348,
-        29.6562
+        91.130488,
+        29.651302
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFTWCNX",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "cemeling",
@@ -365,10 +422,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.144,
-        29.6615
+        91.131574,
+        29.654064
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OK7E",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gongdelin",
@@ -386,10 +447,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.1095,
-        29.6545
+        91.10858,
+        29.653572
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFXMY86",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xiami-yuan",
@@ -429,10 +494,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.148,
-        29.705
+        91.118805,
+        29.716672
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OJKQ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "niangre",
@@ -451,10 +520,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.155,
-        29.705
+        91.107474,
+        29.707308
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B022BC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yak-museum",
@@ -473,10 +546,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        91.14,
-        29.622
+        91.088343,
+        29.620262
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0G1JK4G6U",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "science-museum",
@@ -495,10 +572,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        91.149,
-        29.629
+        91.182052,
+        29.646855
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH4SLBL",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "potala-treasure",
@@ -517,10 +598,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1175,
-        29.656
+        91.119558,
+        29.654128
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OK3J",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "amban-yamen",
@@ -539,10 +624,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        91.1325,
-        29.6545
+        91.134608,
+        29.651105
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHFMVA5",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gendun-chophel",
@@ -561,10 +650,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1322,
-        29.6552
+        91.133349,
+        29.649339
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF5QRT9",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "potala-square",
@@ -583,10 +676,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.116,
-        29.655
+        91.118222,
+        29.651264
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFXMY88",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yutok-road",
@@ -605,10 +702,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.123,
-        29.654
+        91.122039,
+        29.649964
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0JBTOETMV",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "barkhor-mall",
@@ -627,10 +728,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1385,
-        29.6505
+        91.139012,
+        29.653311
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFQ1INI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "shenli-plaza",
@@ -649,10 +754,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.115,
-        29.647
+        91.129459,
+        29.653182
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OZO2",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "lhasa-dept-store",
@@ -671,10 +780,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.121,
-        29.652
+        91.12245,
+        29.651037
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B02G5S",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "taiyang-island",
@@ -693,10 +806,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.107,
-        29.642
+        91.117425,
+        29.640775
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MA26ONZI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "xianzu-island",
@@ -715,10 +832,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.108,
-        29.636
+        91.130633,
+        29.636346
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGET8Q4",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "chongsaikang",
@@ -781,10 +902,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.106,
-        29.648
+        91.099233,
+        29.659411
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OHON",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "deji-road",
@@ -824,10 +949,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1345,
-        29.6527
+        91.135062,
+        29.649027
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0289I",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "guangming-teahouse",
@@ -867,10 +996,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1285,
-        29.6555
+        91.131479,
+        29.651744
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFY4KGO",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "namaste",
@@ -888,14 +1021,18 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.129,
-        29.6548
+        91.137127,
+        29.640402
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKX4EO4",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "binhe-park",
-      "name": "滨河公园",
+      "name": "拉萨滨河公园",
       "cat": "公园",
       "tags": [
         "拉萨河",
@@ -910,10 +1047,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.115,
-        29.64
+        91.102077,
+        29.645174
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0JUMMDAG2",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "hebalin-mosque",
@@ -932,10 +1073,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.138,
-        29.652
+        91.15666,
+        29.709669
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OK7L",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tangbo-stele",
@@ -954,10 +1099,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1318,
-        29.6532
+        91.132474,
+        29.650392
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFS9S1O",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "wencheng-theatre",
@@ -976,10 +1125,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.129,
-        29.608
+        91.147119,
+        29.622159
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF294RO",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "cijuelin",
@@ -1020,10 +1173,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.125,
-        29.65
+        91.085405,
+        29.659229
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OQKI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "naiqiong",
@@ -1041,10 +1198,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.0555,
-        29.6745
+        91.057736,
+        29.668523
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B022BF",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "qusang",
@@ -1063,10 +1224,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.152,
-        29.712
+        91.124056,
+        29.709883
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGTC5F3",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "ganden",
@@ -1107,14 +1272,18 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        91.42,
-        29.75
+        91.280024,
+        29.742659
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B023IV",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "drolma-lhakang",
-      "name": "卓玛拉康",
+      "name": "聂塘卓玛拉康",
       "cat": "古迹",
       "tags": [
         "阿底峡",
@@ -1129,10 +1298,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        90.98,
-        29.47
+        90.948585,
+        29.529347
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01C15",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tsurphu",
@@ -1173,10 +1346,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        91.34,
-        30.26
+        91.514839,
+        30.307789
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B02SM9",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "drigung-til",
@@ -1195,10 +1372,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        92.1,
-        29.95
+        92.205588,
+        30.103744
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B02SLX",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "songtsen-birthplace",
@@ -1217,10 +1398,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        91.62,
-        29.75
+        91.657376,
+        29.802656
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF351WX",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "tunba",
@@ -1327,10 +1512,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        90.53,
-        30.1
+        90.511477,
+        30.081037
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B021WP",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "nyainqentanglha",
@@ -1371,10 +1560,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        91.02,
-        30.63
+        91.09895,
+        30.67929
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGEZOMR",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "yamdrok",
@@ -1393,10 +1586,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        90.7,
-        28.95
+        90.681079,
+        28.930442
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFQ6BLC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "gangbala",
@@ -1437,10 +1634,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        90.3,
-        28.58
+        90.398383,
+        28.568583
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFQ6B7X",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "mila-pass",
@@ -1459,10 +1660,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        92.35,
-        29.83
+        92.344974,
+        29.824731
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF3LHCT",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "sijin-lhatso",
@@ -1481,10 +1686,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        92.23,
-        29.77
+        92.367481,
+        29.774856
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHSYL1L",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "dezhong",
@@ -1525,10 +1734,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        92.13,
-        29.7
+        92.241899,
+        29.691105
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHF1223",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     },
     {
       "id": "caina",
@@ -1547,10 +1760,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        90.87,
-        29.42
+        90.948684,
+        29.439646
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKZFJSV",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16"
     }
   ]
 }
