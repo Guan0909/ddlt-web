@@ -11,9 +11,9 @@
   .page { background: #101010; display: flex; flex-direction: column; align-items: center; padding: 36px 0 60px; max-width: none; }
   .hint { color: rgba(255,255,255,.42); font-size: 12px; letter-spacing: .18em; margin-bottom: 20px; }
 
-  /* 海报本体 3:4：内部 Canvas 750×1000 渲染，CSS 缩放显示（宽 ≤340px） */
+  /* 海报本体 3:4：内部 Canvas 1200×1600 渲染，CSS 缩放显示 */
   .poster-view {
-    width: min(400px, 92vw);
+    width: min(430px, 92vw);
     border-radius: 6px;
     box-shadow: 0 30px 70px rgba(0,0,0,.55);
     display: block;
@@ -30,16 +30,16 @@
 </head>
 <body>
 <div class="page">
-  <p class="hint">海报预览 · 3:4 · 长按可保存</p>
+  <p class="hint">海报预览 · 3:4 · 1200×1600 · 长按可保存</p>
 
-  <canvas id="pc" class="poster-view" width="900" height="1200"></canvas>
+  <canvas id="pc" class="poster-view" width="1200" height="1600"></canvas>
   <img id="pimg" class="poster-view" alt="点定旅途路线海报" style="display:none">
 
   <button class="save-btn" id="saveBtn">
     <svg class="ic" viewBox="0 0 24 24"><path d="M12 4v12M6.5 10.5 12 16l5.5-5.5"/><path d="M4 20h16"/></svg>
     保存图片
   </button>
-  <p class="tip">P3 离线示意底图 · 正式版底图为腾讯静态图 · 每天一条配色路线</p>
+  <p class="tip">1200 × 1600 高清导出 · 每天一条配色路线 · 长按图片可保存</p>
 </div>
 <script src="/assets/engine.bundle.js"></script>
 <script src="/assets/app.js"></script>
@@ -51,15 +51,19 @@
     return;
   }
 
-  // 设计坐标 340×453.33（3:4），Canvas 750×1000，等比放大绘制
-  const W = 340, H = 340 * 4 / 3;
+  // 设计坐标 450×600（3:4），Canvas 1200×1600 等比放大绘制：1 设计像素 = 2.667 设备像素
+  const DW = 450, DH = 600;
   const canvas = document.getElementById('pc');
   const ctx = canvas.getContext('2d');
-  ctx.scale(canvas.width / W, canvas.height / H);
+  ctx.scale(canvas.width / DW, canvas.height / DH);
 
   const SERIF = 'Georgia, "Times New Roman", "Songti SC", "STSong", "SimSun", serif';
   const SANS = '-apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif';
-  const INK = '#182119', HAIR = '#E3E8E0', MUTE = '#9C998C';
+  const INK = '#182119', HAIR = '#E3E8E0', MUTE = '#9C998C', PAPER = '#FAFBF8';
+  // 底图观感：静态图接口不支持自定义样式，只能用 ctx.filter 把腾讯底图压向「纸白底 + 浅灰路网」
+  // （对照 地图样式参数.md 的「简洁版本」：陆地 #FAFBF8、道路 #F5F6F4/#E4E7E2、行政区文字 #9AA39B）
+  const MAP_FILTER = 'saturate(.08) brightness(1.1) contrast(.8)';
+  const MAP_WASH = 'rgba(246,249,245,.3)';         // 纸色薄纱（滤镜不可用时加重，避免满屏彩色）
 
   function rrect(x, y, w, h, r) {
     ctx.beginPath();
@@ -76,41 +80,61 @@
     while (t.length && ctx.measureText(t + '…').width > maxW) t = t.slice(0, -1);
     return t + '…';
   }
+  function setLS(px) { try { ctx.letterSpacing = px + 'px'; } catch (e) {} }
 
   // ---------- 纸白底 ----------
-  ctx.fillStyle = '#FAFBF8';
-  ctx.fillRect(0, 0, W, H);
+  ctx.fillStyle = PAPER;
+  ctx.fillRect(0, 0, DW, DH);
 
-  const padX = 24, right = W - padX;
-  const days = route.dayPlans;
+  const padX = 30, right = DW - padX, boxW = right - padX;   // 30 / 420 / 390
+  const days = route.dayPlans, n = days.length;
+  const totalDays = route.days || n;
 
-  // ---------- 头部：城市衬线大字 + 拼音占位 + 日期行 ----------
+  // ---------- 版式预算：地图为主体（≥55% 海报高），其余块全部紧凑 ----------
+  const cityY = 58;            // 城市衬线大字基线
+  const ruleY = 78;            // 头部发丝线
+  const mapY = 90;
+  const padB = 18, brandH = 30, brandGap = 10, statsH = 40;
+  const statsTop = DH - padB - brandH - brandGap - statsH;               // 502
+  const daysGapTop = 12, daysGapBottom = 8;
+  const prefRowH = n <= 3 ? 19 : n === 4 ? 16.5 : 14;                    // 每日摘要行高
+  let mapH = statsTop - daysGapBottom - (mapY + daysGapTop + prefRowH * n);
+  mapH = Math.max(DH * 0.55, Math.min(DH * 0.62, mapH));                 // 地图占比锁定 55%~62%
+  const rowsTop = mapY + mapH + daysGapTop;
+  const rowH = Math.min(prefRowH, (statsTop - daysGapBottom - rowsTop) / n);
+  const mapX = padX, mapW = boxW;
+
+  // ---------- 头部：城市衬线大字 + 日期一行（拼音小标仅在有空隙时并列绘制） ----------
   ctx.textBaseline = 'alphabetic';
   ctx.textAlign = 'left';
+  const city = route.city || '';
   ctx.fillStyle = INK;
-  ctx.font = `700 36px ${SERIF}`;
-  ctx.fillText(route.city || '', padX, 52);
-  ctx.font = `600 8.5px ${SANS}`;
-  try { ctx.letterSpacing = '4px'; } catch (e) {}
-  ctx.fillStyle = MUTE;
-  ctx.fillText(DDN.pinyinOf(route.city), padX, 67);
-  try { ctx.letterSpacing = '0px'; } catch (e) {}
+  ctx.font = `700 46px ${SERIF}`;
+  ctx.fillText(city, padX, cityY);
+  const cityW = ctx.measureText(city).width;
 
-  ctx.textAlign = 'right';
-  ctx.font = `400 10px ${SANS}`;
+  const dateLine = `${DDN.dateRange(route.startDate, totalDays)} · ${DDN.dayCn(totalDays)}日漫游 · 每日环线`;
+  ctx.font = `400 14px ${SANS}`;
+  const dateW = ctx.measureText(dateLine).width;
   ctx.fillStyle = '#6E6A5E';
-  ctx.fillText(DDN.dateRange(route.startDate, route.days), right, 40);
-  ctx.fillText(`${DDN.dayCn(route.days)}日漫游 · 每日环线`, right, 57);
+  ctx.textAlign = 'right';
+  ctx.fillText(dateLine, right, cityY);
   ctx.textAlign = 'left';
 
+  ctx.font = `600 11px ${SANS}`;
+  setLS(4);
+  const pin = DDN.pinyinOf(route.city);
+  const pinW = ctx.measureText(pin).width;
+  if (padX + cityW + 12 + pinW <= right - dateW - 16) {
+    ctx.fillStyle = MUTE;
+    ctx.fillText(pin, padX + cityW + 12, cityY - 3);
+  }
+  setLS(0);
+
   ctx.fillStyle = INK;
-  ctx.fillRect(padX, 79.5, right - padX, 1);
+  ctx.fillRect(padX, ruleY, boxW, 1);
 
-  // ---------- 地图框：优先腾讯静态图真实底图（posterImg 代理），失败回退纸色示意图 ----------
-  const mapX = padX, mapY = 92, mapW = right - padX;
-  const mapH = days.length <= 3 ? 248 : Math.max(170, 248 - (days.length - 3) * 24);
-
-  // 收集所有日的点
+  // ---------- 底图：优先腾讯静态图（posterImg 代理），失败回退示意底图 ----------
   const dayStops = days.map(dp => dp.items.filter(i => i.type === 'stop'));
   const allPts = [{ lng: route.origin.lng, lat: route.origin.lat }];
   dayStops.forEach(ss => ss.forEach(s => allPts.push({ lng: s.coord.lng, lat: s.coord.lat })));
@@ -138,21 +162,30 @@
     return Math.max(9, Math.min(13, Math.floor(Math.log2(Math.min(zx, zy)))));
   }
 
-  // 去水印：静态图多取底部 20px 再把图心北移半格，绘制时裁掉底部（含腾讯 logo 条），
+  // 去水印：静态图多取底部水印条高度再裁掉（绘制时按比例裁），图心北移半个裁切量保持视野居中；
   // 来源标注改用我们自己的文字徽标（合规不变：「地图数据 © 腾讯位置服务」保留在图框右下）
-  const CROP = 20;
+  const CROP = 32;                 // 设计像素（= 静态图 size 像素）：实测水印「腾讯地图」条约 28px（size 像素），留余量
+  const PAD_EDGE = 22;             // 视野留白（设计像素）
+  // size 上限：宽 50~1680、高 50~1200；scale=2 时建议 size ≤ 900×900（返回图 = size×scale）
+  function fitStaticSize(w, h, scale) {
+    const f = Math.min(1, 1680 / (w * scale), 1200 / (h * scale), 900 / w, 900 / h);
+    return [Math.max(50, Math.round(w * f)), Math.max(50, Math.round(h * f))];
+  }
+
   let proj = null, baseImg = null;
   if (DDN.cloudAvailable()) {
     try {
       const lngs = allPts.map(p => p.lng), lats = allPts.map(p => p.lat);
       const cLng = (Math.min(...lngs) + Math.max(...lngs)) / 2;
       const cLat = (Math.min(...lats) + Math.max(...lats)) / 2;
-      const zoom = fitZoom(allPts, mapW, mapH, 18);
+      const zoom = fitZoom(allPts, mapW, mapH, PAD_EDGE);
       const worldSize = 256 * 2 ** zoom;
-      const cLatShifted = mercYInv(mercY(cLat) + (CROP / 2) / worldSize);   // 图心北移，裁底后视野居中
+      const [reqW, reqH] = fitStaticSize(mapW, mapH + CROP, 2);
+      const sizeFactor = reqW / mapW;                                   // 被上限收缩时 <1，按比例换算
+      const cLatShifted = mercYInv(mercY(cLat) + (CROP * sizeFactor / 2) / worldSize);
       const j = await DDN.cloudPost('posterImg', {
-        center: `${cLatShifted.toFixed(6)},${cLng.toFixed(6)}`,   // 腾讯静态图 center 为「纬度,经度」
-        zoom, size: `${Math.round(mapW)}x${Math.round(mapH + CROP)}`, scale: 2,
+        center: `${cLatShifted.toFixed(6)},${cLng.toFixed(6)}`,           // 腾讯静态图 center 为「纬度,经度」
+        zoom, size: `${reqW}x${reqH}`, scale: 2,
       }, 15000);
       baseImg = await new Promise((res, rej) => {
         const im = new Image();
@@ -163,12 +196,12 @@
       proj = mercatorProjector(cLng, cLat, zoom, mapW, mapH);
     } catch (e) { /* 回退示意底图 */ }
   }
-  if (!proj) proj = DDN.makeProjector(allPts, mapW, mapH, 18);
+  if (!proj) proj = DDN.makeProjector(allPts, mapW, mapH, PAD_EDGE);
 
-  // 真实路网路径（与结果页同一 routePaths 链路；失败/超时全天回退平滑示意线）
-  const dayLegs = days.map(dp => {
-    const ss = dayStops[days.indexOf(dp)];
-    const seq = [route.origin, ...ss.map(s => ({ lng: s.coord.lng, lat: s.coord.lat })), route.origin];
+  // 真实路网路径（与结果页同一 routePaths 链路；失败/超时回退平滑示意线）
+  // 与规划页一致：不画返回起点的返程腿（seq 末尾不再回到 route.origin）
+  const dayLegs = days.map((dp, di) => {
+    const seq = [route.origin, ...dayStops[di].map(s => ({ lng: s.coord.lng, lat: s.coord.lat }))];
     const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
     const legs = [];
     for (let i = 0; i < seq.length - 1; i++) legs.push({ from: seq[i], to: seq[i + 1], mode: modes[i] || 'drive' });
@@ -189,35 +222,64 @@
     } catch (e) { /* 回退 */ }
   }
 
-  rrect(mapX, mapY, mapW, mapH, 4);
+  // 示意底图（云端底图失败时）：纸色 + 浅灰路网（与海报比例同步，网格随设计像素加密）
+  function drawSchematicBase() {
+    ctx.fillStyle = '#F4F6F1';
+    ctx.fillRect(mapX, mapY, mapW, mapH);
+    ctx.lineWidth = 0.7;
+    ctx.strokeStyle = '#E9EDE6';
+    for (let x = mapX + 18; x < mapX + mapW - 4; x += 26) {
+      ctx.beginPath(); ctx.moveTo(x, mapY); ctx.lineTo(x, mapY + mapH); ctx.stroke();
+    }
+    for (let y = mapY + 16; y < mapY + mapH - 4; y += 26) {
+      ctx.beginPath(); ctx.moveTo(mapX, y); ctx.lineTo(mapX + mapW, y); ctx.stroke();
+    }
+    ctx.strokeStyle = '#E3E8E0';
+    ctx.lineWidth = 2.2;
+    ctx.beginPath();
+    ctx.moveTo(mapX, mapY + mapH * .74);
+    ctx.lineTo(mapX + mapW * .44, mapY + mapH * .48);
+    ctx.lineTo(mapX + mapW, mapY + mapH * .6);
+    ctx.stroke();
+    ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(mapX + mapW * .28, mapY); ctx.lineTo(mapX + mapW * .4, mapY + mapH); ctx.stroke();
+  }
+
+  let filterOK = false;
+  try { ctx.filter = MAP_FILTER; filterOK = ctx.filter !== 'none'; ctx.filter = 'none'; } catch (e) {}
+
+  rrect(mapX, mapY, mapW, mapH, 6);
   ctx.fillStyle = '#F3F5F0';
   ctx.fill();
   ctx.save();
-  rrect(mapX, mapY, mapW, mapH, 4);
+  rrect(mapX, mapY, mapW, mapH, 6);
   ctx.clip();
+
   if (baseImg) {
-    ctx.globalAlpha = 0.88;
-    try { ctx.filter = DDN.MAP_SOFT_FILTER; } catch (e) {}
-    // 源图裁掉底部水印条（等比：源高取与显示框同比例的上半部），不拉伸不变形
+    try { ctx.filter = MAP_FILTER; } catch (e) {}
+    // 按显示框比例裁掉底部水印条（等比，不拉伸变形；size 被上限收缩时同样成立）
     const srcH = baseImg.width * mapH / mapW;
     ctx.drawImage(baseImg, 0, 0, baseImg.width, srcH, mapX, mapY, mapW, mapH);
     try { ctx.filter = 'none'; } catch (e) {}
-    ctx.globalAlpha = 1;
+    ctx.fillStyle = filterOK ? MAP_WASH : 'rgba(250,251,248,.34)';
+    ctx.fillRect(mapX, mapY, mapW, mapH);
+  } else {
+    drawSchematicBase();
   }
 
+  // ---------- 路线 ----------
   const O = proj({ lng: route.origin.lng, lat: route.origin.lat });
-
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
-  for (const dp of days) {
-    const di = days.indexOf(dp);
-    const ss = dayStops[di];
-    if (!ss.length) continue;
+  for (let di = 0; di < days.length; di++) {
+    const dp = days[di];
+    if (!dayStops[di].length) continue;
     const legsPaths = dayPaths && dayPaths[di];
     if (legsPaths && legsPaths.some(Boolean)) {
       // 真实路网路径
       const drawOne = () => legsPaths.forEach((lp, li) => {
         const leg = dayLegs[di][li];
+        if (!leg) return;
         const raw = (lp && lp.length >= 2) ? lp : [[leg.from.lat, leg.from.lng], [leg.to.lat, leg.to.lng]];
         ctx.beginPath();
         raw.forEach((p, k) => {
@@ -227,156 +289,293 @@
         });
         ctx.stroke();
       });
-      ctx.strokeStyle = 'rgba(255,255,255,.92)';
-      ctx.lineWidth = 5.5;
+      ctx.strokeStyle = 'rgba(255,255,255,.94)';
+      ctx.lineWidth = 7;
       drawOne();
       ctx.strokeStyle = dp.color;
-      ctx.lineWidth = 2.8;
+      ctx.lineWidth = 3.6;
       drawOne();
     } else {
-      const pts = [O, ...ss.map(s => proj({ lng: s.coord.lng, lat: s.coord.lat })), O]
+      const pts = [O, ...dayStops[di].map(s => proj({ lng: s.coord.lng, lat: s.coord.lat }))]
         .map(p => ({ x: mapX + p.x, y: mapY + p.y }));
-      ctx.strokeStyle = 'rgba(255,255,255,.92)';
-      ctx.lineWidth = 5.5;
+      ctx.strokeStyle = 'rgba(255,255,255,.94)';
+      ctx.lineWidth = 7;
       DDN.smoothTrace(ctx, pts); ctx.stroke();
       ctx.strokeStyle = dp.color;
-      ctx.lineWidth = 2.8;
+      ctx.lineWidth = 3.6;
       DDN.smoothTrace(ctx, pts); ctx.stroke();
     }
   }
-  // 站点彩点
-  for (const dp of days) {
-    for (const s of dayStops[days.indexOf(dp)]) {
+
+  // ---------- 站点：日色编号徽章（密集处环状错位 + 细引线）+ 白描边站名（碰撞避让） ----------
+  const BADGE_R = 8.8;
+  const LABEL_FONT = `600 11px ${SANS}`;
+  const LABEL_H = 14;
+  const occupied = [];
+  const inflate = (b, p) => ({ x: b.x - p, y: b.y - p, w: b.w + p * 2, h: b.h + p * 2 });
+  const overlap = (a, b) => !(a.x > b.x + b.w || a.x + a.w < b.x || a.y > b.y + b.h || a.y + a.h < b.y);
+  const hits = b => occupied.some(o => overlap(b, o));
+  const inFrame = b => b.x >= mapX + 3 && b.x + b.w <= mapX + mapW - 3 && b.y >= mapY + 3 && b.y + b.h <= mapY + mapH - 3;
+  const badgeBox = (x, y) => ({ x: x - BADGE_R, y: y - BADGE_R, w: BADGE_R * 2, h: BADGE_R * 2 });
+
+  // 起点「起」先占位
+  const ox = mapX + O.x, oy = mapY + O.y;
+  occupied.push({ x: ox - 13, y: oy - 13, w: 26, h: 26 });
+
+  // 图例（左上，日色 chip）与来源标注（右下）先算好并占位：徽章与站名都要避让
+  const legRows = days.map(dp => ({ color: dp.color, tag: `D${dp.day}`, text: DDN.themeOf(dp.label) }));
+  const legFont = `600 10.5px ${SANS}`;
+  ctx.font = legFont;
+  let legTextW = 0;
+  legRows.forEach(r => { legTextW = Math.max(legTextW, ctx.measureText(r.text).width); });
+  const chipW = 25, chipH = 15, legRowH = 20, legPadX = 8, legPadY = 7;
+  const legW = legPadX * 2 + chipW + 8 + legTextW;
+  const legH = legPadY * 2 + (legRows.length - 1) * legRowH + chipH;
+  const legX = mapX + 10, legY = mapY + 10;
+  occupied.push(inflate({ x: legX, y: legY, w: legW, h: legH }, 4));
+
+  const attr = baseImg ? '地图数据 © 腾讯位置服务' : '示意底图 · 非真实地图';
+  ctx.font = `400 8.5px ${SANS}`;
+  const attrBoxW = ctx.measureText(attr).width + 9, attrBoxH = 14;
+  const attrX = mapX + mapW - 8 - attrBoxW, attrY = mapY + mapH - 8 - attrBoxH;
+  occupied.push(inflate({ x: attrX, y: attrY, w: attrBoxW, h: attrBoxH }, 3));
+
+  // 徽章锚点：默认落在真实坐标；被前一个徽章压住时按环状错位（市区站点常叠在一个点上）
+  const anchors = [];
+  for (let di = 0; di < days.length; di++) {
+    const dp = days[di];
+    dayStops[di].forEach((s, si) => {
       const p = proj({ lng: s.coord.lng, lat: s.coord.lat });
-      ctx.beginPath();
-      ctx.arc(mapX + p.x, mapY + p.y, 3.6, 0, Math.PI * 2);
-      ctx.fillStyle = dp.color;
-      ctx.fill();
-      ctx.strokeStyle = '#fff';
-      ctx.lineWidth = 1.4;
-      ctx.stroke();
-    }
+      const tx = mapX + p.x, ty = mapY + p.y;
+      let ax = tx, ay = ty;
+      if (hits(inflate(badgeBox(ax, ay), 1.5))) {
+        spread:
+        for (const ring of [BADGE_R * 2.5, BADGE_R * 4, BADGE_R * 5.5, BADGE_R * 7]) {
+          for (let k = 0; k < 12; k++) {
+            const th = -Math.PI / 2 + k * Math.PI / 6;
+            const cx = tx + Math.cos(th) * ring, cy = ty + Math.sin(th) * ring;
+            if (cx - BADGE_R < mapX + 3 || cx + BADGE_R > mapX + mapW - 3 ||
+                cy - BADGE_R < mapY + 3 || cy + BADGE_R > mapY + mapH - 3) continue;
+            if (!hits(inflate(badgeBox(cx, cy), 1.5))) { ax = cx; ay = cy; break spread; }
+          }
+        }
+      }
+      occupied.push(inflate(badgeBox(ax, ay), 1.5));
+      anchors.push({ tx, ty, ax, ay, name: s.name, color: dp.color, seq: si + 1 });
+    });
+  }
+
+  // 错位引线（细、弱）先画，徽章压在上面
+  ctx.lineCap = 'round';
+  ctx.lineWidth = 1.1;
+  for (const a of anchors) {
+    if (Math.hypot(a.ax - a.tx, a.ay - a.ty) < 3) continue;
+    ctx.strokeStyle = a.color;
+    ctx.globalAlpha = .5;
+    ctx.beginPath();
+    ctx.moveTo(a.tx, a.ty);
+    ctx.lineTo(a.ax, a.ay);
+    ctx.stroke();
+  }
+  ctx.globalAlpha = 1;
+
+  // 徽章本体
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.font = `700 11px ${SANS}`;
+  ctx.lineWidth = 2.2;
+  for (const a of anchors) {
+    ctx.beginPath();
+    ctx.arc(a.ax, a.ay, BADGE_R, 0, Math.PI * 2);
+    ctx.fillStyle = a.color;
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,.96)';
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.fillText(String(a.seq), a.ax, a.ay + .6);
   }
   // 起点黑圆「起」
   ctx.beginPath();
-  ctx.arc(mapX + O.x, mapY + O.y, 7, 0, Math.PI * 2);
+  ctx.arc(ox, oy, 11, 0, Math.PI * 2);
   ctx.fillStyle = INK;
   ctx.fill();
   ctx.strokeStyle = '#fff';
-  ctx.lineWidth = 2;
+  ctx.lineWidth = 2.4;
   ctx.stroke();
   ctx.fillStyle = '#fff';
-  ctx.font = `700 7px ${SANS}`;
-  ctx.textAlign = 'center';
-  ctx.fillText('起', mapX + O.x, mapY + O.y + 2.6);
+  ctx.font = `700 10.5px ${SANS}`;
+  ctx.fillText('起', ox, oy + .6);
   ctx.textAlign = 'left';
 
-  // 图例（左上）：每日一色色条 + label
-  ctx.font = `700 9px ${SANS}`;
-  let legW = 0;
-  const legRows = days.map(dp => {
-    const t1 = `D${dp.day}`, t2 = DDN.themeOf(dp.label);
-    const w = 13 + 5 + ctx.measureText(t1).width + 5 + ctx.measureText(t2).width;
-    legW = Math.max(legW, w);
-    return { dp, t1, t2 };
-  });
-  const legX = mapX + 8, legY = mapY + 8, legRowH = 14;
-  rrect(legX, legY, legW + 18, legRows.length * legRowH + 12, 4);
-  ctx.fillStyle = 'rgba(251,251,246,.94)';
-  ctx.fill();
-  legRows.forEach((r, i) => {
-    const y = legY + 6 + i * legRowH;
-    rrect(legX + 9, y + 4, 13, 3, 1.5);
-    ctx.fillStyle = r.dp.color;
-    ctx.fill();
+  // 站名：优先紧贴徽章的右侧/左侧，再小幅上下错位，最后沿纵向逐级下移；
+  // 常规位置全占满的少数站名进第二遍（放宽到远位），仍放不下才不画（宁缺勿叠字）
+  ctx.font = LABEL_FONT;
+  const labelMaxW = Math.min(mapW - 26, 168);
+  const labelBoxes = [];
+  const placeLabel = (it, wide) => {
+    const txt = fitText(it.name, labelMaxW);
+    const w = ctx.measureText(txt).width;
+    const near = BADGE_R + 5, mid = BADGE_R + 24, far = BADGE_R + 34;
+    const cands = [];
+    for (const oy of [0, 16, -16, 31, -31]) {
+      cands.push({ ax: 'l', ox: near, oy }, { ax: 'r', ox: -near, oy });
+      if (oy === 0) cands.push({ ax: 'l', ox: mid, oy: 0 }, { ax: 'r', ox: -mid, oy: 0 });
+    }
+    if (wide) {
+      for (const oy of [0, 17, -17, 34, -34]) {
+        cands.push({ ax: 'l', ox: far, oy }, { ax: 'r', ox: -far, oy });
+      }
+    }
+    cands.push({ ax: 'c', ox: 0, oy: BADGE_R + 13 });
+    const boxFor = (ax, ox2, oy) => ({
+      x: ax === 'l' ? it.ax + ox2 : ax === 'r' ? it.ax + ox2 - w : it.ax - w / 2,
+      y: it.ay + oy - LABEL_H / 2, w, h: LABEL_H,
+    });
+    for (const c of cands) {
+      const b = boxFor(c.ax, c.ox, c.oy);
+      if (!inFrame(b) || hits(inflate(b, 2.5))) continue;
+      return { txt, ax: c.ax, b };
+    }
+    const base = boxFor('l', near, 0);
+    for (let k = 1; k <= (wide ? 8 : 4); k++) {
+      const b = { x: base.x, y: base.y + k * (LABEL_H + 3), w: base.w, h: base.h };
+      if (!inFrame(b) || hits(inflate(b, 2.5))) continue;
+      return { txt, ax: 'l', b };
+    }
+    return null;
+  };
+  const pending = [];
+  for (const it of anchors) {
+    const pick = placeLabel(it, false);
+    if (!pick) { pending.push(it); continue; }
+    labelBoxes.push(pick);
+    occupied.push(inflate(pick.b, 2.5));
+  }
+  for (const it of pending) {
+    const pick = placeLabel(it, true);
+    if (!pick) continue;
+    labelBoxes.push(pick);
+    occupied.push(inflate(pick.b, 2.5));
+  }
+  ctx.textBaseline = 'middle';
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.strokeStyle = 'rgba(255,255,255,.95)';
+  ctx.lineWidth = 3.2;
+  ctx.font = LABEL_FONT;
+  for (const L of labelBoxes) {
+    const tx = L.ax === 'l' ? L.b.x : L.ax === 'r' ? L.b.x + L.b.w : L.b.x + L.b.w / 2;
+    ctx.textAlign = L.ax === 'l' ? 'left' : L.ax === 'r' ? 'right' : 'center';
+    const ty = L.b.y + L.b.h / 2;
+    ctx.strokeText(L.txt, tx, ty);
     ctx.fillStyle = INK;
-    ctx.font = `700 9px ${SANS}`;
-    ctx.fillText(r.t1, legX + 27, y + 8);
-    const w1 = ctx.measureText(r.t1).width;
-    ctx.fillStyle = '#8A867A';
-    ctx.font = `500 9px ${SANS}`;
-    ctx.fillText(r.t2, legX + 27 + w1 + 5, y + 8);
+    ctx.fillText(L.txt, tx, ty);
+  }
+  ctx.textAlign = 'left';
+
+  // 图例绘制（日色 chip + 主题）
+  rrect(legX, legY, legW, legH, 7);
+  ctx.fillStyle = 'rgba(250,251,248,.93)';
+  ctx.fill();
+  ctx.strokeStyle = HAIR;
+  ctx.lineWidth = .8;
+  ctx.stroke();
+  legRows.forEach((r, i) => {
+    const cy = legY + legPadY + chipH / 2 + i * legRowH;
+    rrect(legX + legPadX, cy - chipH / 2, chipW, chipH, 4.5);
+    ctx.fillStyle = r.color;
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.font = `700 9.5px ${SANS}`;
+    ctx.textAlign = 'center';
+    ctx.fillText(r.tag, legX + legPadX + chipW / 2, cy + .4);
+    ctx.textAlign = 'left';
+    ctx.fillStyle = '#5F655C';
+    ctx.font = legFont;
+    ctx.fillText(r.text, legX + legPadX + chipW + 8, cy + .4);
   });
 
-  // 标注挪到图框右上（腾讯底图自带底部来源文字，避免叠字；示意底图则如实说明）
-  const attr = baseImg ? '地图数据 © 腾讯位置服务' : '示意底图 · 非真实地图';
-  ctx.font = `400 7px ${SANS}`;
-  const attrW = ctx.measureText(attr).width;
-  rrect(mapX + mapW - 6 - attrW - 8, mapY + 5, attrW + 8, 12, 2);
-  ctx.fillStyle = 'rgba(255,255,255,.75)';
+  // 来源标注（右下）
+  rrect(attrX, attrY, attrBoxW, attrBoxH, 3);
+  ctx.fillStyle = 'rgba(255,255,255,.78)';
   ctx.fill();
-  ctx.fillStyle = 'rgba(0,0,0,.45)';
+  ctx.fillStyle = 'rgba(0,0,0,.42)';
+  ctx.font = `400 8.5px ${SANS}`;
   ctx.textAlign = 'right';
-  ctx.fillText(attr, mapX + mapW - 10, mapY + 13);
+  ctx.fillText(attr, attrX + attrBoxW - 4.5, attrY + attrBoxH / 2 + .4);
   ctx.textAlign = 'left';
+  ctx.textBaseline = 'alphabetic';
 
   ctx.restore();
-  rrect(mapX, mapY, mapW, mapH, 4);
-  ctx.strokeStyle = 'rgba(0,0,0,.18)';
-  ctx.lineWidth = .7;
+  rrect(mapX, mapY, mapW, mapH, 6);
+  ctx.strokeStyle = 'rgba(0,0,0,.16)';
+  ctx.lineWidth = .8;
   ctx.stroke();
 
   // ---------- 每日摘要行 ----------
-  const padB = 14, brandH = 22, statsH = 36;
-  const statsTop = H - padB - brandH - statsH;
-  const daysY = mapY + mapH + 8;
-  const rowH = Math.min(26, (statsTop - daysY) / days.length);
+  const nameFont = Math.max(10.5, Math.min(13, rowH * .68));
+  const tagFont = `700 ${(nameFont * 1.32).toFixed(1)}px ${SERIF}`;
+  const kmFont = `400 ${(nameFont * .82).toFixed(1)}px ${SANS}`;
+  const nmFont = `600 ${nameFont.toFixed(1)}px ${SANS}`;
   days.forEach((dp, i) => {
-    const mid = daysY + i * rowH + rowH * 0.68;
-    ctx.font = `700 12px ${SERIF}`;
+    const mid = rowsTop + i * rowH + rowH * .66;
+    const tag = `D${dp.day}`;
+    ctx.font = tagFont;
     ctx.fillStyle = dp.color;
-    ctx.fillText(`D${dp.day}`, padX, mid);
-    const kmText = dp.stats.km.toFixed(1);
-    ctx.font = `400 9px ${SANS}`;
+    ctx.fillText(tag, padX, mid);
+    const tagW = ctx.measureText(tag).width;
+    const kmText = `${dp.stats.km.toFixed(1)} km`;
+    ctx.font = kmFont;
     const kmW = ctx.measureText(kmText).width;
     ctx.fillStyle = MUTE;
     ctx.textAlign = 'right';
     ctx.fillText(kmText, right, mid);
     ctx.textAlign = 'left';
     const names = dayStops[i].map(s => s.name).join(' → ') || '（本日站点未排入）';
-    ctx.font = `600 10.5px ${SANS}`;
+    const x0 = padX + tagW + 9;
+    ctx.font = nmFont;
     ctx.fillStyle = INK;
-    ctx.fillText(fitText(names, right - 52 - kmW - 10), 52, mid);
-    if (i < days.length - 1) {
+    ctx.fillText(fitText(names, right - x0 - kmW - 12), x0, mid);
+    if (i < n - 1) {
       ctx.fillStyle = HAIR;
-      ctx.fillRect(padX, daysY + (i + 1) * rowH - .25, right - padX, .5);
+      ctx.fillRect(padX, rowsTop + (i + 1) * rowH - .25, boxW, .5);
     }
   });
 
   // ---------- 底部统计行 ----------
   ctx.fillStyle = INK;
-  ctx.fillRect(padX, statsTop, right - padX, 1);
+  ctx.fillRect(padX, statsTop, boxW, 1);
   const stats = [
-    [String(route.days), '天'],
+    [String(totalDays), '天'],
     [String(route.totals.stops), '站点'],
     [String(route.totals.km), '公里'],
     [DDN.fmtHour(route.totals.visitMin) + 'h', '游览'],
   ];
-  const cellW = (right - padX) / stats.length;
+  const cellW = boxW / stats.length;
   stats.forEach((s, i) => {
     const cx = padX + cellW * i + cellW / 2;
     ctx.textAlign = 'center';
-    ctx.font = `700 15px ${SERIF}`;
+    ctx.font = `700 22px ${SERIF}`;
     ctx.fillStyle = INK;
-    ctx.fillText(s[0], cx, statsTop + 18);
-    ctx.font = `400 8px ${SANS}`;
+    ctx.fillText(s[0], cx, statsTop + 22);
+    ctx.font = `400 10px ${SANS}`;
     ctx.fillStyle = MUTE;
-    ctx.fillText(s[1], cx, statsTop + 30);
+    ctx.fillText(s[1], cx, statsTop + 34);
     if (i > 0) {
       ctx.fillStyle = HAIR;
-      ctx.fillRect(padX + cellW * i - .25, statsTop + 6, .5, 24);
+      ctx.fillRect(padX + cellW * i - .25, statsTop + 7, .5, 26);
     }
   });
   ctx.textAlign = 'left';
 
   // ---------- 品牌行 ----------
-  const brandY = H - padB;
-  ctx.font = `700 10px ${SERIF}`;
-  try { ctx.letterSpacing = '2.6px'; } catch (e) {}
+  const brandY = DH - padB;
+  ctx.font = `700 13px ${SERIF}`;
+  setLS(3.4);
   ctx.fillStyle = INK;
   ctx.fillText('点定旅途', padX, brandY);
-  try { ctx.letterSpacing = '0px'; } catch (e) {}
-  ctx.font = `400 8.5px ${SANS}`;
+  setLS(0);
+  ctx.font = `400 11px ${SANS}`;
   ctx.fillStyle = MUTE;
   ctx.textAlign = 'right';
   ctx.fillText('从任何地点 · 生成你的路线', right, brandY);
@@ -401,7 +600,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `点定旅途-${route.city || ''}${DDN.dayCn(route.days)}日路线.png`;
+      a.download = `点定旅途-${route.city || ''}${DDN.dayCn(totalDays)}日路线.png`;
       document.body.appendChild(a);
       a.click();
       a.remove();

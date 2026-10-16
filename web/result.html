@@ -387,11 +387,11 @@
   async function renderMap(keepView) {
     if (glCtl) {   // GL 动态地图路径
       const dp = route.dayPlans[cur];
-      // 组装腿（起点→各站→回起点）与各腿通勤方式，供真实路网路径
+      // 组装腿（起点→各站）与各腿通勤方式，供真实路网路径；不画返程
+      // 引擎按环线规划，commute 里末尾的"回起点"腿这里不使用（modes 最后一个元素落空）
       const seq = [
         { lng: route.origin.lng, lat: route.origin.lat },
         ...(route.__stops[cur] || []).map(s => ({ lng: s.coord[0], lat: s.coord[1] })),
-        { lng: route.origin.lng, lat: route.origin.lat },
       ];
       const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
       const legs = [];
@@ -486,19 +486,19 @@
       placed.push({ x: q.x, y: q.y - 8, w: wHalf });
     }
 
-    // 路线（中点二次贝塞尔平滑）；真实路网路径到达后替换
-    const d = DDN.smoothPathD([P[0].pt, ...P.slice(1).map(p => p.pt), P[0].pt]);
+    // 路线（中点二次贝塞尔平滑，开放路径不回起点）；真实路网路径到达后替换
+    const d = DDN.smoothPathD(P.map(p => p.pt));
     let haloEl = null, mainEl = null;
     if (P.length > 1) {
-      haloEl = DDN.svgEl('path', { d, fill: 'none', stroke: '#fff', 'stroke-width': 7, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .85 });
-      mainEl = DDN.svgEl('path', { d, fill: 'none', stroke: dp.color, 'stroke-width': 3.8, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+      haloEl = DDN.svgEl('path', { d, fill: 'none', stroke: '#fff', 'stroke-width': 4.6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', opacity: .85 });
+      mainEl = DDN.svgEl('path', { d, fill: 'none', stroke: dp.color, 'stroke-width': 2.6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
       pan.appendChild(haloEl);
       pan.appendChild(mainEl);
     }
 
     // 真实路网路径（routePaths 云函数，dist_cache 缓存；失败保持平滑示意线）
     if (P.length > 1 && DDN.cloudAvailable()) {
-      const seq = [pts[0], ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat })), pts[0]];
+      const seq = [pts[0], ...stopItems.map(s => ({ lng: s.coord.lng, lat: s.coord.lat }))];
       const modes = dp.items.filter(i => i.type === 'commute').map(i => i.mode);
       const legs = [];
       for (let i = 0; i < seq.length - 1; i++) legs.push({ from: seq[i], to: seq[i + 1], mode: modes[i] || 'drive' });

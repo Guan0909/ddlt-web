@@ -214,18 +214,25 @@ window.DDNGL = (() => {
       }
     }
 
+    // 十六进制品牌色 → 稍带透明度，线交叠处不发闷（非 6 位 hex 原样返回）
+    const withAlpha = (c, a) => {
+      if (!/^#[0-9a-f]{6}$/i.test(String(c || ''))) return c;
+      const n = parseInt(c.slice(1), 16);
+      return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
+    };
+
     function drawRoute(geoms, color) {
       if (routeHalo) { try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {} }
       routeHalo = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
-        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 9, lineCap: 'round' }) },
+        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 6, lineCap: 'round' }) },
         geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
       });
       routeMain = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
-        styles: { main: new TMap.PolylineStyle({ color, width: 5.5, lineCap: 'round' }) },
+        styles: { main: new TMap.PolylineStyle({ color: withAlpha(color, 0.92), width: 3, lineCap: 'round' }) },
         geometries: geoms,
       });
     }
@@ -262,13 +269,13 @@ window.DDNGL = (() => {
       rebuildLabels(k, fitZoom);
 
       // 路线（仅规划模式）：真实路径到达前不画线（避免"看似贴路的假象"）；
-      // routePaths 整体失败时才回退直线示意
+      // routePaths 整体失败时才回退直线示意；不画返程（末站不回起点）
       if (!edit && all.length > 1) {
         const straightGeoms = [{
           id: 'straight', styleId: 'main',
-          paths: [...all.map(p => new TMap.LatLng(p.lat, p.lng)), new TMap.LatLng(origin.lat, origin.lng)],
+          paths: all.map(p => new TMap.LatLng(p.lat, p.lng)),
         }];
-        if (legs && legs.length > 1 && DDN.cloudAvailable()) {
+        if (legs && legs.length && DDN.cloudAvailable()) {
           upgradeToRealPaths(legs, color, token, straightGeoms);
         } else {
           drawRoute(straightGeoms, color);
