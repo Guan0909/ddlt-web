@@ -410,4 +410,7 @@ async function main() {
   if (big.length) console.log('漂移 >3km 的点：' + big.map(b => b.name + '(' + (b.drift_m / 1000).toFixed(1) + 'km)').join('、'));
 }
 
-main().catch(e => { console.error(e); process.exit(1); });
+// 供 scripts/rebuild-library.js 复用（同一套采集/匹配逻辑，避免两处实现漂移）
+module.exports = { amapAround, amapSearch, norm, baseName, nameVariants, nameAdoptable, hav, MAIN: true };
+
+if (require.main === module) main().catch(e => { console.error(e); process.exit(1); });
