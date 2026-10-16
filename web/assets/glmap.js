@@ -4,8 +4,13 @@
 // 与云函数环境变量里的 WebService Key 双隔离。
 window.DDNGL = (() => {
   let readyPromise = null;
-  // 编辑模式的视野半径：以当天路线为中心 15km（远郊点不再把默认视野拉到 25km+ 级）
+  // 视野半径：规划模式给「起点周边」的舒适视野，编辑模式给「当天路线周边」。
+  // 规划模式不再 fit 全天跨度——远郊日会把视野拉到 60km+，圆点密集、画面空旷。
+  const PLAN_VIEW_RADIUS_KM = 6;
   const EDIT_VIEW_RADIUS_KM = 15;
+  // 缩放下限：最多缩到约 45km 宽（不让用户缩成"看整个省"的空画面）；上限交给 GL 默认
+  const MIN_VIEW_KM = 45;
+  const MAX_ZOOM = 18;
 
   function load() {
     if (window.TMap) return Promise.resolve();
@@ -47,9 +52,13 @@ window.DDNGL = (() => {
   //   onSpotTap(spot)：规划模式下点底图 POI 命中库内点（加入抽屉）
   //   onSpotToggle(spot, selected)：编辑模式下点景点（加入/移出切换）
   function create(container, { onSpotTap, onSpotToggle } = {}) {
+    // 缩放下限由「最小可视宽度」换算成 zoom：meters/px = 156543·cos(lat)/2^z
+    const minZoomFor = (w, lat) => Math.max(4, Math.log2((w || 430) * 156543 * Math.cos(lat * Math.PI / 180) / (MIN_VIEW_KM * 1000)));
     const map = new TMap.Map(container, {
       center: new TMap.LatLng(30.657, 104.0668),
       zoom: 12,
+      minZoom: minZoomFor(container.clientWidth, 30.66),
+      maxZoom: MAX_ZOOM,
       viewMode: '2D',
       showBuilding: false,
       // 控制台「个性化地图」发布的自定义样式（安静路网 + 精选 POI 文字）
@@ -279,9 +288,13 @@ window.DDNGL = (() => {
       const all = [origin, ...stops.map(s => ({ lng: s.coord[0], lat: s.coord[1] }))];
       const othersAll = edit ? (others || []) : [];
 
-      // 视野：规划模式包住当天路线点；编辑模式以当天路线为中心、半径 15km——
-      // 全库淡点仍照画（缩小即可看到更远），但默认视野不再被西岭雪山这类远郊点拉飞。
+      // 视野：规划模式默认「起点周边 PLAN_VIEW_RADIUS_KM」；只有当天站点都落在该半径内时才 fit 全部点
+      // （城内日视野更紧凑，远郊日不会被拉到 60km+）。编辑模式以当天路线为中心、半径 15km。
       // 与路线取并集：远郊日路线本身超过 30km 时，绝不把当天站点切出视野。
+      const w = container.clientWidth || 400, h = container.clientHeight || 280;
+      const padBase = Math.max(30, Math.min(52, Math.round(w * 0.13)));
+      const padRight = edit ? padBase : Math.round(w * 0.26);   // 规划模式右侧留给缩放控件
+
       let fitPts = all;
       if (edit) {
         const lngs0 = all.map(p => p.lng), lats0 = all.map(p => p.lat);
@@ -290,14 +303,27 @@ window.DDNGL = (() => {
         const dLat = EDIT_VIEW_RADIUS_KM / 111.32;
         const dLng = EDIT_VIEW_RADIUS_KM / (111.32 * Math.max(0.2, Math.cos(cLat * Math.PI / 180)));
         fitPts = [...all, { lng: cLng - dLng, lat: cLat - dLat }, { lng: cLng + dLng, lat: cLat + dLat }];
+      } else {
+        // 规划模式：当天站点都在「起点周边 R」内 → fit 全部点（紧凑）；否则只给起点周边 R，
+        // 路线自然延伸出画面（远郊日），用户可平移/缩放查看，但不会被拉到 60km+ 的空旷视野。
+        const R = PLAN_VIEW_RADIUS_KM;
+        const far = all.some(p => metersBetween(origin.lng, origin.lat, p.lng, p.lat) > R * 1000);
+        if (far && all.length > 1) {
+          // 盒子按「内容区」的纵横比给：内容区正好 2R 宽（扁容器不会把横向放大成 25km+）
+          const cw = Math.max(80, w - padBase - padRight);
+          const ch = Math.max(60, h - padBase * 2);
+          const dLng = R / (111.32 * Math.max(0.2, Math.cos(origin.lat * Math.PI / 180)));
+          const dLat = (R / 111.32) * (ch / cw);
+          fitPts = [all[0],
+            { lng: origin.lng - dLng, lat: origin.lat - dLat },
+            { lng: origin.lng + dLng, lat: origin.lat + dLat }];
+        }
       }
       const bounds = new TMap.LatLngBounds();
       fitPts.forEach(p => bounds.extend(new TMap.LatLng(p.lat, p.lng)));
 
       // 视野像素尺度（fitBounds 应用前的推算值；idle 事件到达后会用真实 zoom 重建标签）
-      const w = container.clientWidth || 400, h = container.clientHeight || 280;
-      const padBase = Math.max(30, Math.min(52, Math.round(w * 0.13)));
-      const padRight = edit ? padBase : Math.round(w * 0.26);   // 编辑模式右上无缩放控件避让需求小些
+      // 注：w/h/padBase/padRight 已在上面算好（规划模式的视野盒子要用它们配纵横比）
       const lngs = fitPts.map(p => p.lng), lats = fitPts.map(p => p.lat);
       const spanLng = Math.max(Math.max(...lngs) - Math.min(...lngs), 1e-4);
       const spanLat = Math.max(Math.max(...lats) - Math.min(...lats), 1e-4);

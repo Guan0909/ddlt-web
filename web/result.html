@@ -962,6 +962,7 @@
     renderMap();
     renderTimeline();
     renderStats();
+    setHint();
   }
 
   $('shareBtn').onclick = () => {
@@ -988,8 +989,19 @@
   // 规划视图只显示当天路线与站点；进入编辑后展示全库景点，点淡点加入、点绿点移出，
   // 完成后统一 retimeDay 重校验（真实通勤），路线按真实路网重绘
   function setHint() {
-    document.querySelector('.map-hint').textContent = editMode
-      ? '点淡色圆点加入今天，点绿色圆点移出 · 完成后生成贴路路线'
+    if (editMode) {
+      document.querySelector('.map-hint').textContent = '点淡色圆点加入今天，点绿色圆点移出 · 完成后生成贴路路线';
+      return;
+    }
+    // 规划模式默认只给「起点周边 6km」（glmap 的 PLAN_VIEW_RADIUS_KM）：远郊日目的地会落在画面外，
+    // 这里明说一句，避免用户以为站点丢了
+    const R = 6;
+    const dp = route.dayPlans[cur];
+    const far = !!(dp && dp.items.some(i => i.type === 'stop' && Math.hypot(
+      (i.coord.lng - route.origin.lng) * 111.32 * Math.cos(route.origin.lat * Math.PI / 180),
+      (i.coord.lat - route.origin.lat) * 111.32) > R));
+    document.querySelector('.map-hint').textContent = far
+      ? '本日目的地较远，地图只显示起点周边 · 双指缩小可看更远'
       : '「编辑旅途」可加减今天的景点';
   }
   function toggleSpotEdit(s) {
