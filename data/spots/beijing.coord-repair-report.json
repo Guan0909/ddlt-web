@@ -1,0 +1,1384 @@
+{
+  "city": "北京",
+  "date": "2026-10-16",
+  "runs": [
+    "2026-10-16"
+  ],
+  "fixed": [
+    {
+      "id": "gugong",
+      "name": "故宫博物院",
+      "before": [
+        116.397027,
+        39.91799
+      ],
+      "provider": "amap",
+      "after": [
+        116.397029,
+        39.917839
+      ],
+      "drift_m": 17,
+      "amap_poi_id": "B000A8UIN8",
+      "tier": "amap-exact",
+      "poi_name": "故宫博物院",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "tiananmen",
+      "name": "天安门广场",
+      "before": [
+        116.397827,
+        39.90374
+      ],
+      "provider": "amap",
+      "after": [
+        116.397755,
+        39.903182
+      ],
+      "drift_m": 62,
+      "amap_poi_id": "B000A83C1S",
+      "tier": "amap-exact",
+      "poi_name": "天安门广场",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "tiantan",
+      "name": "天坛公园",
+      "before": [
+        116.410891,
+        39.881951
+      ],
+      "provider": "amap",
+      "after": [
+        116.410829,
+        39.881913
+      ],
+      "drift_m": 7,
+      "amap_poi_id": "B000A81CB2",
+      "tier": "amap-exact",
+      "poi_name": "天坛公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yiheyuan",
+      "name": "颐和园",
+      "before": [
+        116.272362,
+        39.99299
+      ],
+      "provider": "amap",
+      "after": [
+        116.275179,
+        39.999617
+      ],
+      "drift_m": 775,
+      "amap_poi_id": "B000A7O1CU",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.272362,
+          39.99299
+        ],
+        "amap": [
+          116.275179,
+          39.999617
+        ],
+        "drift_m": 775
+      },
+      "poi_name": "颐和园",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "yuanmingyuan",
+      "name": "圆明园遗址公园",
+      "before": [
+        116.297255,
+        40.00743
+      ],
+      "provider": "amap",
+      "after": [
+        116.300875,
+        40.006502
+      ],
+      "drift_m": 325,
+      "amap_poi_id": "B000A16E89",
+      "tier": "amap-exact",
+      "poi_name": "圆明园遗址公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yonghegong",
+      "name": "雍和宫",
+      "before": [
+        116.417267,
+        39.947382
+      ],
+      "provider": "amap",
+      "after": [
+        116.417296,
+        39.947239
+      ],
+      "drift_m": 16,
+      "amap_poi_id": "B000A7BGMG",
+      "tier": "amap-exact",
+      "poi_name": "雍和宫",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "gongwangfu",
+      "name": "恭王府",
+      "before": [
+        116.38633,
+        39.937201
+      ],
+      "provider": "amap",
+      "after": [
+        116.386442,
+        39.936428
+      ],
+      "drift_m": 86,
+      "amap_poi_id": "B000A9LFS7",
+      "tier": "amap-exact",
+      "poi_name": "恭王府(二宫门)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "badaling",
+      "name": "八达岭长城",
+      "before": [
+        116.02004,
+        40.359729
+      ],
+      "provider": "amap",
+      "after": [
+        116.016802,
+        40.356188
+      ],
+      "drift_m": 480,
+      "amap_poi_id": "B000A45467",
+      "tier": "amap-exact",
+      "poi_name": "八达岭长城",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mutianyu",
+      "name": "慕田峪长城",
+      "before": [
+        116.570401,
+        40.432721
+      ],
+      "provider": "amap",
+      "after": [
+        116.565052,
+        40.431668
+      ],
+      "drift_m": 468,
+      "amap_poi_id": "B000A09F5A",
+      "tier": "amap-exact",
+      "poi_name": "慕田峪长城",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "ming-tombs",
+      "name": "明十三陵",
+      "before": [
+        116.23883,
+        40.299452
+      ],
+      "provider": "amap",
+      "after": [
+        116.235741,
+        40.280532
+      ],
+      "drift_m": 2120,
+      "amap_poi_id": "B000A886RE",
+      "tier": "amap-suffix",
+      "coord_conflict": {
+        "ours": [
+          116.23883,
+          40.299452
+        ],
+        "amap": [
+          116.235741,
+          40.280532
+        ],
+        "drift_m": 2120
+      },
+      "renamed_from": "明十三陵",
+      "renamed_to": "明十三陵景区",
+      "poi_name": "明十三陵景区",
+      "name_adopted": true,
+      "coord_moved": false
+    },
+    {
+      "id": "tanzhe-si",
+      "name": "潭柘寺",
+      "before": [
+        116.030851,
+        39.906308
+      ],
+      "provider": "amap",
+      "after": [
+        116.0306,
+        39.903428
+      ],
+      "drift_m": 321,
+      "amap_poi_id": "B000A0B46C",
+      "tier": "amap-exact",
+      "poi_name": "潭柘寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "hongluo-si",
+      "name": "红螺寺",
+      "before": [
+        116.629081,
+        40.378368
+      ],
+      "provider": "amap",
+      "after": [
+        116.624756,
+        40.384097
+      ],
+      "drift_m": 735,
+      "amap_poi_id": "B000A01CD7",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.629081,
+          40.378368
+        ],
+        "amap": [
+          116.624756,
+          40.384097
+        ],
+        "drift_m": 735
+      },
+      "poi_name": "红螺寺",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "guozijian",
+      "name": "孔庙和国子监",
+      "before": [
+        116.413902,
+        39.946654
+      ],
+      "provider": "amap",
+      "after": [
+        116.413879,
+        39.946631
+      ],
+      "drift_m": 3,
+      "amap_poi_id": "B000A87K7V",
+      "tier": "amap-suffix",
+      "renamed_from": "孔庙和国子监",
+      "renamed_to": "孔庙和国子监博物馆",
+      "poi_name": "孔庙和国子监博物馆",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "nanluoguxiang",
+      "name": "南锣鼓巷",
+      "before": [
+        116.403187,
+        39.937282
+      ],
+      "provider": "amap",
+      "after": [
+        116.402394,
+        39.937182
+      ],
+      "drift_m": 69,
+      "amap_poi_id": "B0FFFAH7I9",
+      "tier": "amap-exact",
+      "poi_name": "南锣鼓巷",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "shichahai",
+      "name": "什刹海",
+      "before": [
+        116.38528,
+        39.941771
+      ],
+      "provider": "amap",
+      "after": [
+        116.385121,
+        39.941893
+      ],
+      "drift_m": 19,
+      "amap_poi_id": "B000A7O5PK",
+      "tier": "amap-exact",
+      "poi_name": "什刹海",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "wudaoying",
+      "name": "五道营胡同",
+      "before": [
+        116.412723,
+        39.948411
+      ],
+      "provider": "amap",
+      "after": [
+        116.411707,
+        39.947899
+      ],
+      "drift_m": 104,
+      "amap_poi_id": "B0FFGQA57E",
+      "tier": "amap-exact",
+      "poi_name": "五道营胡同",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yandai",
+      "name": "烟袋斜街",
+      "before": [
+        116.394753,
+        39.939333
+      ],
+      "provider": "amap",
+      "after": [
+        116.394748,
+        39.939329
+      ],
+      "drift_m": 1,
+      "amap_poi_id": "B0FFFAH7Q3",
+      "tier": "amap-exact",
+      "poi_name": "烟袋斜街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yangmeizhu",
+      "name": "杨梅竹斜街",
+      "before": [
+        116.391972,
+        39.895575
+      ],
+      "provider": "amap",
+      "after": [
+        116.390844,
+        39.89528
+      ],
+      "drift_m": 102,
+      "amap_poi_id": "B0FFH6JM2W",
+      "tier": "amap-exact",
+      "poi_name": "杨梅竹斜街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "qianmen-dashilar",
+      "name": "前门大街·大栅栏",
+      "before": [
+        116.398176,
+        39.894943
+      ],
+      "provider": "amap",
+      "after": [
+        116.403895,
+        39.896152
+      ],
+      "drift_m": 506,
+      "amap_poi_id": "B000A8UR3U",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.398176,
+          39.894943
+        ],
+        "amap": [
+          116.403895,
+          39.896152
+        ],
+        "drift_m": 506
+      },
+      "poi_name": "前门大街",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "art-798",
+      "name": "798艺术区",
+      "before": [
+        116.495862,
+        39.984245
+      ],
+      "provider": "amap",
+      "after": [
+        116.496361,
+        39.985127
+      ],
+      "drift_m": 107,
+      "amap_poi_id": "B0JGUCHA7Y",
+      "tier": "amap-contains+cat",
+      "poi_name": "798艺术区中心广场",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "shougang",
+      "name": "首钢园",
+      "before": [
+        116.149169,
+        39.915584
+      ],
+      "provider": "amap",
+      "after": [
+        116.155232,
+        39.915415
+      ],
+      "drift_m": 517,
+      "amap_poi_id": "B0FFFWAIWK",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.149169,
+          39.915584
+        ],
+        "amap": [
+          116.155232,
+          39.915415
+        ],
+        "drift_m": 517
+      },
+      "poi_name": "首钢园",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "liulichang",
+      "name": "琉璃厂文化街",
+      "before": [
+        116.384583,
+        39.895317
+      ],
+      "provider": "amap",
+      "after": [
+        116.38457,
+        39.895313
+      ],
+      "drift_m": 1,
+      "amap_poi_id": "B0FFF63VW6",
+      "tier": "amap-substr3",
+      "poi_name": "北京琉璃厂",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "wangfujing",
+      "name": "王府井大街",
+      "before": [
+        116.411067,
+        39.91906
+      ],
+      "provider": "amap",
+      "after": [
+        116.411122,
+        39.916176
+      ],
+      "drift_m": 321,
+      "amap_poi_id": "B000A7N6B0",
+      "tier": "amap-exact",
+      "poi_name": "王府井大街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "sanlitun",
+      "name": "三里屯太古里",
+      "before": [
+        116.454322,
+        39.934809
+      ],
+      "provider": "amap",
+      "after": [
+        116.45399,
+        39.934871
+      ],
+      "drift_m": 29,
+      "amap_poi_id": "B0FFFT5A1C",
+      "tier": "amap-exact",
+      "poi_name": "三里屯太古里",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "xidan",
+      "name": "西单商业街",
+      "before": [
+        116.37407,
+        39.91131
+      ],
+      "provider": "amap",
+      "after": [
+        116.374067,
+        39.911287
+      ],
+      "drift_m": 3,
+      "amap_poi_id": "B000A7QRK6",
+      "tier": "amap-exact",
+      "poi_name": "西单商业街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "panjiayuan",
+      "name": "潘家园旧货市场",
+      "before": [
+        116.458269,
+        39.87547
+      ],
+      "provider": "amap",
+      "after": [
+        116.458263,
+        39.875426
+      ],
+      "drift_m": 5,
+      "amap_poi_id": "B0FFIPP0IM",
+      "tier": "amap-exact",
+      "poi_name": "潘家园旧货市场",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "jingshan",
+      "name": "景山公园",
+      "before": [
+        116.39677,
+        39.925841
+      ],
+      "provider": "amap",
+      "after": [
+        116.396551,
+        39.925875
+      ],
+      "drift_m": 19,
+      "amap_poi_id": "B000A7I1OL",
+      "tier": "amap-exact",
+      "poi_name": "景山公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "beihai",
+      "name": "北海公园",
+      "before": [
+        116.388222,
+        39.926216
+      ],
+      "provider": "amap",
+      "after": [
+        116.391802,
+        39.928775
+      ],
+      "drift_m": 417,
+      "amap_poi_id": "B000A80UL1",
+      "tier": "amap-exact",
+      "poi_name": "北海公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yuyuantan",
+      "name": "玉渊潭公园",
+      "before": [
+        116.31987,
+        39.916611
+      ],
+      "provider": "amap",
+      "after": [
+        116.319932,
+        39.91662
+      ],
+      "drift_m": 5,
+      "amap_poi_id": "B000A7XIYH",
+      "tier": "amap-exact",
+      "poi_name": "玉渊潭公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "chaoyang-park",
+      "name": "朝阳公园",
+      "before": [
+        116.48263,
+        39.944151
+      ],
+      "provider": "amap",
+      "after": [
+        116.482276,
+        39.944093
+      ],
+      "drift_m": 31,
+      "amap_poi_id": "B000A7CA07",
+      "tier": "amap-exact",
+      "poi_name": "朝阳公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "ditan",
+      "name": "地坛公园",
+      "before": [
+        116.41545,
+        39.9542
+      ],
+      "provider": "amap",
+      "after": [
+        116.414443,
+        39.953777
+      ],
+      "drift_m": 98,
+      "amap_poi_id": "B000A81FMM",
+      "tier": "amap-exact",
+      "poi_name": "地坛公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "olympic-forest",
+      "name": "奥林匹克森林公园",
+      "before": [
+        116.391712,
+        40.022103
+      ],
+      "provider": "amap",
+      "after": [
+        116.392159,
+        40.018635
+      ],
+      "drift_m": 387,
+      "amap_poi_id": "B000A875MC",
+      "tier": "amap-exact",
+      "poi_name": "奥林匹克森林公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "botanical",
+      "name": "国家植物园",
+      "before": [
+        116.208661,
+        40.002411
+      ],
+      "provider": "amap",
+      "after": [
+        116.210714,
+        39.998036
+      ],
+      "drift_m": 517,
+      "amap_poi_id": "B0IA7RGK03",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.208661,
+          40.002411
+        ],
+        "amap": [
+          116.210714,
+          39.998036
+        ],
+        "drift_m": 517
+      },
+      "poi_name": "国家植物园",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "guobo",
+      "name": "中国国家博物馆",
+      "before": [
+        116.401397,
+        39.905408
+      ],
+      "provider": "amap",
+      "after": [
+        116.401304,
+        39.905374
+      ],
+      "drift_m": 9,
+      "amap_poi_id": "B000A83U0P",
+      "tier": "amap-exact",
+      "poi_name": "中国国家博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "shoubo",
+      "name": "首都博物馆",
+      "before": [
+        116.341985,
+        39.906427
+      ],
+      "provider": "amap",
+      "after": [
+        116.342067,
+        39.906412
+      ],
+      "drift_m": 7,
+      "amap_poi_id": "B000A76B0A",
+      "tier": "amap-exact",
+      "poi_name": "首都博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "junbo",
+      "name": "军事博物馆",
+      "before": [
+        116.32368,
+        39.90923
+      ],
+      "provider": "amap",
+      "after": [
+        116.321459,
+        39.907422
+      ],
+      "drift_m": 276,
+      "amap_poi_id": "BV10000188",
+      "tier": "amap-exact",
+      "poi_name": "军事博物馆(地铁站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "ziran",
+      "name": "国家自然博物馆",
+      "before": [
+        116.399739,
+        39.883095
+      ],
+      "provider": "amap",
+      "after": [
+        116.399833,
+        39.883183
+      ],
+      "drift_m": 13,
+      "amap_poi_id": "B000A7CRPA",
+      "tier": "amap-exact",
+      "poi_name": "国家自然博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "tianwenguan",
+      "name": "北京天文馆",
+      "before": [
+        116.336559,
+        39.937442
+      ],
+      "provider": "amap",
+      "after": [
+        116.336833,
+        39.937306
+      ],
+      "drift_m": 28,
+      "amap_poi_id": "B000A88EDQ",
+      "tier": "amap-exact",
+      "poi_name": "北京天文馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "meishuguan",
+      "name": "中国美术馆",
+      "before": [
+        116.409,
+        39.92535
+      ],
+      "provider": "amap",
+      "after": [
+        116.408939,
+        39.925255
+      ],
+      "drift_m": 12,
+      "amap_poi_id": "B000A7BC2S",
+      "tier": "amap-exact",
+      "poi_name": "中国美术馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "luxun-museum",
+      "name": "北京鲁迅博物馆",
+      "before": [
+        116.358739,
+        39.925709
+      ],
+      "provider": "amap",
+      "after": [
+        116.358742,
+        39.925693
+      ],
+      "drift_m": 2,
+      "amap_poi_id": "B000A3BE77",
+      "tier": "amap-exact",
+      "poi_name": "北京鲁迅博物馆(暂停开放)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "film-museum",
+      "name": "中国电影博物馆",
+      "before": [
+        116.520561,
+        39.996365
+      ],
+      "provider": "amap",
+      "after": [
+        116.520445,
+        39.996385
+      ],
+      "drift_m": 10,
+      "amap_poi_id": "B000A7YN39",
+      "tier": "amap-exact",
+      "poi_name": "中国电影博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "auto-museum",
+      "name": "北京汽车博物馆",
+      "before": [
+        116.301733,
+        39.828909
+      ],
+      "provider": "amap",
+      "after": [
+        116.301692,
+        39.828941
+      ],
+      "drift_m": 5,
+      "amap_poi_id": "B000A877A2",
+      "tier": "amap-exact",
+      "poi_name": "北京汽车博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "zhoukoudian",
+      "name": "周口店北京人遗址博物馆",
+      "before": [
+        115.936401,
+        39.687642
+      ],
+      "provider": "amap",
+      "after": [
+        115.936775,
+        39.687388
+      ],
+      "drift_m": 43,
+      "amap_poi_id": "B000A088F0",
+      "tier": "amap-substr5",
+      "poi_name": "周口店遗址博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "universal",
+      "name": "北京环球度假区",
+      "before": [
+        116.681027,
+        39.853307
+      ],
+      "provider": "amap",
+      "after": [
+        116.681212,
+        39.852698
+      ],
+      "drift_m": 70,
+      "amap_poi_id": "B0FFHMS3CA",
+      "tier": "amap-exact",
+      "poi_name": "北京环球度假区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "zoo",
+      "name": "北京动物园",
+      "before": [
+        116.33676,
+        39.942111
+      ],
+      "provider": "amap",
+      "after": [
+        116.336701,
+        39.942105
+      ],
+      "drift_m": 5,
+      "amap_poi_id": "B000A87IUX",
+      "tier": "amap-exact",
+      "poi_name": "北京动物园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "aquarium",
+      "name": "北京海洋馆",
+      "before": [
+        116.340826,
+        39.944676
+      ],
+      "provider": "amap",
+      "after": [
+        116.340971,
+        39.944676
+      ],
+      "drift_m": 12,
+      "amap_poi_id": "B000A7HOIQ",
+      "tier": "amap-exact",
+      "poi_name": "北京海洋馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "science-tech",
+      "name": "中国科学技术馆",
+      "before": [
+        116.398428,
+        40.005885
+      ],
+      "provider": "amap",
+      "after": [
+        116.398595,
+        40.006023
+      ],
+      "drift_m": 21,
+      "amap_poi_id": "B000A83GVH",
+      "tier": "amap-exact",
+      "poi_name": "中国科学技术馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "happy-valley",
+      "name": "北京欢乐谷",
+      "before": [
+        116.494583,
+        39.867629
+      ],
+      "provider": "amap",
+      "after": [
+        116.494743,
+        39.867355
+      ],
+      "drift_m": 33,
+      "amap_poi_id": "B000A7N4BI",
+      "tier": "amap-exact",
+      "poi_name": "北京欢乐谷",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "wildlife-park",
+      "name": "北京野生动物园",
+      "before": [
+        116.330263,
+        39.498853
+      ],
+      "provider": "amap",
+      "after": [
+        116.334681,
+        39.496435
+      ],
+      "drift_m": 465,
+      "amap_poi_id": "B000A831SV",
+      "tier": "amap-exact",
+      "poi_name": "北京野生动物园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "niujie",
+      "name": "牛街",
+      "before": [
+        116.363377,
+        39.88356
+      ],
+      "provider": "amap",
+      "after": [
+        116.363972,
+        39.884264
+      ],
+      "drift_m": 93,
+      "amap_poi_id": "B000A864JA",
+      "tier": "amap-exact",
+      "poi_name": "牛街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "guijie",
+      "name": "簋街",
+      "before": [
+        116.424772,
+        39.94175
+      ],
+      "provider": "amap",
+      "after": [
+        116.424768,
+        39.941746
+      ],
+      "drift_m": 1,
+      "amap_poi_id": "B0FFHF130I",
+      "tier": "amap-exact",
+      "poi_name": "簋街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "huguosi",
+      "name": "护国寺街",
+      "before": [
+        116.37628,
+        39.9351
+      ],
+      "provider": "amap",
+      "after": [
+        116.37315,
+        39.934999
+      ],
+      "drift_m": 267,
+      "amap_poi_id": "B0FFGQ5R1E",
+      "tier": "amap-exact",
+      "poi_name": "护国寺街",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "grand-theatre",
+      "name": "国家大剧院",
+      "before": [
+        116.389761,
+        39.904754
+      ],
+      "provider": "amap",
+      "after": [
+        116.389814,
+        39.904909
+      ],
+      "drift_m": 18,
+      "amap_poi_id": "B000A68732",
+      "tier": "amap-exact",
+      "poi_name": "国家大剧院",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "laoshe",
+      "name": "老舍茶馆",
+      "before": [
+        116.393317,
+        39.899698
+      ],
+      "provider": "amap",
+      "after": [
+        116.393316,
+        39.899703
+      ],
+      "drift_m": 1,
+      "amap_poi_id": "B000A36908",
+      "tier": "amap-exact",
+      "poi_name": "老舍茶馆(前门店)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "deyun-she",
+      "name": "德云社（天桥剧场）",
+      "before": [
+        116.397796,
+        39.883761
+      ],
+      "provider": "amap",
+      "after": [
+        116.384066,
+        39.888923
+      ],
+      "drift_m": 1305,
+      "amap_poi_id": "B0FFH140EI",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.397796,
+          39.883761
+        ],
+        "amap": [
+          116.384066,
+          39.888923
+        ],
+        "drift_m": 1305
+      },
+      "poi_name": "德云社(湖广会馆店)",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "olympic",
+      "name": "奥林匹克公园（鸟巢·水立方）",
+      "before": [
+        116.399573,
+        39.9891
+      ],
+      "provider": "amap",
+      "after": [
+        116.392159,
+        40.018635
+      ],
+      "drift_m": 3344,
+      "amap_poi_id": "B000A875MC",
+      "tier": "amap-suffix",
+      "coord_conflict": {
+        "ours": [
+          116.399573,
+          39.9891
+        ],
+        "amap": [
+          116.392159,
+          40.018635
+        ],
+        "drift_m": 3344
+      },
+      "poi_name": "奥林匹克森林公园",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "liangma",
+      "name": "亮马河国际风情水岸",
+      "before": [
+        116.47902,
+        39.949042
+      ],
+      "provider": "amap",
+      "after": [
+        116.4788,
+        39.949254
+      ],
+      "drift_m": 30,
+      "amap_poi_id": "B0HDZD0BPT",
+      "tier": "amap-exact",
+      "poi_name": "亮马河国际风情水岸",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "guixiaoshi",
+      "name": "西山鬼笑石",
+      "before": [
+        116.187618,
+        39.979274
+      ],
+      "provider": "amap",
+      "after": [
+        116.187684,
+        39.979457
+      ],
+      "drift_m": 21,
+      "amap_poi_id": "B000AA20IE",
+      "tier": "amap-substr3",
+      "poi_name": "北京西山国家森林公园鬼笑石",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "gubei",
+      "name": "古北水镇",
+      "before": [
+        117.277282,
+        40.651596
+      ],
+      "provider": "amap",
+      "after": [
+        117.277314,
+        40.654264
+      ],
+      "drift_m": 297,
+      "amap_poi_id": "B000AABXEH",
+      "tier": "amap-exact",
+      "poi_name": "古北水镇",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "cuandixia",
+      "name": "爨底下村",
+      "before": [
+        115.646004,
+        39.9968
+      ],
+      "provider": "amap",
+      "after": [
+        115.646059,
+        39.996957
+      ],
+      "drift_m": 18,
+      "amap_poi_id": "BV10402682",
+      "tier": "amap-exact",
+      "poi_name": "爨底下村(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "xiangshan",
+      "name": "香山公园",
+      "before": [
+        116.193778,
+        39.993624
+      ],
+      "provider": "amap",
+      "after": [
+        116.188746,
+        39.990107
+      ],
+      "drift_m": 580,
+      "amap_poi_id": "B000A7O684",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.193778,
+          39.993624
+        ],
+        "amap": [
+          116.188746,
+          39.990107
+        ],
+        "drift_m": 580
+      },
+      "poi_name": "香山公园",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "shidu",
+      "name": "十渡风景区",
+      "before": [
+        115.605857,
+        39.63572
+      ],
+      "provider": "amap",
+      "after": [
+        115.5887,
+        39.638372
+      ],
+      "drift_m": 1498,
+      "amap_poi_id": "BV10810247",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          115.605857,
+          39.63572
+        ],
+        "amap": [
+          115.5887,
+          39.638372
+        ],
+        "drift_m": 1498
+      },
+      "poi_name": "十渡(公交站)",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "yanqi-lake",
+      "name": "雁栖湖",
+      "before": [
+        116.665899,
+        40.388995
+      ],
+      "provider": "amap",
+      "after": [
+        116.669422,
+        40.394555
+      ],
+      "drift_m": 686,
+      "amap_poi_id": "B000A844J5",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          116.665899,
+          40.388995
+        ],
+        "amap": [
+          116.669422,
+          40.394555
+        ],
+        "drift_m": 686
+      },
+      "poi_name": "雁栖湖",
+      "name_adopted": false,
+      "coord_moved": false
+    },
+    {
+      "id": "jinhai-lake",
+      "name": "金海湖",
+      "before": [
+        117.300947,
+        40.180677
+      ],
+      "provider": "amap",
+      "after": [
+        117.308904,
+        40.186464
+      ],
+      "drift_m": 933,
+      "amap_poi_id": "B0L0LS95JL",
+      "tier": "amap-exact",
+      "coord_conflict": {
+        "ours": [
+          117.300947,
+          40.180677
+        ],
+        "amap": [
+          117.308904,
+          40.186464
+        ],
+        "drift_m": 933
+      },
+      "poi_name": "金海湖",
+      "name_adopted": false,
+      "coord_moved": false
+    }
+  ],
+  "skipped": [
+    {
+      "id": "solana",
+      "name": "蓝色港湾",
+      "before": [
+        116.476085,
+        39.949276
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "xianyukou",
+      "name": "鲜鱼口美食街",
+      "before": [
+        116.399338,
+        39.896131
+      ],
+      "provider": "amap",
+      "why": "高德未命中（含全国兜底）"
+    }
+  ],
+  "errors": []
+}

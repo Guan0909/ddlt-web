@@ -70,14 +70,33 @@ function nameVariants(name) {
 // 名称可采信性：高德结果里「售票处/停车场/地铁站/入口」是**子设施**，「…道路/交通地名」是纯地名词条。
 // 坐标可以采信子设施（它就在场馆范围内），但**名称只采信主体 POI**，否则会把「乐华恒业欢乐世界」
 // 改名成「…售票处」、「云南南路美食街」改成「云南南路（道路）」，属于产品降级。
-const SUB_POI = /售票处|停车场|停车点|公交站|地铁站|入口|出口|服务中心|游客中心|驿站|警务|厕所|暂停开放|附近|店$/;
+const SUB_POI = /售票处|停车场|停车点|公交站|地铁站|入口|出口|服务中心|游客中心|驿站|警务|厕所|暂停开放|附近|游览车|观光车|索道|缆车|游船|摆渡|接驳|导览|讲解|寄存|餐厅|商店|分店|旗舰店|店$/;
 const ROAD_CAT = /地名地址|交通地名|道路/;
 const NAME_CATS = /风景名胜|旅游景点|景点|公园|娱乐|休闲|体育|展馆|展览|文化|博物馆|古镇|寺|景区|街区/;
-function nameAdoptable(cand) {
+// 只采纳「**包含我们名字**的官方长名」（如「大熊猫繁育研究基地」→「成都大熊猫繁育研究基地」）。
+// 部分重叠但语义已变的不能采纳——实测把「远洋太古里」改成了「太古里东广场-广东会馆」（那是里面一个小区域）。
+// 后缀白名单只放「同类归一」的词（景区/公园/古镇…）。博物馆/博物院/纪念馆**故意不放**：
+// 它们常是景区内部的子馆（实测「南山植物园」会被改成「南山植物园博物馆」、「大足石刻」→「大足石刻博物馆」），
+// 属于把景点类型改窄。
+const NAME_SUFFIXES = ['景区', '旅游景区', '旅游度假区', '公园', '古镇', '文化区', '文化旅游区',
+  '遗址公园', '风景区', '历史街区', '步行街', '广场'];
+function nameAdoptable(cand, ours) {
   const t = String(cand.title || ''), cat = String(cand.cat || '');
   if (SUB_POI.test(t)) return false;
   if (ROAD_CAT.test(cat)) return false;
-  return NAME_CATS.test(cat);
+  if (!NAME_CATS.test(cat)) return false;
+  const a = norm(t), b = norm(ours || '');
+  if (!b || a === b) return false;
+  // 我们自己带限定词的（「淀山湖·彩虹桥」「朝天门广场·来福士」）不改名：官方名往往只剩前半个词，
+  // 采纳后反而把具体地点泛化掉了。
+  if (/[·（(]/.test(String(ours || ''))) return false;
+  // 只接受「纯前缀扩展」（成都 + 大熊猫繁育研究基地）或「纯后缀扩展」（龙泉山丹景台 + 旅游景区）。
+  // 带破折号/编号/其它尾巴的一律不采纳——实测那些多是子设施或片区（「…-游览车」「…东广场-广东会馆」）。
+  const pre = a.endsWith(b) ? a.slice(0, a.length - b.length) : null;
+  const suf = a.startsWith(b) ? a.slice(b.length) : null;
+  const okPre = !!pre && pre.length <= 4 && !/[0-9\-—·、]/.test(pre);
+  const okSuf = !!suf && NAME_SUFFIXES.includes(suf);
+  return okPre || okSuf;
 }
 
 // 类目白名单：只在「本身是地点」的 POI 上做包含匹配，避免「乾陵黑猪肉」「云南南路小吃店」这类同名店铺
@@ -223,7 +242,7 @@ async function main() {
         report.fixed.push(entry);
         // —— 高德为准的三件事：① 存在性核验 ② 名称对齐 ③ 坐标（estimate 必换；已回填的仅在漂移 ≤500m 时微调）——
         const poi = hit.c.title;
-        const adoptName = nameAdoptable(hit.c) && norm(poi) !== norm(spot.name);
+        const adoptName = nameAdoptable(hit.c, spot.name);
         const moveCoord = wasEstimate || drift <= 500;
         if (apply) {
           if (moveCoord) { spot.coord = entry.after; spot.coord_src = 'amap'; }
