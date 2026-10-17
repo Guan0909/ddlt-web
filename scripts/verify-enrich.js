@@ -12,6 +12,7 @@ const ONLY = cityIdx > 0 ? process.argv[cityIdx + 1] : null;
 const limitIdx = process.argv.indexOf('--limit');
 const LIMIT = limitIdx > 0 ? Number(process.argv[limitIdx + 1]) : 99999;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const THROTTLE_MS = Number(process.env.ENRICH_THROTTLE_MS || 200);   // 官方版 QPS 限制
 const today = new Date().toISOString().slice(0, 10);
 const norm = s => String(s || '').replace(/[\s（）()·\-—／\/]/g, '');
 const BAD_TYPE = /地铁站|公交车站|公交站|售票处|停车场|停车楼|入口|出口|检票|收费站|道路名|地名地址|公司|写字楼|便利店|ATM|餐厅|餐饮|快餐|小吃|咖啡|茶楼|酒家|饭店|商店|超市|银行|酒店|宾馆|民宿|加油站|充电|司机之家|码头|游船|客运站|集散中心|游客中心|政府机关|住宅|公寓|小区|学校|医院/;
@@ -85,7 +86,7 @@ async function resolvePoi(spot, city) {
       const best = ok.find(p => norm(p.name) === norm(spot.name)) || ok.find(p => nameAcceptable(p.name, spot.name)) || ok[0];
       if (best) return best;
     } catch (e) {}
-    await sleep(220);
+    await sleep(THROTTLE_MS);
   }
   return null;
 }
@@ -107,7 +108,7 @@ async function resolvePoi(spot, city) {
     for (const s of spots) {
       if (count++ >= LIMIT) break;
       const poi = await resolvePoi(s, cn);
-      await sleep(60);
+      await sleep(THROTTLE_MS);
       if (!poi) { stat.noPoi.push(s.name); continue; }
       stat.checked++;
       // ① 名称对齐（只向上采信官方全称）

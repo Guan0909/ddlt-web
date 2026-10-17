@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -59,7 +60,22 @@
       "photo": "http://store.is.autonavi.com/showpic/a782a49dbfa23c073b436fc20255f949",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 10
+      "heat_prev": 10,
+      "address": "瘦西湖路288号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/a782a49dbfa23c073b436fc20255f949"
+      ],
+      "keytag": "住宅区",
+      "entrance": [
+        119.43703,
+        32.423781
+      ],
+      "navi_poiid": "I50F043044_8803",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dongguan-street",
@@ -94,7 +110,25 @@
       "photo": "http://store.is.autonavi.com/showpic/26b54e6e9a80e1d5d2dbbbf986f8a3b2",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "东关街与国庆路交叉口东100米",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/26b54e6e9a80e1d5d2dbbbf986f8a3b2",
+        "http://store.is.autonavi.com/showpic/2af84047d5c0f757028b29170b43b13c",
+        "http://store.is.autonavi.com/showpic/c28bd50a5cb872e4f3198aeda7b761de"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.450498,
+        32.402234
+      ],
+      "navi_poiid": "I50F044044_77451",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "grand-canal-museum",
@@ -110,7 +144,7 @@
       "dur": 150,
       "intro": "三湾河畔的国家级运河主题博物馆。",
       "reason": "免费但难约，早去先看五展厅",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -129,7 +163,24 @@
       "photo": "http://store.is.autonavi.com/showpic/1952b8fec2e504303c9143b54d24e39e",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "东南新城运博路1号(运河三湾景区内)",
+      "district": "广陵区",
+      "adcode": "321002",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1952b8fec2e504303c9143b54d24e39e",
+        "http://store.is.autonavi.com/showpic/b77f812fb795590fc87f78875c6f4fa6",
+        "https://store.is.autonavi.com/showpic/aef3da45f4b0447ad90e26c1b6e33b41"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        119.428565,
+        32.364984
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "ge-garden",
@@ -162,7 +213,26 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/f282a8ff0a9204c150aa8a49ea756c5a",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "盐阜东路10号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f282a8ff0a9204c150aa8a49ea756c5a",
+        "http://store.is.autonavi.com/showpic/afa62893987e468d54a0c44b3ce00175",
+        "http://store.is.autonavi.com/showpic/38c755c1fb5d0d4f31c1c036d50cbc97"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.443455,
+        32.400627
+      ],
+      "navi_poiid": "I50F044044_97251",
+      "business_area": "国庆路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "he-garden",
@@ -195,7 +265,26 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/52ee354d47050e9b25d760fe3d51db10",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "徐凝门大街66号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/52ee354d47050e9b25d760fe3d51db10",
+        "http://store.is.autonavi.com/showpic/33c9ce2edc118f284a81319caa48418c",
+        "http://store.is.autonavi.com/showpic/cca6259f1807917446bf4e2e95d228c2"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.449498,
+        32.386158
+      ],
+      "navi_poiid": "I50F044044_99479",
+      "business_area": "何园",
+      "website": "www.he-garden.net",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yechun-teahouse",
@@ -211,7 +300,7 @@
       "dur": 60,
       "intro": "冶春园里的百年早茶，临水而坐。",
       "reason": "六点半来排队，蟹黄汤包不等人",
-      "open": null,
+      "open": "07:00-20:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -224,7 +313,28 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "heat_prev": 8.5,
-      "rating": 4.5
+      "rating": 4.5,
+      "open_text": "周一至周日 07:00-20:00",
+      "tel": "0514-87368018",
+      "address": "丰乐下街8号(冶春园底商)",
+      "district": "邗江区",
+      "adcode": "321003",
+      "cost": 89,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/c84cf292b38c0b930000004368698218?type=pic",
+        "https://aos-comment.amap.com/B0FFH0BPJX/comment/content_media_external_file_100005355_1764381323693_52350027.jpg",
+        "https://aos-comment.amap.com/B0FFH0BPJX/comment/content_media_external_file_375489_ss__1758354440897_00464844.jpg"
+      ],
+      "photo": "https://store.is.autonavi.com/showpic/c84cf292b38c0b930000004368698218?type=pic",
+      "keytag": "淮扬菜",
+      "entrance": [
+        119.435875,
+        32.400866
+      ],
+      "navi_poiid": [],
+      "business_area": "梅岭",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "daming-temple",
@@ -258,7 +368,26 @@
       "photo": "http://store.is.autonavi.com/showpic/5e24fad57bcc9d6111702f363e482a2f",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "蜀冈中峰平山堂东路8号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5e24fad57bcc9d6111702f363e482a2f",
+        "http://store.is.autonavi.com/showpic/afe310dbd105b94fdfb55bf10b814afa",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/248b9a99-d8e0-4c62-99f3-47d91ebdc5fe.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "寺庙",
+      "entrance": [
+        119.412203,
+        32.417781
+      ],
+      "navi_poiid": "I50F043044_912",
+      "business_area": "瘦西湖",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dongguan-ferry-night",
@@ -273,7 +402,7 @@
       "dur": 80,
       "intro": "东关街东端的古运河码头，夜航游船。",
       "reason": "坐船看两岸灯，从东关到跃进桥",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -286,7 +415,28 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "heat_prev": 8.5,
-      "rating": 4.7
+      "rating": 4.7,
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "address": "泰州路",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/741f716b0e38b34ce1b906015bf960c9",
+        "https://aos-comment.amap.com/B020200FIX/comment/content_media_external_file_100002755_1749956850445_32269751.jpg",
+        "https://aos-comment.amap.com/B020200FIX/comment/FFBCEABA_153F_4683_8B4E_EC204C82B58F_L0_001_2000_150_1745050495469_64687453.jpg"
+      ],
+      "photo": "http://store.is.autonavi.com/showpic/741f716b0e38b34ce1b906015bf960c9",
+      "keytag": "文物古迹",
+      "entrance": [
+        119.452921,
+        32.397877
+      ],
+      "navi_poiid": "I50F044044_17651",
+      "business_area": "个园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shuangbo-museum",
@@ -301,7 +451,7 @@
       "dur": 110,
       "intro": "扬州博物馆与雕版印刷博物馆合体。",
       "reason": "看元代霁蓝釉白龙梅瓶真品",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -320,7 +470,25 @@
       "photo": "https://store.is.autonavi.com/showpic/a178bdbfd457f0b50000000672314726?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "新城西区新盛街道文昌西路人工湖畔",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/a178bdbfd457f0b50000000672314726?type=pic",
+        "https://store.is.autonavi.com/showpic/09bf5f9fbf9475fb0000003041988725?type=pic",
+        "https://aos-comment.amap.com/B0I267G57M/comment/content_media_external_images_media_12312_ss__1736469023517_12636195.jpg"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        119.370465,
+        32.390775
+      ],
+      "navi_poiid": [],
+      "business_area": "京华城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "fuchun-teahouse",
@@ -348,7 +516,28 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "heat_prev": 8,
-      "rating": 4.5
+      "rating": 4.5,
+      "open_text": "周一至周日 06:30-13:30，15:45-19:30",
+      "tel": "0514-87233326;0514-87213289",
+      "address": "国庆路得胜桥35号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 65,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/954500c66ee063702513cb55c81ee9ed",
+        "https://store.is.autonavi.com/showpic/430b47e2bfd962ac0000001338706942?type=pic",
+        "https://aos-comment.amap.com/B0FFFEIFQ7/comment/content_media_external_file_100004190_1753840007108_37294324.jpg"
+      ],
+      "photo": "http://store.is.autonavi.com/showpic/954500c66ee063702513cb55c81ee9ed",
+      "keytag": "淮扬菜",
+      "entrance": [
+        119.442047,
+        32.390768
+      ],
+      "navi_poiid": "I50F044044_132458",
+      "business_area": "国庆路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wenchangge",
@@ -381,7 +570,25 @@
       "photo": "http://store.is.autonavi.com/showpic/7114865da3ece7e6f90d1fe5da00627c",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "汶河南路71号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7114865da3ece7e6f90d1fe5da00627c",
+        "http://store.is.autonavi.com/showpic/7a939a777dbd2a833dc4ed335cf4da5a",
+        "https://store.is.autonavi.com/showpic/c8d0c1c54f89420b0000002978618138?type=pic"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        119.433324,
+        32.394523
+      ],
+      "navi_poiid": "I50F044044_15703",
+      "business_area": "淮海路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "songjiacheng",
@@ -415,7 +622,26 @@
       "photo": "https://store.is.autonavi.com/showpic/e4c939ec82ff4f140000003877372797?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "长春路48号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/e4c939ec82ff4f140000003877372797?type=pic",
+        "https://store.is.autonavi.com/showpic/5e800f518884d596ac539acfe160da18",
+        "https://store.is.autonavi.com/showpic/c2bba74f5a6994fde27bda08bfc26bc9"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.421097,
+        32.414445
+      ],
+      "navi_poiid": "I50F043044_83696;48799;26892",
+      "business_area": "瘦西湖",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sishangting-food-street",
@@ -443,7 +669,17 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "rating": 0,
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "open_text": [],
+      "address": "邗江区",
+      "district": "邗江区",
+      "adcode": "321003",
+      "cost": 0,
+      "keytag": "城市次干路",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "pishi-street",
@@ -476,7 +712,25 @@
       "photo": "https://aos-comment.amap.com/B0FFJ1D3SX/comment/20260313-ef657c89c9a7a4f50276b9dc-yiae7TV8Va6k3pFBdMgLX.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "东关街道广陵小学东门对面皮市街8-10号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFJ1D3SX/comment/20260313-ef657c89c9a7a4f50276b9dc-yiae7TV8Va6k3pFBdMgLX.jpg",
+        "https://store.is.autonavi.com/showpic/d78c37a9a1d411070000003134510393?type=pic",
+        "https://aos-comment.amap.com/B0FFJ1D3SX/comment/177303294395_1773032952964_73959355.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        119.447735,
+        32.39507
+      ],
+      "navi_poiid": [],
+      "business_area": "何园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "guoqing-road",
@@ -504,7 +758,23 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "rating": 0,
-      "heat_prev": 7
+      "heat_prev": 7,
+      "open_text": [],
+      "address": "广陵区",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/B0KU4ANZ5S/comment/content_media_external_file_1000434253_ss__1767198349438_08246983.jpg",
+        "https://aos-comment.amap.com/B0KU4ANZ5S/comment/content_media_external_file_100008975_1762437386460_34930872.jpg",
+        "https://aos-comment.amap.com/B0KU4ANZ5S/comment/content_media_external_file_1000434255_ss__1767198349456_59025174.jpg"
+      ],
+      "photo": "https://aos-comment.amap.com/B0KU4ANZ5S/comment/content_media_external_file_1000434253_ss__1767198349438_08246983.jpg",
+      "keytag": "商圈",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "renfengli",
@@ -537,7 +807,24 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/BZATQK00AE/comment/6c2ec008e083f9b5ff2e48c3ccccdbe9_2048_2048_80.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "文昌中路与南柳巷交叉口西200米",
+      "district": "广陵区",
+      "adcode": "321002",
+      "photos": [
+        "https://aos-comment.amap.com/BZATQK00AE/comment/6c2ec008e083f9b5ff2e48c3ccccdbe9_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/BZATQK00AE/comment/69a8c31b01d8088ed2c921421218a5af_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/BZATQK00AE/comment/513665bfaf66c5ee6d119c324e939213_2048_2048_80.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        119.437114,
+        32.394134
+      ],
+      "navi_poiid": [],
+      "business_area": "珍园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "hongqiaofang",
@@ -569,7 +856,20 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "大虹桥路26号-15",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "keytag": "风景名胜,风景名胜,风景名胜",
+      "entrance": [
+        119.427268,
+        32.403242
+      ],
+      "navi_poiid": [],
+      "business_area": "四望亭",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jinghuacheng",
@@ -603,7 +903,26 @@
       "photo": "http://store.is.autonavi.com/showpic/3e6f897cb9dc01f3921a947af30c4c50",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "京华城路168号京华城F1层",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3e6f897cb9dc01f3921a947af30c4c50",
+        "http://store.is.autonavi.com/showpic/6190b073965e5ced149aacd5ab1b8c6f",
+        "http://store.is.autonavi.com/showpic/388455df6beb38afe7e50c32d2ab4e05"
+      ],
+      "a_level": "4A",
+      "keytag": "景区",
+      "entrance": [
+        119.378426,
+        32.384388
+      ],
+      "navi_poiid": [],
+      "business_area": "京华城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "gonghechun",
@@ -618,8 +937,8 @@
       "dur": 45,
       "intro": "甘泉路上的老牌茶社，饺面最经典。",
       "reason": "一碗饺面解决扬州人的清晨",
-      "open": null,
-      "closed_mon": null,
+      "open": "06:00-20:30",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         119.4396,
@@ -630,7 +949,28 @@
       "refreshed_at": "2026-10-17",
       "rating": 4.6,
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 06:00-20:30",
+      "tel": "18118214917",
+      "address": "甘泉路79号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 27,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/cd310d2afca554cf0000000975902163?type=pic",
+        "https://aos-comment.amap.com/B020200AK5/comment/IMG_20250317_093103_tem_1742175071809_37945045.jpg",
+        "https://aos-comment.amap.com/B020200AK5/comment/174217515368_1742175154789_67936064.jpg"
+      ],
+      "photo": "https://store.is.autonavi.com/showpic/cd310d2afca554cf0000000975902163?type=pic",
+      "keytag": "淮扬菜",
+      "entrance": [
+        119.439788,
+        32.388832
+      ],
+      "navi_poiid": "I50F044044_5973;6170",
+      "business_area": "珍园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shaobo-town",
@@ -664,7 +1004,26 @@
       "photo": "https://aos-comment.amap.com/B0FFJYN066/comment/content_media_external_file_1000009338_ss__1761658818715_32635855.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "邵伯镇棠湖路",
+      "district": "江都区",
+      "adcode": "321012",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFJYN066/comment/content_media_external_file_1000009338_ss__1761658818715_32635855.jpg",
+        "https://aos-comment.amap.com/B0FFJYN066/comment/A7B6F7D3_B22A_47E5_AC02_616E144D9BD0_L0_001_1320_97_1745756885633_87459004.jpg",
+        "https://aos-comment.amap.com/B0FFJYN066/comment/B2292AF7_6485_481A_AC23_342E4795441E_L0_001_1280_85_1768392369884_15482014.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "文物古迹",
+      "entrance": [
+        119.504979,
+        32.52361
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zhuyuwan",
@@ -698,7 +1057,26 @@
       "photo": "http://store.is.autonavi.com/showpic/40279744ec28666d987bc8ea4b76a2b6",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "茱萸湾路888号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/40279744ec28666d987bc8ea4b76a2b6",
+        "http://store.is.autonavi.com/showpic/ae727d7389a009bfe23bba7fcbacfac9",
+        "http://store.is.autonavi.com/showpic/5ab6b0d133a16243a9321ce28cb0be46"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.490566,
+        32.428303
+      ],
+      "navi_poiid": "I50F043044_12989;11258",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sanwan-night",
@@ -713,7 +1091,7 @@
       "dur": 60,
       "intro": "三湾的剪影桥与博物馆夜景。",
       "reason": "晚上在三湾走一圈，桥和灯都好看",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -726,7 +1104,30 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "heat_prev": 6,
-      "rating": 4.6
+      "rating": 4.6,
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "tel": "0514-89961011",
+      "address": "兴扬路",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/bce89e5faedc30b60000002860618061?type=pic",
+        "https://aos-comment.amap.com/B0FFGXH9QB/comment/content_media_external_file_100007622_1762956808567_76468714.jpg",
+        "https://aos-comment.amap.com/B0FFGXH9QB/comment/content_media_external_file_100062511_1761491999507_85258771.jpg"
+      ],
+      "photo": "https://store.is.autonavi.com/showpic/bce89e5faedc30b60000002860618061?type=pic",
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.436696,
+        32.357842
+      ],
+      "navi_poiid": "I50F044044_121575",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yuchengyi",
@@ -760,7 +1161,26 @@
       "photo": "http://store.is.autonavi.com/showpic/40f2728ba9ac2586c9fc9cfc36a70df1",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "南门外馆驿路13号",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/40f2728ba9ac2586c9fc9cfc36a70df1",
+        "http://store.is.autonavi.com/showpic/f5e384248cc092fba59851504b90de13",
+        "https://store.is.autonavi.com/showpic/f339a0b51f6219990000006136396070?type=pic"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.436839,
+        32.772222
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shugang-west-peak",
@@ -793,7 +1213,25 @@
       "photo": "http://store.is.autonavi.com/showpic/023987cc9d75ee26ebcaeefeca0ea1e4",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "维扬路",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/023987cc9d75ee26ebcaeefeca0ea1e4",
+        "https://store.is.autonavi.com/showpic/27494e93a9e2e7d885f7ae2bbbfa1880",
+        "https://store.is.autonavi.com/showpic/77d25cb52aead5380000000693878113?type=pic"
+      ],
+      "keytag": "生态公园",
+      "entrance": [
+        119.404742,
+        32.414501
+      ],
+      "navi_poiid": "I50F043044_99428",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "hanlingyuan",
@@ -827,7 +1265,26 @@
       "photo": "http://store.is.autonavi.com/showpic/0ef11f2186fde6cba6e71d6377824155",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "平山堂东路98号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/0ef11f2186fde6cba6e71d6377824155",
+        "https://store.is.autonavi.com/showpic/e45d545d1cc2944a0000000689936690?type=pic",
+        "https://store.is.autonavi.com/showpic/57d00b1227850bbd0000003134900931?type=pic"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        119.430538,
+        32.423879
+      ],
+      "navi_poiid": "I50F043044_918;894",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shikefa",
@@ -861,7 +1318,26 @@
       "photo": "http://store.is.autonavi.com/showpic/1eb88847af00688c5559f585b26dcf03",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "梅岭街道丰乐上街9号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1eb88847af00688c5559f585b26dcf03",
+        "https://aos-comment.amap.com/B0FFJ5OWBJ/comment/content_media_external_file_1000028801_ss__1767160647369_47633447.jpg",
+        "https://aos-comment.amap.com/B0FFJ5OWBJ/comment/%5B2025-12-01-15-01-09%5D212B7A59-DA3C-4111-BF90-922DF597A7D_1764572470556_40115317.jpg"
+      ],
+      "a_level": "3A",
+      "keytag": "纪念馆",
+      "entrance": [
+        119.44014,
+        32.400934
+      ],
+      "navi_poiid": "I50F044044_21748;17769;165191;21747",
+      "business_area": "梅岭",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "baguai-museum",
@@ -895,7 +1371,26 @@
       "photo": "http://store.is.autonavi.com/showpic/cb0bd8f67cbada7aadb7497be5de5267",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "淮海路154号托普迪赛",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/cb0bd8f67cbada7aadb7497be5de5267",
+        "http://store.is.autonavi.com/showpic/593154a4ffd42522bef0f9ee30091d0f",
+        "http://store.is.autonavi.com/showpic/d03ada331c09a17a1c06113f6089c69f"
+      ],
+      "a_level": "3A",
+      "keytag": "纪念馆",
+      "entrance": [
+        119.431458,
+        32.398576
+      ],
+      "navi_poiid": "I50F044044_21903;12868",
+      "business_area": "淮海路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "caiyi-street",
@@ -923,7 +1418,23 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "rating": 0,
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "open_text": [],
+      "address": "广陵区",
+      "district": "广陵区",
+      "adcode": "321002",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/BZATQK00AB/comment/395d2371c36aa8ec60ed2d215729e7be_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/BZATQK00AB/comment/c30391905a35f7b65b67c578d699d32a_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/BZATQK00AB/comment/content_media_external_images_media_5067_1740133068888_35535977.jpg"
+      ],
+      "photo": "https://aos-comment.amap.com/BZATQK00AB/comment/395d2371c36aa8ec60ed2d215729e7be_2048_2048_80.jpg",
+      "keytag": "道路",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "mingyue-lake",
@@ -957,7 +1468,25 @@
       "photo": "http://store.is.autonavi.com/showpic/4d2218e7d6b576e3bfe1e527c755d24c",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "文昌西路",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/4d2218e7d6b576e3bfe1e527c755d24c",
+        "https://store.is.autonavi.com/showpic/013f82123d4d00f00000003122612227?type=pic",
+        "https://store.is.autonavi.com/showpic/170c2b38c8190e05b95291273c701e30"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.374072,
+        32.386684
+      ],
+      "navi_poiid": "I50F044043_5675",
+      "business_area": "京华城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yangzhou-theatre",
@@ -991,7 +1520,22 @@
       "photo": "https://store.is.autonavi.com/showpic/761121ca42758ed793c257ac5011cd79",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "兴城西路24号(近维扬路)",
+      "district": "邗江区",
+      "adcode": "321003",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/761121ca42758ed793c257ac5011cd79"
+      ],
+      "keytag": "剧院",
+      "entrance": [
+        119.411191,
+        32.378509
+      ],
+      "navi_poiid": [],
+      "business_area": "文汇西路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yangzhou-science",
@@ -1025,7 +1569,24 @@
       "photo": "https://aos-comment.amap.com/B0FFFE8FZ9/comment/52457aa088794db7d3d44ca937ed90bc_2048_2048_80.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "文昌东路9号市民中心科技馆3号楼",
+      "district": "广陵区",
+      "adcode": "321002",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFFE8FZ9/comment/52457aa088794db7d3d44ca937ed90bc_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFFE8FZ9/comment/content_media_external_file_1000025738_ss__1763180072997_14761279.jpg",
+        "https://aos-comment.amap.com/B0FFFE8FZ9/comment/374f2ff6dcb52332ed9bc8fc28adbdbe_2048_2048_80.jpg"
+      ],
+      "keytag": "科技馆",
+      "entrance": [
+        119.496879,
+        32.393098
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "guazhou-ferry",
@@ -1058,7 +1619,25 @@
       "photo": "https://store.is.autonavi.com/showpic/17d49af238d635480000002208082146?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "瓜洲镇古运河下游与长江交汇处",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/17d49af238d635480000002208082146?type=pic",
+        "https://store.is.autonavi.com/showpic/5794ad337fe1b47d0000002335592421?type=pic",
+        "https://store.is.autonavi.com/showpic/82f7da034e1feebb0000003034422461?type=pic"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        119.39201,
+        32.251733
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shaobo-lake",
@@ -1092,7 +1671,25 @@
       "photo": "https://store.is.autonavi.com/showpic/40420492247012c80000000991296121?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "邵伯镇",
+      "district": "江都区",
+      "adcode": "321012",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/40420492247012c80000000991296121?type=pic",
+        "https://aos-comment.amap.com/B02020J974/comment/d1b67487-631f-4c50-b672-7d8e7ce7f7a8.png",
+        "https://store.is.autonavi.com/showpic/f08f13262018305a0000000991236855?type=pic"
+      ],
+      "keytag": "湖泊河流",
+      "entrance": [
+        119.505472,
+        32.527112
+      ],
+      "navi_poiid": "I50F042044_5",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "fenghuang-island",
@@ -1126,7 +1723,26 @@
       "photo": "http://store.is.autonavi.com/showpic/72e68d6ed43ddf06d256067483f15b77",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "泰安镇凤凰岛路88号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/72e68d6ed43ddf06d256067483f15b77",
+        "http://store.is.autonavi.com/showpic/bb5cbf31e987f3f1c5bede21dad2235a",
+        "http://store.is.autonavi.com/showpic/3318b09a72979dda0824e577b990809d"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.4954,
+        32.490048
+      ],
+      "navi_poiid": "I50F043044_8307;13038",
+      "business_area": [],
+      "website": "www.yzfhd.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zaolinwan",
@@ -1159,7 +1775,25 @@
       "photo": "http://store.is.autonavi.com/showpic/d7e426a601e1e4f5d6eb6c5b29237600",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "铜长路17-1号",
+      "district": "仪征市",
+      "adcode": "321081",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d7e426a601e1e4f5d6eb6c5b29237600",
+        "http://store.is.autonavi.com/showpic/b4dee92c38075d15cdd1eb2821d2a591",
+        "http://store.is.autonavi.com/showpic/a28ceda209aa0c8ff1918d7c8e239c79"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.101708,
+        32.335187
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wenyou-tai",
@@ -1193,7 +1827,26 @@
       "photo": "https://store.is.autonavi.com/showpic/122a19d46a9167f30000002895518752?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "高邮市经济开发区人民路507号",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/122a19d46a9167f30000002895518752?type=pic",
+        "https://aos-comment.amap.com/default_poi/comment/0B8B9963_1D03_4DF9_8C6C_77A730BCBEE0_L0_001_1501_2001_1726010804180_81779675.jpg",
+        "https://store.is.autonavi.com/showpic/a4f187b37c11179fd1f0229c79b2785e"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.44927,
+        32.793692
+      ],
+      "navi_poiid": "I50F039044_5785",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xianhe-temple",
@@ -1226,7 +1879,26 @@
       "photo": "https://aos-comment.amap.com/B02020I2JO/comment/content_media_external_file_100002428_1766685542880_57766136.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "南门街111号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B02020I2JO/comment/content_media_external_file_100002428_1766685542880_57766136.jpg",
+        "https://aos-comment.amap.com/B02020I2JO/comment/content_media_external_file_100008125_1765532295235_04929923.jpg",
+        "https://aos-comment.amap.com/B02020I2JO/comment/content_media_external_file_1000036164_ss__1765638338487_19546883.jpg"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        119.433708,
+        32.389056
+      ],
+      "navi_poiid": "I50F044044_19594",
+      "business_area": "仙鹤寺",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "puhading-park",
@@ -1259,7 +1931,25 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/B02020I8XD/comment/3dda4c741dfd91875afd3d7913496f9a_2048_2048_80.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "文昌中路167号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B02020I8XD/comment/3dda4c741dfd91875afd3d7913496f9a_2048_2048_80.jpg",
+        "https://store.is.autonavi.com/showpic/c34ec039cdfa2f751fae0b12a1b0db1d",
+        "https://aos-comment.amap.com/B02020I8XD/comment/8d303d2246698abf0f16e4c3258f84a6_2048_2048_80.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.455284,
+        32.395455
+      ],
+      "navi_poiid": "I50F044044_2665",
+      "business_area": "江都路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "guanyinshan",
@@ -1292,7 +1982,25 @@
       "photo": "https://aos-comment.amap.com/B0202154TQ/comment/453F7DD5_4F01_4104_A457_36B4B2AB08D3_L0_001_2000_112_1764475133274_90202552.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "瘦西湖街道平山堂东路20号唐城遗址内(西侧)",
+      "district": "邗江区",
+      "adcode": "321003",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0202154TQ/comment/453F7DD5_4F01_4104_A457_36B4B2AB08D3_L0_001_2000_112_1764475133274_90202552.jpg",
+        "https://aos-comment.amap.com/B0202154TQ/comment/content_media_external_images_media_1000013317_ss__1737331314487_69688702.jpg",
+        "https://aos-comment.amap.com/B0202154TQ/comment/content_media_external_images_media_35990_ss__1739447242538_64115407.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.416773,
+        32.419327
+      ],
+      "navi_poiid": "I50F043044_15503",
+      "business_area": "瘦西湖",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "tangcheng-museum",
@@ -1325,7 +2033,24 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/cc3a6e113ef55bfb07c705519e726e78",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "平山堂东路20号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/cc3a6e113ef55bfb07c705519e726e78",
+        "http://store.is.autonavi.com/showpic/330fc6b0d0692b7ee4ac48a0fd35e6a9",
+        "https://aos-comment.amap.com/B02020I0IN/comment/B901A6B7_80CB_4E22_AFB3_8C5243E45A5B_L0_001_2016_151_1767076937455_13899696.jpg"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        119.417913,
+        32.418248
+      ],
+      "navi_poiid": "I50F043044_890",
+      "business_area": "瘦西湖",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zhuziqing",
@@ -1359,7 +2084,25 @@
       "photo": "https://aos-comment.amap.com/B020200014/comment/content_media_external_file_34461_ss__1765248565552_01728574.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "东关街道东关街道东关街道东关街道安乐巷27号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B020200014/comment/content_media_external_file_34461_ss__1765248565552_01728574.jpg",
+        "https://aos-comment.amap.com/B020200014/comment/content_media_external_file_34464_ss__1765248565644_18165567.jpg",
+        "http://store.is.autonavi.com/showpic/b68161be9ff38b250ba05a8deb044813"
+      ],
+      "keytag": "名人故居",
+      "entrance": [
+        119.449808,
+        32.393669
+      ],
+      "navi_poiid": "I50F044044_869",
+      "business_area": "何园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wangshi-xiaoyuan",
@@ -1393,7 +2136,25 @@
       "photo": "https://aos-comment.amap.com/B0202004A8/comment/content_media_external_file_323231_ss__1760793181829_85536409.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "东圈门地官第18号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0202004A8/comment/content_media_external_file_323231_ss__1760793181829_85536409.jpg",
+        "https://store.is.autonavi.com/showpic/9727362b0fc3700f0000002378738081?type=pic",
+        "https://store.is.autonavi.com/showpic/1d449b20d3b7f1d00000003041508342?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.447759,
+        32.395642
+      ],
+      "navi_poiid": "I50F044044_15780",
+      "business_area": "个园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "lu-family-house",
@@ -1426,7 +2187,25 @@
       "photo": "https://aos-comment.amap.com/B0LBR7KKSM/comment/content_media_external_file_1000440768_ss__1767714207393_84918273.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "南通东路128号康山文化园",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0LBR7KKSM/comment/content_media_external_file_1000440768_ss__1767714207393_84918273.jpg",
+        "https://aos-comment.amap.com/B0LBR7KKSM/comment/content_media_external_file_1000440771_ss__1767714207395_25014088.jpg",
+        "http://store.is.autonavi.com/showpic/40ec7079c0f2ceec218c028c31c74a9e"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        119.452628,
+        32.384741
+      ],
+      "navi_poiid": "I50F044044_31131",
+      "business_area": "何园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "tianning-temple",
@@ -1458,7 +2237,24 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/B02020I1BJ/comment/content_media_external_file_1084263_ss__1751338141946_66821879.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "梅岭街道丰乐上街3号",
+      "district": "邗江区",
+      "adcode": "321003",
+      "photos": [
+        "https://aos-comment.amap.com/B02020I1BJ/comment/content_media_external_file_1084263_ss__1751338141946_66821879.jpg",
+        "https://aos-comment.amap.com/B02020I1BJ/comment/content_media_external_file_1000036253_ss__1763524774898_73952946.jpg",
+        "https://aos-comment.amap.com/B02020I1BJ/comment/4f1bdd8a785af7d0ee0fd611fcf5d1f8_2048_2048_80.jpg"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        119.437776,
+        32.400484
+      ],
+      "navi_poiid": "I50F044044_38795;48637;38805",
+      "business_area": "梅岭",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jiangdu-water-hub",
@@ -1490,7 +2286,25 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/651931a9ad39383d620f26c60a8e6f33",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "纺织路10号江都水利枢纽工程附近",
+      "district": "江都区",
+      "adcode": "321012",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/651931a9ad39383d620f26c60a8e6f33",
+        "http://store.is.autonavi.com/showpic/5fd8d8e24cf6014c0dc39eff2e1ef933",
+        "https://aos-comment.amap.com/B020216TN7/comment/261096C7_2C90_49D0_8A60_C69D7A7BF526_L0_001_1512_201_1765468609882_83019361.jpg"
+      ],
+      "keytag": "植物园",
+      "entrance": [
+        119.571884,
+        32.42054
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qihe-badao",
@@ -1521,7 +2335,16 @@
       "rating": 4,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "凤凰路与通安路交叉口东360米",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "keytag": "风景名胜,风景名胜相关,旅游景点",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "naishan",
@@ -1555,7 +2378,26 @@
       "photo": "https://aos-comment.amap.com/B0FFJKV2BO/comment/7d277a092b2380ae2a76bb231a9dd941_2048_2048_80.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "月塘镇环山路1号",
+      "district": "仪征市",
+      "adcode": "321081",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFJKV2BO/comment/7d277a092b2380ae2a76bb231a9dd941_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFJKV2BO/comment/25E7FE0A_27A2_488E_BC94_80275BC21A40_L0_001_1125_729_1726640377106_14501487.jpg",
+        "https://aos-comment.amap.com/B0FFJKV2BO/comment/174148663212_1741486633471_51858157.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        119.162329,
+        32.410783
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zhenguo-temple",
@@ -1589,7 +2431,26 @@
       "photo": "http://store.is.autonavi.com/showpic/9ea7b92f148298b88e3a5cf457e65900",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "湖滨路",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9ea7b92f148298b88e3a5cf457e65900",
+        "http://store.is.autonavi.com/showpic/fb9f25e0058ccaa5a54f50330f9bb778",
+        "https://store.is.autonavi.com/showpic/eff2faa0f33d5d550000002376286895?type=pic"
+      ],
+      "a_level": "3A",
+      "keytag": "寺庙",
+      "entrance": [
+        119.430395,
+        32.771999
+      ],
+      "navi_poiid": "I50F039044_610",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "gaoyou-lake-reed",
@@ -1623,7 +2484,25 @@
       "photo": "http://store.is.autonavi.com/showpic/804cf80ee6dff150280bab38d73ab0f5",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "金墩村西侧3公里",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/804cf80ee6dff150280bab38d73ab0f5",
+        "https://store.is.autonavi.com/showpic/ce009c598a90244f0000002362812496?type=pic",
+        "https://aos-comment.amap.com/B0202171WQ/comment/46d8070ba2d3e3b907e2402375059651_2048_2048_80.jpg"
+      ],
+      "keytag": "湿地",
+      "entrance": [
+        119.413129,
+        33.005359
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiaopangu",
@@ -1657,7 +2536,25 @@
       "photo": "https://store.is.autonavi.com/showpic/af958317a2a326abd58efff998faf572",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "丁家湾大树巷42号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/af958317a2a326abd58efff998faf572",
+        "http://store.is.autonavi.com/showpic/230affddb47d54c740d0bc79d0432832",
+        "https://store.is.autonavi.com/showpic/2589a906f6166f2b0000000665140762"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.448904,
+        32.386167
+      ],
+      "navi_poiid": "I50F044044_149782",
+      "business_area": "何园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "lotus-pond-park",
@@ -1691,7 +2588,25 @@
       "photo": "http://store.is.autonavi.com/showpic/f7499b859baf7a942617be428d0ff97c",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "大学南路105号",
+      "district": "广陵区",
+      "adcode": "321002",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f7499b859baf7a942617be428d0ff97c",
+        "http://store.is.autonavi.com/showpic/607140e86f16376fcaa005972548df4f",
+        "https://store.is.autonavi.com/showpic/3509ead163bb39380000002922174740?type=pic"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        119.431007,
+        32.383268
+      ],
+      "navi_poiid": "I50F044044_84062",
+      "business_area": "荷花池",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "puyuan",
@@ -1725,7 +2640,26 @@
       "photo": "https://store.is.autonavi.com/showpic/2fd3511dc7cd6a7b0000004549594297?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "丁伙镇北环路18号",
+      "district": "江都区",
+      "adcode": "321012",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/2fd3511dc7cd6a7b0000004549594297?type=pic",
+        "https://store.is.autonavi.com/showpic/57f8a4f90949102b98fc08da487bfa47",
+        "https://store.is.autonavi.com/showpic/6e673b3adfe7b3560000002449782774?type=pic"
+      ],
+      "a_level": "3A",
+      "keytag": "公园",
+      "entrance": [
+        119.61771,
+        32.525078
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shierxu",
@@ -1759,7 +2693,25 @@
       "photo": "https://store.is.autonavi.com/showpic/ead9aa5ee19c17110000002883958186?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "闽泰大道与十二圩路交叉口西南80米",
+      "district": "仪征市",
+      "adcode": "321081",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/ead9aa5ee19c17110000002883958186?type=pic",
+        "https://aos-comment.amap.com/B0KUBRX2PU/comment/content_media_external_file_100008490_1770958748001_80253235.jpg",
+        "https://store.is.autonavi.com/showpic/ac350262343ba52f12bd5b47cc46a303"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        119.247198,
+        32.240841
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "gaoyou-pawnshop",
@@ -1793,7 +2745,24 @@
       "photo": "https://aos-comment.amap.com/B0FFG0O54Q/comment/1133c165e25fdc59d73e5e109928c983_2048_2048_80.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "高邮街道文游路507号",
+      "district": "高邮市",
+      "adcode": "321084",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFG0O54Q/comment/1133c165e25fdc59d73e5e109928c983_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFG0O54Q/comment/_1770357171341_26806373.jpg",
+        "https://store.is.autonavi.com/showpic/843a50b151228306a4316e3ec9f9eb33"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        119.466619,
+        32.778867
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jieshou-town",
@@ -1826,7 +2795,25 @@
       "photo": "https://aos-comment.amap.com/B0FFGAHP8F/comment/content_media_external_file_216063_1770824315523_36062538.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "国庆路与233国道交叉口西60米",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFGAHP8F/comment/content_media_external_file_216063_1770824315523_36062538.jpg",
+        "https://aos-comment.amap.com/B0FFGAHP8F/comment/20260312-50af1cb28ca08c2b2d10f13d-6uj4zU8ueWm6z9A9xNxURf.jpg",
+        "https://store.is.autonavi.com/showpic/8d0c352acb6c46190000007938166751?type=pic"
+      ],
+      "keytag": "古镇",
+      "entrance": [
+        119.445551,
+        33.004408
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "longqiuzhuang",
@@ -1860,7 +2847,25 @@
       "photo": "https://store.is.autonavi.com/showpic/bfeb28bb88427b7ee971f8e0cdd75e95",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "龙虬镇北首",
+      "district": "高邮市",
+      "adcode": "321084",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/bfeb28bb88427b7ee971f8e0cdd75e95",
+        "https://aos-comment.amap.com/B020216FNG/comment/content_media_external_file_200982_ss__1759447732599_71822873.jpg",
+        "https://aos-comment.amap.com/B020216FNG/comment/58a657f91494e3fd584a11fa8701b92e_2048_2048_80.jpg"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        119.510855,
+        32.830022
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "baoying-lake",
@@ -1894,7 +2899,25 @@
       "photo": "http://store.is.autonavi.com/showpic/94453556c562c140b670d4c861d9aef1",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "正润路1号(近机场路)",
+      "district": "宝应县",
+      "adcode": "321023",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/94453556c562c140b670d4c861d9aef1",
+        "http://store.is.autonavi.com/showpic/e5bc14ed0bc433f8f534c7ad790ae159",
+        "http://store.is.autonavi.com/showpic/77151882542bf215dcac1a4c357bb9ad"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        119.319615,
+        33.150695
+      ],
+      "navi_poiid": "I50F035043_59",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }

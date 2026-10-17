@@ -683,7 +683,8 @@
       "navi_poiid": "H50F017002_247238",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "a_level": "4A"
     },
     {
       "id": "sc1927856",
@@ -734,7 +735,8 @@
       "navi_poiid": "H49F019048_47",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "a_level": "4A"
     },
     {
       "id": "s98c862ba",
@@ -1068,7 +1070,8 @@
       "navi_poiid": "H50F018003_163898;162451",
       "business_area": "钟家村",
       "website": "www.guiyuanchansi.com.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "a_level": "4A"
     },
     {
       "id": "s05227020",
@@ -1837,7 +1840,7 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -1854,7 +1857,27 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "1/1-12/31 周二–周日 09:00–17:00开放 最晚进入16:30；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放",
-      "photo": "http://store.is.autonavi.com/showpic/75f5a9f9ad32386fd72e7313daa561c8"
+      "photo": "http://store.is.autonavi.com/showpic/75f5a9f9ad32386fd72e7313daa561c8",
+      "address": "琴台大道10号",
+      "district": "汉阳区",
+      "adcode": "420105",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/75f5a9f9ad32386fd72e7313daa561c8",
+        "http://store.is.autonavi.com/showpic/c158af43394ba3148cfcb06d62ba721b",
+        "http://store.is.autonavi.com/showpic/585eb1c0dd804e78f3b3f0574726fe4c"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        114.26389,
+        30.553556
+      ],
+      "navi_poiid": "H50F018003_54132",
+      "business_area": "琴台",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sc1f92a3a",
@@ -2472,6 +2495,68 @@
       "business_area": "徐东大街",
       "website": [],
       "amap_checked_at": "2026-10-17"
+    },
+    {
+      "id": "x004b2775",
+      "name": "武汉长江大桥",
+      "cat": "山水",
+      "tags": [],
+      "heat": 8,
+      "dur": 180,
+      "intro": "自然山水，在城内，排一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        114.292874,
+        30.547225
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B001B0JP4S",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.8,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "标志性景点补录",
+      "open_text": "周一至周日 00:00-24:00；武汉两江游览游船的开船时间以票种披露为参考，具体以景区现场实际为准",
+      "photo": "http://store.is.autonavi.com/showpic/21a20bacb271bf0f39306f34e5ea83d4"
+    },
+    {
+      "id": "x2dfb44ab",
+      "name": "楚河汉街",
+      "cat": "街区",
+      "tags": [],
+      "heat": 7,
+      "dur": 90,
+      "intro": "街区，在城内，边走边吃一两小时。",
+      "reason": "傍晚进来，边走边吃",
+      "open": "09:00-00:00",
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        114.340697,
+        30.557103
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFID01CO",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.8,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "标志性景点补录",
+      "open_text": "周一至周日 10:00-22:00",
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/f27aabc2-1daa-4cc2-8191-09937d926f84.jpg",
+      "tel": "027-59363333",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/f27aabc2-1daa-4cc2-8191-09937d926f84.jpg"
+      ]
     }
   ]
 }
