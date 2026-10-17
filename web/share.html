@@ -45,6 +45,10 @@
   .mini:last-child { border-bottom: none; }
   .mini .t { font-size: 11px; color: var(--ink-3); width: 72px; flex: none; font-variant-numeric: tabular-nums; }
   .mini .n { font-size: 14.5px; font-weight: 600; flex: 1; }
+  .mini .lv {
+    font-size: 9.5px; font-weight: 600; letter-spacing: .06em; color: var(--d2, #3B7356);
+    border: .5px solid currentColor; border-radius: 999px; padding: 0 4px; margin-left: 4px;
+  }
   .mini .g { font-size: 10.5px; color: var(--ink-3); max-width: 40%; text-align: right; }
 
   .brand {
@@ -161,6 +165,7 @@
       mini.appendChild(DDN.el('span', 't', `${it.arr}–${it.dep}`));
       mini.appendChild(DDN.el('span', 'n', it.name));
       const spot = spotById(it.id);
+      if (spot && spot.a_level) mini.appendChild(DDN.el('span', 'lv', String(spot.a_level).toUpperCase()));
       const g = spot && (spot.tags || [])[0] ? spot.tags[0] : String(it.reason || '').slice(0, 10);
       if (g) mini.appendChild(DDN.el('span', 'g', g));
       group.appendChild(mini);

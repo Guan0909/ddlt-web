@@ -2,6 +2,7 @@
 /* 点定旅途 P3 · 页面共享逻辑：数据加载、存储、投影、DOM/图标工具、微调重排 */
 window.DDN = (() => {
   const DAY_CN = ['一', '二', '三', '四', '五'];
+  // 城市 → spots 数据文件（已建库 6 城）
   // 城市 → spots 数据文件（已建库 60 城）
   const SPOT_FILES = {
     '成都': '/data/spots/chengdu.json', '重庆': '/data/spots/chongqing.json', '昆明': '/data/spots/kunming.json',
@@ -26,27 +27,36 @@ window.DDN = (() => {
     '长春': '/data/spots/changchun.json', '沈阳': '/data/spots/shenyang.json', '大连': '/data/spots/dalian.json',
   };
   // 海报顶部拼音占位：映射不了的城市用 DECIDENOW.ASIA
-  const PINYIN = {
-    '成都': 'CHENGDU', '重庆': 'CHONGQING', '昆明': 'KUNMING',
-    '大理': 'DALI', '丽江': 'LIJIANG', '贵阳': 'GUIYANG',
-    '拉萨': 'LHASA', '西双版纳': 'XISHUANGBANNA', '香格里拉': 'SHANGRI-LA',
-    '上海': 'SHANGHAI', '杭州': 'HANGZHOU', '南京': 'NANJING',
-    '苏州': 'SUZHOU', '无锡': 'WUXI', '扬州': 'YANGZHOU',
-    '绍兴': 'SHAOXING', '宁波': 'NINGBO', '温州': 'WENZHOU',
-    '合肥': 'HEFEI', '黄山': 'HUANGSHAN', '厦门': 'XIAMEN',
-    '福州': 'FUZHOU', '泉州': 'QUANZHOU', '青岛': 'QINGDAO',
-    '济南': 'JINAN', '威海': 'WEIHAI', '烟台': 'YANTAI',
-    '婺源': 'WUYUAN', '广州': 'GUANGZHOU', '深圳': 'SHENZHEN',
-    '珠海': 'ZHUHAI', '桂林': 'GUILIN', '北海': 'BEIHAI',
-    '三亚': 'SANYA', '海口': 'HAIKOU', '北京': 'BEIJING',
-    '天津': 'TIANJIN', '大同': 'DATONG', '太原': 'TAIYUAN',
-    '呼和浩特': 'HOHHOT', '武汉': 'WUHAN', '长沙': 'CHANGSHA',
-    '郑州': 'ZHENGZHOU', '洛阳': 'LUOYANG', '开封': 'KAIFENG',
-    '宜昌': 'YICHANG', '张家界': 'ZHANGJIAJIE', '凤凰': 'FENGHUANG',
-    '西安': 'XIAN', '兰州': 'LANZHOU', '西宁': 'XINING',
-    '敦煌': 'DUNHUANG', '张掖': 'ZHANGYE', '乌鲁木齐': 'URUMQI',
-    '喀什': 'KASHGAR', '银川': 'YINCHUAN', '哈尔滨': 'HAERBIN',
-    '长春': 'CHANGCHUN', '沈阳': 'SHENYANG', '大连': 'DALIAN',
+  const PINYIN = { '成都': 'CHENGDU', '重庆': 'CHONGQING', '昆明': 'KUNMING', '大理': 'DALI', '丽江': 'LIJIANG', '贵阳': 'GUIYANG', '拉萨': 'LHASA', '西双版纳': 'XISHUANGBANNA', '香格里拉': 'SHANGRI-LA', '上海': 'SHANGHAI', '杭州': 'HANGZHOU', '南京': 'NANJING', '苏州': 'SUZHOU', '无锡': 'WUXI', '扬州': 'YANGZHOU', '绍兴': 'SHAOXING', '宁波': 'NINGBO', '温州': 'WENZHOU', '合肥': 'HEFEI', '黄山': 'HUANGSHAN', '厦门': 'XIAMEN', '福州': 'FUZHOU', '泉州': 'QUANZHOU', '青岛': 'QINGDAO', '济南': 'JINAN', '威海': 'WEIHAI', '烟台': 'YANTAI', '婺源': 'WUYUAN', '广州': 'GUANGZHOU', '深圳': 'SHENZHEN', '珠海': 'ZHUHAI', '桂林': 'GUILIN', '北海': 'BEIHAI', '三亚': 'SANYA', '海口': 'HAIKOU', '北京': 'BEIJING', '天津': 'TIANJIN', '大同': 'DATONG', '太原': 'TAIYUAN', '呼和浩特': 'HOHHOT', '武汉': 'WUHAN', '长沙': 'CHANGSHA', '郑州': 'ZHENGZHOU', '洛阳': 'LUOYANG', '开封': 'KAIFENG', '宜昌': 'YICHANG', '张家界': 'ZHANGJIAJIE', '凤凰': 'FENGHUANG', '西安': 'XIAN', '兰州': 'LANZHOU', '西宁': 'XINING', '敦煌': 'DUNHUANG', '张掖': 'ZHANGYE', '乌鲁木齐': 'URUMQI', '喀什': 'KASHGAR', '银川': 'YINCHUAN', '哈尔滨': 'HAERBIN', '长春': 'CHANGCHUN', '沈阳': 'SHENYANG', '大连': 'DALIAN' };
+  const SVGNS = 'http://www.w3.org/2000/svg';
+
+  // ---------- DOM 工具 ----------
+  function el(tag, cls, text) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function svgEl(name, attrs) {
+    const n = document.createElementNS(SVGNS, name);
+    for (const k in attrs || {}) n.setAttribute(k, attrs[k]);
+    return n;
+  }
+
+  // ---------- 静态 SVG 图标（照原型内联，非用户/数据文本） ----------
+  const ICONS = {
+    search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    locate: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/>',
+    pin: '<path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/>',
+    back: '<path d="M15 5l-7 7 7 7"/>',
+    clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/>',
+    walk: '<circle cx="13" cy="4.5" r="1.8"/><path d="M13 8l-2.5 5 3 3 1 5M13 8l3 2.5L18.5 12M10.5 13 8 16l-2 5"/>',
+    transit: '<rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 20l-1.5 2M15 20l1.5 2"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/>',
+    drive: '<path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16"/><path d="M4 16h16v3.5a.5.5 0 0 1-.5.5H18a.5.5 0 0 1-.5-.5V18h-11v1.5a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1-.5-.5z"/>',
+    share: '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
+    image: '<rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="1.6"/><path d="m21 15-4.5-4.5L9 18"/>',
+    arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+    download: '<path d="M12 4v12M6.5 10.5 12 16l5.5-5.5"/><path d="M4 20h16"/>',
   };
   function icon(name, cls, style) {
     const s = svgEl('svg', { viewBox: '0 0 24 24' });
@@ -72,6 +82,25 @@ window.DDN = (() => {
     const d = await r.json();
     spotsCache[city] = d.spots;
     return d.spots;
+  }
+  // 起点粗筛候选城市：按 cities.json 中心点距离升序取最近 N 个（60 城下避免串行拉全部城市数据）
+  function kmBetween(a, b) {
+    const R = 6371, rad = Math.PI / 180;
+    const dLat = (b[1] - a[1]) * rad, dLng = (b[0] - a[0]) * rad;
+    const s2 = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * rad) * Math.cos(b[1] * rad) * Math.sin(dLng / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(s2));
+  }
+  async function candidateCitiesByOrigin(origin, exclude, n) {
+    let list = [];
+    try { list = (await loadCities()).cities || []; }
+    catch (e) { return Object.keys(SPOT_FILES).filter(c => c !== exclude).slice(0, n || 4); }
+    const pt = [+origin.lng, +origin.lat];
+    return list
+      .filter(c => SPOT_FILES[c.name] && Array.isArray(c.center) && c.name !== exclude)
+      .map(c => ({ name: c.name, km: kmBetween(pt, c.center) }))
+      .sort((a, b) => a.km - b.km)
+      .slice(0, n || 4)
+      .map(x => x.name);
   }
 
   // ---------- 存储 ----------
@@ -356,7 +385,7 @@ window.DDN = (() => {
     DAY_CN, SPOT_FILES,
     el, svgEl, icon,
     loadCities, loadSpots,
-    saveRoute, loadRoute, saveShared, loadShared, saveRequest, loadRequest,
+    saveRoute, loadRoute, candidateCitiesByOrigin, loadCities, saveShared, loadShared, saveRequest, loadRequest,
     todayISO, parseHM, fmtHour, fmtDur, fmtHourCn, dateRange, dayCn, pinyinOf, themeOf,
     makeProjector, mercatorProjector, fitZoom, fetchBaseMap,
     smoothPathD, smoothTrace, MAP_SOFT_FILTER,

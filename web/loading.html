@@ -143,8 +143,10 @@
       if (!spots) throw new Error('这座城市暂未开通，换一座试试。');
       let v = window.Engine.validateInputs(spots, origin, req.days);
       // 起点落在所选城市之外（典型：默认城市 + 别的城市地址）→ 自动切换到装得下它的已开通城市
+      // 60 城下不能串行拉 60 个城市数据：先用 cities.json 的中心点粗筛（距离升序，取最近 4 个候选）再逐个校验
       if (!v.ok) {
-        for (const c of Object.keys(DDN.SPOT_FILES)) {
+        const cands = await DDN.candidateCitiesByOrigin(origin, city).catch(() => Object.keys(DDN.SPOT_FILES).filter(c => c !== city).slice(0, 4));
+        for (const c of cands) {
           if (c === city) continue;
           const sp = await DDN.loadSpots(c).catch(() => null);
           if (!sp) continue;

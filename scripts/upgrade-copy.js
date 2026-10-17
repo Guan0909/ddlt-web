@@ -13,6 +13,22 @@ const BATCH = Number(process.env.COPY_BATCH || 8);
 const TEMPLATE = /^(自然山水|自然与人文景观|历史古迹|城市公园|博物馆，|适合入夜再看的地标|适合带娃的景点|街区，|吃的街区|商圈，|古镇街区)/;
 const BAD = /[0-9０-９]|门票|票价|免费|元|公里|km|最|第一|必去|必打卡|绝绝子|YYDS|！|!|震撼|绝美|A级|景区是|一处|建议游览|建议安排/;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+// 少样本范例：从已升级的 AI 文案里按类目挑 2 条（长度合格、无禁用词）
+let EXAMPLES = null;
+function buildExamples(cityFile) {
+  if (EXAMPLES) return EXAMPLES;
+  const pool = {};
+  try {
+    const d = JSON.parse(fs.readFileSync(path.join(d0, cityFile + '.json'), 'utf8'));
+    for (const s of d.spots || []) {
+      if (s.copy_src !== 'ai' || !s.intro || !s.reason) continue;
+      if (s.intro.length < 25 || s.intro.length > 45 || BAD.test(s.intro) || BAD.test(s.reason)) continue;
+      (pool[s.cat] = pool[s.cat] || []).push(s.intro + '｜' + s.reason);
+    }
+  } catch (e) {}
+  EXAMPLES = pool;
+  return EXAMPLES;
+}
 function validate(o) {
   if (!o || typeof o.intro !== 'string' || typeof o.reason !== 'string') return null;
   const intro = o.intro.trim(), reason = o.reason.trim();
@@ -25,6 +41,15 @@ function validate(o) {
 }
 async function callBatch(list) {
   const lines = list.map((s, i) => (i + 1) + '. id=' + s.id + '｜' + s.name + '｜' + s.cat + '｜' + (s.suburb ? '城郊' : '城内') + '｜建议游览 ' + s.dur + ' 分钟｜评分 ' + (s.rating || '-') + (s.a_level ? '｜' + s.a_level + ' 景区' : '')).join('\n');
+  const ex = [];
+  try {
+    const pool = EXAMPLES || {};
+    const cats = [...new Set(list.map(s => s.cat))];
+    for (const c of cats) {
+      const arr = (pool[c] || []).slice(0, 2);
+      arr.forEach(t => ex.push('  [' + c + '] ' + t));
+    }
+  } catch (e) {}
   const prompt = ['为下列景点各写两段中文文案，严格遵守规则：',
     '- intro（25~45 字）：说清「这里是什么」——写它自身的特征（山水的形态、古迹的年代感、街区的格局、博物馆的馆藏气质），点一句它在城里还是城郊；只用给定事实，不编造典故、年份、票价、开放时间。',
     '- reason（8~24 字）：一条**具体可执行**的游览建议——到什么时辰来、先看哪一块、避开什么；不要复述游玩时长。',
@@ -33,6 +58,7 @@ async function callBatch(list) {
     '- 同一批里各条的开头用词要有变化，不要套同一句式。',
     '- 参考类目写法：山水→写山势/水面/峡谷/森林的形态；古迹→写它留下的时间痕迹与格局；古镇街区→写巷道、桥、铺面的生活感；博物馆→写馆藏门类与看展方式；公园→写园中水面/林木/城墙的关系；夜景→写灯光与城市轮廓；亲子→写孩子能动手看什么。',
     '- 输出：JSON 数组，元素与输入顺序一致，字段 {"id":"…","intro":"…","reason":"…"}，不要输出其它文字。',
+    ...(ex.length ? ['', '写作范例（模仿其句式与信息密度，不要照抄内容）：', ...ex] : []),
     '', '景点：', lines].join('\n');
   const r = await fetch(AI_URL, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + process.env.DEEPSEEK_KEY },
     body: JSON.stringify({ model: AI_MODEL, temperature: 0.8, max_tokens: 2500, messages: [{ role: 'user', content: prompt }] }), signal: AbortSignal.timeout(120000) });
@@ -72,6 +98,7 @@ async function upgradeOne(s) {
     const todo = d.spots.filter(s => !s.copy_src && TEMPLATE.test(String(s.intro || ''))).slice(0, LIMIT);
     if (!todo.length) { console.log(cn + '：无需升级'); continue; }
     console.log(cn + '：待升级 ' + todo.length + ' 条');
+    buildExamples(FILE[cn]);
     let ok = 0;
     for (let i = 0; i < todo.length; i += BATCH) {
       const chunk = todo.slice(i, i + BATCH);
