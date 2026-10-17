@@ -167,7 +167,9 @@ function pickExact(cands, name, loose) {
       const t = norm(c.title);
       for (const v of vars) {
         const cat = String(c.cat || '');
-        if (t.includes(v) && PLACE_CATS.test(cat) && !NOT_PLACE.test(cat) && !NOT_PLACE.test(c.title)) return { c, how: 'contains+cat' };
+        if (!PLACE_CATS.test(cat) || NOT_PLACE.test(cat) || NOT_PLACE.test(c.title)) continue;
+        // 双向包含：候选包含我们（「…洋人街」），或我们包含候选（「大理古城洋人街」包含「洋人街」）
+        if (t.includes(v) || (v.includes(t) && t.length >= 2)) return { c, how: 'contains+cat' };
       }
     }
     // 第四档：官方改名的情况（「桠溪国际慢城」→「南京高淳国际慢城」、「溧水天生桥」→「天生桥景区」）。
