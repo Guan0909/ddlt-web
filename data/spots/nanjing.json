@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1529,7 +1529,7 @@
     },
     {
       "id": "ganyi",
-      "name": "甘熙故居·民俗博物馆",
+      "name": "甘熙宅第",
       "cat": "博物馆",
       "tags": [
         "九十九间半",
@@ -1544,10 +1544,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        118.783,
-        32.0258
+        118.781759,
+        32.025916
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B00190BGYQ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mochouhu",

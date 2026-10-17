@@ -1,8 +1,9 @@
 {
   "city": "香格里拉",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -791,6 +792,141 @@
       "poi_name": "雾浓顶观景台",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "feilaisi",
+      "name": "飞来寺",
+      "before": [
+        98.8825,
+        28.4772
+      ],
+      "provider": "amap",
+      "after": [
+        98.881797,
+        28.444183
+      ],
+      "drift_m": 3672,
+      "amap_poi_id": "B0377003PS",
+      "tier": "amap-exact",
+      "poi_name": "飞来寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "kawagarbo",
+      "name": "卡瓦格博峰",
+      "before": [
+        98.68,
+        28.4389
+      ],
+      "provider": "amap",
+      "after": [
+        98.622175,
+        28.511675
+      ],
+      "drift_m": 9871,
+      "amap_poi_id": "B0M2F48GVZ",
+      "tier": "amap-exact",
+      "poi_name": "卡瓦格博峰",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mingyong",
+      "name": "明永冰川",
+      "before": [
+        98.7856,
+        28.4597
+      ],
+      "provider": "amap",
+      "after": [
+        98.712539,
+        28.448683
+      ],
+      "drift_m": 7247,
+      "amap_poi_id": "B0HDXZ8WL5",
+      "tier": "amap-exact",
+      "poi_name": "明永冰川",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yubeng",
+      "name": "雨崩村",
+      "before": [
+        98.7833,
+        28.4167
+      ],
+      "provider": "amap",
+      "after": [
+        98.813596,
+        28.421435
+      ],
+      "drift_m": 3009,
+      "amap_poi_id": "B0HRDRYZX2",
+      "tier": "amap-contains+cat",
+      "poi_name": "雨崩村售票处(暂停营业)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yezhi",
+      "name": "叶枝土司衙署",
+      "before": [
+        99.0453,
+        27.5736
+      ],
+      "provider": "amap",
+      "after": [
+        99.047381,
+        27.699115
+      ],
+      "drift_m": 13958,
+      "amap_poi_id": "B03770LV87",
+      "tier": "amap-exact",
+      "poi_name": "叶枝土司衙署",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "damo-cave",
+      "name": "达摩祖师洞",
+      "before": [
+        99.4042,
+        27.5111
+      ],
+      "provider": "amap",
+      "after": [
+        99.495972,
+        27.604783
+      ],
+      "drift_m": 13797,
+      "amap_poi_id": "B0FFJKUZ70",
+      "tier": "amap-exact",
+      "poi_name": "达摩祖师洞",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "golden-monkey",
+      "name": "滇金丝猴国家公园",
+      "before": [
+        99.4523,
+        27.4786
+      ],
+      "provider": "amap",
+      "after": [
+        99.374825,
+        27.60854
+      ],
+      "drift_m": 16343,
+      "amap_poi_id": "B03770M2PF",
+      "tier": "amap-contains+cat",
+      "renamed_from": "滇金丝猴国家公园",
+      "renamed_to": "香格里拉滇金丝猴国家公园",
+      "poi_name": "香格里拉滇金丝猴国家公园",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -802,7 +938,7 @@
         27.829
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "gucheng-bar",
@@ -812,7 +948,7 @@
         27.824
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "jiantang-market",
@@ -822,7 +958,7 @@
         27.8306
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "qingzhensi",
@@ -832,7 +968,7 @@
         27.8278
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "abu-oldhouse",
@@ -842,7 +978,7 @@
         27.8263
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "nixi-pottery",
@@ -852,7 +988,7 @@
         27.78
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "nixi-chicken",
@@ -862,7 +998,7 @@
         27.78
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "balagezong",
@@ -872,7 +1008,7 @@
         28.1017
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "niru",
@@ -882,7 +1018,7 @@
         27.9667
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "jigongshi",
@@ -892,7 +1028,67 @@
         26.9639
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "lancang-meili-gorge",
+      "name": "澜沧江梅里大峡谷",
+      "before": [
+        98.95,
+        28.4
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "yubeng-shenpu",
+      "name": "雨崩神瀑",
+      "before": [
+        98.77,
+        28.4
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "cizhong",
+      "name": "茨中天主教堂",
+      "before": [
+        98.9558,
+        28.3167
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "tongle",
+      "name": "同乐傈僳族村寨",
+      "before": [
+        99.0833,
+        27.5833
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "shouguo",
+      "name": "寿国寺",
+      "before": [
+        99.1667,
+        27.55
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "xiaoweixi",
+      "name": "小维西教堂",
+      "before": [
+        99.2167,
+        27.4167
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "haba-village",
@@ -902,7 +1098,17 @@
         27.3333
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "baidi-village",
+      "name": "白地村",
+      "before": [
+        100.0465,
+        27.51
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": [

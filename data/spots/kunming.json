@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1415,7 +1415,7 @@
     },
     {
       "id": "luhan-gongguan",
-      "name": "卢汉公馆（云南起义纪念馆）",
+      "name": "云南起义纪念馆",
       "cat": "古迹",
       "tags": [
         "法式洋楼",
@@ -1430,10 +1430,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        102.708,
-        25.047
+        102.707044,
+        25.048673
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0367086LZ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "park1903",
@@ -1559,7 +1563,7 @@
     },
     {
       "id": "nieer-gu",
-      "name": "聂耳故居",
+      "name": "昆明聂耳故居",
       "cat": "古迹",
       "tags": [
         "音乐家",
@@ -1574,14 +1578,18 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        102.712,
-        25.0345
+        102.707791,
+        25.038594
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B03670W3YY",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "kunming-wenmiao",
-      "name": "昆明文庙",
+      "name": "文庙",
       "cat": "古迹",
       "tags": [
         "大成殿",
@@ -1596,10 +1604,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        102.714,
-        25.043
+        102.708804,
+        25.04296
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B03670XRYZ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "nieer-mu",

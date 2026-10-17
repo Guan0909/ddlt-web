@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -960,7 +960,7 @@
     },
     {
       "id": "guangming-teahouse",
-      "name": "光明港琼甜茶馆",
+      "name": "老光明岗琼甜茶馆",
       "cat": "美食",
       "tags": [
         "甜茶",
@@ -975,10 +975,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.1315,
-        29.6535
+        91.131487,
+        29.651847
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B028AA",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "xueyu-restaurant",
@@ -1136,7 +1140,7 @@
     },
     {
       "id": "cijuelin",
-      "name": "中国西藏文化旅游创意园",
+      "name": "中国西藏文化旅游创意园区",
       "cat": "街区",
       "tags": [
         "文创",
@@ -1151,10 +1155,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        91.125,
-        29.612
+        91.141571,
+        29.615196
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFG6Q4X3",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "tibet-opera-center",

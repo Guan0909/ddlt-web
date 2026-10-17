@@ -1,8 +1,9 @@
 {
   "city": "西双版纳",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -139,9 +140,1072 @@
       "poi_name": "磨憨口岸",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "gaozhuang",
+      "name": "告庄西双景",
+      "before": [
+        100.821392,
+        22.007019
+      ],
+      "provider": "amap",
+      "after": [
+        100.821392,
+        22.007019
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B02B30LWEF",
+      "tier": "amap-exact",
+      "poi_name": "告庄西双景",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "starlight-market",
+      "name": "星光夜市（告庄西双景）",
+      "before": [
+        100.8221,
+        22.0097
+      ],
+      "provider": "amap",
+      "after": [
+        100.824894,
+        22.004958
+      ],
+      "drift_m": 601,
+      "amap_poi_id": "B0L17C9I5R",
+      "tier": "amap-contains+cat",
+      "poi_name": "星光夜市篝火晚会",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manting-park",
+      "name": "曼听公园（曼听御花园）",
+      "before": [
+        100.8055,
+        21.9905
+      ],
+      "provider": "amap",
+      "after": [
+        100.805929,
+        21.995868
+      ],
+      "drift_m": 599,
+      "amap_poi_id": "BV11451231",
+      "tier": "amap-exact",
+      "poi_name": "曼听公园(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "xtbg",
+      "name": "中国科学院西双版纳热带植物园",
+      "before": [
+        101.273887,
+        21.917224
+      ],
+      "provider": "amap",
+      "after": [
+        101.273887,
+        21.917224
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B02B3006LK",
+      "tier": "amap-exact",
+      "poi_name": "中国科学院西双版纳热带植物园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "dai-park",
+      "name": "傣族园（西双版纳）",
+      "before": [
+        100.927,
+        21.855
+      ],
+      "provider": "amap",
+      "after": [
+        100.938295,
+        21.850192
+      ],
+      "drift_m": 1282,
+      "amap_poi_id": "B0KRXRGXPB",
+      "tier": "amap-exact",
+      "poi_name": "傣族园·秘境傣·携程旅拍写真馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "forest-park",
+      "name": "原始森林公园（西双版纳）",
+      "before": [
+        100.848,
+        21.936
+      ],
+      "provider": "amap",
+      "after": [
+        100.876596,
+        22.027277
+      ],
+      "drift_m": 10569,
+      "amap_poi_id": "B02B3001GV",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳原始森林公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "zongfosi",
+      "name": "总佛寺（西双版纳）",
+      "before": [
+        100.8062,
+        21.9886
+      ],
+      "provider": "amap",
+      "after": [
+        100.806173,
+        21.989015
+      ],
+      "drift_m": 46,
+      "amap_poi_id": "B02B3005IG",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳总佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "wangtianshu",
+      "name": "望天树景区（西双版纳）",
+      "before": [
+        101.65,
+        21.57
+      ],
+      "provider": "amap",
+      "after": [
+        101.577948,
+        21.623915
+      ],
+      "drift_m": 9562,
+      "amap_poi_id": "B02B300CS8",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳热带雨林国家公园望天树景区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "golden-pagoda",
+      "name": "大金塔（告庄西双景）",
+      "before": [
+        100.82,
+        22.0085
+      ],
+      "provider": "amap",
+      "after": [
+        100.819697,
+        22.005978
+      ],
+      "drift_m": 282,
+      "amap_poi_id": "B0FFIPTCRG",
+      "tier": "amap-suffix",
+      "poi_name": "大金塔夜市",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "six-country-water-market",
+      "name": "六国水上市场（告庄西双景）",
+      "before": [
+        100.8205,
+        22.0035
+      ],
+      "provider": "amap",
+      "after": [
+        100.821999,
+        22.004616
+      ],
+      "drift_m": 198,
+      "amap_poi_id": "B0I2LZY7VM",
+      "tier": "amap-contains+cat",
+      "poi_name": "湄公河六国水上市场内湖游船",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "riverside-night-market",
+      "name": "江边夜市（景洪）",
+      "before": [
+        100.812,
+        21.997
+      ],
+      "provider": "amap",
+      "after": [
+        100.808882,
+        22.004946
+      ],
+      "drift_m": 940,
+      "amap_poi_id": "B0KG7PY056",
+      "tier": "amap-exact",
+      "poi_name": "江边夜市",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manting-bonfire-show",
+      "name": "曼听公园篝火晚会（湄公河之夜）",
+      "before": [
+        100.8055,
+        21.9905
+      ],
+      "provider": "amap",
+      "after": [
+        100.807983,
+        21.993619
+      ],
+      "drift_m": 431,
+      "amap_poi_id": "B02B30MGNE",
+      "tier": "amap-substr4",
+      "poi_name": "澜沧江湄公河之夜歌舞篝火晚会",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "tropical-flower-garden",
+      "name": "热带花卉园（西双版纳）",
+      "before": [
+        100.7955,
+        21.9865
+      ],
+      "provider": "amap",
+      "after": [
+        100.786669,
+        22.010849
+      ],
+      "drift_m": 2856,
+      "amap_poi_id": "B02B3005F2",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳热带花卉园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "poshui-square",
+      "name": "泼水广场（景洪）",
+      "before": [
+        100.793,
+        21.9985
+      ],
+      "provider": "amap",
+      "after": [
+        100.806123,
+        22.001014
+      ],
+      "drift_m": 1382,
+      "amap_poi_id": "BV11451226",
+      "tier": "amap-exact",
+      "poi_name": "泼水广场(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manyuan-village",
+      "name": "曼远村（蘑菇屋）",
+      "before": [
+        100.961,
+        21.9144
+      ],
+      "provider": "amap",
+      "after": [
+        100.959831,
+        21.914715
+      ],
+      "drift_m": 126,
+      "amap_poi_id": "B0H6S5ZCEU",
+      "tier": "amap-exact",
+      "poi_name": "曼远村",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "nannuo-mountain",
+      "name": "南糯山（半坡老寨）",
+      "before": [
+        100.55,
+        21.96
+      ],
+      "provider": "amap",
+      "after": [
+        100.600144,
+        21.943302
+      ],
+      "drift_m": 5495,
+      "amap_poi_id": "B0MGCDE4WR",
+      "tier": "amap-exact",
+      "poi_name": "南糯山·云上半坡古树茶(半坡老寨12号茶农家)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mengjinglai",
+      "name": "勐景来（中缅第一寨）",
+      "before": [
+        100.083,
+        21.67
+      ],
+      "provider": "amap",
+      "after": [
+        100.085413,
+        21.698298
+      ],
+      "drift_m": 3156,
+      "amap_poi_id": "B02B300CN7",
+      "tier": "amap-contains+cat",
+      "poi_name": "中缅第一寨勐景来景区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "banna-museum",
+      "name": "西双版纳民族博物馆",
+      "before": [
+        100.79,
+        21.98
+      ],
+      "provider": "amap",
+      "after": [
+        100.816416,
+        21.964044
+      ],
+      "drift_m": 3251,
+      "amap_poi_id": "B02B30LUXA",
+      "tier": "amap-exact",
+      "poi_name": "西双版纳民族博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manjinglan-night-market",
+      "name": "曼景兰夜市（傣味）",
+      "before": [
+        100.803,
+        22.001
+      ],
+      "provider": "amap",
+      "after": [
+        100.803393,
+        22.00081
+      ],
+      "drift_m": 46,
+      "amap_poi_id": "B02B30042U",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳曼景兰大佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "lantsang-bridge",
+      "name": "澜沧江大桥（景洪）",
+      "before": [
+        100.81,
+        22
+      ],
+      "provider": "amap",
+      "after": [
+        100.8311,
+        21.990989
+      ],
+      "drift_m": 2395,
+      "amap_poi_id": "B0FFMAKNY2",
+      "tier": "amap-substr3",
+      "poi_name": "澜沧江风光",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "rainforest-valley",
+      "name": "雨林谷（西双版纳）",
+      "before": [
+        100.87,
+        22.12
+      ],
+      "provider": "amap",
+      "after": [
+        100.991383,
+        22.043995
+      ],
+      "drift_m": 15095,
+      "amap_poi_id": "B0LUL15G65",
+      "tier": "amap-suffix",
+      "poi_name": "雨林谷景区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manchunman-temple",
+      "name": "曼春满佛寺（傣族园）",
+      "before": [
+        100.928,
+        21.854
+      ],
+      "provider": "amap",
+      "after": [
+        100.942281,
+        21.848671
+      ],
+      "drift_m": 1589,
+      "amap_poi_id": "B0FFGRNZOT",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳傣族园-曼春满佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "daluo-port",
+      "name": "打洛口岸",
+      "before": [
+        100.07,
+        21.68
+      ],
+      "provider": "amap",
+      "after": [
+        100.033312,
+        21.679676
+      ],
+      "drift_m": 3791,
+      "amap_poi_id": "B02B300CLI",
+      "tier": "amap-exact",
+      "poi_name": "打洛口岸",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manfeilong-pagoda",
+      "name": "曼飞龙白塔（大勐龙）",
+      "before": [
+        100.61,
+        21.64
+      ],
+      "provider": "amap",
+      "after": [
+        100.686919,
+        21.597919
+      ],
+      "drift_m": 9226,
+      "amap_poi_id": "B02B30M1F1",
+      "tier": "amap-exact",
+      "poi_name": "曼飞龙白塔",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "lvshilin",
+      "name": "绿石林（勐仑）",
+      "before": [
+        101.3,
+        21.89
+      ],
+      "provider": "amap",
+      "after": [
+        101.404893,
+        21.849703
+      ],
+      "drift_m": 11715,
+      "amap_poi_id": "B02B300417",
+      "tier": "amap-suffix",
+      "poi_name": "绿石林森林公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "dai-park-water-square",
+      "name": "傣族园泼水广场",
+      "before": [
+        100.9285,
+        21.8535
+      ],
+      "provider": "amap",
+      "after": [
+        100.937332,
+        21.850001
+      ],
+      "drift_m": 991,
+      "amap_poi_id": "B0KUNCQ5OK",
+      "tier": "amap-llm-around",
+      "renamed_from": "傣族园泼水广场",
+      "renamed_to": "西双版纳傣族园-新泼水广场",
+      "poi_name": "西双版纳傣族园-新泼水广场",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "mekong-cruise",
+      "name": "澜沧江游船（景洪港）",
+      "before": [
+        100.815,
+        21.995
+      ],
+      "provider": "amap",
+      "after": [
+        100.790398,
+        22.030053
+      ],
+      "drift_m": 4650,
+      "amap_poi_id": "B0KGUZLPEA",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳澜沧江游船码头",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "forest-culture-museum",
+      "name": "热带雨林民族文化博物馆（版纳植物园）",
+      "before": [
+        101.274,
+        21.917
+      ],
+      "provider": "amap",
+      "after": [
+        101.257925,
+        21.923325
+      ],
+      "drift_m": 1801,
+      "amap_poi_id": "B0FFGO02GC",
+      "tier": "amap-exact",
+      "poi_name": "热带雨林民族文化博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "peacock-culture-square",
+      "name": "孔雀文化广场（告庄西双景）",
+      "before": [
+        100.82,
+        22.005
+      ],
+      "provider": "amap",
+      "after": [
+        100.809611,
+        21.961779
+      ],
+      "drift_m": 4924,
+      "amap_poi_id": "B0FFL02P1N",
+      "tier": "amap-substr4",
+      "poi_name": "孔雀文化园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "minzu-folk-park",
+      "name": "民族风情园（西双版纳）",
+      "before": [
+        100.7905,
+        21.9905
+      ],
+      "provider": "amap",
+      "after": [
+        100.790796,
+        21.994919
+      ],
+      "drift_m": 492,
+      "amap_poi_id": "B02B3005EE",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳州民族风情园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "dalan-plaza",
+      "name": "达兰商业广场（告庄西双景）",
+      "before": [
+        100.8195,
+        22.0045
+      ],
+      "provider": "amap",
+      "after": [
+        100.816755,
+        22.009985
+      ],
+      "drift_m": 672,
+      "amap_poi_id": "B0FFKDY479",
+      "tier": "amap-exact",
+      "poi_name": "达兰商业广场",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manzhang-village",
+      "name": "曼掌村（勐养）",
+      "before": [
+        100.88,
+        22.14
+      ],
+      "provider": "amap",
+      "after": [
+        100.844299,
+        22.11481
+      ],
+      "drift_m": 4623,
+      "amap_poi_id": "B0FFHI42OU",
+      "tier": "amap-exact",
+      "poi_name": "曼掌村",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "elephant-museum",
+      "name": "亚洲象博物馆（野象谷）",
+      "before": [
+        100.856,
+        22.169
+      ],
+      "provider": "amap",
+      "after": [
+        100.856386,
+        22.173725
+      ],
+      "drift_m": 527,
+      "amap_poi_id": "B0FFGA1GBE",
+      "tier": "amap-exact",
+      "poi_name": "亚洲象博物馆",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manduan-temple",
+      "name": "曼短佛寺",
+      "before": [
+        100.415,
+        21.97
+      ],
+      "provider": "amap",
+      "after": [
+        100.35584,
+        21.941077
+      ],
+      "drift_m": 6897,
+      "amap_poi_id": "B0LAYR07E7",
+      "tier": "amap-exact",
+      "poi_name": "曼短佛寺(西北门店)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "dushu-chenglin",
+      "name": "独树成林（打洛）",
+      "before": [
+        100.08,
+        21.665
+      ],
+      "provider": "amap",
+      "after": [
+        100.084708,
+        21.698183
+      ],
+      "drift_m": 3722,
+      "amap_poi_id": "B0FFKHMH7W",
+      "tier": "amap-exact",
+      "poi_name": "独树成林",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "before": [
+        101.58,
+        22.03
+      ],
+      "provider": "amap",
+      "after": [
+        101.462025,
+        21.982225
+      ],
+      "drift_m": 13272,
+      "amap_poi_id": "B0K2B99LZI",
+      "tier": "amap-exact",
+      "poi_name": "易武·兢和普洱茶",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "jinghong-old-street",
+      "name": "景洪老街（嘎兰中路）",
+      "before": [
+        100.795,
+        22
+      ],
+      "provider": "amap",
+      "after": [
+        100.800892,
+        22.031127
+      ],
+      "drift_m": 3514,
+      "amap_poi_id": "BZ7DMF005N",
+      "tier": "amap-exact",
+      "poi_name": "景洪(北)出口(G8512景打高速东南向)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "sunac-park",
+      "name": "西双版纳融创乐园（原万达主题乐园）",
+      "before": [
+        100.777,
+        21.971
+      ],
+      "provider": "amap",
+      "after": [
+        100.741154,
+        22.027827
+      ],
+      "drift_m": 7320,
+      "amap_poi_id": "B0FFGRMZJ0",
+      "tier": "amap-contains+cat",
+      "poi_name": "西双版纳融创乐园-蝴蝶王国",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "binjiang-park",
+      "name": "滨江公园（景洪）",
+      "before": [
+        100.818,
+        22.002
+      ],
+      "provider": "amap",
+      "after": [
+        100.804837,
+        22.008489
+      ],
+      "drift_m": 1537,
+      "amap_poi_id": "B0LRY6V3H0",
+      "tier": "amap-suffix",
+      "poi_name": "滨江夜市",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "nanyao-garden",
+      "name": "南药园（西双版纳）",
+      "before": [
+        100.788,
+        21.984
+      ],
+      "provider": "amap",
+      "after": [
+        100.789891,
+        22.001415
+      ],
+      "drift_m": 1946,
+      "amap_poi_id": "B02B30000F",
+      "tier": "amap-llm-around",
+      "renamed_from": "南药园（西双版纳）",
+      "renamed_to": "西双版纳南药园",
+      "poi_name": "西双版纳南药园",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "peacock-lake-park",
+      "name": "孔雀湖公园（景洪）",
+      "before": [
+        100.7935,
+        21.9975
+      ],
+      "provider": "amap",
+      "after": [
+        100.795662,
+        22.008451
+      ],
+      "drift_m": 1238,
+      "amap_poi_id": "BV10222752",
+      "tier": "amap-exact",
+      "poi_name": "孔雀湖(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manjinglan-temple",
+      "name": "曼景兰佛寺",
+      "before": [
+        100.8032,
+        22.0006
+      ],
+      "provider": "amap",
+      "after": [
+        100.80317,
+        22.000619
+      ],
+      "drift_m": 4,
+      "amap_poi_id": "BV11451228",
+      "tier": "amap-exact",
+      "poi_name": "曼景兰佛寺(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "rt-mart",
+      "name": "大润发（景洪泼水广场店）",
+      "before": [
+        100.794,
+        21.997
+      ],
+      "provider": "amap",
+      "after": [
+        100.805743,
+        22.004285
+      ],
+      "drift_m": 1457,
+      "amap_poi_id": "B02B30LZSN",
+      "tier": "amap-exact",
+      "poi_name": "大润发(西双版纳店)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "manhena-village",
+      "name": "曼贺纳自然村寨",
+      "before": [
+        100.782,
+        21.97
+      ],
+      "provider": "amap",
+      "after": [
+        100.824924,
+        21.972472
+      ],
+      "drift_m": 4435,
+      "amap_poi_id": "B0FFJ2ZH2Y",
+      "tier": "amap-exact",
+      "poi_name": "曼贺纳自然村寨",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "jiunmu-hot-spring",
+      "name": "玖沐温泉谷",
+      "before": [
+        100.779,
+        21.969
+      ],
+      "provider": "amap",
+      "after": [
+        100.755275,
+        22.020525
+      ],
+      "drift_m": 6230,
+      "amap_poi_id": "B0M6FHZ860",
+      "tier": "amap-exact",
+      "poi_name": "玖沐温泉谷",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mengle-rain-park",
+      "name": "勐泐雨林公园",
+      "before": [
+        100.7875,
+        21.98
+      ],
+      "provider": "amap",
+      "after": [
+        100.80619,
+        21.96933
+      ],
+      "drift_m": 2263,
+      "amap_poi_id": "BV11600264",
+      "tier": "amap-exact",
+      "poi_name": "勐泐雨林公园(公交站)",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "nabanhe-reserve",
+      "name": "纳板河（国家级自然保护区）",
+      "before": [
+        100.63,
+        22.17
+      ],
+      "provider": "amap",
+      "after": [
+        100.692457,
+        22.148169
+      ],
+      "drift_m": 6875,
+      "amap_poi_id": "B02B3008G9",
+      "tier": "amap-exact",
+      "poi_name": "纳板河",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "nanla-river-rafting",
+      "name": "南腊河（野趣漂流）",
+      "before": [
+        101.6,
+        21.52
+      ],
+      "provider": "amap",
+      "after": [
+        101.598653,
+        21.535117
+      ],
+      "drift_m": 1687,
+      "amap_poi_id": "B0FFF63TQZ",
+      "tier": "amap-contains+cat",
+      "poi_name": "南腊河野趣漂流度假区",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "menghai-tea-factory",
+      "name": "勐海茶厂（大益）",
+      "before": [
+        100.45,
+        21.957
+      ],
+      "provider": "amap",
+      "after": [
+        100.454298,
+        21.952495
+      ],
+      "drift_m": 669,
+      "amap_poi_id": "B02B30LVZW",
+      "tier": "amap-exact",
+      "poi_name": "勐海茶厂",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "liusha-river-park",
+      "name": "流沙河公园",
+      "before": [
+        100.788,
+        21.982
+      ],
+      "provider": "amap",
+      "after": [
+        100.775454,
+        21.990803
+      ],
+      "drift_m": 1622,
+      "amap_poi_id": "B02B30M7Y6",
+      "tier": "amap-exact",
+      "poi_name": "流沙河",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "mandou-temple",
+      "name": "曼斗佛寺（曼斗寨）",
+      "before": [
+        100.83,
+        22
+      ],
+      "provider": "amap",
+      "after": [
+        100.811472,
+        22.01278
+      ],
+      "drift_m": 2381,
+      "amap_poi_id": "B02B3000L0",
+      "tier": "amap-exact",
+      "poi_name": "曼斗佛寺",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "gunaka-culture-park",
+      "name": "古纳卡傣族文化园",
+      "before": [
+        100.781,
+        21.969
+      ],
+      "provider": "amap",
+      "after": [
+        100.824917,
+        21.972538
+      ],
+      "drift_m": 4546,
+      "amap_poi_id": "B0FFK6JTC1",
+      "tier": "amap-exact",
+      "poi_name": "古纳卡傣族文化园",
+      "name_adopted": false,
+      "coord_moved": true
     }
   ],
-  "skipped": [],
+  "skipped": [
+    {
+      "id": "dai-show",
+      "name": "傣秀剧场",
+      "before": [
+        100.777,
+        21.974
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "laobanzhang",
+      "name": "老班章村（布朗山）",
+      "before": [
+        100.133,
+        21.817
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "jinuo-museum",
+      "name": "中国基诺族博物馆",
+      "before": [
+        100.97,
+        22
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "mengyuan-xianjing",
+      "name": "勐远仙境",
+      "before": [
+        101.57,
+        21.63
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "cuipingfeng",
+      "name": "翠屏峰（勐仑）",
+      "before": [
+        101.28,
+        21.91
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "zhanglang-village",
+      "name": "章朗村（布朗山千年古寨）",
+      "before": [
+        100.25,
+        21.87
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "mandan-village",
+      "name": "曼旦村（勐腊）",
+      "before": [
+        101.6,
+        21.45
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    }
+  ],
   "errors": [
     {
       "id": "gaozhuang",

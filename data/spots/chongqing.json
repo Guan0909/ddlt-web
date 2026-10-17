@@ -23,12 +23,13 @@
     "backfilled_at": "2026-10-13",
     "photos_at": "2026-10-13",
     "rematch_at": "2026-10-13",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17",
+    "biz_at": "2026-10-17"
   },
   "spots": [
     {
       "id": "hongyadong",
-      "name": "洪崖洞",
+      "name": "洪崖洞民俗风貌区",
       "cat": "夜景",
       "tags": [
         "吊脚楼",
@@ -40,8 +41,8 @@
       "dur": 120,
       "intro": "11层吊脚楼依山而建，夜灯亮起如千与千寻。",
       "reason": "天黑亮灯后从千厮门大桥拍全景",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.579027,
@@ -53,7 +54,13 @@
       "photo": "http://store.is.autonavi.com/showpic/d69a8d621edd4c1fc967029ac5011785",
       "amap_poi_id": "B0FFG8V7SH",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；景区23点关灯",
+      "tel": "023-63039995;023-63039999",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jiefangbei",
@@ -68,20 +75,25 @@
       "dur": 60,
       "intro": "重庆人的精神地标，步行街与写字楼森林环绕。",
       "reason": "住在附近最方便，顺路打卡",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.57688,
-        29.556728
+        106.575329,
+        29.557253
       ],
       "coord_src": "amap",
       "tencent_poi_id": "8429672066111117789",
       "refreshed_at": "2026-10-16",
       "photo": "https://store.is.autonavi.com/showpic/5d03e16cfa4468f20000007127012341?type=pic",
-      "amap_poi_id": "B0FFGI0JVF",
+      "amap_poi_id": "B0FFG33I2E",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.9,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "bayi-food-street",
@@ -100,16 +112,22 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.577433,
-        29.5564
+        106.577495,
+        29.555901
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0KA5RCWGJ",
-      "refreshed_at": "2026-10-13"
+      "amap_poi_id": "B0LRAS0ILE",
+      "refreshed_at": "2026-10-13",
+      "open_text": [],
+      "rating": 3.3,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/555a27369c3179410ad3c00efde335fc",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "yangtze-cableway",
-      "name": "长江索道",
+      "name": "重庆长江索道北站",
       "cat": "街区",
       "tags": [
         "索道",
@@ -125,16 +143,22 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.582817,
-        29.558477
+        106.582889,
+        29.557845
       ],
       "coord_src": "amap",
       "tencent_poi_id": "15030047597194120308",
       "refreshed_at": "2026-10-16",
       "photo": "https://aos-comment.amap.com/comment/content_service__1771670730369_77486654_1771670766046_51406467.jpg",
-      "amap_poi_id": "BV09099085",
+      "amap_poi_id": "B0FFKC768W",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "夏季(3月1日-11月30日):08:00-22:00；冬季(12月1日-次年2月底):08:00-21:00；法定节假日:07:30-22:30, 2026年9月23日停运天",
+      "tel": "023-68816888",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "chaotianmen-raffles",
@@ -204,8 +228,8 @@
       "dur": 90,
       "intro": "连接上下半城的老石梯，改造后的市井风貌区。",
       "reason": "傍晚亮灯后的老梯坎最有味道",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.573042,
@@ -217,11 +241,17 @@
       "photo": "https://store.is.autonavi.com/showpic/429b434f68baaba575ad82e5fe2996df",
       "amap_poi_id": "B0G1XDI8P4",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-63256762",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "shancheng-trail",
-      "name": "山城步道",
+      "name": "山城步道·建兴坡大梯道",
       "cat": "街区",
       "tags": [
         "崖壁",
@@ -233,19 +263,25 @@
       "dur": 90,
       "intro": "沿崖壁而建的老步道，串起老巷与江景。",
       "reason": "清晨走第三步道，山城还没醒",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.566715,
-        29.550486
+        106.548454,
+        29.55134
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "10341791553713888546",
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0FFFE4P2C",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFFE4P2C/comment/content_media_external_images_media_1000007507_ss__1766305266288_86932864.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "liziba",
@@ -260,8 +296,8 @@
       "dur": 40,
       "intro": "2号线穿居民楼而过，8D重庆的名场面。",
       "reason": "拍完上楼坐一站，体验穿楼瞬间",
-      "open": null,
-      "closed_mon": null,
+      "open": "06:30-23:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.537916,
@@ -273,7 +309,13 @@
       "photo": "https://aos-comment.amap.com/BV10045690/comment/%5B2026-03-10-11-09-49%5D4BE93E46-C7D7-4464-886A-5FCF3FF7689_1773112191545_89620383.jpg",
       "amap_poi_id": "B0FFLH5QFT",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 06:30-23:00；具体营业状态以当天开放情况为准",
+      "tel": "15837910201",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "huguang-hall",
@@ -288,7 +330,7 @@
       "dur": 80,
       "intro": "明清移民会馆建筑群，黄墙灰瓦临江而立。",
       "reason": "闹市区里保存最好的清代会馆",
-      "open": "09:00-17:00",
+      "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -301,7 +343,13 @@
       "photo": "http://store.is.autonavi.com/showpic/b44117b134ac7b1d6dabee5d837c7642",
       "amap_poi_id": "B0017822LZ",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-18:00 最晚进入17:00",
+      "tel": "023-63930287",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "luohan-temple",
@@ -329,7 +377,13 @@
       "photo": "https://store.is.autonavi.com/showpic/738782e7bc8d1c9e0000003772096173?type=pic",
       "amap_poi_id": "B001702CBC",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "5月1日至10月7日 08:00-18:00开放 最晚售票17:20 最晚进入17:20；10月8日至4月30日 08:00-17:30开放 最晚售票16:50 最晚进入16:50；法定节假日 08:00-18:00开放 最晚售票17:20 最晚进入17:20关山门前20分钟开始请离,请您有序离寺,合理安排游览时间。具体营业状态以当天开放情况为准",
+      "tel": "023-63815114",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "tongyuanmen",
@@ -344,7 +398,7 @@
       "dur": 40,
       "intro": "重庆十七门中仅存的陆门，老城墙遗址公园。",
       "reason": "重庆老城唯一的陆路城门",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -357,7 +411,12 @@
       "photo": "https://aos-comment.amap.com/B00178763W/comment/9b00e28e4d3dba1335ae5eb648618126_2048_2048_80.jpg",
       "amap_poi_id": "B00178763W",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.4,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "baixiangju",
@@ -372,8 +431,8 @@
       "dur": 45,
       "intro": "24层无电梯老楼，三个高度连通三条街。",
       "reason": "长江索道从窗前掠过的魔幻楼",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.585193,
@@ -385,7 +444,13 @@
       "photo": "https://aos-comment.amap.com/B001797GGV/comment/20260316-460b9e4468dc5adfff09f33d-75iFACEUPoj5uqPFyK2Vkg.jpg",
       "amap_poi_id": "B001797GGV",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "18084020053;18223732214",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "daijiaxiang",
@@ -400,8 +465,8 @@
       "dur": 50,
       "intro": "洪崖洞旁的崖壁老巷步道，直面嘉陵江。",
       "reason": "看洪崖洞不用挤人的侧翼机位",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.576617,
@@ -413,7 +478,12 @@
       "photo": "https://store.is.autonavi.com/showpic/4bfa0803733133340000005046516728?type=pic",
       "amap_poi_id": "B0HBKZPN7C",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "crown-escalator",
@@ -429,7 +499,7 @@
       "intro": "亚洲第二长坡地扶梯，重庆人的日常通勤工具。",
       "reason": "两块钱体验山城的垂直交通",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.549245,
@@ -438,11 +508,18 @@
       "coord_src": "tencent",
       "tencent_poi_id": "17784190748217470193",
       "refreshed_at": "2026-10-11",
-      "photo": "https://aos-comment.amap.com/B0FFFP5D5R/comment/content_media_external_images_media_1000217117_ss__1767518655721_08533676.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFFP5D5R/comment/content_media_external_images_media_1000217117_ss__1767518655721_08533676.jpg",
+      "amap_poi_id": "B0FFFP5D5R",
+      "open_text": "1月至9月 周一至周日 08:00-20:00 最晚进入20:00 10-01至10-07 周一至周日 08:00-21:00 最晚进入21:00；10-08至12-31 周一至周日 08:00-20:00 最晚进入20:00",
+      "tel": "023-63834147;023-63856688",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "zhongshan-4th",
-      "name": "中山四路",
+      "name": "中山四路历史文化街区",
       "cat": "街区",
       "tags": [
         "民国",
@@ -453,20 +530,25 @@
       "dur": 60,
       "intro": "重庆最美街道，桂园与周公馆隐在黄葛树下。",
       "reason": "人少清净的民国风情散步线",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.547505,
-        29.563204
+        106.546783,
+        29.561194
       ],
       "coord_src": "amap",
       "tencent_poi_id": "17284759988724730050",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/6cf641482e38c69083c1dd5c9a20a3d6",
-      "amap_poi_id": "BZ9VNP00SP",
+      "amap_poi_id": "B0H3NH14G7",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "sanxia-museum",
@@ -494,7 +576,13 @@
       "photo": "http://store.is.autonavi.com/showpic/f0793548abccf60661920c5dc752e8b6",
       "amap_poi_id": "B001709RVF",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周二至周日 09:00-17:00 最晚进入16:30",
+      "tel": "023-63679067;023-63679066",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "peoples-hall",
@@ -513,14 +601,21 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.553361,
-        29.56111
+        106.553277,
+        29.561674
       ],
       "coord_src": "amap",
       "amap_poi_id": "B00170BPJJ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "1月至9月 周一至周日 08:00-18:00 最晚进入17:30 10-01至10-07 周一至周日 08:00-18:30 最晚进入18:00；10-08至12-31 周一至周日 08:00-18:00 最晚进入17:30",
+      "tel": "023-63861137",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/71effaff3c5057491d6b782555b9fa01",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "wfc-observatory",
@@ -536,19 +631,24 @@
       "intro": "339米高空的360度观景台，俯瞰两江四岸。",
       "reason": "日落前上去，一次收获昼夜两种重庆",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.577861,
-        29.559074
+        106.582153,
+        29.557267
       ],
       "coord_src": "amap",
       "tencent_poi_id": "6588290520040232294",
       "refreshed_at": "2026-10-16",
       "photo": "https://aos-comment.amap.com/B0FFIWQNP4/headerImg/fea6f02e9ad01f037beae94f125c0e05_2048_2048_80.jpg",
-      "amap_poi_id": "B0FFIWQNP4",
+      "amap_poi_id": "B0G0DCBEW5",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "9月至12月 周一至周日 09:30-22:30 最晚进入22:00；【520凌空云台】运营时间:每日14:00-22:00对外开放，21:30停止检票入园。 【VIP专区】运营时间:每日9:30-22:00对外开放，21:30停止检票入园。",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-art-museum",
@@ -576,7 +676,13 @@
       "photo": "https://aos-comment.amap.com/B0FFFYS1T2/comment/126c9de2-ded5-4949-bc67-fba658516e97.png",
       "amap_poi_id": "B0FFFYS1T2",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一 全天关闭；周二至周日 10:00-18:00 最晚进入17:30；法定节假日和特殊情况除外",
+      "tel": "023-63920512",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jiaochangkou",
@@ -591,8 +697,8 @@
       "dur": 80,
       "intro": "渝中最老的夜市片区，烧烤小面开到深夜。",
       "reason": "深夜食堂氛围最浓的渝中一角",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-24:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.577228,
@@ -604,11 +710,17 @@
       "photo": "https://aos-comment.amap.com/B0FFHIUR17/comment/e726669782da2ae02017667a2050297f_2048_2048_80.jpg",
       "amap_poi_id": "B0FFHIUR17",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-24:00",
+      "tel": "023-63802992",
+      "rating": 4.6,
+      "cost": 48,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "guanyinqiao",
-      "name": "观音桥步行街",
+      "name": "观音桥步行街中心广场",
       "cat": "商圈",
       "tags": [
         "商圈",
@@ -619,20 +731,25 @@
       "dur": 90,
       "intro": "江北第一商圈，本地年轻人浓度超过解放碑。",
       "reason": "看重庆本地人真实的逛街日常",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.532427,
-        29.574602
+        106.531915,
+        29.574384
       ],
       "coord_src": "amap",
       "tencent_poi_id": "18188491662876121101",
       "refreshed_at": "2026-10-16",
       "photo": "https://aos-comment.amap.com/comment/20260313-77cc6bff982958e62691decb-34rdAzkQZNH9AtYbKsf3AW.jpg",
-      "amap_poi_id": "B0M69CCYZZ",
+      "amap_poi_id": "B0L0DCOFUS",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "beicang",
@@ -647,20 +764,25 @@
       "dur": 60,
       "intro": "老纺织仓库改的文创园，独立书店与咖啡店。",
       "reason": "观音桥旁的安静文艺角落",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.538685,
-        29.578539
+        106.538232,
+        29.578697
       ],
       "coord_src": "amap",
       "tencent_poi_id": "5559894323426757632",
       "refreshed_at": "2026-10-16",
       "photo": "https://store.is.autonavi.com/showpic/6924aea09723bbf50000003298842142",
-      "amap_poi_id": "B0FFHSIGMG",
+      "amap_poi_id": "B0FFKC7157",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jiujie",
@@ -675,8 +797,8 @@
       "dur": 120,
       "intro": "重庆夜生活地标街区，酒吧大排档通宵营业。",
       "reason": "凌晨两点的重庆依然人声鼎沸",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.543085,
@@ -688,7 +810,12 @@
       "photo": "https://aos-comment.amap.com/B0I1TY4DXU/comment/content_media_external_images_media_1000097403_ss__1767523154933_71947713.jpg",
       "amap_poi_id": "B0I1TY4DXU",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.4,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-science-museum",
@@ -716,11 +843,17 @@
       "photo": "http://store.is.autonavi.com/showpic/928e8136f94a6b34dcc701aae28b958a",
       "amap_poi_id": "B00178TXGC",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周二至周日 09:30-17:00开放 最晚进入16:30；周一 全天不开放(法定节假日除外)；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:30-17:00开放 最晚进入16:30；具体开放时间以官方通知为准",
+      "tel": "023-61863050;023-61863051",
+      "rating": 4.9,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-grand-theatre",
-      "name": "重庆大剧院",
+      "name": "重庆大剧院广场",
       "cat": "演出",
       "tags": [
         "建筑",
@@ -731,20 +864,25 @@
       "dur": 120,
       "intro": "江北嘴的巨型帆船造型剧院，夜景灯光出彩。",
       "reason": "看场演出顺便拍大剧院夜景",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.581333,
-        29.569832
+        106.58236,
+        29.570132
       ],
       "coord_src": "amap",
       "tencent_poi_id": "6745060521296666657",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/3829197ae3742c20a6e4ecf006cd2c0b",
-      "amap_poi_id": "B0017876A0",
+      "amap_poi_id": "B0GRM50PWK",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.1,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jiangbeizui",
@@ -759,8 +897,8 @@
       "dur": 60,
       "intro": "嘉陵江边的江滩，正对着洪崖洞与千厮门。",
       "reason": "拍洪崖洞全景的最佳对岸机位",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.57564,
@@ -772,7 +910,12 @@
       "photo": "https://store.is.autonavi.com/showpic/5d94156849967f1f0000002479890853?type=pic",
       "amap_poi_id": "B0IU1S0WOT",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "hongensi",
@@ -787,8 +930,8 @@
       "dur": 80,
       "intro": "江北的城市森林公园，山顶鸿恩阁俯瞰全城。",
       "reason": "本地人看夜景的私藏制高点",
-      "open": null,
-      "closed_mon": null,
+      "open": "06:30-21:30",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.507674,
@@ -800,7 +943,13 @@
       "photo": "http://store.is.autonavi.com/showpic/1540454edbdb7c2ef00ac985a361cd5b",
       "amap_poi_id": "B001786RF6",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 06:30-21:30；具体营业状态以当天开放情况为准",
+      "tel": "023-67075683",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "nanshan-yikeshu",
@@ -815,8 +964,8 @@
       "dur": 80,
       "intro": "看渝中半岛夜景的老牌观景台，两江环抱。",
       "reason": "重庆夜景明信片的标准取景地",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-23:30",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.602505,
@@ -826,11 +975,18 @@
       "amap_poi_id": "B0FFGAMI8G",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-23:30",
+      "tel": "023-62467710",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFGAMI8G/comment/34B6CF01_E49C_4A7C_81AF_732571BBD83B_L0_001_1170_154_1766394585852_36077043.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "nanshan-botanical",
-      "name": "南山植物园",
+      "name": "南山植物园博物馆",
       "cat": "公园",
       "tags": [
         "樱花",
@@ -841,7 +997,7 @@
       "dur": 120,
       "intro": "南山上的老牌植物园，春天樱花大道出名。",
       "reason": "三四月樱花季山城人最挤",
-      "open": null,
+      "open": "09:00-18:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -854,7 +1010,12 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0FFFBXM85",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-18:30",
+      "rating": 3.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "nanshan-hotpot",
@@ -869,8 +1030,8 @@
       "dur": 120,
       "intro": "半山上的火锅聚集区，枇杷园一座山都是锅。",
       "reason": "边吃火锅边看山下万家灯火",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:30-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.589516,
@@ -882,11 +1043,16 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0FFH002GB",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:30-22:00",
+      "rating": 4.6,
+      "cost": 77,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "laojundong",
-      "name": "老君洞",
+      "name": "老君洞道观",
       "cat": "古迹",
       "tags": [
         "道观",
@@ -897,7 +1063,7 @@
       "dur": 90,
       "intro": "南山明代道观，玉皇楼俯瞰渝中半岛。",
       "reason": "比一棵树人少十倍的山城观景点",
-      "open": null,
+      "open": "07:30-17:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -907,7 +1073,14 @@
       "coord_src": "tencent",
       "photo": "http://store.is.autonavi.com/showpic/19632ee5a811c14891aa4b7a51c1657a",
       "tencent_poi_id": "8322721773661518574",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "amap_poi_id": "B00178VU7E",
+      "open_text": "周一至周日 07:30-17:30；17:00停止入园",
+      "tel": "023-62881055",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "huangjueya",
@@ -922,7 +1095,7 @@
       "dur": 90,
       "intro": "南山上的千年老街，三毛出生地，旧驿道起点。",
       "reason": "三毛故居旁喝一碗盖碗茶",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -935,7 +1108,13 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0FFKUS9BL",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-62912298",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "nanbin-road",
@@ -1006,8 +1185,8 @@
       "dur": 80,
       "intro": "开埠时期的老街区，青砖建筑贴着崖壁江岸。",
       "reason": "东水门大桥下的老重庆剪影",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.594746,
@@ -1019,7 +1198,13 @@
       "photo": "https://store.is.autonavi.com/showpic/9b0c06113f448dfe0000003171130248?type=pic",
       "amap_poi_id": "B0FFJ0756U",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-88918888",
+      "rating": 4.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "ciyun-temple",
@@ -1034,7 +1219,7 @@
       "dur": 60,
       "intro": "长江边的唐代古刹，僧尼同寺的千年道场。",
       "reason": "南滨路上的清净角落，人少",
-      "open": null,
+      "open": "07:30-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1047,7 +1232,13 @@
       "photo": "https://aos-comment.amap.com/B001703BAD/comment/content_media_external_file_1000040984_ss__1763534331208_52947087.jpg",
       "amap_poi_id": "B001703BAD",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 07:30-17:00",
+      "tel": "023-62871040;15802355856",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "ciqikou",
@@ -1062,7 +1253,7 @@
       "dur": 150,
       "intro": "嘉陵江边的千年水码头古镇，一江两溪三山四街。",
       "reason": "九点前到，才能看到真古镇",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1075,11 +1266,17 @@
       "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/0563885f-17e8-4b9a-b97f-ce1e60360f19.jpg",
       "amap_poi_id": "B00170IFE4",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-65322661",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq1949",
-      "name": "《重庆·1949》大剧院",
+      "name": "重庆1949大剧院",
       "cat": "演出",
       "tags": [
         "实景演出",
@@ -1094,12 +1291,15 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        106.447157,
-        29.58126
+        106.446764,
+        29.581272
       ],
-      "coord_src": "tencent",
+      "coord_src": "amap",
       "tencent_poi_id": "8198429546490465970",
-      "refreshed_at": "2026-10-11"
+      "refreshed_at": "2026-10-17",
+      "amap_poi_id": "B0HA1SE56R",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17"
     },
     {
       "id": "zhazidong",
@@ -1142,19 +1342,26 @@
       "dur": 180,
       "intro": "沙坪坝的城市绿肺，可缆车登顶俯瞰大学城。",
       "reason": "爬完山顺路去渣滓洞白公馆",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.434111,
-        29.575548
+        106.428283,
+        29.567829
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "11132043879934994592",
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0017080X2",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00 最晚进入18:00",
+      "tel": "023-65510647;023-65505778",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/10599f26e4ece4580d2daa2cac2533ab",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "luozhongli-museum",
@@ -1169,7 +1376,7 @@
       "dur": 90,
       "intro": "川美美术馆，彩色瓷砖外墙本身就是展品。",
       "reason": "大学城里最上镜的一栋建筑",
-      "open": null,
+      "open": "09:30-17:00",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -1181,7 +1388,13 @@
       "refreshed_at": "2026-10-16",
       "photo": "https://aos-comment.amap.com/B0FFLFPR5I/comment/content_media_external_images_media_173510_1657553131833_37561d78.jpg",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周二至周日09:30-17:00",
+      "tel": "023-65922052",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "graffiti-street",
@@ -1196,8 +1409,8 @@
       "dur": 60,
       "intro": "川美老校区外的涂鸦街，整排居民楼都是画。",
       "reason": "满街涂鸦随手拍都是大片",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.539867,
@@ -1208,7 +1421,12 @@
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/2c458cde37f1cc9b2d9158c8bba34c54",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jiaotong-teahouse",
@@ -1251,7 +1469,7 @@
       "dur": 180,
       "intro": "熊猫数量全国前列的老牌动物园，门票便宜。",
       "reason": "二十多块钱看十几只熊猫",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1264,7 +1482,12 @@
       "photo": "http://store.is.autonavi.com/showpic/09de14668d0efa3d8dd189ed267d87b7",
       "amap_poi_id": "B001701F98",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00 最晚进入16:30",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-industrial-museum",
@@ -1283,8 +1506,8 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        106.493056,
-        29.484313
+        106.49236,
+        29.470507
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "2881852933743785772",
@@ -1292,11 +1515,16 @@
       "photo": "https://aos-comment.amap.com/B0FFL8GJE2/comment/content_media_external_file_41409_ss__1761342828852_35531993.jpg",
       "amap_poi_id": "B0FFL8GJE2",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30；周一闭馆(法定节假日和特殊情况除外)",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-jianchuan",
-      "name": "重庆建川博物馆",
+      "name": "重庆建川博物馆聚落",
       "cat": "博物馆",
       "tags": [
         "抗战",
@@ -1320,7 +1548,13 @@
       "photo": "http://store.is.autonavi.com/showpic/c6e75d17cd0e00baa7ba3ca9b495694c",
       "amap_poi_id": "B0FFKZ20TL",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:30 最晚进入17:00",
+      "tel": "023-68960111;023-68960222",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "hongyan-museum",
@@ -1348,7 +1582,13 @@
       "photo": "http://store.is.autonavi.com/showpic/d1dfccfe9a813238529a3850d8ce66eb",
       "amap_poi_id": "B00170L7NV",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": [],
+      "tel": "023-63303457;023-65312300",
+      "rating": 5,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-happy-valley",
@@ -1376,7 +1616,13 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B0FFHN5PG7",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "10月8日-10月29日 10:00-22:00；10月30日-11月1日:10:00-23:00；11月2日-11月15日:10:00-22:00；夜场开放期间入园时间17:00；具体营业状态以当天开放情况为准",
+      "tel": "023-63111666",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "hanhai-oceanpark",
@@ -1403,7 +1649,13 @@
       "amap_poi_id": "B0FFGG76GA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "9:00-17:30,最晚入园时间为17:00",
+      "tel": "023-62333888",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "sunac-town",
@@ -1430,7 +1682,13 @@
       "amap_poi_id": "B0FFMBYLV2",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "每年5月6日至6月30日 周一至周五 10:30-18:00（17:00停止售票， 17:30停止入园） 周六至周日 10:30-20:00(19:00停止售票， 19:30停止入园) 6月25日 全天关闭",
+      "tel": "4008959888",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "yuanboyuan",
@@ -1445,7 +1703,7 @@
       "dur": 150,
       "intro": "园博会留下的超大园林公园，一天逛不完。",
       "reason": "北方园林和江南园林一次看齐",
-      "open": null,
+      "open": "09:00-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1458,7 +1716,13 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B00178UQEE",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00 最晚进入17:00",
+      "tel": "023-63086110",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "keyuan-4th",
@@ -1473,18 +1737,24 @@
       "dur": 90,
       "intro": "九龙坡的本地人夜宵街，烧烤烤鱼是主角。",
       "reason": "没有游客的本重庆夜味道",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.492149,
-        29.529821
+        106.492796,
+        29.530988
       ],
       "coord_src": "amap",
       "amap_poi_id": "B0JG9A6VRI",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-22:00",
+      "rating": 3.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/b028896162c4df2e0030db7d42e835aa",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cq-nature-museum",
@@ -1512,7 +1782,13 @@
       "photo": "http://store.is.autonavi.com/showpic/78d6c8810137ea47fb03b1db627ff0a8",
       "amap_poi_id": "B0FFFCIS0F",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "全年 周二–周日 09:00–17:00开放 最晚进入16:30；全年 周一 全天不开放；端午节,劳动节,清明节,国庆节 09:00–17:00开放 最晚进入16:30",
+      "tel": "023-60313777",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jinyun-mountain",
@@ -1527,20 +1803,26 @@
       "dur": 240,
       "intro": "嘉陵江畔的国家级自然保护区，九峰连绵。",
       "reason": "和重庆自然博物馆打包一日游",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        106.391602,
-        29.845108
+        106.384826,
+        29.832733
       ],
       "coord_src": "amap",
       "tencent_poi_id": "6482277630179834478",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/4f7001365578b1887b545f28a5510f66",
-      "amap_poi_id": "B00170IXLF",
+      "amap_poi_id": "B001786LCA",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-68224497",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "diaoyu-fortress",
@@ -1568,7 +1850,7 @@
     },
     {
       "id": "dazu-carvings",
-      "name": "大足石刻",
+      "name": "大足石刻博物馆",
       "cat": "古迹",
       "tags": [
         "世界遗产",
@@ -1592,11 +1874,17 @@
       "photo": "http://store.is.autonavi.com/showpic/e255d2bd73f1fc3fe51b21401e837a33",
       "amap_poi_id": "B0FFJZ00F6",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "全年 周一 全天不开放；全年 周二–周日 09:00–16:00开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入16:30",
+      "tel": "023-81098228",
+      "rating": 4.4,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "wulong-tiankeng",
-      "name": "武隆天生三桥",
+      "name": "重庆武隆天生三桥风景区",
       "cat": "山水",
       "tags": [
         "天坑",
@@ -1607,7 +1895,7 @@
       "dur": 420,
       "intro": "世界最大天生桥群，《满城尽带黄金甲》取景地。",
       "reason": "走到天坑底部才知什么叫壮观",
-      "open": null,
+      "open": "09:00-16:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1620,7 +1908,13 @@
       "refreshed_at": "2026-10-16",
       "amap_poi_id": "B00170I6E1",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-16:00",
+      "tel": "023-77794266;023-63818022",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "fairy-mountain",
@@ -1635,7 +1929,7 @@
       "dur": 360,
       "intro": "武隆的高山草原，夏天避暑冬天滑雪。",
       "reason": "和天生三桥打包的武隆两日游",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1648,7 +1942,13 @@
       "photo": "http://store.is.autonavi.com/showpic/5abba49ecbf3b406043812af606f8ef7",
       "amap_poi_id": "B001786W8A",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "023-77733866;023-87701901",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "jinfo-mountain",
@@ -1663,7 +1963,7 @@
       "dur": 360,
       "intro": "南川的世界自然遗产，桌山喀斯特地貌奇特。",
       "reason": "春天满山杜鹃，冬天南国雪原",
-      "open": null,
+      "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1675,11 +1975,16 @@
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/9aba76cae40c0153882048b827098e52",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周五 08:30-17:00 最晚进入15:30；周六至周日 08:00-17:30 最晚进入16:00",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "heishan-valley",
-      "name": "黑山谷",
+      "name": "黑山谷风景区",
       "cat": "山水",
       "tags": [
         "峡谷",
@@ -1690,7 +1995,7 @@
       "dur": 300,
       "intro": "万盛的原始峡谷，重庆夏天最火的避暑地之一。",
       "reason": "峡谷里比市区凉快十度",
-      "open": null,
+      "open": "08:30-16:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1701,13 +2006,19 @@
       "tencent_poi_id": "10185393357082219",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/dc63add1c7bcaecaf9c15aaec6a87f43",
-      "amap_poi_id": "B0FFG23BJV",
+      "amap_poi_id": "B001786WBL",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-16:00",
+      "tel": "023-48338893",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "simian-mountain",
-      "name": "四面山",
+      "name": "四面山景区",
       "cat": "山水",
       "tags": [
         "瀑布",
@@ -1722,16 +2033,22 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        106.390571,
-        28.619035
+        106.392153,
+        28.61635
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "4527779337796466509",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/4a363b43ef144cc6816ad52e86ac0c2e",
-      "amap_poi_id": "B00170IIIS",
+      "amap_poi_id": "B00170I91F",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；节假日营业时间以官方通知为准，1、景点开放时间:      景区24h内可以进入，但景点开放时间:08:00-18:00 2、游船运营时间:       大洪海船票:08:30-16:30       龙潭湖船票:08:30-17:00 3、观光车运营时间:08:30-17:30 4、会龙庄景区运营时间:       取票时间:09:00-16:30（淡季）       开关闭园:09:00-17:00（淡季） 5、珍珠湖旱滑运营时间:08:30-18:00 6、洪海长岩子乐园水上大冲关运营时间:09:00-17:00 7、洪海长岩子乐园小火车运营时间:09:00-17:00 8、卧龙湖快艇运营时间:09:00-17:00",
+      "tel": "023-47666888",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "gongtan-wujiang",
@@ -1773,7 +2090,7 @@
       "dur": 240,
       "intro": "江津的明清老街，吊脚楼保存完整游客少。",
       "reason": "几乎没有商业化的真古镇",
-      "open": null,
+      "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1785,7 +2102,13 @@
       "amap_poi_id": "B0FFF5OBFK",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-18:00；具体营业状态以当天开放情况为准",
+      "tel": "17708332001",
+      "rating": 4.5,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "longxing-old-town",
@@ -1800,12 +2123,12 @@
       "dur": 150,
       "intro": "渝北的六百年古镇，祠堂寺庙保留原貌。",
       "reason": "离主城最近的原生态古镇",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        106.792763,
-        29.694919
+        106.793456,
+        29.700725
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "2848996728842835343",
@@ -1813,7 +2136,13 @@
       "photo": "http://store.is.autonavi.com/showpic/72f906e3762a66f39ea917273f9db542",
       "amap_poi_id": "B001792ZS3",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "tel": "023-67345121",
+      "rating": 4.5,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "tongjing-hotspring",
@@ -1841,7 +2170,13 @@
       "photo": "http://store.is.autonavi.com/showpic/de3f7781d42d112dba70abefa5183be7",
       "amap_poi_id": "B0FFG6YC6P",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "1月至3月,10月至12月 周一至周日 09:00-23:30 最晚进入23:30；4月至9月 周一至周日 08:30-23:00 最晚进入23:00",
+      "tel": "023-67288333;023-67288666",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "fengdu-ghost-city",
@@ -1856,12 +2191,12 @@
       "dur": 210,
       "intro": "以鬼文化闻名的千年名山，奈何桥阎王殿俱全。",
       "reason": "中国唯一的鬼城主题乐园式古迹",
-      "open": null,
+      "open": "07:40-17:20",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        107.723167,
-        29.882862
+        107.722209,
+        29.887322
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "16702721570165119607",
@@ -1869,7 +2204,13 @@
       "photo": "http://store.is.autonavi.com/showpic/e55bde3ddb8ab1c016b7d2598ce151ea",
       "amap_poi_id": "B0017072XK",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 07:40-17:20 最晚进入17:00",
+      "tel": "023-70613323",
+      "rating": 4.5,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "baiheliang",
@@ -1897,7 +2238,13 @@
       "photo": "http://store.is.autonavi.com/showpic/392a6edf813b870c8d92f1577d9efc12",
       "amap_poi_id": "B001786LW8",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一 全天关闭；周二至周日 09:00-17:00",
+      "tel": "023-72121211;023-85688882",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     }
   ]
 }

@@ -1,8 +1,9 @@
 {
   "city": "西安",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1409,6 +1410,48 @@
       "renamed_from": "小南门早市夜市",
       "renamed_to": "小南门夜市",
       "poi_name": "小南门夜市",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "before": [
+        108.962048,
+        34.216544
+      ],
+      "provider": "amap",
+      "after": [
+        108.962048,
+        34.216544
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B0G0XR1FPH",
+      "tier": "amap-llm-around",
+      "renamed_from": "曲江大悦城",
+      "renamed_to": "西安大悦城",
+      "poi_name": "西安大悦城",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "xiying-film",
+      "name": "西影电影圈子",
+      "before": [
+        108.973478,
+        34.223043
+      ],
+      "provider": "amap",
+      "after": [
+        108.971759,
+        34.221602
+      ],
+      "drift_m": 225,
+      "amap_poi_id": "B0FFK31WE1",
+      "tier": "amap-llm-around",
+      "renamed_from": "西影电影圈子",
+      "renamed_to": "西影电影园区",
+      "poi_name": "西影电影园区",
       "name_adopted": true,
       "coord_moved": true
     }

@@ -1,8 +1,9 @@
 {
   "city": "扬州",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1148,69 +1149,28 @@
       "poi_name": "纵棹园",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "puyuan",
+      "name": "朴园",
+      "before": [
+        119.318,
+        32.288
+      ],
+      "provider": "amap",
+      "after": [
+        119.31832,
+        32.291326
+      ],
+      "drift_m": 371,
+      "amap_poi_id": "B02020JF1V",
+      "tier": "amap-llm-around",
+      "poi_name": "朴园",
+      "name_adopted": false,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "chunjiang-nightshow",
-      "name": "春江花月夜·瘦西湖夜游",
-      "before": [
-        119.409,
-        32.413
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "gonghechun",
-      "name": "共和春茶社",
-      "before": [
-        119.4238,
-        32.393
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "wu-daotai",
-      "name": "吴道台宅第",
-      "before": [
-        119.4266,
-        32.3912
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "tianning-temple",
-      "name": "天宁寺·佛教文化博物馆",
-      "before": [
-        119.4181,
-        32.4113
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "wanfu-bridge-night",
-      "name": "万福大桥夜景",
-      "before": [
-        119.493,
-        32.44
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "wantou-town",
-      "name": "湾头古镇",
-      "before": [
-        119.477,
-        32.421
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "puyuan",
       "name": "朴园",
@@ -1222,6 +1182,66 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "chunjiang-nightshow",
+      "name": "春江花月夜·瘦西湖夜游",
+      "before": [
+        119.409,
+        32.413
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "gonghechun",
+      "name": "共和春茶社",
+      "before": [
+        119.4238,
+        32.393
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "wu-daotai",
+      "name": "吴道台宅第",
+      "before": [
+        119.4266,
+        32.3912
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "tianning-temple",
+      "name": "天宁寺·佛教文化博物馆",
+      "before": [
+        119.4181,
+        32.4113
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "wanfu-bridge-night",
+      "name": "万福大桥夜景",
+      "before": [
+        119.493,
+        32.44
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "wantou-town",
+      "name": "湾头古镇",
+      "before": [
+        119.477,
+        32.421
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
       "id": "tianle-lake",
       "name": "天乐湖温泉度假区",
       "before": [
@@ -1229,7 +1249,7 @@
         32.335
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": []

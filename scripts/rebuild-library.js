@@ -122,27 +122,61 @@ function plan(city) {
   const poolPath = path.join(ROOT, 'data', 'spots', file + '.rebuild-pool.json');
   const pool = fs.existsSync(poolPath) ? JSON.parse(fs.readFileSync(poolPath, 'utf8')).pool : [];
   const byName = new Map(pool.map(p => [norm(p.name), p]));
+  // 核心类：古迹/博物馆/山水/古镇/夜景/演出/亲子 → 只剔「确实低分」的；受限类目按 quota 保留高分者
+  const CORE = new Set(['古迹', '博物馆', '山水', '古镇', '夜景', '演出', '亲子']);
+  const QUOTA = { 街区: 8, 美食: 4, 公园: 5, 商圈: 2 };
   const keep = [], drop = [], manual = [], heatChanges = [];
+  const limited = {};   // cat → 候选（受限类目排序用）
   for (const s of spots) {
-    const hit = byName.get(norm(s.name)) || pool.find(p => norm(p.name).includes(norm(s.name)) || norm(s.name).includes(norm(p.name)));
+    // 池子匹配：先精确，再「互相包含」里取评分最高者（避免被同名的子设施/低分项拖走）
+    const loose = pool.filter(p => norm(p.name).includes(norm(s.name)) || norm(s.name).includes(norm(p.name)))
+      .sort((a, b) => (b.rating == null ? -1 : b.rating) - (a.rating == null ? -1 : a.rating));
+    const hit = byName.get(norm(s.name)) || loose[0];
     const sc = score(hit && hit.rating, hit && hit.level, false);
-    const h = heatOf(sc);
     const rec = { id: s.id, name: s.name, cat: s.cat, heat: s.heat, rating: hit ? hit.rating : null, level: hit ? hit.level : null, score: sc };
-    if (sc === null) { manual.push({ ...rec, why: '无评分/无等级，待人工' }); continue; }
-    if (h !== s.heat) heatChanges.push({ id: s.id, name: s.name, from: s.heat, to: h });
-    const t = Object.entries(TARGET).find(([, v]) => v.cats.includes(s.cat));
-    const capped = t && t[1].max <= 2 && sc < 0.75;   // 受限类目（商圈/美食）且分数不高 → 剔除
-    if (sc < 0.55 || capped) drop.push({ ...rec, why: sc < 0.55 ? '综合分 < 0.55' : '受限类目且分数 < 0.75' });
-    else keep.push(rec);
+    const h = heatOf(sc);
+    if (h !== null && h !== s.heat) heatChanges.push({ id: s.id, name: s.name, from: s.heat, to: h });
+    rec.heatNew = h;
+    if (CORE.has(s.cat)) {
+      // 核心类：无评分 → 待人工；评分 < 3.8 → 剔除；其余保留
+      // 评分可疑时先确认池匹配是否精确（天安门广场被「…-旗杆」这类低分项带偏过）
+      const nn = norm(s.name), hn = hit ? norm(hit.name) : '';
+      const precise = !!hit && (hn === nn || hn.startsWith(nn) || nn.startsWith(hn));
+      if (rec.rating == null) manual.push({ ...rec, why: '核心类但拿不到评分，待人工' });
+      else if (rec.rating < 3.8 && precise) drop.push({ ...rec, why: '核心类但评分 ' + rec.rating + ' < 3.8' });
+      else if (rec.rating < 3.8) manual.push({ ...rec, why: '评分可疑（池匹配不精确：' + (hit ? hit.name : '-') + '），待人工' });
+      else keep.push(rec);
+    } else {
+      (limited[s.cat] = limited[s.cat] || []).push(rec);
+    }
+  }
+  // 受限类目：按评分（缺失排后）排序，保留 quota 内的高分者
+  for (const [cat, list] of Object.entries(limited)) {
+    list.sort((a, b) => (b.rating == null ? -1 : b.rating) - (a.rating == null ? -1 : a.rating));
+    const quota = QUOTA[cat] == null ? 5 : QUOTA[cat];
+    list.forEach((rec, i) => {
+      if (i < quota) keep.push(rec);
+      else drop.push({ ...rec, why: '类目配额（' + cat + ' ≤' + quota + '）且评分靠后' });
+    });
   }
   const inLib = new Set(spots.map(s => norm(s.name)));
-  const add = pool.filter(p => score(p.rating, p.level, false) !== null && score(p.rating, p.level, false) >= 0.7 && !inLib.has(norm(p.name)))
+  const add = pool.filter(p => score(p.rating, p.level, false) !== null && score(p.rating, p.level, false) >= 0.6
+      && (p.rating == null || p.rating >= 4.3) && !inLib.has(norm(p.name)))
+    .sort((a, b) => score(b.rating, b.level, false) - score(a.rating, a.level, false))
     .map(p => ({ name: p.name, coord: p.coord, type: p.type, rating: p.rating, level: p.level, score: score(p.rating, p.level, false), heat: heatOf(score(p.rating, p.level, false)) }))
     .slice(0, 30);
+  // 改名可能造成重名（两个点被对齐到同一官方 POI）：单独报出来
+  const seenName = new Map(), duplicates = [];
+  for (const s of spots) {
+    const k = norm(s.name);
+    if (seenName.has(k)) duplicates.push({ name: s.name, ids: [seenName.get(k), s.id] });
+    else seenName.set(k, s.id);
+  }
   const comp = composition(spots);
-  const report = { city, date: new Date().toISOString().slice(0, 10), compositionBefore: comp, keep, drop, manual, add, heatChanges };
+  const report = { city, date: new Date().toISOString().slice(0, 10), compositionBefore: comp, keep, drop, manual, add, heatChanges, duplicates };
   const out = path.join(ROOT, 'data', 'spots', file + '.rebuild-report.json');
   fs.writeFileSync(out, JSON.stringify(report, null, 2) + '\n');
+  if (duplicates.length) console.log('  ⚠ 重名 ' + duplicates.length + ' 组：' + duplicates.map(x => x.name).join('、'));
   console.log(city + '：保留 ' + keep.length + ' / 剔除 ' + drop.length + ' / 待人工 ' + manual.length + ' / 建议新增 ' + add.length + ' / heat 变动 ' + heatChanges.length);
   console.log('  报告：' + path.relative(ROOT, out));
 }
@@ -150,7 +184,8 @@ function plan(city) {
 (async () => {
   const args = process.argv.slice(2);
   if (args.includes('--audit') || !args.length) return audit();
-  const city = args[args.indexOf('--collect') + 1] || args[args.indexOf('--plan') + 1];
+  const iC = args.indexOf('--collect'), iP = args.indexOf('--plan');
+  const city = iC >= 0 ? args[iC + 1] : (iP >= 0 ? args[iP + 1] : undefined);
   if (args.includes('--collect')) return collect(city);
   if (args.includes('--plan')) return plan(city);
   console.log('用法：--audit | --collect <城市> | --plan <城市>');

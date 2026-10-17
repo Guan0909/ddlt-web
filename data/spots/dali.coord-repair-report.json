@@ -1,8 +1,9 @@
 {
   "city": "大理",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1148,6 +1149,69 @@
       "poi_name": "云南驿",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "fotu-tower",
+      "name": "佛图塔",
+      "before": [
+        100.2196,
+        25.6076
+      ],
+      "provider": "amap",
+      "after": [
+        100.204439,
+        25.613517
+      ],
+      "drift_m": 1656,
+      "amap_poi_id": "B0FFJYLA6X",
+      "tier": "amap-llm-around",
+      "renamed_from": "佛图塔",
+      "renamed_to": "佛图寺",
+      "poi_name": "佛图寺",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "dianying-museum",
+      "name": "大理农村电影历史博物馆",
+      "before": [
+        100.1645,
+        25.6918
+      ],
+      "provider": "amap",
+      "after": [
+        100.159365,
+        25.69597
+      ],
+      "drift_m": 693,
+      "amap_poi_id": "B036815O1H",
+      "tier": "amap-llm-around",
+      "renamed_from": "大理农村电影历史博物馆",
+      "renamed_to": "中国大理农村电影历史博物馆",
+      "poi_name": "中国大理农村电影历史博物馆",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "chuangdanchang",
+      "name": "床单厂艺术区",
+      "before": [
+        100.1613,
+        25.6867
+      ],
+      "provider": "amap",
+      "after": [
+        100.165624,
+        25.689852
+      ],
+      "drift_m": 557,
+      "amap_poi_id": "B0FFFYRQG6",
+      "tier": "amap-llm-around",
+      "renamed_from": "床单厂艺术区",
+      "renamed_to": "大理床单厂艺术区",
+      "poi_name": "大理床单厂艺术区",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1157,46 +1221,6 @@
       "before": [
         100.2196,
         25.6076
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "taiye-plaza",
-      "name": "泰业城市广场",
-      "before": [
-        100.2346,
-        25.6052
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "aiqinhai-mall",
-      "name": "大理爱琴海购物公园",
-      "before": [
-        100.2565,
-        25.621
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "yangren-street",
-      "name": "大理古城洋人街",
-      "before": [
-        100.1609,
-        25.6953
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "feiyi-museum",
-      "name": "大理非物质文化遗产博物馆",
-      "before": [
-        100.1651,
-        25.6902
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
@@ -1212,16 +1236,6 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
-      "id": "photo-museum",
-      "name": "大理摄影博物馆",
-      "before": [
-        100.1614,
-        25.6865
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
       "id": "chuangdanchang",
       "name": "床单厂艺术区",
       "before": [
@@ -1232,6 +1246,56 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "taiye-plaza",
+      "name": "泰业城市广场",
+      "before": [
+        100.2346,
+        25.6052
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "aiqinhai-mall",
+      "name": "大理爱琴海购物公园",
+      "before": [
+        100.2565,
+        25.621
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "yangren-street",
+      "name": "大理古城洋人街",
+      "before": [
+        100.1609,
+        25.6953
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "feiyi-museum",
+      "name": "大理非物质文化遗产博物馆",
+      "before": [
+        100.1651,
+        25.6902
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "photo-museum",
+      "name": "大理摄影博物馆",
+      "before": [
+        100.1614,
+        25.6865
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
       "id": "fengyangyi",
       "name": "凤阳邑村",
       "before": [
@@ -1239,7 +1303,7 @@
         25.638
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "eryuan-xihu",
@@ -1249,7 +1313,7 @@
         26.0628
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": []

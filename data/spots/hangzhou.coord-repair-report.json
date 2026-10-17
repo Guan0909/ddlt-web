@@ -1,8 +1,9 @@
 {
   "city": "杭州",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1411,28 +1412,6 @@
       "poi_name": "湖滨步行街",
       "name_adopted": false,
       "coord_moved": true
-    }
-  ],
-  "skipped": [
-    {
-      "id": "xilingyinshe",
-      "name": "孤山·西泠印社",
-      "before": [
-        120.142587,
-        30.251685
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "music-fountain",
-      "name": "西湖音乐喷泉",
-      "before": [
-        120.161892,
-        30.249439
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "gongmei-museum",
@@ -1442,14 +1421,48 @@
         30.315645
       ],
       "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+      "after": [
+        120.13693,
+        30.315645
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B023B0I02U",
+      "tier": "amap-llm-around",
+      "renamed_from": "杭州工艺美术博物馆群",
+      "renamed_to": "杭州工艺美术博物馆",
+      "poi_name": "杭州工艺美术博物馆",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
-      "id": "canal-night-cruise",
-      "name": "运河夜游（武林门码头）",
+      "id": "laxi-street",
+      "name": "啦喜街（垃圾街）",
       "before": [
-        120.164539,
-        30.274517
+        120.155146,
+        30.170499
+      ],
+      "provider": "amap",
+      "after": [
+        120.155146,
+        30.170499
+      ],
+      "drift_m": 0,
+      "amap_poi_id": "B023B1722J",
+      "tier": "amap-llm-around",
+      "renamed_from": "啦喜街（垃圾街）",
+      "renamed_to": "滨江啦喜街(杨家墩综合大楼店)",
+      "poi_name": "滨江啦喜街(杨家墩综合大楼店)",
+      "name_adopted": true,
+      "coord_moved": true
+    }
+  ],
+  "skipped": [
+    {
+      "id": "gongmei-museum",
+      "name": "杭州工艺美术博物馆群",
+      "before": [
+        120.13693,
+        30.315645
       ],
       "provider": "amap",
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
@@ -1465,6 +1478,36 @@
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
+      "id": "xilingyinshe",
+      "name": "孤山·西泠印社",
+      "before": [
+        120.142587,
+        30.251685
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "music-fountain",
+      "name": "西湖音乐喷泉",
+      "before": [
+        120.161892,
+        30.249439
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "canal-night-cruise",
+      "name": "运河夜游（武林门码头）",
+      "before": [
+        120.164539,
+        30.274517
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "cirque-du-soleil",
       "name": "太阳马戏 X 绮幻之境",
       "before": [
@@ -1472,7 +1515,7 @@
         30.325018
       ],
       "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

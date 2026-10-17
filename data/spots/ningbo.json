@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -749,7 +749,7 @@
     },
     {
       "id": "baisha-seafood",
-      "name": "白沙海鲜排档",
+      "name": "白沙码头海鲜大排档",
       "cat": "美食",
       "tags": [
         "海鲜",
@@ -764,10 +764,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        121.558,
-        29.888
+        121.569305,
+        29.889447
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B023E0Y4T7",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "zhousu-yuejiang",

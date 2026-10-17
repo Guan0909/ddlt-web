@@ -1,0 +1,1310 @@
+{
+  "city": "重庆",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 68,
+    "poiFixed": 11,
+    "renamed": 13,
+    "coordFixed": 17,
+    "openFilled": 42,
+    "closedMon": 1,
+    "tel": 40,
+    "rating": 59,
+    "photo": 6,
+    "noCand": 9,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "hongyadong",
+      "name": "洪崖洞",
+      "pick": "洪崖洞民俗风貌区",
+      "pickId": "B0FFG8V7SH",
+      "score": 128,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "023-63039995;023-63039999",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；景区23点关灯",
+      "oldId": "B0FFG8V7SH",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "洪崖洞",
+          "to": "洪崖洞民俗风貌区"
+        }
+      }
+    },
+    {
+      "id": "jiefangbei",
+      "name": "解放碑",
+      "pick": "解放碑步行街",
+      "pickId": "B0FFG33I2E",
+      "score": 101,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.9,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGI0JVF",
+      "drift_m": 161,
+      "changes": {
+        "poi": {
+          "from": "B0FFGI0JVF",
+          "to": "B0FFG33I2E"
+        },
+        "coord": {
+          "from": [
+            106.57688,
+            29.556728
+          ],
+          "to": [
+            106.575329,
+            29.557253
+          ],
+          "drift_m": 161
+        }
+      }
+    },
+    {
+      "id": "bayi-food-street",
+      "name": "八一路好吃街",
+      "pick": "好吃街超市",
+      "pickId": "B0LRAS0ILE",
+      "score": 67,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 3.3,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0KA5RCWGJ",
+      "drift_m": 56,
+      "changes": {
+        "poi": {
+          "from": "B0KA5RCWGJ",
+          "to": "B0LRAS0ILE"
+        },
+        "coord": {
+          "from": [
+            106.577433,
+            29.5564
+          ],
+          "to": [
+            106.577495,
+            29.555901
+          ],
+          "drift_m": 56
+        }
+      }
+    },
+    {
+      "id": "yangtze-cableway",
+      "name": "长江索道",
+      "pick": "重庆长江索道北站",
+      "pickId": "B0FFKC768W",
+      "score": 133,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "023-68816888",
+      "openTime": [],
+      "openText": "夏季(3月1日-11月30日):08:00-22:00；冬季(12月1日-次年2月底):08:00-21:00；法定节假日:07:30-22:30, 2026年9月23日停运天",
+      "oldId": "BV09099085",
+      "drift_m": 71,
+      "changes": {
+        "poi": {
+          "from": "BV09099085",
+          "to": "B0FFKC768W"
+        },
+        "coord": {
+          "from": [
+            106.582817,
+            29.558477
+          ],
+          "to": [
+            106.582889,
+            29.557845
+          ],
+          "drift_m": 71
+        },
+        "rename": {
+          "from": "长江索道",
+          "to": "重庆长江索道北站"
+        }
+      }
+    },
+    {
+      "id": "chaotianmen-raffles",
+      "name": "朝天门广场·来福士",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆朝天门广场(124)",
+        "重庆来福士(74)",
+        "FUGGLER来福士萌牙怪兽(74)"
+      ]
+    },
+    {
+      "id": "liangjiang-cruise",
+      "name": "两江夜游",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆两江夜游-朝天系列(128)",
+        "朝天门九号码头重庆两江夜游-金碧系列(122)",
+        "湖广会馆(88)"
+      ]
+    },
+    {
+      "id": "shibati",
+      "name": "重庆十八梯传统风貌区",
+      "pick": "重庆十八梯传统风貌区",
+      "pickId": "B0G1XDI8P4",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "023-63256762",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G1XDI8P4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shancheng-trail",
+      "name": "山城步道",
+      "pick": "山城步道·建兴坡大梯道",
+      "pickId": "B0FFFE4P2C",
+      "score": 104,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFE4P2C",
+      "drift_m": 1769,
+      "changes": {
+        "coord": {
+          "from": [
+            106.566715,
+            29.550486
+          ],
+          "to": [
+            106.548454,
+            29.55134
+          ],
+          "drift_m": 1769
+        },
+        "rename": {
+          "from": "山城步道",
+          "to": "山城步道·建兴坡大梯道"
+        }
+      }
+    },
+    {
+      "id": "liziba",
+      "name": "李子坝轻轨穿楼",
+      "pick": "李子坝单轨穿楼观景平台",
+      "pickId": "B0FFLH5QFT",
+      "score": 130,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.8,
+      "tel": "15837910201",
+      "openTime": "06:30-23:00",
+      "openText": "周一至周日 06:30-23:00；具体营业状态以当天开放情况为准",
+      "oldId": "B0FFLH5QFT",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huguang-hall",
+      "name": "湖广会馆",
+      "pick": "湖广会馆",
+      "pickId": "B0017822LZ",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-63930287",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周日 09:00-18:00 最晚进入17:00",
+      "oldId": "B0017822LZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "luohan-temple",
+      "name": "罗汉寺",
+      "pick": "罗汉寺",
+      "pickId": "B001702CBC",
+      "score": 145,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "023-63815114",
+      "openTime": [],
+      "openText": "5月1日至10月7日 08:00-18:00开放 最晚售票17:20 最晚进入17:20；10月8日至4月30日 08:00-17:30开放 最晚售票16:50 最晚进入16:50；法定节假日 08:00-18:00开放 最晚售票17:20 最晚进入17:20关山门前20分钟开始请离,请您有序离寺,合理安排游览时间。具体营业状态以当天开放情况为准",
+      "oldId": "B001702CBC",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tongyuanmen",
+      "name": "通远门城墙遗址公园",
+      "pick": "通远门城墙遗址公园",
+      "pickId": "B00178763W",
+      "score": 140,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B00178763W",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baixiangju",
+      "name": "白象居",
+      "pick": "白象居",
+      "pickId": "B001797GGV",
+      "score": 106,
+      "type": "商务住宅;住宅区;住宅小区",
+      "rating": 4.8,
+      "tel": "18084020053;18223732214",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B001797GGV",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "daijiaxiang",
+      "name": "戴家巷崖壁步道",
+      "pick": "戴家巷崖壁步道",
+      "pickId": "B0HBKZPN7C",
+      "score": 143,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0HBKZPN7C",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "crown-escalator",
+      "name": "皇冠大扶梯",
+      "pick": "两路口皇冠大扶梯",
+      "pickId": "B0FFFP5D5R",
+      "score": 87,
+      "type": "交通设施服务;交通服务相关;交通服务相关",
+      "rating": 4.7,
+      "tel": "023-63834147;023-63856688",
+      "openTime": [],
+      "openText": "1月至9月 周一至周日 08:00-20:00 最晚进入20:00 10-01至10-07 周一至周日 08:00-21:00 最晚进入21:00；10-08至12-31 周一至周日 08:00-20:00 最晚进入20:00",
+      "oldId": "",
+      "drift_m": 4,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFFP5D5R"
+        }
+      }
+    },
+    {
+      "id": "zhongshan-4th",
+      "name": "中山四路",
+      "pick": "中山四路历史文化街区",
+      "pickId": "B0H3NH14G7",
+      "score": 114,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BZ9VNP00SP",
+      "drift_m": 234,
+      "changes": {
+        "poi": {
+          "from": "BZ9VNP00SP",
+          "to": "B0H3NH14G7"
+        },
+        "coord": {
+          "from": [
+            106.547505,
+            29.563204
+          ],
+          "to": [
+            106.546783,
+            29.561194
+          ],
+          "drift_m": 234
+        },
+        "rename": {
+          "from": "中山四路",
+          "to": "中山四路历史文化街区"
+        }
+      }
+    },
+    {
+      "id": "sanxia-museum",
+      "name": "重庆中国三峡博物馆",
+      "pick": "重庆中国三峡博物馆",
+      "pickId": "B001709RVF",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "023-63679067;023-63679066",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B001709RVF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "peoples-hall",
+      "name": "重庆人民大礼堂",
+      "pick": "重庆市人民大礼堂",
+      "pickId": "B00170BPJJ",
+      "score": 123,
+      "type": "科教文化服务;会展中心;会展中心",
+      "rating": 4.7,
+      "tel": "023-63861137",
+      "openTime": [],
+      "openText": "1月至9月 周一至周日 08:00-18:00 最晚进入17:30 10-01至10-07 周一至周日 08:00-18:30 最晚进入18:00；10-08至12-31 周一至周日 08:00-18:00 最晚进入17:30",
+      "oldId": "B00170BPJJ",
+      "drift_m": 63,
+      "changes": {
+        "coord": {
+          "from": [
+            106.553361,
+            29.56111
+          ],
+          "to": [
+            106.553277,
+            29.561674
+          ],
+          "drift_m": 63
+        }
+      }
+    },
+    {
+      "id": "wfc-observatory",
+      "name": "WFC会仙楼观景台",
+      "pick": "重庆云端之眼观景台",
+      "pickId": "B0G0DCBEW5",
+      "score": 111,
+      "type": "风景名胜;风景名胜;观景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": [],
+      "openText": "9月至12月 周一至周日 09:30-22:30 最晚进入22:00；【520凌空云台】运营时间:每日14:00-22:00对外开放，21:30停止检票入园。 【VIP专区】运营时间:每日9:30-22:00对外开放，21:30停止检票入园。",
+      "oldId": "B0FFIWQNP4",
+      "drift_m": 461,
+      "changes": {
+        "poi": {
+          "from": "B0FFIWQNP4",
+          "to": "B0G0DCBEW5"
+        },
+        "coord": {
+          "from": [
+            106.577861,
+            29.559074
+          ],
+          "to": [
+            106.582153,
+            29.557267
+          ],
+          "drift_m": 461
+        }
+      }
+    },
+    {
+      "id": "cq-art-museum",
+      "name": "重庆美术馆",
+      "pick": "重庆美术馆",
+      "pickId": "B0FFFYS1T2",
+      "score": 146,
+      "type": "科教文化服务;美术馆;美术馆",
+      "rating": 4.8,
+      "tel": "023-63920512",
+      "openTime": [],
+      "openText": "周一 全天关闭；周二至周日 10:00-18:00 最晚进入17:30；法定节假日和特殊情况除外",
+      "oldId": "B0FFFYS1T2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jiaochangkou",
+      "name": "较场口夜市",
+      "pick": "较场口夜市",
+      "pickId": "B0FFHIUR17",
+      "score": 104,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "023-63802992",
+      "openTime": "10:00-24:00",
+      "openText": "周一至周日 10:00-24:00",
+      "oldId": "B0FFHIUR17",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guanyinqiao",
+      "name": "观音桥步行街",
+      "pick": "观音桥步行街中心广场",
+      "pickId": "B0L0DCOFUS",
+      "score": 124,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0M69CCYZZ",
+      "drift_m": 55,
+      "changes": {
+        "poi": {
+          "from": "B0M69CCYZZ",
+          "to": "B0L0DCOFUS"
+        },
+        "coord": {
+          "from": [
+            106.532427,
+            29.574602
+          ],
+          "to": [
+            106.531915,
+            29.574384
+          ],
+          "drift_m": 55
+        },
+        "rename": {
+          "from": "观音桥步行街",
+          "to": "观音桥步行街中心广场"
+        }
+      }
+    },
+    {
+      "id": "beicang",
+      "name": "北仓文创街区",
+      "pick": "江北北仓文化创意园",
+      "pickId": "B0FFKC7157",
+      "score": 120,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFHSIGMG",
+      "drift_m": 47,
+      "changes": {
+        "poi": {
+          "from": "B0FFHSIGMG",
+          "to": "B0FFKC7157"
+        },
+        "coord": {
+          "from": [
+            106.538685,
+            29.578539
+          ],
+          "to": [
+            106.538232,
+            29.578697
+          ],
+          "drift_m": 47
+        }
+      }
+    },
+    {
+      "id": "jiujie",
+      "name": "不夜九街",
+      "pick": "不夜九街",
+      "pickId": "B0I1TY4DXU",
+      "score": 100,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0I1TY4DXU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cq-science-museum",
+      "name": "重庆科技馆",
+      "pick": "重庆科技馆",
+      "pickId": "B00178TXGC",
+      "score": 147,
+      "type": "科教文化服务;展览馆;展览馆",
+      "rating": 4.9,
+      "tel": "023-61863050;023-61863051",
+      "openTime": [],
+      "openText": "周二至周日 09:30-17:00开放 最晚进入16:30；周一 全天不开放(法定节假日除外)；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:30-17:00开放 最晚进入16:30；具体开放时间以官方通知为准",
+      "oldId": "B00178TXGC",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cq-grand-theatre",
+      "name": "重庆大剧院",
+      "pick": "重庆大剧院广场",
+      "pickId": "B0GRM50PWK",
+      "score": 133,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0017876A0",
+      "drift_m": 105,
+      "changes": {
+        "poi": {
+          "from": "B0017876A0",
+          "to": "B0GRM50PWK"
+        },
+        "coord": {
+          "from": [
+            106.581333,
+            29.569832
+          ],
+          "to": [
+            106.58236,
+            29.570132
+          ],
+          "drift_m": 105
+        },
+        "rename": {
+          "from": "重庆大剧院",
+          "to": "重庆大剧院广场"
+        }
+      }
+    },
+    {
+      "id": "jiangbeizui",
+      "name": "江北嘴江滩公园",
+      "pick": "江北嘴江滩公园",
+      "pickId": "B0IU1S0WOT",
+      "score": 144,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0IU1S0WOT",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hongensi",
+      "name": "鸿恩寺森林公园",
+      "pick": "鸿恩寺森林公园",
+      "pickId": "B001786RF6",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "023-67075683",
+      "openTime": "06:30-21:30",
+      "openText": "周一至周日 06:30-21:30；具体营业状态以当天开放情况为准",
+      "oldId": "B001786RF6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanshan-yikeshu",
+      "name": "南山一棵树观景台",
+      "pick": "南山一棵树景区",
+      "pickId": "B0FFGAMI8G",
+      "score": 128,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "023-62467710",
+      "openTime": "09:00-23:30",
+      "openText": "周一至周日 09:00-23:30",
+      "oldId": "B0FFGAMI8G",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanshan-botanical",
+      "name": "南山植物园",
+      "pick": "南山植物园博物馆",
+      "pickId": "B0FFFBXM85",
+      "score": 134,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 3.6,
+      "tel": "",
+      "openTime": "09:00-18:30",
+      "openText": "周一至周日 09:00-18:30",
+      "oldId": "B0FFFBXM85",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "南山植物园",
+          "to": "南山植物园博物馆"
+        }
+      }
+    },
+    {
+      "id": "nanshan-hotpot",
+      "name": "南山火锅一条街",
+      "pick": "南山火锅一条街",
+      "pickId": "B0FFH002GB",
+      "score": 102,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:30-22:00",
+      "openText": "周一至周日 09:30-22:00",
+      "oldId": "B0FFH002GB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "laojundong",
+      "name": "老君洞",
+      "pick": "老君洞道观",
+      "pickId": "B00178VU7E",
+      "score": 127,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "023-62881055",
+      "openTime": "07:30-17:30",
+      "openText": "周一至周日 07:30-17:30；17:00停止入园",
+      "oldId": "",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B00178VU7E"
+        },
+        "rename": {
+          "from": "老君洞",
+          "to": "老君洞道观"
+        }
+      }
+    },
+    {
+      "id": "huangjueya",
+      "name": "黄桷垭老街",
+      "pick": "黄桷垭老街",
+      "pickId": "B0FFKUS9BL",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "023-62912298",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFKUS9BL",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanbin-road",
+      "name": "南滨路",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆南滨公园-南滨路景区(132)",
+        "南滨路(-24)",
+        "南滨路(-34)"
+      ]
+    },
+    {
+      "id": "danzishi",
+      "name": "弹子石老街·长嘉汇",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "长嘉汇弹子石老街(141)",
+        "长嘉汇弹子石老街看两江交汇夜景(76)",
+        "重庆长嘉汇弹子石老街夏朵旅行家民宿(73)"
+      ]
+    },
+    {
+      "id": "longmenhao",
+      "name": "龙门浩老街",
+      "pick": "龙门浩老街",
+      "pickId": "B0FFJ0756U",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "023-88918888",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFJ0756U",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "ciyun-temple",
+      "name": "慈云寺",
+      "pick": "慈云寺",
+      "pickId": "B001703BAD",
+      "score": 144,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "023-62871040;15802355856",
+      "openTime": "07:30-17:00",
+      "openText": "周一至周日 07:30-17:00",
+      "oldId": "B001703BAD",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "ciqikou",
+      "name": "磁器口古镇",
+      "pick": "磁器口古镇",
+      "pickId": "B00170IFE4",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-65322661",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B00170IFE4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cq1949",
+      "name": "《重庆·1949》大剧院",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆1949大剧院(85)",
+        "重庆大剧院广场(60)",
+        "重庆大剧院(30)"
+      ]
+    },
+    {
+      "id": "zhazidong",
+      "name": "渣滓洞·白公馆",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "渣滓洞监狱旧址(113)",
+        "白公馆旧址(103)",
+        "温馨小窝民宿(白公馆渣滓洞店)(62)"
+      ]
+    },
+    {
+      "id": "gele-mountain",
+      "name": "歌乐山森林公园",
+      "pick": "歌乐山国家森林公园",
+      "pickId": "B0017080X2",
+      "score": 121,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-65510647;023-65505778",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入18:00",
+      "oldId": "B0017080X2",
+      "drift_m": 1027,
+      "changes": {
+        "coord": {
+          "from": [
+            106.434111,
+            29.575548
+          ],
+          "to": [
+            106.428283,
+            29.567829
+          ],
+          "drift_m": 1027
+        }
+      }
+    },
+    {
+      "id": "luozhongli-museum",
+      "name": "罗中立美术馆",
+      "pick": "罗中立美术馆",
+      "pickId": "B0FFLFPR5I",
+      "score": 144,
+      "type": "科教文化服务;美术馆;美术馆",
+      "rating": 4.6,
+      "tel": "023-65922052",
+      "openTime": "09:30-17:00",
+      "openText": "周二至周日09:30-17:00",
+      "oldId": "B0FFLFPR5I",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "graffiti-street",
+      "name": "黄桷坪涂鸦一条街",
+      "pick": "涂鸦一条街",
+      "pickId": "B0FFLNMAZT",
+      "score": 130,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFLNMAZT",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jiaotong-teahouse",
+      "name": "交通茶馆",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆特产(交通茶馆店)(77)",
+        "交通茶馆(32)",
+        "陈安健交通茶馆(16)"
+      ]
+    },
+    {
+      "id": "cq-zoo",
+      "name": "重庆动物园",
+      "pick": "重庆动物园",
+      "pickId": "B001701F98",
+      "score": 143,
+      "type": "风景名胜;公园广场;动物园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入16:30",
+      "oldId": "B001701F98",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cq-industrial-museum",
+      "name": "重庆工业博物馆",
+      "pick": "重庆工业博物馆",
+      "pickId": "B0FFL8GJE2",
+      "score": 128,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30；周一闭馆(法定节假日和特殊情况除外)",
+      "oldId": "B0FFL8GJE2",
+      "drift_m": 1537,
+      "changes": {
+        "coord": {
+          "from": [
+            106.493056,
+            29.484313
+          ],
+          "to": [
+            106.49236,
+            29.470507
+          ],
+          "drift_m": 1537
+        }
+      }
+    },
+    {
+      "id": "cq-jianchuan",
+      "name": "重庆建川博物馆",
+      "pick": "重庆建川博物馆聚落",
+      "pickId": "B0FFKZ20TL",
+      "score": 126,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "023-68960111;023-68960222",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30 最晚进入17:00",
+      "oldId": "B0FFKZ20TL",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "重庆建川博物馆",
+          "to": "重庆建川博物馆聚落"
+        }
+      }
+    },
+    {
+      "id": "hongyan-museum",
+      "name": "红岩革命纪念馆",
+      "pick": "红岩革命纪念馆",
+      "pickId": "B00170L7NV",
+      "score": 148,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 5,
+      "tel": "023-63303457;023-65312300",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B00170L7NV",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cq-happy-valley",
+      "name": "重庆欢乐谷",
+      "pick": "重庆欢乐谷",
+      "pickId": "B0FFHN5PG7",
+      "score": 105,
+      "type": "体育休闲服务;休闲场所;游乐场",
+      "rating": 4.7,
+      "tel": "023-63111666",
+      "openTime": [],
+      "openText": "10月8日-10月29日 10:00-22:00；10月30日-11月1日:10:00-23:00；11月2日-11月15日:10:00-22:00；夜场开放期间入园时间17:00；具体营业状态以当天开放情况为准",
+      "oldId": "B0FFHN5PG7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hanhai-oceanpark",
+      "name": "重庆汉海海洋公园",
+      "pick": "重庆汉海海洋公园",
+      "pickId": "B0FFGG76GA",
+      "score": 144,
+      "type": "风景名胜;公园广场;水族馆",
+      "rating": 4.6,
+      "tel": "023-62333888",
+      "openTime": [],
+      "openText": "9:00-17:30,最晚入园时间为17:00",
+      "oldId": "B0FFGG76GA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "sunac-town",
+      "name": "重庆融创渝乐小镇",
+      "pick": "重庆融创渝乐小镇",
+      "pickId": "B0FFMBYLV2",
+      "score": 104,
+      "type": "体育休闲服务;休闲场所;游乐场",
+      "rating": 4.6,
+      "tel": "4008959888",
+      "openTime": [],
+      "openText": "每年5月6日至6月30日 周一至周五 10:30-18:00（17:00停止售票， 17:30停止入园） 周六至周日 10:30-20:00(19:00停止售票， 19:30停止入园) 6月25日 全天关闭",
+      "oldId": "B0FFMBYLV2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yuanboyuan",
+      "name": "重庆园博园",
+      "pick": "重庆园博园",
+      "pickId": "B00178UQEE",
+      "score": 151,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "023-63086110",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00 最晚进入17:00",
+      "oldId": "B00178UQEE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "keyuan-4th",
+      "name": "科园四路美食街",
+      "pick": "健康一条街(重庆特色美食街)",
+      "pickId": "B0JG9A6VRI",
+      "score": 71,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 3.7,
+      "tel": "",
+      "openTime": "08:00-22:00",
+      "openText": "周一至周日 08:00-22:00",
+      "oldId": "B0JG9A6VRI",
+      "drift_m": 144,
+      "changes": {
+        "coord": {
+          "from": [
+            106.492149,
+            29.529821
+          ],
+          "to": [
+            106.492796,
+            29.530988
+          ],
+          "drift_m": 144
+        }
+      }
+    },
+    {
+      "id": "cq-nature-museum",
+      "name": "重庆自然博物馆",
+      "pick": "重庆自然博物馆",
+      "pickId": "B0FFFCIS0F",
+      "score": 151,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "023-60313777",
+      "openTime": [],
+      "openText": "全年 周二–周日 09:00–17:00开放 最晚进入16:30；全年 周一 全天不开放；端午节,劳动节,清明节,国庆节 09:00–17:00开放 最晚进入16:30",
+      "oldId": "B0FFFCIS0F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jinyun-mountain",
+      "name": "缙云山",
+      "pick": "重庆缙云山国家级自然保护区",
+      "pickId": "B001786LCA",
+      "score": 125,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-68224497",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B00170IXLF",
+      "drift_m": 1523,
+      "changes": {
+        "poi": {
+          "from": "B00170IXLF",
+          "to": "B001786LCA"
+        },
+        "coord": {
+          "from": [
+            106.391602,
+            29.845108
+          ],
+          "to": [
+            106.384826,
+            29.832733
+          ],
+          "drift_m": 1523
+        }
+      }
+    },
+    {
+      "id": "diaoyu-fortress",
+      "name": "钓鱼城",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "三河垂钓园(-7)",
+        "心合园垂钓中心(-7)",
+        "星工场垂钓园(-7)"
+      ]
+    },
+    {
+      "id": "dazu-carvings",
+      "name": "大足石刻",
+      "pick": "大足石刻博物馆",
+      "pickId": "B0FFJZ00F6",
+      "score": 144,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.4,
+      "tel": "023-81098228",
+      "openTime": [],
+      "openText": "全年 周一 全天不开放；全年 周二–周日 09:00–16:00开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入16:30",
+      "oldId": "B0FFJZ00F6",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "大足石刻",
+          "to": "大足石刻博物馆"
+        }
+      }
+    },
+    {
+      "id": "wulong-tiankeng",
+      "name": "武隆天生三桥",
+      "pick": "重庆武隆天生三桥风景区",
+      "pickId": "B00170I6E1",
+      "score": 145,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-77794266;023-63818022",
+      "openTime": "09:00-16:00",
+      "openText": "周一至周日 09:00-16:00",
+      "oldId": "B00170I6E1",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "武隆天生三桥",
+          "to": "重庆武隆天生三桥风景区"
+        }
+      }
+    },
+    {
+      "id": "fairy-mountain",
+      "name": "仙女山国家森林公园",
+      "pick": "仙女山国家森林公园",
+      "pickId": "B001786W8A",
+      "score": 108,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "023-77733866;023-87701901",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B001786W8A",
+      "drift_m": 8878,
+      "changes": {}
+    },
+    {
+      "id": "jinfo-mountain",
+      "name": "金佛山",
+      "pick": "金佛山国家风景名胜区",
+      "pickId": "B001786UY2",
+      "score": 143,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周五 08:30-17:00 最晚进入15:30；周六至周日 08:00-17:30 最晚进入16:00",
+      "oldId": "B001786UY2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "heishan-valley",
+      "name": "黑山谷",
+      "pick": "黑山谷风景区",
+      "pickId": "B001786WBL",
+      "score": 103,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "023-48338893",
+      "openTime": "08:30-16:00",
+      "openText": "周一至周日 08:30-16:00",
+      "oldId": "B0FFG23BJV",
+      "drift_m": 6321,
+      "changes": {
+        "poi": {
+          "from": "B0FFG23BJV",
+          "to": "B001786WBL"
+        },
+        "rename": {
+          "from": "黑山谷",
+          "to": "黑山谷风景区"
+        }
+      }
+    },
+    {
+      "id": "simian-mountain",
+      "name": "四面山",
+      "pick": "四面山景区",
+      "pickId": "B00170I91F",
+      "score": 148,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "023-47666888",
+      "openTime": [],
+      "openText": "周一至周日 00:00-24:00；节假日营业时间以官方通知为准，1、景点开放时间:      景区24h内可以进入，但景点开放时间:08:00-18:00 2、游船运营时间:       大洪海船票:08:30-16:30       龙潭湖船票:08:30-17:00 3、观光车运营时间:08:30-17:30 4、会龙庄景区运营时间:       取票时间:09:00-16:30（淡季）       开关闭园:09:00-17:00（淡季） 5、珍珠湖旱滑运营时间:08:30-18:00 6、洪海长岩子乐园水上大冲关运营时间:09:00-17:00 7、洪海长岩子乐园小火车运营时间:09:00-17:00 8、卧龙湖快艇运营时间:09:00-17:00",
+      "oldId": "B00170IIIS",
+      "drift_m": 336,
+      "changes": {
+        "poi": {
+          "from": "B00170IIIS",
+          "to": "B00170I91F"
+        },
+        "coord": {
+          "from": [
+            106.390571,
+            28.619035
+          ],
+          "to": [
+            106.392153,
+            28.61635
+          ],
+          "drift_m": 336
+        },
+        "rename": {
+          "from": "四面山",
+          "to": "四面山景区"
+        }
+      }
+    },
+    {
+      "id": "gongtan-wujiang",
+      "name": "龚滩古镇·乌江画廊",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "重庆乌江·龚滩旅游度假区(107)",
+        "乌江画廊(89)",
+        "龚滩古镇素溪别苑民宿(74)"
+      ]
+    },
+    {
+      "id": "zhongshan-old-town",
+      "name": "中山古镇",
+      "pick": "中山古镇",
+      "pickId": "B0FFF5OBFK",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "17708332001",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00；具体营业状态以当天开放情况为准",
+      "oldId": "B0FFF5OBFK",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "longxing-old-town",
+      "name": "龙兴古镇",
+      "pick": "龙兴古镇",
+      "pickId": "B001792ZS3",
+      "score": 135,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.5,
+      "tel": "023-67345121",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "oldId": "B001792ZS3",
+      "drift_m": 649,
+      "changes": {
+        "coord": {
+          "from": [
+            106.792763,
+            29.694919
+          ],
+          "to": [
+            106.793456,
+            29.700725
+          ],
+          "drift_m": 649
+        }
+      }
+    },
+    {
+      "id": "tongjing-hotspring",
+      "name": "统景温泉",
+      "pick": "统景温泉",
+      "pickId": "B0FFG6YC6P",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "023-67288333;023-67288666",
+      "openTime": [],
+      "openText": "1月至3月,10月至12月 周一至周日 09:00-23:30 最晚进入23:30；4月至9月 周一至周日 08:30-23:00 最晚进入23:00",
+      "oldId": "B0FFG6YC6P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "fengdu-ghost-city",
+      "name": "丰都鬼城",
+      "pick": "丰都鬼城",
+      "pickId": "B0017072XK",
+      "score": 151,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "023-70613323",
+      "openTime": "07:40-17:20",
+      "openText": "周一至周日 07:40-17:20 最晚进入17:00",
+      "oldId": "B0017072XK",
+      "drift_m": 504,
+      "changes": {
+        "coord": {
+          "from": [
+            107.723167,
+            29.882862
+          ],
+          "to": [
+            107.722209,
+            29.887322
+          ],
+          "drift_m": 504
+        }
+      }
+    },
+    {
+      "id": "baiheliang",
+      "name": "白鹤梁水下博物馆",
+      "pick": "白鹤梁水下博物馆",
+      "pickId": "B001786LW8",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "023-72121211;023-85688882",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00",
+      "oldId": "B001786LW8",
+      "drift_m": 0,
+      "changes": {}
+    }
+  ]
+}

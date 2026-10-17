@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -983,7 +983,7 @@
     },
     {
       "id": "eslite",
-      "name": "诚品书店（苏州）",
+      "name": "复合式诚品书店文化商业综合体(右岸街店)",
       "cat": "商圈",
       "tags": [
         "书店",
@@ -998,10 +998,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.7302,
-        31.3206
+        120.710552,
+        31.320886
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MUNU2HXS",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "yuanrong",
@@ -1261,7 +1265,7 @@
     },
     {
       "id": "wangshiyuan-night",
-      "name": "网师园夜花园",
+      "name": "网师园",
       "cat": "演出",
       "tags": [
         "夜游",
@@ -1276,10 +1280,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.6313,
-        31.3012
+        120.63377,
+        31.298075
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02000IUPA",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "art-center",

@@ -1,0 +1,1012 @@
+{
+  "city": "杭州",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 14,
+      "公园": 13,
+      "街区": 10,
+      "夜景": 3,
+      "山水": 5,
+      "博物馆": 10,
+      "商圈": 2,
+      "亲子": 3,
+      "古镇": 3,
+      "美食": 4,
+      "演出": 3
+    },
+    "byGroup": {
+      "core": 32,
+      "night": 6,
+      "family": 3,
+      "street": 10,
+      "food": 4,
+      "park": 13,
+      "mall": 2,
+      "total": 70,
+      "suburb": 8,
+      "coreRatio": 54
+    }
+  },
+  "keep": [
+    {
+      "id": "leifengta",
+      "name": "雷峰塔景区",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9
+    },
+    {
+      "id": "yuewangmiao",
+      "name": "岳王庙",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "guozhuang",
+      "name": "郭庄",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "lingyin",
+      "name": "灵隐寺（飞来峰）",
+      "cat": "古迹",
+      "heat": 10,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9
+    },
+    {
+      "id": "beigaofeng",
+      "name": "北高峰（灵顺寺）",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "tea-museum",
+      "name": "中国茶叶博物馆(龙井馆区)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "hangzhou-museum",
+      "name": "杭州博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "gongchenqiao",
+      "name": "拱宸桥·桥西直街",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "canal-museum",
+      "name": "中国京杭大运河博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "gongmei-museum",
+      "name": "杭州工艺美术博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "canal-night-cruise",
+      "name": "运河夜游（武林门码头）",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "dongman-museum",
+      "name": "中国动漫博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "changqiao-ocean",
+      "name": "杭州长乔极地海洋公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "kuahuqiao-museum",
+      "name": "跨湖桥遗址博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "songcheng",
+      "name": "宋城·千古情",
+      "cat": "演出",
+      "heat": 8.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "zhejiang-museum",
+      "name": "浙江省博物馆（之江馆区）",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "liangzhu-site",
+      "name": "良渚古城遗址公园",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "liangzhu-museum",
+      "name": "良渚博物院",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "tangqi",
+      "name": "运河·塘栖古镇",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "longmen-oldtown",
+      "name": "龙门古镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8
+    },
+    {
+      "id": "zj-natural-museum",
+      "name": "浙江自然博物院",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "silk-museum",
+      "name": "中国丝绸博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "hangzhou-zoo",
+      "name": "杭州动物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sudi",
+      "name": "苏堤春晓",
+      "cat": "公园",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "baoshishan",
+      "name": "宝石山（保俶塔）",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "chenghuangge",
+      "name": "城隍阁（吴山）",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "xianghu",
+      "name": "湘湖",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "xixi-wetland",
+      "name": "西溪国家湿地公园东区",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "manjuelong",
+      "name": "满觉陇",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "nansongyujie",
+      "name": "南宋御街陈列馆",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "qingzhiwu",
+      "name": "青芝坞",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "beishanjie",
+      "name": "北山街历史文化街区",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "longjingcun",
+      "name": "龙井村牌坊",
+      "cat": "街区",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "hefangjie",
+      "name": "河坊街景区",
+      "cat": "街区",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "mantoushan",
+      "name": "馒头山社区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "xiaohezhi",
+      "name": "小河直街姚家",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "hubin-walk",
+      "name": "湖滨步行街（in77）",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "oeli",
+      "name": "天目里美术馆",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "shenglihe",
+      "name": "胜利河美食街",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "laxi-street",
+      "name": "滨江啦喜街(杨家墩综合大楼店)",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "gaoyin-street",
+      "name": "高银街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "wulin-night",
+      "name": "武林夜市",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [
+    {
+      "id": "hangzhou-botanical",
+      "name": "杭州植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "santanyinyue",
+      "name": "三潭印月花港观鱼码头",
+      "cat": "公园",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "huagang",
+      "name": "三潭印月花港观鱼码头",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "quyuan",
+      "name": "曲院风荷碑廊",
+      "cat": "公园",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "taiziwan",
+      "name": "太子湾公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "yunqi",
+      "name": "云栖竹径",
+      "cat": "公园",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "baita-park",
+      "name": "白塔公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "qingshan-lake",
+      "name": "青山湖水上森林",
+      "cat": "公园",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "dadaolu",
+      "name": "大兜路历史街区",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "liangzhu-village",
+      "name": "良渚文化村·大屋顶",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    }
+  ],
+  "manual": [
+    {
+      "id": "duanqiao",
+      "name": "断桥残雪（白堤）",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "xilingyinshe",
+      "name": "孤山·西泠印社",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分可疑（池匹配不精确：西湖风景区-孤山馆区办公区），待人工"
+    },
+    {
+      "id": "music-fountain",
+      "name": "西湖音乐喷泉",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "faxi",
+      "name": "法喜寺白玉兰",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "yongfu",
+      "name": "永福寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "shililangdang",
+      "name": "十里琅珰",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jiuxi",
+      "name": "九溪烟树",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "huxueyan",
+      "name": "胡雪岩故居",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "liuheta",
+      "name": "六和塔",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "xiangji",
+      "name": "香积寺",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "city-balcony",
+      "name": "城市阳台（钱江新城）",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "xixing-oldtown",
+      "name": "西兴古镇",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "yinxiang-xihu",
+      "name": "印象西湖·最忆是杭州",
+      "cat": "演出",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "cirque-du-soleil",
+      "name": "太阳马戏 X 绮幻之境",
+      "cat": "演出",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jingshan-temple",
+      "name": "径山寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qiandao-lake",
+      "name": "千岛湖秀水广场",
+      "cat": "山水",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "daming-mountain",
+      "name": "大明山风景区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "zj-science",
+      "name": "浙江科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    }
+  ],
+  "add": [
+    {
+      "name": "杭州西湖风景名胜区",
+      "coord": [
+        120.121358,
+        30.222692
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.9,
+      "level": "national",
+      "score": 0.81,
+      "heat": 9
+    },
+    {
+      "name": "清河坊历史文化特色街区",
+      "coord": [
+        120.169899,
+        30.239827
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "梦想小镇",
+      "coord": [
+        120.002426,
+        30.290077
+      ],
+      "type": "风景名胜;风景名胜;国家级景点|商务住宅;楼宇;商务写字楼|科教文化服务;培训机构;培训机构",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "老和云起",
+      "coord": [
+        120.119779,
+        30.27117
+      ],
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heat": 8
+    },
+    {
+      "name": "八卦田遗址公园",
+      "coord": [
+        120.151779,
+        30.211211
+      ],
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "sudi",
+      "name": "苏堤春晓",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "xilingyinshe",
+      "name": "孤山·西泠印社",
+      "from": 7.5,
+      "to": 5
+    },
+    {
+      "id": "yuewangmiao",
+      "name": "岳王庙",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "guozhuang",
+      "name": "郭庄",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "baoshishan",
+      "name": "宝石山（保俶塔）",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "lingyin",
+      "name": "灵隐寺（飞来峰）",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "manjuelong",
+      "name": "满觉陇",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "xixi-wetland",
+      "name": "西溪国家湿地公园东区",
+      "from": 9,
+      "to": 6
+    },
+    {
+      "id": "hangzhou-botanical",
+      "name": "杭州植物园",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "qingzhiwu",
+      "name": "青芝坞",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "nansongyujie",
+      "name": "南宋御街陈列馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "chenghuangge",
+      "name": "城隍阁（吴山）",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "hangzhou-museum",
+      "name": "杭州博物馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "gongchenqiao",
+      "name": "拱宸桥·桥西直街",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "canal-museum",
+      "name": "中国京杭大运河博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "gongmei-museum",
+      "name": "杭州工艺美术博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "canal-night-cruise",
+      "name": "运河夜游（武林门码头）",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "dongman-museum",
+      "name": "中国动漫博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "changqiao-ocean",
+      "name": "杭州长乔极地海洋公园",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "kuahuqiao-museum",
+      "name": "跨湖桥遗址博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "laxi-street",
+      "name": "滨江啦喜街(杨家墩综合大楼店)",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "songcheng",
+      "name": "宋城·千古情",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "liangzhu-site",
+      "name": "良渚古城遗址公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "liangzhu-museum",
+      "name": "良渚博物院",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "tangqi",
+      "name": "运河·塘栖古镇",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "longmen-oldtown",
+      "name": "龙门古镇",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "shenglihe",
+      "name": "胜利河美食街",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "zj-natural-museum",
+      "name": "浙江自然博物院",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "silk-museum",
+      "name": "中国丝绸博物馆",
+      "from": 7.5,
+      "to": 7
+    }
+  ],
+  "duplicates": [
+    {
+      "name": "三潭印月花港观鱼码头",
+      "ids": [
+        "santanyinyue",
+        "huagang"
+      ]
+    }
+  ]
+}

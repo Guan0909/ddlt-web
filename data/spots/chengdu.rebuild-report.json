@@ -1,0 +1,1088 @@
+{
+  "city": "成都",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "亲子": 5,
+      "街区": 12,
+      "古迹": 7,
+      "山水": 5,
+      "商圈": 4,
+      "公园": 16,
+      "博物馆": 8,
+      "夜景": 4,
+      "美食": 3,
+      "演出": 1,
+      "古镇": 5
+    },
+    "byGroup": {
+      "core": 25,
+      "night": 5,
+      "family": 5,
+      "street": 12,
+      "food": 3,
+      "park": 16,
+      "mall": 4,
+      "total": 70,
+      "suburb": 22,
+      "coreRatio": 43
+    }
+  },
+  "keep": [
+    {
+      "id": "panda-base",
+      "name": "成都大熊猫繁育研究基地",
+      "cat": "亲子",
+      "heat": 10,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9
+    },
+    {
+      "id": "wuhouci",
+      "name": "成都武侯祠博物馆",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "dufu",
+      "name": "成都杜甫草堂博物馆",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "chengdu-museum",
+      "name": "成都博物馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sichuan-museum",
+      "name": "四川博物院",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "wenshu",
+      "name": "文殊院",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "daci",
+      "name": "大慈寺",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yongling",
+      "name": "成都永陵博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "nature-museum",
+      "name": "成都自然博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "zoo",
+      "name": "成都动物园",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "zhaojue",
+      "name": "昭觉寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "happy-valley",
+      "name": "成都欢乐谷",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "huanglongxi",
+      "name": "黄龙溪古镇",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "luodai",
+      "name": "洛带古镇",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "anren",
+      "name": "安仁古镇公馆老街",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "jianchuan",
+      "name": "四川建川博物馆聚落",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "chuan-cuisine-museum",
+      "name": "成都川菜博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "shujin",
+      "name": "成都蜀锦织绣博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "dongjiao",
+      "name": "东郊记忆",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": "national",
+      "score": 0.81,
+      "heatNew": 9
+    },
+    {
+      "id": "kuanzhai",
+      "name": "宽窄巷子景区",
+      "cat": "街区",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "tiexiangsi",
+      "name": "铁像寺水街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9
+    },
+    {
+      "id": "jinli",
+      "name": "锦里古街",
+      "cat": "街区",
+      "heat": 9.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "wenshu-fang",
+      "name": "文殊坊",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "mengzhuiwan",
+      "name": "猛追湾游园",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    },
+    {
+      "id": "yulin",
+      "name": "小酒馆(玉林西路店)",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "qintai",
+      "name": "琴台路",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "chunxi",
+      "name": "春熙路",
+      "cat": "商圈",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "taikooli",
+      "name": "远洋太古里",
+      "cat": "商圈",
+      "heat": 9,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "renmin-park",
+      "name": "人民公园·鹤鸣茶社",
+      "cat": "公园",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9
+    },
+    {
+      "id": "tianfu-art",
+      "name": "天府艺术公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "wangjianglou",
+      "name": "望江楼公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "huanhuaxi",
+      "name": "浣花溪公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "baihuatan",
+      "name": "百花潭公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "xiangxiang-lane",
+      "name": "香香巷",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "jianshe-road",
+      "name": "建设路小吃街",
+      "cat": "美食",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "pengzhen",
+      "name": "双流区观音阁百年老茶馆",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [
+    {
+      "id": "luxhu",
+      "name": "麓湖水城景区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "yuanyang",
+      "name": "鸳鸯楼",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "u37",
+      "name": "U37创意仓库",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "kuanxiangzi-paulo",
+      "name": "泡桐树街·小通巷",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "fangsuo",
+      "name": "方所书店",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（商圈 ≤2）且评分靠后"
+    },
+    {
+      "id": "zhongshuge",
+      "name": "钟书阁（都江堰）",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（商圈 ≤2）且评分靠后"
+    },
+    {
+      "id": "sansheng",
+      "name": "三圣花乡旅游区",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "east-suburb-park",
+      "name": "麻石烟云公园",
+      "cat": "公园",
+      "heat": 5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "jincheng-lake",
+      "name": "锦城湖公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "guixi",
+      "name": "桂溪生态公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "guihu",
+      "name": "新都桂湖",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "yanhua",
+      "name": "罨画池",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "jiangtan",
+      "name": "成都江滩公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "qinglong-lake",
+      "name": "青龙湖湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "beihu",
+      "name": "北湖生态公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "xinglong-lake",
+      "name": "兴隆湖湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "yiyuan",
+      "name": "易园园林博物馆",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [
+    {
+      "id": "dujiangyan",
+      "name": "都江堰景区",
+      "cat": "山水",
+      "heat": 9.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qingcheng",
+      "name": "青城山青城前山",
+      "cat": "山水",
+      "heat": 9,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jinsha",
+      "name": "金沙遗址博物馆(暂停开放)",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qingyang",
+      "name": "青羊宫",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jiuyanqiao",
+      "name": "九眼桥·安顺廊桥",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "shufeng",
+      "name": "蜀风雅韵",
+      "cat": "演出",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "sichuan-science",
+      "name": "四川科技馆",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jiezi",
+      "name": "街子古镇",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "pingle",
+      "name": "平乐古镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "xiling",
+      "name": "西岭雪山风景名胜区",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "tiantai",
+      "name": "天台山山门",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "longquan",
+      "name": "成都龙泉山丹景台旅游景区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "baoguang",
+      "name": "宝光寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "wuchazi",
+      "name": "五岔子大桥",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "jiuyanqiao-bar",
+      "name": "兰桂坊酒吧街",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "dujiangyan-night",
+      "name": "南桥",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "panda-valley",
+      "name": "都江堰熊猫谷",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    }
+  ],
+  "add": [
+    {
+      "name": "元通古镇",
+      "coord": [
+        103.623717,
+        30.733669
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "安仁古镇",
+      "coord": [
+        103.62403,
+        30.505134
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "国色天乡乐园",
+      "coord": [
+        103.825626,
+        30.722434
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "幸福梅林",
+      "coord": [
+        104.136323,
+        30.584398
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "成都大熊猫繁育研究基地大熊猫月亮产房",
+      "coord": [
+        104.139472,
+        30.739506
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "五凤溪古镇",
+      "coord": [
+        104.483152,
+        30.605714
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "三圣花乡·花乡农居",
+      "coord": [
+        104.160874,
+        30.583761
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "成都大熊猫繁育研究基地大熊猫1号别墅",
+      "coord": [
+        104.138691,
+        30.737422
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "锦门景区",
+      "coord": [
+        104.130358,
+        30.779332
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "三圣花乡荷塘月色",
+      "coord": [
+        104.158143,
+        30.567605
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "level": "national",
+      "score": 0.61,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "panda-base",
+      "name": "成都大熊猫繁育研究基地",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "kuanzhai",
+      "name": "宽窄巷子景区",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "jinli",
+      "name": "锦里古街",
+      "from": 9.5,
+      "to": 7
+    },
+    {
+      "id": "wuhouci",
+      "name": "成都武侯祠博物馆",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "dufu",
+      "name": "成都杜甫草堂博物馆",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "chunxi",
+      "name": "春熙路",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "renmin-park",
+      "name": "人民公园·鹤鸣茶社",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "chengdu-museum",
+      "name": "成都博物馆",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "sichuan-museum",
+      "name": "四川博物院",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "wenshu",
+      "name": "文殊院",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "daci",
+      "name": "大慈寺",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "wangjianglou",
+      "name": "望江楼公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "dongjiao",
+      "name": "东郊记忆",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "huanhuaxi",
+      "name": "浣花溪公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "baihuatan",
+      "name": "百花潭公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yongling",
+      "name": "成都永陵博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "nature-museum",
+      "name": "成都自然博物馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "zoo",
+      "name": "成都动物园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "zhaojue",
+      "name": "昭觉寺",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "tiexiangsi",
+      "name": "铁像寺水街",
+      "from": 6.5,
+      "to": 9
+    },
+    {
+      "id": "sansheng",
+      "name": "三圣花乡旅游区",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "huanglongxi",
+      "name": "黄龙溪古镇",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "luodai",
+      "name": "洛带古镇",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "anren",
+      "name": "安仁古镇公馆老街",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "jianchuan",
+      "name": "四川建川博物馆聚落",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "chuan-cuisine-museum",
+      "name": "成都川菜博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shujin",
+      "name": "成都蜀锦织绣博物馆",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "mengzhuiwan",
+      "name": "猛追湾游园",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "wenshu-fang",
+      "name": "文殊坊",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "tianfu-art",
+      "name": "天府艺术公园",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "east-suburb-park",
+      "name": "麻石烟云公园",
+      "from": 5,
+      "to": 7
+    },
+    {
+      "id": "xiangxiang-lane",
+      "name": "香香巷",
+      "from": 6.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

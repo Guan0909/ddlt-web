@@ -1,8 +1,9 @@
 {
   "city": "昆明",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -998,108 +999,6 @@
       "poi_name": "海东湿地公园",
       "name_adopted": false,
       "coord_moved": true
-    }
-  ],
-  "skipped": [
-    {
-      "id": "yunnan-univ",
-      "name": "云南大学（东陆校区）",
-      "before": [
-        102.7,
-        25.0572
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "dounan-market",
-      "name": "斗南花市",
-      "before": [
-        102.78,
-        24.895
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "nanqiang-lane",
-      "name": "南强街巷",
-      "before": [
-        102.713,
-        25.033
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "lianda",
-      "name": "西南联大旧址（云南师大一二一校区）",
-      "before": [
-        102.699,
-        25.058
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "dongchuan-redland",
-      "name": "东川红土地",
-      "before": [
-        103.1,
-        26.12
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "yuantongsi",
-      "name": "圆通寺",
-      "before": [
-        102.7105,
-        25.0515
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "xiangyun-street",
-      "name": "祥云街小吃街",
-      "before": [
-        102.7145,
-        25.0355
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "leju-village",
-      "name": "乐居村",
-      "before": [
-        102.615,
-        25.08
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "chama-huajie",
-      "name": "茶马花街",
-      "before": [
-        102.662,
-        24.978
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "caoxisi",
-      "name": "曹溪寺",
-      "before": [
-        102.423,
-        24.956
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "luhan-gongguan",
@@ -1109,24 +1008,69 @@
         25.047
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "after": [
+        102.707044,
+        25.048673
+      ],
+      "drift_m": 209,
+      "amap_poi_id": "B0367086LZ",
+      "tier": "amap-llm-around",
+      "renamed_from": "卢汉公馆（云南起义纪念馆）",
+      "renamed_to": "云南起义纪念馆",
+      "poi_name": "云南起义纪念馆",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
-      "id": "m60",
-      "name": "M60 文化创意园",
+      "id": "nieer-gu",
+      "name": "聂耳故居",
       "before": [
-        102.69,
-        25.092
+        102.712,
+        25.0345
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "after": [
+        102.707791,
+        25.038594
+      ],
+      "drift_m": 622,
+      "amap_poi_id": "B03670W3YY",
+      "tier": "amap-llm-around",
+      "renamed_from": "聂耳故居",
+      "renamed_to": "昆明聂耳故居",
+      "poi_name": "昆明聂耳故居",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
-      "id": "tongde-plaza",
-      "name": "同德昆明广场",
+      "id": "kunming-wenmiao",
+      "name": "昆明文庙",
       "before": [
-        102.7215,
-        25.062
+        102.714,
+        25.043
+      ],
+      "provider": "amap",
+      "after": [
+        102.708804,
+        25.04296
+      ],
+      "drift_m": 523,
+      "amap_poi_id": "B03670XRYZ",
+      "tier": "amap-llm-around",
+      "renamed_from": "昆明文庙",
+      "renamed_to": "文庙",
+      "poi_name": "文庙",
+      "name_adopted": true,
+      "coord_moved": true
+    }
+  ],
+  "skipped": [
+    {
+      "id": "luhan-gongguan",
+      "name": "卢汉公馆（云南起义纪念馆）",
+      "before": [
+        102.708,
+        25.047
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
@@ -1150,6 +1094,126 @@
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "yunnan-univ",
+      "name": "云南大学（东陆校区）",
+      "before": [
+        102.7,
+        25.0572
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "dounan-market",
+      "name": "斗南花市",
+      "before": [
+        102.78,
+        24.895
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "nanqiang-lane",
+      "name": "南强街巷",
+      "before": [
+        102.713,
+        25.033
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "lianda",
+      "name": "西南联大旧址（云南师大一二一校区）",
+      "before": [
+        102.699,
+        25.058
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "dongchuan-redland",
+      "name": "东川红土地",
+      "before": [
+        103.1,
+        26.12
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "yuantongsi",
+      "name": "圆通寺",
+      "before": [
+        102.7105,
+        25.0515
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "xiangyun-street",
+      "name": "祥云街小吃街",
+      "before": [
+        102.7145,
+        25.0355
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "leju-village",
+      "name": "乐居村",
+      "before": [
+        102.615,
+        25.08
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "chama-huajie",
+      "name": "茶马花街",
+      "before": [
+        102.662,
+        24.978
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "caoxisi",
+      "name": "曹溪寺",
+      "before": [
+        102.423,
+        24.956
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "m60",
+      "name": "M60 文化创意园",
+      "before": [
+        102.69,
+        25.092
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "tongde-plaza",
+      "name": "同德昆明广场",
+      "before": [
+        102.7215,
+        25.062
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

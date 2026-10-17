@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1291,7 +1291,7 @@
     },
     {
       "id": "huaisheng-temple",
-      "name": "怀圣寺光塔",
+      "name": "怀圣清真寺",
       "cat": "古迹",
       "tags": [
         "清真古寺",
@@ -1306,10 +1306,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        113.2567,
-        23.1247
+        113.258962,
+        23.12283
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B00140TBG8",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "martyr-park",

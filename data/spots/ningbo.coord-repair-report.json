@@ -1,8 +1,9 @@
 {
   "city": "宁波",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1190,19 +1191,30 @@
       "poi_name": "郑氏十七房景区",
       "name_adopted": true,
       "coord_moved": true
+    },
+    {
+      "id": "baisha-seafood",
+      "name": "白沙海鲜排档",
+      "before": [
+        121.558,
+        29.888
+      ],
+      "provider": "amap",
+      "after": [
+        121.569305,
+        29.889447
+      ],
+      "drift_m": 1102,
+      "amap_poi_id": "B023E0Y4T7",
+      "tier": "amap-llm-around",
+      "renamed_from": "白沙海鲜排档",
+      "renamed_to": "白沙码头海鲜大排档",
+      "poi_name": "白沙码头海鲜大排档",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "chenghuang-miao",
-      "name": "城隍庙小吃城",
-      "before": [
-        121.5447,
-        29.867
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "baisha-seafood",
       "name": "白沙海鲜排档",
@@ -1214,6 +1226,16 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "chenghuang-miao",
+      "name": "城隍庙小吃城",
+      "before": [
+        121.5447,
+        29.867
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "huaao-island",
       "name": "花岙岛",
       "before": [
@@ -1221,7 +1243,7 @@
         29.26
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "yinzhou-wanda",
@@ -1231,7 +1253,7 @@
         29.808
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "nanbu-shuijie",
@@ -1241,7 +1263,7 @@
         29.8
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "longquanshan",
@@ -1251,7 +1273,7 @@
         30.042
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

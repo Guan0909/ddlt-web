@@ -1,8 +1,9 @@
 {
   "city": "拉萨",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1034,59 +1035,51 @@
       "poi_name": "秀色才纳·雪域花谷",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "guangming-teahouse",
+      "name": "光明港琼甜茶馆",
+      "before": [
+        91.1315,
+        29.6535
+      ],
+      "provider": "amap",
+      "after": [
+        91.131487,
+        29.651847
+      ],
+      "drift_m": 184,
+      "amap_poi_id": "B037B028AA",
+      "tier": "amap-llm-around",
+      "renamed_from": "光明港琼甜茶馆",
+      "renamed_to": "老光明岗琼甜茶馆",
+      "poi_name": "老光明岗琼甜茶馆",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "cijuelin",
+      "name": "中国西藏文化旅游创意园",
+      "before": [
+        91.125,
+        29.612
+      ],
+      "provider": "amap",
+      "after": [
+        91.141571,
+        29.615196
+      ],
+      "drift_m": 1641,
+      "amap_poi_id": "B0FFG6Q4X3",
+      "tier": "amap-llm-around",
+      "renamed_from": "中国西藏文化旅游创意园",
+      "renamed_to": "中国西藏文化旅游创意园区",
+      "poi_name": "中国西藏文化旅游创意园区",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "barkhor",
-      "name": "八廓街",
-      "before": [
-        91.134,
-        29.6525
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "xiami-yuan",
-      "name": "下密院",
-      "before": [
-        91.136,
-        29.657
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "chongsaikang",
-      "name": "冲赛康",
-      "before": [
-        91.129,
-        29.657
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "zangyiyuan-road",
-      "name": "藏医院路",
-      "before": [
-        91.128,
-        29.655
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "deji-road",
-      "name": "德吉路",
-      "before": [
-        91.117,
-        29.646
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "guangming-teahouse",
       "name": "光明港琼甜茶馆",
@@ -1108,6 +1101,56 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "barkhor",
+      "name": "八廓街",
+      "before": [
+        91.134,
+        29.6525
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "xiami-yuan",
+      "name": "下密院",
+      "before": [
+        91.136,
+        29.657
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "chongsaikang",
+      "name": "冲赛康",
+      "before": [
+        91.129,
+        29.657
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "zangyiyuan-road",
+      "name": "藏医院路",
+      "before": [
+        91.128,
+        29.655
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "deji-road",
+      "name": "德吉路",
+      "before": [
+        91.117,
+        29.646
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "ganden",
       "name": "甘丹寺",
       "before": [
@@ -1115,7 +1158,7 @@
         29.65
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "tsurphu",
@@ -1125,7 +1168,7 @@
         29.82
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "tunba",
@@ -1135,7 +1178,7 @@
         29.43
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "qungmugangga",
@@ -1145,7 +1188,7 @@
         29.55
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "namtso",
@@ -1155,7 +1198,7 @@
         30.74
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "damxung-grassland",
@@ -1165,7 +1208,7 @@
         30.56
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "nyainqentanglha",
@@ -1175,7 +1218,7 @@
         30.4
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "gangbala",
@@ -1185,7 +1228,7 @@
         29.13
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "dezhong",
@@ -1195,7 +1238,7 @@
         29.92
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": []

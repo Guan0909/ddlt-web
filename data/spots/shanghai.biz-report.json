@@ -3,35 +3,46 @@
   "date": "2026-10-17",
   "stat": {
     "total": 70,
-    "poiFixed": 54,
-    "renamed": 17,
-    "coordFixed": 32,
-    "openFilled": 45,
+    "poiFixed": 51,
+    "renamed": 14,
+    "coordFixed": 24,
+    "openFilled": 39,
     "closedMon": 3,
-    "tel": 58,
-    "rating": 70,
-    "photo": 11,
-    "noCand": 0,
+    "tel": 53,
+    "rating": 59,
+    "photo": 6,
+    "noCand": 11,
     "err": 0
   },
   "log": [
     {
       "id": "waitan",
       "name": "外滩",
-      "pick": "外滩-观景平台",
-      "pickId": "B0FFFR6GDS",
-      "score": 132,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.8,
+      "pick": "外滩",
+      "pickId": "B00155FXB3",
+      "score": 125,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.9,
       "tel": "",
       "openTime": "24小时营业",
       "openText": "周一至周日 00:00-24:00",
       "oldId": "B0FFFR6GDS",
-      "drift_m": 0,
+      "drift_m": 820,
       "changes": {
-        "rename": {
-          "from": "外滩",
-          "to": "外滩-观景平台"
+        "poi": {
+          "from": "B0FFFR6GDS",
+          "to": "B00155FXB3"
+        },
+        "coord": {
+          "from": [
+            121.490926,
+            31.240821
+          ],
+          "to": [
+            121.492127,
+            31.233516
+          ],
+          "drift_m": 820
         }
       }
     },
@@ -128,99 +139,42 @@
     {
       "id": "nanjing-road",
       "name": "南京路步行街",
-      "pick": "南京路步行街-雕像",
-      "pickId": "B0FFFPWQ3Y",
-      "score": 116,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.2,
+      "pick": "南京路步行街",
+      "pickId": "B0FFF5VNSV",
+      "score": 105,
+      "type": "购物服务;购物相关场所;购物相关场所",
+      "rating": 4.9,
       "tel": "",
       "openTime": "24小时营业",
       "openText": "周一至周日 00:00-24:00",
       "oldId": "BV11113520",
-      "drift_m": 300,
+      "drift_m": 0,
       "changes": {
         "poi": {
           "from": "BV11113520",
-          "to": "B0FFFPWQ3Y"
-        },
-        "coord": {
-          "from": [
-            121.479494,
-            31.235983
-          ],
-          "to": [
-            121.482536,
-            31.236715
-          ],
-          "drift_m": 300
-        },
-        "rename": {
-          "from": "南京路步行街",
-          "to": "南京路步行街-雕像"
+          "to": "B0FFF5VNSV"
         }
       }
     },
     {
       "id": "wukang-road",
       "name": "武康路·武康大楼",
-      "pick": "武康路历史文化名街",
-      "pickId": "B0FFIK0Z21",
-      "score": 118,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.8,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "BV10029965",
-      "drift_m": 232,
-      "changes": {
-        "poi": {
-          "from": "BV10029965",
-          "to": "B0FFIK0Z21"
-        },
-        "coord": {
-          "from": [
-            121.440627,
-            31.209252
-          ],
-          "to": [
-            121.43993,
-            31.207255
-          ],
-          "drift_m": 232
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "武康路历史文化名街(118)",
+        "武康大楼(76)",
+        "武康路新里(24)"
+      ]
     },
     {
       "id": "lujiazui",
       "name": "陆家嘴·滨江大道",
-      "pick": "陆家嘴中心绿地",
-      "pickId": "B00155L3X0",
-      "score": 113,
-      "type": "风景名胜;公园广场;公园广场",
-      "rating": 4.7,
-      "tel": "021-58875487",
-      "openTime": "05:00-22:00",
-      "openText": "周一至周日 05:00-22:00",
-      "oldId": "B00156EVQO",
-      "drift_m": 373,
-      "changes": {
-        "poi": {
-          "from": "B00156EVQO",
-          "to": "B00155L3X0"
-        },
-        "coord": {
-          "from": [
-            121.5025,
-            31.237015
-          ],
-          "to": [
-            121.506251,
-            31.237985
-          ],
-          "drift_m": 373
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "陆家嘴中心绿地(113)",
+        "滨江大道(107)",
+        "陆家嘴滨江金融城-尚悦街(55)"
+      ]
     },
     {
       "id": "zhujiajiao",
@@ -366,29 +320,12 @@
     {
       "id": "chenghuangmiao",
       "name": "城隍庙·豫园商城",
-      "pick": "上海城隍庙",
-      "pickId": "B00155FHOA",
-      "score": 124,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.8,
-      "tel": "021-63284494",
-      "openTime": "08:30-16:30",
-      "openText": "周一至周日 08:30-16:30",
-      "oldId": "B00155FHOA",
-      "drift_m": 95,
-      "changes": {
-        "coord": {
-          "from": [
-            121.491879,
-            31.225193
-          ],
-          "to": [
-            121.492466,
-            31.225879
-          ],
-          "drift_m": 95
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "上海城隍庙(124)",
+        "金皇城庙(城隍庙第一购物中心)(102)",
+        "城隍庙·豫园(95)"
+      ]
     },
     {
       "id": "jingan-temple",
@@ -559,17 +496,12 @@
     {
       "id": "sleep-no-more",
       "name": "《不眠之夜》沉浸式戏剧",
-      "pick": "SleepNoMore上海",
-      "pickId": "B0FFK3FEES",
-      "score": 48,
-      "type": "体育休闲服务;体育休闲服务场所;体育休闲服务场所",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFK3FEES",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "SleepNoMore上海(48)",
+        "上海谲诡crafty沉浸式体验探案馆(静安店)(27)",
+        "诡谷24小时沉浸式剧本杀(三雄大厦店)(25)"
+      ]
     },
     {
       "id": "shanghai-grand-theatre",
@@ -594,48 +526,22 @@
     {
       "id": "huaihai-road",
       "name": "淮海中路",
-      "pick": "淮海中路",
-      "pickId": "B0IA3ARONU",
-      "score": -14,
-      "type": "地名地址信息;交通地名;道路名",
-      "rating": 0,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0IA3ARONU",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "淮海中路(-14)",
+        "淮海中路(-34)",
+        "淮海中路(地铁站)(-50)"
+      ]
     },
     {
       "id": "xujiahui",
       "name": "徐家汇商圈",
-      "pick": "光启城",
-      "pickId": "B0MDDZM62B",
-      "score": 30,
-      "type": "购物服务;商场;购物中心|购物服务;商场;普通商场",
-      "rating": 4.7,
-      "tel": "021-60406666",
-      "openTime": "10:00-21:30",
-      "openText": "周一至周日 10:00-21:30",
-      "oldId": "",
-      "drift_m": 1376,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0MDDZM62B"
-        },
-        "coord": {
-          "from": [
-            121.438963,
-            31.192472
-          ],
-          "to": [
-            121.428514,
-            31.183919
-          ],
-          "drift_m": 1376
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "光启城(30)",
+        "徐家汇源(-46)",
+        "湖南路(-89)"
+      ]
     },
     {
       "id": "qiantan-taikoo",
@@ -737,110 +643,41 @@
     {
       "id": "changli-road",
       "name": "昌里路夜市",
-      "pick": "昌里路",
-      "pickId": "BZAFR0022B",
-      "score": -32,
-      "type": "地名地址信息;交通地名;道路名",
-      "rating": 0,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "BZAFR0022B",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "昌里路(-32)",
+        "浆小白豆浆夜市(上南路店)(-50)"
+      ]
     },
     {
       "id": "korea-street",
       "name": "虹泉路韩国街",
-      "pick": "韩国街夜市(虹莘路店)",
-      "pickId": "B0IG4NURDM",
-      "score": 80,
-      "type": "购物服务;特色商业街;特色商业街",
-      "rating": 4.6,
-      "tel": "",
-      "openTime": "10:00-22:30",
-      "openText": "周一至周日 10:00-22:30",
-      "oldId": "",
-      "drift_m": 49,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0IG4NURDM"
-        },
-        "coord": {
-          "from": [
-            121.373461,
-            31.169037
-          ],
-          "to": [
-            121.372962,
-            31.16916
-          ],
-          "drift_m": 49
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "韩国街夜市(虹莘路店)(80)",
+        "禧泰·热带雨林泰疗SPA(虹泉路店)(79)",
+        "韩国美食一条街(井亭天地生活广场店)(49)"
+      ]
     },
     {
       "id": "anfu-road",
       "name": "安福路",
-      "pick": "brandy melville(安福路店)",
-      "pickId": "B0FFLBNYQD",
-      "score": 78,
-      "type": "购物服务;服装鞋帽皮具店;服装鞋帽皮具店",
-      "rating": 4.8,
-      "tel": "021-63526668",
-      "openTime": "11:00-21:00",
-      "openText": "周一至周五 11:00-20:00；周六至周日 11:00-21:00",
-      "oldId": "B0FFGGSA7A",
-      "drift_m": 338,
-      "changes": {
-        "poi": {
-          "from": "B0FFGGSA7A",
-          "to": "B0FFLBNYQD"
-        },
-        "coord": {
-          "from": [
-            121.444117,
-            31.214114
-          ],
-          "to": [
-            121.440665,
-            31.213381
-          ],
-          "drift_m": 338
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "brandy melville(安福路店)(78)",
+        "安福路(-14)",
+        "安福路(-14)"
+      ]
     },
     {
       "id": "yuyuan-road",
       "name": "愚园路",
-      "pick": "愚园艺术生活街区",
-      "pickId": "B0JGAYBTM7",
-      "score": 48,
-      "type": "购物服务;特色商业街;特色商业街",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFGNO2M7",
-      "drift_m": 67,
-      "changes": {
-        "poi": {
-          "from": "B0FFGNO2M7",
-          "to": "B0JGAYBTM7"
-        },
-        "coord": {
-          "from": [
-            121.430101,
-            31.218946
-          ],
-          "to": [
-            121.430783,
-            31.21911
-          ],
-          "drift_m": 67
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "愚园艺术生活街区(48)",
+        "愚园坊(-19)",
+        "愚园路(-24)"
+      ]
     },
     {
       "id": "sinan",
@@ -905,31 +742,20 @@
     {
       "id": "zhangyuan",
       "name": "张园",
-      "pick": "张园安垲第文创空间",
-      "pickId": "B0K6JDYBIQ",
-      "score": 123,
-      "type": "购物服务;专卖店;珠宝首饰工艺品|科教文化服务;科教文化场所;科教文化场所",
-      "rating": 4.3,
-      "tel": "16621201926",
-      "openTime": "08:30-22:00 08:30-22:00",
-      "openText": "周一至周日 08:30-22:00 10-01至10-07 周一至周日 08:30-22:00",
+      "pick": "张园",
+      "pickId": "B00155QIPB",
+      "score": 106,
+      "type": "购物服务;商场;商场",
+      "rating": 4.8,
+      "tel": "021-52386088",
+      "openTime": "08:00-24:00",
+      "openText": "周一至周日 08:00-24:00",
       "oldId": "B0K6JDYBIQ",
-      "drift_m": 61,
+      "drift_m": 0,
       "changes": {
-        "coord": {
-          "from": [
-            121.460064,
-            31.227971
-          ],
-          "to": [
-            121.460073,
-            31.227421
-          ],
-          "drift_m": 61
-        },
-        "rename": {
-          "from": "张园",
-          "to": "张园安垲第文创空间"
+        "poi": {
+          "from": "B0K6JDYBIQ",
+          "to": "B00155QIPB"
         }
       }
     },
@@ -967,33 +793,12 @@
     {
       "id": "huangpu-cruise",
       "name": "黄浦江游船（十六铺码头）",
-      "pick": "黄浦江游览快线游(金陵东路码头)",
-      "pickId": "B0FFKJLSCR",
-      "score": 106,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.6,
-      "tel": "",
-      "openTime": "15:30-20:00",
-      "openText": "周一至周日 15:30-20:00",
-      "oldId": "B0G0ZSX6EI",
-      "drift_m": 1165,
-      "changes": {
-        "poi": {
-          "from": "B0G0ZSX6EI",
-          "to": "B0FFKJLSCR"
-        },
-        "coord": {
-          "from": [
-            121.495593,
-            31.242602
-          ],
-          "to": [
-            121.493209,
-            31.232321
-          ],
-          "drift_m": 1165
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "黄浦江游览快线游(金陵东路码头)(106)",
+        "黄浦江游览(101)",
+        "申城之光黄浦江游船(99)"
+      ]
     },
     {
       "id": "century-park",
@@ -1442,20 +1247,31 @@
     {
       "id": "dianshan-lake",
       "name": "淀山湖·彩虹桥",
-      "pick": "淀山湖风景区",
-      "pickId": "B00155G34C",
-      "score": 141,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "021-64393615",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
+      "pick": "淀山湖彩虹桥·团建拓展·天幕烧烤露营地",
+      "pickId": "B0LGSA1QON",
+      "score": 63,
+      "type": "体育休闲服务;休闲场所;休闲场所",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "09:00-20:30",
+      "openText": "周一至周日 09:00-20:30",
       "oldId": "B0KRYOT1LV",
-      "drift_m": 0,
+      "drift_m": 1635,
       "changes": {
         "poi": {
           "from": "B0KRYOT1LV",
-          "to": "B00155G34C"
+          "to": "B0LGSA1QON"
+        },
+        "coord": {
+          "from": [
+            121.009195,
+            31.131111
+          ],
+          "to": [
+            121.024268,
+            31.138159
+          ],
+          "drift_m": 1635
         }
       }
     },

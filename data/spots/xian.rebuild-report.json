@@ -1,0 +1,910 @@
+{
+  "city": "西安",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 18,
+      "博物馆": 10,
+      "夜景": 4,
+      "山水": 6,
+      "美食": 5,
+      "演出": 3,
+      "街区": 6,
+      "商圈": 3,
+      "公园": 6,
+      "亲子": 4,
+      "古镇": 3
+    },
+    "byGroup": {
+      "core": 37,
+      "night": 7,
+      "family": 4,
+      "street": 6,
+      "food": 5,
+      "park": 6,
+      "mall": 3,
+      "total": 68,
+      "suburb": 17,
+      "coreRatio": 65
+    }
+  },
+  "keep": [
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "cat": "博物馆",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "cat": "夜景",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "cat": "夜景",
+      "heat": 8.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "dayanta-fountain",
+      "name": "大雁塔北广场喷泉",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "cat": "亲子",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "banpo-museum",
+      "name": "西安半坡博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "tang-west-market",
+      "name": "大唐西市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "gaos-mansion",
+      "name": "高家大院",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "xian-incident",
+      "name": "西安事变纪念馆（张学良公馆）",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "shaanxi-nature",
+      "name": "陕西自然博物馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "han-weiyang",
+      "name": "汉长安城未央宫遗址椒房殿遗址",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "cat": "美食",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "cat": "美食",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "cat": "美食",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "dapiyuan",
+      "name": "大皮院清真寺",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "dahu-1935",
+      "name": "大华·1935",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "shuyuanmen",
+      "name": "书院门牌坊",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "shunchengxiang",
+      "name": "顺城巷",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "xiying-film",
+      "name": "西影电影园区",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "yisushe-block",
+      "name": "易俗社文化街区",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "xiaozhai-seg",
+      "name": "赛格国际购物中心",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "西安大悦城",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "qujiang-pool",
+      "name": "曲江池遗址公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "expo-park",
+      "name": "西安世博园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "chanba-wetland",
+      "name": "西安浐灞国家湿地公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "kunming-pool",
+      "name": "昆明池·七夕公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [
+    {
+      "id": "xiaonanmen",
+      "name": "小南门夜市",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（美食 ≤4）且评分靠后"
+    },
+    {
+      "id": "g-park",
+      "name": "老城根G park水晶广场",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（商圈 ≤2）且评分靠后"
+    },
+    {
+      "id": "hancheng-lake",
+      "name": "汉城湖公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑博物馆",
+      "cat": "古迹",
+      "heat": 10,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "mount-hua",
+      "name": "华山风景名胜区",
+      "cat": "山水",
+      "heat": 9.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "drum-tower",
+      "name": "西安鼓楼",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "huaqing-palace",
+      "name": "华清宫",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "changhen-ge",
+      "name": "《长恨歌》实景演出",
+      "cat": "演出",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "yongningmen-night",
+      "name": "永宁门夜景·南门广场",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "meng-changan",
+      "name": "《梦长安》大唐迎宾盛礼",
+      "cat": "演出",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "hanyangling-museum",
+      "name": "汉阳陵博物院",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "shaanxi-archaeology",
+      "name": "陕西考古博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "big-mosque",
+      "name": "西安化觉巷清真大寺",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵景区",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "西安秦岭野生动物园",
+      "cat": "亲子",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "tuoling-legend",
+      "name": "《驼铃传奇》秀",
+      "cat": "演出",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "taibai-shan",
+      "name": "太白山国家森林公园",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "guanzhong-minsu",
+      "name": "西安关中民俗艺术博物院",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "maoling-museum",
+      "name": "茂陵博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "cuihua-shan",
+      "name": "翠华山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "nanwutai",
+      "name": "终南山南五台景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "lishan",
+      "name": "骊山国家森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qinglong-temple",
+      "name": "青龙寺遗址景区",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "shuilu-an",
+      "name": "水陆庵",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "taiping-forest",
+      "name": "太平国家森林公园",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "xiangji-temple",
+      "name": "香积寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "louguantai",
+      "name": "楼观台国家森林公园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "shijingli",
+      "name": "诗经里",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    },
+    {
+      "id": "qinzhen",
+      "name": "秦镇（秦渡镇）",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "核心类但拿不到评分，待人工"
+    }
+  ],
+  "add": [
+    {
+      "name": "大唐西市",
+      "coord": [
+        108.907984,
+        34.246363
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "汉城湖旅游风景区",
+      "coord": [
+        108.918796,
+        34.298276
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "西安城墙安远门",
+      "coord": [
+        108.947345,
+        34.275821
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "from": 9.5,
+      "to": 7
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "xian-incident",
+      "name": "西安事变纪念馆（张学良公馆）",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "expo-park",
+      "name": "西安世博园",
+      "from": 6.5,
+      "to": 9
+    },
+    {
+      "id": "shaanxi-nature",
+      "name": "陕西自然博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "chanba-wetland",
+      "name": "西安浐灞国家湿地公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "han-weiyang",
+      "name": "汉长安城未央宫遗址椒房殿遗址",
+      "from": 5.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -1,8 +1,9 @@
 {
   "city": "苏州",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1239,18 +1240,6 @@
       "poi_name": "震泽古镇",
       "name_adopted": false,
       "coord_moved": true
-    }
-  ],
-  "skipped": [
-    {
-      "id": "wuzhong-museum",
-      "name": "吴文化博物馆",
-      "before": [
-        120.631,
-        31.2555
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "eslite",
@@ -1260,14 +1249,48 @@
         31.3206
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "after": [
+        120.710552,
+        31.320886
+      ],
+      "drift_m": 1867,
+      "amap_poi_id": "B0MUNU2HXS",
+      "tier": "amap-llm-around",
+      "renamed_from": "诚品书店（苏州）",
+      "renamed_to": "复合式诚品书店文化商业综合体(右岸街店)",
+      "poi_name": "复合式诚品书店文化商业综合体(右岸街店)",
+      "name_adopted": true,
+      "coord_moved": true
     },
     {
-      "id": "shilu",
-      "name": "石路商圈",
+      "id": "wangshiyuan-night",
+      "name": "网师园夜花园",
       "before": [
-        120.5957,
-        31.3057
+        120.6313,
+        31.3012
+      ],
+      "provider": "amap",
+      "after": [
+        120.63377,
+        31.298075
+      ],
+      "drift_m": 419,
+      "amap_poi_id": "B02000IUPA",
+      "tier": "amap-llm-around",
+      "renamed_from": "网师园夜花园",
+      "renamed_to": "网师园",
+      "poi_name": "网师园",
+      "name_adopted": true,
+      "coord_moved": true
+    }
+  ],
+  "skipped": [
+    {
+      "id": "eslite",
+      "name": "诚品书店（苏州）",
+      "before": [
+        120.7302,
+        31.3206
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
@@ -1281,6 +1304,26 @@
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "wuzhong-museum",
+      "name": "吴文化博物馆",
+      "before": [
+        120.631,
+        31.2555
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "shilu",
+      "name": "石路商圈",
+      "before": [
+        120.5957,
+        31.3057
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

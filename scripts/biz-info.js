@@ -20,6 +20,11 @@ const BAD_TYPE = /地铁站|公交车站|公交站|售票处|停车场|停车楼
 const GOOD_TYPE = /风景名胜|博物馆|旅游景点|公园|古镇|寺|庙|教堂|纪念馆|美术馆|文化|乐园|景区|园林|故居|遗址/;
 const OFFICIAL_SUFFIX = /^(景区|风景区|旅游区|博物馆|博物院|公园|古镇|古街|老街|寺|宫|陵|遗址|纪念馆|美术馆|大剧院|剧场|广场|步行街|商业街|街区)$/;
 const HARD_BAD_NAME = /[-－](雕像|铺面房|售|停车场|入口|出口|大门|侧门|正门|地铁|公交|快艇|炮|飞机|展品|模型|店|铺|摊位|服务中心|售票|观景平台|观景台|步道|栈道|平台|码头)/;
+// 店铺/专营店型：名字带「（…店）」或以「店/铺/铺面房/摊位」结尾 → 几乎肯定不是景点本体
+const SHOP_NAME = /[（(][^）)]*店[）)]\s*$|(店|铺|铺面房|摊位|专柜|旗舰店)$/;
+// 状态括注：装修中/暂停开放/不对外开放/停业 → 不是可游玩的场馆本体
+const STATUS_PAREN = /[（(][^）)]*(装修|暂停开放|不对外开放|停业|闭馆|改造中|施工)[^）)]*[）)]/;
+const SHOP_TYPE = /专卖店|零售|手机销售|餐饮相关|特色店铺|服装|鞋包|化妆品|珠宝|食品店/;
 const QUALIFIED_SCORE = 55;
 const MAX_COORD_MOVE_M = 2000;
 
@@ -94,6 +99,9 @@ function acceptable(poi, spot, sc) {
   if (BAD_TYPE.test(poi.type) || HARD_BAD_NAME.test(poi.name)) return false;
   // 带连字符的候选通常是子设施（华山风景名胜区-长空栈道 / 南京路步行街-雕像）：我们名字没连字符就不采信
   if (/[-－]/.test(poi.name) && !/[-－]/.test(spot.name)) return false;
+  // 店铺型候选（YELLOW KORNER(成都远洋太古里店) / boomcup北京杨梅竹店 / 烟袋斜街铺面房）
+  if (SHOP_NAME.test(poi.name) || SHOP_TYPE.test(poi.type)) return false;
+  if (STATUS_PAREN.test(poi.name)) return false;
   if (sc < QUALIFIED_SCORE) return false;
   const cn = norm(spot.name), pn = norm(poi.name);
   if (hasQualifier(spot.name)) return pn === cn || pn.includes(cn);

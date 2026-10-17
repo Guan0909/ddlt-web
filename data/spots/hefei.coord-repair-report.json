@@ -1,8 +1,9 @@
 {
   "city": "合肥",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1144,29 +1145,30 @@
       "poi_name": "渡江战役总前委旧址纪念馆",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "anhui-museum-old",
+      "name": "安徽博物院老馆",
+      "before": [
+        117.2855,
+        31.861
+      ],
+      "provider": "amap",
+      "after": [
+        117.275179,
+        31.86349
+      ],
+      "drift_m": 1013,
+      "amap_poi_id": "B02270011E",
+      "tier": "amap-llm-around",
+      "renamed_from": "安徽博物院老馆",
+      "renamed_to": "安徽博物院(老馆)",
+      "poi_name": "安徽博物院(老馆)",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "ningguo-road",
-      "name": "宁国路龙虾一条街",
-      "before": [
-        117.205,
-        31.83
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "zhi-xincheng",
-      "name": "之心城",
-      "before": [
-        117.255,
-        31.847
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "anhui-museum-old",
       "name": "安徽博物院老馆",
@@ -1178,6 +1180,26 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "ningguo-road",
+      "name": "宁国路龙虾一条街",
+      "before": [
+        117.205,
+        31.83
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "zhi-xincheng",
+      "name": "之心城",
+      "before": [
+        117.255,
+        31.847
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "baohe-wanda",
       "name": "合肥包河万达广场",
       "before": [
@@ -1185,7 +1207,7 @@
         31.8395
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "daishan-lake",
@@ -1195,7 +1217,7 @@
         31.99
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "non-heritage",
@@ -1205,7 +1227,7 @@
         32.06
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "1912-street",
@@ -1215,7 +1237,7 @@
         31.836
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "guanting-road",
@@ -1225,7 +1247,7 @@
         31.8435
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

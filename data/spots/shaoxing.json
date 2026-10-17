@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1084,7 +1084,7 @@
     },
     {
       "id": "shimao",
-      "name": "绍兴世茂广场",
+      "name": "世茂·湖滨新天地",
       "cat": "商圈",
       "tags": [
         "商场",
@@ -1099,10 +1099,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        120.5972,
-        30.0231
+        120.598376,
+        30.005297
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFJTFGB5",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "keqiao-old",

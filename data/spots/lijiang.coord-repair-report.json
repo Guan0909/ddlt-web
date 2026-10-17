@@ -1,8 +1,9 @@
 {
   "city": "丽江",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1093,19 +1094,51 @@
       "poi_name": "走婚桥观景台",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "bar-street",
+      "name": "酒吧一条街（新华街）",
+      "before": [
+        100.2334,
+        26.8758
+      ],
+      "provider": "amap",
+      "after": [
+        100.233481,
+        26.875849
+      ],
+      "drift_m": 10,
+      "amap_poi_id": "B037814BC0",
+      "tier": "amap-llm-around",
+      "renamed_from": "酒吧一条街（新华街）",
+      "renamed_to": "丽江古城-酒吧街",
+      "poi_name": "丽江古城-酒吧街",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "huadu-mall",
+      "name": "华都商贸城",
+      "before": [
+        100.223,
+        26.879
+      ],
+      "provider": "amap",
+      "after": [
+        100.229924,
+        26.875271
+      ],
+      "drift_m": 802,
+      "amap_poi_id": "B0FFH8B9LH",
+      "tier": "amap-llm-around",
+      "renamed_from": "华都商贸城",
+      "renamed_to": "丽江华都商贸城(正泰商业街店)",
+      "poi_name": "丽江华都商贸城(正泰商业街店)",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "zhenxing-xiang",
-      "name": "振兴巷（灯笼街）",
-      "before": [
-        100.232,
-        26.873
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "bar-street",
       "name": "酒吧一条街（新华街）",
@@ -1127,6 +1160,16 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "zhenxing-xiang",
+      "name": "振兴巷（灯笼街）",
+      "before": [
+        100.232,
+        26.873
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "wenbi-lake",
       "name": "文笔海",
       "before": [
@@ -1134,7 +1177,7 @@
         26.816
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "locke-house",
@@ -1144,7 +1187,7 @@
         27.0175
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "laojunshan",
@@ -1154,7 +1197,7 @@
         26.755
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "ninety-nine-lakes",
@@ -1164,7 +1207,7 @@
         26.95
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "daluoshui",
@@ -1174,7 +1217,7 @@
         27.687
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     },
     {
       "id": "mosuo-museum",
@@ -1184,7 +1227,7 @@
         27.689
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

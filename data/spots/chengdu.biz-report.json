@@ -3,15 +3,15 @@
   "date": "2026-10-17",
   "stat": {
     "total": 70,
-    "poiFixed": 22,
-    "renamed": 24,
-    "coordFixed": 25,
-    "openFilled": 50,
+    "poiFixed": 18,
+    "renamed": 20,
+    "coordFixed": 20,
+    "openFilled": 40,
     "closedMon": 2,
-    "tel": 49,
-    "rating": 70,
-    "photo": 7,
-    "noCand": 0,
+    "tel": 44,
+    "rating": 58,
+    "photo": 2,
+    "noCand": 12,
     "err": 0
   },
   "log": [
@@ -275,37 +275,43 @@
     {
       "id": "taikooli",
       "name": "远洋太古里",
-      "pick": "太古里东广场-广东会馆",
-      "pickId": "B0FFKL4M9Q",
-      "score": 120,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4,
-      "tel": "",
-      "openTime": "19:00-04:00",
-      "openText": "周一至周日 19:00-04:00",
+      "pick": "成都太古里",
+      "pickId": "B0FFF6X49V",
+      "score": 85,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.9,
+      "tel": "028-65963000;028-65965000",
+      "openTime": "10:00-22:30",
+      "openText": "周一至周四 10:00-22:00；周五至周日 10:00-22:30",
       "oldId": "B0FFKL4M9Q",
-      "drift_m": 0,
-      "changes": {}
+      "drift_m": 142,
+      "changes": {
+        "poi": {
+          "from": "B0FFKL4M9Q",
+          "to": "B0FFF6X49V"
+        },
+        "coord": {
+          "from": [
+            104.082367,
+            30.653041
+          ],
+          "to": [
+            104.083809,
+            30.653358
+          ],
+          "drift_m": 142
+        }
+      }
     },
     {
       "id": "renmin-park",
       "name": "人民公园·鹤鸣茶社",
-      "pick": "人民公园",
-      "pickId": "B001C7X8QA",
-      "score": 146,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.8,
-      "tel": "028-86132021",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "oldId": "B001C7X8QA",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "人民公园·鹤鸣茶社",
-          "to": "人民公园"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "人民公园(146)",
+        "人民公园-相亲角(128)",
+        "鹤鸣茶社(18)"
+      ]
     },
     {
       "id": "chengdu-museum",
@@ -405,37 +411,12 @@
     {
       "id": "jiuyanqiao",
       "name": "九眼桥·安顺廊桥",
-      "pick": "安顺廊桥",
-      "pickId": "B0FFLFG5K5",
-      "score": 117,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "028-84446888",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFGQ5RIP",
-      "drift_m": 386,
-      "changes": {
-        "poi": {
-          "from": "B0FFGQ5RIP",
-          "to": "B0FFLFG5K5"
-        },
-        "coord": {
-          "from": [
-            104.08958,
-            30.640332
-          ],
-          "to": [
-            104.085716,
-            30.641325
-          ],
-          "drift_m": 386
-        },
-        "rename": {
-          "from": "九眼桥·安顺廊桥",
-          "to": "安顺廊桥"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "安顺廊桥(117)",
+        "廊桥酒吧(九眼桥酒吧街店)(71)",
+        "廊桥故事民宿(成都九眼桥店)(70)"
+      ]
     },
     {
       "id": "wangjianglou",
@@ -470,104 +451,42 @@
     {
       "id": "jianshe-road",
       "name": "建设路小吃街",
-      "pick": "锦里小吃街",
-      "pickId": "B001C8OXSS",
-      "score": 26,
-      "type": "购物服务;特色商业街;步行街",
-      "rating": 4.5,
-      "tel": "028-85538914",
-      "openTime": "09:00-22:00",
-      "openText": "周一至周日 09:00-22:00",
-      "oldId": "B0FFL1BJCX",
-      "drift_m": 5736,
-      "changes": {
-        "poi": {
-          "from": "B0FFL1BJCX",
-          "to": "B001C8OXSS"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "锦里小吃街(26)",
+        "周签签锅巴土豆(建设路总店)(10)",
+        "徐亮胖哥烤蹄(建设路总店)(10)"
+      ]
     },
     {
       "id": "yulin",
       "name": "玉林路·小酒馆",
-      "pick": "小酒馆(玉林西路店)",
-      "pickId": "B001C7T99N",
-      "score": 84,
-      "type": "体育休闲服务;娱乐场所;酒吧",
-      "rating": 4.8,
-      "tel": "028-85568552",
-      "openTime": "15:00-02:00",
-      "openText": "周一 19:00-02:00；周二至周日 15:00-02:00",
-      "oldId": "",
-      "drift_m": 86,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B001C7T99N"
-        },
-        "coord": {
-          "from": [
-            104.057301,
-            30.629511
-          ],
-          "to": [
-            104.056407,
-            30.629532
-          ],
-          "drift_m": 86
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "小酒馆(玉林西路店)(84)",
+        "白玛小酒馆(玉林店)(72)",
+        "候海小酒馆(11)"
+      ]
     },
     {
       "id": "qintai",
       "name": "琴台路",
-      "pick": "琴台路3号院",
-      "pickId": "B0FFFABHXD",
-      "score": 28,
-      "type": "商务住宅;住宅区;住宅小区",
-      "rating": 0,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "BZA8N5054A",
-      "drift_m": 478,
-      "changes": {
-        "poi": {
-          "from": "BZA8N5054A",
-          "to": "B0FFFABHXD"
-        },
-        "coord": {
-          "from": [
-            104.046869,
-            30.662233
-          ],
-          "to": [
-            104.044499,
-            30.658453
-          ],
-          "drift_m": 478
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "琴台路3号院(28)",
+        "琴台路5号院(28)",
+        "琴台路1号院(28)"
+      ]
     },
     {
       "id": "shufeng",
       "name": "蜀风雅韵",
-      "pick": "琴台故径",
-      "pickId": "B001C802CH",
-      "score": 86,
-      "type": "风景名胜;风景名胜;风景名胜|购物服务;特色商业街;特色商业街",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B001C7WA8H",
-      "drift_m": 11,
-      "changes": {
-        "poi": {
-          "from": "B001C7WA8H",
-          "to": "B001C802CH"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "琴台故径(86)",
+        "及时雨典当(市中心店)(49)",
+        "蜀风雅韵(36)"
+      ]
     },
     {
       "id": "huanhuaxi",
@@ -701,22 +620,10 @@
     {
       "id": "fangsuo",
       "name": "方所书店",
-      "pick": "方所(成都太古里店)",
-      "pickId": "B0FFGHAK5B",
-      "score": 50,
-      "type": "购物服务;专卖店;书店",
-      "rating": 4.7,
-      "tel": "028-86586858",
-      "openTime": "10:00-22:30",
-      "openText": "周一至周四 10:00-22:00；周五至周日 10:00-22:30",
-      "oldId": "",
-      "drift_m": 12,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0FFGHAK5B"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "方所(成都太古里店)(50)"
+      ]
     },
     {
       "id": "tiexiangsi",
@@ -746,12 +653,7 @@
       "openText": "周一至周日 00:00-24:00",
       "oldId": "B0FFF5TVI7",
       "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "锦城湖公园",
-          "to": "锦城湖"
-        }
-      }
+      "changes": {}
     },
     {
       "id": "guixi",
@@ -956,31 +858,24 @@
     {
       "id": "xiling",
       "name": "西岭雪山",
-      "pick": "西岭雪山大飞水景区-原始林风景区",
-      "pickId": "B0FFI1OJLJ",
-      "score": 94,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 3.6,
-      "tel": "",
-      "openTime": "09:00-17:00",
-      "openText": "周一至周日 09:00-17:00；停止入场:17:00",
+      "pick": "西岭雪山风景名胜区",
+      "pickId": "B001C7UH3U",
+      "score": 89,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "028-88309080",
+      "openTime": [],
+      "openText": "9:00-17:00",
       "oldId": "B0L0JHG0KT",
-      "drift_m": 1342,
+      "drift_m": 2534,
       "changes": {
         "poi": {
           "from": "B0L0JHG0KT",
-          "to": "B0FFI1OJLJ"
+          "to": "B001C7UH3U"
         },
-        "coord": {
-          "from": [
-            103.171633,
-            30.675123
-          ],
-          "to": [
-            103.183053,
-            30.682138
-          ],
-          "drift_m": 1342
+        "rename": {
+          "from": "西岭雪山",
+          "to": "西岭雪山风景名胜区"
         }
       }
     },
@@ -1042,17 +937,10 @@
     {
       "id": "pengzhen",
       "name": "双流区观音阁百年老茶馆",
-      "pick": "双流区观音阁百年老茶馆",
-      "pickId": "B0J32C050K",
-      "score": 35,
-      "type": "购物服务;专卖店;专营店|餐饮服务;茶艺馆;茶艺馆",
-      "rating": 4.7,
-      "tel": "13688444270",
-      "openTime": "05:00-18:00",
-      "openText": "周一至周日 05:00-18:00",
-      "oldId": "B0J32C050K",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "双流区观音阁百年老茶馆(35)"
+      ]
     },
     {
       "id": "baoguang",
@@ -1097,10 +985,6 @@
             30.822617
           ],
           "drift_m": 384
-        },
-        "rename": {
-          "from": "新都桂湖",
-          "to": "桂湖"
         }
       }
     },
@@ -1181,17 +1065,12 @@
     {
       "id": "wuchazi",
       "name": "五岔子大桥",
-      "pick": "五岔子大桥",
-      "pickId": "B0FFG88RF2",
-      "score": -14,
-      "type": "地名地址信息;交通地名;桥",
-      "rating": 0,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFG88RF2",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "五岔子大桥(-14)",
+        "Atlantis·海岸餐酒吧(怡丰花园店)(-26)",
+        "新会展中心东侧站(公交站)(-79)"
+      ]
     },
     {
       "id": "jiangtan",
@@ -1393,33 +1272,12 @@
     {
       "id": "kuanxiangzi-paulo",
       "name": "泡桐树街·小通巷",
-      "pick": "小通巷8号院",
-      "pickId": "B0FFG7D5EZ",
-      "score": 24,
-      "type": "商务住宅;住宅区;住宅小区",
-      "rating": 0,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B001C7X1Z1",
-      "drift_m": 309,
-      "changes": {
-        "poi": {
-          "from": "B001C7X1Z1",
-          "to": "B0FFG7D5EZ"
-        },
-        "coord": {
-          "from": [
-            104.05369,
-            30.665482
-          ],
-          "to": [
-            104.052953,
-            30.668187
-          ],
-          "drift_m": 309
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "小通巷8号院(24)",
+        "小通巷2号院(24)",
+        "小通巷1号精酿馆(11)"
+      ]
     },
     {
       "id": "wenshu-fang",
@@ -1454,37 +1312,12 @@
     {
       "id": "dujiangyan-night",
       "name": "南桥夜景（都江堰）",
-      "pick": "南桥",
-      "pickId": "B001C09HZL",
-      "score": 125,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "oldId": "",
-      "drift_m": 36,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B001C09HZL"
-        },
-        "coord": {
-          "from": [
-            103.61604,
-            30.996627
-          ],
-          "to": [
-            103.615948,
-            30.996316
-          ],
-          "drift_m": 36
-        },
-        "rename": {
-          "from": "南桥夜景（都江堰）",
-          "to": "南桥"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "南桥(125)",
+        "都江堰景区(122)",
+        "都江堰景区玉垒山(110)"
+      ]
     },
     {
       "id": "panda-valley",
@@ -1524,17 +1357,11 @@
     {
       "id": "zhongshuge",
       "name": "钟书阁（都江堰）",
-      "pick": "钟书阁(融创茂店)",
-      "pickId": "B0G22ZTS45",
-      "score": 83,
-      "type": "购物服务;专卖店;书店",
-      "rating": 4.7,
-      "tel": "028-61427881",
-      "openTime": "10:00-21:00",
-      "openText": "周一至周日 10:00-21:00",
-      "oldId": "B0G22ZTS45",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "钟书阁(融创茂店)(83)",
+        "钟书阁(成都银泰中心in99店)(27)"
+      ]
     },
     {
       "id": "east-suburb-park",

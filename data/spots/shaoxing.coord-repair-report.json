@@ -1,8 +1,9 @@
 {
   "city": "绍兴",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1241,29 +1242,30 @@
       "poi_name": "白马湖",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "shimao",
+      "name": "绍兴世茂广场",
+      "before": [
+        120.5972,
+        30.0231
+      ],
+      "provider": "amap",
+      "after": [
+        120.598376,
+        30.005297
+      ],
+      "drift_m": 1983,
+      "amap_poi_id": "B0FFJTFGB5",
+      "tier": "amap-llm-around",
+      "renamed_from": "绍兴世茂广场",
+      "renamed_to": "世茂·湖滨新天地",
+      "poi_name": "世茂·湖滨新天地",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
-    {
-      "id": "xixiaohe",
-      "name": "西小河历史街区",
-      "before": [
-        120.5757,
-        30.0117
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "fenghengjie",
-      "name": "府横街小吃街",
-      "before": [
-        120.5782,
-        30.0126
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
     {
       "id": "shimao",
       "name": "绍兴世茂广场",
@@ -1275,6 +1277,26 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
+      "id": "xixiaohe",
+      "name": "西小河历史街区",
+      "before": [
+        120.5757,
+        30.0117
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "fenghengjie",
+      "name": "府横街小吃街",
+      "before": [
+        120.5782,
+        30.0126
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "xiaobaihua",
       "name": "绍兴小百花越剧艺术中心",
       "before": [
@@ -1282,7 +1304,7 @@
         30.0816
       ],
       "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

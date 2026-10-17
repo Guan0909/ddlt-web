@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -44,7 +44,11 @@
         100.821392,
         22.007019
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30LWEF",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "starlight-market",
@@ -64,10 +68,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8221,
-        22.0097
+        100.824894,
+        22.004958
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0L17C9I5R",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manting-park",
@@ -87,10 +95,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8055,
-        21.9905
+        100.805929,
+        21.995868
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV11451231",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "xtbg",
@@ -113,7 +125,11 @@
         101.273887,
         21.917224
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3006LK",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "wild-elephant-valley",
@@ -160,10 +176,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.927,
-        21.855
+        100.938295,
+        21.850192
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KRXRGXPB",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "forest-park",
@@ -182,10 +202,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.848,
-        21.936
+        100.876596,
+        22.027277
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3001GV",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mengle-temple",
@@ -230,10 +254,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8062,
-        21.9886
+        100.806173,
+        21.989015
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3005IG",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "wangtianshu",
@@ -252,10 +280,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        101.65,
-        21.57
+        101.577948,
+        21.623915
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B300CS8",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "golden-pagoda",
@@ -274,10 +306,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.82,
-        22.0085
+        100.819697,
+        22.005978
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFIPTCRG",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "six-country-water-market",
@@ -296,10 +332,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8205,
-        22.0035
+        100.821999,
+        22.004616
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0I2LZY7VM",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "riverside-night-market",
@@ -319,10 +359,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.812,
-        21.997
+        100.808882,
+        22.004946
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KG7PY056",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manting-bonfire-show",
@@ -341,10 +385,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8055,
-        21.9905
+        100.807983,
+        21.993619
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30MGNE",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "jinuo-village",
@@ -390,10 +438,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.7955,
-        21.9865
+        100.786669,
+        22.010849
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3005F2",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "poshui-square",
@@ -412,10 +464,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.793,
-        21.9985
+        100.806123,
+        22.001014
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV11451226",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "dai-show",
@@ -456,10 +512,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.961,
-        21.9144
+        100.959831,
+        21.914715
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0H6S5ZCEU",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "nannuo-mountain",
@@ -478,10 +538,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.55,
-        21.96
+        100.600144,
+        21.943302
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MGCDE4WR",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mengjinglai",
@@ -500,10 +564,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.083,
-        21.67
+        100.085413,
+        21.698298
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B300CN7",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "banna-museum",
@@ -522,10 +590,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        100.79,
-        21.98
+        100.816416,
+        21.964044
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30LUXA",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manjinglan-night-market",
@@ -544,10 +616,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.803,
-        22.001
+        100.803393,
+        22.00081
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30042U",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "lantsang-bridge",
@@ -566,10 +642,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.81,
-        22
+        100.8311,
+        21.990989
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFMAKNY2",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "rainforest-valley",
@@ -588,10 +668,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.87,
-        22.12
+        100.991383,
+        22.043995
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LUL15G65",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "dadugang-tea-garden",
@@ -637,10 +721,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.928,
-        21.854
+        100.942281,
+        21.848671
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGRNZOT",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "laobanzhang",
@@ -681,10 +769,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.07,
-        21.68
+        100.033312,
+        21.679676
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B300CLI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manfeilong-pagoda",
@@ -703,10 +795,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        100.61,
-        21.64
+        100.686919,
+        21.597919
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30M1F1",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "lvshilin",
@@ -726,14 +822,18 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        101.3,
-        21.89
+        101.404893,
+        21.849703
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B300417",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "dai-park-water-square",
-      "name": "傣族园泼水广场",
+      "name": "西双版纳傣族园-新泼水广场",
       "cat": "亲子",
       "tags": [
         "泼水",
@@ -748,10 +848,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.9285,
-        21.8535
+        100.937332,
+        21.850001
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KUNCQ5OK",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "jingzhen-pavilion",
@@ -796,10 +900,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        100.815,
-        21.995
+        100.790398,
+        22.030053
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0KGUZLPEA",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "forest-culture-museum",
@@ -818,10 +926,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        101.274,
-        21.917
+        101.257925,
+        21.923325
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGO02GC",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "peacock-culture-square",
@@ -840,10 +952,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.82,
-        22.005
+        100.809611,
+        21.961779
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFL02P1N",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "minzu-folk-park",
@@ -862,10 +978,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.7905,
-        21.9905
+        100.790796,
+        21.994919
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3005EE",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mange-temple",
@@ -910,10 +1030,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8195,
-        22.0045
+        100.816755,
+        22.009985
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKDY479",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manzhang-village",
@@ -932,10 +1056,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.88,
-        22.14
+        100.844299,
+        22.11481
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHI42OU",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "elephant-museum",
@@ -954,10 +1082,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.856,
-        22.169
+        100.856386,
+        22.173725
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGA1GBE",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "jinuo-museum",
@@ -998,10 +1130,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        100.415,
-        21.97
+        100.35584,
+        21.941077
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LAYR07E7",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "dushu-chenglin",
@@ -1020,10 +1156,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.08,
-        21.665
+        100.084708,
+        21.698183
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKHMH7W",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "yiwu-town",
@@ -1042,10 +1182,14 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        101.58,
-        22.03
+        101.462025,
+        21.982225
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0K2B99LZI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mohan-port",
@@ -1090,10 +1234,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.795,
-        22
+        100.800892,
+        22.031127
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BZ7DMF005N",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "sunac-park",
@@ -1112,10 +1260,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.777,
-        21.971
+        100.741154,
+        22.027827
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGRMZJ0",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "binjiang-park",
@@ -1134,10 +1286,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.818,
-        22.002
+        100.804837,
+        22.008489
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LRY6V3H0",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mengyuan-xianjing",
@@ -1163,7 +1319,7 @@
     },
     {
       "id": "nanyao-garden",
-      "name": "南药园（西双版纳）",
+      "name": "西双版纳南药园",
       "cat": "公园",
       "tags": [
         "药用植物",
@@ -1178,10 +1334,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.788,
-        21.984
+        100.789891,
+        22.001415
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30000F",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "peacock-lake-park",
@@ -1200,10 +1360,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.7935,
-        21.9975
+        100.795662,
+        22.008451
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV10222752",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manjinglan-temple",
@@ -1222,10 +1386,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.8032,
-        22.0006
+        100.80317,
+        22.000619
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV11451228",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "rt-mart",
@@ -1244,10 +1412,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.794,
-        21.997
+        100.805743,
+        22.004285
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30LZSN",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "manhena-village",
@@ -1266,10 +1438,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.782,
-        21.97
+        100.824924,
+        21.972472
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFJ2ZH2Y",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "jiunmu-hot-spring",
@@ -1288,10 +1464,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.779,
-        21.969
+        100.755275,
+        22.020525
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0M6FHZ860",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mengle-rain-park",
@@ -1310,10 +1490,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.7875,
-        21.98
+        100.80619,
+        21.96933
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "BV11600264",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "nabanhe-reserve",
@@ -1332,10 +1516,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        100.63,
-        22.17
+        100.692457,
+        22.148169
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3008G9",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "cuipingfeng",
@@ -1376,10 +1564,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        101.6,
-        21.52
+        101.598653,
+        21.535117
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF63TQZ",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "zhanglang-village",
@@ -1420,10 +1612,14 @@
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        100.45,
-        21.957
+        100.454298,
+        21.952495
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30LVZW",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "liusha-river-park",
@@ -1442,10 +1638,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.788,
-        21.982
+        100.775454,
+        21.990803
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B30M7Y6",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mandou-temple",
@@ -1464,10 +1664,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.83,
-        22
+        100.811472,
+        22.01278
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B02B3000L0",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "gunaka-culture-park",
@@ -1486,10 +1690,14 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.781,
-        21.969
+        100.824917,
+        21.972538
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFK6JTC1",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "mandan-village",

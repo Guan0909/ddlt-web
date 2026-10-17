@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -333,7 +333,7 @@
     },
     {
       "id": "bar-street",
-      "name": "酒吧一条街（新华街）",
+      "name": "丽江古城-酒吧街",
       "cat": "夜景",
       "tags": [
         "夜景",
@@ -348,10 +348,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        100.2334,
-        26.8758
+        100.233481,
+        26.875849
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037814BC0",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "zhongyi-market",
@@ -537,7 +541,7 @@
     },
     {
       "id": "huadu-mall",
-      "name": "华都商贸城",
+      "name": "丽江华都商贸城(正泰商业街店)",
       "cat": "商圈",
       "tags": [
         "小吃城",
@@ -552,10 +556,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        100.223,
-        26.879
+        100.229924,
+        26.875271
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFH8B9LH",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "heilongtan",

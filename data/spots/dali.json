@@ -20,7 +20,7 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-16"
+    "coord_repaired_at": "2026-10-17"
   },
   "spots": [
     {
@@ -129,7 +129,7 @@
     },
     {
       "id": "fotu-tower",
-      "name": "佛图塔",
+      "name": "佛图寺",
       "cat": "古迹",
       "tags": [
         "南诏",
@@ -144,10 +144,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        100.2196,
-        25.6076
+        100.204439,
+        25.613517
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFJYLA6X",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "dali-aquarium",
@@ -525,7 +529,7 @@
     },
     {
       "id": "dianying-museum",
-      "name": "大理农村电影历史博物馆",
+      "name": "中国大理农村电影历史博物馆",
       "cat": "博物馆",
       "tags": [
         "免费",
@@ -540,10 +544,14 @@
       "closed_mon": true,
       "suburb": false,
       "coord": [
-        100.1645,
-        25.6918
+        100.159365,
+        25.69597
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B036815O1H",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "photo-museum",
@@ -595,7 +603,7 @@
     },
     {
       "id": "chuangdanchang",
-      "name": "床单厂艺术区",
+      "name": "大理床单厂艺术区",
       "cat": "街区",
       "tags": [
         "文创",
@@ -610,10 +618,14 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        100.1613,
-        25.6867
+        100.165624,
+        25.689852
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFYRQG6",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17"
     },
     {
       "id": "hongsheng-tower",

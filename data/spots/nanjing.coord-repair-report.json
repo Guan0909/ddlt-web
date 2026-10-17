@@ -1,8 +1,9 @@
 {
   "city": "南京",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1262,6 +1263,27 @@
       "poi_name": "杨柳村明清古建筑群",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "ganyi",
+      "name": "甘熙故居·民俗博物馆",
+      "before": [
+        118.783,
+        32.0258
+      ],
+      "provider": "amap",
+      "after": [
+        118.781759,
+        32.025916
+      ],
+      "drift_m": 118,
+      "amap_poi_id": "B00190BGYQ",
+      "tier": "amap-llm-around",
+      "renamed_from": "甘熙故居·民俗博物馆",
+      "renamed_to": "甘熙宅第",
+      "poi_name": "甘熙宅第",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1316,16 +1338,6 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
-      "id": "y1865",
-      "name": "晨光 1865 创意产业园",
-      "before": [
-        118.766,
-        32.017
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
       "id": "ganyi",
       "name": "甘熙故居·民俗博物馆",
       "before": [
@@ -1334,6 +1346,16 @@
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "y1865",
+      "name": "晨光 1865 创意产业园",
+      "before": [
+        118.766,
+        32.017
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

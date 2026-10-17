@@ -1,8 +1,9 @@
 {
   "city": "广州",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1243,28 +1244,6 @@
       "poi_name": "塱头古村",
       "name_adopted": false,
       "coord_moved": true
-    }
-  ],
-  "skipped": [
-    {
-      "id": "wende-road",
-      "name": "文明路甜品街",
-      "before": [
-        113.2694,
-        23.1237
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
-    },
-    {
-      "id": "baoye-road",
-      "name": "宝业路夜宵街",
-      "before": [
-        113.2407,
-        23.0772
-      ],
-      "provider": "amap",
-      "why": "高德未命中（含全国兜底）"
     },
     {
       "id": "huaisheng-temple",
@@ -1274,7 +1253,50 @@
         23.1247
       ],
       "provider": "amap",
+      "after": [
+        113.258962,
+        23.12283
+      ],
+      "drift_m": 311,
+      "amap_poi_id": "B00140TBG8",
+      "tier": "amap-llm-around",
+      "renamed_from": "怀圣寺光塔",
+      "renamed_to": "怀圣清真寺",
+      "poi_name": "怀圣清真寺",
+      "name_adopted": true,
+      "coord_moved": true
+    }
+  ],
+  "skipped": [
+    {
+      "id": "huaisheng-temple",
+      "name": "怀圣寺光塔",
+      "before": [
+        113.2567,
+        23.1247
+      ],
+      "provider": "amap",
       "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "wende-road",
+      "name": "文明路甜品街",
+      "before": [
+        113.2694,
+        23.1237
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "baoye-road",
+      "name": "宝业路夜宵街",
+      "before": [
+        113.2407,
+        23.0772
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     }
   ],
   "errors": []

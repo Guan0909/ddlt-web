@@ -1,8 +1,9 @@
 {
   "city": "重庆",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1346,6 +1347,27 @@
       "poi_name": "白鹤梁水下博物馆",
       "name_adopted": false,
       "coord_moved": true
+    },
+    {
+      "id": "cq1949",
+      "name": "《重庆·1949》大剧院",
+      "before": [
+        106.447157,
+        29.58126
+      ],
+      "provider": "amap",
+      "after": [
+        106.446764,
+        29.581272
+      ],
+      "drift_m": 38,
+      "amap_poi_id": "B0HA1SE56R",
+      "tier": "amap-llm-around",
+      "renamed_from": "《重庆·1949》大剧院",
+      "renamed_to": "重庆1949大剧院",
+      "poi_name": "重庆1949大剧院",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1360,36 +1382,6 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
-      "id": "bayi-food-street",
-      "name": "八一路好吃街",
-      "before": [
-        106.577433,
-        29.5564
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "crown-escalator",
-      "name": "皇冠大扶梯",
-      "before": [
-        106.549245,
-        29.552266
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "laojundong",
-      "name": "老君洞",
-      "before": [
-        106.602082,
-        29.542263
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
       "id": "cq1949",
       "name": "《重庆·1949》大剧院",
       "before": [
@@ -1400,6 +1392,36 @@
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
+      "id": "bayi-food-street",
+      "name": "八一路好吃街",
+      "before": [
+        106.577495,
+        29.555901
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "crown-escalator",
+      "name": "皇冠大扶梯",
+      "before": [
+        106.549245,
+        29.552266
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "laojundong",
+      "name": "老君洞道观",
+      "before": [
+        106.602082,
+        29.542263
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
       "id": "diaoyu-fortress",
       "name": "钓鱼城",
       "before": [
@@ -1407,7 +1429,7 @@
         30.003889
       ],
       "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": []

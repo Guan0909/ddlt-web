@@ -1,8 +1,9 @@
 {
   "city": "成都",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "runs": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "fixed": [
     {
@@ -1301,6 +1302,48 @@
       "poi_name": "双流区观音阁百年老茶馆",
       "name_adopted": true,
       "coord_moved": true
+    },
+    {
+      "id": "yulin",
+      "name": "玉林路·小酒馆",
+      "before": [
+        104.057301,
+        30.629511
+      ],
+      "provider": "amap",
+      "after": [
+        104.056407,
+        30.629532
+      ],
+      "drift_m": 86,
+      "amap_poi_id": "B001C7T99N",
+      "tier": "amap-llm-around",
+      "renamed_from": "玉林路·小酒馆",
+      "renamed_to": "小酒馆(玉林西路店)",
+      "poi_name": "小酒馆(玉林西路店)",
+      "name_adopted": true,
+      "coord_moved": true
+    },
+    {
+      "id": "dujiangyan-night",
+      "name": "南桥夜景（都江堰）",
+      "before": [
+        103.61604,
+        30.996627
+      ],
+      "provider": "amap",
+      "after": [
+        103.615948,
+        30.996316
+      ],
+      "drift_m": 36,
+      "amap_poi_id": "B001C09HZL",
+      "tier": "amap-llm-around",
+      "renamed_from": "南桥夜景（都江堰）",
+      "renamed_to": "南桥",
+      "poi_name": "南桥",
+      "name_adopted": true,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1341,51 +1384,11 @@
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
-      "id": "jianshe-road",
-      "name": "建设路小吃街",
-      "before": [
-        104.102816,
-        30.671142
-      ],
-      "provider": "amap",
-      "why": "裁判不可用（空回复/超时），保留待人工"
-    },
-    {
       "id": "yulin",
       "name": "玉林路·小酒馆",
       "before": [
         104.057301,
         30.629511
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "fangsuo",
-      "name": "方所书店",
-      "before": [
-        104.082923,
-        30.654339
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "guihu",
-      "name": "新都桂湖",
-      "before": [
-        104.155075,
-        30.822887
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "shujin",
-      "name": "蜀锦织绣博物馆",
-      "before": [
-        104.03694,
-        30.657121
       ],
       "provider": "amap",
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
@@ -1399,6 +1402,46 @@
       ],
       "provider": "amap",
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "jianshe-road",
+      "name": "建设路小吃街",
+      "before": [
+        104.102816,
+        30.671142
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "fangsuo",
+      "name": "方所书店",
+      "before": [
+        104.082923,
+        30.654339
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "guihu",
+      "name": "新都桂湖",
+      "before": [
+        104.159079,
+        30.822617
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
+    },
+    {
+      "id": "shujin",
+      "name": "成都蜀锦织绣博物馆",
+      "before": [
+        104.03694,
+        30.657121
+      ],
+      "provider": "amap",
+      "why": "裁判不可用（空回复/超时），保留待人工"
     }
   ],
   "errors": [
