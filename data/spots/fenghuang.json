@@ -10,7 +10,8 @@
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "enrich_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -22,8 +23,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "古镇街区，在城内，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
+      "intro": "沱江穿城而过，两岸吊脚楼依水而立，石板巷与虹桥串联起整片街区，这座古镇就坐落在城中。",
+      "reason": "清晨沿江边走，看吊脚楼倒影，避开正午人多的主街。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -63,7 +64,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "copy_src": "ai"
     },
     {
       "id": "s18540aba",
@@ -75,8 +77,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "横跨峡谷的悬索桥，桥身悬于两山之间，谷底是深切的崖壁与流云，位于城郊山间。",
+      "reason": "上午到桥头先看峡谷全貌，风大时留意桥上通行安排。",
       "open": "09:00-17:00",
       "closed_mon": false,
       "suburb": true,
@@ -115,7 +117,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s09b0e23f",
@@ -127,8 +130,8 @@
       ],
       "heat": 5,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "峡谷、崖壁与盘山路交织的地貌，山势陡立，谷中云雾常起，在城郊展开。",
+      "reason": "阴天或晨雾时来，先走崖边观景台，避开正午强光。",
       "open": "08:30-17:30",
       "closed_mon": null,
       "suburb": true,
@@ -158,7 +161,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sec0111d9",
@@ -169,8 +173,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "洞内钟乳石成片垂挂，暗河与石笋在灯光下显出层叠形态，藏在城边山腹里。",
+      "reason": "洞内湿滑，穿防滑鞋，先看主洞厅再走暗河段。",
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -210,7 +214,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s20ece81d",
@@ -221,8 +226,8 @@
       ],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "石砌墙体顺山脊起伏，夹在林木与坡地之间，残垣与完整墙段交错延伸，位于城内山岗之上。",
+      "reason": "清早沿主脊先走保存较完整的墙段，避开正午日晒。",
       "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -261,7 +266,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s885d3f27",
@@ -272,8 +278,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
+      "intro": "城郊的古城格局仍在，城墙、街巷与旧铺面顺着地势铺开，青石路和门楼留下时间沉淀的层次感。",
+      "reason": "从城门进后先走主街，再拐入侧巷看老铺面。",
       "open": null,
       "closed_mon": false,
       "suburb": true,
@@ -313,7 +319,8 @@
       "navi_poiid": "G49F001013_826;84;5062",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb451a68d",
@@ -324,8 +331,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "深切的峡谷在城郊铺开，两侧峭壁夹着溪流与密林，山势陡立、水声贴谷而行，谷中清幽自成一体。",
+      "reason": "清晨入谷沿溪先走，避开正午人流，留意湿滑石阶。",
       "open": "09:00-17:30",
       "closed_mon": false,
       "suburb": true,
@@ -365,7 +372,8 @@
       "navi_poiid": "G49F001013_826;84;5062",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sd162e071",
@@ -376,8 +384,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "藏在城郊峡谷里的苗寨，木屋依山而建，溪水穿寨而过，四周是刀削般的石壁与密林。",
+      "reason": "清晨入寨先沿溪上行看吊脚楼群，避开正午团队客流。",
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": true,
@@ -417,7 +425,8 @@
       "navi_poiid": "G49F001013_826;84;5062",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s27c81147",
@@ -426,8 +435,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "沱江边的村落依山傍水，屋舍沿坡地铺开，水面上映着吊脚楼的轮廓，就在城里的江湾处。",
+      "reason": "傍晚来，先沿江边看水面倒影，避开正午人流。",
       "open": "18:00-22:00",
       "closed_mon": false,
       "suburb": false,
@@ -464,7 +473,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sfa8029c6",
@@ -473,8 +483,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的山水去处，水面开阔平缓，岸线绕着低丘与林木铺展，视线在水光与山影之间来回移动。",
+      "reason": "日落前到水岸缓步，先看水面再望对岸林带。",
       "open": "09:00-16:00",
       "closed_mon": false,
       "suburb": false,
@@ -511,7 +521,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s080e8b7c",
@@ -522,8 +533,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊的喀斯特山水，洞口与崖壁相连，溪水从岩缝间流出，林木覆在坡面上，形成阴凉而曲折的谷地。",
+      "reason": "雨后水量足时来看洞口，先走溪边再上坡。",
       "open": "07:00-17:00",
       "closed_mon": null,
       "suburb": true,
@@ -555,7 +566,8 @@
         "https://aos-comment.amap.com/B02E70MND1/comment/f495f75c9c7ead3d1dd04d584a586e4e_2048_2048_80.jpg",
         "https://store.is.autonavi.com/showpic/a0aec79effecda7a0000005027988357?type=pic",
         "https://aos-comment.amap.com/B02E70MND1/comment/af02bdb66a5914fb236cfd091b18a087_2048_2048_80.jpg"
-      ]
+      ],
+      "copy_src": "ai"
     },
     {
       "id": "s4753d6dd",
@@ -566,8 +578,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "盘山公路在眼前层层折叠，路与山体交错成观景台上的主景，位于城郊山岭之间。",
+      "reason": "清晨薄雾未散时先看公路大拐弯，避开正午逆光。",
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": true,
@@ -606,7 +618,8 @@
       "navi_poiid": "H49F048013_1782",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s4dec9111",
@@ -615,8 +628,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "山间苗寨的巷道窄而曲折，木楼与石墙相邻，寨中可见日常起居的院落，就在城里。",
+      "reason": "傍晚来走寨中巷道，看木楼与院落，别打扰住户生活。",
       "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -653,7 +666,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s6b25799b",
@@ -662,8 +676,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
+      "intro": "街面不宽的食肆一条街，铺面挨着铺面，烟火气集中在沿街灶台与桌凳之间，在城里。",
+      "reason": "傍晚饭点前来，先走一遍看各家灶台，避开高峰排队。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -699,7 +713,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s2ec49793",
@@ -708,8 +723,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "沱江上横排的石墩跳岩，行人踏石过江，水从石隙间流过，两岸吊脚楼倒映江面，就嵌在城中水道上。",
+      "reason": "清晨人少时来，先走下游那排石墩，避开正午人流。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -747,7 +762,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s17affd9b",
@@ -756,8 +772,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "这座城内古迹留着旧时宫观的格局与时间痕迹，殿宇门墙在街市之间显出沉静年代感。",
+      "reason": "清晨人少时先看主殿梁架与院落轴线，避开午间人流。",
       "open": "08:00-20:00",
       "closed_mon": false,
       "suburb": false,
@@ -795,7 +811,8 @@
       "navi_poiid": "G49F001013_7625",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc7d3167f",
@@ -804,8 +821,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "横跨沱江的风雨桥，桥身层叠如楼，木构廊道与飞檐在江面上排开，桥下水流穿行，就在城中。",
+      "reason": "清晨先上桥走廊道，看江面雾气，避开午后人流。",
       "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -838,7 +855,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s07f76000",
@@ -849,8 +867,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "水流从崖壁高处跌下，散成多股细线，落入下方水潭，四周林木环抱，位于城郊山间。",
+      "reason": "上午光线斜照水雾时来，先在上游观景平台看落水口。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
@@ -887,7 +905,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb3d0c286",
@@ -896,8 +915,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "旧式木结构院落，屋内陈列手稿与旧物，墙面与梁柱留着时间痕迹，在城内巷中。",
+      "reason": "开馆后早些进院，先看正屋陈设，避开午后团队人流。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -935,7 +954,8 @@
       "navi_poiid": "G49F001013_651",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s8be9a450",
@@ -1087,8 +1107,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "一座横跨水面的廊桥，桥身隐在雾气与两岸树影之间，是城内少见的山水相融之处。",
+      "reason": "选清晨雾起时上桥，先看桥下水面，避开正午人群。",
       "open": "13:00-24:00",
       "closed_mon": false,
       "suburb": false,
@@ -1122,7 +1142,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sdad61156",
@@ -1133,8 +1154,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "四面绝壁围出的天然石台，山势陡峭，峡谷深陷，云气在脚下流动，台地孤悬于城郊山间。",
+      "reason": "选清晨云雾未散时登台，先看崖壁与峡谷交界的轮廓。",
       "open": "08:00-16:00",
       "closed_mon": false,
       "suburb": true,
@@ -1174,7 +1195,8 @@
       "navi_poiid": "G49F001013_826;84;5062",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s0bf99f7e",
@@ -1276,8 +1298,8 @@
       "tags": [],
       "heat": 6,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "砖木结构的老祠堂静立城中，梁柱间留着旧时宗族聚会的格局与雕饰痕迹。",
+      "reason": "选上午光线斜入天井时来，先看正厅梁架与神龛木雕。",
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -1315,7 +1337,8 @@
       "navi_poiid": "G49F001013_60",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc2a8b59c",
@@ -1372,8 +1395,8 @@
       "tags": [],
       "heat": 6,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "藏在城中的一条吃食街巷，铺面挨着铺面，招牌与烟火气连成一片，走进去便觉热闹扑面。",
+      "reason": "傍晚开市后从街口逐摊慢走，避开饭点高峰的人流。",
       "open": "19:00-02:00",
       "closed_mon": false,
       "suburb": false,
@@ -1405,7 +1428,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb5afcf07",
@@ -1414,8 +1438,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的峡谷河湖，两岸山势夹着平缓水面，码头伸入湖中，山影倒映如镜。",
+      "reason": "清晨来码头边，先看湖面起雾时山影的层次。",
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": false,
@@ -1452,7 +1476,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s98804a97",
@@ -1461,8 +1486,8 @@
       "tags": [],
       "heat": 6,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "城中小山起伏如笔架，园内林木葱郁，坡道与平地相间，是登高望城、林下散步的去处。",
+      "reason": "清晨入园走坡道，先登高台看城景，避开正午日晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1497,7 +1522,8 @@
       "navi_poiid": [],
       "business_area": "南华路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s9f5e967f",
@@ -1506,8 +1532,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "这座民俗园坐落城中，依山势铺开坡地，林木与水塘散落其间，园内屋舍带着旧时样式。",
+      "reason": "趁清晨人少从坡上步道往下走，先看林间水塘一带。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1543,7 +1569,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "se8f2f1a7",
@@ -1552,8 +1579,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城边峡谷里，水流自高崖跌下成瀑，崖壁湿润，林木沿谷铺开，水声在石间回荡。",
+      "reason": "清晨入谷先到瀑布观景台，避开正午人多的时段。",
       "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -1590,7 +1617,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     }
   ]
 }

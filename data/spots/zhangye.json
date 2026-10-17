@@ -10,7 +10,8 @@
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "enrich_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -23,8 +24,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "彩色丘陵顺着山势铺开，赤橙黄白层层叠向远处，沟壑把坡面切出明暗交错的纹理，落在城郊旷野里。",
+      "reason": "午后斜光时进，先上高处的观景台看层理走向。",
       "open": "06:30-18:00",
       "closed_mon": null,
       "suburb": true,
@@ -64,7 +65,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "copy_src": "ai"
     },
     {
       "id": "s51282936",
@@ -76,8 +78,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "赭红岩壁夹出深切的峡谷，谷底砂石路蜿蜒，崖顶平坦开阔，整片地貌在城郊荒原上显得格外硬朗。",
+      "reason": "上午光线进谷，先走谷底一线再登崖顶回望。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -117,7 +119,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "copy_src": "ai"
     },
     {
       "id": "s7d307ca2",
@@ -128,8 +131,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城内一片开阔湿地，苇荡与水面交错，栈道穿行其间，水鸟不时掠过，是城边难得的安静水乡。",
+      "reason": "清晨沿木栈道先走芦苇密集的北段，避开正午日晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -168,7 +171,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s4c3a132f",
@@ -180,8 +184,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊的地质园区里，岩层剖面与侵蚀地貌并置，沟坡裸露着不同质地的沉积，像一本摊开的岩石册页。",
+      "reason": "先到科普展示区认岩层，再沿步道对照实物看。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -220,7 +224,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s33e317d0",
@@ -232,8 +237,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊沟谷中耸起成群的红色岩柱与崖墙，棱角分明，风蚀孔洞嵌在壁上，形态比色彩更抢眼。",
+      "reason": "傍晚侧光时进沟，先看近处岩柱群再往深处走。",
       "open": null,
       "closed_mon": false,
       "suburb": true,
@@ -273,7 +278,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s2152f8d3",
@@ -284,8 +290,8 @@
       ],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
+      "intro": "沙丘连绵起伏，沙脊线条清晰，滑沙道与运动场地嵌在沙地里，是城中的沙漠运动公园。",
+      "reason": "傍晚来，先上沙脊看光影，避开正午烫沙。",
       "open": "08:00-17:40",
       "closed_mon": false,
       "suburb": false,
@@ -324,7 +330,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s45e2a4cc",
@@ -336,8 +343,8 @@
       ],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城郊河道两岸铺开林带与滩地，水面宽缓，桥与步道串起绿洲边缘的田畴，走起来是水乡似的疏朗。",
+      "reason": "清晨沿河岸步道顺流走，先看桥头一段水势。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
@@ -377,7 +384,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s51f89acb",
@@ -386,8 +394,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城内古寺殿宇沿中轴排开，木构梁架与彩塑嵌在旧殿里，土塔与经橱留下岁月磨出的沉稳气息。",
+      "reason": "开门后先看主殿塑像，再绕到塔院，避开午间人流。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -425,7 +433,8 @@
       "navi_poiid": "J47F013036_1219",
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "scd5c9c2e",
@@ -434,8 +443,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "馆藏以丝路重镇出土的汉唐文物与丝织品见长，陶器、简牍、佛教造像分门陈列，馆舍坐落在城内。",
+      "reason": "先看丝织品与简牍展柜，光线柔和时细读器物纹样。",
       "open": "08:30-17:30",
       "closed_mon": null,
       "suburb": false,
@@ -471,7 +480,8 @@
       "navi_poiid": [],
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s6bc274b5",
@@ -482,8 +492,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "位于城郊的峡谷地貌，赤色岩壁层层收束，谷底水道蜿蜒，两侧崖体被风蚀出褶皱与凹槽。",
+      "reason": "清早入谷，先走靠水的窄段，正午前折返避晒。",
       "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": true,
@@ -520,7 +530,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s6865681c",
@@ -531,8 +542,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城郊的这片地质公园以风蚀岩群为主，丘体裸露呈红褐与灰白，沟壑纵横，形似荒凉星表。",
+      "reason": "选上午顺光时进沟，先看高台观景处再下谷。",
       "open": null,
       "closed_mon": false,
       "suburb": true,
@@ -570,7 +581,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb53be1be",
@@ -581,8 +593,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊山体内的石窟群依崖开凿，窟龛高低错落，造像与壁画留下历代凿刻的痕迹，山色与檐影相接。",
+      "reason": "趁早晨人少先登高窟，避开正午强光再回看低层。",
       "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": true,
@@ -620,7 +632,8 @@
       "navi_poiid": "J47F019036_1;117",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s1fea2cdf",
@@ -629,8 +642,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "城内的巷弄街区，青砖铺面与木格门窗夹道，小吃铺与手作店沿巷排开，转角的桥栏处聚着闲坐的人。",
+      "reason": "傍晚从巷口慢走进去，先逛支巷，避开饭点主街人流。",
       "open": "10:00-23:00",
       "closed_mon": false,
       "suburb": false,
@@ -667,7 +680,8 @@
       "navi_poiid": [],
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s6ebccf09",
@@ -676,8 +690,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
+      "intro": "城内的老市场以摊位连成通道，果蔬、干货与熟食分区摆开，叫卖声与蒸汽混在铺面之间。",
+      "reason": "一早开市时先穿熟食区，绕开午间拥挤的主通道。",
       "open": "10:00-24:00",
       "closed_mon": false,
       "suburb": false,
@@ -714,7 +728,8 @@
       "navi_poiid": [],
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sddcf226d",
@@ -723,8 +738,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的府城格局保留着城墙残段与街巷肌理，水渠绕行其间，仿古建筑与旧墙基并置，登临可望城景。",
+      "reason": "傍晚上城墙走一段，先看临水一侧再折回街巷。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -762,7 +777,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s7276da50",
@@ -773,8 +789,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城郊的小镇沿坡地铺展，土黄与赭红的墙面层叠，街巷随地势起伏，远处是丹霞山脊的轮廓。",
+      "reason": "午后进镇先登高台看山脊，落日前再逛坡下巷道。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
@@ -813,7 +829,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb2ee695a",
@@ -874,8 +891,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "崖壁上开凿的窟龛层层叠叠，造像与残壁留在山体之间，栈道贴着岩面攀升，坐落于城郊山谷中。",
+      "reason": "上午光线斜照崖面时先看高处窟龛，午后避开人流。",
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
@@ -913,7 +930,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sea7ecb85",
@@ -922,8 +940,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "城中的一方园子，水面居中，四周林木环绕，曲桥与亭榭沿岸布置，市民早晚在此散步休憩。",
+      "reason": "傍晚沿水岸逆时针走一圈，先看桥亭一段，避开正午。",
       "open": "07:00-21:00",
       "closed_mon": false,
       "suburb": false,
@@ -962,7 +980,8 @@
       "navi_poiid": "J47F013036_1693",
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sada97bc3",
@@ -971,8 +990,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城内留存的一座木构古塔，层层出檐向上收分，塔身立在院落之中，周边已是街市。",
+      "reason": "清早人少时绕塔基看斗拱与檐角，再从院门退看全貌。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -1009,7 +1028,8 @@
       "navi_poiid": "J47F013036_1095",
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s5eebf329",
@@ -1018,8 +1038,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "城内的开阔水面公园，湖岸线曲折，芦苇与柳树沿堤生长，步道串起几处临水平台。",
+      "reason": "黄昏到湖东岸，先看水鸟栖息的浅滩，绕开垂钓区。",
       "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -1057,7 +1077,8 @@
       "navi_poiid": "J47F013036_9159",
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s93d6195f",
@@ -1066,8 +1087,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内水景园子，水面曲折，石桥与亭台沿水岸铺开，岸线时收时放，显出几分西北少见的温润。",
+      "reason": "从西侧水口入园，顺水而行，绕开正午强光。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1105,7 +1126,8 @@
       "navi_poiid": "J47F013036_33814",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s7777b15b",
@@ -1114,8 +1136,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "戈壁滩上残存的古城垣与夯土台基，墙体经风蚀留下断口，遗址范围开阔，位于城区边缘地带。",
+      "reason": "早晚斜光下先看城墙断口，风大时避开空旷台基。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1152,7 +1174,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "saf0c4c6d",
@@ -1163,8 +1186,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "山崖上洞窟沿陡壁层层叠起，石阶与栈道在岩缝间转折而上，周边沟谷林木成片，处在城郊山地。",
+      "reason": "上午先登中段栈道看窟龛，午后光线转暗前下撤。",
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
@@ -1202,7 +1225,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s5c2ec0c6",
@@ -1211,8 +1235,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城中的清真寺，门楼与礼拜殿留下岁月打磨的痕迹，院落格局安静规整，砖木细节透出旧时做工。",
+      "reason": "清早人少时来，先在院中看门楼，再沿廊下慢走。",
       "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
@@ -1249,7 +1273,8 @@
       "navi_poiid": "J47F013036_5489",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s2ebe2614",
@@ -1258,8 +1283,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
+      "intro": "城中小园以水面取胜，池岸曲折，林木疏落，天光云影倒映水中，水色与天色连成一片。",
+      "reason": "清晨或傍晚来，先沿水岸走一圈，避开正午日晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1296,7 +1321,8 @@
       "navi_poiid": "J47F013036_8435",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc6fd5499",
@@ -1307,8 +1333,8 @@
       ],
       "heat": 6,
       "dur": 180,
-      "intro": "古镇街区，在城内，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
+      "intro": "城内的古镇街区，巷道窄而交错，老铺面沿街排开，砖墙与木门带着被风雨磨旧的日常气息。",
+      "reason": "午后从主巷拐进支巷，看铺面与院门，避开正街人流。",
       "open": "10:00-22:00",
       "closed_mon": null,
       "suburb": false,
@@ -1347,7 +1373,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "copy_src": "ai"
     },
     {
       "id": "sdbf2f4b7",
@@ -1356,8 +1383,8 @@
       "tags": [],
       "heat": 6,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城内的老寺院，殿宇与院落层层递进，梁柱与砖雕留下时间磨出的旧色。",
+      "reason": "傍晚香客稀少时先看后院砖雕，避开初一十五的拥挤。",
       "open": "08:00-15:45",
       "closed_mon": false,
       "suburb": false,
@@ -1394,7 +1421,8 @@
       "navi_poiid": "J47F013036_241",
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s5c1b0d08",
@@ -1403,8 +1431,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城中的沙地与水域相依，沙丘起伏、水面嵌在沙窝之间，林带沿边缘围合。",
+      "reason": "日落前登沙丘看水面反光，避开正午沙面灼热的时段。",
       "open": "09:00-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -1441,7 +1469,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s573c3dab",
@@ -1452,8 +1481,8 @@
       ],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊的彩色丘陵地带，山体层层叠色、沟壑顺着坡势延展，远处视野开阔。",
+      "reason": "清晨顺栈道先看东侧山脊，避开午后逆光与大风天。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
@@ -1490,7 +1519,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s11353ca6",
@@ -1545,8 +1575,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的水岸度假地，湖面开阔，水边草木成片，岸线蜿蜒连接绿地与步道，城市近旁有一份松弛。",
+      "reason": "下午沿湖东岸走，水面反光强时转向林下步道。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1585,7 +1615,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s8cb96183",
@@ -1596,8 +1627,8 @@
       ],
       "heat": 6,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城郊山坡上铺开的古寺，殿宇沿地势层层抬升，土色墙垣与梁架留下旧岁痕迹，格局不宽却紧凑。",
+      "reason": "上午由山门入，先沿中轴看主殿梁架，避开午间逆光。",
       "open": "09:00-21:00",
       "closed_mon": false,
       "suburb": true,
@@ -1635,7 +1666,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s85ed7b6e",
@@ -1644,8 +1676,8 @@
       "tags": [],
       "heat": 6,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
+      "intro": "馆舍坐落在城中的湿地公园旁，以湿地生态与动植物标本为主要馆藏，展线顺着水与草木的关系铺开。",
+      "reason": "上午先看湿地生态主展厅，避开周末午后的亲子人流。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1677,7 +1709,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sa963bfc2",
@@ -1686,8 +1719,8 @@
       "tags": [],
       "heat": 6,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "城里留存的西夏旧寺，殿宇体量沉厚，梁柱与墙面带着久远风化的痕迹，院落进深不大而气度安稳。",
+      "reason": "清早人少时进院，先看主殿檐下与墙面的旧痕。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1724,7 +1757,8 @@
       "navi_poiid": [],
       "business_area": "张掖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc54c1ba3",
@@ -1735,8 +1769,8 @@
       ],
       "heat": 6,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "城郊山林间的古寺，殿宇依山势层层递进，石阶与老树相守，香火气息里留下漫长岁月的痕迹。",
+      "reason": "清晨入寺，先沿中轴看殿宇格局，避开午间人流。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -1773,7 +1807,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc9c0761f",
@@ -1782,8 +1817,8 @@
       "tags": [],
       "heat": 6,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
+      "intro": "城内的文津公园，水面与林木相间，园路绕着水岸铺展，树荫浓密，是城里歇脚散步的去处。",
+      "reason": "傍晚沿水岸逆时针走一圈，先在树荫段落脚。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1820,7 +1855,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sf2b1915e",
@@ -1829,8 +1865,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的泻玉瀑布，水流从岩壁跌落成帘，水声在谷间回响，近处水汽扑面，岩面被水冲得发亮。",
+      "reason": "雨后水量足时来，先到瀑布侧面的观景台看水帘。",
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -1863,7 +1899,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s5ac33957",
@@ -1874,8 +1911,8 @@
       ],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "坐落城郊的滨河地带，水面顺地势铺开，厂区与河岸绿化相连，能看见酿酒粮食流转的痕迹。",
+      "reason": "选午后先沿河岸走，再看室内酿造环节，避开正午晒。",
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
@@ -1913,7 +1950,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sea26d0d6",
@@ -1922,8 +1960,8 @@
       "tags": [],
       "heat": 6,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的黑河弱水湾，河道在此拐出宽阔的弯，水面平缓，滩岸与芦苇交替，远处是平坦的河滩地。",
+      "reason": "落日前后到湾口高点，先看河湾全貌再下到滩边。",
       "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -1960,7 +1998,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     }
   ]
 }

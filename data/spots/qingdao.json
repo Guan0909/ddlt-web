@@ -10,7 +10,8 @@
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "enrich_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -267,8 +268,8 @@
       "tags": [],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "海湾水面与帆船码头相连，海洋文化气息沿着岸线铺开，位置在城内。",
+      "reason": "傍晚到码头先看帆船，避开正午暴晒",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -307,7 +308,8 @@
       "navi_poiid": "J51F048004_157",
       "business_area": "燕儿岛路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "saf85021c",
@@ -316,8 +318,8 @@
       "tags": [],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城中临水的沙滩，沙面与水面相接，位置在城区，这里便是金沙滩。",
+      "reason": "傍晚来，先沿水边看沙水交界，避开正午暴晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -356,7 +358,8 @@
       "navi_poiid": "I51F001002_46;8737",
       "business_area": "青岛西海岸新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s83471c55",
@@ -365,8 +368,8 @@
       "tags": [],
       "heat": 8,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "墙面铺开漫画场景与街巷立面，巷子保留旧城肌理，位于城内步行可达的街区里。",
+      "reason": "清晨来，先看墙绘与砖墙接缝处。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -403,7 +406,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s84c4a353",
@@ -412,8 +416,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "这里是小吃摊铺聚集的街巷型街区，铺面沿街展开，位于城内，市井气息集中。",
+      "reason": "傍晚来，先沿街口铺面走，避开饭点人多的摊前。",
       "open": "19:00-23:00",
       "closed_mon": false,
       "suburb": false,
@@ -450,7 +454,8 @@
       "navi_poiid": [],
       "business_area": "台东",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sba3edac6",
@@ -556,8 +561,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "坐落城内的山水园林，林木与水面相映，静看园中山势水形，感受城中的自然气息。",
+      "reason": "清晨入园先沿水岸走，避开正午人流。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -596,7 +601,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "sebeefc00",
@@ -607,8 +613,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "这处城内山水园依自然山势铺开，水面与林木相间，步道串起可望可走的景致。",
+      "reason": "清晨入园先沿水边走，避开正午人流。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -648,7 +654,8 @@
       "business_area": "石老人",
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s24ca00b1",
@@ -809,8 +816,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "石砌楼体依着临海坡地，楼窗对着海面与礁石，坐落在城内近海的山坡上。",
+      "reason": "傍晚上来，先绕楼看石墙与窗龛。",
       "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": false,
@@ -848,7 +855,8 @@
       "navi_poiid": "J51F048003_92568",
       "business_area": "太平角",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sbefad76a",
@@ -1003,8 +1011,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "山脊起伏，林下步道穿行于松林与坡地之间，坡脚接城，是城内可登临的山林。",
+      "reason": "上午从西侧缓坡上山，避开正午日晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1042,7 +1050,8 @@
       "navi_poiid": "J51F047004_169104",
       "business_area": "香港东路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sebacea34",
@@ -1101,8 +1110,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城内临水沙滩，沙面平缓贴近岸线，水面开阔清亮，滩与海相接，呈现自然山水岸线的舒展形态。",
+      "reason": "清晨来，先沿水线缓走，避开正午强光。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1139,7 +1148,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s3526426f",
@@ -1343,8 +1353,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "开门就到，午后孩子容易累",
+      "intro": "这座位于城内的海洋主题场馆，以展缸和海底通道呈现海洋生物，适合亲子观察。",
+      "reason": "上午开馆即入，先看海底通道，避开午间人流。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1383,7 +1393,8 @@
       "navi_poiid": "J51F048003_92852",
       "business_area": [],
       "website": "www.qdhdworld.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s830a0f0b",
@@ -1441,8 +1452,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "带娃排一整个上午",
+      "intro": "乐园里有转动的游乐设施、攀爬架与手工摊位，孩子能上手动手玩，位置在城内。",
+      "reason": "开园先带孩子去手工区，避开午后排队。",
       "open": "09:30-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -1480,7 +1491,8 @@
       "navi_poiid": [],
       "business_area": "青岛西海岸新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s71dab2d8",
@@ -1922,8 +1934,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "城里以啤酒节为主题的街区，街道格局带着节庆气息，适合边走边看。",
+      "reason": "傍晚来，从街区入口先逛，避开拥挤路段。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1960,7 +1972,8 @@
       "navi_poiid": [],
       "business_area": "青岛西海岸新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s5d68d929",
@@ -2016,8 +2029,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "食街铺面沿巷道排开，档口、桌椅与招牌挨着，是城内日常吃饭的街巷。",
+      "reason": "饭点前先逛一圈看档口，再选座位。",
       "open": "10:00-20:00",
       "closed_mon": false,
       "suburb": false,
@@ -2050,7 +2063,8 @@
       "navi_poiid": "J51F048004_46356",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "se948e07f",
@@ -2248,8 +2262,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "广场铺展开阔，草地与硬地相接，临着海湾，城市轮廓沿海岸线铺开，在城内。",
+      "reason": "日落前到，先沿草地走到海边看轮廓。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -2274,7 +2288,8 @@
         "http://store.is.autonavi.com/showpic/9df7c968c410f9be369ec14e659953a6",
         "http://store.is.autonavi.com/showpic/677d97580ff59416812a8f11bb143509",
         "http://store.is.autonavi.com/showpic/435bdf3ae634874819e0bee8014a8bad"
-      ]
+      ],
+      "copy_src": "ai"
     }
   ]
 }

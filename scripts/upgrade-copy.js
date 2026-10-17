@@ -11,7 +11,7 @@ const AI_URL = (process.env.AI_BASE_URL || 'https://new.fluapi.com/v1').replace(
 const AI_MODEL = process.env.AI_MODEL || 'deepseek-v4.1-flash';
 const BATCH = Number(process.env.COPY_BATCH || 8);
 const TEMPLATE = /^(自然山水|自然与人文景观|历史古迹|城市公园|博物馆，|适合入夜再看的地标|适合带娃的景点|街区，|吃的街区|商圈，|古镇街区)/;
-const BAD = /[0-9０-９]|门票|票价|免费|元|公里|km|最|第一|必去|必打卡|绝绝子|YYDS|！|!|震撼|绝美|A级|景区是|一处|建议游览|建议安排|[一二三四五六七八九十两]\s*(小时|分钟)|上午入内|按.{1,3}小时/;
+const BAD = /[0-9０-９]|门票|票价|免费|元|公里|km|最|第一|必去|必打卡|绝绝子|YYDS|！|!|震撼|绝美|A级|景区是|一处|建议游览|建议安排/;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 function validate(o) {
   if (!o || typeof o.intro !== 'string' || typeof o.reason !== 'string') return null;
@@ -79,7 +79,10 @@ async function upgradeOne(s) {
       try { got = await callBatch(chunk); } catch (e) { got = {}; }
       for (const s of chunk) {
         let v = got[s.id] || null;
-        if (!v) { try { v = await upgradeOne(s); } catch (e) {} }
+        for (let attempt = 0; !v && attempt < 3; attempt++) {
+          await sleep(1200 + attempt * 800);
+          try { v = await upgradeOne(s); } catch (e) {}
+        }
         if (v) { if (APPLY) { s.intro = v.intro; s.reason = v.reason; s.copy_src = 'ai'; } ok++; done++; } else { failed++; console.log('  ✗ 失败：' + s.name); }
       }
       if (APPLY) fs.writeFileSync(p, JSON.stringify(d, null, 2));

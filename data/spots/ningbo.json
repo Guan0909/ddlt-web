@@ -26,7 +26,8 @@
     "rebuild_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "prune_estimate_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -2996,8 +2997,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
+      "intro": "这里是由巷道、石桥与临街铺面构成的古镇，坐落在城郊，生活气息藏在沿街格局里。",
+      "reason": "清晨沿主巷走到桥头，先看临街铺面，避开正午人流。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -3035,7 +3036,8 @@
       "navi_poiid": [],
       "business_area": "溪口",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     }
   ]
 }

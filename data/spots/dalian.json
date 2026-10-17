@@ -10,7 +10,8 @@
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "enrich_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -72,8 +73,8 @@
       "tags": [],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城内的运河水系穿行于仿欧式楼群之间，拱桥横跨水面，沿途铺面与码头相邻，格局像一条水街。",
+      "reason": "傍晚来，先沿运河西岸走，灯亮后再过桥看两侧立面。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -110,7 +111,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sadd9b5de",
@@ -119,8 +121,8 @@
       "tags": [],
       "heat": 8,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
+      "intro": "这座城内博物馆以古生物化石与海洋生物标本见长，展厅按门类铺陈，鲸类骨架悬于中庭，气息沉静。",
+      "reason": "上午人少时先上二层看化石，再回一层看标本。",
       "open": "09:00-16:30",
       "closed_mon": true,
       "suburb": false,
@@ -157,7 +159,8 @@
       "navi_poiid": "J51F014013_30936",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "see1a9ab6",
@@ -166,8 +169,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
+      "intro": "城中一条老商业街，青石板路两侧铺面相连，巷弄交错，砖木老屋与店招共处，市井气息浓。",
+      "reason": "清晨来，先走主街看铺面门板，再拐进支巷避开人流。",
       "open": "10:00-21:30",
       "closed_mon": false,
       "suburb": false,
@@ -204,7 +207,8 @@
       "navi_poiid": [],
       "business_area": "新开路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s667735ab",
@@ -213,8 +217,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "城内的夜市街区由纵横的小吃摊铺与巷道连成，灯牌沿街排开，烟火气在傍晚后沿摊位层层铺展。",
+      "reason": "天黑后从西安路入口进，先逛中间巷道避开摊前拥挤。",
       "open": "10:30-22:00",
       "closed_mon": false,
       "suburb": false,
@@ -250,7 +254,8 @@
       "navi_poiid": [],
       "business_area": "兴工",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sd84ab532",
@@ -259,8 +264,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
+      "intro": "城内的海滨公园以一片开阔沙滩与礁石岸线为主，园中绿地连着海面，浪声在岸边树林间来回。",
+      "reason": "清晨沿沙滩走到礁石段，退潮时看潮间带生物。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -297,7 +302,8 @@
       "navi_poiid": "J51F014013_77557",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sb1f2cd10",
@@ -308,8 +314,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城内的森林公园里，山势缓缓起伏，林木覆坡，寺址与旧迹散在林间，石阶向上串起沉静的年代感。",
+      "reason": "早晨从山门拾级而上，先看林间寺址，避开午后闷热。",
       "open": "07:30-16:00",
       "closed_mon": false,
       "suburb": false,
@@ -348,7 +354,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s99263f35",
@@ -360,8 +367,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "这处城郊的风景名胜区以临海山势为主，山脊探入海湾，坡上林木与远处港口轮廓相互映衬。",
+      "reason": "上午登顶看海湾轮廓，先走缓坡段，避开正午日晒。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -400,7 +407,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "sb858c7d4",
@@ -409,8 +417,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的海岸风景区，礁石与沙滩交替，岛上林木茂密，海水在岬角处收成一道弧线。",
+      "reason": "早间先走东侧礁石段，正午前撤回林下步道避晒。",
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": false,
@@ -449,7 +457,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s1eca29ee",
@@ -506,8 +515,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城中一片起伏的丘陵山地，林间步道随山脊展开，坡上草甸与松林交错，登高处可望城区与海面。",
+      "reason": "傍晚前上到山脊观景线，避开午间林间闷热。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -545,7 +554,8 @@
       "navi_poiid": "J51F012015_16320",
       "business_area": "金普新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sdd41e040",
@@ -556,8 +566,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城郊一列石质山体，山脊裸岩与沟谷林木相间，坡陡路长，高处视野开阔，能望见城郊与海的方向。",
+      "reason": "清早从主登山道起步，避开午后雷雨多发时段。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -595,7 +605,8 @@
       "navi_poiid": "J51F011015_13",
       "business_area": "金普新区",
       "website": "www.dl-dhs.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s8fb864d8",
@@ -604,8 +615,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城中的海湾码头，栈桥沿岸线伸入水面，泊船与礁石相邻，岸上铺面沿坡排开，海风穿行其间。",
+      "reason": "落日前先走栈桥看泊船，避开周末正午的人流高峰。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -643,7 +654,8 @@
       "navi_poiid": "J51F014014_8154",
       "business_area": "老虎滩",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sf093d9d0",
@@ -652,8 +664,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城中一座留存旧貌的寺院古迹，殿宇与院落在坡地上铺展，砖石与木构带着时间磨出的沉稳气息。",
+      "reason": "早晨先看主殿与院落格局，避开午后集中进香的人流。",
       "open": "07:00-17:00",
       "closed_mon": false,
       "suburb": false,
@@ -691,7 +703,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s1889e47c",
@@ -700,8 +713,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "带娃排一整个上午",
+      "intro": "城中的山林动物园，园区依坡而建，林木间分布着各类动物展区，孩子可近距离观察并参与投喂互动。",
+      "reason": "开园即入园先走散养区，避开中午动物歇息的时段。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -740,7 +753,8 @@
       "navi_poiid": "J51F014013_32049",
       "business_area": [],
       "website": "www.dlzoo.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sf5443c37",
@@ -749,8 +763,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "带娃排一整个上午",
+      "intro": "城中的海洋主题场馆，馆内以海洋生物展示与海底通道为主，水槽与展缸串联成连续的看展路线。",
+      "reason": "先看海底通道再逛展缸，避开午间入场排队高峰。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -789,7 +803,8 @@
       "navi_poiid": "J51F014013_30935",
       "business_area": "星海公园",
       "website": "www.sunasia.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sd3620ecd",
@@ -798,8 +813,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "熊洞街位于城内，由旧厂区改造而来，街巷保留工业骨架与铺面格局，适合慢慢走逛。",
+      "reason": "傍晚来，先沿主街走到尽头再折返，避开饭点人流。",
       "open": "09:30-20:30",
       "closed_mon": null,
       "suburb": false,
@@ -836,7 +851,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s070c2fe5",
@@ -845,8 +861,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "洪街美食街区在城里，巷道纵横、铺面密集，烟火气浓，是本地人日常觅食的街区。",
+      "reason": "上午十点前后逛菜市段，避开午市排队高峰。",
       "open": "09:30-23:00",
       "closed_mon": false,
       "suburb": false,
@@ -883,7 +899,8 @@
       "navi_poiid": [],
       "business_area": "华南",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s552c0f2e",
@@ -892,8 +909,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "黑石礁公园地处城内海滨，礁石与浅滩相间，海岸线曲折，适合看潮水与礁岩形态。",
+      "reason": "退潮时先下到礁石区，避开湿滑处和涨潮时段。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -930,7 +947,8 @@
       "navi_poiid": "J51F014013_44388;30780",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s4c1b4393",
@@ -939,8 +957,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "海之韵公园在城郊临海处，山坡与海面衔接，步道随地势起伏，林木与礁岸交错。",
+      "reason": "清晨从北侧入口进，先上高处的观海段，避开日晒。",
       "open": "10:00-19:00",
       "closed_mon": null,
       "suburb": false,
@@ -977,7 +995,8 @@
       "navi_poiid": "J51F014014_28671",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s2e07f1b9",
@@ -986,8 +1005,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
+      "intro": "劳动公园坐落在城内，园中水面与林木相映，坡地起伏，是市民日常散步的公园。",
+      "reason": "早上沿湖走一圈，先看水边林荫段，避开周末午后。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1024,7 +1043,8 @@
       "navi_poiid": "J51F014014_8533",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sdfec6706",
@@ -1033,8 +1053,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "滨海路西段木栈道在城内沿海，栈道贴着山壁与海面延伸，一侧是坡林，一侧是礁湾。",
+      "reason": "午后从西端起步，先走临海悬空段，避开正午强光。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1071,7 +1091,8 @@
       "navi_poiid": [],
       "business_area": "星海湾",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s723af63f",
@@ -1127,8 +1148,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "大连棠梨乐游谷在城郊山谷间，溪流与坡地林木相间，栈道沿谷底铺开，地势有起伏。",
+      "reason": "上午从谷口进，先走溪边平缓段，避开雨后湿滑处。",
       "open": null,
       "closed_mon": false,
       "suburb": false,
@@ -1166,7 +1187,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sc8e6d26e",
@@ -1175,8 +1197,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "这片湿地嵌在城区里，水面开阔，芦苇与浅滩交错，栈道贴着水岸绕行，是市民日常散步的绿意空间。",
+      "reason": "清晨沿木栈道先走水岸一段，避开正午日晒与人流。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1213,7 +1235,8 @@
       "navi_poiid": "J51F012014_11891",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s522077b8",
@@ -1222,8 +1245,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "沙滩与浅海构成平缓的海滨地貌，潮间带宽阔，浪线随潮汐进退，沙岸与礁石相接，位于城区边缘。",
+      "reason": "退潮时先到潮间带看沙面纹理，涨潮前离开低处。",
       "open": "07:00-22:00",
       "closed_mon": false,
       "suburb": false,
@@ -1260,7 +1283,8 @@
       "navi_poiid": "J51F012012_255;2885",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "se6059e5f",
@@ -1269,8 +1293,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "以牡丹种植与丘陵缓坡相叠为特征，花田沿地势铺展，林木围合其间，园路随山势起伏，地处城内。",
+      "reason": "上午先看坡上花田，午后转向林下园路以避日晒。",
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": false,
@@ -1308,7 +1332,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s41e0076b",
@@ -1319,8 +1344,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "道观依山势而建，殿宇与岩壁、洞龛相嵌，石阶与古木留下时间痕迹，格局紧凑，处在城郊山地。",
+      "reason": "先沿石阶上看岩壁洞龛，午后光线斜照时再转殿宇。",
       "open": "08:30-15:00",
       "closed_mon": false,
       "suburb": true,
@@ -1358,7 +1383,8 @@
       "navi_poiid": "J51F011015_36",
       "business_area": "金普新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "see2207fb",
@@ -1367,8 +1393,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "馆藏以海滨地域的美术作品与专题陈列为主，展厅按门类分区，看展路径清晰，坐落于城区。",
+      "reason": "先看固定陈列的主展厅，再折回临展区避开人流高峰。",
       "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
@@ -1405,7 +1431,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s45382a12",
@@ -1416,8 +1443,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "博物馆，在城郊，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "这处清代官署建筑群坐落在城郊，院落沿中轴层层递进，厅堂与廊房保留着旧时衙署的格局痕迹。",
+      "reason": "上午光线斜入院落时先看中轴正堂，再折向两侧廊房。",
       "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": true,
@@ -1454,7 +1481,8 @@
       "navi_poiid": "J51F011014_23232",
       "business_area": "拥政",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s78356816",
@@ -1463,8 +1491,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "城内这座妈祖庙临街而立，殿宇紧凑，屋脊与梁枋上的装饰保存着旧时工艺，香案前常年有人驻足。",
+      "reason": "傍晚前来，先看正殿梁架，再绕到后殿看碑刻。",
       "open": "09:00-21:00",
       "closed_mon": false,
       "suburb": false,
@@ -1501,7 +1529,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s1cfdcbad",
@@ -1510,8 +1539,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "寺院殿宇沿轴线层层递进，院落与廊房围合，砖石台基与木构梁架显出年代痕迹，位于城区之内。",
+      "reason": "清晨先走中轴殿宇，再绕到侧院看台基与碑刻。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1548,7 +1577,8 @@
       "navi_poiid": "J51F012012_675",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s41feacc7",
@@ -1604,8 +1634,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内容纳一湾弧形的海面，滩涂与浅水相接，周边坡地林木围拢，海风穿过湾口，水面时起细纹。",
+      "reason": "退潮时先走滩涂一侧，再看湾口水面，避开正午日晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1642,7 +1672,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "se920e64f",
@@ -1653,8 +1684,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城郊的浅山缓坡间散落着仿旧街巷与院落，坡地林带环着土墙木门，形似北方山村的外景地。",
+      "reason": "上午光线斜照时先逛坡上院落，避开正午顶光。",
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
@@ -1692,7 +1723,8 @@
       "navi_poiid": "J51F015010_18227",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sba94478e",
@@ -1701,8 +1733,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "开门就到，午后孩子容易累",
+      "intro": "城里一片被网罩住的山林，走进去是坡道与树丛，鸟在近处走动鸣叫，孩子能凑近看羽毛和喂食。",
+      "reason": "上午开园后先走林间坡道，避开正午人多的喂食区。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1740,7 +1772,8 @@
       "navi_poiid": "J51F014014_11817",
       "business_area": "老虎滩",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "scf26d66a",
@@ -1749,8 +1782,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "这条城内小吃街以窄巷串联起两侧铺面，摊位沿墙排开，招牌与蒸汽混在巷子里，走动间满是烟火气。",
+      "reason": "傍晚开市时从巷口往深处走，先挑现做的摊子。",
       "open": "09:30-20:30",
       "closed_mon": null,
       "suburb": false,
@@ -1786,7 +1819,8 @@
       "navi_poiid": [],
       "business_area": "三八广场",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s56c20f9c",
@@ -1795,8 +1829,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "这条城内街区由交大周边多条巷道连成，铺面挨着铺面，小吃摊与老店混在行人道两侧，烟火气很足。",
+      "reason": "傍晚开摊后从巷口依次往里走，避开饭点高峰。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -1832,7 +1866,8 @@
       "navi_poiid": [],
       "business_area": "西山",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s8ac51c11",
@@ -1841,8 +1876,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "城内的小平岛一带，海面开阔，岸线曲折，山势贴着水边起伏，礁石与滩涂相间。",
+      "reason": "退潮时沿岛边先走礁石段，风大时避开临海高处。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -1875,7 +1910,8 @@
       "navi_poiid": [],
       "business_area": "小平岛",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s4eef44b3",
@@ -1931,8 +1967,8 @@
       "tags": [],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
+      "intro": "藏在城内的老寺院，殿宇沿地势错落排开，梁柱与砖石留有旧时痕迹，院中卧佛造像为看点。",
+      "reason": "上午光线斜照殿内时先看卧佛，避开午间人流。",
       "open": "07:00-17:00",
       "closed_mon": false,
       "suburb": false,
@@ -1969,7 +2005,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "se6ac5950",
@@ -1980,8 +2017,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城郊的朝阳寺，殿宇依地势铺开，旧墙与檐角留着年月磨出的痕迹，四周安静。",
+      "reason": "上午到寺前先看主殿一带，避开午后香客多的时段。",
       "open": "08:00-17:00",
       "closed_mon": false,
       "suburb": true,
@@ -2015,7 +2052,8 @@
       "navi_poiid": [],
       "business_area": "金普新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s721051b6",
@@ -2026,8 +2064,8 @@
       ],
       "heat": 7,
       "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城郊山间的古寺，殿宇依地势层叠而建，院落格局保留着旧时痕迹，香火与檐影相映成趣。",
+      "reason": "清晨入寺，先沿中轴看主殿，避开午间进香人流。",
       "open": "08:00-15:30",
       "closed_mon": false,
       "suburb": true,
@@ -2065,7 +2103,8 @@
       "navi_poiid": "J51F014011_318",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s79857594",
@@ -2074,8 +2113,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城中江畔拔起一座形似巨象饮水的石山，山体临水而立，岩壁与水面相接处透着天然趣味。",
+      "reason": "傍晚从水边一侧先看象形轮廓，避开正午顶光时分。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -2112,7 +2151,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s89e1a86d",
@@ -2121,8 +2161,8 @@
       "tags": [],
       "heat": 7,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "带娃排一整个上午",
+      "intro": "城内的极地主题馆，能看企鹅、白鲸等极地动物在水中游弋，孩子隔着玻璃观察它们上岸换气的模样。",
+      "reason": "上午开馆就进，先看企鹅展区避开人流",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -2160,7 +2200,8 @@
       "navi_poiid": "J51F014013_6020",
       "business_area": "星海公园",
       "website": "www.sunasia.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sa93b9279",
@@ -2169,8 +2210,8 @@
       "tags": [],
       "heat": 6,
       "dur": 210,
-      "intro": "适合带娃的景点，在城内，排一整个上午。",
-      "reason": "带娃排一整个上午",
+      "intro": "城里的蓝色港湾滨海乐园，临着海面铺开游乐区域，孩子能动手玩水、攀爬、跑动。",
+      "reason": "开园就到，先带孩子玩户外攀爬区，正午转室内避晒。",
       "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
@@ -2204,7 +2245,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "x4010dff2",
@@ -2213,8 +2255,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
+      "intro": "城内滨海的大型开放广场，铺装地面向海面铺展，与远处城市轮廓和海上风光连成一体。",
+      "reason": "日落前来，先走到临海一侧看天际线，避开正午暴晒。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -2253,7 +2295,8 @@
       "navi_poiid": "J51F014013_6051",
       "business_area": "星海广场",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "x43680836",
@@ -2264,8 +2307,8 @@
       ],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城郊，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "城郊的异域风情街区，铺面与巷道模仿欧式小镇格局，街景与游乐设施交织出热闹气息。",
+      "reason": "开园时先逛主街铺面，避开午后排队高峰再玩项目。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -2304,7 +2347,8 @@
       "navi_poiid": "J51F012016_21999",
       "business_area": "金石滩",
       "website": "www.discoveryland.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     }
   ]
 }

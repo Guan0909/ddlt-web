@@ -19,7 +19,7 @@
 | `heat` | 5–10，由评分推导：`score = 0.6·norm(rating) + 0.25·level + 0.15·curation`，`norm = clamp((rating−3.5)/1.5)`，`heat = round(5 + 5·score)`；跨城可比 |
 | `dur` | 建议游览分钟数（古镇/山水 180，① 亲子 210，古迹 120，公园/街区 90…） |
 | `tags` | ≤3 个语义标签；「早去 / 夜景」会被引擎 slotFix 消费，不可随意改 |
-| `intro` / `reason` | 文案，遵守 `skills/travel-copy` 文体；`reason` ≤24 字、无数字/夸张词 |
+| `intro` / `reason` | 文案，遵守 `skills/travel-copy` 文体；`reason` ≤24 字、无数字/夸张词；`copy_src='ai'` 表示 AI 生成（约 52%），其余为手写/早期文案 |
 | `open` / `open_text` / `closed_mon` | 营业时间（高德 `biz_ext.open_time`；24 小时→`00:00-23:59`；闭馆日只认明确文本） |
 | `tel` / `rating` / `cost` / `photo` | 高德回填；**评分满分 5 分** |
 | `a_level` / `keytag` | **高德景区等级**（5A/4A/3A，来自 `biz_ext.level`/`keytag`）——"非常知名"的权威判据，5A/4A 豁免删除 |
