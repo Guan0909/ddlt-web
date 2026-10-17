@@ -1100,6 +1100,8 @@
   }
   // 结果渲染：库内（精选）在前、地图地点在后
   function paintSearchResults(local, cloudList, pending) {
+    // 守卫：搜索是异步的，退出编辑后到达的结果不能把面板重新显示出来
+    if (!editMode) return;
     esResults.textContent = '';
     if (!local.length && !cloudList.length) {
       esResults.hidden = false;
