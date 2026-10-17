@@ -1,0 +1,1340 @@
+{
+  "city": "温州",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 70,
+    "poiFixed": 17,
+    "renamed": 16,
+    "coordFixed": 14,
+    "openFilled": 45,
+    "closedMon": 1,
+    "tel": 43,
+    "rating": 60,
+    "photo": 59,
+    "noCand": 10,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "jiangxinyu",
+      "name": "江心屿",
+      "pick": "江心屿",
+      "pickId": "B024104087",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0577-88771272",
+      "openTime": "08:30-22:00",
+      "openText": "周一至周日 08:30-22:00",
+      "oldId": "B024104087",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wuma-street",
+      "name": "五马街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "森马潮鞋五马街旗舰店(五马街步行街店)(83)",
+        "五马步行街(49)",
+        "五马历史文化街区(44)"
+      ]
+    },
+    {
+      "id": "chanjie",
+      "name": "禅街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "蝉街(31)",
+        "禅街人才公寓(-17)",
+        "紫京禅北京布鞋(南大街店)(-27)"
+      ]
+    },
+    {
+      "id": "gongyuan-road",
+      "name": "公园路",
+      "pick": "公园路历史文化街区",
+      "pickId": "B0L2U5EHY6",
+      "score": 106,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.8,
+      "tel": "",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0HGTZ78JF",
+      "drift_m": 300,
+      "changes": {
+        "poi": {
+          "from": "B0HGTZ78JF",
+          "to": "B0L2U5EHY6"
+        },
+        "coord": {
+          "from": [
+            120.664282,
+            28.014403
+          ],
+          "to": [
+            120.661752,
+            28.012893
+          ],
+          "drift_m": 300
+        },
+        "rename": {
+          "from": "公园路",
+          "to": "公园路历史文化街区"
+        }
+      }
+    },
+    {
+      "id": "mochifang",
+      "name": "墨池坊",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "墨池公园(90)",
+        "墨叙(81)",
+        "五马-墨池历史文化街区(80)"
+      ]
+    },
+    {
+      "id": "shuomen-street",
+      "name": "朔门古街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "东门商业步行街(27)",
+        "朔门街(-9)",
+        "解放街(-54)"
+      ]
+    },
+    {
+      "id": "shuomen-port",
+      "name": "朔门古港遗址",
+      "pick": "朔门古港遗址",
+      "pickId": "B0JGJL8CY9",
+      "score": 142,
+      "type": "风景名胜;风景名胜;世界遗产",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "08:30-22:00",
+      "openText": "周一至周日 08:30-22:00",
+      "oldId": "B0JGJL8CY9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qingnianfang",
+      "name": "庆年坊历史街区",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "松台街道庆年坊历史文化街区改造现场办(-21)"
+      ]
+    },
+    {
+      "id": "songtaishan",
+      "name": "松台山公园",
+      "pick": "松台山公园",
+      "pickId": "B0FFIJO5X0",
+      "score": 136,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFIJO5X0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huagaishan",
+      "name": "华盖山",
+      "pick": "华盖山人防商业步行街",
+      "pickId": "B024105FMG",
+      "score": 74,
+      "type": "购物服务;特色商业街;步行街",
+      "rating": 4.4,
+      "tel": "0577-88196688",
+      "openTime": "08:30-18:45",
+      "openText": "周一至周日 08:30-18:45",
+      "oldId": "B02410XTHG",
+      "drift_m": 204,
+      "changes": {
+        "poi": {
+          "from": "B02410XTHG",
+          "to": "B024105FMG"
+        },
+        "coord": {
+          "from": [
+            120.664634,
+            28.016028
+          ],
+          "to": [
+            120.664469,
+            28.017854
+          ],
+          "drift_m": 204
+        }
+      }
+    },
+    {
+      "id": "jiushanhu",
+      "name": "九山湖",
+      "pick": "九山湖游泳俱乐部",
+      "pickId": "B0H0VZZPZH",
+      "score": 66,
+      "type": "体育休闲服务;运动场馆;游泳馆",
+      "rating": 3.8,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFFPCYFA",
+      "drift_m": 338,
+      "changes": {
+        "poi": {
+          "from": "B0FFFPCYFA",
+          "to": "B0H0VZZPZH"
+        },
+        "coord": {
+          "from": [
+            120.647483,
+            28.011069
+          ],
+          "to": [
+            120.64636,
+            28.013941
+          ],
+          "drift_m": 338
+        }
+      }
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "pick": "中山公园",
+      "pickId": "B024104PNO",
+      "score": 142,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B024104PNO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "maanchi-park",
+      "name": "马鞍池公园",
+      "pick": "马鞍池公园",
+      "pickId": "B024103CC7",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0577-88616267",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B024103CC7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "南塘风貌街(73)",
+        "南塘步行街(38)",
+        "南塘街(-14)"
+      ]
+    },
+    {
+      "id": "bailuzhou",
+      "name": "白鹿洲公园",
+      "pick": "白鹿洲公园",
+      "pickId": "B02410559L",
+      "score": 142,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B02410559L",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenzhou-museum",
+      "name": "温州博物馆",
+      "pick": "温州博物馆",
+      "pickId": "B0241041TP",
+      "score": 151,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0577-56988280",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B0241041TP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenzhou-science",
+      "name": "温州科技馆",
+      "pick": "温州科技馆",
+      "pickId": "B024100NRL",
+      "score": 146,
+      "type": "科教文化服务;科技馆;科技馆",
+      "rating": 4.8,
+      "tel": "0577-88958895",
+      "openTime": "09:00-16:30",
+      "openText": "周三至周日 09:00-16:30",
+      "oldId": "B024100NRL",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanxi-museum",
+      "name": "南戏博物馆",
+      "pick": "南戏博物馆",
+      "pickId": "B02410Y3BI",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "0577-88273920",
+      "openTime": "09:00-16:30",
+      "openText": "周二至周日 09:00-16:30",
+      "oldId": "B02410Y3BI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "math-museum",
+      "name": "温州数学名人馆",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "白鹿洲公园-温州数学名人馆(120)",
+        "高盈里谷宅(76)"
+      ]
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清旧居",
+      "pick": "朱自清旧居",
+      "pickId": "B024105GJ7",
+      "score": 143,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.5,
+      "tel": "0577-88273920",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日:09:00-17:00(16:30停止入馆),每周一闭馆,国家法定节假日除外；2026年5月7日闭馆一天",
+      "oldId": "B024105GJ7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenzhou-theater",
+      "name": "温州大剧院",
+      "pick": "温州大剧院",
+      "pickId": "B024105K1J",
+      "score": 105,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.7,
+      "tel": "0577-89975111;0577-89975222",
+      "openTime": "09:00-17:30",
+      "openText": "09:00-17:30,有演出时至演出结束",
+      "oldId": "B024105K1J",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongnan-theater",
+      "name": "温州东南剧院",
+      "pick": "温州东南剧院",
+      "pickId": "B0241025IK",
+      "score": 105,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.7,
+      "tel": "0577-88363396;0577-88368166",
+      "openTime": "09:00-12:00 13:00-18:00",
+      "openText": "周一至周日 09:00-12:00,13:00-18:00",
+      "oldId": "B0241025IK",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "oujiang-cruise",
+      "name": "瓯江夜游",
+      "pick": "瓯江夜游",
+      "pickId": "B0GUFAEI7S",
+      "score": 139,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "0577-56699688",
+      "openTime": "14:30-21:30",
+      "openText": "周一至周日 14:30-21:30",
+      "oldId": "B0GUFAEI7S",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shamaohe",
+      "name": "纱帽河",
+      "pick": "纱帽河商城",
+      "pickId": "B024106AZY",
+      "score": 85,
+      "type": "商务住宅;住宅区;住宅小区",
+      "rating": 4.5,
+      "tel": "0577-88515111",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGQJSII",
+      "drift_m": 107,
+      "changes": {
+        "poi": {
+          "from": "B0FFGQJSII",
+          "to": "B024106AZY"
+        },
+        "coord": {
+          "from": [
+            120.66049,
+            28.011418
+          ],
+          "to": [
+            120.661578,
+            28.01133
+          ],
+          "drift_m": 107
+        }
+      }
+    },
+    {
+      "id": "nantang-night",
+      "name": "南塘夜市",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "南塘步行街(48)",
+        "五马步行街(29)",
+        "龙霞夜市(27)"
+      ]
+    },
+    {
+      "id": "wutian-old-street",
+      "name": "梧田老街",
+      "pick": "梧田老街",
+      "pickId": "B0FFIXLS3A",
+      "score": 105,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "18067787695",
+      "openTime": "10:00-23:00",
+      "openText": "周一至周日 10:00-23:00",
+      "oldId": "B0FFIXLS3A",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "mixc",
+      "name": "温州万象城",
+      "pick": "温州万象城",
+      "pickId": "B0GRPALH82",
+      "score": 107,
+      "type": "购物服务;商场;普通商场|购物服务;商场;购物中心",
+      "rating": 4.9,
+      "tel": "0577-81206666",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0GRPALH82",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wanda-longwan",
+      "name": "龙湾万达广场",
+      "pick": "万达广场",
+      "pickId": "B0M6SU42ML",
+      "score": 66,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.6,
+      "tel": "0577-55888388",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周四 10:00-22:00；周五至周六 10:00-22:30",
+      "oldId": "",
+      "drift_m": 1156,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0M6SU42ML"
+        },
+        "coord": {
+          "from": [
+            120.818,
+            27.913
+          ],
+          "to": [
+            120.810875,
+            27.921275
+          ],
+          "drift_m": 1156
+        }
+      }
+    },
+    {
+      "id": "sanyang-wetland",
+      "name": "三垟湿地",
+      "pick": "三垟湿地景区",
+      "pickId": "B024110OQG",
+      "score": 120,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "0577-86190008",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；观光车:9:00-17:00、游船:9:00-16:30",
+      "oldId": "BV11102054",
+      "drift_m": 836,
+      "changes": {
+        "poi": {
+          "from": "BV11102054",
+          "to": "B024110OQG"
+        },
+        "coord": {
+          "from": [
+            120.713926,
+            27.972968
+          ],
+          "to": [
+            120.708225,
+            27.967384
+          ],
+          "drift_m": 836
+        },
+        "rename": {
+          "from": "三垟湿地",
+          "to": "三垟湿地景区"
+        }
+      }
+    },
+    {
+      "id": "wenzhou-park",
+      "name": "温州乐园",
+      "pick": "温州乐园",
+      "pickId": "B02410405I",
+      "score": 163,
+      "type": "体育休闲服务;休闲场所;游乐场|风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0577-86696111;0577-86696222",
+      "openTime": "09:00-21:30 09:00-18:00 09:00-21:30 09:00-18:00 09:00-17:00 09:00-22:00 09:00-17:00",
+      "openText": "01-01至07-08 周一至周日 09:00-21:30 最晚进入20:30；07-09至07-09 周一至周日 09:00-18:00；07-10至08-31 周一至周日 09:00-21:30 最晚进入20:30；09-01至10-07 周一至周日 09:00-18:00；10-08至10-09 周一至周日 09:00-17:00 最晚进入16:00；10-10至11-08 周一至周日 09:00-22:00 最晚进入20:30；11-09至12-31 周一至周日 09:00-17:00 最晚进入16:00",
+      "oldId": "B02410405I",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenzhou-zoo",
+      "name": "温州动物园",
+      "pick": "温州动物园",
+      "pickId": "B024100SR3",
+      "score": 145,
+      "type": "风景名胜;公园广场;动物园",
+      "rating": 4.7,
+      "tel": "0577-88517668",
+      "openTime": "08:30-17:30",
+      "openText": "01/01-12/31 08:30-17:30开放",
+      "oldId": "B024100SR3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jingshan",
+      "name": "景山公园",
+      "pick": "景山公园",
+      "pickId": "B0HGJSHC88",
+      "score": 156,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0577-88557706",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0HGJSHC88",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zeya",
+      "name": "泽雅",
+      "pick": "泽雅景区",
+      "pickId": "B02410ZC4E",
+      "score": 129,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 3.5,
+      "tel": "0577-86318520",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0HGJSJIE1",
+      "drift_m": 162,
+      "changes": {
+        "poi": {
+          "from": "B0HGJSJIE1",
+          "to": "B02410ZC4E"
+        },
+        "coord": {
+          "from": [
+            120.492638,
+            28.033969
+          ],
+          "to": [
+            120.492853,
+            28.032523
+          ],
+          "drift_m": 162
+        },
+        "rename": {
+          "from": "泽雅",
+          "to": "泽雅景区"
+        }
+      }
+    },
+    {
+      "id": "silianzhui",
+      "name": "四连碓造纸作坊",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "手工作坊(18)",
+        "纸槽作坊(17)",
+        "山农作坊(春晖组团店)(-14)"
+      ]
+    },
+    {
+      "id": "daluoshan",
+      "name": "大罗山",
+      "pick": "大罗山",
+      "pickId": "B02410406F",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "oldId": "B02410406F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yaoxi",
+      "name": "瑶溪",
+      "pick": "瑶溪风景名胜区",
+      "pickId": "B0FFF33T4H",
+      "score": 83,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0577-88098999",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFDRXM4",
+      "drift_m": 2428,
+      "changes": {
+        "poi": {
+          "from": "B0FFFDRXM4",
+          "to": "B0FFF33T4H"
+        },
+        "rename": {
+          "from": "瑶溪",
+          "to": "瑶溪风景名胜区"
+        }
+      }
+    },
+    {
+      "id": "yongchangbao",
+      "name": "永昌堡",
+      "pick": "永昌堡",
+      "pickId": "B024105DWP",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0577-86935252",
+      "openTime": "06:00-20:00",
+      "openText": "周一至周日 06:00-20:00",
+      "oldId": "B024105DWP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xianyan",
+      "name": "仙岩",
+      "pick": "瓯海区仙岩镇",
+      "pickId": "B0FFHSL0JW",
+      "score": 101,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.7,
+      "tel": "",
+      "openTime": "09:00-23:00",
+      "openText": "周一至周日 09:00-23:00",
+      "oldId": "B0FFHOSXKS",
+      "drift_m": 1365,
+      "changes": {
+        "poi": {
+          "from": "B0FFHOSXKS",
+          "to": "B0FFHSL0JW"
+        },
+        "coord": {
+          "from": [
+            120.67083,
+            27.872104
+          ],
+          "to": [
+            120.678572,
+            27.861912
+          ],
+          "drift_m": 1365
+        },
+        "rename": {
+          "from": "仙岩",
+          "to": "瓯海区仙岩镇"
+        }
+      }
+    },
+    {
+      "id": "yaokou",
+      "name": "瓯窑小镇",
+      "pick": "瓯窑小镇",
+      "pickId": "B0FFHOD1G0",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "13819725972",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFHOD1G0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shoe-museum",
+      "name": "中国鞋文化博物馆",
+      "pick": "温州市红蜻蜓鞋文化博物馆",
+      "pickId": "B02410WN71",
+      "score": 65,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周六 09:00-17:00,周日及法定节假日闭馆",
+      "oldId": "",
+      "drift_m": 4891,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B02410WN71"
+        }
+      }
+    },
+    {
+      "id": "nanxijiang",
+      "name": "楠溪江",
+      "pick": "楠溪江风景名胜区",
+      "pickId": "B024104089",
+      "score": 90,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "12301;4008269978",
+      "openTime": [],
+      "openText": "周一至周日 00:00-24:00；夏令时营业时间(5.1-9.30) : 崖下库、石门台、十二峰:08:00-17:30，最迟入园时间:16:30； 陶公洞:24小时营业； 埭头古村、芙蓉古村、苍坡古村、丽水古街、太平岩、小港漂流、二桥漂流、桃花源漂流、狮子岩漂流:8:00-17:30，最迟入园时间:17:30； 冬令时营业时间(10.1-次年4.30) : 崖下库、石门台、十二峰:08:00-17:00，最迟入园时间:16:00； 陶公洞:24小时营业； 埭头古村、芙蓉古村、苍坡古村、丽水古街、太平岩、小港漂流、二桥漂流、桃花源漂流、狮子岩漂流:08:00-17:00，最迟入园时间:17:00",
+      "oldId": "B0FFGFAFT9",
+      "drift_m": 42044,
+      "changes": {
+        "poi": {
+          "from": "B0FFGFAFT9",
+          "to": "B024104089"
+        },
+        "rename": {
+          "from": "楠溪江",
+          "to": "楠溪江风景名胜区"
+        }
+      }
+    },
+    {
+      "id": "shiweiyan",
+      "name": "石桅岩",
+      "pick": "楠溪江风景名胜区石桅岩景区",
+      "pickId": "B02410407E",
+      "score": 125,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0577-67198968",
+      "openTime": [],
+      "openText": "5月至12月 周一至周日 08:00-17:00 最晚进入17:00",
+      "oldId": "B02410407E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cangpo",
+      "name": "苍坡古村",
+      "pick": "楠溪江苍坡古村",
+      "pickId": "B0FFFWMGT6",
+      "score": 110,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.4,
+      "tel": "15325516736;15397375076",
+      "openTime": [],
+      "openText": "1月至4月,10月至12月 周一至周日 08:00-17:00；5月至9月 周一至周日 08:30-17:30 最晚进入17:00",
+      "oldId": "BV11440699",
+      "drift_m": 777,
+      "changes": {
+        "poi": {
+          "from": "BV11440699",
+          "to": "B0FFFWMGT6"
+        },
+        "coord": {
+          "from": [
+            120.753633,
+            28.354419
+          ],
+          "to": [
+            120.749059,
+            28.360136
+          ],
+          "drift_m": 777
+        },
+        "rename": {
+          "from": "苍坡古村",
+          "to": "楠溪江苍坡古村"
+        }
+      }
+    },
+    {
+      "id": "furong",
+      "name": "芙蓉古村",
+      "pick": "芙蓉古村宋园",
+      "pickId": "B0KB4S07Q3",
+      "score": 124,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "BV11466829",
+      "drift_m": 186,
+      "changes": {
+        "poi": {
+          "from": "BV11466829",
+          "to": "B0KB4S07Q3"
+        },
+        "coord": {
+          "from": [
+            120.736252,
+            28.330662
+          ],
+          "to": [
+            120.736151,
+            28.32899
+          ],
+          "drift_m": 186
+        },
+        "rename": {
+          "from": "芙蓉古村",
+          "to": "芙蓉古村宋园"
+        }
+      }
+    },
+    {
+      "id": "lishui-street",
+      "name": "丽水街",
+      "pick": "楠溪江风景名胜区丽水街",
+      "pickId": "B0HR1BB75O",
+      "score": 118,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "BZ9HQU001E",
+      "drift_m": 443,
+      "changes": {
+        "poi": {
+          "from": "BZ9HQU001E",
+          "to": "B0HR1BB75O"
+        },
+        "coord": {
+          "from": [
+            120.734378,
+            28.340393
+          ],
+          "to": [
+            120.735273,
+            28.336485
+          ],
+          "drift_m": 443
+        }
+      }
+    },
+    {
+      "id": "linkeng",
+      "name": "林坑古村",
+      "pick": "林坑古村落",
+      "pickId": "B0FFIPBKXW",
+      "score": 71,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0577-67189868",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "",
+      "drift_m": 29377,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFIPBKXW"
+        },
+        "rename": {
+          "from": "林坑古村",
+          "to": "林坑古村落"
+        }
+      }
+    },
+    {
+      "id": "yandangshan",
+      "name": "雁荡山",
+      "pick": "雁荡山风景名胜区",
+      "pickId": "B024105U52",
+      "score": 91,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0577-62178888",
+      "openTime": "06:30-17:30",
+      "openText": "06:30-17:30, 具体开放时间以现场公示为准",
+      "oldId": "B024105R6B",
+      "drift_m": 3288,
+      "changes": {
+        "poi": {
+          "from": "B024105R6B",
+          "to": "B024105U52"
+        },
+        "rename": {
+          "from": "雁荡山",
+          "to": "雁荡山风景名胜区"
+        }
+      }
+    },
+    {
+      "id": "dalongqiu",
+      "name": "大龙湫",
+      "pick": "大龙湫登山步道",
+      "pickId": "BZ9HQX001V",
+      "score": 110,
+      "type": "风景名胜;公园广场;公园内部设施",
+      "rating": 3.2,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "BV11586195",
+      "drift_m": 63,
+      "changes": {
+        "poi": {
+          "from": "BV11586195",
+          "to": "BZ9HQX001V"
+        },
+        "coord": {
+          "from": [
+            121.053984,
+            28.348268
+          ],
+          "to": [
+            121.053428,
+            28.348561
+          ],
+          "drift_m": 63
+        },
+        "rename": {
+          "from": "大龙湫",
+          "to": "大龙湫登山步道"
+        }
+      }
+    },
+    {
+      "id": "lingfeng-night",
+      "name": "灵峰夜景",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "雁荡山灵峰夜景景区-合掌峰(123)",
+        "灵峰景区(97)",
+        "雁荡山风景名胜区-三折瀑景区(67)"
+      ]
+    },
+    {
+      "id": "zhongyandang",
+      "name": "中雁荡山",
+      "pick": "中雁荡山风景区",
+      "pickId": "B024100TY3",
+      "score": 103,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0577-62691919;0577-62682786;12301",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00 最晚进入16:30",
+      "oldId": "B024105R7A",
+      "drift_m": 4052,
+      "changes": {
+        "poi": {
+          "from": "B024105R7A",
+          "to": "B024100TY3"
+        },
+        "rename": {
+          "from": "中雁荡山",
+          "to": "中雁荡山风景区"
+        }
+      }
+    },
+    {
+      "id": "dongtou",
+      "name": "洞头列岛",
+      "pick": "洞头列岛",
+      "pickId": "B0FFF0EX5P",
+      "score": 136,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFF0EX5P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wanghailou",
+      "name": "望海楼",
+      "pick": "望海楼",
+      "pickId": "B02410WIX6",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0577-63487112",
+      "openTime": "08:00-18:00 08:00-17:30",
+      "openText": "05-01至10-07 周一至周日 08:00-18:00 最晚进入17:30；10-08至04-30 周一至周日 08:00-17:30 最晚进入17:00",
+      "oldId": "B02410WIX6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiandieyan",
+      "name": "仙叠岩",
+      "pick": "仙叠岩",
+      "pickId": "B02410406P",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0577-63473485",
+      "openTime": [],
+      "openText": "1月至3月,11月至12月 周一至周日 08:00-17:00 最晚进入16:30；4月至10月 周一至周日 08:00-17:30 最晚进入17:00",
+      "oldId": "B02410406P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "banpingshan",
+      "name": "半屏山",
+      "pick": "半屏山",
+      "pickId": "B0FFF3O9NE",
+      "score": 141,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": [],
+      "openText": "1月至4月,11月至12月 周一至周日 08:00-17:00 最晚进入16:30；5月至10月 周一至周日 08:00-17:30 最晚进入17:00",
+      "oldId": "B0FFF3O9NE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dashaa",
+      "name": "大沙岙海滩",
+      "pick": "大沙岙景区",
+      "pickId": "B0FFIASAE4",
+      "score": 125,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.3,
+      "tel": "0577-63473491",
+      "openTime": "08:00-17:30 08:00-17:00",
+      "openText": "05-01至10-07 周一至周日 08:00-17:30 最晚进入17:00；10-08至04-30 周一至周日 08:00-17:00 最晚进入16:30",
+      "oldId": "B0FFIASAE4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongtou-seafood",
+      "name": "东岙渔村海鲜排档",
+      "pick": "东岙渔村标志",
+      "pickId": "B0FFI5W3TM",
+      "score": 119,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.9,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFI5W3TM",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongtou-militia",
+      "name": "洞头先锋女子民兵连纪念馆",
+      "pick": "洞头先锋女子民兵连纪念馆",
+      "pickId": "B02410408E",
+      "score": 98,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 0,
+      "tel": "0577-63418788",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B02410408E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanyandang",
+      "name": "南雁荡山",
+      "pick": "南雁荡山国家级风景名胜区",
+      "pickId": "B0241046RS",
+      "score": 143,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0577-63838702",
+      "openTime": "07:30-17:00",
+      "openText": "周一至周日 07:30-17:00",
+      "oldId": "B0241046RS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "subuqing",
+      "name": "苏步青励志教育馆",
+      "pick": "苏步青励志教育馆",
+      "pickId": "B0FFGKAPGK",
+      "score": 144,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4,
+      "tel": "0577-58106535",
+      "openTime": [],
+      "openText": "周二至周日 09:00-16:30；节假日营业时间以官方通知为准",
+      "oldId": "B0FFGKAPGK",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanjidao",
+      "name": "南麂岛",
+      "pick": "温州南麂岛",
+      "pickId": "B02410YN7V",
+      "score": 134,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0577-63653991",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B024100ITP",
+      "drift_m": 455,
+      "changes": {
+        "poi": {
+          "from": "B024100ITP",
+          "to": "B02410YN7V"
+        },
+        "coord": {
+          "from": [
+            121.078058,
+            27.464821
+          ],
+          "to": [
+            121.074776,
+            27.461951
+          ],
+          "drift_m": 455
+        },
+        "rename": {
+          "from": "南麂岛",
+          "to": "温州南麂岛"
+        }
+      }
+    },
+    {
+      "id": "yuliao",
+      "name": "渔寮大沙滩",
+      "pick": "渔寮大沙滩",
+      "pickId": "B0FFFFPWTF",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFFPWTF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yucangshan",
+      "name": "玉苍山",
+      "pick": "玉苍山国家森林公园",
+      "pickId": "B02410408D",
+      "score": 124,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0577-68682008;0577-68682075",
+      "openTime": "07:00-17:00",
+      "openText": "周一至周日 07:00-17:00",
+      "oldId": "B024104I42",
+      "drift_m": 609,
+      "changes": {
+        "poi": {
+          "from": "B024104I42",
+          "to": "B02410408D"
+        },
+        "coord": {
+          "from": [
+            120.296855,
+            27.517159
+          ],
+          "to": [
+            120.302998,
+            27.516594
+          ],
+          "drift_m": 609
+        },
+        "rename": {
+          "from": "玉苍山",
+          "to": "玉苍山国家森林公园"
+        }
+      }
+    },
+    {
+      "id": "wanyao",
+      "name": "碗窑古村",
+      "pick": "碗窑古村落风景区",
+      "pickId": "B0241060MS",
+      "score": 126,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0577-68723687",
+      "openTime": "08:00-16:00",
+      "openText": "周一至周日 08:00-16:00",
+      "oldId": "B0241060MS",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "碗窑古村",
+          "to": "碗窑古村落风景区"
+        }
+      }
+    },
+    {
+      "id": "siqian",
+      "name": "泗溪廊桥",
+      "pick": "南溪廊桥",
+      "pickId": "B0J6V5BDDJ",
+      "score": 110,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.6,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00 最晚进入16:00",
+      "oldId": "B0J6V5BDDJ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wuyanling",
+      "name": "乌岩岭",
+      "pick": "浙江乌岩岭国家级自然保护区",
+      "pickId": "B024100JIX",
+      "score": 142,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "tel": "0577-67587805;0577-67615461",
+      "openTime": "07:30-16:30",
+      "openText": "周一至周日 07:30-16:30 最晚进入16:30",
+      "oldId": "B024100JIX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baizhangji",
+      "name": "百丈漈",
+      "pick": "百丈漈",
+      "pickId": "B024110HBX",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0577-59003692",
+      "openTime": [],
+      "openText": "10月16日至次年4月15日:08:00-17:00,15:30停止入园,4月16日-10月15日:7:30-17:00（16:00停止进入）",
+      "oldId": "B024110HBX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tonglingshan",
+      "name": "铜铃山",
+      "pick": "文成铜铃山森林公园景区",
+      "pickId": "B02410406A",
+      "score": 126,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "0577-59003692",
+      "openTime": [],
+      "openText": "8:30-15:00",
+      "oldId": "B02410406A",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "liubowen",
+      "name": "刘伯温故里景区",
+      "pick": "刘伯温故里景区",
+      "pickId": "B0G3KCN3WJ",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0577-59003692",
+      "openTime": "07:30-17:30 08:00-17:00",
+      "openText": "04-16至10-15 周一至周日 07:30-17:30 最晚进入16:00；10-16至04-15 周一至周日 08:00-17:00 最晚进入15:30",
+      "oldId": "B0G3KCN3WJ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yuhailou",
+      "name": "玉海楼",
+      "pick": "玉海楼",
+      "pickId": "B02410061B",
+      "score": 156,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0577-65623453;0577-65636354",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B02410061B",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhailiaoxi",
+      "name": "寨寮溪",
+      "pick": "寨寮溪风景区",
+      "pickId": "B024100OC2",
+      "score": 101,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "tel": "0577-65747172;0577-65747892",
+      "openTime": "08:00-16:30",
+      "openText": "周一至周日 08:00-16:30",
+      "oldId": "",
+      "drift_m": 21518,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B024100OC2"
+        },
+        "rename": {
+          "from": "寨寮溪",
+          "to": "寨寮溪风景区"
+        }
+      }
+    }
+  ]
+}

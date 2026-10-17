@@ -1,0 +1,1433 @@
+{
+  "city": "合肥",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 68,
+    "poiFixed": 19,
+    "renamed": 19,
+    "coordFixed": 21,
+    "openFilled": 40,
+    "closedMon": 0,
+    "tel": 39,
+    "rating": 61,
+    "photo": 59,
+    "noCand": 7,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "baogongyuan",
+      "name": "包公园",
+      "pick": "包公园",
+      "pickId": "B02270I1AV",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0551-62886107;0551-62884490;12301",
+      "openTime": [],
+      "openText": "1月至4月,10月至12月 周一至周日 09:00-17:00 最晚进入16:30；5月至9月 周一至周日 09:00-17:30 最晚进入17:00",
+      "oldId": "B02270I1AV",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huaihe-road",
+      "name": "淮河路步行街",
+      "pick": "淮河路步行街",
+      "pickId": "B022701SEU",
+      "score": 106,
+      "type": "购物服务;特色商业街;步行街",
+      "rating": 4.8,
+      "tel": "0551-65555000",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B022701SEU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "sanhe",
+      "name": "三河古镇",
+      "pick": "三河古镇",
+      "pickId": "B02270I45I",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0551-68757113",
+      "openTime": "00:00-24:00 19:30-21:30",
+      "openText": "周一至周日 00:00-24:00；1、内部小景点和摇橹船营业时间为:8:30-17:30。 2、夜游运营时间:19:30-21:30",
+      "oldId": "B02270I45I",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "anhui-museum-new",
+      "name": "安徽博物院（新馆）",
+      "pick": "安徽博物院",
+      "pickId": "B022716AQJ",
+      "score": 134,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "0551-63736658",
+      "openTime": "09:00-17:00",
+      "openText": "周一关闭（法定节假日除外），周二至周日09:00-17:00(16:30停止入馆)",
+      "oldId": "B022716AQJ",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "安徽博物院（新馆）",
+          "to": "安徽博物院"
+        }
+      }
+    },
+    {
+      "id": "leijie",
+      "name": "罍街",
+      "pick": "罍街公园",
+      "pickId": "B0FFLA7X0M",
+      "score": 128,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G2MKUDL6",
+      "drift_m": 528,
+      "changes": {
+        "poi": {
+          "from": "B0G2MKUDL6",
+          "to": "B0FFLA7X0M"
+        },
+        "coord": {
+          "from": [
+            117.293509,
+            31.819892
+          ],
+          "to": [
+            117.297353,
+            31.816446
+          ],
+          "drift_m": 528
+        },
+        "rename": {
+          "from": "罍街",
+          "to": "罍街公园"
+        }
+      }
+    },
+    {
+      "id": "xiaoyaojin",
+      "name": "逍遥津公园",
+      "pick": "古逍遥津",
+      "pickId": "B022702VYA",
+      "score": 114,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.8,
+      "tel": "0551-62614651;0551-62652163",
+      "openTime": [],
+      "openText": "5月1日至10月31日 06:00-22:00；11月1日至次年4月30日 06:30-21:30",
+      "oldId": "B0FFFDS13N",
+      "drift_m": 214,
+      "changes": {
+        "poi": {
+          "from": "B0FFFDS13N",
+          "to": "B022702VYA"
+        },
+        "coord": {
+          "from": [
+            117.295109,
+            31.867054
+          ],
+          "to": [
+            117.295084,
+            31.86898
+          ],
+          "drift_m": 214
+        }
+      }
+    },
+    {
+      "id": "limu-house",
+      "name": "李鸿章故居",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "李鸿章故居(暂停开放)(127)",
+        "李鸿章故居-前厅(122)",
+        "李鸿章故居陈列馆-门厅(120)"
+      ]
+    },
+    {
+      "id": "ningguo-road",
+      "name": "宁国路龙虾一条街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "来电(金老汉烧鸡公宁国路龙虾一条街店)(20)",
+        "怪兽充电(人民公社合肥总店)(-20)",
+        "皖北羊家庄(宁国路店)(-45)"
+      ]
+    },
+    {
+      "id": "anhui-famous",
+      "name": "安徽名人馆",
+      "pick": "安徽名人馆",
+      "pickId": "B022715O0M",
+      "score": 143,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.5,
+      "tel": "0551-62552828",
+      "openTime": [],
+      "openText": "1/1-12/31 周二–周日 09:00–17:00开放；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放",
+      "oldId": "B022715O0M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dujiang-memorial",
+      "name": "渡江战役纪念馆",
+      "pick": "渡江战役纪念馆",
+      "pickId": "B022717S02",
+      "score": 145,
+      "type": "风景名胜;风景名胜;红色景区|风景名胜;风景名胜;纪念馆",
+      "rating": 4.7,
+      "tel": "0551-62635757;0551-63412746",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B022717S02",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "swan-lake",
+      "name": "天鹅湖",
+      "pick": "天鹅湖公园",
+      "pickId": "B0LAPUIW27",
+      "score": 118,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFF65VZD",
+      "drift_m": 1208,
+      "changes": {
+        "poi": {
+          "from": "B0FFF65VZD",
+          "to": "B0LAPUIW27"
+        },
+        "coord": {
+          "from": [
+            117.219167,
+            31.81089
+          ],
+          "to": [
+            117.230912,
+            31.815183
+          ],
+          "drift_m": 1208
+        },
+        "rename": {
+          "from": "天鹅湖",
+          "to": "天鹅湖公园"
+        }
+      }
+    },
+    {
+      "id": "dashushan",
+      "name": "大蜀山国家森林公园",
+      "pick": "大蜀山山顶",
+      "pickId": "B0MDBOIX8A",
+      "score": 114,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFAJ1RQ",
+      "drift_m": 63,
+      "changes": {
+        "poi": {
+          "from": "B0FFFAJ1RQ",
+          "to": "B0MDBOIX8A"
+        },
+        "coord": {
+          "from": [
+            117.176138,
+            31.838417
+          ],
+          "to": [
+            117.176525,
+            31.838875
+          ],
+          "drift_m": 63
+        }
+      }
+    },
+    {
+      "id": "hefei-zoo",
+      "name": "合肥野生动物园",
+      "pick": "合肥野生动物园",
+      "pickId": "B022700869",
+      "score": 145,
+      "type": "风景名胜;公园广场;动物园",
+      "rating": 4.7,
+      "tel": "0551-65395595",
+      "openTime": [],
+      "openText": "1月至2月,12月 周一至周日 09:00-17:00 最晚进入16:30；3月至11月 周一至周日 09:00-17:30 最晚进入16:40",
+      "oldId": "B022700869",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "mingjiao-temple",
+      "name": "明教寺",
+      "pick": "明教寺",
+      "pickId": "B02270086E",
+      "score": 143,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "07:30-17:00",
+      "openText": "周一至周日 07:30-17:00；初一、十五:03:30-17:00，具体营业状态以当天开放情况为准",
+      "oldId": "B02270086E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hechai1972",
+      "name": "合柴1972",
+      "pick": "合柴1972",
+      "pickId": "B0FFLADM9W",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "0551-65561972",
+      "openTime": "09:00-21:00",
+      "openText": "周一至周日 09:00-21:00",
+      "oldId": "B0FFLADM9W",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hefei-botanical",
+      "name": "合肥植物园",
+      "pick": "合肥植物园",
+      "pickId": "B022701P72",
+      "score": 145,
+      "type": "风景名胜;公园广场;植物园",
+      "rating": 4.7,
+      "tel": "0551-65315007;0551-65313803;0551-65312510",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周日 08:00-17:30",
+      "oldId": "B022701P72",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "chenghuang-temple",
+      "name": "合肥城隍庙",
+      "pick": "城隍庙(淮河路)",
+      "pickId": "B02270JQ38",
+      "score": 120,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周日 09:00-18:00",
+      "oldId": "B02270JQ38",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhi-xincheng",
+      "name": "之心城",
+      "pick": "合肥之心城购物中心",
+      "pickId": "B0FFFGLHE8",
+      "score": 69,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.9,
+      "tel": "0551-65998080",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "",
+      "drift_m": 814,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFFGLHE8"
+        },
+        "coord": {
+          "from": [
+            117.255,
+            31.847
+          ],
+          "to": [
+            117.257406,
+            31.854026
+          ],
+          "drift_m": 814
+        }
+      }
+    },
+    {
+      "id": "geo-museum",
+      "name": "安徽省地质博物馆",
+      "pick": "安徽省地质博物馆",
+      "pickId": "B0FFF4RFWR",
+      "score": 151,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0551-63548008",
+      "openTime": [],
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00；国家法定节假日开放时间以馆公告为准",
+      "oldId": "B0FFF4RFWR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hefei-grand-theatre",
+      "name": "合肥大剧院",
+      "pick": "合肥大剧院",
+      "pickId": "B02270JLSR",
+      "score": 106,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.8,
+      "tel": "0551-63501222;0551-63501888",
+      "openTime": "09:30-18:30",
+      "openText": "周一至周日 09:30-18:30",
+      "oldId": "B02270JLSR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "anhui-museum-old",
+      "name": "安徽博物院(老馆)",
+      "pick": "安徽博物院(老馆)",
+      "pickId": "B02270011E",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "0551-62820945",
+      "openTime": "09:00-17:00",
+      "openText": "周一,周三至周日 09:00-17:00 最晚进入16:30；周二 全天关闭",
+      "oldId": "B02270011E",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "安徽博物院(老馆)",
+          "to": "安徽博物院(老馆)"
+        }
+      }
+    },
+    {
+      "id": "yintai-center",
+      "name": "银泰中心",
+      "pick": "合肥银泰中心",
+      "pickId": "B0FFG00BN0",
+      "score": 78,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.8,
+      "tel": "4001191111",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0LA6S7P5J",
+      "drift_m": 383,
+      "changes": {
+        "poi": {
+          "from": "B0LA6S7P5J",
+          "to": "B0FFG00BN0"
+        },
+        "coord": {
+          "from": [
+            117.292277,
+            31.866034
+          ],
+          "to": [
+            117.29143,
+            31.862669
+          ],
+          "drift_m": 383
+        }
+      }
+    },
+    {
+      "id": "wanxiang-city",
+      "name": "合肥万象城",
+      "pick": "合肥万象城",
+      "pickId": "B02270IR5U",
+      "score": 107,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.9,
+      "tel": "0551-65708880",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B02270IR5U",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baohe-wanda",
+      "name": "合肥包河万达广场",
+      "pick": "包河万达",
+      "pickId": "B0MBOCXLTW",
+      "score": 60,
+      "type": "购物服务;购物相关场所;购物相关场所",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "",
+      "drift_m": 1370,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0MBOCXLTW"
+        },
+        "coord": {
+          "from": [
+            117.3062,
+            31.8395
+          ],
+          "to": [
+            117.300159,
+            31.850704
+          ],
+          "drift_m": 1370
+        }
+      }
+    },
+    {
+      "id": "binhu-forest",
+      "name": "滨湖国家森林公园",
+      "pick": "合肥滨湖国家森林公园",
+      "pickId": "B022719EDH",
+      "score": 125,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0551-62776600;0551-62776688",
+      "openTime": [],
+      "openText": "11月1日至4月30日 周一至周五 09:00-17:00(最晚进入16:30)；周六至周日 08:40-17:30(最晚进入17:00)；5月1日至10月31日 周一至周五 09:00-17:30(最晚进入16:30)周六至周日 08:40-18:00(最晚进入17:00)；劳动节 08:40-18:00",
+      "oldId": "BV11567169",
+      "drift_m": 1278,
+      "changes": {
+        "poi": {
+          "from": "BV11567169",
+          "to": "B022719EDH"
+        },
+        "coord": {
+          "from": [
+            117.395348,
+            31.711866
+          ],
+          "to": [
+            117.388168,
+            31.721607
+          ],
+          "drift_m": 1278
+        },
+        "rename": {
+          "from": "滨湖国家森林公园",
+          "to": "合肥滨湖国家森林公园"
+        }
+      }
+    },
+    {
+      "id": "hefei-sunac",
+      "name": "合肥融创乐园",
+      "pick": "合肥融创乐园",
+      "pickId": "B0FFK5A8HB",
+      "score": 105,
+      "type": "体育休闲服务;休闲场所;游乐场",
+      "rating": 4.7,
+      "tel": "4008959888",
+      "openTime": "10:00-21:30",
+      "openText": "7-8月:周一-周五:10:00-21:00；周六-周日:10:00-21:30",
+      "oldId": "B0FFK5A8HB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "sanhe-yang",
+      "name": "杨振宁旧居",
+      "pick": "杨振宁雕像",
+      "pickId": "B0KUFC5F0J",
+      "score": 105,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.5,
+      "tel": "",
+      "openTime": "00:00-24:00 08:30-17:30 19:30-21:30",
+      "openText": "00:00-24:00；1、内部小景点和摇橹船为:08:30-17:30。2、夜游运营时间:19:30-21:30, 具体开放时间以现场公示为准",
+      "oldId": "B0FFF2E4XE",
+      "drift_m": 565,
+      "changes": {
+        "poi": {
+          "from": "B0FFF2E4XE",
+          "to": "B0KUFC5F0J"
+        },
+        "coord": {
+          "from": [
+            117.243952,
+            31.509387
+          ],
+          "to": [
+            117.244115,
+            31.51447
+          ],
+          "drift_m": 565
+        }
+      }
+    },
+    {
+      "id": "changlinhe",
+      "name": "长临河古镇",
+      "pick": "长临河古镇景区",
+      "pickId": "B0FFGZKBDJ",
+      "score": 146,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BV09125891",
+      "drift_m": 323,
+      "changes": {
+        "poi": {
+          "from": "BV09125891",
+          "to": "B0FFGZKBDJ"
+        },
+        "coord": {
+          "from": [
+            117.46348,
+            31.686512
+          ],
+          "to": [
+            117.461814,
+            31.689047
+          ],
+          "drift_m": 323
+        },
+        "rename": {
+          "from": "长临河古镇",
+          "to": "长临河古镇景区"
+        }
+      }
+    },
+    {
+      "id": "zhegao",
+      "name": "柘皋古镇",
+      "pick": "柘皋古镇",
+      "pickId": "B0LKZPE79Z",
+      "score": 139,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0LKZPE79Z",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tongyang",
+      "name": "烔炀古镇",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "烔炀老街(46)",
+        "巢湖市烔炀镇中心小学(21)",
+        "烔炀镇初级中学(21)"
+      ]
+    },
+    {
+      "id": "zhongmiao",
+      "name": "巢湖·中庙",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "巢湖(67)",
+        "姥山岛景区(53)",
+        "中庙寺(34)"
+      ]
+    },
+    {
+      "id": "laoshan-island",
+      "name": "姥山岛",
+      "pick": "姥山岛景区",
+      "pickId": "B02350OBEG",
+      "score": 159,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0551-88578318",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周日 08:00-17:30",
+      "oldId": "B0HD2ZCP2G",
+      "drift_m": 13,
+      "changes": {
+        "poi": {
+          "from": "B0HD2ZCP2G",
+          "to": "B02350OBEG"
+        },
+        "rename": {
+          "from": "姥山岛",
+          "to": "姥山岛景区"
+        }
+      }
+    },
+    {
+      "id": "zipengshan",
+      "name": "紫蓬山国家森林公园",
+      "pick": "紫蓬山国家森林公园",
+      "pickId": "B0227169WX",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "B0227169WX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xilu-temple",
+      "name": "西庐寺",
+      "pick": "西庐寺",
+      "pickId": "B022717S05",
+      "score": 141,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.3,
+      "tel": "0551-68581863",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B022717S05",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "liucheng-villa",
+      "name": "刘铭传故居",
+      "pick": "铭传故里景区",
+      "pickId": "B0FFK7LDKP",
+      "score": 116,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B022715M9T",
+      "drift_m": 44,
+      "changes": {
+        "poi": {
+          "from": "B022715M9T",
+          "to": "B0FFK7LDKP"
+        },
+        "coord": {
+          "from": [
+            116.788466,
+            31.721475
+          ],
+          "to": [
+            116.788903,
+            31.721602
+          ],
+          "drift_m": 44
+        }
+      }
+    },
+    {
+      "id": "daishan-lake",
+      "name": "岱山湖",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "安徽岱山湖旅游度假区(暂停开放)(86)",
+        "岱山湖旅游度假区-竹筏停靠点(63)",
+        "安徽岱山湖旅游度假区游客中心(-17)"
+      ]
+    },
+    {
+      "id": "fucha-mountain",
+      "name": "浮槎山",
+      "pick": "浮槎山景区",
+      "pickId": "B02270IONU",
+      "score": 140,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "08:00-17:00,16:00后停止预约核销",
+      "oldId": "B02350ODW1",
+      "drift_m": 399,
+      "changes": {
+        "poi": {
+          "from": "B02350ODW1",
+          "to": "B02270IONU"
+        },
+        "coord": {
+          "from": [
+            117.662511,
+            31.846881
+          ],
+          "to": [
+            117.659912,
+            31.849713
+          ],
+          "drift_m": 399
+        },
+        "rename": {
+          "from": "浮槎山",
+          "to": "浮槎山景区"
+        }
+      }
+    },
+    {
+      "id": "yefu-mountain",
+      "name": "冶父山国家森林公园",
+      "pick": "冶父山国家森林公园",
+      "pickId": "B023500TGC",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0551-83680376;0551-87412009",
+      "openTime": "05:30-18:00",
+      "openText": "周一至周日 05:30-18:00 最晚进入17:30",
+      "oldId": "B023500TGC",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yinping-mountain",
+      "name": "银屏山",
+      "pick": "巢湖银屏山景区",
+      "pickId": "B022717S1T",
+      "score": 111,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "0551-88790641",
+      "openTime": "08:00-16:00",
+      "openText": "周一至周日 08:00-16:00",
+      "oldId": "B02350OFM0",
+      "drift_m": 876,
+      "changes": {
+        "poi": {
+          "from": "B02350OFM0",
+          "to": "B022717S1T"
+        },
+        "coord": {
+          "from": [
+            117.803678,
+            31.494025
+          ],
+          "to": [
+            117.795268,
+            31.497282
+          ],
+          "drift_m": 876
+        },
+        "rename": {
+          "from": "银屏山",
+          "to": "巢湖银屏山景区"
+        }
+      }
+    },
+    {
+      "id": "bantang-hotspring",
+      "name": "半汤温泉",
+      "pick": "半汤温泉苑",
+      "pickId": "B0FFFKWODD",
+      "score": 85,
+      "type": "体育休闲服务;度假疗养场所;疗养院|体育休闲服务;度假疗养场所;度假村|住宿服务;旅馆招待所;旅馆招待所",
+      "rating": 4.5,
+      "tel": "0551-82356888",
+      "openTime": "09:00-22:00",
+      "openText": "周一至周日 09:00-22:00",
+      "oldId": "B0FFFKWODD",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tangchi-hotspring",
+      "name": "汤池温泉",
+      "pick": "合肥汤池温泉旅游度假区",
+      "pickId": "B02350NZN1",
+      "score": 116,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0551-82561681",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0M3AK319V",
+      "drift_m": 485,
+      "changes": {
+        "poi": {
+          "from": "B0M3AK319V",
+          "to": "B02350NZN1"
+        },
+        "coord": {
+          "from": [
+            117.122025,
+            31.335225
+          ],
+          "to": [
+            117.12329,
+            31.330996
+          ],
+          "drift_m": 485
+        }
+      }
+    },
+    {
+      "id": "zhouyu-mu",
+      "name": "周瑜墓",
+      "pick": "周瑜墓园",
+      "pickId": "B023500W66",
+      "score": 135,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B023500W66",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "周瑜墓",
+          "to": "周瑜墓园"
+        }
+      }
+    },
+    {
+      "id": "sanguo-xincheng",
+      "name": "三国新城遗址公园",
+      "pick": "合肥三国新城遗址公园碑记",
+      "pickId": "B0FFHXN6M4",
+      "score": 113,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 2.9,
+      "tel": "",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00",
+      "oldId": "B022715PDB",
+      "drift_m": 106,
+      "changes": {
+        "poi": {
+          "from": "B022715PDB",
+          "to": "B0FFHXN6M4"
+        },
+        "coord": {
+          "from": [
+            117.13179,
+            31.914967
+          ],
+          "to": [
+            117.131795,
+            31.914013
+          ],
+          "drift_m": 106
+        },
+        "rename": {
+          "from": "三国新城遗址公园",
+          "to": "合肥三国新城遗址公园碑记"
+        }
+      }
+    },
+    {
+      "id": "cuigang",
+      "name": "崔岗艺术村",
+      "pick": "崔岗艺术村",
+      "pickId": "B0FFG8YHEM",
+      "score": 103,
+      "type": "体育休闲服务;体育休闲服务场所;体育休闲服务场所",
+      "rating": 4.5,
+      "tel": "0551-65900996",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFG8YHEM",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "non-heritage",
+      "name": "中国非物质文化遗产园",
+      "pick": "中国(合肥)非物质文化遗产园",
+      "pickId": "B022715XXX",
+      "score": 83,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "tel": "0551-66736005",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30 最晚进入17:00；白天9:00-17:30无表演，仅景区开放场馆，如参观中华藏宫、西游记砖雕长廊等免费景点。",
+      "oldId": "",
+      "drift_m": 6735,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B022715XXX"
+        }
+      }
+    },
+    {
+      "id": "xiaolingnan",
+      "name": "小岭南",
+      "pick": "蜀山区小岭南花海",
+      "pickId": "B0H3KLXMJN",
+      "score": 123,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0H3KLXMJN",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "小岭南",
+          "to": "蜀山区小岭南花海"
+        }
+      }
+    },
+    {
+      "id": "daxu",
+      "name": "大圩生态农业旅游区",
+      "pick": "大圩生态农业旅游景区",
+      "pickId": "B0FFKY8OOA",
+      "score": 128,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0551-64857555",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFKY8OOA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tangxihe-park",
+      "name": "塘西河公园",
+      "pick": "滨湖塘西河公园",
+      "pickId": "B0FFF5QYTW",
+      "score": 115,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BV10536531",
+      "drift_m": 378,
+      "changes": {
+        "poi": {
+          "from": "BV10536531",
+          "to": "B0FFF5QYTW"
+        },
+        "coord": {
+          "from": [
+            117.302601,
+            31.731507
+          ],
+          "to": [
+            117.302804,
+            31.72811
+          ],
+          "drift_m": 378
+        },
+        "rename": {
+          "from": "塘西河公园",
+          "to": "滨湖塘西河公园"
+        }
+      }
+    },
+    {
+      "id": "kuanghe-park",
+      "name": "匡河公园",
+      "pick": "匡河公园",
+      "pickId": "B0M3DGEP5S",
+      "score": 108,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 1.2,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0M3DGEP5S",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "luzhou-park",
+      "name": "庐州公园",
+      "pick": "庐州公园",
+      "pickId": "B0FFGA0LN4",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0551-63670819",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGA0LN4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huachong-park",
+      "name": "花冲公园",
+      "pick": "花冲公园",
+      "pickId": "B022701Y6U",
+      "score": 144,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "0551-64485748",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B022701Y6U",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huancheng-park",
+      "name": "环城公园",
+      "pick": "环城公园",
+      "pickId": "B0FFH08G23",
+      "score": 141,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFH08G23",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xinghua-park",
+      "name": "杏花公园",
+      "pick": "杏花公园",
+      "pickId": "B02270085C",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0551-62843790",
+      "openTime": "06:30-21:30",
+      "openText": "周一至周日 06:30-21:30",
+      "oldId": "B02270085C",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "kexuedao",
+      "name": "科学岛",
+      "pick": "科学岛",
+      "pickId": "B0FFIL26SA",
+      "score": 119,
+      "type": "风景名胜;风景名胜;海滩",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "00:00-24:00",
+      "oldId": "B0FFGAHJE1",
+      "drift_m": 1377,
+      "changes": {
+        "poi": {
+          "from": "B0FFGAHJE1",
+          "to": "B0FFIL26SA"
+        },
+        "coord": {
+          "from": [
+            117.170987,
+            31.893158
+          ],
+          "to": [
+            117.164844,
+            31.90439
+          ],
+          "drift_m": 1377
+        }
+      }
+    },
+    {
+      "id": "hefei-sea-world",
+      "name": "合肥海洋世界",
+      "pick": "合肥海洋世界",
+      "pickId": "B0FFIOZ910",
+      "score": 145,
+      "type": "风景名胜;公园广场;水族馆",
+      "rating": 4.7,
+      "tel": "0551-63843812;0551-63843818",
+      "openTime": [],
+      "openText": "6月27日至8月30日:08:30-20:00,晚场入园时间:16:00-19:30； 8月31日:08:30-17:00",
+      "oldId": "B0FFIOZ910",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hefei-science-museum",
+      "name": "合肥市科技馆",
+      "pick": "合肥市科技馆(蜀西湖馆区)",
+      "pickId": "B0FFI94P6M",
+      "score": 129,
+      "type": "科教文化服务;科技馆;科技馆",
+      "rating": 4.9,
+      "tel": "0551-65192300;0551-65192307",
+      "openTime": [],
+      "openText": "周一至周二 全天关闭；周三至周日 09:00-16:30 最晚进入16:00",
+      "oldId": "B0FFI94P6M",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "合肥市科技馆",
+          "to": "合肥市科技馆(蜀西湖馆区)"
+        }
+      }
+    },
+    {
+      "id": "anhui-innovation",
+      "name": "安徽创新馆",
+      "pick": "安徽创新馆",
+      "pickId": "B0FFIPEW88",
+      "score": 145,
+      "type": "科教文化服务;科教文化场所;科教文化场所",
+      "rating": 4.7,
+      "tel": "0551-65909008;19005609170",
+      "openTime": [],
+      "openText": "周三至周日 09:30-17:00",
+      "oldId": "B0FFIPEW88",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "rongchuang-mao",
+      "name": "合肥融创茂",
+      "pick": "融创茂文化旅游城",
+      "pickId": "B0FFIQE7JU",
+      "score": 117,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "10:00-21:30 10:30-21:00",
+      "openText": "09-25至10-07 周一至周日 10:00-21:30；10-08至11-01 周一至周日 10:30-21:00",
+      "oldId": "B0FFIQE7JU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "1912-street",
+      "name": "合肥1912街区",
+      "pick": "金大地1912街区西街",
+      "pickId": "B0FFGPCXXK",
+      "score": 60,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "",
+      "drift_m": 866,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFGPCXXK"
+        },
+        "coord": {
+          "from": [
+            117.227,
+            31.836
+          ],
+          "to": [
+            117.220383,
+            31.841392
+          ],
+          "drift_m": 866
+        }
+      }
+    },
+    {
+      "id": "feicui-lake",
+      "name": "翡翠湖",
+      "pick": "翡翠湖风景区",
+      "pickId": "B02270IKF4",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.9,
+      "tel": "0551-63837846",
+      "openTime": [],
+      "openText": [],
+      "oldId": "BY0001OZTB",
+      "drift_m": 86,
+      "changes": {
+        "poi": {
+          "from": "BY0001OZTB",
+          "to": "B02270IKF4"
+        },
+        "coord": {
+          "from": [
+            117.193925,
+            31.766959
+          ],
+          "to": [
+            117.193514,
+            31.767647
+          ],
+          "drift_m": 86
+        },
+        "rename": {
+          "from": "翡翠湖",
+          "to": "翡翠湖风景区"
+        }
+      }
+    },
+    {
+      "id": "ustc",
+      "name": "中国科学技术大学",
+      "pick": "中国科学技术大学(本部东校区)",
+      "pickId": "B0FFF3EOHS",
+      "score": 80,
+      "type": "科教文化服务;学校;高等院校",
+      "rating": 0,
+      "tel": "0551-63602184",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFF3EOHS",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "中国科学技术大学",
+          "to": "中国科学技术大学(本部东校区)"
+        }
+      }
+    },
+    {
+      "id": "banbian-street",
+      "name": "半边街",
+      "pick": "半边街",
+      "pickId": "B0FFIOS1CQ",
+      "score": 103,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFIOS1CQ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "changjiang180",
+      "name": "长江180艺术街区",
+      "pick": "长江180艺术街区",
+      "pickId": "B0FFI9ZJ8E",
+      "score": 104,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "0551-65695180",
+      "openTime": "10:00-24:00",
+      "openText": "周一至周日 10:00-24:00",
+      "oldId": "B0FFI9ZJ8E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "datong-road",
+      "name": "大通路美食街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "叶嫂麻辣烫串串香美食(大通路店)(12)",
+        "红鼎小厨(恒盛豪庭店)(-21)",
+        "徽香满庭酒楼(恒盛豪庭店)(-22)"
+      ]
+    },
+    {
+      "id": "guanting-road",
+      "name": "官亭路小吃街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "斑马侠散酒铺(合肥官亭路店)(61)",
+        "庐州酥院·现烤板栗饼(官亭路店)(57)",
+        "官亭路小吃一条巷(-7)"
+      ]
+    },
+    {
+      "id": "kaifu-temple",
+      "name": "开福寺",
+      "pick": "开福寺福慧书院",
+      "pickId": "B0FFK8GV5D",
+      "score": 110,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.4,
+      "tel": "0551-65313400",
+      "openTime": "07:00-16:00",
+      "openText": "07:00-16:00, 具体开放时间以现场公示为准",
+      "oldId": "BV09021811",
+      "drift_m": 283,
+      "changes": {
+        "poi": {
+          "from": "BV09021811",
+          "to": "B0FFK8GV5D"
+        },
+        "coord": {
+          "from": [
+            117.185445,
+            31.831776
+          ],
+          "to": [
+            117.183054,
+            31.83331
+          ],
+          "drift_m": 283
+        },
+        "rename": {
+          "from": "开福寺",
+          "to": "开福寺福慧书院"
+        }
+      }
+    },
+    {
+      "id": "lihongzhang-xiangtang",
+      "name": "李鸿章享堂",
+      "pick": "合肥市李鸿章享堂",
+      "pickId": "B02270I2WR",
+      "score": 113,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "0551-64538901",
+      "openTime": [],
+      "openText": "周二至周日09:00-16:30,节假日正常开放",
+      "oldId": "BV10171591",
+      "drift_m": 251,
+      "changes": {
+        "poi": {
+          "from": "BV10171591",
+          "to": "B02270I2WR"
+        },
+        "coord": {
+          "from": [
+            117.370074,
+            31.838056
+          ],
+          "to": [
+            117.367418,
+            31.838208
+          ],
+          "drift_m": 251
+        },
+        "rename": {
+          "from": "李鸿章享堂",
+          "to": "合肥市李鸿章享堂"
+        }
+      }
+    },
+    {
+      "id": "dujiang-qianguwei",
+      "name": "渡江战役总前委旧址",
+      "pick": "渡江战役总前委旧址纪念馆",
+      "pickId": "B02270IN2S",
+      "score": 138,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.4,
+      "tel": "0551-67363135",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B02270IN2S",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "渡江战役总前委旧址",
+          "to": "渡江战役总前委旧址纪念馆"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1243 @@
+{
+  "city": "扬州",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 68,
+    "poiFixed": 17,
+    "renamed": 9,
+    "coordFixed": 13,
+    "openFilled": 36,
+    "closedMon": 1,
+    "tel": 39,
+    "rating": 55,
+    "photo": 53,
+    "noCand": 13,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "slender-west-lake",
+      "name": "瘦西湖",
+      "pick": "瘦西湖游船",
+      "pickId": "B0FFG3JMTJ",
+      "score": 102,
+      "type": "体育休闲服务;休闲场所;水上活动中心|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.2,
+      "tel": "0514-87364849",
+      "openTime": "08:00-17:00 18:30-21:00",
+      "openText": "周一至周日 08:00-17:00,18:30-21:00",
+      "oldId": "B0FFHOSW3U",
+      "drift_m": 1785,
+      "changes": {
+        "poi": {
+          "from": "B0FFHOSW3U",
+          "to": "B0FFG3JMTJ"
+        },
+        "coord": {
+          "from": [
+            119.418211,
+            32.416669
+          ],
+          "to": [
+            119.426372,
+            32.402171
+          ],
+          "drift_m": 1785
+        },
+        "rename": {
+          "from": "瘦西湖",
+          "to": "瘦西湖游船"
+        }
+      }
+    },
+    {
+      "id": "dongguan-street",
+      "name": "东关街",
+      "pick": "扬州东关街",
+      "pickId": "B02021604C",
+      "score": 118,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "0514-87330260;0514-87366222",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0KU4AV6HF",
+      "drift_m": 315,
+      "changes": {
+        "poi": {
+          "from": "B0KU4AV6HF",
+          "to": "B02021604C"
+        },
+        "coord": {
+          "from": [
+            119.445597,
+            32.39555
+          ],
+          "to": [
+            119.446821,
+            32.398188
+          ],
+          "drift_m": 315
+        },
+        "rename": {
+          "from": "东关街",
+          "to": "扬州东关街"
+        }
+      }
+    },
+    {
+      "id": "grand-canal-museum",
+      "name": "中国大运河博物馆",
+      "pick": "中国大运河博物馆",
+      "pickId": "B0G1X5HFSJ",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "0514-82773088",
+      "openTime": [],
+      "openText": "全年 周一 全天不开放；08/08-08/31 周二-周日 09:00-18:00开放；05/06-08/07 周二-周日 09:00-17:00开放；端午节 09:00-18:00开放",
+      "oldId": "B0G1X5HFSJ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "ge-garden",
+      "name": "个园",
+      "pick": "个园",
+      "pickId": "B0202007R2",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0514-87361638",
+      "openTime": "07:15-17:45 19:00-22:00",
+      "openText": "周一至周日 07:15-17:45,19:00-22:00；白天游园门票及各类免费证件晚间不可使用，请白天游园的游客务必在18:00前出园",
+      "oldId": "B0202007R2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "he-garden",
+      "name": "何园",
+      "pick": "何园",
+      "pickId": "B0202002FA",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0514-87239626",
+      "openTime": [],
+      "openText": "1月至2月,12月 周一至周日 07:30-17:15 最晚进入16:45；3月至5月,9月至11月 周一至周日 07:30-17:30 最晚进入17:00；6月至8月 周一至周日 07:30-18:00 最晚进入17:30",
+      "oldId": "B0202002FA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yechun-teahouse",
+      "name": "冶春茶社",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "冶春茶社(33)",
+        "冶春茶社(珍园店)(-5)",
+        "冶春茶社瘦西湖南门店(扬州大运河文化旅游度假区)(-5)"
+      ]
+    },
+    {
+      "id": "daming-temple",
+      "name": "大明寺",
+      "pick": "大明寺(扬州大运河文化旅游度假区)",
+      "pickId": "B020200BTN",
+      "score": 127,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "0514-87335286;0514-87346328",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B020200BTN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongguan-ferry-night",
+      "name": "东关古渡·古运河夜游",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "东关古渡(125)",
+        "扬州古运河水上游(106)",
+        "扬州东关街(81)"
+      ]
+    },
+    {
+      "id": "shuangbo-museum",
+      "name": "扬州双博馆",
+      "pick": "扬州双博馆",
+      "pickId": "B0I267G57M",
+      "score": 149,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "0514-85228003",
+      "openTime": [],
+      "openText": "1/1-12/31 周一 全天不开放；1/1-12/31 周二–周日 09:00–17:00开放 最晚进入16:00；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入16:00",
+      "oldId": "B0I267G57M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "fuchun-teahouse",
+      "name": "富春茶社",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "富春茶社(33)",
+        "扬州教场老鹅国庆路店(-25)",
+        "富春(绿杨村店)(-42)"
+      ]
+    },
+    {
+      "id": "chunjiang-nightshow",
+      "name": "春江花月夜·瘦西湖夜游",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "蜀冈-瘦西湖风景名胜区(122)",
+        "蜀冈瘦西湖风景名胜区-醉月飞琼(110)",
+        "瘦西湖-白塔(107)"
+      ]
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "pick": "文昌阁",
+      "pickId": "B020200BTI",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B020200BTI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "songjiacheng",
+      "name": "宋夹城考古遗址公园",
+      "pick": "宋夹城体育休闲公园(扬州大运河文化旅游度假区)",
+      "pickId": "B02020JBSF",
+      "score": 113,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0514-82120200",
+      "openTime": "07:00-21:30",
+      "openText": "周一至周日 07:00-21:30 最晚进入21:00",
+      "oldId": "B0K3UO4AGF",
+      "drift_m": 587,
+      "changes": {
+        "poi": {
+          "from": "B0K3UO4AGF",
+          "to": "B02020JBSF"
+        },
+        "coord": {
+          "from": [
+            119.421075,
+            32.414675
+          ],
+          "to": [
+            119.427059,
+            32.416199
+          ],
+          "drift_m": 587
+        }
+      }
+    },
+    {
+      "id": "sishangting-food-street",
+      "name": "四望亭路美食街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "念泗美食广场(36)",
+        "瘦西湖新天地(28)",
+        "望月楼精致淮扬菜餐厅(-31)"
+      ]
+    },
+    {
+      "id": "pishi-street",
+      "name": "皮市街",
+      "pick": "皮市街",
+      "pickId": "B0FFJ1D3SX",
+      "score": 139,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "BZATQK00AR",
+      "drift_m": 399,
+      "changes": {
+        "poi": {
+          "from": "BZATQK00AR",
+          "to": "B0FFJ1D3SX"
+        },
+        "coord": {
+          "from": [
+            119.447884,
+            32.393453
+          ],
+          "to": [
+            119.448136,
+            32.389875
+          ],
+          "drift_m": 399
+        }
+      }
+    },
+    {
+      "id": "guoqing-road",
+      "name": "国庆路·辕门桥",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "肥肥品牌(国庆路店)(70)",
+        "人民商场(扬州广陵国庆路店)(58)",
+        "永民手作(扬州国庆路店)(-3)"
+      ]
+    },
+    {
+      "id": "renfengli",
+      "name": "仁丰里",
+      "pick": "仁丰里·小剧场",
+      "pickId": "B0J1JSN9LN",
+      "score": 79,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "BZATQK010L",
+      "drift_m": 12,
+      "changes": {
+        "poi": {
+          "from": "BZATQK010L",
+          "to": "B0J1JSN9LN"
+        }
+      }
+    },
+    {
+      "id": "hongqiaofang",
+      "name": "虹桥坊",
+      "pick": "虹桥坊东堤",
+      "pickId": "B0JBMA4DZJ",
+      "score": 120,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFHU455I",
+      "drift_m": 154,
+      "changes": {
+        "poi": {
+          "from": "B0FFHU455I",
+          "to": "B0JBMA4DZJ"
+        },
+        "coord": {
+          "from": [
+            119.428745,
+            32.402442
+          ],
+          "to": [
+            119.427142,
+            32.402753
+          ],
+          "drift_m": 154
+        },
+        "rename": {
+          "from": "虹桥坊",
+          "to": "虹桥坊东堤"
+        }
+      }
+    },
+    {
+      "id": "jinghuacheng",
+      "name": "京华城",
+      "pick": "京华城休闲旅游区",
+      "pickId": "B0FFIOBY72",
+      "score": 110,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "0514-87969799",
+      "openTime": "08:00-22:00 10:00-22:00",
+      "openText": "周一至周日 08:00-22:00 10-01至10-07 周一至周日 10:00-22:00",
+      "oldId": "B020216HV0",
+      "drift_m": 350,
+      "changes": {
+        "poi": {
+          "from": "B020216HV0",
+          "to": "B0FFIOBY72"
+        },
+        "coord": {
+          "from": [
+            119.374468,
+            32.385314
+          ],
+          "to": [
+            119.378017,
+            32.384346
+          ],
+          "drift_m": 350
+        },
+        "rename": {
+          "from": "京华城",
+          "to": "京华城休闲旅游区"
+        }
+      }
+    },
+    {
+      "id": "gonghechun",
+      "name": "共和春茶社",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "共和春(利群时代店)(-8)",
+        "共和春(甘泉路店)(-8)",
+        "共和春(渡江路店)(-10)"
+      ]
+    },
+    {
+      "id": "shaobo-town",
+      "name": "邵伯古镇景区",
+      "pick": "邵伯古镇景区",
+      "pickId": "B0FFJYN066",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0514-85335168;0514-86783500",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFJYN066",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhuyuwan",
+      "name": "茱萸湾风景区",
+      "pick": "茱萸湾风景区",
+      "pickId": "B020215DBP",
+      "score": 157,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "tel": "0514-87291561;0514-87458052",
+      "openTime": "07:00-16:45",
+      "openText": "周一至周日 07:00-16:45",
+      "oldId": "B020215DBP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "sanwan-night",
+      "name": "运河三湾·剪影桥夜景",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "运河三湾景区(140)",
+        "运河三湾风景区-观景台(114)",
+        "扬州运河三湾风景区-听雨榭(114)"
+      ]
+    },
+    {
+      "id": "yuchengyi",
+      "name": "高邮盂城驿",
+      "pick": "盂城驿",
+      "pickId": "B0202179ZT",
+      "score": 144,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0514-84611979",
+      "openTime": [],
+      "openText": "冬令时 全年 08:15–17:30开放 最晚进入17:00；夏令时 全年 08:15–17:30开放 最晚进入17:00",
+      "oldId": "B0202179ZT",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shugang-west-peak",
+      "name": "蜀冈西峰生态公园",
+      "pick": "蜀冈西峰生态公园",
+      "pickId": "B02020I1L5",
+      "score": 141,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B02020I1L5",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hanlingyuan",
+      "name": "汉广陵王墓博物馆",
+      "pick": "汉广陵王墓博物馆(扬州大运河文化旅游度假区)",
+      "pickId": "B0202009PY",
+      "score": 138,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0514-87625587",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30 最晚进入17:00",
+      "oldId": "B0202009PY",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shikefa",
+      "name": "史可法纪念馆",
+      "pick": "史可法纪念馆(扬州大运河文化旅游度假区)",
+      "pickId": "B02020HRL3",
+      "score": 127,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.7,
+      "tel": "0514-87341311;0514-87339357",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B02020HRL3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baguai-museum",
+      "name": "扬州八怪纪念馆",
+      "pick": "扬州八怪纪念馆",
+      "pickId": "B020200043",
+      "score": 144,
+      "type": "风景名胜;风景名胜;纪念馆|风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "0514-87337408;0514-87340275",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B020200043",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "caiyi-street",
+      "name": "彩衣街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "谢馥春彩衣街店(70)",
+        "彩衣宾馆(东关街个园店)(44)",
+        "彩衣街社区(38)"
+      ]
+    },
+    {
+      "id": "mingyue-lake",
+      "name": "明月湖",
+      "pick": "明月湖",
+      "pickId": "B02020J4KU",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0514-89961160",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B02020J4KU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangzhou-theatre",
+      "name": "扬州大剧院",
+      "pick": "扬州大剧院",
+      "pickId": "B0HADZBPHO",
+      "score": 103,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.5,
+      "tel": "0514-82867777",
+      "openTime": "09:00-11:00 14:00-18:00",
+      "openText": "周一至周日 09:00-11:00,14:00-18:00",
+      "oldId": "B0HADZBPHO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangzhou-science",
+      "name": "扬州科技馆",
+      "pick": "扬州科技馆",
+      "pickId": "B0FFFE8FZ9",
+      "score": 146,
+      "type": "科教文化服务;科技馆;科技馆",
+      "rating": 4.8,
+      "tel": "0514-82088303",
+      "openTime": "09:30-17:00",
+      "openText": "周三至周日 09:30-17:00",
+      "oldId": "B0FFFE8FZ9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guazhou-ferry",
+      "name": "瓜洲古渡公园",
+      "pick": "瓜洲古渡公园",
+      "pickId": "B0FFGPCJMA",
+      "score": 142,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "B0FFGPCJMA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaobo-lake",
+      "name": "邵伯湖",
+      "pick": "邵伯湖旅游度假区",
+      "pickId": "B02020J974",
+      "score": 68,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "0514-85335168",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFFEDF6J",
+      "drift_m": 12887,
+      "changes": {
+        "poi": {
+          "from": "B0FFFEDF6J",
+          "to": "B02020J974"
+        },
+        "rename": {
+          "from": "邵伯湖",
+          "to": "邵伯湖旅游度假区"
+        }
+      }
+    },
+    {
+      "id": "fenghuang-island",
+      "name": "扬州凤凰岛生态旅游区",
+      "pick": "扬州凤凰岛生态旅游区",
+      "pickId": "B02020I8XC",
+      "score": 156,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0514-87284448",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:30",
+      "oldId": "B02020I8XC",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zaolinwan",
+      "name": "仪征枣林湾·世博园",
+      "pick": "扬州世博园",
+      "pickId": "B0HBFS0HSR",
+      "score": 106,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "1月至9月 周一至周五 10:00-17:30 最晚进入16:30；1月至9月 周六至周日 10:00-19:00 最晚进入18:00 10-01至10-07 周一至周日 10:00-19:00 最晚进入18:00；10-08至12-31 周一至周五 10:00-17:30 最晚进入16:30；10-08至12-31 周六至周日 10:00-19:00 最晚进入18:00",
+      "oldId": "B0HRL50MGA",
+      "drift_m": 1441,
+      "changes": {
+        "poi": {
+          "from": "B0HRL50MGA",
+          "to": "B0HBFS0HSR"
+        },
+        "coord": {
+          "from": [
+            119.082994,
+            32.338966
+          ],
+          "to": [
+            119.094298,
+            32.330202
+          ],
+          "drift_m": 1441
+        },
+        "rename": {
+          "from": "仪征枣林湾·世博园",
+          "to": "扬州世博园"
+        }
+      }
+    },
+    {
+      "id": "wenyou-tai",
+      "name": "高邮文游台",
+      "pick": "古文游台",
+      "pickId": "B0FFJRTN6G",
+      "score": 133,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.5,
+      "tel": "0514-84685320;0514-85266888",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30 最晚进入17:00",
+      "oldId": "B0FFJRTN6G",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xianhe-temple",
+      "name": "仙鹤寺",
+      "pick": "仙鹤寺",
+      "pickId": "B02020I2JO",
+      "score": 140,
+      "type": "风景名胜;风景名胜;回教寺",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B02020I2JO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "puhading-park",
+      "name": "普哈丁园",
+      "pick": "普哈丁园",
+      "pickId": "B02020I8XD",
+      "score": 146,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.2,
+      "tel": "0514-87222241",
+      "openTime": "06:00-17:00",
+      "openText": "周一至周日 06:00-17:00；具体营业状态以当天开放情况为准。",
+      "oldId": "B02020I8XD",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guanyinshan",
+      "name": "蜀冈观音山",
+      "pick": "观音山(扬州大运河文化旅游度假区)",
+      "pickId": "B0202154TQ",
+      "score": 120,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "07:00-11:00 13:30-15:30",
+      "openText": "周一至周日 07:00-11:00,13:30-15:30",
+      "oldId": "B0MDBOIANC",
+      "drift_m": 172,
+      "changes": {
+        "poi": {
+          "from": "B0MDBOIANC",
+          "to": "B0202154TQ"
+        },
+        "coord": {
+          "from": [
+            119.416725,
+            32.418875
+          ],
+          "to": [
+            119.416837,
+            32.42042
+          ],
+          "drift_m": 172
+        }
+      }
+    },
+    {
+      "id": "tangcheng-museum",
+      "name": "唐城遗址博物馆",
+      "pick": "唐城遗址博物馆(扬州大运河文化旅游度假区)",
+      "pickId": "B02020I0IN",
+      "score": 126,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4,
+      "tel": "0514-87340843",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "B02020I0VR",
+      "drift_m": 173,
+      "changes": {
+        "poi": {
+          "from": "B02020I0VR",
+          "to": "B02020I0IN"
+        },
+        "coord": {
+          "from": [
+            119.419571,
+            32.420193
+          ],
+          "to": [
+            119.417761,
+            32.41988
+          ],
+          "drift_m": 173
+        }
+      }
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清故居",
+      "pick": "朱自清故居",
+      "pickId": "B020200014",
+      "score": 143,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.5,
+      "tel": "0514-87331925",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B020200014",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wangshi-xiaoyuan",
+      "name": "汪氏小苑",
+      "pick": "汪氏小苑",
+      "pickId": "B0202004A8",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "0514-82999066",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周日 08:00-17:30",
+      "oldId": "B0202004A8",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lu-family-house",
+      "name": "卢氏盐商住宅",
+      "pick": "卢氏盐商住宅",
+      "pickId": "B0LBR7KKSM",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜|科教文化服务;博物馆;博物馆",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": [],
+      "openText": "周二至周日 09:00-12:00； 周一至周日 15:00-18:30",
+      "oldId": "B0LBR7KKSM",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wu-daotai",
+      "name": "吴道台宅第",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "吴氏宅第(33)",
+        "道台府宴法式铁板料理(-87)"
+      ]
+    },
+    {
+      "id": "tianning-temple",
+      "name": "天宁寺·佛教文化博物馆",
+      "pick": "中国扬州佛教文化博物馆",
+      "pickId": "B02020I1BJ",
+      "score": 69,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.2,
+      "tel": "0514-87370700",
+      "openTime": [],
+      "openText": "周二至周日 09:00-17:00 最晚进入16:00；节假日营业时间以官方通知为准",
+      "oldId": "",
+      "drift_m": 2145,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B02020I1BJ"
+        },
+        "rename": {
+          "from": "天宁寺·佛教文化博物馆",
+          "to": "中国扬州佛教文化博物馆"
+        }
+      }
+    },
+    {
+      "id": "runyang-forest",
+      "name": "润扬森林公园",
+      "pick": "润扬森林会",
+      "pickId": "B02020I8XS",
+      "score": 69,
+      "type": "商务住宅;住宅区;住宅小区",
+      "rating": 4.3,
+      "tel": "0514-87508881",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "BV10139690",
+      "drift_m": 347,
+      "changes": {
+        "poi": {
+          "from": "BV10139690",
+          "to": "B02020I8XS"
+        },
+        "coord": {
+          "from": [
+            119.382722,
+            32.233938
+          ],
+          "to": [
+            119.382787,
+            32.237057
+          ],
+          "drift_m": 347
+        }
+      }
+    },
+    {
+      "id": "jiangdu-water-hub",
+      "name": "江都水利枢纽",
+      "pick": "江都水利枢纽植物园",
+      "pickId": "B020216TN7",
+      "score": 119,
+      "type": "风景名胜;公园广场;植物园",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B020216TN7",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "江都水利枢纽",
+          "to": "江都水利枢纽植物园"
+        }
+      }
+    },
+    {
+      "id": "beihu-wetland",
+      "name": "北湖湿地公园",
+      "pick": "扬州北湖国家湿地公园",
+      "pickId": "B0FFLD19DQ",
+      "score": 101,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "0514-87838188",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "BV09276651",
+      "drift_m": 1366,
+      "changes": {
+        "poi": {
+          "from": "BV09276651",
+          "to": "B0FFLD19DQ"
+        },
+        "coord": {
+          "from": [
+            119.37532,
+            32.569131
+          ],
+          "to": [
+            119.362373,
+            32.563489
+          ],
+          "drift_m": 1366
+        }
+      }
+    },
+    {
+      "id": "qihe-badao",
+      "name": "七河八岛生态区",
+      "pick": "扬州市七河八岛",
+      "pickId": "B0MBFS4ILW",
+      "score": 120,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0MBFS4ILW",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "naishan",
+      "name": "捺山地质公园",
+      "pick": "仪征捺山地质公园",
+      "pickId": "B0FFJKV2BO",
+      "score": 105,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "0514-83951899",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "BV10764393",
+      "drift_m": 905,
+      "changes": {
+        "poi": {
+          "from": "BV10764393",
+          "to": "B0FFJKV2BO"
+        },
+        "coord": {
+          "from": [
+            119.161331,
+            32.408958
+          ],
+          "to": [
+            119.157003,
+            32.416229
+          ],
+          "drift_m": 905
+        },
+        "rename": {
+          "from": "捺山地质公园",
+          "to": "仪征捺山地质公园"
+        }
+      }
+    },
+    {
+      "id": "zhenguo-temple",
+      "name": "高邮镇国寺",
+      "pick": "镇国寺",
+      "pickId": "B020214UPO",
+      "score": 126,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "0514-84583827;0514-84642558;12301",
+      "openTime": "06:00-17:00",
+      "openText": "周一至周日 06:00-17:00 最晚进入17:00",
+      "oldId": "B020214UPO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gaoyou-lake-reed",
+      "name": "高邮湖芦苇荡湿地公园",
+      "pick": "高邮湖芦苇荡生态湿地",
+      "pickId": "B0202171WQ",
+      "score": 120,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.4,
+      "tel": "0514-84377526",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入17:30；具体营业状态以当天开放情况为准",
+      "oldId": "B0202171WQ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wanfu-bridge-night",
+      "name": "万福大桥夜景",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "茱萸湾风景区(82)",
+        "马可波罗花世界婚礼小镇(32)",
+        "仙女公园(31)"
+      ]
+    },
+    {
+      "id": "xiaopangu",
+      "name": "小盘谷",
+      "pick": "小盘谷",
+      "pickId": "B0FFHOEGYX",
+      "score": 142,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.4,
+      "tel": "0514-87232333",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B0FFHOEGYX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wantou-town",
+      "name": "湾头古镇",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "湾头古镇玉器商行(60)",
+        "湾头古镇改造征拆指挥部(18)",
+        "湾头玉器特色小镇有限公司(-87)"
+      ]
+    },
+    {
+      "id": "lotus-pond-park",
+      "name": "荷花池公园",
+      "pick": "荷花池公园",
+      "pickId": "B02020I6XB",
+      "score": 144,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "0514-87883790",
+      "openTime": "24小时营业",
+      "openText": "00:00-24:00",
+      "oldId": "B02020I6XB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiannv-park",
+      "name": "江都仙女公园",
+      "pick": "仙女公园",
+      "pickId": "B02020J6M5",
+      "score": 123,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.3,
+      "tel": "0514-86551684;0514-86553172",
+      "openTime": "06:00-18:00",
+      "openText": "周一至周日 06:00-18:00",
+      "oldId": "B02020J6M5",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "puyuan",
+      "name": "朴园",
+      "pick": "朴园",
+      "pickId": "B020215ZDI",
+      "score": 90,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0514-86507399",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B02020JF1V",
+      "drift_m": 38141,
+      "changes": {
+        "poi": {
+          "from": "B02020JF1V",
+          "to": "B020215ZDI"
+        }
+      }
+    },
+    {
+      "id": "shierxu",
+      "name": "仪征十二圩历史文化街区",
+      "pick": "江上盐都十二圩历史文化旅游区",
+      "pickId": "B0KUBRX2PU",
+      "score": 138,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "tel": "0514-83634119",
+      "openTime": [],
+      "openText": "周一闭馆(法定节假日除外),周二至周日 09:00-11:30(11:00停止入馆),14:00-17:30(17:00停止入馆)；2026年2月16日至2026年2月18日 闭馆",
+      "oldId": "B0KUBRX2PU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangzijin",
+      "name": "扬子津古渡公园",
+      "pick": "扬子津古渡体育休闲公园",
+      "pickId": "B0FFG7LQ58",
+      "score": 115,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFG7LQ58",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tianle-lake",
+      "name": "天乐湖温泉度假区",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "蔚景云汽车充电站(天乐湖青山臻选温泉度假酒店充电站)(10)",
+        "江扬天乐湖度假酒店(-44)",
+        "天乐湖温泉酒店(-51)"
+      ]
+    },
+    {
+      "id": "gaoyou-pawnshop",
+      "name": "高邮当铺博物馆",
+      "pick": "高邮博物馆",
+      "pickId": "B0FFG0O54Q",
+      "score": 71,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.4,
+      "tel": "0514-80366320",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日:09:00-17:00(16:30停止入馆国家法定节假日除外)",
+      "oldId": "B0FFK49UAZ",
+      "drift_m": 3381,
+      "changes": {
+        "poi": {
+          "from": "B0FFK49UAZ",
+          "to": "B0FFG0O54Q"
+        }
+      }
+    },
+    {
+      "id": "jieshou-town",
+      "name": "界首古镇",
+      "pick": "界首古镇",
+      "pickId": "B0FFGAHP8F",
+      "score": 144,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGAHP8F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "longqiuzhuang",
+      "name": "龙虬庄遗址博物馆",
+      "pick": "龙虬庄考古遗址公园",
+      "pickId": "B020216FNG",
+      "score": 106,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "0514-84477019",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "BV11400491",
+      "drift_m": 270,
+      "changes": {
+        "poi": {
+          "from": "BV11400491",
+          "to": "B020216FNG"
+        },
+        "coord": {
+          "from": [
+            119.510279,
+            32.829856
+          ],
+          "to": [
+            119.513166,
+            32.829896
+          ],
+          "drift_m": 270
+        }
+      }
+    },
+    {
+      "id": "baoying-lake",
+      "name": "宝应湖国家湿地公园",
+      "pick": "宝应湖国家湿地公园",
+      "pickId": "B020216DLI",
+      "score": 141,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.3,
+      "tel": "0514-88217979",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周日 08:00-17:30",
+      "oldId": "B020216DLI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lingtang-mosque",
+      "name": "菱塘清真寺",
+      "pick": "清真寺",
+      "pickId": "B0FFGXK6HN",
+      "score": 117,
+      "type": "风景名胜;风景名胜;回教寺",
+      "rating": 3.9,
+      "tel": "",
+      "openTime": "08:00-20:00",
+      "openText": "周一至周日 08:00-20:00",
+      "oldId": "B0FFGXK6HN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zongzhao-garden",
+      "name": "宝应纵棹园",
+      "pick": "纵棹园",
+      "pickId": "B020202J8Y",
+      "score": 132,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B020202J8Y",
+      "drift_m": 0,
+      "changes": {}
+    }
+  ]
+}

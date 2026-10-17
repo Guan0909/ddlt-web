@@ -1,0 +1,1158 @@
+{
+  "city": "丽江",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 66,
+    "poiFixed": 12,
+    "renamed": 9,
+    "coordFixed": 8,
+    "openFilled": 47,
+    "closedMon": 1,
+    "tel": 28,
+    "rating": 55,
+    "photo": 53,
+    "noCand": 11,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "lijiang-old-town",
+      "name": "丽江古城（大研古城）",
+      "pick": "丽江古城",
+      "pickId": "B0378008PR",
+      "score": 129,
+      "type": "风景名胜;风景名胜;世界遗产",
+      "rating": 4.9,
+      "tel": "0888-5111118",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0378008PR",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "丽江古城（大研古城）",
+          "to": "丽江古城"
+        }
+      }
+    },
+    {
+      "id": "sifangjie",
+      "name": "四方街",
+      "pick": "四方街",
+      "pickId": "B0G3RHAMHA",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "0888-5111118",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G3RHAMHA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "mufu",
+      "name": "木府",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "丽江古城博物院-木府(134)",
+        "丽江古城木府-忠义坊(129)",
+        "丽江古城木府木家院-徐木友谊厅(116)"
+      ]
+    },
+    {
+      "id": "wangulou",
+      "name": "狮子山万古楼景区",
+      "pick": "狮子山万古楼景区",
+      "pickId": "B037815BZ1",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0888-5106290",
+      "openTime": "09:00-22:00",
+      "openText": "周一至周日 09:00-22:00",
+      "oldId": "B037815BZ1",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dashuiche",
+      "name": "古城大水车",
+      "pick": "大水车酒吧",
+      "pickId": "B0FFHHI5KG",
+      "score": 57,
+      "type": "体育休闲服务;娱乐场所;酒吧",
+      "rating": 3.3,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFF9GOOV",
+      "drift_m": 235,
+      "changes": {
+        "poi": {
+          "from": "B0FFF9GOOV",
+          "to": "B0FFHHI5KG"
+        },
+        "coord": {
+          "from": [
+            100.233324,
+            26.876027
+          ],
+          "to": [
+            100.232075,
+            26.877825
+          ],
+          "drift_m": 235
+        }
+      }
+    },
+    {
+      "id": "wenchanggong",
+      "name": "文昌宫观景台",
+      "pick": "桃花岛古城第一观景台42米长廊",
+      "pickId": "B0FFFDT0J1",
+      "score": 121,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.9,
+      "tel": "13368887273",
+      "openTime": "11:00-22:00",
+      "openText": "周一至周日 11:00-22:00",
+      "oldId": "B0FFK10I11",
+      "drift_m": 77,
+      "changes": {
+        "poi": {
+          "from": "B0FFK10I11",
+          "to": "B0FFFDT0J1"
+        },
+        "coord": {
+          "from": [
+            100.232603,
+            26.874216
+          ],
+          "to": [
+            100.23268,
+            26.873528
+          ],
+          "drift_m": 77
+        }
+      }
+    },
+    {
+      "id": "xianwen-xiang",
+      "name": "现文巷（油纸伞街）",
+      "pick": "光义街现文巷",
+      "pickId": "B0FFJXU5YQ",
+      "score": 80,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:30-21:00",
+      "openText": "周一至周日 09:30-21:00",
+      "oldId": "B0MU36MW6Y",
+      "drift_m": 2,
+      "changes": {
+        "poi": {
+          "from": "B0MU36MW6Y",
+          "to": "B0FFJXU5YQ"
+        }
+      }
+    },
+    {
+      "id": "wuyi-street",
+      "name": "五一街",
+      "pick": "五一街",
+      "pickId": "B0FFIMYOV7",
+      "score": 148,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFIMYOV7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qiyi-street",
+      "name": "七一街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "名创优品七一街29号店(73)",
+        "丽镘·LIMAN|Serenite徽派设计师度假庭院(丽江古城南门木府店)(32)",
+        "云台·轻奢设计师客栈(丽江古城木府店)(30)"
+      ]
+    },
+    {
+      "id": "nanmen-qiao",
+      "name": "南门桥（风铃街）",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "丽江古城-南门桥(124)",
+        "小桥别院客栈(49)",
+        "嘉华鲜花饼(南门桥店)(10)"
+      ]
+    },
+    {
+      "id": "dayan-huaxiang",
+      "name": "大研花巷",
+      "pick": "大研花巷",
+      "pickId": "B0FFIXONOV",
+      "score": 149,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFIXONOV",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhenxing-xiang",
+      "name": "振兴巷（灯笼街）",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "明龙理发(振兴巷店)(61)",
+        "丽江大研悠岚民宿(42)",
+        "丽江古城素隐堂客栈(41)"
+      ]
+    },
+    {
+      "id": "bar-street",
+      "name": "丽江古城-酒吧街",
+      "pick": "丽江古城-酒吧街",
+      "pickId": "B037814BC0",
+      "score": 143,
+      "type": "风景名胜;公园广场;城市广场|购物服务;特色商业街;步行街",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B037814BC0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhongyi-market",
+      "name": "忠义市场",
+      "pick": "忠义市场夜市街",
+      "pickId": "B0G3TZNRZW",
+      "score": 85,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "18:30-02:00",
+      "openText": "周一至周日 18:30-02:00",
+      "oldId": "BV10290462",
+      "drift_m": 69,
+      "changes": {
+        "poi": {
+          "from": "BV10290462",
+          "to": "B0G3TZNRZW"
+        },
+        "coord": {
+          "from": [
+            100.234642,
+            26.866085
+          ],
+          "to": [
+            100.235313,
+            26.865916
+          ],
+          "drift_m": 69
+        }
+      }
+    },
+    {
+      "id": "gucheng-exhibition",
+      "name": "丽江古城历史文化展示馆",
+      "pick": "文化院落·丽江古城历史文化展示馆(北馆)",
+      "pickId": "B0GDL6EHYP",
+      "score": 112,
+      "type": "科教文化服务;展览馆;展览馆",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30",
+      "oldId": "B037814E3H",
+      "drift_m": 490,
+      "changes": {
+        "poi": {
+          "from": "B037814E3H",
+          "to": "B0GDL6EHYP"
+        },
+        "coord": {
+          "from": [
+            100.235802,
+            26.870701
+          ],
+          "to": [
+            100.234027,
+            26.874817
+          ],
+          "drift_m": 490
+        }
+      }
+    },
+    {
+      "id": "lijiang-museum",
+      "name": "丽江东巴文化博物馆",
+      "pick": "丽江东巴文化博物馆",
+      "pickId": "B0378008PN",
+      "score": 144,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4,
+      "tel": "0888-5180270",
+      "openTime": [],
+      "openText": "1月至9月 周一至周日 09:00-17:00；每个月的第一个和第三个周的周一闭馆。 10-01至10-07 周一至周日 08:30-17:30；10-08至12-31 周一至周日 09:00-17:00；每个月的第一个和第三个周的周一闭馆。",
+      "oldId": "B0378008PN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiangshan-market",
+      "name": "象山市场（腊排骨一条街）",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "象山市场松茸世家(72)",
+        "美鲜菜场(象山市场店)(62)",
+        "像山市场(61)"
+      ]
+    },
+    {
+      "id": "huama-street",
+      "name": "花马街",
+      "pick": "花马街",
+      "pickId": "B03780I1F3",
+      "score": 103,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.5,
+      "tel": "17708892323",
+      "openTime": [],
+      "openText": "09:30-21:30,2026年春节期间 09:30-21:30",
+      "oldId": "B03780I1F3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qixing-street",
+      "name": "七星街",
+      "pick": "七星街",
+      "pickId": "B0378002M6",
+      "score": 102,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0378002M6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jinkai-plaza",
+      "name": "金凯广场",
+      "pick": "金凯广场",
+      "pickId": "B0378153XL",
+      "score": 102,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0378153XL",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huadu-mall",
+      "name": "丽江华都商贸城(正泰商业街店)",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "丽江华都商贸城(正泰商业街店)(100)",
+        "古城区奈斯服装(华都商贸城店)(72)",
+        "牛仔部落(丽江华都商贸城店)(67)"
+      ]
+    },
+    {
+      "id": "heilongtan",
+      "name": "黑龙潭公园（玉泉公园）",
+      "pick": "黑龙潭",
+      "pickId": "B0FFF5TSNO",
+      "score": 145,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0888-5188041",
+      "openTime": "07:30-21:00",
+      "openText": "周一至周日 07:30-21:00 最晚进入20:30",
+      "oldId": "B0FFF5TSNO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qingxi-reservoir",
+      "name": "清溪水库",
+      "pick": "清溪水库",
+      "pickId": "B0HRARKZG6",
+      "score": 142,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFG3BTUJ",
+      "drift_m": 82,
+      "changes": {
+        "poi": {
+          "from": "B0FFG3BTUJ",
+          "to": "B0HRARKZG6"
+        },
+        "coord": {
+          "from": [
+            100.229823,
+            26.900557
+          ],
+          "to": [
+            100.229079,
+            26.900235
+          ],
+          "drift_m": 82
+        }
+      }
+    },
+    {
+      "id": "zhongjihai",
+      "name": "中济海公园",
+      "pick": "中济海公园",
+      "pickId": "B0I11K3O5A",
+      "score": 142,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0I11K3O5A",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenbi-lake",
+      "name": "文笔海",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "丽江文笔海静海小院(31)",
+        "丽江古城湖畔国际高尔夫俱乐部(-10)",
+        "丽江文笔海有生之年·在山里民宿(-15)"
+      ]
+    },
+    {
+      "id": "lijiang-qianqiuqing",
+      "name": "丽江千古情景区",
+      "pick": "丽江千古情景区",
+      "pickId": "B0FFIZ1ZFL",
+      "score": 145,
+      "type": "体育休闲服务;影剧院;剧场|风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "4008888518",
+      "openTime": "14:00-21:00",
+      "openText": "14:00-21:00",
+      "oldId": "B0FFIZ1ZFL",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lishuijinsha",
+      "name": "丽水金沙",
+      "pick": "丽水金沙表演",
+      "pickId": "B0FFI7LUK8",
+      "score": 126,
+      "type": "体育休闲服务;影剧院;剧场|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0888-5105001;0888-5111020",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0FFI7LUK8",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "丽水金沙",
+          "to": "丽水金沙表演"
+        }
+      }
+    },
+    {
+      "id": "naxi-music",
+      "name": "大研纳西古乐会",
+      "pick": "大研纳西古乐会",
+      "pickId": "B0H0RRBYLP",
+      "score": 147,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.3,
+      "tel": "13988847333;15368888002",
+      "openTime": "09:00-22:00",
+      "openText": "周一至周日 09:00-22:00",
+      "oldId": "B0H0RRBYLP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shuhe",
+      "name": "束河古镇",
+      "pick": "束河古镇",
+      "pickId": "B03780HUIN",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03780HUIN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qinglong-bridge",
+      "name": "青龙桥",
+      "pick": "青龙桥",
+      "pickId": "B0FFF3CSQK",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜|购物服务;购物相关场所;购物相关场所",
+      "rating": 4.7,
+      "tel": "0888-5158136;0888-5174835",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFF3CSQK",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jiuding-longtan",
+      "name": "九鼎龙潭",
+      "pick": "九鼎龙潭商业街",
+      "pickId": "B0FFIJT6R1",
+      "score": 77,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 2.5,
+      "tel": "",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "B0FFHBRWDZ",
+      "drift_m": 196,
+      "changes": {
+        "poi": {
+          "from": "B0FFHBRWDZ",
+          "to": "B0FFIJT6R1"
+        },
+        "coord": {
+          "from": [
+            100.203975,
+            26.924006
+          ],
+          "to": [
+            100.205953,
+            26.923944
+          ],
+          "drift_m": 196
+        }
+      }
+    },
+    {
+      "id": "shuhe-square",
+      "name": "束河四方听音广场",
+      "pick": "四方听音",
+      "pickId": "B0378000SM",
+      "score": 127,
+      "type": "风景名胜;公园广场;城市广场|风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "0888-5174636",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0378000SM",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "chama-museum",
+      "name": "茶马古道博物馆（束河）",
+      "pick": "丽江茶马古道博物馆",
+      "pickId": "B0KUFU4PID",
+      "score": 63,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 3.6,
+      "tel": "13578382656",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B0378008J7",
+      "drift_m": 2152,
+      "changes": {
+        "poi": {
+          "from": "B0378008J7",
+          "to": "B0KUFU4PID"
+        },
+        "rename": {
+          "from": "茶马古道博物馆（束河）",
+          "to": "丽江茶马古道博物馆"
+        }
+      }
+    },
+    {
+      "id": "puji-temple",
+      "name": "普济寺",
+      "pick": "普济寺",
+      "pickId": "B03780HVI4",
+      "score": 138,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B03780HVI4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baisha",
+      "name": "白沙古镇",
+      "pick": "白沙古镇",
+      "pickId": "B0378157X4",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0378157X4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baisha-murals",
+      "name": "白沙壁画",
+      "pick": "白沙壁画",
+      "pickId": "B0FFFEJE6E",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30 最晚进入17:00",
+      "oldId": "B0FFFEJE6E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yufeng-temple",
+      "name": "玉峰寺",
+      "pick": "玉峰寺",
+      "pickId": "B0378008J4",
+      "score": 138,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": [],
+      "openText": "夏令时 1/1-12/31(夏令时) 07:20–19:00开放 最晚进入19:00；冬令时 1/1-12/31(冬令时) 07:30–18:00开放 最晚进入18:00",
+      "oldId": "B0378008J4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yushui-village",
+      "name": "玉水寨",
+      "pick": "丽江玉水寨风景区",
+      "pickId": "B037814VR2",
+      "score": 133,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0888-5190108",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00 最晚进入17:30",
+      "oldId": "BV10541965",
+      "drift_m": 336,
+      "changes": {
+        "poi": {
+          "from": "BV10541965",
+          "to": "B037814VR2"
+        },
+        "coord": {
+          "from": [
+            100.202552,
+            26.996853
+          ],
+          "to": [
+            100.201622,
+            26.999757
+          ],
+          "drift_m": 336
+        },
+        "rename": {
+          "from": "玉水寨",
+          "to": "丽江玉水寨风景区"
+        }
+      }
+    },
+    {
+      "id": "dongba-valley",
+      "name": "东巴谷景区",
+      "pick": "东巴谷景区",
+      "pickId": "B0378008F8",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0888-5131705",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B0378008F8",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongba-wanshen",
+      "name": "东巴万神园",
+      "pick": "东巴万神园",
+      "pickId": "B0378008F1",
+      "score": 136,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.8,
+      "tel": "0888-5131068",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "B0378008F1",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "beiyue-temple",
+      "name": "北岳庙",
+      "pick": "北岳庙",
+      "pickId": "B0378008JA",
+      "score": 135,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 3.7,
+      "tel": "0888-5333866",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B0378008JA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yuhu-village",
+      "name": "玉湖村广场",
+      "pick": "玉湖村广场",
+      "pickId": "B0G2BY71AD",
+      "score": 139,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G2BY71AD",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "locke-house",
+      "name": "洛克故居",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "泸沽湖景区-泸沽湖洛克岛(29)",
+        "周霖故居(24)",
+        "丽江古城-李群杰故居(23)"
+      ]
+    },
+    {
+      "id": "zhuyun-temple",
+      "name": "指云寺",
+      "pick": "指云寺",
+      "pickId": "B0378008NN",
+      "score": 141,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "08:00-21:00",
+      "openText": "周一至周日 08:00-21:00",
+      "oldId": "B0378008NN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenhai",
+      "name": "文海",
+      "pick": "文海·雪山云端自然风景区",
+      "pickId": "B0KRUH0GYR",
+      "score": 119,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0KRUH0GYR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenfeng-temple",
+      "name": "文峰寺",
+      "pick": "文峰寺金刚亥母灵洞藏钥圣石",
+      "pickId": "B0FFL1V2O1",
+      "score": 118,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4,
+      "tel": "",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B0FFL1V2O1",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "laoshihai",
+      "name": "拉市海",
+      "pick": "丽江拉市海湿地公园",
+      "pickId": "B0FFHEGGA9",
+      "score": 70,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "0888-8880077",
+      "openTime": "08:00-19:00",
+      "openText": "周一至周日 08:00-19:00 最晚进入18:00",
+      "oldId": "B0I3LRY63D",
+      "drift_m": 2382,
+      "changes": {
+        "poi": {
+          "from": "B0I3LRY63D",
+          "to": "B0FFHEGGA9"
+        },
+        "rename": {
+          "from": "拉市海",
+          "to": "丽江拉市海湿地公园"
+        }
+      }
+    },
+    {
+      "id": "guanyinxia",
+      "name": "观音峡",
+      "pick": "观音峡",
+      "pickId": "B0378008X3",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0888-5369688;0888-5369766",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入17:00",
+      "oldId": "B0378008X3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yulong-snow-mtn",
+      "name": "玉龙雪山",
+      "pick": "玉龙雪山国家级风景名胜区",
+      "pickId": "B0378008FA",
+      "score": 91,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0888-5131068",
+      "openTime": "06:00-16:30",
+      "openText": "06:00-16:30景区根据客流量不定期调整开放时间",
+      "oldId": "B03780HQXM",
+      "drift_m": 7853,
+      "changes": {
+        "poi": {
+          "from": "B03780HQXM",
+          "to": "B0378008FA"
+        }
+      }
+    },
+    {
+      "id": "lanyue-valley",
+      "name": "蓝月谷",
+      "pick": "玉龙雪山国家级风景名胜区蓝月谷",
+      "pickId": "B0378157WA",
+      "score": 127,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "0888-5131111;0888-5111764",
+      "openTime": "07:00-18:30",
+      "openText": "周一至周日 07:00-18:30",
+      "oldId": "BV11567026",
+      "drift_m": 63,
+      "changes": {
+        "poi": {
+          "from": "BV11567026",
+          "to": "B0378157WA"
+        },
+        "coord": {
+          "from": [
+            100.245634,
+            27.123915
+          ],
+          "to": [
+            100.245886,
+            27.124436
+          ],
+          "drift_m": 63
+        }
+      }
+    },
+    {
+      "id": "yunshanping",
+      "name": "云杉坪",
+      "pick": "云杉坪",
+      "pickId": "B0378000KO",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "06:00-18:00",
+      "openText": "周一至周日 06:00-18:00 最晚进入18:00",
+      "oldId": "B0378000KO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "maoniuping",
+      "name": "牦牛坪",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "牦牛坪景区(暂停开放)(70)",
+        "云杉坪(33)",
+        "牦牛坪发车厅(25)"
+      ]
+    },
+    {
+      "id": "ganhaizi",
+      "name": "甘海子",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "玉龙雪山国家级风景名胜区(89)",
+        "玉龙雪山国家级风景名胜区-甘海子(71)",
+        "甘海子日照金山高空观光体验店(67)"
+      ]
+    },
+    {
+      "id": "glacier-museum",
+      "name": "玉龙雪山冰川地质博物馆",
+      "pick": "玉龙雪山国家级风景名胜区",
+      "pickId": "B0378008FA",
+      "score": 142,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0888-5131068",
+      "openTime": "06:00-16:30",
+      "openText": "06:00-16:30景区根据客流量不定期调整开放时间",
+      "oldId": "B0378008FA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yinxiang-lijiang",
+      "name": "印象丽江",
+      "pick": "印象丽江",
+      "pickId": "B0HBXXU1MR",
+      "score": 145,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.1,
+      "tel": "18608885892",
+      "openTime": "10:30-16:00",
+      "openText": "周一至周日 10:30-16:00",
+      "oldId": "B0HBXXU1MR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hutiaoxia",
+      "name": "虎跳峡（上虎跳）",
+      "pick": "虎跳峡(东环线)",
+      "pickId": "B0MUD6FSHJ",
+      "score": 114,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入18:00",
+      "oldId": "B0MUD6FSHJ",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "虎跳峡（上虎跳）",
+          "to": "虎跳峡(东环线)"
+        }
+      }
+    },
+    {
+      "id": "changjiang-first-bend",
+      "name": "长江第一湾",
+      "pick": "长江第一湾",
+      "pickId": "B0378008NA",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "13908882559",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0378008NA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shigu-memorial",
+      "name": "红军长征过丽江纪念馆",
+      "pick": "红军长征过丽江纪念馆",
+      "pickId": "B03780HXWE",
+      "score": 138,
+      "type": "风景名胜;风景名胜;红色景区|风景名胜;风景名胜;纪念馆",
+      "rating": 4,
+      "tel": "0888-5471921",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B03780HXWE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "laojunshan",
+      "name": "老君山黎明景区",
+      "pick": "老君山景区",
+      "pickId": "B037814E0Q",
+      "score": 79,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4,
+      "tel": "0888-5164009",
+      "openTime": "07:00-19:00",
+      "openText": "周一至周日 07:00-19:00",
+      "oldId": "",
+      "drift_m": 12293,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B037814E0Q"
+        }
+      }
+    },
+    {
+      "id": "ninety-nine-lakes",
+      "name": "九十九龙潭",
+      "pick": "九十九龙潭景区",
+      "pickId": "B0FFF2U6SH",
+      "score": 85,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "0888-5164009",
+      "openTime": "09:00-17:30 08:00-17:00",
+      "openText": "周一至周日 09:00-17:30 10-01至10-07 周一至周日 08:00-17:00",
+      "oldId": "",
+      "drift_m": 33853,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFF2U6SH"
+        },
+        "rename": {
+          "from": "九十九龙潭",
+          "to": "九十九龙潭景区"
+        }
+      }
+    },
+    {
+      "id": "baoshan-shitoucheng",
+      "name": "宝山石头城",
+      "pick": "宝山石头城",
+      "pickId": "B0FFJFXS58",
+      "score": 141,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "18108889118",
+      "openTime": "08:00-24:00",
+      "openText": "周一至周日 08:00-24:00",
+      "oldId": "B0FFJFXS58",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lugu-lake",
+      "name": "泸沽湖",
+      "pick": "泸沽湖",
+      "pickId": "B0G0ACV2B2",
+      "score": 148,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G0ACV2B2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lige-peninsula",
+      "name": "里格半岛",
+      "pick": "里格半岛观景台",
+      "pickId": "B0FFFS1YJE",
+      "score": 130,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFS1YJE",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "里格半岛",
+          "to": "里格半岛观景台"
+        }
+      }
+    },
+    {
+      "id": "zouhun-bridge",
+      "name": "走婚桥",
+      "pick": "走婚桥观景台",
+      "pickId": "B0FFLFQ2F8",
+      "score": 123,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFLFQ2F8",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "走婚桥",
+          "to": "走婚桥观景台"
+        }
+      }
+    },
+    {
+      "id": "daluoshui",
+      "name": "大落水村",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "晏坐湖景清奢民宿(泸沽湖猪槽船游湖大落水村店)(32)",
+        "泸悦梵境·恩慈园丨Lugu Zen Views·度假观景美宿(大落水村店)(32)",
+        "榻观|良宿·一线湖景酒店(大落水码头店)(29)"
+      ]
+    },
+    {
+      "id": "mosuo-museum",
+      "name": "摩梭民俗博物馆",
+      "pick": "摩梭人博物馆(云南省博物馆分馆)",
+      "pickId": "B0G2ALBD0I",
+      "score": 70,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30",
+      "oldId": "",
+      "drift_m": 3774,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0G2ALBD0I"
+        }
+      }
+    }
+  ]
+}

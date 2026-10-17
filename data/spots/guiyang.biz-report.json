@@ -1,0 +1,1185 @@
+{
+  "city": "贵阳",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 68,
+    "poiFixed": 12,
+    "renamed": 5,
+    "coordFixed": 10,
+    "openFilled": 42,
+    "closedMon": 2,
+    "tel": 38,
+    "rating": 58,
+    "photo": 58,
+    "noCand": 10,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "jiaxiulou",
+      "name": "甲秀楼",
+      "pick": "甲秀楼",
+      "pickId": "B035301NFU",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "0851-85503811",
+      "openTime": [],
+      "openText": "1月至6月,9月至12月 周一 全天关闭；周二至周日 09:00-18:00 最晚进入18:00；7月至8月 周一 14:00-18:00；每周一闭园(法定节假日除外) 避暑季（7月-8月）期间，周一14:00—18:00",
+      "oldId": "B035301NFU",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "cuiweiyuan",
+      "name": "翠微园",
+      "pick": "翠微园",
+      "pickId": "B035301I4Z",
+      "score": 142,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.4,
+      "tel": "0851-85503811",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周日 09:00-18:00",
+      "oldId": "B035301I4Z",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "pick": "文昌阁",
+      "pickId": "B0FFFGLV23",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": [],
+      "openText": "1/1-12/31 周二–周日 09:00–18:00开放 最晚进入18:00；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–18:00开放 最晚进入18:00",
+      "oldId": "B0FFFGLV23",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangmingci",
+      "name": "阳明祠",
+      "pick": "阳明祠",
+      "pickId": "B035301XB4",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "1/1-12/31 周二–周日 09:00–18:00开放 最晚进入18:00；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–18:00开放 最晚进入18:00",
+      "oldId": "B035301XB4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qianmingsi",
+      "name": "黔明寺",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "黔明古寺(31)",
+        "黔明阁烤全羊(观山湖总店)(-7)",
+        "黔明书院(西湖社区服务中心店)(-10)"
+      ]
+    },
+    {
+      "id": "dadeschool",
+      "name": "达德学校旧址",
+      "pick": "贵阳市达德学校旧址陈列馆",
+      "pickId": "B0FFJ3017X",
+      "score": 122,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.8,
+      "tel": "",
+      "openTime": "09:00-18:00",
+      "openText": "周二至周日 09:00-18:00",
+      "oldId": "B035301I5B",
+      "drift_m": 18,
+      "changes": {
+        "poi": {
+          "from": "B035301I5B",
+          "to": "B0FFJ3017X"
+        },
+        "rename": {
+          "from": "达德学校旧址",
+          "to": "贵阳市达德学校旧址陈列馆"
+        }
+      }
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "pick": "黔灵山公园",
+      "pickId": "B03530P3K2",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0851-86823039",
+      "openTime": "07:00-20:00",
+      "openText": "周一至周日 07:00-20:00",
+      "oldId": "B03530P3K2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hongfusi",
+      "name": "弘福寺",
+      "pick": "弘福寺",
+      "pickId": "B03530P3L7",
+      "score": 145,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "0851-86825606",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周四 08:30-17:30；周五至周日 08:30-18:00",
+      "oldId": "B03530P3L7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hebin-park",
+      "name": "河滨公园",
+      "pick": "河滨公园",
+      "pickId": "B035300FSN",
+      "score": 144,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "0851-85956270;12301",
+      "openTime": "06:00-22:00",
+      "openText": "周一至周日 06:00-22:00",
+      "oldId": "B035300FSN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhucheng-square",
+      "name": "筑城广场",
+      "pick": "筑城广场",
+      "pickId": "B03530OT4B",
+      "score": 142,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03530OT4B",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guanshanhu-park",
+      "name": "观山湖公园",
+      "pick": "观山湖公园",
+      "pickId": "B03530OZ78",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0851-84878411",
+      "openTime": [],
+      "openText": "周一至周日 06:30-22:00最晚进入21:00,2026年春节期间06:30-22:30",
+      "oldId": "B03530OZ78",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "changpoling",
+      "name": "长坡岭国家森林公园",
+      "pick": "长坡岭国家森林公园",
+      "pickId": "B035300E96",
+      "score": 160,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B035300E96",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "quanshui-park",
+      "name": "泉湖公园",
+      "pick": "泉湖公园",
+      "pickId": "B0FFHJ9Y2M",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0851-86607083",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFHJ9Y2M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lucongguan",
+      "name": "鹿冲关森林公园",
+      "pick": "鹿冲关森林公园",
+      "pickId": "B035302O4C",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0851-86612515",
+      "openTime": "07:00-18:00",
+      "openText": "周一至周日 07:00-18:00",
+      "oldId": "B035302O4C",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "ahahu",
+      "name": "贵阳阿哈湖国家湿地公园",
+      "pick": "贵阳阿哈湖国家湿地公园",
+      "pickId": "B0FFFSPCI2",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0851-85116666",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFSPCI2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiaochehe",
+      "name": "小车河城市湿地公园",
+      "pick": "贵阳阿哈湖国家湿地公园",
+      "pickId": "B0FFFSPCI2",
+      "score": 140,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0851-85116666",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFSPCI2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhonghua-dashizi",
+      "name": "中华路·大十字商圈",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "大十字广场(67)",
+        "贵阳大十字喷水池高空亚朵酒店(28)",
+        "贵阳崇尚运动游泳健身大十字广场店(27)"
+      ]
+    },
+    {
+      "id": "huaguoyuan-mall",
+      "name": "花果园购物中心",
+      "pick": "花果园购物中心",
+      "pickId": "B03530QB54",
+      "score": 106,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.8,
+      "tel": "0851-85107777",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B03530QB54",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guanshanhu-wanda",
+      "name": "观山湖万达广场",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "万达影城(观山湖万达广场店)(87)",
+        "万达广场(贵阳观山湖店)(83)",
+        "阿迪达斯(贵阳观山湖万达广场店)(74)"
+      ]
+    },
+    {
+      "id": "qingyun-market",
+      "name": "青云市集",
+      "pick": "青云市集不夜城",
+      "pickId": "B0KR4PW0GE",
+      "score": 85,
+      "type": "体育休闲服务;娱乐场所;娱乐场所",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "10:00-01:00",
+      "openText": "周一至周日 10:00-01:00",
+      "oldId": "B0HKPZ8N27",
+      "drift_m": 23,
+      "changes": {
+        "poi": {
+          "from": "B0HKPZ8N27",
+          "to": "B0KR4PW0GE"
+        }
+      }
+    },
+    {
+      "id": "shanxilu",
+      "name": "陕西路夜市",
+      "pick": "太平路夜市小吃街",
+      "pickId": "B0KDZ5PV9W",
+      "score": 73,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "16685481013",
+      "openTime": "09:00-03:00",
+      "openText": "周一至周日 09:00-03:00",
+      "oldId": "B0FFH557OJ",
+      "drift_m": 583,
+      "changes": {
+        "poi": {
+          "from": "B0FFH557OJ",
+          "to": "B0KDZ5PV9W"
+        },
+        "coord": {
+          "from": [
+            106.713614,
+            26.587568
+          ],
+          "to": [
+            106.711067,
+            26.582842
+          ],
+          "drift_m": 583
+        }
+      }
+    },
+    {
+      "id": "caijiajie",
+      "name": "蔡家街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "蔡家街商住楼(38)",
+        "蔡家街小区(28)",
+        "金牌罗记肠旺面(蔡家街店)(16)"
+      ]
+    },
+    {
+      "id": "erqilu",
+      "name": "二七路小吃街",
+      "pick": "二七路小吃街",
+      "pickId": "B0FFFGM3OE",
+      "score": 105,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "0851-88517777",
+      "openTime": [],
+      "openText": "3月至11月 周一至周日 07:30-03:00；12月,1月至2月 周一至周日 07:30-01:00",
+      "oldId": "B0FFFGM3OE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huguolu",
+      "name": "护国路小吃街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "民生路好吃街(-5)",
+        "犇牛牛休闲小吃(-13)",
+        "法院街老素粉店(-75)"
+      ]
+    },
+    {
+      "id": "taipinglu",
+      "name": "太平路",
+      "pick": "太平路夜市小吃街",
+      "pickId": "B0KDZ5PV9W",
+      "score": 87,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "16685481013",
+      "openTime": "09:00-03:00",
+      "openText": "周一至周日 09:00-03:00",
+      "oldId": "BZ8WNQ017Q",
+      "drift_m": 119,
+      "changes": {
+        "poi": {
+          "from": "BZ8WNQ017Q",
+          "to": "B0KDZ5PV9W"
+        },
+        "coord": {
+          "from": [
+            106.71143,
+            26.581822
+          ],
+          "to": [
+            106.711067,
+            26.582842
+          ],
+          "drift_m": 119
+        }
+      }
+    },
+    {
+      "id": "weilai-fangzhou",
+      "name": "中天未来方舟水街",
+      "pick": "中天未来方舟",
+      "pickId": "B0FFINIA45",
+      "score": 60,
+      "type": "商务住宅;住宅区;住宅区",
+      "rating": 4,
+      "tel": "19316727909",
+      "openTime": "07:00-22:00",
+      "openText": "周一至周日 07:00-22:00",
+      "oldId": "",
+      "drift_m": 1680,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFINIA45"
+        },
+        "coord": {
+          "from": [
+            106.742,
+            26.587
+          ],
+          "to": [
+            106.758871,
+            26.587847
+          ],
+          "drift_m": 1680
+        }
+      }
+    },
+    {
+      "id": "duocai-guizhoucheng",
+      "name": "多彩贵州城",
+      "pick": "多彩贵州城",
+      "pickId": "B03530P9KZ",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0851-85201111",
+      "openTime": "09:00-22:30",
+      "openText": "周一至周日 09:00-22:30",
+      "oldId": "B03530P9KZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "polar-ocean",
+      "name": "贵州极地海洋世界",
+      "pick": "多彩贵州城极地海洋世界",
+      "pickId": "B0FFH0TADB",
+      "score": 122,
+      "type": "风景名胜;公园广场;水族馆",
+      "rating": 4.6,
+      "tel": "0851-85511850",
+      "openTime": [],
+      "openText": "1月至7月,9月至12月 周一至周日 09:00-17:30 最晚进入16:30；8月 周一至周日 09:00-21:00 最晚进入20:00；注:夜场票限身高1.3米以上人群使用",
+      "oldId": "B0FFIPN1S0",
+      "drift_m": 40,
+      "changes": {
+        "poi": {
+          "from": "B0FFIPN1S0",
+          "to": "B0FFH0TADB"
+        },
+        "coord": {
+          "from": [
+            106.790492,
+            26.529041
+          ],
+          "to": [
+            106.790572,
+            26.529396
+          ],
+          "drift_m": 40
+        }
+      }
+    },
+    {
+      "id": "happy-world",
+      "name": "贵阳欢乐世界",
+      "pick": "贵阳欢乐世界",
+      "pickId": "B03530P08K",
+      "score": 104,
+      "type": "体育休闲服务;休闲场所;游乐场",
+      "rating": 4.6,
+      "tel": "0851-84862777",
+      "openTime": [],
+      "openText": "9月至12月 周一至周日 09:30-18:30 最晚进入17:00 07-01至07-07 周一至周日 09:30-18:30 最晚进入17:00；07-08至08-18 周一至周日 09:30-22:00 最晚进入21:30；08-19至08-19 周一至周日 09:30-23:30 最晚进入23:00；08-20至08-31 周一至周日 09:30-22:00 最晚进入21:30",
+      "oldId": "B03530P08K",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "kejiguan",
+      "name": "贵州省科技馆",
+      "pick": "爱多步智能穿戴科技馆",
+      "pickId": "B0LDCXW61Q",
+      "score": 108,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 2.8,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0LDCXW61Q",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yesheng-zoo",
+      "name": "贵阳森林野生动物园",
+      "pick": "贵州森林野生动物园",
+      "pickId": "B035301FVX",
+      "score": 112,
+      "type": "风景名胜;公园广场;动物园",
+      "rating": 4.6,
+      "tel": "0851-82359168;0851-82359088",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00 最晚进入17:00",
+      "oldId": "B03530RNBL",
+      "drift_m": 484,
+      "changes": {
+        "poi": {
+          "from": "B03530RNBL",
+          "to": "B035301FVX"
+        },
+        "coord": {
+          "from": [
+            106.693504,
+            26.86555
+          ],
+          "to": [
+            106.693609,
+            26.861195
+          ],
+          "drift_m": 484
+        }
+      }
+    },
+    {
+      "id": "guizhou-museum",
+      "name": "贵州省博物馆",
+      "pick": "贵州省博物馆",
+      "pickId": "B0FFFEFLJ5",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:00",
+      "oldId": "B0FFFEFLJ5",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "minzu-museum",
+      "name": "贵州省民族博物馆",
+      "pick": "贵州省民族博物馆",
+      "pickId": "B0FFFGLS6F",
+      "score": 151,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0851-85831664;0851-85831710",
+      "openTime": [],
+      "openText": "周一 不开放(法定节假日和特殊情况除外)；7月1日-9月30日 周二至周五,周日 09:00-17:00开放 最晚进入16:30；周六 09:00-20:00开放 最晚进入19:30；10月1日-次年6月30日 周二至周日 09:00-17:00开放 最晚进入16:30；元旦节,春节,清明节,劳动节,端午节,国庆节 09:00-17:00开放 最晚进入16:30；具体开放时间以官方通知为准",
+      "oldId": "B0FFFGLS6F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dizhi-museum",
+      "name": "贵州省地质博物馆",
+      "pick": "贵州省地质博物馆",
+      "pickId": "B0FFINGJLO",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "0851-85801568",
+      "openTime": [],
+      "openText": "全年 周二–周日 09:00–17:00开放 最晚进入16:00；全年 周一 全天不开放；端午节,元旦节,春节,清明节,劳动节,中秋节,国庆节 09:00–17:00开放 最晚进入16:00；周一闭馆(法定节假日和特殊情况除外)",
+      "oldId": "B0FFINGJLO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "guizhou-art",
+      "name": "贵州美术馆",
+      "pick": "贵州美术馆",
+      "pickId": "B0FFICMVBX",
+      "score": 145,
+      "type": "科教文化服务;美术馆;美术馆",
+      "rating": 4.7,
+      "tel": "0851-85865816",
+      "openTime": [],
+      "openText": "周二至周日 09:00-17:00,节假日以官方通知为准",
+      "oldId": "B0FFICMVBX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "bigdata-center",
+      "name": "贵州大数据展示中心",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "国家大数据(贵州)综合试验区交流体验中心(42)",
+        "贵州雏阳生态环保科技有限公司(-79)",
+        "贵州(乌当)大数据智慧产业基地(-91)"
+      ]
+    },
+    {
+      "id": "duocaifeng",
+      "name": "多彩贵州风",
+      "pick": "多彩贵州城",
+      "pickId": "B03530P9KZ",
+      "score": 86,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0851-85201111",
+      "openTime": "09:00-22:30",
+      "openText": "周一至周日 09:00-22:30",
+      "oldId": "B0I1T7ETUC",
+      "drift_m": 7942,
+      "changes": {
+        "poi": {
+          "from": "B0I1T7ETUC",
+          "to": "B03530P9KZ"
+        }
+      }
+    },
+    {
+      "id": "guiyang-orchestra",
+      "name": "贵阳交响乐团",
+      "pick": "贵阳交响乐团",
+      "pickId": "B0FFFFP7YP",
+      "score": 98,
+      "type": "科教文化服务;文艺团体;文艺团体",
+      "rating": 0,
+      "tel": "0851-85509898",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周四 09:00-17:00；周五 14:00-22:00",
+      "oldId": "B0FFFFP7YP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qianju",
+      "name": "贵州省黔剧院",
+      "pick": "贵州省博物馆",
+      "pickId": "B0FFFEFLJ5",
+      "score": 108,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:00",
+      "oldId": "B0FFG9XUC7",
+      "drift_m": 871,
+      "changes": {
+        "poi": {
+          "from": "B0FFG9XUC7",
+          "to": "B0FFFEFLJ5"
+        },
+        "coord": {
+          "from": [
+            106.646458,
+            26.640629
+          ],
+          "to": [
+            106.642467,
+            26.647605
+          ],
+          "drift_m": 871
+        }
+      }
+    },
+    {
+      "id": "xifeng-memorial",
+      "name": "息烽集中营革命历史纪念馆",
+      "pick": "息烽集中营革命历史纪念馆",
+      "pickId": "B035301FJ3",
+      "score": 145,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.7,
+      "tel": "0851-87700529",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B035301FJ3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "kongxuetang",
+      "name": "贵阳孔学堂",
+      "pick": "孔学堂",
+      "pickId": "B03530RNBF",
+      "score": 132,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0851-83610798;0851-83873027",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B03530RNBF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangmingdong",
+      "name": "修文阳明洞",
+      "pick": "阳明洞",
+      "pickId": "B0FFFEJ35H",
+      "score": 124,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "0851-82320777",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "B0FFFEJ35H",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tianhetan",
+      "name": "天河潭",
+      "pick": "天河潭旅游度假区",
+      "pickId": "B035300A2B",
+      "score": 125,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "4009009995",
+      "openTime": [],
+      "openText": "1月至2月,11月至12月 周一至周日 09:00-17:00 最晚进入16:30；3月至10月 周一至周日 08:30-18:00 最晚进入16:30；1、售票时间:售票时间 售票大厅9:00-16:30 风情码头:9:00-17:00 高空滑翔索道 9:00-17:00 2、各区域及表演开放时间、景区售票时间会因景区当天实际接待运营情况有调整，请游客以当天景区实际情况为准，合理安排出行计划。",
+      "oldId": "BV10284813",
+      "drift_m": 771,
+      "changes": {
+        "poi": {
+          "from": "BV10284813",
+          "to": "B035300A2B"
+        },
+        "coord": {
+          "from": [
+            106.579623,
+            26.447054
+          ],
+          "to": [
+            106.580558,
+            26.440169
+          ],
+          "drift_m": 771
+        },
+        "rename": {
+          "from": "天河潭",
+          "to": "天河潭旅游度假区"
+        }
+      }
+    },
+    {
+      "id": "huaxi-park",
+      "name": "花溪公园",
+      "pick": "花溪公园",
+      "pickId": "B035300A51",
+      "score": 155,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B035300A51",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shilihetan",
+      "name": "十里河滩",
+      "pick": "花溪十里河滩旅游度假区",
+      "pickId": "B0FFIBXPKV",
+      "score": 105,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "0851-82412301",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BV11293074",
+      "drift_m": 1600,
+      "changes": {
+        "poi": {
+          "from": "BV11293074",
+          "to": "B0FFIBXPKV"
+        },
+        "coord": {
+          "from": [
+            106.672691,
+            26.477729
+          ],
+          "to": [
+            106.675453,
+            26.463553
+          ],
+          "drift_m": 1600
+        }
+      }
+    },
+    {
+      "id": "banqiao-art",
+      "name": "花溪板桥艺术村",
+      "pick": "板桥艺术村",
+      "pickId": "B0FFH3Y2UR",
+      "score": 131,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "0851-83871855",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "B0FFH3Y2UR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huaxi-street",
+      "name": "花溪十字街",
+      "pick": "花溪十字街",
+      "pickId": "B0JDFCWPOO",
+      "score": 105,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.7,
+      "tel": "0851-83858279",
+      "openTime": "07:30-21:30",
+      "openText": "周一至周日 07:30-21:30",
+      "oldId": "B0JDFCWPOO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qingyan",
+      "name": "青岩古镇",
+      "pick": "青岩古镇",
+      "pickId": "B035300ESE",
+      "score": 160,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "08:10-22:00；景区内文物参观开放时间为:08:30-17:00,2026年春节期间 09:00-18:00",
+      "oldId": "B035300ESE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhenshan",
+      "name": "镇山村",
+      "pick": "镇山村山里庄",
+      "pickId": "B0FFMB373L",
+      "score": 121,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "13595126540;18166770028",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0FFMB373L",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "镇山村",
+          "to": "镇山村山里庄"
+        }
+      }
+    },
+    {
+      "id": "yehuanggu",
+      "name": "花溪夜郎谷",
+      "pick": "花溪夜郎谷",
+      "pickId": "B0FFFX3R8P",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "15519106882;13518518802",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00",
+      "oldId": "B0FFFX3R8P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gaopo",
+      "name": "高坡云顶草原",
+      "pick": "贵州云顶草原民族风情园",
+      "pickId": "B035301FTO",
+      "score": 116,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B035301FTO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hongfenghu",
+      "name": "红枫湖",
+      "pick": "红枫湖",
+      "pickId": "B035300443",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0851-82624639;0851-82522669",
+      "openTime": "07:00-20:00",
+      "openText": "周一至周日 07:00-20:00",
+      "oldId": "B035300443",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shiguang-guizhou",
+      "name": "时光贵州",
+      "pick": "时光贵州古镇",
+      "pickId": "B0FFLI2090",
+      "score": 133,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BV10471637",
+      "drift_m": 459,
+      "changes": {
+        "poi": {
+          "from": "BV10471637",
+          "to": "B0FFLI2090"
+        },
+        "coord": {
+          "from": [
+            106.469858,
+            26.579451
+          ],
+          "to": [
+            106.467884,
+            26.575723
+          ],
+          "drift_m": 459
+        },
+        "rename": {
+          "from": "时光贵州",
+          "to": "时光贵州古镇"
+        }
+      }
+    },
+    {
+      "id": "xiangchou-guizhou",
+      "name": "乡愁贵州",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "贵州乡愁(76)",
+        "石桥夜雨(68)",
+        "乡愁贵州游客中心(30)"
+      ]
+    },
+    {
+      "id": "baihuahu",
+      "name": "百花湖",
+      "pick": "百花湖野地",
+      "pickId": "B0L6LAA3CY",
+      "score": 107,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.9,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFEDIK4",
+      "drift_m": 525,
+      "changes": {
+        "poi": {
+          "from": "B0FFFEDIK4",
+          "to": "B0L6LAA3CY"
+        },
+        "coord": {
+          "from": [
+            106.520034,
+            26.649105
+          ],
+          "to": [
+            106.517575,
+            26.644926
+          ],
+          "drift_m": 525
+        },
+        "rename": {
+          "from": "百花湖",
+          "to": "百花湖野地"
+        }
+      }
+    },
+    {
+      "id": "nanjiang",
+      "name": "开阳南江大峡谷",
+      "pick": "南江大峡谷景区",
+      "pickId": "B035301FVE",
+      "score": 140,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0851-87524089",
+      "openTime": "08:30-17:00 08:30-17:00",
+      "openText": "周一至周日 08:30-17:00；漂流时间参考:08:30-17:00，漂流易受天气等影响，时间以现场为准",
+      "oldId": "B035301FVE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xianghuoyan",
+      "name": "开阳香火岩",
+      "pick": "香火岩风景区",
+      "pickId": "B0IAV7LC0I",
+      "score": 125,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "08:00-16:30",
+      "openText": "周一至周日 08:00-16:30",
+      "oldId": "B0IAV7LC0I",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "baimayu",
+      "name": "开阳白马峪温泉",
+      "pick": "白马峪温泉康养度假区",
+      "pickId": "B03530P8JW",
+      "score": 137,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.3,
+      "tel": "0851-88410999",
+      "openTime": "08:00-23:00",
+      "openText": "周一至周日 08:00-23:00",
+      "oldId": "B03530P8JW",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xifeng-hotspring",
+      "name": "息烽温泉",
+      "pick": "息烽温泉",
+      "pickId": "B035301FWW",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "08:00-22:00,2026年春节期间 00:00-24:00",
+      "oldId": "B035301FWW",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qingrengu",
+      "name": "乌当情人谷",
+      "pick": "情人谷",
+      "pickId": "B0FFGYAZIA",
+      "score": 122,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGYAZIA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiangzhigou",
+      "name": "乌当香纸沟",
+      "pick": "香纸沟龙泉景区",
+      "pickId": "B035301FX3",
+      "score": 112,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.8,
+      "tel": "",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B035301FX3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "pianpo",
+      "name": "乌当偏坡布依族乡",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "贵阳市乌当区偏坡乡九年制民族学校(-14)",
+        "偏坡布依族乡人民政府(-19)",
+        "贵阳市乌当区偏坡布依族乡社会治安综合治理中心(-21)"
+      ]
+    },
+    {
+      "id": "guiyu-hotspring",
+      "name": "贵御温泉",
+      "pick": "贵御温泉",
+      "pickId": "B035302OOS",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0851-86461111;0851-86462092;0851-88348888",
+      "openTime": "06:00-02:00",
+      "openText": "周一至周日 06:00-02:00",
+      "oldId": "B035302OOS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yudongxia",
+      "name": "乌当渔洞峡",
+      "pick": "渔洞峡",
+      "pickId": "B035300392",
+      "score": 123,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B035300392",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangchang",
+      "name": "乌当羊昌花画小镇",
+      "pick": "花画小镇",
+      "pickId": "B0FFH5RA1C",
+      "score": 124,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "0851-88302259",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周五 09:00-17:00；周六至周日 09:00-18:00",
+      "oldId": "B0FFH5RA1C",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "huaguoyuan-baigong",
+      "name": "花果园白宫夜景",
+      "pick": "花果园湿地公园",
+      "pickId": "B03530OWFX",
+      "score": 121,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03530OWFX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jinrongcheng-night",
+      "name": "贵州金融城夜景",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "观山湖公园(70)",
+        "贵阳市观山湖公园民族大联欢广场(68)",
+        "泉湖公园(53)"
+      ]
+    },
+    {
+      "id": "nanminghe-night",
+      "name": "南明河夜景带",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "南明河·壹号(-19)",
+        "南明河(-87)",
+        "南明河(-87)"
+      ]
+    }
+  ]
+}

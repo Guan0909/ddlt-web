@@ -1,0 +1,1327 @@
+{
+  "city": "绍兴",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 69,
+    "poiFixed": 18,
+    "renamed": 9,
+    "coordFixed": 17,
+    "openFilled": 41,
+    "closedMon": 2,
+    "tel": 47,
+    "rating": 60,
+    "photo": 57,
+    "noCand": 9,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "luxun-guli",
+      "name": "鲁迅故里",
+      "pick": "鲁迅故里",
+      "pickId": "B023F02PG3",
+      "score": 146,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.8,
+      "tel": "0575-85132080;0575-85132084",
+      "openTime": [],
+      "openText": "周一 8:30-17:00(16:30停止预约,16:45停止入园)；周二至周日 8:30-21:00(20:00停止预约,20:30停止入园)；黄金周,小长假 8:30-22:30(21:30停止预约)",
+      "oldId": "B023F02PG3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "luxun-museum",
+      "name": "绍兴鲁迅纪念馆",
+      "pick": "绍舟鲁迹纪念馆",
+      "pickId": "B0K3CB2TS2",
+      "score": 102,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 2.8,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B023F02KGH",
+      "drift_m": 90,
+      "changes": {
+        "poi": {
+          "from": "B023F02KGH",
+          "to": "B0K3CB2TS2"
+        },
+        "coord": {
+          "from": [
+            120.585927,
+            29.992433
+          ],
+          "to": [
+            120.585086,
+            29.992076
+          ],
+          "drift_m": 90
+        }
+      }
+    },
+    {
+      "id": "shenyuan",
+      "name": "沈园",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "沈氏园-沈园之夜(124)",
+        "沈氏园(108)",
+        "沈园堂(绍兴总店)(65)"
+      ]
+    },
+    {
+      "id": "shenyuan-night",
+      "name": "沈园之夜",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "沈氏园-沈园之夜(124)",
+        "沈氏园(108)",
+        "沈氏园游客中心(47)"
+      ]
+    },
+    {
+      "id": "cangqiao",
+      "name": "仓桥直街",
+      "pick": "仓桥直街历史街区",
+      "pickId": "B023F0QGK1",
+      "score": 126,
+      "type": "购物服务;特色商业街;特色商业街|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0KUB7ZE8Y",
+      "drift_m": 34,
+      "changes": {
+        "poi": {
+          "from": "B0KUB7ZE8Y",
+          "to": "B023F0QGK1"
+        },
+        "coord": {
+          "from": [
+            120.578301,
+            29.997558
+          ],
+          "to": [
+            120.577947,
+            29.997525
+          ],
+          "drift_m": 34
+        },
+        "rename": {
+          "from": "仓桥直街",
+          "to": "仓桥直街历史街区"
+        }
+      }
+    },
+    {
+      "id": "bazixiao",
+      "name": "八字桥历史街区",
+      "pick": "八字桥历史街区",
+      "pickId": "B0MUUSWIW8",
+      "score": 144,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0MUUSWIW8",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shusheng-guli",
+      "name": "书圣故里",
+      "pick": "书圣故里",
+      "pickId": "B023F0PZZ3",
+      "score": 144,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.6,
+      "tel": "0575-88993399;0575-85081938",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；内部场馆营业时间有所不同，具体营业状态以当天开放情况为准",
+      "oldId": "B023F0PZZ3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jishan-snack",
+      "name": "蕺山街·书圣故里小吃",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "书圣故里-蕺坊桥(126)",
+        "书圣故里-题扇亭(112)",
+        "书圣景区(92)"
+      ]
+    },
+    {
+      "id": "cai-yuanpei",
+      "name": "蔡元培故居",
+      "pick": "蔡元培故居",
+      "pickId": "B023F00C0A",
+      "score": 143,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.5,
+      "tel": "0575-85110652",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B023F00C0A",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qiujin-gu",
+      "name": "秋瑾故居",
+      "pick": "秋瑾故居",
+      "pickId": "B023F00C41",
+      "score": 143,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.5,
+      "tel": "0575-88063369",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B023F00C41",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qingteng-shuwu",
+      "name": "青藤书屋",
+      "pick": "青藤书屋",
+      "pickId": "B023F035G9",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0575-85134986",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:30",
+      "oldId": "B023F035G9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xuwei-art",
+      "name": "徐渭艺术馆",
+      "pick": "徐渭艺术馆",
+      "pickId": "B0HDDCCVC9",
+      "score": 145,
+      "type": "科教文化服务;美术馆;美术馆",
+      "rating": 4.7,
+      "tel": "0575-85121132",
+      "openTime": "08:30-17:00",
+      "openText": "周二至周日 08:30-17:00开放(16:30停止入园)；周一 不开放；具体营业状态以当天开放情况为准",
+      "oldId": "B0HDDCCVC9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "datong-xuetang",
+      "name": "大通学堂",
+      "pick": "大通学堂",
+      "pickId": "B023F02KFI",
+      "score": 139,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "0575-85154056",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:40",
+      "oldId": "B023F02KFI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangming-guli",
+      "name": "阳明故里",
+      "pick": "阳明故里",
+      "pickId": "B0FFKBSHQD",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0575-88150616",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B0FFKBSHQD",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xixiaohe",
+      "name": "西小河历史街区",
+      "pick": "西小路历史街区",
+      "pickId": "B0FFJUSYKM",
+      "score": 106,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "",
+      "drift_m": 824,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFJUSYKM"
+        },
+        "coord": {
+          "from": [
+            120.5757,
+            30.0117
+          ],
+          "to": [
+            120.573162,
+            30.00462
+          ],
+          "drift_m": 824
+        }
+      }
+    },
+    {
+      "id": "yingenmen",
+      "name": "迎恩门水街",
+      "pick": "迎恩门风情水街",
+      "pickId": "B0FFM0X76M",
+      "score": 123,
+      "type": "购物服务;特色商业街;特色商业街|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "0575-81509666",
+      "openTime": "09:30-22:00",
+      "openText": "周一至周日 09:30-22:00",
+      "oldId": "B0FFM0X76M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "fushan-park",
+      "name": "府山公园",
+      "pick": "府山公园",
+      "pickId": "B023F02L8F",
+      "score": 143,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "08:00-17:00(17:00停止入园)",
+      "oldId": "B023F02L8F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaoxing-museum",
+      "name": "绍兴博物馆",
+      "pick": "中国黄酒博物馆",
+      "pickId": "B023F0256C",
+      "score": 108,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "0575-85397288",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B023F00OGK",
+      "drift_m": 1574,
+      "changes": {
+        "poi": {
+          "from": "B023F00OGK",
+          "to": "B023F0256C"
+        },
+        "coord": {
+          "from": [
+            120.572327,
+            29.997923
+          ],
+          "to": [
+            120.573923,
+            30.012015
+          ],
+          "drift_m": 1574
+        }
+      }
+    },
+    {
+      "id": "fenghengjie",
+      "name": "府横街小吃街",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "沙县小吃(府横街店)(-17)",
+        "西街徐文张饭店(-42)",
+        "庆凤小吃(鲁迅故居店)(-45)"
+      ]
+    },
+    {
+      "id": "dongjie-night",
+      "name": "东街夜市",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "名妆(东街店)(33)",
+        "柯岩夜市(-8)",
+        "柯岩夜市雅迪电动车(-18)"
+      ]
+    },
+    {
+      "id": "xianheng",
+      "name": "咸亨酒店",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "咸亨酒店北区-乒乓球室(68)",
+        "咸亨酒店(33)",
+        "咸亨大酒店-礼品店(18)"
+      ]
+    },
+    {
+      "id": "huangjiu-museum",
+      "name": "中国黄酒博物馆",
+      "pick": "中国黄酒博物馆",
+      "pickId": "B023F0256C",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "0575-85397288",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B023F0256C",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhou-enlai",
+      "name": "周恩来祖居",
+      "pick": "周恩来祖居",
+      "pickId": "B023F00GXS",
+      "score": 144,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.6,
+      "tel": "0575-85133368",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:50",
+      "oldId": "B023F00GXS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jishan-park",
+      "name": "蕺山公园",
+      "pick": "蕺山公园",
+      "pickId": "B023F00KHQ",
+      "score": 141,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B023F00KHQ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "city-square",
+      "name": "绍兴城市广场·解放路",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "绍兴市城市广场-大善塔(128)",
+        "绍兴市城市广场(123)",
+        "绍兴市城市广场-逸园(光明路)(96)"
+      ]
+    },
+    {
+      "id": "donghu",
+      "name": "东湖",
+      "pick": "绍兴东湖风景区",
+      "pickId": "B023F02KB7",
+      "score": 144,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0575-88606879",
+      "openTime": [],
+      "openText": "冬令时 08:00-17:00开放(16:20停止售票,16:30停止入园)；夏令时 08:00-17:30开放(16:50停止售票,17:00停止入园)；绕门山开放时间 8:30 -15:30,实行单行线(水杉林休闲区为上山口)；如遇山路湿滑、特殊天气、安全维修等情况，绕门山将暂停开放或实行原路返回，具体以景区通告为准。",
+      "oldId": "B023F02KB7",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "东湖",
+          "to": "绍兴东湖风景区"
+        }
+      }
+    },
+    {
+      "id": "shaoxing-theatre",
+      "name": "绍兴大剧院",
+      "pick": "绍兴大剧院",
+      "pickId": "B023F02KEE",
+      "score": 105,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4.7,
+      "tel": "0575-85202255;0575-85202256",
+      "openTime": "08:30-20:30",
+      "openText": "周一至周日 08:30-20:30",
+      "oldId": "B023F02KEE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lvcheng-cruise",
+      "name": "绍兴环城河夜游",
+      "pick": "绍兴环城河夜游",
+      "pickId": "B0FFF0EWT0",
+      "score": 147,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.3,
+      "tel": "0575-88318589",
+      "openTime": "18:30-20:00",
+      "openText": "周一至周日 18:30-20:00；夜游散客班为19:30、20:00两趟航班。网络购票不区分班次，网络购票的游客请至少提前一小时兑票，坐船时间以现场实际换票时定的班次为准",
+      "oldId": "B0FFF0EWT0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jianhu",
+      "name": "鉴湖·古纤道",
+      "pick": "古纤道",
+      "pickId": "B0K317UFQJ",
+      "score": 72,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": [],
+      "openText": "5月1日-10月7日 08:00-17:00",
+      "oldId": "B023F02KB5",
+      "drift_m": 8756,
+      "changes": {
+        "poi": {
+          "from": "B023F02KB5",
+          "to": "B0K317UFQJ"
+        },
+        "rename": {
+          "from": "鉴湖·古纤道",
+          "to": "古纤道"
+        }
+      }
+    },
+    {
+      "id": "kuaijishan",
+      "name": "会稽山景区",
+      "pick": "会稽山兜率天景区",
+      "pickId": "B023F02KBD",
+      "score": 120,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0575-81108812;0575-81108813",
+      "openTime": [],
+      "openText": "1月至4月,10月至12月 周一至周日 08:30-16:30 最晚进入15:20；5月至9月 周一至周日 08:00-17:00 最晚进入15:40；如遇法定节假日等人流高峰期，为有效管控景区游客量，景区可能在达到最大承载量后停止售检票，售检票截止时间以实际为准。",
+      "oldId": "B0GU7LLNRG",
+      "drift_m": 1045,
+      "changes": {
+        "poi": {
+          "from": "B0GU7LLNRG",
+          "to": "B023F02KBD"
+        },
+        "coord": {
+          "from": [
+            120.405803,
+            30.019193
+          ],
+          "to": [
+            120.416564,
+            30.020454
+          ],
+          "drift_m": 1045
+        }
+      }
+    },
+    {
+      "id": "dashuyuling",
+      "name": "大禹陵",
+      "pick": "大禹陵景区",
+      "pickId": "B023F02L5P",
+      "score": 139,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0575-88363947;0575-88366666",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00 最晚进入16:30",
+      "oldId": "BV11507065",
+      "drift_m": 1434,
+      "changes": {
+        "poi": {
+          "from": "BV11507065",
+          "to": "B023F02L5P"
+        },
+        "coord": {
+          "from": [
+            120.601637,
+            29.966551
+          ],
+          "to": [
+            120.610041,
+            29.955906
+          ],
+          "drift_m": 1434
+        },
+        "rename": {
+          "from": "大禹陵",
+          "to": "大禹陵景区"
+        }
+      }
+    },
+    {
+      "id": "xianglufeng",
+      "name": "香炉峰",
+      "pick": "香炉峰",
+      "pickId": "B023F029TZ",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "0575-85129863",
+      "openTime": "05:00-17:00",
+      "openText": "周一至周日 05:00-17:00",
+      "oldId": "B023F029TZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hushan",
+      "name": "吼山风景区",
+      "pick": "吼山风景区",
+      "pickId": "B023F0041E",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "0575-88082404;0575-88086016",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00 最晚进入16:30",
+      "oldId": "B023F0041E",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lanting",
+      "name": "兰亭景区",
+      "pick": "兰亭景区",
+      "pickId": "B023F00N0U",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0575-84606887",
+      "openTime": "08:00-17:20",
+      "openText": "周一至周日 08:00-17:20 最晚进入16:50",
+      "oldId": "B023F00N0U",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lanting-museum",
+      "name": "兰亭书法博物馆",
+      "pick": "兰亭书法博物馆",
+      "pickId": "B0FFFYPNH2",
+      "score": 145,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B0FFFYPNH2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jinghu-wetland",
+      "name": "镜湖国家城市湿地公园",
+      "pick": "镜湖国家城市湿地公园",
+      "pickId": "B023F02KCK",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "0575-88247669",
+      "openTime": "06:30-21:00",
+      "openText": "周一至周日 06:30-21:00",
+      "oldId": "B023F02KCK",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaoxing-science",
+      "name": "绍兴科技馆",
+      "pick": "绍兴科技馆",
+      "pickId": "B0FFF2DD6L",
+      "score": 146,
+      "type": "科教文化服务;科技馆;科技馆",
+      "rating": 4.8,
+      "tel": "0575-88009633",
+      "openTime": [],
+      "openText": "周三至周日 09:15-16:30；周三-周日9:15-16:30，周一、周二闭馆，遇法定节假日另行通知。",
+      "oldId": "B0FFF2DD6L",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "mingren-guan",
+      "name": "绍兴名人馆",
+      "pick": "绍兴名人馆",
+      "pickId": "B0FFMHY59P",
+      "score": 140,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.2,
+      "tel": "0575-85022556",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFMHY59P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaoxing-art",
+      "name": "绍兴美术馆",
+      "pick": "绍兴美术馆",
+      "pickId": "B0K2F1U87H",
+      "score": 145,
+      "type": "科教文化服务;科教文化场所;科教文化场所",
+      "rating": 4.7,
+      "tel": "0575-88519739",
+      "openTime": [],
+      "openText": "周二至周日 09:00-17:00,节假日以官方通知为准",
+      "oldId": "B0K2F1U87H",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "didang-lake",
+      "name": "迪荡湖公园",
+      "pick": "迪荡湖公园",
+      "pickId": "B0FFF36HD9",
+      "score": 156,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0575-88130161",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFF36HD9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "didang-night",
+      "name": "迪荡湖夜景喷泉",
+      "pick": "迪荡湖公园",
+      "pickId": "B0FFF36HD9",
+      "score": 134,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.6,
+      "tel": "0575-88130161",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFF36HD9",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shimao",
+      "name": "世茂·湖滨新天地",
+      "pick": "世茂·湖滨新天地",
+      "pickId": "B0FFJTFGB5",
+      "score": 103,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.5,
+      "tel": "0575-88225888",
+      "openTime": "09:30-21:00",
+      "openText": "周一至周日 09:30-21:00",
+      "oldId": "B0FFJTFGB5",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "keqiao-old",
+      "name": "柯桥古镇",
+      "pick": "柯桥历史文化街区(柯桥古镇)入口广场",
+      "pickId": "B0H6HZGAWX",
+      "score": 123,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 4.3,
+      "tel": "0575-81183998",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "BV11394101",
+      "drift_m": 72,
+      "changes": {
+        "poi": {
+          "from": "BV11394101",
+          "to": "B0H6HZGAWX"
+        },
+        "coord": {
+          "from": [
+            120.472648,
+            30.06898
+          ],
+          "to": [
+            120.472521,
+            30.068341
+          ],
+          "drift_m": 72
+        }
+      }
+    },
+    {
+      "id": "qingfangcheng",
+      "name": "中国轻纺城",
+      "pick": "中国轻纺城",
+      "pickId": "B023F03B56",
+      "score": 105,
+      "type": "购物服务;家居建材市场;布艺市场",
+      "rating": 4.7,
+      "tel": "15384168896;18857589949",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30",
+      "oldId": "B023F03B56",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "keqiao-wanda",
+      "name": "柯桥万达广场",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "万达影城(柯桥万达广场店)(75)",
+        "万达广场(绍兴柯桥店)(74)",
+        "绍兴柯桥万达广场店(73)"
+      ]
+    },
+    {
+      "id": "guazhu-lake",
+      "name": "瓜渚湖公园",
+      "pick": "瓜渚湖公园",
+      "pickId": "B0I1OLEF09",
+      "score": 121,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 3.5,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B023F01PMA",
+      "drift_m": 345,
+      "changes": {
+        "poi": {
+          "from": "B023F01PMA",
+          "to": "B0I1OLEF09"
+        },
+        "coord": {
+          "from": [
+            120.497152,
+            30.068676
+          ],
+          "to": [
+            120.495193,
+            30.066078
+          ],
+          "drift_m": 345
+        }
+      }
+    },
+    {
+      "id": "guazhu-night",
+      "name": "瓜渚湖音乐喷泉",
+      "pick": "瓜渚湖北岸公园",
+      "pickId": "B023F0P584",
+      "score": 102,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.6,
+      "tel": "4008286789",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B023F01PMA",
+      "drift_m": 964,
+      "changes": {
+        "poi": {
+          "from": "B023F01PMA",
+          "to": "B023F0P584"
+        },
+        "coord": {
+          "from": [
+            120.497152,
+            30.068676
+          ],
+          "to": [
+            120.503122,
+            30.075639
+          ],
+          "drift_m": 964
+        }
+      }
+    },
+    {
+      "id": "keyan",
+      "name": "柯岩风景区",
+      "pick": "柯岩风景区入口广场",
+      "pickId": "B0FFG6O9BA",
+      "score": 96,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 3.6,
+      "tel": "0575-84361555",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "BV10199089",
+      "drift_m": 703,
+      "changes": {
+        "poi": {
+          "from": "BV10199089",
+          "to": "B0FFG6O9BA"
+        },
+        "coord": {
+          "from": [
+            120.485464,
+            30.045017
+          ],
+          "to": [
+            120.478184,
+            30.044468
+          ],
+          "drift_m": 703
+        },
+        "rename": {
+          "from": "柯岩风景区",
+          "to": "柯岩风景区入口广场"
+        }
+      }
+    },
+    {
+      "id": "luzhen",
+      "name": "鲁镇",
+      "pick": "鲁镇牌坊",
+      "pickId": "B023F0POVJ",
+      "score": 132,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0575-84361555;0575-84363466",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B023F0POVJ",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "鲁镇",
+          "to": "鲁镇牌坊"
+        }
+      }
+    },
+    {
+      "id": "anchang",
+      "name": "安昌古镇",
+      "pick": "安昌古镇",
+      "pickId": "B023F00NBB",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0575-85656963",
+      "openTime": [],
+      "openText": "6月至9月 周一至周日 08:30-17:00；1月至5月,10月至12月 周一至周日 08:30-16:30,2026-02-16,08:00-16:00,2026-02-17至2026-02-23,08:00-17:30",
+      "oldId": "B023F00NBB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangshan-shifo",
+      "name": "羊山石佛",
+      "pick": "羊山石佛",
+      "pickId": "B023F02KCF",
+      "score": 139,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "0575-85520089",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B023F02KCF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dongpu",
+      "name": "东浦黄酒小镇",
+      "pick": "黄酒小镇",
+      "pickId": "B0HU2ZSLHZ",
+      "score": 133,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "0575-85388880",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "B0HU2ZSLHZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiaobaihua",
+      "name": "绍兴小百花越剧艺术中心",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "上虞小百花越剧有限公司(-51)"
+      ]
+    },
+    {
+      "id": "dongfang-shanshui",
+      "name": "绍兴东方山水乐园",
+      "pick": "东方山水乐园",
+      "pickId": "B0FFGY3E02",
+      "score": 134,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "4001048880;0575-85320313",
+      "openTime": [],
+      "openText": "9月-11月 周一到周五 10:00-16:30；周六-周日 09:30-17:00；中秋节,国庆节 09:30-21:00；具体开放时间以官方通知为准",
+      "oldId": "B0GR6NYR5P",
+      "drift_m": 496,
+      "changes": {
+        "poi": {
+          "from": "B0GR6NYR5P",
+          "to": "B0FFGY3E02"
+        },
+        "coord": {
+          "from": [
+            120.446162,
+            30.07596
+          ],
+          "to": [
+            120.441279,
+            30.077379
+          ],
+          "drift_m": 496
+        }
+      }
+    },
+    {
+      "id": "zhuji-xishi",
+      "name": "西施故里",
+      "pick": "西施故里",
+      "pickId": "B0FFFD1GIT",
+      "score": 144,
+      "type": "风景名胜;风景名胜;纪念馆",
+      "rating": 4.6,
+      "tel": "0575-87372550",
+      "openTime": "00:00-24:00 08:00-21:00 08:00-17:00 18:00-20:30",
+      "openText": "周一至周日 00:00-24:00；西施殿开放时间:08:00-21:00 名媛馆（日游）开放时间:08:00-17:00 名媛馆（夜游）开放时间:18:00-20:30",
+      "oldId": "B0FFFD1GIT",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhuji-wuxie",
+      "name": "五泄风景区",
+      "pick": "五泄风景区",
+      "pickId": "B023F02GUL",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0575-87773688;12301",
+      "openTime": "08:00-16:30",
+      "openText": "周一至周日 08:00-16:30 最晚进入15:30",
+      "oldId": "B023F02GUL",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhuji-xiangfei",
+      "name": "诸暨千年香榧林",
+      "pick": "千年香榧林景区",
+      "pickId": "B023F02RQ6",
+      "score": 117,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "09:00-16:30",
+      "openText": "周一至周日 09:00-16:30",
+      "oldId": "B023F02RQ6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhuji-baitahu",
+      "name": "诸暨白塔湖国家湿地公园",
+      "pick": "白塔湖国家湿地公园",
+      "pickId": "B0FFF0EYO2",
+      "score": 105,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0575-81786060",
+      "openTime": "08:00-16:30",
+      "openText": "周一至周日 08:00-16:30",
+      "oldId": "B0L276IE7A",
+      "drift_m": 1525,
+      "changes": {
+        "poi": {
+          "from": "B0L276IE7A",
+          "to": "B0FFF0EYO2"
+        },
+        "coord": {
+          "from": [
+            120.376678,
+            29.891716
+          ],
+          "to": [
+            120.36388,
+            29.88366
+          ],
+          "drift_m": 1525
+        }
+      }
+    },
+    {
+      "id": "shengzhou-chongren",
+      "name": "崇仁古镇",
+      "pick": "崇仁古镇",
+      "pickId": "B023F02KDS",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B023F02KDS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shengzhou-yueju-town",
+      "name": "嵊州越剧小镇",
+      "pick": "越剧小镇古戏楼",
+      "pickId": "B0FFKZ6374",
+      "score": 120,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 3.8,
+      "tel": "0575-83999999",
+      "openTime": "09:00-21:00",
+      "openText": "09:00-21:00, 具体开放时间以现场公示为准",
+      "oldId": "B0H35M1NVL",
+      "drift_m": 198,
+      "changes": {
+        "poi": {
+          "from": "B0H35M1NVL",
+          "to": "B0FFKZ6374"
+        },
+        "coord": {
+          "from": [
+            120.786438,
+            29.519398
+          ],
+          "to": [
+            120.784576,
+            29.520126
+          ],
+          "drift_m": 198
+        }
+      }
+    },
+    {
+      "id": "shengzhou-yueju-museum",
+      "name": "越剧博物馆",
+      "pick": "越剧博物馆",
+      "pickId": "B0I2YAPNTV",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "0575-83066997",
+      "openTime": [],
+      "openText": "09/30 周三–周四 全天不开放；10/08 周三–周四 全天不开放；03/01-09/30 周二, 周五–周日 09:00–17:00开放 最晚进入16:30；03/01-09/29 周三–周四 09:00–17:00开放 最晚进入16:30；10/01-12/31 周二–周日 09:00–16:30开放 最晚进入16:00；01/01-02/28 周二–周日 09:00–16:30开放 最晚进入16:00；10/01-12/31 周二, 周五–周日 09:00–16:30开放 最晚进入16:00；10/01-10/07 周三–周四 09:00–16:30开放 最晚进入16:00；10/09-12/31 周三–周四 09:00–16:30开放 最晚进入16:00；01/01-02/28 周二–周日 09:00–16:30开放 最晚进入16:00；01/01-12/31 周一 全天不开放；中秋节 09:00–17:00开放 最晚进入16:30；国庆节 09:00–16:30开放 最晚进入16:00；节假日时间以通知为准，具体营业状态以当天开放情况为准",
+      "oldId": "B0I2YAPNTV",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shengzhou-wangxizhi",
+      "name": "王羲之故居·金庭",
+      "pick": "金庭观",
+      "pickId": "B023F02X8T",
+      "score": 82,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 3.9,
+      "tel": "0575-83513902",
+      "openTime": "08:30-16:30",
+      "openText": "周一至周日 08:30-16:30",
+      "oldId": "B0FFKFF34B",
+      "drift_m": 78,
+      "changes": {
+        "poi": {
+          "from": "B0FFKFF34B",
+          "to": "B023F02X8T"
+        },
+        "coord": {
+          "from": [
+            121.067197,
+            29.546463
+          ],
+          "to": [
+            121.067142,
+            29.545765
+          ],
+          "drift_m": 78
+        },
+        "rename": {
+          "from": "王羲之故居·金庭",
+          "to": "金庭观"
+        }
+      }
+    },
+    {
+      "id": "xinchang-dafosi",
+      "name": "新昌大佛寺",
+      "pick": "大佛寺风景名胜区",
+      "pickId": "B023F003AD",
+      "score": 121,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0575-86115599",
+      "openTime": [],
+      "openText": "10月01日至07月05日 06:00-17:00 最晚进入16:30；07月06日至09月30日 08:00-21:00 最晚进入20:30",
+      "oldId": "B0MBHGHHGM",
+      "drift_m": 712,
+      "changes": {
+        "poi": {
+          "from": "B0MBHGHHGM",
+          "to": "B023F003AD"
+        },
+        "coord": {
+          "from": [
+            120.901075,
+            29.488525
+          ],
+          "to": [
+            120.895637,
+            29.492838
+          ],
+          "drift_m": 712
+        }
+      }
+    },
+    {
+      "id": "xinchang-shijiufeng",
+      "name": "穿岩十九峰",
+      "pick": "十九峰景区",
+      "pickId": "B023F02KJ6",
+      "score": 85,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0575-86251638",
+      "openTime": [],
+      "openText": "04-10至10-10 周一至周日 07:00-17:00 最晚进入15:00；10-11至04-09 周一至周日 07:30-16:30 最晚进入16:00；飞龙栈道营业时间:夏令7:30-15:00；冬令8:00-14:30",
+      "oldId": "BV11476812",
+      "drift_m": 2009,
+      "changes": {
+        "poi": {
+          "from": "BV11476812",
+          "to": "B023F02KJ6"
+        }
+      }
+    },
+    {
+      "id": "xinchang-tianmu",
+      "name": "天姥山",
+      "pick": "天姥山",
+      "pickId": "B0M2PKJHPS",
+      "score": 128,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.2,
+      "tel": "",
+      "openTime": "09:00-16:30",
+      "openText": "09:00-16:30 停止售票:15:00 停止入园:15:00",
+      "oldId": "B0M2PKJHPS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shangyu-caoe",
+      "name": "曹娥庙",
+      "pick": "曹娥庙",
+      "pickId": "B023F02KF5",
+      "score": 142,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.4,
+      "tel": "0575-82162498",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B023F02KF5",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shangyu-xiaode",
+      "name": "中华孝德园",
+      "pick": "中华孝德园",
+      "pickId": "B0FFGIIR10",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园|风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "0575-82508000",
+      "openTime": "08:30-16:30",
+      "openText": "周一至周日 08:30-16:30",
+      "oldId": "B0FFGIIR10",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shangyu-fuzhi",
+      "name": "覆卮山",
+      "pick": "覆卮山景区观景平台",
+      "pickId": "B0JDSAX2IM",
+      "score": 104,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "0575-82096922",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B023F00D5Y",
+      "drift_m": 1862,
+      "changes": {
+        "poi": {
+          "from": "B023F00D5Y",
+          "to": "B0JDSAX2IM"
+        },
+        "coord": {
+          "from": [
+            120.98578,
+            29.743977
+          ],
+          "to": [
+            120.967778,
+            29.749975
+          ],
+          "drift_m": 1862
+        },
+        "rename": {
+          "from": "覆卮山",
+          "to": "覆卮山景区观景平台"
+        }
+      }
+    },
+    {
+      "id": "shangyu-baimahu",
+      "name": "白马湖·春晖中学",
+      "pick": "春晖中学",
+      "pickId": "B0MD31GNQG",
+      "score": 68,
+      "type": "科教文化服务;学校;中学",
+      "rating": 0,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0FFGO6BEG",
+      "drift_m": 543,
+      "changes": {
+        "poi": {
+          "from": "B0FFGO6BEG",
+          "to": "B0MD31GNQG"
+        },
+        "coord": {
+          "from": [
+            120.926218,
+            30.034516
+          ],
+          "to": [
+            120.920831,
+            30.035979
+          ],
+          "drift_m": 543
+        },
+        "rename": {
+          "from": "白马湖·春晖中学",
+          "to": "春晖中学"
+        }
+      }
+    }
+  ]
+}

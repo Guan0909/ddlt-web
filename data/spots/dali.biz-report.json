@@ -1,0 +1,1189 @@
+{
+  "city": "大理",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 70,
+    "poiFixed": 8,
+    "renamed": 6,
+    "coordFixed": 8,
+    "openFilled": 53,
+    "closedMon": 0,
+    "tel": 28,
+    "rating": 59,
+    "photo": 59,
+    "noCand": 11,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "erhai-park",
+      "name": "洱海公园",
+      "pick": "洱海公园",
+      "pickId": "B0368006Y0",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0368006Y0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhou-museum",
+      "name": "大理州博物馆",
+      "pick": "大理白族自治州博物馆",
+      "pickId": "B0368003LJ",
+      "score": 129,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0872-2128614;0872-2122485",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B0GK0AADI1",
+      "drift_m": 30,
+      "changes": {
+        "poi": {
+          "from": "B0GK0AADI1",
+          "to": "B0368003LJ"
+        },
+        "coord": {
+          "from": [
+            100.2319,
+            25.597322
+          ],
+          "to": [
+            100.231622,
+            25.597219
+          ],
+          "drift_m": 30
+        }
+      }
+    },
+    {
+      "id": "xingsheng-bridge",
+      "name": "兴盛大桥",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "留白摄影(兴盛大桥店)(82)",
+        "大理星辰海大海景酒店(大理站兴盛大桥店)(75)",
+        "兴盛大桥(-14)"
+      ]
+    },
+    {
+      "id": "longweiguan",
+      "name": "龙尾关",
+      "pick": "龙尾关遗址",
+      "pickId": "B03680I7MY",
+      "score": 138,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03680I7MY",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "龙尾关",
+          "to": "龙尾关遗址"
+        }
+      }
+    },
+    {
+      "id": "fotu-tower",
+      "name": "佛图寺",
+      "pick": "佛图寺",
+      "pickId": "B0FFJYLA6X",
+      "score": 135,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 3.9,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFJYLA6X",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dali-aquarium",
+      "name": "大理海洋世界",
+      "pick": "大理海洋世界",
+      "pickId": "B0FFIPJP95",
+      "score": 144,
+      "type": "风景名胜;公园广场;水族馆",
+      "rating": 4.6,
+      "tel": "0872-2427777",
+      "openTime": "09:30-17:30",
+      "openText": "周一至周日 09:30-17:30 最晚进入17:00",
+      "oldId": "B0FFIPJP95",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "taiye-plaza",
+      "name": "泰业城市广场",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "艾米城市民宿(泰业国际广场店)(-9)",
+        "菌彩野生菌火锅(昆百大·泰业城店)(-47)",
+        "泰美精品城市民宿(泰业店)(-52)"
+      ]
+    },
+    {
+      "id": "aiqinhai-mall",
+      "name": "大理爱琴海购物公园",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "爱琴海购物公园(32)",
+        "KKV(大理爱琴海购物公园主力店)(29)",
+        "POLOWALK(大理爱琴海购物公园鸡足山路店)(16)"
+      ]
+    },
+    {
+      "id": "erhai-moon-wetland",
+      "name": "洱海月湿地公园",
+      "pick": "洱海月湿地公园",
+      "pickId": "B0368151LH",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0368151LH",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gucheng-fuxing",
+      "name": "大理古城复兴路",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "大理古城-古城漫步(122)",
+        "蕉下(大理古城复兴路店)(74)",
+        "大理空想·叁舍私宅(古城复兴路)(16)"
+      ]
+    },
+    {
+      "id": "renmin-road",
+      "name": "大理古城人民路",
+      "pick": "大理古城",
+      "pickId": "B0FFFZH0RQ",
+      "score": 146,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "4008721699",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFZH0RQ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yangren-street",
+      "name": "大理古城洋人街",
+      "pick": "洋人街",
+      "pickId": "B036815A12",
+      "score": 84,
+      "type": "购物服务;特色商业街;步行街",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "",
+      "drift_m": 114,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B036815A12"
+        },
+        "coord": {
+          "from": [
+            100.1609,
+            25.6953
+          ],
+          "to": [
+            100.160829,
+            25.694279
+          ],
+          "drift_m": 114
+        }
+      }
+    },
+    {
+      "id": "honglongjing",
+      "name": "红龙井",
+      "pick": "99旅拍租衣红龙井摄影",
+      "pickId": "B0K6PMQKNQ",
+      "score": 81,
+      "type": "生活服务;摄影冲印店;摄影冲印",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "09:00-23:00",
+      "openText": "周一至周日 09:00-23:00",
+      "oldId": "B0MAT9X5X7",
+      "drift_m": 178,
+      "changes": {
+        "poi": {
+          "from": "B0MAT9X5X7",
+          "to": "B0K6PMQKNQ"
+        },
+        "coord": {
+          "from": [
+            100.162325,
+            25.690475
+          ],
+          "to": [
+            100.16071,
+            25.689807
+          ],
+          "drift_m": 178
+        }
+      }
+    },
+    {
+      "id": "sanyue-street",
+      "name": "三月街",
+      "pick": "三月街牌坊",
+      "pickId": "B0MGA1FTMP",
+      "score": 111,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0368159Z8",
+      "drift_m": 230,
+      "changes": {
+        "poi": {
+          "from": "B0368159Z8",
+          "to": "B0MGA1FTMP"
+        },
+        "coord": {
+          "from": [
+            100.153299,
+            25.693274
+          ],
+          "to": [
+            100.1555,
+            25.693864
+          ],
+          "drift_m": 230
+        },
+        "rename": {
+          "from": "三月街",
+          "to": "三月街牌坊"
+        }
+      }
+    },
+    {
+      "id": "wuhua-tower",
+      "name": "五华楼",
+      "pick": "五华楼",
+      "pickId": "B036800DK2",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "00:00-24:00备注:外观开放,登楼无明确",
+      "oldId": "B036800DK2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "chongsheng-towers",
+      "name": "崇圣寺三塔",
+      "pick": "崇圣寺三塔",
+      "pickId": "B0HKLRTS6R",
+      "score": 144,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "0872-2666107;0872-2666346",
+      "openTime": "07:10-19:00 07:30-18:30",
+      "openText": "05-01至10-07 周一至周日 07:10-19:00 最晚进入17:30；10-08至04-30 周一至周日 07:30-18:30 最晚进入17:30",
+      "oldId": "B0HKLRTS6R",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "santa-reflection",
+      "name": "三塔倒影公园",
+      "pick": "三塔倒影公园",
+      "pickId": "B036800C0O",
+      "score": 140,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.2,
+      "tel": "0872-2666158",
+      "openTime": "07:30-18:30",
+      "openText": "周一至周日 07:30-18:30 最晚进入18:00",
+      "oldId": "B036800C0O",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tianlong-babu",
+      "name": "天龙八部影视城",
+      "pick": "天龙八部影视城",
+      "pickId": "B036815DC0",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "0872-2674508",
+      "openTime": "08:30-20:30",
+      "openText": "周一至周日 08:30-20:30 最晚进入18:30",
+      "oldId": "B036815DC0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dali-city-museum",
+      "name": "大理市博物馆",
+      "pick": "大理白族自治州博物馆",
+      "pickId": "B0368003LJ",
+      "score": 74,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0872-2128614;0872-2122485",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "B03680I1JP",
+      "drift_m": 11439,
+      "changes": {
+        "poi": {
+          "from": "B03680I1JP",
+          "to": "B0368003LJ"
+        }
+      }
+    },
+    {
+      "id": "feiyi-museum",
+      "name": "大理非物质文化遗产博物馆",
+      "pick": "大理白族自治州博物馆",
+      "pickId": "B0368003LJ",
+      "score": 74,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "0872-2128614;0872-2122485",
+      "openTime": "09:00-17:00",
+      "openText": "周二至周日 09:00-17:00 最晚进入16:30",
+      "oldId": "",
+      "drift_m": 12303,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0368003LJ"
+        }
+      }
+    },
+    {
+      "id": "dianying-museum",
+      "name": "中国大理农村电影历史博物馆",
+      "pick": "中国大理农村电影历史博物馆",
+      "pickId": "B036815O1H",
+      "score": 143,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": "09:00-22:00",
+      "openText": "周一至周日 09:00-22:00",
+      "oldId": "B036815O1H",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "photo-museum",
+      "name": "大理摄影博物馆",
+      "pick": "苍山自然影像博物馆",
+      "pickId": "B0ID9AIA0O",
+      "score": 69,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "10:00-18:00",
+      "openText": "周一 全天关闭；周二至周日 10:00-18:00",
+      "oldId": "",
+      "drift_m": 5401,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0ID9AIA0O"
+        }
+      }
+    },
+    {
+      "id": "yuer-park",
+      "name": "玉洱园",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "大理古城-玉洱园(126)",
+        "蒋公祠(91)",
+        "大理古城景区自助游览车玉洱公园(蒋公祠)招呼站(81)"
+      ]
+    },
+    {
+      "id": "chuangdanchang",
+      "name": "大理床单厂艺术区",
+      "pick": "大理床单厂艺术区",
+      "pickId": "B0FFFYRQG6",
+      "score": 145,
+      "type": "科教文化服务;科教文化场所;科教文化场所|商务住宅;商务住宅相关;商务住宅相关",
+      "rating": 4.7,
+      "tel": "13983790015",
+      "openTime": "08:00-22:00",
+      "openText": "周一至周日 08:00-22:00",
+      "oldId": "B0FFFYRQG6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hongsheng-tower",
+      "name": "弘圣寺塔",
+      "pick": "弘圣寺塔",
+      "pickId": "B0368151D0",
+      "score": 136,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4,
+      "tel": "",
+      "openTime": "00:00-24:00 09:00-17:00",
+      "openText": "00:00-24:00； 周一到周五 09:00-17:00",
+      "oldId": "B0368151D0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gantong-temple",
+      "name": "感通寺",
+      "pick": "南方电网汽车充电站(大理市感通寺景区充电站)",
+      "pickId": "B0J2343QF1",
+      "score": 62,
+      "type": "汽车服务;充电站;充电站",
+      "rating": 3.2,
+      "tel": "4006895598",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0368007GX",
+      "drift_m": 363,
+      "changes": {
+        "poi": {
+          "from": "B0368007GX",
+          "to": "B0J2343QF1"
+        },
+        "coord": {
+          "from": [
+            100.167018,
+            25.643118
+          ],
+          "to": [
+            100.16903,
+            25.645828
+          ],
+          "drift_m": 363
+        }
+      }
+    },
+    {
+      "id": "jizhao-nunnery",
+      "name": "寂照庵",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "苍山景区-寂照庵(127)",
+        "禅茶(83)",
+        "苍山景区苍山感通索道(70)"
+      ]
+    },
+    {
+      "id": "qingbi-stream",
+      "name": "清碧溪",
+      "pick": "清碧溪",
+      "pickId": "B0FFGAWAY4",
+      "score": 145,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.3,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGAWAY4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gantong-cableway",
+      "name": "苍山感通索道",
+      "pick": "苍山景区苍山感通索道",
+      "pickId": "B0368002Q3",
+      "score": 107,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "19306992860",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:00；为保障大家的出行安全，索道在遇到大风、霜冻等极端天气状况或者满载时，会采取临时停运措施。由于山区天气多变，难以预测，索道可能会在您行程期间因上述情况而停运。 请您提前关注景区天气和索道运营动态，合理规划行程。若索道停运给您带来不便，我们深表歉意，感谢您的理解与配合。",
+      "oldId": "B0FFICZ3B7",
+      "drift_m": 1069,
+      "changes": {
+        "poi": {
+          "from": "B0FFICZ3B7",
+          "to": "B0368002Q3"
+        },
+        "coord": {
+          "from": [
+            100.168239,
+            25.644417
+          ],
+          "to": [
+            100.157575,
+            25.644642
+          ],
+          "drift_m": 1069
+        },
+        "rename": {
+          "from": "苍山感通索道",
+          "to": "苍山景区苍山感通索道"
+        }
+      }
+    },
+    {
+      "id": "zhonghe-temple",
+      "name": "中和寺",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "苍山景区-中和寺(123)",
+        "大理苍山中和索道(68)",
+        "中和书院(65)"
+      ]
+    },
+    {
+      "id": "ximalatan-cableway",
+      "name": "苍山洗马潭大索道",
+      "pick": "洗马潭索道",
+      "pickId": "B036815O42",
+      "score": 120,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入16:00；为保障大家的出行安全，索道在遇到大风、霜冻等极端天气状况或者满载时，会采取临时停运措施。由于山区天气多变，难以预测，索道可能会在您行程期间因上述情况而停运。 最晚入园时间和停止售票时间随天气动态变化。请您提前关注景区天气和索道运营动态，合理规划行程。若索道停运给您带来不便，我们深表歉意，感谢您的理解与配合。",
+      "oldId": "B036815O42",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yudai-road",
+      "name": "苍山玉带云游路",
+      "pick": "玉带云游路",
+      "pickId": "B0FFGO698V",
+      "score": 121,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.1,
+      "tel": "0872-2670349",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGO698V",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "taihe-city",
+      "name": "太和城遗址",
+      "pick": "太和城遗址",
+      "pickId": "B03680I9BN",
+      "score": 138,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03680I9BN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "fengyangyi",
+      "name": "凤阳邑村",
+      "pick": "懒蚂蚁智慧社区便民自助洗车站凤阳邑站",
+      "pickId": "B0FFLO13NH",
+      "score": 58,
+      "type": "汽车服务;洗车场;洗车场",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "",
+      "drift_m": 1652,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFLO13NH"
+        },
+        "coord": {
+          "from": [
+            100.1776,
+            25.638
+          ],
+          "to": [
+            100.194041,
+            25.638967
+          ],
+          "drift_m": 1652
+        }
+      }
+    },
+    {
+      "id": "longkan-village",
+      "name": "龙龛村",
+      "pick": "上龙龛村中心广场",
+      "pickId": "B0JA2ZGKA8",
+      "score": 117,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 3.9,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0JA2ZGKA8",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "龙龛村",
+          "to": "上龙龛村中心广场"
+        }
+      }
+    },
+    {
+      "id": "caicun-pier",
+      "name": "才村码头",
+      "pick": "才村码头",
+      "pickId": "B0368000BB",
+      "score": 103,
+      "type": "交通设施服务;港口码头;港口码头",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0368000BB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "erhai-greenway",
+      "name": "洱海生态廊道",
+      "pick": "洱海生态廊道",
+      "pickId": "B0H19LNDXJ",
+      "score": 89,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G3JY36P7",
+      "drift_m": 18082,
+      "changes": {
+        "poi": {
+          "from": "B0G3JY36P7",
+          "to": "B0H19LNDXJ"
+        }
+      }
+    },
+    {
+      "id": "panxi-s-bend",
+      "name": "磻溪村S湾",
+      "pick": "蟠溪村S湾",
+      "pickId": "B0L3F16VNF",
+      "score": 125,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0L3F16VNF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gusheng-village",
+      "name": "古生村景区",
+      "pick": "古生村景区",
+      "pickId": "B0H25CMTBB",
+      "score": 142,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0H25CMTBB",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xizhou",
+      "name": "喜洲古镇",
+      "pick": "喜洲古镇",
+      "pickId": "B0FFH27SSH",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFH27SSH",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xizhou-sifangjie",
+      "name": "喜洲四方街",
+      "pick": "喜洲古镇四方街活动中心",
+      "pickId": "B0H6YXEKQ7",
+      "score": 80,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 0,
+      "tel": "",
+      "openTime": "10:00-21:00",
+      "openText": "周一至周日 10:00-21:00",
+      "oldId": "B0H6YXEKQ7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yan-family",
+      "name": "严家大院",
+      "pick": "严家大院博物馆",
+      "pickId": "B0FFFFPANT",
+      "score": 144,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.4,
+      "tel": "0872-2451777;0872-2454198",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00 最晚进入16:00",
+      "oldId": "B0FFFFPANT",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "严家大院",
+          "to": "严家大院博物馆"
+        }
+      }
+    },
+    {
+      "id": "haishe-park",
+      "name": "海舌公园",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "爱在海舌蜜月半岛(89)",
+        "爱在海舌·蜜月半岛-景观石桥(85)",
+        "舌尖(74)"
+      ]
+    },
+    {
+      "id": "butterfly-spring",
+      "name": "蝴蝶泉",
+      "pick": "蝴蝶泉",
+      "pickId": "B0368000AS",
+      "score": 153,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00 最晚进入17:00",
+      "oldId": "B0368000AS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "zhoucheng-tiedye",
+      "name": "周城·璞真白族扎染博物馆",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "周城(130)",
+        "璞真博物馆(117)",
+        "周城村龙泉寺(70)"
+      ]
+    },
+    {
+      "id": "shangguang-flower",
+      "name": "上关花公园",
+      "pick": "上关花公园",
+      "pickId": "B0FFH6KTFC",
+      "score": 135,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 3.7,
+      "tel": "0872-2458661",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周日 09:00-18:00 最晚进入17:00",
+      "oldId": "B0FFH6KTFC",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shuanglang",
+      "name": "双廊古镇",
+      "pick": "双廊古镇",
+      "pickId": "B036814RT7",
+      "score": 164,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "tel": "0872-2461185",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B036814RT7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yuji-island",
+      "name": "玉几岛",
+      "pick": "玉几岛",
+      "pickId": "B0368159U4",
+      "score": 141,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "15125244838",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "oldId": "B0368159U4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nanzhao-resort",
+      "name": "南诏风情岛",
+      "pick": "南诏风情岛",
+      "pickId": "B0368000AW",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "0872-2461569",
+      "openTime": "08:00-18:30",
+      "openText": "周一至周日 08:00-18:30 最晚进入17:30",
+      "oldId": "B0368000AW",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shuanglang-haijie",
+      "name": "双廊海街",
+      "pick": "双廊海街",
+      "pickId": "B0K1LMAYB6",
+      "score": 140,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.4,
+      "tel": "",
+      "openTime": "08:00-19:00",
+      "openText": "08:00-19:00 最晚进入18:00, 具体开放时间以现场公示为准",
+      "oldId": "B0K1LMAYB6",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "小普陀",
+      "pick": "小普陀",
+      "pickId": "B0368000B7",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:00-18:00",
+      "openText": "周一至周日 09:00-18:00 最晚进入18:00",
+      "oldId": "B0368000B7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wase-town",
+      "name": "挖色镇",
+      "pick": "挖色镇",
+      "pickId": "B0G2BB65EI",
+      "score": 144,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0G2BB65EI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "luwoshan",
+      "name": "鹿卧山",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "鹿鹅山遗址(86)",
+        "大理荣惠圆鹿麓听洱民宿(鹿卧山店)(77)",
+        "大理康合苑海景民宿(大理洱海鹿卧山店)(69)"
+      ]
+    },
+    {
+      "id": "lixiang-bang",
+      "name": "理想邦",
+      "pick": "理想邦",
+      "pickId": "B0FFGJWJA3",
+      "score": 144,
+      "type": "体育休闲服务;休闲场所;休闲场所|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0872-2356033",
+      "openTime": "10:00-17:30",
+      "openText": "周一至周日 10:00-17:30",
+      "oldId": "B0FFGJWJA3",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tianjing-pavilion",
+      "name": "天镜阁景区",
+      "pick": "天镜阁景区",
+      "pickId": "B036800CY4",
+      "score": 138,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4,
+      "tel": "0872-2502948",
+      "openTime": "08:30-18:00",
+      "openText": "周一至周日 08:30-18:00",
+      "oldId": "B036800CY4",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jinsuo-island",
+      "name": "金梭岛",
+      "pick": "金梭岛",
+      "pickId": "B0368009K7",
+      "score": 143,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "0872-2479333;0872-2496666",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00 最晚进入17:00",
+      "oldId": "B0368009K7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaxi",
+      "name": "沙溪古镇",
+      "pick": "沙溪古镇",
+      "pickId": "B03680I3LO",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "13577223043",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00；古镇内景点开放时间不一，详见景区公示。",
+      "oldId": "B03680I3LO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "xingjiao-temple",
+      "name": "沙溪兴教寺",
+      "pick": "兴教寺",
+      "pickId": "B036800EDX",
+      "score": 120,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00 最晚进入17:00",
+      "oldId": "B036800EDX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shibao-mountain",
+      "name": "石宝山",
+      "pick": "石宝山",
+      "pickId": "B036800CAN",
+      "score": 149,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "0872-4787029",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30 最晚进入16:20",
+      "oldId": "B036800CAN",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jianchuan-old-town",
+      "name": "剑川古城",
+      "pick": "剑川古城",
+      "pickId": "B0FFJFGPN2",
+      "score": 148,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "10:00-21:00",
+      "openText": "周一至周日 10:00-21:00",
+      "oldId": "B0FFJFGPN2",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qianshi-mountain",
+      "name": "剑川千狮山",
+      "pick": "满贤林千狮山",
+      "pickId": "B036800ARE",
+      "score": 119,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.3,
+      "tel": "0872-4525299",
+      "openTime": "08:00-17:20",
+      "openText": "周一至周日 08:00-17:20",
+      "oldId": "B036800ARE",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "nuodeng",
+      "name": "诺邓古村",
+      "pick": "诺邓古村",
+      "pickId": "B0FFFTPILI",
+      "score": 142,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFFTPILI",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "jizushan",
+      "name": "鸡足山",
+      "pick": "鸡足山",
+      "pickId": "B03680I2A8",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0872-7350496",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00 最晚进入18:00；观光车运营时间:8:30-17:30 索道运营时间:8:30-17:30",
+      "oldId": "B03680I2A8",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "weishan-old-town",
+      "name": "巍山古城",
+      "pick": "巍山古城",
+      "pickId": "B03680ICRP",
+      "score": 145,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "0872-6120893",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B03680ICRP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "weibao-mountain",
+      "name": "巍宝山",
+      "pick": "巍宝山景区",
+      "pickId": "B036800DAU",
+      "score": 120,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "0872-6369016",
+      "openTime": "08:00-18:00",
+      "openText": "周一至周日 08:00-18:00",
+      "oldId": "B03680HYLB",
+      "drift_m": 704,
+      "changes": {
+        "poi": {
+          "from": "B03680HYLB",
+          "to": "B036800DAU"
+        },
+        "coord": {
+          "from": [
+            100.352216,
+            25.172636
+          ],
+          "to": [
+            100.34568,
+            25.174895
+          ],
+          "drift_m": 704
+        },
+        "rename": {
+          "from": "巍宝山",
+          "to": "巍宝山景区"
+        }
+      }
+    },
+    {
+      "id": "weishan-food-street",
+      "name": "巍山南诏古街",
+      "pick": "南诏古街",
+      "pickId": "B0MUV1XL4Z",
+      "score": 111,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 3.3,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0MUV1XL4Z",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "wuliang-cherry",
+      "name": "无量山樱花谷",
+      "pick": "无量山樱花谷",
+      "pickId": "B0FFGCTZ0M",
+      "score": 155,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.5,
+      "tel": "13988577288",
+      "openTime": "08:00-19:00",
+      "openText": "周一至周日 08:00-19:00；具体营业状态以当天开放情况为准。",
+      "oldId": "B0FFGCTZ0M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "eryuan-xihu",
+      "name": "洱源西湖",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "大理西湖(45)",
+        "洱源西湖园宾馆(33)",
+        "西湖码头(-14)"
+      ]
+    },
+    {
+      "id": "direshenguo",
+      "name": "洱源地热国",
+      "pick": "大理地热国",
+      "pickId": "B0368006LZ",
+      "score": 128,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "0872-5124428;0872-5128598;0872-5128888",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00 最晚进入21:30；水乐园开放时间11:00-18: 00",
+      "oldId": "B0368006LZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yunnanyi",
+      "name": "云南驿古镇",
+      "pick": "云南驿",
+      "pickId": "B0FFFOG08U",
+      "score": 123,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B0FFFOG08U",
+      "drift_m": 0,
+      "changes": {}
+    }
+  ]
+}
