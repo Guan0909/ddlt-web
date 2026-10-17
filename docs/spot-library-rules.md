@@ -80,6 +80,15 @@
 
 ## 7. 采集与复核流水线
 
+**新城市从零建库**（`scripts/build-city.js`，自动化第一遍即合规）：
+
+```bash
+node scripts/build-city.js <城市> --apply     # 高德发现候选 → 规则筛选 → 类目配额配平 → 文案 → 建库 + 登记注册表/FAME 种子
+node scripts/pipeline.js <城市> --apply      # 已有库城市的补全与复核（biz-info/重构/校验）
+node scripts/rebuild-library.js --audit-rules <城市|all> --apply   # 逐点规则复核（可重复跑）
+```
+
+
 ```bash
 node scripts/pipeline.js <城市> --apply     # 计划内城市一条命令走完
 # ① repair-coords 坐标 → ② rematch-llm 别名裁判（仅有估算点时）
@@ -94,12 +103,12 @@ node scripts/rebuild-library.js --audit-rules <城市|all> --apply  # 逐点复�
 
 | 指标 | 数值 |
 |---|---|
-| 城市 | 22 城（上线 6 + 第二批次 16） |
-| 景点总数 | **1267**（上线 385 / 第二批次 882） |
+| 城市 | **25 城**（上线 6 + 第二批次 16 + 后批次试点 3：厦门/青岛/桂林） |
+| 景点总数 | **1418**（上线 385 / 第二批次 881 / 试点 152） |
 | 估算坐标 | **0** |
-| 评分覆盖 | **1211（96%）** |
-| 营业时间 | 929 |
-| 电话 | 847 |
+| 评分覆盖 | **1362（96%）** |
+| 营业时间 | 995 |
+| 电话 | 954 |
 | 演出/体验类残留 | **0** |
 | 人工定名例外（`name_locked`） | **0** |
 | heat 越界 / 坐标异常 | **0 / 0** |

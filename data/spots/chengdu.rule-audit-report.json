@@ -1,76 +1,11 @@
 {
   "city": "成都",
   "date": "2026-10-17",
-  "before": 62,
+  "before": 61,
   "after": 61,
-  "renames": [
-    {
-      "id": "chunxi",
-      "from": "春熙路",
-      "to": "春熙路步行街"
-    },
-    {
-      "id": "taikooli",
-      "from": "远洋太古里",
-      "to": "成都太古里"
-    },
-    {
-      "id": "jincheng-lake",
-      "from": "锦城湖公园",
-      "to": "锦城湖"
-    },
-    {
-      "id": "baoguang",
-      "from": "宝光寺",
-      "to": "宝光桂湖文化旅游区宝光寺"
-    }
-  ],
-  "deletes": [
-    {
-      "id": "mengzhuiwan",
-      "name": "猛追湾游园",
-      "cat": "街区",
-      "why": "受限类目评分 3.5 < 4.0"
-    }
-  ],
-  "ratingUpdates": [
-    {
-      "id": "renmin-park",
-      "name": "人民公园·鹤鸣茶社",
-      "from": null,
-      "to": 4.8
-    },
-    {
-      "id": "jianshe-road",
-      "name": "建设路小吃街",
-      "from": null,
-      "to": 4.7
-    },
-    {
-      "id": "yulin",
-      "name": "小酒馆(玉林西路店)",
-      "from": null,
-      "to": 4.8
-    },
-    {
-      "id": "qintai",
-      "name": "琴台路",
-      "from": null,
-      "to": 0
-    },
-    {
-      "id": "pengzhen",
-      "name": "双流区观音阁百年老茶馆",
-      "from": null,
-      "to": 4.7
-    },
-    {
-      "id": "zhongshuge",
-      "name": "钟书阁（都江堰）",
-      "from": null,
-      "to": 4.7
-    }
-  ],
+  "renames": [],
+  "deletes": [],
+  "ratingUpdates": [],
   "noPoi": [
     "方所书店"
   ]

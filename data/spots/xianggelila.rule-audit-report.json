@@ -1,151 +1,16 @@
 {
   "city": "香格里拉",
   "date": "2026-10-17",
-  "before": 50,
-  "after": 47,
+  "before": 45,
+  "after": 45,
   "renames": [
-    {
-      "id": "sifangjie",
-      "from": "独克宗四方街",
-      "to": "香格里拉市独克宗古城"
-    },
     {
       "id": "napahai",
       "from": "纳帕海",
-      "to": "纳帕海·白塔站·网红打卡骑马场",
-      "reverted": true
-    },
-    {
-      "id": "napahai-star",
-      "from": "纳帕海草原星空",
-      "to": "纳帕海大草原旅游景区"
-    },
-    {
-      "id": "thangka-center",
-      "from": "香格里拉唐卡艺术中心",
-      "to": "香格里拉唐卡画院(博物馆)"
-    },
-    {
-      "id": "wufengshan",
-      "from": "五凤山公园",
-      "to": "五凤山"
-    },
-    {
-      "id": "jiantang-market",
-      "from": "建塘农贸市场",
-      "to": "瑞泰农贸市场"
-    },
-    {
-      "id": "dacao-yuan",
-      "from": "香格里拉大草原",
-      "to": "香格里拉纳帕海大草原"
-    },
-    {
-      "id": "nixi-chicken",
-      "from": "尼西土锅鸡",
-      "to": "赞拉尼西土锅鸡"
-    },
-    {
-      "id": "yuelianghu",
-      "from": "小中甸月亮湖",
-      "to": "月亮湖"
-    },
-    {
-      "id": "shanghutiaoxia",
-      "from": "上虎跳峡",
-      "to": "香格里拉虎跳峡景区"
-    },
-    {
-      "id": "balagezong",
-      "from": "巴拉格宗大峡谷",
-      "to": "香格里拉大峡谷·巴拉格宗国家级风景名胜区"
-    },
-    {
-      "id": "niru",
-      "from": "尼汝村",
-      "to": "尼汝村称科康达客栈"
-    },
-    {
-      "id": "lancang-meili-gorge",
-      "from": "澜沧江梅里大峡谷",
-      "to": "香格里拉大峡谷·巴拉格宗国家级风景名胜区"
+      "to": "纳帕海·白塔站·网红打卡骑马场"
     }
   ],
-  "deletes": [
-    {
-      "id": "wufengshan",
-      "name": "五凤山公园",
-      "cat": "公园",
-      "why": "受限类目评分 3.6 < 4.0"
-    },
-    {
-      "id": "longtanhu",
-      "name": "龙潭湖公园",
-      "cat": "公园",
-      "why": "受限类目评分 3.9 < 4.0"
-    },
-    {
-      "id": "namco-park",
-      "name": "香格里拉娜姆措生态公园",
-      "cat": "公园",
-      "why": "受限类目评分 3.7 < 4.0"
-    }
-  ],
-  "ratingUpdates": [
-    {
-      "id": "yueguang-square",
-      "name": "月光广场",
-      "from": null,
-      "to": 4.8
-    },
-    {
-      "id": "pijiangpo",
-      "name": "皮匠坡",
-      "from": null,
-      "to": 4.3
-    },
-    {
-      "id": "changzheng-avenue",
-      "name": "长征大道",
-      "from": null,
-      "to": 0
-    },
-    {
-      "id": "nixi-chicken",
-      "name": "尼西土锅鸡",
-      "from": null,
-      "to": 4.5
-    },
-    {
-      "id": "yubeng",
-      "name": "雨崩村",
-      "from": null,
-      "to": 0
-    },
-    {
-      "id": "jinshajiang-bend",
-      "name": "金沙江大拐弯",
-      "from": null,
-      "to": 4.7
-    },
-    {
-      "id": "baima-snow-pass",
-      "name": "白马雪山垭口",
-      "from": null,
-      "to": 3
-    },
-    {
-      "id": "wunongding",
-      "name": "雾浓顶观景台",
-      "from": null,
-      "to": 4.8
-    },
-    {
-      "id": "kawagarbo",
-      "name": "卡瓦格博峰",
-      "from": 2.7,
-      "to": 2.8
-    }
-  ],
+  "deletes": [],
+  "ratingUpdates": [],
   "noPoi": []
 }

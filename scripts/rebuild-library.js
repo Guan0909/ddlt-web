@@ -10,6 +10,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const { amapAround, norm } = require('./repair-coords.js');
 
+const EXTRA = loadExtraRegistry();
 const CITY_FILES = {
   '成都': 'chengdu', '北京': 'beijing', '上海': 'shanghai',
   '西安': 'xian', '重庆': 'chongqing', '杭州': 'hangzhou',
@@ -18,6 +19,7 @@ const CITY_FILES = {
   '昆明': 'kunming', '拉萨': 'lhasa', '丽江': 'lijiang', '南京': 'nanjing',
   '宁波': 'ningbo', '绍兴': 'shaoxing', '苏州': 'suzhou', '温州': 'wenzhou',
   '无锡': 'wuxi', '香格里拉': 'xianggelila', '西双版纳': 'xishuangbanna', '扬州': 'yangzhou',
+  ...EXTRA.files,
 };
 const CENTERS = {
   chengdu: [104.0657, 30.6572], beijing: [116.3975, 39.9087], shanghai: [121.4737, 31.2304],
@@ -28,7 +30,28 @@ const CENTERS = {
   shaoxing: [120.5802, 30.0303], suzhou: [120.5853, 31.2989], wenzhou: [120.6994, 27.9944],
   wuxi: [120.3119, 31.4912], xianggelila: [99.7066, 27.8289], xishuangbanna: [100.7979, 22.0100],
   yangzhou: [119.4129, 32.3942],
+  ...EXTRA.centers,
 };
+
+// —— 数据驱动扩展：新增城市与 FAME 不必改代码（build-city.js 自动登记）——
+function loadExtraRegistry() {
+  const regPath = path.join(ROOT, 'data', 'city-registry.json');
+  if (!fs.existsSync(regPath)) return { files: {}, centers: {} };
+  try {
+    const reg = JSON.parse(fs.readFileSync(regPath, 'utf8'));
+    const files = {}, centers = {};
+    for (const [cn, v] of Object.entries(reg)) {
+      if (v && v.file) { files[cn] = v.file; if (Array.isArray(v.center) && v.center.length === 2) centers[v.file] = v.center; }
+    }
+    return { files, centers };
+  } catch (e) { return { files: {}, centers: {} }; }
+}
+function loadExtraFame() {
+  const famePath = path.join(ROOT, 'data', 'fame.json');
+  if (!fs.existsSync(famePath)) return {};
+  try { return JSON.parse(fs.readFileSync(famePath, 'utf8')); } catch (e) { return {}; }
+}
+
 // §12.5 目标画像：类目 → 目标上限/下限
 const TARGET = {
   core: { cats: ['古迹', '博物馆', '山水', '古镇'], min: 26, max: 34 },
@@ -131,6 +154,7 @@ function getBlacklist() {
   return BLACKLIST;
 }
 function getFAME() {
+  const extra = loadExtraFame();
   const FAME = {
     成都: ['宽窄巷子', '锦里', '武侯祠', '杜甫草堂', '大熊猫', '都江堰', '青城山', '春熙路', '太古里', '人民公园', '金沙遗址', '成都博物馆', '西岭雪山', '天府广场', '文殊院', '罨画池', '望江楼', '九眼桥'],
     北京: ['天安门', '故宫', '长城', '颐和园', '天坛', '圆明园', '雍和宫', '恭王府', '南锣鼓巷', '什刹海', '北海公园', '景山', '鸟巢', '水立方', '798', '王府井', '三里屯', '军事博物馆', '国家博物馆', '十三陵', '潭柘寺', '红螺寺', '古北水镇', '司马台', '爨底下', '琉璃厂'],
@@ -156,7 +180,7 @@ function getFAME() {
     西双版纳: ['热带植物园', '曼听公园', '野象谷', '告庄西双景', '傣族园', '望天树', '基诺山', '大金塔', '六国水上市场', '打洛', '星光夜市', '热带花卉园', '易武', '老班章', '章朗', '曼旦'],
     扬州: ['瘦西湖', '个园', '何园', '东关街', '大明寺', '双博馆', '茱萸湾', '宋夹城', '冶春', '皮市街', '仁丰里', '汪氏小苑', '扬州八怪'],
   };
-  return FAME;
+  return Object.assign({}, FAME, Object.fromEntries(Object.entries(extra).map(([k, v]) => [k, (FAME[k] || []).concat(v)])));
 }
 
 function plan(city) {
