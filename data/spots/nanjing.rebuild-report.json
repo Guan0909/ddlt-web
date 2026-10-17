@@ -1,0 +1,1133 @@
+{
+  "city": "南京",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 14,
+      "街区": 8,
+      "博物馆": 10,
+      "公园": 8,
+      "夜景": 3,
+      "商圈": 2,
+      "山水": 9,
+      "美食": 4,
+      "亲子": 4,
+      "演出": 2,
+      "古镇": 3
+    },
+    "byGroup": {
+      "core": 36,
+      "night": 5,
+      "family": 4,
+      "street": 8,
+      "food": 4,
+      "park": 8,
+      "mall": 2,
+      "total": 67,
+      "suburb": 9,
+      "coreRatio": 61
+    }
+  },
+  "keep": [
+    {
+      "id": "zhongshanling",
+      "name": "中山陵景区",
+      "cat": "古迹",
+      "heat": 10,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "fuzimiao",
+      "name": "夫子庙秦淮风光带",
+      "cat": "街区",
+      "heat": 10,
+      "rating": 4.9,
+      "level": "national",
+      "score": 0.81,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mingxiaoling",
+      "name": "明孝陵景区",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nanjing-museum",
+      "name": "南京博物院",
+      "cat": "博物馆",
+      "heat": 9.5,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zongtongfu",
+      "name": "总统府",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.9,
+      "level": "national",
+      "score": 0.81,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "laomendong",
+      "name": "老门东",
+      "cat": "街区",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xuanwuhu",
+      "name": "玄武湖景区",
+      "cat": "公园",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jimingsi",
+      "name": "古鸡鸣寺",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "meilinggong",
+      "name": "美龄宫",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "massacre-museum",
+      "name": "侵华日军南京大屠杀遇难同胞纪念馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qinhuai-cruise",
+      "name": "南京秦淮河画舫",
+      "cat": "夜景",
+      "heat": 8.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "keju-museum",
+      "name": "南京中国科举博物馆南馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhonghuamen",
+      "name": "中华门瓮城",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dabaoensi",
+      "name": "大报恩寺遗址公园",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "niushoushan",
+      "name": "南京牛首山文化旅游区",
+      "cat": "山水",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "linggusi",
+      "name": "灵谷寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanjing-eye",
+      "name": "南京眼步行桥",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hongshan-zoo",
+      "name": "红山森林动物园",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qixiashan",
+      "name": "栖霞山风景名胜区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tangshan-hotspring",
+      "name": "汤山温泉",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jiangningzhizao",
+      "name": "江宁织造博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "citywall-museum",
+      "name": "南京城墙博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chaotiangong",
+      "name": "朝天宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "jiangsu-theatre",
+      "name": "江苏大剧院",
+      "cat": "演出",
+      "heat": 7,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "deyunshe",
+      "name": "德云社（老门东）",
+      "cat": "演出",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gaogulaojie",
+      "name": "高淳老街",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zitongshan",
+      "name": "头陀岭景区",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "taicheng",
+      "name": "明城墙·台城段",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "liuchao",
+      "name": "六朝博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xianfeng",
+      "name": "先锋书店（五台山）",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhanyuan",
+      "name": "瞻园",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuejianglou",
+      "name": "阅江楼景区",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yunjin",
+      "name": "中国南京云锦博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "gushengwu",
+      "name": "南京古生物博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dujiang-shengli",
+      "name": "渡江胜利纪念馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "minggugong",
+      "name": "南京明故宫遗址公园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "mufushan",
+      "name": "幕燕滨江·达摩古洞景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yangshan-beicai",
+      "name": "阳山碑材",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tianshengqiao",
+      "name": "溧水天生桥",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ganyi",
+      "name": "甘熙宅第",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "haidi-shijie",
+      "name": "南京海底世界",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "kejiguan",
+      "name": "南京科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tangshan-pit",
+      "name": "南京汤山矿坑公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhenzhuquan",
+      "name": "南京珍珠泉风景区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yaxi",
+      "name": "桠溪国际慢城",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yangliucun",
+      "name": "杨柳村古建筑群",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xinjiekou",
+      "name": "新街口",
+      "cat": "商圈",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "nanda",
+      "name": "南京大学(鼓楼校区)",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 5,
+      "level": null,
+      "score": 0.6,
+      "heatNew": 8
+    },
+    {
+      "id": "y1912",
+      "name": "南京 1912 街区",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yihe-road",
+      "name": "颐和路民国公馆区",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "pukou-station",
+      "name": "浦口火车站历史文化街区",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "xinanli",
+      "name": "熙南里形象展示中心",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "y1865",
+      "name": "晨光 1865 创意产业园",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "kexiang",
+      "name": "科巷",
+      "cat": "美食",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "mingwalang",
+      "name": "明瓦廊",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": 3.2,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    },
+    {
+      "id": "pingshijie",
+      "name": "评事街·老城南",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "shiziqiao",
+      "name": "狮子桥美食街",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "yinyuetai",
+      "name": "音乐台",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yuhuatai",
+      "name": "南京雨花台风景区",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "qingliangshan",
+      "name": "清凉山公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "mochouhu",
+      "name": "莫愁湖公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yuzui",
+      "name": "南京鱼嘴湿地公园灯塔",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "yinxianghu",
+      "name": "银杏湖乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3.5 < 4.0"
+    },
+    {
+      "id": "yangtze-bridge",
+      "name": "玻璃栈道",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 3.6,
+      "level": null,
+      "score": 0.04,
+      "heatNew": 5,
+      "why": "评分 3.6 < 4.0"
+    },
+    {
+      "id": "yanziji",
+      "name": "燕子矶",
+      "cat": "山水",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "jinniu-lake",
+      "name": "金牛湖",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 2.4,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 2.4 < 4.0"
+    },
+    {
+      "id": "jiangxinzhou",
+      "name": "江心洲市民广场",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "南京夫子庙",
+      "coord": [
+        118.788899,
+        32.02066
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "钟山风景名胜区",
+      "coord": [
+        118.844262,
+        32.064908
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "中华门",
+      "coord": [
+        118.781821,
+        32.0128
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "杨柳村明清古建筑群",
+      "coord": [
+        118.92793,
+        31.85827
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "zhongshanling",
+      "name": "中山陵景区",
+      "from": 10,
+      "to": 8
+    },
+    {
+      "id": "fuzimiao",
+      "name": "夫子庙秦淮风光带",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "mingxiaoling",
+      "name": "明孝陵景区",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "nanjing-museum",
+      "name": "南京博物院",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "zongtongfu",
+      "name": "总统府",
+      "from": 9.5,
+      "to": 9
+    },
+    {
+      "id": "laomendong",
+      "name": "老门东",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "xuanwuhu",
+      "name": "玄武湖景区",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "jimingsi",
+      "name": "古鸡鸣寺",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "meilinggong",
+      "name": "美龄宫",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "massacre-museum",
+      "name": "侵华日军南京大屠杀遇难同胞纪念馆",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "qinhuai-cruise",
+      "name": "南京秦淮河画舫",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "keju-museum",
+      "name": "南京中国科举博物馆南馆",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "zhonghuamen",
+      "name": "中华门瓮城",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "dabaoensi",
+      "name": "大报恩寺遗址公园",
+      "from": 8.5,
+      "to": 6
+    },
+    {
+      "id": "xinjiekou",
+      "name": "新街口",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "niushoushan",
+      "name": "南京牛首山文化旅游区",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "linggusi",
+      "name": "灵谷寺",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "yihe-road",
+      "name": "颐和路民国公馆区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "nanjing-eye",
+      "name": "南京眼步行桥",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "qixiashan",
+      "name": "栖霞山风景名胜区",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "tangshan-hotspring",
+      "name": "汤山温泉",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "chaotiangong",
+      "name": "朝天宫",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "nanda",
+      "name": "南京大学(鼓楼校区)",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "jiangsu-theatre",
+      "name": "江苏大剧院",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "yinxianghu",
+      "name": "银杏湖乐园",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "zitongshan",
+      "name": "头陀岭景区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "taicheng",
+      "name": "明城墙·台城段",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "liuchao",
+      "name": "六朝博物馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "y1912",
+      "name": "南京 1912 街区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "zhanyuan",
+      "name": "瞻园",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "yuhuatai",
+      "name": "南京雨花台风景区",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "xinanli",
+      "name": "熙南里形象展示中心",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "mingwalang",
+      "name": "明瓦廊",
+      "from": 7.5,
+      "to": 5
+    },
+    {
+      "id": "yangtze-bridge",
+      "name": "玻璃栈道",
+      "from": 7.5,
+      "to": 5
+    },
+    {
+      "id": "yuejianglou",
+      "name": "阅江楼景区",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "pukou-station",
+      "name": "浦口火车站历史文化街区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "yunjin",
+      "name": "中国南京云锦博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "gushengwu",
+      "name": "南京古生物博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "dujiang-shengli",
+      "name": "渡江胜利纪念馆",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "qingliangshan",
+      "name": "清凉山公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "minggugong",
+      "name": "南京明故宫遗址公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "mufushan",
+      "name": "幕燕滨江·达摩古洞景区",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yangshan-beicai",
+      "name": "阳山碑材",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "tianshengqiao",
+      "name": "溧水天生桥",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "jinniu-lake",
+      "name": "金牛湖",
+      "from": 6,
+      "to": 5
+    },
+    {
+      "id": "ganyi",
+      "name": "甘熙宅第",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "mochouhu",
+      "name": "莫愁湖公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "jiangxinzhou",
+      "name": "江心洲市民广场",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "haidi-shijie",
+      "name": "南京海底世界",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "kejiguan",
+      "name": "南京科技馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "tangshan-pit",
+      "name": "南京汤山矿坑公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "zhenzhuquan",
+      "name": "南京珍珠泉风景区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yaxi",
+      "name": "桠溪国际慢城",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yangliucun",
+      "name": "杨柳村古建筑群",
+      "from": 5.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

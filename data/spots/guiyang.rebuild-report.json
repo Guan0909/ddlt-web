@@ -1,0 +1,1061 @@
+{
+  "city": "贵阳",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 8,
+      "公园": 11,
+      "商圈": 3,
+      "美食": 5,
+      "街区": 9,
+      "亲子": 4,
+      "博物馆": 7,
+      "演出": 3,
+      "山水": 11,
+      "古镇": 4,
+      "夜景": 3
+    },
+    "byGroup": {
+      "core": 30,
+      "night": 6,
+      "family": 4,
+      "street": 9,
+      "food": 5,
+      "park": 11,
+      "mall": 3,
+      "total": 68,
+      "suburb": 14,
+      "coreRatio": 53
+    }
+  },
+  "keep": [
+    {
+      "id": "jiaxiulou",
+      "name": "甲秀楼",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "cuiweiyuan",
+      "name": "翠微园",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yangmingci",
+      "name": "阳明祠",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "cat": "公园",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "hongfusi",
+      "name": "弘福寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guanshanhu-park",
+      "name": "观山湖公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ahahu",
+      "name": "贵阳阿哈湖国家湿地公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guanshanhu-wanda",
+      "name": "观山湖万达广场",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "duocai-guizhoucheng",
+      "name": "多彩贵州城",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "polar-ocean",
+      "name": "贵州极地海洋世界",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "happy-world",
+      "name": "贵阳欢乐世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yesheng-zoo",
+      "name": "贵阳森林野生动物园",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guizhou-museum",
+      "name": "贵州省博物馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "minzu-museum",
+      "name": "贵州省民族博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dizhi-museum",
+      "name": "贵州省地质博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guizhou-art",
+      "name": "贵州美术馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "duocaifeng",
+      "name": "多彩贵州风",
+      "cat": "演出",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qianju",
+      "name": "贵州省黔剧院",
+      "cat": "演出",
+      "heat": 5.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xifeng-memorial",
+      "name": "息烽集中营革命历史纪念馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "kongxuetang",
+      "name": "贵阳孔学堂",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yangmingdong",
+      "name": "修文阳明洞",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "tianhetan",
+      "name": "天河潭旅游度假区",
+      "cat": "山水",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huaxi-park",
+      "name": "花溪公园",
+      "cat": "公园",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "banqiao-art",
+      "name": "花溪板桥艺术村",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huaxi-street",
+      "name": "花溪十字街",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "qingyan",
+      "name": "青岩古镇",
+      "cat": "古镇",
+      "heat": 9.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhenshan",
+      "name": "镇山村山里庄",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "yehuanggu",
+      "name": "花溪夜郎谷",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gaopo",
+      "name": "高坡云顶草原",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "hongfenghu",
+      "name": "红枫湖",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanjiang",
+      "name": "开阳南江大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xianghuoyan",
+      "name": "开阳香火岩",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baimayu",
+      "name": "开阳白马峪温泉",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "xifeng-hotspring",
+      "name": "息烽温泉",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qingrengu",
+      "name": "乌当情人谷",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "guiyu-hotspring",
+      "name": "贵御温泉",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yudongxia",
+      "name": "乌当渔洞峡",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huaguoyuan-baigong",
+      "name": "花果园白宫夜景",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "quanshui-park",
+      "name": "泉湖公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9
+    },
+    {
+      "id": "hebin-park",
+      "name": "河滨公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "zhucheng-square",
+      "name": "筑城广场",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "changpoling",
+      "name": "长坡岭国家森林公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "lucongguan",
+      "name": "鹿冲关森林公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "huaguoyuan-mall",
+      "name": "花果园购物中心",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "zhonghua-dashizi",
+      "name": "中华路·大十字商圈",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "qingyun-market",
+      "name": "青云市集",
+      "cat": "美食",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shanxilu",
+      "name": "陕西路夜市",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "erqilu",
+      "name": "二七路小吃街",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "caijiajie",
+      "name": "蔡家街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "taipinglu",
+      "name": "太平路",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shiguang-guizhou",
+      "name": "时光贵州古镇",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "yangchang",
+      "name": "乌当羊昌花画小镇",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "weilai-fangzhou",
+      "name": "中天未来方舟水街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "xiangchou-guizhou",
+      "name": "乡愁贵州",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [
+    {
+      "id": "qianmingsi",
+      "name": "黔明寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "dadeschool",
+      "name": "贵阳市达德学校旧址陈列馆",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "kejiguan",
+      "name": "贵州省科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 2.8,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 2.8 < 4.0"
+    },
+    {
+      "id": "bigdata-center",
+      "name": "贵州大数据展示中心",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "guiyang-orchestra",
+      "name": "贵阳交响乐团",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "baihuahu",
+      "name": "百花湖野地",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "评分 3.9 < 4.0"
+    },
+    {
+      "id": "xiangzhigou",
+      "name": "乌当香纸沟",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "pianpo",
+      "name": "乌当偏坡布依族乡",
+      "cat": "古镇",
+      "heat": 5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "jinrongcheng-night",
+      "name": "贵州金融城夜景",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "nanminghe-night",
+      "name": "南明河夜景带",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "xiaochehe",
+      "name": "小车河城市湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "shilihetan",
+      "name": "十里河滩",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "huguolu",
+      "name": "护国路小吃街",
+      "cat": "美食",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（美食 ≤4）且评分靠后/无评分"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "桃源河景区",
+      "coord": [
+        106.816994,
+        26.889013
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "jiaxiulou",
+      "name": "甲秀楼",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "cuiweiyuan",
+      "name": "翠微园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yangmingci",
+      "name": "阳明祠",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "dadeschool",
+      "name": "贵阳市达德学校旧址陈列馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "qianlingshan",
+      "name": "黔灵山公园",
+      "from": 9.5,
+      "to": 9
+    },
+    {
+      "id": "hongfusi",
+      "name": "弘福寺",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "zhucheng-square",
+      "name": "筑城广场",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "guanshanhu-park",
+      "name": "观山湖公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "changpoling",
+      "name": "长坡岭国家森林公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "quanshui-park",
+      "name": "泉湖公园",
+      "from": 5.5,
+      "to": 9
+    },
+    {
+      "id": "lucongguan",
+      "name": "鹿冲关森林公园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "xiaochehe",
+      "name": "小车河城市湿地公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "huaguoyuan-mall",
+      "name": "花果园购物中心",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "qingyun-market",
+      "name": "青云市集",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "shanxilu",
+      "name": "陕西路夜市",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "erqilu",
+      "name": "二七路小吃街",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "taipinglu",
+      "name": "太平路",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "weilai-fangzhou",
+      "name": "中天未来方舟水街",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "duocai-guizhoucheng",
+      "name": "多彩贵州城",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "polar-ocean",
+      "name": "贵州极地海洋世界",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "kejiguan",
+      "name": "贵州省科技馆",
+      "from": 6.5,
+      "to": 5
+    },
+    {
+      "id": "yesheng-zoo",
+      "name": "贵阳森林野生动物园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "guizhou-museum",
+      "name": "贵州省博物馆",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "dizhi-museum",
+      "name": "贵州省地质博物馆",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "guizhou-art",
+      "name": "贵州美术馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "duocaifeng",
+      "name": "多彩贵州风",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "qianju",
+      "name": "贵州省黔剧院",
+      "from": 5.5,
+      "to": 8
+    },
+    {
+      "id": "yangmingdong",
+      "name": "修文阳明洞",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "tianhetan",
+      "name": "天河潭旅游度假区",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "huaxi-park",
+      "name": "花溪公园",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "banqiao-art",
+      "name": "花溪板桥艺术村",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "huaxi-street",
+      "name": "花溪十字街",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "qingyan",
+      "name": "青岩古镇",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "yehuanggu",
+      "name": "花溪夜郎谷",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "gaopo",
+      "name": "高坡云顶草原",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "hongfenghu",
+      "name": "红枫湖",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "shiguang-guizhou",
+      "name": "时光贵州古镇",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "baihuahu",
+      "name": "百花湖野地",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "xianghuoyan",
+      "name": "开阳香火岩",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "baimayu",
+      "name": "开阳白马峪温泉",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "xifeng-hotspring",
+      "name": "息烽温泉",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "qingrengu",
+      "name": "乌当情人谷",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "xiangzhigou",
+      "name": "乌当香纸沟",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "guiyu-hotspring",
+      "name": "贵御温泉",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yudongxia",
+      "name": "乌当渔洞峡",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "yangchang",
+      "name": "乌当羊昌花画小镇",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "huaguoyuan-baigong",
+      "name": "花果园白宫夜景",
+      "from": 7.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

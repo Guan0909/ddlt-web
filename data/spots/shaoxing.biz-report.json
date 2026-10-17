@@ -6,9 +6,9 @@
     "poiFixed": 18,
     "renamed": 9,
     "coordFixed": 17,
-    "openFilled": 41,
+    "openFilled": 40,
     "closedMon": 2,
-    "tel": 47,
+    "tel": 46,
     "rating": 60,
     "photo": 57,
     "noCand": 9,
@@ -731,20 +731,20 @@
     {
       "id": "keqiao-old",
       "name": "柯桥古镇",
-      "pick": "柯桥历史文化街区(柯桥古镇)入口广场",
-      "pickId": "B0H6HZGAWX",
-      "score": 123,
-      "type": "风景名胜;公园广场;城市广场",
-      "rating": 4.3,
-      "tel": "0575-81183998",
+      "pick": "柯桥历史文化街区(柯桥古镇)",
+      "pickId": "B0FFJNMIOT",
+      "score": 115,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.7,
+      "tel": "",
       "openTime": "24小时营业",
       "openText": "周一至周日 00:00-24:00",
       "oldId": "BV11394101",
-      "drift_m": 72,
+      "drift_m": 275,
       "changes": {
         "poi": {
           "from": "BV11394101",
-          "to": "B0H6HZGAWX"
+          "to": "B0FFJNMIOT"
         },
         "coord": {
           "from": [
@@ -752,10 +752,10 @@
             30.06898
           ],
           "to": [
-            120.472521,
-            30.068341
+            120.475495,
+            30.068747
           ],
-          "drift_m": 72
+          "drift_m": 275
         }
       }
     },
@@ -849,20 +849,20 @@
     {
       "id": "keyan",
       "name": "柯岩风景区",
-      "pick": "柯岩风景区入口广场",
-      "pickId": "B0FFG6O9BA",
-      "score": 96,
-      "type": "风景名胜;公园广场;城市广场",
-      "rating": 3.6,
+      "pick": "柯岩风景区码头",
+      "pickId": "B0FFG6O9VQ",
+      "score": 66,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 0,
       "tel": "0575-84361555",
-      "openTime": "08:30-17:00",
-      "openText": "周一至周日 08:30-17:00",
+      "openTime": [],
+      "openText": [],
       "oldId": "BV10199089",
-      "drift_m": 703,
+      "drift_m": 709,
       "changes": {
         "poi": {
           "from": "BV10199089",
-          "to": "B0FFG6O9BA"
+          "to": "B0FFG6O9VQ"
         },
         "coord": {
           "from": [
@@ -870,14 +870,14 @@
             30.045017
           ],
           "to": [
-            120.478184,
-            30.044468
+            120.478126,
+            30.044462
           ],
-          "drift_m": 703
+          "drift_m": 709
         },
         "rename": {
           "from": "柯岩风景区",
-          "to": "柯岩风景区入口广场"
+          "to": "柯岩风景区码头"
         }
       }
     },
@@ -899,7 +899,8 @@
           "from": "鲁镇",
           "to": "鲁镇牌坊"
         }
-      }
+      },
+      "reverted": true
     },
     {
       "id": "anchang",

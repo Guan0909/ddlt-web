@@ -1,0 +1,64 @@
+{
+  "city": "南京",
+  "date": "2026-10-17",
+  "before": 67,
+  "after": 62,
+  "removed": [
+    {
+      "id": "yinxianghu",
+      "name": "银杏湖乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3.5 < 4.0"
+    },
+    {
+      "id": "yangtze-bridge",
+      "name": "玻璃栈道",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 3.6,
+      "level": null,
+      "score": 0.04,
+      "heatNew": 5,
+      "why": "评分 3.6 < 4.0"
+    },
+    {
+      "id": "yanziji",
+      "name": "燕子矶",
+      "cat": "山水",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "jinniu-lake",
+      "name": "金牛湖",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 2.4,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 2.4 < 4.0"
+    },
+    {
+      "id": "jiangxinzhou",
+      "name": "江心洲市民广场",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "heatApplied": 54
+}

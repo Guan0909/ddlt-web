@@ -1,0 +1,1172 @@
+{
+  "city": "宁波",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 16,
+      "夜景": 3,
+      "美食": 4,
+      "山水": 10,
+      "亲子": 7,
+      "商圈": 3,
+      "博物馆": 6,
+      "公园": 6,
+      "古镇": 6,
+      "街区": 5,
+      "演出": 2
+    },
+    "byGroup": {
+      "core": 38,
+      "night": 5,
+      "family": 7,
+      "street": 5,
+      "food": 4,
+      "park": 6,
+      "mall": 3,
+      "total": 68,
+      "suburb": 21,
+      "coreRatio": 63
+    }
+  },
+  "keep": [
+    {
+      "id": "tianyi-pavilion",
+      "name": "天一阁博物院",
+      "cat": "古迹",
+      "heat": 10,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "laowaitan",
+      "name": "宁波老外滩",
+      "cat": "夜景",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dongqian-lake",
+      "name": "东钱湖风景名胜区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xuedou-mountain",
+      "name": "雪窦山",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jiangshi-residence",
+      "name": "蒋氏故居",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "film-city",
+      "name": "象山影视城",
+      "cat": "亲子",
+      "heat": 8.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tianyi-square",
+      "name": "天一广场",
+      "cat": "商圈",
+      "heat": 8.5,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ningbo-museum",
+      "name": "宁波博物馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yuehu-park",
+      "name": "月湖公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ningbo-zoo",
+      "name": "宁波野生动物园",
+      "cat": "亲子",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shipu",
+      "name": "石浦渔港古城",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hemu-du",
+      "name": "河姆渡遗址博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sanjiangkou",
+      "name": "宁波三江口",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "drum-tower",
+      "name": "宁波鼓楼",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baoguo-temple",
+      "name": "保国寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tiantong-temple",
+      "name": "天童寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "东钱湖·小普陀",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "cicheng",
+      "name": "慈城古县城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "qiantong",
+      "name": "前童古镇",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "gang-museum",
+      "name": "中国港口博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "science-center",
+      "name": "宁波科学探索中心",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "romon",
+      "name": "罗蒙环球乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "fangte",
+      "name": "宁波方特东方神画",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sanjiang-cruise",
+      "name": "三江夜游",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "songlanshan",
+      "name": "松兰山海滨",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ninghai-hotspring",
+      "name": "宁海森林温泉旅游度假区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "simingshan",
+      "name": "四明山国家森林公园",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": "province",
+      "score": 0.55,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "minghe",
+      "name": "鸣鹤古镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shanglin-lake",
+      "name": "上林湖越窑博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wangyangming",
+      "name": "王阳明故居纪念馆",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhaobaoshan",
+      "name": "招宝山",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qingan-hall",
+      "name": "庆安会馆",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": "province",
+      "score": 0.51,
+      "heatNew": 8
+    },
+    {
+      "id": "tianfeng-tower",
+      "name": "天封塔",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ayuwang-temple",
+      "name": "阿育王寺",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ningbo-bang",
+      "name": "宁波帮博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "grand-theatre",
+      "name": "宁波大剧院",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huaao-island",
+      "name": "花岙岛",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "jiufeng",
+      "name": "九峰山旅游区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "meishan-bay",
+      "name": "宁波梅山湾沙滩公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tiangong",
+      "name": "天宫庄园",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ocean-world",
+      "name": "宁波海洋世界",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuehu-shengyuan",
+      "name": "月湖盛园",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yifu-theatre",
+      "name": "宁波逸夫剧院",
+      "cat": "演出",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qita-temple",
+      "name": "七塔禅寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nansong-stone",
+      "name": "南宋石刻公园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baiyunzhuang",
+      "name": "白云庄",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "zoumatang",
+      "name": "走马塘古村",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zheng-17",
+      "name": "郑氏十七房景区",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhousu-yuejiang",
+      "name": "舟宿夜江广场",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "chenghuang-miao",
+      "name": "城隍庙小吃城",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘老街A区",
+      "cat": "美食",
+      "heat": 9,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "baisha-seafood",
+      "name": "白沙码头海鲜大排档",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "hanling",
+      "name": "韩岭老街风景区",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "gulou-street",
+      "name": "鼓楼沿步行街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "wenchuang-port",
+      "name": "宁波文创港",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "nanbu-shuijie",
+      "name": "南部商务区水街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "culture-plaza",
+      "name": "宁波文化广场",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "yinzhou-wanda",
+      "name": "鄞州万达广场",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": 0,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    },
+    {
+      "id": "botanic-garden",
+      "name": "宁波植物园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "hangzhouwan-wetland",
+      "name": "杭州湾国家湿地公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "liangzhu-park",
+      "name": "梁祝文化公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "tengtou",
+      "name": "滕头村展览馆",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6
+    },
+    {
+      "id": "longquanshan",
+      "name": "龙泉山",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [
+    {
+      "id": "xuedou-temple",
+      "name": "雪窦寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 3,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3 < 4.0"
+    },
+    {
+      "id": "art-museum",
+      "name": "宁波美术馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "jiulong-lake",
+      "name": "九龙湖",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 3.8,
+      "level": "national",
+      "score": 0.37,
+      "heatNew": 7,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "zhedong-canyon",
+      "name": "浙东大峡谷",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "jiangbei-church",
+      "name": "江北天主堂",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "天一阁·月湖",
+      "coord": [
+        121.543096,
+        29.867633
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "东钱湖风景名胜区-小普陀",
+      "coord": [
+        121.667729,
+        29.7641
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "九龙湖旅游区",
+      "coord": [
+        121.526684,
+        30.042653
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "雅戈尔达蓬山旅游度假区",
+      "coord": [
+        121.505572,
+        30.058757
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "天下玉苑",
+      "coord": [
+        121.3668,
+        29.939485
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "溪口-滕头旅游景区(滕头)",
+      "coord": [
+        121.389523,
+        29.701225
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "绿野欢乐谷",
+      "coord": [
+        121.406467,
+        30.024013
+      ],
+      "type": "风景名胜;风景名胜;国家级景点|体育休闲服务;休闲场所;休闲场所|住宿服务;宾馆酒店;宾馆酒店",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "西江古村",
+      "coord": [
+        121.580275,
+        29.808925
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "丹山赤水风景区",
+      "coord": [
+        121.160904,
+        29.793405
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.4,
+      "level": "national",
+      "score": 0.61,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "tianyi-pavilion",
+      "name": "天一阁博物院",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "laowaitan",
+      "name": "宁波老外滩",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘老街A区",
+      "from": 9,
+      "to": 6
+    },
+    {
+      "id": "dongqian-lake",
+      "name": "东钱湖风景名胜区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "xuedou-mountain",
+      "name": "雪窦山",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "jiangshi-residence",
+      "name": "蒋氏故居",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "film-city",
+      "name": "象山影视城",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "tianyi-square",
+      "name": "天一广场",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "ningbo-museum",
+      "name": "宁波博物馆",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "ningbo-zoo",
+      "name": "宁波野生动物园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "shipu",
+      "name": "石浦渔港古城",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "hemu-du",
+      "name": "河姆渡遗址博物馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "sanjiangkou",
+      "name": "宁波三江口",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "东钱湖·小普陀",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "xuedou-temple",
+      "name": "雪窦寺",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "cicheng",
+      "name": "慈城古县城",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "science-center",
+      "name": "宁波科学探索中心",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "chenghuang-miao",
+      "name": "城隍庙小吃城",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "zhousu-yuejiang",
+      "name": "舟宿夜江广场",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "songlanshan",
+      "name": "松兰山海滨",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "ninghai-hotspring",
+      "name": "宁海森林温泉旅游度假区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "simingshan",
+      "name": "四明山国家森林公园",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "minghe",
+      "name": "鸣鹤古镇",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shanglin-lake",
+      "name": "上林湖越窑博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "wangyangming",
+      "name": "王阳明故居纪念馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "zhaobaoshan",
+      "name": "招宝山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "qingan-hall",
+      "name": "庆安会馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "tianfeng-tower",
+      "name": "天封塔",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "ayuwang-temple",
+      "name": "阿育王寺",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "ningbo-bang",
+      "name": "宁波帮博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "culture-plaza",
+      "name": "宁波文化广场",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "grand-theatre",
+      "name": "宁波大剧院",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "jiulong-lake",
+      "name": "九龙湖",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "jiufeng",
+      "name": "九峰山旅游区",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "meishan-bay",
+      "name": "宁波梅山湾沙滩公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "liangzhu-park",
+      "name": "梁祝文化公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "botanic-garden",
+      "name": "宁波植物园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "hangzhouwan-wetland",
+      "name": "杭州湾国家湿地公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "tiangong",
+      "name": "天宫庄园",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "ocean-world",
+      "name": "宁波海洋世界",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yinzhou-wanda",
+      "name": "鄞州万达广场",
+      "from": 6,
+      "to": 5
+    },
+    {
+      "id": "wenchuang-port",
+      "name": "宁波文创港",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yuehu-shengyuan",
+      "name": "月湖盛园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yifu-theatre",
+      "name": "宁波逸夫剧院",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "qita-temple",
+      "name": "七塔禅寺",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "nansong-stone",
+      "name": "南宋石刻公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "baiyunzhuang",
+      "name": "白云庄",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "zoumatang",
+      "name": "走马塘古村",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "zheng-17",
+      "name": "郑氏十七房景区",
+      "from": 5.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

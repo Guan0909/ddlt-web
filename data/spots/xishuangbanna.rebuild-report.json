@@ -1,0 +1,605 @@
+{
+  "city": "西双版纳",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "街区": 7,
+      "夜景": 1,
+      "公园": 8,
+      "亲子": 2,
+      "古镇": 9,
+      "山水": 6,
+      "古迹": 10,
+      "美食": 3,
+      "演出": 1,
+      "博物馆": 3,
+      "商圈": 2
+    },
+    "byGroup": {
+      "core": 28,
+      "night": 2,
+      "family": 2,
+      "street": 7,
+      "food": 3,
+      "park": 8,
+      "mall": 2,
+      "total": 52,
+      "suburb": 24,
+      "coreRatio": 58
+    }
+  },
+  "keep": [
+    {
+      "id": "gaozhuang",
+      "name": "告庄西双景",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "starlight-market",
+      "name": "星光夜市（告庄西双景）",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "manting-park",
+      "name": "曼听公园（曼听御花园）",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xtbg",
+      "name": "中国科学院西双版纳热带植物园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wild-elephant-valley",
+      "name": "野象谷景区",
+      "cat": "亲子",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dai-park",
+      "name": "西双版纳傣族园",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "forest-park",
+      "name": "西双版纳原始森林公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "mengle-temple",
+      "name": "勐泐大佛寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zongfosi",
+      "name": "西双版纳总佛寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wangtianshu",
+      "name": "西双版纳热带雨林国家公园望天树景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "golden-pagoda",
+      "name": "景洪市大金塔寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "six-country-water-market",
+      "name": "湄公河·六国水上市场",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "manting-bonfire-show",
+      "name": "曼听公园篝火晚会（湄公河之夜）",
+      "cat": "演出",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jinuo-village",
+      "name": "基诺山寨景区",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tropical-flower-garden",
+      "name": "西双版纳热带花卉园",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "manyuan-village",
+      "name": "曼远村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nannuo-mountain",
+      "name": "南糯山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "mengjinglai",
+      "name": "中缅第一寨勐景来景区",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "banna-museum",
+      "name": "西双版纳民族博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "manchunman-temple",
+      "name": "曼春满佛寺（傣族园）",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "daluo-port",
+      "name": "打洛口岸",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "manfeilong-pagoda",
+      "name": "曼飞龙白塔",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "dai-park-water-square",
+      "name": "西双版纳傣族园-新泼水广场",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jingzhen-pavilion",
+      "name": "景真八角亭",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "peacock-culture-square",
+      "name": "孔雀文化广场（告庄西双景）",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mange-temple",
+      "name": "曼阁佛寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "dalan-plaza",
+      "name": "达兰商业广场（告庄西双景）",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "manzhang-village",
+      "name": "曼掌村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "elephant-museum",
+      "name": "亚洲象博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "manduan-temple",
+      "name": "曼短佛寺旅游村",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "mengyuan-xianjing",
+      "name": "勐远仙境",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "manjinglan-temple",
+      "name": "曼景兰佛寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "manhena-village",
+      "name": "曼贺纳自然村寨",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanla-river-rafting",
+      "name": "南腊河野趣漂流度假区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "mandou-temple",
+      "name": "曼斗佛寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "gunaka-culture-park",
+      "name": "古纳卡傣族文化园",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "laobanzhang",
+      "name": "老班章村（布朗山）",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhanglang-village",
+      "name": "章朗村（布朗山千年古寨）",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mandan-village",
+      "name": "曼旦村（勐腊）",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "riverside-night-market",
+      "name": "江边夜市（景洪）",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "manjinglan-night-market",
+      "name": "曼景兰夜市（傣味）",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "poshui-square",
+      "name": "景洪市泼水广场",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "mohan-port",
+      "name": "磨憨口岸",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6
+    },
+    {
+      "id": "jinghong-old-street",
+      "name": "景洪老街（嘎兰中路）",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "menghai-tea-factory",
+      "name": "勐海茶厂（大益）",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "binjiang-park",
+      "name": "西双版纳滨江公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "nanyao-garden",
+      "name": "西双版纳南药园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.4,
+      "level": "national",
+      "score": 0.61,
+      "heatNew": 8
+    },
+    {
+      "id": "mengle-rain-park",
+      "name": "勐泐雨林公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "minzu-folk-park",
+      "name": "西双版纳州民族风情园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "peacock-lake-park",
+      "name": "孔雀湖公园（景洪）",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "rt-mart",
+      "name": "大润发（景洪泼水广场店）",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [
+    {
+      "name": "曼听御花园景区",
+      "coord": [
+        100.807593,
+        21.991168
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    }
+  ],
+  "heatChanges": [],
+  "duplicates": []
+}

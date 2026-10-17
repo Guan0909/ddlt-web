@@ -1,0 +1,872 @@
+{
+  "city": "苏州",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 15,
+      "博物馆": 9,
+      "街区": 4,
+      "公园": 6,
+      "商圈": 2,
+      "美食": 4,
+      "夜景": 2,
+      "演出": 3,
+      "亲子": 3,
+      "山水": 8,
+      "古镇": 7
+    },
+    "byGroup": {
+      "core": 39,
+      "night": 5,
+      "family": 3,
+      "street": 4,
+      "food": 4,
+      "park": 6,
+      "mall": 2,
+      "total": 63,
+      "suburb": 11,
+      "coreRatio": 70
+    }
+  },
+  "keep": [
+    {
+      "id": "humble-garden",
+      "name": "拙政园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "liuyuan",
+      "name": "留园",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huqiu",
+      "name": "虎丘山风景区",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lion-grove",
+      "name": "狮子林",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "hanshan",
+      "name": "寒山寺",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "master-nets",
+      "name": "网师园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "panmen",
+      "name": "盘门景区",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "canglang",
+      "name": "沧浪亭",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ou-garden",
+      "name": "耦园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "art-garden",
+      "name": "艺圃",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xuanmiao",
+      "name": "玄妙观",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yiyuan-garden",
+      "name": "怡园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baodai",
+      "name": "宝带桥",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "suzhou-museum",
+      "name": "苏州博物馆(本馆)",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "suzhou-museum-west",
+      "name": "苏州博物馆西馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "silk-museum",
+      "name": "苏州丝绸博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "kunqu-museum",
+      "name": "中国昆曲博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "garden-museum",
+      "name": "苏州园林博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wuzhong-museum",
+      "name": "苏州吴文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "beike-museum",
+      "name": "苏州碑刻博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "minsu-museum",
+      "name": "苏州民俗博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "revolution-museum",
+      "name": "苏州革命博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "pingjiang-road",
+      "name": "平江路历史街区",
+      "cat": "街区",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shantang-street",
+      "name": "苏苏文创山塘街",
+      "cat": "街区",
+      "heat": 5,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guanqian-street",
+      "name": "观前街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jinji-lake",
+      "name": "金鸡湖景区",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huqiu-wetland",
+      "name": "虎丘湿地公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jinji-night",
+      "name": "金鸡湖灯光秀",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ligongdi",
+      "name": "李公堤",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wangshiyuan-night",
+      "name": "网师园",
+      "cat": "演出",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "art-center",
+      "name": "苏州文化艺术中心",
+      "cat": "演出",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "pingtan-pipa",
+      "name": "琵琶语评弹馆(平江路北馆)",
+      "cat": "演出",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shangfangshan-zoo",
+      "name": "上方山森林动物世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "forest-world",
+      "name": "苏州乐园森林世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "taihu-wetland",
+      "name": "苏州太湖国家湿地公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qionglong",
+      "name": "穹窿山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tianping",
+      "name": "天平山风景名胜区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lingyan",
+      "name": "灵岩山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dayangshan",
+      "name": "大阳山国家森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wangshan",
+      "name": "旺山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xishan",
+      "name": "太湖西山国家森林公园缥缈峰景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "dongshan",
+      "name": "陆巷古村",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sanshan",
+      "name": "三山岛景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhouzhuang",
+      "name": "周庄古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tongli",
+      "name": "苏州同里古镇旅游区",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mudu",
+      "name": "木渎古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "luzhi",
+      "name": "甪直古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qiandeng",
+      "name": "千灯古镇",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "jinxi",
+      "name": "锦溪古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhenze",
+      "name": "震泽古镇",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "beisi",
+      "name": "北寺塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "fengqiao",
+      "name": "枫桥景区",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shiquan-street",
+      "name": "十全街",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "baiyuan",
+      "name": "独墅湖白鹭园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shihu",
+      "name": "石湖景区",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "baitang",
+      "name": "白塘生态植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "suzhou-park",
+      "name": "苏州公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "suzhou-center",
+      "name": "苏州中心",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "dongfangzhimen",
+      "name": "东方之门",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "shuangta-market",
+      "name": "双塔市集",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "fengmen",
+      "name": "葑门横街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "xietang",
+      "name": "斜塘老街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yangcheng-crab",
+      "name": "阳澄湖莲花岛",
+      "cat": "美食",
+      "heat": 5,
+      "rating": 3.3,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [
+    {
+      "name": "七里山塘景区",
+      "coord": [
+        120.602105,
+        31.317059
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "平江路",
+      "coord": [
+        120.634556,
+        31.313969
+      ],
+      "type": "风景名胜;风景名胜;国家级景点|购物服务;特色商业街;特色商业街",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "苏州上方山国家森林公园",
+      "coord": [
+        120.583049,
+        31.245575
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "黎里古镇",
+      "coord": [
+        120.711391,
+        30.988946
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "西山风景区",
+      "coord": [
+        120.285728,
+        31.120721
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "亭林园",
+      "coord": [
+        120.948969,
+        31.390766
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "方塔园",
+      "coord": [
+        120.748819,
+        31.64546
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "天池山",
+      "coord": [
+        120.477562,
+        31.290117
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "沙家浜风景区",
+      "coord": [
+        120.803913,
+        31.554585
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "光福景区",
+      "coord": [
+        120.368267,
+        31.286813
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heat": 8
+    },
+    {
+      "name": "苏州市枫桥风景名胜区",
+      "coord": [
+        120.568304,
+        31.309475
+      ],
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "dongfangzhimen",
+      "name": "东方之门",
+      "from": 7.5,
+      "to": 6
+    },
+    {
+      "id": "xishan",
+      "name": "太湖西山国家森林公园缥缈峰景区",
+      "from": 9,
+      "to": 7
+    }
+  ],
+  "duplicates": [
+    {
+      "name": "网师园",
+      "ids": [
+        "master-nets",
+        "wangshiyuan-night"
+      ]
+    }
+  ]
+}

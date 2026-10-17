@@ -1,0 +1,726 @@
+{
+  "city": "丽江",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古镇": 6,
+      "街区": 7,
+      "古迹": 10,
+      "夜景": 2,
+      "美食": 4,
+      "博物馆": 5,
+      "商圈": 2,
+      "公园": 5,
+      "亲子": 3,
+      "演出": 3,
+      "山水": 14
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 5,
+      "family": 3,
+      "street": 7,
+      "food": 4,
+      "park": 5,
+      "mall": 2,
+      "total": 61,
+      "suburb": 18,
+      "coreRatio": 66
+    }
+  },
+  "keep": [
+    {
+      "id": "lijiang-old-town",
+      "name": "丽江古城",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sifangjie",
+      "name": "四方街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mufu",
+      "name": "木府",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wangulou",
+      "name": "狮子山万古楼景区",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dayan-huaxiang",
+      "name": "大研花巷",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "bar-street",
+      "name": "丽江古城-酒吧街",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gucheng-exhibition",
+      "name": "丽江古城历史文化展示馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lijiang-museum",
+      "name": "丽江东巴文化博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "heilongtan",
+      "name": "黑龙潭公园（玉泉公园）",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lijiang-qianqiuqing",
+      "name": "丽江千古情景区",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lishuijinsha",
+      "name": "丽水金沙表演",
+      "cat": "演出",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "naxi-music",
+      "name": "大研纳西古乐会",
+      "cat": "演出",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "shuhe",
+      "name": "束河古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "qinglong-bridge",
+      "name": "青龙桥",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shuhe-square",
+      "name": "束河四方听音广场",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "puji-temple",
+      "name": "普济寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "baisha",
+      "name": "白沙古镇",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "baisha-murals",
+      "name": "白沙壁画",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yufeng-temple",
+      "name": "玉峰寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "yushui-village",
+      "name": "丽江玉水寨风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dongba-valley",
+      "name": "东巴谷景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuhu-village",
+      "name": "玉湖村广场",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "zhuyun-temple",
+      "name": "指云寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenhai",
+      "name": "文海",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "wenfeng-temple",
+      "name": "文峰寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "laoshihai",
+      "name": "丽江拉市海湿地公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guanyinxia",
+      "name": "观音峡",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yulong-snow-mtn",
+      "name": "玉龙雪山",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lanyue-valley",
+      "name": "蓝月谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yunshanping",
+      "name": "云杉坪",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ganhaizi",
+      "name": "甘海子",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "glacier-museum",
+      "name": "玉龙雪山冰川地质博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yinxiang-lijiang",
+      "name": "印象丽江",
+      "cat": "演出",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "hutiaoxia",
+      "name": "虎跳峡(东环线)",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "changjiang-first-bend",
+      "name": "长江第一湾",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shigu-memorial",
+      "name": "红军长征过丽江纪念馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "laojunshan",
+      "name": "老君山黎明景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "ninety-nine-lakes",
+      "name": "九十九龙潭景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "baoshan-shitoucheng",
+      "name": "宝山石头城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "lugu-lake",
+      "name": "泸沽湖",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lige-peninsula",
+      "name": "泸沽湖里格半岛",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "mosuo-museum",
+      "name": "摩梭民俗博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenchanggong",
+      "name": "文昌宫观景台",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "maoniuping",
+      "name": "牦牛坪",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zouhun-bridge",
+      "name": "走婚桥",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "daluoshui",
+      "name": "大落水村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xianwen-xiang",
+      "name": "现文巷（油纸伞街）",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "wuyi-street",
+      "name": "五一街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "nanmen-qiao",
+      "name": "南门桥（风铃街）",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "dashuiche",
+      "name": "古城大水车",
+      "cat": "街区",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "qiyi-street",
+      "name": "七一街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "zhongyi-market",
+      "name": "忠义市场",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "qixing-street",
+      "name": "七星街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "huama-street",
+      "name": "花马街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "xiangshan-market",
+      "name": "象山市场（腊排骨一条街）",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "jinkai-plaza",
+      "name": "金凯广场",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "huadu-mall",
+      "name": "丽江华都商贸城(正泰商业街店)",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "zhongjihai",
+      "name": "中济海公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "qingxi-reservoir",
+      "name": "清溪水库",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "jiuding-longtan",
+      "name": "九鼎龙潭",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 2.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    },
+    {
+      "id": "wenbi-lake",
+      "name": "文笔海",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [
+    {
+      "name": "玉龙雪山国家级风景名胜区",
+      "coord": [
+        100.258558,
+        27.098052
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "黑龙潭",
+      "coord": [
+        100.239852,
+        26.888448
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "jiuding-longtan",
+      "name": "九鼎龙潭",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "wenchanggong",
+      "name": "文昌宫观景台",
+      "from": 7.5,
+      "to": 6
+    },
+    {
+      "id": "zouhun-bridge",
+      "name": "走婚桥",
+      "from": 7.5,
+      "to": 6
+    }
+  ],
+  "duplicates": []
+}

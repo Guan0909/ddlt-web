@@ -5,7 +5,7 @@
     "total": 68,
     "poiFixed": 12,
     "renamed": 11,
-    "coordFixed": 12,
+    "coordFixed": 11,
     "openFilled": 43,
     "closedMon": 0,
     "tel": 44,
@@ -634,9 +634,9 @@
       "name": "礼社古村",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
-        "恩庆堂古物馆(23)",
-        "礼社古村奇石馆(17)",
-        "江南古镇礼社(-15)"
+        "恩庆堂古物馆(78)",
+        "礼社古村奇石馆(72)",
+        "江南古镇礼社(40)"
       ]
     },
     {
@@ -982,31 +982,15 @@
       "name": "南下塘老街区",
       "pick": "南下塘",
       "pickId": "B0FFFTVD5F",
-      "score": 66,
+      "score": 86,
       "type": "购物服务;特色商业街;特色商业街",
       "rating": 4.6,
       "tel": "0510-82112233",
       "openTime": "13:00-21:00",
       "openText": "周一至周日 13:00-21:00",
-      "oldId": "",
-      "drift_m": 1994,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0FFFTVD5F"
-        },
-        "coord": {
-          "from": [
-            120.2932,
-            31.5538
-          ],
-          "to": [
-            120.311811,
-            31.562163
-          ],
-          "drift_m": 1994
-        }
-      }
+      "oldId": "B0FFFTVD5F",
+      "drift_m": 0,
+      "changes": {}
     },
     {
       "id": "canal-cruise",

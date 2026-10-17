@@ -20,7 +20,10 @@
       "coord_src": "estimate=AI 估计，正式入库前必须由腾讯地点搜索回填"
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
-    "coord_repaired_at": "2026-10-17"
+    "coord_repaired_at": "2026-10-17",
+    "rematch_at": "2026-10-17",
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -33,11 +36,11 @@
         "夜市",
         "免费"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 180,
       "intro": "澜沧江边的傣式度假区，金塔与夜市聚集。",
       "reason": "傍晚来，灯亮起来才是正片",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -48,7 +51,15 @@
       "amap_poi_id": "B02B30LWEF",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "0691-2221600;0691-2221171",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/072284f47e09fe20d2b2ea1c05ee78f6",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "starlight-market",
@@ -60,11 +71,11 @@
         "小吃",
         "免费"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 120,
       "intro": "告庄内的巨型夜市，摊位铺满整片广场。",
       "reason": "天黑亮灯，一秒像到了泰国",
-      "open": null,
+      "open": "08:00-20:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -75,7 +86,15 @@
       "amap_poi_id": "B0L17C9I5R",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-20:00",
+      "tel": "0691-2299785;0691-2299786",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/2b2b8f999b3a73f108f9e19132239b68",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "manting-park",
@@ -87,7 +106,7 @@
         "泼水",
         "门票"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 120,
       "intro": "傣王御花园，澜沧江与流沙河交汇处。",
       "reason": "早上去人少，光线也柔和",
@@ -102,7 +121,8 @@
       "amap_poi_id": "BV11451231",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "xtbg",
@@ -114,7 +134,7 @@
         "早去",
         "远郊"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 300,
       "intro": "罗梭江葫芦岛上的万种热带植物园。",
       "reason": "西区看王莲，东区走雨林",
@@ -129,11 +149,19 @@
       "amap_poi_id": "B02B3006LK",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00 最晚进入18:00；景区开放夜游活动，需另外购票参加，活动时间根据季节调整,具体以当天和向导预约时间为准",
+      "tel": "0691-8715914",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/9d56e6379a4ad47ff5897034d92dcedb",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "wild-elephant-valley",
-      "name": "野象谷（西双版纳）",
+      "name": "野象谷景区",
       "cat": "亲子",
       "tags": [
         "大象",
@@ -141,7 +169,7 @@
         "雨林",
         "远郊"
       ],
-      "heat": 9.5,
+      "heat": 9,
       "dur": 240,
       "intro": "勐养保护区里的亚洲象栖息地，有索道。",
       "reason": "赶早进谷，大象最活跃也最凉",
@@ -156,11 +184,19 @@
       "amap_poi_id": "B02B3000KJ",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00 最晚进入16:30",
+      "tel": "0691-2431024;0691-2431040",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/a646356cb1f235489e44a22183d5e590",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "dai-park",
-      "name": "傣族园（西双版纳）",
+      "name": "西双版纳傣族园",
       "cat": "古镇",
       "tags": [
         "泼水",
@@ -172,29 +208,36 @@
       "dur": 240,
       "intro": "橄榄坝的五个傣族村寨，天天有泼水。",
       "reason": "下午泼水场，浑身湿透最痛快",
-      "open": "08:00-18:00",
+      "open": "08:30-17:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.938295,
-        21.850192
+        100.945853,
+        21.851467
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0KRXRGXPB",
+      "amap_poi_id": "B02B30058V",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:30-17:00",
+      "tel": "0691-2504601;0691-2504099;12301",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/41fd9e8c8cd6fbc79c69277e3e2068c1",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "forest-park",
-      "name": "原始森林公园（西双版纳）",
+      "name": "西双版纳原始森林公园",
       "cat": "山水",
       "tags": [
         "孔雀放飞",
         "雨林",
         "早去"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 210,
       "intro": "离城最近的热带沟谷雨林，有孔雀放飞。",
       "reason": "孔雀从头顶掠过那下最值",
@@ -209,7 +252,15 @@
       "amap_poi_id": "B02B3001GV",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00 最晚进入17:00",
+      "tel": "0691-2759818",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/d180e152390ce0e4a2580aace4412fc5",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "mengle-temple",
@@ -220,11 +271,11 @@
         "孔雀放飞",
         "俯瞰"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 120,
       "intro": "山顶寺院，49 米大佛俯瞰景洪全城。",
       "reason": "傍晚上去，看整城慢慢亮灯",
-      "open": "08:00-18:00",
+      "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -235,22 +286,30 @@
       "amap_poi_id": "B0FFLO76MG",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-17:30",
+      "tel": "0691-8998555",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFLO76MG/comment/DD0A7DA5_7975_41CE_9D52_1649247B6B6F_L0_001_2000_150_1771392786055_37487045.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "zongfosi",
-      "name": "总佛寺（西双版纳）",
+      "name": "西双版纳总佛寺",
       "cat": "古迹",
       "tags": [
         "南传佛教",
         "金殿",
         "免费"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 60,
       "intro": "西双版纳等级最高的南传佛教寺院。",
       "reason": "和曼听公园一墙之隔，顺路进",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -261,18 +320,25 @@
       "amap_poi_id": "B02B3005IG",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/892a174c9ee3f6b50000008880738761?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "wangtianshu",
-      "name": "望天树景区（西双版纳）",
+      "name": "西双版纳热带雨林国家公园望天树景区",
       "cat": "山水",
       "tags": [
         "空中走廊",
         "雨林",
         "远郊"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 240,
       "intro": "北纬 21° 的雨林秘境，有树冠空中走廊。",
       "reason": "走上几十米高的树冠走廊",
@@ -287,18 +353,26 @@
       "amap_poi_id": "B02B300CS8",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:30-18:00 最晚进入16:30",
+      "tel": "0691-8876098;0691-8175922",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/213bc564110dede993ffd25dbd105cac",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "golden-pagoda",
-      "name": "大金塔（告庄西双景）",
+      "name": "景洪市大金塔寺",
       "cat": "古迹",
       "tags": [
         "金塔",
         "夜色",
         "拍照"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 45,
       "intro": "告庄中心的傣式金塔，夜里打灯。",
       "reason": "逛夜市前先来拍一张金塔",
@@ -306,40 +380,56 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.819697,
-        22.005978
+        100.819567,
+        22.007548
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFIPTCRG",
+      "amap_poi_id": "B02B30M2CV",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 10:00-11:30,16:30-18:00,20:00-22:00",
+      "tel": "0691-3034089",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/49334281b2106a6ca331af0d5986118b",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "six-country-water-market",
-      "name": "六国水上市场（告庄西双景）",
+      "name": "湄公河·六国水上市场",
       "cat": "美食",
       "tags": [
         "水上市场",
         "小吃",
         "晚上"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "告庄里的水上摊位，卖六国风味小吃。",
       "reason": "坐在水边吃遍东南亚小吃",
-      "open": null,
+      "open": "18:30-24:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.821999,
-        22.004616
+        100.821461,
+        22.004992
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0I2LZY7VM",
+      "amap_poi_id": "B0FFJXVMVY",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 18:30-24:00",
+      "tel": "0691-2221171;0691-2221600",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/c70e935a74ab2214a65ac255bc2649c5",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "riverside-night-market",
@@ -351,7 +441,7 @@
         "夜景",
         "晚上"
       ],
-      "heat": 8,
+      "heat": 6,
       "dur": 90,
       "intro": "澜沧江边的傣味夜市，烧烤最出名。",
       "reason": "香茅草烤鱼配一瓶老挝啤酒",
@@ -366,7 +456,8 @@
       "amap_poi_id": "B0KG7PY056",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "manting-bonfire-show",
@@ -404,11 +495,11 @@
         "雨林",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 210,
       "intro": "最后一个被确认民族的村寨式景区。",
       "reason": "大鼓舞和土鸡烂饭都别错过",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -419,22 +510,30 @@
       "amap_poi_id": "B02B30031D",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00 最晚进入16:20",
+      "tel": "0691-2470573;0691-2470606",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/e627b7acae15ed325faeb35a125cafc0",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "tropical-flower-garden",
-      "name": "热带花卉园（西双版纳）",
+      "name": "西双版纳热带花卉园",
       "cat": "公园",
       "tags": [
         "花卉",
         "室内",
         "拍照"
       ],
-      "heat": 7.5,
+      "heat": 9,
       "dur": 90,
       "intro": "景洪市区的热带花卉园，四季有花。",
       "reason": "下雨天的市区备选，温室好逛",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -445,70 +544,63 @@
       "amap_poi_id": "B02B3005F2",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00 最晚进入18:00",
+      "tel": "12301",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/25db378f3513926e23ecfe1e04fcaa98",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "poshui-square",
-      "name": "泼水广场（景洪）",
+      "name": "景洪市泼水广场",
       "cat": "街区",
       "tags": [
         "地标",
         "免费",
         "泼水节"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 45,
       "intro": "景洪市中心地标，泼水节的主场地。",
       "reason": "路过打卡，泼水节才最热闹",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.806123,
-        22.001014
+        100.80663,
+        22.002841
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV11451226",
+      "amap_poi_id": "B0FFFP9K1H",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "dai-show",
-      "name": "傣秀剧场",
-      "cat": "演出",
-      "tags": [
-        "晚上",
-        "大型演艺",
-        "室内"
-      ],
-      "heat": 7.5,
-      "dur": 90,
-      "intro": "度假区里的大型水舞台傣族主题演出。",
-      "reason": "杂技和傣族故事揉在一台",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.777,
-        21.974
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/7411816783be83f80000003628712893?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "manyuan-village",
-      "name": "曼远村（蘑菇屋）",
+      "name": "曼远村",
       "cat": "古镇",
       "tags": [
         "傣寨",
         "蘑菇屋",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "勐罕镇的傣寨，《向往的生活》拍摄地。",
       "reason": "去蘑菇屋门口拍张同款照",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -519,48 +611,62 @@
       "amap_poi_id": "B0H6S5ZCEU",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/f3bfb23d586c061b0000002853998449?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "nannuo-mountain",
-      "name": "南糯山（半坡老寨）",
+      "name": "南糯山",
       "cat": "山水",
       "tags": [
         "古茶树",
         "云海",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 150,
       "intro": "勐海的千年古茶山，哈尼族村寨成片。",
       "reason": "半坡老寨喝一杯古树茶",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.600144,
-        21.943302
+        100.60507,
+        21.9359
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0MGCDE4WR",
+      "amap_poi_id": "B0I14B51I6",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/91f94ea8e41ec26028abee5074cfdf10",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "mengjinglai",
-      "name": "勐景来（中缅第一寨）",
+      "name": "中缅第一寨勐景来景区",
       "cat": "古镇",
       "tags": [
         "傣寨",
         "界碑",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "打洛江边的傣寨，被称中缅第一寨。",
       "reason": "界碑、佛塔、竹楼同框",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -571,7 +677,14 @@
       "amap_poi_id": "B02B300CN7",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00 最晚进入18:00；闭园期间不对外接待游客，否则不支持退票服务",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/4ae00a14066a81e50000008400268729?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "banna-museum",
@@ -597,7 +710,14 @@
       "amap_poi_id": "B02B30LUXA",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周二至周日 09:00-17:00；周一 全天关闭",
+      "tel": "0691-8930999",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02B30LUXA/comment/content_media_external_file_457548_ss__1763263443027_11158274.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "manjinglan-night-market",
@@ -626,85 +746,6 @@
       "refreshed_at": "2026-10-17"
     },
     {
-      "id": "lantsang-bridge",
-      "name": "澜沧江大桥（景洪）",
-      "cat": "夜景",
-      "tags": [
-        "夜景",
-        "免费",
-        "江风"
-      ],
-      "heat": 7,
-      "dur": 40,
-      "intro": "澜沧江上的老桥，入夜灯光连成线。",
-      "reason": "桥上看江景，风很凉快",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.8311,
-        21.990989
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFMAKNY2",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "rainforest-valley",
-      "name": "雨林谷（西双版纳）",
-      "cat": "山水",
-      "tags": [
-        "雨林",
-        "栈道",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 150,
-      "intro": "勐养的雨林景区，栈道穿过沟谷。",
-      "reason": "人比野象谷少，雨林一样密",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.991383,
-        22.043995
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LUL15G65",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "dadugang-tea-garden",
-      "name": "大渡岗万亩茶园",
-      "cat": "山水",
-      "tags": [
-        "茶园",
-        "云海",
-        "自驾",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "世界最大连片茶园，山峦像绿色波浪。",
-      "reason": "自驾路上停下来看云海",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.963073,
-        22.352934
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFJVENVL",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
       "id": "manchunman-temple",
       "name": "曼春满佛寺（傣族园）",
       "cat": "古迹",
@@ -731,28 +772,6 @@
       "refreshed_at": "2026-10-17"
     },
     {
-      "id": "laobanzhang",
-      "name": "老班章村（布朗山）",
-      "cat": "山水",
-      "tags": [
-        "古树茶",
-        "村寨",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "布朗山深处的茶王村寨，古树茶园环绕。",
-      "reason": "爱茶人来朝圣的一站",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.133,
-        21.817
-      ],
-      "coord_src": "estimate"
-    },
-    {
       "id": "daluo-port",
       "name": "打洛口岸",
       "cat": "街区",
@@ -776,23 +795,29 @@
       "amap_poi_id": "B02B300CLI",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": [],
+      "rating": 0,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02B300CLI/comment/content_media_external_images_media_1000069226_ss_2_1733206130337_63f5c8ed.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "manfeilong-pagoda",
-      "name": "曼飞龙白塔（大勐龙）",
+      "name": "曼飞龙白塔",
       "cat": "古迹",
       "tags": [
         "白塔",
         "国保",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 45,
       "intro": "大勐龙的傣式群塔，相传建于傣历年间。",
       "reason": "白塔立在绿林里最上镜",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-22:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         100.686919,
@@ -802,34 +827,14 @@
       "amap_poi_id": "B02B30M1F1",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "lvshilin",
-      "name": "绿石林（勐仑）",
-      "cat": "山水",
-      "tags": [
-        "石林",
-        "雨林",
-        "徒步",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "勐仑的石灰岩雨林，石头上长森林。",
-      "reason": "一次看齐石林和雨林",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        101.404893,
-        21.849703
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02B300417",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-22:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/edf4e6cb95bfafe76caf659894a2cbc1",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "dai-park-water-square",
@@ -840,11 +845,11 @@
         "亲子",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 60,
       "intro": "傣族园里的泼水场，每天固定两场。",
       "reason": "租套傣装下场泼一次",
-      "open": null,
+      "open": "08:30-17:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -855,7 +860,14 @@
       "amap_poi_id": "B0KUNCQ5OK",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "08:30-17:00, 具体开放时间以现场公示为准",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0KUNCQ5OK/comment/content_media_external_images_media_2177048_ss__1739282066337_53257717.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "jingzhen-pavilion",
@@ -870,8 +882,8 @@
       "dur": 40,
       "intro": "勐遮景真村的国保八角亭，就在国道边。",
       "reason": "傣式建筑的经典样本",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-18:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         100.304902,
@@ -881,59 +893,13 @@
       "amap_poi_id": "B02B3003NC",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "mekong-cruise",
-      "name": "澜沧江游船（景洪港）",
-      "cat": "夜景",
-      "tags": [
-        "夜景",
-        "游船",
-        "晚上"
-      ],
-      "heat": 7,
-      "dur": 90,
-      "intro": "从景洪港出发的澜沧江夜游船。",
-      "reason": "从江上看两岸灯火",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        100.790398,
-        22.030053
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KGUZLPEA",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "forest-culture-museum",
-      "name": "热带雨林民族文化博物馆（版纳植物园）",
-      "cat": "博物馆",
-      "tags": [
-        "室内",
-        "民族",
-        "科普"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "植物园里的展馆，讲雨林与世居民族。",
-      "reason": "进植物园顺路看一小时",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        101.257925,
-        21.923325
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGO02GC",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/63fa09e4574612930000000738992109?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "peacock-culture-square",
@@ -963,18 +929,18 @@
     },
     {
       "id": "minzu-folk-park",
-      "name": "民族风情园（西双版纳）",
+      "name": "西双版纳州民族风情园",
       "cat": "公园",
       "tags": [
         "民族村寨",
         "免费",
         "民俗"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "市区里的民族村寨主题公园。",
       "reason": "想一次看各民族文化来这",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -985,7 +951,14 @@
       "amap_poi_id": "B02B3005EE",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02B3005EE/comment/content_media_external_images_media_36246_ss__1737788769938_34902387.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "mange-temple",
@@ -996,11 +969,11 @@
         "国保",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 40,
       "intro": "市中心老街巷里的古老佛寺。",
       "reason": "闹市里的一处清净",
-      "open": null,
+      "open": "08:30-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1011,7 +984,14 @@
       "amap_poi_id": "B02B300ARC",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-17:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/c66abb69497aa9fc0f6aa202e48a33c9",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "dalan-plaza",
@@ -1022,11 +1002,11 @@
         "室内",
         "小吃"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "告庄内的商业广场，小店和小吃密集。",
       "reason": "夜市开摊前先在这吹空调",
-      "open": null,
+      "open": "10:00-21:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1037,22 +1017,29 @@
       "amap_poi_id": "B0FFKDY479",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 10:00-21:00",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/dfbe63b4f3259dcdcdf6e398943792d7",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "manzhang-village",
-      "name": "曼掌村（勐养）",
+      "name": "曼掌村",
       "cat": "古镇",
       "tags": [
         "傣寨",
         "慢轮制陶",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 120,
       "intro": "勐养的傣族村寨，以慢轮制陶出名。",
       "reason": "亲手做一件傣族陶器",
-      "open": null,
+      "open": "08:00-20:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1063,22 +1050,30 @@
       "amap_poi_id": "B0FFHI42OU",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-20:00",
+      "tel": "15974941301",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFHI42OU/comment/20260322-0409d513353e41173d9cd510-EvAoLXX8S99qxm7pxLNnH.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "elephant-museum",
-      "name": "亚洲象博物馆（野象谷）",
+      "name": "亚洲象博物馆",
       "cat": "博物馆",
       "tags": [
         "大象",
         "室内",
         "科普"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 40,
       "intro": "野象谷内的展馆，讲亚洲象与保护。",
       "reason": "看完大象再来补一课",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1089,107 +1084,47 @@
       "amap_poi_id": "B0FFGA1GBE",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "jinuo-museum",
-      "name": "中国基诺族博物馆",
-      "cat": "博物馆",
-      "tags": [
-        "基诺族",
-        "室内",
-        "民俗"
-      ],
-      "heat": 6.5,
-      "dur": 45,
-      "intro": "基诺山巴坡村的两层民族博物馆。",
-      "reason": "太阳鼓和织锦都在这里",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        100.97,
-        22
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/4f51d3cdbe8ce4ee0000001491436161?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "manduan-temple",
-      "name": "曼短佛寺",
+      "name": "曼短佛寺旅游村",
       "cat": "古迹",
       "tags": [
         "壁画",
         "国保",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 40,
       "intro": "勐海坝子里的古佛寺，壁画精美。",
       "reason": "顺路看傣族壁画和古寺",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        100.35584,
-        21.941077
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LAYR07E7",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "dushu-chenglin",
-      "name": "独树成林（打洛）",
-      "cat": "山水",
-      "tags": [
-        "榕树",
-        "奇观",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "打洛的一株大榕树，气根落地长成林。",
-      "reason": "一棵树站成一片林子",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.084708,
-        21.698183
+        100.356559,
+        21.942271
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFKHMH7W",
+      "amap_poi_id": "B02B300C9U",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "yiwu-town",
-      "name": "易武古镇",
-      "cat": "古镇",
-      "tags": [
-        "茶马古道",
-        "古茶山",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 150,
-      "intro": "勐腊的茶马古道重镇，老茶号聚集。",
-      "reason": "青石板街上找老茶号喝茶",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        101.462025,
-        21.982225
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0K2B99LZI",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/e024e39a820f15af57adbff4207e69f6",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "mohan-port",
@@ -1200,22 +1135,30 @@
         "边境",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 90,
       "intro": "中老边境口岸，对面就是老挝磨丁。",
       "reason": "边境线上的自驾端点",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        101.684778,
-        21.183016
+        101.684482,
+        21.183656
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B02B30LUS7",
+      "amap_poi_id": "B0KK2RJXR9",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "18988113066",
+      "rating": 3.9,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/f67103219779ef2dba5bb2de69532646",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "jinghong-old-street",
@@ -1244,56 +1187,37 @@
       "refreshed_at": "2026-10-17"
     },
     {
-      "id": "sunac-park",
-      "name": "西双版纳融创乐园（原万达主题乐园）",
-      "cat": "亲子",
-      "tags": [
-        "主题乐园",
-        "亲子",
-        "夜场"
-      ],
-      "heat": 6.5,
-      "dur": 240,
-      "intro": "度假区里的主题乐园，带水上项目。",
-      "reason": "带娃放电一整天的选择",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.741154,
-        22.027827
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGRMZJ0",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
       "id": "binjiang-park",
-      "name": "滨江公园（景洪）",
+      "name": "西双版纳滨江公园",
       "cat": "公园",
       "tags": [
         "江景",
         "免费",
         "日落"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "澜沧江边的带状公园，正对告庄。",
       "reason": "傍晚沿江走一段看对岸",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.804837,
-        22.008489
+        100.804711,
+        22.007583
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0LRY6V3H0",
+      "amap_poi_id": "B02B300C5M",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/3a135e24eeaf0f74d23a01e66997aab3",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "mengyuan-xianjing",
@@ -1304,18 +1228,29 @@
         "雨林",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 180,
       "intro": "勐腊的溶洞景区，洞外就是雨林。",
       "reason": "洞里凉快，大热天正合适",
-      "open": null,
+      "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
         101.57,
         21.63
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFFK5CU",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 09:00-18:00",
+      "tel": "17387290398;19969160996",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/c9421fde73bf6a680d7a5d4e91ff93d6",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "nanyao-garden",
@@ -1326,11 +1261,11 @@
         "小众",
         "免费"
       ],
-      "heat": 6,
+      "heat": 8,
       "dur": 60,
       "intro": "市区研究药用植物的小园子，很安静。",
       "reason": "认认傣药，人少清净",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1341,7 +1276,15 @@
       "amap_poi_id": "B02B30000F",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "tel": "0691-2190000",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/0f8670ff1bf43ef53d1e2a1629381f4a",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "peacock-lake-park",
@@ -1378,22 +1321,29 @@
         "免费",
         "小众"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 40,
       "intro": "市区的傣式佛寺，金顶藏在巷子里。",
       "reason": "顺路看一眼就够",
-      "open": null,
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.80317,
-        22.000619
+        100.803393,
+        22.00081
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV11451228",
+      "amap_poi_id": "B02B30042U",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/3c4fd94cfd78564af7ba06a30796c80f",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "rt-mart",
@@ -1430,11 +1380,11 @@
         "竹楼",
         "免费"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 90,
       "intro": "曼弄枫的傣族村寨，竹楼成片。",
       "reason": "离市区最近的傣寨慢慢逛",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1445,33 +1395,14 @@
       "amap_poi_id": "B0FFJ2ZH2Y",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "jiunmu-hot-spring",
-      "name": "玖沐温泉谷",
-      "cat": "亲子",
-      "tags": [
-        "温泉",
-        "亲子",
-        "晚上"
-      ],
-      "heat": 6,
-      "dur": 150,
-      "intro": "曼弄枫的温泉，泡池散布在林子里。",
-      "reason": "逛累一天泡个温泉",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.755275,
-        22.020525
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0M6FHZ860",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/fda2365d211130e50000004393292420?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "mengle-rain-park",
@@ -1482,86 +1413,45 @@
         "雨林",
         "散步"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "大佛寺旁的市政公园，有雨林步道。",
       "reason": "和大佛寺打包一起逛",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        100.80619,
-        21.96933
+        100.807396,
+        21.966259
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV11600264",
+      "amap_poi_id": "B0FFGB4K3T",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "nabanhe-reserve",
-      "name": "纳板河（国家级自然保护区）",
-      "cat": "山水",
-      "tags": [
-        "雨林",
-        "科考",
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 180,
-      "intro": "景洪西北的原始雨林保护区，少有人去。",
-      "reason": "看真原始森林得找向导带",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        100.692457,
-        22.148169
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02B3008G9",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "cuipingfeng",
-      "name": "翠屏峰（勐仑）",
-      "cat": "山水",
-      "tags": [
-        "观景台",
-        "雨林",
-        "小众"
-      ],
-      "heat": 6,
-      "dur": 120,
-      "intro": "勐仑的观景山，能俯瞰罗梭江和坝子。",
-      "reason": "植物园外的一处清静",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        101.28,
-        21.91
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/6e22e2534ee77521cc7712568920fe95",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "nanla-river-rafting",
-      "name": "南腊河（野趣漂流）",
+      "name": "南腊河野趣漂流度假区",
       "cat": "山水",
       "tags": [
         "漂流",
         "雨林",
         "远郊"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 150,
       "intro": "勐腊的雨林漂流，水不深但够刺激。",
       "reason": "漂在雨林里，凉快又好玩",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-18:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         101.598653,
@@ -1571,29 +1461,15 @@
       "amap_poi_id": "B0FFF63TQZ",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "zhanglang-village",
-      "name": "章朗村（布朗山千年古寨）",
-      "cat": "古镇",
-      "tags": [
-        "布朗族",
-        "古寨",
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 120,
-      "intro": "布朗山里的千年布朗族村寨。",
-      "reason": "看布朗族的老房子和茶",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.25,
-        21.87
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 09:00-18:00",
+      "tel": "0691-8133336",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFF63TQZ/comment/0FF94248_B970_46A7_8078_26FC7BAC5F50_L0_001_1500_200_1763882475730_38875304.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "menghai-tea-factory",
@@ -1622,45 +1498,19 @@
       "refreshed_at": "2026-10-17"
     },
     {
-      "id": "liusha-river-park",
-      "name": "流沙河公园",
-      "cat": "公园",
-      "tags": [
-        "免费",
-        "河畔",
-        "本地人"
-      ],
-      "heat": 6,
-      "dur": 50,
-      "intro": "流沙河边的社区公园，树荫很密。",
-      "reason": "茶余饭后走走刚好",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.775454,
-        21.990803
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02B30M7Y6",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
       "id": "mandou-temple",
-      "name": "曼斗佛寺（曼斗寨）",
+      "name": "曼斗佛寺",
       "cat": "古迹",
       "tags": [
         "傣寨佛寺",
         "免费",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "曼斗寨里的傣式佛寺，安静小巧。",
       "reason": "告庄对岸的一处清净小庙",
-      "open": null,
+      "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1671,7 +1521,14 @@
       "amap_poi_id": "B02B3000L0",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 09:00-18:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/d93cbdbc7afd04d60000004397640595?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "gunaka-culture-park",
@@ -1682,11 +1539,11 @@
         "室内",
         "免费"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 60,
       "intro": "曼贺纳旁的傣族文化展示园。",
       "reason": "半小时看懂傣家日常",
-      "open": null,
+      "open": "07:30-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1697,7 +1554,85 @@
       "amap_poi_id": "B0FFK6JTC1",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一至周日 07:30-17:00",
+      "tel": "4001619898",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFK6JTC1/comment/20260322-0409d513353e41173d9cd510-6VLKDhavVGR7tRE9BDeyv4.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
+    },
+    {
+      "id": "laobanzhang",
+      "name": "老班章村（布朗山）",
+      "cat": "山水",
+      "tags": [
+        "古树茶",
+        "村寨",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 180,
+      "intro": "布朗山深处的茶王村寨，古树茶园环绕。",
+      "reason": "爱茶人来朝圣的一站",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.133,
+        21.817
+      ],
+      "coord_src": "estimate"
+    },
+    {
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "cat": "古镇",
+      "tags": [
+        "茶马古道",
+        "古茶山",
+        "远郊"
+      ],
+      "heat": 6.5,
+      "dur": 150,
+      "intro": "勐腊的茶马古道重镇，老茶号聚集。",
+      "reason": "青石板街上找老茶号喝茶",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        101.462025,
+        21.982225
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0K2B99LZI",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-17"
+    },
+    {
+      "id": "zhanglang-village",
+      "name": "章朗村（布朗山千年古寨）",
+      "cat": "古镇",
+      "tags": [
+        "布朗族",
+        "古寨",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "布朗山里的千年布朗族村寨。",
+      "reason": "看布朗族的老房子和茶",
+      "open": null,
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        100.25,
+        21.87
+      ],
+      "coord_src": "estimate"
     },
     {
       "id": "mandan-village",

@@ -1,0 +1,598 @@
+{
+  "city": "香格里拉",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "街区": 2,
+      "公园": 6,
+      "夜景": 3,
+      "博物馆": 4,
+      "美食": 4,
+      "古迹": 7,
+      "山水": 21,
+      "商圈": 1,
+      "古镇": 2,
+      "亲子": 1
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 3,
+      "family": 1,
+      "street": 2,
+      "food": 4,
+      "park": 6,
+      "mall": 1,
+      "total": 51,
+      "suburb": 22,
+      "coreRatio": 73
+    }
+  },
+  "keep": [
+    {
+      "id": "duguzong-gucheng",
+      "name": "香格里拉市独克宗古城",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guishan-park",
+      "name": "龟山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yueguang-square",
+      "name": "月光广场",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dizhou-museum",
+      "name": "迪庆藏族自治州博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hongjun-museum",
+      "name": "迪庆红军长征博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sifangjie",
+      "name": "独克宗四方街",
+      "cat": "美食",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huaxiang",
+      "name": "独克宗花巷",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gucheng-bar",
+      "name": "独克宗古城酒吧街",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "songzanlin",
+      "name": "噶丹松赞林寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shika-snow",
+      "name": "石卡雪山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "napahai",
+      "name": "纳帕海",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "napahai-star",
+      "name": "纳帕海草原星空",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shilun-tancheng",
+      "name": "香巴拉时轮坛城文化博览中心",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "thangka-center",
+      "name": "香格里拉唐卡艺术中心",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baita",
+      "name": "白塔寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "dajingfan",
+      "name": "大经幡",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baijisi",
+      "name": "百鸡寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dabaosi",
+      "name": "大宝寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "pudacuo",
+      "name": "普达措国家公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dacao-yuan",
+      "name": "香格里拉大草原",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xiaozhongdian",
+      "name": "小中甸花海",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "yuelianghu",
+      "name": "小中甸月亮湖",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "qianhushan",
+      "name": "千湖山",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "baishuitai",
+      "name": "白水台景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "haba-snow",
+      "name": "哈巴雪山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shanghutiaoxia",
+      "name": "上虎跳峡",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhonghutiaoxia",
+      "name": "中虎跳峡观景台聚景",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "balagezong",
+      "name": "巴拉格宗大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "niru",
+      "name": "尼汝村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dongzhulin",
+      "name": "东竹林寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "feilaisi",
+      "name": "飞来寺",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "mingyong",
+      "name": "明永冰川景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "lancang-meili-gorge",
+      "name": "澜沧江梅里大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yubeng",
+      "name": "雨崩村",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yubeng-shenpu",
+      "name": "雨崩神瀑",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "damo-cave",
+      "name": "达摩祖师洞",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "golden-monkey",
+      "name": "香格里拉滇金丝猴国家公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "bigu-tianchi",
+      "name": "碧沽天池",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jinshajiang-bend",
+      "name": "金沙江大拐弯",
+      "cat": "山水",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "baima-snow-pass",
+      "name": "白马雪山垭口",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wunongding",
+      "name": "雾浓顶观景台",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "kawagarbo",
+      "name": "卡瓦格博峰",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 2.7,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "jiantang-market",
+      "name": "建塘农贸市场",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "pijiangpo",
+      "name": "皮匠坡",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "nixi-chicken",
+      "name": "尼西土锅鸡",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "alpine-garden",
+      "name": "香格里拉高山植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "lamuyangcuo",
+      "name": "拉姆央措湖",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "longtanhu",
+      "name": "龙潭湖公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6
+    },
+    {
+      "id": "namco-park",
+      "name": "香格里拉娜姆措生态公园",
+      "cat": "公园",
+      "heat": 5,
+      "rating": 3.7,
+      "level": null,
+      "score": 0.08,
+      "heatNew": 5
+    },
+    {
+      "id": "wufengshan",
+      "name": "五凤山公园",
+      "cat": "公园",
+      "heat": 5,
+      "rating": 3.6,
+      "level": null,
+      "score": 0.04,
+      "heatNew": 5
+    },
+    {
+      "id": "changzheng-avenue",
+      "name": "长征大道",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [
+    {
+      "name": "松赞林景区",
+      "coord": [
+        99.703711,
+        27.846406
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "kawagarbo",
+      "name": "卡瓦格博峰",
+      "from": 8,
+      "to": 5
+    }
+  ],
+  "duplicates": []
+}

@@ -6,7 +6,7 @@
     "poiFixed": 19,
     "renamed": 19,
     "coordFixed": 21,
-    "openFilled": 40,
+    "openFilled": 41,
     "closedMon": 0,
     "tel": 39,
     "rating": 61,
@@ -947,20 +947,15 @@
       "name": "中国非物质文化遗产园",
       "pick": "中国(合肥)非物质文化遗产园",
       "pickId": "B022715XXX",
-      "score": 83,
+      "score": 138,
       "type": "风景名胜;风景名胜;国家级景点",
       "rating": 4.4,
       "tel": "0551-66736005",
       "openTime": "09:00-17:30",
       "openText": "周一至周日 09:00-17:30 最晚进入17:00；白天9:00-17:30无表演，仅景区开放场馆，如参观中华藏宫、西游记砖雕长廊等免费景点。",
-      "oldId": "",
-      "drift_m": 6735,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B022715XXX"
-        }
-      }
+      "oldId": "B022715XXX",
+      "drift_m": 0,
+      "changes": {}
     },
     {
       "id": "xiaolingnan",
@@ -1171,7 +1166,8 @@
           "from": "合肥市科技馆",
           "to": "合肥市科技馆(蜀西湖馆区)"
         }
-      }
+      },
+      "reverted": true
     },
     {
       "id": "anhui-innovation",
@@ -1182,7 +1178,7 @@
       "type": "科教文化服务;科教文化场所;科教文化场所",
       "rating": 4.7,
       "tel": "0551-65909008;19005609170",
-      "openTime": [],
+      "openTime": "09:30-17:00",
       "openText": "周三至周日 09:30-17:00",
       "oldId": "B0FFIPEW88",
       "drift_m": 0,
@@ -1287,7 +1283,8 @@
           "from": "中国科学技术大学",
           "to": "中国科学技术大学(本部东校区)"
         }
-      }
+      },
+      "reverted": true
     },
     {
       "id": "banbian-street",

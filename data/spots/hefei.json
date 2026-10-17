@@ -21,7 +21,9 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "coord_repaired_at": "2026-10-17",
-    "rematch_at": "2026-10-17"
+    "rematch_at": "2026-10-17",
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -33,7 +35,7 @@
         "园林",
         "早去"
       ],
-      "heat": 9.5,
+      "heat": 9,
       "dur": 150,
       "intro": "包公祠、包公墓、清风阁与浮庄连成一片。",
       "reason": "沿包河走一圈，清风阁上看老城",
@@ -48,7 +50,15 @@
       "amap_poi_id": "B02270I1AV",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "1月至4月,10月至12月 周一至周日 09:00-17:00 最晚进入16:30；5月至9月 周一至周日 09:00-17:30 最晚进入17:00",
+      "tel": "0551-62886107;0551-62884490;12301",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/82f427dd5004b5b952fe733242a6a6e5",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "huaihe-road",
@@ -59,11 +69,11 @@
         "小吃",
         "夜景"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 120,
       "intro": "合肥最热闹的老城商业街，李府就在街边。",
       "reason": "晚上灯亮后边逛边吃小吃",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -74,7 +84,15 @@
       "amap_poi_id": "B022701SEU",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "0551-65555000",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/3e7f38198b79561f3dbc51ef9ccca4e0",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "sanhe",
@@ -85,7 +103,7 @@
         "早去",
         "米饺"
       ],
-      "heat": 9.5,
+      "heat": 9,
       "dur": 240,
       "intro": "丰乐河与杭埠河交汇处的千年水乡古镇。",
       "reason": "早去避开团客，一人巷最好拍",
@@ -100,18 +118,26 @@
       "amap_poi_id": "B02270I45I",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；1、内部小景点和摇橹船营业时间为:8:30-17:30。 2、夜游运营时间:19:30-21:30",
+      "tel": "0551-68757113",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/64d89937a636cfb55a7965600b464e54",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "anhui-museum-new",
-      "name": "安徽博物院（新馆）",
+      "name": "安徽博物院",
       "cat": "博物馆",
       "tags": [
         "免费",
         "室内",
         "楚大鼎"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "安徽最大的综合博物馆，楚大鼎在此。",
       "reason": "下雨或暴晒时最好的去处",
@@ -126,33 +152,48 @@
       "amap_poi_id": "B022716AQJ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一关闭（法定节假日除外），周二至周日09:00-17:00(16:30停止入馆)",
+      "tel": "0551-63736658",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/4b19ff0a50a896e0ccc5e3ff30e026b2",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "leijie",
-      "name": "罍街",
+      "name": "罍街公园",
       "cat": "美食",
       "tags": [
         "夜市",
         "小龙虾",
         "晚上"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 100,
       "intro": "徽派风格的美食街区，本地人的夜宵据点。",
       "reason": "晚上来，一条街吃到合肥味",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.293509,
-        31.819892
+        117.297353,
+        31.816446
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0G2MKUDL6",
+      "amap_poi_id": "B0FFLA7X0M",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/d468a90d-a3d0-4466-87e9-85ca62d5f9cb.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "xiaoyaojin",
@@ -163,7 +204,7 @@
         "免费",
         "早去"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 90,
       "intro": "张辽威震逍遥津的古战场，今为城市公园。",
       "reason": "早晨本地人晨练，湖边很清静",
@@ -171,14 +212,22 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.295109,
-        31.867054
+        117.295084,
+        31.86898
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFFDS13N",
+      "amap_poi_id": "B022702VYA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "5月1日至10月31日 06:00-22:00；11月1日至次年4月30日 06:30-21:30",
+      "tel": "0551-62614651;0551-62652163",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/778f95bdf4deee93ab15b67146646539",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "limu-house",
@@ -189,7 +238,7 @@
         "宅院",
         "步行街"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 75,
       "intro": "淮河路步行街上的晚清重臣宅第，展陈完整。",
       "reason": "逛街顺路进，两进院子不大",
@@ -204,7 +253,8 @@
       "amap_poi_id": "B022702OO1",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "heat_prev": 8.5
     },
     {
       "id": "ningguo-road",
@@ -237,7 +287,7 @@
         "室内",
         "人物"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 100,
       "intro": "从管仲到邓稼先，安徽名人一次看完。",
       "reason": "和渡江纪念馆连着逛最省时间",
@@ -252,7 +302,15 @@
       "amap_poi_id": "B022715O0M",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "1/1-12/31 周二–周日 09:00–17:00开放；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放",
+      "tel": "0551-62552828",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/5e98879391a96e21dcdda0105c523e65",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "dujiang-memorial",
@@ -263,7 +321,7 @@
         "历史",
         "湖景"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 100,
       "intro": "巢湖北岸的战史纪念馆，巨帆造型。",
       "reason": "出馆就是巢湖大堤，可看落日",
@@ -278,33 +336,48 @@
       "amap_poi_id": "B022717S02",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": [],
+      "tel": "0551-62635757;0551-63412746",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/56eea02b16ab0b275c55d8ec68062363",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "swan-lake",
-      "name": "天鹅湖",
+      "name": "天鹅湖公园",
       "cat": "夜景",
       "tags": [
         "夜景",
         "晚上",
         "免费"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 90,
       "intro": "政务区人工湖，对岸是合肥的天际线。",
       "reason": "天黑后灯光亮起，湖边散步最好",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.219167,
-        31.81089
+        117.230912,
+        31.815183
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFF65VZD",
+      "amap_poi_id": "B0LAPUIW27",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0LAPUIW27/comment/2F3DF0E9_048B_44E3_BB0A_5A8129641410_L0_001_2000_150_1763686830482_37555841.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "dashushan",
@@ -315,22 +388,29 @@
         "免费",
         "早去"
       ],
-      "heat": 8.5,
+      "heat": 6,
       "dur": 150,
       "intro": "市区西边的森林山，登顶可望全城。",
       "reason": "半小时登顶，傍晚看城市日落",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.176138,
-        31.838417
+        117.176525,
+        31.838875
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFFAJ1RQ",
+      "amap_poi_id": "B0MDBOIX8A",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/d78b5273bbd40c990000003045022156?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "hefei-zoo",
@@ -341,7 +421,7 @@
         "亲子",
         "园区大"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 150,
       "intro": "大蜀山南麓的老牌动物园，熊猫馆有名。",
       "reason": "带小孩半天刚好，别忘带水",
@@ -356,7 +436,15 @@
       "amap_poi_id": "B022700869",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "1月至2月,12月 周一至周日 09:00-17:00 最晚进入16:30；3月至11月 周一至周日 09:00-17:30 最晚进入16:40",
+      "tel": "0551-65395595",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/7b2ddd4d80fef36d0000002739256446?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "mingjiao-temple",
@@ -367,11 +455,11 @@
         "三国",
         "闹市"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 50,
       "intro": "逍遥津旁的千年古寺，台基是曹操教弩台。",
       "reason": "闹市里十分钟就能静下来",
-      "open": null,
+      "open": "07:30-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -382,7 +470,14 @@
       "amap_poi_id": "B02270086E",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 07:30-17:00；初一、十五:03:30-17:00，具体营业状态以当天开放情况为准",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02270086E/comment/5FD91B51_AA11_4EA2_A9F8_25547F6F2B07_L0_001_1500_200_1763136356092_41608808.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "hechai1972",
@@ -397,7 +492,7 @@
       "dur": 90,
       "intro": "旧监狱与老厂房改的文创园，人流不少。",
       "reason": "周末市集和展览都在这里",
-      "open": null,
+      "open": "09:00-21:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -408,7 +503,14 @@
       "amap_poi_id": "B0FFLADM9W",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-21:00",
+      "tel": "0551-65561972",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/7094d338e99226f24fddccdc0de4a5b6",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "hefei-botanical",
@@ -419,11 +521,11 @@
         "野餐",
         "亲子"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 90,
       "intro": "董铺水库旁的植物园，春秋两季最好。",
       "reason": "春天樱花开时来野餐最舒服",
-      "open": null,
+      "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -434,7 +536,15 @@
       "amap_poi_id": "B022701P72",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-17:30",
+      "tel": "0551-65315007;0551-65313803;0551-65312510",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/5c740c59-70dc-46a5-98c5-2047f0390eae.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "chenghuang-temple",
@@ -445,12 +555,12 @@
         "小吃",
         "市井"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 60,
       "intro": "庐州府城隍庙，周边是老城小吃市场。",
       "reason": "庙前小吃街是本地人的记忆",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-18:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         117.278388,
@@ -460,7 +570,14 @@
       "amap_poi_id": "B02270JQ38",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-18:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/5615e4b6a310c5a615b0088b",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "zhi-xincheng",
@@ -471,18 +588,29 @@
         "吃饭",
         "地铁旁"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 80,
       "intro": "三里庵商圈的主力商场，吃饭选择最多。",
       "reason": "逛完大蜀山回来吃饭方便",
-      "open": null,
+      "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.255,
-        31.847
+        117.257406,
+        31.854026
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFGLHE8",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 10:00-22:00",
+      "tel": "0551-65998080",
+      "rating": 4.9,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/aec09d2ea86fa3106b04c3da1b73bb94",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "geo-museum",
@@ -493,7 +621,7 @@
         "亲子",
         "免费"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 90,
       "intro": "恐龙骨架与矿物标本，孩子最爱。",
       "reason": "隔壁就是安徽博物院，可连着看",
@@ -508,7 +636,15 @@
       "amap_poi_id": "B0FFF4RFWR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一 全天关闭；周二至周日 09:00-17:00；国家法定节假日开放时间以馆公告为准",
+      "tel": "0551-63548008",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/745ca5be8b2bc5d6e4f90f689ce0b5b4",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "hefei-grand-theatre",
@@ -519,12 +655,12 @@
         "天鹅湖",
         "晚上"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 120,
       "intro": "天鹅湖畔的大剧院，话剧与音乐会常有。",
       "reason": "晚上的演出正好配天鹅湖夜景",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:30-18:30",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         117.224483,
@@ -534,7 +670,15 @@
       "amap_poi_id": "B02270JLSR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:30-18:30",
+      "tel": "0551-63501222;0551-63501888",
+      "rating": 4.8,
+      "cost": 101,
+      "photo": "http://store.is.autonavi.com/showpic/77234ba9265a795070cc198fe8118d25",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "anhui-museum-old",
@@ -545,11 +689,11 @@
         "苏式",
         "免费"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 90,
       "intro": "安庆路上的老馆，五十年代苏式展厅。",
       "reason": "老城逛累了进来歇脚看展",
-      "open": null,
+      "open": "09:00-17:00",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -560,33 +704,15 @@
       "amap_poi_id": "B02270011E",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "yintai-center",
-      "name": "银泰中心",
-      "cat": "商圈",
-      "tags": [
-        "老城",
-        "购物",
-        "地铁旁"
-      ],
-      "heat": 8,
-      "dur": 80,
-      "intro": "长江中路的老城旗舰商场，就在四牌楼。",
-      "reason": "逛街加吃饭一趟解决",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.292277,
-        31.866034
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LA6S7P5J",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "refreshed_at": "2026-10-17",
+      "open_text": "周一,周三至周日 09:00-17:00 最晚进入16:30；周二 全天关闭",
+      "tel": "0551-62820945",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02270011E/comment/9DA251D0_A020_4DBC_A61E_0370A818F258_L0_001_2000_150_1767329676012_32660906.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "wanxiang-city",
@@ -601,7 +727,7 @@
       "dur": 90,
       "intro": "政务区最大的商场，品牌与餐饮齐全。",
       "reason": "看完天鹅湖夜景过来吃饭",
-      "open": null,
+      "open": "10:00-22:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -612,40 +738,25 @@
       "amap_poi_id": "B02270IR5U",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "baohe-wanda",
-      "name": "合肥包河万达广场",
-      "cat": "商圈",
-      "tags": [
-        "马鞍山路",
-        "电影",
-        "餐饮"
-      ],
-      "heat": 7.5,
-      "dur": 70,
-      "intro": "马鞍山路旁的商场，影院和餐饮集中。",
-      "reason": "去滨湖路上的补给点",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.3062,
-        31.8395
-      ],
-      "coord_src": "estimate"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-22:00",
+      "tel": "0551-65708880",
+      "rating": 4.9,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/4f2e02b055d038af5ba00fcc2c847ec1",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "binhu-forest",
-      "name": "滨湖国家森林公园",
+      "name": "合肥滨湖国家森林公园",
       "cat": "公园",
       "tags": [
         "森林",
         "骑行",
         "免费"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 120,
       "intro": "巢湖北岸的人工森林公园，可租车骑行。",
       "reason": "带车来，森林里骑一下午",
@@ -653,14 +764,22 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.395348,
-        31.711866
+        117.388168,
+        31.721607
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV11567169",
+      "amap_poi_id": "B022719EDH",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "11月1日至4月30日 周一至周五 09:00-17:00(最晚进入16:30)；周六至周日 08:40-17:30(最晚进入17:00)；5月1日至10月31日 周一至周五 09:00-17:30(最晚进入16:30)周六至周日 08:40-18:00(最晚进入17:00)；劳动节 08:40-18:00",
+      "tel": "0551-62776600;0551-62776688",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/1097e36dfca0c7db472ce2e5373294e0",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "hefei-sunac",
@@ -671,11 +790,11 @@
         "亲子",
         "晚上"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 240,
       "intro": "滨湖的大型主题乐园，夜场灯光秀出名。",
       "reason": "下午进场，玩到夜场灯光亮起",
-      "open": null,
+      "open": "10:00-21:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -686,59 +805,48 @@
       "amap_poi_id": "B0FFK5A8HB",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "sanhe-yang",
-      "name": "杨振宁旧居",
-      "cat": "古迹",
-      "tags": [
-        "三河",
-        "名人",
-        "老宅"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "三河古镇一人巷里的杨振宁旧居。",
-      "reason": "逛三河时顺路进去看看",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        117.243952,
-        31.509387
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF2E4XE",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "7-8月:周一-周五:10:00-21:00；周六-周日:10:00-21:30",
+      "tel": "4008959888",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/63cbdace12be6dd4c2e36120de8a7659",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "changlinhe",
-      "name": "长临河古镇",
+      "name": "长临河古镇景区",
       "cat": "古镇",
       "tags": [
         "老街",
         "巢湖边",
         "早去"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 120,
       "intro": "巢湖北岸的老镇，一条青石街通到湖边。",
       "reason": "走到渡口看湖，人比三河少",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        117.46348,
-        31.686512
+        117.461814,
+        31.689047
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV09125891",
+      "amap_poi_id": "B0FFGZKBDJ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/4d126d9c6a62c6ae0000002189648449?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "zhegao",
@@ -749,7 +857,7 @@
         "老街",
         "远郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 100,
       "intro": "巢湖柘皋的老街，早茶是这里的招牌。",
       "reason": "早起吃一顿柘皋早茶再逛老街",
@@ -764,33 +872,14 @@
       "amap_poi_id": "B0LKZPE79Z",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "tongyang",
-      "name": "烔炀古镇",
-      "cat": "古镇",
-      "tags": [
-        "老街",
-        "巢湖边",
-        "小众"
-      ],
-      "heat": 5.5,
-      "dur": 90,
-      "intro": "巢湖烔炀老街，与李克农故居相邻。",
-      "reason": "几乎没有游客的老街，很安静",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        117.63585,
-        31.681886
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHWZD3P",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": [],
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/9aace356c1d2cc520000003173520336?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "zhongmiao",
@@ -801,7 +890,7 @@
         "古寺",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 120,
       "intro": "巢湖北岸伸入湖中的半岛古庙。",
       "reason": "庙前看巢湖，水天一色",
@@ -816,22 +905,23 @@
       "amap_poi_id": "B0FFGGDOM2",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "heat_prev": 8
     },
     {
       "id": "laoshan-island",
-      "name": "姥山岛",
+      "name": "姥山岛景区",
       "cat": "山水",
       "tags": [
         "岛屿",
         "游船",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 150,
       "intro": "巢湖里唯一的大岛，可看文峰塔。",
       "reason": "从中庙码头坐船上岛",
-      "open": null,
+      "open": "08:00-17:30",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -839,10 +929,18 @@
         31.564048
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0HD2ZCP2G",
+      "amap_poi_id": "B02350OBEG",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-17:30",
+      "tel": "0551-88578318",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/0c82424fc84bc7c42223a5f43d0c0683",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "zipengshan",
@@ -853,11 +951,11 @@
         "森林",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 9,
       "dur": 180,
       "intro": "肥西的森林公园，山上有西庐寺。",
       "reason": "市区西南的登山备选，人不多",
-      "open": null,
+      "open": "08:30-17:30",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -868,7 +966,14 @@
       "amap_poi_id": "B0227169WX",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-17:30",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/3017c4e91a773961637f5d5b7c077740",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "xilu-temple",
@@ -879,12 +984,12 @@
         "紫蓬山",
         "远郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 60,
       "intro": "紫蓬山半山的古寺，香火很旺。",
       "reason": "登山途中歇脚吃斋饭",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-18:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         117.006752,
@@ -894,81 +999,48 @@
       "amap_poi_id": "B022717S05",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "liucheng-villa",
-      "name": "刘铭传故居",
-      "cat": "古迹",
-      "tags": [
-        "名人",
-        "淮军",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 70,
-      "intro": "台湾首任巡抚刘铭传的故居与墓园。",
-      "reason": "喜欢近代史的话值得专程",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        116.788466,
-        31.721475
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B022715M9T",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "daishan-lake",
-      "name": "岱山湖",
-      "cat": "山水",
-      "tags": [
-        "湖景",
-        "垂钓",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 180,
-      "intro": "肥东东北的湖边度假区，水面开阔。",
-      "reason": "自驾带帐篷来待半天",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        117.62,
-        31.99
-      ],
-      "coord_src": "estimate"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-18:00",
+      "tel": "0551-68581863",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B022717S05/comment/content_media_external_file_98739_ss__1760762128290_71386131.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "fucha-mountain",
-      "name": "浮槎山",
+      "name": "浮槎山景区",
       "cat": "山水",
       "tags": [
         "爬山",
         "茶园",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "肥东的名山，山上有古寺与茶园。",
       "reason": "合肥东边少人走的登山路线",
-      "open": null,
+      "open": "08:00-17:00",
       "closed_mon": null,
       "suburb": true,
       "coord": [
-        117.662511,
-        31.846881
+        117.659912,
+        31.849713
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B02350ODW1",
+      "amap_poi_id": "B02270IONU",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "08:00-17:00,16:00后停止预约核销",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/47da6da11c9060e30000003107208827?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yefu-mountain",
@@ -979,11 +1051,11 @@
         "古寺",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "庐江北部的森林公园，山顶有寺。",
       "reason": "到庐江的话顺路上山",
-      "open": null,
+      "open": "05:30-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -994,33 +1066,49 @@
       "amap_poi_id": "B023500TGC",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 05:30-18:00 最晚进入17:30",
+      "tel": "0551-83680376;0551-87412009",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/0d2555fe856c187a4c02fe238b6a34ec",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yinping-mountain",
-      "name": "银屏山",
+      "name": "巢湖银屏山景区",
       "cat": "山水",
       "tags": [
         "溶洞",
         "牡丹",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 120,
       "intro": "巢湖南岸的银屏山，有牡丹与溶洞。",
       "reason": "山下仙人洞可以顺路看看",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-16:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
-        117.803678,
-        31.494025
+        117.795268,
+        31.497282
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B02350OFM0",
+      "amap_poi_id": "B022717S1T",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-16:00",
+      "tel": "0551-88790641",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/d1181115a18985c7e2d314eb84371388",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "bantang-hotspring",
@@ -1035,7 +1123,7 @@
       "dur": 240,
       "intro": "巢湖半汤的老牌温泉镇，多家度假村。",
       "reason": "冬天泡汤，住一晚更舒服",
-      "open": null,
+      "open": "09:00-22:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1046,7 +1134,14 @@
       "amap_poi_id": "B0FFFKWODD",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-22:00",
+      "tel": "0551-82356888",
+      "rating": 4.5,
+      "cost": 144,
+      "photo": "https://aos-comment.amap.com/B0FFFKWODD/headerImg/44550016dd2c6aa07b0c9d18ca7cc84c_2048_2048_80.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "tangchi-hotspring",
@@ -1061,34 +1156,41 @@
       "dur": 240,
       "intro": "庐江汤池镇的温泉，水质是招牌。",
       "reason": "合肥开车一小时能到",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        117.122025,
-        31.335225
+        117.12329,
+        31.330996
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0M3AK319V",
+      "amap_poi_id": "B02350NZN1",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "0551-82561681",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/690298e02ba14861d0dbba8f367414e5",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "zhouyu-mu",
-      "name": "周瑜墓",
+      "name": "周瑜墓园",
       "cat": "古迹",
       "tags": [
         "三国",
         "庐江",
         "远郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "庐江县城内的周瑜墓园，三国迷必到。",
       "reason": "去汤池温泉先顺路看一眼",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         117.299496,
@@ -1098,33 +1200,14 @@
       "amap_poi_id": "B023500W66",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "sanguo-xincheng",
-      "name": "三国新城遗址公园",
-      "cat": "古迹",
-      "tags": [
-        "三国",
-        "遗址",
-        "近郊"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "曹魏新城遗址，土城垣还看得出轮廓。",
-      "reason": "三十岗乡里，人少好走",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        117.13179,
-        31.914967
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B022715PDB",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B023500W66/comment/content_media_external_images_media_1000007902_ss__1736570885359_35973622.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "cuigang",
@@ -1135,12 +1218,12 @@
         "咖啡",
         "近郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 80,
       "intro": "三十岗的艺术家村落，老房子改成工作室。",
       "reason": "周末来喝咖啡看展很安静",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         117.082603,
@@ -1150,48 +1233,30 @@
       "amap_poi_id": "B0FFG8YHEM",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "non-heritage",
-      "name": "中国非物质文化遗产园",
-      "cat": "公园",
-      "tags": [
-        "非遗",
-        "表演",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "长丰岗集的非遗主题园，有民俗表演。",
-      "reason": "看一场非遗表演再走",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        117.113834,
-        32.005496
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B022715XXX",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "0551-65900996",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/e532012929f227550000002587258835?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "xiaolingnan",
-      "name": "小岭南",
+      "name": "蜀山区小岭南花海",
       "cat": "街区",
       "tags": [
         "乡村",
         "民宿",
         "远郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 90,
       "intro": "蜀山区小庙镇的乡村文旅村。",
       "reason": "带孩子体验农事，住民宿",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1202,37 +1267,18 @@
       "amap_poi_id": "B0H3KLXMJN",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "daxu",
-      "name": "大圩生态农业旅游区",
-      "cat": "公园",
-      "tags": [
-        "葡萄",
-        "采摘",
-        "亲子"
-      ],
-      "heat": 7,
-      "dur": 150,
-      "intro": "包河区大圩镇的葡萄园与农家乐。",
-      "reason": "七八月来自己摘葡萄",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.402999,
-        31.762511
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKY8OOA",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0H3KLXMJN/comment/E0AFF1A7_042F_46F0_9A26_46F9E3FC6910_L0_001_1126_200_1760749185722_62748262.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "tangxihe-park",
-      "name": "塘西河公园",
+      "name": "滨湖塘西河公园",
       "cat": "公园",
       "tags": [
         "湿地",
@@ -1243,44 +1289,24 @@
       "dur": 70,
       "intro": "滨湖新区的河岸公园，草坪很大。",
       "reason": "搭帐篷放风筝的周末去处",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.302601,
-        31.731507
+        117.302804,
+        31.72811
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV10536531",
+      "amap_poi_id": "B0FFF5QYTW",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "kuanghe-park",
-      "name": "匡河公园",
-      "cat": "公园",
-      "tags": [
-        "樱花",
-        "河边",
-        "免费"
-      ],
-      "heat": 6.5,
-      "dur": 60,
-      "intro": "政务区沿匡河的带状公园，春天有樱花。",
-      "reason": "看完天鹅湖沿河走一段",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.206249,
-        31.810968
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0M3DGEP5S",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/105ecf26bc3887d2690045fe11cbde34",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "luzhou-park",
@@ -1295,7 +1321,7 @@
       "dur": 70,
       "intro": "新站区的大型城市公园，草坪开阔。",
       "reason": "城北少有的开阔绿地",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1306,59 +1332,14 @@
       "amap_poi_id": "B0FFGA0LN4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "huachong-park",
-      "name": "花冲公园",
-      "cat": "公园",
-      "tags": [
-        "老公园",
-        "晨练",
-        "免费"
-      ],
-      "heat": 5.5,
-      "dur": 50,
-      "intro": "瑶海区的老牌公园，清晨最热闹。",
-      "reason": "本地人晨练的日常公园",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.330729,
-        31.864518
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B022701Y6U",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "huancheng-park",
-      "name": "环城公园",
-      "cat": "公园",
-      "tags": [
-        "环河",
-        "免费",
-        "早去"
-      ],
-      "heat": 7.5,
-      "dur": 60,
-      "intro": "老城环城河边的带状公园，串起多处景点。",
-      "reason": "从包公园沿河走到逍遥津",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.282971,
-        31.874512
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFH08G23",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "0551-63670819",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/4dccb4df045d5ee82607640fecee78cf",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "xinghua-park",
@@ -1373,7 +1354,7 @@
       "dur": 60,
       "intro": "老城北侧的公园，湖边树多凉快。",
       "reason": "逛完城隍庙来歇脚",
-      "open": null,
+      "open": "06:30-21:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1384,7 +1365,14 @@
       "amap_poi_id": "B02270085C",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 06:30-21:30",
+      "tel": "0551-62843790",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/21e751b3b3fb0352ecf3eff3f5a4c6ed",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "kexuedao",
@@ -1395,22 +1383,29 @@
         "科研",
         "免费"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 90,
       "intro": "董铺水库中的科研岛，三面环水。",
       "reason": "环岛路上看水库，很清净",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        117.170987,
-        31.893158
+        117.164844,
+        31.90439
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFGAHJE1",
+      "amap_poi_id": "B0FFIL26SA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "00:00-24:00",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/d04ebb296eaf786f0000002403880228?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "hefei-sea-world",
@@ -1436,33 +1431,14 @@
       "amap_poi_id": "B0FFIOZ910",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "hefei-science-museum",
-      "name": "合肥市科技馆",
-      "cat": "亲子",
-      "tags": [
-        "科技",
-        "亲子",
-        "室内"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "黄山路的科技馆，动手展项多。",
-      "reason": "孩子能玩半天，先查开放日",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        117.127713,
-        31.839787
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFI94P6M",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "6月27日至8月30日:08:30-20:00,晚场入园时间:16:00-19:30； 8月31日:08:30-17:00",
+      "tel": "0551-63843812;0551-63843818",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/1620d83220ace098f60a33610052774a",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "anhui-innovation",
@@ -1477,7 +1453,7 @@
       "dur": 90,
       "intro": "滨湖的科技成果展馆，量子与人工智能展项多。",
       "reason": "和渡江纪念馆一起安排在滨湖",
-      "open": "09:00-17:00",
+      "open": "09:30-17:00",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -1488,33 +1464,14 @@
       "amap_poi_id": "B0FFIPEW88",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "rongchuang-mao",
-      "name": "合肥融创茂",
-      "cat": "商圈",
-      "tags": [
-        "滨湖",
-        "购物",
-        "亲子"
-      ],
-      "heat": 7,
-      "dur": 90,
-      "intro": "滨湖的大型商场，吃饭看电影都方便。",
-      "reason": "滨湖玩完就近吃饭",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.307071,
-        31.703095
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFIQE7JU",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周三至周日 09:30-17:00",
+      "tel": "0551-65909008;19005609170",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFIPEW88/comment/content_media_external_file_55720_ss__1747694135031_42153427.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "1912-street",
@@ -1533,21 +1490,30 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.227,
-        31.836
+        117.220383,
+        31.841392
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGPCXXK",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": [],
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFGPCXXK/comment/content_media_external_file_100018427_1765014152622_22503389.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "feicui-lake",
-      "name": "翡翠湖",
+      "name": "翡翠湖风景区",
       "cat": "夜景",
       "tags": [
         "夜景",
         "夜跑",
         "免费"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 80,
       "intro": "经开区大学城的湖面，晚上灯带很亮。",
       "reason": "绕湖夜跑一圈刚好",
@@ -1555,14 +1521,22 @@
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        117.193925,
-        31.766959
+        117.193514,
+        31.767647
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BY0001OZTB",
+      "amap_poi_id": "B02270IKF4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": [],
+      "tel": "0551-63837846",
+      "rating": 4.9,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02270IKF4/comment/content_media_external_images_media_1224_1740659050066_39483449.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "ustc",
@@ -1573,12 +1547,10 @@
         "樱花",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 60,
       "intro": "科大东区校园，春天的樱花大道出名。",
       "reason": "三月底来，樱花下走一段",
-      "open": null,
-      "closed_mon": null,
       "suburb": false,
       "coord": [
         117.269603,
@@ -1588,7 +1560,9 @@
       "amap_poi_id": "B0FFF3EOHS",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "photo": "http://store.is.autonavi.com/showpic/1ce6466f9014d972190048912f45091e",
+      "heat_prev": 6.5
     },
     {
       "id": "banbian-street",
@@ -1603,7 +1577,7 @@
       "dur": 60,
       "intro": "大蜀山南麓的半边街，书店与餐饮集中。",
       "reason": "爬完山下来喝杯咖啡",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1614,7 +1588,13 @@
       "amap_poi_id": "B0FFIOS1CQ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFIOS1CQ/comment/content_media_external_file_4114_ss__1771726818940_07182106.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "changjiang180",
@@ -1629,8 +1609,8 @@
       "dur": 70,
       "intro": "瑶海区老厂房改的艺术街区。",
       "reason": "老厂房红砖墙很出片",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-24:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         117.354196,
@@ -1640,7 +1620,14 @@
       "amap_poi_id": "B0FFI9ZJ8E",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-24:00",
+      "tel": "0551-65695180",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFI9ZJ8E/comment/content_media_external_file_100002199_1765343791240_38092244.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "datong-road",
@@ -1691,41 +1678,15 @@
       "coord_src": "estimate"
     },
     {
-      "id": "kaifu-temple",
-      "name": "开福寺",
-      "cat": "古迹",
-      "tags": [
-        "古寺",
-        "大蜀山",
-        "香火"
-      ],
-      "heat": 6.5,
-      "dur": 60,
-      "intro": "大蜀山旁复建的唐代风格寺院。",
-      "reason": "建筑新但格局大，拍照好看",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        117.185445,
-        31.831776
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "BV09021811",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
       "id": "lihongzhang-xiangtang",
-      "name": "李鸿章享堂",
+      "name": "合肥市李鸿章享堂",
       "cat": "古迹",
       "tags": [
         "晚清",
         "墓园",
         "小众"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 45,
       "intro": "李鸿章墓地与享堂，规模很大。",
       "reason": "近代史爱好者的小众去处",
@@ -1733,25 +1694,33 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        117.370074,
-        31.838056
+        117.367418,
+        31.838208
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV10171591",
+      "amap_poi_id": "B02270I2WR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周二至周日09:00-16:30,节假日正常开放",
+      "tel": "0551-64538901",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B02270I2WR/comment/content_media_external_images_media_1000400387_ss__1754747461399_00826067.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "dujiang-qianguwei",
-      "name": "渡江战役总前委旧址",
+      "name": "渡江战役总前委旧址纪念馆",
       "cat": "古迹",
       "tags": [
         "红色",
         "瑶岗",
         "老宅"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "肥东瑶岗村的总前委旧址，邓小平旧居在此。",
       "reason": "顺路去肥东时可安排",
@@ -1766,7 +1735,15 @@
       "amap_poi_id": "B02270IN2S",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": [],
+      "tel": "0551-67363135",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/98bf9a0d56c77b64cc305337790998f6",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     }
   ]
 }

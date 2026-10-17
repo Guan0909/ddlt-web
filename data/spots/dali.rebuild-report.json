@@ -1,0 +1,1099 @@
+{
+  "city": "大理",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "公园": 8,
+      "博物馆": 6,
+      "夜景": 4,
+      "街区": 11,
+      "古迹": 13,
+      "亲子": 4,
+      "商圈": 3,
+      "美食": 4,
+      "山水": 10,
+      "古镇": 7
+    },
+    "byGroup": {
+      "core": 36,
+      "night": 4,
+      "family": 4,
+      "street": 11,
+      "food": 4,
+      "park": 8,
+      "mall": 3,
+      "total": 70,
+      "suburb": 32,
+      "coreRatio": 57
+    }
+  },
+  "keep": [
+    {
+      "id": "erhai-park",
+      "name": "洱海公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhou-museum",
+      "name": "大理州博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dali-aquarium",
+      "name": "大理海洋世界",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "erhai-moon-wetland",
+      "name": "洱海月湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gucheng-fuxing",
+      "name": "大理古城复兴路",
+      "cat": "街区",
+      "heat": 10,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "renmin-road",
+      "name": "大理古城人民路",
+      "cat": "美食",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yangren-street",
+      "name": "大理古城洋人街",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "honglongjing",
+      "name": "红龙井",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wuhua-tower",
+      "name": "五华楼",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "chongsheng-towers",
+      "name": "崇圣寺三塔",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "santa-reflection",
+      "name": "三塔倒影公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tianlong-babu",
+      "name": "天龙八部影视城",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dali-city-museum",
+      "name": "大理市博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "feiyi-museum",
+      "name": "大理非物质文化遗产博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dianying-museum",
+      "name": "中国大理农村电影历史博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "photo-museum",
+      "name": "大理摄影博物馆",
+      "cat": "博物馆",
+      "heat": 5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "hongsheng-tower",
+      "name": "弘圣寺塔",
+      "cat": "古迹",
+      "heat": 5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "jizhao-nunnery",
+      "name": "寂照庵",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qingbi-stream",
+      "name": "清碧溪",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "gantong-cableway",
+      "name": "苍山景区苍山感通索道",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ximalatan-cableway",
+      "name": "苍山洗马潭大索道",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yudai-road",
+      "name": "苍山玉带云游路",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "taihe-city",
+      "name": "太和城遗址",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "erhai-greenway",
+      "name": "洱海生态廊道",
+      "cat": "公园",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xizhou",
+      "name": "喜洲古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xizhou-sifangjie",
+      "name": "喜洲四方街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yan-family",
+      "name": "严家大院博物馆",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "butterfly-spring",
+      "name": "蝴蝶泉",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shuanglang",
+      "name": "双廊古镇",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nanzhao-resort",
+      "name": "南诏风情岛",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shuanglang-haijie",
+      "name": "双廊海街",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "小普陀",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tianjing-pavilion",
+      "name": "天镜阁景区",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "jinsuo-island",
+      "name": "金梭岛",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shaxi",
+      "name": "沙溪古镇",
+      "cat": "古镇",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xingjiao-temple",
+      "name": "沙溪兴教寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shibao-mountain",
+      "name": "石宝山",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "jianchuan-old-town",
+      "name": "剑川古城",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qianshi-mountain",
+      "name": "剑川千狮山",
+      "cat": "山水",
+      "heat": 5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "nuodeng",
+      "name": "诺邓古村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "jizushan",
+      "name": "鸡足山",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "weishan-old-town",
+      "name": "巍山古城",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "weibao-mountain",
+      "name": "巍宝山景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wuliang-cherry",
+      "name": "无量山樱花谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "direshenguo",
+      "name": "洱源地热国",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yunnanyi",
+      "name": "云南驿古镇",
+      "cat": "古镇",
+      "heat": 5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "chuangdanchang",
+      "name": "大理床单厂艺术区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "longweiguan",
+      "name": "龙尾关遗址",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "lixiang-bang",
+      "name": "理想邦",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sanyue-street",
+      "name": "三月街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "panxi-s-bend",
+      "name": "磻溪村S湾",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "yuji-island",
+      "name": "玉几岛",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "wase-town",
+      "name": "挖色镇",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "gusheng-village",
+      "name": "古生村景区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "aiqinhai-mall",
+      "name": "大理爱琴海购物公园",
+      "cat": "商圈",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "taiye-plaza",
+      "name": "泰业城市广场",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "yuer-park",
+      "name": "玉洱园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "shangguang-flower",
+      "name": "上关花公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 3.7,
+      "level": null,
+      "score": 0.08,
+      "heatNew": 5
+    },
+    {
+      "id": "haishe-park",
+      "name": "海舌公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "eryuan-xihu",
+      "name": "洱源西湖",
+      "cat": "公园",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "weishan-food-street",
+      "name": "巍山南诏古街",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 3.3,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    }
+  ],
+  "drop": [
+    {
+      "id": "xingsheng-bridge",
+      "name": "兴盛大桥",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "fotu-tower",
+      "name": "佛图寺",
+      "cat": "古迹",
+      "heat": 5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "评分 3.9 < 4.0"
+    },
+    {
+      "id": "gantong-temple",
+      "name": "感通寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "zhonghe-temple",
+      "name": "中和寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "longkan-village",
+      "name": "上龙龛村中心广场",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "评分 3.9 < 4.0"
+    },
+    {
+      "id": "zhoucheng-tiedye",
+      "name": "周城·璞真白族扎染博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "luwoshan",
+      "name": "鹿卧山",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "fengyangyi",
+      "name": "凤阳邑村",
+      "cat": "街区",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后/无评分"
+    },
+    {
+      "id": "caicun-pier",
+      "name": "才村码头",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（街区 ≤8）且评分靠后/无评分"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "大理古城",
+      "coord": [
+        100.164,
+        25.694836
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "大理苍山世界地质公园",
+      "coord": [
+        100.119072,
+        25.657252
+      ],
+      "type": "风景名胜;风景名胜;国家级景点|风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "erhai-park",
+      "name": "洱海公园",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "longweiguan",
+      "name": "龙尾关遗址",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "fotu-tower",
+      "name": "佛图寺",
+      "from": 5,
+      "to": 6
+    },
+    {
+      "id": "dali-aquarium",
+      "name": "大理海洋世界",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "aiqinhai-mall",
+      "name": "大理爱琴海购物公园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "erhai-moon-wetland",
+      "name": "洱海月湿地公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "gucheng-fuxing",
+      "name": "大理古城复兴路",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "renmin-road",
+      "name": "大理古城人民路",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "yangren-street",
+      "name": "大理古城洋人街",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "sanyue-street",
+      "name": "三月街",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "wuhua-tower",
+      "name": "五华楼",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "chongsheng-towers",
+      "name": "崇圣寺三塔",
+      "from": 9.5,
+      "to": 7
+    },
+    {
+      "id": "tianlong-babu",
+      "name": "天龙八部影视城",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "dali-city-museum",
+      "name": "大理市博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "feiyi-museum",
+      "name": "大理非物质文化遗产博物馆",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "dianying-museum",
+      "name": "中国大理农村电影历史博物馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "photo-museum",
+      "name": "大理摄影博物馆",
+      "from": 5,
+      "to": 7
+    },
+    {
+      "id": "yuer-park",
+      "name": "玉洱园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "chuangdanchang",
+      "name": "大理床单厂艺术区",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "hongsheng-tower",
+      "name": "弘圣寺塔",
+      "from": 5,
+      "to": 6
+    },
+    {
+      "id": "qingbi-stream",
+      "name": "清碧溪",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "ximalatan-cableway",
+      "name": "苍山洗马潭大索道",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "yudai-road",
+      "name": "苍山玉带云游路",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "taihe-city",
+      "name": "太和城遗址",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "longkan-village",
+      "name": "上龙龛村中心广场",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "erhai-greenway",
+      "name": "洱海生态廊道",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "panxi-s-bend",
+      "name": "磻溪村S湾",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "xizhou",
+      "name": "喜洲古镇",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "yan-family",
+      "name": "严家大院博物馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "butterfly-spring",
+      "name": "蝴蝶泉",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "shangguang-flower",
+      "name": "上关花公园",
+      "from": 5.5,
+      "to": 5
+    },
+    {
+      "id": "yuji-island",
+      "name": "玉几岛",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "nanzhao-resort",
+      "name": "南诏风情岛",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "shuanglang-haijie",
+      "name": "双廊海街",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "xiaoputuo",
+      "name": "小普陀",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "lixiang-bang",
+      "name": "理想邦",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "tianjing-pavilion",
+      "name": "天镜阁景区",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "jinsuo-island",
+      "name": "金梭岛",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "shaxi",
+      "name": "沙溪古镇",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "shibao-mountain",
+      "name": "石宝山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "jianchuan-old-town",
+      "name": "剑川古城",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "qianshi-mountain",
+      "name": "剑川千狮山",
+      "from": 5,
+      "to": 7
+    },
+    {
+      "id": "jizushan",
+      "name": "鸡足山",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "weishan-old-town",
+      "name": "巍山古城",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "weibao-mountain",
+      "name": "巍宝山景区",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "weishan-food-street",
+      "name": "巍山南诏古街",
+      "from": 6,
+      "to": 5
+    },
+    {
+      "id": "direshenguo",
+      "name": "洱源地热国",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yunnanyi",
+      "name": "云南驿古镇",
+      "from": 5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -21,7 +21,9 @@
     },
     "todo": "入库前：腾讯地点搜索逐条回填真实坐标与 POI ID，对不上的剔除；人工抽检 Top 20",
     "coord_repaired_at": "2026-10-17",
-    "rematch_at": "2026-10-17"
+    "rematch_at": "2026-10-17",
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -33,12 +35,12 @@
         "必去",
         "早去"
       ],
-      "heat": 10,
+      "heat": 8,
       "dur": 150,
       "intro": "藏地最神圣的宫堡，红白宫依山而建。",
       "reason": "九点前排队人最少，内部限时参观",
       "open": "09:00-16:00",
-      "closed_mon": false,
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         91.118463,
@@ -48,7 +50,15 @@
       "amap_poi_id": "B037B01F68",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "5月1日-10月31日:周二-周日:09:00-15:40；周一不开放；7月1日-9月15日:周一 09:00-15:40；11月1日-次年4月30日:周二-周日:09:30-15:20；周一不开放；",
+      "tel": "4008649111",
+      "rating": 4.9,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/abc43f4373ca7c3cd59e884283c31051",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "jokhang",
@@ -59,11 +69,11 @@
         "朝圣",
         "早去"
       ],
-      "heat": 10,
+      "heat": 8,
       "dur": 90,
       "intro": "藏传佛教信仰中心，门前长头不断。",
       "reason": "清晨跟转经人绕一圈最有感觉",
-      "open": null,
+      "open": "08:30-18:30",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -74,7 +84,14 @@
       "amap_poi_id": "B037B00F2D",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-18:30 最晚进入18:30",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/df5a8b4a1a882cedaebee0a32f516e7c",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "barkhor",
@@ -85,18 +102,28 @@
         "免费",
         "夜景"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 110,
       "intro": "环大昭寺的千年转经道，老街商铺密布。",
       "reason": "顺时针跟着人流走，藏味全在这",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.134,
-        29.6525
+        91.133541,
+        29.64999
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFF5QRT7",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/6c306fa233dc7ccd0000002310778597?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "ramoche",
@@ -106,7 +133,7 @@
         "等身像",
         "人少"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 40,
       "intro": "与大昭寺并称的早期寺院，供八岁等身像。",
       "reason": "游客少，能安静看一尊国宝佛像",
@@ -121,7 +148,14 @@
       "amap_poi_id": "B037B01D16",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-16:00；本地信教群众开放时间8:30-15:00，游客15:00-16:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/6560417de51f5a5e44f62a333e3359c4",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "norbulingka",
@@ -132,7 +166,7 @@
         "园林",
         "夏天"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 120,
       "intro": "历代达赖的夏宫，高原园林与宫殿群。",
       "reason": "午后树荫里慢慢走，最舒服",
@@ -147,7 +181,15 @@
       "amap_poi_id": "B037B01C57",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "03-16至10-14 周一至周日 09:30-18:30 最晚进入17:30；10-15至03-15 周一至周日 09:30-18:00 最晚进入17:00",
+      "tel": "0891-6826274",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/6795bf614b062fbbcd95c1c1f17d03a7",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "tibet-museum",
@@ -158,7 +200,7 @@
         "室内",
         "文物"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 110,
       "intro": "读懂西藏历史与藏文化的第一站。",
       "reason": "先看馆再看寺，处处都看得懂",
@@ -173,7 +215,15 @@
       "amap_poi_id": "B037B00866",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "11/01-04/30 周二–周日 10:00–17:30开放 最晚进入16:30；05/01-10/31 周二–周日 09:30–18:30开放 最晚进入17:30；1/1-12/31 周一 全天不开放；中秋节,国庆节 09:30–18:30开放 最晚进入17:30；法定节假日无特殊情况正常开放，逢周一闭馆，节假日、其他重要活动等特殊情况将提前公告参观时间",
+      "tel": "0891-6835244",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/92dbc5423b126b7884d1295077870f6d",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "drepung",
@@ -184,11 +234,11 @@
         "雪顿节",
         "早去"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 150,
       "intro": "格鲁派最大寺院，白色僧舍铺满山坡。",
       "reason": "雪顿节晒佛在后山，要凌晨占位",
-      "open": null,
+      "open": "09:00-16:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -199,7 +249,14 @@
       "amap_poi_id": "B037B0056D",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-16:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/928935f92625f21c61dc40ef3e64f67a",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "sera",
@@ -209,11 +266,11 @@
         "辩经",
         "三大寺"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 120,
       "intro": "格鲁派三大寺之一，以辩经闻名。",
       "reason": "下午三点去辩经院看僧人击掌",
-      "open": "09:00-16:00",
+      "open": "09:00-17:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -224,7 +281,14 @@
       "amap_poi_id": "B037B00980",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00 最晚进入16:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/9af4f39f9a54f8d20000003466890971?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "chakpori",
@@ -235,11 +299,11 @@
         "观景台",
         "早去"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 40,
       "intro": "布宫对面的千佛崖与观景平台。",
       "reason": "五十元人民币背面同款机位",
-      "open": null,
+      "open": "09:00-18:00",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -250,7 +314,14 @@
       "amap_poi_id": "B037B01996",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "09:00-18:00具体营业状态以当天开放情况为准",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/8be57ffdad9b8e87475a852740cf22db",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "dzongyab",
@@ -261,11 +332,11 @@
         "湖景",
         "早去"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 60,
       "intro": "布达拉宫背后的龙王潭，湖面有倒影。",
       "reason": "清晨湖边看布宫倒影，人还少",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -276,7 +347,14 @@
       "amap_poi_id": "B0FFGCDAFQ",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/52cde2e6ff6075e80000002492978884?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "lhalu-wetland",
@@ -287,7 +365,7 @@
         "观鸟",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 60,
       "intro": "海拔最高的城市湿地，候鸟栖息地。",
       "reason": "市区里的一片安静芦苇荡",
@@ -302,7 +380,14 @@
       "amap_poi_id": "B037B022TL",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一 全天关闭；1月至4月,10月至12月 周二至周日 09:00-19:30；5月至9月 周二至周日 08:00-21:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B022TL/comment/8FD7A2E4_9206_418D_9C31_23BA36EB83F4_L0_001_1136_56_1772793886269_45745749.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "zhaji",
@@ -313,11 +398,11 @@
         "求财",
         "早去"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 40,
       "intro": "拉萨香火最旺的财神庙，供酒求财。",
       "reason": "本地人拎着青稞酒排队来拜",
-      "open": null,
+      "open": "07:00-16:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -328,7 +413,14 @@
       "amap_poi_id": "B037B01194",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 07:00-16:00 最晚进入15:30",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/2e560a72f556cb2e0000002820964390?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "canggu",
@@ -339,11 +431,11 @@
         "甜茶",
         "小众"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 50,
       "intro": "八廓街旁的尼姑寺，院内可以喝甜茶。",
       "reason": "在寺庙院子里喝壶甜茶坐半天",
-      "open": null,
+      "open": "08:00-20:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -354,7 +446,14 @@
       "amap_poi_id": "B037B0OBG0",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:00-20:00",
+      "rating": 4.1,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B0OBG0/comment/AAB33C77_95E0_4C9A_8884_18E771399DA2_L0_001_1500_200_1772087005387_86532725.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "muru",
@@ -368,8 +467,8 @@
       "dur": 40,
       "intro": "老城里的印经院，经板堆满木架。",
       "reason": "看师傅手工印经，没什么游客",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.136561,
@@ -379,7 +478,13 @@
       "amap_poi_id": "B037B0OCPC",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B0OCPC/comment/4AF96360_39BC_4D08_B77F_B3D316AC3F17_L0_001_1500_200_1752731214730_95286231.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "danjielin",
@@ -390,7 +495,7 @@
         "小众",
         "免费"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "拉萨四大林之一，藏在老城巷子里。",
       "reason": "拐进巷子就撞见的清静小寺",
@@ -405,7 +510,14 @@
       "amap_poi_id": "B0FFFTWCNX",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": [],
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/becde79029464075097d36ed523a1ea9",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "cemeling",
@@ -415,11 +527,11 @@
         "四大林",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 6,
       "dur": 40,
       "intro": "老城北侧的小寺，本地信众常来。",
       "reason": "顺路进来看一眼的安静院子",
-      "open": null,
+      "open": "09:00-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -430,7 +542,14 @@
       "amap_poi_id": "B037B0OK7E",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-18:00",
+      "rating": 4,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/c4829d4ca04c4dba782e1039429415f8",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "gongdelin",
@@ -440,11 +559,11 @@
         "四大林",
         "壁画"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "拉萨四大林之一，院内有古树与壁画。",
       "reason": "转经道边藏得最深的寺院之一",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -455,28 +574,14 @@
       "amap_poi_id": "B0FFFXMY86",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "xiami-yuan",
-      "name": "下密院",
-      "cat": "古迹",
-      "tags": [
-        "密宗",
-        "小众"
-      ],
-      "heat": 5.5,
-      "dur": 40,
-      "intro": "小昭寺附近的密宗学府，诵经声不断。",
-      "reason": "路过听见诵经声，值得进门看看",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        91.136,
-        29.657
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFFXMY86/comment/content_media_external_file_1000012494_ss__1761041797944_57254543.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "pabongka",
@@ -487,12 +592,12 @@
         "俯瞰拉萨",
         "小众"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 70,
       "intro": "建在巨石上的宫堡寺院，可俯瞰拉萨。",
       "reason": "俯瞰全城的好角度，人还不多",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.118805,
@@ -502,7 +607,14 @@
       "amap_poi_id": "B037B0OJKQ",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/ada58d05f4db46ef0000003199948874",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "niangre",
@@ -513,12 +625,12 @@
         "歌舞",
         "亲子"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 120,
       "intro": "娘热沟里的藏族民俗园，可看歌舞。",
       "reason": "带小孩看藏戏歌舞，能坐一下午",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-18:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.107474,
@@ -528,7 +640,15 @@
       "amap_poi_id": "B037B022BC",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-18:00",
+      "tel": "0891-6800513;18908919981",
+      "rating": 4.1,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B022BC/comment/content_media_external_file_33433_ss__1761809560424_30983746.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "yak-museum",
@@ -539,7 +659,7 @@
         "室内",
         "牦牛"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 90,
       "intro": "全国唯一以牦牛为主题的博物馆。",
       "reason": "从牦牛讲透高原人的生活",
@@ -554,7 +674,15 @@
       "amap_poi_id": "B0G1JK4G6U",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "1月至2月,12月 周二至周日 11:00-17:00 最晚进入16:00；6月至8月 周二至周日 10:00-17:30 最晚进入16:30；周一闭馆（法定节假日正常开放）",
+      "tel": "0891-6380000",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/30ffb6effdfae76ad3ae07424fa8a3bf",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "science-museum",
@@ -569,7 +697,7 @@
       "dur": 120,
       "intro": "柳梧新区的自然馆，恐龙与高原生态展。",
       "reason": "高反休息日的室内备选",
-      "open": "10:00-17:00",
+      "open": "10:30-17:00",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -580,7 +708,14 @@
       "amap_poi_id": "B0FFH4SLBL",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "11月1日-次年4月14周二至周日:10:30-17:00,(国家法定节假日除外)",
+      "tel": "0891-6401062",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/fe41f27428bb2020ebef8f347f6d616a",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "potala-treasure",
@@ -591,12 +726,12 @@
         "室内",
         "布宫山脚"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 60,
       "intro": "雪城里的珍宝展厅，金铜造像与法器多。",
       "reason": "进布宫前先看这里更看得懂",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-15:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.119558,
@@ -606,59 +741,14 @@
       "amap_poi_id": "B037B0OK3J",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "amban-yamen",
-      "name": "清政府驻藏大臣衙门旧址",
-      "cat": "博物馆",
-      "tags": [
-        "免费",
-        "历史",
-        "八廓街内"
-      ],
-      "heat": 6,
-      "dur": 50,
-      "intro": "八廓街内的清代衙门旧址，现为陈列馆。",
-      "reason": "逛八廓街时免费进来看半小时",
-      "open": "10:00-17:00",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        91.134608,
-        29.651105
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHFMVA5",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "gendun-chophel",
-      "name": "根敦群培纪念馆",
-      "cat": "博物馆",
-      "tags": [
-        "免费",
-        "小众",
-        "八廓街内"
-      ],
-      "heat": 5.5,
-      "dur": 40,
-      "intro": "纪念藏族学者根敦群培的小型纪念馆。",
-      "reason": "在八廓街里读一段近代西藏",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.133349,
-        29.649339
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF5QRT9",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-15:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/6e730af099c4b0020000002969654466?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "potala-square",
@@ -669,12 +759,12 @@
         "免费",
         "喷泉"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 50,
       "intro": "布宫正前方的广场，夜里灯光与倒影。",
       "reason": "天黑后灯光亮起，倒影最好看",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.118222,
@@ -684,7 +774,14 @@
       "amap_poi_id": "B0FFFXMY88",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-22:00",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/2f2fe76fded54484a753f3f9435b9846",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "yutok-road",
@@ -695,12 +792,12 @@
         "夜市",
         "夜景"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 70,
       "intro": "布宫与八廓街之间的老街，夜里最热闹。",
       "reason": "晚上来吃小吃，顺路逛到八廓街",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-21:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.122039,
@@ -710,7 +807,15 @@
       "amap_poi_id": "B0JBTOETMV",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-21:00",
+      "tel": "0891-6325581",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/277de24387a4472c0000003094848473?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "barkhor-mall",
@@ -721,12 +826,12 @@
         "室内",
         "伴手礼"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "老城里的室内商厦，特产与伴手礼集中。",
       "reason": "下雨天也能一次买齐伴手礼",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-19:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.139012,
@@ -736,7 +841,15 @@
       "amap_poi_id": "B0FFFQ1INI",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-19:00",
+      "tel": "17867692676",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/comment/content_service_ad4ba68268518d05445cb9d03e9ebb26_1768035340811_78189744.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "shenli-plaza",
@@ -747,12 +860,12 @@
         "餐饮",
         "室内"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "北京中路上的综合体，餐厅和超市齐全。",
       "reason": "高反不舒服时来这吃饭补给",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-21:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.129459,
@@ -762,85 +875,14 @@
       "amap_poi_id": "B037B0OZO2",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "lhasa-dept-store",
-      "name": "拉萨百货大楼",
-      "cat": "商圈",
-      "tags": [
-        "老商场",
-        "日用",
-        "室内"
-      ],
-      "heat": 5,
-      "dur": 40,
-      "intro": "老牌百货，本地人常逛的日用品商场。",
-      "reason": "补充日用品和防晒装备很方便",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.12245,
-        29.651037
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B037B02G5S",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "taiyang-island",
-      "name": "太阳岛",
-      "cat": "商圈",
-      "tags": [
-        "餐饮",
-        "购物",
-        "拉萨河边"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "拉萨河上的商业小岛，餐饮购物集中。",
-      "reason": "河边吃饭，看水看桥很舒服",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.117425,
-        29.640775
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0MA26ONZI",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "xianzu-island",
-      "name": "仙足岛",
-      "cat": "夜景",
-      "tags": [
-        "夜景",
-        "咖啡",
-        "拉萨河边"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "拉萨河边的安静小岛，咖啡馆与客栈聚集。",
-      "reason": "傍晚在河边喝一杯看日落",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.130633,
-        29.636346
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGET8Q4",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-21:00",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B0OZO2/comment/content_media_external_file_41872_ss__1768745844142_36467575.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "chongsaikang",
@@ -895,7 +937,7 @@
         "烧烤",
         "本地人"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 80,
       "intro": "拉萨人气夜市，烧烤与川味小吃混着藏餐。",
       "reason": "本地人下班来撸串的地方",
@@ -910,7 +952,8 @@
       "amap_poi_id": "B037B0OHON",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "heat_prev": 7
     },
     {
       "id": "deji-road",
@@ -920,18 +963,29 @@
         "餐饮街",
         "酒吧"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 70,
       "intro": "德吉路上的餐饮与酒吧一条街。",
       "reason": "想换口味时来这条街找川菜",
-      "open": null,
-      "closed_mon": null,
+      "open": "06:00-21:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        91.117,
-        29.646
+        91.108184,
+        29.659838
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0MAMZ5O8P",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 06:00-21:00",
+      "tel": "13989998388",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/b35781f0f1d40a7c0000003065696052?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "makye-ame",
@@ -942,7 +996,7 @@
         "观景",
         "藏餐"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 80,
       "intro": "八廓街东南角的黄房子，有仓央嘉措传说。",
       "reason": "坐在窗边看八廓街人流转经",
@@ -957,83 +1011,8 @@
       "amap_poi_id": "B037B0289I",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "guangming-teahouse",
-      "name": "老光明岗琼甜茶馆",
-      "cat": "美食",
-      "tags": [
-        "甜茶",
-        "本地人",
-        "便宜"
-      ],
-      "heat": 7,
-      "dur": 50,
-      "intro": "甜茶馆里挤满本地人，一杯甜茶坐半天。",
-      "reason": "几毛一杯的甜茶，续到不想走",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.131487,
-        29.651847
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B037B028AA",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
-    },
-    {
-      "id": "xueyu-restaurant",
-      "name": "雪域餐厅",
-      "cat": "美食",
-      "tags": [
-        "藏餐",
-        "老字号"
-      ],
-      "heat": 6.5,
-      "dur": 70,
-      "intro": "藏医院路上的藏餐老店，牦牛肉和糌粑。",
-      "reason": "第一次吃藏餐从这里入门",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.131479,
-        29.651744
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFY4KGO",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "namaste",
-      "name": "娜玛瑟德餐厅",
-      "cat": "美食",
-      "tags": [
-        "尼泊尔餐",
-        "舒适"
-      ],
-      "heat": 6.5,
-      "dur": 70,
-      "intro": "尼泊尔风味餐厅，环境舒服份量大。",
-      "reason": "吃不惯藏餐时的稳妥选择",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.137127,
-        29.640402
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKX4EO4",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "heat_prev": 7.5
     },
     {
       "id": "binhe-park",
@@ -1044,12 +1023,12 @@
         "骑行",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 70,
       "intro": "拉萨河沿岸的带状公园，步道与骑行道。",
       "reason": "傍晚沿河散步，看对岸灯亮起",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-19:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.102077,
@@ -1059,33 +1038,14 @@
       "amap_poi_id": "B0JUMMDAG2",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "hebalin-mosque",
-      "name": "河坝林清真寺",
-      "cat": "古迹",
-      "tags": [
-        "清真寺",
-        "小众",
-        "免费"
-      ],
-      "heat": 5.5,
-      "dur": 40,
-      "intro": "八廓街附近的清真寺，藏式与伊斯兰混搭。",
-      "reason": "拉萨多元一面的小众注脚",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.15666,
-        29.709669
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B037B0OK7L",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-19:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0JUMMDAG2/comment/content_media_external_file_113753_ss__1763203725562_47717886.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "tangbo-stele",
@@ -1100,8 +1060,8 @@
       "dur": 40,
       "intro": "大昭寺门前的唐代石碑，汉藏会盟见证。",
       "reason": "排队进大昭寺时顺便看一眼",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.132474,
@@ -1111,33 +1071,13 @@
       "amap_poi_id": "B0FFFS9S1O",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "wencheng-theatre",
-      "name": "文成公主实景剧场",
-      "cat": "演出",
-      "tags": [
-        "实景剧",
-        "晚上",
-        "需预约"
-      ],
-      "heat": 8.5,
-      "dur": 150,
-      "intro": "慈觉林山上的大型实景剧，演公主入藏。",
-      "reason": "高原夜色里看一场盛大演出",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.147119,
-        29.622159
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF294RO",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/4c8302226cbe8f8b0000002405624994?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "cijuelin",
@@ -1148,7 +1088,7 @@
         "演艺",
         "慈觉林"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 90,
       "intro": "慈觉林的文化旅游园区，藏式街区与剧场。",
       "reason": "看演出前后顺便逛的藏风街区",
@@ -1163,7 +1103,13 @@
       "amap_poi_id": "B0FFG6Q4X3",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "open_text": [],
+      "rating": 3.8,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "tibet-opera-center",
@@ -1174,12 +1120,12 @@
         "非遗",
         "室内"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 90,
       "intro": "藏戏演出的专业剧场，雪顿节期间最热闹。",
       "reason": "听不懂唱词也看得懂热闹",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-23:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.085405,
@@ -1189,7 +1135,14 @@
       "amap_poi_id": "B037B0OQKI",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-23:00",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/ff3426315c21e0a929d2a86e8998b6fa",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "naiqiong",
@@ -1199,12 +1152,12 @@
         "护法殿",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 6,
       "dur": 40,
       "intro": "哲蚌寺旁的古老护法神殿，缩在小院里。",
       "reason": "和哲蚌寺顺路打包看",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-16:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.057736,
@@ -1214,7 +1167,14 @@
       "amap_poi_id": "B037B022BF",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-16:00",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/e291db55d19d4f450000007841452720?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "qusang",
@@ -1225,12 +1185,12 @@
         "山腰",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 6,
       "dur": 60,
       "intro": "娘热沟山腰的尼姑寺，院里能看到拉萨城。",
       "reason": "徒步一小段，换来安静的视野",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         91.124056,
@@ -1240,7 +1200,14 @@
       "amap_poi_id": "B0FFGTC5F3",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00",
+      "rating": 4.1,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/8cf8a120137fe3c40000000735436602?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "ganden",
@@ -1251,18 +1218,28 @@
         "远郊",
         "早去"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "格鲁派祖寺，建在山脊上的庞大寺院群。",
       "reason": "山脊上的寺院群，值得专程一趟",
-      "open": null,
+      "open": "07:00-17:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
         91.735,
         29.65
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B00A96",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 07:00-17:00 最晚进入17:00；具体营业状态以当天开放情况为准。",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/c3907eb7-1c76-40ee-b67f-d13d19c1861e.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "drayerpa",
@@ -1277,8 +1254,8 @@
       "dur": 150,
       "intro": "悬崖上凿出的修行洞寺，小屋挂在山壁。",
       "reason": "崖壁上的寺庙，远看像挂着的画",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:30",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         91.280024,
@@ -1288,7 +1265,13 @@
       "amap_poi_id": "B037B023IV",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:30",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B023IV/comment/content_media_external_file_1000014303_ss__1767172606666_93284346.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "drolma-lhakang",
@@ -1299,12 +1282,12 @@
         "小众",
         "顺路"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 50,
       "intro": "聂塘的千年小寺，阿底峡大师圆寂地。",
       "reason": "去羊湖路上的顺路一站",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         90.948585,
@@ -1314,7 +1297,15 @@
       "amap_poi_id": "B037B01C15",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00",
+      "tel": "13989904523",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/fa79bfb5299ad9351a434a514d83c76e",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "tsurphu",
@@ -1329,14 +1320,23 @@
       "dur": 180,
       "intro": "噶玛噶举派主寺，山沟里的古老道场。",
       "reason": "寺院背后有徒步路线，人少清静",
-      "open": null,
+      "open": "08:00-14:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
         90.87,
         29.82
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B037B01E40",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "08:00-14:00免费开放(停车收费)",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B01E40/comment/89AC9608_FAA0_466B_97D0_3DCC22FED6DB_L0_001_1206_64_1773839053747_89093473.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "reting",
@@ -1347,12 +1347,12 @@
         "柏树林",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 210,
       "intro": "林周山沟里的噶当派祖寺，周有古柏。",
       "reason": "柏树林围着寺院，安静得像别处",
-      "open": null,
-      "closed_mon": null,
+      "open": "07:00-19:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         91.514839,
@@ -1362,7 +1362,14 @@
       "amap_poi_id": "B037B02SM9",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 07:00-19:00",
+      "rating": 4.3,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/f40689be664670fa0000005548630546?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "drigung-til",
@@ -1373,12 +1380,12 @@
         "山腰",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 210,
       "intro": "直贡噶举派主寺，建在山腰的寺院群。",
       "reason": "沿河谷而上，寺群铺满整面山坡",
-      "open": null,
-      "closed_mon": null,
+      "open": "06:00-16:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         92.205588,
@@ -1388,7 +1395,14 @@
       "amap_poi_id": "B037B02SLX",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 06:00-16:00",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B02SLX/comment/content_media_external_file_1000045226_ss__1754579904938_76852785.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "songtsen-birthplace",
@@ -1399,12 +1413,12 @@
         "纪念馆",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 120,
       "intro": "墨竹工卡甲玛乡的松赞故里，有纪念馆。",
       "reason": "顺着藏王朝的起点看一段历史",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         91.657376,
@@ -1414,51 +1428,46 @@
       "amap_poi_id": "B0FFF351WX",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "tunba",
-      "name": "吞巴藏香村",
-      "cat": "古镇",
-      "tags": [
-        "藏香",
-        "古村",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 150,
-      "intro": "藏香发明者吞弥·桑布扎的故乡，家家制香。",
-      "reason": "看手工做藏香，闻一整天香味",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.2,
-        29.43
-      ],
-      "coord_src": "estimate"
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.1,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/7127f1905b968e2ba060e5a4292309ca",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "qungmugangga",
-      "name": "琼穆岗嘎",
+      "name": "琼穆岗嘎雪山景区",
       "cat": "山水",
       "tags": [
         "雪山",
         "徒步",
         "远郊"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 300,
       "intro": "尼木境内的七千米雪山，拉萨最高峰。",
       "reason": "晴天从拉萨河方向能望见雪顶",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-18:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         89.9,
         29.55
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LB7AC1LP",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 08:00-18:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/79cfbd2ef7fc6cff0000002451064058?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "namtso",
@@ -1483,6 +1492,272 @@
       "coord_src": "estimate"
     },
     {
+      "id": "yangbajing",
+      "name": "羊八井地热温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "雪山",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "地热田上的高原温泉，雪山环着蒸汽。",
+      "reason": "泡在热水里看雪山冒蒸汽",
+      "open": null,
+      "closed_mon": null,
+      "suburb": true,
+      "coord": [
+        90.511477,
+        30.081037
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B037B021WP",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": [],
+      "rating": 4,
+      "cost": 276,
+      "photo": "http://store.is.autonavi.com/showpic/b702b88c20076fe37e8533fa1b5812e2",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
+    },
+    {
+      "id": "nyainqentanglha",
+      "name": "念青唐古拉山观景台",
+      "cat": "山水",
+      "tags": [
+        "雪山",
+        "观景台",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 40,
+      "intro": "青藏公路旁的观景台，正对七千米雪峰。",
+      "reason": "停车几分钟换来一张雪山合影",
+      "open": "00:00-23:59",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        90.9,
+        30.4
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B037B0OCLA",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "rating": 4.4,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B037B0OCLA/comment/e9dab05d35c735738bc467ad441225e0_2048_2048_80.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
+    },
+    {
+      "id": "lakenla",
+      "name": "那根拉山口",
+      "cat": "山水",
+      "tags": [
+        "垭口",
+        "海拔5190",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 40,
+      "intro": "往纳木错的最高垭口，海拔5190米。",
+      "reason": "站在垭口第一次看见纳木错",
+      "open": "00:00-23:59",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        91.09895,
+        30.67929
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGEZOMR",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "tel": "0891-6113602",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/49427d30f29aba9530df46c515519c50",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
+    },
+    {
+      "id": "yamdrok",
+      "name": "羊卓雍措景区",
+      "cat": "山水",
+      "tags": [
+        "圣湖",
+        "盘山公路",
+        "远郊"
+      ],
+      "heat": 8,
+      "dur": 300,
+      "intro": "三大圣湖之一，翻过岗巴拉就见碧蓝湖面。",
+      "reason": "湖水蓝得不真实，值回一路盘山",
+      "open": "08:30-18:00",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        90.681079,
+        28.930442
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B037D0MKCD",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-18:00 最晚进入17:30",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/f9f27151efbe5c6bba270b1ec743da07",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
+    },
+    {
+      "id": "gangbala",
+      "name": "岗巴拉山口",
+      "cat": "山水",
+      "tags": [
+        "观景台",
+        "羊湖",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 40,
+      "intro": "羊湖畔的观景垭口，湖与雪山一次看齐。",
+      "reason": "羊湖最经典的合影位，就在这",
+      "open": "00:00-23:59",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        90.83,
+        29.13
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFGEZOMR",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "tel": "0891-6113602",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/49427d30f29aba9530df46c515519c50",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
+    },
+    {
+      "id": "sijin-lhatso",
+      "name": "思金拉措",
+      "cat": "山水",
+      "tags": [
+        "财神湖",
+        "经幡",
+        "远郊"
+      ],
+      "heat": 7,
+      "dur": 90,
+      "intro": "传说中的财神湖，四周挂满经幡。",
+      "reason": "去林芝路上顺路看一眼",
+      "open": "00:00-23:59",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        92.367481,
+        29.774856
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHSYL1L",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "15726799620",
+      "rating": 4.6,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFHSYL1L/comment/F5CD7A1D_7727_4F00_9F3F_989DCC7F4B4A_L0_001_1500_200_1762229662816_95714017.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
+    },
+    {
+      "id": "riduo",
+      "name": "日多温泉",
+      "cat": "山水",
+      "tags": [
+        "温泉",
+        "318线上",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 120,
+      "intro": "米拉山下的温泉小镇，318线上的歇脚点。",
+      "reason": "长途路上的热水澡和热饭",
+      "open": "10:00-22:00",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        92.241899,
+        29.691105
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFHF1223",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-22:00",
+      "tel": "0891-6132448",
+      "rating": 4.1,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFHF1223/comment/content_media_external_images_media_330_1732687837817_58369317.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
+    },
+    {
+      "id": "caina",
+      "name": "秀色才纳·雪域花谷",
+      "cat": "亲子",
+      "tags": [
+        "采摘",
+        "花海",
+        "远郊"
+      ],
+      "heat": 6,
+      "dur": 150,
+      "intro": "曲水才纳乡的高原农业园，可摘果看花海。",
+      "reason": "带小孩在高原摘一次草莓",
+      "open": "10:30-23:30",
+      "closed_mon": false,
+      "suburb": true,
+      "coord": [
+        90.948684,
+        29.439646
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKZFJSV",
+      "verify_src": "amap",
+      "verified_at": "2026-10-16",
+      "refreshed_at": "2026-10-16",
+      "open_text": "周一至周日 10:30-23:30",
+      "tel": "17308986256",
+      "rating": 4.2,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/42e3f257de0e80660000003038912443?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
+    },
+    {
       "id": "damxung-grassland",
       "name": "羌塘草原",
       "cat": "山水",
@@ -1501,128 +1776,6 @@
       "coord": [
         91.05,
         30.56
-      ],
-      "coord_src": "estimate"
-    },
-    {
-      "id": "yangbajing",
-      "name": "羊八井地热温泉",
-      "cat": "山水",
-      "tags": [
-        "温泉",
-        "雪山",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 150,
-      "intro": "地热田上的高原温泉，雪山环着蒸汽。",
-      "reason": "泡在热水里看雪山冒蒸汽",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.511477,
-        30.081037
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B037B021WP",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "nyainqentanglha",
-      "name": "念青唐古拉山观景台",
-      "cat": "山水",
-      "tags": [
-        "雪山",
-        "观景台",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "青藏公路旁的观景台，正对七千米雪峰。",
-      "reason": "停车几分钟换来一张雪山合影",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.9,
-        30.4
-      ],
-      "coord_src": "estimate"
-    },
-    {
-      "id": "lakenla",
-      "name": "那根拉山口",
-      "cat": "山水",
-      "tags": [
-        "垭口",
-        "海拔5190",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 40,
-      "intro": "往纳木错的最高垭口，海拔5190米。",
-      "reason": "站在垭口第一次看见纳木错",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        91.09895,
-        30.67929
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGEZOMR",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "yamdrok",
-      "name": "羊卓雍措",
-      "cat": "山水",
-      "tags": [
-        "圣湖",
-        "盘山公路",
-        "远郊"
-      ],
-      "heat": 9.5,
-      "dur": 300,
-      "intro": "三大圣湖之一，翻过岗巴拉就见碧蓝湖面。",
-      "reason": "湖水蓝得不真实，值回一路盘山",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.681079,
-        28.930442
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFQ6BLC",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "gangbala",
-      "name": "岗巴拉山口",
-      "cat": "山水",
-      "tags": [
-        "观景台",
-        "羊湖",
-        "远郊"
-      ],
-      "heat": 8,
-      "dur": 40,
-      "intro": "羊湖畔的观景垭口，湖与雪山一次看齐。",
-      "reason": "羊湖最经典的合影位，就在这",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.83,
-        29.13
       ],
       "coord_src": "estimate"
     },
@@ -1674,106 +1827,6 @@
       ],
       "coord_src": "amap",
       "amap_poi_id": "B0FFF3LHCT",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "sijin-lhatso",
-      "name": "思金拉措",
-      "cat": "山水",
-      "tags": [
-        "财神湖",
-        "经幡",
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 90,
-      "intro": "传说中的财神湖，四周挂满经幡。",
-      "reason": "去林芝路上顺路看一眼",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        92.367481,
-        29.774856
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHSYL1L",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "dezhong",
-      "name": "德仲温泉",
-      "cat": "山水",
-      "tags": [
-        "温泉",
-        "河谷",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 180,
-      "intro": "墨竹工卡山谷里的露天温泉，本地人爱去。",
-      "reason": "泡在河谷热泉里看星星",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        92.05,
-        29.92
-      ],
-      "coord_src": "estimate"
-    },
-    {
-      "id": "riduo",
-      "name": "日多温泉",
-      "cat": "山水",
-      "tags": [
-        "温泉",
-        "318线上",
-        "远郊"
-      ],
-      "heat": 5.5,
-      "dur": 120,
-      "intro": "米拉山下的温泉小镇，318线上的歇脚点。",
-      "reason": "长途路上的热水澡和热饭",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        92.241899,
-        29.691105
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHF1223",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16"
-    },
-    {
-      "id": "caina",
-      "name": "秀色才纳",
-      "cat": "亲子",
-      "tags": [
-        "采摘",
-        "花海",
-        "远郊"
-      ],
-      "heat": 5.5,
-      "dur": 150,
-      "intro": "曲水才纳乡的高原农业园，可摘果看花海。",
-      "reason": "带小孩在高原摘一次草莓",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        90.948684,
-        29.439646
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKZFJSV",
       "verify_src": "amap",
       "verified_at": "2026-10-16",
       "refreshed_at": "2026-10-16"

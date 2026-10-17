@@ -2,54 +2,19 @@
   "city": "香格里拉",
   "date": "2026-10-17",
   "stat": {
-    "total": 66,
-    "poiFixed": 4,
-    "renamed": 6,
-    "coordFixed": 4,
-    "openFilled": 37,
+    "total": 51,
+    "poiFixed": 0,
+    "renamed": 0,
+    "coordFixed": 0,
+    "openFilled": 1,
     "closedMon": 0,
-    "tel": 20,
-    "rating": 47,
-    "photo": 46,
-    "noCand": 19,
+    "tel": 0,
+    "rating": 2,
+    "photo": 1,
+    "noCand": 10,
     "err": 0
   },
   "log": [
-    {
-      "id": "duguzong-gucheng",
-      "name": "独克宗古城",
-      "pick": "香格里拉市独克宗古城",
-      "pickId": "B03770LV82",
-      "score": 129,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.9,
-      "tel": "0887-8223310",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770LV82",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "独克宗古城",
-          "to": "香格里拉市独克宗古城"
-        }
-      }
-    },
-    {
-      "id": "guishan-park",
-      "name": "龟山公园",
-      "pick": "龟山公园",
-      "pickId": "B0377009HU",
-      "score": 143,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "07:00-23:00",
-      "openText": "周一至周日 07:00-23:00",
-      "oldId": "B0377009HU",
-      "drift_m": 0,
-      "changes": {}
-    },
     {
       "id": "yueguang-square",
       "name": "月光广场",
@@ -59,66 +24,6 @@
         "迪庆藏族自治州博物馆(92)",
         "工会驿站·月光广场站(38)"
       ]
-    },
-    {
-      "id": "dizhou-museum",
-      "name": "迪庆藏族自治州博物馆",
-      "pick": "迪庆藏族自治州博物馆",
-      "pickId": "B03770LQ40",
-      "score": 147,
-      "type": "科教文化服务;博物馆;博物馆",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "09:00-17:00",
-      "openText": "周一至周日 09:00-17:00 最晚进入16:30",
-      "oldId": "B03770LQ40",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "hongjun-museum",
-      "name": "迪庆红军长征博物馆",
-      "pick": "迪庆红军长征博物馆",
-      "pickId": "B0377008VA",
-      "score": 147,
-      "type": "风景名胜;风景名胜;红色景区|科教文化服务;博物馆;博物馆",
-      "rating": 4.3,
-      "tel": "0887-8223310",
-      "openTime": "10:00-17:00",
-      "openText": "周一至周日 10:00-17:00",
-      "oldId": "B0377008VA",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "zhongxin-gongtang",
-      "name": "中心镇公堂",
-      "pick": "中心镇公堂",
-      "pickId": "B0FFHAX4HA",
-      "score": 133,
-      "type": "风景名胜;风景名胜;红色景区",
-      "rating": 3.7,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFHAX4HA",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "sifangjie",
-      "name": "独克宗四方街",
-      "pick": "香格里拉市独克宗古城",
-      "pickId": "B03770LV82",
-      "score": 125,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.9,
-      "tel": "0887-8223310",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770LV82",
-      "drift_m": 0,
-      "changes": {}
     },
     {
       "id": "pijiangpo",
@@ -131,21 +36,6 @@
       ]
     },
     {
-      "id": "huaxiang",
-      "name": "独克宗花巷",
-      "pick": "独克宗花巷",
-      "pickId": "B0FFJCT544",
-      "score": 141,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.3,
-      "tel": "0887-8985888;0887-8223310",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFJCT544",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
       "id": "gucheng-bar",
       "name": "独克宗古城酒吧街",
       "why": "无合格候选（子设施/店铺/低分）",
@@ -153,358 +43,6 @@
         "四方街广场(68)",
         "马孔多酒吧(28)",
         "三五酒吧(28)"
-      ]
-    },
-    {
-      "id": "songzanlin",
-      "name": "噶丹松赞林寺",
-      "pick": "噶丹松赞林寺",
-      "pickId": "B0377002VG",
-      "score": 145,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.7,
-      "tel": "0887-8229411;15758459023",
-      "openTime": "08:00-17:30",
-      "openText": "周一至周日 08:00-17:30",
-      "oldId": "B0377002VG",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "lamuyangcuo",
-      "name": "拉姆央措湖",
-      "pick": "拉姆央措湖",
-      "pickId": "B0FFHJ43NP",
-      "score": 146,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.2,
-      "tel": "0887-8222455",
-      "openTime": "09:00-18:00",
-      "openText": "周一至周日 09:00-18:00",
-      "oldId": "B0FFHJ43NP",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "shika-snow",
-      "name": "石卡雪山景区",
-      "pick": "石卡雪山景区",
-      "pickId": "B0FFGLXZ7H",
-      "score": 145,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "0887-8988880",
-      "openTime": "08:00-16:30",
-      "openText": "周一至周日 08:00-16:30",
-      "oldId": "B0FFGLXZ7H",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "napahai",
-      "name": "纳帕海",
-      "pick": "纳帕海·白塔站·网红打卡骑马场",
-      "pickId": "B0MASZFK7W",
-      "score": 129,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.3,
-      "tel": "13388883718",
-      "openTime": [],
-      "openText": "08:00-20:00(夏季) 08:00-19:00(冬季),节假日 08:00-22:00,2026年5月1日至2026年5月5日 08:00-22:00",
-      "oldId": "B0MASZFK7W",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "napahai-star",
-      "name": "纳帕海草原星空",
-      "pick": "纳帕海大草原旅游景区",
-      "pickId": "B0377007T0",
-      "score": 120,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.4,
-      "tel": "13988717688",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0377007T0",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "tancheng-square",
-      "name": "坛城广场",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "华为授权体验店(坛城广场)(81)",
-        "香巴拉时轮坛城文化博览中心(74)",
-        "坛城广场(68)"
-      ]
-    },
-    {
-      "id": "shilun-tancheng",
-      "name": "香巴拉时轮坛城",
-      "pick": "香巴拉时轮坛城文化博览中心",
-      "pickId": "B03770M2K0",
-      "score": 121,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.1,
-      "tel": "0887-8286969",
-      "openTime": "09:00-15:00",
-      "openText": "周一至周日 09:00-15:00",
-      "oldId": "B03770M2K0",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "香巴拉时轮坛城",
-          "to": "香巴拉时轮坛城文化博览中心"
-        }
-      }
-    },
-    {
-      "id": "thangka-center",
-      "name": "香格里拉唐卡艺术中心",
-      "pick": "香格里拉唐卡画院(博物馆)",
-      "pickId": "B03770LTDK",
-      "score": 112,
-      "type": "科教文化服务;美术馆;美术馆",
-      "rating": 4.6,
-      "tel": "13578479655;18213222125",
-      "openTime": "09:30-21:30",
-      "openText": "周一至周日 09:30-21:30",
-      "oldId": "B0KU6M0J76",
-      "drift_m": 557,
-      "changes": {
-        "poi": {
-          "from": "B0KU6M0J76",
-          "to": "B03770LTDK"
-        },
-        "coord": {
-          "from": [
-            99.708446,
-            27.810017
-          ],
-          "to": [
-            99.704478,
-            27.813592
-          ],
-          "drift_m": 557
-        }
-      }
-    },
-    {
-      "id": "baita",
-      "name": "白塔（塔中塔）",
-      "pick": "白塔寺",
-      "pickId": "B0377009E1",
-      "score": 83,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "08:00-15:00",
-      "openText": "周一至周日 08:00-15:00",
-      "oldId": "B0377009E1",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "白塔（塔中塔）",
-          "to": "白塔寺"
-        }
-      }
-    },
-    {
-      "id": "dajingfan",
-      "name": "大经幡",
-      "pick": "大经幡",
-      "pickId": "B0KA2ZEV4O",
-      "score": 145,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "13378876401",
-      "openTime": "08:00-20:00",
-      "openText": "周一至周日 08:00-20:00",
-      "oldId": "B0KA2ZEV4O",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "wufengshan",
-      "name": "五凤山公园",
-      "pick": "五凤山",
-      "pickId": "B0K1VUS5KS",
-      "score": 120,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 3.6,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0K1VUS5KS",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "baijisi",
-      "name": "百鸡寺",
-      "pick": "百鸡寺",
-      "pickId": "B0377004EH",
-      "score": 141,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0377004EH",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "longtanhu",
-      "name": "龙潭湖公园",
-      "pick": "龙潭湖公园",
-      "pickId": "B0FFHUI6ZM",
-      "score": 135,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 3.9,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFHUI6ZM",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "alpine-garden",
-      "name": "香格里拉高山植物园",
-      "pick": "香格里拉高山植物园",
-      "pickId": "B0377002VI",
-      "score": 145,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "0887-8227786;15908876372",
-      "openTime": [],
-      "openText": "04-20至05-20 周一至周日 08:30-18:30 最晚进入17:30；05-21至04-19 周一至周日 08:30-17:30 最晚进入16:30；露地球根花卉展固定在每年4月20日-5月20日",
-      "oldId": "B0377002VI",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "tianshengqiao",
-      "name": "天生桥温泉",
-      "pick": "天生桥",
-      "pickId": "B0377002Z0",
-      "score": 114,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 3.6,
-      "tel": "",
-      "openTime": "08:00-19:00",
-      "openText": "周一至周日 08:00-19:00",
-      "oldId": "B0FFGBGC3S",
-      "drift_m": 145,
-      "changes": {
-        "poi": {
-          "from": "B0FFGBGC3S",
-          "to": "B0377002Z0"
-        },
-        "coord": {
-          "from": [
-            99.813168,
-            27.794743
-          ],
-          "to": [
-            99.813832,
-            27.795905
-          ],
-          "drift_m": 145
-        }
-      }
-    },
-    {
-      "id": "dabaosi",
-      "name": "大宝寺",
-      "pick": "大宝寺",
-      "pickId": "B03770LV42",
-      "score": 136,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770LV42",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "jiantang-market",
-      "name": "建塘农贸市场",
-      "pick": "瑞泰农贸市场",
-      "pickId": "B0FFHWOYU1",
-      "score": 65,
-      "type": "购物服务;综合市场;农副产品市场",
-      "rating": 4.1,
-      "tel": "",
-      "openTime": "09:00-21:00",
-      "openText": "周一至周日 09:00-21:00",
-      "oldId": "",
-      "drift_m": 599,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0FFHWOYU1"
-        },
-        "coord": {
-          "from": [
-            99.7006,
-            27.8306
-          ],
-          "to": [
-            99.706008,
-            27.833079
-          ],
-          "drift_m": 599
-        }
-      }
-    },
-    {
-      "id": "pudacuo",
-      "name": "普达措国家公园",
-      "pick": "普达措国家公园",
-      "pickId": "B0377006XM",
-      "score": 163,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "0887-8232533",
-      "openTime": "08:00-19:00",
-      "openText": "周一至周日 08:00-19:00 最晚进入16:30；即日起开放属都岗河生态徒步体验区（悠幽步道）每日开放时间 8:00至14:00（下午14:00后将关闭）",
-      "oldId": "B0377006XM",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "langka",
-      "name": "朗卡藏民家访",
-      "pick": "朗卡藏民家访",
-      "pickId": "B0FFFSEETZ",
-      "score": 131,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 2.9,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFFSEETZ",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "qingzhensi",
-      "name": "香格里拉清真寺",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": []
-    },
-    {
-      "id": "abu-oldhouse",
-      "name": "阿布老屋",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "云南省迪庆藏族自治州香格里拉市阿布(-54)"
       ]
     },
     {
@@ -518,46 +56,6 @@
       ]
     },
     {
-      "id": "namco-park",
-      "name": "香格里拉娜姆措生态公园",
-      "pick": "香格里拉娜姆措生态公园",
-      "pickId": "B03770LYXH",
-      "score": 93,
-      "type": "体育休闲服务;休闲场所;休闲场所",
-      "rating": 3.7,
-      "tel": "",
-      "openTime": "08:30-22:30",
-      "openText": "周一至周日 08:30-22:30",
-      "oldId": "B03770LYXH",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "dacao-yuan",
-      "name": "香格里拉大草原",
-      "pick": "香格里拉纳帕海大草原",
-      "pickId": "B03770LV8A",
-      "score": 119,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770LV8A",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "nixi-pottery",
-      "name": "汤堆村（尼西黑陶）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "尼西黑陶体验馆(20)",
-        "藏鸡王(尼西布姆土锅鸡)(-77)",
-        "湘见恨晚尼西汤堆土锅鸡(-78)"
-      ]
-    },
-    {
       "id": "nixi-chicken",
       "name": "尼西土锅鸡",
       "why": "无合格候选（子设施/店铺/低分）",
@@ -566,331 +64,6 @@
         "汪永清尼西土锅鸡第一家(-40)",
         "白鹤尼西土锅鸡(老店)(-42)"
       ]
-    },
-    {
-      "id": "xiaozhongdian",
-      "name": "小中甸花海",
-      "pick": "小中甸花海",
-      "pickId": "B0FFF6WG1S",
-      "score": 145,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.3,
-      "tel": "",
-      "openTime": "08:00-23:00",
-      "openText": "周一至周日 08:00-23:00",
-      "oldId": "B0FFF6WG1S",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "yuelianghu",
-      "name": "小中甸月亮湖",
-      "pick": "月亮湖",
-      "pickId": "B0FFJ95U6U",
-      "score": 127,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.3,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0FFJ95U6U",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "qianhushan",
-      "name": "千湖山",
-      "pick": "千湖山",
-      "pickId": "B03770084N",
-      "score": 144,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770084N",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "bigu-tianchi",
-      "name": "碧沽天池",
-      "pick": "碧沽天池",
-      "pickId": "B03770M1BW",
-      "score": 141,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 3.9,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770M1BW",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "baishuitai",
-      "name": "白水台景区",
-      "pick": "白水台景区",
-      "pickId": "B0G2U94ETB",
-      "score": 145,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "0887-8866105",
-      "openTime": [],
-      "openText": "1月至3月,11月至12月 周一至周日 08:30-17:00；4月至10月 周一至周日 08:00-18:00；具体开放时间会根据客流量调整，以景区当天现场开放情况为准。",
-      "oldId": "B0G2U94ETB",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "haba-snow",
-      "name": "哈巴雪山",
-      "pick": "哈巴雪山",
-      "pickId": "B0377003BY",
-      "score": 145,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "18087428242",
-      "openTime": "08:00-20:00",
-      "openText": "周一至周日 08:00-20:00",
-      "oldId": "B0377003BY",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "shanghutiaoxia",
-      "name": "上虎跳峡",
-      "pick": "香格里拉虎跳峡景区",
-      "pickId": "B0FFM9TXGI",
-      "score": 132,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.8,
-      "tel": "0887-8806982",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入18:00",
-      "oldId": "B0FFGHMLWM",
-      "drift_m": 207,
-      "changes": {
-        "poi": {
-          "from": "B0FFGHMLWM",
-          "to": "B0FFM9TXGI"
-        },
-        "coord": {
-          "from": [
-            100.113532,
-            27.188309
-          ],
-          "to": [
-            100.115306,
-            27.189303
-          ],
-          "drift_m": 207
-        }
-      }
-    },
-    {
-      "id": "zhonghutiaoxia",
-      "name": "中虎跳峡",
-      "pick": "中虎跳峡观景台聚景",
-      "pickId": "B0FFF40QTY",
-      "score": 126,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "08:30-17:30",
-      "openText": "周一至周日 08:30-17:30",
-      "oldId": "B0FFF40QTY",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "中虎跳峡",
-          "to": "中虎跳峡观景台聚景"
-        }
-      }
-    },
-    {
-      "id": "balagezong",
-      "name": "巴拉格宗大峡谷",
-      "pick": "香格里拉大峡谷·巴拉格宗国家级风景名胜区",
-      "pickId": "B03770LV8B",
-      "score": 85,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "tel": "0887-8288619;0887-8229222",
-      "openTime": "08:30-18:30",
-      "openText": "周一至周日 08:30-18:30 最晚进入16:30；具体营业状态以当天开放情况为准",
-      "oldId": "",
-      "drift_m": 29852,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B03770LV8B"
-        }
-      }
-    },
-    {
-      "id": "niru",
-      "name": "尼汝村",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "尼汝村称科康达客栈(32)",
-        "尼汝村神阁硕驿栈(尼汝公路分店)(29)",
-        "尼汝村秘境民宿(尼汝公路分店)(28)"
-      ]
-    },
-    {
-      "id": "jinshajiang-bend",
-      "name": "金沙江大拐弯",
-      "pick": "金沙江大拐弯观景台",
-      "pickId": "B0377007ZL",
-      "score": 125,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": [],
-      "openText": "03月16日至12月31日 08:00-16:00",
-      "oldId": "B0377007ZL",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "金沙江大拐弯",
-          "to": "金沙江大拐弯观景台"
-        }
-      }
-    },
-    {
-      "id": "jigongshi",
-      "name": "鸡公石",
-      "pick": "鸡公石",
-      "pickId": "B0377006N9",
-      "score": 81,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 3.4,
-      "tel": "",
-      "openTime": "08:00-17:00",
-      "openText": "周一至周日 08:00-17:00",
-      "oldId": "",
-      "drift_m": 58769,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0377006N9"
-        }
-      }
-    },
-    {
-      "id": "baima-snow-pass",
-      "name": "白马雪山垭口",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "哈巴雪山(35)",
-        "白马雪山垭口(16)",
-        "小雪山垭口(-91)"
-      ]
-    },
-    {
-      "id": "dongzhulin",
-      "name": "东竹林寺",
-      "pick": "东竹林寺",
-      "pickId": "B0FFHRCVXD",
-      "score": 139,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.3,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFHRCVXD",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "feilaisi",
-      "name": "飞来寺",
-      "pick": "飞来寺",
-      "pickId": "B0377003PS",
-      "score": 143,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "08:00-17:00",
-      "openText": "周一至周日 08:00-17:00 最晚进入17:00",
-      "oldId": "B0377003PS",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "wunongding",
-      "name": "雾浓顶观景台",
-      "pick": "雾浓顶观景台",
-      "pickId": "B0H6XBTYO5",
-      "score": 150,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.8,
-      "tel": "",
-      "openTime": "06:00-16:00",
-      "openText": "周一至周日 06:00-16:00",
-      "oldId": "B0H6XBTYO5",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "kawagarbo",
-      "name": "卡瓦格博峰",
-      "pick": "卡瓦格博峰",
-      "pickId": "B0M2F48GVZ",
-      "score": 123,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 2.7,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0M2F48GVZ",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "mingyong",
-      "name": "明永冰川",
-      "pick": "明永冰川景区",
-      "pickId": "B0FFGMH7FZ",
-      "score": 81,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.4,
-      "tel": "",
-      "openTime": "08:00-16:30",
-      "openText": "周一至周日 08:00-16:30 最晚进入16:30",
-      "oldId": "B0HDXZ8WL5",
-      "drift_m": 7433,
-      "changes": {
-        "poi": {
-          "from": "B0HDXZ8WL5",
-          "to": "B0FFGMH7FZ"
-        },
-        "rename": {
-          "from": "明永冰川",
-          "to": "明永冰川景区"
-        }
-      }
-    },
-    {
-      "id": "lancang-meili-gorge",
-      "name": "澜沧江梅里大峡谷",
-      "pick": "香格里拉大峡谷·巴拉格宗国家级风景名胜区",
-      "pickId": "B03770LV8B",
-      "score": 85,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "tel": "0887-8288619;0887-8229222",
-      "openTime": "08:30-18:30",
-      "openText": "周一至周日 08:30-18:30 最晚进入16:30；具体营业状态以当天开放情况为准",
-      "oldId": "",
-      "drift_m": 51967,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B03770LV8B"
-        }
-      }
     },
     {
       "id": "yubeng",
@@ -908,103 +81,64 @@
       "top": []
     },
     {
-      "id": "cizhong",
-      "name": "茨中天主教堂",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "云南省迪庆藏族自治州德钦县茨中天主教堂(南门)(-17)"
-      ]
-    },
-    {
-      "id": "yezhi",
-      "name": "叶枝土司衙署",
-      "pick": "叶枝土司衙署",
-      "pickId": "B03770LV87",
-      "score": 138,
+      "id": "bigu-tianchi",
+      "name": "碧沽天池",
+      "pick": "碧沽天池",
+      "pickId": "B03770M1BW",
+      "score": 141,
       "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 3.6,
+      "rating": 3.9,
       "tel": "",
       "openTime": "24小时营业",
       "openText": "周一至周日 00:00-24:00",
-      "oldId": "B03770LV87",
+      "oldId": "B03770M1BW",
       "drift_m": 0,
       "changes": {}
     },
     {
-      "id": "tongle",
-      "name": "同乐傈僳族村寨",
+      "id": "jinshajiang-bend",
+      "name": "金沙江大拐弯",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
-        "云南省迪庆藏族自治州德钦县同乐村(-54)"
+        "金沙江大拐弯观景台(125)",
+        "金沙江(-87)",
+        "金沙江(-87)"
       ]
     },
     {
-      "id": "shouguo",
-      "name": "寿国寺",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "云南省迪庆藏族自治州维西傈僳族自治县寿国寺(-17)"
-      ]
-    },
-    {
-      "id": "damo-cave",
-      "name": "达摩祖师洞",
-      "pick": "达摩祖师洞",
-      "pickId": "B0FFJKUZ70",
-      "score": 136,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFJKUZ70",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "golden-monkey",
-      "name": "香格里拉滇金丝猴国家公园",
-      "pick": "香格里拉滇金丝猴国家公园",
-      "pickId": "B03770M2PF",
-      "score": 142,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 4.4,
-      "tel": "0887-8756223",
-      "openTime": "08:30-11:30",
-      "openText": "周一至周日 08:30-11:30 最晚进入10:00",
-      "oldId": "B03770M2PF",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "xiaoweixi",
-      "name": "小维西教堂",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "小维西教堂(50)",
-        "沧维木瓜鸡(香巴拉旅游小镇店)(-83)",
-        "张大姐包子店(-84)"
-      ]
-    },
-    {
-      "id": "haba-village",
-      "name": "哈巴村",
+      "id": "baima-snow-pass",
+      "name": "白马雪山垭口",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
         "哈巴雪山(35)",
-        "国际青年旅舍(云南香格里拉哈巴雪山店)(-3)",
-        "香格里拉哈巴雪山云上哈巴客栈(-4)"
+        "白马雪山垭口(16)",
+        "小雪山垭口(-91)"
       ]
     },
     {
-      "id": "baidi-village",
-      "name": "白地村",
+      "id": "wunongding",
+      "name": "雾浓顶观景台",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
-        "白水台景区(35)",
-        "香格里拉小七阁客栈(白水台店)(30)",
-        "香格里拉谷韵民宿(27)"
+        "雾浓顶观景台(150)",
+        "纳帕海观景台(65)",
+        "哈巴雪山观景台(65)"
       ]
+    },
+    {
+      "id": "kawagarbo",
+      "name": "卡瓦格博峰",
+      "pick": "卡瓦格博峰",
+      "pickId": "B0M2F48GVZ",
+      "score": 123,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 2.7,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0M2F48GVZ",
+      "drift_m": 0,
+      "changes": {}
     }
   ]
 }

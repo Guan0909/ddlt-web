@@ -1,0 +1,1119 @@
+{
+  "city": "绍兴",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 16,
+      "博物馆": 8,
+      "演出": 4,
+      "街区": 6,
+      "美食": 4,
+      "公园": 5,
+      "商圈": 4,
+      "山水": 12,
+      "夜景": 3,
+      "亲子": 3,
+      "古镇": 4
+    },
+    "byGroup": {
+      "core": 40,
+      "night": 7,
+      "family": 3,
+      "street": 6,
+      "food": 4,
+      "park": 5,
+      "mall": 4,
+      "total": 69,
+      "suburb": 15,
+      "coreRatio": 68
+    }
+  },
+  "keep": [
+    {
+      "id": "luxun-guli",
+      "name": "鲁迅故里",
+      "cat": "古迹",
+      "heat": 10,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shenyuan",
+      "name": "沈园",
+      "cat": "古迹",
+      "heat": 9.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shenyuan-night",
+      "name": "沈园之夜",
+      "cat": "演出",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "cangqiao",
+      "name": "仓桥直街历史街区",
+      "cat": "街区",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "cai-yuanpei",
+      "name": "蔡元培故居",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qiujin-gu",
+      "name": "秋瑾故居",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "qingteng-shuwu",
+      "name": "青藤书屋",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xuwei-art",
+      "name": "徐渭艺术馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "datong-xuetang",
+      "name": "大通学堂",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "yangming-guli",
+      "name": "阳明故里",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shaoxing-museum",
+      "name": "绍兴博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huangjiu-museum",
+      "name": "中国黄酒博物馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhou-enlai",
+      "name": "周恩来祖居",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "donghu",
+      "name": "绍兴东湖风景区",
+      "cat": "山水",
+      "heat": 9.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shaoxing-theatre",
+      "name": "绍兴大剧院",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lvcheng-cruise",
+      "name": "绍兴环城河夜游",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "jianhu",
+      "name": "古纤道",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "kuaijishan",
+      "name": "会稽山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dashuyuling",
+      "name": "大禹陵景区",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xianglufeng",
+      "name": "香炉峰",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hushan",
+      "name": "吼山风景区",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lanting",
+      "name": "兰亭景区",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lanting-museum",
+      "name": "兰亭书法博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shaoxing-science",
+      "name": "绍兴科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "mingren-guan",
+      "name": "绍兴名人馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "shaoxing-art",
+      "name": "绍兴美术馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "didang-night",
+      "name": "迪荡湖夜景喷泉",
+      "cat": "夜景",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guazhu-night",
+      "name": "瓜渚湖音乐喷泉",
+      "cat": "夜景",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "keyan",
+      "name": "柯岩风景区码头",
+      "cat": "山水",
+      "heat": 9,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "luzhen",
+      "name": "鲁镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "anchang",
+      "name": "安昌古镇",
+      "cat": "古镇",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yangshan-shifo",
+      "name": "羊山石佛",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "dongpu",
+      "name": "东浦黄酒小镇",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dongfang-shanshui",
+      "name": "绍兴东方山水乐园",
+      "cat": "亲子",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhuji-xishi",
+      "name": "西施故里",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhuji-wuxie",
+      "name": "五泄风景区",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhuji-xiangfei",
+      "name": "诸暨千年香榧林",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "zhuji-baitahu",
+      "name": "诸暨白塔湖国家湿地公园",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shengzhou-chongren",
+      "name": "崇仁古镇",
+      "cat": "古镇",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shengzhou-yueju-museum",
+      "name": "越剧博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xinchang-dafosi",
+      "name": "新昌大佛寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xinchang-shijiufeng",
+      "name": "穿岩十九峰",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shangyu-caoe",
+      "name": "曹娥庙",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "shangyu-xiaode",
+      "name": "中华孝德园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shangyu-fuzhi",
+      "name": "覆卮山景区观景平台",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yingenmen",
+      "name": "迎恩门水街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "keqiao-old",
+      "name": "柯桥古镇",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shusheng-guli",
+      "name": "书圣故里",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "xixiaohe",
+      "name": "西小河历史街区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "bazixiao",
+      "name": "八字桥历史街区",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "jishan-snack",
+      "name": "蕺山街·书圣故里小吃",
+      "cat": "美食",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "fenghengjie",
+      "name": "府横街小吃街",
+      "cat": "美食",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "dongjie-night",
+      "name": "东街夜市",
+      "cat": "美食",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "xianheng",
+      "name": "咸亨酒店",
+      "cat": "美食",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "fushan-park",
+      "name": "府山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "jinghu-wetland",
+      "name": "镜湖国家城市湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "didang-lake",
+      "name": "迪荡湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": "province",
+      "score": 0.59,
+      "heatNew": 8
+    },
+    {
+      "id": "jishan-park",
+      "name": "蕺山公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "guazhu-lake",
+      "name": "瓜渚湖公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 3.5,
+      "level": null,
+      "score": 0,
+      "heatNew": 5
+    },
+    {
+      "id": "qingfangcheng",
+      "name": "中国轻纺城",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shimao",
+      "name": "世茂·湖滨新天地",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "luxun-museum",
+      "name": "绍兴鲁迅纪念馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 2.8,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 2.8 < 4.0"
+    },
+    {
+      "id": "xiaobaihua",
+      "name": "绍兴小百花越剧艺术中心",
+      "cat": "演出",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "shengzhou-yueju-town",
+      "name": "嵊州越剧小镇",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "shengzhou-wangxizhi",
+      "name": "金庭观",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "评分 3.9 < 4.0"
+    },
+    {
+      "id": "xinchang-tianmu",
+      "name": "天姥山",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 3.2,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3.2 < 4.0"
+    },
+    {
+      "id": "shangyu-baimahu",
+      "name": "春晖中学",
+      "cat": "山水",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "city-square",
+      "name": "绍兴城市广场·解放路",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "类目配额（商圈 ≤2）且评分靠后"
+    },
+    {
+      "id": "keqiao-wanda",
+      "name": "柯桥万达广场",
+      "cat": "商圈",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（商圈 ≤2）且评分靠后/无评分"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "沈氏园",
+      "coord": [
+        120.590035,
+        29.990303
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "鉴湖景区",
+      "coord": [
+        120.473443,
+        30.047629
+      ],
+      "type": "风景名胜;风景名胜;国家级景点|风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "东方山水乐园",
+      "coord": [
+        120.441279,
+        30.077379
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "会稽山兜率天景区",
+      "coord": [
+        120.416564,
+        30.020454
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "大香林风景区",
+      "coord": [
+        120.395195,
+        30.017834
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "luxun-guli",
+      "name": "鲁迅故里",
+      "from": 10,
+      "to": 8
+    },
+    {
+      "id": "luxun-museum",
+      "name": "绍兴鲁迅纪念馆",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "cangqiao",
+      "name": "仓桥直街历史街区",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "bazixiao",
+      "name": "八字桥历史街区",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "shusheng-guli",
+      "name": "书圣故里",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "cai-yuanpei",
+      "name": "蔡元培故居",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "qiujin-gu",
+      "name": "秋瑾故居",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "qingteng-shuwu",
+      "name": "青藤书屋",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "xuwei-art",
+      "name": "徐渭艺术馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "datong-xuetang",
+      "name": "大通学堂",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "xixiaohe",
+      "name": "西小河历史街区",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "yingenmen",
+      "name": "迎恩门水街",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "huangjiu-museum",
+      "name": "中国黄酒博物馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "zhou-enlai",
+      "name": "周恩来祖居",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "jishan-park",
+      "name": "蕺山公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "city-square",
+      "name": "绍兴城市广场·解放路",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "donghu",
+      "name": "绍兴东湖风景区",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "shaoxing-theatre",
+      "name": "绍兴大剧院",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "hushan",
+      "name": "吼山风景区",
+      "from": 5.5,
+      "to": 8
+    },
+    {
+      "id": "lanting-museum",
+      "name": "兰亭书法博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "jinghu-wetland",
+      "name": "镜湖国家城市湿地公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shaoxing-science",
+      "name": "绍兴科技馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "shaoxing-art",
+      "name": "绍兴美术馆",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "didang-lake",
+      "name": "迪荡湖公园",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "didang-night",
+      "name": "迪荡湖夜景喷泉",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shimao",
+      "name": "世茂·湖滨新天地",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "keqiao-old",
+      "name": "柯桥古镇",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "qingfangcheng",
+      "name": "中国轻纺城",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "guazhu-lake",
+      "name": "瓜渚湖公园",
+      "from": 6.5,
+      "to": 5
+    },
+    {
+      "id": "guazhu-night",
+      "name": "瓜渚湖音乐喷泉",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "luzhen",
+      "name": "鲁镇",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "anchang",
+      "name": "安昌古镇",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "yangshan-shifo",
+      "name": "羊山石佛",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "dongpu",
+      "name": "东浦黄酒小镇",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "dongfang-shanshui",
+      "name": "绍兴东方山水乐园",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "zhuji-xishi",
+      "name": "西施故里",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "zhuji-wuxie",
+      "name": "五泄风景区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "zhuji-xiangfei",
+      "name": "诸暨千年香榧林",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "zhuji-baitahu",
+      "name": "诸暨白塔湖国家湿地公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "shengzhou-chongren",
+      "name": "崇仁古镇",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "shengzhou-yueju-town",
+      "name": "嵊州越剧小镇",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "shengzhou-yueju-museum",
+      "name": "越剧博物馆",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "xinchang-dafosi",
+      "name": "新昌大佛寺",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "xinchang-shijiufeng",
+      "name": "穿岩十九峰",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "xinchang-tianmu",
+      "name": "天姥山",
+      "from": 6.5,
+      "to": 5
+    },
+    {
+      "id": "shangyu-caoe",
+      "name": "曹娥庙",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shangyu-xiaode",
+      "name": "中华孝德园",
+      "from": 6,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

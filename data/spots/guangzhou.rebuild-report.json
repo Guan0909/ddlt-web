@@ -1,0 +1,1074 @@
+{
+  "city": "广州",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "夜景": 5,
+      "亲子": 6,
+      "街区": 8,
+      "博物馆": 10,
+      "商圈": 4,
+      "山水": 5,
+      "演出": 3,
+      "古迹": 10,
+      "公园": 11,
+      "美食": 4,
+      "古镇": 2
+    },
+    "byGroup": {
+      "core": 27,
+      "night": 8,
+      "family": 6,
+      "street": 8,
+      "food": 4,
+      "park": 11,
+      "mall": 4,
+      "total": 68,
+      "suburb": 18,
+      "coreRatio": 51
+    }
+  },
+  "keep": [
+    {
+      "id": "canton-tower",
+      "name": "广州塔",
+      "cat": "夜景",
+      "heat": 10,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chimelong-safari",
+      "name": "长隆野生动物世界",
+      "cat": "亲子",
+      "heat": 9.5,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shamian",
+      "name": "沙面岛",
+      "cat": "街区",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yongqingfang",
+      "name": "永庆坊",
+      "cat": "街区",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chenjiaci",
+      "name": "陈家祠堂",
+      "cat": "博物馆",
+      "heat": 9,
+      "rating": 4.9,
+      "level": "national",
+      "score": 0.81,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "beijing-road",
+      "name": "北京路步行街",
+      "cat": "商圈",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "baiyunshan",
+      "name": "白云山",
+      "cat": "山水",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhujiang-cruise",
+      "name": "珠江夜游",
+      "cat": "夜景",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guangdong-museum",
+      "name": "广东省博物馆",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanyuewang-museum",
+      "name": "南越王博物院(王墓展区)",
+      "cat": "博物馆",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "chimelong-circus",
+      "name": "长隆国际大马戏",
+      "cat": "演出",
+      "heat": 8.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shangxiajiu",
+      "name": "上下九步行街",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sun-yat-sen-hall",
+      "name": "中山纪念堂",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuexiu-park",
+      "name": "越秀公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chimelong-paradise",
+      "name": "广州长隆欢乐世界(玩圣)",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "baietan-art",
+      "name": "白鹅潭大湾区艺术中心",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huangpu-military",
+      "name": "黄埔军校旧址",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "guangzhou-museum",
+      "name": "广州博物馆(镇海楼展区)",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "taigucang",
+      "name": "太古仓码头",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "pati",
+      "name": "琶醍啤酒文化创意区",
+      "cat": "夜景",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guangzhou-opera",
+      "name": "广州大剧院",
+      "cat": "演出",
+      "heat": 7.5,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guangzhou-science",
+      "name": "广东科学中心",
+      "cat": "亲子",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shawan",
+      "name": "沙湾古镇",
+      "cat": "古镇",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "huangpu-gu-port",
+      "name": "黄埔古港",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lizhiwan",
+      "name": "荔枝湾涌",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "liurong",
+      "name": "六榕寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guangxiao",
+      "name": "光孝寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "south-china-botanical",
+      "name": "华南植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xinghai-concert",
+      "name": "星海音乐厅",
+      "cat": "演出",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yueju-museum",
+      "name": "粤剧艺术博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanyue-palace",
+      "name": "南越王博物院(王宫展区)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guangzhou-zoo",
+      "name": "广州动物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhengjia-aquarium",
+      "name": "正佳极地海洋世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "lianhuashan",
+      "name": "莲花山旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baishuizhai",
+      "name": "白水寨风景名胜区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "rongchuang",
+      "name": "广州融创文旅城",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huaisheng-temple",
+      "name": "怀圣清真寺",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanhai-temple",
+      "name": "南海神庙",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuyin-garden",
+      "name": "余荫山房",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nansha-tianhou",
+      "name": "南沙天后宫",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "conghua-hotspring",
+      "name": "从化温泉眼",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "liuxihe",
+      "name": "流溪河国家森林公园",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shisanhang",
+      "name": "广州十三行博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guangzhou-uprising-museum",
+      "name": "广州起义纪念馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "haixin-bridge",
+      "name": "海心桥",
+      "cat": "夜景",
+      "heat": 6,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hongxiuquan",
+      "name": "洪秀全故居",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "langtou",
+      "name": "塱头古村",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "huacheng-square",
+      "name": "花城广场",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "er-sha-island",
+      "name": "二沙岛",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "lingnan-impression",
+      "name": "岭南印象园",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8
+    },
+    {
+      "id": "xiaozhou-cun",
+      "name": "小洲村古村落",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "dongshankou",
+      "name": "东山口",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "taikoo-hui",
+      "name": "太古汇",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "guangzhou-library",
+      "name": "广州图书馆",
+      "cat": "商圈",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "huifu-road",
+      "name": "惠福东路美食街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "wende-road",
+      "name": "文明路甜品街",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "panxi",
+      "name": "泮溪酒家",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "baoye-road",
+      "name": "宝业路夜宵街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "martyr-park",
+      "name": "广州起义烈士陵园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 5,
+      "level": null,
+      "score": 0.6,
+      "heatNew": 8
+    },
+    {
+      "id": "haizhu-lake",
+      "name": "海珠湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "liwan-lake",
+      "name": "荔湾湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "yuntai-garden",
+      "name": "云台花园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "haizhu-wetland",
+      "name": "广州海珠国家湿地公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "guangdong-art-museum",
+      "name": "广东美术馆",
+      "cat": "博物馆",
+      "heat": 7.5,
+      "rating": 3.6,
+      "level": null,
+      "score": 0.04,
+      "heatNew": 5,
+      "why": "评分 3.6 < 4.0"
+    },
+    {
+      "id": "dafushan",
+      "name": "大夫山森林公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "zhujiang-park",
+      "name": "珠江公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "lanpu",
+      "name": "广州兰圃",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "nansha-wetland",
+      "name": "南沙湿地公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "广州市白云山风景名胜区",
+      "coord": [
+        113.297041,
+        23.180245
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "宝墨园",
+      "coord": [
+        113.294359,
+        22.894472
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heat": 9
+    },
+    {
+      "name": "云溪植物园",
+      "coord": [
+        113.282981,
+        23.182756
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "canton-tower",
+      "name": "广州塔",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "chimelong-safari",
+      "name": "长隆野生动物世界",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "shamian",
+      "name": "沙面岛",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "yongqingfang",
+      "name": "永庆坊",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "beijing-road",
+      "name": "北京路步行街",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "baiyunshan",
+      "name": "白云山",
+      "from": 8.5,
+      "to": 9
+    },
+    {
+      "id": "zhujiang-cruise",
+      "name": "珠江夜游",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "guangdong-museum",
+      "name": "广东省博物馆",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "nanyuewang-museum",
+      "name": "南越王博物院(王墓展区)",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "chimelong-circus",
+      "name": "长隆国际大马戏",
+      "from": 8.5,
+      "to": 8
+    },
+    {
+      "id": "shangxiajiu",
+      "name": "上下九步行街",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sun-yat-sen-hall",
+      "name": "中山纪念堂",
+      "from": 8,
+      "to": 9
+    },
+    {
+      "id": "chimelong-paradise",
+      "name": "广州长隆欢乐世界(玩圣)",
+      "from": 8,
+      "to": 6
+    },
+    {
+      "id": "huangpu-military",
+      "name": "黄埔军校旧址",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "guangzhou-museum",
+      "name": "广州博物馆(镇海楼展区)",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "taikoo-hui",
+      "name": "太古汇",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "guangzhou-library",
+      "name": "广州图书馆",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "guangdong-art-museum",
+      "name": "广东美术馆",
+      "from": 7.5,
+      "to": 5
+    },
+    {
+      "id": "taigucang",
+      "name": "太古仓码头",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "pati",
+      "name": "琶醍啤酒文化创意区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "guangzhou-opera",
+      "name": "广州大剧院",
+      "from": 7.5,
+      "to": 8
+    },
+    {
+      "id": "guangzhou-science",
+      "name": "广东科学中心",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "shawan",
+      "name": "沙湾古镇",
+      "from": 7.5,
+      "to": 9
+    },
+    {
+      "id": "lianhuashan",
+      "name": "莲花山旅游区",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "huaisheng-temple",
+      "name": "怀圣清真寺",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "martyr-park",
+      "name": "广州起义烈士陵园",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "nanhai-temple",
+      "name": "南海神庙",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "xiaozhou-cun",
+      "name": "小洲村古村落",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yuyin-garden",
+      "name": "余荫山房",
+      "from": 6.5,
+      "to": 9
+    },
+    {
+      "id": "nansha-wetland",
+      "name": "南沙湿地公园",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "nansha-tianhou",
+      "name": "南沙天后宫",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "conghua-hotspring",
+      "name": "从化温泉眼",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "liuxihe",
+      "name": "流溪河国家森林公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "dafushan",
+      "name": "大夫山森林公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "er-sha-island",
+      "name": "二沙岛",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "zhujiang-park",
+      "name": "珠江公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "lingnan-impression",
+      "name": "岭南印象园",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "shisanhang",
+      "name": "广州十三行博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "guangzhou-uprising-museum",
+      "name": "广州起义纪念馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "haixin-bridge",
+      "name": "海心桥",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "lanpu",
+      "name": "广州兰圃",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "hongxiuquan",
+      "name": "洪秀全故居",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "langtou",
+      "name": "塱头古村",
+      "from": 5.5,
+      "to": 7
+    }
+  ],
+  "duplicates": [
+    {
+      "name": "南越王博物院(王宫展区)",
+      "ids": [
+        "nanyuewang-museum",
+        "nanyue-palace"
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "date": "2026-10-17",
   "stat": {
     "total": 70,
-    "poiFixed": 17,
+    "poiFixed": 18,
     "renamed": 16,
     "coordFixed": 14,
     "openFilled": 45,
@@ -450,29 +450,29 @@
       "name": "龙湾万达广场",
       "pick": "万达广场",
       "pickId": "B0M6SU42ML",
-      "score": 66,
+      "score": 86,
       "type": "购物服务;商场;购物中心",
       "rating": 4.6,
       "tel": "0577-55888388",
       "openTime": "10:00-22:00",
       "openText": "周一至周四 10:00-22:00；周五至周六 10:00-22:30",
-      "oldId": "",
-      "drift_m": 1156,
+      "oldId": "B02410WMDJ",
+      "drift_m": 145,
       "changes": {
         "poi": {
-          "from": null,
+          "from": "B02410WMDJ",
           "to": "B0M6SU42ML"
         },
         "coord": {
           "from": [
-            120.818,
-            27.913
+            120.811779,
+            27.92024
           ],
           "to": [
             120.810875,
             27.921275
           ],
-          "drift_m": 1156
+          "drift_m": 145
         }
       }
     },

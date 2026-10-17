@@ -2,294 +2,28 @@
   "city": "西双版纳",
   "date": "2026-10-17",
   "stat": {
-    "total": 66,
-    "poiFixed": 12,
-    "renamed": 25,
-    "coordFixed": 12,
-    "openFilled": 41,
+    "total": 52,
+    "poiFixed": 0,
+    "renamed": 0,
+    "coordFixed": 0,
+    "openFilled": 0,
     "closedMon": 0,
-    "tel": 23,
-    "rating": 46,
-    "photo": 45,
-    "noCand": 20,
+    "tel": 0,
+    "rating": 1,
+    "photo": 0,
+    "noCand": 14,
     "err": 0
   },
   "log": [
     {
-      "id": "gaozhuang",
-      "name": "告庄西双景",
-      "pick": "告庄西双景",
-      "pickId": "B02B30LWEF",
-      "score": 152,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.8,
-      "tel": "0691-2221600;0691-2221171",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B02B30LWEF",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "starlight-market",
-      "name": "星光夜市（告庄西双景）",
-      "pick": "星光夜市篝火晚会",
-      "pickId": "B0L17C9I5R",
-      "score": 80,
-      "type": "体育休闲服务;体育休闲服务场所;体育休闲服务场所",
-      "rating": 4.4,
-      "tel": "0691-2299785;0691-2299786",
-      "openTime": "08:00-20:00",
-      "openText": "周一至周日 08:00-20:00",
-      "oldId": "B0L17C9I5R",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
       "id": "manting-park",
       "name": "曼听公园（曼听御花园）",
-      "pick": "景洪市曼听公园剧场",
-      "pickId": "B0FFFELUKF",
-      "score": 66,
-      "type": "体育休闲服务;影剧院;剧场",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "BV11451231",
-      "drift_m": 316,
-      "changes": {
-        "poi": {
-          "from": "BV11451231",
-          "to": "B0FFFELUKF"
-        },
-        "coord": {
-          "from": [
-            100.805929,
-            21.995868
-          ],
-          "to": [
-            100.806075,
-            21.993025
-          ],
-          "drift_m": 316
-        }
-      }
-    },
-    {
-      "id": "xtbg",
-      "name": "中国科学院西双版纳热带植物园",
-      "pick": "中国科学院西双版纳热带植物园",
-      "pickId": "B02B3006LK",
-      "score": 146,
-      "type": "风景名胜;公园广场;植物园",
-      "rating": 4.8,
-      "tel": "0691-8715914",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入18:00；景区开放夜游活动，需另外购票参加，活动时间根据季节调整,具体以当天和向导预约时间为准",
-      "oldId": "B02B3006LK",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "wild-elephant-valley",
-      "name": "野象谷（西双版纳）",
-      "pick": "野象谷景区",
-      "pickId": "B02B3000KJ",
-      "score": 141,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "0691-2431024;0691-2431040",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入16:30",
-      "oldId": "B02B3000KJ",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "野象谷（西双版纳）",
-          "to": "野象谷景区"
-        }
-      }
-    },
-    {
-      "id": "dai-park",
-      "name": "傣族园（西双版纳）",
-      "pick": "西双版纳傣族园",
-      "pickId": "B02B30058V",
-      "score": 121,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "0691-2504601;0691-2504099;12301",
-      "openTime": "08:30-17:00",
-      "openText": "周一至周日 08:30-17:00",
-      "oldId": "B0KRXRGXPB",
-      "drift_m": 793,
-      "changes": {
-        "poi": {
-          "from": "B0KRXRGXPB",
-          "to": "B02B30058V"
-        },
-        "coord": {
-          "from": [
-            100.938295,
-            21.850192
-          ],
-          "to": [
-            100.945853,
-            21.851467
-          ],
-          "drift_m": 793
-        },
-        "rename": {
-          "from": "傣族园（西双版纳）",
-          "to": "西双版纳傣族园"
-        }
-      }
-    },
-    {
-      "id": "forest-park",
-      "name": "原始森林公园（西双版纳）",
-      "pick": "西双版纳原始森林公园",
-      "pickId": "B02B3001GV",
-      "score": 140,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "tel": "0691-2759818",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入17:00",
-      "oldId": "B02B3001GV",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "原始森林公园（西双版纳）",
-          "to": "西双版纳原始森林公园"
-        }
-      }
-    },
-    {
-      "id": "mengle-temple",
-      "name": "勐泐大佛寺",
-      "pick": "勐泐大佛寺",
-      "pickId": "B0FFLO76MG",
-      "score": 144,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.6,
-      "tel": "0691-8998555",
-      "openTime": "08:00-17:30",
-      "openText": "周一至周日 08:00-17:30",
-      "oldId": "B0FFLO76MG",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "zongfosi",
-      "name": "总佛寺（西双版纳）",
-      "pick": "西双版纳总佛寺",
-      "pickId": "B02B3005IG",
-      "score": 122,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.8,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B02B3005IG",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "总佛寺（西双版纳）",
-          "to": "西双版纳总佛寺"
-        }
-      }
-    },
-    {
-      "id": "wangtianshu",
-      "name": "望天树景区（西双版纳）",
-      "pick": "西双版纳热带雨林国家公园望天树景区",
-      "pickId": "B02B300CS8",
-      "score": 141,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "0691-8876098;0691-8175922",
-      "openTime": "08:30-18:00",
-      "openText": "周一至周日 08:30-18:00 最晚进入16:30",
-      "oldId": "B02B300CS8",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "望天树景区（西双版纳）",
-          "to": "西双版纳热带雨林国家公园望天树景区"
-        }
-      }
-    },
-    {
-      "id": "golden-pagoda",
-      "name": "大金塔（告庄西双景）",
-      "pick": "景洪市大金塔寺",
-      "pickId": "B02B30M2CV",
-      "score": 123,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.7,
-      "tel": "0691-3034089",
-      "openTime": "10:00-11:30 16:30-18:00 20:00-22:00",
-      "openText": "周一至周日 10:00-11:30,16:30-18:00,20:00-22:00",
-      "oldId": "B0FFIPTCRG",
-      "drift_m": 175,
-      "changes": {
-        "poi": {
-          "from": "B0FFIPTCRG",
-          "to": "B02B30M2CV"
-        },
-        "coord": {
-          "from": [
-            100.819697,
-            22.005978
-          ],
-          "to": [
-            100.819567,
-            22.007548
-          ],
-          "drift_m": 175
-        },
-        "rename": {
-          "from": "大金塔（告庄西双景）",
-          "to": "景洪市大金塔寺"
-        }
-      }
-    },
-    {
-      "id": "six-country-water-market",
-      "name": "六国水上市场（告庄西双景）",
-      "pick": "湄公河·六国水上市场",
-      "pickId": "B0FFJXVMVY",
-      "score": 122,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.6,
-      "tel": "0691-2221171;0691-2221600",
-      "openTime": "18:30-24:00",
-      "openText": "周一至周日 18:30-24:00",
-      "oldId": "B0I2LZY7VM",
-      "drift_m": 69,
-      "changes": {
-        "poi": {
-          "from": "B0I2LZY7VM",
-          "to": "B0FFJXVMVY"
-        },
-        "coord": {
-          "from": [
-            100.821999,
-            22.004616
-          ],
-          "to": [
-            100.821461,
-            22.004992
-          ],
-          "drift_m": 69
-        },
-        "rename": {
-          "from": "六国水上市场（告庄西双景）",
-          "to": "湄公河·六国水上市场"
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "曼听御花园景区(132)",
+        "曼听公园-佛教文化区(118)",
+        "曼听公园-周总理纪念碑(109)"
+      ]
     },
     {
       "id": "riverside-night-market",
@@ -312,176 +46,6 @@
       ]
     },
     {
-      "id": "jinuo-village",
-      "name": "基诺山寨景区",
-      "pick": "基诺山寨景区",
-      "pickId": "B02B30031D",
-      "score": 143,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.5,
-      "tel": "0691-2470573;0691-2470606",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入16:20",
-      "oldId": "B02B30031D",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "tropical-flower-garden",
-      "name": "热带花卉园（西双版纳）",
-      "pick": "西双版纳热带花卉园",
-      "pickId": "B02B3005F2",
-      "score": 141,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "tel": "12301",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入18:00",
-      "oldId": "B02B3005F2",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "热带花卉园（西双版纳）",
-          "to": "西双版纳热带花卉园"
-        }
-      }
-    },
-    {
-      "id": "poshui-square",
-      "name": "泼水广场（景洪）",
-      "pick": "景洪市泼水广场",
-      "pickId": "B0FFFP9K1H",
-      "score": 111,
-      "type": "风景名胜;公园广场;城市广场",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "BV11451226",
-      "drift_m": 210,
-      "changes": {
-        "poi": {
-          "from": "BV11451226",
-          "to": "B0FFFP9K1H"
-        },
-        "coord": {
-          "from": [
-            100.806123,
-            22.001014
-          ],
-          "to": [
-            100.80663,
-            22.002841
-          ],
-          "drift_m": 210
-        },
-        "rename": {
-          "from": "泼水广场（景洪）",
-          "to": "景洪市泼水广场"
-        }
-      }
-    },
-    {
-      "id": "dai-show",
-      "name": "傣秀剧场",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "孔雀公主大剧院(40)",
-        "孔雀公主大剧院-新傣秀(-7)",
-        "新傣秀(-11)"
-      ]
-    },
-    {
-      "id": "manyuan-village",
-      "name": "曼远村（蘑菇屋）",
-      "pick": "曼远村",
-      "pickId": "B0H6S5ZCEU",
-      "score": 131,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0H6S5ZCEU",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "曼远村（蘑菇屋）",
-          "to": "曼远村"
-        }
-      }
-    },
-    {
-      "id": "nannuo-mountain",
-      "name": "南糯山（半坡老寨）",
-      "pick": "南糯山",
-      "pickId": "B0I14B51I6",
-      "score": 103,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0MGCDE4WR",
-      "drift_m": 967,
-      "changes": {
-        "poi": {
-          "from": "B0MGCDE4WR",
-          "to": "B0I14B51I6"
-        },
-        "coord": {
-          "from": [
-            100.600144,
-            21.943302
-          ],
-          "to": [
-            100.60507,
-            21.9359
-          ],
-          "drift_m": 967
-        },
-        "rename": {
-          "from": "南糯山（半坡老寨）",
-          "to": "南糯山"
-        }
-      }
-    },
-    {
-      "id": "mengjinglai",
-      "name": "勐景来（中缅第一寨）",
-      "pick": "中缅第一寨勐景来景区",
-      "pickId": "B02B300CN7",
-      "score": 137,
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00 最晚进入18:00；闭园期间不对外接待游客，否则不支持退票服务",
-      "oldId": "B02B300CN7",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "勐景来（中缅第一寨）",
-          "to": "中缅第一寨勐景来景区"
-        }
-      }
-    },
-    {
-      "id": "banna-museum",
-      "name": "西双版纳民族博物馆",
-      "pick": "西双版纳民族博物馆",
-      "pickId": "B02B30LUXA",
-      "score": 150,
-      "type": "科教文化服务;博物馆;博物馆",
-      "rating": 4.6,
-      "tel": "0691-8930999",
-      "openTime": "09:00-17:00",
-      "openText": "周二至周日 09:00-17:00；周一 全天关闭",
-      "oldId": "B02B30LUXA",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
       "id": "manjinglan-night-market",
       "name": "曼景兰夜市（傣味）",
       "why": "无合格候选（子设施/店铺/低分）",
@@ -489,44 +53,6 @@
         "西双版纳曼景兰大佛寺(119)",
         "白象花园步行街(28)",
         "大金塔夜市(25)"
-      ]
-    },
-    {
-      "id": "lantsang-bridge",
-      "name": "澜沧江大桥（景洪）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "澜沧江风光(120)",
-        "金源四季公寓(澜沧江黎明大桥分店)(73)",
-        "古茶居公寓(澜沧江黎明大桥分店)(26)"
-      ]
-    },
-    {
-      "id": "rainforest-valley",
-      "name": "雨林谷（西双版纳）",
-      "pick": "雨林谷景区",
-      "pickId": "B0LUL15G65",
-      "score": 110,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 3.6,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0LUL15G65",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "雨林谷（西双版纳）",
-          "to": "雨林谷景区"
-        }
-      }
-    },
-    {
-      "id": "dadugang-tea-garden",
-      "name": "大渡岗万亩茶园",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "大渡岗万亩茶园(-12)"
       ]
     },
     {
@@ -540,155 +66,19 @@
       ]
     },
     {
-      "id": "laobanzhang",
-      "name": "老班章村（布朗山）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "老班章(中国普洱茶第一村)(63)",
-        "老班章茶王树(58)",
-        "老班章(14)"
-      ]
-    },
-    {
       "id": "daluo-port",
       "name": "打洛口岸",
-      "pick": "打洛口岸司机之家",
-      "pickId": "B0MBBUVVMZ",
-      "score": 58,
-      "type": "生活服务;生活服务场所;生活服务场所",
-      "rating": 3.8,
-      "tel": "13988115788",
-      "openTime": "08:00-12:00 14:30-18:00",
-      "openText": "周一至周日 08:00-12:00,14:30-18:00",
-      "oldId": "B02B300CLI",
-      "drift_m": 921,
-      "changes": {
-        "poi": {
-          "from": "B02B300CLI",
-          "to": "B0MBBUVVMZ"
-        },
-        "coord": {
-          "from": [
-            100.033312,
-            21.679676
-          ],
-          "to": [
-            100.042192,
-            21.68039
-          ],
-          "drift_m": 921
-        }
-      }
-    },
-    {
-      "id": "manfeilong-pagoda",
-      "name": "曼飞龙白塔（大勐龙）",
-      "pick": "曼飞龙白塔",
-      "pickId": "B02B30M1F1",
-      "score": 120,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "08:00-22:00",
-      "openText": "周一至周日 08:00-22:00",
-      "oldId": "B02B30M1F1",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "曼飞龙白塔（大勐龙）",
-          "to": "曼飞龙白塔"
-        }
-      }
-    },
-    {
-      "id": "lvshilin",
-      "name": "绿石林（勐仑）",
-      "pick": "绿石林森林公园",
-      "pickId": "B02B300417",
-      "score": 111,
-      "type": "风景名胜;公园广场;动物园|风景名胜;公园广场;公园|风景名胜;公园广场;植物园|风景名胜;风景名胜;风景名胜",
-      "rating": 3.7,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B02B300417",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "绿石林（勐仑）",
-          "to": "绿石林森林公园"
-        }
-      }
-    },
-    {
-      "id": "dai-park-water-square",
-      "name": "西双版纳傣族园-新泼水广场",
-      "pick": "西双版纳傣族园-新泼水广场",
-      "pickId": "B0KUNCQ5OK",
-      "score": 142,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.6,
-      "tel": "",
-      "openTime": "08:30-17:00",
-      "openText": "08:30-17:00, 具体开放时间以现场公示为准",
-      "oldId": "B0KUNCQ5OK",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "jingzhen-pavilion",
-      "name": "景真八角亭",
-      "pick": "景真八角亭",
-      "pickId": "B02B3003NC",
-      "score": 140,
-      "type": "风景名胜;风景名胜;风景名胜",
-      "rating": 4.4,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B02B3003NC",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "mekong-cruise",
-      "name": "澜沧江游船（景洪港）",
-      "pick": "西双版纳澜沧江游船码头",
-      "pickId": "B0KGUZLPEA",
-      "score": 76,
-      "type": "风景名胜;风景名胜;风景名胜",
+      "pick": "打洛口岸",
+      "pickId": "B02B300CLI",
+      "score": 56,
+      "type": "交通设施服务;过境口岸;过境口岸",
       "rating": 0,
-      "tel": "13337569515",
-      "openTime": "10:00-19:00",
-      "openText": "周一至周日 10:00-19:00",
-      "oldId": "B0KGUZLPEA",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "澜沧江游船（景洪港）",
-          "to": "西双版纳澜沧江游船码头"
-        }
-      }
-    },
-    {
-      "id": "forest-culture-museum",
-      "name": "热带雨林民族文化博物馆（版纳植物园）",
-      "pick": "热带雨林民族文化博物馆",
-      "pickId": "B0FFGO02GC",
-      "score": 117,
-      "type": "科教文化服务;博物馆;博物馆",
-      "rating": 3.3,
       "tel": "",
-      "openTime": "09:00-17:30",
-      "openText": "周一至周日 09:00-17:30",
-      "oldId": "B0FFGO02GC",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B02B300CLI",
       "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "热带雨林民族文化博物馆（版纳植物园）",
-          "to": "热带雨林民族文化博物馆"
-        }
-      }
+      "changes": {}
     },
     {
       "id": "peacock-culture-square",
@@ -701,212 +91,6 @@
       ]
     },
     {
-      "id": "minzu-folk-park",
-      "name": "民族风情园（西双版纳）",
-      "pick": "西双版纳州民族风情园",
-      "pickId": "B02B3005EE",
-      "score": 117,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 4.3,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B02B3005EE",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "民族风情园（西双版纳）",
-          "to": "西双版纳州民族风情园"
-        }
-      }
-    },
-    {
-      "id": "mange-temple",
-      "name": "曼阁佛寺",
-      "pick": "曼阁佛寺",
-      "pickId": "B02B300ARC",
-      "score": 138,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "08:30-17:00",
-      "openText": "周一至周日 08:30-17:00",
-      "oldId": "B02B300ARC",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "dalan-plaza",
-      "name": "达兰商业广场（告庄西双景）",
-      "pick": "达兰商业广场",
-      "pickId": "B0FFKDY479",
-      "score": 82,
-      "type": "购物服务;商场;普通商场",
-      "rating": 4.4,
-      "tel": "",
-      "openTime": "10:00-21:00",
-      "openText": "周一至周日 10:00-21:00",
-      "oldId": "B0FFKDY479",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "manzhang-village",
-      "name": "曼掌村（勐养）",
-      "pick": "曼掌村",
-      "pickId": "B0FFHI42OU",
-      "score": 132,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.6,
-      "tel": "15974941301",
-      "openTime": "08:00-20:00",
-      "openText": "周一至周日 08:00-20:00",
-      "oldId": "B0FFHI42OU",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "曼掌村（勐养）",
-          "to": "曼掌村"
-        }
-      }
-    },
-    {
-      "id": "elephant-museum",
-      "name": "亚洲象博物馆（野象谷）",
-      "pick": "亚洲象博物馆",
-      "pickId": "B0FFGA1GBE",
-      "score": 124,
-      "type": "科教文化服务;博物馆;博物馆",
-      "rating": 4,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B0FFGA1GBE",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "亚洲象博物馆（野象谷）",
-          "to": "亚洲象博物馆"
-        }
-      }
-    },
-    {
-      "id": "jinuo-museum",
-      "name": "中国基诺族博物馆",
-      "pick": "西双版纳民族博物馆",
-      "pickId": "B02B30LUXA",
-      "score": 73,
-      "type": "科教文化服务;博物馆;博物馆",
-      "rating": 4.6,
-      "tel": "0691-8930999",
-      "openTime": "09:00-17:00",
-      "openText": "周二至周日 09:00-17:00；周一 全天关闭",
-      "oldId": "",
-      "drift_m": 16333,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B02B30LUXA"
-        }
-      }
-    },
-    {
-      "id": "manduan-temple",
-      "name": "曼短佛寺",
-      "pick": "曼短佛寺旅游村",
-      "pickId": "B02B300C9U",
-      "score": 120,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.2,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B0LAYR07E7",
-      "drift_m": 152,
-      "changes": {
-        "poi": {
-          "from": "B0LAYR07E7",
-          "to": "B02B300C9U"
-        },
-        "coord": {
-          "from": [
-            100.35584,
-            21.941077
-          ],
-          "to": [
-            100.356559,
-            21.942271
-          ],
-          "drift_m": 152
-        },
-        "rename": {
-          "from": "曼短佛寺",
-          "to": "曼短佛寺旅游村"
-        }
-      }
-    },
-    {
-      "id": "dushu-chenglin",
-      "name": "独树成林（打洛）",
-      "pick": "独树成林",
-      "pickId": "B0FFKHMH7W",
-      "score": 124,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 3.8,
-      "tel": "0691-5566828",
-      "openTime": "08:00-18:00",
-      "openText": "08:00-18:00 最晚进入18:00闭园期间不对外接待游客,否则不支持退票服务, 具体开放时间以现场公示为准",
-      "oldId": "B0FFKHMH7W",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "独树成林（打洛）",
-          "to": "独树成林"
-        }
-      }
-    },
-    {
-      "id": "yiwu-town",
-      "name": "易武古镇",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "易武古镇車顺号百年老茶庄(53)",
-        "勐腊嘉木古镇客栈(35)",
-        "易武·兢和普洱茶(25)"
-      ]
-    },
-    {
-      "id": "mohan-port",
-      "name": "磨憨口岸",
-      "pick": "磨憨口岸国门书社服务站",
-      "pickId": "B0KK2RJXR9",
-      "score": 79,
-      "type": "生活服务;生活服务场所;生活服务场所",
-      "rating": 3.9,
-      "tel": "18988113066",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B02B30LUS7",
-      "drift_m": 78,
-      "changes": {
-        "poi": {
-          "from": "B02B30LUS7",
-          "to": "B0KK2RJXR9"
-        },
-        "coord": {
-          "from": [
-            101.684778,
-            21.183016
-          ],
-          "to": [
-            101.684482,
-            21.183656
-          ],
-          "drift_m": 78
-        }
-      }
-    },
-    {
       "id": "jinghong-old-street",
       "name": "景洪老街（嘎兰中路）",
       "why": "无合格候选（子设施/店铺/低分）",
@@ -915,86 +99,6 @@
         "景洪(北)出口(G8512景打高速东南向)(-69)",
         "勐海老街烤大鱼(-79)"
       ]
-    },
-    {
-      "id": "sunac-park",
-      "name": "西双版纳融创乐园（原万达主题乐园）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "西双版纳融创乐园-蝴蝶王国(115)",
-        "西双版纳融创乐园-许愿树(113)",
-        "西双版纳融创乐园-一飞冲天(103)"
-      ]
-    },
-    {
-      "id": "binjiang-park",
-      "name": "滨江公园（景洪）",
-      "pick": "西双版纳滨江公园",
-      "pickId": "B02B300C5M",
-      "score": 119,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0LRY6V3H0",
-      "drift_m": 102,
-      "changes": {
-        "poi": {
-          "from": "B0LRY6V3H0",
-          "to": "B02B300C5M"
-        },
-        "coord": {
-          "from": [
-            100.804837,
-            22.008489
-          ],
-          "to": [
-            100.804711,
-            22.007583
-          ],
-          "drift_m": 102
-        },
-        "rename": {
-          "from": "滨江公园（景洪）",
-          "to": "西双版纳滨江公园"
-        }
-      }
-    },
-    {
-      "id": "mengyuan-xianjing",
-      "name": "勐远仙境",
-      "pick": "勐远仙境",
-      "pickId": "B0FFFFK5CU",
-      "score": 94,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.5,
-      "tel": "17387290398;19969160996",
-      "openTime": "09:00-18:00",
-      "openText": "周一至周日 09:00-18:00",
-      "oldId": "",
-      "drift_m": 21284,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B0FFFFK5CU"
-        }
-      }
-    },
-    {
-      "id": "nanyao-garden",
-      "name": "西双版纳南药园",
-      "pick": "西双版纳南药园",
-      "pickId": "B02B30000F",
-      "score": 160,
-      "type": "风景名胜;公园广场;公园|风景名胜;风景名胜;国家级景点",
-      "rating": 4.4,
-      "tel": "0691-2190000",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "B02B30000F",
-      "drift_m": 0,
-      "changes": {}
     },
     {
       "id": "peacock-lake-park",
@@ -1007,153 +111,12 @@
       ]
     },
     {
-      "id": "manjinglan-temple",
-      "name": "曼景兰佛寺",
-      "pick": "西双版纳曼景兰大佛寺",
-      "pickId": "B02B30042U",
-      "score": 119,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.5,
-      "tel": "",
-      "openTime": "08:00-18:00",
-      "openText": "周一至周日 08:00-18:00",
-      "oldId": "BV11451228",
-      "drift_m": 31,
-      "changes": {
-        "poi": {
-          "from": "BV11451228",
-          "to": "B02B30042U"
-        },
-        "coord": {
-          "from": [
-            100.80317,
-            22.000619
-          ],
-          "to": [
-            100.803393,
-            22.00081
-          ],
-          "drift_m": 31
-        }
-      }
-    },
-    {
       "id": "rt-mart",
       "name": "大润发（景洪泼水广场店）",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
         "大润发(西双版纳店)(13)",
         "飞牛便利店(勐混路店)(-53)"
-      ]
-    },
-    {
-      "id": "manhena-village",
-      "name": "曼贺纳自然村寨",
-      "pick": "曼贺纳自然村寨",
-      "pickId": "B0FFJ2ZH2Y",
-      "score": 149,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0FFJ2ZH2Y",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "jiunmu-hot-spring",
-      "name": "玖沐温泉谷",
-      "pick": "玖沐温泉谷",
-      "pickId": "B0M6FHZ860",
-      "score": 91,
-      "type": "体育休闲服务;度假疗养场所;度假村",
-      "rating": 3.5,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0M6FHZ860",
-      "drift_m": 0,
-      "changes": {}
-    },
-    {
-      "id": "mengle-rain-park",
-      "name": "勐泐雨林公园",
-      "pick": "勐泐雨林健康主题公园",
-      "pickId": "B0FFGB4K3T",
-      "score": 108,
-      "type": "风景名胜;公园广场;公园",
-      "rating": 4.4,
-      "tel": "",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "BV11600264",
-      "drift_m": 363,
-      "changes": {
-        "poi": {
-          "from": "BV11600264",
-          "to": "B0FFGB4K3T"
-        },
-        "coord": {
-          "from": [
-            100.80619,
-            21.96933
-          ],
-          "to": [
-            100.807396,
-            21.966259
-          ],
-          "drift_m": 363
-        }
-      }
-    },
-    {
-      "id": "nabanhe-reserve",
-      "name": "纳板河（国家级自然保护区）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "去野·纳板河雨林徒步(15)",
-        "纳板河流域国家级自然保护区管理局(-19)",
-        "纳板河(-32)"
-      ]
-    },
-    {
-      "id": "cuipingfeng",
-      "name": "翠屏峰（勐仑）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "勐醒农场翠屏峰生产队第四居民小组(-21)",
-        "勐醒农场管理委员会翠屏峰生产队(-21)"
-      ]
-    },
-    {
-      "id": "nanla-river-rafting",
-      "name": "南腊河（野趣漂流）",
-      "pick": "南腊河野趣漂流度假区",
-      "pickId": "B0FFF63TQZ",
-      "score": 130,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.4,
-      "tel": "0691-8133336",
-      "openTime": "09:00-18:00",
-      "openText": "周一至周日 09:00-18:00",
-      "oldId": "B0FFF63TQZ",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "南腊河（野趣漂流）",
-          "to": "南腊河野趣漂流度假区"
-        }
-      }
-    },
-    {
-      "id": "zhanglang-village",
-      "name": "章朗村（布朗山千年古寨）",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "布朗族生态博物馆(28)",
-        "森氧云海·Sylvan枕雾听风·云境山景公馆(西双版纳勐海店)(-6)",
-        "章朗村民委员会(-21)"
       ]
     },
     {
@@ -1167,48 +130,34 @@
       ]
     },
     {
-      "id": "liusha-river-park",
-      "name": "流沙河公园",
+      "id": "laobanzhang",
+      "name": "老班章村（布朗山）",
       "why": "无合格候选（子设施/店铺/低分）",
       "top": [
-        "流沙河(-32)",
-        "流沙河宾馆(-51)"
+        "老班章(中国普洱茶第一村)(63)",
+        "老班章茶王树(58)",
+        "老班章(14)"
       ]
     },
     {
-      "id": "mandou-temple",
-      "name": "曼斗佛寺（曼斗寨）",
-      "pick": "曼斗佛寺",
-      "pickId": "B02B3000L0",
-      "score": 124,
-      "type": "风景名胜;风景名胜;寺庙道观",
-      "rating": 4.6,
-      "tel": "",
-      "openTime": "09:00-18:00",
-      "openText": "周一至周日 09:00-18:00",
-      "oldId": "B02B3000L0",
-      "drift_m": 0,
-      "changes": {
-        "rename": {
-          "from": "曼斗佛寺（曼斗寨）",
-          "to": "曼斗佛寺"
-        }
-      }
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "易武古镇車顺号百年老茶庄(53)",
+        "勐腊嘉木古镇客栈(35)",
+        "易武·兢和普洱茶(25)"
+      ]
     },
     {
-      "id": "gunaka-culture-park",
-      "name": "古纳卡傣族文化园",
-      "pick": "古纳卡傣族文化园",
-      "pickId": "B0FFK6JTC1",
-      "score": 150,
-      "type": "风景名胜;风景名胜相关;旅游景点",
-      "rating": 4.6,
-      "tel": "4001619898",
-      "openTime": "07:30-17:00",
-      "openText": "周一至周日 07:30-17:00",
-      "oldId": "B0FFK6JTC1",
-      "drift_m": 0,
-      "changes": {}
+      "id": "zhanglang-village",
+      "name": "章朗村（布朗山千年古寨）",
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "布朗族生态博物馆(28)",
+        "森氧云海·Sylvan枕雾听风·云境山景公馆(西双版纳勐海店)(-6)",
+        "章朗村民委员会(-21)"
+      ]
     },
     {
       "id": "mandan-village",

@@ -1,0 +1,64 @@
+{
+  "city": "宁波",
+  "date": "2026-10-17",
+  "before": 68,
+  "after": 63,
+  "removed": [
+    {
+      "id": "xuedou-temple",
+      "name": "雪窦寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 3,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3 < 4.0"
+    },
+    {
+      "id": "art-museum",
+      "name": "宁波美术馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "jiulong-lake",
+      "name": "九龙湖",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 3.8,
+      "level": "national",
+      "score": 0.37,
+      "heatNew": 7,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "zhedong-canyon",
+      "name": "浙东大峡谷",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    },
+    {
+      "id": "jiangbei-church",
+      "name": "江北天主堂",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "评分 3.8 < 4.0"
+    }
+  ],
+  "heatApplied": 49
+}

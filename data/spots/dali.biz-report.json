@@ -3,15 +3,15 @@
   "date": "2026-10-17",
   "stat": {
     "total": 70,
-    "poiFixed": 8,
+    "poiFixed": 7,
     "renamed": 6,
-    "coordFixed": 8,
+    "coordFixed": 6,
     "openFilled": 53,
     "closedMon": 0,
     "tel": 28,
-    "rating": 59,
-    "photo": 59,
-    "noCand": 11,
+    "rating": 58,
+    "photo": 58,
+    "noCand": 12,
     "err": 0
   },
   "log": [
@@ -134,12 +134,17 @@
     {
       "id": "aiqinhai-mall",
       "name": "大理爱琴海购物公园",
-      "why": "无合格候选（子设施/店铺/低分）",
-      "top": [
-        "爱琴海购物公园(32)",
-        "KKV(大理爱琴海购物公园主力店)(29)",
-        "POLOWALK(大理爱琴海购物公园鸡足山路店)(16)"
-      ]
+      "pick": "爱琴海购物公园",
+      "pickId": "B0FFMGTDNW",
+      "score": 87,
+      "type": "购物服务;购物相关场所;购物相关场所",
+      "rating": 4.7,
+      "tel": "0872-2399860",
+      "openTime": "10:00-22:30",
+      "openText": "周一至周四,周日 10:00-22:00；周五至周六 10:00-22:30",
+      "oldId": "B0FFMGTDNW",
+      "drift_m": 0,
+      "changes": {}
     },
     {
       "id": "erhai-moon-wetland",
@@ -192,25 +197,9 @@
       "tel": "",
       "openTime": "24小时营业",
       "openText": "周一至周日 00:00-24:00",
-      "oldId": "",
-      "drift_m": 114,
-      "changes": {
-        "poi": {
-          "from": null,
-          "to": "B036815A12"
-        },
-        "coord": {
-          "from": [
-            100.1609,
-            25.6953
-          ],
-          "to": [
-            100.160829,
-            25.694279
-          ],
-          "drift_m": 114
-        }
-      }
+      "oldId": "B036815A12",
+      "drift_m": 0,
+      "changes": {}
     },
     {
       "id": "honglongjing",
@@ -456,33 +445,12 @@
     {
       "id": "gantong-temple",
       "name": "感通寺",
-      "pick": "南方电网汽车充电站(大理市感通寺景区充电站)",
-      "pickId": "B0J2343QF1",
-      "score": 62,
-      "type": "汽车服务;充电站;充电站",
-      "rating": 3.2,
-      "tel": "4006895598",
-      "openTime": "24小时营业",
-      "openText": "周一至周日 00:00-24:00",
-      "oldId": "B0368007GX",
-      "drift_m": 363,
-      "changes": {
-        "poi": {
-          "from": "B0368007GX",
-          "to": "B0J2343QF1"
-        },
-        "coord": {
-          "from": [
-            100.167018,
-            25.643118
-          ],
-          "to": [
-            100.16903,
-            25.645828
-          ],
-          "drift_m": 363
-        }
-      }
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "苍山景区-感通寺(122)",
+        "苍山景区-感通寺-祖堂(113)",
+        "感通茶缘(76)"
+      ]
     },
     {
       "id": "jizhao-nunnery",
@@ -653,17 +621,12 @@
     {
       "id": "caicun-pier",
       "name": "才村码头",
-      "pick": "才村码头",
-      "pickId": "B0368000BB",
-      "score": 103,
-      "type": "交通设施服务;港口码头;港口码头",
-      "rating": 4.7,
-      "tel": "",
-      "openTime": [],
-      "openText": [],
-      "oldId": "B0368000BB",
-      "drift_m": 0,
-      "changes": {}
+      "why": "无合格候选（子设施/店铺/低分）",
+      "top": [
+        "大理市梦涛安然客栈(才村码头洱海店)(79)",
+        "吉市·十六(才村码头店)(75)",
+        "歌今·吟夏岛(才村码头店)(71)"
+      ]
     },
     {
       "id": "erhai-greenway",

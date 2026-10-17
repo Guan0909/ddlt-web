@@ -1,0 +1,1096 @@
+{
+  "city": "温州",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 9,
+      "街区": 9,
+      "公园": 9,
+      "博物馆": 6,
+      "亲子": 3,
+      "演出": 2,
+      "夜景": 2,
+      "美食": 4,
+      "商圈": 2,
+      "山水": 20,
+      "古镇": 4
+    },
+    "byGroup": {
+      "core": 39,
+      "night": 4,
+      "family": 3,
+      "street": 9,
+      "food": 4,
+      "park": 9,
+      "mall": 2,
+      "total": 70,
+      "suburb": 29,
+      "coreRatio": 61
+    }
+  },
+  "keep": [
+    {
+      "id": "jiangxinyu",
+      "name": "江心屿",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wuma-street",
+      "name": "五马街",
+      "cat": "街区",
+      "heat": 9,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shuomen-port",
+      "name": "朔门古港遗址",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenzhou-museum",
+      "name": "温州博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wenzhou-science",
+      "name": "温州科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "nanxi-museum",
+      "name": "南戏博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "math-museum",
+      "name": "温州数学名人馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清旧居",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenzhou-theater",
+      "name": "温州大剧院",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dongnan-theater",
+      "name": "温州东南剧院",
+      "cat": "演出",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "oujiang-cruise",
+      "name": "瓯江夜游",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "wenzhou-park",
+      "name": "温州乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenzhou-zoo",
+      "name": "温州动物园",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zeya",
+      "name": "泽雅景区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 3.5,
+      "level": "national",
+      "score": 0.25,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "daluoshan",
+      "name": "大罗山",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yaoxi",
+      "name": "瑶溪风景名胜区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.6,
+      "level": "province",
+      "score": 0.59,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yongchangbao",
+      "name": "永昌堡",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xianyan",
+      "name": "瓯海区仙岩镇",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 3.7,
+      "level": null,
+      "score": 0.08,
+      "heatNew": 5,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shoe-museum",
+      "name": "中国鞋文化博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "nanxijiang",
+      "name": "楠溪江风景名胜区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shiweiyan",
+      "name": "石桅岩",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "cangpo",
+      "name": "楠溪江苍坡古村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "furong",
+      "name": "芙蓉古村宋园",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "linkeng",
+      "name": "林坑古村落",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yandangshan",
+      "name": "雁荡山风景名胜区",
+      "cat": "山水",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "zhongyandang",
+      "name": "中雁荡山风景区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dongtou",
+      "name": "洞头列岛",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wanghailou",
+      "name": "望海楼",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xiandieyan",
+      "name": "仙叠岩",
+      "cat": "山水",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "banpingshan",
+      "name": "半屏山",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "dongtou-militia",
+      "name": "洞头先锋女子民兵连纪念馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nanyandang",
+      "name": "南雁荡山",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "subuqing",
+      "name": "苏步青励志教育馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "nanjidao",
+      "name": "温州南麂岛",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yuliao",
+      "name": "渔寮大沙滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yucangshan",
+      "name": "玉苍山国家森林公园",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wanyao",
+      "name": "碗窑古村落风景区",
+      "cat": "古镇",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wuyanling",
+      "name": "乌岩岭",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "baizhangji",
+      "name": "百丈漈",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "tonglingshan",
+      "name": "铜铃山",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "liubowen",
+      "name": "刘伯温故里景区",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yuhailou",
+      "name": "玉海楼",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "province",
+      "score": 0.59,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhailiaoxi",
+      "name": "寨寮溪风景区",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "yaokou",
+      "name": "瓯窑小镇",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "lishui-street",
+      "name": "丽水街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "gongyuan-road",
+      "name": "公园路历史文化街区",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6
+    },
+    {
+      "id": "chanjie",
+      "name": "禅街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "mochifang",
+      "name": "墨池坊",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "shuomen-street",
+      "name": "朔门古街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "qingnianfang",
+      "name": "庆年坊历史街区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘街",
+      "cat": "街区",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "maanchi-park",
+      "name": "马鞍池公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "bailuzhou",
+      "name": "白鹿洲公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sanyang-wetland",
+      "name": "三垟湿地景区",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "jingshan",
+      "name": "景山公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.6,
+      "level": "province",
+      "score": 0.59,
+      "heatNew": 8
+    },
+    {
+      "id": "wutian-old-street",
+      "name": "梧田老街",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "shamaohe",
+      "name": "纱帽河",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "dongtou-seafood",
+      "name": "东岙渔村海鲜排档",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6
+    },
+    {
+      "id": "nantang-night",
+      "name": "南塘夜市",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "mixc",
+      "name": "温州万象城",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "wanda-longwan",
+      "name": "龙湾万达广场",
+      "cat": "商圈",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "silianzhui",
+      "name": "四连碓造纸作坊",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "dalongqiu",
+      "name": "大龙湫登山步道",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 3.2,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "评分 3.2 < 4.0"
+    },
+    {
+      "id": "lingfeng-night",
+      "name": "灵峰夜景",
+      "cat": "夜景",
+      "heat": 8.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "siqian",
+      "name": "泗溪廊桥",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 3.6,
+      "level": null,
+      "score": 0.04,
+      "heatNew": 5,
+      "why": "评分 3.6 < 4.0"
+    },
+    {
+      "id": "huagaishan",
+      "name": "华盖山",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "dashaa",
+      "name": "大沙岙海滩",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "songtaishan",
+      "name": "松台山公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "jiushanhu",
+      "name": "九山湖",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 3.8,
+      "level": null,
+      "score": 0.12,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "jiangxinyu",
+      "name": "江心屿",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "gongyuan-road",
+      "name": "公园路历史文化街区",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "shuomen-port",
+      "name": "朔门古港遗址",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "songtaishan",
+      "name": "松台山公园",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "huagaishan",
+      "name": "华盖山",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "jiushanhu",
+      "name": "九山湖",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "zhongshan-park",
+      "name": "中山公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "maanchi-park",
+      "name": "马鞍池公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "wenzhou-museum",
+      "name": "温州博物馆",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "wenzhou-science",
+      "name": "温州科技馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "nanxi-museum",
+      "name": "南戏博物馆",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "math-museum",
+      "name": "温州数学名人馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清旧居",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "wenzhou-theater",
+      "name": "温州大剧院",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "dongnan-theater",
+      "name": "温州东南剧院",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "oujiang-cruise",
+      "name": "瓯江夜游",
+      "from": 8,
+      "to": 6
+    },
+    {
+      "id": "shamaohe",
+      "name": "纱帽河",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "mixc",
+      "name": "温州万象城",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "wanda-longwan",
+      "name": "龙湾万达广场",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "sanyang-wetland",
+      "name": "三垟湿地景区",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "wenzhou-park",
+      "name": "温州乐园",
+      "from": 7,
+      "to": 9
+    },
+    {
+      "id": "wenzhou-zoo",
+      "name": "温州动物园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "jingshan",
+      "name": "景山公园",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "zeya",
+      "name": "泽雅景区",
+      "from": 6.5,
+      "to": 6
+    },
+    {
+      "id": "daluoshan",
+      "name": "大罗山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yaoxi",
+      "name": "瑶溪风景名胜区",
+      "from": 6,
+      "to": 8
+    },
+    {
+      "id": "yongchangbao",
+      "name": "永昌堡",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "xianyan",
+      "name": "瓯海区仙岩镇",
+      "from": 6.5,
+      "to": 5
+    },
+    {
+      "id": "yaokou",
+      "name": "瓯窑小镇",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "shoe-museum",
+      "name": "中国鞋文化博物馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "shiweiyan",
+      "name": "石桅岩",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "furong",
+      "name": "芙蓉古村宋园",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "linkeng",
+      "name": "林坑古村落",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yandangshan",
+      "name": "雁荡山风景名胜区",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "dalongqiu",
+      "name": "大龙湫登山步道",
+      "from": 8,
+      "to": 5
+    },
+    {
+      "id": "zhongyandang",
+      "name": "中雁荡山风景区",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "dongtou",
+      "name": "洞头列岛",
+      "from": 8,
+      "to": 6
+    },
+    {
+      "id": "xiandieyan",
+      "name": "仙叠岩",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "banpingshan",
+      "name": "半屏山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "dongtou-seafood",
+      "name": "东岙渔村海鲜排档",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "nanyandang",
+      "name": "南雁荡山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "subuqing",
+      "name": "苏步青励志教育馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "nanjidao",
+      "name": "温州南麂岛",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "yucangshan",
+      "name": "玉苍山国家森林公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "wanyao",
+      "name": "碗窑古村落风景区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "siqian",
+      "name": "泗溪廊桥",
+      "from": 7,
+      "to": 5
+    },
+    {
+      "id": "wuyanling",
+      "name": "乌岩岭",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "baizhangji",
+      "name": "百丈漈",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "tonglingshan",
+      "name": "铜铃山",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "liubowen",
+      "name": "刘伯温故里景区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yuhailou",
+      "name": "玉海楼",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "zhailiaoxi",
+      "name": "寨寮溪风景区",
+      "from": 5.5,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -1,0 +1,1091 @@
+{
+  "city": "扬州",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 9,
+      "街区": 5,
+      "博物馆": 8,
+      "古迹": 18,
+      "美食": 4,
+      "夜景": 3,
+      "演出": 2,
+      "公园": 11,
+      "商圈": 2,
+      "古镇": 4,
+      "亲子": 2
+    },
+    "byGroup": {
+      "core": 39,
+      "night": 5,
+      "family": 2,
+      "street": 5,
+      "food": 4,
+      "park": 11,
+      "mall": 2,
+      "total": 68,
+      "suburb": 15,
+      "coreRatio": 65
+    }
+  },
+  "keep": [
+    {
+      "id": "slender-west-lake",
+      "name": "瘦西湖",
+      "cat": "山水",
+      "heat": 10,
+      "rating": 5,
+      "level": "national",
+      "score": 0.85,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dongguan-street",
+      "name": "扬州东关街",
+      "cat": "街区",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "grand-canal-museum",
+      "name": "中国大运河博物馆",
+      "cat": "博物馆",
+      "heat": 9.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "ge-garden",
+      "name": "个园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "he-garden",
+      "name": "何园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yechun-teahouse",
+      "name": "冶春茶社",
+      "cat": "美食",
+      "heat": 8.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "daming-temple",
+      "name": "大明寺",
+      "cat": "古迹",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "dongguan-ferry-night",
+      "name": "东关古渡·古运河夜游",
+      "cat": "夜景",
+      "heat": 8.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shuangbo-museum",
+      "name": "扬州双博馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chunjiang-nightshow",
+      "name": "春江花月夜·瘦西湖夜游",
+      "cat": "演出",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "cat": "古迹",
+      "heat": 7.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "songjiacheng",
+      "name": "宋夹城考古遗址公园",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "pishi-street",
+      "name": "皮市街",
+      "cat": "街区",
+      "heat": 7.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "renfengli",
+      "name": "仁丰里",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "shaobo-town",
+      "name": "邵伯古镇景区",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhuyuwan",
+      "name": "茱萸湾风景区",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sanwan-night",
+      "name": "运河三湾·剪影桥夜景",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "yuchengyi",
+      "name": "高邮盂城驿",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "hanlingyuan",
+      "name": "汉广陵王墓博物馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": "province",
+      "score": 0.59,
+      "heatNew": 8,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shikefa",
+      "name": "史可法纪念馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "baguai-museum",
+      "name": "扬州八怪纪念馆",
+      "cat": "博物馆",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "yangzhou-theatre",
+      "name": "扬州大剧院",
+      "cat": "演出",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "yangzhou-science",
+      "name": "扬州科技馆",
+      "cat": "亲子",
+      "heat": 6.5,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "guazhou-ferry",
+      "name": "瓜洲古渡公园",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "shaobo-lake",
+      "name": "邵伯湖旅游度假区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "fenghuang-island",
+      "name": "扬州凤凰岛生态旅游区",
+      "cat": "山水",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wenyou-tai",
+      "name": "高邮文游台",
+      "cat": "古迹",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xianhe-temple",
+      "name": "仙鹤寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "puhading-park",
+      "name": "普哈丁园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "guanyinshan",
+      "name": "蜀冈观音山",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "tangcheng-museum",
+      "name": "唐城遗址博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清故居",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "wangshi-xiaoyuan",
+      "name": "汪氏小苑",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "lu-family-house",
+      "name": "卢氏盐商住宅",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": "national",
+      "score": 0.49,
+      "heatNew": 7
+    },
+    {
+      "id": "tianning-temple",
+      "name": "中国扬州佛教文化博物馆",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "jiangdu-water-hub",
+      "name": "江都水利枢纽植物园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "qihe-badao",
+      "name": "七河八岛生态区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "naishan",
+      "name": "仪征捺山地质公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "zhenguo-temple",
+      "name": "高邮镇国寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "gaoyou-lake-reed",
+      "name": "高邮湖芦苇荡湿地公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "xiaopangu",
+      "name": "小盘谷",
+      "cat": "古迹",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "shierxu",
+      "name": "仪征十二圩历史文化街区",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "gaoyou-pawnshop",
+      "name": "高邮当铺博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "jieshou-town",
+      "name": "界首古镇",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "longqiuzhuang",
+      "name": "龙虬庄遗址博物馆",
+      "cat": "博物馆",
+      "heat": 5.5,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "baoying-lake",
+      "name": "宝应湖国家湿地公园",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "fuchun-teahouse",
+      "name": "富春茶社",
+      "cat": "美食",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "sishangting-food-street",
+      "name": "四望亭路美食街",
+      "cat": "美食",
+      "heat": 7.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "gonghechun",
+      "name": "共和春茶社",
+      "cat": "美食",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "jinghuacheng",
+      "name": "京华城休闲旅游区",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "guoqing-road",
+      "name": "国庆路·辕门桥",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "hongqiaofang",
+      "name": "虹桥坊东堤",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "caiyi-street",
+      "name": "彩衣街",
+      "cat": "街区",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null
+    },
+    {
+      "id": "puyuan",
+      "name": "朴园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "mingyue-lake",
+      "name": "明月湖",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "zaolinwan",
+      "name": "扬州世博园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "lotus-pond-park",
+      "name": "荷花池公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "shugang-west-peak",
+      "name": "蜀冈西峰生态公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "wu-daotai",
+      "name": "吴道台宅第",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "wanfu-bridge-night",
+      "name": "万福大桥夜景",
+      "cat": "夜景",
+      "heat": 6,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "wantou-town",
+      "name": "湾头古镇",
+      "cat": "古镇",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "tianle-lake",
+      "name": "天乐湖温泉度假区",
+      "cat": "山水",
+      "heat": 5.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "lingtang-mosque",
+      "name": "菱塘清真寺",
+      "cat": "古迹",
+      "heat": 5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "评分 3.9 < 4.0"
+    },
+    {
+      "id": "beihu-wetland",
+      "name": "北湖湿地公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "runyang-forest",
+      "name": "润扬森林公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "xiannv-park",
+      "name": "江都仙女公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "zongzhao-garden",
+      "name": "宝应纵棹园",
+      "cat": "公园",
+      "heat": 5,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "yangzijin",
+      "name": "扬子津古渡公园",
+      "cat": "公园",
+      "heat": 5.5,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [
+    {
+      "name": "蜀冈-瘦西湖风景名胜区",
+      "coord": [
+        119.420197,
+        32.409631
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heat": 9
+    },
+    {
+      "name": "盂城驿",
+      "coord": [
+        119.439149,
+        32.770973
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    }
+  ],
+  "heatChanges": [
+    {
+      "id": "slender-west-lake",
+      "name": "瘦西湖",
+      "from": 10,
+      "to": 9
+    },
+    {
+      "id": "dongguan-street",
+      "name": "扬州东关街",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "grand-canal-museum",
+      "name": "中国大运河博物馆",
+      "from": 9.5,
+      "to": 8
+    },
+    {
+      "id": "yechun-teahouse",
+      "name": "冶春茶社",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "daming-temple",
+      "name": "大明寺",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "dongguan-ferry-night",
+      "name": "东关古渡·古运河夜游",
+      "from": 8.5,
+      "to": 7
+    },
+    {
+      "id": "shuangbo-museum",
+      "name": "扬州双博馆",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "fuchun-teahouse",
+      "name": "富春茶社",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "wenchangge",
+      "name": "文昌阁",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "songjiacheng",
+      "name": "宋夹城考古遗址公园",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "pishi-street",
+      "name": "皮市街",
+      "from": 7.5,
+      "to": 7
+    },
+    {
+      "id": "hongqiaofang",
+      "name": "虹桥坊东堤",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "jinghuacheng",
+      "name": "京华城休闲旅游区",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "shaobo-town",
+      "name": "邵伯古镇景区",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "zhuyuwan",
+      "name": "茱萸湾风景区",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "sanwan-night",
+      "name": "运河三湾·剪影桥夜景",
+      "from": 7,
+      "to": 6
+    },
+    {
+      "id": "yuchengyi",
+      "name": "高邮盂城驿",
+      "from": 7,
+      "to": 8
+    },
+    {
+      "id": "shugang-west-peak",
+      "name": "蜀冈西峰生态公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "hanlingyuan",
+      "name": "汉广陵王墓博物馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "shikefa",
+      "name": "史可法纪念馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "baguai-museum",
+      "name": "扬州八怪纪念馆",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "mingyue-lake",
+      "name": "明月湖",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yangzhou-theatre",
+      "name": "扬州大剧院",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "yangzhou-science",
+      "name": "扬州科技馆",
+      "from": 6.5,
+      "to": 8
+    },
+    {
+      "id": "guazhou-ferry",
+      "name": "瓜洲古渡公园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "shaobo-lake",
+      "name": "邵伯湖旅游度假区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "fenghuang-island",
+      "name": "扬州凤凰岛生态旅游区",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "zaolinwan",
+      "name": "扬州世博园",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "wenyou-tai",
+      "name": "高邮文游台",
+      "from": 6.5,
+      "to": 7
+    },
+    {
+      "id": "xianhe-temple",
+      "name": "仙鹤寺",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "guanyinshan",
+      "name": "蜀冈观音山",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "zhuziqing",
+      "name": "朱自清故居",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "wangshi-xiaoyuan",
+      "name": "汪氏小苑",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "lu-family-house",
+      "name": "卢氏盐商住宅",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "runyang-forest",
+      "name": "润扬森林公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "beihu-wetland",
+      "name": "北湖湿地公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "naishan",
+      "name": "仪征捺山地质公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "zhenguo-temple",
+      "name": "高邮镇国寺",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "gaoyou-lake-reed",
+      "name": "高邮湖芦苇荡湿地公园",
+      "from": 6,
+      "to": 7
+    },
+    {
+      "id": "xiaopangu",
+      "name": "小盘谷",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "lotus-pond-park",
+      "name": "荷花池公园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "xiannv-park",
+      "name": "江都仙女公园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "puyuan",
+      "name": "朴园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "shierxu",
+      "name": "仪征十二圩历史文化街区",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "yangzijin",
+      "name": "扬子津古渡公园",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "gaoyou-pawnshop",
+      "name": "高邮当铺博物馆",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "jieshou-town",
+      "name": "界首古镇",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "longqiuzhuang",
+      "name": "龙虬庄遗址博物馆",
+      "from": 5.5,
+      "to": 6
+    },
+    {
+      "id": "baoying-lake",
+      "name": "宝应湖国家湿地公园",
+      "from": 5.5,
+      "to": 7
+    },
+    {
+      "id": "lingtang-mosque",
+      "name": "菱塘清真寺",
+      "from": 5,
+      "to": 6
+    },
+    {
+      "id": "zongzhao-garden",
+      "name": "宝应纵棹园",
+      "from": 5,
+      "to": 6
+    }
+  ],
+  "duplicates": []
+}
