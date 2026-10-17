@@ -24,7 +24,8 @@
     "photos_at": "2026-10-13",
     "rematch_at": "2026-10-13",
     "coord_repaired_at": "2026-10-16",
-    "biz_at": "2026-10-17"
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -36,7 +37,7 @@
         "中轴线",
         "早去"
       ],
-      "heat": 10,
+      "heat": 8,
       "dur": 300,
       "intro": "明清两朝皇宫，世界最大木结构古建筑群。",
       "reason": "开门就冲，先走中轴线人最少",
@@ -59,7 +60,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "tiananmen",
@@ -70,7 +72,7 @@
         "早去",
         "免费"
       ],
-      "heat": 9.5,
+      "heat": 9,
       "dur": 60,
       "intro": "世界最大城市广场，升旗仪式每天上演。",
       "reason": "看升旗要提前两小时占位",
@@ -93,7 +95,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "tiantan",
@@ -104,7 +107,7 @@
         "世界遗产",
         "晨练"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 180,
       "intro": "明清皇帝祭天之地，祈年殿是北京标志。",
       "reason": "清晨跟大爷大妈一起进园最有味",
@@ -126,7 +129,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "yiheyuan",
@@ -137,7 +141,7 @@
         "昆明湖",
         "万寿山"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 240,
       "intro": "保存最完整的皇家园林，湖光山色借景西山。",
       "reason": "长廊走到佛香阁，湖风一吹不想走",
@@ -160,7 +164,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "yuanmingyuan",
@@ -205,7 +210,7 @@
         "祈福",
         "香火旺"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 90,
       "intro": "雍正旧邸改的藏传佛教寺院，香火极旺。",
       "reason": "求手串的年轻人排到了门外",
@@ -228,7 +233,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "gongwangfu",
@@ -239,7 +245,7 @@
         "福字碑",
         "花园"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 100,
       "intro": "清代规模最大王府，和珅宅邸所在地。",
       "reason": "摸摸天下第一福字碑沾福气",
@@ -262,7 +268,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "badaling",
@@ -273,7 +280,7 @@
         "早去",
         "缆车"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 300,
       "intro": "明长城最著名的一段，好汉坡打卡地。",
       "reason": "赶第一班车，长城上还没什么人",
@@ -296,7 +303,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "mutianyu",
@@ -307,7 +315,7 @@
         "滑道",
         "远郊"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 280,
       "intro": "植被覆盖率最高的长城段，外国元首常去。",
       "reason": "比八达岭人少，滑道下山超好玩",
@@ -330,7 +338,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "ming-tombs",
@@ -341,7 +350,7 @@
         "神路",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 210,
       "intro": "十三位明帝陵寝群，定陵地宫可下。",
       "reason": "走下万历皇帝的地宫看玄宫",
@@ -363,7 +372,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "tanzhe-si",
@@ -374,7 +384,7 @@
         "银杏",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 120,
       "intro": "先有潭柘寺后有北京城，千年古刹。",
       "reason": "秋天帝王树银杏金得晃眼",
@@ -397,7 +407,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "hongluo-si",
@@ -408,7 +419,7 @@
         "竹林",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 150,
       "intro": "京北第一古刹，竹林银杏与姻缘传说。",
       "reason": "单身青年口口相传的姻缘寺",
@@ -431,7 +442,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "guozijian",
@@ -510,7 +522,7 @@
         "夜景",
         "酒吧"
       ],
-      "heat": 8.5,
+      "heat": 9,
       "dur": 120,
       "intro": "前海后海西海连片，胡同与酒吧共存。",
       "reason": "傍晚沿后海走一圈看酒吧亮灯",
@@ -532,7 +544,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "wudaoying",
@@ -577,7 +590,7 @@
         "后海口",
         "短街"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 40,
       "intro": "鼓楼前的斜街，因烟袋铺得名。",
       "reason": "从鼓楼溜达到后海的必经之路",
@@ -599,7 +612,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yangmeizhu",
@@ -638,23 +652,30 @@
         "铛铛车",
         "夜景"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "中轴线上的百年商业街，老字号扎堆。",
       "reason": "晚上牌楼亮灯最有老北京味",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-21:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        116.398176,
-        39.894943
+        116.396341,
+        39.896053
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "6594042916656866043",
       "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B000A8UR3U",
+      "amap_poi_id": "B0FFFLJ6D2",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-21:00",
+      "rating": 4.5,
+      "cost": 0,
+      "photo": "https://aos-comment.amap.com/B0FFFLJ6D2/comment/177278549888_1772785500435_26477927.jpg",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "art-798",
@@ -665,7 +686,7 @@
         "画廊",
         "拍照"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 150,
       "intro": "老电子厂改的艺术区，画廊与涂鸦遍布。",
       "reason": "旧厂房里的展随便逛都能撞见惊喜",
@@ -688,7 +709,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "shougang",
@@ -699,7 +721,7 @@
         "大跳台",
         "工业风"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 120,
       "intro": "百年钢厂改的冬奥园区，三高炉震撼。",
       "reason": "滑雪大跳台与冷却塔同框出片",
@@ -721,7 +743,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "liulichang",
@@ -732,7 +755,7 @@
         "古玩",
         "字画"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "三百年文房四宝老街，荣宝斋在此。",
       "reason": "翰墨香里淘一方旧砚台",
@@ -755,7 +778,8 @@
       "cost": 0,
       "photo": "https://store.is.autonavi.com/showpic/15bce1ff590ab5f80000000717196692?type=pic",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "wangfujing",
@@ -799,7 +823,7 @@
         "夜景",
         "晚上"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 100,
       "intro": "北京潮流地标，街拍与夜生活中心。",
       "reason": "入夜后的三里屯才真正醒来",
@@ -822,41 +846,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "xidan",
-      "name": "西单商业街",
-      "cat": "商圈",
-      "tags": [
-        "老牌商圈",
-        "大悦城",
-        "本地年轻人"
-      ],
-      "heat": 7,
-      "dur": 90,
-      "intro": "北京老牌商圈，本地年轻人的逛街地。",
-      "reason": "比王府井更接地气的逛街选择",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        116.374067,
-        39.911287
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "15518698342199383261",
-      "refreshed_at": "2026-10-16",
-      "photo": "https://store.is.autonavi.com/showpic/c9c6e8af70fbec3c0000003153588964?type=pic",
-      "amap_poi_id": "B000A7QRK6",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "tel": "010-66071253",
-      "rating": 4.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "solana",
@@ -867,7 +858,7 @@
         "欧式街区",
         "夜景"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 80,
       "intro": "朝阳公园旁的欧式滨湖商业街区。",
       "reason": "冬天灯光节拍照很出片",
@@ -888,7 +879,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "panjiayuan",
@@ -899,7 +891,7 @@
         "地摊",
         "周末"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 90,
       "intro": "全国最大旧货市场，周末地摊遍地。",
       "reason": "周末鬼市淘货，砍价全凭本事",
@@ -922,7 +914,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "jingshan",
@@ -933,7 +926,7 @@
         "日落",
         "便宜"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 90,
       "intro": "故宫北侧制高点，万春亭俯瞰紫禁城。",
       "reason": "两块钱买到故宫全景日落",
@@ -956,7 +949,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "beihai",
@@ -1001,7 +995,7 @@
         "湖景",
         "电视塔"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 90,
       "intro": "京城樱花第一胜地，西望中央电视塔。",
       "reason": "四月樱花季全北京都往这跑",
@@ -1024,7 +1018,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "chaoyang-park",
@@ -1035,7 +1030,7 @@
         "遛娃",
         "露营"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 90,
       "intro": "四环内最大城市公园，草坪湖泊齐全。",
       "reason": "本地人周末野餐遛娃主场",
@@ -1058,7 +1053,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "ditan",
@@ -1069,7 +1065,7 @@
         "银杏",
         "庙会"
       ],
-      "heat": 6,
+      "heat": 8,
       "dur": 60,
       "intro": "明清祭地之坛，因《我与地坛》闻名。",
       "reason": "银杏大道金黄时最像史铁生笔下",
@@ -1092,7 +1088,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "olympic-forest",
@@ -1103,7 +1100,7 @@
         "银杏",
         "免费"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 120,
       "intro": "鸟巢北侧超大森林公园，跑者圣地。",
       "reason": "奥森十公里是跑友的成人礼",
@@ -1126,7 +1123,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "botanical",
@@ -1137,7 +1135,7 @@
         "卧佛寺",
         "樱桃沟"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 150,
       "intro": "香山脚下的国家级植物园，温室珍稀植物多。",
       "reason": "热带温室里一秒穿越到雨林",
@@ -1160,7 +1158,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "guobo",
@@ -1171,7 +1170,7 @@
         "室内",
         "国宝多"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 180,
       "intro": "世界单体最大博物馆，司母戊鼎在此。",
       "reason": "古代中国展一条线看完五千年",
@@ -1194,7 +1193,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "shoubo",
@@ -1205,7 +1205,7 @@
         "免费",
         "室内"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 150,
       "intro": "讲北京城史的博物馆，青铜器馆藏强。",
       "reason": "想懂北京城先来这补一堂课",
@@ -1228,7 +1228,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "junbo",
@@ -1239,7 +1240,7 @@
         "免费",
         "亲子"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "大型军事博物馆，真飞机坦克摆满大厅。",
       "reason": "男孩进去就拔不动腿的地方",
@@ -1262,7 +1263,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "ziran",
@@ -1273,7 +1275,7 @@
         "免费",
         "亲子"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "天桥旁的老牌自然馆，恐龙化石镇馆。",
       "reason": "恐龙公园展区孩子能看三遍",
@@ -1296,7 +1298,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "tianwenguan",
@@ -1341,7 +1344,7 @@
         "国画",
         "室内"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 90,
       "intro": "五四大街的国家级美术馆，名家真迹多。",
       "reason": "免费看齐白石徐悲鸿真迹",
@@ -1364,35 +1367,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "luxun-museum",
-      "name": "北京鲁迅博物馆",
-      "cat": "博物馆",
-      "tags": [
-        "故居",
-        "小众",
-        "免费"
-      ],
-      "heat": 5.5,
-      "dur": 60,
-      "intro": "阜成门内鲁迅故居，先生手植丁香仍在。",
-      "reason": "课本里的百草园就在小院中",
-      "open": null,
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        116.358742,
-        39.925693
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "6666354779267621197",
-      "refreshed_at": "2026-10-16",
-      "photo": "https://store.is.autonavi.com/showpic/a128d0ca6e36c51d0000002906652365?type=pic",
-      "amap_poi_id": "B000A3BE77",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "film-museum",
@@ -1403,7 +1379,7 @@
         "免费",
         "室内"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 100,
       "intro": "世界最大电影专业博物馆，IMAX 巨幕。",
       "reason": "环形巨幕大厅拍照像科幻片",
@@ -1426,7 +1402,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "auto-museum",
@@ -1437,7 +1414,7 @@
         "亲子",
         "室内"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 100,
       "intro": "丰台的汽车主题馆，百年老爷车云集。",
       "reason": "小车迷看到真车走不动道",
@@ -1460,7 +1437,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "zhoukoudian",
@@ -1471,7 +1449,7 @@
         "北京人",
         "远郊"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 120,
       "intro": "北京猿人头盖骨出土地，世界遗产。",
       "reason": "站在五十万年前的龙骨山前",
@@ -1494,7 +1472,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "universal",
@@ -1505,7 +1484,7 @@
         "早去",
         "一整天"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 420,
       "intro": "华北最大主题乐园，哈利波特魔法世界。",
       "reason": "开园就冲禁忌之旅少排一小时",
@@ -1528,7 +1507,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "zoo",
@@ -1539,7 +1519,7 @@
         "早去",
         "百年老园"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 180,
       "intro": "百年老园，顶流大熊猫萌兰的老家。",
       "reason": "早上熊猫馆排队少猫也活跃",
@@ -1562,7 +1542,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "aquarium",
@@ -1607,7 +1588,7 @@
         "室内",
         "球幕"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 180,
       "intro": "鸟巢北侧的互动科技馆，儿童科学乐园。",
       "reason": "孩子亲手做实验的放电圣地",
@@ -1630,7 +1611,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "happy-valley",
@@ -1641,7 +1623,7 @@
         "夜场",
         "年轻人"
       ],
-      "heat": 7,
+      "heat": 9,
       "dur": 300,
       "intro": "东四环的大型主题乐园，过山车成群。",
       "reason": "留给年轻人一整天的尖叫",
@@ -1664,7 +1646,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "wildlife-park",
@@ -1675,7 +1658,7 @@
         "猛兽区",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 240,
       "intro": "大兴的散养动物园，可自驾穿猛兽区。",
       "reason": "车里被棕熊拦路讨食超刺激",
@@ -1698,7 +1681,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "niujie",
@@ -1709,7 +1693,7 @@
         "小吃",
         "排队"
       ],
-      "heat": 7.5,
+      "heat": 5,
       "dur": 80,
       "intro": "北京清真美食第一街，牛羊肉小吃扎堆。",
       "reason": "聚宝源的涮肉和洪记小吃必排",
@@ -1731,7 +1715,8 @@
       "rating": 3.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "guijie",
@@ -1742,7 +1727,7 @@
         "夜宵",
         "晚上"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 90,
       "intro": "东直门内的夜宵一条街，麻辣小龙虾发源地。",
       "reason": "深夜的麻小配北冰洋才叫北京",
@@ -1765,7 +1750,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "huguosi",
@@ -1804,7 +1790,7 @@
         "老字号",
         "小吃"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 50,
       "intro": "前门东侧的老字号美食巷。",
       "reason": "逛完前门顺路补一顿京味小吃",
@@ -1824,7 +1810,8 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/B000A8ULH3/comment/content_media_external_images_media_316473_ss__1763622188630_16343197.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "grand-theatre",
@@ -1835,7 +1822,7 @@
         "晚上",
         "歌剧"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 120,
       "intro": "长安街旁的巨蛋剧院，夜景倒影极美。",
       "reason": "巨蛋亮灯后绕湖一圈再进场",
@@ -1858,35 +1845,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "laoshe",
-      "name": "老舍茶馆",
-      "cat": "演出",
-      "tags": [
-        "京味",
-        "曲艺",
-        "晚上"
-      ],
-      "heat": 6.5,
-      "dur": 90,
-      "intro": "前门西侧的老牌京味茶馆曲艺场。",
-      "reason": "一碗大碗茶听相声看变脸",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        116.393316,
-        39.899703
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "15158887403978282784",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/50e0236d4aa1f788a47c285fddc08d38",
-      "amap_poi_id": "B000A36908",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "deyun-she",
@@ -1923,31 +1883,38 @@
     },
     {
       "id": "olympic",
-      "name": "奥林匹克公园（鸟巢·水立方）",
+      "name": "奥林匹克公园中心区",
       "cat": "夜景",
       "tags": [
         "鸟巢",
         "夜景",
         "免费"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 120,
       "intro": "08 奥运主场馆群，入夜灯光璀璨。",
       "reason": "天黑后鸟巢水立方亮灯才震撼",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        116.399573,
-        39.9891
+        116.392451,
+        40.000039
       ],
       "coord_src": "tencent",
       "tencent_poi_id": "17547561191675254961",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/e3f95f17eb8064df27d48cfe725d4f9e",
-      "amap_poi_id": "B000A875MC",
+      "amap_poi_id": "B000A87QJV",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "010-84992008",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "liangma",
@@ -1992,7 +1959,7 @@
         "爬山",
         "日落"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 90,
       "intro": "西山森林公园观景台，俯瞰北京夜景。",
       "reason": "爬四十分钟换全北京的灯火",
@@ -2015,7 +1982,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/d742b4e71e994f05b6411e7c168cdd50",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "gubei",
@@ -2026,7 +1994,7 @@
         "司马台长城",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 300,
       "intro": "司马台长城脚下的北方水乡古镇。",
       "reason": "晚上提灯夜游看长城亮灯",
@@ -2049,7 +2017,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "cuandixia",
@@ -2060,7 +2029,7 @@
         "四合院",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 5,
       "dur": 180,
       "intro": "门头沟深山里的明清古村落。",
       "reason": "石头四合院像从画里抠出来的",
@@ -2083,7 +2052,8 @@
       "rating": 3.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "xiangshan",
@@ -2094,7 +2064,7 @@
         "登高",
         "香炉峰"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "京西名山，深秋红叶甲天下。",
       "reason": "十月底红叶期再挤也值得",
@@ -2116,7 +2086,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "shidu",
@@ -2127,7 +2098,7 @@
         "漂流",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 360,
       "intro": "房山的北方喀斯特河谷，漂流蹦极齐全。",
       "reason": "夏天拒马河漂流一身清凉",
@@ -2150,7 +2121,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/78ef7eadea944f5dcc2f9c74c29b4892",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yanqi-lake",
@@ -2161,7 +2133,7 @@
         "湖景",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 180,
       "intro": "怀柔的会都湖区，日出东方酒店地标。",
       "reason": "环湖骑行看大圆球酒店",
@@ -2184,7 +2156,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "jinhai-lake",
@@ -2195,7 +2168,7 @@
         "露营",
         "远郊"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 180,
       "intro": "平谷的京郊大湖，水上项目与露营热门。",
       "reason": "坝体彩绘拍照假装在海边",
@@ -2218,7 +2191,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     }
   ]
 }

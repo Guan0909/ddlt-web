@@ -30,6 +30,21 @@ const MAX_COORD_MOVE_M = 2000;
 
 const norm = s => String(s || '').replace(/[\s（）()·\-—／\/]/g, '');
 const hasQualifier = s => /[·（(]/.test(String(s || ''));
+// 检索变体：整名（去括注）+ 复合名分段（人民公园·鹤鸣茶社 → 鹤鸣茶社 / 人民公园）
+// —— 高德官方名常与我们的复合名不同（孤山·西泠印社 → 中山公园-西泠印社社址），必须按分段名再搜
+function nameQueries(name) {
+  const base = String(name).replace(/[（(].*?[）)]/g, '').trim();
+  const out = [base];
+  if (/[·・]/.test(base)) {
+    const parts = base.split(/[·・]/).map(s => s.trim()).filter(Boolean);
+    for (const p of parts.reverse()) if (p !== base) out.push(p);
+  }
+  return [...new Set(out.filter(Boolean))];
+}
+const tailOf = name => {
+  const parts = String(name).replace(/[（(].*?[）)]/g, '').split(/[·・]/).map(s => s.trim()).filter(Boolean);
+  return parts.length ? parts[parts.length - 1] : String(name);
+};
 
 function hav(a, b) {
   const R = 6371000, rad = Math.PI / 180;
@@ -104,7 +119,11 @@ function acceptable(poi, spot, sc) {
   if (STATUS_PAREN.test(poi.name)) return false;
   if (sc < QUALIFIED_SCORE) return false;
   const cn = norm(spot.name), pn = norm(poi.name);
-  if (hasQualifier(spot.name)) return pn === cn || pn.includes(cn);
+  if (hasQualifier(spot.name)) {
+    // 复合名：整名或**尾段**命中即可（鹤鸣茶社 / 西泠印社 / 滨江大道）
+    const tail = norm(tailOf(spot.name));
+    return pn.includes(cn) || (tail.length >= 2 && (pn.includes(tail) || tail.includes(pn)));
+  }
   return pn.includes(cn) || cn.includes(pn) || commonLen(spot.name, poi.name) >= 3;
 }
 
@@ -118,14 +137,16 @@ async function candidates(spot, city) {
     } catch (e) { /* 靠搜索 */ }
     await sleep(THROTTLE_MS);
   }
-  try {
-    const kw = spot.name.replace(/[（(].*?[）)]/g, '').trim();
-    const j = await amap.get('/v3/place/text', { keywords: kw, city, citylimit: 'true', extensions: 'all', offset: 10 }, { timeout: 12000 });
-    for (const p of (j.pois || [])) {
-      const n = amap.normPoi(p);
-      if (n.coord[0] && !out.some(x => x.id === n.id)) out.push(n);
-    }
-  } catch (e) { /* 只用 detail */ }
+  for (const kw of nameQueries(spot.name)) {
+    try {
+      const j = await amap.get('/v3/place/text', { keywords: kw, city, citylimit: 'true', extensions: 'all', offset: 10 }, { timeout: 12000 });
+      for (const p of (j.pois || [])) {
+        const n = amap.normPoi(p);
+        if (n.coord[0] && !out.some(x => x.id === n.id)) out.push(n);
+      }
+    } catch (e) { /* 只用 detail */ }
+    await sleep(THROTTLE_MS);
+  }
   // 市界外的景点（华山/乾陵）：citylimit=true 搜不到 → 全国兜底一次，只收「名字包含我们」的候选
   const cn = norm(spot.name);
   // 注意：城内的「青华山」这类近似名不能算命中，必须**以我们的名字开头**才算（否则华山永远搜不到）
@@ -156,8 +177,10 @@ async function run(file) {
   const stat = { total: spots.length, poiFixed: 0, renamed: 0, coordFixed: 0, openFilled: 0, closedMon: 0, tel: 0, rating: 0, photo: 0, noCand: 0, err: 0 };
   const log = [];
   let i = 0;
+  const MISSING_ONLY = process.argv.includes('--missing-only');
   for (const spot of spots) {
     i++;
+    if (MISSING_ONLY && typeof spot.rating === 'number' && spot.rating > 0) continue;   // 只补「拿不到评分」的点
     let cands = [];
     try { cands = await candidates(spot, city); }
     catch (e) { stat.err++; log.push({ id: spot.id, name: spot.name, why: String(e.message || e) }); continue; }
@@ -190,7 +213,16 @@ async function run(file) {
         stat.coordFixed++;
       }
       const cn = norm(spot.name), pn = norm(best.name);
-      if (!hasQualifier(spot.name) && pn !== cn && GOOD_TYPE.test(best.type) && !BAD_TYPE.test(best.type)
+      if (hasQualifier(spot.name)) {
+        // 复合名（孤山·西泠印社 / 人民公园·鹤鸣茶社）：按尾段命中即采信官方名（用户要求：名称与高德一致）
+        const tail = norm(tailOf(spot.name));
+        if (tail.length >= 2 && (pn.includes(tail) || pn === norm(tail)) && GOOD_TYPE.test(best.type)
+            && !BAD_TYPE.test(best.type) && best.name.length <= 26) {
+          changes.rename = { from: spot.name, to: best.name };
+          spot.name = best.name;
+          stat.renamed++;
+        }
+      } else if (pn !== cn && GOOD_TYPE.test(best.type) && !BAD_TYPE.test(best.type)
           && Math.abs(best.name.length - spot.name.length) <= 8) {
         const extra = pn.startsWith(cn) ? pn.slice(cn.length) : '';
         const official = (extra && OFFICIAL_SUFFIX.test(extra)) || (pn.includes(cn) && pn.length - cn.length <= 6);

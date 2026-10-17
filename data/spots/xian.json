@@ -24,7 +24,8 @@
     "photos_at": "2026-10-13",
     "rematch_at": "2026-10-13",
     "coord_repaired_at": "2026-10-17",
-    "biz_at": "2026-10-17"
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -36,7 +37,7 @@
         "早去",
         "请讲解"
       ],
-      "heat": 10,
+      "heat": 8,
       "dur": 240,
       "intro": "八千陶俑地下军团，两千年前的秦帝国军阵。",
       "reason": "一开门就进，一号坑包场级体验",
@@ -58,7 +59,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "city-wall",
@@ -69,7 +71,7 @@
         "日落",
         "夜景"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 120,
       "intro": "明代城墙完整一圈13.7公里，可骑车绕城。",
       "reason": "傍晚上墙骑车，看落日压城头",
@@ -91,7 +93,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "shaanxi-history",
@@ -103,7 +106,7 @@
         "周一闭馆",
         "早去"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 150,
       "intro": "华夏第一宝库，周秦汉唐国宝一次看够。",
       "reason": "抢最早时段，何家村窖藏先去看",
@@ -125,34 +128,41 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "dayanta",
-      "name": "大雁塔·大慈恩寺",
+      "name": "大慈恩寺",
       "cat": "古迹",
       "tags": [
         "玄奘",
         "唐塔",
         "晨钟暮鼓"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 90,
       "intro": "玄奘译经之地，西安最标志性的唐塔。",
       "reason": "登塔望长安，唐僧取经的起点",
-      "open": "08:00-17:30",
+      "open": "08:30-18:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.964176,
-        34.218229
+        108.96418,
+        34.217954
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B001D023F0",
+      "amap_poi_id": "B001D117RP",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/00f713e61c99c4956ab27df73afdde71",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 08:30-18:00",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "datang-everbright",
@@ -163,7 +173,7 @@
         "免费",
         "演出多"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 120,
       "intro": "大雁塔南的唐风步行街，入夜梦回长安。",
       "reason": "不倒翁和盛唐密盒都在这条街上",
@@ -184,7 +194,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "mount-hua",
@@ -195,7 +206,7 @@
         "长空栈道",
         "早去"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 420,
       "intro": "奇险天下第一山，五岳之西岳。",
       "reason": "西峰索道上北峰下，一天走五峰",
@@ -217,7 +228,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "bell-tower",
@@ -228,7 +240,7 @@
         "夜景",
         "城市中轴"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 40,
       "intro": "600年明代钟楼，西安城的正中心。",
       "reason": "环岛一圈都是机位，夜景最出片",
@@ -250,7 +262,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "drum-tower",
@@ -288,31 +301,38 @@
     },
     {
       "id": "muslim-quarter",
-      "name": "回民街·北院门",
+      "name": "北院门",
       "cat": "美食",
       "tags": [
         "小吃",
         "晚上",
         "人多"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 90,
       "intro": "鼓楼后的清真小吃街，烟火气最浓。",
       "reason": "红柳烤肉配镜糕，吃到扶墙",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.943659,
-        34.262198
+        108.943744,
+        34.264169
       ],
       "coord_src": "tencent",
       "photo": "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486",
       "tencent_poi_id": "8124746567700936037",
       "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B001D140J1",
+      "amap_poi_id": "B001D07MPJ",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "029-87403259",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "huaqing-palace",
@@ -323,7 +343,7 @@
         "温泉",
         "骊山"
       ],
-      "heat": 8.5,
+      "heat": 6,
       "dur": 150,
       "intro": "唐玄宗与杨贵妃的温泉行宫，背靠骊山。",
       "reason": "看完兵马俑顺路来泡历史汤",
@@ -345,7 +365,8 @@
       "rating": 4.2,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "beilin-museum",
@@ -356,7 +377,7 @@
         "碑石",
         "城墙根"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 100,
       "intro": "九百年碑石森林，书法爱好者的麦加。",
       "reason": "颜真卿柳公权的真迹就在眼前",
@@ -378,7 +399,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "tang-paradise",
@@ -389,7 +411,7 @@
         "唐风园林",
         "水秀"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 150,
       "intro": "仿唐皇家园林，夜里的水幕光影秀出名。",
       "reason": "紫云楼亮灯那一刻穿越回唐朝",
@@ -411,40 +433,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "changhen-ge",
-      "name": "《长恨歌》实景演出",
-      "cat": "演出",
-      "tags": [
-        "实景演出",
-        "晚上",
-        "提前订票"
-      ],
-      "heat": 8.5,
-      "dur": 100,
-      "intro": "华清宫九龙湖上演的帝妃爱情史诗。",
-      "reason": "骊山做幕布，实景演出天花板",
-      "open": "07:00-18:00",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.212541,
-        34.363852
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF3O46M",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 07:00-18:00",
-      "tel": "029-83812003",
-      "rating": 4.8,
-      "cost": 550,
-      "photo": "http://store.is.autonavi.com/showpic/fbd842ce83a0acbc4e6627b951fee872",
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "daming-palace",
@@ -455,7 +445,7 @@
         "园区大",
         "遗址博物馆"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 150,
       "intro": "大唐帝国正殿遗址，千宫之宫的夯土台。",
       "reason": "站在含元殿台基上脑补盛唐",
@@ -477,7 +467,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "xiaoyanta",
@@ -489,7 +480,7 @@
         "园林",
         "周二闭馆"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 60,
       "intro": "比大雁塔更清幽的唐代密檐塔。",
       "reason": "人少安静的唐塔，配博物院正好",
@@ -511,7 +502,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "xian-museum",
@@ -555,7 +547,7 @@
         "地宫珍宝",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "供奉佛指舍利的皇家寺院，地宫珍宝惊艳。",
       "reason": "地宫出土的金银器值回车程",
@@ -577,34 +569,41 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "yongningmen-night",
-      "name": "永宁门夜景·南门广场",
+      "name": "西安城墙南门广场喷泉",
       "cat": "夜景",
       "tags": [
         "夜景",
         "免费",
         "城墙"
       ],
-      "heat": 8,
+      "heat": 6,
       "dur": 50,
       "intro": "南门广场看箭楼亮灯，护城河倒影入画。",
       "reason": "西安夜景封面照出自这里",
-      "open": null,
+      "open": "08:00-22:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
-        108.94701,
-        34.251573
+        108.946922,
+        34.250454
       ],
       "coord_src": "amap",
-      "amap_poi_id": "BV10073376",
+      "amap_poi_id": "B0LDMU8FE7",
       "refreshed_at": "2026-10-16",
       "photo": "https://store.is.autonavi.com/showpic/77a17b5fbc91fe1d0000003493960120?type=pic",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "08:00-22:00, 具体开放时间以现场公示为准",
+      "rating": 3.5,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "dayanta-fountain",
@@ -615,7 +614,7 @@
         "免费",
         "夜景"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 40,
       "intro": "亚洲大型音乐喷泉，古塔前的水幕矩阵。",
       "reason": "晚上场次配大雁塔灯光最震撼",
@@ -636,7 +635,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "yongxing-fang",
@@ -680,7 +680,7 @@
         "早市",
         "夜市"
       ],
-      "heat": 8,
+      "heat": 6,
       "dur": 80,
       "intro": "老西安人的食堂，从早市吃到夜宵。",
       "reason": "跟着本地人排队准没错",
@@ -702,7 +702,8 @@
       "rating": 4.1,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "changan-12",
@@ -713,7 +714,7 @@
         "室内",
         "换装"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "室内沉浸式唐风市井街区，全天候演出。",
       "reason": "换身汉服当一回长安人",
@@ -735,7 +736,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "xiaozhai-seg",
@@ -771,39 +773,6 @@
       "biz_at": "2026-10-17"
     },
     {
-      "id": "meng-changan",
-      "name": "《梦长安》大唐迎宾盛礼",
-      "cat": "演出",
-      "tags": [
-        "城墙",
-        "晚上",
-        "唐风"
-      ],
-      "heat": 8,
-      "dur": 80,
-      "intro": "永宁门瓮城里的仿古迎宾入城仪式。",
-      "reason": "吊桥落下那一刻万国来朝",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        108.947151,
-        34.25145
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0I1GZXL9T",
-      "refreshed_at": "2026-10-16",
-      "photo": "https://store.is.autonavi.com/showpic/69f9af96cd7b9f2c0000002495440558?type=pic",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "15686200400",
-      "rating": 4,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
       "id": "hanyangling-museum",
       "name": "汉阳陵博物院",
       "cat": "博物馆",
@@ -812,7 +781,7 @@
         "汉代陶俑",
         "银杏林"
       ],
-      "heat": 7.5,
+      "heat": 6,
       "dur": 120,
       "intro": "汉景帝阳陵，玻璃栈道下看汉代俑坑。",
       "reason": "脚踩玻璃走在两千年前的陪葬坑上",
@@ -833,7 +802,8 @@
       "rating": 3.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "shaanxi-archaeology",
@@ -845,7 +815,7 @@
         "互动",
         "周三闭馆"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "全国首座考古学科博物馆，出土现场搬进馆。",
       "reason": "看文物怎么从土里到展柜",
@@ -866,7 +836,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "big-mosque",
@@ -877,7 +848,7 @@
         "中式清真寺",
         "回坊内"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 60,
       "intro": "藏在回坊深处的千年古寺，中式庭院格局。",
       "reason": "小吃街旁一秒清净的古寺",
@@ -900,7 +871,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "qianling",
@@ -911,7 +883,7 @@
         "无字碑",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 150,
       "intro": "唐高宗与武则天合葬陵，无字碑立千年。",
       "reason": "司马道石像生走完像读唐史",
@@ -933,7 +905,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "shuyuanmen",
@@ -944,7 +917,7 @@
         "字画",
         "碑林旁"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 60,
       "intro": "关中书院所在的文玩字画老街。",
       "reason": "淘一方印章刻个名字带走",
@@ -965,7 +938,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "dapiyuan",
@@ -976,7 +950,7 @@
         "本地人",
         "泡馍"
       ],
-      "heat": 7.5,
+      "heat": 6,
       "dur": 60,
       "intro": "回坊深处的老牌小吃巷，夜宵据点。",
       "reason": "泡馍配小炒，本地人的深夜食堂",
@@ -998,7 +972,8 @@
       "rating": 4.2,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "xingqing-palace",
@@ -1009,7 +984,7 @@
         "免费",
         "郁金香"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 90,
       "intro": "唐玄宗理政旧宫改建的市民公园。",
       "reason": "西安人从小划船到大的公园",
@@ -1030,7 +1005,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "qujiang-ocean",
@@ -1041,7 +1017,7 @@
         "室内",
         "企鹅"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 150,
       "intro": "西北老牌海洋馆，企鹅白鲸都在。",
       "reason": "大唐芙蓉园旁的遛娃标配",
@@ -1063,7 +1039,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "qinling-zoo",
@@ -1074,7 +1051,7 @@
         "秦岭脚下",
         "园区大"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 180,
       "intro": "秦岭脚下的山地动物园，车行区看猛兽。",
       "reason": "坐投喂车看老虎扒窗吃肉",
@@ -1096,41 +1073,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "tuoling-legend",
-      "name": "《驼铃传奇》秀",
-      "cat": "演出",
-      "tags": [
-        "丝路",
-        "室内",
-        "旋转观众席"
-      ],
-      "heat": 7.5,
-      "dur": 90,
-      "intro": "会跑的旋转观众席，丝路驼队主题大秀。",
-      "reason": "狼群从头顶跑过时全场尖叫",
-      "open": "13:00-18:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.021706,
-        34.352535
-      ],
-      "coord_src": "amap",
-      "photo": "http://store.is.autonavi.com/showpic/e542d8a83f54be8d7118f5cc6922c5eb",
-      "tencent_poi_id": "6592749071948882180",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0FFI13PJO",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 13:00-18:30",
-      "tel": "029-83507931",
-      "rating": 4.8,
-      "cost": 178,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "taibai-shan",
@@ -1141,7 +1085,7 @@
         "大爷海",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 420,
       "intro": "秦岭主峰拔仙台，六月积雪的高山秘境。",
       "reason": "一日历四季，山顶还有冰川湖",
@@ -1163,7 +1107,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/a898e08c026e492e194f0ac610845d19",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "banpo-museum",
@@ -1406,7 +1351,7 @@
         "屋顶观景",
         "潮牌"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 80,
       "intro": "大雁塔旁的青年商场，屋顶花园望塔。",
       "reason": "顶层露台免费拍大雁塔合影",
@@ -1429,7 +1374,8 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "xiaonanmen",
@@ -1453,33 +1399,6 @@
       ],
       "coord_src": "amap",
       "amap_poi_id": "B0FFIPX4UZ",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "lehua-cheng",
-      "name": "乐华恒业欢乐世界",
-      "cat": "亲子",
-      "tags": [
-        "过山车",
-        "乐园",
-        "夜场"
-      ],
-      "heat": 7,
-      "dur": 240,
-      "intro": "西北大型主题乐园，过山车数量领先。",
-      "reason": "年轻人尖叫一整天的乐园",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        108.918418,
-        34.472564
-      ],
-      "coord_src": "amap",
-      "photo": "https://store.is.autonavi.com/showpic/bc0e874c9909e51fbe10e0920c11d530",
-      "amap_poi_id": "B0FFL2JXHZ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-16"
@@ -1592,7 +1511,7 @@
         "空海",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "密宗祖庭，空海求法处，三月樱花满城。",
       "reason": "樱花季西安最美的免费景点",
@@ -1614,7 +1533,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/1651123d7753fc8944a053803fde8501",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "guangren-temple",
@@ -1625,7 +1545,7 @@
         "免费",
         "城墙下"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 45,
       "intro": "陕西唯一的藏传格鲁派寺院，康熙敕建。",
       "reason": "城墙西北角的金顶小西藏",
@@ -1648,7 +1568,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "shuilu-an",
@@ -1659,7 +1580,7 @@
         "小敦煌",
         "蓝田"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 90,
       "intro": "三千尊明代彩塑满墙，号称第二敦煌。",
       "reason": "满墙壁塑密密麻麻，震撼到头皮发麻",
@@ -1682,7 +1603,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "xian-incident",
@@ -1694,7 +1616,7 @@
         "室内",
         "周一闭馆"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "张学良公馆旧址，改变中国命运的谈判地。",
       "reason": "建国路上最沉甸甸的一栋小楼",
@@ -1717,7 +1639,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "expo-park",
@@ -1728,7 +1651,7 @@
         "免费",
         "园艺"
       ],
-      "heat": 6.5,
+      "heat": 9,
       "dur": 120,
       "intro": "2011世园会旧址，长安塔下的湖滨园。",
       "reason": "浐灞边散步看长安塔倒影",
@@ -1750,7 +1673,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "shunchengxiang",
@@ -1789,7 +1713,7 @@
         "海报墙",
         "文创"
       ],
-      "heat": 6.5,
+      "heat": 6,
       "dur": 90,
       "intro": "西影厂老厂区改造的电影主题街区。",
       "reason": "大话西游海报墙前打个卡",
@@ -1811,7 +1735,8 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yisushe-block",
@@ -1822,7 +1747,7 @@
         "老字号",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "百年易俗社戏台所在，秦腔主题街区。",
       "reason": "听一嗓子秦腔吼出老陕魂",
@@ -1844,7 +1769,8 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/B0G3TOSUMA/comment/BEE0C16D_1128_49DB_9D7A_E81437288D7D_L0_001_1500_200_1763219219810_16245189.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "shaanxi-nature",
@@ -1855,7 +1781,7 @@
         "室内",
         "电视塔旁"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 100,
       "intro": "电视塔旁的自然馆，恐龙化石与秦岭动物。",
       "reason": "雨天遛娃备选，就在电视塔下",
@@ -1878,40 +1804,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "g-park",
-      "name": "老城根G park水晶广场",
-      "cat": "商圈",
-      "tags": [
-        "开放式街区",
-        "潮牌",
-        "夜景"
-      ],
-      "heat": 6.5,
-      "dur": 80,
-      "intro": "城墙西北角外的开放式潮流街区。",
-      "reason": "年轻人夜生活聚集地",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        108.921625,
-        34.285305
-      ],
-      "coord_src": "amap",
-      "photo": "https://store.is.autonavi.com/showpic/d557836fcc02280d0000002735522368?type=pic",
-      "tencent_poi_id": "11295369013625181971",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0LBY4O0A9",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "rating": 4.1,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "taiping-forest",
@@ -1922,7 +1816,7 @@
         "紫荆花",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 240,
       "intro": "秦岭北麓瀑布群，四月紫荆花海。",
       "reason": "八瀑十八潭，夏天凉快十度",
@@ -1945,7 +1839,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "xiangji-temple",
@@ -1956,7 +1851,7 @@
         "王维",
         "免费"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "净土宗祖庭，王维诗里的千年古刹。",
       "reason": "不知香积寺，数里入云峰",
@@ -1979,7 +1874,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "louguantai",
@@ -1990,7 +1886,7 @@
         "老子",
         "远郊"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 150,
       "intro": "老子著《道德经》的说经台，道教祖庭。",
       "reason": "终南山下问道，竹林深处隐居气",
@@ -2012,40 +1908,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "hancheng-lake",
-      "name": "汉城湖公园",
-      "cat": "公园",
-      "tags": [
-        "大风阁",
-        "免费",
-        "汉文化"
-      ],
-      "heat": 6,
-      "dur": 90,
-      "intro": "依汉长安城遗址而建的环湖公园。",
-      "reason": "大风阁登高看汉城墙遗址",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        108.918796,
-        34.298276
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001D0WRTA",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 06:30-22:30；景区开放时间:06:30-22:30（22:00清园） 大风阁开放时间:09:00-18:00",
-      "tel": "029-86483430",
-      "rating": 4.6,
-      "cost": 0,
-      "photo": "http://store.is.autonavi.com/showpic/c0c6ad84e859c52ad08083e45e78150c",
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "chanba-wetland",
@@ -2056,7 +1920,7 @@
         "芦苇",
         "免费"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 120,
       "intro": "渭河畔的城市湿地，秋冬候鸟成群。",
       "reason": "芦苇栈道走一圈，野趣十足",
@@ -2079,7 +1943,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "dahu-1935",
@@ -2123,7 +1988,7 @@
         "关中美食",
         "免费"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 120,
       "intro": "泾河边的茯茶主题小镇，茶馆小吃密集。",
       "reason": "一壶茯茶配辣子锅盔，很关中",
@@ -2145,7 +2010,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "shijingli",
@@ -2156,7 +2022,7 @@
         "夜景",
         "免费"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 100,
       "intro": "沣河畔的诗经主题小镇，夜游灯光雅致。",
       "reason": "穿汉服走进诗经里的句子",
@@ -2179,7 +2045,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "han-weiyang",
@@ -2190,7 +2057,7 @@
         "世界遗产",
         "免费"
       ],
-      "heat": 5.5,
+      "heat": 6,
       "dur": 90,
       "intro": "大汉帝国皇宫遗址，丝绸之路的起点。",
       "reason": "荒草高台，两千年长安的起点",
@@ -2213,35 +2080,8 @@
       "rating": 4,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "qinzhen",
-      "name": "秦镇（秦渡镇）",
-      "cat": "古镇",
-      "tags": [
-        "米皮发源地",
-        "老街",
-        "鄠邑"
-      ],
-      "heat": 5.5,
-      "dur": 90,
-      "intro": "秦渡镇老街，秦镇米皮的发源地。",
-      "reason": "为一碗正宗米皮跑一趟也值",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        108.748093,
-        34.106562
-      ],
-      "coord_src": "tencent",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/e0c5cb1b-b62d-42b9-a092-64cbf526e1bc.jpg",
-      "tencent_poi_id": "8360984109519175453",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0MUAR36M5",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     }
   ]
 }

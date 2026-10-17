@@ -24,7 +24,8 @@
     "photos_at": "2026-10-13",
     "rematch_at": "2026-10-13",
     "coord_repaired_at": "2026-10-17",
-    "biz_at": "2026-10-17"
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -36,7 +37,7 @@
         "早去",
         "园区大"
       ],
-      "heat": 10,
+      "heat": 9,
       "dur": 210,
       "intro": "全球最大熊猫迁地保护基地，可看各年龄段熊猫。",
       "reason": "九点前到，熊猫最活跃人也最少",
@@ -59,7 +60,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "kuanzhai",
@@ -70,7 +72,7 @@
         "免费",
         "拍照"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 120,
       "intro": "宽巷子、窄巷子、井巷子三条清代古街。",
       "reason": "清晨人少的巷子最出片",
@@ -93,7 +95,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "jinli",
@@ -104,7 +107,7 @@
         "夜景",
         "小吃"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 105,
       "intro": "紧邻武侯祠的西蜀古街，夜景灯笼出名。",
       "reason": "傍晚灯笼亮起时最有气氛",
@@ -127,7 +130,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "wuhouci",
@@ -138,7 +142,7 @@
         "红墙夹道",
         "园林"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 100,
       "intro": "唯一君臣合祀祠庙，三国迷朝圣地。",
       "reason": "下午四点红墙竹影光线最好",
@@ -161,7 +165,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "dufu",
@@ -172,7 +177,7 @@
         "园林",
         "竹林"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "杜甫寓居成都故居，古典园林式博物馆。",
       "reason": "茅屋竹林间读诗，雨天更有味道",
@@ -195,7 +200,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "dujiangyan",
@@ -206,7 +212,7 @@
         "水利工程",
         "远郊"
       ],
-      "heat": 9.5,
+      "heat": 8,
       "dur": 240,
       "intro": "两千年前的无坝引水工程，至今仍在使用。",
       "reason": "登玉垒阁俯瞰鱼嘴分水全景",
@@ -229,7 +235,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "qingcheng",
@@ -240,7 +247,7 @@
         "世界遗产",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 300,
       "intro": "青城天下幽，道教发源地之一。",
       "reason": "前山看道观，后山看山水",
@@ -263,7 +270,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "chunxi",
@@ -273,7 +281,7 @@
         "百年金街",
         "爬墙熊猫"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 60,
       "intro": "成都第一商圈，IFS 爬墙熊猫打卡点。",
       "reason": "顺路打卡，不必专程",
@@ -295,7 +303,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "taikooli",
@@ -306,7 +315,7 @@
         "潮流",
         "大慈寺旁"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 90,
       "intro": "低密度开放式商业街区，与大慈寺相邻。",
       "reason": "古寺与潮流同框的反差感",
@@ -329,7 +338,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/4E377E858534426097901E10EEAFCD8E",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "renmin-park",
@@ -340,7 +350,7 @@
         "盖碗茶",
         "免费"
       ],
-      "heat": 8.5,
+      "heat": 9,
       "dur": 75,
       "intro": "成都人生活标本，百年鹤鸣茶社所在地。",
       "reason": "一杯盖碗茶坐一中午",
@@ -357,7 +367,8 @@
       "photo": "https://aos-comment.amap.com/B001C7X8QA/comment/content_media_external_file_100003153_1767367568289_40288788.jpg",
       "amap_poi_id": "B001C7X8QA",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "heat_prev": 8.5
     },
     {
       "id": "chengdu-museum",
@@ -368,7 +379,7 @@
         "室内",
         "石犀"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 100,
       "intro": "天府广场旁的城市博物馆，镇馆之宝石犀。",
       "reason": "下午最热时正好进馆看展",
@@ -391,7 +402,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "jinsha",
@@ -402,7 +414,7 @@
         "遗址",
         "室内"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 130,
       "intro": "古蜀文明遗址现场，太阳神鸟金饰出土地。",
       "reason": "遗迹馆站在三千年前的土层上",
@@ -425,7 +437,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "sichuan-museum",
@@ -436,7 +449,7 @@
         "张大千",
         "青铜"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 110,
       "intro": "西南最大综合博物馆，张大千书画馆藏丰富。",
       "reason": "紧挨浣花溪，可与草堂连游",
@@ -459,7 +472,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "wenshu",
@@ -503,7 +517,7 @@
         "道教祖庭",
         "铜羊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 60,
       "intro": "川西第一道观，老子骑青羊传说发源地。",
       "reason": "摸摸铜羊求平安的老习俗",
@@ -526,7 +540,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "daci",
@@ -537,7 +552,7 @@
         "免费",
         "太古里内"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 45,
       "intro": "玄奘出家受戒之地，藏在太古里深处。",
       "reason": "逛太古里时顺路拐进去的清净",
@@ -560,34 +575,43 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "jiuyanqiao",
-      "name": "九眼桥·安顺廊桥",
+      "name": "安顺廊桥",
       "cat": "夜景",
       "tags": [
         "夜景",
         "酒吧街",
         "府南河"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 75,
       "intro": "府南河上的夜景地标，酒吧街聚集地。",
       "reason": "廊桥亮灯后沿河走一段最舒服",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        104.08958,
-        30.640332
+        104.085716,
+        30.641325
       ],
       "coord_src": "amap",
       "tencent_poi_id": "2785015599343480635",
       "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0FFGQ5RIP",
+      "amap_poi_id": "B0FFLFG5K5",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "028-84446888",
+      "rating": 4.7,
+      "cost": 0,
+      "photo": "http://store.is.autonavi.com/showpic/1813efbac9b98469295896d23f10622c",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "wangjianglou",
@@ -598,7 +622,7 @@
         "竹",
         "免费区大"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 80,
       "intro": "纪念女诗人薛涛，国内竹品种最多的公园。",
       "reason": "本地人喝茶打麻将的江边日常",
@@ -621,7 +645,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "dongjiao",
@@ -632,7 +657,7 @@
         "工业遗存",
         "演出"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 110,
       "intro": "老电子厂改造的文创园区，Livehouse 聚集。",
       "reason": "旧厂房和涂鸦墙随手出片",
@@ -655,7 +680,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "jianshe-road",
@@ -737,34 +763,6 @@
       "verified_at": "2026-10-16"
     },
     {
-      "id": "shufeng",
-      "name": "蜀风雅韵",
-      "cat": "演出",
-      "tags": [
-        "川剧",
-        "变脸",
-        "晚上"
-      ],
-      "heat": 8,
-      "dur": 100,
-      "intro": "文化公园内的老牌川剧演出，变脸吐火压轴。",
-      "reason": "百年戏园里看变脸最正宗",
-      "open": "18:00-21:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.045767,
-        30.660299
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "10045675589945944957",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/035b0d35bcfaf521064f459161d7949f",
-      "amap_poi_id": "B001C7WA8H",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
       "id": "huanhuaxi",
       "name": "浣花溪公园",
       "cat": "公园",
@@ -773,7 +771,7 @@
         "湿地",
         "免费"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 80,
       "intro": "成都最大城市森林公园，诗歌大道刻满诗句。",
       "reason": "从杜甫草堂散步过来的自然延伸",
@@ -796,7 +794,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "baihuatan",
@@ -807,7 +806,7 @@
         "银杏",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "以川派盆景著称的老公园，秋天银杏金黄。",
       "reason": "本地人遛弯的清净去处",
@@ -830,7 +829,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yongling",
@@ -841,7 +841,7 @@
         "地宫",
         "小众"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 70,
       "intro": "前蜀皇帝王建陵墓，唯一地上皇陵。",
       "reason": "二十四伎乐石刻值得细看",
@@ -864,7 +864,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "sichuan-science",
@@ -875,7 +876,7 @@
         "室内",
         "互动"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 120,
       "intro": "天府广场旁的互动科技馆，遛娃圣地。",
       "reason": "雨天备选，孩子能玩一下午",
@@ -898,7 +899,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "nature-museum",
@@ -909,7 +911,7 @@
         "亲子",
         "新馆"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "新开的自然馆，合川马门溪龙化石镇馆。",
       "reason": "恐龙骨架下小朋友走不动路",
@@ -932,7 +934,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "zoo",
@@ -942,7 +945,7 @@
         "性价比",
         "老牌"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "老牌城市动物园，门票便宜动物齐全。",
       "reason": "看不过瘾熊猫的平价替补",
@@ -965,7 +968,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "zhaojue",
@@ -975,7 +979,7 @@
         "川西第一禅林",
         "清净"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "川西第一禅林，游客很少的千年古刹。",
       "reason": "想要清净礼佛就来这里",
@@ -998,7 +1002,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "happy-valley",
@@ -1066,7 +1071,7 @@
         "新中式",
         "南门"
       ],
-      "heat": 6.5,
+      "heat": 9,
       "dur": 80,
       "intro": "南门的水街商业，茶馆与古桥相映。",
       "reason": "南门住宿时的傍晚散步线",
@@ -1089,7 +1094,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "jincheng-lake",
@@ -1100,7 +1106,7 @@
         "骑行",
         "日落"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 80,
       "intro": "城南环锦城湖的绿道公园。",
       "reason": "绕城绿道上最出片的一段",
@@ -1122,74 +1128,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "guixi",
-      "name": "桂溪生态公园",
-      "cat": "公园",
-      "tags": [
-        "大草坪",
-        "遛娃",
-        "南门"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "城南超大草坪公园，周末野餐热门。",
-      "reason": "带娃放电的大草坪",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.067314,
-        30.563054
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "3009857171950965461",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/30335d74c329f63f44ccb6c6ce2857c5",
-      "amap_poi_id": "B0FFH0US9N",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "rating": 4.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "sansheng",
-      "name": "三圣花乡旅游区",
-      "cat": "公园",
-      "tags": [
-        "花市",
-        "农家乐",
-        "近郊"
-      ],
-      "heat": 6.5,
-      "dur": 150,
-      "intro": "成都人的后花园，花市与农家乐聚集。",
-      "reason": "周末买花吃饭一条龙",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        104.160261,
-        30.58648
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "11290769641398391334",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/e7037ce9a4738873d5b40918956a42d8",
-      "amap_poi_id": "B0FFH6Y6QZ",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "028-84676767;028-84678221",
-      "rating": 4.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "huanglongxi",
@@ -1200,7 +1140,7 @@
         "火龙",
         "近郊"
       ],
-      "heat": 8,
+      "heat": 9,
       "dur": 210,
       "intro": "千年水码头古镇，夏天打水仗圣地。",
       "reason": "溪水穿街，孩子可以踩水玩",
@@ -1223,7 +1163,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "luodai",
@@ -1234,7 +1175,7 @@
         "土楼",
         "近郊"
       ],
-      "heat": 7.5,
+      "heat": 9,
       "dur": 180,
       "intro": "西部客家第一镇，有西南罕见土楼。",
       "reason": "不出四川看福建同款土楼",
@@ -1257,7 +1198,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "jiezi",
@@ -1302,7 +1244,7 @@
         "竹海",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 210,
       "intro": "南方丝绸之路第一镇，白沫江穿镇。",
       "reason": "比黄龙溪人少一半的真古镇",
@@ -1324,7 +1266,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "anren",
@@ -1335,7 +1278,7 @@
         "民国",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 210,
       "intro": "民国公馆建筑群小镇，刘氏庄园所在地。",
       "reason": "二十多座民国公馆一次看够",
@@ -1358,7 +1301,8 @@
       "rating": 4.4,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "jianchuan",
@@ -1369,7 +1313,7 @@
         "民营",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 240,
       "intro": "安仁古镇旁的民营博物馆群，三十余座分馆。",
       "reason": "历史迷可以泡一整天的地方",
@@ -1391,7 +1335,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "xiling",
@@ -1402,7 +1347,7 @@
         "云海",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 420,
       "intro": "窗含西岭千秋雪的原型，冬滑雪夏避暑。",
       "reason": "冬季南方少有的真雪场",
@@ -1425,39 +1370,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "tiantai",
-      "name": "天台山山门",
-      "cat": "山水",
-      "tags": [
-        "萤火虫",
-        "瀑布",
-        "远郊"
-      ],
-      "heat": 6.5,
-      "dur": 360,
-      "intro": "邛崃山系丹霞台地，夏夜萤火虫著名。",
-      "reason": "七八月晚上看萤火虫山谷",
-      "open": "09:00-17:00",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        103.135725,
-        30.282425
-      ],
-      "coord_src": "amap",
-      "photo": "http://store.is.autonavi.com/showpic/3aa9556afac04aa79dc0bd5298105de9",
-      "amap_poi_id": "B0MRB9BV4V",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "09:00-17:00, 具体开放时间以现场公示为准",
-      "rating": 3.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "longquan",
@@ -1468,7 +1382,7 @@
         "桃花",
         "近郊"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "龙泉山城市森林公园制高点，俯瞰三岔湖。",
       "reason": "三月桃花季全城人都来这",
@@ -1491,7 +1405,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "pengzhen",
@@ -1529,7 +1444,7 @@
         "罗汉堂",
         "新都"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 90,
       "intro": "新都千年古刹，五百罗汉堂闻名。",
       "reason": "数罗汉的老玩法很有意思",
@@ -1552,39 +1467,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "guihu",
-      "name": "新都桂湖",
-      "cat": "公园",
-      "tags": [
-        "杨升庵",
-        "荷花",
-        "新都"
-      ],
-      "heat": 5.5,
-      "dur": 70,
-      "intro": "明代杨升庵故居园林，夏日荷花满塘。",
-      "reason": "和宝光寺顺路打包游览",
-      "open": "08:00-17:30",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        104.159079,
-        30.822617
-      ],
-      "coord_src": "tencent",
-      "tencent_poi_id": "9648071326710432027",
-      "refreshed_at": "2026-10-11",
-      "photo": "https://aos-comment.amap.com/B0FFHFYQJD/comment/content_media_external_images_media_1000173470_ss__1729396464600_91233767.jpg",
-      "amap_poi_id": "B0FFHFYQJD",
-      "open_text": "周一至周日 08:00-17:30",
-      "tel": "028-83972518",
-      "rating": 4.5,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "chuan-cuisine-museum",
@@ -1595,7 +1479,7 @@
         "郫县",
         "体验"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "郫都区的活态川菜博物馆，可动手做川菜。",
       "reason": "边看边吃的川菜文化课",
@@ -1618,7 +1502,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "shujin",
@@ -1629,7 +1514,7 @@
         "非遗",
         "免费"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 50,
       "intro": "展示蜀锦织造技艺的小众博物馆。",
       "reason": "看老师傅操作清代花楼织机",
@@ -1650,7 +1535,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "yanhua",
@@ -1661,7 +1547,7 @@
         "唐代园林",
         "崇州"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 80,
       "intro": "崇州的唐代官署园林，陆游曾在此任职。",
       "reason": "87 版红楼梦取景地之一",
@@ -1684,68 +1570,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "wuchazi",
-      "name": "五岔子大桥",
-      "cat": "夜景",
-      "tags": [
-        "网红桥",
-        "莫比乌斯",
-        "夜景"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "莫比乌斯环造型的网红人行桥。",
-      "reason": "入夜亮灯后拍赛博朋克大片",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        104.082227,
-        30.558968
-      ],
-      "coord_src": "amap",
-      "photo": "http://store.is.autonavi.com/showpic/477074e8344065b93b637ee29a9672af",
-      "tencent_poi_id": "2230387241916622968",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0FFG88RF2",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
-      "id": "jiangtan",
-      "name": "成都江滩公园",
-      "cat": "公园",
-      "tags": [
-        "沙滩",
-        "锦江",
-        "遛娃"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "锦江边的城市沙滩公园。",
-      "reason": "市区里的人造小海滩",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.080905,
-        30.555514
-      ],
-      "coord_src": "amap",
-      "photo": "http://store.is.autonavi.com/showpic/7673f458c7378eeeb68d0ac6eff6db98",
-      "tencent_poi_id": "15969743704004614932",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0FFH0FKW3",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00；泳池开放时间: 周六-周日10:00-21:00 周一-周五9:00-20:30",
-      "rating": 4.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "qinglong-lake",
@@ -1756,7 +1582,7 @@
         "候鸟",
         "地铁达"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 120,
       "intro": "绕城最大湿地，冬季候鸟栖息地。",
       "reason": "地铁直达的环湖骑行线",
@@ -1778,106 +1604,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "beihu",
-      "name": "北湖生态公园",
-      "cat": "公园",
-      "tags": [
-        "露营",
-        "湖景"
-      ],
-      "heat": 5.5,
-      "dur": 90,
-      "intro": "城北湖景公园，近熊猫基地。",
-      "reason": "看完熊猫来湖边放空",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.154455,
-        30.718909
-      ],
-      "coord_src": "tencent",
-      "tencent_poi_id": "2199037394737",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/ca24f105-74d9-46c2-afb6-f9082e3ac69d.jpg",
-      "amap_poi_id": "B0FFH0P4MJ",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "028-62275604",
-      "rating": 4.7,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "xinglong-lake",
-      "name": "兴隆湖湿地公园",
-      "cat": "公园",
-      "tags": [
-        "水下书店",
-        "落日",
-        "南门"
-      ],
-      "heat": 6.5,
-      "dur": 90,
-      "intro": "天府新区大湖，湖畔有水下书店。",
-      "reason": "成都看海平替，日落极美",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        104.08042,
-        30.393487
-      ],
-      "coord_src": "amap",
-      "photo": "https://aos-comment.amap.com/B0FFG7FDZE/comment/8F6EA243_8518_4868_A287_57E860FE72BF_L0_001_1170_145_1763824509732_18532322.jpg",
-      "amap_poi_id": "B0FFGIJ63W",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "rating": 4.7,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "luxhu",
-      "name": "麓湖水城景区",
-      "cat": "街区",
-      "tags": [
-        "艺展中心",
-        "船游",
-        "南门"
-      ],
-      "heat": 6,
-      "dur": 120,
-      "intro": "高端社区水城内的人工岛链与美术馆。",
-      "reason": "坐船逛岛的成都新玩法",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        104.064974,
-        30.458829
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "385102269621586842",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/b2f73cab702075d61be98b3a033d7bb6",
-      "amap_poi_id": "B0FFJSVRRH",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00, 荒野之国10:00-18:00, 船运专线:10:00-18:00, 麓客岛:09:00-18:00；具体开放时间以官方通知为准",
-      "tel": "028-60616886",
-      "rating": 4.7,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "yuanyang",
@@ -1919,7 +1647,7 @@
         "涂鸦",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 8,
       "dur": 60,
       "intro": "老仓库改的小型文创园，人少安静。",
       "reason": "比东郊记忆人少的拍照备选",
@@ -1941,7 +1669,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "mengzhuiwan",
@@ -1952,7 +1681,7 @@
         "咖啡",
         "年轻人"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 80,
       "intro": "府河畔改造的滨河街区，咖啡店密集。",
       "reason": "望平街河边喝咖啡看夕阳",
@@ -1974,7 +1703,8 @@
       "rating": 3.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "jiuyanqiao-bar",
@@ -1984,7 +1714,7 @@
         "夜生活",
         "酒吧"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 120,
       "intro": "九眼桥对岸的酒吧街区。",
       "reason": "成都夜生活浓度最高的一段",
@@ -2006,34 +1736,8 @@
       "cost": 95,
       "photo": "http://store.is.autonavi.com/showpic/a05aa1b327e2b7a2f85782503f95d5de",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "kuanxiangzi-paulo",
-      "name": "泡桐树街·小通巷",
-      "cat": "街区",
-      "tags": [
-        "文艺",
-        "小店",
-        "宽窄旁"
-      ],
-      "heat": 6.5,
-      "dur": 60,
-      "intro": "宽窄巷子旁的文艺小巷，独立小店聚集。",
-      "reason": "躲开宽窄巷子的人流逛这里",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        104.05369,
-        30.665482
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "7692796379202130927",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B001C7X1Z1",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "wenshu-fang",
@@ -2044,7 +1748,7 @@
         "手作",
         "小吃"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "文殊院外的禅意商业街区。",
       "reason": "洞子口张老二凉粉在此",
@@ -2066,7 +1770,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "tianfu-art",
@@ -2077,7 +1782,7 @@
         "湖景",
         "新馆"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 120,
       "intro": "双美术馆加湖区的城市艺术公园。",
       "reason": "成都双年展主场，建筑本身出片",
@@ -2100,35 +1805,43 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "dujiangyan-night",
-      "name": "南桥",
+      "name": "南桥广场",
       "cat": "夜景",
       "tags": [
         "蓝眼泪",
         "廊桥",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 80,
       "intro": "都江堰南桥夜灯，岷江水映蓝光。",
       "reason": "都江堰一日游的完美收尾",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
-        103.615948,
-        30.996316
+        103.615928,
+        30.995986
       ],
       "coord_src": "amap",
       "tencent_poi_id": "1334856326295565953",
       "refreshed_at": "2026-10-17",
       "photo": "https://store.is.autonavi.com/showpic/73aed5ac4b09de430000003764568853?type=pic",
-      "amap_poi_id": "B001C09HZL",
+      "amap_poi_id": "B0G1XCHVIZ",
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 00:00-24:00",
+      "tel": "96526",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "panda-valley",
@@ -2139,7 +1852,7 @@
         "人少",
         "都江堰"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 120,
       "intro": "都江堰的熊猫野放研究基地。",
       "reason": "比市区基地人少很多的看猫备选",
@@ -2162,7 +1875,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "zhongshuge",
@@ -2192,39 +1906,6 @@
       "verified_at": "2026-10-16"
     },
     {
-      "id": "east-suburb-park",
-      "name": "麻石烟云公园",
-      "cat": "公园",
-      "tags": [
-        "烟囱",
-        "工业风",
-        "小众"
-      ],
-      "heat": 5,
-      "dur": 45,
-      "intro": "东郊记忆旁的老厂烟囱公园。",
-      "reason": "和东郊记忆顺路打包",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.113353,
-        30.665508
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "7633577841672863185",
-      "refreshed_at": "2026-10-16",
-      "photo": "https://aos-comment.amap.com/B0FFFDMF4E/comment/e4fce040dbc511b730cd51cdc121ab9b_2048_2048_80.jpg",
-      "amap_poi_id": "B0FFFDMF4E",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "rating": 4.4,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
       "id": "xiangxiang-lane",
       "name": "香香巷",
       "cat": "美食",
@@ -2233,7 +1914,7 @@
         "夜宵",
         "太古里旁"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 70,
       "intro": "太古里背后的苍蝇馆子小巷。",
       "reason": "本地人夜宵据点",
@@ -2255,41 +1936,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "yiyuan",
-      "name": "易园园林博物馆",
-      "cat": "公园",
-      "tags": [
-        "私家园林",
-        "火锅",
-        "金牛"
-      ],
-      "heat": 5.5,
-      "dur": 90,
-      "intro": "金牛区的私家园林，内有园林火锅。",
-      "reason": "在园林里吃一顿火锅",
-      "open": "10:00-17:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        104.014958,
-        30.71778
-      ],
-      "coord_src": "amap",
-      "tencent_poi_id": "10300589384210241201",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/fded3628-6b4e-4bde-9b89-db10f80929b7.jpeg",
-      "amap_poi_id": "B0FFH0J82Z",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 10:00-17:00 最晚进入17:00",
-      "tel": "028-87506046;028-87512222",
-      "rating": 4.6,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     }
   ]
 }

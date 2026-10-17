@@ -1,0 +1,75 @@
+{
+  "city": "杭州",
+  "date": "2026-10-17",
+  "before": 70,
+  "after": 64,
+  "removed": [
+    {
+      "id": "cirque-du-soleil",
+      "name": "太阳马戏 X 绮幻之境",
+      "cat": "演出",
+      "heat": 7,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "无评分且非风景名胜（不确定即删）"
+    },
+    {
+      "id": "qingshan-lake",
+      "name": "青山湖水上森林",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "baoshishan",
+      "name": "宝石山造像",
+      "cat": "公园",
+      "heat": 7.5,
+      "rating": 3.9,
+      "level": null,
+      "score": 0.16,
+      "heatNew": 6,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "quyuan",
+      "name": "曲院风荷碑廊",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 3.4,
+      "level": null,
+      "score": 0,
+      "heatNew": 5,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    },
+    {
+      "id": "taiziwan",
+      "name": "太子湾公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后/无评分"
+    },
+    {
+      "id": "baita-park",
+      "name": "白塔公园",
+      "cat": "公园",
+      "heat": 6.5,
+      "rating": null,
+      "level": null,
+      "score": null,
+      "heatNew": null,
+      "why": "类目配额（公园 ≤5）且评分靠后/无评分"
+    }
+  ],
+  "heatApplied": 49
+}

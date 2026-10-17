@@ -24,7 +24,8 @@
     "photos_at": "2026-10-13",
     "rematch_at": "2026-10-13",
     "coord_repaired_at": "2026-10-17",
-    "biz_at": "2026-10-17"
+    "biz_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -37,7 +38,7 @@
         "免费",
         "人多"
       ],
-      "heat": 10,
+      "heat": 8,
       "dur": 120,
       "intro": "11层吊脚楼依山而建，夜灯亮起如千与千寻。",
       "reason": "天黑亮灯后从千厮门大桥拍全景",
@@ -60,7 +61,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 10
     },
     {
       "id": "jiefangbei",
@@ -71,7 +73,7 @@
         "商圈",
         "夜市近"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 60,
       "intro": "重庆人的精神地标，步行街与写字楼森林环绕。",
       "reason": "住在附近最方便，顺路打卡",
@@ -93,7 +95,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "bayi-food-street",
@@ -104,7 +107,7 @@
         "夜市",
         "解放碑旁"
       ],
-      "heat": 8,
+      "heat": 5,
       "dur": 80,
       "intro": "解放碑旁的老牌好吃街，酸辣粉串串扎堆。",
       "reason": "酸辣粉加山城汤圆的经典开局",
@@ -123,7 +126,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/555a27369c3179410ad3c00efde335fc",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "yangtze-cableway",
@@ -135,7 +139,7 @@
         "早去",
         "夜景"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 45,
       "intro": "万里长江第一条空中走廊，空中看两岸。",
       "reason": "赶早班索道不排队，夜景更绝",
@@ -158,7 +162,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "chaotianmen-raffles",
@@ -169,23 +174,31 @@
         "地标",
         "观景台"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 90,
       "intro": "两江交汇的重庆零公里，来福士帆船楼坐镇。",
       "reason": "看嘉陵江清浊交汇的分界线",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.587866,
-        29.56688
+        106.587247,
+        29.564813
       ],
       "coord_src": "amap",
       "tencent_poi_id": "4555441290129159889",
       "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B00170L11G",
+      "amap_poi_id": "B0FFFQLXRT",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-22:00",
+      "tel": "023-63986398",
+      "rating": 4.8,
+      "cost": 0,
+      "photo": "https://store.is.autonavi.com/showpic/62235351ed4ae8b60000008655436207?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "liangjiang-cruise",
@@ -196,7 +209,7 @@
         "夜景",
         "晚上"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 90,
       "intro": "乘船夜游长江嘉陵江，看两岸立体灯海。",
       "reason": "洪崖洞全景只有在江上最完整",
@@ -213,7 +226,8 @@
       "photo": "http://store.is.autonavi.com/showpic/7fa7a4d829ecda815f87f094328aeb1c",
       "amap_poi_id": "B0FFHWJAJG",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "heat_prev": 8.5
     },
     {
       "id": "shibati",
@@ -246,40 +260,6 @@
       "tel": "023-63256762",
       "rating": 4.8,
       "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
-      "id": "shancheng-trail",
-      "name": "山城步道·建兴坡大梯道",
-      "cat": "街区",
-      "tags": [
-        "崖壁",
-        "步道",
-        "免费",
-        "早去"
-      ],
-      "heat": 7.5,
-      "dur": 90,
-      "intro": "沿崖壁而建的老步道，串起老巷与江景。",
-      "reason": "清晨走第三步道，山城还没醒",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        106.548454,
-        29.55134
-      ],
-      "coord_src": "tencent",
-      "tencent_poi_id": "10341791553713888546",
-      "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0FFFE4P2C",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "rating": 4,
-      "cost": 0,
-      "photo": "https://aos-comment.amap.com/B0FFFE4P2C/comment/content_media_external_images_media_1000007507_ss__1766305266288_86932864.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17"
     },
@@ -326,7 +306,7 @@
         "明清建筑",
         "黄墙"
       ],
-      "heat": 7,
+      "heat": 9,
       "dur": 80,
       "intro": "明清移民会馆建筑群，黄墙灰瓦临江而立。",
       "reason": "闹市区里保存最好的清代会馆",
@@ -349,7 +329,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "luohan-temple",
@@ -360,7 +341,7 @@
         "闹市",
         "五百罗汉"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 50,
       "intro": "北宋古刹藏身闹市，五百罗汉堂闻名。",
       "reason": "《疯狂的石头》取景的反差寺庙",
@@ -383,7 +364,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "tongyuanmen",
@@ -394,7 +376,7 @@
         "免费",
         "小众"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "重庆十七门中仅存的陆门，老城墙遗址公园。",
       "reason": "重庆老城唯一的陆路城门",
@@ -416,7 +398,8 @@
       "rating": 4.4,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "baixiangju",
@@ -427,7 +410,7 @@
         "摄影",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 45,
       "intro": "24层无电梯老楼，三个高度连通三条街。",
       "reason": "长江索道从窗前掠过的魔幻楼",
@@ -450,7 +433,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "daijiaxiang",
@@ -461,7 +445,7 @@
         "洪崖洞旁",
         "江景"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 50,
       "intro": "洪崖洞旁的崖壁老巷步道，直面嘉陵江。",
       "reason": "看洪崖洞不用挤人的侧翼机位",
@@ -483,7 +467,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "crown-escalator",
@@ -494,7 +479,7 @@
         "两路口",
         "体验"
       ],
-      "heat": 5.5,
+      "heat": 7,
       "dur": 40,
       "intro": "亚洲第二长坡地扶梯，重庆人的日常通勤工具。",
       "reason": "两块钱体验山城的垂直交通",
@@ -515,7 +500,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 5.5
     },
     {
       "id": "zhongshan-4th",
@@ -559,7 +545,7 @@
         "室内",
         "三峡文物"
       ],
-      "heat": 8.5,
+      "heat": 8,
       "dur": 120,
       "intro": "人民大礼堂对面，巴蜀与三峡文物重镇。",
       "reason": "下午最热时进馆看汉代雕塑",
@@ -582,7 +568,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "peoples-hall",
@@ -593,7 +580,7 @@
         "地标",
         "广场"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 40,
       "intro": "仿天坛造型的城市地标，绿瓦金顶气势足。",
       "reason": "和三峡博物馆隔广场对望",
@@ -615,7 +602,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/71effaff3c5057491d6b782555b9fa01",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "wfc-observatory",
@@ -659,7 +647,7 @@
         "室内",
         "国泰艺术中心"
       ],
-      "heat": 6,
+      "heat": 8,
       "dur": 60,
       "intro": "国泰艺术中心内的市级美术馆，红黑建筑醒目。",
       "reason": "解放碑逛累后的免费空调展",
@@ -682,7 +670,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "jiaochangkou",
@@ -727,7 +716,7 @@
         "本地人",
         "潮流"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 90,
       "intro": "江北第一商圈，本地年轻人浓度超过解放碑。",
       "reason": "看重庆本地人真实的逛街日常",
@@ -749,7 +738,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "beicang",
@@ -760,7 +750,7 @@
         "咖啡",
         "小众"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 60,
       "intro": "老纺织仓库改的文创园，独立书店与咖啡店。",
       "reason": "观音桥旁的安静文艺角落",
@@ -782,7 +772,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "jiujie",
@@ -826,7 +817,7 @@
         "室内",
         "互动"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 150,
       "intro": "江北嘴的互动科技馆，防灾与宇航展区好玩。",
       "reason": "雨天遛娃备选，能泡大半天",
@@ -849,7 +840,8 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "cq-grand-theatre",
@@ -860,7 +852,7 @@
         "晚上",
         "演出"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 120,
       "intro": "江北嘴的巨型帆船造型剧院，夜景灯光出彩。",
       "reason": "看场演出顺便拍大剧院夜景",
@@ -882,7 +874,8 @@
       "rating": 4.1,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "jiangbeizui",
@@ -893,7 +886,7 @@
         "夜景",
         "洪崖洞对岸"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 60,
       "intro": "嘉陵江边的江滩，正对着洪崖洞与千厮门。",
       "reason": "拍洪崖洞全景的最佳对岸机位",
@@ -915,7 +908,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "hongensi",
@@ -926,7 +920,7 @@
         "夜景",
         "免费"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 80,
       "intro": "江北的城市森林公园，山顶鸿恩阁俯瞰全城。",
       "reason": "本地人看夜景的私藏制高点",
@@ -949,7 +943,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "nanshan-yikeshu",
@@ -960,7 +955,7 @@
         "观景台",
         "经典"
       ],
-      "heat": 8.5,
+      "heat": 7,
       "dur": 80,
       "intro": "看渝中半岛夜景的老牌观景台，两江环抱。",
       "reason": "重庆夜景明信片的标准取景地",
@@ -982,7 +977,8 @@
       "cost": 0,
       "photo": "https://aos-comment.amap.com/B0FFGAMI8G/comment/34B6CF01_E49C_4A7C_81AF_732571BBD83B_L0_001_1170_154_1766394585852_36077043.jpg",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8.5
     },
     {
       "id": "nanshan-botanical",
@@ -993,7 +989,7 @@
         "温室",
         "赏花"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 120,
       "intro": "南山上的老牌植物园，春天樱花大道出名。",
       "reason": "三四月樱花季山城人最挤",
@@ -1015,7 +1011,8 @@
       "rating": 3.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "nanshan-hotpot",
@@ -1026,7 +1023,7 @@
         "夜景",
         "晚上"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 120,
       "intro": "半山上的火锅聚集区，枇杷园一座山都是锅。",
       "reason": "边吃火锅边看山下万家灯火",
@@ -1048,7 +1045,8 @@
       "rating": 4.6,
       "cost": 77,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "laojundong",
@@ -1059,7 +1057,7 @@
         "山景",
         "求签"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 90,
       "intro": "南山明代道观，玉皇楼俯瞰渝中半岛。",
       "reason": "比一棵树人少十倍的山城观景点",
@@ -1080,7 +1078,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "huangjueya",
@@ -1091,7 +1090,7 @@
         "三毛",
         "茶马古道"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 90,
       "intro": "南山上的千年老街，三毛出生地，旧驿道起点。",
       "reason": "三毛故居旁喝一碗盖碗茶",
@@ -1114,7 +1113,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "nanbin-road",
@@ -1146,31 +1146,38 @@
     },
     {
       "id": "danzishi",
-      "name": "弹子石老街·长嘉汇",
+      "name": "长嘉汇弹子石老街",
       "cat": "街区",
       "tags": [
         "老街",
         "两江交汇",
         "夜景"
       ],
-      "heat": 7.5,
+      "heat": 9,
       "dur": 100,
       "intro": "百年开埠老街改造，台阶式街区看两江交汇。",
       "reason": "一街看两江，夜景比洪崖洞清净",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:00-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.587402,
-        29.579602
+        106.588015,
+        29.579709
       ],
       "coord_src": "amap",
       "photo": "http://store.is.autonavi.com/showpic/61d46fc3a0ae5f57a17f395bfa250493",
       "tencent_poi_id": "4903531222909869275",
       "refreshed_at": "2026-10-16",
-      "amap_poi_id": "B0KRG5DO33",
+      "amap_poi_id": "B0FFHCL1T9",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 10:00-22:00 最晚进入22:00",
+      "tel": "023-62520666;023-62520888",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "longmenhao",
@@ -1181,7 +1188,7 @@
         "老建筑",
         "江景"
       ],
-      "heat": 7,
+      "heat": 9,
       "dur": 80,
       "intro": "开埠时期的老街区，青砖建筑贴着崖壁江岸。",
       "reason": "东水门大桥下的老重庆剪影",
@@ -1204,7 +1211,8 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "ciyun-temple",
@@ -1215,7 +1223,7 @@
         "江景",
         "清净"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 60,
       "intro": "长江边的唐代古刹，僧尼同寺的千年道场。",
       "reason": "南滨路上的清净角落，人少",
@@ -1238,7 +1246,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "ciqikou",
@@ -1283,12 +1292,12 @@
         "晚上",
         "红色"
       ],
-      "heat": 7.5,
+      "heat": 8,
       "dur": 120,
       "intro": "磁器口旁的旋转舞台实景剧，重现重庆解放夜。",
       "reason": "舞台会转的沉浸式演出，很震撼",
-      "open": null,
-      "closed_mon": null,
+      "open": "10:30-21:15",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         106.446764,
@@ -1299,11 +1308,19 @@
       "refreshed_at": "2026-10-17",
       "amap_poi_id": "B0HA1SE56R",
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 10:30-21:15",
+      "tel": "023-65003888",
+      "rating": 4.9,
+      "cost": 21,
+      "photo": "http://store.is.autonavi.com/showpic/877eacbe764a612fbfaea2b1a7128d17",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "zhazidong",
-      "name": "渣滓洞·白公馆",
+      "name": "白公馆旧址",
       "cat": "古迹",
       "tags": [
         "红色",
@@ -1314,20 +1331,26 @@
       "dur": 120,
       "intro": "歌乐山下的革命遗址群，《红岩》故事发生地。",
       "reason": "课本里的红岩故事现场版",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-17:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
-        106.435452,
-        29.582985
+        106.432065,
+        29.576464
       ],
       "coord_src": "amap",
       "tencent_poi_id": "14618923728023484076",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/20d594d2893d3383ce8fdf0d2141281f",
-      "amap_poi_id": "BV11607370",
+      "amap_poi_id": "B0FFK75W6R",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:00 最晚进入16:30",
+      "tel": "023-65312013",
+      "rating": 4.7,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "gele-mountain",
@@ -1338,7 +1361,7 @@
         "登山",
         "缆车"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 180,
       "intro": "沙坪坝的城市绿肺，可缆车登顶俯瞰大学城。",
       "reason": "爬完山顺路去渣滓洞白公馆",
@@ -1361,7 +1384,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/10599f26e4ece4580d2daa2cac2533ab",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "luozhongli-museum",
@@ -1465,7 +1489,7 @@
         "老牌",
         "性价比"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "熊猫数量全国前列的老牌动物园，门票便宜。",
       "reason": "二十多块钱看十几只熊猫",
@@ -1487,7 +1511,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "cq-industrial-museum",
@@ -1498,7 +1523,7 @@
         "钢迁会",
         "室内"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 100,
       "intro": "重钢旧址上的工业馆，老厂房机器全部保留。",
       "reason": "巨大车间里的钢铁朋克现场",
@@ -1520,7 +1545,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "cq-jianchuan",
@@ -1531,7 +1557,7 @@
         "防空洞",
         "小众"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 120,
       "intro": "防空洞群里的博物馆聚落，抗战兵工主题为主。",
       "reason": "在真正的防空洞里看抗战文物",
@@ -1554,7 +1580,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "hongyan-museum",
@@ -1565,7 +1592,7 @@
         "免费",
         "室内"
       ],
-      "heat": 6.5,
+      "heat": 8,
       "dur": 90,
       "intro": "红岩村的中共南方局旧址纪念馆，《红岩》原型地。",
       "reason": "看完渣滓洞再来这补齐历史线",
@@ -1588,7 +1615,8 @@
       "rating": 5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "cq-happy-valley",
@@ -1599,7 +1627,7 @@
         "乐园",
         "夜场"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 300,
       "intro": "山地版欢乐谷，木质过山车穿山而建。",
       "reason": "依山而建的过山车更刺激",
@@ -1622,7 +1650,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "hanhai-oceanpark",
@@ -1633,7 +1662,7 @@
         "室内",
         "水母"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "巴南的大型海洋馆，水母馆和白鲸表演受欢迎。",
       "reason": "雨天遛娃的室内备选",
@@ -1655,7 +1684,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "sunac-town",
@@ -1666,7 +1696,7 @@
         "过山车",
         "夜场"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 240,
       "intro": "大学城旁的开放式乐园，摩天轮与过山车齐全。",
       "reason": "不收大门票，玩项目再买票",
@@ -1688,7 +1718,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "yuanboyuan",
@@ -1699,7 +1730,7 @@
         "大草坪",
         "遛娃"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 150,
       "intro": "园博会留下的超大园林公园，一天逛不完。",
       "reason": "北方园林和江南园林一次看齐",
@@ -1722,7 +1753,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "keyuan-4th",
@@ -1733,7 +1765,7 @@
         "本地人",
         "大排档"
       ],
-      "heat": 6,
+      "heat": 5,
       "dur": 90,
       "intro": "九龙坡的本地人夜宵街，烧烤烤鱼是主角。",
       "reason": "没有游客的本重庆夜味道",
@@ -1754,7 +1786,8 @@
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/b028896162c4df2e0030db7d42e835aa",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "cq-nature-museum",
@@ -1799,7 +1832,7 @@
         "森林",
         "北碚"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 240,
       "intro": "嘉陵江畔的国家级自然保护区，九峰连绵。",
       "reason": "和重庆自然博物馆打包一日游",
@@ -1822,7 +1855,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "diaoyu-fortress",
@@ -1857,7 +1891,7 @@
         "石窟",
         "远郊"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 300,
       "intro": "唐宋石窟艺术巅峰，宝顶山千手观音举世闻名。",
       "reason": "千手观音金光再现，值回车程",
@@ -1880,7 +1914,8 @@
       "rating": 4.4,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "wulong-tiankeng",
@@ -1891,7 +1926,7 @@
         "世界遗产",
         "远郊"
       ],
-      "heat": 9.5,
+      "heat": 7,
       "dur": 420,
       "intro": "世界最大天生桥群，《满城尽带黄金甲》取景地。",
       "reason": "走到天坑底部才知什么叫壮观",
@@ -1914,7 +1949,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 9.5
     },
     {
       "id": "fairy-mountain",
@@ -1925,7 +1961,7 @@
         "滑雪",
         "避暑"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 360,
       "intro": "武隆的高山草原，夏天避暑冬天滑雪。",
       "reason": "和天生三桥打包的武隆两日游",
@@ -1948,7 +1984,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "jinfo-mountain",
@@ -1959,7 +1996,7 @@
         "杜鹃",
         "滑雪"
       ],
-      "heat": 7.5,
+      "heat": 7,
       "dur": 360,
       "intro": "南川的世界自然遗产，桌山喀斯特地貌奇特。",
       "reason": "春天满山杜鹃，冬天南国雪原",
@@ -1980,7 +2017,8 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 7.5
     },
     {
       "id": "heishan-valley",
@@ -2025,7 +2063,7 @@
         "丹霞",
         "江津"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 360,
       "intro": "江津的丹霞瀑布群，望乡台瀑布高158米。",
       "reason": "华夏第一高瀑水量足时很震撼",
@@ -2048,11 +2086,12 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "gongtan-wujiang",
-      "name": "龚滩古镇·乌江画廊",
+      "name": "乌江画廊",
       "cat": "古镇",
       "tags": [
         "乌江",
@@ -2063,7 +2102,7 @@
       "dur": 300,
       "intro": "乌江边的千年盐码头，吊脚楼沿崖壁排开。",
       "reason": "坐船看乌江画廊再住进老吊脚楼",
-      "open": null,
+      "open": "09:00-17:30",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -2072,10 +2111,16 @@
       ],
       "coord_src": "amap",
       "photo": "https://store.is.autonavi.com/showpic/ddf6f9dbd4ff50410000003295530632?type=pic",
-      "amap_poi_id": "B001786W3P",
+      "amap_poi_id": "B0FFL3LZ8V",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-16",
+      "open_text": "周一至周日 09:00-17:30",
+      "tel": "023-78427999",
+      "rating": 4.6,
+      "cost": 0,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "zhongshan-old-town",
@@ -2086,7 +2131,7 @@
         "原生态",
         "江津"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 240,
       "intro": "江津的明清老街，吊脚楼保存完整游客少。",
       "reason": "几乎没有商业化的真古镇",
@@ -2108,7 +2153,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "longxing-old-town",
@@ -2119,7 +2165,7 @@
         "宗祠",
         "渝北"
       ],
-      "heat": 6,
+      "heat": 8,
       "dur": 150,
       "intro": "渝北的六百年古镇，祠堂寺庙保留原貌。",
       "reason": "离主城最近的原生态古镇",
@@ -2142,7 +2188,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "tongjing-hotspring",
@@ -2153,7 +2200,7 @@
         "峡谷",
         "冬天"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 240,
       "intro": "渝北的老牌温泉，峡江温塘风光兼具。",
       "reason": "冬天来泡峡谷里的天然温泉",
@@ -2176,7 +2223,8 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6
     },
     {
       "id": "fengdu-ghost-city",
@@ -2187,7 +2235,7 @@
         "名山",
         "三峡游"
       ],
-      "heat": 6.5,
+      "heat": 7,
       "dur": 210,
       "intro": "以鬼文化闻名的千年名山，奈何桥阎王殿俱全。",
       "reason": "中国唯一的鬼城主题乐园式古迹",
@@ -2210,7 +2258,8 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "heat_prev": 6.5
     },
     {
       "id": "baiheliang",

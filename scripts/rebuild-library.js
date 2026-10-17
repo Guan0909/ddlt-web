@@ -122,31 +122,60 @@ function plan(city) {
   const poolPath = path.join(ROOT, 'data', 'spots', file + '.rebuild-pool.json');
   const pool = fs.existsSync(poolPath) ? JSON.parse(fs.readFileSync(poolPath, 'utf8')).pool : [];
   const byName = new Map(pool.map(p => [norm(p.name), p]));
-  // 核心类：古迹/博物馆/山水/古镇/夜景/演出/亲子 → 只剔「确实低分」的；受限类目按 quota 保留高分者
+  // 判定规则（2026-10-17 按产品口径改）：高德评分满分 5 分
+  //   ① 知名必留：FAME 名单 / 评分 ≥4.5 / POI 类型含风景名胜·国家级景点；
+  //   ② 演出/体验类（《不眠之夜》沉浸式戏剧）不是地理地点 → 删；
+  //   ③ 核心类：评分 <4.0 删，其余留；
+  //   ④ 受限类目（街区/公园/美食/商圈）按配额留高分者；
+  //   ⑤ 拿不到评分 = 不确定 → 除知名/风景名胜外，按用户口径直接删。
   const CORE = new Set(['古迹', '博物馆', '山水', '古镇', '夜景', '演出', '亲子']);
   const QUOTA = { 街区: 8, 美食: 4, 公园: 5, 商圈: 2 };
+  // 可删黑名单（产品明确判断为低价值：景区/文旅盘性质）
+  const BLACKLIST = { 成都: ['麓湖水城'] };
+  // 必留名单（非常知名的地标/景点，用户口径：这类不可删）
+  const FAME = {
+    成都: ['宽窄巷子', '锦里', '武侯祠', '杜甫草堂', '大熊猫', '都江堰', '青城山', '春熙路', '太古里', '人民公园', '金沙遗址', '成都博物馆', '西岭雪山', '天府广场', '文殊院', '罨画池', '望江楼', '九眼桥'],
+    北京: ['天安门', '故宫', '长城', '颐和园', '天坛', '圆明园', '雍和宫', '恭王府', '南锣鼓巷', '什刹海', '北海公园', '景山', '鸟巢', '水立方', '798', '王府井', '三里屯', '军事博物馆', '国家博物馆', '十三陵', '潭柘寺', '红螺寺', '古北水镇', '司马台', '爨底下', '琉璃厂'],
+    上海: ['外滩', '豫园', '迪士尼', '东方明珠', '南京路', '陆家嘴', '新天地', '田子坊', '上海博物馆', '科技馆', '朱家角', '武康路', '静安寺', '前滩太古里', '世博', '七宝', '召稼楼', '天文馆', '野生动物园', '东方绿舟'],
+    西安: ['兵马俑', '城墙', '大雁塔', '钟楼', '鼓楼', '回民街', '陕西历史博物馆', '华清宫', '华山', '大唐不夜城', '碑林', '大明宫', '永兴坊', '法门寺', '乾陵', '茂陵', '汉阳陵', '翠华山', '秦岭'],
+    重庆: ['洪崖洞', '解放碑', '磁器口', '长江索道', '李子坝', '朝天门', '十八梯', '南山', '鹅岭', '两江夜游', '三峡博物馆', '钓鱼城', '大足石刻', '武隆', '白帝城', '仙女山', '金佛山', '四面山', '龚滩', '乌江画廊'],
+    杭州: ['西湖', '灵隐', '雷峰塔', '断桥', '苏堤', '西溪', '千岛湖', '河坊街', '南宋御街', '杭州植物园', '九溪', '龙井', '宋城', '六和塔', '岳王庙', '运河', '钱王祠', '满觉陇', '京杭大运河'],
+  };
+  const SHOW_RE = /《[^》]*》|沉浸式|戏剧|音乐剧|话剧|舞台剧|光影秀|水秀|演唱会/;
+  const VENUE_RE = /大剧院|剧场|剧院|音乐厅|演艺中心/;
+  const FAME_RATING = 4.5;   // 5 分制：≥4.5 视为「非常知名」
+  const fames = FAME[city] || [];
   const keep = [], drop = [], manual = [], heatChanges = [];
-  const limited = {};   // cat → 候选（受限类目排序用）
+  const limited = {};
   for (const s of spots) {
     // 池子匹配：先精确，再「互相包含」里取评分最高者（避免被同名的子设施/低分项拖走）
     const loose = pool.filter(p => norm(p.name).includes(norm(s.name)) || norm(s.name).includes(norm(p.name)))
       .sort((a, b) => (b.rating == null ? -1 : b.rating) - (a.rating == null ? -1 : a.rating));
     const hit = byName.get(norm(s.name)) || loose[0];
-    const sc = score(hit && hit.rating, hit && hit.level, false);
-    const rec = { id: s.id, name: s.name, cat: s.cat, heat: s.heat, rating: hit ? hit.rating : null, level: hit ? hit.level : null, score: sc };
+    // 评分优先用「库内回填值」（biz-info 已按 POI id 精确取），池子评分只作兜底
+    const libRating = (typeof s.rating === 'number' && s.rating > 0) ? s.rating : null;
+    const rating = libRating != null ? libRating : (hit && hit.rating != null ? hit.rating : null);
+    const level = (hit && hit.level) || null;
+    const sc = score(rating, level, false);
+    const rec = { id: s.id, name: s.name, cat: s.cat, heat: s.heat, rating, level, score: sc };
     const h = heatOf(sc);
     if (h !== null && h !== s.heat) heatChanges.push({ id: s.id, name: s.name, from: s.heat, to: h });
     rec.heatNew = h;
+    const famename = fames.some(k => s.name.includes(k));
+    const banned = (BLACKLIST[city] || []).some(k => s.name.includes(k));
+    if (banned) { drop.push({ ...rec, why: '低价值黑名单（景区/文旅盘）' }); continue; }
+    const goodType = (!!hit && /风景名胜|国家级景点|省级景点/.test(hit.type))
+      || (rating != null && rating >= 4.6 && CORE.has(s.cat));
+    if (SHOW_RE.test(s.name) && !VENUE_RE.test(s.name)) { drop.push({ ...rec, why: '演出/体验类，非地理地点' }); continue; }
+    if (famename) { keep.push({ ...rec, why: '知名地标（必留名单）' }); continue; }
     if (CORE.has(s.cat)) {
-      // 核心类：无评分 → 待人工；评分 < 3.8 → 剔除；其余保留
-      // 评分可疑时先确认池匹配是否精确（天安门广场被「…-旗杆」这类低分项带偏过）
-      const nn = norm(s.name), hn = hit ? norm(hit.name) : '';
-      const precise = !!hit && (hn === nn || hn.startsWith(nn) || nn.startsWith(hn));
-      if (rec.rating == null) manual.push({ ...rec, why: '核心类但拿不到评分，待人工' });
-      else if (rec.rating < 3.8 && precise) drop.push({ ...rec, why: '核心类但评分 ' + rec.rating + ' < 3.8' });
-      else if (rec.rating < 3.8) manual.push({ ...rec, why: '评分可疑（池匹配不精确：' + (hit ? hit.name : '-') + '），待人工' });
-      else keep.push(rec);
+      // 核心类：确定性优先——有评分看评分（≥4.0 留；≥4.5 视为非常知名必留）；无评分且非风景名胜 → 按口径删
+      if (rec.rating == null && !goodType) drop.push({ ...rec, why: '无评分且非风景名胜（不确定即删）' });
+      else if (rec.rating == null) keep.push({ ...rec, why: '风景名胜/国家级（无评分但类型可信）' });
+      else if (rec.rating < 4.0) drop.push({ ...rec, why: '评分 ' + rec.rating + ' < 4.0' });
+      else keep.push({ ...rec, why: rec.rating >= FAME_RATING ? '评分 ' + rec.rating + ' ≥4.5（非常知名）' : undefined });
     } else {
+      // 受限类目：不看单个高分，统一按「类目配额 + 评分排序」减量（§12.5 目标画像）
       (limited[s.cat] = limited[s.cat] || []).push(rec);
     }
   }
@@ -156,7 +185,7 @@ function plan(city) {
     const quota = QUOTA[cat] == null ? 5 : QUOTA[cat];
     list.forEach((rec, i) => {
       if (i < quota) keep.push(rec);
-      else drop.push({ ...rec, why: '类目配额（' + cat + ' ≤' + quota + '）且评分靠后' });
+      else drop.push({ ...rec, why: '类目配额（' + cat + ' ≤' + quota + '）且评分靠后' + (rec.rating == null ? '/无评分' : '') });
     });
   }
   const inLib = new Set(spots.map(s => norm(s.name)));
@@ -173,9 +202,23 @@ function plan(city) {
     else seenName.set(k, s.id);
   }
   const comp = composition(spots);
-  const report = { city, date: new Date().toISOString().slice(0, 10), compositionBefore: comp, keep, drop, manual, add, heatChanges, duplicates };
+  const date = new Date().toISOString().slice(0, 10);
+  const report = { city, date, compositionBefore: comp, keep, drop, manual, add, heatChanges, duplicates };
   const out = path.join(ROOT, 'data', 'spots', file + '.rebuild-report.json');
   fs.writeFileSync(out, JSON.stringify(report, null, 2) + '\n');
+  // --apply：真删点 + heat 按评分重算（数据在 git 里可回滚）
+  if (process.argv.includes('--apply')) {
+    const dropIds = new Set(drop.map(x => x.id));
+    const before = spots.length;
+    d.spots = spots.filter(s => !dropIds.has(s.id));
+    const heatMap = new Map(heatChanges.map(x => [x.id, x.to]));
+    for (const s of d.spots) { const h = heatMap.get(s.id); if (h != null && h !== s.heat) { s.heat_prev = s.heat; s.heat = h; } }
+    d._meta.rebuild_at = date;
+    fs.writeFileSync(libPath, JSON.stringify(d, null, 2) + '\n');
+    fs.writeFileSync(libPath.replace(/\.json$/, '.rebuild-apply-report.json'),
+      JSON.stringify({ city, date, before, after: d.spots.length, removed: drop, heatApplied: heatChanges.length }, null, 2) + '\n');
+    console.log('  ✅ 已应用：' + before + ' → ' + d.spots.length + ' 点（删 ' + drop.length + '），heat 重算 ' + heatChanges.length);
+  }
   if (duplicates.length) console.log('  ⚠ 重名 ' + duplicates.length + ' 组：' + duplicates.map(x => x.name).join('、'));
   console.log(city + '：保留 ' + keep.length + ' / 剔除 ' + drop.length + ' / 待人工 ' + manual.length + ' / 建议新增 ' + add.length + ' / heat 变动 ' + heatChanges.length);
   console.log('  报告：' + path.relative(ROOT, out));
