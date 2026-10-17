@@ -1,0 +1,108 @@
+{
+  "city": "西双版纳",
+  "date": "2026-10-17",
+  "before": 52,
+  "after": 50,
+  "renames": [
+    {
+      "id": "mohan-port",
+      "from": "磨憨口岸",
+      "to": "磨憨口岸国门书社服务站"
+    },
+    {
+      "id": "manjinglan-temple",
+      "from": "曼景兰佛寺",
+      "to": "西双版纳曼景兰大佛寺"
+    },
+    {
+      "id": "mengle-rain-park",
+      "from": "勐泐雨林公园",
+      "to": "勐泐雨林健康主题公园"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "peacock-culture-square",
+      "name": "孔雀文化广场（告庄西双景）",
+      "cat": "街区",
+      "why": "受限类目评分 3.9 < 4.0"
+    },
+    {
+      "id": "mohan-port",
+      "name": "磨憨口岸",
+      "cat": "街区",
+      "why": "受限类目评分 3.9 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "manting-park",
+      "name": "曼听公园（曼听御花园）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "riverside-night-market",
+      "name": "江边夜市（景洪）",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "manting-bonfire-show",
+      "name": "曼听公园篝火晚会（湄公河之夜）",
+      "from": null,
+      "to": 4.3
+    },
+    {
+      "id": "manjinglan-night-market",
+      "name": "曼景兰夜市（傣味）",
+      "from": null,
+      "to": 4.5
+    },
+    {
+      "id": "manchunman-temple",
+      "name": "曼春满佛寺（傣族园）",
+      "from": null,
+      "to": 4.4
+    },
+    {
+      "id": "peacock-culture-square",
+      "name": "孔雀文化广场（告庄西双景）",
+      "from": null,
+      "to": 3.9
+    },
+    {
+      "id": "jinghong-old-street",
+      "name": "景洪老街（嘎兰中路）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "peacock-lake-park",
+      "name": "孔雀湖公园（景洪）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "rt-mart",
+      "name": "大润发（景洪泼水广场店）",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "menghai-tea-factory",
+      "name": "勐海茶厂（大益）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "yiwu-town",
+      "name": "易武古镇",
+      "from": null,
+      "to": 2.4
+    }
+  ],
+  "noPoi": [
+    "曼旦村（勐腊）"
+  ]
+}

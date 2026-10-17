@@ -1,0 +1,96 @@
+{
+  "city": "拉萨",
+  "date": "2026-10-17",
+  "before": 56,
+  "after": 55,
+  "renames": [
+    {
+      "id": "barkhor",
+      "from": "八廓街",
+      "to": "西藏自治区拉萨市八廓街步行街"
+    },
+    {
+      "id": "lhalu-wetland",
+      "from": "拉鲁湿地",
+      "to": "拉鲁湿地国家级自然保护区"
+    },
+    {
+      "id": "zangyiyuan-road",
+      "from": "藏医院路",
+      "to": "藏医院路便民警务站"
+    },
+    {
+      "id": "deji-road",
+      "from": "德吉路",
+      "to": "德吉路农贸市场"
+    },
+    {
+      "id": "makye-ame",
+      "from": "玛吉阿米",
+      "to": "玛吉阿米·餐吧"
+    },
+    {
+      "id": "tibet-opera-center",
+      "from": "西藏藏戏艺术中心",
+      "to": "藏戏艺术中心"
+    },
+    {
+      "id": "yangbajing",
+      "from": "羊八井地热温泉",
+      "to": "羊八井地热温泉度假村"
+    },
+    {
+      "id": "nyainqentanglha",
+      "from": "念青唐古拉山观景台",
+      "to": "念青唐古拉山"
+    },
+    {
+      "id": "gangbala",
+      "from": "岗巴拉山口",
+      "to": "那根拉山口"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "cijuelin",
+      "name": "中国西藏文化旅游创意园区",
+      "cat": "街区",
+      "why": "受限类目评分 3.8 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "zangyiyuan-road",
+      "name": "藏医院路",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "tianhai-night",
+      "name": "天海夜市",
+      "from": null,
+      "to": 4.8
+    },
+    {
+      "id": "makye-ame",
+      "name": "玛吉阿米",
+      "from": null,
+      "to": 4.5
+    },
+    {
+      "id": "puma-yumtso",
+      "name": "普莫雍错",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "mila-pass",
+      "name": "米拉山口",
+      "from": null,
+      "to": 4.9
+    }
+  ],
+  "noPoi": [
+    "冲赛康"
+  ]
+}

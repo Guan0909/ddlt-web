@@ -125,25 +125,12 @@ async function collect(city) {
   console.log(city + '：候选池 ' + pool.length + ' 个（有评分 ' + withRating + '）→ ' + path.relative(ROOT, out));
 }
 
-function plan(city) {
-  const file = CITY_FILES[city];
-  const libPath = path.join(ROOT, 'data', 'spots', file + '.json');
-  const d = JSON.parse(fs.readFileSync(libPath, 'utf8'));
-  const spots = d.spots || [];
-  const poolPath = path.join(ROOT, 'data', 'spots', file + '.rebuild-pool.json');
-  const pool = fs.existsSync(poolPath) ? JSON.parse(fs.readFileSync(poolPath, 'utf8')).pool : [];
-  const byName = new Map(pool.map(p => [norm(p.name), p]));
-  // 判定规则（2026-10-17 按产品口径改）：高德评分满分 5 分
-  //   ① 知名必留：FAME 名单 / 评分 ≥4.5 / POI 类型含风景名胜·国家级景点；
-  //   ② 演出/体验类（《不眠之夜》沉浸式戏剧）不是地理地点 → 删；
-  //   ③ 核心类：评分 <4.0 删，其余留；
-  //   ④ 受限类目（街区/公园/美食/商圈）按配额留高分者；
-  //   ⑤ 拿不到评分 = 不确定 → 除知名/风景名胜外，按用户口径直接删。
-  const CORE = new Set(['古迹', '博物馆', '山水', '古镇', '夜景', '演出', '亲子']);
-  const QUOTA = { 街区: 8, 美食: 4, 公园: 5, 商圈: 2 };
-  // 可删黑名单（产品明确判断为低价值：景区/文旅盘性质）
+// FAME/BLACKLIST 提取到模块级：plan() 与 --audit-rules 共用同一份名单
+function getBlacklist() {
   const BLACKLIST = { 成都: ['麓湖水城'] };
-  // 必留名单（非常知名的地标/景点，用户口径：这类不可删）
+  return BLACKLIST;
+}
+function getFAME() {
   const FAME = {
     成都: ['宽窄巷子', '锦里', '武侯祠', '杜甫草堂', '大熊猫', '都江堰', '青城山', '春熙路', '太古里', '人民公园', '金沙遗址', '成都博物馆', '西岭雪山', '天府广场', '文殊院', '罨画池', '望江楼', '九眼桥'],
     北京: ['天安门', '故宫', '长城', '颐和园', '天坛', '圆明园', '雍和宫', '恭王府', '南锣鼓巷', '什刹海', '北海公园', '景山', '鸟巢', '水立方', '798', '王府井', '三里屯', '军事博物馆', '国家博物馆', '十三陵', '潭柘寺', '红螺寺', '古北水镇', '司马台', '爨底下', '琉璃厂'],
@@ -169,6 +156,29 @@ function plan(city) {
     西双版纳: ['热带植物园', '曼听公园', '野象谷', '告庄西双景', '傣族园', '望天树', '基诺山', '大金塔', '六国水上市场', '打洛', '星光夜市', '热带花卉园', '易武', '老班章', '章朗', '曼旦'],
     扬州: ['瘦西湖', '个园', '何园', '东关街', '大明寺', '双博馆', '茱萸湾', '宋夹城', '冶春', '皮市街', '仁丰里', '汪氏小苑', '扬州八怪'],
   };
+  return FAME;
+}
+
+function plan(city) {
+  const file = CITY_FILES[city];
+  const libPath = path.join(ROOT, 'data', 'spots', file + '.json');
+  const d = JSON.parse(fs.readFileSync(libPath, 'utf8'));
+  const spots = d.spots || [];
+  const poolPath = path.join(ROOT, 'data', 'spots', file + '.rebuild-pool.json');
+  const pool = fs.existsSync(poolPath) ? JSON.parse(fs.readFileSync(poolPath, 'utf8')).pool : [];
+  const byName = new Map(pool.map(p => [norm(p.name), p]));
+  // 判定规则（2026-10-17 按产品口径改）：高德评分满分 5 分
+  //   ① 知名必留：FAME 名单 / 评分 ≥4.5 / POI 类型含风景名胜·国家级景点；
+  //   ② 演出/体验类（《不眠之夜》沉浸式戏剧）不是地理地点 → 删；
+  //   ③ 核心类：评分 <4.0 删，其余留；
+  //   ④ 受限类目（街区/公园/美食/商圈）按配额留高分者；
+  //   ⑤ 拿不到评分 = 不确定 → 除知名/风景名胜外，按用户口径直接删。
+  const CORE = new Set(['古迹', '博物馆', '山水', '古镇', '夜景', '演出', '亲子']);
+  const QUOTA = { 街区: 8, 美食: 4, 公园: 5, 商圈: 2 };
+  // 可删黑名单（产品明确判断为低价值：景区/文旅盘性质）
+  const BLACKLIST = getBlacklist();
+  // 必留名单（非常知名的地标/景点，用户口径：这类不可删）
+  const FAME = getFAME();
   const SHOW_RE = /《[^》]*》|沉浸式|戏剧|音乐剧|话剧|舞台剧|光影秀|水秀|演唱会/;
   const VENUE_RE = /大剧院|剧场|剧院|音乐厅|演艺中心/;
   const FAME_RATING = 4.5;   // 5 分制：≥4.5 视为「非常知名」
@@ -252,11 +262,132 @@ function plan(city) {
   console.log('  报告：' + path.relative(ROOT, out));
 }
 
+
+// ============ 规则合规审计（2026-10-17）============
+// 逐点取高德实体，检查三件事并给出可执行清单：
+//   ① 名称是否已是高德官方名（name_locked 的产品定名除外）
+//   ② 评分 <4.0 是否该删（核心类 / 受限类目）
+//   ③ 无评分且非知名（FAME/风景名胜/≥4.5）是否该删
+// 用法：node scripts/rebuild-library.js --audit-rules <城市|all> [--apply]
+const amap = require('./lib/amap.js');
+const { execSync } = require('child_process');
+const RULE_CORE = new Set(['古迹', '博物馆', '山水', '古镇', '夜景', '演出', '亲子']);
+const RULE_LIMITED = new Set(['街区', '公园', '美食', '商圈']);
+const RULE_SHOW = /《[^》]*》|沉浸式|戏剧|音乐剧|话剧|舞台剧|光影秀|水秀|演唱会/;
+const RULE_VENUE = /大剧院|剧场|剧院|音乐厅|演艺中心/;
+const RULE_SHOP_TYPE = /专卖店|零售|手机销售|餐饮相关|特色店铺|服装|鞋包|化妆品|珠宝|食品店|地铁站|公交车站|售票处|停车场|充电|司机之家|码头|游船|客运站|集散中心|游客中心|政府机关|公司企业/;
+const RULE_BAD_NAME = /[-－]|（?[^）]{0,6}(入口广场|小公园广场|观景台|剧场|小剧场|游船|酒吧|司机之家|充电站|牌坊)$/;
+const RULE_SUB_NAME = /(产房|馆区|东区|西区|南区|北区|正门|侧门|售票|停车场|码头|停车)。*$|(产房|馆区|东区|西区|南区|北区|正门|侧门|售票|停车场|码头)$/;
+const RULE_norm = x => String(x || '').replace(/[\s（）()·\-—／\/]/g, '');
+const RULE_sleep = ms => new Promise(r => setTimeout(r, ms));
+function RULE_commonLen(a, b) {
+  const A = RULE_norm(a), B = RULE_norm(b);
+  let best = 0;
+  for (let i = 0; i < A.length; i++) for (let j = 0; j < B.length; j++) {
+    let k = 0; while (A[i + k] && A[i + k] === B[j + k]) k++;
+    if (k > best) best = k;
+  }
+  return best;
+}
+async function auditRules(cityName, apply) {
+  const file = CITY_FILES[cityName];
+  if (!file) { console.error('未知城市：' + cityName); return; }
+  const libPath = path.join(ROOT, 'data', 'spots', file + '.json');
+  const d = JSON.parse(fs.readFileSync(libPath, 'utf8'));
+  const spots = d.spots || [];
+  const fames = getFAME()[cityName] || [];
+  const banned = getBlacklist()[cityName] || [];
+  const out = { renames: [], deletes: [], ratingUpdates: [], noPoi: [] };
+  let i = 0;
+  for (const s of spots) {
+    i++;
+    let poi = null;
+    if (s.amap_poi_id) {
+      try {
+        const j = await amap.get('/v3/place/detail', { id: s.amap_poi_id, extensions: 'all' }, { timeout: 10000 });
+        const raw = (j.pois || [])[0];
+        if (raw) poi = amap.normPoi(raw);
+      } catch (e) {}
+      await RULE_sleep(120);
+    }
+    if (!poi) {
+      try {
+        const j = await amap.get('/v3/place/text', { keywords: s.name, city: cityName, citylimit: 'true', extensions: 'all', offset: 8 }, { timeout: 10000 });
+        const list = (j.pois || []).map(amap.normPoi).filter(x => x.coord[0]);
+        poi = list.find(x => RULE_norm(x.name) === RULE_norm(s.name))
+          || list.find(x => RULE_norm(x.name).includes(RULE_norm(s.name)) || RULE_norm(s.name).includes(RULE_norm(x.name)))
+          || null;
+      } catch (e) {}
+      await RULE_sleep(220);
+    }
+    if (!poi) out.noPoi.push(s.name);
+    const poiRating = poi && poi.rating != null && poi.rating > 0 ? poi.rating : null;
+    const libRating = typeof s.rating === 'number' && s.rating > 0 ? s.rating : null;
+    const rating = poiRating != null ? poiRating : libRating;
+    const goodType = !!(poi && /风景名胜|国家级景点|省级景点/.test(poi.type));
+    const famous = fames.some(k => s.name.includes(k)) || (rating != null && rating >= 4.5) || goodType;
+    // ① 名称对齐（产品锁名除外；子设施/店铺/连字符名不采信）
+    if (poi && !s.name_locked && poi.name && RULE_norm(poi.name) !== RULE_norm(s.name)) {
+      const placeOk = !RULE_SHOP_TYPE.test(poi.type) && !RULE_BAD_NAME.test(poi.name) && poi.name.length <= 40;
+      // 带 ·/（ 的复合名（人民公园·鹤鸣茶社）：只接受**完整包含**的官方名，避免被降级成上位景点
+      const hasQual = /[·（(]/.test(s.name);
+      const official = hasQual
+        ? RULE_norm(poi.name).includes(RULE_norm(s.name))
+        : placeOk && (RULE_norm(poi.name).includes(RULE_norm(s.name)) || RULE_norm(s.name).includes(RULE_norm(poi.name)) || RULE_commonLen(s.name, poi.name) >= 3);
+      if (official) out.renames.push({ id: s.id, from: s.name, to: poi.name });
+    }
+    // ②③ 删除判定
+    let why = null;
+    if (RULE_SHOW.test(s.name) && !RULE_VENUE.test(s.name)) why = '演出/体验类';
+    else if (banned.some(k => s.name.includes(k))) why = '黑名单';
+    else if (RULE_CORE.has(s.cat) && rating != null && rating < 4.0 && !famous) why = '核心类评分 ' + rating + ' < 4.0';
+    else if (RULE_CORE.has(s.cat) && rating == null && !famous) why = '核心类无评分且非知名';
+    else if (RULE_LIMITED.has(s.cat) && rating != null && rating < 4.0) why = '受限类目评分 ' + rating + ' < 4.0';
+    if (why) out.deletes.push({ id: s.id, name: s.name, cat: s.cat, why });
+    // ④ 评分/营业信息以高德为准
+    if (poi && poi.rating != null && poi.rating !== s.rating) out.ratingUpdates.push({ id: s.id, name: s.name, from: s.rating == null ? null : s.rating, to: poi.rating });
+    if (i % 120 === 0) console.log('  ' + cityName + ' ' + i + '/' + spots.length + '…');
+  }
+  if (apply) {
+    const delIds = new Set(out.deletes.map(x => x.id));
+    const renMap = new Map(out.renames.map(x => [x.id, x.to]));
+    const ratMap = new Map(out.ratingUpdates.map(x => [x.id, x.to]));
+    d.spots = spots.filter(x => !delIds.has(x.id));
+    for (const x of d.spots) {
+      if (renMap.has(x.id)) x.name = renMap.get(x.id);
+      if (ratMap.has(x.id)) {
+        x.rating = ratMap.get(x.id);
+        const sc = score(x.rating, null, false);
+        const h = heatOf(sc);
+        if (h != null && h !== x.heat) { x.heat_prev = x.heat; x.heat = h; }
+      }
+      if (x.amap_poi_id) { x.verify_src = 'amap'; x.verified_at = new Date().toISOString().slice(0, 10); }
+    }
+    d._meta.rule_audit_at = new Date().toISOString().slice(0, 10);
+    fs.writeFileSync(libPath, JSON.stringify(d, null, 2) + '\n');
+    fs.writeFileSync(libPath.replace(/\.json$/, '.rule-audit-report.json'), JSON.stringify({ city: cityName, date: d._meta.rule_audit_at, before: spots.length, after: d.spots.length, ...out }, null, 2) + '\n');
+    console.log(cityName + '：' + spots.length + ' → ' + d.spots.length + ' 点｜改名 ' + out.renames.length + '｜删 ' + out.deletes.length + '｜评分更新 ' + out.ratingUpdates.length + '｜无高德实体 ' + out.noPoi.length);
+  } else {
+    console.log(cityName + '：' + spots.length + ' 点｜拟改名 ' + out.renames.length + '｜拟删 ' + out.deletes.length + '｜评分更新 ' + out.ratingUpdates.length + '｜无高德实体 ' + out.noPoi.length);
+    out.renames.slice(0, 3).forEach(x => console.log('   改名：' + x.from + ' → ' + x.to));
+    out.deletes.slice(0, 3).forEach(x => console.log('   删：' + x.name + '（' + x.why + '）'));
+  }
+}
+
 (async () => {
   const args = process.argv.slice(2);
   if (args.includes('--audit') || !args.length) return audit();
   const iC = args.indexOf('--collect'), iP = args.indexOf('--plan');
   const city = iC >= 0 ? args[iC + 1] : (iP >= 0 ? args[iP + 1] : undefined);
+  const iAR = args.indexOf('--audit-rules');
+  if (iAR >= 0) {
+    const target = args[iAR + 1];
+    if (!target) { console.error('用法：--audit-rules <城市|all> [--apply]'); process.exit(2); }
+    const apply = args.includes('--apply');
+    const list = target === 'all' ? Object.keys(CITY_FILES) : [target];
+    for (const c of list) await auditRules(c, apply);
+    return;
+  }
   if (args.includes('--collect')) return collect(city);
   if (args.includes('--plan')) return plan(city);
   console.log('用法：--audit | --collect <城市> | --plan <城市>');

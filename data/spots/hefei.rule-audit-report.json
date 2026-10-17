@@ -1,0 +1,111 @@
+{
+  "city": "合肥",
+  "date": "2026-10-17",
+  "before": 53,
+  "after": 52,
+  "renames": [
+    {
+      "id": "xiaoyaojin",
+      "from": "逍遥津公园",
+      "to": "古逍遥津"
+    },
+    {
+      "id": "limu-house",
+      "from": "李鸿章故居",
+      "to": "李鸿章故居(暂停开放)",
+      "reverted": true
+    },
+    {
+      "id": "dashushan",
+      "from": "大蜀山国家森林公园",
+      "to": "大蜀山山顶"
+    },
+    {
+      "id": "chenghuang-temple",
+      "from": "合肥城隍庙",
+      "to": "城隍庙(淮河路)"
+    },
+    {
+      "id": "zhi-xincheng",
+      "from": "之心城",
+      "to": "合肥之心城购物中心"
+    },
+    {
+      "id": "bantang-hotspring",
+      "from": "半汤温泉",
+      "to": "半汤温泉苑"
+    },
+    {
+      "id": "tangchi-hotspring",
+      "from": "汤池温泉",
+      "to": "合肥汤池温泉旅游度假区"
+    },
+    {
+      "id": "1912-street",
+      "from": "合肥1912街区",
+      "to": "金大地1912街区西街"
+    },
+    {
+      "id": "ustc",
+      "from": "中国科学技术大学",
+      "to": "中国科学技术大学(本部东校区)"
+    },
+    {
+      "id": "datong-road",
+      "from": "大通路美食街",
+      "to": "大通路"
+    },
+    {
+      "id": "guanting-road",
+      "from": "官亭路小吃街",
+      "to": "官亭路"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "ningguo-road",
+      "name": "宁国路龙虾一条街",
+      "cat": "美食",
+      "why": "受限类目评分 3.5 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "limu-house",
+      "name": "李鸿章故居",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "ningguo-road",
+      "name": "宁国路龙虾一条街",
+      "from": null,
+      "to": 3.5
+    },
+    {
+      "id": "zhongmiao",
+      "name": "巢湖·中庙",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "ustc",
+      "name": "中国科学技术大学",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "datong-road",
+      "name": "大通路美食街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "guanting-road",
+      "name": "官亭路小吃街",
+      "from": null,
+      "to": 0
+    }
+  ],
+  "noPoi": []
+}

@@ -1,0 +1,137 @@
+{
+  "city": "南京",
+  "date": "2026-10-17",
+  "before": 62,
+  "after": 61,
+  "renames": [
+    {
+      "id": "zhonghuamen",
+      "from": "中华门瓮城",
+      "to": "中华门"
+    },
+    {
+      "id": "dabaoensi",
+      "from": "大报恩寺遗址公园",
+      "to": "大报恩寺遗址博物馆"
+    },
+    {
+      "id": "xinjiekou",
+      "from": "新街口",
+      "to": "新街口步行街"
+    },
+    {
+      "id": "yihe-road",
+      "from": "颐和路民国公馆区",
+      "to": "颐和路公馆区第十二片区"
+    },
+    {
+      "id": "kexiang",
+      "from": "科巷",
+      "to": "科巷美食市集"
+    },
+    {
+      "id": "nanjing-eye",
+      "from": "南京眼步行桥",
+      "to": "河西南京眼旅游区"
+    },
+    {
+      "id": "yinyuetai",
+      "from": "音乐台",
+      "to": "钟山风景名胜区中山陵景区音乐台"
+    },
+    {
+      "id": "deyunshe",
+      "from": "德云社（老门东）",
+      "to": "德云社(老门东店)",
+      "reverted": true
+    },
+    {
+      "id": "xianfeng",
+      "from": "先锋书店（五台山）",
+      "to": "先锋书店(五台山总店)",
+      "reverted": true
+    },
+    {
+      "id": "mingwalang",
+      "from": "明瓦廊",
+      "to": "南京市秦淮区明瓦廊2号"
+    },
+    {
+      "id": "shiziqiao",
+      "from": "狮子桥美食街",
+      "to": "狮子桥"
+    },
+    {
+      "id": "pukou-station",
+      "from": "浦口火车站历史文化街区",
+      "to": "浦口火车站文化旅游区"
+    },
+    {
+      "id": "tianshengqiao",
+      "from": "溧水天生桥",
+      "to": "天生桥景区"
+    },
+    {
+      "id": "y1865",
+      "from": "晨光 1865 创意产业园",
+      "to": "南京晨光1865创意产业园"
+    },
+    {
+      "id": "yaxi",
+      "from": "桠溪国际慢城",
+      "to": "南京高淳国际慢城"
+    },
+    {
+      "id": "yangliucun",
+      "from": "杨柳村古建筑群",
+      "to": "杨柳村明清古建筑群"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "mingwalang",
+      "name": "明瓦廊",
+      "cat": "美食",
+      "why": "受限类目评分 3.2 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "pingshijie",
+      "name": "评事街·老城南",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "deyunshe",
+      "name": "德云社（老门东）",
+      "from": null,
+      "to": 4.8
+    },
+    {
+      "id": "taicheng",
+      "name": "明城墙·台城段",
+      "from": null,
+      "to": 4.5
+    },
+    {
+      "id": "xianfeng",
+      "name": "先锋书店（五台山）",
+      "from": null,
+      "to": 4.8
+    },
+    {
+      "id": "shiziqiao",
+      "name": "狮子桥美食街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "y1865",
+      "name": "晨光 1865 创意产业园",
+      "from": null,
+      "to": 4.7
+    }
+  ],
+  "noPoi": []
+}

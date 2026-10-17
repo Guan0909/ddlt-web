@@ -1,0 +1,143 @@
+{
+  "city": "杭州",
+  "date": "2026-10-17",
+  "before": 67,
+  "after": 64,
+  "renames": [
+    {
+      "id": "music-fountain",
+      "from": "西湖音乐喷泉",
+      "to": "杭州印·西湖公寓(西湖音乐喷泉店)",
+      "reverted": true
+    },
+    {
+      "id": "manjuelong",
+      "from": "满觉陇",
+      "to": "西湖区上满觉陇杨家山"
+    },
+    {
+      "id": "qingzhiwu",
+      "from": "青芝坞",
+      "to": "浙江大学玉泉校区青芝坞"
+    },
+    {
+      "id": "huxueyan",
+      "from": "胡雪岩故居",
+      "to": "胡雪岩旧居"
+    },
+    {
+      "id": "mantoushan",
+      "from": "馒头山社区",
+      "to": "杭州市上城区南星街道馒头山社区爱心驿家"
+    },
+    {
+      "id": "dadaolu",
+      "from": "大兜路历史街区",
+      "to": "大兜路历史文化街区"
+    },
+    {
+      "id": "xianghu",
+      "from": "湘湖",
+      "to": "湘湖国家旅游度假区"
+    },
+    {
+      "id": "wulin-night",
+      "from": "武林夜市",
+      "to": "杭州武林夜市"
+    },
+    {
+      "id": "zj-science",
+      "from": "浙江科技馆",
+      "to": "浙江省科技馆"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "guozhuang",
+      "name": "郭庄",
+      "cat": "古迹",
+      "why": "核心类无评分且非知名"
+    },
+    {
+      "id": "manjuelong",
+      "name": "满觉陇",
+      "cat": "街区",
+      "why": "受限类目评分 3.8 < 4.0"
+    },
+    {
+      "id": "mantoushan",
+      "name": "馒头山社区",
+      "cat": "街区",
+      "why": "受限类目评分 3.6 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "sudi",
+      "name": "苏堤春晓",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "yuewangmiao",
+      "name": "岳王庙",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "guozhuang",
+      "name": "郭庄",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "music-fountain",
+      "name": "西湖音乐喷泉",
+      "from": null,
+      "to": 4.2
+    },
+    {
+      "id": "chenghuangge",
+      "name": "城隍阁（吴山）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "gongchenqiao",
+      "name": "拱宸桥·桥西直街",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "canal-night-cruise",
+      "name": "运河夜游（武林门码头）",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "laxi-street",
+      "name": "滨江啦喜街(杨家墩综合大楼店)",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "yinxiang-xihu",
+      "name": "印象西湖·最忆是杭州",
+      "from": null,
+      "to": 4
+    },
+    {
+      "id": "gaoyin-street",
+      "name": "高银街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "shenglihe",
+      "name": "胜利河美食街",
+      "from": null,
+      "to": 4.8
+    }
+  ],
+  "noPoi": []
+}

@@ -23,7 +23,8 @@
     "coord_repaired_at": "2026-10-17",
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "rule_audit_at": "2026-10-17"
   },
   "spots": [
     {
@@ -50,7 +51,7 @@
       "amap_poi_id": "B0378008PR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0888-5111118",
       "rating": 4.9,
@@ -84,7 +85,7 @@
       "amap_poi_id": "B0G3RHAMHA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0888-5111118",
       "rating": 4.8,
@@ -103,7 +104,7 @@
         "明代建筑",
         "早去"
       ],
-      "heat": 8,
+      "heat": 5,
       "dur": 90,
       "intro": "纳西土司府邸，被称作丽江紫禁城。",
       "reason": "开门就进，能躲开旅行团人流",
@@ -118,8 +119,9 @@
       "amap_poi_id": "B0378157WC",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "heat_prev": 9
+      "verified_at": "2026-10-17",
+      "heat_prev": 8,
+      "rating": 0
     },
     {
       "id": "wangulou",
@@ -145,7 +147,7 @@
       "amap_poi_id": "B037815BZ1",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:00",
       "tel": "0888-5106290",
       "rating": 4.5,
@@ -179,7 +181,8 @@
       "amap_poi_id": "B0FFF9GOOV",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-17",
+      "rating": 4.8
     },
     {
       "id": "xianwen-xiang",
@@ -205,7 +208,7 @@
       "amap_poi_id": "B0FFJXU5YQ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 09:30-21:00",
       "rating": 4.6,
       "cost": 0,
@@ -238,7 +241,7 @@
       "amap_poi_id": "B0FFIMYOV7",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.6,
       "cost": 0,
@@ -255,7 +258,7 @@
         "免费",
         "顺路"
       ],
-      "heat": 6.5,
+      "heat": 5,
       "dur": 50,
       "intro": "古城东南向主街，两边都是老宅院。",
       "reason": "从南门走到四方街的顺路线",
@@ -270,7 +273,9 @@
       "amap_poi_id": "B0FFGQC3W8",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 6.5
     },
     {
       "id": "nanmen-qiao",
@@ -296,7 +301,8 @@
       "amap_poi_id": "B0FFJOO499",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-17",
+      "rating": 4.2
     },
     {
       "id": "dayan-huaxiang",
@@ -322,7 +328,7 @@
       "amap_poi_id": "B0FFIXONOV",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.7,
       "cost": 0,
@@ -365,7 +371,7 @@
     },
     {
       "id": "zhongyi-market",
-      "name": "忠义市场",
+      "name": "忠义市场夜市街",
       "cat": "美食",
       "tags": [
         "本地市场",
@@ -387,7 +393,7 @@
       "amap_poi_id": "B0G3TZNRZW",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 18:30-02:00",
       "rating": 4.7,
       "cost": 0,
@@ -398,7 +404,7 @@
     },
     {
       "id": "gucheng-exhibition",
-      "name": "丽江古城历史文化展示馆",
+      "name": "文化院落·丽江古城历史文化展示馆(北馆)",
       "cat": "博物馆",
       "tags": [
         "免费",
@@ -420,7 +426,7 @@
       "amap_poi_id": "B0GDL6EHYP",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 09:00-17:30",
       "rating": 4.4,
       "cost": 0,
@@ -453,7 +459,7 @@
       "amap_poi_id": "B0378008PN",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "1月至9月 周一至周日 09:00-17:00；每个月的第一个和第三个周的周一闭馆。 10-01至10-07 周一至周日 08:30-17:30；10-08至12-31 周一至周日 09:00-17:00；每个月的第一个和第三个周的周一闭馆。",
       "tel": "0888-5180270",
       "rating": 4,
@@ -472,7 +478,7 @@
         "本地人",
         "晚餐"
       ],
-      "heat": 7.5,
+      "heat": 5,
       "dur": 75,
       "intro": "新城腊排骨火锅聚集地，本地人常来。",
       "reason": "本地人聚餐的腊排骨一条街",
@@ -487,7 +493,9 @@
       "amap_poi_id": "BV10290414",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 7.5
     },
     {
       "id": "huama-street",
@@ -513,7 +521,7 @@
       "amap_poi_id": "B03780I1F3",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "09:30-21:30,2026年春节期间 09:30-21:30",
       "tel": "17708892323",
       "rating": 4.5,
@@ -546,7 +554,7 @@
       "amap_poi_id": "B0378002M6",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": [],
       "rating": 4.6,
       "cost": 0,
@@ -579,7 +587,7 @@
       "amap_poi_id": "B0378153XL",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.6,
       "cost": 0,
@@ -613,7 +621,8 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "rating": 4.4
     },
     {
       "id": "heilongtan",
@@ -639,7 +648,7 @@
       "amap_poi_id": "B0FFF5TSNO",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 07:30-21:00 最晚进入20:30",
       "tel": "0888-5188041",
       "rating": 4.7,
@@ -672,7 +681,7 @@
       "amap_poi_id": "B0HRARKZG6",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4,
       "cost": 0,
@@ -705,7 +714,7 @@
       "amap_poi_id": "B0I11K3O5A",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.6,
       "cost": 0,
@@ -713,28 +722,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6
-    },
-    {
-      "id": "wenbi-lake",
-      "name": "文笔海",
-      "cat": "公园",
-      "tags": [
-        "湖景",
-        "倒影",
-        "人少"
-      ],
-      "heat": 5.5,
-      "dur": 60,
-      "intro": "文笔山下的湖，晴天有雪山倒影。",
-      "reason": "安静的机位，几乎没人抢",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        100.244,
-        26.816
-      ],
-      "coord_src": "estimate"
     },
     {
       "id": "lijiang-qianqiuqing",
@@ -760,7 +747,7 @@
       "amap_poi_id": "B0FFIZ1ZFL",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "14:00-21:00",
       "tel": "4008888518",
       "rating": 4.7,
@@ -794,7 +781,7 @@
       "amap_poi_id": "B0FFI7LUK8",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 10:00-22:00",
       "tel": "0888-5105001;0888-5111020",
       "rating": 4.6,
@@ -828,7 +815,7 @@
       "amap_poi_id": "B0H0RRBYLP",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:00",
       "tel": "13988847333;15368888002",
       "rating": 4.3,
@@ -861,7 +848,7 @@
       "amap_poi_id": "B03780HUIN",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.8,
       "cost": 0,
@@ -894,7 +881,7 @@
       "amap_poi_id": "B0FFF3CSQK",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0888-5158136;0888-5174835",
       "rating": 4.7,
@@ -905,40 +892,8 @@
       "heat_prev": 6.5
     },
     {
-      "id": "jiuding-longtan",
-      "name": "九鼎龙潭",
-      "cat": "公园",
-      "tags": [
-        "溪水",
-        "免费",
-        "清凉"
-      ],
-      "heat": 5,
-      "dur": 40,
-      "intro": "束河北端的泉潭，水草清透见底。",
-      "reason": "水边坐着发呆十分钟的好地方",
-      "suburb": false,
-      "coord": [
-        100.205953,
-        26.923944
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFIJT6R1",
-      "refreshed_at": "2026-10-16",
-      "heat_prev": 7,
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "open": "08:30-17:30",
-      "open_text": "周一至周日 08:30-17:30",
-      "closed_mon": false,
-      "rating": 2.5,
-      "cost": 0,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17"
-    },
-    {
       "id": "shuhe-square",
-      "name": "束河四方听音广场",
+      "name": "四方听音",
       "cat": "街区",
       "tags": [
         "篝火",
@@ -960,7 +915,7 @@
       "amap_poi_id": "B0378000SM",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0888-5174636",
       "rating": 4.7,
@@ -994,7 +949,7 @@
       "amap_poi_id": "B03780HVI4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "rating": 4.2,
       "cost": 0,
@@ -1027,7 +982,7 @@
       "amap_poi_id": "B0378157X4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.8,
       "cost": 0,
@@ -1059,7 +1014,7 @@
       "amap_poi_id": "B0FFFEJE6E",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:30-17:30 最晚进入17:00",
       "rating": 4.6,
       "cost": 0,
@@ -1091,7 +1046,7 @@
       "amap_poi_id": "B0378008J4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "夏令时 1/1-12/31(夏令时) 07:20–19:00开放 最晚进入19:00；冬令时 1/1-12/31(冬令时) 07:30–18:00开放 最晚进入18:00",
       "rating": 4.2,
       "cost": 0,
@@ -1124,7 +1079,7 @@
       "amap_poi_id": "B037814VR2",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:30-18:00 最晚进入17:30",
       "tel": "0888-5190108",
       "rating": 4.5,
@@ -1158,7 +1113,7 @@
       "amap_poi_id": "B0378008F8",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 09:00-17:00",
       "tel": "0888-5131705",
       "rating": 4.6,
@@ -1192,7 +1147,7 @@
       "amap_poi_id": "B0G2BY71AD",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.3,
       "cost": 0,
@@ -1224,7 +1179,7 @@
       "amap_poi_id": "B0378008NN",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-21:00",
       "rating": 4.5,
       "cost": 0,
@@ -1235,7 +1190,7 @@
     },
     {
       "id": "wenhai",
-      "name": "文海",
+      "name": "文海·雪山云端自然风景区",
       "cat": "山水",
       "tags": [
         "高山草甸",
@@ -1257,7 +1212,7 @@
       "amap_poi_id": "B0KRUH0GYR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": [],
       "rating": 4.1,
       "cost": 0,
@@ -1267,7 +1222,7 @@
     },
     {
       "id": "wenfeng-temple",
-      "name": "文峰寺",
+      "name": "文峰寺金刚亥母灵洞藏钥圣石",
       "cat": "古迹",
       "tags": [
         "藏传佛教",
@@ -1289,7 +1244,7 @@
       "amap_poi_id": "B0FFL1V2O1",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "rating": 4,
       "cost": 0,
@@ -1322,7 +1277,7 @@
       "amap_poi_id": "B0FFHEGGA9",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-19:00 最晚进入18:00",
       "tel": "0888-8880077",
       "rating": 4.5,
@@ -1356,7 +1311,7 @@
       "amap_poi_id": "B0378008X3",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00 最晚进入17:00",
       "tel": "0888-5369688;0888-5369766",
       "rating": 4.5,
@@ -1368,7 +1323,7 @@
     },
     {
       "id": "yulong-snow-mtn",
-      "name": "玉龙雪山",
+      "name": "玉龙雪山国家级风景名胜区",
       "cat": "山水",
       "tags": [
         "冰川",
@@ -1391,7 +1346,7 @@
       "amap_poi_id": "B0378008FA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "06:00-16:30景区根据客流量不定期调整开放时间",
       "tel": "0888-5131068",
       "rating": 4.8,
@@ -1403,7 +1358,7 @@
     },
     {
       "id": "lanyue-valley",
-      "name": "蓝月谷",
+      "name": "玉龙雪山国家级风景名胜区蓝月谷",
       "cat": "山水",
       "tags": [
         "湖水",
@@ -1425,7 +1380,7 @@
       "amap_poi_id": "B0378157WA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 07:00-18:30",
       "tel": "0888-5131111;0888-5111764",
       "rating": 4.7,
@@ -1459,7 +1414,7 @@
       "amap_poi_id": "B0378000KO",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 06:00-18:00 最晚进入18:00",
       "rating": 4.7,
       "cost": 0,
@@ -1469,34 +1424,8 @@
       "heat_prev": 8
     },
     {
-      "id": "ganhaizi",
-      "name": "甘海子",
-      "cat": "山水",
-      "tags": [
-        "草甸",
-        "换乘",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 60,
-      "intro": "景区门户大草甸，观光车和索道在此换乘。",
-      "reason": "下车先拍一张雪山全景",
-      "open": null,
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.257969,
-        27.108726
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03780I35H",
-      "refreshed_at": "2026-10-16",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16"
-    },
-    {
       "id": "glacier-museum",
-      "name": "玉龙雪山冰川地质博物馆",
+      "name": "玉龙雪山国家级风景名胜区",
       "cat": "博物馆",
       "tags": [
         "冰川",
@@ -1518,7 +1447,7 @@
       "amap_poi_id": "B0378008FA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "06:00-16:30景区根据客流量不定期调整开放时间",
       "tel": "0888-5131068",
       "rating": 4.8,
@@ -1552,7 +1481,7 @@
       "amap_poi_id": "B0HBXXU1MR",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 10:30-16:00",
       "tel": "18608885892",
       "rating": 4.1,
@@ -1586,7 +1515,7 @@
       "amap_poi_id": "B0MUD6FSHJ",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00 最晚进入18:00",
       "rating": 4,
       "cost": 0,
@@ -1619,7 +1548,7 @@
       "amap_poi_id": "B0378008NA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "13908882559",
       "rating": 4.5,
@@ -1653,7 +1582,7 @@
       "amap_poi_id": "B03780HXWE",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": [],
       "tel": "0888-5471921",
       "rating": 4,
@@ -1665,7 +1594,7 @@
     },
     {
       "id": "laojunshan",
-      "name": "老君山黎明景区",
+      "name": "老君山景区",
       "cat": "山水",
       "tags": [
         "丹霞",
@@ -1753,7 +1682,7 @@
       "amap_poi_id": "B0FFJFXS58",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 08:00-24:00",
       "tel": "18108889118",
       "rating": 4.3,
@@ -1786,7 +1715,7 @@
       "amap_poi_id": "B0G0ACV2B2",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "rating": 4.6,
       "cost": 0,
@@ -1819,7 +1748,7 @@
       "amap_poi_id": "B037814E2J",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0888-5886045",
       "rating": 4.6,
@@ -1831,7 +1760,7 @@
     },
     {
       "id": "mosuo-museum",
-      "name": "摩梭民俗博物馆",
+      "name": "摩梭人博物馆(云南省博物馆分馆)",
       "cat": "博物馆",
       "tags": [
         "摩梭",
@@ -1863,7 +1792,7 @@
     },
     {
       "id": "wenchanggong",
-      "name": "文昌宫观景台",
+      "name": "桃花岛古城第一观景台42米长廊",
       "cat": "古迹",
       "tags": [
         "免费",
@@ -1885,7 +1814,7 @@
       "amap_poi_id": "B0FFFDT0J1",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 11:00-22:00",
       "tel": "13368887273",
       "rating": 3.9,
@@ -1904,7 +1833,7 @@
         "中索道",
         "远郊"
       ],
-      "heat": 7.5,
+      "heat": 5,
       "dur": 150,
       "intro": "海拔三千七的高山草甸，正对雪山主峰。",
       "reason": "看雪山全貌最开阔的观景台",
@@ -1919,7 +1848,9 @@
       "amap_poi_id": "BV11567023",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16"
+      "verified_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 7.5
     },
     {
       "id": "zouhun-bridge",
@@ -1945,7 +1876,7 @@
       "amap_poi_id": "B0FFFS8DQC",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "open_text": "周一至周日 14:00-21:00 10-01至10-07 周一至周日 14:00-21:00",
       "tel": "0888-6881111",
       "rating": 3.8,
@@ -1957,7 +1888,7 @@
     },
     {
       "id": "daluoshui",
-      "name": "大落水村",
+      "name": "大落水村游客咨询点",
       "cat": "古镇",
       "tags": [
         "湖景",
@@ -1975,7 +1906,32 @@
         100.809,
         27.687
       ],
-      "coord_src": "estimate"
+      "coord_src": "estimate",
+      "rating": 4.4
+    },
+    {
+      "id": "wenbi-lake",
+      "name": "文笔水库",
+      "cat": "山水",
+      "tags": [
+        "湖景",
+        "倒影",
+        "人少"
+      ],
+      "heat": 5.5,
+      "dur": 60,
+      "intro": "文笔山下的湖，晴天有雪山倒影。",
+      "reason": "安静的机位，几乎没人抢",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        100.2092,
+        26.8195
+      ],
+      "coord_src": "amap",
+      "name_locked": true,
+      "note": "水库（别名文笔海），产品确认保留"
     }
   ]
 }

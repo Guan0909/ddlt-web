@@ -23,7 +23,8 @@
     "coord_repaired_at": "2026-10-17",
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "rule_audit_at": "2026-10-17"
   },
   "spots": [
     {
@@ -106,7 +107,7 @@
         "泼水",
         "门票"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 120,
       "intro": "傣王御花园，澜沧江与流沙河交汇处。",
       "reason": "早上去人少，光线也柔和",
@@ -122,7 +123,8 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 7,
+      "rating": 0
     },
     {
       "id": "xtbg",
@@ -183,7 +185,7 @@
       "coord_src": "amap",
       "amap_poi_id": "B02B3000KJ",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-16",
       "open_text": "周一至周日 08:00-18:00 最晚进入16:30",
       "tel": "0691-2431024;0691-2431040",
@@ -285,7 +287,7 @@
       "coord_src": "amap",
       "amap_poi_id": "B0FFLO76MG",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-16",
       "open_text": "周一至周日 08:00-17:30",
       "tel": "0691-8998555",
@@ -441,7 +443,7 @@
         "夜景",
         "晚上"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 90,
       "intro": "澜沧江边的傣味夜市，烧烤最出名。",
       "reason": "香茅草烤鱼配一瓶老挝啤酒",
@@ -457,7 +459,8 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 6,
+      "rating": 4.7
     },
     {
       "id": "manting-bonfire-show",
@@ -468,7 +471,7 @@
         "歌舞",
         "篝火"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 100,
       "intro": "曼听公园晚间的大型歌舞篝火晚会。",
       "reason": "放水灯那一刻还挺感动",
@@ -483,7 +486,9 @@
       "amap_poi_id": "B02B30MGNE",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 4.3,
+      "heat_prev": 8
     },
     {
       "id": "jinuo-village",
@@ -509,7 +514,7 @@
       "coord_src": "amap",
       "amap_poi_id": "B02B30031D",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-16",
       "open_text": "周一至周日 08:00-18:00 最晚进入16:20",
       "tel": "0691-2470573;0691-2470606",
@@ -743,7 +748,8 @@
       "amap_poi_id": "B02B30042U",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 4.5
     },
     {
       "id": "manchunman-temple",
@@ -769,7 +775,8 @@
       "amap_poi_id": "B0FFGRNZOT",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 4.4
     },
     {
       "id": "daluo-port",
@@ -892,7 +899,7 @@
       "coord_src": "amap",
       "amap_poi_id": "B02B3003NC",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-16",
       "open_text": "周一至周日 08:00-18:00",
       "rating": 4.4,
@@ -900,32 +907,6 @@
       "photo": "https://store.is.autonavi.com/showpic/63fa09e4574612930000000738992109?type=pic",
       "biz_src": "amap",
       "biz_at": "2026-10-17"
-    },
-    {
-      "id": "peacock-culture-square",
-      "name": "孔雀文化广场（告庄西双景）",
-      "cat": "街区",
-      "tags": [
-        "免费",
-        "孔雀",
-        "歌舞"
-      ],
-      "heat": 6.5,
-      "dur": 40,
-      "intro": "告庄内的广场，常有孔雀和民族歌舞。",
-      "reason": "逛夜市前看场免费表演",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.809611,
-        21.961779
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFL02P1N",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
     },
     {
       "id": "minzu-folk-park",
@@ -983,7 +964,7 @@
       "coord_src": "amap",
       "amap_poi_id": "B02B300ARC",
       "verify_src": "amap",
-      "verified_at": "2026-10-16",
+      "verified_at": "2026-10-17",
       "refreshed_at": "2026-10-16",
       "open_text": "周一至周日 08:30-17:00",
       "rating": 4.2,
@@ -1127,40 +1108,6 @@
       "heat_prev": 6.5
     },
     {
-      "id": "mohan-port",
-      "name": "磨憨口岸",
-      "cat": "街区",
-      "tags": [
-        "口岸",
-        "边境",
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 90,
-      "intro": "中老边境口岸，对面就是老挝磨丁。",
-      "reason": "边境线上的自驾端点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        101.684482,
-        21.183656
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KK2RJXR9",
-      "verify_src": "amap",
-      "verified_at": "2026-10-16",
-      "refreshed_at": "2026-10-16",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "18988113066",
-      "rating": 3.9,
-      "cost": 0,
-      "photo": "http://store.is.autonavi.com/showpic/f67103219779ef2dba5bb2de69532646",
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "heat_prev": 6.5
-    },
-    {
       "id": "jinghong-old-street",
       "name": "景洪老街（嘎兰中路）",
       "cat": "街区",
@@ -1169,7 +1116,7 @@
         "市井",
         "小吃"
       ],
-      "heat": 6.5,
+      "heat": 5,
       "dur": 60,
       "intro": "嘎兰中路一带的老城区，市井味最足。",
       "reason": "早起吃碗米干最地道",
@@ -1184,7 +1131,9 @@
       "amap_poi_id": "BZ7DMF005N",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 6.5
     },
     {
       "id": "binjiang-park",
@@ -1295,7 +1244,7 @@
         "散步",
         "本地人"
       ],
-      "heat": 6,
+      "heat": 5,
       "dur": 40,
       "intro": "市中心的湖心公园，傍晚最热闹。",
       "reason": "本地人遛弯跳舞的地方",
@@ -1310,11 +1259,13 @@
       "amap_poi_id": "BV10222752",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 6
     },
     {
       "id": "manjinglan-temple",
-      "name": "曼景兰佛寺",
+      "name": "西双版纳曼景兰大佛寺",
       "cat": "古迹",
       "tags": [
         "傣式佛寺",
@@ -1354,7 +1305,7 @@
         "水果",
         "室内"
       ],
-      "heat": 6,
+      "heat": 7,
       "dur": 45,
       "intro": "泼水广场旁的超市，买热带水果方便。",
       "reason": "水果零食比景区里便宜",
@@ -1369,7 +1320,9 @@
       "amap_poi_id": "B02B30LZSN",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 4.7,
+      "heat_prev": 6
     },
     {
       "id": "manhena-village",
@@ -1406,7 +1359,7 @@
     },
     {
       "id": "mengle-rain-park",
-      "name": "勐泐雨林公园",
+      "name": "勐泐雨林健康主题公园",
       "cat": "公园",
       "tags": [
         "免费",
@@ -1480,7 +1433,7 @@
         "工厂",
         "远郊"
       ],
-      "heat": 6,
+      "heat": 5,
       "dur": 90,
       "intro": "勐海的老茶厂，普洱茶工业参观地。",
       "reason": "看看茶饼是怎么压出来的",
@@ -1495,7 +1448,9 @@
       "amap_poi_id": "B02B30LVZW",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 0,
+      "heat_prev": 6
     },
     {
       "id": "mandou-temple",
@@ -1566,7 +1521,7 @@
     },
     {
       "id": "laobanzhang",
-      "name": "老班章村（布朗山）",
+      "name": "老班章",
       "cat": "山水",
       "tags": [
         "古树茶",
@@ -1581,10 +1536,19 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.133,
-        21.817
+        100.800275,
+        22.010725
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0LKZPEEUH",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17",
+      "rating": 3.1,
+      "open_text": [],
+      "photo": "https://store.is.autonavi.com/showpic/274f10a4d089fd7603098961e85dee15",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "yiwu-town",
@@ -1595,7 +1559,7 @@
         "古茶山",
         "远郊"
       ],
-      "heat": 6.5,
+      "heat": 5,
       "dur": 150,
       "intro": "勐腊的茶马古道重镇，老茶号聚集。",
       "reason": "青石板街上找老茶号喝茶",
@@ -1610,7 +1574,9 @@
       "amap_poi_id": "B0K2B99LZI",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "refreshed_at": "2026-10-17"
+      "refreshed_at": "2026-10-17",
+      "rating": 2.4,
+      "heat_prev": 6.5
     },
     {
       "id": "zhanglang-village",
@@ -1629,10 +1595,19 @@
       "closed_mon": false,
       "suburb": true,
       "coord": [
-        100.25,
-        21.87
+        100.122004,
+        21.911408
       ],
-      "coord_src": "estimate"
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFLNT207",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "refreshed_at": "2026-10-17",
+      "rating": 3.9,
+      "open_text": "周一至周日 00:00-24:00",
+      "photo": "https://store.is.autonavi.com/showpic/af8d3f2ad1f304770000002356282394?type=pic",
+      "biz_src": "amap",
+      "biz_at": "2026-10-17"
     },
     {
       "id": "mandan-village",

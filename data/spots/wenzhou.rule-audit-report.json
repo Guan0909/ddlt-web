@@ -1,0 +1,116 @@
+{
+  "city": "温州",
+  "date": "2026-10-17",
+  "before": 61,
+  "after": 59,
+  "renames": [
+    {
+      "id": "shamaohe",
+      "from": "纱帽河",
+      "to": "纱帽河商城",
+      "reverted": true
+    },
+    {
+      "id": "wanda-longwan",
+      "from": "龙湾万达广场",
+      "to": "万达广场"
+    },
+    {
+      "id": "shoe-museum",
+      "from": "中国鞋文化博物馆",
+      "to": "温州市红蜻蜓鞋文化博物馆"
+    },
+    {
+      "id": "shiweiyan",
+      "from": "石桅岩",
+      "to": "楠溪江风景名胜区石桅岩景区"
+    },
+    {
+      "id": "lishui-street",
+      "from": "丽水街",
+      "to": "楠溪江风景名胜区丽水街"
+    },
+    {
+      "id": "dongtou-seafood",
+      "from": "东岙渔村海鲜排档",
+      "to": "东岙渔村标志"
+    },
+    {
+      "id": "nanyandang",
+      "from": "南雁荡山",
+      "to": "南雁荡山国家级风景名胜区"
+    },
+    {
+      "id": "wuyanling",
+      "from": "乌岩岭",
+      "to": "浙江乌岩岭国家级自然保护区"
+    },
+    {
+      "id": "tonglingshan",
+      "from": "铜铃山",
+      "to": "文成铜铃山森林公园景区"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "gongyuan-road",
+      "name": "公园路历史文化街区",
+      "cat": "街区",
+      "why": "受限类目评分 3.8 < 4.0"
+    },
+    {
+      "id": "dongtou-seafood",
+      "name": "东岙渔村海鲜排档",
+      "cat": "美食",
+      "why": "受限类目评分 3.9 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "wuma-street",
+      "name": "五马街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "mochifang",
+      "name": "墨池坊",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "nantang-street",
+      "name": "南塘街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "math-museum",
+      "name": "温州数学名人馆",
+      "from": null,
+      "to": 4
+    },
+    {
+      "id": "oujiang-cruise",
+      "name": "瓯江夜游",
+      "from": 4.1,
+      "to": 4
+    },
+    {
+      "id": "nantang-night",
+      "name": "南塘夜市",
+      "from": null,
+      "to": 4.5
+    },
+    {
+      "id": "zeya",
+      "name": "泽雅景区",
+      "from": 3.5,
+      "to": 3.4
+    }
+  ],
+  "noPoi": [
+    "朔门古街",
+    "庆年坊历史街区"
+  ]
+}

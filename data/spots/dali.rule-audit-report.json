@@ -1,0 +1,143 @@
+{
+  "city": "大理",
+  "date": "2026-10-17",
+  "before": 61,
+  "after": 59,
+  "renames": [
+    {
+      "id": "zhou-museum",
+      "from": "大理州博物馆",
+      "to": "大理白族自治州博物馆"
+    },
+    {
+      "id": "aiqinhai-mall",
+      "from": "大理爱琴海购物公园",
+      "to": "爱琴海购物公园"
+    },
+    {
+      "id": "renmin-road",
+      "from": "大理古城人民路",
+      "to": "大理古城"
+    },
+    {
+      "id": "yangren-street",
+      "from": "大理古城洋人街",
+      "to": "洋人街"
+    },
+    {
+      "id": "dali-city-museum",
+      "from": "大理市博物馆",
+      "to": "大理白族自治州博物馆"
+    },
+    {
+      "id": "feiyi-museum",
+      "from": "大理非物质文化遗产博物馆",
+      "to": "大理白族自治州博物馆"
+    },
+    {
+      "id": "photo-museum",
+      "from": "大理摄影博物馆",
+      "to": "苍山自然影像博物馆"
+    },
+    {
+      "id": "ximalatan-cableway",
+      "from": "苍山洗马潭大索道",
+      "to": "洗马潭索道"
+    },
+    {
+      "id": "yudai-road",
+      "from": "苍山玉带云游路",
+      "to": "玉带云游路"
+    },
+    {
+      "id": "panxi-s-bend",
+      "from": "磻溪村S湾",
+      "to": "蟠溪村S湾"
+    },
+    {
+      "id": "xizhou-sifangjie",
+      "from": "喜洲四方街",
+      "to": "喜洲古镇四方街活动中心"
+    },
+    {
+      "id": "xingjiao-temple",
+      "from": "沙溪兴教寺",
+      "to": "兴教寺"
+    },
+    {
+      "id": "qianshi-mountain",
+      "from": "剑川千狮山",
+      "to": "满贤林千狮山"
+    },
+    {
+      "id": "weishan-food-street",
+      "from": "巍山南诏古街",
+      "to": "南诏古街"
+    },
+    {
+      "id": "direshenguo",
+      "from": "洱源地热国",
+      "to": "大理地热国"
+    },
+    {
+      "id": "yunnanyi",
+      "from": "云南驿古镇",
+      "to": "云南驿"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "shangguang-flower",
+      "name": "上关花公园",
+      "cat": "公园",
+      "why": "受限类目评分 3.7 < 4.0"
+    },
+    {
+      "id": "weishan-food-street",
+      "name": "巍山南诏古街",
+      "cat": "美食",
+      "why": "受限类目评分 3.3 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "gucheng-fuxing",
+      "name": "大理古城复兴路",
+      "from": null,
+      "to": 4
+    },
+    {
+      "id": "honglongjing",
+      "name": "红龙井",
+      "from": null,
+      "to": 4.1
+    },
+    {
+      "id": "sanyue-street",
+      "name": "三月街",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "yuer-park",
+      "name": "玉洱园",
+      "from": null,
+      "to": 4.6
+    },
+    {
+      "id": "jizhao-nunnery",
+      "name": "寂照庵",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "haishe-park",
+      "name": "海舌公园",
+      "from": null,
+      "to": 4.6
+    }
+  ],
+  "noPoi": [
+    "泰业城市广场"
+  ]
+}

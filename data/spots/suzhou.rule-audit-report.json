@@ -1,0 +1,83 @@
+{
+  "city": "苏州",
+  "date": "2026-10-17",
+  "before": 63,
+  "after": 61,
+  "renames": [
+    {
+      "id": "pingjiang-road",
+      "from": "平江路历史街区",
+      "to": "平江路"
+    },
+    {
+      "id": "baiyuan",
+      "from": "独墅湖白鹭园",
+      "to": "白鹭园"
+    },
+    {
+      "id": "dongfangzhimen",
+      "from": "东方之门",
+      "to": "东方之门商业街"
+    },
+    {
+      "id": "suzhou-center",
+      "from": "苏州中心",
+      "to": "苏州中心广场"
+    },
+    {
+      "id": "yangcheng-crab",
+      "from": "阳澄湖莲花岛",
+      "to": "莲花岛景区"
+    },
+    {
+      "id": "jinji-night",
+      "from": "金鸡湖灯光秀",
+      "to": "金鸡湖音乐喷泉"
+    },
+    {
+      "id": "dayangshan",
+      "from": "大阳山国家森林公园",
+      "to": "江苏大阳山国家森林公园植物园景区"
+    },
+    {
+      "id": "fengqiao",
+      "from": "枫桥景区",
+      "to": "枫桥"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "shantang-street",
+      "name": "苏苏文创山塘街",
+      "cat": "街区",
+      "why": "受限类目评分 3.5 < 4.0"
+    },
+    {
+      "id": "yangcheng-crab",
+      "name": "阳澄湖莲花岛",
+      "cat": "美食",
+      "why": "受限类目评分 3.3 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "shiquan-street",
+      "name": "十全街",
+      "from": null,
+      "to": 4.9
+    },
+    {
+      "id": "beisi",
+      "name": "北寺塔",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "fengqiao",
+      "name": "枫桥景区",
+      "from": null,
+      "to": 0
+    }
+  ],
+  "noPoi": []
+}

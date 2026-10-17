@@ -1,0 +1,76 @@
+{
+  "city": "西安",
+  "date": "2026-10-17",
+  "before": 62,
+  "after": 61,
+  "renames": [
+    {
+      "id": "city-wall",
+      "from": "西安城墙·永宁门",
+      "to": "西安城墙永宁门城楼"
+    },
+    {
+      "id": "huaqing-palace",
+      "from": "华清宫",
+      "to": "唐华清宫御汤遗址博物馆"
+    },
+    {
+      "id": "dayanta-fountain",
+      "from": "大雁塔北广场喷泉",
+      "to": "大雁塔北广场"
+    },
+    {
+      "id": "sajinqiao",
+      "from": "洒金桥",
+      "to": "洒金桥文创市集"
+    },
+    {
+      "id": "hanyangling-museum",
+      "from": "汉阳陵博物院",
+      "to": "汉景帝阳陵博物院东区"
+    },
+    {
+      "id": "qinglong-temple",
+      "from": "青龙寺遗址景区",
+      "to": "青龙寺遗址博物馆"
+    },
+    {
+      "id": "xiying-film",
+      "from": "西影电影园区",
+      "to": "西影·电影圈子(北口)"
+    },
+    {
+      "id": "yisushe-block",
+      "from": "易俗社文化街区",
+      "to": "易俗历史文化街区"
+    },
+    {
+      "id": "dahu-1935",
+      "from": "大华·1935",
+      "to": "大华1935·E1展馆"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "dahu-1935",
+      "name": "大华·1935",
+      "cat": "街区",
+      "why": "受限类目评分 3.8 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "xiaonanmen",
+      "name": "小南门夜市",
+      "from": null,
+      "to": 4.7
+    },
+    {
+      "id": "shunchengxiang",
+      "name": "顺城巷",
+      "from": null,
+      "to": 0
+    }
+  ],
+  "noPoi": []
+}

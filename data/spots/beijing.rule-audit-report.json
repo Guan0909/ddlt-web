@@ -1,0 +1,88 @@
+{
+  "city": "北京",
+  "date": "2026-10-17",
+  "before": 66,
+  "after": 65,
+  "renames": [
+    {
+      "id": "art-798",
+      "from": "798艺术区",
+      "to": "798·751园区"
+    },
+    {
+      "id": "liulichang",
+      "from": "琉璃厂文化街",
+      "to": "北京琉璃厂"
+    },
+    {
+      "id": "wangfujing",
+      "from": "王府井大街",
+      "to": "王府井步行街"
+    },
+    {
+      "id": "solana",
+      "from": "蓝色港湾",
+      "to": "SOLANA蓝色港湾",
+      "reverted": true
+    },
+    {
+      "id": "zhoukoudian",
+      "from": "周口店北京人遗址博物馆",
+      "to": "周口店遗址博物馆"
+    },
+    {
+      "id": "happy-valley",
+      "from": "北京欢乐谷",
+      "to": "北京欢乐谷(暂停开放)",
+      "reverted": true
+    },
+    {
+      "id": "xianyukou",
+      "from": "鲜鱼口美食街",
+      "to": "鲜鱼口老字号美食街"
+    },
+    {
+      "id": "guixiaoshi",
+      "from": "西山鬼笑石",
+      "to": "北京西山国家森林公园鬼笑石"
+    },
+    {
+      "id": "cuandixia",
+      "from": "爨底下村",
+      "to": "北京爨底下悦来客栈"
+    },
+    {
+      "id": "shidu",
+      "from": "十渡风景区",
+      "to": "房山十渡风景名胜区"
+    },
+    {
+      "id": "yanqi-lake",
+      "from": "雁栖湖",
+      "to": "北京雁栖湖国际会展中心"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "niujie",
+      "name": "牛街游园",
+      "cat": "美食",
+      "why": "受限类目评分 3.5 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "yangmeizhu",
+      "name": "杨梅竹斜街",
+      "from": null,
+      "to": 0
+    },
+    {
+      "id": "huguosi",
+      "name": "护国寺街",
+      "from": null,
+      "to": 0
+    }
+  ],
+  "noPoi": []
+}
