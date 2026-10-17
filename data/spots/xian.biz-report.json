@@ -1,0 +1,1476 @@
+{
+  "city": "西安",
+  "date": "2026-10-17",
+  "stat": {
+    "total": 68,
+    "poiFixed": 39,
+    "renamed": 13,
+    "coordFixed": 16,
+    "openFilled": 38,
+    "closedMon": 3,
+    "tel": 50,
+    "rating": 68,
+    "photo": 8,
+    "noCand": 0,
+    "err": 0
+  },
+  "log": [
+    {
+      "id": "terracotta-army",
+      "name": "秦始皇兵马俑博物馆",
+      "pick": "秦始皇兵马俑博物馆",
+      "pickId": "B0FFGXMLTU",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "029-81399001;029-81399127",
+      "openTime": "08:30-17:00",
+      "openText": "周一至周日 08:30-17:00",
+      "oldId": "B0MG272MPN",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MG272MPN",
+          "to": "B0FFGXMLTU"
+        }
+      }
+    },
+    {
+      "id": "city-wall",
+      "name": "西安城墙·永宁门",
+      "pick": "西安城墙永宁门城楼",
+      "pickId": "B0FFKG0HLU",
+      "score": 133,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "029-87272792",
+      "openTime": "08:00-22:00",
+      "openText": "周一至周日 08:00-22:00",
+      "oldId": "B0FFFSUJ9Y",
+      "drift_m": 42,
+      "changes": {
+        "poi": {
+          "from": "B0FFFSUJ9Y",
+          "to": "B0FFKG0HLU"
+        },
+        "coord": {
+          "from": [
+            108.946911,
+            34.251945
+          ],
+          "to": [
+            108.94701,
+            34.251573
+          ],
+          "drift_m": 42
+        },
+        "rename": {
+          "from": "西安城墙·永宁门",
+          "to": "西安城墙永宁门城楼"
+        }
+      }
+    },
+    {
+      "id": "shaanxi-history",
+      "name": "陕西历史博物馆",
+      "pick": "陕西历史博物馆",
+      "pickId": "B001D03PEX",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "4000293806;029-85253806",
+      "openTime": [],
+      "openText": "4月1日至11月14日 08:30-19:00 (18:00停止检票),11月15日至3月14日周一 全天关闭(法定节假日除外), 周二至周日09:00-17:30 (16:30停止检票)",
+      "oldId": "B0FFGPTJCJ",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFGPTJCJ",
+          "to": "B001D03PEX"
+        }
+      }
+    },
+    {
+      "id": "dayanta",
+      "name": "大雁塔·大慈恩寺",
+      "pick": "大雁塔",
+      "pickId": "B001D023F0",
+      "score": 126,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": [],
+      "openText": "1月至2月,11月至12月 周一至周日 08:30-17:40；3月至10月 周一至周日 08:00-18:30",
+      "oldId": "B001D023F0",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "大雁塔·大慈恩寺",
+          "to": "大雁塔"
+        }
+      }
+    },
+    {
+      "id": "datang-everbright",
+      "name": "大唐不夜城",
+      "pick": "大唐不夜城",
+      "pickId": "B001D0VWAX",
+      "score": 150,
+      "type": "风景名胜;风景名胜相关;旅游景点|购物服务;特色商业街;特色商业街",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0MUPUEANP",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MUPUEANP",
+          "to": "B001D0VWAX"
+        }
+      }
+    },
+    {
+      "id": "mount-hua",
+      "name": "华山",
+      "pick": "华山通讯城",
+      "pickId": "B001D0913G",
+      "score": 29,
+      "type": "购物服务;家电电子卖场;手机销售",
+      "rating": 4.4,
+      "tel": "18149022270",
+      "openTime": "09:00-21:55",
+      "openText": "周一至周日 09:00-21:55",
+      "oldId": "B039100H8N",
+      "drift_m": 106771,
+      "changes": {
+        "poi": {
+          "from": "B039100H8N",
+          "to": "B001D0913G"
+        }
+      }
+    },
+    {
+      "id": "bell-tower",
+      "name": "西安钟楼",
+      "pick": "西安钟楼",
+      "pickId": "B001D09TAA",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": [],
+      "openText": "1月至3月 周一至周日 08:30-18:00 最晚进入17:30 04-01至09-24 周一至周日 08:30-21:30 最晚进入21:00；09-25至09-27 周一至周日 08:30-21:30 最晚进入21:00；09-28至09-30 周一至周日 08:30-21:30 最晚进入21:00；10-01至10-07 周一至周日 08:30-21:30 最晚进入21:00；10-08至10-10 周一至周日 08:30-21:30 最晚进入21:00；10-11至12-31 周一至周日 08:30-18:00 最晚进入17:30",
+      "oldId": "B001D09TAA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "drum-tower",
+      "name": "西安鼓楼",
+      "pick": "西安鼓楼",
+      "pickId": "B001D07CMS",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "029-87278797",
+      "openTime": [],
+      "openText": "4月1日至10月10日:08:30-21:30,最晚进入21:00；10月11日至3月31日:08:30-18:00,最晚进入17:30；中秋节和国庆节:08:30-21:30,最晚进入21:00",
+      "oldId": "B001D07CMS",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "muslim-quarter",
+      "name": "回民街·北院门",
+      "pick": "梵高星空艺术馆(回民街旗舰店)",
+      "pickId": "B0FFKLNERQ",
+      "score": 121,
+      "type": "体育休闲服务;休闲场所;休闲场所|科教文化服务;展览馆;展览馆|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "13201745759",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00 最晚进入21:30",
+      "oldId": "B001D140J1",
+      "drift_m": 122,
+      "changes": {
+        "poi": {
+          "from": "B001D140J1",
+          "to": "B0FFKLNERQ"
+        },
+        "coord": {
+          "from": [
+            108.943659,
+            34.262198
+          ],
+          "to": [
+            108.944164,
+            34.263209
+          ],
+          "drift_m": 122
+        }
+      }
+    },
+    {
+      "id": "huaqing-palace",
+      "name": "华清宫",
+      "pick": "唐华清宫御汤遗址博物馆",
+      "pickId": "B0FFFAQ0LW",
+      "score": 128,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.2,
+      "tel": "029-83814562",
+      "openTime": "07:30-17:30",
+      "openText": "周一至周日 07:30-17:30",
+      "oldId": "B0FFG1YT3O",
+      "drift_m": 159,
+      "changes": {
+        "poi": {
+          "from": "B0FFG1YT3O",
+          "to": "B0FFFAQ0LW"
+        },
+        "coord": {
+          "from": [
+            109.212614,
+            34.361537
+          ],
+          "to": [
+            109.212956,
+            34.362938
+          ],
+          "drift_m": 159
+        },
+        "rename": {
+          "from": "华清宫",
+          "to": "唐华清宫御汤遗址博物馆"
+        }
+      }
+    },
+    {
+      "id": "beilin-museum",
+      "name": "西安碑林博物馆",
+      "pick": "西安碑林博物馆",
+      "pickId": "B001D06484",
+      "score": 152,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.8,
+      "tel": "029-87253331",
+      "openTime": [],
+      "openText": "1月至7月,9月至12月 周一至周日 09:00-18:30；8月 周一至周日 08:30-19:00 最晚进入17:30",
+      "oldId": "B0FFF43NBN",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFF43NBN",
+          "to": "B001D06484"
+        }
+      }
+    },
+    {
+      "id": "tang-paradise",
+      "name": "大唐芙蓉园",
+      "pick": "大唐芙蓉园",
+      "pickId": "B001D092BB",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "029-85511888",
+      "openTime": [],
+      "openText": "09:00-22:00；节假日09:00-23:00；2月17日-3月3日9:00-23:00，22:00停止售票，22:30清园",
+      "oldId": "B001D14BMF",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B001D14BMF",
+          "to": "B001D092BB"
+        }
+      }
+    },
+    {
+      "id": "changhen-ge",
+      "name": "《长恨歌》实景演出",
+      "pick": "长恨歌演出",
+      "pickId": "B0FFF3O46M",
+      "score": 124,
+      "type": "体育休闲服务;影剧院;剧场|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.8,
+      "tel": "029-83812003",
+      "openTime": "07:00-18:00",
+      "openText": "周一至周日 07:00-18:00",
+      "oldId": "B0FFF3O46M",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "daming-palace",
+      "name": "大明宫国家遗址公园",
+      "pick": "大明宫国家遗址公园",
+      "pickId": "B001D0ZYYD",
+      "score": 134,
+      "type": "风景名胜;风景名胜;世界遗产",
+      "rating": 4.6,
+      "tel": "4000096635",
+      "openTime": "08:30-19:00",
+      "openText": "08:30-19:00(17:30停止检票,18:30停止检票入园)",
+      "oldId": "B001D0VJNI",
+      "drift_m": 566,
+      "changes": {
+        "poi": {
+          "from": "B001D0VJNI",
+          "to": "B001D0ZYYD"
+        },
+        "coord": {
+          "from": [
+            108.964177,
+            34.287528
+          ],
+          "to": [
+            108.96353,
+            34.292586
+          ],
+          "drift_m": 566
+        }
+      }
+    },
+    {
+      "id": "xiaoyanta",
+      "name": "小雁塔",
+      "pick": "小雁塔",
+      "pickId": "B001D026D8",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "029-87803591",
+      "openTime": [],
+      "openText": "周一,周三至周日 08:30-18:00(17:00停止入园)；周二 不开放；元旦节,春节,清明节,端午节,中秋节,国庆节 08:30-18:00(17:00停止入园)；劳动节 07:30-20:00(19:00停止入园)；7月1日至8月31日 暑期 08:30-19:00(18:00停止售票)；具体开放时间以官方通知为准",
+      "oldId": "BV10069703",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "BV10069703",
+          "to": "B001D026D8"
+        }
+      }
+    },
+    {
+      "id": "xian-museum",
+      "name": "西安博物院",
+      "pick": "西安博物院",
+      "pickId": "B001D06AOS",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆|风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.8,
+      "tel": "",
+      "openTime": [],
+      "openText": "周一,周三至周日08:30-18:00(17:00停止检票)，节假日开放时间以官方通知为准",
+      "oldId": "B001D1159Y",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B001D1159Y",
+          "to": "B001D06AOS"
+        }
+      }
+    },
+    {
+      "id": "famen-temple",
+      "name": "法门寺",
+      "pick": "法门寺",
+      "pickId": "B0FFGWO56F",
+      "score": 144,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.6,
+      "tel": "0917-5254002;0917-5258858;4000011899",
+      "openTime": "08:30-17:30",
+      "openText": "周一至周日 08:30-17:30",
+      "oldId": "B0FFGWO56F",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "yongningmen-night",
+      "name": "永宁门夜景·南门广场",
+      "pick": "西安城墙永宁门城楼",
+      "pickId": "B0FFKG0HLU",
+      "score": 129,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "029-87272792",
+      "openTime": "08:00-22:00",
+      "openText": "周一至周日 08:00-22:00",
+      "oldId": "BV10073376",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "BV10073376",
+          "to": "B0FFKG0HLU"
+        }
+      }
+    },
+    {
+      "id": "dayanta-fountain",
+      "name": "大雁塔北广场喷泉",
+      "pick": "大雁塔文化休闲景区-音乐喷泉",
+      "pickId": "B0FFF0ER1V",
+      "score": 129,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.7,
+      "tel": "029-85521890",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B001D04CI0",
+      "drift_m": 24,
+      "changes": {
+        "poi": {
+          "from": "B001D04CI0",
+          "to": "B0FFF0ER1V"
+        }
+      }
+    },
+    {
+      "id": "yongxing-fang",
+      "name": "永兴坊",
+      "pick": "永兴坊",
+      "pickId": "B001D0W24M",
+      "score": 146,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.8,
+      "tel": "029-87382328",
+      "openTime": "09:30-22:30",
+      "openText": "周一至周日 09:30-22:30",
+      "oldId": "B0MGC7FC0H",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MGC7FC0H",
+          "to": "B001D0W24M"
+        }
+      }
+    },
+    {
+      "id": "sajinqiao",
+      "name": "洒金桥",
+      "pick": "洒金桥文创市集",
+      "pickId": "B0LACDK5UU",
+      "score": 79,
+      "type": "购物服务;购物相关场所;购物相关场所",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B001D1388K",
+      "drift_m": 13,
+      "changes": {
+        "poi": {
+          "from": "B001D1388K",
+          "to": "B0LACDK5UU"
+        }
+      }
+    },
+    {
+      "id": "changan-12",
+      "name": "长安十二时辰主题街区",
+      "pick": "长安十二时辰主题街区",
+      "pickId": "B0IA1HURD6",
+      "score": 104,
+      "type": "购物服务;特色商业街;特色商业街",
+      "rating": 4.6,
+      "tel": "4001806888",
+      "openTime": "10:00-21:30 10:00-24:00",
+      "openText": "10:00-21:30,12月31日:10:00-24:00",
+      "oldId": "B0MDKDCF7K",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MDKDCF7K",
+          "to": "B0IA1HURD6"
+        }
+      }
+    },
+    {
+      "id": "xiaozhai-seg",
+      "name": "赛格国际购物中心",
+      "pick": "赛格国际购物中心",
+      "pickId": "B001D10WBA",
+      "score": 107,
+      "type": "购物服务;商场;购物中心",
+      "rating": 4.9,
+      "tel": "029-86300000",
+      "openTime": "10:00-22:30",
+      "openText": "周一至周四 10:00-22:00；周五至周日 10:00-22:30",
+      "oldId": "B0I6THOBM9",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0I6THOBM9",
+          "to": "B001D10WBA"
+        }
+      }
+    },
+    {
+      "id": "meng-changan",
+      "name": "《梦长安》大唐迎宾盛礼",
+      "pick": "梦长安·大唐迎宾盛礼",
+      "pickId": "B0I1GZXL9T",
+      "score": 76,
+      "type": "体育休闲服务;影剧院;剧场",
+      "rating": 4,
+      "tel": "15686200400",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0I1GZXL9T",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "hanyangling-museum",
+      "name": "汉阳陵博物院",
+      "pick": "汉景帝阳陵博物院东区",
+      "pickId": "B0L2A51MYF",
+      "score": 120,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 3.8,
+      "tel": "029-62657530",
+      "openTime": "08:30-18:30",
+      "openText": "周一至周日 08:30-18:30",
+      "oldId": "B0L2A51MYF",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shaanxi-archaeology",
+      "name": "陕西考古博物馆",
+      "pick": "陕西考古博物馆",
+      "pickId": "B0FFIPVQRV",
+      "score": 149,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": [],
+      "openText": "全年 周一–周二, 周四–周日 09:00–17:00开放 最晚进入16:20；全年 周三 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入16:20",
+      "oldId": "B0MD9RQTIE",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MD9RQTIE",
+          "to": "B0FFIPVQRV"
+        }
+      }
+    },
+    {
+      "id": "big-mosque",
+      "name": "西安化觉巷清真大寺",
+      "pick": "西安化觉巷清真大寺",
+      "pickId": "B001D07CMR",
+      "score": 144,
+      "type": "风景名胜;风景名胜;回教寺",
+      "rating": 4.6,
+      "tel": "029-87272541",
+      "openTime": "09:00-17:30",
+      "openText": "周一至周日 09:00-17:30",
+      "oldId": "B001D07CMR",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qianling",
+      "name": "乾陵景区",
+      "pick": "乾陵景区",
+      "pickId": "B038E01WUG",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "029-35510353;029-35510222",
+      "openTime": [],
+      "openText": "1月至2月,12月 周一至周日 08:30-17:30 最晚进入16:30；3月至11月 周一至周日 08:00-18:00 最晚进入17:00",
+      "oldId": "B038E01WUG",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shuyuanmen",
+      "name": "书院门",
+      "pick": "书院门牌坊",
+      "pickId": "B0HAJD5VUL",
+      "score": 130,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "09:00-22:00",
+      "openText": "周一至周日 09:00-22:00",
+      "oldId": "B0HAJD5VUL",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "书院门",
+          "to": "书院门牌坊"
+        }
+      }
+    },
+    {
+      "id": "dapiyuan",
+      "name": "大皮院",
+      "pick": "大皮院清真寺",
+      "pickId": "B001D07MLM",
+      "score": 120,
+      "type": "风景名胜;风景名胜;回教寺",
+      "rating": 4.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGQ9MB6",
+      "drift_m": 64,
+      "changes": {
+        "poi": {
+          "from": "B0FFGQ9MB6",
+          "to": "B001D07MLM"
+        },
+        "coord": {
+          "from": [
+            108.940876,
+            34.26447
+          ],
+          "to": [
+            108.94019,
+            34.264562
+          ],
+          "drift_m": 64
+        },
+        "rename": {
+          "from": "大皮院",
+          "to": "大皮院清真寺"
+        }
+      }
+    },
+    {
+      "id": "xingqing-palace",
+      "name": "兴庆宫公园",
+      "pick": "兴庆宫公园",
+      "pickId": "B001D09HQR",
+      "score": 143,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "06:00-22:00",
+      "openText": "周一至周日 06:00-22:00 最晚进入21:30",
+      "oldId": "B0FFL17HFM",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFL17HFM",
+          "to": "B001D09HQR"
+        }
+      }
+    },
+    {
+      "id": "qujiang-ocean",
+      "name": "曲江海洋极地公园",
+      "pick": "曲江海洋极地公园",
+      "pickId": "B001D1058R",
+      "score": 143,
+      "type": "风景名胜;公园广场;水族馆",
+      "rating": 4.5,
+      "tel": "4008313555;029-85517317",
+      "openTime": [],
+      "openText": "10月1日-10月7日:9:00-19:00,最晚售票时间截至17:00，最晚检票时间截至17:15",
+      "oldId": "B0FFGC4PPQ",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFGC4PPQ",
+          "to": "B001D1058R"
+        }
+      }
+    },
+    {
+      "id": "qinling-zoo",
+      "name": "秦岭野生动物园",
+      "pick": "西安秦岭野生动物园",
+      "pickId": "B001D092I6",
+      "score": 106,
+      "type": "风景名胜;公园广场;动物园",
+      "rating": 4.6,
+      "tel": "029-85670000",
+      "openTime": [],
+      "openText": "1月至2月,12月 周一至周日 09:00-17:00；3月至11月 周一至周日 08:30-18:00",
+      "oldId": "BV11482263",
+      "drift_m": 1352,
+      "changes": {
+        "poi": {
+          "from": "BV11482263",
+          "to": "B001D092I6"
+        },
+        "coord": {
+          "from": [
+            108.854566,
+            34.054277
+          ],
+          "to": [
+            108.866715,
+            34.047456
+          ],
+          "drift_m": 1352
+        },
+        "rename": {
+          "from": "秦岭野生动物园",
+          "to": "西安秦岭野生动物园"
+        }
+      }
+    },
+    {
+      "id": "tuoling-legend",
+      "name": "《驼铃传奇》秀",
+      "pick": "《驼铃传奇》秀",
+      "pickId": "B0FFI13PJO",
+      "score": 146,
+      "type": "科教文化服务;文艺团体;文艺团体",
+      "rating": 4.8,
+      "tel": "029-83507931",
+      "openTime": "13:00-18:30",
+      "openText": "周一至周日 13:00-18:30",
+      "oldId": "B0FFI13PJO",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "taibai-shan",
+      "name": "太白山国家森林公园",
+      "pick": "太白山国家森林公园",
+      "pickId": "B039500BA7",
+      "score": 163,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "0917-5716685",
+      "openTime": "08:30-14:00 08:00-17:00 08:00-16:00",
+      "openText": "08:30-14:00最晚进入14:00；景交车运营时间:08:00-17:00索道运营时间:08:00-16:00,具体营业状态以当天开放情况为准",
+      "oldId": "B039500BA7",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "banpo-museum",
+      "name": "西安半坡博物馆",
+      "pick": "西安半坡博物馆",
+      "pickId": "B001D063YP",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "029-83325858",
+      "openTime": "08:00-17:30",
+      "openText": "周一至周日 08:00-17:30 最晚进入17:00",
+      "oldId": "B001D063YP",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "tang-west-market",
+      "name": "大唐西市博物馆",
+      "pick": "大唐西市博物馆",
+      "pickId": "B001D0VY24",
+      "score": 149,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.5,
+      "tel": "029-84351808",
+      "openTime": [],
+      "openText": "10/11-10/14 周二–周日 09:00–18:00开放 最晚进入17:00；10/11-10/14 周一 全天不开放；10/15-04/15 周二–周日 09:00–17:30开放；10/15-04/15 周一 全天不开放；劳动节,端午节,中秋节,国庆节 09:00–18:00开放 最晚进入17:00；每周一及除夕闭馆（法定节假日正常开放）",
+      "oldId": "B001D0VWVB",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B001D0VWVB",
+          "to": "B001D0VY24"
+        }
+      }
+    },
+    {
+      "id": "guanzhong-minsu",
+      "name": "西安关中民俗艺术博物院",
+      "pick": "西安关中民俗艺术博物院",
+      "pickId": "B001D0VP7I",
+      "score": 161,
+      "type": "科教文化服务;博物馆;博物馆|风景名胜;风景名胜;国家级景点",
+      "rating": 4.5,
+      "tel": "029-87262543;029-85829182",
+      "openTime": [],
+      "openText": "全年 周二–周日 09:00–17:00开放 最晚进入17:00；全年 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入17:00",
+      "oldId": "B001D0VP7I",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "maoling-museum",
+      "name": "茂陵博物馆",
+      "pick": "茂陵博物馆",
+      "pickId": "B038E00115",
+      "score": 150,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.6,
+      "tel": "029-38456140",
+      "openTime": [],
+      "openText": "1月至3月,11月至12月 周一至周日 08:30-17:30 最晚进入17:00；4月至10月 周一至周日 08:30-18:00 最晚进入17:30",
+      "oldId": "B038E00115",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "gaos-mansion",
+      "name": "高家大院",
+      "pick": "高家大院",
+      "pickId": "B0FFFDCW9P",
+      "score": 144,
+      "type": "风景名胜;风景名胜;风景名胜",
+      "rating": 4.6,
+      "tel": "029-87401029",
+      "openTime": [],
+      "openText": "周一至周日 09:00-22:30 最晚进入22:00；法定节假日及重点时段延长，具体开放时间以景区官方为准",
+      "oldId": "B0FFFDCW9P",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "qujiang-pool",
+      "name": "曲江池遗址公园",
+      "pick": "曲江池遗址公园",
+      "pickId": "B001D0VQ3N",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "029-85562540;029-85563398",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGH3V4V",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFGH3V4V",
+          "to": "B001D0VQ3N"
+        }
+      }
+    },
+    {
+      "id": "kunming-pool",
+      "name": "昆明池·七夕公园",
+      "pick": "昆明池·七夕公园",
+      "pickId": "B0FFHCVRBS",
+      "score": 125,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "029-89500981",
+      "openTime": "06:00-23:30 06:00-24:00",
+      "openText": "11/1-3/1 06:00-23:30开放；3/2-10/31 06:00-00:00开放",
+      "oldId": "B0FFKWQWRM",
+      "drift_m": 787,
+      "changes": {
+        "poi": {
+          "from": "B0FFKWQWRM",
+          "to": "B0FFHCVRBS"
+        },
+        "coord": {
+          "from": [
+            108.76847,
+            34.213602
+          ],
+          "to": [
+            108.775124,
+            34.209154
+          ],
+          "drift_m": 787
+        }
+      }
+    },
+    {
+      "id": "qujiang-joy-city",
+      "name": "曲江大悦城",
+      "pick": "西安大悦城",
+      "pickId": "B0G0XR1FPH",
+      "score": 84,
+      "type": "购物服务;商场;普通商场",
+      "rating": 4.8,
+      "tel": "029-85720058",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "",
+      "drift_m": 91,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0G0XR1FPH"
+        },
+        "coord": {
+          "from": [
+            108.96246,
+            34.215799
+          ],
+          "to": [
+            108.962048,
+            34.216544
+          ],
+          "drift_m": 91
+        }
+      }
+    },
+    {
+      "id": "xiaonanmen",
+      "name": "小南门夜市",
+      "pick": "小南门夜市",
+      "pickId": "B0FFIPX4UZ",
+      "score": 35,
+      "type": "餐饮服务;中餐厅;中餐厅",
+      "rating": 4.7,
+      "tel": "029-87619888",
+      "openTime": "11:00-02:00",
+      "openText": "周一至周日 11:00-02:00",
+      "oldId": "B0FFIPX4UZ",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "lehua-cheng",
+      "name": "乐华恒业欢乐世界",
+      "pick": "汉邦欢乐世界",
+      "pickId": "B0JAHU2K8V",
+      "score": 28,
+      "type": "体育休闲服务;休闲场所;游乐场",
+      "rating": 4.7,
+      "tel": "17792935301",
+      "openTime": "09:00-19:00",
+      "openText": "周一至周日 09:00-19:00 最晚进入17:30",
+      "oldId": "B0FFL2JXHZ",
+      "drift_m": 18837,
+      "changes": {
+        "poi": {
+          "from": "B0FFL2JXHZ",
+          "to": "B0JAHU2K8V"
+        }
+      }
+    },
+    {
+      "id": "cuihua-shan",
+      "name": "翠华山",
+      "pick": "翠华山景区",
+      "pickId": "B001D08PIN",
+      "score": 104,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "029-85891205;029-85891750;029-85892176",
+      "openTime": [],
+      "openText": "2月15日至2月23日 09:00-17:00 16:30 停止入园；周一至周日 09:00-17:00",
+      "oldId": "BV10073403",
+      "drift_m": 7469,
+      "changes": {
+        "poi": {
+          "from": "BV10073403",
+          "to": "B001D08PIN"
+        },
+        "rename": {
+          "from": "翠华山",
+          "to": "翠华山景区"
+        }
+      }
+    },
+    {
+      "id": "nanwutai",
+      "name": "南五台",
+      "pick": "终南山南五台景区",
+      "pickId": "B0FFF9O51K",
+      "score": 84,
+      "type": "风景名胜;风景名胜;省级景点",
+      "rating": 4.7,
+      "tel": "029-85949234",
+      "openTime": "09:00-17:00",
+      "openText": "周一至周日 09:00-17:00",
+      "oldId": "B0FFF902GD",
+      "drift_m": 2738,
+      "changes": {
+        "poi": {
+          "from": "B0FFF902GD",
+          "to": "B0FFF9O51K"
+        },
+        "rename": {
+          "from": "南五台",
+          "to": "终南山南五台景区"
+        }
+      }
+    },
+    {
+      "id": "lishan",
+      "name": "骊山",
+      "pick": "骊山国家森林公园",
+      "pickId": "B001D006EE",
+      "score": 125,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "029-83820601",
+      "openTime": [],
+      "openText": "1月至3月,11月至12月 周一至周日 07:30-17:00 最晚进入17:00；4月 周一至周日 07:30-18:30 最晚进入18:00；5月至10月 周一至周日 全天关闭；具体营业状态以当天开放情况为准",
+      "oldId": "B001D0WFG4",
+      "drift_m": 1219,
+      "changes": {
+        "poi": {
+          "from": "B001D0WFG4",
+          "to": "B001D006EE"
+        },
+        "coord": {
+          "from": [
+            109.210276,
+            34.363243
+          ],
+          "to": [
+            109.215464,
+            34.353156
+          ],
+          "drift_m": 1219
+        },
+        "rename": {
+          "from": "骊山",
+          "to": "骊山国家森林公园"
+        }
+      }
+    },
+    {
+      "id": "qinglong-temple",
+      "name": "青龙寺遗址景区",
+      "pick": "青龙寺遗址博物馆",
+      "pickId": "B0FFFBB9AZ",
+      "score": 129,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "029-85521498;029-89121895",
+      "openTime": "09:00-17:00",
+      "openText": "周一 全天关闭(法定节假日除外),周二至周日 09:00-17:00(16:30停止入馆)",
+      "oldId": "B0FFL62YLD",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0FFL62YLD",
+          "to": "B0FFFBB9AZ"
+        }
+      }
+    },
+    {
+      "id": "guangren-temple",
+      "name": "广仁寺",
+      "pick": "广仁寺",
+      "pickId": "B001D048LX",
+      "score": 146,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.8,
+      "tel": "029-87341676;18302969999",
+      "openTime": "07:30-17:30",
+      "openText": "周一至周日 07:30-17:30",
+      "oldId": "B001D048LX",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shuilu-an",
+      "name": "水陆庵",
+      "pick": "水陆庵",
+      "pickId": "B001D03C82",
+      "score": 90,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "029-82920741",
+      "openTime": "09:00-16:30",
+      "openText": "周一至周日 09:00-16:30 最晚进入16:30",
+      "oldId": "B001D03C82",
+      "drift_m": 9705,
+      "changes": {}
+    },
+    {
+      "id": "xian-incident",
+      "name": "西安事变纪念馆（张学良公馆）",
+      "pick": "西安事变纪念馆张学良公馆",
+      "pickId": "B0FFH1ZO2S",
+      "score": 143,
+      "type": "风景名胜;风景名胜;红色景区|风景名胜;风景名胜;风景名胜",
+      "rating": 4.5,
+      "tel": "029-87418247",
+      "openTime": [],
+      "openText": "周二至周日:09:00-17:00(16:30停止入馆),每周一闭馆,国家法定节假日除外；2026年5月1日至5月5日:09:00-18:00(17:30停止入馆)",
+      "oldId": "B001D04RI7",
+      "drift_m": 48,
+      "changes": {
+        "poi": {
+          "from": "B001D04RI7",
+          "to": "B0FFH1ZO2S"
+        },
+        "coord": {
+          "from": [
+            108.967721,
+            34.257313
+          ],
+          "to": [
+            108.967204,
+            34.257319
+          ],
+          "drift_m": 48
+        }
+      }
+    },
+    {
+      "id": "expo-park",
+      "name": "西安世博园",
+      "pick": "西安世博园",
+      "pickId": "B001D12FJ8",
+      "score": 161,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.7,
+      "tel": "",
+      "openTime": "09:00-22:00 09:00-22:00 09:30-17:30",
+      "openText": "周一至周日 09:00-22:00 最晚进入22:00；园区开放时间为09:00-22:00； 展馆开放时间为09:30-17:30(17:00停止入馆)",
+      "oldId": "B001D12FJ8",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shunchengxiang",
+      "name": "顺城巷",
+      "pick": "东门顺城巷早市",
+      "pickId": "B0I1G12WFF",
+      "score": 29,
+      "type": "生活服务;生活服务场所;生活服务场所",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFGQ6AEP",
+      "drift_m": 2129,
+      "changes": {
+        "poi": {
+          "from": "B0FFGQ6AEP",
+          "to": "B0I1G12WFF"
+        }
+      }
+    },
+    {
+      "id": "xiying-film",
+      "name": "西影电影圈子",
+      "pick": "西影·电影圈子(北口)",
+      "pickId": "B0FFLN9C97",
+      "score": 79,
+      "type": "体育休闲服务;影剧院;电影院",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "",
+      "drift_m": 16,
+      "changes": {
+        "poi": {
+          "from": null,
+          "to": "B0FFLN9C97"
+        }
+      }
+    },
+    {
+      "id": "yisushe-block",
+      "name": "易俗社文化街区",
+      "pick": "易俗历史文化街区",
+      "pickId": "B0G3TOSUMA",
+      "score": 125,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.5,
+      "tel": "",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "B0L0L59EIJ",
+      "drift_m": 198,
+      "changes": {
+        "poi": {
+          "from": "B0L0L59EIJ",
+          "to": "B0G3TOSUMA"
+        },
+        "coord": {
+          "from": [
+            108.948601,
+            34.261727
+          ],
+          "to": [
+            108.948034,
+            34.260011
+          ],
+          "drift_m": 198
+        }
+      }
+    },
+    {
+      "id": "shaanxi-nature",
+      "name": "陕西自然博物馆",
+      "pick": "陕西自然博物馆",
+      "pickId": "B001D0939J",
+      "score": 151,
+      "type": "科教文化服务;博物馆;博物馆",
+      "rating": 4.7,
+      "tel": "029-85331352;029-85331289",
+      "openTime": [],
+      "openText": "1月1日至6月30,9月1日-12月31日 周一至周二闭馆 周三至周日09:00-17:00；7月1日至8月30日周一至周五09:00-19:00 周六至周日09:00-20:00",
+      "oldId": "B001D0939J",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "g-park",
+      "name": "老城根G park",
+      "pick": "老城根G park水晶广场",
+      "pickId": "B0LBY4O0A9",
+      "score": 115,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4.1,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFHQPXGQ",
+      "drift_m": 297,
+      "changes": {
+        "poi": {
+          "from": "B0FFHQPXGQ",
+          "to": "B0LBY4O0A9"
+        },
+        "coord": {
+          "from": [
+            108.918471,
+            34.284704
+          ],
+          "to": [
+            108.921625,
+            34.285305
+          ],
+          "drift_m": 297
+        },
+        "rename": {
+          "from": "老城根G park",
+          "to": "老城根G park水晶广场"
+        }
+      }
+    },
+    {
+      "id": "taiping-forest",
+      "name": "太平国家森林公园",
+      "pick": "太平国家森林公园",
+      "pickId": "B001D08POG",
+      "score": 142,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "029-84959806",
+      "openTime": "08:00-17:00",
+      "openText": "周一至周日 08:00-17:00",
+      "oldId": "B001D08POG",
+      "drift_m": 1373,
+      "changes": {
+        "coord": {
+          "from": [
+            108.657871,
+            33.91729
+          ],
+          "to": [
+            108.646867,
+            33.908984
+          ],
+          "drift_m": 1373
+        }
+      }
+    },
+    {
+      "id": "xiangji-temple",
+      "name": "香积寺",
+      "pick": "香积寺",
+      "pickId": "B001D03467",
+      "score": 145,
+      "type": "风景名胜;风景名胜;寺庙道观",
+      "rating": 4.7,
+      "tel": "029-85973209;029-85973357",
+      "openTime": "07:00-18:00",
+      "openText": "周一至周日 07:00-18:00 最晚进入18:00；具体营业状态以当天开放情况为准",
+      "oldId": "B001D03467",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "louguantai",
+      "name": "楼观台",
+      "pick": "楼观台国家森林公园",
+      "pickId": "B001D0630I",
+      "score": 122,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "",
+      "openTime": [],
+      "openText": "1月至2月,12月 周一至周日 08:00-17:30；3月至11月 周一至周日 09:00-17:00",
+      "oldId": "BV10073101",
+      "drift_m": 1345,
+      "changes": {
+        "poi": {
+          "from": "BV10073101",
+          "to": "B001D0630I"
+        },
+        "coord": {
+          "from": [
+            108.326752,
+            34.064386
+          ],
+          "to": [
+            108.33009,
+            34.05261
+          ],
+          "drift_m": 1345
+        },
+        "rename": {
+          "from": "楼观台",
+          "to": "楼观台国家森林公园"
+        }
+      }
+    },
+    {
+      "id": "hancheng-lake",
+      "name": "汉城湖公园",
+      "pick": "汉城湖旅游风景区",
+      "pickId": "B001D0WRTA",
+      "score": 140,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "029-86483430",
+      "openTime": "06:30-22:30 06:30-22:30 09:00-18:00",
+      "openText": "周一至周日 06:30-22:30；景区开放时间:06:30-22:30（22:00清园） 大风阁开放时间:09:00-18:00",
+      "oldId": "B001D0WRTA",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "chanba-wetland",
+      "name": "西安浐灞国家湿地公园",
+      "pick": "西安浐灞国家湿地公园",
+      "pickId": "B001D15L5H",
+      "score": 145,
+      "type": "风景名胜;公园广场;公园",
+      "rating": 4.7,
+      "tel": "029-62815566;029-62815588",
+      "openTime": "09:00-20:00 09:00-18:00",
+      "openText": "03-01至10-10 周一至周日 09:00-20:00；10-11至02-28 周一至周日 09:00-18:00",
+      "oldId": "B001D15L5H",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "dahu-1935",
+      "name": "大华·1935",
+      "pick": "大华1935·E1展馆",
+      "pickId": "B0FFG24990",
+      "score": 106,
+      "type": "科教文化服务;展览馆;展览馆",
+      "rating": 3.8,
+      "tel": "",
+      "openTime": "10:00-22:00",
+      "openText": "周一至周日 10:00-22:00",
+      "oldId": "BV10070494",
+      "drift_m": 290,
+      "changes": {
+        "poi": {
+          "from": "BV10070494",
+          "to": "B0FFG24990"
+        },
+        "coord": {
+          "from": [
+            108.972327,
+            34.286678
+          ],
+          "to": [
+            108.973925,
+            34.284425
+          ],
+          "drift_m": 290
+        },
+        "rename": {
+          "from": "大华·1935",
+          "to": "大华1935·E1展馆"
+        }
+      }
+    },
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "pick": "茯茶镇",
+      "pickId": "B0FFGG4MG0",
+      "score": 162,
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "tel": "029-36201810;029-36518296",
+      "openTime": "10:00-21:00",
+      "openText": "周一至周日 10:00-21:00",
+      "oldId": "B0FFGG4MG0",
+      "drift_m": 0,
+      "changes": {}
+    },
+    {
+      "id": "shijingli",
+      "name": "诗经里",
+      "pick": "沣河生态景区诗经里-月出广场",
+      "pickId": "B0FFMDUAAZ",
+      "score": 90,
+      "type": "风景名胜;公园广场;城市广场",
+      "rating": 3.2,
+      "tel": "",
+      "openTime": "24小时营业",
+      "openText": "周一至周日 00:00-24:00",
+      "oldId": "B0FFICEIL2",
+      "drift_m": 959,
+      "changes": {
+        "poi": {
+          "from": "B0FFICEIL2",
+          "to": "B0FFMDUAAZ"
+        },
+        "coord": {
+          "from": [
+            108.74792,
+            34.22742
+          ],
+          "to": [
+            108.737503,
+            34.227813
+          ],
+          "drift_m": 959
+        }
+      }
+    },
+    {
+      "id": "han-weiyang",
+      "name": "汉长安城未央宫遗址",
+      "pick": "汉长安城未央宫遗址椒房殿遗址",
+      "pickId": "B0FFJMKLMX",
+      "score": 126,
+      "type": "风景名胜;风景名胜相关;旅游景点",
+      "rating": 4,
+      "tel": "029-86380088",
+      "openTime": "06:00-22:00",
+      "openText": "周一至周日 06:00-22:00",
+      "oldId": "B0FFJMKLMX",
+      "drift_m": 0,
+      "changes": {
+        "rename": {
+          "from": "汉长安城未央宫遗址",
+          "to": "汉长安城未央宫遗址椒房殿遗址"
+        }
+      }
+    },
+    {
+      "id": "qinzhen",
+      "name": "秦镇（秦渡镇）",
+      "pick": "秦镇中学",
+      "pickId": "B0FFGZEXLF",
+      "score": 41,
+      "type": "科教文化服务;学校;中学",
+      "rating": 0,
+      "tel": "",
+      "openTime": [],
+      "openText": [],
+      "oldId": "B0MUAR36M5",
+      "drift_m": 0,
+      "changes": {
+        "poi": {
+          "from": "B0MUAR36M5",
+          "to": "B0FFGZEXLF"
+        }
+      }
+    }
+  ]
+}

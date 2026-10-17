@@ -22,6 +22,7 @@ const MAX_MOVE_M = 20000;     // 只用高德时的位移上限：超过就当�
 // 第二档存在的理由：街区/道路型 POI（回民街、洒金桥）两家给的「中心」天然差几百米，但两边都离我们的
 // 估算 9km 远——此时原值必错，取腾讯坐标远好于不修。名称必须完全相等，避免「同名异地」误修
 // （乾陵/华山/法门寺这类在别处同名 POI 的点，正是靠这一条挡住的）。
+const AMAP_BASE = (process.env.AMAP_BASE || 'https://restapi.amap.com').replace(/\/+$/, '');
 const THROTTLE_MS = 400;   // 腾讯个人版 5 QPS：150ms 会偶发 status=121（提示写的是日配额，实为突发限流）
 const AROUND_RADIUS_M = 500;   // 周边召回半径：我们的坐标若正确，真实 POI 必在此范围内
 const AI_URL = process.env.AI_BASE_URL ? process.env.AI_BASE_URL.replace(/\/$/, '') + '/chat/completions'
@@ -48,7 +49,7 @@ async function tencentSearch(kw, city, key) {
 }
 // 高德周边搜索：给定坐标附近找 POI（用于「名字对不上但地方真实存在」的别名判定）
 async function amapAround(lng, lat, key, kw, radius) {
-  const u = 'https://restapi.amap.com/v3/place/around?location=' + lng + ',' + lat + '&radius=' + (radius || AROUND_RADIUS_M) +
+  const u = AMAP_BASE + '/v3/place/around?location=' + lng + ',' + lat + '&radius=' + (radius || AROUND_RADIUS_M) +
     (kw ? '&keywords=' + encodeURIComponent(kw) : '') + '&offset=20&key=' + key;
   const j = await (await fetch(u)).json();
   return (j.pois || []).map(p => {
@@ -88,7 +89,7 @@ async function judgeAlias(spot, cands, city) {
 }
 
 async function amapSearch(kw, city, key, nationwide) {
-  const url = `https://restapi.amap.com/v3/place/text?keywords=${encodeURIComponent(kw)}&city=${encodeURIComponent(city)}&citylimit=${nationwide ? 'false' : 'true'}&offset=10&key=${key}`;
+  const url = `${AMAP_BASE}/v3/place/text?keywords=${encodeURIComponent(kw)}&city=${encodeURIComponent(city)}&citylimit=${nationwide ? 'false' : 'true'}&offset=10&key=${key}`;
   const j = await (await fetch(url)).json();
   if (j.status !== '1') throw new Error(`高德 infocode=${j.infocode} ${j.info || ''}`);
   return (j.pois || []).map(p => {
@@ -208,7 +209,7 @@ async function main() {
   const file = args.find(a => !a.startsWith('--'));
   const dryRun = args.includes('--dry-run');
   const apply = args.includes('--apply');
-  const TK = process.env.TENCENT_WS_KEY, AK = process.env.AMAP_WS_KEY;
+  const TK = process.env.TENCENT_WS_KEY, AK = process.env.AMAP_KEY || process.env.AMAP_WS_KEY;
   const onlyAmap = args.includes('--provider') && args[args.indexOf('--provider') + 1] === 'amap';
   if (!file) { console.error('用法：node scripts/repair-coords.js <spots.json> [--dry-run|--apply] [--provider amap]'); process.exit(2); }
   if (!dryRun && !AK) { console.error('需要 AMAP_WS_KEY（双源模式还需 TENCENT_WS_KEY；干跑请加 --dry-run）'); process.exit(2); }

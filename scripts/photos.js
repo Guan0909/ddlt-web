@@ -6,8 +6,9 @@
 const fs = require('fs');
 const path = require('path');
 
-const API = 'https://restapi.amap.com/v3/place/text';
-const KEY = process.env.AMAP_WS_KEY;
+const AMAP_BASE = (process.env.AMAP_BASE || 'https://restapi.amap.com').replace(/\/+$/, '');
+const API = AMAP_BASE + '/v3/place/text';
+const KEY = process.env.AMAP_KEY || process.env.AMAP_WS_KEY;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function photoOf(name, city) {

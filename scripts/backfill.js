@@ -16,7 +16,8 @@ const path = require('path');
 
 const THROTTLE_MS = 200;
 const API = 'https://apis.map.qq.com/ws/place/v1/search';
-const AMAP_API = 'https://restapi.amap.com/v3/place/text';
+const AMAP_BASE = (process.env.AMAP_BASE || 'https://restapi.amap.com').replace(/\/+$/, '');
+const AMAP_API = AMAP_BASE + '/v3/place/text';
 
 // ---- 几何（避免引 engine 依赖，脚本自洽） ----
 function haversineM(a, b) {
@@ -92,7 +93,7 @@ async function main() {
     console.error('用法：node scripts/backfill.js <spots.json> [--dry-run] [--prune] [--provider tencent|amap]');
     process.exit(2);
   }
-  const key = provider === 'amap' ? process.env.AMAP_WS_KEY : process.env.TENCENT_WS_KEY;
+  const key = provider === 'amap' ? (process.env.AMAP_KEY || process.env.AMAP_WS_KEY) : process.env.TENCENT_WS_KEY;
   if (!dryRun && !key) {
     console.error(`缺少环境变量 ${provider === 'amap' ? 'AMAP_WS_KEY' : 'TENCENT_WS_KEY'}。干跑请加 --dry-run。`);
     process.exit(2);

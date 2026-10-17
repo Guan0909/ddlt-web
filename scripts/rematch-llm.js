@@ -7,7 +7,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const AMAP = 'https://restapi.amap.com/v3/place/text';
+const AMAP_BASE = (process.env.AMAP_BASE || 'https://restapi.amap.com').replace(/\/+$/, '');
+const AMAP = AMAP_BASE + '/v3/place/text';
 const AI_URL = process.env.AI_BASE_URL || 'https://new.fluapi.com/v1/chat/completions';
 const AI_MODEL = process.env.AI_MODEL || 'deepseek-v4.1-flash';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -95,7 +96,7 @@ async function run(file) {
 }
 
 (async () => {
-  if (!process.env.AMAP_WS_KEY || !process.env.DEEPSEEK_KEY) { console.error('需要 AMAP_WS_KEY 与 DEEPSEEK_KEY'); process.exit(2); }
+  if (!(process.env.AMAP_KEY || process.env.AMAP_WS_KEY) || !process.env.DEEPSEEK_KEY) { console.error('需要 AMAP_KEY/AMAP_WS_KEY 与 DEEPSEEK_KEY'); process.exit(2); }
   const files = process.argv.slice(2).length ? process.argv.slice(2)
     : ['chengdu', 'beijing', 'chongqing', 'hangzhou', 'shanghai', 'xian'].map(c => `data/spots/${c}.json`);
   for (const f of files) await run(f);

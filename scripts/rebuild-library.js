@@ -76,8 +76,8 @@ function audit() {
 async function collect(city) {
   const file = CITY_FILES[city];
   if (!file) { console.error('未知城市：' + city + '（支持：' + Object.keys(CITY_FILES).join('/') + '）'); process.exit(2); }
-  if (!process.env.AMAP_WS_KEY) { console.error('需要 AMAP_WS_KEY'); process.exit(2); }
-  const AK = process.env.AMAP_WS_KEY;
+  const AK = process.env.AMAP_KEY || process.env.AMAP_WS_KEY;
+  if (!AK) { console.error('需要 AMAP_KEY 或 AMAP_WS_KEY'); process.exit(2); }
   const [lng, lat] = CENTERS[file];
   const pool = [];
   const seen = new Set();
@@ -87,7 +87,7 @@ async function collect(city) {
   ];
   for (const [kw, radius] of rounds) {
     for (let page = 0; page < 3; page++) {
-      const url = 'https://restapi.amap.com/v3/place/around?location=' + lng + ',' + lat + '&radius=' + radius +
+      const url = (process.env.AMAP_BASE || 'https://restapi.amap.com').replace(/\/+$/, '') + '/v3/place/around?location=' + lng + ',' + lat + '&radius=' + radius +
         '&keywords=' + encodeURIComponent(kw) + '&sortrule=weight&extensions=all&offset=25&page=' + (page + 1) + '&key=' + AK;
       const j = await (await fetch(url)).json();
       if (String(j.status) !== '1') { console.error('  采集失败 ' + kw + ' page' + (page + 1) + '：' + j.info); break; }
