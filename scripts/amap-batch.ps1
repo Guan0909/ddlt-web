@@ -1,4 +1,4 @@
-# 高德批量跑批（配额恢复后一条命令跑完三件事）
+﻿# 高德批量跑批（配额恢复后一条命令跑完三件事）
 # 用法：$env:AMAP_WS_KEY='<key>'; $env:DEEPSEEK_KEY='<key>'; pwsh -File scripts/amap-batch.ps1
 $ErrorActionPreference = 'Continue'
 if (-not $env:AMAP_WS_KEY) { Write-Host '缺少 AMAP_WS_KEY'; exit 2 }
