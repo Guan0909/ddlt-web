@@ -45,6 +45,7 @@ async function suggestion(keyword, region) {
     lng: d.location && d.location.lng, lat: d.location && d.location.lat,
     // 城市/区县：前端据此自动切换城市。注意腾讯 suggestion 是**平铺字段**（province/city/district/adcode），
     // 不是 ad_info 嵌套（ad_info 是 place/search 等接口的形态），两者都兜一下。
+    category: d.category || '',   // 「旅游景点:风景名胜」这类类目串，前端做自定义站点的类目映射
     city: d.city || (d.ad_info && d.ad_info.city) || '',
     district: d.district || (d.ad_info && d.ad_info.district) || '',
     adcode: d.adcode || (d.ad_info && d.ad_info.adcode) || '',

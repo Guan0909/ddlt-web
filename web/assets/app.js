@@ -266,7 +266,10 @@ window.DDN = (() => {
     refreshSuburb(route);
     const dp = route.dayPlans[i];
     let res = null;
-    if (cloudAvailable()) {
+    // 含「自定义站点」的当天不能走云端：reRoute 按 id 从库里取点，认不出自定义 id 会把它静默丢掉。
+    // 本地引擎对自定义站是安全的（缺 open 只产生「营业时间未核实」提示，buildReason 为空）。
+    const hasCustom = (route.__stops[i] || []).some(s => s.custom);
+    if (!hasCustom && cloudAvailable()) {
       try {
         res = await cloudPost('reRoute', {
           city: route.city, origin: route.origin, date: dp.date,

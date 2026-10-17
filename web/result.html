@@ -78,6 +78,45 @@
   .spot-hit { cursor: pointer; }
   .drawer-photo { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
 
+  /* 编辑旅途：两级搜索（精选库 / 地图地点） */
+  .edit-search {
+    position: absolute; left: 12px; right: 12px; top: 12px; z-index: 30;
+    display: flex; align-items: center; gap: 9px;
+    background: rgba(251,251,248,.98); border: .5px solid var(--hairline);
+    border-radius: 12px; padding: 9px 12px;
+    box-shadow: 0 6px 20px rgba(24,33,25,.10);
+  }
+  .edit-search .ic { width: 15px; height: 15px; color: var(--ink-3); flex: none; }
+  .edit-search input {
+    flex: 1; min-width: 0; border: none; outline: none; background: transparent;
+    font-size: 14.5px; font-family: var(--font); color: var(--ink);
+  }
+  .edit-search input::placeholder { color: var(--ink-3); }
+  .edit-search button { font-size: 12.5px; color: var(--ink-2); flex: none; }
+  /* 注意：.edit-search 自己设了 display:flex，会盖掉 hidden 属性的 UA 样式——必须显式补 [hidden] */
+  .edit-search[hidden], .edit-results[hidden] { display: none; }
+  .edit-results {
+    position: absolute; left: 12px; right: 12px; top: 62px; z-index: 30;
+    max-height: 44vh; overflow-y: auto;
+    background: rgba(251,251,248,.99); border: .5px solid var(--hairline);
+    border-radius: 12px; box-shadow: 0 10px 28px rgba(24,33,25,.14);
+  }
+  .es-group { padding: 10px 14px 4px; font-size: 10px; letter-spacing: .18em; color: var(--ink-3); }
+  .es-item {
+    display: flex; align-items: center; gap: 10px; width: 100%;
+    padding: 10px 14px; border-bottom: .5px solid var(--hairline); text-align: left;
+  }
+  .es-item:last-child { border-bottom: none; }
+  .es-item .n { font-size: 14px; font-weight: 600; color: var(--ink); }
+  .es-item .g { font-size: 11px; color: var(--ink-3); margin-top: 2px; }
+  .es-item .st { flex: none; font-size: 11.5px; color: var(--ink-2); }
+  .es-item.on .st { color: var(--d1); font-weight: 600; }
+  .es-empty { padding: 14px; font-size: 12px; color: var(--ink-3); line-height: 1.6; }
+  .stop-flag-custom {
+    font-size: 9.5px; letter-spacing: .1em; color: var(--ink-3);
+    border: .5px solid var(--hairline); border-radius: 999px; padding: 2px 6px;
+  }
+
   /* 日切换：文字页签 */
   .day-tabs { display: flex; gap: 26px; padding: 4px 22px 0; overflow-x: auto; }
   .day-tabs button {
@@ -249,6 +288,12 @@
     <button class="edit-done" id="editDone" hidden>完成</button>
     <div class="map-zoom"><button id="zoomIn">+</button><button id="zoomOut">−</button></div>
     <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
+    <div class="edit-search" id="editSearch" hidden>
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="editSearchInput" placeholder="搜景点，或任意地点加入今天" autocomplete="off">
+      <button id="editSearchClose">取消</button>
+    </div>
+    <div class="edit-results" id="editResults" hidden></div>
     <div class="map-fade"></div>
   </div>
 
@@ -737,6 +782,8 @@
 
     const name = DDN.el('div', 'stop-name');
     name.appendChild(document.createTextNode(item.name));
+    const isCustom = String(item.id).indexOf('custom_') === 0;   // 用户从地图搜索加入的站点
+    if (isCustom) name.appendChild(DDN.el('span', 'stop-flag-custom', '你添加的'));
     if (item.flag) {
       name.appendChild(DDN.el('span', 'flag' + (item.flagTone === 'mint' ? ' mint' : ''), item.flag));
     }
@@ -758,14 +805,16 @@
     if (item.reason) body.appendChild(DDN.el('p', 'stop-reason', item.reason));
     if (item.notice) body.appendChild(DDN.el('div', 'notice', item.notice));
 
-    // dur-row：以该站当前 dur 为基准的时长档位
-    if (spot) {
+    // dur-row：以该站当前 dur 为基准的时长档位（自定义站点同样可调）
+    const selfSpot = isCustom ? (route.__stops[cur] || []).find(s => s.id === item.id) : null;
+    if (spot || selfSpot) {
+      const baseDur = spot ? (spot.dur || 90) : (selfSpot.dur || 60);
       const row = DDN.el('div', 'dur-row');
-      for (const v of durOptions(spot.dur || 90)) {
-        const s = DDN.el('span', v === (spot.dur || 90) ? 'on' : '', DDN.fmtDur(v));
+      for (const v of durOptions(baseDur)) {
+        const s = DDN.el('span', v === baseDur ? 'on' : '', DDN.fmtDur(v));
         s.onclick = () => {
-          if (v === (spot.dur || 90)) return;
-          spot.dur = v;
+          if (v === baseDur) return;
+          if (spot) spot.dur = v; else selfSpot.dur = v;
           applyRetime(cur);
         };
         row.appendChild(s);
@@ -988,9 +1037,131 @@
   // ---------- 编辑旅途：全屏选点模式 ----------
   // 规划视图只显示当天路线与站点；进入编辑后展示全库景点，点淡点加入、点绿点移出，
   // 完成后统一 retimeDay 重校验（真实通勤），路线按真实路网重绘
+  // ---------- 编辑旅途：两级搜索（精选库 + 地图地点）与自定义站点 ----------
+  // 库内景点走「精选」：点击 = 加入/移出今天；库里没有的地点用地图地点补，作为「自定义站点」加入。
+  // 自定义站点不写回库、不进「换一站」候选、AI 文案不为其生成，只是本次行程的一站。
+  const esInput = $('editSearchInput'), esPanel = $('editSearch'), esResults = $('editResults');
+  let esTimer = null, esSeq = 0;
+
+  // 地图 POI 类目 → 我们的 11 类；默认「街区」（中性，不会误入夜景压尾槽）
+  function mapCatOf(poi) {
+    const t = [poi.category, poi.title, poi.address].filter(Boolean).join(' ');
+    if (/夜景|剧院|演出|音乐厅|剧场/.test(t)) return '夜景';
+    if (/博物馆|美术馆|展览馆|纪念馆|科技馆/.test(t)) return '博物馆';
+    if (/古镇|古街|老街/.test(t)) return '古镇';
+    if (/公园|植物园|动物园|湿地|风景名胜|景区/.test(t)) return '山水';
+    if (/美食|小吃|餐饮|夜市|茶馆/.test(t)) return '美食';
+    if (/购物|商场|商业|商圈|步行街|街区/.test(t)) return '街区';
+    return '街区';
+  }
+  const inToday = id => (route.__stops[cur] || []).some(s => s.id === id);
+  const customByName = name => (route.__stops[cur] || []).find(s => s.custom && s.name === name);
+
+  function customStopFromPoi(poi) {
+    return {
+      id: 'custom_' + Date.now().toString(36) + Math.floor(Math.random() * 1000).toString(36),
+      name: String(poi.title || '自定义地点').slice(0, 30),
+      custom: true, coord: [+poi.lng, +poi.lat], cat: mapCatOf(poi), tags: [],
+      heat: 6, dur: 60, intro: '', reason: poi.address || '',
+      open: null, closed_mon: null, suburb: false,
+    };
+  }
+  function esRow({ name, sub, on, onClick }) {
+    const b = DDN.el('button', 'es-item' + (on ? ' on' : ''));
+    const box = DDN.el('div');
+    box.style.flex = '1'; box.style.minWidth = '0';
+    box.appendChild(DDN.el('div', 'n', name));
+    if (sub) box.appendChild(DDN.el('div', 'g', sub));
+    b.appendChild(box);
+    b.appendChild(DDN.el('span', 'st', on ? '已在今天' : '加入'));
+    b.onclick = onClick;
+    return b;
+  }
+  function toggleLocalSpot(s) {
+    const arr = route.__stops[cur];
+    const i = arr.findIndex(x => x.id === s.id);
+    if (i >= 0) { arr.splice(i, 1); DDN.toast(`已移出「${s.name}」`); }
+    else { arr.push(s); DDN.toast(`已加入「${s.name}」，完成后重排`); }
+    renderMap(true);
+    runEditSearch(esInput.value.trim());
+  }
+  function toggleCustomStop(poi) {
+    const exist = customByName(poi.title);
+    if (exist) {
+      route.__stops[cur] = route.__stops[cur].filter(s => s !== exist);
+      DDN.toast(`已移出「${exist.name}」`);
+    } else {
+      const stop = customStopFromPoi(poi);
+      route.__stops[cur].push(stop);
+      DDN.toast(`已加入「${stop.name}」（自定义站点）`);
+    }
+    renderMap(true);
+    runEditSearch(esInput.value.trim());
+  }
+  // 结果渲染：库内（精选）在前、地图地点在后
+  function paintSearchResults(local, cloudList, pending) {
+    esResults.textContent = '';
+    if (!local.length && !cloudList.length) {
+      esResults.hidden = false;
+      esResults.appendChild(DDN.el('div', 'es-empty',
+        pending ? '库内没有…正在搜地图上的地点' : '没找到。换个说法试试，或直接点地图上的圆点。'));
+      return;
+    }
+    if (local.length) {
+      esResults.appendChild(DDN.el('div', 'es-group', '精选 · 库内景点'));
+      for (const s of local) {
+        esResults.appendChild(esRow({
+          name: s.name,
+          sub: [s.cat, (s.tags || [])[0]].filter(Boolean).join(' · '),
+          on: inToday(s.id),
+          onClick: () => toggleLocalSpot(s),
+        }));
+      }
+    }
+    if (cloudList.length) {
+      esResults.appendChild(DDN.el('div', 'es-group', '地图地点 · 作为自定义站点加入'));
+      for (const d of cloudList) {
+        esResults.appendChild(esRow({
+          name: d.title,
+          sub: [mapCatOf(d), d.district || d.address || ''].filter(Boolean).join(' · '),
+          on: !!customByName(d.title),
+          onClick: () => toggleCustomStop(d),
+        }));
+      }
+    }
+    esResults.hidden = false;
+  }
+  async function runEditSearch(q) {
+    const seq = ++esSeq;
+    const kw = String(q || '').trim();
+    if (!kw) { esResults.hidden = true; esResults.textContent = ''; return; }
+    const local = spots.filter(s => s.name.includes(kw) || (s.cat || '').includes(kw)
+      || (s.tags || []).some(t => String(t).includes(kw))).slice(0, 6);
+    // 库内结果**立即**渲染（零延迟）；地图结果再补——否则云端冷启动时面板会空 2~3 秒
+    paintSearchResults(local, [], true);
+    if (kw.length < 2 || !DDN.cloudAvailable()) return;
+    try {
+      const j = await DDN.cloudPost('searchPoi', { keyword: kw, region: route.city }, 4000);
+      if (seq !== esSeq) return;                   // 输入已变，丢弃过期结果
+      const cloudList = (j.data || []).filter(d => !local.some(s => s.name === d.title)).slice(0, 6);
+      paintSearchResults(local, cloudList);   // 即使为空也重绘：把「搜索中」换成「没找到」
+    } catch (e) { /* 静默：断网时只给库内结果 */ }
+  }
+  esInput.addEventListener('input', () => {
+    clearTimeout(esTimer);
+    const q = esInput.value.trim();
+    esTimer = setTimeout(() => runEditSearch(q), 260);
+  });
+  esInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') { clearTimeout(esTimer); runEditSearch(esInput.value.trim()); }
+  });
+  $('editSearchClose').onclick = () => {
+    esPanel.hidden = true; esResults.hidden = true; esInput.value = ''; esInput.blur();
+  };
+
   function setHint() {
     if (editMode) {
-      document.querySelector('.map-hint').textContent = '点淡色圆点加入今天，点绿色圆点移出 · 完成后生成贴路路线';
+      document.querySelector('.map-hint').textContent = '搜索或点圆点加减景点 · 完成后生成贴路路线';
       return;
     }
     // 规划模式默认只给「起点周边 6km」（glmap 的 PLAN_VIEW_RADIUS_KM）：远郊日目的地会落在画面外，
@@ -1017,16 +1188,25 @@
     $('mapHero').classList.add('fullscreen', 'editing');
     document.body.classList.add('map-lock');
     $('editDone').hidden = false;
+    $('editSearch').hidden = false;   // 两级搜索：精选库 + 地图地点
     setHint();
     renderMap();
   };
   $('editDone').onclick = async () => {
     editMode = false;
     $('editDone').hidden = true;
+    $('editSearch').hidden = true;
+    $('editResults').hidden = true;
+    $('editSearchInput').value = '';
     $('mapHero').classList.remove('fullscreen', 'editing');
     document.body.classList.remove('map-lock');
     setHint();
     await applyRetime(cur);   // 时间轴全量重排校验
+    // 自定义站点最容易被"时间排不下"挤掉：明确告知，别让用户以为加了没生效
+    const lost = (route.dayPlans[cur].dropped || []).filter(d => d.spot && d.spot.custom);
+    if (lost.length) {
+      DDN.toast(`${lost.map(d => '「' + d.spot.name + '」').join('、')}没排下：今天时间不够，可先删掉一站再加`);
+    }
     renderMap();
   };
   setHint();
