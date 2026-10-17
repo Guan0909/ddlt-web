@@ -207,6 +207,12 @@ async function run(file) {
         spot.amap_poi_id = best.id;
         changes.poi = { from: oldId || null, to: best.id };
       }
+      // POI 校准到位 = 这条点位的坐标/存在性已有高德依据：把 estimate 升级为 amap（否则永远算估算点）
+      if (best.id && spot.coord_src !== 'amap') {
+        spot.coord_src = 'amap';
+        spot.verify_src = 'amap';
+        spot.verified_at = new Date().toISOString().slice(0, 10);
+      }
       if (best.coord[0] && drift != null && drift > 30 && drift <= MAX_COORD_MOVE_M) {
         spot.coord = [+best.coord[0].toFixed(6), +best.coord[1].toFixed(6)];
         changes.coord = { from: oldCoord, to: spot.coord, drift_m: Math.round(drift) };

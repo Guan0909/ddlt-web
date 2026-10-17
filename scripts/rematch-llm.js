@@ -48,14 +48,15 @@ async function judge(spot, cands, city) {
         { role: 'system', content: '你是地图 POI 匹配裁判。给定目标景点名和候选 POI 列表，判断哪个候选就是目标（允许名称带后缀/别名，警惕同名异地）。只输出 JSON：{"pick": 序号}；都不像则 {"pick": -1}。' },
         { role: 'user', content: `城市：${city}\n目标：${spot.name}（${spot.cat}，估计坐标 ${spot.coord}）\n候选：\n${list}` },
       ],
-      temperature: 0, max_tokens: 30,
+      temperature: 0, max_tokens: 400,
     }),
-    signal: AbortSignal.timeout(8000),
+    signal: AbortSignal.timeout(25000),
   });
   const j = await res.json();
   const raw = (j.choices && j.choices[0] && j.choices[0].message.content || '').trim();
   const m = raw.match(/\{[\s\S]*\}/);
-  const parsed = JSON.parse(m ? m[0] : raw);
+  if (!m) throw new Error('裁判无 JSON 输出');
+  const parsed = JSON.parse(m[0]);
   return typeof parsed.pick === 'number' ? parsed.pick : -1;
 }
 
@@ -76,7 +77,8 @@ async function run(file) {
         if (base !== spot.name) { await sleep(200); cands = await amapSearch(base, city); }
       }
       if (!cands.length) { rej++; log.push({ id: spot.id, name: spot.name, why: '高德无召回' }); continue; }
-      const pick = await judge(spot, cands, city);
+      let pick = -1;
+      for (let attempt = 0; attempt < 2; attempt++) { try { pick = await judge(spot, cands, city); break; } catch (e) { if (attempt === 1) throw e; await sleep(800); } }
       if (pick < 0 || !cands[pick]) { rej++; log.push({ id: spot.id, name: spot.name, why: '裁判否决', cands: cands.slice(0, 3).map(c => c.title) }); continue; }
       const c = cands[pick];
       const dist = haversineM(spot.coord, [c.lng, c.lat]);
