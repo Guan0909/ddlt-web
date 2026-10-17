@@ -28,7 +28,8 @@
     "rebuild_at": "2026-10-17",
     "add_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -2790,8 +2791,8 @@
       "tags": [],
       "heat": 8,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
+      "intro": "城内的街区由巷道与铺面相连而成，街巷走向紧凑，能看见沿街铺面的生活感。",
+      "reason": "清早从街口进，先看铺面，避开饭点人流。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -2828,7 +2829,8 @@
       "navi_poiid": "I49F021008_112513",
       "business_area": "北院门",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     }
   ]
 }

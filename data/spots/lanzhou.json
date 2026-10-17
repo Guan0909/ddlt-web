@@ -10,7 +10,8 @@
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "enrich_at": "2026-10-17",
-    "rebuild_at": "2026-10-17"
+    "rebuild_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -75,8 +76,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "城郊铺展的水墨丹霞地貌，山体层理与沟壑相间，色彩沿山势铺陈，兼具山水景观的开阔与起伏。",
+      "reason": "清晨先看层理清晰的坡面，避开正午强光。",
       "open": null,
       "closed_mon": null,
       "suburb": true,
@@ -115,7 +116,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "copy_src": "ai"
     },
     {
       "id": "seec04fad",
@@ -124,8 +126,8 @@
       "tags": [],
       "heat": 8,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "这里是一座位于城内的博物馆，馆藏气质偏历史文化，展陈沉静，适合按门类细看。",
+      "reason": "上午入馆先看常设陈列，避开午后客流高峰。",
       "open": "09:00-17:00",
       "closed_mon": null,
       "suburb": false,
@@ -162,7 +164,8 @@
       "navi_poiid": "J48F048015_108162",
       "business_area": "建兰路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sf0ab0f6d",
@@ -171,8 +174,8 @@
       "tags": [],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "横跨水面的桥位于城中，桥身与两岸水色相映，形成城内的山水景致。",
+      "reason": "清晨先看桥头水岸，避开正午人流。",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -210,7 +213,8 @@
       "navi_poiid": "J48F048015_62943",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "s2721441d",
@@ -219,8 +223,8 @@
       "tags": [],
       "heat": 8,
       "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
+      "intro": "这座博物馆位于城内，以读者为主题的馆藏与展陈构成阅读文化的一角。",
+      "reason": "上午入馆先看主展厅，避开周末午后高峰。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -252,7 +256,8 @@
       "navi_poiid": [],
       "business_area": "体育公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "copy_src": "ai"
     },
     {
       "id": "sa8c32934",
@@ -263,8 +268,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
+      "intro": "临水的水车园，水车沿岸线排开，园内以水车与河景为主，位于城内。",
+      "reason": "清晨沿河岸走，先看水车群，避开正午喧闹入口",
       "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": false,
@@ -304,7 +309,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     },
     {
       "id": "s34eb9b40",

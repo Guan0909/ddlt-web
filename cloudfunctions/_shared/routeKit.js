@@ -8,8 +8,21 @@ const lbs = require('./lbs');
 const store = require('./store');
 
 const CITY_FILES = {
-  '成都': 'chengdu', '北京': 'beijing', '重庆': 'chongqing',
-  '杭州': 'hangzhou', '上海': 'shanghai', '西安': 'xian',
+  '成都': 'chengdu', '重庆': 'chongqing', '昆明': 'kunming', '大理': 'dali',
+  '丽江': 'lijiang', '贵阳': 'guiyang', '拉萨': 'lhasa', '西双版纳': 'xishuangbanna',
+  '香格里拉': 'xianggelila', '上海': 'shanghai', '杭州': 'hangzhou', '南京': 'nanjing',
+  '苏州': 'suzhou', '无锡': 'wuxi', '扬州': 'yangzhou', '绍兴': 'shaoxing',
+  '宁波': 'ningbo', '温州': 'wenzhou', '合肥': 'hefei', '黄山': 'huangshan',
+  '厦门': 'xiamen', '福州': 'fuzhou', '泉州': 'quanzhou', '青岛': 'qingdao',
+  '济南': 'jinan', '威海': 'weihai', '烟台': 'yantai', '婺源': 'wuyuan',
+  '广州': 'guangzhou', '深圳': 'shenzhen', '珠海': 'zhuhai', '桂林': 'guilin',
+  '北海': 'beihai', '三亚': 'sanya', '海口': 'haikou', '北京': 'beijing',
+  '天津': 'tianjin', '大同': 'datong', '太原': 'taiyuan', '呼和浩特': 'huhehaote',
+  '武汉': 'wuhan', '长沙': 'changsha', '郑州': 'zhengzhou', '洛阳': 'luoyang',
+  '开封': 'kaifeng', '宜昌': 'yichang', '张家界': 'zhangjiajie', '凤凰': 'fenghuang',
+  '西安': 'xian', '兰州': 'lanzhou', '西宁': 'xining', '敦煌': 'dunhuang',
+  '张掖': 'zhangye', '乌鲁木齐': 'wulumuqi', '喀什': 'kashi', '银川': 'yinchuan',
+  '哈尔滨': 'haerbin', '长春': 'changchun', '沈阳': 'shenyang', '大连': 'dalian',
 };
 
 // 起点必须是有效的经纬度对：旧版云函数只校验 lng，lat 缺失或越界会让引擎算出 NaN 时刻表

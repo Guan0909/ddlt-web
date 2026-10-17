@@ -26,7 +26,8 @@
     "rebuild_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "prune_estimate_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -2141,8 +2142,8 @@
       ],
       "heat": 8,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "这座以园艺展示为主的园子依地势铺开，水面与林地相间，位于城内，适合慢行看植景与山水空间。",
+      "reason": "清晨从水边步道走起，避开正午人流。",
       "open": "08:30-30:00",
       "closed_mon": null,
       "suburb": false,
@@ -2167,7 +2168,8 @@
         "http://store.is.autonavi.com/showpic/d27bf1642c47a8b90217ccc569df93a1",
         "http://store.is.autonavi.com/showpic/8acd88192a85c1dbe6403ade48adf215",
         "http://store.is.autonavi.com/showpic/3f0d2658b8860277b927e3329834ac8a"
-      ]
+      ],
+      "copy_src": "ai"
     }
   ]
 }

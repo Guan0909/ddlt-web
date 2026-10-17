@@ -28,7 +28,8 @@
     "rebuild_at": "2026-10-17",
     "add_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -3100,8 +3101,8 @@
       "tags": [],
       "heat": 8,
       "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
+      "intro": "城内的国家体育场是大型体育场馆，开阔场心与环形看台构成公共活动空间。",
+      "reason": "傍晚先沿外场看环形看台，避开午间强光。",
       "open": "10:00-00:00",
       "closed_mon": null,
       "suburb": false,
@@ -3124,7 +3125,8 @@
       "photo": "http://store.is.autonavi.com/showpic/55957b6116c6ee3c8e843ad9051ec39f",
       "photos": [
         "http://store.is.autonavi.com/showpic/55957b6116c6ee3c8e843ad9051ec39f"
-      ]
+      ],
+      "copy_src": "ai"
     },
     {
       "id": "x4f8ca6f8",
@@ -3133,8 +3135,8 @@
       "tags": [],
       "heat": 7,
       "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
+      "intro": "位于城内的国家游泳中心以水上运动场馆为主体，与周边街区相连。",
+      "reason": "清早先看泳池侧看台，避开人流集中的入口。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -3158,7 +3160,8 @@
       "photos": [
         "http://store.is.autonavi.com/showpic/b62a1d42eada922d8328071e1c3e810e"
       ],
-      "heat_prev": 6
+      "heat_prev": 6,
+      "copy_src": "ai"
     }
   ]
 }

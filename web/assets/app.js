@@ -2,43 +2,51 @@
 /* 点定旅途 P3 · 页面共享逻辑：数据加载、存储、投影、DOM/图标工具、微调重排 */
 window.DDN = (() => {
   const DAY_CN = ['一', '二', '三', '四', '五'];
-  // 城市 → spots 数据文件（已建库 6 城）
+  // 城市 → spots 数据文件（已建库 60 城）
   const SPOT_FILES = {
-    '成都': '/data/spots/chengdu.json', '北京': '/data/spots/beijing.json',
-    '重庆': '/data/spots/chongqing.json', '杭州': '/data/spots/hangzhou.json',
-    '上海': '/data/spots/shanghai.json', '西安': '/data/spots/xian.json',
+    '成都': '/data/spots/chengdu.json', '重庆': '/data/spots/chongqing.json', '昆明': '/data/spots/kunming.json',
+    '大理': '/data/spots/dali.json', '丽江': '/data/spots/lijiang.json', '贵阳': '/data/spots/guiyang.json',
+    '拉萨': '/data/spots/lhasa.json', '西双版纳': '/data/spots/xishuangbanna.json', '香格里拉': '/data/spots/xianggelila.json',
+    '上海': '/data/spots/shanghai.json', '杭州': '/data/spots/hangzhou.json', '南京': '/data/spots/nanjing.json',
+    '苏州': '/data/spots/suzhou.json', '无锡': '/data/spots/wuxi.json', '扬州': '/data/spots/yangzhou.json',
+    '绍兴': '/data/spots/shaoxing.json', '宁波': '/data/spots/ningbo.json', '温州': '/data/spots/wenzhou.json',
+    '合肥': '/data/spots/hefei.json', '黄山': '/data/spots/huangshan.json', '厦门': '/data/spots/xiamen.json',
+    '福州': '/data/spots/fuzhou.json', '泉州': '/data/spots/quanzhou.json', '青岛': '/data/spots/qingdao.json',
+    '济南': '/data/spots/jinan.json', '威海': '/data/spots/weihai.json', '烟台': '/data/spots/yantai.json',
+    '婺源': '/data/spots/wuyuan.json', '广州': '/data/spots/guangzhou.json', '深圳': '/data/spots/shenzhen.json',
+    '珠海': '/data/spots/zhuhai.json', '桂林': '/data/spots/guilin.json', '北海': '/data/spots/beihai.json',
+    '三亚': '/data/spots/sanya.json', '海口': '/data/spots/haikou.json', '北京': '/data/spots/beijing.json',
+    '天津': '/data/spots/tianjin.json', '大同': '/data/spots/datong.json', '太原': '/data/spots/taiyuan.json',
+    '呼和浩特': '/data/spots/huhehaote.json', '武汉': '/data/spots/wuhan.json', '长沙': '/data/spots/changsha.json',
+    '郑州': '/data/spots/zhengzhou.json', '洛阳': '/data/spots/luoyang.json', '开封': '/data/spots/kaifeng.json',
+    '宜昌': '/data/spots/yichang.json', '张家界': '/data/spots/zhangjiajie.json', '凤凰': '/data/spots/fenghuang.json',
+    '西安': '/data/spots/xian.json', '兰州': '/data/spots/lanzhou.json', '西宁': '/data/spots/xining.json',
+    '敦煌': '/data/spots/dunhuang.json', '张掖': '/data/spots/zhangye.json', '乌鲁木齐': '/data/spots/wulumuqi.json',
+    '喀什': '/data/spots/kashi.json', '银川': '/data/spots/yinchuan.json', '哈尔滨': '/data/spots/haerbin.json',
+    '长春': '/data/spots/changchun.json', '沈阳': '/data/spots/shenyang.json', '大连': '/data/spots/dalian.json',
   };
   // 海报顶部拼音占位：映射不了的城市用 DECIDENOW.ASIA
-  const PINYIN = { '成都': 'CHENGDU', '北京': 'BEIJING', '重庆': 'CHONGQING', '杭州': 'HANGZHOU', '上海': 'SHANGHAI', '西安': 'XIAN' };
-  const SVGNS = 'http://www.w3.org/2000/svg';
-
-  // ---------- DOM 工具 ----------
-  function el(tag, cls, text) {
-    const n = document.createElement(tag);
-    if (cls) n.className = cls;
-    if (text != null) n.textContent = text;
-    return n;
-  }
-  function svgEl(name, attrs) {
-    const n = document.createElementNS(SVGNS, name);
-    for (const k in attrs || {}) n.setAttribute(k, attrs[k]);
-    return n;
-  }
-
-  // ---------- 静态 SVG 图标（照原型内联，非用户/数据文本） ----------
-  const ICONS = {
-    search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
-    locate: '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/>',
-    pin: '<path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/>',
-    back: '<path d="M15 5l-7 7 7 7"/>',
-    clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/>',
-    walk: '<circle cx="13" cy="4.5" r="1.8"/><path d="M13 8l-2.5 5 3 3 1 5M13 8l3 2.5L18.5 12M10.5 13 8 16l-2 5"/>',
-    transit: '<rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14M9 20l-1.5 2M15 20l1.5 2"/><circle cx="9" cy="13.5" r=".8" fill="currentColor"/><circle cx="15" cy="13.5" r=".8" fill="currentColor"/>',
-    drive: '<path d="M5 16l1.5-5.5A2 2 0 0 1 8.4 9h7.2a2 2 0 0 1 1.9 1.5L19 16"/><path d="M4 16h16v3.5a.5.5 0 0 1-.5.5H18a.5.5 0 0 1-.5-.5V18h-11v1.5a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1-.5-.5z"/>',
-    share: '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
-    image: '<rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="1.6"/><path d="m21 15-4.5-4.5L9 18"/>',
-    arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
-    download: '<path d="M12 4v12M6.5 10.5 12 16l5.5-5.5"/><path d="M4 20h16"/>',
+  const PINYIN = {
+    '成都': 'CHENGDU', '重庆': 'CHONGQING', '昆明': 'KUNMING',
+    '大理': 'DALI', '丽江': 'LIJIANG', '贵阳': 'GUIYANG',
+    '拉萨': 'LHASA', '西双版纳': 'XISHUANGBANNA', '香格里拉': 'SHANGRI-LA',
+    '上海': 'SHANGHAI', '杭州': 'HANGZHOU', '南京': 'NANJING',
+    '苏州': 'SUZHOU', '无锡': 'WUXI', '扬州': 'YANGZHOU',
+    '绍兴': 'SHAOXING', '宁波': 'NINGBO', '温州': 'WENZHOU',
+    '合肥': 'HEFEI', '黄山': 'HUANGSHAN', '厦门': 'XIAMEN',
+    '福州': 'FUZHOU', '泉州': 'QUANZHOU', '青岛': 'QINGDAO',
+    '济南': 'JINAN', '威海': 'WEIHAI', '烟台': 'YANTAI',
+    '婺源': 'WUYUAN', '广州': 'GUANGZHOU', '深圳': 'SHENZHEN',
+    '珠海': 'ZHUHAI', '桂林': 'GUILIN', '北海': 'BEIHAI',
+    '三亚': 'SANYA', '海口': 'HAIKOU', '北京': 'BEIJING',
+    '天津': 'TIANJIN', '大同': 'DATONG', '太原': 'TAIYUAN',
+    '呼和浩特': 'HOHHOT', '武汉': 'WUHAN', '长沙': 'CHANGSHA',
+    '郑州': 'ZHENGZHOU', '洛阳': 'LUOYANG', '开封': 'KAIFENG',
+    '宜昌': 'YICHANG', '张家界': 'ZHANGJIAJIE', '凤凰': 'FENGHUANG',
+    '西安': 'XIAN', '兰州': 'LANZHOU', '西宁': 'XINING',
+    '敦煌': 'DUNHUANG', '张掖': 'ZHANGYE', '乌鲁木齐': 'URUMQI',
+    '喀什': 'KASHGAR', '银川': 'YINCHUAN', '哈尔滨': 'HAERBIN',
+    '长春': 'CHANGCHUN', '沈阳': 'SHENYANG', '大连': 'DALIAN',
   };
   function icon(name, cls, style) {
     const s = svgEl('svg', { viewBox: '0 0 24 24' });

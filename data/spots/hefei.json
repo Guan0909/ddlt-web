@@ -26,7 +26,8 @@
     "rebuild_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
     "prune_estimate_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -2443,8 +2444,8 @@
       ],
       "heat": 7,
       "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
+      "intro": "这里是城内的山水型园区，水面与林木相依，山石错落，游线便于缓步看景。",
+      "reason": "清晨入园先沿水边缓行，避开正午人流。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -2470,7 +2471,8 @@
         "https://store.is.autonavi.com/showpic/7cfe1d90e53ec06d0000003607148269?type=pic",
         "https://store.is.autonavi.com/showpic/120ff0f3c81a3f2c0000001708756269"
       ],
-      "heat_prev": 8
+      "heat_prev": 8,
+      "copy_src": "ai"
     }
   ]
 }

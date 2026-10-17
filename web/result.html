@@ -213,6 +213,12 @@
   .stop-name { font-size: 16px; font-weight: 650; letter-spacing: .01em; display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
   .stop-name .flag { font-size: 10px; font-weight: 600; letter-spacing: .12em; color: var(--d1); }
   .stop-name .flag.mint { color: var(--d2); }
+  /* 高德景区等级徽章（5A/4A/3A）：权威「值得去」信号 */
+  .stop-alevel {
+    font-family: var(--font); font-size: 9.5px; font-weight: 600; letter-spacing: .1em;
+    color: var(--d2); border: .5px solid var(--d2); border-radius: 999px;
+    padding: 1px 5px; vertical-align: 1px;
+  }
   .stop-tags { margin-top: 4px; font-size: 11.5px; color: var(--ink-3); letter-spacing: .05em; }
   /* 事实行：评分 · 营业时间 · 电话（高德 POI 回填，缺项省略） */
   .stop-facts { margin-top: 3px; font-size: 10.5px; color: var(--ink-3); letter-spacing: .02em; }
@@ -699,7 +705,8 @@
       if (spot.open) dfacts.push('营业 ' + (spot.open === '00:00-23:59' ? '24 小时' : spot.open));
       if (spot.tel) dfacts.push('电话 ' + String(spot.tel).split(';')[0]);
       if (spot.open_text) dfacts.push(spot.open_text);
-      if (dfacts.length) body.appendChild(DDN.el('div', 'stop-facts', dfacts.join(' · ')));
+      if (spot && spot.a_level) dfacts.unshift(String(spot.a_level).toUpperCase() + ' 景区');
+    if (dfacts.length) body.appendChild(DDN.el('div', 'stop-facts', dfacts.join(' · ')));
       const go = DDN.el('button', 'btn-primary');
       go.textContent = '加入今天';
       go.style.marginTop = '10px';
@@ -795,9 +802,9 @@
     if (item.flag) {
       name.appendChild(DDN.el('span', 'flag' + (item.flagTone === 'mint' ? ' mint' : ''), item.flag));
     }
-    body.appendChild(name);
-
     const spot = spotById(item.id);
+    if (spot && spot.a_level) name.appendChild(DDN.el('span', 'stop-alevel', String(spot.a_level).toUpperCase() + ' 景区'));
+    body.appendChild(name);
     // 景点缩略图（高德 POI 首图，低成本富化；无图不占位）
     if (spot && spot.photo) {
       const im = DDN.el('img', 'stop-thumb');

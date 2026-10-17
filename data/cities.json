@@ -3,7 +3,9 @@
     "version": "v1",
     "generated": "2026-10-10",
     "note": "首批 60 个热门旅游城市。center 为市中心近似坐标 [lng, lat]，供城市判定与初始地图定位；cities 按大区归类。",
-    "status": "done=已完成富化 / pending=待生成"
+    "status": "done=已完成富化 / pending=待生成",
+    "launched_at": "2026-10-17",
+    "launched": 60
   },
   "regions": {
     "西南": [
@@ -104,7 +106,7 @@
         102.8332,
         24.8801
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "大理",
@@ -112,7 +114,7 @@
         100.2676,
         25.6065
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "丽江",
@@ -120,7 +122,7 @@
         100.227,
         26.855
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "贵阳",
@@ -128,7 +130,7 @@
         106.6302,
         26.647
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "拉萨",
@@ -136,7 +138,7 @@
         91.1119,
         29.662
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "西双版纳",
@@ -144,7 +146,7 @@
         100.7979,
         22.0021
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "香格里拉",
@@ -152,7 +154,7 @@
         99.7008,
         27.8297
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "上海",
@@ -176,7 +178,7 @@
         118.7969,
         32.0603
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "苏州",
@@ -184,7 +186,7 @@
         120.5853,
         31.2989
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "无锡",
@@ -192,7 +194,7 @@
         120.3119,
         31.4912
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "扬州",
@@ -200,7 +202,7 @@
         119.4129,
         32.3942
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "绍兴",
@@ -208,7 +210,7 @@
         120.5821,
         30.0303
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "宁波",
@@ -216,7 +218,7 @@
         121.5503,
         29.8746
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "温州",
@@ -224,7 +226,7 @@
         120.6994,
         27.9949
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "合肥",
@@ -232,7 +234,7 @@
         117.283,
         31.8612
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "黄山",
@@ -240,7 +242,7 @@
         118.3381,
         29.7152
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "厦门",
@@ -248,7 +250,7 @@
         118.0894,
         24.4798
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "福州",
@@ -256,7 +258,7 @@
         119.2965,
         26.0745
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "泉州",
@@ -264,7 +266,7 @@
         118.6757,
         24.8741
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "青岛",
@@ -272,7 +274,7 @@
         120.3826,
         36.0671
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "济南",
@@ -280,7 +282,7 @@
         117.1201,
         36.6512
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "威海",
@@ -288,7 +290,7 @@
         122.1204,
         37.5131
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "烟台",
@@ -296,7 +298,7 @@
         121.4479,
         37.4638
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "婺源",
@@ -304,7 +306,7 @@
         117.862,
         29.2482
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "广州",
@@ -312,7 +314,7 @@
         113.2644,
         23.1291
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "深圳",
@@ -320,7 +322,7 @@
         114.0579,
         22.5431
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "珠海",
@@ -328,7 +330,7 @@
         113.5767,
         22.2707
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "桂林",
@@ -336,7 +338,7 @@
         110.2902,
         25.2736
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "北海",
@@ -344,7 +346,7 @@
         109.1201,
         21.4811
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "三亚",
@@ -352,7 +354,7 @@
         109.5119,
         18.2528
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "海口",
@@ -360,7 +362,7 @@
         110.1983,
         20.044
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "北京",
@@ -376,7 +378,7 @@
         117.1901,
         39.1256
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "大同",
@@ -384,7 +386,7 @@
         113.3001,
         40.0768
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "太原",
@@ -392,7 +394,7 @@
         112.5489,
         37.8706
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "呼和浩特",
@@ -400,7 +402,7 @@
         111.7492,
         40.8426
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "武汉",
@@ -408,7 +410,7 @@
         114.3054,
         30.5931
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "长沙",
@@ -416,7 +418,7 @@
         112.9388,
         28.2282
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "郑州",
@@ -424,7 +426,7 @@
         113.6254,
         34.7466
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "洛阳",
@@ -432,7 +434,7 @@
         112.454,
         34.6197
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "开封",
@@ -440,7 +442,7 @@
         114.3076,
         34.7972
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "宜昌",
@@ -448,7 +450,7 @@
         111.2865,
         30.6919
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "张家界",
@@ -456,7 +458,7 @@
         110.4792,
         29.1171
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "凤凰",
@@ -464,7 +466,7 @@
         109.599,
         27.9483
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "西安",
@@ -480,7 +482,7 @@
         103.8343,
         36.0611
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "西宁",
@@ -488,7 +490,7 @@
         101.7782,
         36.6171
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "敦煌",
@@ -496,7 +498,7 @@
         94.6616,
         40.1421
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "张掖",
@@ -504,7 +506,7 @@
         100.4498,
         38.9259
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "乌鲁木齐",
@@ -512,7 +514,7 @@
         87.6168,
         43.8256
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "喀什",
@@ -520,7 +522,7 @@
         75.9938,
         39.4677
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "银川",
@@ -528,7 +530,7 @@
         106.2309,
         38.4872
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "哈尔滨",
@@ -536,7 +538,7 @@
         126.5349,
         45.8038
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "长春",
@@ -544,7 +546,7 @@
         125.3235,
         43.8171
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "沈阳",
@@ -552,7 +554,7 @@
         123.4315,
         41.8057
       ],
-      "status": "pending"
+      "status": "done"
     },
     {
       "name": "大连",
@@ -560,7 +562,7 @@
         121.6147,
         38.914
       ],
-      "status": "pending"
+      "status": "done"
     }
   ]
 }

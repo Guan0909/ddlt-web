@@ -28,7 +28,8 @@
     "rebuild_at": "2026-10-17",
     "add_at": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "copy_upgraded_at": "2026-10-17"
   },
   "spots": [
     {
@@ -2740,8 +2741,8 @@
       "tags": [],
       "heat": 7,
       "dur": 180,
-      "intro": "古镇街区，在城内，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
+      "intro": "沿河铺面与石桥连起巷道，市井气息聚在古镇街区，地处城内。",
+      "reason": "清晨从石桥边逛起，避开午间主巷人流。",
       "open": null,
       "closed_mon": null,
       "suburb": false,
@@ -2766,7 +2767,8 @@
         "https://store.is.autonavi.com/showpic/ce9e2943be2b932c0000002465168770?type=pic",
         "https://aos-comment.amap.com/B0FFGFB0FD/comment/content_media_external_file_204992_ss__1770382612311_45040394.jpg",
         "https://store.is.autonavi.com/showpic/2bf106b9a231fe9e0000002589286218?type=pic"
-      ]
+      ],
+      "copy_src": "ai"
     }
   ]
 }
