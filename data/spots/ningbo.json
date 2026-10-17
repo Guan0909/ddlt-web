@@ -1935,7 +1935,7 @@
     },
     {
       "id": "longquanshan",
-      "name": "龙泉山景区",
+      "name": "龙山公园",
       "cat": "公园",
       "tags": [
         "余姚",
@@ -1962,9 +1962,16 @@
       "open_text": "周一至周日 08:00-17:00",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "name_locked": true,
-      "note": "高德实体为「龙山公园」（余姚龙泉山），产品定名龙泉山景区",
-      "photo": "http://store.is.autonavi.com/showpic/61e374dcfafac74261c4654bba23922f"
+      "note": "高德官方名「龙山公园」（余姚龙泉山本体）",
+      "photo": "http://store.is.autonavi.com/showpic/61e374dcfafac74261c4654bba23922f",
+      "history": [
+        {
+          "at": "2026-10-17",
+          "from": "龙泉山景区",
+          "to": "龙山公园",
+          "why": "产品取消定名例外，统一采用高德官方名"
+        }
+      ]
     }
   ]
 }
