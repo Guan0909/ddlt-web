@@ -186,7 +186,15 @@ const scenarios = [
   },
   {
     name: 'F3 成都 · 周一起始 3 日（闭馆点前向迁移）',
-    opts: { spots, city: '成都', origin: { name: '天府广场酒店', lng: 104.0665, lat: 30.6570 }, days: 3, startDate: '2026-10-12' },
+    // 夹具用「城内高热度子集」：库变大后整库跑会把城内日塞满，迁移自然没有空位（不是引擎问题）
+    opts: {
+      spots: (() => {
+        const city = spots.filter(s => !s.suburb);
+        const museum = spots.find(s => s.id === 'chengdu-museum');
+        return [museum, ...city.filter(s => s.id !== 'chengdu-museum').slice(0, 10)].filter(Boolean);
+      })(),
+      city: '成都', origin: { name: '天府广场酒店', lng: 104.0665, lat: 30.6570 }, days: 3, startDate: '2026-10-12',
+    },
     checks: route => {
       const errs = [];
       let cmDay = null;
