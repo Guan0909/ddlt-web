@@ -102,12 +102,26 @@ async function amapSearch(kw, city, key, nationwide) {
 // 以免像「乾陵黑猪肉」这种同名店铺被误当景点。
 const SUFFIXES = ['国家森林公园', '森林公园', '旅游风景区', '风景名胜区', '湿地公园', '欢乐世界', '文化街区',
   '观景台', '博物馆', '步行街', '美食街', '风景区', '旅游区', '古镇', '景区', '公园', '夜市', '老街'];
-function nameVariants(name) {
+// 前缀剥离：库里很多名字带城市名/「古城」前缀（大理古城洋人街 → 洋人街、大理爱琴海购物公园 → 爱琴海购物公园），
+// 直接用整名做关键词在高德往往搜不到。city 由调用方传入。
+const CITY_STRIP = ['古城', '老城', '新城', '古镇', '古街', '景区'];
+function nameVariants(name, city) {
   const base = baseName(name);
   const out = [name, base];
   for (const s of SUFFIXES) {
     if (name.endsWith(s) && name.length > s.length + 1) out.push(name.slice(0, -s.length));
     if (base.endsWith(s) && base.length > s.length + 1) out.push(base.slice(0, -s.length));
+  }
+  if (city) {
+    const cn = String(city).trim();
+    const stripCity = n => {
+      if (!cn || !n.startsWith(cn) || n.length <= cn.length + 2) return;
+      let rest = n.slice(cn.length);
+      out.push(rest);
+      for (const p of CITY_STRIP) if (rest.startsWith(p) && rest.length > p.length + 1) out.push(rest.slice(p.length));
+    };
+    stripCity(name);
+    stripCity(base);
   }
   return [...new Set(out.filter(Boolean))];
 }
@@ -149,8 +163,8 @@ function nameAdoptable(cand, ours) {
 const PLACE_CATS = /风景名胜|旅游景点|景点|公园|娱乐|休闲|体育|展馆|展览|度假|古镇|景区|寺/;
 // 反向排除：同名的小学/医院/公司/店铺常被包含匹配误收（实测「桠溪国际慢城」匹配到了「…慢城小学」）
 const NOT_PLACE = /学校|小学|中学|大学|医院|诊所|公司|工厂|有限|门店|便利店|超市|银行|小区|住宅|公寓|办事处|村委会|加油站|停车场|收费站|公交站|地铁站/;
-function pickExact(cands, name, loose) {
-  const vars = nameVariants(name).map(norm).filter(v => v.length >= 2);
+function pickExact(cands, name, loose, city) {
+  const vars = nameVariants(name, city).map(norm).filter(v => v.length >= 2);
   // 带括号限定词的候选（「鸡鸣寺(地铁站)」「X-东门」「X(暂停开放)」）归一化后会与主名相同，
   // 但它们是入口/站点而非本体：排到后面，让不带限定词的候选优先。
   const ordered = [...cands].sort((a, b) => (/[（(]|-/.test(a.title) ? 1 : 0) - (/[（(]|-/.test(b.title) ? 1 : 0));
@@ -255,12 +269,12 @@ async function main() {
         // 不能第一个命中就停：本城偏置常先给出同名异地（如茯茶镇），而正确结果在邻市（咸阳泾阳）。
         const cands = [];
         const attempts = rescueOnly ? [] : [
-          ...nameVariants(spot.name).map(kw => [kw, city, false, false]),
-          ...nameVariants(spot.name).map(kw => [kw, city, true, true]),
-          ...nameVariants(spot.name).map(kw => [kw, '', true, true]),
+          ...nameVariants(spot.name, city).map(kw => [kw, city, false, false]),
+          ...nameVariants(spot.name, city).map(kw => [kw, city, true, true]),
+          ...nameVariants(spot.name, city).map(kw => [kw, '', true, true]),
         ];
         for (const [kw, c, nat, loose] of attempts) {
-          const h = pickExact(await amapSearch(kw, c, AK, nat), spot.name, loose);
+          const h = pickExact(await amapSearch(kw, c, AK, nat), spot.name, loose, city);
           await sleep(THROTTLE_MS);
           if (h) {
             h.drift = Math.round(hav(spot.coord, h.c.coord));

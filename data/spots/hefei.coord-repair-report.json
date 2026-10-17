@@ -1166,6 +1166,25 @@
       "poi_name": "安徽博物院(老馆)",
       "name_adopted": true,
       "coord_moved": true
+    },
+    {
+      "id": "non-heritage",
+      "name": "中国非物质文化遗产园",
+      "before": [
+        117.145,
+        32.06
+      ],
+      "provider": "amap",
+      "after": [
+        117.113834,
+        32.005496
+      ],
+      "drift_m": 6735,
+      "amap_poi_id": "B022715XXX",
+      "tier": "amap-contains+cat",
+      "poi_name": "中国(合肥)非物质文化遗产园",
+      "name_adopted": false,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1178,6 +1197,16 @@
       ],
       "provider": "amap",
       "why": "高德未命中（含全国兜底）"
+    },
+    {
+      "id": "non-heritage",
+      "name": "中国非物质文化遗产园",
+      "before": [
+        117.145,
+        32.06
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
     },
     {
       "id": "ningguo-road",
@@ -1215,16 +1244,6 @@
       "before": [
         117.62,
         31.99
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
-      "id": "non-heritage",
-      "name": "中国非物质文化遗产园",
-      "before": [
-        117.145,
-        32.06
       ],
       "provider": "amap",
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"

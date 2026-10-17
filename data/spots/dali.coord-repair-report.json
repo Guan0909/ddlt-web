@@ -1212,6 +1212,44 @@
       "poi_name": "大理床单厂艺术区",
       "name_adopted": true,
       "coord_moved": true
+    },
+    {
+      "id": "aiqinhai-mall",
+      "name": "大理爱琴海购物公园",
+      "before": [
+        100.2565,
+        25.621
+      ],
+      "provider": "amap",
+      "after": [
+        100.226566,
+        25.60917
+      ],
+      "drift_m": 3277,
+      "amap_poi_id": "B0FFMGTDNW",
+      "tier": "amap-exact",
+      "poi_name": "爱琴海购物公园",
+      "name_adopted": false,
+      "coord_moved": true
+    },
+    {
+      "id": "yangren-street",
+      "name": "大理古城洋人街",
+      "before": [
+        100.1609,
+        25.6953
+      ],
+      "provider": "amap",
+      "after": [
+        100.160829,
+        25.694279
+      ],
+      "drift_m": 114,
+      "amap_poi_id": "B036815A12",
+      "tier": "amap-exact",
+      "poi_name": "洋人街",
+      "name_adopted": false,
+      "coord_moved": true
     }
   ],
   "skipped": [
@@ -1246,16 +1284,6 @@
       "why": "高德未命中（含全国兜底）"
     },
     {
-      "id": "taiye-plaza",
-      "name": "泰业城市广场",
-      "before": [
-        100.2346,
-        25.6052
-      ],
-      "provider": "amap",
-      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
-    },
-    {
       "id": "aiqinhai-mall",
       "name": "大理爱琴海购物公园",
       "before": [
@@ -1271,6 +1299,16 @@
       "before": [
         100.1609,
         25.6953
+      ],
+      "provider": "amap",
+      "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
+    },
+    {
+      "id": "taiye-plaza",
+      "name": "泰业城市广场",
+      "before": [
+        100.2346,
+        25.6052
       ],
       "provider": "amap",
       "why": "高德未命中（名称阶梯 + 全国兜底 + 周边裁判）"
