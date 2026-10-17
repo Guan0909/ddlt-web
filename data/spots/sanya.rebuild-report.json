@@ -1,0 +1,552 @@
+{
+  "city": "三亚",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 24,
+      "公园": 4,
+      "古迹": 6,
+      "博物馆": 3,
+      "古镇": 1,
+      "街区": 2,
+      "亲子": 1,
+      "美食": 2
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 0,
+      "family": 1,
+      "street": 2,
+      "food": 2,
+      "park": 4,
+      "mall": 0,
+      "total": 43,
+      "suburb": 9,
+      "coreRatio": 79
+    }
+  },
+  "keep": [
+    {
+      "id": "sed153569",
+      "name": "大东海旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8c922e14",
+      "name": "亚龙湾国家旅游度假区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s009741fb",
+      "name": "三亚西岛海洋文化旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sf043f5a6",
+      "name": "天涯海角游览区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sb4ba154f",
+      "name": "蜈支洲岛旅游风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4bb2fef3",
+      "name": "南山文化旅游区南山海上观音",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s940e7e04",
+      "name": "三亚南山文化旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "scf76f4de",
+      "name": "南山大小洞天旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s455bf4e5",
+      "name": "亚龙湾热带天堂森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s43a82b73",
+      "name": "天涯小镇",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s87bd1a10",
+      "name": "鹿回头风景区",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s563eeb2a",
+      "name": "三亚凤凰岭海誓山盟景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6710fcf7",
+      "name": "三亚千古情景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s31def772",
+      "name": "三亚亚特兰蒂斯景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2fe8dcde",
+      "name": "南山寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbb85cecb",
+      "name": "临春岭森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scaf244e7",
+      "name": "牛王岭",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s70898048",
+      "name": "后海湾",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s44a9d219",
+      "name": "三亚山海贝文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scc9b76a7",
+      "name": "崖州古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s271bf62c",
+      "name": "情人湾",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbeb78094",
+      "name": "西岛渔村",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s858e2dd6",
+      "name": "三亚东岸湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scca1743a",
+      "name": "南开清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sabd79c18",
+      "name": "城市乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1ac263ce",
+      "name": "三亚水稻国家公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2f8011d7",
+      "name": "亚龙湾国际玫瑰谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s815d700b",
+      "name": "天行森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd05ea5bc",
+      "name": "三亚恐龙博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s945f4020",
+      "name": "南海龙王神洲庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s8ced76f9",
+      "name": "南天一柱",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s7c717332",
+      "name": "不二法门",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s54ef20fd",
+      "name": "海南京润珍珠博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s3c16bcf2",
+      "name": "抱坡溪湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s1fe08ef4",
+      "name": "三亚清真北大寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s0acc167f",
+      "name": "铁炉港口庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s2994cc4a",
+      "name": "清真南寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "se6c8233d",
+      "name": "海棠广场",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sfde752d5",
+      "name": "凤凰岛桥头公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s98980c7f",
+      "name": "步行街小吃城",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s7d3b28b5",
+      "name": "创新小吃街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "se191cf06",
+      "name": "三亚湾红树林度假世界美食街",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "se1d0d101",
+      "name": "西岛美食街",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sed153569",
+      "name": "大东海旅游区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s8c922e14",
+      "name": "亚龙湾国家旅游度假区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s009741fb",
+      "name": "三亚西岛海洋文化旅游区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sf043f5a6",
+      "name": "天涯海角游览区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sb4ba154f",
+      "name": "蜈支洲岛旅游风景区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s4bb2fef3",
+      "name": "南山文化旅游区南山海上观音",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s940e7e04",
+      "name": "三亚南山文化旅游区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "scf76f4de",
+      "name": "南山大小洞天旅游区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s455bf4e5",
+      "name": "亚龙湾热带天堂森林公园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s563eeb2a",
+      "name": "三亚凤凰岭海誓山盟景区",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

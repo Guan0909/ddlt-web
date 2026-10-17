@@ -1,0 +1,669 @@
+{
+  "city": "厦门",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 22,
+      "古迹": 9,
+      "公园": 5,
+      "街区": 10,
+      "博物馆": 4,
+      "亲子": 3,
+      "夜景": 2
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 2,
+      "family": 3,
+      "street": 10,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 55,
+      "suburb": 2,
+      "coreRatio": 67
+    }
+  },
+  "keep": [
+    {
+      "id": "s97566478",
+      "name": "鼓浪屿风景名胜区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s78548388",
+      "name": "胡里山炮台",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s5db45a52",
+      "name": "厦门园林博览苑",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s32155e3d",
+      "name": "南普陀寺",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6dfa2425",
+      "name": "厦门园林植物园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sf0727dd5",
+      "name": "惠和石文化园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2d2e3d46",
+      "name": "集美鳌园景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sda1a57c2",
+      "name": "天竺山森林公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0749ae87",
+      "name": "万石山国家重点风景名胜区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s72068149",
+      "name": "厦门世茂双子塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7368e64a",
+      "name": "十里长堤",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5ceaf0ad",
+      "name": "南薰楼群",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc1536add",
+      "name": "厦门市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6c5e7788",
+      "name": "厦门方特梦幻王国",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sddb46bef",
+      "name": "沙坡尾",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sacc3f0d0",
+      "name": "日光岩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdaed6c65",
+      "name": "清水宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s09db8b44",
+      "name": "嘉庚公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s19521687",
+      "name": "厦门屿见闽南主题景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s12b89733",
+      "name": "厦门海上明珠塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "seb00602e",
+      "name": "钢琴码头",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1ad0b4dd",
+      "name": "观音寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se248b8e2",
+      "name": "玩月坡",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa656c01d",
+      "name": "观音山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8a7596d9",
+      "name": "青礁慈济祖宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0bf35684",
+      "name": "五缘湾天鹅湖",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5f1e4c98",
+      "name": "厦门诚毅自然探索馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sac48f429",
+      "name": "华侨博物院",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3ae0327a",
+      "name": "筼筜湖",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc34cbb88",
+      "name": "大社戏台广场",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s76119234",
+      "name": "同安钟楼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2ad60418",
+      "name": "石峰岩寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3adddd8c",
+      "name": "怪坡",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s32fc4959",
+      "name": "海天堂构",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4ba85101",
+      "name": "贝壳梦幻世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0bd96fa1",
+      "name": "园博苑·虫返地球博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3aab207f",
+      "name": "鸿山寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdbd2140e",
+      "name": "灵玲动物王国",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3292e38d",
+      "name": "可百福鹦鹉主题乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s19888903",
+      "name": "世茂云上厦门观光厅",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s36d1b9d8",
+      "name": "老剧场文化公园",
+      "cat": "夜景",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s38d7d25c",
+      "name": "厦门鲸探海洋科普乐园",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "x2e2b37e0",
+      "name": "环岛路海滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s8c67713d",
+      "name": "中山路步行街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "s8044a0ea",
+      "name": "曾厝垵步行街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "x8e90081f",
+      "name": "厦门大学(思明校区)",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sdf675fb5",
+      "name": "闽南美食城",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "x6cf32958",
+      "name": "集美学村牌坊",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s104db15e",
+      "name": "马垅美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s32acdd4a",
+      "name": "小齐前场特色美食文化街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s8cc2f2ee",
+      "name": "纳德福美食反诈一条街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "saf01670c",
+      "name": "菽庄花园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s0670b0db",
+      "name": "厦门白鹭洲公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "s410509ec",
+      "name": "集美沙滩美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    },
+    {
+      "id": "s06f8c4b9",
+      "name": "前埔不夜城美食广场商业街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s97566478",
+      "name": "鼓浪屿风景名胜区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s78548388",
+      "name": "胡里山炮台",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s5db45a52",
+      "name": "厦门园林博览苑",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sf0727dd5",
+      "name": "惠和石文化园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2d2e3d46",
+      "name": "集美鳌园景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sda1a57c2",
+      "name": "天竺山森林公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s0749ae87",
+      "name": "万石山国家重点风景名胜区",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

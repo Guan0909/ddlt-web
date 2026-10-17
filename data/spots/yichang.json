@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -20,7 +21,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -62,7 +63,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s56cc657c",
@@ -71,7 +73,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -113,7 +115,8 @@
       "navi_poiid": "H49F015026_2",
       "business_area": [],
       "website": "www.sanxiarenjia.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sb7850f67",
@@ -123,7 +126,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -165,7 +168,8 @@
       "navi_poiid": "H49F019026_53",
       "business_area": "清江画廊旅游度假区",
       "website": "www.qjhlw.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s40da7dcc",
@@ -174,7 +178,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
@@ -215,7 +219,8 @@
       "navi_poiid": "H49F015027_462",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s06734cde",
@@ -224,7 +229,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -266,7 +271,8 @@
       "navi_poiid": "H49F015027_9304;1675;461",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2c4e93ac",
@@ -276,7 +282,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -318,7 +324,8 @@
       "navi_poiid": "H49F015024_1718",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s133ee19f",
@@ -328,7 +335,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -370,7 +377,8 @@
       "navi_poiid": "H49F013029_2",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s64f1a4ab",
@@ -380,7 +388,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -421,7 +429,8 @@
       "navi_poiid": "H49F015030_179;5577",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s315c88b6",
@@ -430,7 +439,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
@@ -470,56 +479,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s2856849b",
-      "name": "宜昌市葛洲坝旅游区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 8,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        111.292249,
-        30.731873
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02CD01U6J",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/df4efe6995c606f7032d9557f9a39bfa",
-      "address": "沿江大道",
-      "district": "西陵区",
-      "adcode": "420502",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/df4efe6995c606f7032d9557f9a39bfa",
-        "https://store.is.autonavi.com/showpic/8805d8f938b487af0000002743590485?type=pic",
-        "https://aos-comment.amap.com/B02CD01U6J/comment/e86108aa891817f90bb2ca01febc8441_2048_2048_80.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        111.292914,
-        30.731844
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sacb18616",
@@ -528,7 +489,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -569,7 +530,8 @@
       "navi_poiid": "H49F017025_18;16",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s8e60f92a",
@@ -579,7 +541,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -620,7 +582,8 @@
       "navi_poiid": "H49F019027_254",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s79caf0c0",
@@ -630,7 +593,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -671,7 +634,8 @@
       "navi_poiid": "H49F012029_23",
       "business_area": [],
       "website": "www.mfsly.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "se47618b6",
@@ -681,7 +645,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -723,7 +687,8 @@
       "navi_poiid": "H49F016024_403",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sec87fb40",
@@ -1400,56 +1365,6 @@
       ],
       "navi_poiid": [],
       "business_area": "西坝",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s7d06b94f",
-      "name": "三峡大坝全景观景台",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:30-18:30",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        111.02741,
-        30.810235
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0L6XS09LU",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-18:30",
-      "tel": "13872466039",
-      "photo": "https://store.is.autonavi.com/showpic/0a4fc712db64ebcb0000002365166908?type=pic",
-      "address": "三斗坪镇高家冲二组",
-      "district": "夷陵区",
-      "adcode": "420506",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/0a4fc712db64ebcb0000002365166908?type=pic",
-        "https://store.is.autonavi.com/showpic/596defe3f6723b730000002543566607?type=pic",
-        "https://aos-comment.amap.com/B0L6XS09LU/comment/content_media_external_file_28836_ss__1754976581711_25314193.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        111.026838,
-        30.809394
-      ],
-      "navi_poiid": [],
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

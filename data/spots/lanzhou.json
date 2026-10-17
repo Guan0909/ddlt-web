@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -61,7 +62,8 @@
       "navi_poiid": "J48F048015_107586",
       "business_area": "体育公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s48316b46",
@@ -71,7 +73,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -112,7 +114,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "seec04fad",
@@ -258,7 +261,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -300,7 +303,8 @@
       "navi_poiid": "J48F048015_91921",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s34eb9b40",
@@ -309,7 +313,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -350,7 +354,8 @@
       "navi_poiid": "J48F047015_47",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf146cb0a",
@@ -360,7 +365,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -401,7 +406,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2bbb3538",
@@ -497,53 +503,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s56fe2abc",
-      "name": "兰州市博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        103.834043,
-        36.055326
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03A30087C",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "8月1日-8月31日 09:00-17:00",
-      "tel": "0931-8828555",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/87731894-5095-4fd1-a518-e37d393b45a4.jpg",
-      "address": "庆阳路240号(东方红广场地铁站X1口步行410米)",
-      "district": "城关区",
-      "adcode": "620102",
-      "cost": 0,
-      "photos": [
-        "http://aos-cdn-image.amap.com/sns/ugccomment/87731894-5095-4fd1-a518-e37d393b45a4.jpg",
-        "http://aos-cdn-image.amap.com/sns/ugccomment/546266e7-fed7-440b-ab71-fb1ee553cdb7.jpg",
-        "http://store.is.autonavi.com/showpic/22b3547eaeaba62cbbeac73cb1d7a591"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        103.83409,
-        36.054773
-      ],
-      "navi_poiid": "J48F048015_3204",
-      "business_area": "广武门",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -684,55 +643,6 @@
       ],
       "navi_poiid": [],
       "business_area": "安宁西路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s2aac201c",
-      "name": "五泉山公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        103.824194,
-        36.036748
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03A3045FC",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "01-01至04-18 周一至周日 07:00-20:00；04-19至04-30 周一至周日 06:00-21:30；05-01至05-05 周一至周日 07:00-20:30；05-06至10-31 周一至周日 06:00-21:30；11-01至12-31 周一至周日 07:00-20:00",
-      "tel": "0931-8243247",
-      "photo": "http://store.is.autonavi.com/showpic/53e3a3a1eda62bc71d49f5ca8f2d29fa",
-      "address": "五泉南路103号",
-      "district": "城关区",
-      "adcode": "620102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/53e3a3a1eda62bc71d49f5ca8f2d29fa",
-        "http://store.is.autonavi.com/showpic/964cf16926915ef80b1f14fe891c06ba",
-        "http://store.is.autonavi.com/showpic/be747abb69908864ee610d8d6f3c6444"
-      ],
-      "a_level": "4A",
-      "keytag": "4A景区",
-      "entrance": [
-        103.826715,
-        36.038328
-      ],
-      "navi_poiid": "J48F048015_104973",
-      "business_area": "五泉",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -930,53 +840,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s887830f7",
-      "name": "甘肃地质博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "09:00-16:30",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        103.86095,
-        36.06899
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03A30BG8B",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-16:30 ,周一关闭",
-      "tel": "0931-8178210",
-      "photo": "https://store.is.autonavi.com/showpic/3d67fc872defc3b90000002456358765?type=pic",
-      "address": "雁南街道团结路6号",
-      "district": "城关区",
-      "adcode": "620102",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/3d67fc872defc3b90000002456358765?type=pic",
-        "https://aos-comment.amap.com/B03A30BG8B/comment/f89db57fca1510b8f42b4aacb3a7421a_2048_2048_80.jpg",
-        "https://store.is.autonavi.com/showpic/6a3abc5c73b9c4430000003342152553?type=pic"
-      ],
-      "keytag": "地质博物馆",
-      "entrance": [
-        103.860901,
-        36.069439
-      ],
-      "navi_poiid": "J48F048015_94450",
-      "business_area": "雁滩",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s45907a30",
       "name": "兰州河口古镇",
       "cat": "古镇",
@@ -1070,48 +933,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s6e7b10b8",
-      "name": "长新美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "06:30-23:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        103.732328,
-        36.106862
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHJK0LN",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 06:30-23:00",
-      "photo": "https://aos-comment.amap.com/B0FFHJK0LN/comment/file_media_Photo_11852_IMG_1764846855_14367_IMG_20251204_191235_jpg_ss__1768667239787_17307708.jpg",
-      "address": "西北师范大学(知行校区)西门对面",
-      "district": "安宁区",
-      "adcode": "620105",
-      "cost": 13,
-      "photos": [
-        "https://aos-comment.amap.com/B0FFHJK0LN/comment/file_media_Photo_11852_IMG_1764846855_14367_IMG_20251204_191235_jpg_ss__1768667239787_17307708.jpg",
-        "http://store.is.autonavi.com/showpic/27e3c2ca4433ce1703c90c8348fbe406",
-        "https://store.is.autonavi.com/showpic/aded858c8fcb09b10000007218136715?type=pic"
-      ],
-      "keytag": "美食街",
-      "navi_poiid": [],
-      "business_area": "安宁西路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1552,53 +1373,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s16a7acc6",
-      "name": "兰州黄河风情线大景区",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        103.798237,
-        36.066271
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0G0P5D8S9",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/9ba59c81534fa4320000003908842076",
-      "address": "西园街道西园街道南滨河东路与小西湖东街交叉口东320米",
-      "district": "七里河区",
-      "adcode": "620103",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/9ba59c81534fa4320000003908842076",
-        "https://aos-comment.amap.com/B0G0P5D8S9/comment/content_media_external_file_1000030051_ss__1764744879669_92938797.jpg",
-        "https://aos-comment.amap.com/B0G0P5D8S9/comment/content_media_external_file_1000048160_ss__1750466604410_78001755.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        103.798484,
-        36.065958
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sa30e4744",
       "name": "报恩寺",
       "cat": "古迹",
@@ -1791,54 +1565,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s0bf89b61",
-      "name": "金城关文化博览园",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "10:00-18:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        103.815643,
-        36.066143
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03A30AZRE",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "10:00-18:00, 具体开放时间以现场公示为准",
-      "tel": "0931-8559236",
-      "photo": "http://store.is.autonavi.com/showpic/6afa7aefd6dfb8aa11d051f8280fe1dc",
-      "address": "北滨河中路450号",
-      "district": "城关区",
-      "adcode": "620102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/6afa7aefd6dfb8aa11d051f8280fe1dc",
-        "https://store.is.autonavi.com/showpic/2583f488090fa5e40000000671942778?type=pic",
-        "https://aos-comment.amap.com/B03A30AZRE/comment/1FF5DC19_E0B4_40E1_82C3_D4F769C1023E_L0_001_2000_150_1754980427940_69803875.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        103.813422,
-        36.065575
-      ],
-      "navi_poiid": "J48F048015_92495",
-      "business_area": "北滨河中路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "se06e3d32",
       "name": "黄河索道(上站)",
       "cat": "山水",
@@ -2022,48 +1748,6 @@
         "https://store.is.autonavi.com/showpic/d63468c300f939780000001998822386?type=pic"
       ],
       "keytag": "大峡谷",
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s13252cb1",
-      "name": "林和宫兰州牛肉面博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        103.783477,
-        36.077704
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0MB2H0EQZ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-12:00,14:00-21:00",
-      "photo": "https://store.is.autonavi.com/showpic/05ab99731aba41540000003180530390?type=pic",
-      "address": "北滨河中路1196号",
-      "district": "城关区",
-      "adcode": "620102",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/05ab99731aba41540000003180530390?type=pic",
-        "https://store.is.autonavi.com/showpic/4045f705fe32b1a7332013b06b218892",
-        "https://store.is.autonavi.com/showpic/9c4bad4d9b8730a9e526af5403320208"
-      ],
-      "keytag": "博物馆",
       "navi_poiid": [],
       "business_area": [],
       "website": [],

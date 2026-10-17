@@ -1,0 +1,507 @@
+{
+  "city": "张家界",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 29,
+      "古镇": 2,
+      "古迹": 2,
+      "博物馆": 1,
+      "公园": 5,
+      "街区": 1,
+      "美食": 1
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 0,
+      "family": 0,
+      "street": 1,
+      "food": 1,
+      "park": 5,
+      "mall": 0,
+      "total": 41,
+      "suburb": 21,
+      "coreRatio": 83
+    }
+  },
+  "keep": [
+    {
+      "id": "se623d1ea",
+      "name": "天门山国家森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s9566f8f5",
+      "name": "张家界国家森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sd212d2f9",
+      "name": "黄龙洞景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s5eae629b",
+      "name": "张家界大峡谷",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s03a514bc",
+      "name": "宝峰湖风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s17b459e0",
+      "name": "溪布老街",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s200ef5e3",
+      "name": "大庸府城",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0d4b8fcd",
+      "name": "七十二奇楼景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9e658c2e",
+      "name": "武陵源风景名胜区",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "se5ff8a2c",
+      "name": "七星山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sfb166579",
+      "name": "张家界千古情景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s918c2446",
+      "name": "天子山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se62f03e5",
+      "name": "张家界市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9a855def",
+      "name": "大庸古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9edbe87a",
+      "name": "张家界冰雪世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s71c64ddc",
+      "name": "杨家界风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sa76c14dd",
+      "name": "天下第一桥",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s3582d2e7",
+      "name": "乾坤柱(阿凡达悬浮山)",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sa11dcb69",
+      "name": "天门山鬼谷峡洞风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s675c8b9e",
+      "name": "茅岩河漂流",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s793f4d38",
+      "name": "御笔峰",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s2aed7a1b",
+      "name": "张家界魅力湘西国际文化广场景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sfe705e3f",
+      "name": "白羊古刹",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s7ed29742",
+      "name": "云梦仙顶",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s764993ec",
+      "name": "中国张家界世界地质公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s18b3e64a",
+      "name": "迷魂台",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sdbb26be7",
+      "name": "一步登天",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s9608422b",
+      "name": "红岩岭景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s3174df71",
+      "name": "仙人溪",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s5336d401",
+      "name": "摘星台",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s4876bd4b",
+      "name": "乌龙寨",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s5e85d874",
+      "name": "索溪峪自然保护区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s0044ed9a",
+      "name": "天波府",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s3f0155c2",
+      "name": "金鞭溪峡谷",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "sc631a673",
+      "name": "大庸桥公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd6cac114",
+      "name": "大栗坡公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s59a63bda",
+      "name": "紫舞公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sfea3305d",
+      "name": "迴龙公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s3472696e",
+      "name": "杨家溪体育公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s74c30182",
+      "name": "新外滩美食街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sb6f3bba6",
+      "name": "天门美食街",
+      "cat": "美食",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "se623d1ea",
+      "name": "天门山国家森林公园",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s9566f8f5",
+      "name": "张家界国家森林公园",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sd212d2f9",
+      "name": "黄龙洞景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s5eae629b",
+      "name": "张家界大峡谷",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s03a514bc",
+      "name": "宝峰湖风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s17b459e0",
+      "name": "溪布老街",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s200ef5e3",
+      "name": "大庸府城",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2aed7a1b",
+      "name": "张家界魅力湘西国际文化广场景区",
+      "from": 7,
+      "to": 6
+    }
+  ],
+  "duplicates": []
+}

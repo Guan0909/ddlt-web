@@ -1,0 +1,604 @@
+{
+  "city": "乌鲁木齐",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "商圈": 1,
+      "山水": 23,
+      "博物馆": 6,
+      "街区": 8,
+      "公园": 5,
+      "亲子": 2,
+      "古迹": 6,
+      "古镇": 1
+    },
+    "byGroup": {
+      "core": 36,
+      "night": 0,
+      "family": 2,
+      "street": 8,
+      "food": 0,
+      "park": 5,
+      "mall": 1,
+      "total": 52,
+      "suburb": 9,
+      "coreRatio": 69
+    }
+  },
+  "keep": [
+    {
+      "id": "sc6038957",
+      "name": "新疆国际大巴扎",
+      "cat": "商圈",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sc3bc0d02",
+      "name": "水磨沟风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s3817aad8",
+      "name": "新疆维吾尔自治区博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4e322945",
+      "name": "红山公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfc363022",
+      "name": "新疆民街",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s06a99c51",
+      "name": "雅玛里克山森林公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s739c893c",
+      "name": "新疆地质矿产博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa2c9d6a1",
+      "name": "乌鲁木齐市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdd04663c",
+      "name": "水上乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa9fa308c",
+      "name": "新疆古生态园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s88f835ea",
+      "name": "红光山景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s60c1016e",
+      "name": "九龙生态园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf969bffb",
+      "name": "乌鲁木齐西山老君庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s11f1d151",
+      "name": "燕儿窝风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s28f47fc5",
+      "name": "新疆自然博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa0d8f2bc",
+      "name": "石人沟鸟巢阵观景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1b24cf6f",
+      "name": "哈熊沟景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s05fcc196",
+      "name": "法明寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5fd65e96",
+      "name": "龙王瀑布",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6f3e561b",
+      "name": "新疆活体昆虫博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2128c875",
+      "name": "南山国家森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s852f18eb",
+      "name": "新疆天山野生动物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0f81398e",
+      "name": "大东沟风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s5909f5f6",
+      "name": "雪岭鹰谷景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s8fcd65cb",
+      "name": "水塔山公园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s168b1ec3",
+      "name": "伴山繁花",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s7b7428e8",
+      "name": "陕西大寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "se147705a",
+      "name": "撒拉寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s9a974ea9",
+      "name": "乌拉泊古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sacf87610",
+      "name": "亚洲大陆地理中心",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sc84a68a0",
+      "name": "苜蓿台子旅游风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sb5951ccb",
+      "name": "十七户湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s097c1221",
+      "name": "红湾花海景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s9b7e7033",
+      "name": "西域欢乐城",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s0d9d9f9d",
+      "name": "冰雪特色小镇",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s1092e4da",
+      "name": "揽秀园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sdffecd80",
+      "name": "红沙滩风景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s2471d47b",
+      "name": "天山雪莲博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "xe508cc07",
+      "name": "天山大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xeb988672",
+      "name": "天山天池风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s749133b1",
+      "name": "大巴扎步行街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s6a1c54e1",
+      "name": "新民路美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s9db570b4",
+      "name": "北京路中和美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s92e8a9f2",
+      "name": "尚品汇美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s70d536fd",
+      "name": "新疆维吾尔自治区非物质文化遗产馆",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s231f329a",
+      "name": "南湖村好吃美食街夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s8cbf8ca7",
+      "name": "上城UPtown美食街区",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s83d68f50",
+      "name": "壹号街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s61f0c316",
+      "name": "乌鲁木齐市植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s7331dbfc",
+      "name": "人民公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s05077ece",
+      "name": "南湖市民广场",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s34bb8974",
+      "name": "乌鲁木齐市儿童公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sc6038957",
+      "name": "新疆国际大巴扎",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sc3bc0d02",
+      "name": "水磨沟风景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sfc363022",
+      "name": "新疆民街",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s06a99c51",
+      "name": "雅玛里克山森林公园",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

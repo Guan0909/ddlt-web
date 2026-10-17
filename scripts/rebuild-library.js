@@ -223,7 +223,7 @@ function plan(city) {
     const h = heatOf(sc);
     if (h !== null && h !== s.heat) heatChanges.push({ id: s.id, name: s.name, from: s.heat, to: h });
     rec.heatNew = h;
-    const famename = fames.some(k => s.name.includes(k));
+    const famename = fames.some(k => s.name.includes(k)) || s.a_level === '5A' || s.a_level === '4A';
     const banned = (BLACKLIST[city] || []).some(k => s.name.includes(k));
     if (banned) { drop.push({ ...rec, why: '低价值黑名单（景区/文旅盘）' }); continue; }
     const goodType = (!!hit && /风景名胜|国家级景点|省级景点/.test(hit.type))
@@ -313,6 +313,7 @@ function RULE_commonLen(a, b) {
   }
   return best;
 }
+const AUDIT_SLEEP = Number(process.env.AUDIT_THROTTLE_MS || 120);
 async function auditRules(cityName, apply) {
   const file = CITY_FILES[cityName];
   if (!file) { console.error('未知城市：' + cityName); return; }
@@ -332,7 +333,7 @@ async function auditRules(cityName, apply) {
         const raw = (j.pois || [])[0];
         if (raw) poi = amap.normPoi(raw);
       } catch (e) {}
-      await RULE_sleep(120);
+      await RULE_sleep(AUDIT_SLEEP);
     }
     if (!poi) {
       try {
@@ -342,7 +343,7 @@ async function auditRules(cityName, apply) {
           || list.find(x => RULE_norm(x.name).includes(RULE_norm(s.name)) || RULE_norm(s.name).includes(RULE_norm(x.name)))
           || null;
       } catch (e) {}
-      await RULE_sleep(220);
+      await RULE_sleep(AUDIT_SLEEP);
     }
     if (!poi) out.noPoi.push(s.name);
     const poiRating = poi && poi.rating != null && poi.rating > 0 ? poi.rating : null;

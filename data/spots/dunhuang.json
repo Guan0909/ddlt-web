@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -60,7 +61,8 @@
       "navi_poiid": "K46F047038_5071;1111",
       "business_area": [],
       "website": "www.mssyyq.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s0eed0368",
@@ -117,7 +119,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "古镇街区，在城内，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -159,7 +161,8 @@
       "navi_poiid": "K46F048037_21",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s8259065b",
@@ -398,54 +401,6 @@
         39.976172
       ],
       "navi_poiid": "J46F001035_2",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s86627975",
-      "name": "月牙泉小镇",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        94.670862,
-        40.102116
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGL0BHW",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "tel": "0937-2633246",
-      "photo": "https://store.is.autonavi.com/showpic/f99650082e258a9c0000003107784003?type=pic",
-      "address": "月牙泉镇鸣山南路敦煌山庄南侧",
-      "district": "敦煌市",
-      "adcode": "620982",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/f99650082e258a9c0000003107784003?type=pic",
-        "https://store.is.autonavi.com/showpic/e318cb6dc12e24a37eae3cdb1d4e34b2",
-        "https://aos-comment.amap.com/B0FFGL0BHW/comment/60cb330924fb557638c048cc98e96a13_2048_2048_80.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        94.672522,
-        40.103298
-      ],
-      "navi_poiid": [],
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
@@ -876,52 +831,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "se70cde75",
-      "name": "夜光杯博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 6,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "09:00-17:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        94.670135,
-        40.111078
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KUB7MP0O",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-17:00",
-      "photo": "https://aos-comment.amap.com/B0KUB7MP0O/comment/D7BAE723_DD2D_4BD3_963E_C9BF6E7076BF_L0_001_2000_150_1755316338103_79782396.jpg",
-      "address": "鸣山南路与文博西路交叉口东南80米",
-      "district": "敦煌市",
-      "adcode": "620982",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0KUB7MP0O/comment/D7BAE723_DD2D_4BD3_963E_C9BF6E7076BF_L0_001_2000_150_1755316338103_79782396.jpg",
-        "https://store.is.autonavi.com/showpic/3bbf3e778991afcbb532d6dccc6529c1",
-        "https://store.is.autonavi.com/showpic/346c3ff9d4aa9f0357a469da0a44dd12"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        94.670073,
-        40.111066
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s4664ba1e",
       "name": "地藏王",
       "cat": "山水",
@@ -1074,7 +983,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -1117,7 +1026,204 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
+    },
+    {
+      "id": "x7451fb8e",
+      "name": "敦煌研究院文化创意馆(景观大道店)",
+      "cat": "山水",
+      "tags": [],
+      "heat": 7,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.767775,
+        40.161575
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0J1CZ9XQS",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.6,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": "周一至周日 08:00-19:00",
+      "tel": "18293720531",
+      "photo": "https://aos-comment.amap.com/B0J1CZ9XQS/comment/content_media_external_file_1000008427_ss__1757917549368_24488227.jpg",
+      "photos": [
+        "https://aos-comment.amap.com/B0J1CZ9XQS/comment/content_media_external_file_1000008427_ss__1757917549368_24488227.jpg"
+      ]
+    },
+    {
+      "id": "x1df0899f",
+      "name": "西晋壁画墓",
+      "cat": "山水",
+      "tags": [],
+      "heat": 7,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.748105,
+        40.123479
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFFOM044",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.4,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": "1月至4月,11月至12月 周一至周日 09:00-17:00；5月至10月 周一至周日 09:00-18:00",
+      "tel": "13893771338",
+      "photo": "http://store.is.autonavi.com/showpic/5bdf5dd4928a9e26ac06607cf0e2ceda",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5bdf5dd4928a9e26ac06607cf0e2ceda"
+      ]
+    },
+    {
+      "id": "x0d9e44fe",
+      "name": "格萨尔藏文化民俗馆",
+      "cat": "山水",
+      "tags": [],
+      "heat": 6,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.657497,
+        40.133097
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0FFKV99VP",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.2,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": [],
+      "tel": "13629372672",
+      "photo": "https://store.is.autonavi.com/showpic/1960443f7124077acf8d4c9ff4f1f2f5",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/1960443f7124077acf8d4c9ff4f1f2f5"
+      ]
+    },
+    {
+      "id": "x7dccedc9",
+      "name": "敦煌光电产业园区观景台",
+      "cat": "山水",
+      "tags": [],
+      "heat": 6,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.50905,
+        40.059789
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0KRUS09DL",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4.1,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": [],
+      "photo": "https://aos-comment.amap.com/B0KRUS09DL/comment/content_media_external_images_media_169418_ss_2_1725538206322_88445888.jpg",
+      "photos": [
+        "https://aos-comment.amap.com/B0KRUS09DL/comment/content_media_external_images_media_169418_ss_2_1725538206322_88445888.jpg"
+      ]
+    },
+    {
+      "id": "x9332777c",
+      "name": "沙州故城遗址",
+      "cat": "山水",
+      "tags": [],
+      "heat": 6,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.649745,
+        40.129143
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0KUR5685G",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": "周一至周日 00:00-24:00",
+      "photo": "https://aos-comment.amap.com/B0KUR5685G/comment/A10DC108_B2BB_421E_B881_0E4996241C09_L0_001_2016_113_1750464746891_39726146.jpg",
+      "photos": [
+        "https://aos-comment.amap.com/B0KUR5685G/comment/A10DC108_B2BB_421E_B881_0E4996241C09_L0_001_2016_113_1750464746891_39726146.jpg"
+      ]
+    },
+    {
+      "id": "x00ff2fc7",
+      "name": "敦煌鸣山艺术馆(沙州夜市店)",
+      "cat": "山水",
+      "tags": [],
+      "heat": 6,
+      "dur": 180,
+      "intro": "自然与人文景观，在城内，适合留一整天。",
+      "reason": "上午来，慢慢走",
+      "open": null,
+      "closed_mon": null,
+      "suburb": false,
+      "coord": [
+        94.665799,
+        40.140389
+      ],
+      "coord_src": "amap",
+      "amap_poi_id": "B0KRK78S9D",
+      "refreshed_at": "2026-10-17",
+      "verify_src": "amap",
+      "verified_at": "2026-10-17",
+      "rating": 4,
+      "biz_src": "amap",
+      "biz_at": "2026-10-17",
+      "added_at": "2026-10-17",
+      "note": "小城补点",
+      "open_text": "周一至周日 09:00-21:00",
+      "tel": "13909372073",
+      "photo": "https://store.is.autonavi.com/showpic/4d8fe1feabcf7a3b0b143b466d1d5c29",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/4d8fe1feabcf7a3b0b143b466d1d5c29"
+      ]
     }
   ]
 }

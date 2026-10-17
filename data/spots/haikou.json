@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": "E49F001018_42471;8715;5;257;32",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sa38db9c5",
@@ -261,7 +263,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -302,7 +304,8 @@
       "navi_poiid": "F49F048019_2694",
       "business_area": "国兴",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sa783cc5c",
@@ -446,48 +449,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sfa4ae80b",
-      "name": "骑楼老街美食市集",
-      "cat": "古镇",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "古镇街区，在城内，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
-      "open": "06:00-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        110.345482,
-        20.044518
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KBUHKECO",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 06:00-22:00",
-      "photo": "https://store.is.autonavi.com/showpic/09898bef53e0e6720000006097828448?type=pic",
-      "address": "长堤路34号",
-      "district": "美兰区",
-      "adcode": "460108",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/09898bef53e0e6720000006097828448?type=pic",
-        "https://store.is.autonavi.com/showpic/048f3c4d9fa613740000002412124131?type=pic",
-        "https://aos-comment.amap.com/B0KBUHKECO/comment/CB0C849E_F7E0_4FA6_841B_86E7461BE557_L0_001_1500_200_1771301297182_92501922.jpg"
-      ],
-      "keytag": "特色商业街",
-      "navi_poiid": [],
-      "business_area": "长堤路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1406,53 +1367,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s3df2aeaa",
-      "name": "海口市博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "08:00-17:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        110.360878,
-        20.007169
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B038202WGJ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；周二至周日 08:00-17:00",
-      "tel": "0898-65353047",
-      "photo": "http://store.is.autonavi.com/showpic/eff7a3cd244d64478194f7e63163e0a3",
-      "address": "海府路169号",
-      "district": "琼山区",
-      "adcode": "460107",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/eff7a3cd244d64478194f7e63163e0a3",
-        "http://store.is.autonavi.com/showpic/f3f033e09e52d7b1ddca0f300a900547",
-        "https://store.is.autonavi.com/showpic/1d6d0697b9eb843a0000001261434585?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        110.36104,
-        20.007798
-      ],
-      "navi_poiid": "F49F048019_13189",
-      "business_area": "国兴",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s8243c020",
       "name": "椰林听涛",
       "cat": "山水",
@@ -2284,54 +2198,6 @@
       "entrance": [
         110.223377,
         19.928181
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "x1e7033fb",
-      "name": "火山口国家地质公园-石山",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:00-18:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        110.222552,
-        19.927426
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHWT1VG",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "note": "标志性景点补录",
-      "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://aos-comment.amap.com/B0FFHWT1VG/comment/content_media_external_file_199704_ss__1771804385997_63486432.jpg",
-      "address": "石山镇风景路89号雷琼世界地质公园(海口园区)内(东侧)",
-      "district": "秀英区",
-      "adcode": "460105",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFHWT1VG/comment/content_media_external_file_199704_ss__1771804385997_63486432.jpg",
-        "https://aos-comment.amap.com/B0FFHWT1VG/comment/content_media_external_file_100027520_1771724192732_30466617.jpg",
-        "https://store.is.autonavi.com/showpic/7908af68a96987b30000004095502862?type=pic"
-      ],
-      "keytag": "自然风光",
-      "entrance": [
-        110.223085,
-        19.928196
       ],
       "navi_poiid": [],
       "business_area": [],

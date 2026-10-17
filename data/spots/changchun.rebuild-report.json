@@ -1,0 +1,570 @@
+{
+  "city": "长春",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 13,
+      "博物馆": 15,
+      "古迹": 7,
+      "亲子": 1,
+      "街区": 5,
+      "公园": 5
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 1,
+      "street": 5,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 46,
+      "suburb": 1,
+      "coreRatio": 76
+    }
+  },
+  "keep": [
+    {
+      "id": "s41af59d7",
+      "name": "净月潭国家森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s6ebf71e8",
+      "name": "长春世界雕塑园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfb3f8fcf",
+      "name": "长影旧址博物馆",
+      "cat": "博物馆",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sbbb8ced2",
+      "name": "长春莲花岛影视城",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s24d90665",
+      "name": "长春北湖湿地公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s3a10bcba",
+      "name": "东北沦陷史陈列馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7d75f19c",
+      "name": "长影世纪城",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s573580fe",
+      "name": "庙香山风景区",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa75740f3",
+      "name": "万寿寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2e2ada90",
+      "name": "长春历史文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0de34f1c",
+      "name": "吉林省博物院",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3826e631",
+      "name": "南溪湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s30472cc4",
+      "name": "城投·南溪里",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se0ccc8b6",
+      "name": "长春新民大街",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd73225f1",
+      "name": "长春市动植物公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s9817a9b7",
+      "name": "长春农业博览园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8c475f44",
+      "name": "护国般若寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9cbeaddf",
+      "name": "长春博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s75642af2",
+      "name": "中国一汽博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0eb3a421",
+      "name": "文庙",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s55a5234f",
+      "name": "吉林省自然博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3c94b85b",
+      "name": "清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd46a37a8",
+      "name": "东北师范大学东北民族民俗博物馆(新城大街)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3c658380",
+      "name": "吉林大学考古与艺术博物馆分馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4bc193a6",
+      "name": "大顶子山爬山点",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s09e5d910",
+      "name": "吉林省酒文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s1029fbfc",
+      "name": "孔子文化园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s743eb37b",
+      "name": "吉林省民间工艺美术馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s8dedd0ec",
+      "name": "百国兴隆寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "se9015b19",
+      "name": "净月大顶山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd35a695f",
+      "name": "伪满洲国国务院旧址",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sf66220f0",
+      "name": "普门寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s189def22",
+      "name": "长春雕塑博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sf270ed76",
+      "name": "北海湿地公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s247cef94",
+      "name": "北普陀寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "x55415685",
+      "name": "伪满皇宫博物院",
+      "cat": "博物馆",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa421f539",
+      "name": "北京大街西历史文化街区",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sa78f7842",
+      "name": "桂林路商业街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s6dc271bd",
+      "name": "长江路步行街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s0101d2ef",
+      "name": "为师苑国潮美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd926dfd2",
+      "name": "净月大学城商业街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s0c0c3651",
+      "name": "南湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s25cf430f",
+      "name": "长春市百花园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sffc070de",
+      "name": "樱花岛",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s783cadc7",
+      "name": "友谊公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s0fc60c5a",
+      "name": "百木园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s41af59d7",
+      "name": "净月潭国家森林公园",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s6ebf71e8",
+      "name": "长春世界雕塑园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sfb3f8fcf",
+      "name": "长影旧址博物馆",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sbbb8ced2",
+      "name": "长春莲花岛影视城",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s24d90665",
+      "name": "长春北湖湿地公园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s7d75f19c",
+      "name": "长影世纪城",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s573580fe",
+      "name": "庙香山风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "x55415685",
+      "name": "伪满皇宫博物院",
+      "from": 9,
+      "to": 8
+    }
+  ],
+  "duplicates": []
+}

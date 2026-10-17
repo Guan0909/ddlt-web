@@ -186,13 +186,16 @@ const scenarios = [
   },
   {
     name: 'F3 成都 · 周一起始 3 日（闭馆点前向迁移）',
-    // 夹具用「城内高热度子集」：库变大后整库跑会把城内日塞满，迁移自然没有空位（不是引擎问题）
+    // 用**合成数据集**（与真实库解耦）：周一闭馆的博物馆 + 5 个可排点，3 天有充足空位 → 必然迁移而非丢弃
     opts: {
-      spots: (() => {
-        const city = spots.filter(s => !s.suburb);
-        const museum = spots.find(s => s.id === 'chengdu-museum');
-        return [museum, ...city.filter(s => s.id !== 'chengdu-museum').slice(0, 10)].filter(Boolean);
-      })(),
+      spots: [
+        { id: 'chengdu-museum', name: '成都博物馆', cat: '博物馆', coord: [104.0657, 30.6572], dur: 120, heat: 9, closed_mon: true, open: '09:00-17:00', tags: [] },
+        { id: 'fx-1', name: '合成古迹甲', cat: '古迹', coord: [104.0750, 30.6620], dur: 90, heat: 8, closed_mon: false, open: null, tags: [] },
+        { id: 'fx-2', name: '合成公园乙', cat: '公园', coord: [104.0580, 30.6520], dur: 90, heat: 7, closed_mon: false, open: null, tags: [] },
+        { id: 'fx-3', name: '合成街区丙', cat: '街区', coord: [104.0700, 30.6700], dur: 90, heat: 7, closed_mon: false, open: null, tags: [] },
+        { id: 'fx-4', name: '合成博物馆丁', cat: '博物馆', coord: [104.0620, 30.6480], dur: 100, heat: 7, closed_mon: false, open: null, tags: [] },
+        { id: 'fx-5', name: '合成古迹戊', cat: '古迹', coord: [104.0800, 30.6500], dur: 90, heat: 6, closed_mon: false, open: null, tags: [] },
+      ],
       city: '成都', origin: { name: '天府广场酒店', lng: 104.0665, lat: 30.6570 }, days: 3, startDate: '2026-10-12',
     },
     checks: route => {

@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "古迹": 13,
+      "古迹": 14,
       "街区": 9,
-      "商圈": 5,
-      "公园": 7,
-      "博物馆": 10,
+      "商圈": 4,
+      "公园": 10,
+      "博物馆": 9,
       "亲子": 6,
-      "美食": 4,
-      "演出": 3,
+      "美食": 2,
+      "演出": 2,
       "夜景": 3,
-      "古镇": 2,
+      "古镇": 1,
       "山水": 4
     },
     "byGroup": {
-      "core": 29,
-      "night": 6,
+      "core": 28,
+      "night": 5,
       "family": 6,
       "street": 9,
-      "food": 4,
-      "park": 7,
-      "mall": 5,
-      "total": 66,
-      "suburb": 12,
-      "coreRatio": 53
+      "food": 2,
+      "park": 10,
+      "mall": 4,
+      "total": 64,
+      "suburb": 11,
+      "coreRatio": 52
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "gugong",
       "name": "故宫博物院",
       "cat": "古迹",
-      "heat": 10,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -44,7 +44,7 @@
       "id": "tiananmen",
       "name": "天安门广场",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 9,
       "rating": 4.9,
       "level": "national",
       "score": 0.81,
@@ -55,7 +55,7 @@
       "id": "tiantan",
       "name": "天坛公园",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -66,7 +66,7 @@
       "id": "yiheyuan",
       "name": "颐和园",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -88,7 +88,7 @@
       "id": "yonghegong",
       "name": "雍和宫",
       "cat": "古迹",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -99,7 +99,7 @@
       "id": "gongwangfu",
       "name": "恭王府博物馆",
       "cat": "古迹",
-      "heat": 8,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -110,7 +110,7 @@
       "id": "badaling",
       "name": "八达岭长城",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -121,7 +121,7 @@
       "id": "mutianyu",
       "name": "慕田峪长城",
       "cat": "古迹",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -132,7 +132,7 @@
       "id": "ming-tombs",
       "name": "明十三陵景区",
       "cat": "古迹",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -143,7 +143,7 @@
       "id": "tanzhe-si",
       "name": "潭柘寺",
       "cat": "古迹",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -154,7 +154,7 @@
       "id": "hongluo-si",
       "name": "红螺寺",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -187,7 +187,7 @@
       "id": "shichahai",
       "name": "什刹海",
       "cat": "街区",
-      "heat": 8.5,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -196,9 +196,9 @@
     },
     {
       "id": "art-798",
-      "name": "798艺术区",
+      "name": "798·751园区",
       "cat": "街区",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -207,9 +207,9 @@
     },
     {
       "id": "liulichang",
-      "name": "琉璃厂文化街",
+      "name": "北京琉璃厂",
       "cat": "街区",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -218,7 +218,7 @@
     },
     {
       "id": "wangfujing",
-      "name": "王府井大街",
+      "name": "王府井步行街",
       "cat": "商圈",
       "heat": 8,
       "rating": 4.8,
@@ -231,7 +231,7 @@
       "id": "sanlitun",
       "name": "三里屯太古里",
       "cat": "商圈",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -242,7 +242,7 @@
       "id": "jingshan",
       "name": "景山公园",
       "cat": "公园",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -261,10 +261,65 @@
       "why": "知名地标（必留名单）"
     },
     {
+      "id": "yuyuantan",
+      "name": "玉渊潭公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chaoyang-park",
+      "name": "朝阳公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "ditan",
+      "name": "地坛公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "olympic-forest",
+      "name": "奥林匹克森林公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "botanical",
+      "name": "国家植物园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "guobo",
       "name": "中国国家博物馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -275,7 +330,7 @@
       "id": "shoubo",
       "name": "首都博物馆",
       "cat": "博物馆",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -286,7 +341,7 @@
       "id": "junbo",
       "name": "中国人民革命军事博物馆",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -297,7 +352,7 @@
       "id": "ziran",
       "name": "国家自然博物馆",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -313,13 +368,13 @@
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "meishuguan",
       "name": "中国美术馆",
       "cat": "博物馆",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -330,7 +385,7 @@
       "id": "film-museum",
       "name": "中国电影博物馆",
       "cat": "博物馆",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -341,7 +396,7 @@
       "id": "auto-museum",
       "name": "北京汽车博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -350,20 +405,20 @@
     },
     {
       "id": "zhoukoudian",
-      "name": "周口店北京人遗址博物馆",
+      "name": "周口店遗址博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "universal",
       "name": "北京环球度假区",
       "cat": "亲子",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -374,12 +429,12 @@
       "id": "zoo",
       "name": "北京动物园",
       "cat": "亲子",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "aquarium",
@@ -390,13 +445,13 @@
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "science-tech",
       "name": "中国科学技术馆",
       "cat": "亲子",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -405,31 +460,31 @@
     },
     {
       "id": "happy-valley",
-      "name": "北京欢乐谷",
+      "name": "北京欢乐谷(暂停开放)",
       "cat": "亲子",
       "heat": 7,
-      "rating": 4.7,
+      "rating": 4.5,
       "level": "national",
-      "score": 0.73,
-      "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "评分 4.5 ≥4.5（非常知名）"
     },
     {
       "id": "wildlife-park",
       "name": "北京野生动物园",
       "cat": "亲子",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "grand-theatre",
       "name": "国家大剧院",
       "cat": "演出",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -451,7 +506,7 @@
       "id": "olympic",
       "name": "奥林匹克公园中心区",
       "cat": "夜景",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -471,9 +526,9 @@
     },
     {
       "id": "guixiaoshi",
-      "name": "西山鬼笑石",
+      "name": "北京西山国家森林公园鬼笑石",
       "cat": "夜景",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -484,51 +539,40 @@
       "id": "gubei",
       "name": "古北水镇",
       "cat": "古镇",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "cuandixia",
-      "name": "爨底下村",
-      "cat": "古镇",
-      "heat": 6.5,
-      "rating": 3.7,
-      "level": null,
-      "score": 0.08,
-      "heatNew": 5,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "xiangshan",
       "name": "香山公园",
       "cat": "山水",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "shidu",
-      "name": "十渡风景区",
+      "name": "房山十渡风景名胜区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "yanqi-lake",
-      "name": "雁栖湖",
+      "name": "北京雁栖湖国际会展中心",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -539,18 +583,51 @@
       "id": "jinhai-lake",
       "name": "北京金海湖风景区",
       "cat": "山水",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7,
-      "why": "评分 4.5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nb649395c",
+      "name": "龙潭公园",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "n62243de7",
+      "name": "世界公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "x92ede9ed",
+      "name": "国家体育场",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
     },
     {
       "id": "shougang",
       "name": "首钢园",
       "cat": "街区",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -570,7 +647,17 @@
       "id": "yandai",
       "name": "烟袋斜街",
       "cat": "街区",
-      "heat": 6.5,
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "x4f8ca6f8",
+      "name": "国家游泳中心",
+      "cat": "街区",
+      "heat": 6,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -580,27 +667,17 @@
       "id": "qianmen-dashilar",
       "name": "前门大街·大栅栏",
       "cat": "街区",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7
     },
     {
-      "id": "yangmeizhu",
-      "name": "杨梅竹斜街",
-      "cat": "街区",
-      "heat": 6,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
       "id": "solana",
-      "name": "蓝色港湾",
+      "name": "SOLANA蓝色港湾",
       "cat": "商圈",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -610,57 +687,7 @@
       "id": "panjiayuan",
       "name": "潘家园旧货市场",
       "cat": "商圈",
-      "heat": 6.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "yuyuantan",
-      "name": "玉渊潭公园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "chaoyang-park",
-      "name": "朝阳公园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "ditan",
-      "name": "地坛公园",
-      "cat": "公园",
-      "heat": 6,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "olympic-forest",
-      "name": "奥林匹克森林公园",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "botanical",
-      "name": "国家植物园",
-      "cat": "公园",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -670,7 +697,7 @@
       "id": "guijie",
       "name": "簋街",
       "cat": "美食",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -678,70 +705,26 @@
     },
     {
       "id": "xianyukou",
-      "name": "鲜鱼口美食街",
+      "name": "鲜鱼口老字号美食街",
       "cat": "美食",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7
     },
     {
-      "id": "niujie",
-      "name": "牛街游园",
-      "cat": "美食",
-      "heat": 7.5,
-      "rating": 3.5,
-      "level": null,
-      "score": 0,
-      "heatNew": 5
-    },
-    {
-      "id": "huguosi",
-      "name": "护国寺街",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
+      "id": "nfbf0ef6c",
+      "name": "大观园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.7,
+      "level": "province",
+      "score": 0.63,
+      "heatNew": 8
     }
   ],
-  "drop": [
-    {
-      "id": "luxun-museum",
-      "name": "北京鲁迅博物馆",
-      "cat": "博物馆",
-      "heat": 5.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "laoshe",
-      "name": "老舍茶馆",
-      "cat": "演出",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "xidan",
-      "name": "西单商业街",
-      "cat": "商圈",
-      "heat": 7,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    }
-  ],
+  "drop": [],
   "manual": [],
   "add": [
     {
@@ -757,30 +740,6 @@
       "heat": 9
     },
     {
-      "name": "龙潭公园",
-      "coord": [
-        116.438258,
-        39.879792
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
-    {
-      "name": "世界公园",
-      "coord": [
-        116.287794,
-        39.810604
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
-    },
-    {
       "name": "天安门-城楼",
       "coord": [
         116.397488,
@@ -790,18 +749,6 @@
       "rating": 4.5,
       "level": "national",
       "score": 0.65,
-      "heat": 8
-    },
-    {
-      "name": "大观园",
-      "coord": [
-        116.355972,
-        39.871365
-      ],
-      "type": "风景名胜;风景名胜;省级景点",
-      "rating": 4.7,
-      "level": "province",
-      "score": 0.63,
       "heat": 8
     },
     {
@@ -831,309 +778,15 @@
   ],
   "heatChanges": [
     {
-      "id": "gugong",
-      "name": "故宫博物院",
-      "from": 10,
-      "to": 8
-    },
-    {
-      "id": "tiananmen",
-      "name": "天安门广场",
-      "from": 9.5,
-      "to": 9
-    },
-    {
-      "id": "tiantan",
-      "name": "天坛公园",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "yiheyuan",
-      "name": "颐和园",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "yonghegong",
-      "name": "雍和宫",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "gongwangfu",
-      "name": "恭王府博物馆",
-      "from": 8,
-      "to": 9
-    },
-    {
-      "id": "badaling",
-      "name": "八达岭长城",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "mutianyu",
-      "name": "慕田峪长城",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "ming-tombs",
-      "name": "明十三陵景区",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "tanzhe-si",
-      "name": "潭柘寺",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "hongluo-si",
-      "name": "红螺寺",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "shichahai",
-      "name": "什刹海",
-      "from": 8.5,
-      "to": 9
-    },
-    {
-      "id": "yandai",
-      "name": "烟袋斜街",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "qianmen-dashilar",
-      "name": "前门大街·大栅栏",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "art-798",
-      "name": "798艺术区",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "shougang",
-      "name": "首钢园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "liulichang",
-      "name": "琉璃厂文化街",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "sanlitun",
-      "name": "三里屯太古里",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "solana",
-      "name": "蓝色港湾",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "panjiayuan",
-      "name": "潘家园旧货市场",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "jingshan",
-      "name": "景山公园",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "yuyuantan",
-      "name": "玉渊潭公园",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "chaoyang-park",
-      "name": "朝阳公园",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "ditan",
-      "name": "地坛公园",
-      "from": 6,
-      "to": 8
-    },
-    {
-      "id": "olympic-forest",
-      "name": "奥林匹克森林公园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "botanical",
-      "name": "国家植物园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "guobo",
-      "name": "中国国家博物馆",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "shoubo",
-      "name": "首都博物馆",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "junbo",
-      "name": "中国人民革命军事博物馆",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "ziran",
-      "name": "国家自然博物馆",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "meishuguan",
-      "name": "中国美术馆",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "film-museum",
-      "name": "中国电影博物馆",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "auto-museum",
-      "name": "北京汽车博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "zhoukoudian",
-      "name": "周口店北京人遗址博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "universal",
-      "name": "北京环球度假区",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "zoo",
-      "name": "北京动物园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "science-tech",
-      "name": "中国科学技术馆",
-      "from": 7.5,
-      "to": 8
-    },
-    {
       "id": "happy-valley",
-      "name": "北京欢乐谷",
+      "name": "北京欢乐谷(暂停开放)",
       "from": 7,
-      "to": 9
-    },
-    {
-      "id": "wildlife-park",
-      "name": "北京野生动物园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "niujie",
-      "name": "牛街游园",
-      "from": 7.5,
-      "to": 5
-    },
-    {
-      "id": "guijie",
-      "name": "簋街",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "xianyukou",
-      "name": "鲜鱼口美食街",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "grand-theatre",
-      "name": "国家大剧院",
-      "from": 7.5,
       "to": 8
     },
     {
-      "id": "olympic",
-      "name": "奥林匹克公园中心区",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "guixiaoshi",
-      "name": "西山鬼笑石",
+      "id": "x4f8ca6f8",
+      "name": "国家游泳中心",
       "from": 6,
-      "to": 7
-    },
-    {
-      "id": "gubei",
-      "name": "古北水镇",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "cuandixia",
-      "name": "爨底下村",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "xiangshan",
-      "name": "香山公园",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "shidu",
-      "name": "十渡风景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "yanqi-lake",
-      "name": "雁栖湖",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "jinhai-lake",
-      "name": "北京金海湖风景区",
-      "from": 5.5,
       "to": 7
     }
   ],

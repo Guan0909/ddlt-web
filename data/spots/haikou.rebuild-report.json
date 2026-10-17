@@ -1,0 +1,561 @@
+{
+  "city": "海口",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 20,
+      "古镇": 3,
+      "博物馆": 3,
+      "街区": 6,
+      "公园": 5,
+      "古迹": 9,
+      "亲子": 3
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 3,
+      "street": 6,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 49,
+      "suburb": 7,
+      "coreRatio": 71
+    }
+  },
+  "keep": [
+    {
+      "id": "sbcb80bdf",
+      "name": "雷琼世界地质公园(海口园区)",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa38db9c5",
+      "name": "海口骑楼老街历史文化街区",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s22442c43",
+      "name": "万绿园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s12e8047c",
+      "name": "海南省博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6fbed0eb",
+      "name": "海口五公祠",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa783cc5c",
+      "name": "假日海滩旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8ca3e0ef",
+      "name": "天空之山驿站",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdd6bfec4",
+      "name": "海口观澜湖旅游度假区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfa4ae80b",
+      "name": "骑楼老街美食市集",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sba77d319",
+      "name": "秀英炮台",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0bbc70a6",
+      "name": "海口钟楼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s46c4c214",
+      "name": "西天庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s269b956c",
+      "name": "五源河国家湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scbe138e8",
+      "name": "湖中寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s282a7d2e",
+      "name": "灵山寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8984ca48",
+      "name": "海南热带野生动植物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sbf60369b",
+      "name": "海口天鹅湖动物基地",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd22ce74a",
+      "name": "海南长影奇幻乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s60061a06",
+      "name": "海南观澜湖冯小刚电影公社",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8925a787",
+      "name": "桂林洋海滨旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s81b24036",
+      "name": "东寨港红树林旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3df2aeaa",
+      "name": "海口市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8243c020",
+      "name": "椰林听涛",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sddd8ee7d",
+      "name": "南海明珠人工岛",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sbf5a66d4",
+      "name": "七十二洞",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s69b1c9a3",
+      "name": "比干妈祖文化园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s705e08f4",
+      "name": "龙婆西湖庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sbfd8e6d4",
+      "name": "海口热带农业科技博览园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s2f849950",
+      "name": "火山石斛园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s018bcfe2",
+      "name": "天后宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s89715053",
+      "name": "八仙泉",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s109bff81",
+      "name": "海南农垦博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s1cf5dfa8",
+      "name": "龙华昌学玄幻动漫百年古村",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s5d27b3b3",
+      "name": "关圣庙",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sd69d0edc",
+      "name": "海口市清真寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "se3b1cd60",
+      "name": "东湖景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s1cc466a5",
+      "name": "白衣寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "x1e7033fb",
+      "name": "火山口国家地质公园-石山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8deba0cf",
+      "name": "海南大学南门小吃一条街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s33a23234",
+      "name": "潮立方",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s37e28a9e",
+      "name": "福地美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s9417b4f6",
+      "name": "海南溪头古琴文化村",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s173fabdb",
+      "name": "南沙特色美食街A区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s94f5ce3c",
+      "name": "石山生态美食街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s38bb256d",
+      "name": "白沙门公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s8832950b",
+      "name": "金沙湾滨海公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s3ced20b0",
+      "name": "海瑞文化公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s1be017c2",
+      "name": "西海岸带状公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s91ac56ed",
+      "name": "金牛岭公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sbcb80bdf",
+      "name": "雷琼世界地质公园(海口园区)",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s6fbed0eb",
+      "name": "海口五公祠",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -2,9 +2,27 @@
   "city": "凤凰",
   "date": "2026-10-17",
   "before": 39,
-  "after": 39,
-  "renames": [],
-  "deletes": [],
+  "after": 38,
+  "renames": [
+    {
+      "id": "sa3f89732",
+      "from": "十八洞景区",
+      "to": "凤凰奇梁洞景区"
+    },
+    {
+      "id": "s52eacb3c",
+      "from": "花果山公园",
+      "to": "阿拉花果山鲤鱼塘"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "s52eacb3c",
+      "name": "花果山公园",
+      "cat": "公园",
+      "why": "受限类目评分 3.9 < 4.0"
+    }
+  ],
   "ratingUpdates": [],
   "noPoi": []
 }

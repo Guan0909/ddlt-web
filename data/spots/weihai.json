@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": "J51F030018_53130",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s0edabee9",
@@ -71,7 +73,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -113,7 +115,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sd51b684b",
@@ -306,53 +309,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "se8543d47",
-      "name": "威海公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 8,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        122.144823,
-        37.465201
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B027700J6O",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/24fd9a03839c8247bb580de2157c0f80",
-      "address": "海滨中路58号",
-      "district": "环翠区",
-      "adcode": "371002",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/24fd9a03839c8247bb580de2157c0f80",
-        "https://store.is.autonavi.com/showpic/0b4f9f652fd048ec0000003173858701?type=pic",
-        "https://store.is.autonavi.com/showpic/79df41b932c6d9f30000005069520446?type=pic"
-      ],
-      "keytag": "滨海公园",
-      "entrance": [
-        122.151785,
-        37.452355
-      ],
-      "navi_poiid": "J51F031018_11934;26840",
-      "business_area": "威海公园",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s72eb8aa8",
       "name": "悦海公园",
       "cat": "公园",
@@ -406,7 +362,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -448,7 +404,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s81e6679e",
@@ -457,7 +414,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -499,7 +456,8 @@
       "navi_poiid": "J51F031017_7903",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s79f23d37",
@@ -508,7 +466,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -550,7 +508,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s0074f351",
@@ -559,7 +518,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -601,7 +560,8 @@
       "navi_poiid": "J51F031017_5817",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sa4e68e5a",
@@ -610,7 +570,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -652,7 +612,8 @@
       "navi_poiid": "J51F031018_7748",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sd350e559",
@@ -1264,56 +1225,6 @@
         37.548862
       ],
       "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "se668a38c",
-      "name": "烟台昆嵛山国家森林公园无染寺景区",
-      "cat": "古迹",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "上午来，人少光线也好",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        121.776828,
-        37.221585
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFJEOZBO",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1月至2月,12月 周一至周日 全天关闭；3月至4月,10月至11月 周一至周日 07:30-17:00 最晚进入16:00；5月至9月 周一至周日 07:30-17:30 最晚进入16:30；每年12月至翌年2月封山养护期景区不开放。",
-      "tel": "0631-8831008",
-      "photo": "http://store.is.autonavi.com/showpic/b77476bd731a618ce4fbe3501ec88d9f",
-      "address": "昆嵛山国家森林公园",
-      "district": "文登区",
-      "adcode": "371003",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/b77476bd731a618ce4fbe3501ec88d9f",
-        "http://store.is.autonavi.com/showpic/c78db6e280fcb74141c064ae3040cf95",
-        "http://store.is.autonavi.com/showpic/aedf89842a5aaf92853574a9e8330094"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        121.777196,
-        37.220869
-      ],
-      "navi_poiid": "J51F034015_72",
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
@@ -2135,7 +2046,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -2178,7 +2089,8 @@
       "navi_poiid": "J51F032022_325;717;10",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     }
   ]
 }

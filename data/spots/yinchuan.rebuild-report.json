@@ -1,0 +1,565 @@
+{
+  "city": "银川",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 25,
+      "古迹": 5,
+      "博物馆": 5,
+      "公园": 5,
+      "街区": 3
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 0,
+      "street": 3,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 43,
+      "suburb": 7,
+      "coreRatio": 81
+    }
+  },
+  "keep": [
+    {
+      "id": "s55704c0c",
+      "name": "镇北堡西部影城",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s6186fba6",
+      "name": "西夏陵国家考古遗址公园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "scd486061",
+      "name": "贺兰山岩画",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s759d7e9e",
+      "name": "宁夏贺兰山国家森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s7bceacfd",
+      "name": "宁夏博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa682116e",
+      "name": "滚钟口风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf0e5decc",
+      "name": "宁夏农旅产业园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7daf6ecc",
+      "name": "黄沙古渡原生态旅游区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s176af8ff",
+      "name": "贺兰山自然保护区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s75fc29f5",
+      "name": "龙谕酒庄",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sd7be252b",
+      "name": "银川鸣翠湖国家湿地公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s209b518f",
+      "name": "黄河军事文化博览园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "seb6e62d7",
+      "name": "水洞沟旅游区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4acb8db5",
+      "name": "鼓楼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6ee9bec7",
+      "name": "看见贺兰",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "scdf21c34",
+      "name": "西夏陵博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9d3f8e84",
+      "name": "银川文化城凤凰幻城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s43da1ed1",
+      "name": "银川市玉皇阁",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8f7dc726",
+      "name": "阅海国家湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se6fa60b6",
+      "name": "源石酒庄",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa4bb2372",
+      "name": "宁夏地质博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3ba162ff",
+      "name": "银川森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sfe839e79",
+      "name": "宝湖国家湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s828ecec4",
+      "name": "海宝塔寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8263a737",
+      "name": "西夏风情园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s73a8a59e",
+      "name": "贺兰山1958创意产业休闲区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0d1c2efc",
+      "name": "贺兰山东麓国际葡萄酒博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2c23d058",
+      "name": "宁夏枸杞博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb8caf3f4",
+      "name": "银川南关清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2a22c784",
+      "name": "城市之眼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sb8847428",
+      "name": "宁夏薰衣草生态旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sa754ea31",
+      "name": "长河古堡·边关夜宴景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "saa8c9eab",
+      "name": "大碱湖湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sf71c3d54",
+      "name": "明心清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "x33486d80",
+      "name": "西夏王陵四号陵",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sde15692f",
+      "name": "中山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s6a2275d2",
+      "name": "览山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s7885f348",
+      "name": "凤凰公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s163e0d16",
+      "name": "贺兰山运动公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sef0a1220",
+      "name": "典农河滨水景观公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s223c1644",
+      "name": "贺兰太阳城夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sa3f9d280",
+      "name": "印象富宁文旅夜市",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s3a2c7b0f",
+      "name": "中街不夜城",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s55704c0c",
+      "name": "镇北堡西部影城",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s6186fba6",
+      "name": "西夏陵国家考古遗址公园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "scd486061",
+      "name": "贺兰山岩画",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s759d7e9e",
+      "name": "宁夏贺兰山国家森林公园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sa682116e",
+      "name": "滚钟口风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sf0e5decc",
+      "name": "宁夏农旅产业园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s7daf6ecc",
+      "name": "黄沙古渡原生态旅游区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s176af8ff",
+      "name": "贺兰山自然保护区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s75fc29f5",
+      "name": "龙谕酒庄",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sd7be252b",
+      "name": "银川鸣翠湖国家湿地公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s209b518f",
+      "name": "黄河军事文化博览园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "seb6e62d7",
+      "name": "水洞沟旅游区",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

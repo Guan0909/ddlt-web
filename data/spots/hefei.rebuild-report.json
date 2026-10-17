@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "古迹": 12,
-      "街区": 7,
-      "古镇": 4,
+      "古迹": 8,
+      "街区": 6,
+      "古镇": 3,
       "博物馆": 6,
-      "美食": 4,
-      "公园": 11,
+      "美食": 1,
+      "公园": 6,
       "夜景": 3,
-      "山水": 9,
-      "亲子": 6,
-      "商圈": 5,
+      "山水": 8,
+      "亲子": 5,
+      "商圈": 2,
       "演出": 1
     },
     "byGroup": {
-      "core": 31,
+      "core": 25,
       "night": 4,
-      "family": 6,
-      "street": 7,
-      "food": 4,
-      "park": 11,
-      "mall": 5,
-      "total": 68,
-      "suburb": 19,
-      "coreRatio": 51
+      "family": 5,
+      "street": 6,
+      "food": 1,
+      "park": 6,
+      "mall": 2,
+      "total": 49,
+      "suburb": 13,
+      "coreRatio": 59
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "baogongyuan",
       "name": "包公园",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -44,7 +44,7 @@
       "id": "sanhe",
       "name": "三河古镇",
       "cat": "古镇",
-      "heat": 9.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -55,7 +55,7 @@
       "id": "anhui-museum-new",
       "name": "安徽博物院",
       "cat": "博物馆",
-      "heat": 9,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -66,7 +66,7 @@
       "id": "leijie",
       "name": "罍街公园",
       "cat": "美食",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -75,9 +75,9 @@
     },
     {
       "id": "xiaoyaojin",
-      "name": "逍遥津公园",
+      "name": "古逍遥津",
       "cat": "公园",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -86,9 +86,9 @@
     },
     {
       "id": "limu-house",
-      "name": "李鸿章故居",
+      "name": "李鸿章故居(暂停开放)",
       "cat": "古迹",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -99,7 +99,7 @@
       "id": "anhui-famous",
       "name": "安徽名人馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -110,7 +110,7 @@
       "id": "dujiang-memorial",
       "name": "渡江战役纪念馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -121,7 +121,7 @@
       "id": "swan-lake",
       "name": "天鹅湖公园",
       "cat": "夜景",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -130,9 +130,9 @@
     },
     {
       "id": "dashushan",
-      "name": "大蜀山国家森林公园",
+      "name": "大蜀山山顶",
       "cat": "山水",
-      "heat": 8.5,
+      "heat": 6,
       "rating": 4,
       "level": null,
       "score": 0.2,
@@ -143,18 +143,18 @@
       "id": "hefei-zoo",
       "name": "合肥野生动物园",
       "cat": "亲子",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "mingjiao-temple",
       "name": "明教寺",
       "cat": "古迹",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -162,10 +162,21 @@
       "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
+      "id": "hefei-botanical",
+      "name": "合肥植物园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "chenghuang-temple",
-      "name": "合肥城隍庙",
+      "name": "城隍庙(淮河路)",
       "cat": "古迹",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -176,7 +187,7 @@
       "id": "geo-museum",
       "name": "安徽省地质博物馆",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -187,7 +198,7 @@
       "id": "hefei-grand-theatre",
       "name": "合肥大剧院",
       "cat": "演出",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -198,7 +209,7 @@
       "id": "anhui-museum-old",
       "name": "安徽博物院(老馆)",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -206,10 +217,21 @@
       "why": "知名地标（必留名单）"
     },
     {
+      "id": "binhu-forest",
+      "name": "合肥滨湖国家森林公园",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "hefei-sunac",
       "name": "合肥融创乐园",
       "cat": "亲子",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -220,7 +242,7 @@
       "id": "changlinhe",
       "name": "长临河古镇景区",
       "cat": "古镇",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.6,
       "level": "national",
       "score": 0.69,
@@ -231,17 +253,17 @@
       "id": "zhegao",
       "name": "柘皋古镇",
       "cat": "古镇",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
       "heatNew": 7
     },
     {
-      "id": "zhongmiao",
-      "name": "巢湖·中庙",
+      "id": "laoshan-island",
+      "name": "姥山岛景区",
       "cat": "山水",
-      "heat": 8,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -249,21 +271,10 @@
       "why": "知名地标（必留名单）"
     },
     {
-      "id": "laoshan-island",
-      "name": "姥山岛景区",
-      "cat": "山水",
-      "heat": 8,
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
-    },
-    {
       "id": "zipengshan",
       "name": "紫蓬山国家森林公园",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -274,7 +285,7 @@
       "id": "xilu-temple",
       "name": "西庐寺",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -284,7 +295,7 @@
       "id": "fucha-mountain",
       "name": "浮槎山景区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -295,18 +306,18 @@
       "id": "yefu-mountain",
       "name": "冶父山国家森林公园",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "yinping-mountain",
       "name": "巢湖银屏山景区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -315,7 +326,7 @@
     },
     {
       "id": "bantang-hotspring",
-      "name": "半汤温泉",
+      "name": "半汤温泉苑",
       "cat": "亲子",
       "heat": 7,
       "rating": 4.5,
@@ -326,7 +337,7 @@
     },
     {
       "id": "tangchi-hotspring",
-      "name": "汤池温泉",
+      "name": "合肥汤池温泉旅游度假区",
       "cat": "亲子",
       "heat": 7,
       "rating": 4.6,
@@ -339,7 +350,7 @@
       "id": "zhouyu-mu",
       "name": "周瑜墓园",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -350,7 +361,7 @@
       "id": "kexuedao",
       "name": "科学岛",
       "cat": "山水",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -380,7 +391,7 @@
     },
     {
       "id": "1912-street",
-      "name": "合肥1912街区",
+      "name": "金大地1912街区西街",
       "cat": "夜景",
       "heat": 7,
       "rating": 4.6,
@@ -393,7 +404,7 @@
       "id": "feicui-lake",
       "name": "翡翠湖风景区",
       "cat": "夜景",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -404,7 +415,7 @@
       "id": "lihongzhang-xiangtang",
       "name": "合肥市李鸿章享堂",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -414,17 +425,29 @@
       "id": "dujiang-qianguwei",
       "name": "渡江战役总前委旧址纪念馆",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
-      "heatNew": 7
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "x9fd11771",
+      "name": "徽园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "huaihe-road",
       "name": "淮河路步行街",
       "cat": "街区",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -464,7 +487,7 @@
       "id": "cuigang",
       "name": "崔岗艺术村",
       "cat": "街区",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -474,71 +497,31 @@
       "id": "xiaolingnan",
       "name": "蜀山区小岭南花海",
       "cat": "街区",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7
     },
     {
-      "id": "ustc",
-      "name": "中国科学技术大学",
-      "cat": "街区",
-      "heat": 6.5,
-      "rating": 4.4,
-      "level": "national",
-      "score": 0.61,
+      "id": "zhi-xincheng",
+      "name": "合肥之心城购物中心",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
       "heatNew": 8
     },
     {
-      "id": "ningguo-road",
-      "name": "宁国路龙虾一条街",
-      "cat": "美食",
-      "heat": 8.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "datong-road",
-      "name": "大通路美食街",
-      "cat": "美食",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "guanting-road",
-      "name": "官亭路小吃街",
-      "cat": "美食",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "hefei-botanical",
-      "name": "合肥植物园",
-      "cat": "公园",
-      "heat": 7.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "binhu-forest",
-      "name": "合肥滨湖国家森林公园",
-      "cat": "公园",
+      "id": "wanxiang-city",
+      "name": "合肥万象城",
+      "cat": "商圈",
       "heat": 8,
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heatNew": 9
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
     },
     {
       "id": "tangxihe-park",
@@ -569,195 +552,9 @@
       "level": null,
       "score": 0.48,
       "heatNew": 7
-    },
-    {
-      "id": "zhi-xincheng",
-      "name": "之心城",
-      "cat": "商圈",
-      "heat": 7.5,
-      "rating": 4.9,
-      "level": null,
-      "score": 0.56,
-      "heatNew": 8
-    },
-    {
-      "id": "wanxiang-city",
-      "name": "合肥万象城",
-      "cat": "商圈",
-      "heat": 8,
-      "rating": 4.9,
-      "level": null,
-      "score": 0.56,
-      "heatNew": 8
     }
   ],
-  "drop": [
-    {
-      "id": "sanhe-yang",
-      "name": "杨振宁旧居",
-      "cat": "古迹",
-      "heat": 6.5,
-      "rating": 3.5,
-      "level": null,
-      "score": 0,
-      "heatNew": 5,
-      "why": "评分 3.5 < 4.0"
-    },
-    {
-      "id": "tongyang",
-      "name": "烔炀古镇",
-      "cat": "古镇",
-      "heat": 5.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "liucheng-villa",
-      "name": "刘铭传故居",
-      "cat": "古迹",
-      "heat": 6.5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "评分 3.6 < 4.0"
-    },
-    {
-      "id": "daishan-lake",
-      "name": "岱山湖",
-      "cat": "山水",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "sanguo-xincheng",
-      "name": "合肥三国新城遗址公园碑记",
-      "cat": "古迹",
-      "heat": 7,
-      "rating": 2.9,
-      "level": null,
-      "score": 0,
-      "heatNew": 5,
-      "why": "评分 2.9 < 4.0"
-    },
-    {
-      "id": "hefei-science-museum",
-      "name": "合肥市科技馆",
-      "cat": "亲子",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "kaifu-temple",
-      "name": "开福寺福慧书院",
-      "cat": "古迹",
-      "heat": 6.5,
-      "rating": 3.4,
-      "level": null,
-      "score": 0,
-      "heatNew": 5,
-      "why": "评分 3.4 < 4.0"
-    },
-    {
-      "id": "daxu",
-      "name": "大圩生态农业旅游区",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "huachong-park",
-      "name": "花冲公园",
-      "cat": "公园",
-      "heat": 5.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "huancheng-park",
-      "name": "环城公园",
-      "cat": "公园",
-      "heat": 7.5,
-      "rating": 4.5,
-      "level": null,
-      "score": 0.4,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "non-heritage",
-      "name": "中国非物质文化遗产园",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.4,
-      "level": "national",
-      "score": 0.61,
-      "heatNew": 8,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "kuanghe-park",
-      "name": "匡河公园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 1.2,
-      "level": null,
-      "score": 0,
-      "heatNew": 5,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "yintai-center",
-      "name": "银泰中心",
-      "cat": "商圈",
-      "heat": 8,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    },
-    {
-      "id": "rongchuang-mao",
-      "name": "合肥融创茂",
-      "cat": "商圈",
-      "heat": 7,
-      "rating": 4.3,
-      "level": null,
-      "score": 0.32,
-      "heatNew": 7,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    },
-    {
-      "id": "baohe-wanda",
-      "name": "合肥包河万达广场",
-      "cat": "商圈",
-      "heat": 7.5,
-      "rating": 4.2,
-      "level": null,
-      "score": 0.28,
-      "heatNew": 6,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    }
-  ],
+  "drop": [],
   "manual": [],
   "add": [
     {
@@ -783,18 +580,6 @@
       "level": "national",
       "score": 0.73,
       "heat": 9
-    },
-    {
-      "name": "徽园",
-      "coord": [
-        117.218822,
-        31.783386
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
     },
     {
       "name": "官亭林海",
@@ -835,285 +620,9 @@
   ],
   "heatChanges": [
     {
-      "id": "baogongyuan",
-      "name": "包公园",
-      "from": 9.5,
-      "to": 9
-    },
-    {
-      "id": "huaihe-road",
-      "name": "淮河路步行街",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "sanhe",
-      "name": "三河古镇",
-      "from": 9.5,
-      "to": 9
-    },
-    {
-      "id": "anhui-museum-new",
-      "name": "安徽博物院",
-      "from": 9,
-      "to": 8
-    },
-    {
-      "id": "leijie",
-      "name": "罍街公园",
-      "from": 9,
-      "to": 7
-    },
-    {
-      "id": "xiaoyaojin",
-      "name": "逍遥津公园",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "limu-house",
-      "name": "李鸿章故居",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "anhui-famous",
-      "name": "安徽名人馆",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "dujiang-memorial",
-      "name": "渡江战役纪念馆",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "swan-lake",
-      "name": "天鹅湖公园",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "dashushan",
-      "name": "大蜀山国家森林公园",
-      "from": 8.5,
-      "to": 6
-    },
-    {
-      "id": "hefei-zoo",
-      "name": "合肥野生动物园",
+      "id": "x9fd11771",
+      "name": "徽园",
       "from": 8,
-      "to": 7
-    },
-    {
-      "id": "mingjiao-temple",
-      "name": "明教寺",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "hefei-botanical",
-      "name": "合肥植物园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "chenghuang-temple",
-      "name": "合肥城隍庙",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "zhi-xincheng",
-      "name": "之心城",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "geo-museum",
-      "name": "安徽省地质博物馆",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "hefei-grand-theatre",
-      "name": "合肥大剧院",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "anhui-museum-old",
-      "name": "安徽博物院(老馆)",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "baohe-wanda",
-      "name": "合肥包河万达广场",
-      "from": 7.5,
-      "to": 6
-    },
-    {
-      "id": "binhu-forest",
-      "name": "合肥滨湖国家森林公园",
-      "from": 8,
-      "to": 9
-    },
-    {
-      "id": "hefei-sunac",
-      "name": "合肥融创乐园",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "sanhe-yang",
-      "name": "杨振宁旧居",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "changlinhe",
-      "name": "长临河古镇景区",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "zhegao",
-      "name": "柘皋古镇",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "zhongmiao",
-      "name": "巢湖·中庙",
-      "from": 8,
-      "to": 9
-    },
-    {
-      "id": "laoshan-island",
-      "name": "姥山岛景区",
-      "from": 8,
-      "to": 9
-    },
-    {
-      "id": "zipengshan",
-      "name": "紫蓬山国家森林公园",
-      "from": 7.5,
-      "to": 9
-    },
-    {
-      "id": "xilu-temple",
-      "name": "西庐寺",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "liucheng-villa",
-      "name": "刘铭传故居",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "fucha-mountain",
-      "name": "浮槎山景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "yefu-mountain",
-      "name": "冶父山国家森林公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "yinping-mountain",
-      "name": "巢湖银屏山景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "zhouyu-mu",
-      "name": "周瑜墓园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "sanguo-xincheng",
-      "name": "合肥三国新城遗址公园碑记",
-      "from": 7,
-      "to": 5
-    },
-    {
-      "id": "cuigang",
-      "name": "崔岗艺术村",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "non-heritage",
-      "name": "中国非物质文化遗产园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "xiaolingnan",
-      "name": "蜀山区小岭南花海",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "kuanghe-park",
-      "name": "匡河公园",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "huachong-park",
-      "name": "花冲公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "huancheng-park",
-      "name": "环城公园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "kexuedao",
-      "name": "科学岛",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "feicui-lake",
-      "name": "翡翠湖风景区",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "ustc",
-      "name": "中国科学技术大学",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "kaifu-temple",
-      "name": "开福寺福慧书院",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "lihongzhang-xiangtang",
-      "name": "合肥市李鸿章享堂",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "dujiang-qianguwei",
-      "name": "渡江战役总前委旧址纪念馆",
-      "from": 6.5,
       "to": 7
     }
   ],

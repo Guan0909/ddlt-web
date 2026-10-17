@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -350,7 +351,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -391,7 +392,8 @@
       "navi_poiid": [],
       "business_area": "关林",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s66fac87b",
@@ -769,53 +771,6 @@
       "entrance": [
         112.695419,
         34.679777
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s6a9d5d15",
-      "name": "洛阳城市阳台",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        112.45016,
-        34.66115
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0JRLS7LG4",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_139657_1769485692282_11375563.jpg",
-      "address": "御博路与滨河北路交叉口东北260米",
-      "district": "西工区",
-      "adcode": "410303",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_139657_1769485692282_11375563.jpg",
-        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_images_media_1000004846_ss__1770387878699_36879605.jpg",
-        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_100002749_1759403304148_34618634.jpg"
-      ],
-      "keytag": "公园",
-      "entrance": [
-        112.449968,
-        34.662663
       ],
       "navi_poiid": [],
       "business_area": [],
@@ -1252,53 +1207,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s332a610a",
-      "name": "洛阳民俗博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        112.489316,
-        34.679603
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B017B01GW9",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "全年 周二–周日 09:00–12:00,13:30–17:00开放 最晚进入16:30；全年 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–12:00,13:30–17:00开放 最晚进入16:30",
-      "tel": "0379-60335237;0379-60335235",
-      "photo": "https://aos-comment.amap.com/B017B01GW9/comment/f16ec5904be3562cd5a38e8d45098e5b_2048_2048_80.jpg",
-      "address": "新街433号",
-      "district": "瀍河回族区",
-      "adcode": "410304",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B017B01GW9/comment/f16ec5904be3562cd5a38e8d45098e5b_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B017B01GW9/comment/content_media_external_file_1000033119_ss__1757752318944_07050411.jpg",
-        "https://store.is.autonavi.com/showpic/5503ff6b7ee329010000002922436358?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        112.488978,
-        34.678824
-      ],
-      "navi_poiid": "I49F016036_7406;50757",
-      "business_area": "老城",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sd0df0c02",
       "name": "鼓楼",
       "cat": "山水",
@@ -1437,53 +1345,6 @@
         34.7201
       ],
       "navi_poiid": "I49F016037_12",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s64291622",
-      "name": "洛阳城定鼎门遗址博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        112.466715,
-        34.631643
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGXC3UL",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "03/04-12/31 周二–周日 09:00–17:00开放 最晚进入16:30；03/04-12/31 周一 全天不开放；元旦节,清明节,劳动节,端午节,中秋节,国庆节 09:00–18:00开放 最晚进入17:30",
-      "tel": "0379-65989096",
-      "photo": "http://store.is.autonavi.com/showpic/0f1573d7aa1a670776252513e12f3dbe",
-      "address": "古城路",
-      "district": "洛龙区",
-      "adcode": "410311",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/0f1573d7aa1a670776252513e12f3dbe",
-        "http://store.is.autonavi.com/showpic/ec288138aa9ebacad668bfdf73e2aede",
-        "https://store.is.autonavi.com/showpic/4704efbeed3b50220000002263244533"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        112.46749,
-        34.630608
-      ],
-      "navi_poiid": "I49F017036_6642;53160",
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
@@ -1773,52 +1634,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sff3eb9c7",
-      "name": "洛阳周公庙博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "09:00-17:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        112.462348,
-        34.676409
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B017B00VJL",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30",
-      "photo": "http://store.is.autonavi.com/showpic/b09ef48c2ea73a0d4b906d47503142fe",
-      "address": "定鼎南路21号",
-      "district": "老城区",
-      "adcode": "410302",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/b09ef48c2ea73a0d4b906d47503142fe",
-        "https://aos-comment.amap.com/B017B00VJL/comment/e165b6cb5aa8b1dc7808b02aea14f206_2048_2048_80.jpg",
-        "https://store.is.autonavi.com/showpic/cd3aeb3eb9da13cd0000003493868395?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        112.462631,
-        34.675648
-      ],
-      "navi_poiid": "I49F016036_1119",
-      "business_area": "老城",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2154,7 +1969,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -2196,7 +2011,8 @@
       "navi_poiid": "I49F027030_29",
       "business_area": [],
       "website": "www.laojunshan.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     }
   ]
 }

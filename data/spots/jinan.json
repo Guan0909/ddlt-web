@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,57 +62,8 @@
       "navi_poiid": [],
       "business_area": "共青团路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sd02b005a",
-      "name": "大千佛山景区佛慧山",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:30-17:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.047873,
-        36.628538
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFL2XR7",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:00",
-      "tel": "0531-82952821",
-      "photo": "https://store.is.autonavi.com/showpic/c038a6ee7615546d0000004928786733?type=pic",
-      "address": "旅游路中段",
-      "district": "历下区",
-      "adcode": "370102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/c038a6ee7615546d0000004928786733?type=pic",
-        "http://store.is.autonavi.com/showpic/841eb2983b74d13d71b6d1d4962368af",
-        "https://store.is.autonavi.com/showpic/faca4e6e57afcc200000004928812224?type=pic"
-      ],
-      "keytag": "名山丘陵",
-      "entrance": [
-        117.042364,
-        36.635207
-      ],
-      "navi_poiid": [],
-      "business_area": "千佛山",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s6cc565aa",
@@ -120,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -162,58 +114,8 @@
       "navi_poiid": "J50F041025_542;47407",
       "business_area": "千佛山",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s9f6ea7bb",
-      "name": "天下第一泉景区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.015207,
-        36.660934
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFIOSQ2K",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "0531-86088945",
-      "photo": "http://store.is.autonavi.com/showpic/634af966b48ea23e83c1eacb9329f65f",
-      "address": "大明湖街道明湖路271号",
-      "district": "历下区",
-      "adcode": "370102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/634af966b48ea23e83c1eacb9329f65f",
-        "http://store.is.autonavi.com/showpic/f8dcadff5cb6f9e5bb9b2cb610858d7c",
-        "http://store.is.autonavi.com/showpic/6801643c6d16dceab4863efc4ed8d158"
-      ],
-      "a_level": "5A",
-      "keytag": "5A景区",
-      "entrance": [
-        117.013898,
-        36.664297
-      ],
-      "navi_poiid": [],
-      "business_area": "共青团路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s448e9cf3",
@@ -318,7 +220,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -360,7 +262,8 @@
       "navi_poiid": "J50F043027_61",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s3520e4c0",
@@ -370,7 +273,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -412,7 +315,8 @@
       "navi_poiid": "J50F041029_68",
       "business_area": "朱家峪景区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s868d9224",
@@ -503,53 +407,6 @@
       "keytag": "景区",
       "navi_poiid": [],
       "business_area": "大明湖",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s9bb28c62",
-      "name": "英雄山风景区",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.004865,
-        36.636092
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02130167D",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/559e494da310d1ecfc159426",
-      "address": "英雄山路18号",
-      "district": "市中区",
-      "adcode": "370103",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/559e494da310d1ecfc159426",
-        "https://store.is.autonavi.com/showpic/aa7dc10eaf6a60560000002878914742?type=pic",
-        "https://store.is.autonavi.com/showpic/75b3a293c1e49a2b203174581e7581b9"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        116.997196,
-        36.639803
-      ],
-      "navi_poiid": "J50F041024_26914",
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1185,53 +1042,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sfe4b48c1",
-      "name": "胶济铁路博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        116.99195,
-        36.66814
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B021307VE8",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周三至周日 09:00-16:30；周一至周二 全天关闭",
-      "tel": "0531-82429165",
-      "photo": "https://store.is.autonavi.com/showpic/fd14c37207dbf5590000003327900258?type=pic",
-      "address": "经一路30-1号",
-      "district": "天桥区",
-      "adcode": "370105",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/fd14c37207dbf5590000003327900258?type=pic",
-        "https://aos-comment.amap.com/B021307VE8/comment/76AEBA1B_2371_4E4C_98AB_A31C8C7273B4_L0_001_1500_2000_1742741761413_58121515.jpg",
-        "https://store.is.autonavi.com/showpic/9965ab05a434bbf70000002221864551?type=pic"
-      ],
-      "keytag": "工业博物馆",
-      "entrance": [
-        116.992103,
-        36.667745
-      ],
-      "navi_poiid": [],
-      "business_area": "经一路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s851b731e",
       "name": "济南开埠博物馆",
       "cat": "博物馆",
@@ -1841,146 +1651,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s8f5307c3",
-      "name": "山东省地质博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "09:00-16:30",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        117.081484,
-        36.651051
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02130WMOZ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；周二至周日 09:00-16:30",
-      "tel": "0531-51791547;0531-51791548",
-      "photo": "http://store.is.autonavi.com/showpic/fa9b701f802ebc786f8784028422b33c",
-      "address": "经十路114号",
-      "district": "历下区",
-      "adcode": "370102",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/fa9b701f802ebc786f8784028422b33c",
-        "http://store.is.autonavi.com/showpic/b406f2313534a76d158038a26c670a6f",
-        "http://store.is.autonavi.com/showpic/0e73a1e18245afc611e2a1d08b4b50e9"
-      ],
-      "keytag": "地质博物馆",
-      "entrance": [
-        117.081386,
-        36.651042
-      ],
-      "navi_poiid": [],
-      "business_area": "浆水泉",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s0f73a530",
-      "name": "山东古建筑博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        117.013275,
-        36.655775
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0MBP71TSC",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "7月7日-8月30日 09:00-19:00",
-      "photo": "https://store.is.autonavi.com/showpic/4ebd322f77d30b250000003090482245?type=pic",
-      "address": "文化西路与青年西路交叉口西北100米",
-      "district": "市中区",
-      "adcode": "370103",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/4ebd322f77d30b250000003090482245?type=pic",
-        "https://aos-comment.amap.com/B0MBP71TSC/comment/20260324-7c4750efc4570daf47b1fdc8-6RH5WjNGx5AiH6bBIkvAa.jpg",
-        "https://store.is.autonavi.com/showpic/6f065c33431d71ff0000002252300556?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        117.013729,
-        36.655612
-      ],
-      "navi_poiid": [],
-      "business_area": "文化西路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "saacdf62f",
-      "name": "虫鸣探秘活体自然博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "09:30-18:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        116.999379,
-        36.645482
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0MBNRU8CX",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:30-18:00",
-      "tel": "18660412874",
-      "photo": "https://store.is.autonavi.com/showpic/2e52430838e22ed40000003003100248?type=pic",
-      "address": "经十一路人防商城A6入口下即到",
-      "district": "市中区",
-      "adcode": "370103",
-      "cost": 35,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/2e52430838e22ed40000003003100248?type=pic",
-        "https://store.is.autonavi.com/showpic/98fed97bb587bb7d0000003126000225?type=pic",
-        "https://store.is.autonavi.com/showpic/81226975f0f1638c0000003125994444?type=pic"
-      ],
-      "keytag": "儿童主题乐园",
-      "entrance": [
-        116.999376,
-        36.645591
-      ],
-      "navi_poiid": [],
-      "business_area": "八一立交桥",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s1b9a9384",
       "name": "城子崖遗址博物馆",
       "cat": "博物馆",
@@ -2257,58 +1927,13 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "seb1b510d",
-      "name": "恣街烧烤美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "09:30-17:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.054125,
-        36.700275
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF01R2E",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:30-17:30",
-      "tel": "0531-89006699",
-      "photo": "http://store.is.autonavi.com/showpic/e2681f3d694ee9f8e7ba1c4d70785665",
-      "address": "黄台板桥庄411号",
-      "district": "历城区",
-      "adcode": "370112",
-      "cost": 59,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/e2681f3d694ee9f8e7ba1c4d70785665"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        117.054158,
-        36.700152
-      ],
-      "navi_poiid": [],
-      "business_area": "北园",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "x31532ff1",
       "name": "大明湖景区",
       "cat": "山水",
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -2350,7 +1975,8 @@
       "navi_poiid": "J50F040025_24114;44820",
       "business_area": "大明湖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "x643483bd",
@@ -2426,7 +2052,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/23f04f739153c4cb2a5afc414ac1bda6"
+      "photo": "http://store.is.autonavi.com/showpic/23f04f739153c4cb2a5afc414ac1bda6",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/23f04f739153c4cb2a5afc414ac1bda6",
+        "http://store.is.autonavi.com/showpic/f57a3b5b600f3939ea68e35f0b275259",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/59a65a6e-bc57-469a-881b-a42b42a5a026.jpg"
+      ]
     }
   ]
 }

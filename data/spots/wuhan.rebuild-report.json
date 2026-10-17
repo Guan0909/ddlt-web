@@ -1,0 +1,656 @@
+{
+  "city": "武汉",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 22,
+      "博物馆": 9,
+      "街区": 9,
+      "亲子": 5,
+      "公园": 5,
+      "古迹": 4
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 5,
+      "street": 9,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 54,
+      "suburb": 1,
+      "coreRatio": 65
+    }
+  },
+  "keep": [
+    {
+      "id": "s34dbe8a9",
+      "name": "黄鹤楼",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "see9dddd6",
+      "name": "东湖生态旅游风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s09e41217",
+      "name": "东湖磨山景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s9e265c36",
+      "name": "湖北省博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s63da3345",
+      "name": "江汉关博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd9b80a90",
+      "name": "东湖之森·飞越丛林探险乐园",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5fb4a9a1",
+      "name": "晴川阁",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s49df11d9",
+      "name": "武汉园博园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sc1927856",
+      "name": "九真山风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s98c862ba",
+      "name": "昙华林",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1d96b1fd",
+      "name": "武汉革命博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "se00dca71",
+      "name": "龟山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf2ccd75a",
+      "name": "武汉博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2553c556",
+      "name": "长春观",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3b75ed3a",
+      "name": "辛亥革命博物院(南区)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1018c132",
+      "name": "归元禅寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s05227020",
+      "name": "东湖绿道",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf0267dad",
+      "name": "东湖听涛景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s95ff01f5",
+      "name": "宝通禅寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se71bbbd7",
+      "name": "武汉麓客岛",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6e591ebf",
+      "name": "武汉大学万林艺术博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s143ef7dd",
+      "name": "武汉江滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sef9922ee",
+      "name": "铁机路江滩灯塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s383dc7ff",
+      "name": "巴公房子",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb47d41ef",
+      "name": "长江观景第一台",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa4b011dd",
+      "name": "古琴台",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc1f92a3a",
+      "name": "月湖风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s71f31857",
+      "name": "蛇山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s298b3f94",
+      "name": "湖光序曲",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s09405294",
+      "name": "东湖飞鸟世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5552cf8f",
+      "name": "碧潭观鱼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s812afed2",
+      "name": "武汉东湖沙滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sba1ef133",
+      "name": "武汉警察博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3a26b712",
+      "name": "黎黄陂路街头博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s82d0a249",
+      "name": "武汉自然博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se794c2f4",
+      "name": "东湖海洋乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa3b1d364",
+      "name": "武汉百兽乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s94e9d961",
+      "name": "中国光谷·半岛乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s708abad7",
+      "name": "鱼乐园",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "x004b2775",
+      "name": "武汉长江大桥",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0add3b73",
+      "name": "万松园雪松路美食街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "s707902d0",
+      "name": "世界城光谷步行街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s015d05a2",
+      "name": "山海关路小吃街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s8c2b31c2",
+      "name": "江汉路步行街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "x2dfb44ab",
+      "name": "楚河汉街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sc4a3187e",
+      "name": "意大利风情街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s73ccfd12",
+      "name": "户部巷",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sa7b97401",
+      "name": "大汉口美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sa79e6cfc",
+      "name": "解放公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sbc480991",
+      "name": "纵横体育公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s667fbcb7",
+      "name": "武昌江滩",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s64fc1222",
+      "name": "中山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "scb81c7fb",
+      "name": "西北湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "s8a3f74f0",
+      "name": "后街夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（街区 ≤8）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s34dbe8a9",
+      "name": "黄鹤楼",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "see9dddd6",
+      "name": "东湖生态旅游风景区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s09e41217",
+      "name": "东湖磨山景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s5fb4a9a1",
+      "name": "晴川阁",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s49df11d9",
+      "name": "武汉园博园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sc1927856",
+      "name": "九真山风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "x2dfb44ab",
+      "name": "楚河汉街",
+      "from": 7,
+      "to": 8
+    }
+  ],
+  "duplicates": []
+}

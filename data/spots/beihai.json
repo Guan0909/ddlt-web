@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": "F49F032010_3",
       "business_area": "银滩商圈",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s0d7d125c",
@@ -71,7 +73,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -113,7 +115,8 @@
       "navi_poiid": [],
       "business_area": "涠洲岛",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s52bafb0c",
@@ -215,7 +218,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -257,7 +260,8 @@
       "navi_poiid": "F49F031009_9638",
       "business_area": "海滨公园",
       "website": "www.seashow.org",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2d38919c",
@@ -266,7 +270,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -308,7 +312,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf8f39c81",
@@ -317,7 +322,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -359,7 +364,8 @@
       "navi_poiid": "F49F031010_2922",
       "business_area": [],
       "website": "www.beihaijhw.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sdcff98ef",
@@ -368,7 +374,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -410,7 +416,8 @@
       "navi_poiid": "F49F031009_10330",
       "business_area": "新世纪大道",
       "website": "www.oceanorama.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sba5f6eee",
@@ -419,7 +426,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
@@ -461,7 +468,8 @@
       "navi_poiid": "F49F029010_148",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sfc50968c",
@@ -470,7 +478,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -510,7 +518,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf30140aa",
@@ -651,54 +660,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sdc9f996d",
-      "name": "北海银滩欢乐港湾区",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.135391,
-        21.411572
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFG2DZJN",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "0779-3884839",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/bc275282-6653-4949-ab99-12c386ea39e0.jpg",
-      "address": "银滩中路46号",
-      "district": "银海区",
-      "adcode": "450503",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://aos-cdn-image.amap.com/sns/ugccomment/bc275282-6653-4949-ab99-12c386ea39e0.jpg",
-        "https://aos-comment.amap.com/B0FFG2DZJN/comment/CEB7B5B5_8A12_489C_8719_483FBE77CAFF_L0_001_2000_150_1764856560797_21200298.jpg",
-        "https://aos-comment.amap.com/B0FFG2DZJN/comment/content_media_external_file_1000010130_ss__1756655975266_12062877.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        109.140058,
-        21.411262
-      ],
-      "navi_poiid": [],
-      "business_area": "银滩商圈",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1553,7 +1514,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
@@ -1595,7 +1556,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "s823244d4",
@@ -2064,54 +2026,6 @@
       ],
       "navi_poiid": "F49F028010_138",
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "xe9e7f0e2",
-      "name": "北海老街",
-      "cat": "古镇",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "古镇街区，在城内，适合留一整天边走边吃。",
-      "reason": "留半天，把饭点安排在镇上",
-      "open": "08:30-21:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.112545,
-        21.483058
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LRHA7KH8",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "note": "标志性景点补录",
-      "open_text": "周一至周日 08:30-21:30",
-      "photo": "https://store.is.autonavi.com/showpic/c479bf510b2c8b040000002444922337?type=pic",
-      "address": "珠海中路98号北海老城内(西侧)",
-      "district": "海城区",
-      "adcode": "450502",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/c479bf510b2c8b040000002444922337?type=pic",
-        "https://store.is.autonavi.com/showpic/5b7fe63e1df2b5142b7d22877d081b05",
-        "https://aos-comment.amap.com/B0LRHA7KH8/comment/content_media_external_images_media_750_ss__1763911593271_85734043.jpg"
-      ],
-      "keytag": "风景名胜,风景名胜,风景名胜",
-      "entrance": [
-        109.112546,
-        21.483209
-      ],
-      "navi_poiid": [],
-      "business_area": "中山路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     }

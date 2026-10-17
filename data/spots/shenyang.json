@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
@@ -60,7 +61,8 @@
       "navi_poiid": "K51F027028_490355;483859;76478;482836",
       "business_area": "故宫",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s8862824f",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
@@ -111,7 +113,8 @@
       "navi_poiid": "K51F027028_58215",
       "business_area": "故宫",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s32d95aa8",
@@ -120,7 +123,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -162,7 +165,8 @@
       "navi_poiid": "K51F026028_337869;322153;47624;322152",
       "business_area": "北陵",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s1cb2a065",
@@ -172,7 +176,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -214,7 +218,8 @@
       "navi_poiid": "K51F025030_133",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sd7c697ad",
@@ -224,7 +229,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城郊，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -266,7 +271,8 @@
       "navi_poiid": "K51F026030_1266",
       "business_area": "世博园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s6d8633a3",
@@ -460,7 +466,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -502,7 +508,8 @@
       "navi_poiid": "K51F027029_4750",
       "business_area": "东陵公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s64f4aedd",
@@ -511,7 +518,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -553,7 +560,8 @@
       "navi_poiid": "K51F027028_3379",
       "business_area": "三好街",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s83179c6f",
@@ -562,7 +570,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -603,7 +611,8 @@
       "navi_poiid": "K51F026029_2584;7967;5051;38281",
       "business_area": "东陵公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s6f3db889",
@@ -1455,99 +1464,6 @@
       ],
       "navi_poiid": "K51F028028_41359",
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sb4208c33",
-      "name": "张氏帅府博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        123.459848,
-        41.794078
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFJH89KM",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；周二至周日 08:30-17:30,节假日营业时间以官方通知为准",
-      "photo": "https://aos-comment.amap.com/B0FFJH89KM/comment/F315329B_969D_4F4F_A6A8_CDC8C8DBBB60_L0_001_2000_150_1755932830704_23785324.jpg",
-      "address": "南顺城路",
-      "district": "沈河区",
-      "adcode": "210103",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0FFJH89KM/comment/F315329B_969D_4F4F_A6A8_CDC8C8DBBB60_L0_001_2000_150_1755932830704_23785324.jpg",
-        "https://store.is.autonavi.com/showpic/a8b2cfb52278fbd90000003810624958?type=pic",
-        "https://store.is.autonavi.com/showpic/66cce36d07337df30000003132448871?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        123.460021,
-        41.794041
-      ],
-      "navi_poiid": [],
-      "business_area": "故宫",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa84697ac",
-      "name": "沈阳金融博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        123.459802,
-        41.794085
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B00180I5AN",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "04/10-06/30 周二–周日 09:00–18:00开放 最晚进入17:30；04/10-06/30 周一 全天不开放；07/01-09/30 09:00–18:00开放 最晚售票17:30 最晚进入17:30；10/10-04/09 周二–周日 09:30–17:00开放 最晚进入16:30；10/10-04/09 周一 全天不开放；10/01-10/09 周二–周日 09:00–18:00开放 最晚进入17:30；10/01-10/09 周一 全天不开放；元旦节,清明节 09:30–17:00开放 最晚进入16:30；国庆节 09:00–18:00开放 最晚进入17:30；中秋节 09:00–21:00开放 最晚售票20:20；端午节 09:00–19:00开放 最晚售票18:30 最晚进入18:30",
-      "tel": "024-24867711;024-24842454",
-      "photo": "https://store.is.autonavi.com/showpic/a8d14575efb6bdd00000002746208591?type=pic",
-      "address": "皇城街道少帅府巷8号",
-      "district": "沈河区",
-      "adcode": "210103",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/a8d14575efb6bdd00000002746208591?type=pic",
-        "https://aos-comment.amap.com/B00180I5AN/comment/20260313-5e06add9173158cfb47b86ac-2eaPP29yiLS8Q1TIRzeG5S.jpg",
-        "https://aos-comment.amap.com/B00180I5AN/comment/20260313-5e06add9173158cfb47b86ac-9ZJSytL3YTD6GgOShXKVL9.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        123.46002,
-        41.794047
-      ],
-      "navi_poiid": "K51F027028_150367",
-      "business_area": "中街",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

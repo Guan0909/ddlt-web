@@ -1,0 +1,565 @@
+{
+  "city": "哈尔滨",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 7,
+      "街区": 6,
+      "山水": 14,
+      "博物馆": 14,
+      "公园": 5,
+      "亲子": 1,
+      "古镇": 1
+    },
+    "byGroup": {
+      "core": 36,
+      "night": 0,
+      "family": 1,
+      "street": 6,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 48,
+      "suburb": 6,
+      "coreRatio": 75
+    }
+  },
+  "keep": [
+    {
+      "id": "s4e891b62",
+      "name": "侵华日军第七三一部队遗址",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0eec62e3",
+      "name": "中华巴洛克历史文化街区",
+      "cat": "街区",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sb3245812",
+      "name": "太阳岛风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa32d3b9c",
+      "name": "圣·索菲亚教堂",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0b67b557",
+      "name": "东北虎林园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s56047e79",
+      "name": "哈药六版画博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4f76a34c",
+      "name": "哈尔滨冰雪大世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s20513d8d",
+      "name": "江上城堡观光索道",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3851adfa",
+      "name": "哈尔滨美术馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s65de809d",
+      "name": "黑龙江省博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8624b38b",
+      "name": "极乐寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s47ebc967",
+      "name": "波塞冬海底世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf0f2318f",
+      "name": "哈尔滨伏尔加庄园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2e781d8f",
+      "name": "俄罗斯童话博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb1555470",
+      "name": "哈尔滨工业大学博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf1cffe0d",
+      "name": "秋林格瓦斯百年文化馆",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8117c8dc",
+      "name": "哈尔滨融创乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sac411b33",
+      "name": "巧克力城堡观光索道",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scd19091a",
+      "name": "外滩雪人码头",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb5d41634",
+      "name": "世界欢乐城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s088b4cf2",
+      "name": "巧克力星人博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s94cf2e86",
+      "name": "东北林业大学中国(哈尔滨)森林博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s18b64e2e",
+      "name": "清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0010a4e2",
+      "name": "哈尔滨文化公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s135e5e09",
+      "name": "闫家岗农场稻田画观光塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s478a412e",
+      "name": "天龙湖风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbc6cce45",
+      "name": "黑龙江省地质博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3d995dac",
+      "name": "哈尔滨冰雪文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "saa1c607c",
+      "name": "黑龙江哈尔滨阿勒锦岛国家湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s48c2de80",
+      "name": "天恒山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s687f759e",
+      "name": "萧红故居",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s5a4ef384",
+      "name": "哈尔滨啤酒博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s84384463",
+      "name": "大金古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s4ba07493",
+      "name": "道外巴洛克博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s02657b57",
+      "name": "北大荒博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s97a0d055",
+      "name": "净土寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s1b7a3b99",
+      "name": "水阁云天",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "xf3ce0648",
+      "name": "哈尔滨防洪纪念塔广场",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "x415835bc",
+      "name": "东北烈士纪念馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 5,
+      "level": null,
+      "score": 0.6,
+      "heatNew": 8,
+      "why": "评分 5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s001d0ee0",
+      "name": "哈尔滨中央大街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "s7cf21cb5",
+      "name": "学府四夜市",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sefedc0ac",
+      "name": "松北商大夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "seb73dcc1",
+      "name": "公司街夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s8bcb73c6",
+      "name": "关东古巷",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s534ac197",
+      "name": "索菲亚广场",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s637a5900",
+      "name": "音乐长廊",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s2a24d1ab",
+      "name": "斯大林公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sa622a307",
+      "name": "太阳岛绿色运动公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s4e891b62",
+      "name": "侵华日军第七三一部队遗址",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s0eec62e3",
+      "name": "中华巴洛克历史文化街区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sb3245812",
+      "name": "太阳岛风景区",
+      "from": 9,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

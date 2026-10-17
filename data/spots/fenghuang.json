@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "古镇街区，在城内，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -61,7 +62,8 @@
       "navi_poiid": "G49F001013_826;84;5062",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s18540aba",
@@ -165,7 +167,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -207,7 +209,8 @@
       "navi_poiid": "H49F048013_1782",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s20ece81d",
@@ -216,7 +219,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 6,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -257,7 +260,8 @@
       "navi_poiid": "G49F001012_1",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s885d3f27",
@@ -266,7 +270,7 @@
       "tags": [
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -289,7 +293,7 @@
       "open_text": "周一至周日 00:00-24:00凤凰古城八景营业时间:08:00-17:30、沱江日游08:00-17:50、夜游18:00-23:30。如遇特殊情况调整，请以景区当天实际为准",
       "tel": "0743-2137999",
       "photo": "http://store.is.autonavi.com/showpic/8bcdfd514f2a2af4d2bae6ddc35f0b1d",
-      "heat_prev": 7,
+      "heat_prev": 9,
       "address": "沱江镇",
       "district": "凤凰县",
       "adcode": "433123",
@@ -318,7 +322,7 @@
       "tags": [
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -341,7 +345,7 @@
       "open_text": "周一至周日 00:00-24:00凤凰古城八景营业时间:08:00-17:30、沱江日游08:00-17:50、夜游18:00-23:30。如遇特殊情况调整，请以景区当天实际为准",
       "tel": "0743-8758777",
       "photo": "http://store.is.autonavi.com/showpic/93a08fa872f6ed47ac1ac5115288eef7",
-      "heat_prev": 7,
+      "heat_prev": 9,
       "address": "沱江镇",
       "district": "凤凰县",
       "adcode": "433123",
@@ -370,7 +374,7 @@
       "tags": [
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -393,7 +397,7 @@
       "open_text": "周一至周日 00:00-24:00凤凰古城八景营业时间:08:00-17:30、沱江日游08:00-17:50、夜游18:00-23:30。如遇特殊情况调整，请以景区当天实际为准",
       "tel": "0743-8665350",
       "photo": "https://store.is.autonavi.com/showpic/eff86c641f2d473e0000000738484949?type=pic",
-      "heat_prev": 7,
+      "heat_prev": 9,
       "address": "沱江镇",
       "district": "凤凰县",
       "adcode": "433123",
@@ -546,7 +550,12 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "photos": [
+        "https://aos-comment.amap.com/B02E70MND1/comment/f495f75c9c7ead3d1dd04d584a586e4e_2048_2048_80.jpg",
+        "https://store.is.autonavi.com/showpic/a0aec79effecda7a0000005027988357?type=pic",
+        "https://aos-comment.amap.com/B02E70MND1/comment/af02bdb66a5914fb236cfd091b18a087_2048_2048_80.jpg"
+      ]
     },
     {
       "id": "s4753d6dd",
@@ -578,57 +587,6 @@
       "open_text": "周一至周日 08:30-17:30 最晚进入17:00",
       "tel": "0743-8758777",
       "photo": "https://store.is.autonavi.com/showpic/c7f3fb23003386740000008030742749?type=pic",
-      "address": "凤凰北路(齐良桥九年制学校旁)",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/a69715465a628fd04b6e9d9583e8c734",
-        "http://store.is.autonavi.com/showpic/d23f13044b3f7832e6e6073959f7eac6",
-        "http://store.is.autonavi.com/showpic/c7c8e16b986c3a1b2afb143e84f5a4ed"
-      ],
-      "a_level": "4A",
-      "keytag": "4A景区",
-      "entrance": [
-        109.596461,
-        27.985576
-      ],
-      "navi_poiid": "H49F048013_1782",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa3f89732",
-      "name": "十八洞景区",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "08:30-17:30",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.499528,
-        28.374175
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02E70MPC6",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:30 最晚进入17:00",
-      "tel": "0743-2137771",
-      "photo": "http://store.is.autonavi.com/showpic/cb4767fe76c484220b4f7d7dc1f2769f",
       "address": "凤凰北路(齐良桥九年制学校旁)",
       "district": "凤凰县",
       "adcode": "433123",
@@ -932,58 +890,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sce40ced3",
-      "name": "矮寨·十八洞·德夯大峡谷景区",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 8,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:30-17:30",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.583012,
-        28.338636
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02E70MPC6",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:30 最晚进入17:00",
-      "photo": "https://store.is.autonavi.com/showpic/913c4f08b44c8e410000003793264940?type=pic",
-      "heat_prev": 7,
-      "tel": "0743-3570001;12301",
-      "address": "凤凰北路(齐良桥九年制学校旁)",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/a69715465a628fd04b6e9d9583e8c734",
-        "http://store.is.autonavi.com/showpic/d23f13044b3f7832e6e6073959f7eac6",
-        "http://store.is.autonavi.com/showpic/c7c8e16b986c3a1b2afb143e84f5a4ed"
-      ],
-      "a_level": "4A",
-      "keytag": "4A景区",
-      "entrance": [
-        109.596461,
-        27.985576
-      ],
-      "navi_poiid": "H49F048013_1782",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sb3d0c286",
       "name": "沈从文故居",
       "cat": "博物馆",
@@ -1225,7 +1131,7 @@
       "tags": [
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -1248,7 +1154,7 @@
       "open_text": "周一至周日 00:00-24:00凤凰古城八景营业时间:08:00-17:30、沱江日游08:00-17:50、夜游18:00-23:30。如遇特殊情况调整，请以景区当天实际为准",
       "tel": "0743-8758777",
       "photo": "https://aos-comment.amap.com/B0FFGNXY1D/comment/content_media_external_file_13542_ss__1760514843227_98518517.jpg",
-      "heat_prev": 7,
+      "heat_prev": 9,
       "address": "沱江镇",
       "district": "凤凰县",
       "adcode": "433123",
@@ -1277,7 +1183,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -1318,7 +1224,8 @@
       "navi_poiid": "G49F001013_3273;1414",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "s26cd1f78",
@@ -1501,96 +1408,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sd6fe1c44",
-      "name": "家庭村观景台",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "08:30-17:30",
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        109.612868,
-        28.331112
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02E70MBC5",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 3.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "00:00-24:00；凤凰古城开放,凤凰古城8景08:00-17:30；沱江游船常规周日游08:00-17:50、夜游18:00-23:30,沱江游船夏季周日游08:00-19:10、夜游19:30-22:30。如遇特殊情况调整,请以景区当天实际为准, 具体开放时间以现场公示为准",
-      "photo": "https://store.is.autonavi.com/showpic/4b1baa322ddb007a6e7a9b72bebfbae9",
-      "address": "虹桥东路45号附近",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/5d6cd1d9ba71b58ba25d57bbfeb34636",
-        "https://aos-comment.amap.com/B02E70MBC5/comment/d5df05c577d956394d6e961c6590c24d_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B02E70MBC5/comment/302c2e509a38d8dcea5f62974a2b21b9_2048_2048_80.jpg"
-      ],
-      "keytag": "人文景观",
-      "entrance": [
-        109.60738,
-        27.950819
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sade03682",
-      "name": "小龙洞瀑布",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 5,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:00-17:30",
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        109.527764,
-        28.373813
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0MD4XL8JT",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 2.9,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "08:00-17:30 最晚进入16:00, 具体开放时间以现场公示为准",
-      "photo": "https://store.is.autonavi.com/showpic/7895c97e57dcd9e50000002484430923?type=pic",
-      "heat_prev": 6,
-      "address": "土桥路凤凰飞水谷大瀑布景区",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "keytag": "景区",
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sb5afcf07",
       "name": "长潭岗峡谷河湖游度假区(长潭岗码头)",
       "cat": "山水",
@@ -1638,49 +1455,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "scf56b78e",
-      "name": "虹桥美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 6,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
-      "open": "11:00-01:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.60667,
-        27.94896
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0GRJ7NADL",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.1,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 11:00-01:00",
-      "tel": "0743-3790666",
-      "photo": "https://aos-comment.amap.com/B0GRJ7NADL/comment/d42eafd1105a27a635d18907b776574c_2048_2048_80.jpg",
-      "address": "虹桥中路8号",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 43,
-      "photos": [
-        "https://aos-comment.amap.com/B0GRJ7NADL/comment/d42eafd1105a27a635d18907b776574c_2048_2048_80.jpg",
-        "http://store.is.autonavi.com/showpic/b6ed9a962766498b5b893442eb8d8fe4",
-        "https://aos-comment.amap.com/B0GRJ7NADL/comment/1A18CC40_FD04_4BA9_9DB2_8C0AE0EBBB89_L0_001_1996_199_1760754289384_28890634.jpg"
-      ],
-      "keytag": "美食街",
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s98804a97",
       "name": "笔架山舞鹤公园",
       "cat": "公园",
@@ -1722,55 +1496,6 @@
       ],
       "navi_poiid": [],
       "business_area": "南华路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s52eacb3c",
-      "name": "花果山公园",
-      "cat": "公园",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 90,
-      "intro": "城市公园，在城郊，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.742778,
-        28.315559
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LRVSKDLV",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 3.9,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/25c9f03978d4fbfe0000002987518486?type=pic",
-      "tel": "15259506453",
-      "address": "阿拉营镇和平社区区医院对面",
-      "district": "凤凰县",
-      "adcode": "433123",
-      "cost": 128,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/d614486c639f952f669e80f86069f705",
-        "https://store.is.autonavi.com/showpic/2e0ca66144e7baca99327da1bef6a0c2",
-        "https://store.is.autonavi.com/showpic/9615286781c7fcc924f95c2286258c89"
-      ],
-      "keytag": "垂钓园",
-      "entrance": [
-        109.381102,
-        27.892749
-      ],
-      "navi_poiid": [],
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

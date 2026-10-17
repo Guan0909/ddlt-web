@@ -4,27 +4,27 @@
   "compositionBefore": {
     "byCat": {
       "古迹": 23,
-      "街区": 3,
+      "街区": 1,
       "公园": 4,
       "博物馆": 4,
       "亲子": 2,
       "夜景": 2,
       "商圈": 2,
-      "美食": 4,
+      "美食": 3,
       "演出": 1,
-      "山水": 12
+      "山水": 10
     },
     "byGroup": {
-      "core": 39,
+      "core": 37,
       "night": 3,
       "family": 2,
-      "street": 3,
-      "food": 4,
+      "street": 1,
+      "food": 3,
       "park": 4,
       "mall": 2,
-      "total": 57,
-      "suburb": 20,
-      "coreRatio": 74
+      "total": 52,
+      "suburb": 18,
+      "coreRatio": 77
     }
   },
   "keep": [
@@ -52,7 +52,7 @@
     },
     {
       "id": "barkhor",
-      "name": "八廓街",
+      "name": "西藏自治区拉萨市八廓街步行街",
       "cat": "街区",
       "heat": 8,
       "rating": 4.8,
@@ -284,7 +284,7 @@
     },
     {
       "id": "tibet-opera-center",
-      "name": "西藏藏戏艺术中心",
+      "name": "藏戏艺术中心",
       "cat": "演出",
       "heat": 7,
       "rating": 4.3,
@@ -399,18 +399,18 @@
     },
     {
       "id": "namtso",
-      "name": "纳木错",
+      "name": "纳木措国家风景区",
       "cat": "山水",
       "heat": 9.5,
-      "rating": null,
+      "rating": 4.7,
       "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
       "id": "yangbajing",
-      "name": "羊八井地热温泉",
+      "name": "羊八井地热温泉度假村",
       "cat": "山水",
       "heat": 6,
       "rating": 4,
@@ -420,7 +420,7 @@
     },
     {
       "id": "nyainqentanglha",
-      "name": "念青唐古拉山观景台",
+      "name": "念青唐古拉山",
       "cat": "山水",
       "heat": 7,
       "rating": 4.4,
@@ -452,7 +452,7 @@
     },
     {
       "id": "gangbala",
-      "name": "岗巴拉山口",
+      "name": "那根拉山口",
       "cat": "山水",
       "heat": 7,
       "rating": 4.6,
@@ -493,41 +493,19 @@
       "heatNew": 6
     },
     {
-      "id": "damxung-grassland",
-      "name": "羌塘草原",
-      "cat": "山水",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "puma-yumtso",
-      "name": "普莫雍错",
-      "cat": "山水",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "mila-pass",
       "name": "米拉山口",
       "cat": "山水",
-      "heat": 6,
-      "rating": null,
+      "heat": 8,
+      "rating": 4.9,
       "level": null,
-      "score": null,
-      "heatNew": null,
+      "score": 0.56,
+      "heatNew": 8,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "lhalu-wetland",
-      "name": "拉鲁湿地",
+      "name": "拉鲁湿地国家级自然保护区",
       "cat": "公园",
       "heat": 8,
       "rating": 4.6,
@@ -566,26 +544,6 @@
       "heatNew": 7
     },
     {
-      "id": "cijuelin",
-      "name": "中国西藏文化旅游创意园区",
-      "cat": "街区",
-      "heat": 6,
-      "rating": 3.8,
-      "level": null,
-      "score": 0.12,
-      "heatNew": 6
-    },
-    {
-      "id": "chongsaikang",
-      "name": "冲赛康",
-      "cat": "街区",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
       "id": "tianhai-night",
       "name": "天海夜市",
       "cat": "美食",
@@ -597,7 +555,7 @@
     },
     {
       "id": "makye-ame",
-      "name": "玛吉阿米",
+      "name": "玛吉阿米·餐吧",
       "cat": "美食",
       "heat": 7,
       "rating": 4.5,
@@ -607,41 +565,33 @@
     },
     {
       "id": "deji-road",
-      "name": "德吉路",
+      "name": "德吉路农贸市场",
       "cat": "美食",
       "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
       "heatNew": 7
-    },
-    {
-      "id": "zangyiyuan-road",
-      "name": "藏医院路",
-      "cat": "美食",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
     }
   ],
   "drop": [],
   "manual": [],
-  "add": [
+  "add": [],
+  "heatChanges": [
     {
-      "name": "拉鲁湿地国家级自然保护区",
-      "coord": [
-        91.094631,
-        29.670962
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
+      "id": "namtso",
+      "name": "纳木措国家风景区",
+      "from": 9.5,
+      "to": 7
     }
   ],
-  "heatChanges": [],
-  "duplicates": []
+  "duplicates": [
+    {
+      "name": "那根拉山口",
+      "ids": [
+        "lakenla",
+        "gangbala"
+      ]
+    }
+  ]
 }

@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -59,7 +60,8 @@
       "navi_poiid": "K49F047046_1428",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sbb6cf847",
@@ -304,7 +306,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -346,7 +348,8 @@
       "navi_poiid": "K49F048043_18384",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s4162846c",
@@ -1527,53 +1530,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sdfc26366",
-      "name": "和阳门广场",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        113.314816,
-        40.093252
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGLXUYH",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0FFGLXUYH/comment/content_media_external_file_19955_ss__1765005706047_89056983.jpg",
-      "address": "大同古城-城墙带状公园东侧",
-      "district": "平城区",
-      "adcode": "140213",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFGLXUYH/comment/content_media_external_file_19955_ss__1765005706047_89056983.jpg",
-        "https://store.is.autonavi.com/showpic/bd352b7bffeb25ce0000002991306734?type=pic",
-        "https://store.is.autonavi.com/showpic/a174d48e6c3fa52c0000003132870448?type=pic"
-      ],
-      "keytag": "广场",
-      "entrance": [
-        113.315448,
-        40.093427
-      ],
-      "navi_poiid": [],
-      "business_area": "雁同东路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sde35a7ee",
       "name": "守口堡景区",
       "cat": "山水",
@@ -1960,7 +1916,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -2003,7 +1959,8 @@
       "navi_poiid": "J49F005046_1",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     }
   ]
 }

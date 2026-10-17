@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -61,7 +62,8 @@
       "navi_poiid": "I49F016046_176089;38830",
       "business_area": "航海东路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sb2aeb153",
@@ -71,7 +73,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -113,7 +115,8 @@
       "navi_poiid": "I49F015048_61",
       "business_area": "中牟新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s474fb35e",
@@ -123,7 +126,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -165,7 +168,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s7f6596ad",
@@ -268,7 +272,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -310,7 +314,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s5b03866a",
@@ -320,7 +325,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -362,7 +367,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s874f076d",
@@ -372,7 +378,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -414,7 +420,8 @@
       "navi_poiid": "I49F016041_34",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s26c541c4",
@@ -1763,53 +1770,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sf78aa5a7",
-      "name": "河南南水北调博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        113.627384,
-        34.745303
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0173044E5",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "05-01至09-24 周二至周日 09:00-17:30 最晚进入17:00；09-25至10-07 周一至周日 09:00-18:00 最晚进入17:30；10-08至04-30 周二至周日 09:00-17:00 最晚进入16:30",
-      "tel": "0371-67714993",
-      "photo": "https://aos-comment.amap.com/B0173044E5/comment/content_media_external_file_344890_ss__1765466979868_65685481.jpg",
-      "address": "嵩山南路168号",
-      "district": "中原区",
-      "adcode": "410102",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0173044E5/comment/content_media_external_file_344890_ss__1765466979868_65685481.jpg",
-        "https://store.is.autonavi.com/showpic/b72d26c4507dc5ce0000000731818753?type=pic",
-        "https://aos-comment.amap.com/B0173044E5/comment/f74c4569a59a5d0f38b3fff7c2599c8b_2048_2048_80.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        113.628042,
-        34.745305
-      ],
-      "navi_poiid": "I49F016045_53403",
-      "business_area": "嘉锦酒店",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s3214295b",
       "name": "郑州纺织工业遗址博物馆",
       "cat": "博物馆",
@@ -2183,54 +2143,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sbb982aab",
-      "name": "亚细亚卓悦城城市青年文化街区",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "10:00-24:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        113.668043,
-        34.751836
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KRLM0DWR",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:00-24:00",
-      "tel": "0371-58691888",
-      "photo": "https://store.is.autonavi.com/showpic/65ccc38c0ca1e1a20000004207566646?type=pic",
-      "address": "德化街街道德化街89号亚细亚商场1层北侧",
-      "district": "管城回族区",
-      "adcode": "410104",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/65ccc38c0ca1e1a20000004207566646?type=pic",
-        "https://store.is.autonavi.com/showpic/efd387401cab067057c0e19c0301e130",
-        "https://aos-comment.amap.com/B0KRLM0DWR/comment/content_media_external_images_media_1000001629_ss__1765032355779_59605904.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        113.668071,
-        34.751882
-      ],
-      "navi_poiid": [],
-      "business_area": "西大街",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s9bfb8069",
       "name": "海底世界·轮船乐园",
       "cat": "亲子",
@@ -2429,7 +2341,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城郊，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
@@ -2472,36 +2384,8 @@
       "navi_poiid": "I49F013045_26",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "xb5af9e86",
-      "name": "郑州商代遗址",
-      "cat": "古迹",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        113.690277,
-        34.75106
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B01730IB8R",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "note": "标志性景点补录",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/312356d6444f9ce62213de5dc8555f36"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     }
   ]
 }

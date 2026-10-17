@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -20,7 +21,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "历史古迹，在城郊，看半天。",
       "reason": "上午来，人少光线也好",
@@ -61,7 +62,8 @@
       "navi_poiid": "J47F043045_816;818",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s8fc33d7c",
@@ -118,7 +120,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -160,7 +162,8 @@
       "navi_poiid": "J47F041047_19491",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s8162ba50",
@@ -169,7 +172,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -209,7 +212,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sd765b51b",
@@ -219,7 +223,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -261,54 +265,8 @@
       "navi_poiid": "J47F043045_2406",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sfa263c6b",
-      "name": "青海省博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "09:00-17:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        101.756012,
-        36.630221
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03CB040C9",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭（法定节假日除外），周二至周日 09:00-17:00(16:30停止入馆)",
-      "tel": "0971-6111326;0971-6111164",
-      "photo": "http://store.is.autonavi.com/showpic/a5d223000f45b0e474d253cf59c495cb",
-      "address": "西关大街58号",
-      "district": "城西区",
-      "adcode": "630104",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/a5d223000f45b0e474d253cf59c495cb",
-        "http://store.is.autonavi.com/showpic/1973868d8e0dae748a988df29c0b8ea5",
-        "http://store.is.autonavi.com/showpic/2f91dd6759dd105bdf752af328d0a7d0"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        101.756135,
-        36.629178
-      ],
-      "navi_poiid": "J47F041047_1954",
-      "business_area": "西关大街",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2c17cd9e",
@@ -645,53 +603,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s8cccd550",
-      "name": "青海省自然资源博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "10:00-16:30",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        101.725569,
-        36.648175
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFL32C5M",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一全天关闭,周二至周日 10:00-16:30",
-      "tel": "0971-6117732",
-      "photo": "https://store.is.autonavi.com/showpic/65ac8c265b0395dd0000002550392443?type=pic",
-      "address": "彭家寨镇海晏路75-1号",
-      "district": "城西区",
-      "adcode": "630104",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/65ac8c265b0395dd0000002550392443?type=pic",
-        "https://aos-comment.amap.com/B0FFL32C5M/comment/content_media_external_file_61862_ss__1753181620876_43642807.jpg",
-        "https://aos-comment.amap.com/B0FFL32C5M/comment/79024b4db35d0313c40921c08289a169_2048_2048_80.jpg"
-      ],
-      "keytag": "地质博物馆",
-      "entrance": [
-        101.725672,
-        36.6485
-      ],
-      "navi_poiid": [],
-      "business_area": "海湖新区",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1557,47 +1468,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s60befac8",
-      "name": "王家庄清真寺",
-      "cat": "古迹",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        101.821716,
-        36.615727
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03CB06DA7",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "address": "站东巷",
-      "district": "城东区",
-      "adcode": "630102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "keytag": "清真寺",
-      "entrance": [
-        101.821953,
-        36.61579
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s403a7cdb",
       "name": "金塔寺",
       "cat": "古迹",
@@ -1789,53 +1659,6 @@
       ],
       "navi_poiid": "J47F041046_5015",
       "business_area": "虎台",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sc7e082af",
-      "name": "水城门清真寺",
-      "cat": "古迹",
-      "tags": [],
-      "heat": 6,
-      "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "上午来，人少光线也好",
-      "open": "08:00-18:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        101.797568,
-        36.619531
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03CB06KE6",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.2,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://aos-comment.amap.com/B03CB06KE6/comment/content_media_external_file_100000351_1767719134683_86613462.jpg",
-      "address": "七一路315号",
-      "district": "城东区",
-      "adcode": "630102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B03CB06KE6/comment/content_media_external_file_100000351_1767719134683_86613462.jpg",
-        "http://store.is.autonavi.com/showpic/a7de884373469958717c555acac9122f",
-        "https://store.is.autonavi.com/showpic/7266627f38ed95aa0000005393398046?type=pic"
-      ],
-      "keytag": "清真寺",
-      "entrance": [
-        101.797646,
-        36.619644
-      ],
-      "navi_poiid": "J47F041047_17032",
-      "business_area": "七一路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2121,7 +1944,7 @@
     },
     {
       "id": "x99e4c8b6",
-      "name": "青海湖国家重点风景名胜区",
+      "name": "青海湖旅游",
       "cat": "博物馆",
       "tags": [
         "国家级",

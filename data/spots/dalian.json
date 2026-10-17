@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
@@ -61,7 +62,8 @@
       "navi_poiid": "J51F014014_11831",
       "business_area": "老虎滩",
       "website": "www.laohutan.com.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s6b6d13ee",
@@ -304,7 +306,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
@@ -345,7 +347,8 @@
       "navi_poiid": "J51F013012_61",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s99263f35",
@@ -355,7 +358,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -396,105 +399,8 @@
       "navi_poiid": "J51F015011_13",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s399ee826",
-      "name": "旅顺口风景名胜区",
-      "cat": "山水",
-      "tags": [
-        "国家级",
-        "远郊"
-      ],
-      "heat": 8,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        121.258381,
-        38.804
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFJTTRDO",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "tel": "0411-86622735",
-      "photo": "https://aos-comment.amap.com/B019B0AP24/comment/content_media_external_file_1000070758_ss__1761285417113_46988438.jpg",
-      "address": "黄河路8号",
-      "district": "旅顺口区",
-      "adcode": "210212",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B019B0AP24/comment/content_media_external_file_1000070758_ss__1761285417113_46988438.jpg",
-        "https://aos-comment.amap.com/B019B0AP24/comment/content_media_external_file_1000031603_ss__1756549420297_62988685.jpg",
-        "https://aos-comment.amap.com/B019B0AP24/comment/content_media_external_images_media_100000693_1732190394074_12508482.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        121.257969,
-        38.803992
-      ],
-      "navi_poiid": "J51F015011_45944",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa6310dc4",
-      "name": "大连博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        121.586097,
-        38.888484
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B019B0AWFS",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；1月至6月,10月至12月 周二至周日 09:00-16:30 最晚进入16:00；7月至8月 周二至周日 09:00-20:00 最晚进入19:30；每周一闭馆（国家法定节假日另行通知）",
-      "tel": "0411-84800188;0411-84801052",
-      "photo": "http://store.is.autonavi.com/showpic/eb01969e7e99cde26b94112b19572f53",
-      "address": "会展路10号",
-      "district": "沙河口区",
-      "adcode": "210204",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/eb01969e7e99cde26b94112b19572f53",
-        "http://store.is.autonavi.com/showpic/9a939010525ab9a0ff45efdb2f641a49",
-        "https://store.is.autonavi.com/showpic/e90500eb36c8aff00000007205358475?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        121.586325,
-        38.88937
-      ],
-      "navi_poiid": "J51F014013_5969",
-      "business_area": "星海湾",
-      "website": "modernmuseum.dl.gov.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sb858c7d4",
@@ -1455,53 +1361,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sbfa39dc3",
-      "name": "世界音乐文化博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        121.690439,
-        38.924878
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFIBFIZP",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "05-01至10-07 周一至周日 09:00-22:30 最晚进入22:00；10-08至04-30 周一至周日 09:00-18:00 最晚进入17:30",
-      "tel": "0411-39972789",
-      "photo": "https://aos-comment.amap.com/B0FFIBFIZP/comment/content_media_external_file_100007386_1766172849205_03491491.jpg",
-      "address": "港浦路102号东方水城二期S13号楼",
-      "district": "中山区",
-      "adcode": "210202",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0FFIBFIZP/comment/content_media_external_file_100007386_1766172849205_03491491.jpg",
-        "https://aos-comment.amap.com/B0FFIBFIZP/comment/content_media_external_file_68551_ss__1753751583661_50374631.jpg",
-        "https://aos-comment.amap.com/B0FFIBFIZP/comment/content_media_external_images_media_22498_ss__1763098685711_56417505.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        121.689858,
-        38.923995
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "see2207fb",
       "name": "海滨世界美术博物馆",
       "cat": "博物馆",
@@ -1550,7 +1409,7 @@
     },
     {
       "id": "s45382a12",
-      "name": "大连金州博物馆",
+      "name": "金州副都统衙门博物馆",
       "cat": "博物馆",
       "tags": [
         "远郊"
@@ -1692,52 +1551,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sfdf18cf9",
-      "name": "大连市西安路商业街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "08:30-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        121.589207,
-        38.917466
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFJ2IJFO",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-22:00",
-      "photo": "https://store.is.autonavi.com/showpic/80002136012ab3860000003085444451?type=pic",
-      "address": "西安路辅路与永明巷交叉口东北20米",
-      "district": "沙河口区",
-      "adcode": "210204",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/80002136012ab3860000003085444451?type=pic",
-        "https://aos-comment.amap.com/B0FFJ2IJFO/comment/12c889ad31cdeaa577b4163583f4ad0f_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B0FFJ2IJFO/comment/content_media_external_file_100007739_1768482352788_01367044.jpg"
-      ],
-      "keytag": "特色商业街",
-      "entrance": [
-        121.589054,
-        38.917387
-      ],
-      "navi_poiid": [],
-      "business_area": "兴工",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s41feacc7",
       "name": "松山寺",
       "cat": "古迹",
@@ -1781,52 +1594,6 @@
       ],
       "navi_poiid": "J51F014013_8522",
       "business_area": "唐山街",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s50c6a615",
-      "name": "金州副都统衙门博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        121.717203,
-        39.11165
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B019B0C8HX",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-16:00 05-01至05-05 周二至周日 09:00-16:00；05-01至05-05 周一 全天关闭",
-      "photo": "https://store.is.autonavi.com/showpic/54805bac53ce05df0000003076730823?type=pic",
-      "address": "民主街255号",
-      "district": "金州区",
-      "adcode": "210213",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/54805bac53ce05df0000003076730823?type=pic",
-        "https://aos-comment.amap.com/B019B0C8HX/comment/content_media_external_images_media_1000088677_ss__1746344573515_19886141.jpg",
-        "https://store.is.autonavi.com/showpic/14b275040c8f479f0000005139800963?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        121.71724,
-        39.110825
-      ],
-      "navi_poiid": "J51F011014_23232",
-      "business_area": "拥政",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2485,56 +2252,6 @@
       ],
       "navi_poiid": "J51F014013_6051",
       "business_area": "星海广场",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "xc9869962",
-      "name": "金石滩-海滨公园",
-      "cat": "公园",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城郊，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        122.012448,
-        39.079051
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B019B0AOUH",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "note": "标志性景点补录",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B019B0AOUH/comment/d1243962d08035af63b13de103bc639d_2048_2048_80.jpg",
-      "address": "金普新区开发区金石滩国家旅游度假区内",
-      "district": "金州区",
-      "adcode": "210213",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B019B0AOUH/comment/d1243962d08035af63b13de103bc639d_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B019B0AOUH/comment/d8721199e8f8238c5ecca7351a44c1d2_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B019B0AOUH/comment/504BE6C9_8631_462F_9D94_612F2E77594E_L0_001_2000_1126_1742399889418_13860192.jpg"
-      ],
-      "keytag": "滨海公园",
-      "entrance": [
-        122.012686,
-        39.081075
-      ],
-      "navi_poiid": "J51F012017_2",
-      "business_area": "金石滩",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

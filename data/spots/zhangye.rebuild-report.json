@@ -1,0 +1,521 @@
+{
+  "city": "张掖",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 21,
+      "公园": 5,
+      "古迹": 10,
+      "博物馆": 2,
+      "街区": 3,
+      "古镇": 1
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 0,
+      "family": 0,
+      "street": 3,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 42,
+      "suburb": 18,
+      "coreRatio": 81
+    }
+  },
+  "keep": [
+    {
+      "id": "s78798383",
+      "name": "张掖七彩丹霞景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s51282936",
+      "name": "平山湖大峡谷",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s7d307ca2",
+      "name": "张掖国家湿地公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4c3a132f",
+      "name": "张掖世界地质公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s33e317d0",
+      "name": "冰沟丹霞景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s45e2a4cc",
+      "name": "临泽县流沙河景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s51f89acb",
+      "name": "大佛寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scd5c9c2e",
+      "name": "张掖市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6bc274b5",
+      "name": "临泽峡谷奇观景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6865681c",
+      "name": "外星谷星际主题地质公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb53be1be",
+      "name": "马蹄石窟群旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sddcf226d",
+      "name": "甘州府城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7276da50",
+      "name": "丹霞口文旅小镇",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sb2ee695a",
+      "name": "中华裕固风情走廊景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s68a5784f",
+      "name": "马蹄寺北寺石窟",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sada97bc3",
+      "name": "木塔寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s93d6195f",
+      "name": "玉水苑",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s7777b15b",
+      "name": "黑水国遗址",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s310cbb0c",
+      "name": "马蹄寺千佛洞",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sd8b47ea6",
+      "name": "马蹄生态文化旅游区石窟",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "saf0c4c6d",
+      "name": "三十三天石窟",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s5c2ec0c6",
+      "name": "张掖清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sc6fd5499",
+      "name": "屋兰古镇",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "sdbf2f4b7",
+      "name": "西来寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s5c1b0d08",
+      "name": "张掖神沙窝太阳岛景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s573c3dab",
+      "name": "七彩镇",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s8f5c9374",
+      "name": "芦水湾旅游度假区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8cb96183",
+      "name": "香古寺景区",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s85ed7b6e",
+      "name": "张掖城市湿地博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sa963bfc2",
+      "name": "西夏国寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sc54c1ba3",
+      "name": "灵隐寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sf2b1915e",
+      "name": "泻玉瀑布",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s5ac33957",
+      "name": "滨河九粮液文化旅游景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sea26d0d6",
+      "name": "靖安乡黑河弱水湾景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "sea7ecb85",
+      "name": "甘泉公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s2152f8d3",
+      "name": "张掖国家沙漠体育公园景区",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s5eebf329",
+      "name": "润泉湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s2ebe2614",
+      "name": "水天一色",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sc9c0761f",
+      "name": "文津公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s1fea2cdf",
+      "name": "甘州巷子",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s6ebccf09",
+      "name": "甘州市场",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s11353ca6",
+      "name": "恒达美食广场",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s78798383",
+      "name": "张掖七彩丹霞景区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s51282936",
+      "name": "平山湖大峡谷",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s7d307ca2",
+      "name": "张掖国家湿地公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s4c3a132f",
+      "name": "张掖世界地质公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s33e317d0",
+      "name": "冰沟丹霞景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2152f8d3",
+      "name": "张掖国家沙漠体育公园景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s45e2a4cc",
+      "name": "临泽县流沙河景区",
+      "from": 8,
+      "to": 6
+    },
+    {
+      "id": "sc6fd5499",
+      "name": "屋兰古镇",
+      "from": 7,
+      "to": 6
+    }
+  ],
+  "duplicates": []
+}

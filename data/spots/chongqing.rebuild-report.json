@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "夜景": 7,
+      "夜景": 6,
       "商圈": 3,
-      "美食": 5,
-      "街区": 12,
+      "街区": 10,
       "古迹": 10,
       "博物馆": 8,
-      "亲子": 5,
+      "美食": 3,
+      "亲子": 6,
       "演出": 2,
-      "公园": 4,
+      "公园": 3,
       "古镇": 5,
-      "山水": 7
+      "山水": 10
     },
     "byGroup": {
-      "core": 30,
-      "night": 9,
-      "family": 5,
-      "street": 12,
-      "food": 5,
-      "park": 4,
+      "core": 33,
+      "night": 8,
+      "family": 6,
+      "street": 10,
+      "food": 3,
+      "park": 3,
       "mall": 3,
-      "total": 68,
+      "total": 66,
       "suburb": 16,
-      "coreRatio": 57
+      "coreRatio": 62
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "hongyadong",
       "name": "洪崖洞民俗风貌区",
       "cat": "夜景",
-      "heat": 10,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -42,9 +42,9 @@
     },
     {
       "id": "jiefangbei",
-      "name": "解放碑",
+      "name": "解放碑步行街",
       "cat": "商圈",
-      "heat": 9,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -55,7 +55,7 @@
       "id": "yangtze-cableway",
       "name": "重庆长江索道北站",
       "cat": "街区",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.7,
       "level": "province",
       "score": 0.63,
@@ -66,7 +66,7 @@
       "id": "chaotianmen-raffles",
       "name": "朝天门广场·来福士",
       "cat": "商圈",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -77,10 +77,10 @@
       "id": "liangjiang-cruise",
       "name": "两江夜游",
       "cat": "夜景",
-      "heat": 8.5,
-      "rating": 4.6,
+      "heat": 7,
+      "rating": 4.5,
       "level": null,
-      "score": 0.44,
+      "score": 0.4,
       "heatNew": 7,
       "why": "知名地标（必留名单）"
     },
@@ -97,7 +97,7 @@
     },
     {
       "id": "liziba",
-      "name": "李子坝轻轨穿楼",
+      "name": "李子坝单轨穿楼观景平台",
       "cat": "街区",
       "heat": 8,
       "rating": 4.8,
@@ -110,18 +110,18 @@
       "id": "huguang-hall",
       "name": "湖广会馆",
       "cat": "古迹",
-      "heat": 7,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
       "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "luohan-temple",
       "name": "罗汉寺",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -132,7 +132,7 @@
       "id": "tongyuanmen",
       "name": "通远门城墙遗址公园",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -142,7 +142,7 @@
       "id": "sanxia-museum",
       "name": "重庆中国三峡博物馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -151,9 +151,9 @@
     },
     {
       "id": "peoples-hall",
-      "name": "重庆人民大礼堂",
+      "name": "重庆市人民大礼堂",
       "cat": "古迹",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -165,17 +165,17 @@
       "name": "WFC会仙楼观景台",
       "cat": "夜景",
       "heat": 7,
-      "rating": 4.7,
+      "rating": 4.6,
       "level": null,
-      "score": 0.48,
+      "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "评分 4.6 ≥4.5（非常知名）"
     },
     {
       "id": "cq-art-museum",
       "name": "重庆美术馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -196,7 +196,7 @@
       "id": "cq-science-museum",
       "name": "重庆科技馆",
       "cat": "亲子",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -207,7 +207,7 @@
       "id": "cq-grand-theatre",
       "name": "重庆大剧院广场",
       "cat": "演出",
-      "heat": 7,
+      "heat": 6,
       "rating": 4.1,
       "level": null,
       "score": 0.24,
@@ -217,7 +217,7 @@
       "id": "jiangbeizui",
       "name": "江北嘴江滩公园",
       "cat": "夜景",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -226,9 +226,9 @@
     },
     {
       "id": "nanshan-yikeshu",
-      "name": "南山一棵树观景台",
+      "name": "南山一棵树景区",
       "cat": "夜景",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -236,21 +236,10 @@
       "why": "知名地标（必留名单）"
     },
     {
-      "id": "nanshan-botanical",
-      "name": "南山植物园博物馆",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "nanshan-hotpot",
       "name": "南山火锅一条街",
       "cat": "美食",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -261,7 +250,7 @@
       "id": "laojundong",
       "name": "老君洞道观",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -272,7 +261,7 @@
       "id": "huangjueya",
       "name": "黄桷垭老街",
       "cat": "古镇",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -280,21 +269,21 @@
       "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
-      "id": "nanbin-road",
-      "name": "南滨路",
-      "cat": "夜景",
-      "heat": 8,
-      "rating": 4.6,
+      "id": "danzishi",
+      "name": "长嘉汇弹子石老街",
+      "cat": "街区",
+      "heat": 9,
+      "rating": 4.7,
       "level": "national",
-      "score": 0.69,
-      "heatNew": 8,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "ciyun-temple",
       "name": "慈云寺",
       "cat": "古迹",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -316,7 +305,7 @@
       "id": "cq1949",
       "name": "重庆1949大剧院",
       "cat": "演出",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -335,6 +324,17 @@
       "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
+      "id": "gele-mountain",
+      "name": "歌乐山国家森林公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "luozhongli-museum",
       "name": "罗中立美术馆",
       "cat": "博物馆",
@@ -349,18 +349,18 @@
       "id": "cq-zoo",
       "name": "重庆动物园",
       "cat": "亲子",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "cq-industrial-museum",
       "name": "重庆工业博物馆",
       "cat": "博物馆",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -371,7 +371,7 @@
       "id": "cq-jianchuan",
       "name": "重庆建川博物馆聚落",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -382,18 +382,18 @@
       "id": "hongyan-museum",
       "name": "红岩革命纪念馆",
       "cat": "博物馆",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 5,
       "level": null,
       "score": 0.6,
       "heatNew": 8,
-      "why": "评分 5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "cq-happy-valley",
       "name": "重庆欢乐谷",
       "cat": "亲子",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -404,7 +404,18 @@
       "id": "hanhai-oceanpark",
       "name": "重庆汉海海洋公园",
       "cat": "亲子",
-      "heat": 6.5,
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sunac-town",
+      "name": "重庆融创渝乐小镇",
+      "cat": "亲子",
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -412,15 +423,15 @@
       "why": "评分 4.6 ≥4.5（非常知名）"
     },
     {
-      "id": "sunac-town",
-      "name": "重庆融创渝乐小镇",
-      "cat": "亲子",
-      "heat": 6,
-      "rating": 4.6,
+      "id": "yuanboyuan",
+      "name": "重庆园博园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
       "level": null,
-      "score": 0.44,
+      "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "cq-nature-museum",
@@ -435,31 +446,31 @@
     },
     {
       "id": "jinyun-mountain",
-      "name": "缙云山",
+      "name": "重庆缙云山国家级自然保护区",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "diaoyu-fortress",
       "name": "钓鱼城",
       "cat": "古迹",
-      "heat": 7.5,
-      "rating": null,
+      "heat": 7,
+      "rating": 4.5,
       "level": null,
-      "score": null,
-      "heatNew": null,
+      "score": 0.4,
+      "heatNew": 7,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "dazu-carvings",
       "name": "大足石刻博物馆",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -470,7 +481,7 @@
       "id": "wulong-tiankeng",
       "name": "重庆武隆天生三桥风景区",
       "cat": "山水",
-      "heat": 9.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -481,7 +492,7 @@
       "id": "fairy-mountain",
       "name": "仙女山国家森林公园",
       "cat": "山水",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -490,9 +501,9 @@
     },
     {
       "id": "jinfo-mountain",
-      "name": "金佛山",
+      "name": "金佛山国家风景名胜区",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -508,13 +519,13 @@
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "simian-mountain",
       "name": "四面山景区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -536,7 +547,7 @@
       "id": "zhongshan-old-town",
       "name": "中山古镇",
       "cat": "古镇",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -547,7 +558,7 @@
       "id": "longxing-old-town",
       "name": "龙兴古镇",
       "cat": "古镇",
-      "heat": 6,
+      "heat": 8,
       "rating": 4.5,
       "level": "province",
       "score": 0.55,
@@ -558,23 +569,23 @@
       "id": "tongjing-hotspring",
       "name": "统景温泉",
       "cat": "山水",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "fengdu-ghost-city",
       "name": "丰都鬼城",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7,
-      "why": "评分 4.5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "baiheliang",
@@ -585,63 +596,57 @@
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
-      "id": "jiaochangkou",
-      "name": "较场口夜市",
-      "cat": "美食",
-      "heat": 7,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7
+      "id": "nd9acf062",
+      "name": "歌乐山国家森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
     },
     {
-      "id": "keyuan-4th",
-      "name": "科园四路美食街",
-      "cat": "美食",
-      "heat": 6,
-      "rating": 3.7,
-      "level": null,
-      "score": 0.08,
-      "heatNew": 5
+      "id": "n06f1b33e",
+      "name": "重庆铁山坪森林公园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
     },
     {
-      "id": "bayi-food-street",
-      "name": "八一路好吃街",
-      "cat": "美食",
+      "id": "n8702df35",
+      "name": "重庆南山风景区",
+      "cat": "山水",
       "heat": 8,
-      "rating": 3.3,
-      "level": null,
-      "score": 0,
-      "heatNew": 5
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
     },
     {
-      "id": "jiaotong-teahouse",
-      "name": "交通茶馆",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "baixiangju",
-      "name": "白象居",
-      "cat": "街区",
-      "heat": 6.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
+      "id": "n8430c595",
+      "name": "重庆市鳄鱼中心",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.5,
+      "level": "national",
+      "score": 0.65,
+      "heatNew": 8,
+      "why": "评分 4.5 ≥4.5（非常知名）"
     },
     {
       "id": "longmenhao",
       "name": "龙门浩老街",
       "cat": "街区",
-      "heat": 7,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -651,7 +656,7 @@
       "id": "daijiaxiang",
       "name": "戴家巷崖壁步道",
       "cat": "街区",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -659,23 +664,13 @@
     },
     {
       "id": "crown-escalator",
-      "name": "皇冠大扶梯",
+      "name": "两路口皇冠大扶梯",
       "cat": "街区",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7
-    },
-    {
-      "id": "danzishi",
-      "name": "长嘉汇弹子石老街",
-      "cat": "街区",
-      "heat": 7.5,
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heatNew": 9
     },
     {
       "id": "zhongshan-4th",
@@ -689,17 +684,7 @@
     },
     {
       "id": "beicang",
-      "name": "北仓文创街区",
-      "cat": "街区",
-      "heat": 6.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7
-    },
-    {
-      "id": "graffiti-street",
-      "name": "黄桷坪涂鸦一条街",
+      "name": "江北北仓文化创意园",
       "cat": "街区",
       "heat": 7,
       "rating": 4.6,
@@ -708,10 +693,40 @@
       "heatNew": 7
     },
     {
+      "id": "graffiti-street",
+      "name": "涂鸦一条街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "jiaochangkou",
+      "name": "较场口夜市",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "jiaotong-teahouse",
+      "name": "交通茶馆",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
       "id": "guanyinqiao",
       "name": "观音桥步行街中心广场",
       "cat": "商圈",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -721,72 +736,16 @@
       "id": "hongensi",
       "name": "鸿恩寺森林公园",
       "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "gele-mountain",
-      "name": "歌乐山森林公园",
-      "cat": "公园",
-      "heat": 6,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "yuanboyuan",
-      "name": "重庆园博园",
-      "cat": "公园",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7
     }
   ],
-  "drop": [
-    {
-      "id": "shancheng-trail",
-      "name": "山城步道·建兴坡大梯道",
-      "cat": "街区",
-      "heat": 7.5,
-      "rating": 4,
-      "level": null,
-      "score": 0.2,
-      "heatNew": 6,
-      "why": "类目配额（街区 ≤8）且评分靠后"
-    }
-  ],
+  "drop": [],
   "manual": [],
   "add": [
-    {
-      "name": "歌乐山国家森林公园",
-      "coord": [
-        106.428283,
-        29.567829
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
-    {
-      "name": "重庆铁山坪森林公园",
-      "coord": [
-        106.678994,
-        29.60157
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
     {
       "name": "重庆南滨公园-南滨路景区",
       "coord": [
@@ -797,30 +756,6 @@
       "rating": 4.6,
       "level": "national",
       "score": 0.69,
-      "heat": 8
-    },
-    {
-      "name": "重庆南山风景区",
-      "coord": [
-        106.616651,
-        29.557991
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
-    },
-    {
-      "name": "重庆市鳄鱼中心",
-      "coord": [
-        106.59308,
-        29.644351
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.5,
-      "level": "national",
-      "score": 0.65,
       "heat": 8
     },
     {
@@ -838,311 +773,19 @@
   ],
   "heatChanges": [
     {
-      "id": "hongyadong",
-      "name": "洪崖洞民俗风貌区",
-      "from": 10,
-      "to": 8
-    },
-    {
-      "id": "jiefangbei",
-      "name": "解放碑",
-      "from": 9,
-      "to": 8
-    },
-    {
-      "id": "bayi-food-street",
-      "name": "八一路好吃街",
-      "from": 8,
-      "to": 5
-    },
-    {
-      "id": "yangtze-cableway",
-      "name": "重庆长江索道北站",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "chaotianmen-raffles",
-      "name": "朝天门广场·来福士",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "liangjiang-cruise",
-      "name": "两江夜游",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "shancheng-trail",
-      "name": "山城步道·建兴坡大梯道",
-      "from": 7.5,
-      "to": 6
-    },
-    {
-      "id": "huguang-hall",
-      "name": "湖广会馆",
-      "from": 7,
-      "to": 9
-    },
-    {
-      "id": "luohan-temple",
-      "name": "罗汉寺",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "tongyuanmen",
-      "name": "通远门城墙遗址公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "baixiangju",
-      "name": "白象居",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "daijiaxiang",
-      "name": "戴家巷崖壁步道",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "crown-escalator",
-      "name": "皇冠大扶梯",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "sanxia-museum",
-      "name": "重庆中国三峡博物馆",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "peoples-hall",
-      "name": "重庆人民大礼堂",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "cq-art-museum",
-      "name": "重庆美术馆",
-      "from": 6,
-      "to": 8
-    },
-    {
-      "id": "guanyinqiao",
-      "name": "观音桥步行街中心广场",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "beicang",
-      "name": "北仓文创街区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "cq-science-museum",
-      "name": "重庆科技馆",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "cq-grand-theatre",
-      "name": "重庆大剧院广场",
-      "from": 7,
-      "to": 6
-    },
-    {
-      "id": "jiangbeizui",
-      "name": "江北嘴江滩公园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "hongensi",
-      "name": "鸿恩寺森林公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "nanshan-yikeshu",
-      "name": "南山一棵树观景台",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "nanshan-botanical",
-      "name": "南山植物园博物馆",
-      "from": 7,
-      "to": 5
-    },
-    {
-      "id": "nanshan-hotpot",
-      "name": "南山火锅一条街",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "laojundong",
-      "name": "老君洞道观",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "huangjueya",
-      "name": "黄桷垭老街",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "danzishi",
-      "name": "长嘉汇弹子石老街",
-      "from": 7.5,
-      "to": 9
-    },
-    {
-      "id": "longmenhao",
-      "name": "龙门浩老街",
-      "from": 7,
-      "to": 9
-    },
-    {
-      "id": "ciyun-temple",
-      "name": "慈云寺",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "cq1949",
-      "name": "重庆1949大剧院",
-      "from": 7.5,
-      "to": 8
-    },
-    {
       "id": "gele-mountain",
-      "name": "歌乐山森林公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "cq-zoo",
-      "name": "重庆动物园",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "cq-industrial-museum",
-      "name": "重庆工业博物馆",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "cq-jianchuan",
-      "name": "重庆建川博物馆聚落",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "hongyan-museum",
-      "name": "红岩革命纪念馆",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "cq-happy-valley",
-      "name": "重庆欢乐谷",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "hanhai-oceanpark",
-      "name": "重庆汉海海洋公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "sunac-town",
-      "name": "重庆融创渝乐小镇",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "yuanboyuan",
-      "name": "重庆园博园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "keyuan-4th",
-      "name": "科园四路美食街",
-      "from": 6,
-      "to": 5
-    },
-    {
-      "id": "jinyun-mountain",
-      "name": "缙云山",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "dazu-carvings",
-      "name": "大足石刻博物馆",
-      "from": 9.5,
-      "to": 7
-    },
-    {
-      "id": "wulong-tiankeng",
-      "name": "重庆武隆天生三桥风景区",
-      "from": 9.5,
-      "to": 7
-    },
-    {
-      "id": "fairy-mountain",
-      "name": "仙女山国家森林公园",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "jinfo-mountain",
-      "name": "金佛山",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "simian-mountain",
-      "name": "四面山景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "zhongshan-old-town",
-      "name": "中山古镇",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "longxing-old-town",
-      "name": "龙兴古镇",
-      "from": 6,
-      "to": 8
-    },
-    {
-      "id": "tongjing-hotspring",
-      "name": "统景温泉",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "fengdu-ghost-city",
-      "name": "丰都鬼城",
-      "from": 6.5,
-      "to": 7
+      "name": "歌乐山国家森林公园",
+      "from": 7,
+      "to": 9
     }
   ],
-  "duplicates": []
+  "duplicates": [
+    {
+      "name": "歌乐山国家森林公园",
+      "ids": [
+        "gele-mountain",
+        "nd9acf062"
+      ]
+    }
+  ]
 }

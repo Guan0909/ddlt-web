@@ -1,11 +1,31 @@
 {
   "city": "成都",
   "date": "2026-10-17",
-  "before": 61,
+  "before": 62,
   "after": 61,
-  "renames": [],
-  "deletes": [],
-  "ratingUpdates": [],
+  "renames": [
+    {
+      "id": "jianshe-road",
+      "from": "建设路小吃街",
+      "to": "锦里小吃街"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "yuanyang",
+      "name": "陈家堡长城鸳鸯楼",
+      "cat": "街区",
+      "why": "受限类目评分 3.8 < 4.0"
+    }
+  ],
+  "ratingUpdates": [
+    {
+      "id": "u37",
+      "name": "U37创意仓库",
+      "from": 4.8,
+      "to": 0
+    }
+  ],
   "noPoi": [
     "方所书店"
   ]

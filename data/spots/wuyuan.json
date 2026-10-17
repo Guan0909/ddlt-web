@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -20,7 +21,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -62,7 +63,8 @@
       "navi_poiid": "H50F038033_2",
       "business_area": [],
       "website": "www.sqs.gov.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s871a4c09",
@@ -72,7 +74,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -114,7 +116,8 @@
       "navi_poiid": "H50F031031_2",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s3a5063ae",
@@ -270,7 +273,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -311,7 +314,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s929ec074",
@@ -320,7 +324,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -361,7 +365,8 @@
       "navi_poiid": "H50F033032_5",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s623b3174",
@@ -370,7 +375,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -412,7 +417,8 @@
       "navi_poiid": "H50F032032_574",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s4f7c0bba",
@@ -421,7 +427,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -463,7 +469,8 @@
       "navi_poiid": "H50F032033_454;386",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sacf76e5a",
@@ -473,7 +480,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -515,7 +522,8 @@
       "navi_poiid": "H50F031029_2",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sc269fa1d",
@@ -609,45 +617,6 @@
         117.881694,
         29.30411
       ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa4b4415b",
-      "name": "怀玉山",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        117.97526,
-        28.886949
-      ],
-      "coord_src": "amap",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "tel": "0793-2100777",
-      "photo": "http://store.is.autonavi.com/showpic/2f245410d3615e6d27d412aeb773758c",
-      "address": "怀玉山",
-      "district": [],
-      "adcode": "361123",
-      "cost": 0,
-      "keytag": [],
       "navi_poiid": [],
       "business_area": [],
       "website": [],
@@ -1240,45 +1209,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s22b9ee23",
-      "name": "外双溪",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "07:30-17:30",
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        118.066252,
-        28.87817
-      ],
-      "coord_src": "amap",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "tel": "0793-2189189",
-      "photo": "https://aos-comment.amap.com/B0FFGQJ2LL/comment/content_media_external_file_1000162669_ss__1771646025073_64825668.jpg",
-      "address": "外双溪",
-      "district": [],
-      "adcode": "361123",
-      "cost": 0,
-      "keytag": [],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s0c4ef778",
       "name": "三清山逍遥谷景区",
       "cat": "山水",
@@ -1614,52 +1544,6 @@
         29.172213
       ],
       "navi_poiid": "H50F035031_47",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa734af7a",
-      "name": "篁岭景区高山梯田花海",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 6,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "07:00-18:00",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        118.124581,
-        29.309772
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKPSVIP",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.1,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 07:00-18:00",
-      "tel": "0793-7396001",
-      "photo": "https://aos-comment.amap.com/B0FFKPSVIP/comment/content_media_external_images_media_1000364757_ss__1760530680828_69937236.jpg",
-      "address": "婺源篁岭景区内(东南角)",
-      "district": "婺源县",
-      "adcode": "361130",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFKPSVIP/comment/content_media_external_images_media_1000364757_ss__1760530680828_69937236.jpg",
-        "https://aos-comment.amap.com/B0FFKPSVIP/comment/content_media_external_images_media_1000364746_ss__1760530680854_56779784.jpg",
-        "https://aos-comment.amap.com/B0FFKPSVIP/comment/e706eece68dcdce430ca49c2fb2ec8c2_2048_2048_80.jpg"
-      ],
-      "keytag": "景区",
-      "navi_poiid": [],
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"

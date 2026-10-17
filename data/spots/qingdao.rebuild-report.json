@@ -1,0 +1,697 @@
+{
+  "city": "青岛",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 16,
+      "博物馆": 10,
+      "公园": 6,
+      "古迹": 7,
+      "街区": 8,
+      "夜景": 2,
+      "商圈": 1,
+      "古镇": 1,
+      "亲子": 6
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 2,
+      "family": 6,
+      "street": 8,
+      "food": 0,
+      "park": 6,
+      "mall": 1,
+      "total": 57,
+      "suburb": 4,
+      "coreRatio": 63
+    }
+  },
+  "keep": [
+    {
+      "id": "s890de472",
+      "name": "中国雕塑院·青岛雕塑园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sf3ce064f",
+      "name": "崂山风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s5c3f10a9",
+      "name": "青岛奥帆海洋文化旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4618e16b",
+      "name": "八大关风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scefe4fbb",
+      "name": "青岛啤酒博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc03839a2",
+      "name": "中国人民解放军海军博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6ae708b3",
+      "name": "奥林匹克帆船中心·奥帆海洋文化旅游区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "saf85021c",
+      "name": "金沙滩",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s83471c55",
+      "name": "宫崎骏漫画街",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4f44d072",
+      "name": "青岛德国总督楼旧址博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s238c69f3",
+      "name": "百花苑",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sebeefc00",
+      "name": "石老人观光园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s24ca00b1",
+      "name": "青岛电视塔",
+      "cat": "夜景",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2430c064",
+      "name": "青岛华东百利酒庄",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4768d13d",
+      "name": "青岛湛山寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc3956abf",
+      "name": "花石楼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbefad76a",
+      "name": "青岛北岭山森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1ba6c976",
+      "name": "青岛世界园艺博览园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa7dedd2d",
+      "name": "竹子庵公园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9a9f6290",
+      "name": "浮山森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sebacea34",
+      "name": "即墨古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0b5f1c72",
+      "name": "流清河沙滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3526426f",
+      "name": "青岛方特梦幻王国",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sac5154e9",
+      "name": "青岛观音寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8c8a0f24",
+      "name": "崂山太清宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa6aeab14",
+      "name": "法海寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0a8fa18d",
+      "name": "青岛海底世界",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s830a0f0b",
+      "name": "海合安·青岛极地海洋公园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "saad819e1",
+      "name": "青岛嘉年华主题乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se55a7379",
+      "name": "银海大世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s033c1756",
+      "name": "云上艺术中心",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2ad35558",
+      "name": "天后宫",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s167a7afb",
+      "name": "冰山之角",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s44672efd",
+      "name": "青岛市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbbc18884",
+      "name": "奥帆博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s101d31a9",
+      "name": "青岛一战遗址博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s98b25858",
+      "name": "巧克巧蔻巧克力博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sbbbc9dde",
+      "name": "青岛邮电博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7318cfe0",
+      "name": "金石博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7cbf0698",
+      "name": "青岛四季亲子乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa63a0d23",
+      "name": "青岛LULUWORLD萌宠乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sb2077b2e",
+      "name": "海天城市观光厅",
+      "cat": "夜景",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s34e2b701",
+      "name": "海乐园",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s82bc430a",
+      "name": "信号山公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "sba3edac6",
+      "name": "栈桥景区",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s8f764a7c",
+      "name": "青岛中山公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sc10cc5d7",
+      "name": "海之恋Park",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "xdbdf83bf",
+      "name": "五四广场",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s84c4a353",
+      "name": "台东小吃街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s71dab2d8",
+      "name": "青山渔村牌坊",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sd712cc03",
+      "name": "弘晟翔美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s57e539b7",
+      "name": "青岛国际啤酒节",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s5d68d929",
+      "name": "劈柴院",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sf433b821",
+      "name": "福泰食街美食广场",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s940e03f1",
+      "name": "云霄路美食街(香港中路)",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "se948e07f",
+      "name": "浮山巷美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "s2c7fb1c9",
+      "name": "中山公园太平山观光索道",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s890de472",
+      "name": "中国雕塑院·青岛雕塑园",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sf3ce064f",
+      "name": "崂山风景区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s5c3f10a9",
+      "name": "青岛奥帆海洋文化旅游区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s4f44d072",
+      "name": "青岛德国总督楼旧址博物馆",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s238c69f3",
+      "name": "百花苑",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sebeefc00",
+      "name": "石老人观光园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s24ca00b1",
+      "name": "青岛电视塔",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2430c064",
+      "name": "青岛华东百利酒庄",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

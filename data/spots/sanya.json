@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -60,7 +61,8 @@
       "navi_poiid": "E49F022013_2172;5966",
       "business_area": "海韵路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s8c922e14",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -111,7 +113,8 @@
       "navi_poiid": "E49F022014_38",
       "business_area": [],
       "website": "www.ylb.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s009741fb",
@@ -120,7 +123,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -162,7 +165,8 @@
       "navi_poiid": "E49F021011_682;168",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sf043f5a6",
@@ -171,7 +175,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -213,7 +217,8 @@
       "navi_poiid": "E49F021011_2",
       "business_area": [],
       "website": "www.aitianya.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sb4ba154f",
@@ -223,7 +228,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -265,57 +270,8 @@
       "navi_poiid": [],
       "business_area": "蜈支洲",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s4bb2fef3",
-      "name": "南山文化旅游区南山海上观音",
-      "cat": "山水",
-      "tags": [
-        "国家级",
-        "远郊"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "08:00-17:00",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.212558,
-        18.290676
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B038300YXY",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-17:00 最晚进入17:00",
-      "photo": "http://store.is.autonavi.com/showpic/beb7e6fd54534dfa94a833bb17b84338",
-      "address": "观音岛2层",
-      "district": "崖州区",
-      "adcode": "460205",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/beb7e6fd54534dfa94a833bb17b84338",
-        "http://store.is.autonavi.com/showpic/58af228d54380ccf31fec3e232759a6b",
-        "http://store.is.autonavi.com/showpic/45d171d466a56146826dd96e3e5d8868"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        109.208559,
-        18.317106
-      ],
-      "navi_poiid": "E49F021010_118",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s940e7e04",
@@ -325,7 +281,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -367,7 +323,8 @@
       "navi_poiid": "E49F021010_5840",
       "business_area": [],
       "website": "www.nanshan.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "scf76f4de",
@@ -377,7 +334,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -419,57 +376,8 @@
       "navi_poiid": "E49F021010_2",
       "business_area": [],
       "website": "www.sanyapark.com",
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s455bf4e5",
-      "name": "亚龙湾热带天堂森林公园",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        109.643059,
-        18.253643
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0383011JF",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "全年 08:00-18:00开放(17:30停止售票,17:30停止入园)；7月19日 09:00-18:00开放",
-      "tel": "0898-38238888",
-      "photo": "http://store.is.autonavi.com/showpic/09e822ba5b1a7ab5423832a38980476c",
-      "address": "吉阳镇亚龙湾",
-      "district": "吉阳区",
-      "adcode": "460203",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/09e822ba5b1a7ab5423832a38980476c",
-        "http://store.is.autonavi.com/showpic/361e7f674e3ba5556bb7c59cb45d447f",
-        "http://store.is.autonavi.com/showpic/375092290421aaedbf90f969eb6d081d"
-      ],
-      "keytag": "森林公园",
-      "entrance": [
-        109.628266,
-        18.247966
-      ],
-      "navi_poiid": "E49F021014_920",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s43a82b73",
@@ -574,7 +482,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -616,7 +524,8 @@
       "navi_poiid": "E49F021013_7687",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s6710fcf7",
@@ -1148,47 +1057,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s20d82d84",
-      "name": "海棠河生态公园",
-      "cat": "公园",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 5,
-      "dur": 90,
-      "intro": "城市公园，在城郊，走一圈一小时上下。",
-      "reason": "顺路进来歇脚就好",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        109.740958,
-        18.357606
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0M2BC9VP3",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 2.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0J15CYIM3/comment/content_media_external_file_1000034182_ss__1766237115693_37475012.jpg",
-      "heat_prev": 7,
-      "address": "依江路与C11A线交叉口东400米",
-      "district": "海棠区",
-      "adcode": "460202",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "keytag": "公园",
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s271bf62c",
       "name": "情人湾",
       "cat": "山水",
@@ -1323,47 +1191,6 @@
       ],
       "navi_poiid": [],
       "business_area": "河东",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "scca1743a",
-      "name": "南开清真寺",
-      "cat": "古迹",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        109.476193,
-        18.286584
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03830108M",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "address": "凤凰镇回新村",
-      "district": "天涯区",
-      "adcode": "460204",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "keytag": "清真寺",
-      "entrance": [
-        109.476927,
-        18.286924
-      ],
-      "navi_poiid": "E49F021012_16589",
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1801,53 +1628,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s3c16bcf2",
-      "name": "抱坡溪湿地公园",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.511485,
-        18.295257
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKAYVO9",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/99e91579f77f1fdd0000003098374777?type=pic",
-      "address": "荔枝沟路三亚体育中心旁",
-      "district": "吉阳区",
-      "adcode": "460203",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/99e91579f77f1fdd0000003098374777?type=pic",
-        "https://aos-comment.amap.com/B0FFKAYVO9/comment/ce2a4844f1d6a7cbe8700bb2f6bec389_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B0FFKAYVO9/comment/content_media_external_file_149294_ss__1765350377285_08297556.jpg"
-      ],
-      "keytag": "湿地公园",
-      "entrance": [
-        109.508579,
-        18.295145
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s1fe08ef4",
       "name": "三亚清真北大寺",
       "cat": "古迹",
@@ -1938,47 +1718,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s2994cc4a",
-      "name": "清真南寺",
-      "cat": "古迹",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城内，看半天。",
-      "reason": "避开正午，慢慢看",
-      "open": "09:00-21:15",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        109.476195,
-        18.282921
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03830108K",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-21:15",
-      "address": "解放路1380号",
-      "district": "天涯区",
-      "adcode": "460204",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "keytag": "清真寺",
-      "entrance": [
-        109.476651,
-        18.283062
-      ],
-      "navi_poiid": "E49F021012_1183",
-      "business_area": "三亚湾",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -60,7 +61,8 @@
       "navi_poiid": "H49F046040_94059;2397",
       "business_area": "湘江新区",
       "website": "www.hnyls.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s2b8cec52",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
@@ -110,7 +112,8 @@
       "navi_poiid": "H49F046040_47112",
       "business_area": "湘江新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s5c0adf85",
@@ -119,7 +122,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -160,7 +163,8 @@
       "navi_poiid": "H49F047040_261322",
       "business_area": "湘江新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s26abedc1",
@@ -454,7 +458,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -496,7 +500,8 @@
       "navi_poiid": "H49F046040_49417",
       "business_area": "城南路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sc1ea4eab",
@@ -1355,53 +1360,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "se2e75ce1",
-      "name": "湖南湘绣博物馆(湖南省湘绣研究所)",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "09:00-16:30",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        113.009827,
-        28.198609
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02DB03F24",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-16:30；周一 全天关闭",
-      "tel": "0731-82291821;0731-82291061",
-      "photo": "http://store.is.autonavi.com/showpic/f1560c5fed358cc7d5bac9fd1c3fccf8",
-      "address": "车站北路39号",
-      "district": "芙蓉区",
-      "adcode": "430102",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/f1560c5fed358cc7d5bac9fd1c3fccf8",
-        "https://store.is.autonavi.com/showpic/a6277b07c66e95770000002466470152?type=pic",
-        "https://aos-comment.amap.com/B02DB03F24/comment/57A033A0_1BBA_4160_8C42_225A2481BAFC_L0_001_1500_2000_1759155336140_18174594.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        113.010442,
-        28.198523
-      ],
-      "navi_poiid": "H49F046041_36568",
-      "business_area": "五里牌",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s42a987dd",
       "name": "长沙滨江文化园",
       "cat": "古迹",
@@ -1734,53 +1692,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s43a1f344",
-      "name": "西园北里历史文化街区",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        112.975253,
-        28.208717
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02DB0693Q",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B02DB0693Q/comment/content_media_external_images_media_56489_ss__1742619027617_15545257.jpg",
-      "address": "西园巷与泰安里交叉口东北100米",
-      "district": "开福区",
-      "adcode": "430105",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B02DB0693Q/comment/content_media_external_images_media_56489_ss__1742619027617_15545257.jpg",
-        "https://store.is.autonavi.com/showpic/91732e03c3ca27490000000612940115?type=pic",
-        "https://aos-comment.amap.com/B02DB0693Q/comment/content_media_external_images_media_182_1731065821482_61523792.jpg"
-      ],
-      "keytag": "特色街区",
-      "entrance": [
-        112.975364,
-        28.209654
-      ],
-      "navi_poiid": [],
-      "business_area": "湘江中路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s2a9a4ac9",
       "name": "向阳美食街",
       "cat": "街区",
@@ -1824,53 +1735,6 @@
       ],
       "navi_poiid": "H49F047041_29863",
       "business_area": "雨花亭",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s58f73a3d",
-      "name": "梅溪湖中国结桥",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        112.885864,
-        28.189218
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFHEMTQN",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0FFHEMTQN/comment/204CE628_BF1D_42A9_A55F_583AEE667C5C_L0_001_2000_150_1759368946660_44277078.jpg",
-      "address": "梅溪湖路龙王港风光带内(西侧)",
-      "district": "岳麓区",
-      "adcode": "430104",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFHEMTQN/comment/204CE628_BF1D_42A9_A55F_583AEE667C5C_L0_001_2000_150_1759368946660_44277078.jpg",
-        "https://aos-comment.amap.com/B0FFHEMTQN/comment/content_media_external_file_1000098021_ss__1765705509811_63734591.jpg",
-        "https://store.is.autonavi.com/showpic/0ff05396d024e223366202c4b729b877"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        112.885932,
-        28.18854
-      ],
-      "navi_poiid": [],
-      "business_area": "湘江新区",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

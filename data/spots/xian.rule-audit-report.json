@@ -1,10 +1,23 @@
 {
   "city": "西安",
   "date": "2026-10-17",
-  "before": 60,
+  "before": 61,
   "after": 60,
-  "renames": [],
-  "deletes": [],
+  "renames": [
+    {
+      "id": "maoling-museum",
+      "from": "茂陵博物馆",
+      "to": "陕西考古博物馆"
+    }
+  ],
+  "deletes": [
+    {
+      "id": "futa-town",
+      "name": "茯茶镇",
+      "cat": "古镇",
+      "why": "核心类评分 3.9 < 4.0"
+    }
+  ],
   "ratingUpdates": [],
   "noPoi": []
 }

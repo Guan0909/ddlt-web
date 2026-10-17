@@ -1,0 +1,527 @@
+{
+  "city": "西宁",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古迹": 12,
+      "博物馆": 6,
+      "公园": 5,
+      "山水": 16,
+      "亲子": 3,
+      "街区": 1,
+      "古镇": 1,
+      "夜景": 1
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 1,
+      "family": 3,
+      "street": 1,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 45,
+      "suburb": 11,
+      "coreRatio": 80
+    }
+  },
+  "keep": [
+    {
+      "id": "sb6cf4105",
+      "name": "塔尔寺",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8fc33d7c",
+      "name": "青海藏文化博物院",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8162ba50",
+      "name": "西宁北山大墩岭景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd765b51b",
+      "name": "青海藏文化馆",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfa263c6b",
+      "name": "青海省博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2c17cd9e",
+      "name": "西宁东关清真大寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd79f84ea",
+      "name": "西宁市博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb5367008",
+      "name": "西宁野生动物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sede2ae57",
+      "name": "丹噶尔古城",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfbbb5b9f",
+      "name": "群加国家森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8cccd550",
+      "name": "青海省自然资源博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s97851406",
+      "name": "西宁电视塔",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s26927fb7",
+      "name": "土楼观",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s76af0d1e",
+      "name": "南禅寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s953da65a",
+      "name": "老爷山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1effa483",
+      "name": "大通国家森林公园鹞子沟风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se7628ec5",
+      "name": "青藏高原自然博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s17ec115f",
+      "name": "大佛寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sd769d857",
+      "name": "千紫缘",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s0d25a81b",
+      "name": "九眼泉自然旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sbce37da9",
+      "name": "湟水湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sefad3822",
+      "name": "北山美丽园湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s85f56a06",
+      "name": "宗喀大慈宏觉寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "se6088398",
+      "name": "文庙",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s5450897a",
+      "name": "西宁小峡",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sd83a0e1b",
+      "name": "湟水森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s60befac8",
+      "name": "王家庄清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s403a7cdb",
+      "name": "金塔寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sfb9f1c06",
+      "name": "上山庄花海",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s18757142",
+      "name": "乡趣卡阳",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sd67f5f45",
+      "name": "西宁南凉虎台遗址公园",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sc7e082af",
+      "name": "水城门清真寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s0d7c4bb8",
+      "name": "玉带桥清真寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s5cd64d94",
+      "name": "五彩瀑布",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s8e0cc463",
+      "name": "中华枸杞养生苑",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "sacb85504",
+      "name": "莲花山景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s4db8b6d8",
+      "name": "边麻沟欢乐谷",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "se337f266",
+      "name": "趣浪城北·欢乐谷陶北花海",
+      "cat": "亲子",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "x99e4c8b6",
+      "name": "青海湖旅游",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5a9958d1",
+      "name": "人民公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sb9e3a612",
+      "name": "南山公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s7fb6fadc",
+      "name": "麒麟湾公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "sc1c39123",
+      "name": "西宁甘河城市郊野公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "sde99700e",
+      "name": "沈那公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s4ab4acf4",
+      "name": "豹街·西海路美食街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sb6cf4105",
+      "name": "塔尔寺",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sb9e3a612",
+      "name": "南山公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s8162ba50",
+      "name": "西宁北山大墩岭景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sd765b51b",
+      "name": "青海藏文化馆",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

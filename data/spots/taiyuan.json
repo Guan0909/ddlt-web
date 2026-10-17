@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": "J49F028036_15",
       "business_area": [],
       "website": "www.chinajinci.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sd01fe5dd",
@@ -70,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -111,7 +113,8 @@
       "navi_poiid": "J49F027037_36600;176024",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sdc6d525d",
@@ -256,54 +259,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s2bd7d78b",
-      "name": "山西督军府旧址(晋商博物院)",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 8,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        112.562713,
-        37.874751
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFITJ8KC",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1月至9月 周一 全天关闭；1月至9月 周二至周日 09:00-17:00 最晚进入16:30；每周一闭馆，周一逢法定节假日开放 国庆假期营业时间:09:00-18:00 10-01至10-07 周一至周日 09:00-18:00 最晚进入17:30；10-08至10-31 周一 全天关闭；10-08至10-31 周二至周日 09:00-17:00 最晚进入16:30；每周一闭馆，周一逢法定节假日开放 国庆假期营业时间:09:00-18:00",
-      "tel": "0351-5223262",
-      "photo": "http://store.is.autonavi.com/showpic/ce9be40e2e455ba2954a020c14f22935",
-      "address": "鼓楼街道府东街101号(山西省眼科医院对面)",
-      "district": "杏花岭区",
-      "adcode": "140107",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/ce9be40e2e455ba2954a020c14f22935",
-        "https://store.is.autonavi.com/showpic/a0aaa78891b521180000006151304421?type=pic",
-        "https://store.is.autonavi.com/showpic/ed80cde5f6ea555b0000002430582110"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        112.5655,
-        37.872916
-      ],
-      "navi_poiid": [],
-      "business_area": "府东",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s5a269c62",
       "name": "太原北齐壁画博物馆",
       "cat": "博物馆",
@@ -404,7 +359,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -445,7 +400,8 @@
       "navi_poiid": "J49F026037_12185",
       "business_area": "五一广场",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf54a3b6c",
@@ -454,7 +410,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -496,7 +452,8 @@
       "navi_poiid": "J49F026037_67431",
       "business_area": "大东关",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s1ce95303",
@@ -505,7 +462,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -546,7 +503,8 @@
       "navi_poiid": "J49F026037_41004",
       "business_area": "大同路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf6d6ace9",
@@ -1866,54 +1824,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sdd5c9138",
-      "name": "天龙山石窟",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        112.385807,
-        37.737599
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "BY0001NB4U",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1月至3月,11月至12月 周一至周日 09:00-17:00；4月至9月 周一至周日 08:30-18:00 10-01至10-07 周一至周日 08:30-17:00 最晚进入16:30；10-08至10-11 周一至周日 08:30-18:00；10-12至10-12 周一至周日 全天关闭；10-13至10-31 周一至周日 08:30-17:30",
-      "tel": "0351-6349668",
-      "photo": "https://aos-comment.amap.com/BY0001NB4U/comment/content_media_external_file_100000161_1767761905938_57682931.jpg",
-      "address": "晋祠镇晋祠天龙山景区(西北角)",
-      "district": "晋源区",
-      "adcode": "140110",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/BY0001NB4U/comment/content_media_external_file_100000161_1767761905938_57682931.jpg",
-        "https://store.is.autonavi.com/showpic/655d14c4b09966410000001280276289?type=pic",
-        "https://store.is.autonavi.com/showpic/4666da01849ebb390000000717234855?type=pic"
-      ],
-      "keytag": "石窟",
-      "entrance": [
-        112.385267,
-        37.738237
-      ],
-      "navi_poiid": "J49F028036_33795",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sc48b5a2f",
       "name": "太原窊流小吃街",
       "cat": "街区",
@@ -2239,51 +2149,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s8772169b",
-      "name": "多彩小吃街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 6,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        112.599766,
-        37.871575
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0JUHAPOI5",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "photo": "https://store.is.autonavi.com/showpic/3648ce9b3a45d9870000006378596116?type=pic",
-      "address": "红沟东巷与府东街交叉口南100米",
-      "district": "杏花岭区",
-      "adcode": "140107",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/3648ce9b3a45d9870000006378596116?type=pic",
-        "http://store.is.autonavi.com/showpic/e20ce250a15f990ba39e856721502854"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        112.600014,
-        37.871571
-      ],
-      "navi_poiid": [],
-      "business_area": "五龙口",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "x9e351226",
       "name": "食品街",
       "cat": "街区",
@@ -2310,7 +2175,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "photo": "http://store.is.autonavi.com/showpic/de3eda73f183889c8edf6a219f5409ab"
+      "photo": "http://store.is.autonavi.com/showpic/de3eda73f183889c8edf6a219f5409ab",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/de3eda73f183889c8edf6a219f5409ab",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/e756215a-4b64-4299-9185-fffbdf5ad597.jpg",
+        "http://store.is.autonavi.com/showpic/36d0d7ceeab208d978cf66a9ad99b64d"
+      ]
     }
   ]
 }

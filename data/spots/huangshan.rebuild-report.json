@@ -1,0 +1,590 @@
+{
+  "city": "黄山",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 24,
+      "古镇": 5,
+      "博物馆": 5,
+      "公园": 5,
+      "古迹": 1,
+      "街区": 5,
+      "亲子": 1
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 1,
+      "street": 5,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 46,
+      "suburb": 13,
+      "coreRatio": 76
+    }
+  },
+  "keep": [
+    {
+      "id": "s6d55eb04",
+      "name": "唐模景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s1ee22892",
+      "name": "徽州古城",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s9afe0b1f",
+      "name": "呈坎",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s38aca4c8",
+      "name": "齐云山度假区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s7af224c7",
+      "name": "西递古村落",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0f6ced95",
+      "name": "潜口民宅博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s9c3512c7",
+      "name": "新安江山水画廊风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s751288c9",
+      "name": "木坑竹海",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s29d7db8c",
+      "name": "花山世界·花山谜窟",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sabe4139e",
+      "name": "歙县棠樾牌坊群·鲍家花园景区",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sb39e9e40",
+      "name": "黎阳in巷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s64b5880d",
+      "name": "西溪南古村落",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5508c5d4",
+      "name": "屯溪老街",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa491607b",
+      "name": "域见·黄山秀里景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s28916d36",
+      "name": "渔梁坝",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6ba3efd7",
+      "name": "徽商大宅院",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s72eedb0f",
+      "name": "登封桥",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8c1f4541",
+      "name": "阳产土楼",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2a60d95d",
+      "name": "安徽中国徽州文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb1c5b248",
+      "name": "中国状元博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s1b160c5e",
+      "name": "安徽徽州历史博物馆(歙县博物馆)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s6ec7dde1",
+      "name": "塔川国家森林公园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa6d40c01",
+      "name": "新徽天地醉温泉旅游度假区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8e10fcb1",
+      "name": "谢裕大茶文化博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9fdb137b",
+      "name": "许村",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s63d24f33",
+      "name": "昌溪景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s83fc1c52",
+      "name": "歙县古城小吃一条街",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9f30e053",
+      "name": "徽州大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s5d0800bc",
+      "name": "古徽州文化旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "saa8da7b1",
+      "name": "黄毛瀑布",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s940867c9",
+      "name": "平安坎",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s965dc8b9",
+      "name": "西递石林",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sca043e4b",
+      "name": "丝绸文化园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s05ad2d02",
+      "name": "徽州府衙",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sa3afd354",
+      "name": "灵山景区古建筑群",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s82c2ca75",
+      "name": "乐园小吃街",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "x64397101",
+      "name": "宏村",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s526c6dbf",
+      "name": "练江新夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s69eb0b08",
+      "name": "长源国际艺术村",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sf9fb9960",
+      "name": "百大名品门特色小吃一条街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s76abd35a",
+      "name": "广宇黄山徽派美食城",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s0a5b31be",
+      "name": "新安夜市",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s9cedbb2c",
+      "name": "戴震公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s96265c85",
+      "name": "黄山市儿童友好公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s63a3cf26",
+      "name": "梅林生态湿地",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s788d1a16",
+      "name": "南滨江公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s6d55eb04",
+      "name": "唐模景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s1ee22892",
+      "name": "徽州古城",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s9afe0b1f",
+      "name": "呈坎",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s38aca4c8",
+      "name": "齐云山度假区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s7af224c7",
+      "name": "西递古村落",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s0f6ced95",
+      "name": "潜口民宅博物馆",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s9c3512c7",
+      "name": "新安江山水画廊风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s751288c9",
+      "name": "木坑竹海",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s29d7db8c",
+      "name": "花山世界·花山谜窟",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sabe4139e",
+      "name": "歙县棠樾牌坊群·鲍家花园景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "x64397101",
+      "name": "宏村",
+      "from": 9,
+      "to": 8
+    }
+  ],
+  "duplicates": []
+}

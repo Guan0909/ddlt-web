@@ -1,0 +1,631 @@
+{
+  "city": "沈阳",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "博物馆": 12,
+      "古迹": 15,
+      "山水": 8,
+      "公园": 5,
+      "街区": 6,
+      "亲子": 4,
+      "商圈": 1
+    },
+    "byGroup": {
+      "core": 35,
+      "night": 0,
+      "family": 4,
+      "street": 6,
+      "food": 0,
+      "park": 5,
+      "mall": 1,
+      "total": 51,
+      "suburb": 10,
+      "coreRatio": 69
+    }
+  },
+  "keep": [
+    {
+      "id": "s9e6de965",
+      "name": "沈阳故宫博物院",
+      "cat": "博物馆",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s8862824f",
+      "name": "张学良旧居陈列馆",
+      "cat": "博物馆",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s32d95aa8",
+      "name": "北陵公园",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s1cb2a065",
+      "name": "沈阳棋盘山国际风景旅游开发区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sd7c697ad",
+      "name": "沈阳植物园(沈阳世博园)",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s6d8633a3",
+      "name": "辽宁省博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se94129c9",
+      "name": "彩电塔夜市",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "评分 4.9 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7f9abcf4",
+      "name": "沈阳鸟岛",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s64f4aedd",
+      "name": "沈阳科学宫",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s83179c6f",
+      "name": "沈阳市东陵公园",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s6f3db889",
+      "name": "西塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s84c31e4c",
+      "name": "沈阳博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0e3700bb",
+      "name": "长白岛森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s58940901",
+      "name": "铁西1905文化创意园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sfe1bf350",
+      "name": "护国法轮寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3babecb1",
+      "name": "沈阳森林动物园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sc8ea8b95",
+      "name": "慈恩寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s09356a36",
+      "name": "沈阳方城文化旅游区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s662d51ab",
+      "name": "皇寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2c57848c",
+      "name": "长安寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scad49aa5",
+      "name": "马耳山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s41d9d5e8",
+      "name": "沈阳新乐遗址博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf07c26ac",
+      "name": "沈阳理工大学兵器博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb4208c33",
+      "name": "张氏帅府博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa84697ac",
+      "name": "沈阳金融博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9d4acd88",
+      "name": "辽宁古生物博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa473f875",
+      "name": "向阳古刹",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s4611cb41",
+      "name": "老北市",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s4bc75bb4",
+      "name": "大法寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s762883c2",
+      "name": "清昭陵",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sf1157caa",
+      "name": "沈阳·中兴恐龙博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s30b66a8d",
+      "name": "中国锡伯族博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5f143645",
+      "name": "熙古艺术村",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s89a202f0",
+      "name": "护国延寿寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s01741029",
+      "name": "塔湾历史文化公园",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s78bd57b8",
+      "name": "弥陀寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s3a9cea93",
+      "name": "樱桃山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sd1baa532",
+      "name": "沈阳地球宝藏户外探索乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s741f66eb",
+      "name": "沈阳正良亲子乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sa871f8f2",
+      "name": "甜果乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "x7aa3b613",
+      "name": "九·一八历史博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 5,
+      "level": null,
+      "score": 0.6,
+      "heatNew": 8,
+      "why": "评分 5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0e05fc1d",
+      "name": "沈阳中街步行街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8
+    },
+    {
+      "id": "s35e7eefa",
+      "name": "荷花之夏夜市",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s78210469",
+      "name": "太原街步行街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s56842d6b",
+      "name": "韩国风情街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sf8236b9a",
+      "name": "小吃一条街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s5b8ac180",
+      "name": "大舞台美食街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sb75c33cd",
+      "name": "中央公园音乐喷泉",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s4215865c",
+      "name": "南湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sa9313a6e",
+      "name": "青年公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sd92910d7",
+      "name": "莫子山公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s9e6de965",
+      "name": "沈阳故宫博物院",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s8862824f",
+      "name": "张学良旧居陈列馆",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s32d95aa8",
+      "name": "北陵公园",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s1cb2a065",
+      "name": "沈阳棋盘山国际风景旅游开发区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sd7c697ad",
+      "name": "沈阳植物园(沈阳世博园)",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s7f9abcf4",
+      "name": "沈阳鸟岛",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s64f4aedd",
+      "name": "沈阳科学宫",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s83179c6f",
+      "name": "沈阳市东陵公园",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

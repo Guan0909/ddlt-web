@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "古迹": 15,
+      "古迹": 13,
       "博物馆": 9,
-      "街区": 4,
+      "街区": 3,
       "公园": 6,
       "商圈": 2,
-      "美食": 4,
+      "美食": 3,
       "夜景": 2,
       "演出": 3,
       "亲子": 3,
-      "山水": 8,
+      "山水": 9,
       "古镇": 7
     },
     "byGroup": {
-      "core": 39,
+      "core": 38,
       "night": 5,
       "family": 3,
-      "street": 4,
-      "food": 4,
+      "street": 3,
+      "food": 3,
       "park": 6,
       "mall": 2,
-      "total": 63,
-      "suburb": 11,
-      "coreRatio": 70
+      "total": 60,
+      "suburb": 10,
+      "coreRatio": 72
     }
   },
   "keep": [
@@ -272,24 +272,13 @@
     },
     {
       "id": "pingjiang-road",
-      "name": "平江路历史街区",
+      "name": "平江路",
       "cat": "街区",
       "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
       "heatNew": 9,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "shantang-street",
-      "name": "苏苏文创山塘街",
-      "cat": "街区",
-      "heat": 5,
-      "rating": 3.5,
-      "level": null,
-      "score": 0,
-      "heatNew": 5,
       "why": "知名地标（必留名单）"
     },
     {
@@ -326,8 +315,19 @@
       "why": "知名地标（必留名单）"
     },
     {
+      "id": "shihu",
+      "name": "石湖景区",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "jinji-night",
-      "name": "金鸡湖灯光秀",
+      "name": "金鸡湖音乐喷泉",
       "cat": "夜景",
       "heat": 7,
       "rating": 4.7,
@@ -411,7 +411,7 @@
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "qionglong",
@@ -433,7 +433,7 @@
       "level": "national",
       "score": 0.73,
       "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "lingyan",
@@ -448,7 +448,7 @@
     },
     {
       "id": "dayangshan",
-      "name": "大阳山国家森林公园",
+      "name": "江苏大阳山国家森林公园植物园景区",
       "cat": "山水",
       "heat": 7,
       "rating": 4.6,
@@ -472,7 +472,7 @@
       "id": "xishan",
       "name": "太湖西山国家森林公园缥缈峰景区",
       "cat": "山水",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -542,7 +542,7 @@
       "level": "national",
       "score": 0.73,
       "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "qiandeng",
@@ -553,7 +553,7 @@
       "level": "national",
       "score": 0.69,
       "heatNew": 8,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "jinxi",
@@ -564,7 +564,7 @@
       "level": "national",
       "score": 0.73,
       "heatNew": 9,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "zhenze",
@@ -575,53 +575,32 @@
       "level": "national",
       "score": 0.69,
       "heatNew": 8,
-      "why": "评分 4.6 ≥4.5（非常知名）"
-    },
-    {
-      "id": "beisi",
-      "name": "北寺塔",
-      "cat": "古迹",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
       "why": "知名地标（必留名单）"
     },
     {
-      "id": "fengqiao",
-      "name": "枫桥景区",
-      "cat": "古迹",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
+      "id": "x704a3f97",
+      "name": "七里山塘景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "shiquan-street",
       "name": "十全街",
       "cat": "街区",
-      "heat": 7.5,
-      "rating": null,
+      "heat": 8,
+      "rating": 4.9,
       "level": null,
-      "score": null,
-      "heatNew": null
+      "score": 0.56,
+      "heatNew": 8
     },
     {
       "id": "baiyuan",
-      "name": "独墅湖白鹭园",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "shihu",
-      "name": "石湖景区",
+      "name": "白鹭园",
       "cat": "公园",
       "heat": 7,
       "rating": 4.7,
@@ -651,7 +630,7 @@
     },
     {
       "id": "suzhou-center",
-      "name": "苏州中心",
+      "name": "苏州中心广场",
       "cat": "商圈",
       "heat": 8,
       "rating": 4.9,
@@ -661,9 +640,9 @@
     },
     {
       "id": "dongfangzhimen",
-      "name": "东方之门",
+      "name": "东方之门商业街",
       "cat": "商圈",
-      "heat": 7.5,
+      "heat": 6,
       "rating": 4,
       "level": null,
       "score": 0.2,
@@ -698,45 +677,11 @@
       "level": null,
       "score": 0.48,
       "heatNew": 7
-    },
-    {
-      "id": "yangcheng-crab",
-      "name": "阳澄湖莲花岛",
-      "cat": "美食",
-      "heat": 5,
-      "rating": 3.3,
-      "level": null,
-      "score": 0,
-      "heatNew": 5
     }
   ],
   "drop": [],
   "manual": [],
   "add": [
-    {
-      "name": "七里山塘景区",
-      "coord": [
-        120.602105,
-        31.317059
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.8,
-      "level": "national",
-      "score": 0.77,
-      "heat": 9
-    },
-    {
-      "name": "平江路",
-      "coord": [
-        120.634556,
-        31.313969
-      ],
-      "type": "风景名胜;风景名胜;国家级景点|购物服务;特色商业街;特色商业街",
-      "rating": 4.8,
-      "level": "national",
-      "score": 0.77,
-      "heat": 9
-    },
     {
       "name": "苏州上方山国家森林公园",
       "coord": [
@@ -846,20 +791,7 @@
       "heat": 8
     }
   ],
-  "heatChanges": [
-    {
-      "id": "dongfangzhimen",
-      "name": "东方之门",
-      "from": 7.5,
-      "to": 6
-    },
-    {
-      "id": "xishan",
-      "name": "太湖西山国家森林公园缥缈峰景区",
-      "from": 9,
-      "to": 7
-    }
-  ],
+  "heatChanges": [],
   "duplicates": [
     {
       "name": "网师园",

@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": "F49F018048_301052",
       "business_area": "世界之窗",
       "website": "www.szwwco.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s88e6928a",
@@ -70,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -112,7 +114,8 @@
       "navi_poiid": [],
       "business_area": "华侨城",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s348862f3",
@@ -121,7 +124,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -162,7 +165,8 @@
       "navi_poiid": "F50F018002_75622",
       "business_area": "梧桐山",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s0863dd55",
@@ -171,7 +175,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 210,
       "intro": "适合带娃的景点，在城内，排一整个上午。",
       "reason": "开门就到，午后孩子容易累",
@@ -213,7 +217,8 @@
       "navi_poiid": "F49F017048_249",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sc44df192",
@@ -360,54 +365,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sd556347f",
-      "name": "华侨城欢乐海岸",
-      "cat": "商圈",
-      "tags": [],
-      "heat": 8,
-      "dur": 60,
-      "intro": "商圈，在城内，顺路逛一小时。",
-      "reason": "傍晚人多，早点来",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        113.987914,
-        22.523405
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02F38J6TZ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00；欢乐海岸为大型开放场地、活动区域，具体营业时间请以具体场所、场馆的营业时间为准，谢谢!",
-      "tel": "0755-86122311",
-      "photo": "http://store.is.autonavi.com/showpic/8a02b44b665a6d905a1cc9f7730641d3",
-      "address": "滨海大道2008号(深圳湾公园地铁E出口)",
-      "district": "南山区",
-      "adcode": "440305",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/8a02b44b665a6d905a1cc9f7730641d3",
-        "https://store.is.autonavi.com/showpic/75c18078d260c3dc0000002308854272?type=pic",
-        "http://store.is.autonavi.com/showpic/868ed028b5425bee2aa4bc70e9c79f82"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        113.99146,
-        22.521549
-      ],
-      "navi_poiid": "F49F018048_119672",
-      "business_area": "欢乐海岸",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sb9792ee4",
       "name": "锦绣中华民俗村",
       "cat": "山水",
@@ -500,100 +457,6 @@
       ],
       "navi_poiid": [],
       "business_area": "李朗聚星商城",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s1f50e601",
-      "name": "深圳博物馆新馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        114.061704,
-        22.543674
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGM6YKB",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1/1-12/31 周二–周日 10:00–18:00开放；1/1-12/31 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–20:00开放 最晚进入19:30；如遇重大节假日顺延至节后闭馆一天",
-      "tel": "0755-88125550",
-      "photo": "https://aos-comment.amap.com/B0GUBGMD5J/comment/content_media_external_images_media_100001673_1730124458367_58479341.jpg",
-      "address": "福中路市民中心A区(市民中心地铁站B口步行340米)",
-      "district": "福田区",
-      "adcode": "440304",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0GUBGMD5J/comment/content_media_external_images_media_100001673_1730124458367_58479341.jpg",
-        "https://store.is.autonavi.com/showpic/a0edae35e160e0160000003098880491?type=pic",
-        "http://store.is.autonavi.com/showpic/68e04abb7f3dc308667b1e351bfda8ed"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.058649,
-        22.544554
-      ],
-      "navi_poiid": [],
-      "business_area": "购物公园",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s8ce81785",
-      "name": "华强北博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "10:00-18:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        114.087311,
-        22.544243
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0GUJAR1XW",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 10:00-18:00 最晚进入17:30；周一 全天关闭",
-      "tel": "0755-83202020",
-      "photo": "https://aos-comment.amap.com/B0GUJAR1XW/comment/content_media_external_file_100013262_1767618811241_95886593.jpg",
-      "address": "华强北路1058号广博现代之窗大厦5层",
-      "district": "福田区",
-      "adcode": "440304",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0GUJAR1XW/comment/content_media_external_file_100013262_1767618811241_95886593.jpg",
-        "https://store.is.autonavi.com/showpic/df4b7b6d594f869c0000003108112020?type=pic",
-        "https://store.is.autonavi.com/showpic/10460bebb420c2160000005298832279?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.087212,
-        22.544414
-      ],
-      "navi_poiid": [],
-      "business_area": "上步",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1127,54 +990,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s02a3569c",
-      "name": "笔架山公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "07:30-17:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.080876,
-        22.562893
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02F37T4ZP",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 07:30-17:30",
-      "tel": "0755-83220201",
-      "photo": "http://store.is.autonavi.com/showpic/4c030655e69d88b3bbb8876df2bb9991",
-      "address": "梅岗路26号",
-      "district": "福田区",
-      "adcode": "440304",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/4c030655e69d88b3bbb8876df2bb9991",
-        "https://store.is.autonavi.com/showpic/6b15106561d63cde0000003040328614?type=pic",
-        "https://store.is.autonavi.com/showpic/f5e2ce385536773d0000003173588638?type=pic"
-      ],
-      "keytag": "公园",
-      "entrance": [
-        114.07747,
-        22.555569
-      ],
-      "navi_poiid": "F50F018001_271023",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s7e5a73a6",
       "name": "福田红树林自然保护区",
       "cat": "山水",
@@ -1268,100 +1083,6 @@
       "navi_poiid": "F49F018048_264812",
       "business_area": [],
       "website": "www.evergreen-cn.com",
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s1a97e86b",
-      "name": "大梧桐山顶鹏城第一峰",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "06:00-19:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        114.219372,
-        22.57947
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0HGD77THA",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "06:00-19:00 最晚进入19:00",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/7c47911f-9319-4668-88bd-9941283e5ba0.jpg",
-      "address": "罗沙路2078号梧桐山风景区内",
-      "district": "罗湖区",
-      "adcode": "440303",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://aos-cdn-image.amap.com/sns/ugccomment/7c47911f-9319-4668-88bd-9941283e5ba0.jpg",
-        "https://store.is.autonavi.com/showpic/57e8444a27548c5a0000002890062467?type=pic",
-        "https://store.is.autonavi.com/showpic/a1649e8a42f7a5360000002222510882?type=pic"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        114.184526,
-        22.561018
-      ],
-      "navi_poiid": [],
-      "business_area": "梧桐山",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s51e8380c",
-      "name": "灰色博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "10:00-21:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.116873,
-        22.542304
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0L0ZLGQMY",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:00-21:30",
-      "tel": "15323475787",
-      "photo": "https://store.is.autonavi.com/showpic/e6b2597a97453b210000008778876968?type=pic",
-      "address": "南湖街道深南东路3085号兆鑫汇金广场B2层",
-      "district": "罗湖区",
-      "adcode": "440303",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/e6b2597a97453b210000008778876968?type=pic",
-        "https://store.is.autonavi.com/showpic/4e93701c26e62f600000007607400358?type=pic",
-        "https://store.is.autonavi.com/showpic/2505a175676c81260000003138856736?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.116091,
-        22.542714
-      ],
-      "navi_poiid": [],
-      "business_area": "东门",
-      "website": [],
       "amap_checked_at": "2026-10-17"
     },
     {
@@ -1696,53 +1417,6 @@
       ],
       "navi_poiid": [],
       "business_area": "沙井",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "se03f20bc",
-      "name": "梧桐山艺术小镇",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.193847,
-        22.590542
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0J6PU3BA7",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0J6PU3BA7/comment/content_media_external_file_859_1757903897673_95844656.jpg",
-      "address": "望桐路与罗湖梧桐绿道交叉口西北200米",
-      "district": "罗湖区",
-      "adcode": "440303",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0J6PU3BA7/comment/content_media_external_file_859_1757903897673_95844656.jpg",
-        "https://store.is.autonavi.com/showpic/2f35782bf16e2244f625b04d1afd6768",
-        "https://store.is.autonavi.com/showpic/457d3a11ace9487b0000003391928978?type=pic"
-      ],
-      "keytag": "风景名胜,风景名胜,风景名胜",
-      "entrance": [
-        114.195003,
-        22.589071
-      ],
-      "navi_poiid": [],
-      "business_area": "梧桐山",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2465,7 +2139,12 @@
       "note": "标志性景点补录",
       "open_text": "周一至周日 06:30-23:00 最晚进入23:00",
       "tel": "0755-25209678",
-      "photo": "https://store.is.autonavi.com/showpic/f9885f93cab5b3d16f29254403c16bb1"
+      "photo": "https://store.is.autonavi.com/showpic/f9885f93cab5b3d16f29254403c16bb1",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/f9885f93cab5b3d16f29254403c16bb1",
+        "https://store.is.autonavi.com/showpic/e44740175331a2700000008286936547?type=pic",
+        "https://store.is.autonavi.com/showpic/06572394948793ef0000006886750982?type=pic"
+      ]
     },
     {
       "id": "x6352d31b",
@@ -2475,7 +2154,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -2498,7 +2177,13 @@
       "note": "标志性景点补录",
       "open_text": "周一至周五 09:30-18:00开放（17:00停止售票，17:00停止入园）；周六至周日 09:00-18:00开放（17:00停止入园）；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00-18:00开放（17:00停止入园）；如遇节假日或大型活动,营业时间以当日开放情况为准",
       "tel": "0755-88889888",
-      "photo": "http://store.is.autonavi.com/showpic/3de8d718ca9de653f37f64094b9bfc7c"
+      "photo": "http://store.is.autonavi.com/showpic/3de8d718ca9de653f37f64094b9bfc7c",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3de8d718ca9de653f37f64094b9bfc7c",
+        "http://store.is.autonavi.com/showpic/c9ba96550a5dde04edf3dc312a6b2299?operate=original&query_type=oss&operate_gif=1",
+        "http://store.is.autonavi.com/showpic/dea573b4fd7a3e58a25cca28fe25e598"
+      ],
+      "heat_prev": 8
     }
   ]
 }

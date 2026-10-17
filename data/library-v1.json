@@ -1,0 +1,325 @@
+{
+  "version": "v1",
+  "date": "2026-10-17",
+  "rules": "docs/spot-library-rules.md",
+  "cities": [
+    {
+      "city": "北京",
+      "file": "beijing",
+      "points": 60
+    },
+    {
+      "city": "成都",
+      "file": "chengdu",
+      "points": 55
+    },
+    {
+      "city": "重庆",
+      "file": "chongqing",
+      "points": 64
+    },
+    {
+      "city": "大理",
+      "file": "dali",
+      "points": 49
+    },
+    {
+      "city": "广州",
+      "file": "guangzhou",
+      "points": 54
+    },
+    {
+      "city": "贵阳",
+      "file": "guiyang",
+      "points": 46
+    },
+    {
+      "city": "杭州",
+      "file": "hangzhou",
+      "points": 56
+    },
+    {
+      "city": "合肥",
+      "file": "hefei",
+      "points": 48
+    },
+    {
+      "city": "昆明",
+      "file": "kunming",
+      "points": 42
+    },
+    {
+      "city": "拉萨",
+      "file": "lhasa",
+      "points": 48
+    },
+    {
+      "city": "丽江",
+      "file": "lijiang",
+      "points": 48
+    },
+    {
+      "city": "南京",
+      "file": "nanjing",
+      "points": 51
+    },
+    {
+      "city": "宁波",
+      "file": "ningbo",
+      "points": 58
+    },
+    {
+      "city": "上海",
+      "file": "shanghai",
+      "points": 53
+    },
+    {
+      "city": "绍兴",
+      "file": "shaoxing",
+      "points": 50
+    },
+    {
+      "city": "苏州",
+      "file": "suzhou",
+      "points": 52
+    },
+    {
+      "city": "温州",
+      "file": "wenzhou",
+      "points": 50
+    },
+    {
+      "city": "无锡",
+      "file": "wuxi",
+      "points": 47
+    },
+    {
+      "city": "西安",
+      "file": "xian",
+      "points": 54
+    },
+    {
+      "city": "香格里拉",
+      "file": "xianggelila",
+      "points": 34
+    },
+    {
+      "city": "西双版纳",
+      "file": "xishuangbanna",
+      "points": 29
+    },
+    {
+      "city": "扬州",
+      "file": "yangzhou",
+      "points": 45
+    },
+    {
+      "city": "厦门",
+      "file": "xiamen",
+      "points": 52
+    },
+    {
+      "city": "青岛",
+      "file": "qingdao",
+      "points": 47
+    },
+    {
+      "city": "桂林",
+      "file": "guilin",
+      "points": 46
+    },
+    {
+      "city": "黄山",
+      "file": "huangshan",
+      "points": 45
+    },
+    {
+      "city": "福州",
+      "file": "fuzhou",
+      "points": 47
+    },
+    {
+      "city": "泉州",
+      "file": "quanzhou",
+      "points": 46
+    },
+    {
+      "city": "济南",
+      "file": "jinan",
+      "points": 43
+    },
+    {
+      "city": "威海",
+      "file": "weihai",
+      "points": 43
+    },
+    {
+      "city": "烟台",
+      "file": "yantai",
+      "points": 45
+    },
+    {
+      "city": "婺源",
+      "file": "wuyuan",
+      "points": 34
+    },
+    {
+      "city": "深圳",
+      "file": "shenzhen",
+      "points": 46
+    },
+    {
+      "city": "珠海",
+      "file": "zhuhai",
+      "points": 47
+    },
+    {
+      "city": "北海",
+      "file": "beihai",
+      "points": 42
+    },
+    {
+      "city": "三亚",
+      "file": "sanya",
+      "points": 38
+    },
+    {
+      "city": "海口",
+      "file": "haikou",
+      "points": 46
+    },
+    {
+      "city": "天津",
+      "file": "tianjin",
+      "points": 42
+    },
+    {
+      "city": "大同",
+      "file": "datong",
+      "points": 41
+    },
+    {
+      "city": "太原",
+      "file": "taiyuan",
+      "points": 46
+    },
+    {
+      "city": "呼和浩特",
+      "file": "huhehaote",
+      "points": 43
+    },
+    {
+      "city": "武汉",
+      "file": "wuhan",
+      "points": 47
+    },
+    {
+      "city": "长沙",
+      "file": "changsha",
+      "points": 50
+    },
+    {
+      "city": "郑州",
+      "file": "zhengzhou",
+      "points": 49
+    },
+    {
+      "city": "洛阳",
+      "file": "luoyang",
+      "points": 42
+    },
+    {
+      "city": "开封",
+      "file": "kaifeng",
+      "points": 43
+    },
+    {
+      "city": "宜昌",
+      "file": "yichang",
+      "points": 41
+    },
+    {
+      "city": "张家界",
+      "file": "zhangjiajie",
+      "points": 40
+    },
+    {
+      "city": "凤凰",
+      "file": "fenghuang",
+      "points": 33
+    },
+    {
+      "city": "兰州",
+      "file": "lanzhou",
+      "points": 38
+    },
+    {
+      "city": "西宁",
+      "file": "xining",
+      "points": 41
+    },
+    {
+      "city": "敦煌",
+      "file": "dunhuang",
+      "points": 27
+    },
+    {
+      "city": "张掖",
+      "file": "zhangye",
+      "points": 40
+    },
+    {
+      "city": "乌鲁木齐",
+      "file": "wulumuqi",
+      "points": 47
+    },
+    {
+      "city": "喀什",
+      "file": "kashi",
+      "points": 24
+    },
+    {
+      "city": "银川",
+      "file": "yinchuan",
+      "points": 42
+    },
+    {
+      "city": "哈尔滨",
+      "file": "haerbin",
+      "points": 40
+    },
+    {
+      "city": "长春",
+      "file": "changchun",
+      "points": 40
+    },
+    {
+      "city": "沈阳",
+      "file": "shenyang",
+      "points": 49
+    },
+    {
+      "city": "大连",
+      "file": "dalian",
+      "points": 48
+    }
+  ],
+  "totals": {
+    "cities": 60,
+    "points": 2713,
+    "photo": 2713,
+    "multiPhoto": 2682,
+    "aLevel": 675,
+    "aLevelBreakdown": {
+      "5A": 126,
+      "4A": 444,
+      "3A": 105
+    },
+    "entrance": 2549,
+    "address": 2681,
+    "open": 2139,
+    "tel": 1813,
+    "rating": 2713,
+    "ratingPct": 100
+  }
+}

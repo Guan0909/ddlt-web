@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -20,7 +21,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -62,7 +63,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s51282936",
@@ -72,7 +74,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -114,7 +116,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s7d307ca2",
@@ -123,7 +126,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -164,7 +167,8 @@
       "navi_poiid": "J47F013036_10050",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s4c3a132f",
@@ -174,7 +178,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -215,7 +219,8 @@
       "navi_poiid": "J47F013033_15",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s33e317d0",
@@ -225,7 +230,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -267,7 +272,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2152f8d3",
@@ -276,7 +282,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -317,7 +323,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s45e2a4cc",
@@ -327,7 +334,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 6,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -369,7 +376,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s51f89acb",
@@ -1147,107 +1155,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s310cbb0c",
-      "name": "马蹄寺千佛洞",
-      "cat": "古迹",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 120,
-      "intro": "历史古迹，在城郊，看半天。",
-      "reason": "上午来，人少光线也好",
-      "open": "08:00-19:00",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.427104,
-        38.501373
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGWYEXI",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-19:00",
-      "tel": "0936-8891610",
-      "photo": "https://store.is.autonavi.com/showpic/ca7b012699f5a9cb0000007607344007?type=pic",
-      "address": "大都麻乡马蹄寺风光旅游区",
-      "district": "肃南裕固族自治县",
-      "adcode": "620721",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/ca7b012699f5a9cb0000007607344007?type=pic",
-        "https://store.is.autonavi.com/showpic/45705434eab8d5610000006862610412?type=pic",
-        "https://aos-comment.amap.com/B0FFGWYEXI/comment/content_media_external_file_157426_ss__1757422922408_40400697.jpg"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        100.42716,
-        38.50117
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sd8b47ea6",
-      "name": "马蹄生态文化旅游区石窟",
-      "cat": "山水",
-      "tags": [
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        100.421346,
-        38.485503
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03A8005PT",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "0936-8891610",
-      "photo": "https://aos-comment.amap.com/B03A8005PT/comment/3611FBE0_E3D1_4446_8F4B_30A7409DBA60_L0_001_2000_1500_1729830536229_01987024.jpg",
-      "address": "马蹄藏族乡(马蹄寺风光旅游区内)",
-      "district": "肃南裕固族自治县",
-      "adcode": "620721",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B03A8005PT/comment/3611FBE0_E3D1_4446_8F4B_30A7409DBA60_L0_001_2000_1500_1729830536229_01987024.jpg",
-        "https://aos-comment.amap.com/B03A8005PT/comment/content_media_external_images_media_92620_ss__1727408549935_08148922.jpg",
-        "https://aos-comment.amap.com/B03A8005PT/comment/dd93ea6cb04325488ead96ad488751f9_2048_2048_80.jpg"
-      ],
-      "a_level": "4A",
-      "keytag": "4A景区",
-      "entrance": [
-        100.429432,
-        38.504497
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "saf0c4c6d",
       "name": "三十三天石窟",
       "cat": "山水",
@@ -1398,7 +1305,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 180,
       "intro": "古镇街区，在城内，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -1439,7 +1346,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 7
     },
     {
       "id": "sdbf2f4b7",

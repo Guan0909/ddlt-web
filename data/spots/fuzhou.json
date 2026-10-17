@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 90,
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
@@ -61,7 +62,8 @@
       "navi_poiid": "G50F023043_64296",
       "business_area": "南街",
       "website": "www.sfqx.gov.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "se11090b9",
@@ -70,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -112,7 +114,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sbcb2d93c",
@@ -121,7 +124,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -163,7 +166,8 @@
       "navi_poiid": "G50F022043_87196",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s4811590e",
@@ -314,7 +318,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -355,7 +359,8 @@
       "navi_poiid": "G50F023043_28968",
       "business_area": "东街口",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s96a7ff79",
@@ -365,7 +370,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -407,7 +412,8 @@
       "navi_poiid": "G50F027041_330",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s47adc8f6",
@@ -416,7 +422,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
@@ -458,7 +464,8 @@
       "navi_poiid": "G50F024043_4140",
       "business_area": "新店",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s0e4b5e85",
@@ -937,53 +944,6 @@
       ],
       "navi_poiid": [],
       "business_area": "福新路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s5fa205b6",
-      "name": "牛岗山公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "06:00-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        119.344918,
-        26.100066
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFDFXHF",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 06:00-22:00",
-      "photo": "https://aos-comment.amap.com/B0FFFDFXHF/comment/20260314-30a70fd4d46180fdaf7e5ca0-eo6BDnsnWe8SXYIRN10Mr.jpg",
-      "address": "鹤林路牛岗山(竹屿地铁站A2口步行843米)",
-      "district": "晋安区",
-      "adcode": "350111",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFFDFXHF/comment/20260314-30a70fd4d46180fdaf7e5ca0-eo6BDnsnWe8SXYIRN10Mr.jpg",
-        "https://aos-comment.amap.com/B0FFFDFXHF/comment/content_media_external_images_media_1000002791_ss_2_1676432417426_d711aa58.jpg",
-        "https://aos-comment.amap.com/B0FFFDFXHF/comment/3384fb6fd3950b22bfdcf0fb70587b04_2048_2048_80.jpg"
-      ],
-      "keytag": "公园",
-      "entrance": [
-        119.347104,
-        26.097153
-      ],
-      "navi_poiid": [],
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2273,52 +2233,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sf200e617",
-      "name": "南公河口文化街区",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "10:00-17:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        119.317509,
-        26.064257
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0HAKLL1G3",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:00-17:00",
-      "photo": "https://aos-comment.amap.com/comment/content_service__1770129912398_57524512_1770194042885_65340526.jpg",
-      "address": "国货西路南公园旁",
-      "district": "台江区",
-      "adcode": "350103",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/comment/content_service__1770129912398_57524512_1770194042885_65340526.jpg",
-        "https://store.is.autonavi.com/showpic/15933a4e9ef1f1bc56e0b7de9f01b4fc",
-        "https://aos-comment.amap.com/B0HAKLL1G3/comment/c9d430f9894c3403359d218579461bc5_2048_2048_80.jpg"
-      ],
-      "keytag": "古镇",
-      "entrance": [
-        119.31747,
-        26.064203
-      ],
-      "navi_poiid": [],
-      "business_area": "大利嘉城",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "xcf298c2e",
       "name": "烟台山公园",
       "cat": "公园",
@@ -2345,7 +2259,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/5d9bd26e14a032efb31b9ba8eefb9118"
+      "photo": "http://store.is.autonavi.com/showpic/5d9bd26e14a032efb31b9ba8eefb9118",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5d9bd26e14a032efb31b9ba8eefb9118",
+        "https://store.is.autonavi.com/showpic/1368fb1d0305d3bc0000004895630620?type=pic",
+        "https://store.is.autonavi.com/showpic/9e96b11421480b6d0000007999624683?type=pic"
+      ]
     }
   ]
 }

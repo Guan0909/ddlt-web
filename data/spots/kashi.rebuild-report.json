@@ -1,0 +1,395 @@
+{
+  "city": "喀什",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "古镇": 2,
+      "街区": 7,
+      "山水": 13,
+      "博物馆": 2,
+      "公园": 6,
+      "古迹": 2
+    },
+    "byGroup": {
+      "core": 19,
+      "night": 0,
+      "family": 0,
+      "street": 7,
+      "food": 0,
+      "park": 6,
+      "mall": 0,
+      "total": 32,
+      "suburb": 2,
+      "coreRatio": 59
+    }
+  },
+  "keep": [
+    {
+      "id": "sa2cca562",
+      "name": "喀什古城景区",
+      "cat": "古镇",
+      "heat": 9,
+      "rating": 4.9,
+      "level": null,
+      "score": 0.56,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sfbcc8eeb",
+      "name": "张骞丝路文化景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sa10477b9",
+      "name": "喀什博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s16fbf630",
+      "name": "香妃园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s0a5c3213",
+      "name": "小亚郎湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2a072b76",
+      "name": "买买提的老房子",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s08b039c1",
+      "name": "艾提尕尔清真寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdc38e0a3",
+      "name": "喀什古城特色美食街",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sb528f700",
+      "name": "盘橐城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s36de845c",
+      "name": "新疆民族乐器村",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "sa9106bdd",
+      "name": "昆仑驿自然科学博物馆(达尔文科学中心)",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
+    },
+    {
+      "id": "s80f56bfc",
+      "name": "吾尔达西克清真寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    },
+    {
+      "id": "s227cdbb1",
+      "name": "明尧勒河滩旅游风景区",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "s02ee8011",
+      "name": "木什乡天门山怪坡",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4,
+      "level": null,
+      "score": 0.2,
+      "heatNew": 6
+    },
+    {
+      "id": "x65ffbd87",
+      "name": "喀什古城彩虹巷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "x65ffbd87",
+      "name": "喀什古城彩虹巷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "x79d5b757",
+      "name": "喀什古城西区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "xc20b5e3f",
+      "name": "喀什美食街(团结路店)",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "x79d5b757",
+      "name": "喀什古城西区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sb85f6586",
+      "name": "汗巴扎夜市",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "sf8f255c4",
+      "name": "唐城国际餐饮文化一条街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s5e5fc56e",
+      "name": "喀什长安不夜街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s247e0b05",
+      "name": "团结路夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s87f1c44c",
+      "name": "乃则尔巴格镇美食街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s885240cb",
+      "name": "时代广场美食街",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "x4e10976b",
+      "name": "高台民居(暂停开放)",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "x740e7ec3",
+      "name": "艾提尕尔广场",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sf7e84a99",
+      "name": "人民公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s3b535fda",
+      "name": "东湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s41e783fd",
+      "name": "空中花园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "sb036b090",
+      "name": "北湖公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    }
+  ],
+  "drop": [
+    {
+      "id": "s6c0171bc",
+      "name": "昆仑之眼摩天轮主题公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "类目配额（公园 ≤5）且评分靠后"
+    }
+  ],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sa2cca562",
+      "name": "喀什古城景区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "sfbcc8eeb",
+      "name": "张骞丝路文化景区",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": [
+    {
+      "name": "喀什古城彩虹巷",
+      "ids": [
+        "x65ffbd87",
+        "x65ffbd87"
+      ]
+    },
+    {
+      "name": "喀什古城西区",
+      "ids": [
+        "x79d5b757",
+        "x79d5b757"
+      ]
+    }
+  ]
+}

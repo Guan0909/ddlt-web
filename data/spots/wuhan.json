@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -60,7 +61,8 @@
       "navi_poiid": "H50F018003_46174",
       "business_area": "武珞路",
       "website": "www.cnhhl.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "see9dddd6",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -111,7 +113,8 @@
       "navi_poiid": "H50F018004_148367;281936",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s09e41217",
@@ -120,7 +123,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -161,7 +164,8 @@
       "navi_poiid": "H50F018004_358",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s9e265c36",
@@ -254,53 +258,6 @@
       ],
       "navi_poiid": [],
       "business_area": "建设大道",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s63da3345",
-      "name": "江汉关博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 8,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "09:00-17:00",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        114.297308,
-        30.576075
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001B08BC3",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:00；周一闭馆（法定节假日除外）",
-      "tel": "027-82768112;027-82880866",
-      "photo": "http://store.is.autonavi.com/showpic/99a8ddea69655edf96b4b15961ee8241",
-      "address": "沿江大道129号",
-      "district": "江汉区",
-      "adcode": "420103",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/99a8ddea69655edf96b4b15961ee8241",
-        "http://store.is.autonavi.com/showpic/9d48bb5500948fb24576216f55a7df6d",
-        "http://store.is.autonavi.com/showpic/f14ad46699888303206e1223b1e08786"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.297598,
-        30.576648
-      ],
-      "navi_poiid": "H50F018003_226704",
-      "business_area": "江滩",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -591,7 +548,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -633,7 +590,8 @@
       "navi_poiid": "H50F018003_250005",
       "business_area": "江滩",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s49df11d9",
@@ -642,7 +600,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -684,7 +642,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "a_level": "4A"
+      "a_level": "4A",
+      "heat_prev": 8
     },
     {
       "id": "sc1927856",
@@ -694,7 +653,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -736,7 +695,8 @@
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17",
-      "a_level": "4A"
+      "a_level": "4A",
+      "heat_prev": 8
     },
     {
       "id": "s98c862ba",
@@ -975,53 +935,6 @@
       "navi_poiid": "H50F018003_50697",
       "business_area": "大东门",
       "website": "www.whccg.com",
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s3b75ed3a",
-      "name": "辛亥革命博物院(南区)",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        114.305369,
-        30.537061
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001B170AY",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1/1-12/31 周二–周日 09:00–17:00开放 最晚进入16:00；1/1-12/31 周一 全天不开放；国庆节 09:00–17:00开放；周一闭馆，国家法定节假日除外",
-      "tel": "027-88051911",
-      "photo": "https://aos-comment.amap.com/B001B170AY/comment/c8798753df610b446224958ac30b9190_2048_2048_80.jpg",
-      "address": "彭刘杨路258号",
-      "district": "武昌区",
-      "adcode": "420106",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B001B170AY/comment/c8798753df610b446224958ac30b9190_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B001B170AY/comment/9c42e8a8e63b99d65c752762fffead88_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/default_poi/comment/content_media_external_file_1351_ss__1762053681753_16659487.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.304707,
-        30.536648
-      ],
-      "navi_poiid": "H50F018003_89939;253662",
-      "business_area": "武珞路",
-      "website": [],
       "amap_checked_at": "2026-10-17"
     },
     {
@@ -1265,53 +1178,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s6e591ebf",
-      "name": "武汉大学万林艺术博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "09:00-16:30",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        114.363056,
-        30.536666
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001B1DIF0",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一闭馆 国家法定节假日除外；周二至周日 09:00-16:30",
-      "tel": "027-68756413",
-      "photo": "http://store.is.autonavi.com/showpic/27ca1c0a5d02705aef48f319eb8fa3e1",
-      "address": "珞珈山街街道八一路299号武汉大学",
-      "district": "武昌区",
-      "adcode": "420106",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/27ca1c0a5d02705aef48f319eb8fa3e1",
-        "http://store.is.autonavi.com/showpic/bc41c6d2e2209f996ec5e4df3e2be234",
-        "https://aos-comment.amap.com/B001B1DIF0/headerImg/fd4a88afc8487b1ea2d57b5bd8bc4b46_2048_2048_80.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.362405,
-        30.537181
-      ],
-      "navi_poiid": "H50F018003_103904",
-      "business_area": "珞珈山",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s143ef7dd",
       "name": "武汉江滩",
       "cat": "山水",
@@ -1543,100 +1409,6 @@
       ],
       "navi_poiid": "H50F018003_50381",
       "business_area": "司门口",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sa7b97401",
-      "name": "大汉口美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "10:30-22:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.290314,
-        30.579392
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001B0ASZZ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:30-22:30",
-      "tel": "18502742806",
-      "photo": "https://aos-comment.amap.com/B001B0ASZZ/comment/effe7aae090384e50aa2540bfebc58f7_2048_2048_80.jpg",
-      "address": "水塔街中山大道王府井百货对面(江汉路地铁站F口旁)",
-      "district": "江汉区",
-      "adcode": "420103",
-      "cost": 23,
-      "photos": [
-        "https://aos-comment.amap.com/B001B0ASZZ/comment/effe7aae090384e50aa2540bfebc58f7_2048_2048_80.jpg",
-        "https://store.is.autonavi.com/showpic/b0f9e4c643e44b520000007513562187?type=pic",
-        "https://aos-comment.amap.com/B0LA3UF93N/comment/content_media_external_file_521429_ss__1765701432209_56686386.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        114.290165,
-        30.578822
-      ],
-      "navi_poiid": [],
-      "business_area": "前进",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s8a3f74f0",
-      "name": "后街夜市",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "09:00-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.33773,
-        30.578865
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFLGB0N7",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-22:00",
-      "tel": "18946410765",
-      "photo": "https://aos-comment.amap.com/B0FFLGB0N7/comment/629b240fd935b3115efaa399b3009512_2048_2048_80.jpg",
-      "address": "友谊大道384号",
-      "district": "武昌区",
-      "adcode": "420106",
-      "cost": 17,
-      "photos": [
-        "https://aos-comment.amap.com/B0FFLGB0N7/comment/629b240fd935b3115efaa399b3009512_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B0FFLGB0N7/comment/83ED498F_1A80_45BF_BE34_D6D17E09ED5B_L0_001_1170_84_1769070431217_86364698.jpg",
-        "https://aos-comment.amap.com/B0FFLGB0N7/comment/2f4455e41ab4799c86c4e0640e88ac4a_2048_2048_80.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        114.338069,
-        30.579219
-      ],
-      "navi_poiid": [],
-      "business_area": "徐家棚",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1880,53 +1652,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sc1f92a3a",
-      "name": "月湖风景区",
-      "cat": "山水",
-      "tags": [],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "上午来，慢慢走",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        114.25555,
-        30.557631
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF6YP9E",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0FFF6YP9E/comment/content_media_external_file_100000817_1765981378113_43365768.jpg",
-      "address": "琴台大道200号",
-      "district": "汉阳区",
-      "adcode": "420105",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0FFF6YP9E/comment/content_media_external_file_100000817_1765981378113_43365768.jpg",
-        "https://aos-comment.amap.com/B0FFF6YP9E/comment/content_media_external_file_1000092495_ss__1769475720336_91325024.jpg",
-        "https://store.is.autonavi.com/showpic/919e214306eef3a40000002410492707?type=pic"
-      ],
-      "keytag": "湖泊河流",
-      "entrance": [
-        114.258427,
-        30.553045
-      ],
-      "navi_poiid": "H50F018003_149797",
-      "business_area": "琴台",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s71f31857",
       "name": "蛇山",
       "cat": "山水",
@@ -2161,52 +1886,6 @@
       ],
       "navi_poiid": "H50F018004_12181",
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sba1ef133",
-      "name": "武汉警察博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "10:00-16:00",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        114.303932,
-        30.594803
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFK7Z2XY",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 10:00-16:00",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/ec2350ca-cd5a-4068-b19d-3e6da999717b.jpg",
-      "address": "胜利街271号(三阳路地铁站L4口步行450米)",
-      "district": "江岸区",
-      "adcode": "420102",
-      "cost": 0,
-      "photos": [
-        "http://aos-cdn-image.amap.com/sns/ugccomment/ec2350ca-cd5a-4068-b19d-3e6da999717b.jpg",
-        "https://aos-comment.amap.com/B0FFK7Z2XY/comment/content_media_external_file_100020905_1768731806728_19130291.jpg",
-        "https://aos-comment.amap.com/B0FFK7Z2XY/comment/8b5c72d9dc62b86b0bdcdebc1d26f55a_2048_2048_80.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        114.304253,
-        30.59464
-      ],
-      "navi_poiid": [],
-      "business_area": "大智路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2523,14 +2202,19 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00；武汉两江游览游船的开船时间以票种披露为参考，具体以景区现场实际为准",
-      "photo": "http://store.is.autonavi.com/showpic/21a20bacb271bf0f39306f34e5ea83d4"
+      "photo": "http://store.is.autonavi.com/showpic/21a20bacb271bf0f39306f34e5ea83d4",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/21a20bacb271bf0f39306f34e5ea83d4",
+        "http://store.is.autonavi.com/showpic/d19086ed5a4cef336056069aec0dbf04",
+        "http://store.is.autonavi.com/showpic/b0fbec52fb11678d562a067e2a03e4ef"
+      ]
     },
     {
       "id": "x2dfb44ab",
       "name": "楚河汉街",
       "cat": "街区",
       "tags": [],
-      "heat": 7,
+      "heat": 8,
       "dur": 90,
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "傍晚进来，边走边吃",
@@ -2556,7 +2240,8 @@
       "tel": "027-59363333",
       "photos": [
         "http://aos-cdn-image.amap.com/sns/ugccomment/f27aabc2-1daa-4cc2-8191-09937d926f84.jpg"
-      ]
+      ],
+      "heat_prev": 7
     }
   ]
 }

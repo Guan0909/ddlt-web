@@ -9,60 +9,10 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
-    {
-      "id": "se6f176d5",
-      "name": "天津五大道文化旅游区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.203601,
-        39.110567
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B00160E5VJ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "022-23307222;022-83122130",
-      "photo": "http://store.is.autonavi.com/showpic/3138223e49d8298d3b62d0b2105acc6b",
-      "address": "重庆道83号",
-      "district": "和平区",
-      "adcode": "120101",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/3138223e49d8298d3b62d0b2105acc6b",
-        "http://store.is.autonavi.com/showpic/643912a53602803ce2468298e321d97f",
-        "https://store.is.autonavi.com/showpic/7fc226a625c42a1f0000009087914854?type=pic"
-      ],
-      "a_level": "4A",
-      "keytag": "4A景区",
-      "entrance": [
-        117.204793,
-        39.111301
-      ],
-      "navi_poiid": "J50F011026_388457",
-      "business_area": "马场道",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
     {
       "id": "sc474d8a0",
       "name": "天津意大利风情旅游区",
@@ -70,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -112,7 +62,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s27a8dcbf",
@@ -121,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -162,7 +113,8 @@
       "navi_poiid": [],
       "business_area": "东马路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s58ff2c4a",
@@ -171,7 +123,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -208,7 +160,8 @@
       "navi_poiid": "J50F011026_9978;42667",
       "business_area": "大胡同",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sff33fbbd",
@@ -217,7 +170,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -259,7 +212,8 @@
       "navi_poiid": "J50F011026_52892",
       "business_area": [],
       "website": "www.tjwaterpark.com.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sa3d6a2d8",
@@ -268,7 +222,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -309,7 +263,8 @@
       "navi_poiid": "J50F010026_321027;403928",
       "business_area": "宁园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "saf7e3baa",
@@ -461,7 +416,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "古镇街区，在城内，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -502,7 +457,8 @@
       "navi_poiid": "J50F011025_298011",
       "business_area": "西青",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s799c2e25",
@@ -511,7 +467,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
@@ -552,7 +508,8 @@
       "navi_poiid": "J50F011026_241704",
       "business_area": "鼓楼",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s5d0b8e1e",
@@ -561,7 +518,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -603,7 +560,8 @@
       "navi_poiid": "J50F012026_82687;5512;22120",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2b679136",
@@ -794,53 +752,6 @@
       "navi_poiid": "J50F011026_25065",
       "business_area": "鸿顺里",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sccd5e338",
-      "name": "天津自然博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.209296,
-        39.086534
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B001607SDH",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "01-01至09-01 周一 全天关闭；01-01至09-01 周二至周日 09:00-16:30 最晚进入16:00；09-02至09-06 周一至周日 09:00-21:00 最晚进入20:00；09-07至12-31 周一 全天关闭；09-07至12-31 周二至周日 09:00-16:30 最晚进入16:00",
-      "tel": "022-23347988",
-      "photo": "http://store.is.autonavi.com/showpic/2e31283b14f9a382eb5ac74531f11e57",
-      "address": "友谊路31号(文化中心地铁站M口步行200米)",
-      "district": "河西区",
-      "adcode": "120103",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/2e31283b14f9a382eb5ac74531f11e57",
-        "https://store.is.autonavi.com/showpic/90c2a28b95cf76960000003378732900?type=pic",
-        "https://store.is.autonavi.com/showpic/ffa4f00e0a0c899b0000002977568339?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        117.207089,
-        39.085582
-      ],
-      "navi_poiid": "J50F011026_47445",
-      "business_area": [],
-      "website": "www.tjbwg.com",
       "amap_checked_at": "2026-10-17"
     },
     {
@@ -1508,99 +1419,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sae29b82e",
-      "name": "利顺德博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.216279,
-        39.12084
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFVYJTS",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-12:30，13:00-18:00，18:30-20:00",
-      "tel": "022-23311688;022-23316282",
-      "photo": "http://store.is.autonavi.com/showpic/2e1845d1f8a093a318615c3fec3317ba",
-      "address": "台儿庄路33号天津利顺德大饭店B1层",
-      "district": "和平区",
-      "adcode": "120101",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/2e1845d1f8a093a318615c3fec3317ba",
-        "http://store.is.autonavi.com/showpic/3ebaa7a19ce5b20a23b6ee1a841486de",
-        "http://store.is.autonavi.com/showpic/f03b8cf23465e85007e7f2e14c05b915"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        117.216131,
-        39.120852
-      ],
-      "navi_poiid": [],
-      "business_area": "小白楼",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sf9d79a10",
-      "name": "中国银行博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        117.210667,
-        39.126897
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0H2OPAZHL",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周二闭馆,周三至周日 09:30-11:30,14:30-16:30",
-      "photo": "https://store.is.autonavi.com/showpic/5bf94aff8f1f25920000003286428316?type=pic",
-      "address": "解放北路与营口道交叉口南40米",
-      "district": "和平区",
-      "adcode": "120101",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/5bf94aff8f1f25920000003286428316?type=pic",
-        "https://store.is.autonavi.com/showpic/82412ba4a27324d30000002262188332?type=pic",
-        "https://aos-comment.amap.com/B0H2OPAZHL/comment/content_media_external_file_1971352_ss__1761491708161_03331204.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        117.210855,
-        39.126988
-      ],
-      "navi_poiid": [],
-      "business_area": "小白楼",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s2a07b8d8",
       "name": "小站练兵园",
       "cat": "山水",
@@ -2121,52 +1939,6 @@
         39.016477
       ],
       "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sd29bca11",
-      "name": "凌奥美食商业街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "08:00-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.173797,
-        39.060566
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFH5QO9X",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-22:00",
-      "photo": "https://store.is.autonavi.com/showpic/2f2c3780793270bcd7f931791a23a217",
-      "address": "瑶环路与津涞道交叉口东南100米",
-      "district": "西青区",
-      "adcode": "120111",
-      "cost": 10,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/2f2c3780793270bcd7f931791a23a217",
-        "https://store.is.autonavi.com/showpic/522332f67281c72232cd332416e73f47",
-        "https://store.is.autonavi.com/showpic/9daeede4301fbe4434c7d1eab439770a"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        117.173651,
-        39.060576
-      ],
-      "navi_poiid": "J50F012026_305325",
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"

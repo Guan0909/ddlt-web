@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -56,7 +57,8 @@
       "keytag": "5A景区",
       "navi_poiid": "G50F043033_187976;213124;228587",
       "business_area": "鼓浪屿",
-      "website": []
+      "website": [],
+      "heat_prev": 9
     },
     {
       "id": "s78548388",
@@ -65,7 +67,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 120,
       "intro": "胡里山炮台是位于厦门城内的一处古迹，建议游览约两小时。",
       "reason": "放缓脚步，安静参观。",
@@ -107,7 +109,8 @@
       ],
       "navi_poiid": "G50F043033_133",
       "business_area": [],
-      "website": []
+      "website": [],
+      "heat_prev": 9
     },
     {
       "id": "s5db45a52",
@@ -116,7 +119,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "厦门园林博览苑是一座位于城内的公园，建议游览约九十分钟。",
       "reason": "适合从容步行游览，留意园林景观。",
@@ -158,7 +161,8 @@
       ],
       "navi_poiid": "G50F041033_126749;127332;30549",
       "business_area": [],
-      "website": []
+      "website": [],
+      "heat_prev": 9
     },
     {
       "id": "s8c67713d",
@@ -357,7 +361,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -399,7 +403,8 @@
       ],
       "navi_poiid": "G50F043034_10392",
       "business_area": [],
-      "website": []
+      "website": [],
+      "heat_prev": 8
     },
     {
       "id": "s2d2e3d46",
@@ -408,7 +413,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "集美鳌园景区是厦门城内的山水类景区，建议游览三小时左右。",
       "reason": "宜放慢节奏，从容游览山水景致。",
@@ -449,7 +454,8 @@
       ],
       "navi_poiid": [],
       "business_area": "集美学村",
-      "website": []
+      "website": [],
+      "heat_prev": 8
     },
     {
       "id": "sda1a57c2",
@@ -458,7 +464,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "天竺山森林公园为厦门城内的山水景点，建议游览三小时左右。",
       "reason": "可沿步道缓行，静心感受山水。",
@@ -500,57 +506,8 @@
       ],
       "navi_poiid": "G50F041032_12140;96",
       "business_area": [],
-      "website": "www.xmtzs.cn"
-    },
-    {
-      "id": "s0749ae87",
-      "name": "万石山国家重点风景名胜区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 8,
-      "dur": 180,
-      "intro": "万石山国家重点风景名胜区在厦门城内，属山水类，建议游览约三小时。",
-      "reason": "宜缓步体验山水，约留三小时。",
-      "open": "06:30-18:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        118.093957,
-        24.453702
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFZ5L0I",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 06:30-18:00",
-      "tel": "0592-2066821",
-      "photo": "https://store.is.autonavi.com/showpic/c27c85fd57efd21a0000002996082577?type=pic",
-      "address": "中山公园地铁站4号口步行460米",
-      "district": "思明区",
-      "adcode": "350203",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/c27c85fd57efd21a0000002996082577?type=pic",
-        "https://store.is.autonavi.com/showpic/f41f2f38d98a656e0000002627594726?type=pic",
-        "https://aos-comment.amap.com/B0FFFZ5L0I/comment/content_media_external_images_media_100001124_1733200540016_43218161.jpg"
-      ],
-      "amap_checked_at": "2026-10-17",
-      "keytag": "景区",
-      "entrance": [
-        118.117414,
-        24.44135
-      ],
-      "navi_poiid": "G50F043033_30983",
-      "business_area": [],
-      "website": []
+      "website": "www.xmtzs.cn",
+      "heat_prev": 8
     },
     {
       "id": "s72068149",
@@ -2297,84 +2254,6 @@
       "website": []
     },
     {
-      "id": "s410509ec",
-      "name": "集美沙滩美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "集美沙滩美食街为厦门城内街区，建议游览约一个半小时。",
-      "reason": "可沿街慢走，按需选择餐饮。",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        118.105475,
-        24.565725
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LUBAADDN",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "address": "鳌园路10号",
-      "district": "集美区",
-      "adcode": "350211",
-      "cost": 24,
-      "amap_checked_at": "2026-10-17",
-      "keytag": "美食街",
-      "navi_poiid": [],
-      "business_area": "集美学村",
-      "website": []
-    },
-    {
-      "id": "s06f8c4b9",
-      "name": "前埔不夜城美食广场商业街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 6,
-      "dur": 90,
-      "intro": "前埔不夜城美食广场商业街是厦门城内的一处街区，建议游览九十分钟。",
-      "reason": "沿街逛逛，留意美食广场商业街的店铺。",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        118.171625,
-        24.467775
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0L1JS852F",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.2,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": [],
-      "photo": "https://store.is.autonavi.com/showpic/e4ecb3051bc36bdfe09652153dd8cc8e",
-      "address": "文兴东路34-36号之间前埔不夜城内",
-      "district": "思明区",
-      "adcode": "350203",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/e4ecb3051bc36bdfe09652153dd8cc8e",
-        "https://store.is.autonavi.com/showpic/74199286d48438de0000008639822163?type=pic",
-        "https://store.is.autonavi.com/showpic/25ece374faac09fb0000008639816458?type=pic"
-      ],
-      "amap_checked_at": "2026-10-17",
-      "keytag": "美食街",
-      "navi_poiid": [],
-      "business_area": "前埔",
-      "website": []
-    },
-    {
       "id": "s36d1b9d8",
       "name": "老剧场文化公园",
       "cat": "夜景",
@@ -2544,7 +2423,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/f88ec979eae042be0000003109400404?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/f88ec979eae042be0000003109400404?type=pic",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/f88ec979eae042be0000003109400404?type=pic",
+        "https://store.is.autonavi.com/showpic/222a7011636c3b370000002442952596?type=pic",
+        "https://aos-comment.amap.com/B0L1LCDGFV/comment/content_media_external_file_1000008205_ss__1764898264926_89725059.jpg"
+      ]
     },
     {
       "id": "x2e2b37e0",
@@ -2573,7 +2457,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": [],
-      "photo": "https://store.is.autonavi.com/showpic/47f6031325e7e9cc0000003006972422?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/47f6031325e7e9cc0000003006972422?type=pic",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/47f6031325e7e9cc0000003006972422?type=pic",
+        "https://store.is.autonavi.com/showpic/58a7d2eec71446420000002745908280?type=pic",
+        "https://store.is.autonavi.com/showpic/0f943908bf080e080000004622892614?type=pic"
+      ]
     }
   ]
 }

@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -61,7 +62,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s6ebf71e8",
@@ -70,7 +72,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -112,7 +114,8 @@
       "navi_poiid": "K51F003043_80159",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sfb3f8fcf",
@@ -121,7 +124,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
@@ -163,7 +166,8 @@
       "navi_poiid": "K51F002043_354507",
       "business_area": "湖西路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sbbb8ced2",
@@ -172,7 +176,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -214,7 +218,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s24d90665",
@@ -223,7 +228,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -264,7 +269,8 @@
       "navi_poiid": "K51F001043_73540",
       "business_area": "长春新区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s3a10bcba",
@@ -319,7 +325,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -361,7 +367,8 @@
       "navi_poiid": "K51F003044_71084",
       "business_area": "长影世纪城",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s573580fe",
@@ -371,7 +378,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 120,
       "intro": "历史古迹，在城郊，看半天。",
       "reason": "上午来，人少光线也好",
@@ -413,7 +420,8 @@
       "navi_poiid": "K51F001047_30;202",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sa75740f3",
@@ -460,52 +468,6 @@
       ],
       "navi_poiid": "K51F001043_73539",
       "business_area": "长春新区",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s2e2ada90",
-      "name": "长春历史文化博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "08:30-17:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        125.308926,
-        43.868896
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LRNHL4Z2",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:30",
-      "photo": "https://aos-comment.amap.com/B0LRNHL4Z2/comment/20260316-667cba89655149ce08b12645-1F2In9c922x7xyI95eRDph.jpg",
-      "address": "桂林街道新民大街1002号",
-      "district": "朝阳区",
-      "adcode": "220104",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0LRNHL4Z2/comment/20260316-667cba89655149ce08b12645-1F2In9c922x7xyI95eRDph.jpg",
-        "https://aos-comment.amap.com/B0LRNHL4Z2/comment/content_media_external_images_media_1000052301_ss__1764425767884_67912537.jpg",
-        "https://store.is.autonavi.com/showpic/14782dd1f313d8520000008337328883?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.308222,
-        43.868798
-      ],
-      "navi_poiid": [],
-      "business_area": "新疆街",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1409,99 +1371,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "sd46a37a8",
-      "name": "东北师范大学东北民族民俗博物馆(新城大街)",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        125.403772,
-        43.837609
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFF07KEI",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周二 不开放；周三至周日 09:00-16:00开放；法定节假日 09:00-16:00开放",
-      "tel": "0431-89165518",
-      "photo": "https://aos-comment.amap.com/B0FFF07KEI/comment/5fbe1a470d6c28a3093b86037d318d0a_2048_2048_80.jpg",
-      "address": "经济技术开发区世纪广场卫星路1号",
-      "district": "南关区",
-      "adcode": "220102",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0FFF07KEI/comment/5fbe1a470d6c28a3093b86037d318d0a_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B0FFF07KEI/comment/%5B2025-11-23-07-39-09%5D522AF4F7-AABD-4F41-B33D-3512622C0D8_1763854751083_46515468.jpg",
-        "https://aos-comment.amap.com/B0FFF07KEI/comment/c5a7b0dbbc5abf255acfa0ac94fbd1d4_2048_2048_80.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.404011,
-        43.838525
-      ],
-      "navi_poiid": "K51F002044_74811;230570",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s3c658380",
-      "name": "吉林大学考古与艺术博物馆分馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        125.319962,
-        43.811269
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0IUMSQIPY",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-16:30；节假日营业时间以官方通知为准",
-      "photo": "https://aos-comment.amap.com/B0IUMSQIPY/comment/3dc26782b543c83c777e8d71973e66db_2048_2048_80.jpg",
-      "address": "华弘街111号2-3层",
-      "district": "南关区",
-      "adcode": "220102",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0IUMSQIPY/comment/3dc26782b543c83c777e8d71973e66db_2048_2048_80.jpg",
-        "https://aos-comment.amap.com/B0IUMSQIPY/comment/file_media_Photo_10400_IMG_1760606853_9495_IMG_9495_jpg.jpg",
-        "https://store.is.autonavi.com/showpic/5849974497324a090000001055878259?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.321456,
-        43.811444
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s4bc193a6",
       "name": "大顶子山爬山点",
       "cat": "山水",
@@ -1596,53 +1465,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s09e5d910",
-      "name": "吉林省酒文化博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "08:30-17:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        125.340496,
-        43.828283
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFFA9V0H",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:30",
-      "tel": "0431-88508899",
-      "photo": "https://store.is.autonavi.com/showpic/ccd450b8fc724f450000007462164850?type=pic",
-      "address": "明珠街道亚泰大街9699号",
-      "district": "南关区",
-      "adcode": "220102",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/ccd450b8fc724f450000007462164850?type=pic",
-        "https://store.is.autonavi.com/showpic/1242f1a7dc09b1b90000002467028774?type=pic",
-        "https://store.is.autonavi.com/showpic/768ff99038eb0c9546bea362fc74c693"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.340787,
-        43.828309
-      ],
-      "navi_poiid": "K51F003043_72567",
-      "business_area": "明珠",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s1029fbfc",
       "name": "孔子文化园",
       "cat": "山水",
@@ -1688,53 +1510,6 @@
       ],
       "navi_poiid": "K51F002043_247011",
       "business_area": "东天街",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s743eb37b",
-      "name": "吉林省民间工艺美术馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        125.441934,
-        43.783951
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0G255VKJ8",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-16:00,节假日以官方通知为准",
-      "photo": "https://store.is.autonavi.com/showpic/ceecd4254d391e190000000961678036?type=pic",
-      "address": "福祉大路宝相街66号",
-      "district": "南关区",
-      "adcode": "220102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/ceecd4254d391e190000000961678036?type=pic",
-        "https://store.is.autonavi.com/showpic/9eed5468d922cc4e0000003379524964?type=pic",
-        "https://aos-comment.amap.com/B0G255VKJ8/comment/content_media_external_file_1000018749_ss__1764640150518_29034543.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.441377,
-        43.784128
-      ],
-      "navi_poiid": [],
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1972,53 +1747,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s189def22",
-      "name": "长春雕塑博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 6,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        125.336262,
-        43.819338
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFIXJ483",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.2,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-17:00,节假日以官方通知为准",
-      "tel": "0431-85379019",
-      "photo": "https://store.is.autonavi.com/showpic/8cfa6bb2822db4210000003039652936?type=pic",
-      "address": "人民大街9518号长春世界雕塑园(东南角)",
-      "district": "南关区",
-      "adcode": "220102",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/8cfa6bb2822db4210000003039652936?type=pic",
-        "https://store.is.autonavi.com/showpic/df2ff284263ae9200000002402392875",
-        "https://aos-comment.amap.com/B0FFIXJ483/comment/file_media_Photo_3345_IMG_1772234302_476_902e2e14357c10df4ad3842996485c26_jp_1772234465030_22571117.jpg"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        125.337525,
-        43.820041
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sf270ed76",
       "name": "北海湿地公园",
       "cat": "山水",
@@ -2167,7 +1895,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
@@ -2209,7 +1937,8 @@
       "navi_poiid": "K51F002043_30362;30363",
       "business_area": "伪满皇宫博物院",
       "website": "www.wmhg.com.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     }
   ]
 }

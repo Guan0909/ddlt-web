@@ -4,28 +4,28 @@
   "compositionBefore": {
     "byCat": {
       "夜景": 4,
-      "亲子": 6,
+      "亲子": 7,
       "古迹": 9,
       "博物馆": 10,
       "街区": 10,
-      "古镇": 6,
-      "演出": 3,
-      "商圈": 3,
-      "美食": 5,
-      "公园": 10,
+      "古镇": 8,
+      "演出": 1,
+      "商圈": 2,
+      "美食": 3,
+      "公园": 6,
       "山水": 4
     },
     "byGroup": {
-      "core": 29,
-      "night": 7,
-      "family": 6,
+      "core": 31,
+      "night": 5,
+      "family": 7,
       "street": 10,
-      "food": 5,
-      "park": 10,
-      "mall": 3,
-      "total": 70,
+      "food": 3,
+      "park": 6,
+      "mall": 2,
+      "total": 64,
       "suburb": 17,
-      "coreRatio": 51
+      "coreRatio": 56
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "waitan",
       "name": "外滩",
       "cat": "夜景",
-      "heat": 10,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -44,7 +44,7 @@
       "id": "disney",
       "name": "上海迪士尼度假区",
       "cat": "亲子",
-      "heat": 10,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -55,7 +55,7 @@
       "id": "yuyuan",
       "name": "上海豫园",
       "cat": "古迹",
-      "heat": 9.5,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -66,7 +66,7 @@
       "id": "shanghai-museum",
       "name": "上海博物馆(人民广场馆)",
       "cat": "博物馆",
-      "heat": 9.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -77,7 +77,7 @@
       "id": "nanjing-road",
       "name": "南京路步行街",
       "cat": "街区",
-      "heat": 9,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -88,7 +88,7 @@
       "id": "wukang-road",
       "name": "武康路·武康大楼",
       "cat": "街区",
-      "heat": 9,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -99,7 +99,7 @@
       "id": "lujiazui",
       "name": "滨江大道",
       "cat": "夜景",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -110,7 +110,7 @@
       "id": "zhujiajiao",
       "name": "上海朱家角古镇旅游区",
       "cat": "古镇",
-      "heat": 8.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -121,7 +121,7 @@
       "id": "natural-history-museum",
       "name": "上海自然博物馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -130,9 +130,9 @@
     },
     {
       "id": "astronomy-museum",
-      "name": "上海天文馆",
+      "name": "上海天文馆(上海科技馆分馆)",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -143,7 +143,7 @@
       "id": "tianzifang",
       "name": "田子坊美术馆",
       "cat": "街区",
-      "heat": 8,
+      "heat": 6,
       "rating": 4.2,
       "level": null,
       "score": 0.28,
@@ -152,19 +152,8 @@
     },
     {
       "id": "xintiandi",
-      "name": "新天地",
+      "name": "新天地广场",
       "cat": "街区",
-      "heat": 8,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "chenghuangmiao",
-      "name": "城隍庙·豫园商城",
-      "cat": "古迹",
       "heat": 8,
       "rating": 4.8,
       "level": null,
@@ -187,7 +176,7 @@
       "id": "china-art-museum",
       "name": "上海美术馆(中华艺术宫)",
       "cat": "博物馆",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -198,7 +187,7 @@
       "id": "wild-animal-park",
       "name": "上海野生动物园",
       "cat": "亲子",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -209,12 +198,12 @@
       "id": "shanghai-zoo",
       "name": "上海动物园",
       "cat": "亲子",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
       "heatNew": 8,
-      "why": "评分 4.8 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "ocean-aquarium",
@@ -225,7 +214,7 @@
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "haichang-ocean",
@@ -236,24 +225,24 @@
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "happy-valley-sh",
       "name": "上海欢乐谷",
       "cat": "亲子",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
       "heatNew": 8,
-      "why": "评分 4.8 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "shanghai-grand-theatre",
       "name": "上海大剧院",
       "cat": "演出",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -264,7 +253,7 @@
       "id": "qiantan-taikoo",
       "name": "前滩太古里",
       "cat": "商圈",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -272,9 +261,53 @@
       "why": "知名地标（必留名单）"
     },
     {
+      "id": "anfu-road",
+      "name": "武康路历史文化名街",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "north-bund",
-      "name": "北外滩滨江",
+      "name": "北外滩国客中心",
       "cat": "夜景",
+      "heat": 7,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "century-park",
+      "name": "上海世纪公园",
+      "cat": "公园",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "gongqing-forest",
+      "name": "上海共青森林公园",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "twin-hills",
+      "name": "世博文化公园·双子山",
+      "cat": "公园",
       "heat": 7,
       "rating": 4.7,
       "level": null,
@@ -283,10 +316,21 @@
       "why": "知名地标（必留名单）"
     },
     {
-      "id": "twin-hills",
-      "name": "世博文化公园·双子山",
+      "id": "shanghai-botanical",
+      "name": "上海植物园",
       "cat": "公园",
-      "heat": 7.5,
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "chenshan-botanical",
+      "name": "上海辰山植物园",
+      "cat": "公园",
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -297,7 +341,7 @@
       "id": "qibao",
       "name": "七宝古镇",
       "cat": "古镇",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -319,23 +363,23 @@
       "id": "guyi-garden",
       "name": "上海古猗园",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "xinchang",
       "name": "新场古镇",
       "cat": "古镇",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "fengjing",
@@ -352,7 +396,7 @@
       "id": "zhaojialou",
       "name": "召稼楼古镇(暂停开放)",
       "cat": "古镇",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -363,18 +407,18 @@
       "id": "sheshan",
       "name": "上海佘山国家森林公园",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "dianshan-lake",
-      "name": "淀山湖·彩虹桥",
+      "name": "淀山湖彩虹桥·团建拓展·天幕烧烤露营地",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -383,9 +427,9 @@
     },
     {
       "id": "chongming-dongtan",
-      "name": "崇明东滩湿地",
+      "name": "上海东滩湿地公园",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -395,18 +439,18 @@
       "id": "jinshan-beach",
       "name": "金山城市沙滩",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7,
-      "why": "评分 4.5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "longhua-temple",
       "name": "龙华寺",
       "cat": "古迹",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -417,7 +461,7 @@
       "id": "jade-buddha-temple",
       "name": "玉佛禅寺",
       "cat": "古迹",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -426,31 +470,31 @@
     },
     {
       "id": "st-ignatius",
-      "name": "徐家汇天主堂",
+      "name": "上海徐家汇源",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "zuibaichi",
       "name": "上海醉白池公园",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "guangfulin",
       "name": "上海广富林文化遗址",
       "cat": "古迹",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -459,7 +503,7 @@
     },
     {
       "id": "shanghai-history-museum",
-      "name": "上海历史博物馆",
+      "name": "上海市历史博物馆",
       "cat": "博物馆",
       "heat": 7,
       "rating": 4.7,
@@ -472,7 +516,7 @@
       "id": "expo-museum",
       "name": "上海世博会博物馆",
       "cat": "博物馆",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -483,7 +527,7 @@
       "id": "long-museum",
       "name": "龙美术馆（西岸馆）",
       "cat": "博物馆",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -494,7 +538,7 @@
       "id": "museum-of-art-pudong",
       "name": "浦东美术馆",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -505,7 +549,7 @@
       "id": "sihang",
       "name": "上海四行仓库抗战纪念馆",
       "cat": "博物馆",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -516,7 +560,7 @@
       "id": "site-of-first-congress",
       "name": "中共一大纪念馆一大广场",
       "cat": "博物馆",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -524,30 +568,86 @@
       "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
-      "id": "huaihai-road",
-      "name": "淮海中路",
-      "cat": "商圈",
-      "heat": 7.5,
-      "rating": null,
+      "id": "nf945da4b",
+      "name": "东方明珠广播电视塔",
+      "cat": "夜景",
+      "heat": 9,
+      "rating": 4.8,
+      "level": "national",
+      "score": 0.77,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nf9f628dc",
+      "name": "上海徐家汇源",
+      "cat": "街区",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "n793a84b9",
+      "name": "嘉定州桥景区",
+      "cat": "古镇",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "n34b5e707",
+      "name": "东方绿舟",
+      "cat": "亲子",
+      "heat": 8,
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "n1a16117c",
+      "name": "外白渡桥",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.8,
+      "level": "province",
+      "score": 0.67,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "x6eeab7ad",
+      "name": "七宝老街",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.7,
       "level": null,
-      "score": null,
-      "heatNew": null
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "xujiahui",
       "name": "徐家汇商圈",
       "cat": "商圈",
       "heat": 7,
-      "rating": null,
+      "rating": 4.7,
       "level": null,
-      "score": null,
-      "heatNew": null
+      "score": 0.48,
+      "heatNew": 7
     },
     {
       "id": "wujiang-road",
-      "name": "吴江路小吃街",
+      "name": "吴江路美食街",
       "cat": "美食",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -555,7 +655,7 @@
     },
     {
       "id": "huanghe-road",
-      "name": "黄河路美食街",
+      "name": "黄河路美食休闲街",
       "cat": "美食",
       "heat": 7,
       "rating": 4.6,
@@ -565,29 +665,19 @@
     },
     {
       "id": "yunnan-road",
-      "name": "云南南路美食街",
+      "name": "黄河路美食休闲街",
       "cat": "美食",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7
     },
     {
-      "id": "changli-road",
-      "name": "昌里路夜市",
-      "cat": "美食",
-      "heat": 6,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
       "id": "columbia-circle",
       "name": "上生新所",
       "cat": "街区",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
@@ -597,7 +687,7 @@
       "id": "zhangyuan",
       "name": "张园",
       "cat": "街区",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -605,223 +695,38 @@
     },
     {
       "id": "sinan",
-      "name": "思南公馆",
+      "name": "思南公馆商业街",
       "cat": "街区",
       "heat": 7,
-      "rating": 4.7,
+      "rating": 4.6,
       "level": null,
-      "score": 0.48,
+      "score": 0.44,
       "heatNew": 7
     },
     {
       "id": "old-millfun",
       "name": "1933老场坊",
       "cat": "街区",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.6,
       "level": "province",
       "score": 0.59,
       "heatNew": 8
     },
     {
-      "id": "anfu-road",
-      "name": "安福路",
-      "cat": "街区",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "yuyuan-road",
-      "name": "愚园路",
-      "cat": "街区",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "century-park",
-      "name": "上海世纪公园",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.8,
-      "level": "national",
-      "score": 0.77,
-      "heatNew": 9
-    },
-    {
-      "id": "gongqing-forest",
-      "name": "上海共青森林公园",
-      "cat": "公园",
-      "heat": 7,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
       "id": "fuxing-park",
       "name": "复兴公园",
       "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "shanghai-botanical",
-      "name": "上海植物园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    },
-    {
-      "id": "chenshan-botanical",
-      "name": "上海辰山植物园",
-      "cat": "公园",
-      "heat": 7.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
-    }
-  ],
-  "drop": [
-    {
-      "id": "era-circus",
-      "name": "上海马戏城《时空之旅》",
-      "cat": "演出",
-      "heat": 7.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "演出/体验类，非地理地点"
-    },
-    {
-      "id": "sleep-no-more",
-      "name": "《不眠之夜》沉浸式戏剧",
-      "cat": "演出",
       "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "演出/体验类，非地理地点"
-    },
-    {
-      "id": "huangpu-cruise",
-      "name": "申城之光黄浦江游船",
-      "cat": "夜景",
-      "heat": 7.5,
-      "rating": 3.7,
-      "level": null,
-      "score": 0.08,
-      "heatNew": 5,
-      "why": "评分 3.7 < 4.0"
-    },
-    {
-      "id": "korea-street",
-      "name": "虹泉路韩国街",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "类目配额（美食 ≤4）且评分靠后/无评分"
-    },
-    {
-      "id": "gucun-park",
-      "name": "顾村公园",
-      "cat": "公园",
-      "heat": 6.5,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "binjiang-forest",
-      "name": "上海滨江森林公园二期",
-      "cat": "公园",
-      "heat": 6,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "qingxi-country-park",
-      "name": "青西郊野公园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "dongping-forest",
-      "name": "东平国家森林公园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
+      "heatNew": 7
     }
   ],
+  "drop": [],
   "manual": [],
   "add": [
-    {
-      "name": "东方明珠广播电视塔",
-      "coord": [
-        121.499718,
-        31.239703
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.8,
-      "level": "national",
-      "score": 0.77,
-      "heat": 9
-    },
-    {
-      "name": "北外滩国客中心",
-      "coord": [
-        121.500758,
-        31.247719
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
-    {
-      "name": "上海徐家汇源",
-      "coord": [
-        121.436763,
-        31.195898
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
     {
       "name": "金茂大厦88层观光厅",
       "coord": [
@@ -847,18 +752,6 @@
       "heat": 8
     },
     {
-      "name": "嘉定州桥景区",
-      "coord": [
-        121.25015,
-        31.385091
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
-    },
-    {
       "name": "上海方塔园",
       "coord": [
         121.246499,
@@ -869,345 +762,36 @@
       "level": "national",
       "score": 0.69,
       "heat": 8
-    },
-    {
-      "name": "东方绿舟",
-      "coord": [
-        121.01497,
-        31.100305
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heat": 8
-    },
-    {
-      "name": "外白渡桥",
-      "coord": [
-        121.49006,
-        31.242896
-      ],
-      "type": "风景名胜;风景名胜;省级景点|地名地址信息;交通地名;桥",
-      "rating": 4.8,
-      "level": "province",
-      "score": 0.67,
-      "heat": 8
     }
   ],
   "heatChanges": [
     {
-      "id": "waitan",
-      "name": "外滩",
-      "from": 10,
-      "to": 8
-    },
-    {
-      "id": "disney",
-      "name": "上海迪士尼度假区",
-      "from": 10,
-      "to": 8
-    },
-    {
-      "id": "yuyuan",
-      "name": "上海豫园",
-      "from": 9.5,
-      "to": 9
-    },
-    {
-      "id": "shanghai-museum",
-      "name": "上海博物馆(人民广场馆)",
-      "from": 9.5,
-      "to": 7
-    },
-    {
-      "id": "nanjing-road",
-      "name": "南京路步行街",
-      "from": 9,
-      "to": 8
-    },
-    {
-      "id": "wukang-road",
-      "name": "武康路·武康大楼",
-      "from": 9,
-      "to": 8
-    },
-    {
-      "id": "lujiazui",
-      "name": "滨江大道",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "zhujiajiao",
-      "name": "上海朱家角古镇旅游区",
-      "from": 8.5,
-      "to": 9
-    },
-    {
-      "id": "natural-history-museum",
-      "name": "上海自然博物馆",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "astronomy-museum",
-      "name": "上海天文馆",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "tianzifang",
-      "name": "田子坊美术馆",
-      "from": 8,
-      "to": 6
-    },
-    {
-      "id": "china-art-museum",
-      "name": "上海美术馆(中华艺术宫)",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "wild-animal-park",
-      "name": "上海野生动物园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "shanghai-zoo",
-      "name": "上海动物园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "happy-valley-sh",
-      "name": "上海欢乐谷",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "era-circus",
-      "name": "上海马戏城《时空之旅》",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "shanghai-grand-theatre",
-      "name": "上海大剧院",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "qiantan-taikoo",
-      "name": "前滩太古里",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "yunnan-road",
-      "name": "云南南路美食街",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "wujiang-road",
-      "name": "吴江路小吃街",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "old-millfun",
-      "name": "1933老场坊",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "columbia-circle",
-      "name": "上生新所",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "zhangyuan",
-      "name": "张园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "huangpu-cruise",
-      "name": "申城之光黄浦江游船",
-      "from": 7.5,
-      "to": 5
-    },
-    {
-      "id": "century-park",
-      "name": "上海世纪公园",
+      "id": "north-bund",
+      "name": "北外滩国客中心",
       "from": 7,
       "to": 9
-    },
-    {
-      "id": "gongqing-forest",
-      "name": "上海共青森林公园",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "twin-hills",
-      "name": "世博文化公园·双子山",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "fuxing-park",
-      "name": "复兴公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "shanghai-botanical",
-      "name": "上海植物园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "chenshan-botanical",
-      "name": "上海辰山植物园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "gucun-park",
-      "name": "顾村公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "binjiang-forest",
-      "name": "上海滨江森林公园二期",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "qingxi-country-park",
-      "name": "青西郊野公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "dongping-forest",
-      "name": "东平国家森林公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "qibao",
-      "name": "七宝古镇",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "guyi-garden",
-      "name": "上海古猗园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "xinchang",
-      "name": "新场古镇",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "zhaojialou",
-      "name": "召稼楼古镇(暂停开放)",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "sheshan",
-      "name": "上海佘山国家森林公园",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "dianshan-lake",
-      "name": "淀山湖·彩虹桥",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "chongming-dongtan",
-      "name": "崇明东滩湿地",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "jinshan-beach",
-      "name": "金山城市沙滩",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "longhua-temple",
-      "name": "龙华寺",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "jade-buddha-temple",
-      "name": "玉佛禅寺",
-      "from": 7,
-      "to": 8
     },
     {
       "id": "st-ignatius",
-      "name": "徐家汇天主堂",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "zuibaichi",
-      "name": "上海醉白池公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "guangfulin",
-      "name": "上海广富林文化遗址",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "expo-museum",
-      "name": "上海世博会博物馆",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "long-museum",
-      "name": "龙美术馆（西岸馆）",
+      "name": "上海徐家汇源",
       "from": 7,
-      "to": 8
-    },
-    {
-      "id": "museum-of-art-pudong",
-      "name": "浦东美术馆",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "sihang",
-      "name": "上海四行仓库抗战纪念馆",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "site-of-first-congress",
-      "name": "中共一大纪念馆一大广场",
-      "from": 7.5,
-      "to": 7
+      "to": 9
     }
   ],
-  "duplicates": []
+  "duplicates": [
+    {
+      "name": "黄河路美食休闲街",
+      "ids": [
+        "huanghe-road",
+        "yunnan-road"
+      ]
+    },
+    {
+      "name": "上海徐家汇源",
+      "ids": [
+        "st-ignatius",
+        "nf9f628dc"
+      ]
+    }
+  ]
 }

@@ -9,59 +9,10 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
-    {
-      "id": "sc6038957",
-      "name": "新疆国际大巴扎",
-      "cat": "商圈",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 60,
-      "intro": "商圈，在城内，顺路逛一小时。",
-      "reason": "傍晚人多，早点来",
-      "open": "09:00-24:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        87.617977,
-        43.780006
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03DF05V5I",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-24:00",
-      "tel": "0991-8555480",
-      "photo": "http://store.is.autonavi.com/showpic/0fbaa36d8ce8de891efb62590c367603",
-      "address": "解放南路518号",
-      "district": "天山区",
-      "adcode": "650102",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/0fbaa36d8ce8de891efb62590c367603",
-        "http://store.is.autonavi.com/showpic/0905c734d9ccbe77b55d599daa4a24f8",
-        "http://store.is.autonavi.com/showpic/79ee7dcd33574c8ab3da6f18bf5b5094"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        87.619022,
-        43.779871
-      ],
-      "navi_poiid": "K45F003029_7502",
-      "business_area": "团结路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
     {
       "id": "sc3bc0d02",
       "name": "水磨沟风景区",
@@ -69,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -110,7 +61,8 @@
       "navi_poiid": "K45F003030_166459;579;3506",
       "business_area": "水磨沟风景区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s3817aad8",
@@ -261,7 +213,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -303,7 +255,8 @@
       "navi_poiid": "K45F003029_7969",
       "business_area": "东门",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s06a99c51",
@@ -312,7 +265,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -352,7 +305,8 @@
       "navi_poiid": "K45F003029_8454;118470;120399;119252",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s739c893c",
@@ -538,52 +492,6 @@
       ],
       "navi_poiid": "K45F003029_121580",
       "business_area": "新民路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s9db570b4",
-      "name": "北京路中和美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "09:00-21:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        87.568786,
-        43.853231
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B03DF0SIXO",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-21:00",
-      "photo": "https://aos-comment.amap.com/B03DF0SIXO/comment/87a8e1f1a7243e0282044fffebe85a3d_2048_2048_80.jpg",
-      "address": "北京路街道北京南路499号",
-      "district": "新市区",
-      "adcode": "650104",
-      "cost": 49,
-      "photos": [
-        "https://aos-comment.amap.com/B03DF0SIXO/comment/87a8e1f1a7243e0282044fffebe85a3d_2048_2048_80.jpg",
-        "https://store.is.autonavi.com/showpic/a00768d60874af316fd4465bb97a74bd",
-        "https://aos-comment.amap.com/B03DF0SIXO/comment/3323d28d-e2a7-4a7e-92de-1127a8dbab1c.png"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        87.568955,
-        43.853216
-      ],
-      "navi_poiid": "K45F002029_76925",
-      "business_area": "北京路",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -1109,100 +1017,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s231f329a",
-      "name": "南湖村好吃美食街夜市",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        87.616417,
-        43.818161
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KD05Y4JH",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "18109912555",
-      "photo": "https://aos-comment.amap.com/B0KD05Y4JH/comment/content_media_external_file_1000010666_ss__1756442792012_12096226.jpg",
-      "address": "乌鲁木齐市水磨沟区南湖南路东二巷",
-      "district": "水磨沟区",
-      "adcode": "650105",
-      "cost": 51,
-      "photos": [
-        "https://aos-comment.amap.com/B0KD05Y4JH/comment/content_media_external_file_1000010666_ss__1756442792012_12096226.jpg",
-        "https://aos-comment.amap.com/B0KD05Y4JH/comment/8DB705CB_835B_46CF_A010_2BAB91A42CD5_L0_001_1290_150_1759656955814_21922075.jpg",
-        "https://aos-comment.amap.com/B0KD05Y4JH/comment/content_media_external_file_1000010667_ss__1756442792012_19352413.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        87.616154,
-        43.818209
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s8cbf8ca7",
-      "name": "上城UPtown美食街区",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        87.577475,
-        43.867206
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0KAO6KJE3",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "13079993111",
-      "photo": "https://store.is.autonavi.com/showpic/b58449b29368d5b027ef159b70551667",
-      "address": "上城UP地图不存在",
-      "district": "新市区",
-      "adcode": "650104",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/b58449b29368d5b027ef159b70551667",
-        "https://aos-comment.amap.com/B0KAO6KJE3/comment/content_media_external_file_1000000156_ss__1761220858244_90727605.jpg",
-        "https://aos-comment.amap.com/B0KAO6KJE3/comment/content_media_external_file_39201_ss__1769886554920_62405417.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        87.577138,
-        43.867153
-      ],
-      "navi_poiid": [],
-      "business_area": "天津路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s83d68f50",
       "name": "壹号街",
       "cat": "街区",
@@ -1485,54 +1299,6 @@
       ],
       "navi_poiid": [],
       "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s6f3e561b",
-      "name": "新疆活体昆虫博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "11:00-19:30",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        87.55507,
-        43.888209
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0HKJSZDSV",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周五 11:00-19:00 最晚进入18:00；周六至周日 11:00-19:30 最晚进入18:30",
-      "tel": "0991-6660716;13579933201",
-      "photo": "https://aos-comment.amap.com/B0HKJSZDSV/comment/content_media_external_file_1000099120_ss__1754228425854_44112313.jpg",
-      "address": "植物园内",
-      "district": "新市区",
-      "adcode": "650104",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://aos-comment.amap.com/B0HKJSZDSV/comment/content_media_external_file_1000099120_ss__1754228425854_44112313.jpg",
-        "https://aos-comment.amap.com/B0HKJSZDSV/comment/187cedf4-accd-49f3-949a-0065519ceae9.png",
-        "https://store.is.autonavi.com/showpic/bde5e6c0198652a00000002928702448?type=pic"
-      ],
-      "keytag": "动物博物馆",
-      "entrance": [
-        87.556227,
-        43.888371
-      ],
-      "navi_poiid": [],
-      "business_area": "二宫体育馆",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

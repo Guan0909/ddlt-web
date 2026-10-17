@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "象鼻山景区位于桂林城内，属山水类景区，建议游览三小时，评分四点八。",
       "reason": "建议放慢脚步，静看山水景致。",
@@ -60,7 +61,8 @@
       "navi_poiid": "G49F033019_20789;923",
       "business_area": [],
       "website": "www.glxbs.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sce81cf48",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "两江四湖景区是桂林城内的山水类景区，建议游览约三小时。",
       "reason": "宜沿湖慢行，安静感受山水城景。",
@@ -111,7 +113,8 @@
       "navi_poiid": "G49F033019_42357",
       "business_area": "中山中路",
       "website": "www.glljsh.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s56ce9448",
@@ -120,7 +123,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "独秀峰·王城景区位于桂林城内，属山水类景区，建议游览三小时左右。",
       "reason": "建议从容游赏，慢品山水与城景。",
@@ -162,57 +165,8 @@
       "navi_poiid": "G49F033019_15826;18965;15900;29795",
       "business_area": "正阳",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s3ab6fdb8",
-      "name": "穿山景区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "穿山景区是桂林城内的山水类景点，建议游览时长约三小时。",
-      "reason": "放慢节奏，按三小时从容游览。",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        110.304191,
-        25.251983
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0305001D2",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/79a00f7b2ddd5db0f8885de7436b3d47",
-      "address": "穿山小街55号",
-      "district": "七星区",
-      "adcode": "450305",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/79a00f7b2ddd5db0f8885de7436b3d47",
-        "http://store.is.autonavi.com/showpic/df8ea6b96a76d0adeba3741e566be0d7",
-        "http://store.is.autonavi.com/showpic/7a366a1ed87476be0e46454d6903785c"
-      ],
-      "a_level": "4A",
-      "keytag": "名山丘陵",
-      "entrance": [
-        110.301736,
-        25.251629
-      ],
-      "navi_poiid": "G49F033019_754",
-      "business_area": "穿山景区",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s7f76d174",
@@ -222,7 +176,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "阳朔漓江景区是桂林的山水类景区，位于城郊，建议游览约三小时。",
       "reason": "适合放慢节奏，静看山水。",
@@ -262,7 +216,8 @@
       "navi_poiid": "G49F037021_472",
       "business_area": "兴坪古镇",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s608aeeca",
@@ -319,7 +274,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "芦笛岩是桂林城内的一处山水景点，建议安排约三个小时游览。",
       "reason": "放慢节奏游览，留意山水景致。",
@@ -361,7 +316,8 @@
       "navi_poiid": "G49F033019_907",
       "business_area": "芦笛景区",
       "website": "www.glludiyan.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s295278dc",
@@ -370,7 +326,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "叠彩山是位于桂林城内的山水类景点，游览时间约三个小时。",
       "reason": "沿步道缓行，按体力安排停留。",
@@ -412,7 +368,8 @@
       "navi_poiid": "G49F033019_105654;941",
       "business_area": "中山北路",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sf41a99b0",
@@ -421,7 +378,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "桂林尧山景区是一处山水类景点，位于城内，建议游览三小时。",
       "reason": "建议预留三小时，缓步游览，感受山水。",
@@ -462,7 +419,8 @@
       "navi_poiid": "G49F033019_850",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s0b6f7dc5",
@@ -472,7 +430,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "世外桃源是桂林城郊的一处山水景点，建议游览三小时左右。",
       "reason": "宜放慢脚步，安静看山水。",
@@ -514,7 +472,8 @@
       "navi_poiid": "G49F038020_2",
       "business_area": [],
       "website": "www.niceview.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s7853517e",
@@ -523,7 +482,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "广西桂林国家森林公园属山水类景点，位于城内，建议游览约三小时。",
       "reason": "放慢脚步，安静感受山水与林木。",
@@ -564,7 +523,8 @@
       "navi_poiid": "G49F034018_357",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s364a502a",
@@ -573,7 +533,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "芦笛景区是桂林城内的一处山水景点，适合安排约三个小时游览。",
       "reason": "沿水慢行，随走随看，不必赶路。",
@@ -615,7 +575,8 @@
       "navi_poiid": [],
       "business_area": "芦笛景区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sa76192c3",
@@ -624,7 +585,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "鲁家村是桂林城内的一处山水景点，适合安排约三小时游览。",
       "reason": "沿水边慢行，留意山色变化即可。",
@@ -665,7 +626,8 @@
       "navi_poiid": [],
       "business_area": "桃花江",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s9f388dbb",
@@ -674,7 +636,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "七星景区是桂林城内的山水类景区，建议安排约三个小时游览。",
       "reason": "可放慢节奏，分段游览，留出休息时间。",
@@ -716,7 +678,8 @@
       "navi_poiid": "G49F033019_480",
       "business_area": "七星公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s5128ef35",
@@ -726,7 +689,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "东漓古村景区位于桂林城郊，是一处古镇类景点，建议游览三小时左右。",
       "reason": "建议放慢节奏，从容游览不必赶。",
@@ -768,7 +731,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s221253b2",
@@ -777,7 +741,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "刘三姐大观园是桂林城内一处山水类景点，建议游览三小时。",
       "reason": "宜从容游览，感受山水景致。",
@@ -819,7 +783,8 @@
       "navi_poiid": "G49F033019_22446;104931",
       "business_area": "西山公园",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sdad94e78",
@@ -829,7 +794,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 210,
       "intro": "适合带娃的景点，在城郊，排一整个上午。",
       "reason": "开门就到，午后孩子容易累",
@@ -871,7 +836,8 @@
       "navi_poiid": "G49F036019_4",
       "business_area": [],
       "website": "www.yuzile.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s5a5827c3",
@@ -1350,54 +1316,6 @@
       ],
       "navi_poiid": "G49F033019_29480",
       "business_area": "中山南路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s76de3f6b",
-      "name": "伏波山景区",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "伏波山景区位于桂林城内，是公园类景点，建议游览九十分钟。",
-      "reason": "可放缓节奏，按建议时长从容走完。",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        110.303848,
-        25.283391
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B030501FFB",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "4月-10月:7:00-18:30,11月-次年3月:7:00-18:00",
-      "tel": "0773-7594192",
-      "photo": "http://store.is.autonavi.com/showpic/ddef6f879cddbc70a9aa0521bb40a980",
-      "address": "滨江路27号",
-      "district": "叠彩区",
-      "adcode": "450303",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/ddef6f879cddbc70a9aa0521bb40a980",
-        "http://store.is.autonavi.com/showpic/198d5309630bbe051bbfd72c4e843b2c",
-        "http://store.is.autonavi.com/showpic/beb19682e7d4e8d9a3aa2df86a95e441"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        110.303603,
-        25.282436
-      ],
-      "navi_poiid": "G49F033019_933;105011",
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2174,7 +2092,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -2217,7 +2135,8 @@
       "navi_poiid": "G49F027018_101",
       "business_area": [],
       "website": "www.amongjia.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "x799f2b7e",
@@ -2248,7 +2167,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00；兴坪码头竹筏体验参考时间:09:00-16:30",
-      "photo": "http://store.is.autonavi.com/showpic/6e9fcd7bf9b29f195f1780dc03b261f6"
+      "photo": "http://store.is.autonavi.com/showpic/6e9fcd7bf9b29f195f1780dc03b261f6",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6e9fcd7bf9b29f195f1780dc03b261f6",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/d6de02ea-68ba-4388-9dbb-e1e2de9bd2c0.jpg",
+        "http://store.is.autonavi.com/showpic/65b8ce64a7f5d5baad6adc8b83683405"
+      ]
     },
     {
       "id": "xca864d7a",
@@ -2279,7 +2203,12 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 08:00-17:00",
-      "photo": "http://store.is.autonavi.com/showpic/c1a91f0d5d1d498e838a90a5e7bd225c"
+      "photo": "http://store.is.autonavi.com/showpic/c1a91f0d5d1d498e838a90a5e7bd225c",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c1a91f0d5d1d498e838a90a5e7bd225c",
+        "http://store.is.autonavi.com/showpic/025085d5e9aa5e12cf12eefc482bf825",
+        "http://store.is.autonavi.com/showpic/6a31adf141b92449d2307d25b5e522e4"
+      ]
     },
     {
       "id": "x963c6f17",
@@ -2311,7 +2240,12 @@
       "note": "标志性景点补录",
       "open_text": "周一至周日 08:30-12:00,14:00-18:00",
       "tel": "0773-2886666",
-      "photo": "https://store.is.autonavi.com/showpic/20b5fee167ffae22b02c4e27b62d5b4d"
+      "photo": "https://store.is.autonavi.com/showpic/20b5fee167ffae22b02c4e27b62d5b4d",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/20b5fee167ffae22b02c4e27b62d5b4d",
+        "https://store.is.autonavi.com/showpic/58e30f6c4da107bae88bdf74e8ad8524",
+        "https://aos-comment.amap.com/B0FFFOTYB5/comment/D562A6D4_2BED_43BB_8788_C785133CA9DC_L0_001_1500_200_1768111651379_81451119.jpg"
+      ]
     }
   ]
 }

@@ -1,0 +1,548 @@
+{
+  "city": "开封",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 22,
+      "古迹": 9,
+      "博物馆": 3,
+      "街区": 5,
+      "公园": 4
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 0,
+      "family": 0,
+      "street": 5,
+      "food": 0,
+      "park": 4,
+      "mall": 0,
+      "total": 43,
+      "suburb": 2,
+      "coreRatio": 79
+    }
+  },
+  "keep": [
+    {
+      "id": "s6b5dfeda",
+      "name": "清明上河园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s7293cd49",
+      "name": "万岁山武侠城",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s1bcfeca2",
+      "name": "开封府",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sc45e4145",
+      "name": "中国翰园碑林",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s27015ef8",
+      "name": "龙亭景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s6c1d382a",
+      "name": "铁塔景区",
+      "cat": "古迹",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2e28a026",
+      "name": "开封博物馆",
+      "cat": "博物馆",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "评分 4.8 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s442b9f86",
+      "name": "天波杨府",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "se58fa901",
+      "name": "黄河湾风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "se66af62b",
+      "name": "朱仙镇启封故园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s28f54f4b",
+      "name": "皇宋大观文化园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s39e9fff9",
+      "name": "大宋汴河",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se8746943",
+      "name": "大相国寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s86273eb0",
+      "name": "开封城墙",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s75d78c49",
+      "name": "王婆说媒",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se9c6f910",
+      "name": "包公祠",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf38cbea6",
+      "name": "宋都皇城旅游度假区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2f07abd6",
+      "name": "大梁门",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s66aa5e83",
+      "name": "大宋校场",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s69566723",
+      "name": "延庆观",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scaed3d35",
+      "name": "开封银滩",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s5141a7c0",
+      "name": "山陕甘会馆",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s127b9929",
+      "name": "三打祝家庄",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s2fb4a958",
+      "name": "繁塔景区",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "scef36a5e",
+      "name": "包公湖",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sa7332bff",
+      "name": "汴梁小宋城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s999d38f3",
+      "name": "东大寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s00d45c84",
+      "name": "宋都御街",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sb2f4f6ec",
+      "name": "普济寺",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s984789c7",
+      "name": "开封市地下战备粮库",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s79f1f17b",
+      "name": "北宋东京城顺天门遗址博物馆",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s15fe59a3",
+      "name": "开封国家森林公园",
+      "cat": "山水",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sd2b5ea54",
+      "name": "磐石庙",
+      "cat": "古迹",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "s36b07ae7",
+      "name": "焦裕禄纪念园",
+      "cat": "博物馆",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sff46cee4",
+      "name": "新河大夜市",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s9aadd85f",
+      "name": "鼓楼夜市",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "s3aa44e7c",
+      "name": "西司广场夜市",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "sc5e43b16",
+      "name": "山货店街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s9cad8ae0",
+      "name": "上河城小吃街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s9ab00c04",
+      "name": "禹王台公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s67eb1d8f",
+      "name": "金明广场",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "sf6b2f445",
+      "name": "城墙公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.2,
+      "level": null,
+      "score": 0.28,
+      "heatNew": 6
+    },
+    {
+      "id": "sbea48118",
+      "name": "开封市好人公园",
+      "cat": "公园",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "s6b5dfeda",
+      "name": "清明上河园",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s7293cd49",
+      "name": "万岁山武侠城",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s1bcfeca2",
+      "name": "开封府",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sc45e4145",
+      "name": "中国翰园碑林",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s27015ef8",
+      "name": "龙亭景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s6c1d382a",
+      "name": "铁塔景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s442b9f86",
+      "name": "天波杨府",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "se58fa901",
+      "name": "黄河湾风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "se66af62b",
+      "name": "朱仙镇启封故园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s28f54f4b",
+      "name": "皇宋大观文化园",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -1,0 +1,583 @@
+{
+  "city": "宜昌",
+  "date": "2026-10-17",
+  "compositionBefore": {
+    "byCat": {
+      "山水": 28,
+      "古迹": 3,
+      "公园": 5,
+      "博物馆": 2,
+      "亲子": 1,
+      "街区": 2,
+      "古镇": 1,
+      "夜景": 1
+    },
+    "byGroup": {
+      "core": 34,
+      "night": 1,
+      "family": 1,
+      "street": 2,
+      "food": 0,
+      "park": 5,
+      "mall": 0,
+      "total": 43,
+      "suburb": 16,
+      "coreRatio": 81
+    }
+  },
+  "keep": [
+    {
+      "id": "sbe5252ec",
+      "name": "三峡大坝旅游区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s56cc657c",
+      "name": "三峡人家风景区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sb7850f67",
+      "name": "清江画廊旅游度假区",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s40da7dcc",
+      "name": "西陵峡风景区",
+      "cat": "古迹",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s06734cde",
+      "name": "三游洞景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2c4e93ac",
+      "name": "屈原故里",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s133ee19f",
+      "name": "百里荒风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s64f1a4ab",
+      "name": "玉泉山风景名胜区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s315c88b6",
+      "name": "长江三峡",
+      "cat": "公园",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s2856849b",
+      "name": "宜昌市葛洲坝旅游区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sacb18616",
+      "name": "宜昌车溪民俗旅游区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s8e60f92a",
+      "name": "宋山森林公园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s79caf0c0",
+      "name": "远安县鸣凤山风景名胜区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "se47618b6",
+      "name": "五叠水大峡谷",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "sec87fb40",
+      "name": "三峡大瀑布",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s45b3dbcb",
+      "name": "三峡千古情景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s05d2468d",
+      "name": "宜昌博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sdc5af910",
+      "name": "卷桥河湿地公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "seb4801f9",
+      "name": "玉泉寺",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "评分 4.7 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s50658dc5",
+      "name": "葛洲坝船闸景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc099faf0",
+      "name": "天然塔",
+      "cat": "古迹",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s9b7e4cd6",
+      "name": "清江方山",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s911bc076",
+      "name": "磨基山森林公园",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sfaa52104",
+      "name": "清江湾·三峡长颈鹿乐园",
+      "cat": "亲子",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "评分 4.6 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s259f4159",
+      "name": "西坝不夜城",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s7d06b94f",
+      "name": "三峡大坝全景观景台",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s358b909c",
+      "name": "青林谜镇",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sf8a7594e",
+      "name": "三峡工程博物馆",
+      "cat": "博物馆",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s0305910f",
+      "name": "宜昌大南门",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sadd92c47",
+      "name": "纱帽山观景台",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "sc4fdb806",
+      "name": "天柱山风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7,
+      "why": "评分 4.5 ≥4.5（非常知名）"
+    },
+    {
+      "id": "s30b24ce6",
+      "name": "海底世界",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s7ca3f77a",
+      "name": "金狮洞风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s24af53c6",
+      "name": "宜都市天龙湾风景区",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "s15093ed9",
+      "name": "三峡南津关大峡谷",
+      "cat": "山水",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s0de6a4de",
+      "name": "龙泉古镇",
+      "cat": "古镇",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s60dff71a",
+      "name": "交运长江夜游",
+      "cat": "夜景",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "sf1d041dc",
+      "name": "滨江公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7
+    },
+    {
+      "id": "s72fb4ead",
+      "name": "儿童公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s5470e8de",
+      "name": "城东公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.5,
+      "level": null,
+      "score": 0.4,
+      "heatNew": 7
+    },
+    {
+      "id": "s1a7579b4",
+      "name": "东辰体育公园",
+      "cat": "公园",
+      "heat": 7,
+      "rating": 4.4,
+      "level": null,
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "s22972b6a",
+      "name": "西苑小吃街",
+      "cat": "街区",
+      "heat": 7,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7
+    },
+    {
+      "id": "s74417244",
+      "name": "三峡白马营艺术区",
+      "cat": "街区",
+      "heat": 6,
+      "rating": 4.1,
+      "level": null,
+      "score": 0.24,
+      "heatNew": 6
+    }
+  ],
+  "drop": [],
+  "manual": [],
+  "add": [],
+  "heatChanges": [
+    {
+      "id": "sbe5252ec",
+      "name": "三峡大坝旅游区",
+      "from": 9,
+      "to": 8
+    },
+    {
+      "id": "s56cc657c",
+      "name": "三峡人家风景区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "sb7850f67",
+      "name": "清江画廊旅游度假区",
+      "from": 9,
+      "to": 7
+    },
+    {
+      "id": "s40da7dcc",
+      "name": "西陵峡风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s06734cde",
+      "name": "三游洞景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2c4e93ac",
+      "name": "屈原故里",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s133ee19f",
+      "name": "百里荒风景区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s64f1a4ab",
+      "name": "玉泉山风景名胜区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s315c88b6",
+      "name": "长江三峡",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s2856849b",
+      "name": "宜昌市葛洲坝旅游区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "sacb18616",
+      "name": "宜昌车溪民俗旅游区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s8e60f92a",
+      "name": "宋山森林公园",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "s79caf0c0",
+      "name": "远安县鸣凤山风景名胜区",
+      "from": 8,
+      "to": 7
+    },
+    {
+      "id": "se47618b6",
+      "name": "五叠水大峡谷",
+      "from": 8,
+      "to": 7
+    }
+  ],
+  "duplicates": []
+}

@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "山水": 8,
-      "公园": 11,
-      "夜景": 3,
-      "街区": 2,
-      "古迹": 15,
-      "博物馆": 8,
-      "商圈": 5,
-      "美食": 5,
-      "古镇": 3,
+      "山水": 7,
+      "公园": 7,
+      "夜景": 2,
+      "街区": 1,
+      "博物馆": 7,
+      "美食": 1,
+      "古迹": 11,
+      "古镇": 1,
       "亲子": 5,
-      "演出": 2
+      "演出": 2,
+      "商圈": 2
     },
     "byGroup": {
-      "core": 34,
-      "night": 5,
+      "core": 26,
+      "night": 4,
       "family": 5,
-      "street": 2,
-      "food": 5,
-      "park": 11,
-      "mall": 5,
-      "total": 67,
-      "suburb": 11,
-      "coreRatio": 58
+      "street": 1,
+      "food": 1,
+      "park": 7,
+      "mall": 2,
+      "total": 46,
+      "suburb": 6,
+      "coreRatio": 65
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "shilin",
       "name": "石林风景区",
       "cat": "山水",
-      "heat": 10,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -44,7 +44,7 @@
       "id": "cuihu",
       "name": "翠湖公园",
       "cat": "公园",
-      "heat": 9.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -55,7 +55,7 @@
       "id": "dianchi-haigeng",
       "name": "海埂大坝",
       "cat": "山水",
-      "heat": 9,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -63,21 +63,10 @@
       "why": "评分 4.8 ≥4.5（非常知名）"
     },
     {
-      "id": "xishan-longmen",
-      "name": "西山龙门景区",
-      "cat": "山水",
-      "heat": 9,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "jinma-biji",
       "name": "金马碧鸡坊",
       "cat": "夜景",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -88,7 +77,7 @@
       "id": "jiangwutang",
       "name": "云南陆军讲武堂旧址(正门)",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -99,7 +88,7 @@
       "id": "yunnan-museum",
       "name": "云南省博物馆",
       "cat": "博物馆",
-      "heat": 8.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -110,7 +99,7 @@
       "id": "daguanlou",
       "name": "大观楼",
       "cat": "古迹",
-      "heat": 8.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -121,7 +110,7 @@
       "id": "guandu",
       "name": "官渡古镇",
       "cat": "古镇",
-      "heat": 8,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -141,20 +130,20 @@
     },
     {
       "id": "jindian",
-      "name": "金殿名胜区",
+      "name": "金殿风景名胜区",
       "cat": "古迹",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "jiuxiang",
       "name": "宜良九乡风景区",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -162,37 +151,14 @@
       "why": "知名地标（必留名单）"
     },
     {
-      "id": "jiaozishan",
-      "name": "轿子雪山",
-      "cat": "山水",
-      "heat": 7.5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "dongchuan-redland",
-      "name": "东川红土地",
+      "name": "红土地落霞沟景区",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
-      "heatNew": 7,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "yuantongsi",
-      "name": "圆通寺",
-      "cat": "古迹",
-      "heat": 7,
-      "rating": 3.8,
-      "level": null,
-      "score": 0.12,
-      "heatNew": 6,
-      "why": "知名地标（必留名单）"
+      "heatNew": 7
     },
     {
       "id": "railway-museum",
@@ -209,7 +175,7 @@
       "id": "haigeng-park",
       "name": "滇池海埂公园",
       "cat": "公园",
-      "heat": 7,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -225,13 +191,13 @@
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "yunnan-theatre",
       "name": "云南省大剧院",
       "cat": "演出",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -242,7 +208,7 @@
       "id": "majia-dayuan",
       "name": "马家大院",
       "cat": "演出",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -251,9 +217,9 @@
     },
     {
       "id": "changchongshan",
-      "name": "长虫山观景台",
+      "name": "长虫山生态公园风景林",
       "cat": "夜景",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -261,30 +227,19 @@
     },
     {
       "id": "dongxita",
-      "name": "东西寺塔",
+      "name": "西寺塔广场",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 6,
       "rating": 4.1,
       "level": null,
       "score": 0.24,
       "heatNew": 6
     },
     {
-      "id": "shiboyuan",
-      "name": "昆明世博园",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "qiongzhusi",
       "name": "筇竹寺",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -295,7 +250,7 @@
       "id": "yangzonghai",
       "name": "阳宗海风景区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -306,7 +261,7 @@
       "id": "huanle-shijie",
       "name": "七彩云南欢乐世界",
       "cat": "亲子",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -315,20 +270,20 @@
     },
     {
       "id": "rongchuang",
-      "name": "昆明融创乐园",
+      "name": "昆明融创滇池后海",
       "cat": "亲子",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "kunming-zoo",
       "name": "昆明动物园",
       "cat": "亲子",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -339,7 +294,7 @@
       "id": "kunming-museum",
       "name": "昆明市博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -350,7 +305,7 @@
       "id": "minzu-museum",
       "name": "云南民族博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -361,7 +316,7 @@
       "id": "animal-museum",
       "name": "昆明动物博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -372,7 +327,7 @@
       "id": "tanhuasi",
       "name": "昙华寺",
       "cat": "古迹",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -382,7 +337,7 @@
       "id": "anning-wenquan",
       "name": "安宁温泉",
       "cat": "山水",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -392,7 +347,7 @@
       "id": "yunnan-art-museum",
       "name": "云南美术馆(五一路)",
       "cat": "博物馆",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -403,7 +358,7 @@
       "id": "zhenqingguan",
       "name": "真庆观",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -414,7 +369,7 @@
       "id": "shengli-tang",
       "name": "抗战胜利纪念堂",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -425,7 +380,7 @@
       "id": "luhan-gongguan",
       "name": "云南起义纪念馆",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -435,7 +390,7 @@
       "id": "nieer-gu",
       "name": "昆明聂耳故居",
       "cat": "古迹",
-      "heat": 5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -446,7 +401,7 @@
       "id": "kunming-wenmiao",
       "name": "文庙",
       "cat": "古迹",
-      "heat": 5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -457,97 +412,47 @@
       "id": "nieer-mu",
       "name": "聂耳墓",
       "cat": "古迹",
-      "heat": 5,
+      "heat": 6,
       "rating": 4.1,
       "level": null,
       "score": 0.24,
       "heatNew": 6
     },
     {
+      "id": "xcef1b23d",
+      "name": "世界园艺博览园",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.4,
+      "level": "national",
+      "score": 0.61,
+      "heatNew": 8
+    },
+    {
       "id": "kunming-old-street",
       "name": "昆明老街",
       "cat": "街区",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7
     },
     {
-      "id": "m60",
-      "name": "M60 文化创意园",
-      "cat": "街区",
-      "heat": 5.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "dongfeng-square",
-      "name": "昆明恒隆广场",
-      "cat": "商圈",
-      "heat": 5.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "tongde-plaza",
-      "name": "同德昆明广场",
-      "cat": "商圈",
-      "heat": 5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
       "id": "zhuaxin-market",
-      "name": "篆新农贸市场",
-      "cat": "美食",
-      "heat": 8.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
-      "id": "nanqiang-lane",
-      "name": "南强街巷",
+      "name": "大观篆新农贸市场",
       "cat": "美食",
       "heat": 8,
-      "rating": null,
+      "rating": 4.8,
       "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "xiangyun-street",
-      "name": "祥云街小吃街",
-      "cat": "美食",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "shuncheng-street",
-      "name": "顺城街",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
+      "score": 0.52,
+      "heatNew": 8
     },
     {
       "id": "laoyuhe-wetland",
       "name": "昆明捞渔河湿地公园",
       "cat": "公园",
-      "heat": 5.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -577,7 +482,7 @@
       "id": "pubu-park",
       "name": "昆明瀑布公园",
       "cat": "公园",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -587,169 +492,34 @@
       "id": "dounan-wetland",
       "name": "斗南湿地公园",
       "cat": "公园",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7
+    },
+    {
+      "id": "dongfeng-square",
+      "name": "昆明恒隆广场",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
+    },
+    {
+      "id": "tongde-plaza",
+      "name": "同德昆明广场",
+      "cat": "商圈",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8
     }
   ],
-  "drop": [
-    {
-      "id": "yunnan-univ",
-      "name": "云南大学东陆校区",
-      "cat": "古迹",
-      "heat": 8.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "lianda",
-      "name": "西南联大旧址（云南师大一二一校区）",
-      "cat": "博物馆",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "wenlin-street",
-      "name": "文林街·文化巷",
-      "cat": "夜景",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "leju-village",
-      "name": "乐居村",
-      "cat": "古镇",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "huating",
-      "name": "华亭寺",
-      "cat": "古迹",
-      "heat": 6,
-      "rating": 3.7,
-      "level": null,
-      "score": 0.08,
-      "heatNew": 5,
-      "why": "评分 3.7 < 4.0"
-    },
-    {
-      "id": "caoxisi",
-      "name": "曹溪寺",
-      "cat": "古迹",
-      "heat": 5.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "nuohei-village",
-      "name": "糯黑石头寨",
-      "cat": "古镇",
-      "heat": 5.5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "评分 3.6 < 4.0"
-    },
-    {
-      "id": "dounan-market",
-      "name": "斗南花市",
-      "cat": "商圈",
-      "heat": 8.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    },
-    {
-      "id": "park1903",
-      "name": "公园1903梦幻联邦乐园",
-      "cat": "商圈",
-      "heat": 5.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（商圈 ≤2）且评分靠后"
-    },
-    {
-      "id": "nanping-street",
-      "name": "南屏街",
-      "cat": "商圈",
-      "heat": 8.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "类目配额（商圈 ≤2）且评分靠后/无评分"
-    },
-    {
-      "id": "chama-huajie",
-      "name": "茶马花街",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "类目配额（美食 ≤4）且评分靠后/无评分"
-    },
-    {
-      "id": "baofeng-wetland",
-      "name": "宝丰湿地公园",
-      "cat": "公园",
-      "heat": 5.5,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "gudian-mingcheng",
-      "name": "七彩云南·古滇名城（古滇湿地）",
-      "cat": "公园",
-      "heat": 6,
-      "rating": 4.5,
-      "level": null,
-      "score": 0.4,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "haidong-wetland",
-      "name": "海东湿地公园",
-      "cat": "公园",
-      "heat": 5.5,
-      "rating": 3.9,
-      "level": null,
-      "score": 0.16,
-      "heatNew": 6,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    }
-  ],
+  "drop": [],
   "manual": [],
   "add": [
     {
@@ -777,18 +547,6 @@
       "heat": 9
     },
     {
-      "name": "金殿风景名胜区",
-      "coord": [
-        102.771482,
-        25.08447
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
-    {
       "name": "南滇池国家湿地公园",
       "coord": [
         102.632538,
@@ -799,320 +557,14 @@
       "level": "national",
       "score": 0.65,
       "heat": 8
-    },
-    {
-      "name": "世界园艺博览园",
-      "coord": [
-        102.7635,
-        25.07516
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.4,
-      "level": "national",
-      "score": 0.61,
-      "heat": 8
     }
   ],
   "heatChanges": [
     {
-      "id": "shilin",
-      "name": "石林风景区",
-      "from": 10,
-      "to": 8
-    },
-    {
-      "id": "cuihu",
-      "name": "翠湖公园",
-      "from": 9.5,
-      "to": 8
-    },
-    {
-      "id": "dianchi-haigeng",
-      "name": "海埂大坝",
-      "from": 9,
-      "to": 8
-    },
-    {
-      "id": "xishan-longmen",
-      "name": "西山龙门景区",
-      "from": 9,
-      "to": 5
-    },
-    {
-      "id": "jinma-biji",
-      "name": "金马碧鸡坊",
-      "from": 9,
-      "to": 7
-    },
-    {
-      "id": "kunming-old-street",
-      "name": "昆明老街",
-      "from": 9,
-      "to": 7
-    },
-    {
-      "id": "jiangwutang",
-      "name": "云南陆军讲武堂旧址(正门)",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "yunnan-museum",
-      "name": "云南省博物馆",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "dounan-market",
-      "name": "斗南花市",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "zhuaxin-market",
-      "name": "篆新农贸市场",
-      "from": 8.5,
-      "to": 8
-    },
-    {
-      "id": "daguanlou",
-      "name": "大观楼",
-      "from": 8.5,
-      "to": 9
-    },
-    {
-      "id": "guandu",
-      "name": "官渡古镇",
-      "from": 8,
-      "to": 9
-    },
-    {
       "id": "jindian",
-      "name": "金殿名胜区",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "jiuxiang",
-      "name": "宜良九乡风景区",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "jiaozishan",
-      "name": "轿子雪山",
-      "from": 7.5,
-      "to": 5
-    },
-    {
-      "id": "dongchuan-redland",
-      "name": "东川红土地",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "yuantongsi",
-      "name": "圆通寺",
-      "from": 7,
-      "to": 6
-    },
-    {
-      "id": "haigeng-park",
-      "name": "滇池海埂公园",
+      "name": "金殿风景名胜区",
       "from": 7,
       "to": 9
-    },
-    {
-      "id": "yunnan-theatre",
-      "name": "云南省大剧院",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "majia-dayuan",
-      "name": "马家大院",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "changchongshan",
-      "name": "长虫山观景台",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "dongxita",
-      "name": "东西寺塔",
-      "from": 6.5,
-      "to": 6
-    },
-    {
-      "id": "pubu-park",
-      "name": "昆明瀑布公园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "qiongzhusi",
-      "name": "筇竹寺",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "gudian-mingcheng",
-      "name": "七彩云南·古滇名城（古滇湿地）",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "yangzonghai",
-      "name": "阳宗海风景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "huanle-shijie",
-      "name": "七彩云南欢乐世界",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "rongchuang",
-      "name": "昆明融创乐园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "kunming-zoo",
-      "name": "昆明动物园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "huating",
-      "name": "华亭寺",
-      "from": 6,
-      "to": 5
-    },
-    {
-      "id": "kunming-museum",
-      "name": "昆明市博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "minzu-museum",
-      "name": "云南民族博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "animal-museum",
-      "name": "昆明动物博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "tanhuasi",
-      "name": "昙华寺",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "anning-wenquan",
-      "name": "安宁温泉",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "nuohei-village",
-      "name": "糯黑石头寨",
-      "from": 5.5,
-      "to": 5
-    },
-    {
-      "id": "yunnan-art-museum",
-      "name": "云南美术馆(五一路)",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "zhenqingguan",
-      "name": "真庆观",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "shengli-tang",
-      "name": "抗战胜利纪念堂",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "luhan-gongguan",
-      "name": "云南起义纪念馆",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "park1903",
-      "name": "公园1903梦幻联邦乐园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "laoyuhe-wetland",
-      "name": "昆明捞渔河湿地公园",
-      "from": 5.5,
-      "to": 8
-    },
-    {
-      "id": "dongfeng-square",
-      "name": "昆明恒隆广场",
-      "from": 5.5,
-      "to": 8
-    },
-    {
-      "id": "tongde-plaza",
-      "name": "同德昆明广场",
-      "from": 5,
-      "to": 8
-    },
-    {
-      "id": "nieer-gu",
-      "name": "昆明聂耳故居",
-      "from": 5,
-      "to": 7
-    },
-    {
-      "id": "kunming-wenmiao",
-      "name": "文庙",
-      "from": 5,
-      "to": 7
-    },
-    {
-      "id": "nieer-mu",
-      "name": "聂耳墓",
-      "from": 5,
-      "to": 6
-    },
-    {
-      "id": "dounan-wetland",
-      "name": "斗南湿地公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "baofeng-wetland",
-      "name": "宝丰湿地公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "haidong-wetland",
-      "name": "海东湿地公园",
-      "from": 5.5,
-      "to": 6
     }
   ],
   "duplicates": []

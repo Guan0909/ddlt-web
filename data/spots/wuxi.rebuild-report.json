@@ -3,29 +3,29 @@
   "date": "2026-10-17",
   "compositionBefore": {
     "byCat": {
-      "山水": 8,
+      "山水": 10,
       "演出": 2,
-      "古镇": 6,
+      "古镇": 5,
       "夜景": 4,
-      "博物馆": 8,
-      "古迹": 12,
-      "公园": 13,
-      "亲子": 3,
+      "博物馆": 6,
+      "古迹": 11,
+      "亲子": 2,
+      "公园": 6,
       "街区": 5,
-      "美食": 4,
-      "商圈": 3
+      "美食": 3,
+      "商圈": 2
     },
     "byGroup": {
-      "core": 34,
+      "core": 32,
       "night": 6,
-      "family": 3,
+      "family": 2,
       "street": 5,
-      "food": 4,
-      "park": 13,
-      "mall": 3,
-      "total": 68,
+      "food": 3,
+      "park": 6,
+      "mall": 2,
+      "total": 56,
       "suburb": 11,
-      "coreRatio": 59
+      "coreRatio": 68
     }
   },
   "keep": [
@@ -33,7 +33,7 @@
       "id": "yuantouzhu",
       "name": "太湖鼋头渚风景区",
       "cat": "山水",
-      "heat": 10,
+      "heat": 9,
       "rating": 4.8,
       "level": "national",
       "score": 0.77,
@@ -42,20 +42,20 @@
     },
     {
       "id": "taihu-xian-island",
-      "name": "太湖仙岛",
+      "name": "太湖鼋头渚风景区太湖仙岛",
       "cat": "山水",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7,
-      "why": "评分 4.5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "lingshan",
       "name": "灵山胜境",
       "cat": "山水",
-      "heat": 9.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -66,7 +66,7 @@
       "id": "jiulong-guan-yu",
       "name": "九龙灌浴",
       "cat": "演出",
-      "heat": 7.5,
+      "heat": 6,
       "rating": 4,
       "level": null,
       "score": 0.2,
@@ -76,7 +76,7 @@
       "id": "nianhuawan",
       "name": "拈花湾禅意小镇",
       "cat": "古镇",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -87,7 +87,7 @@
       "id": "nianhuawan-night",
       "name": "拈花湾·禅行夜游",
       "cat": "夜景",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -96,9 +96,9 @@
     },
     {
       "id": "longtouzhu",
-      "name": "龙头渚公园",
+      "name": "龙头渚自然公园",
       "cat": "山水",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -109,7 +109,7 @@
       "id": "helv-museum",
       "name": "阖闾城遗址博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.4,
       "level": null,
       "score": 0.36,
@@ -117,9 +117,9 @@
     },
     {
       "id": "xuelangshan",
-      "name": "雪浪山生态园",
+      "name": "龙寺生态园",
       "cat": "山水",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -130,7 +130,7 @@
       "id": "junzhang-gudao",
       "name": "军嶂古道",
       "cat": "山水",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -141,7 +141,7 @@
       "id": "sanguocheng",
       "name": "三国城",
       "cat": "古迹",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -152,7 +152,7 @@
       "id": "shuihucheng",
       "name": "水浒城",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.6,
       "level": "national",
       "score": 0.69,
@@ -171,21 +171,10 @@
       "why": "评分 4.7 ≥4.5（非常知名）"
     },
     {
-      "id": "meiyuan",
-      "name": "梅园横山风景区荷兰广场",
-      "cat": "公园",
-      "heat": 8,
-      "rating": 3.9,
-      "level": null,
-      "score": 0.16,
-      "heatNew": 6,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "liyuan",
       "name": "蠡园",
       "cat": "公园",
-      "heat": 7.5,
+      "heat": 9,
       "rating": 4.7,
       "level": "national",
       "score": 0.73,
@@ -207,7 +196,7 @@
       "id": "wuxi-theatre",
       "name": "无锡大剧院",
       "cat": "演出",
-      "heat": 7,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -218,7 +207,7 @@
       "id": "hongshan-museum",
       "name": "鸿山遗址博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -229,7 +218,7 @@
       "id": "qianmu-residence",
       "name": "钱穆钱伟长故居",
       "cat": "古迹",
-      "heat": 5.5,
+      "heat": 6,
       "rating": 4.1,
       "level": null,
       "score": 0.24,
@@ -239,7 +228,7 @@
       "id": "meili",
       "name": "梅里古镇",
       "cat": "古镇",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -251,17 +240,17 @@
       "name": "荡口古镇",
       "cat": "古镇",
       "heat": 7,
-      "rating": 4.7,
+      "rating": 4.6,
       "level": "national",
-      "score": 0.73,
-      "heatNew": 9,
+      "score": 0.69,
+      "heatNew": 8,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "yanjiaqiao",
-      "name": "严家桥古镇",
+      "name": "严家桥老街",
       "cat": "古镇",
-      "heat": 5.5,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -271,12 +260,12 @@
       "id": "yangshan",
       "name": "阳山桃花源景区",
       "cat": "山水",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "tianyuan-dongfang",
@@ -290,9 +279,9 @@
     },
     {
       "id": "huishan-forest",
-      "name": "惠山森林公园",
+      "name": "惠山国家森林公园",
       "cat": "山水",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -303,7 +292,7 @@
       "id": "jichang-garden",
       "name": "惠山古镇景区寄畅园",
       "cat": "古迹",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -314,7 +303,7 @@
       "id": "second-spring",
       "name": "天下第二泉",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -325,7 +314,7 @@
       "id": "huishan-temple",
       "name": "惠山寺",
       "cat": "古迹",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -347,7 +336,7 @@
       "id": "niren-museum",
       "name": "中国泥人博物馆",
       "cat": "博物馆",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -363,13 +352,24 @@
       "level": null,
       "score": 0.52,
       "heatNew": 8,
-      "why": "评分 4.8 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "nanchan-street",
+      "name": "南禅寺",
+      "cat": "街区",
+      "heat": 8,
+      "rating": 4.8,
+      "level": null,
+      "score": 0.52,
+      "heatNew": 8,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "nanchang-street",
-      "name": "南长街",
+      "name": "清名桥古运河景区南长街",
       "cat": "街区",
-      "heat": 9,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -378,9 +378,9 @@
     },
     {
       "id": "qingming-bridge",
-      "name": "清名桥古运河街区",
+      "name": "清名桥",
       "cat": "古迹",
-      "heat": 8.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -391,26 +391,16 @@
       "id": "canal-cruise",
       "name": "古运河夜游（南长街码头）",
       "cat": "夜景",
-      "heat": 8,
-      "rating": null,
+      "heat": 7,
+      "rating": 4.7,
       "level": null,
-      "score": null,
-      "heatNew": null,
+      "score": 0.48,
+      "heatNew": 7,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "kiln-museum",
       "name": "无锡窑群遗址博物馆",
-      "cat": "博物馆",
-      "heat": 5.5,
-      "rating": 4,
-      "level": null,
-      "score": 0.2,
-      "heatNew": 6
-    },
-    {
-      "id": "silk-museum",
-      "name": "中国丝业博物馆",
       "cat": "博物馆",
       "heat": 6,
       "rating": 4,
@@ -422,7 +412,7 @@
       "id": "industry-museum",
       "name": "无锡中国民族工商业博物馆",
       "cat": "博物馆",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -432,7 +422,7 @@
       "id": "wuxi-museum",
       "name": "无锡博物院",
       "cat": "博物馆",
-      "heat": 8,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -443,7 +433,7 @@
       "id": "taihu-square",
       "name": "无锡太湖广场",
       "cat": "夜景",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -454,12 +444,12 @@
       "id": "donglin-academy",
       "name": "东林书院",
       "cat": "古迹",
-      "heat": 7.5,
+      "heat": 8,
       "rating": 4.7,
       "level": "province",
       "score": 0.63,
       "heatNew": 8,
-      "why": "评分 4.7 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "xuefucheng",
@@ -469,13 +459,14 @@
       "rating": 4.4,
       "level": null,
       "score": 0.36,
-      "heatNew": 7
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "qianzhongshu",
-      "name": "钱钟书故居",
+      "name": "钱锺书故居",
       "cat": "古迹",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
@@ -483,10 +474,43 @@
       "why": "评分 4.5 ≥4.5（非常知名）"
     },
     {
+      "id": "chongan-temple",
+      "name": "崇安寺",
+      "cat": "商圈",
+      "heat": 7,
+      "rating": 4.7,
+      "level": null,
+      "score": 0.48,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xd22b88df",
+      "name": "荣氏梅园",
+      "cat": "山水",
+      "heat": 9,
+      "rating": 4.7,
+      "level": "national",
+      "score": 0.73,
+      "heatNew": 9,
+      "why": "知名地标（必留名单）"
+    },
+    {
+      "id": "xb74c08e0",
+      "name": "宜兴竹海风景区",
+      "cat": "山水",
+      "heat": 8,
+      "rating": 4.6,
+      "level": null,
+      "score": 0.44,
+      "heatNew": 7,
+      "why": "知名地标（必留名单）"
+    },
+    {
       "id": "yufu-island",
-      "name": "渔父岛",
+      "name": "渔父岛生态园",
       "cat": "公园",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.8,
       "level": null,
       "score": 0.52,
@@ -494,9 +518,9 @@
     },
     {
       "id": "bogong-island",
-      "name": "渤公岛生态园",
+      "name": "渤公岛生态公园",
       "cat": "公园",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -504,9 +528,9 @@
     },
     {
       "id": "baojie-shan",
-      "name": "宝界山公园",
+      "name": "宝界山林公园",
       "cat": "公园",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -516,7 +540,7 @@
       "id": "jingui-park",
       "name": "金匮公园",
       "cat": "公园",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
@@ -526,25 +550,15 @@
       "id": "gonghu-bay",
       "name": "贡湖湾湿地公园",
       "cat": "公园",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7
     },
     {
-      "id": "nanchan-street",
-      "name": "南禅寺步行街",
-      "cat": "街区",
-      "heat": 7.5,
-      "rating": 4.8,
-      "level": null,
-      "score": 0.52,
-      "heatNew": 8
-    },
-    {
       "id": "nanshang-tang",
-      "name": "南下塘老街区",
+      "name": "南下塘",
       "cat": "街区",
       "heat": 7,
       "rating": 4.6,
@@ -556,7 +570,7 @@
       "id": "xiaolou-lane",
       "name": "小娄巷历史文化街区",
       "cat": "街区",
-      "heat": 6.5,
+      "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
@@ -564,9 +578,9 @@
     },
     {
       "id": "rongxiang",
-      "name": "荣巷历史文化街区",
+      "name": "荣巷历史街区",
       "cat": "街区",
-      "heat": 6,
+      "heat": 7,
       "rating": 4.3,
       "level": null,
       "score": 0.32,
@@ -574,202 +588,48 @@
     },
     {
       "id": "nanchan-snacks",
-      "name": "南禅寺小吃街",
+      "name": "南禅寺夜市",
       "cat": "美食",
-      "heat": 7.5,
+      "heat": 7,
       "rating": 4.7,
       "level": null,
       "score": 0.48,
       "heatNew": 7
-    },
-    {
-      "id": "muguiying",
-      "name": "穆桂英美食广场",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": 4.3,
-      "level": null,
-      "score": 0.32,
-      "heatNew": 7
-    },
-    {
-      "id": "wangxingji",
-      "name": "王兴记（中山路店）",
-      "cat": "美食",
-      "heat": 7,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
     },
     {
       "id": "sanfengqiao",
       "name": "三凤桥肉庄",
       "cat": "美食",
       "heat": 7,
-      "rating": null,
+      "rating": 4.4,
       "level": null,
-      "score": null,
-      "heatNew": null
+      "score": 0.36,
+      "heatNew": 7
+    },
+    {
+      "id": "muguiying",
+      "name": "穆桂英广场",
+      "cat": "美食",
+      "heat": 7,
+      "rating": 4.3,
+      "level": null,
+      "score": 0.32,
+      "heatNew": 7
     },
     {
       "id": "henglong-plaza",
       "name": "无锡恒隆广场",
       "cat": "商圈",
-      "heat": 6.5,
+      "heat": 8,
       "rating": 4.9,
       "level": null,
       "score": 0.56,
       "heatNew": 8
-    },
-    {
-      "id": "chongan-temple",
-      "name": "崇安寺步行街",
-      "cat": "商圈",
-      "heat": 7.5,
-      "rating": 4.7,
-      "level": null,
-      "score": 0.48,
-      "heatNew": 7
     }
   ],
-  "drop": [
-    {
-      "id": "taihu-star",
-      "name": "太湖之星摩天轮",
-      "cat": "亲子",
-      "heat": 6.5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "评分 3.6 < 4.0"
-    },
-    {
-      "id": "lishe",
-      "name": "礼社古村",
-      "cat": "古镇",
-      "heat": 5.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "beike-museum",
-      "name": "无锡碑刻博物馆",
-      "cat": "博物馆",
-      "heat": 5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5,
-      "why": "评分 3.6 < 4.0"
-    },
-    {
-      "id": "abing",
-      "name": "阿炳故居",
-      "cat": "古迹",
-      "heat": 6,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "无评分且非风景名胜（不确定即删）"
-    },
-    {
-      "id": "shangxian-river",
-      "name": "尚贤河湿地公园",
-      "cat": "公园",
-      "heat": 6,
-      "rating": 4.6,
-      "level": null,
-      "score": 0.44,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "xihui-park",
-      "name": "锡惠公园",
-      "cat": "公园",
-      "heat": 8,
-      "rating": 4.6,
-      "level": "national",
-      "score": 0.69,
-      "heatNew": 8,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "longsi",
-      "name": "龙寺生态园",
-      "cat": "公园",
-      "heat": 5.5,
-      "rating": 4.5,
-      "level": null,
-      "score": 0.4,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "lianghong-wetland",
-      "name": "梁鸿国家湿地公园",
-      "cat": "公园",
-      "heat": 5.5,
-      "rating": 4.4,
-      "level": null,
-      "score": 0.36,
-      "heatNew": 7,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "lihu-park",
-      "name": "蠡湖公园",
-      "cat": "公园",
-      "heat": 7.5,
-      "rating": 3.9,
-      "level": null,
-      "score": 0.16,
-      "heatNew": 6,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "changguangxi",
-      "name": "无锡长广溪国家湿地公园南区",
-      "cat": "公园",
-      "heat": 6.5,
-      "rating": 3.9,
-      "level": null,
-      "score": 0.16,
-      "heatNew": 6,
-      "why": "类目配额（公园 ≤5）且评分靠后"
-    },
-    {
-      "id": "sanyang-plaza",
-      "name": "三阳广场（中山路商圈）",
-      "cat": "商圈",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "类目配额（商圈 ≤2）且评分靠后/无评分"
-    }
-  ],
+  "drop": [],
   "manual": [],
   "add": [
-    {
-      "name": "荣氏梅园",
-      "coord": [
-        120.224356,
-        31.554432
-      ],
-      "type": "风景名胜;风景名胜;国家级景点",
-      "rating": 4.7,
-      "level": "national",
-      "score": 0.73,
-      "heat": 9
-    },
     {
       "name": "灵山胜境-灵山大佛",
       "coord": [
@@ -787,6 +647,18 @@
       "coord": [
         120.234062,
         31.47749
+      ],
+      "type": "风景名胜;风景名胜;国家级景点",
+      "rating": 4.6,
+      "level": "national",
+      "score": 0.69,
+      "heat": 8
+    },
+    {
+      "name": "锡惠公园",
+      "coord": [
+        120.274403,
+        31.577669
       ],
       "type": "风景名胜;风景名胜;国家级景点",
       "rating": 4.6,
@@ -821,317 +693,25 @@
   ],
   "heatChanges": [
     {
-      "id": "yuantouzhu",
-      "name": "太湖鼋头渚风景区",
-      "from": 10,
-      "to": 9
-    },
-    {
-      "id": "taihu-xian-island",
-      "name": "太湖仙岛",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "lingshan",
-      "name": "灵山胜境",
-      "from": 9.5,
-      "to": 9
-    },
-    {
-      "id": "jiulong-guan-yu",
-      "name": "九龙灌浴",
-      "from": 7.5,
-      "to": 6
-    },
-    {
-      "id": "nianhuawan",
-      "name": "拈花湾禅意小镇",
-      "from": 9,
-      "to": 7
-    },
-    {
-      "id": "nianhuawan-night",
-      "name": "拈花湾·禅行夜游",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "longtouzhu",
-      "name": "龙头渚公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "helv-museum",
-      "name": "阖闾城遗址博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "xuelangshan",
-      "name": "雪浪山生态园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "junzhang-gudao",
-      "name": "军嶂古道",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "sanguocheng",
-      "name": "三国城",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "shuihucheng",
-      "name": "水浒城",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "longsi",
-      "name": "龙寺生态园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "meiyuan",
-      "name": "梅园横山风景区荷兰广场",
-      "from": 8,
-      "to": 6
-    },
-    {
-      "id": "liyuan",
-      "name": "蠡园",
-      "from": 7.5,
-      "to": 9
-    },
-    {
-      "id": "lihu-park",
-      "name": "蠡湖公园",
-      "from": 7.5,
-      "to": 6
-    },
-    {
-      "id": "taihu-star",
-      "name": "太湖之星摩天轮",
-      "from": 6.5,
-      "to": 5
-    },
-    {
-      "id": "yufu-island",
-      "name": "渔父岛",
-      "from": 6.5,
-      "to": 8
-    },
-    {
-      "id": "bogong-island",
-      "name": "渤公岛生态园",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "baojie-shan",
-      "name": "宝界山公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "wuxi-theatre",
-      "name": "无锡大剧院",
-      "from": 7,
-      "to": 8
-    },
-    {
-      "id": "rongxiang",
-      "name": "荣巷历史文化街区",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "changguangxi",
-      "name": "无锡长广溪国家湿地公园南区",
-      "from": 6.5,
-      "to": 6
-    },
-    {
-      "id": "jingui-park",
-      "name": "金匮公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "shangxian-river",
-      "name": "尚贤河湿地公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "gonghu-bay",
-      "name": "贡湖湾湿地公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "lianghong-wetland",
-      "name": "梁鸿国家湿地公园",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "hongshan-museum",
-      "name": "鸿山遗址博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "qianmu-residence",
-      "name": "钱穆钱伟长故居",
-      "from": 5.5,
-      "to": 6
-    },
-    {
-      "id": "meili",
-      "name": "梅里古镇",
-      "from": 6.5,
-      "to": 7
-    },
-    {
       "id": "dangkou",
       "name": "荡口古镇",
       "from": 7,
-      "to": 9
+      "to": 8
     },
     {
-      "id": "yanjiaqiao",
-      "name": "严家桥古镇",
-      "from": 5.5,
-      "to": 7
-    },
-    {
-      "id": "yangshan",
-      "name": "阳山桃花源景区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "huishan-forest",
-      "name": "惠山森林公园",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "jichang-garden",
-      "name": "惠山古镇景区寄畅园",
+      "id": "xb74c08e0",
+      "name": "宜兴竹海风景区",
       "from": 8,
       "to": 7
-    },
-    {
-      "id": "second-spring",
-      "name": "天下第二泉",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "huishan-temple",
-      "name": "惠山寺",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "niren-museum",
-      "name": "中国泥人博物馆",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "nanchan-street",
-      "name": "南禅寺步行街",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "nanchan-snacks",
-      "name": "南禅寺小吃街",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "muguiying",
-      "name": "穆桂英美食广场",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "nanchang-street",
-      "name": "南长街",
-      "from": 9,
-      "to": 7
-    },
-    {
-      "id": "qingming-bridge",
-      "name": "清名桥古运河街区",
-      "from": 8.5,
-      "to": 7
-    },
-    {
-      "id": "kiln-museum",
-      "name": "无锡窑群遗址博物馆",
-      "from": 5.5,
-      "to": 6
-    },
-    {
-      "id": "industry-museum",
-      "name": "无锡中国民族工商业博物馆",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "wuxi-museum",
-      "name": "无锡博物院",
-      "from": 8,
-      "to": 7
-    },
-    {
-      "id": "taihu-square",
-      "name": "无锡太湖广场",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "donglin-academy",
-      "name": "东林书院",
-      "from": 7.5,
-      "to": 8
-    },
-    {
-      "id": "qianzhongshu",
-      "name": "钱钟书故居",
-      "from": 6,
-      "to": 7
-    },
-    {
-      "id": "xiaolou-lane",
-      "name": "小娄巷历史文化街区",
-      "from": 6.5,
-      "to": 7
-    },
-    {
-      "id": "chongan-temple",
-      "name": "崇安寺步行街",
-      "from": 7.5,
-      "to": 7
-    },
-    {
-      "id": "henglong-plaza",
-      "name": "无锡恒隆广场",
-      "from": 6.5,
-      "to": 8
     }
   ],
-  "duplicates": []
+  "duplicates": [
+    {
+      "name": "南禅寺",
+      "ids": [
+        "nanchan-temple",
+        "nanchan-street"
+      ]
+    }
+  ]
 }

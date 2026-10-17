@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "中国雕塑院·青岛雕塑园是一处城内山水类景点，建议游览三小时左右。",
       "reason": "建议缓步游览，兼顾雕塑与周边山水景致。",
@@ -60,7 +61,8 @@
       "navi_poiid": "J51F048004_107601",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sf3ce064f",
@@ -69,7 +71,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "崂山风景区位于青岛城内，属山水类景点，建议游览约三小时。",
       "reason": "建议放慢节奏，途中适当休息。",
@@ -111,58 +113,8 @@
       "navi_poiid": "J51F046005_7;1560",
       "business_area": "崂山风景区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s5c3f10a9",
-      "name": "青岛奥帆海洋文化旅游区",
-      "cat": "山水",
-      "tags": [
-        "国家级"
-      ],
-      "heat": 9,
-      "dur": 180,
-      "intro": "自然山水，在城内，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.3905,
-        36.060279
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0IRFH663O",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "0532-58617233",
-      "photo": "https://store.is.autonavi.com/showpic/589fe91b87c2d0a90000003280696798?type=pic",
-      "address": "清远路1号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/589fe91b87c2d0a90000003280696798?type=pic",
-        "https://aos-comment.amap.com/B0IRFH663O/comment/B2C837BE_E887_4B6C_AB02_99C4677EE68F_L0_001_1500_200_1768354307396_29693509.jpg",
-        "https://store.is.autonavi.com/showpic/014f047bf239f3e60000000719492668?type=pic"
-      ],
-      "a_level": "5A",
-      "keytag": "5A景区",
-      "entrance": [
-        120.390346,
-        36.06132
-      ],
-      "navi_poiid": [],
-      "business_area": "燕儿岛路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s4618e16b",
@@ -209,52 +161,6 @@
       ],
       "navi_poiid": "J51F048003_44539",
       "business_area": "太平角",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "scefe4fbb",
-      "name": "青岛啤酒博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 8,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.347318,
-        36.079106
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B021401A45",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.9,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1月至4月,11月至12月 周一至周日 08:30-17:30 最晚进入16:30；5月至6月,9月至10月 周一至周日 08:00-18:30 最晚进入17:30；7月至8月 周一至周日 07:30-19:30 最晚进入18:30",
-      "photo": "http://store.is.autonavi.com/showpic/55bb907ad5c0f6568e3f2a25af1dc0d2",
-      "address": "登州路56-1",
-      "district": "市北区",
-      "adcode": "370203",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/55bb907ad5c0f6568e3f2a25af1dc0d2",
-        "http://store.is.autonavi.com/showpic/244f88cc2c1ca9f7012242cdb2dcfbe9",
-        "http://store.is.autonavi.com/showpic/16879194ddbbf628f47f503b40335da6"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        120.349184,
-        36.079314
-      ],
-      "navi_poiid": "J51F048003_2403",
-      "business_area": "台东",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -595,55 +501,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s8f764a7c",
-      "name": "青岛中山公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 8,
-      "dur": 90,
-      "intro": "青岛中山公园是一处位于城内的公园，建议游览一个半小时左右。",
-      "reason": "可在园中缓步游览，感受日常休闲氛围。",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.350415,
-        36.064394
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0214023A3",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.8,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00",
-      "tel": "0532-57770077",
-      "photo": "http://store.is.autonavi.com/showpic/01c04893dd182d07faa61a401523e32a",
-      "address": "八大关街道文登路26号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/01c04893dd182d07faa61a401523e32a",
-        "http://store.is.autonavi.com/showpic/daca8bf457cb32d32f68a7faef83d4ad",
-        "http://store.is.autonavi.com/showpic/617dbff4a1c9a296244071ad0604422c"
-      ],
-      "a_level": "3A",
-      "keytag": "城市公园",
-      "entrance": [
-        120.349529,
-        36.061009
-      ],
-      "navi_poiid": "J51F048003_4804",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sc10cc5d7",
       "name": "海之恋Park",
       "cat": "公园",
@@ -691,64 +548,13 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s4f44d072",
-      "name": "青岛德国总督楼旧址博物馆",
-      "cat": "博物馆",
-      "tags": [
-        "省级"
-      ],
-      "heat": 8,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "开门就到，人少先看常设展",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        120.332953,
-        36.064939
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0214017D2",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一全天关闭（法定节假日除外），周二至周日:9:00-18:00",
-      "tel": "0532-82868838",
-      "photo": "http://store.is.autonavi.com/showpic/0282a6e82da5b7ddd196319ec5b14a10",
-      "address": "龙山路26号(信号山青大附院地铁站B2口步行190米)",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/0282a6e82da5b7ddd196319ec5b14a10",
-        "http://store.is.autonavi.com/showpic/53fc7bddae2340e649cf614723e99f6b",
-        "http://store.is.autonavi.com/showpic/1eb98b558f2fc836c4ee8e34ea9b5c5f"
-      ],
-      "a_level": "3A",
-      "keytag": "3A景区",
-      "entrance": [
-        120.330836,
-        36.065134
-      ],
-      "navi_poiid": "J51F048003_3576;3575",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "s238c69f3",
       "name": "百花苑",
       "cat": "山水",
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -789,7 +595,8 @@
       "navi_poiid": "J51F048003_3628",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "sebeefc00",
@@ -798,7 +605,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -840,7 +647,8 @@
       "navi_poiid": "J51F047005_1539",
       "business_area": "石老人",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s24ca00b1",
@@ -849,7 +657,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "青岛电视塔是一处城内夜景类景点，建议游览约一个半小时。",
       "reason": "傍晚前往，静看城市灯火渐起。",
@@ -891,7 +699,8 @@
       "navi_poiid": "J51F048003_44575;137067",
       "business_area": "湛山",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2430c064",
@@ -900,7 +709,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 60,
       "intro": "青岛华东百利酒庄位于城内，属于商圈类型，建议游览约一小时。",
       "reason": "可留一小时，按商圈节奏随意走走。",
@@ -942,7 +751,8 @@
       "navi_poiid": "J51F047005_1254",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s4768d13d",
@@ -1769,54 +1579,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s2c7fb1c9",
-      "name": "中山公园太平山观光索道",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "中山公园太平山观光索道属公园类景点，位于青岛城内，建议游览九十分钟。",
-      "reason": "可乘索道缓慢观景，不必赶行程。",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.357501,
-        36.067958
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B021406QLD",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "10-01至10-07 周一至周日 08:00-20:00；10-08至10-31 周一至周日 09:00-17:30；遇大雨等天气索道将关闭，根据时令会延迟或缩短营业时间",
-      "tel": "4006876588",
-      "photo": "http://store.is.autonavi.com/showpic/486cb93b0d893ed968da1ef22f1e86e2",
-      "address": "太平山路1号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "http://store.is.autonavi.com/showpic/486cb93b0d893ed968da1ef22f1e86e2",
-        "http://store.is.autonavi.com/showpic/dc61587ba3f1cdce5dc3a5532163293f",
-        "http://store.is.autonavi.com/showpic/c7cb8b3175a3e12ab224a417370eeed7"
-      ],
-      "keytag": "景区",
-      "entrance": [
-        120.357586,
-        36.068243
-      ],
-      "navi_poiid": "J51F048003_44477",
-      "business_area": "湛山",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "se55a7379",
       "name": "银海大世界",
       "cat": "山水",
@@ -2010,53 +1772,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s44672efd",
-      "name": "青岛市博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "青岛市博物馆是一处位于城内的博物馆，建议游览约两小时。",
-      "reason": "可放慢脚步，按自己的节奏参观。",
-      "open": null,
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        120.473116,
-        36.101532
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B021406HP0",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一闭馆 国家法定节假日除外；11月1日至次年4月30日 周二至周日 09:00-16:30(16:00停止入馆)；5月1日-10月31日 09:00-17:00 (16:30停止入馆)",
-      "tel": "0532-88896286",
-      "photo": "https://img.alicdn.com/imgextra/i1/3695320962/O1CN011IydftoWnqMLy4p_!!3695320962-0-kbcontentapng.jpg",
-      "address": "梅岭东路51号(会展中心地铁站E口步行300米)",
-      "district": "崂山区",
-      "adcode": "370212",
-      "cost": 0,
-      "photos": [
-        "https://img.alicdn.com/imgextra/i1/3695320962/O1CN011IydftoWnqMLy4p_!!3695320962-0-kbcontentapng.jpg",
-        "http://store.is.autonavi.com/showpic/d870194bb3258f9b5ed7543516734346",
-        "http://store.is.autonavi.com/showpic/4300655e3a85abba2fddc2526f3efa27"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        120.47225,
-        36.101686
-      ],
-      "navi_poiid": "J51F047004_50556",
-      "business_area": "丽达购物中心",
-      "website": "www.qingdaomuseum.com",
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "sbbc18884",
       "name": "奥帆博物馆",
       "cat": "博物馆",
@@ -2100,147 +1815,6 @@
       ],
       "navi_poiid": "J51F048004_40594",
       "business_area": "燕儿岛路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s101d31a9",
-      "name": "青岛一战遗址博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "青岛一战遗址博物馆是位于城内的博物馆，建议游览约两小时。",
-      "reason": "建议留出安静时间，逐项观看。",
-      "open": "09:00-17:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.345103,
-        36.068849
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFKDW8SZ",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-17:30 最晚进入17:00",
-      "tel": "0532-82791918",
-      "photo": "http://store.is.autonavi.com/showpic/06f0538e7b116da138294bb9e49b64ce",
-      "address": "京山路26号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "photos": [
-        "http://store.is.autonavi.com/showpic/06f0538e7b116da138294bb9e49b64ce",
-        "http://aos-cdn-image.amap.com/sns/ugccomment/298e5b19-69db-43ef-a713-23d2e8d8aafd.jpg",
-        "http://store.is.autonavi.com/showpic/e646c89420bd77ad6cd967677b9a2382"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        120.345358,
-        36.068796
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s98b25858",
-      "name": "巧克巧蔻巧克力博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "这是一座位于青岛城内的巧克力主题博物馆，建议游览约两小时。",
-      "reason": "可慢慢参观，留意展品细节。",
-      "open": "10:00-20:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.318804,
-        36.070886
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0JBMHZ27F",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:00-20:30",
-      "tel": "17657037665",
-      "photo": "https://aos-comment.amap.com/B0JBMHZ27F/comment/content_media_external_file_100001245_1771769348594_23687146.jpg",
-      "address": "中山路139号(中山路地铁站D口步行230米)",
-      "district": "市北区",
-      "adcode": "370203",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B0JBMHZ27F/comment/content_media_external_file_100001245_1771769348594_23687146.jpg",
-        "https://store.is.autonavi.com/showpic/bdb1dae4173b1d9d0000002468416726?type=pic",
-        "https://aos-comment.amap.com/B0JBMHZ27F/comment/20260225-57a9bbc0e45a0e631c781dd3-6nAS56QedQEAIFzSGsgKsz.jpg"
-      ],
-      "keytag": "展览馆",
-      "entrance": [
-        120.318634,
-        36.070873
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sbbbc9dde",
-      "name": "青岛邮电博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "青岛邮电博物馆是一座位于城内的博物馆，建议游览约两小时。",
-      "reason": "可留出约两小时，安静看展。",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.321815,
-        36.063461
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B021409Y0A",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "1月至4月,11月至12月 周一至周日 10:00-12:00,13:00-17:00；5月至10月 周一至周日 09:30-12:00,13:00-18:00；特别提醒:17:00 起二楼展览区域停止售票及参观。",
-      "tel": "0532-82872386",
-      "photo": "https://aos-comment.amap.com/B021409Y0A/comment/content_media_external_file_1000077206_ss__1763600061458_71087645.jpg",
-      "address": "安徽路5号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 0,
-      "photos": [
-        "https://aos-comment.amap.com/B021409Y0A/comment/content_media_external_file_1000077206_ss__1763600061458_71087645.jpg",
-        "https://store.is.autonavi.com/showpic/1fac3401cf7a24160000003365724789?type=pic",
-        "https://store.is.autonavi.com/showpic/8b0c8c6b32c9db440000000974072474?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        120.321484,
-        36.063375
-      ],
-      "navi_poiid": "J51F048003_52134",
-      "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
@@ -2479,53 +2053,6 @@
       "amap_checked_at": "2026-10-17"
     },
     {
-      "id": "s940e03f1",
-      "name": "云霄路美食街(香港中路)",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "饭点前到，少排队",
-      "open": "10:30-24:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        120.392646,
-        36.066383
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0214093TR",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.5,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 10:30-24:00",
-      "tel": "0532-85764906",
-      "photo": "https://aos-comment.amap.com/B0214093TR/comment/271ad666ccafe171573230267e40842e_2048_2048_80.jpg",
-      "address": "云霄路6号",
-      "district": "市南区",
-      "adcode": "370202",
-      "cost": 95,
-      "photos": [
-        "https://aos-comment.amap.com/B0214093TR/comment/271ad666ccafe171573230267e40842e_2048_2048_80.jpg",
-        "http://store.is.autonavi.com/showpic/585156b7f712a90e2e169f17c83cfad0",
-        "https://aos-comment.amap.com/B0214093TR/comment/menu/2750220e70d0ed3211f5082c21cd6338_2048_2048_80.jpg"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        120.392571,
-        36.065712
-      ],
-      "navi_poiid": "J51F048004_40189",
-      "business_area": "云霄路",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
       "id": "se948e07f",
       "name": "浮山巷美食街",
       "cat": "街区",
@@ -2742,7 +2269,12 @@
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0532-81896299",
-      "photo": "http://store.is.autonavi.com/showpic/9df7c968c410f9be369ec14e659953a6"
+      "photo": "http://store.is.autonavi.com/showpic/9df7c968c410f9be369ec14e659953a6",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9df7c968c410f9be369ec14e659953a6",
+        "http://store.is.autonavi.com/showpic/677d97580ff59416812a8f11bb143509",
+        "http://store.is.autonavi.com/showpic/435bdf3ae634874819e0bee8014a8bad"
+      ]
     }
   ]
 }

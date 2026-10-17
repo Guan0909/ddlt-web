@@ -4,27 +4,26 @@
   "compositionBefore": {
     "byCat": {
       "街区": 2,
-      "公园": 6,
-      "夜景": 3,
+      "公园": 3,
+      "夜景": 2,
       "博物馆": 4,
-      "美食": 4,
+      "美食": 2,
       "古迹": 7,
-      "山水": 21,
-      "商圈": 1,
-      "古镇": 2,
+      "山水": 18,
+      "古镇": 1,
       "亲子": 1
     },
     "byGroup": {
-      "core": 34,
-      "night": 3,
+      "core": 30,
+      "night": 2,
       "family": 1,
       "street": 2,
-      "food": 4,
-      "park": 6,
-      "mall": 1,
-      "total": 51,
-      "suburb": 22,
-      "coreRatio": 73
+      "food": 2,
+      "park": 3,
+      "mall": 0,
+      "total": 40,
+      "suburb": 18,
+      "coreRatio": 80
     }
   },
   "keep": [
@@ -84,7 +83,7 @@
     },
     {
       "id": "sifangjie",
-      "name": "独克宗四方街",
+      "name": "香格里拉市独克宗古城",
       "cat": "美食",
       "heat": 8,
       "rating": 4.9,
@@ -102,17 +101,6 @@
       "level": null,
       "score": 0.32,
       "heatNew": 7,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "gucheng-bar",
-      "name": "独克宗古城酒吧街",
-      "cat": "夜景",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
       "why": "知名地标（必留名单）"
     },
     {
@@ -139,7 +127,7 @@
     },
     {
       "id": "napahai",
-      "name": "纳帕海",
+      "name": "纳帕海·白塔站·网红打卡骑马场",
       "cat": "山水",
       "heat": 7,
       "rating": 4.3,
@@ -150,7 +138,7 @@
     },
     {
       "id": "napahai-star",
-      "name": "纳帕海草原星空",
+      "name": "纳帕海大草原旅游景区",
       "cat": "夜景",
       "heat": 7,
       "rating": 4.4,
@@ -171,7 +159,7 @@
     },
     {
       "id": "thangka-center",
-      "name": "香格里拉唐卡艺术中心",
+      "name": "香格里拉唐卡画院(博物馆)",
       "cat": "博物馆",
       "heat": 7,
       "rating": 4.6,
@@ -235,14 +223,14 @@
     },
     {
       "id": "dacao-yuan",
-      "name": "香格里拉大草原",
+      "name": "香格里拉纳帕海大草原",
       "cat": "山水",
       "heat": 7,
       "rating": 4.5,
       "level": null,
       "score": 0.4,
       "heatNew": 7,
-      "why": "评分 4.5 ≥4.5（非常知名）"
+      "why": "知名地标（必留名单）"
     },
     {
       "id": "xiaozhongdian",
@@ -256,7 +244,7 @@
     },
     {
       "id": "yuelianghu",
-      "name": "小中甸月亮湖",
+      "name": "月亮湖",
       "cat": "山水",
       "heat": 7,
       "rating": 4.3,
@@ -298,7 +286,7 @@
     },
     {
       "id": "shanghutiaoxia",
-      "name": "上虎跳峡",
+      "name": "香格里拉虎跳峡景区",
       "cat": "山水",
       "heat": 8,
       "rating": 4.8,
@@ -320,7 +308,7 @@
     },
     {
       "id": "balagezong",
-      "name": "巴拉格宗大峡谷",
+      "name": "香格里拉大峡谷·巴拉格宗国家级风景名胜区",
       "cat": "山水",
       "heat": 7,
       "rating": 4.6,
@@ -331,7 +319,7 @@
     },
     {
       "id": "niru",
-      "name": "尼汝村",
+      "name": "尼汝村称科康达客栈",
       "cat": "古镇",
       "heat": 7,
       "rating": 4.7,
@@ -373,35 +361,24 @@
     },
     {
       "id": "lancang-meili-gorge",
-      "name": "澜沧江梅里大峡谷",
+      "name": "香格里拉大峡谷·巴拉格宗国家级风景名胜区",
       "cat": "山水",
       "heat": 7,
       "rating": 4.6,
       "level": null,
       "score": 0.44,
       "heatNew": 7,
-      "why": "评分 4.6 ≥4.5（非常知名）"
-    },
-    {
-      "id": "yubeng",
-      "name": "雨崩村",
-      "cat": "古镇",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "yubeng-shenpu",
-      "name": "雨崩神瀑",
+      "name": "雨崩景区-神瀑",
       "cat": "山水",
       "heat": 7,
-      "rating": null,
+      "rating": 4.2,
       "level": null,
-      "score": null,
-      "heatNew": null,
+      "score": 0.28,
+      "heatNew": 6,
       "why": "知名地标（必留名单）"
     },
     {
@@ -425,89 +402,26 @@
       "heatNew": 7
     },
     {
-      "id": "bigu-tianchi",
-      "name": "碧沽天池",
-      "cat": "山水",
-      "heat": 6,
-      "rating": 3.9,
-      "level": null,
-      "score": 0.16,
-      "heatNew": 6,
-      "why": "知名地标（必留名单）"
-    },
-    {
       "id": "jinshajiang-bend",
-      "name": "金沙江大拐弯",
+      "name": "金沙江大拐弯观景台",
       "cat": "山水",
       "heat": 7,
-      "rating": null,
+      "rating": 4.7,
       "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "baima-snow-pass",
-      "name": "白马雪山垭口",
-      "cat": "山水",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
+      "score": 0.48,
+      "heatNew": 7,
       "why": "知名地标（必留名单）"
     },
     {
       "id": "wunongding",
       "name": "雾浓顶观景台",
       "cat": "山水",
-      "heat": 7.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null,
-      "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "kawagarbo",
-      "name": "卡瓦格博峰",
-      "cat": "山水",
       "heat": 8,
-      "rating": 2.7,
+      "rating": 4.8,
       "level": null,
-      "score": 0,
-      "heatNew": 5,
+      "score": 0.52,
+      "heatNew": 8,
       "why": "知名地标（必留名单）"
-    },
-    {
-      "id": "jiantang-market",
-      "name": "建塘农贸市场",
-      "cat": "美食",
-      "heat": 6,
-      "rating": 4.1,
-      "level": null,
-      "score": 0.24,
-      "heatNew": 6
-    },
-    {
-      "id": "pijiangpo",
-      "name": "皮匠坡",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
-    },
-    {
-      "id": "nixi-chicken",
-      "name": "尼西土锅鸡",
-      "cat": "美食",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
     },
     {
       "id": "alpine-garden",
@@ -530,44 +444,14 @@
       "heatNew": 6
     },
     {
-      "id": "longtanhu",
-      "name": "龙潭湖公园",
-      "cat": "公园",
+      "id": "jiantang-market",
+      "name": "瑞泰农贸市场",
+      "cat": "美食",
       "heat": 6,
-      "rating": 3.9,
+      "rating": 4.1,
       "level": null,
-      "score": 0.16,
+      "score": 0.24,
       "heatNew": 6
-    },
-    {
-      "id": "namco-park",
-      "name": "香格里拉娜姆措生态公园",
-      "cat": "公园",
-      "heat": 5,
-      "rating": 3.7,
-      "level": null,
-      "score": 0.08,
-      "heatNew": 5
-    },
-    {
-      "id": "wufengshan",
-      "name": "五凤山公园",
-      "cat": "公园",
-      "heat": 5,
-      "rating": 3.6,
-      "level": null,
-      "score": 0.04,
-      "heatNew": 5
-    },
-    {
-      "id": "changzheng-avenue",
-      "name": "长征大道",
-      "cat": "商圈",
-      "heat": 6.5,
-      "rating": null,
-      "level": null,
-      "score": null,
-      "heatNew": null
     }
   ],
   "drop": [],
@@ -588,11 +472,26 @@
   ],
   "heatChanges": [
     {
-      "id": "kawagarbo",
-      "name": "卡瓦格博峰",
-      "from": 8,
-      "to": 5
+      "id": "yubeng-shenpu",
+      "name": "雨崩景区-神瀑",
+      "from": 7,
+      "to": 6
     }
   ],
-  "duplicates": []
+  "duplicates": [
+    {
+      "name": "香格里拉市独克宗古城",
+      "ids": [
+        "duguzong-gucheng",
+        "sifangjie"
+      ]
+    },
+    {
+      "name": "香格里拉大峡谷·巴拉格宗国家级风景名胜区",
+      "ids": [
+        "balagezong",
+        "lancang-meili-gorge"
+      ]
+    }
+  ]
 }

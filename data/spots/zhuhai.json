@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -61,7 +62,8 @@
       "navi_poiid": "F49F022045_28788",
       "business_area": "前山",
       "website": "www.ymy.com.cn",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s4e04b650",
@@ -71,7 +73,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -113,7 +115,8 @@
       "navi_poiid": [],
       "business_area": "桂山岛",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s018ef620",
@@ -314,7 +317,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -356,7 +359,8 @@
       "navi_poiid": [],
       "business_area": "东澳岛旅游度假区",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s1b85c7bc",
@@ -366,7 +370,7 @@
         "省级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -406,7 +410,8 @@
       "navi_poiid": "F49F022043_2281",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s403b3c87",
@@ -598,53 +603,6 @@
         22.224315
       ],
       "navi_poiid": "F49F022042_2150",
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s5495f986",
-      "name": "珠海博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "09:00-17:00",
-      "closed_mon": true,
-      "suburb": false,
-      "coord": [
-        113.576561,
-        22.29298
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B02F40Q3B9",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周二至周日 09:00-17:00开放 最晚进入16:30；周一不开放（法定节假日除外）；法定节假日 09:00-17:00开放 最晚进入16:30；具体开放时间以官方通知为准",
-      "tel": "0756-3324116;0756-3324708;0756-3341233",
-      "photo": "https://store.is.autonavi.com/showpic/e6f1f2fc8f9287b80000002573902341?type=pic",
-      "address": "海虹路88号",
-      "district": "香洲区",
-      "adcode": "440402",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/e6f1f2fc8f9287b80000002573902341?type=pic",
-        "https://store.is.autonavi.com/showpic/94359bc0c42f55f60000003376458054?type=pic",
-        "https://store.is.autonavi.com/showpic/a4f0a6d76ef56e6f0000007501866501?type=pic"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        113.577993,
-        22.294402
-      ],
-      "navi_poiid": "F49F021045_39636",
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
@@ -2159,51 +2117,6 @@
       ],
       "navi_poiid": "F49F022043_1234",
       "business_area": "白藤湖",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s8b69012b",
-      "name": "新海利美食街",
-      "cat": "街区",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "街区，在城内，边走边吃一两小时。",
-      "reason": "傍晚进来，边走边吃",
-      "open": "09:00-22:30",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        113.54458,
-        22.220876
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0I1GBX887",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.3,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-22:30",
-      "photo": "https://store.is.autonavi.com/showpic/3477b94ef2deb86ae5a118d9dade09f3",
-      "address": "华平路与粤华路交叉口东南100米",
-      "district": "香洲区",
-      "adcode": "440402",
-      "cost": 75,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/3477b94ef2deb86ae5a118d9dade09f3",
-        "https://store.is.autonavi.com/showpic/fbe9d8fbb4eec80adcfe7ff38fa14c7e"
-      ],
-      "keytag": "美食街",
-      "entrance": [
-        113.544555,
-        22.220804
-      ],
-      "navi_poiid": [],
-      "business_area": "夏湾",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },

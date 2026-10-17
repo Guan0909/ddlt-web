@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -20,7 +21,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -62,7 +63,8 @@
       "navi_poiid": "G50F035038_208",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s2e91cec5",
@@ -72,7 +74,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -114,7 +116,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sd13c52d1",
@@ -123,7 +126,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 90,
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
@@ -165,7 +168,8 @@
       "navi_poiid": [],
       "business_area": "梅岭",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sda46b190",
@@ -553,7 +557,7 @@
       "tags": [
         "省级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -594,7 +598,8 @@
       "navi_poiid": "G50F040037_14506",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "seaca8389",
@@ -604,7 +609,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
@@ -646,7 +651,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s2af32224",
@@ -655,7 +661,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
@@ -695,7 +701,8 @@
       "navi_poiid": "G50F038037_16449",
       "business_area": "东湖",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s8194b28b",
@@ -704,7 +711,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -745,7 +752,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s11fe6db2",
@@ -1265,53 +1273,6 @@
         24.776081
       ],
       "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s000b3fe9",
-      "name": "泉州博物馆",
-      "cat": "博物馆",
-      "tags": [],
-      "heat": 7,
-      "dur": 120,
-      "intro": "博物馆，在城内，看展两小时上下。",
-      "reason": "午后进馆，躲开一天里最热的时段",
-      "open": "00:00-23:59",
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        118.585827,
-        24.935632
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B025301URW",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.6,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "全年 周二–周日 09:00–17:00开放 最晚售票16:20 最晚进入16:30；全年 周一 全天不开放；春节,元旦节,清明节,劳动节,端午节,中秋节,国庆节 09:00–19:00开放 最晚售票18:20 最晚进入18:30",
-      "tel": "15396378667",
-      "photo": "https://store.is.autonavi.com/showpic/3059e3f069fdf4b30000005096992131?type=pic",
-      "address": "北清东路268号",
-      "district": "丰泽区",
-      "adcode": "350503",
-      "cost": 0,
-      "photos": [
-        "https://store.is.autonavi.com/showpic/3059e3f069fdf4b30000005096992131?type=pic",
-        "https://store.is.autonavi.com/showpic/a886fa04100749790000001905188371?type=pic",
-        "https://store.is.autonavi.com/showpic/ca905dee2bb77dd58354327d7b262747"
-      ],
-      "keytag": "博物馆",
-      "entrance": [
-        118.585663,
-        24.934575
-      ],
-      "navi_poiid": "G50F037037_9982",
       "business_area": [],
       "website": [],
       "amap_checked_at": "2026-10-17"
@@ -2215,53 +2176,6 @@
       "entrance": [
         118.681836,
         24.865883
-      ],
-      "navi_poiid": [],
-      "business_area": [],
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "sd49b7570",
-      "name": "海丝艺术公园",
-      "cat": "公园",
-      "tags": [],
-      "heat": 7,
-      "dur": 90,
-      "intro": "城市公园，在城内，走一圈一小时上下。",
-      "reason": "清晨或傍晚来，走一圈就够",
-      "open": "08:00-18:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        118.741567,
-        24.896378
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0LGT7UAD2",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.4,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://store.is.autonavi.com/showpic/b5df69eb522f8bf00000001247448235?type=pic",
-      "address": "百崎湖畔",
-      "district": "惠安县",
-      "adcode": "350521",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/b5df69eb522f8bf00000001247448235?type=pic",
-        "https://aos-comment.amap.com/B0LGT7UAD2/comment/93c9a42c-dfbf-4a23-8c0f-7bad029f03a2.png",
-        "https://aos-comment.amap.com/B0LGT7UAD2/comment/176896253708_1768962554703_50738985.jpg"
-      ],
-      "keytag": "滨海公园",
-      "entrance": [
-        118.744958,
-        24.894803
       ],
       "navi_poiid": [],
       "business_area": [],

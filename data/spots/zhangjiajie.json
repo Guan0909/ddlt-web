@@ -9,7 +9,8 @@
     "source": "amap",
     "rule_version": "2026-10-17",
     "rule_audit_at": "2026-10-17",
-    "enrich_at": "2026-10-17"
+    "enrich_at": "2026-10-17",
+    "rebuild_at": "2026-10-17"
   },
   "spots": [
     {
@@ -19,7 +20,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -60,7 +61,8 @@
       "navi_poiid": "H49F036020_145;11525",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s9566f8f5",
@@ -70,7 +72,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 8,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -111,7 +113,8 @@
       "navi_poiid": "H49F033020_8",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "sd212d2f9",
@@ -121,7 +124,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -163,7 +166,8 @@
       "navi_poiid": "H49F032021_341",
       "business_area": "黄龙洞景区",
       "website": "www.hnhld.com",
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s5eae629b",
@@ -173,7 +177,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 9,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
@@ -215,7 +219,8 @@
       "navi_poiid": "H49F032022_158;277",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 9
     },
     {
       "id": "s03a514bc",
@@ -224,7 +229,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
@@ -265,7 +270,8 @@
       "navi_poiid": "H49F033021_1",
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s17b459e0",
@@ -275,7 +281,7 @@
         "国家级",
         "远郊"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
       "reason": "傍晚进来，灯亮之后更好看",
@@ -315,7 +321,8 @@
       "navi_poiid": [],
       "business_area": [],
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s200ef5e3",
@@ -324,7 +331,7 @@
       "tags": [
         "国家级"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
@@ -366,7 +373,8 @@
       "navi_poiid": "H49F035020_4090",
       "business_area": "北正街",
       "website": [],
-      "amap_checked_at": "2026-10-17"
+      "amap_checked_at": "2026-10-17",
+      "heat_prev": 8
     },
     {
       "id": "s0d4b8fcd",
@@ -1092,58 +1100,6 @@
       "keytag": "景区",
       "navi_poiid": [],
       "business_area": "天子山站",
-      "website": [],
-      "amap_checked_at": "2026-10-17"
-    },
-    {
-      "id": "s2aed7a1b",
-      "name": "张家界魅力湘西国际文化广场景区",
-      "cat": "山水",
-      "tags": [
-        "省级",
-        "远郊"
-      ],
-      "heat": 7,
-      "dur": 180,
-      "intro": "自然山水，在城郊，排一整天。",
-      "reason": "赶早进山，中午前到主要观景点",
-      "open": "00:00-23:59",
-      "closed_mon": false,
-      "suburb": true,
-      "coord": [
-        110.541917,
-        29.344901
-      ],
-      "coord_src": "amap",
-      "amap_poi_id": "B0FFGF0JHM",
-      "refreshed_at": "2026-10-17",
-      "verify_src": "amap",
-      "verified_at": "2026-10-17",
-      "rating": 4.2,
-      "biz_src": "amap",
-      "biz_at": "2026-10-17",
-      "added_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00；《魅力湘西》演出具体演出时间以景区实际为准",
-      "tel": "0744-5667777",
-      "photo": "https://store.is.autonavi.com/showpic/26582b29ac954a2a0000002939840604?type=pic",
-      "address": "画卷路",
-      "district": "武陵源区",
-      "adcode": "430811",
-      "cost": 0,
-      "ticket_ordering": "0",
-      "photos": [
-        "https://store.is.autonavi.com/showpic/26582b29ac954a2a0000002939840604?type=pic",
-        "https://store.is.autonavi.com/showpic/c8855214a87f73f40000002909010888?type=pic",
-        "https://store.is.autonavi.com/showpic/0f456f74cc664f5c5d2178f9b2c3186d"
-      ],
-      "a_level": "3A",
-      "keytag": "3A景区",
-      "entrance": [
-        110.542768,
-        29.344896
-      ],
-      "navi_poiid": [],
-      "business_area": "张家界《魅力湘西》演出",
       "website": [],
       "amap_checked_at": "2026-10-17"
     },
