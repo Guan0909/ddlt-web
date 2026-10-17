@@ -8,7 +8,8 @@
     "generated_at": "2026-10-17",
     "source": "amap",
     "rule_version": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -23,7 +24,7 @@
       "intro": "象鼻山景区位于桂林城内，属山水类景区，建议游览三小时，评分四点八。",
       "reason": "建议放慢脚步，静看山水景致。",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.296573,
@@ -39,7 +40,27 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:00-21:00 最晚进入21:00；入园时间:07:00-21:00(一号门（可出可入）)； 07:00-18:00(二号门（出口，不可入）)； 07:00-21:00(三号门（可出可入）)",
-      "photo": "http://store.is.autonavi.com/showpic/85083b528216d28f25499ea8872ef850"
+      "photo": "http://store.is.autonavi.com/showpic/85083b528216d28f25499ea8872ef850",
+      "address": "民主路1号",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/85083b528216d28f25499ea8872ef850",
+        "http://store.is.autonavi.com/showpic/879a7a11a18fcfb54a32beed23e37280",
+        "http://store.is.autonavi.com/showpic/471edb1ee65919926066d5d9d74792aa"
+      ],
+      "a_level": "5A",
+      "keytag": "名山丘陵",
+      "entrance": [
+        110.293134,
+        25.26676
+      ],
+      "navi_poiid": "G49F033019_20789;923",
+      "business_area": [],
+      "website": "www.glxbs.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sce81cf48",
@@ -52,8 +73,8 @@
       "dur": 180,
       "intro": "两江四湖景区是桂林城内的山水类景区，建议游览约三小时。",
       "reason": "宜沿湖慢行，安静感受山水城景。",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.295526,
@@ -70,7 +91,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00；航班时间:8:00、8:20、9:50、10:40、11:00、13:40、15:10、16:30，以上登船时间仅供参考，具体请以工作人员出发前通知为准。游船时间约70分钟。",
       "tel": "0773-2822666;0773-8980066;15307736611",
-      "photo": "http://store.is.autonavi.com/showpic/0ad72477a50f83fb1d6e786e20b3c7c9"
+      "photo": "http://store.is.autonavi.com/showpic/0ad72477a50f83fb1d6e786e20b3c7c9",
+      "address": "杉湖北路",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/0ad72477a50f83fb1d6e786e20b3c7c9",
+        "http://store.is.autonavi.com/showpic/b1986a20ef98f5ea860a21b9efe3fe77",
+        "http://store.is.autonavi.com/showpic/4890b9ad018cb5da5645a7485b77944d"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        110.295551,
+        25.272873
+      ],
+      "navi_poiid": "G49F033019_42357",
+      "business_area": "中山中路",
+      "website": "www.glljsh.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s56ce9448",
@@ -84,7 +125,7 @@
       "intro": "独秀峰·王城景区位于桂林城内，属山水类景区，建议游览三小时左右。",
       "reason": "建议从容游赏，慢品山水与城景。",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.299118,
@@ -101,7 +142,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "tel": "17777366779",
-      "photo": "http://store.is.autonavi.com/showpic/897a529e69c80f2d6790c91210dab316"
+      "photo": "http://store.is.autonavi.com/showpic/897a529e69c80f2d6790c91210dab316",
+      "address": "王城路1号",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/897a529e69c80f2d6790c91210dab316",
+        "http://store.is.autonavi.com/showpic/aac7ee85019298d8d7f50a1cee0db37b",
+        "http://store.is.autonavi.com/showpic/27ca8c8cc95cb20155a7ae5cf5650a0d"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        110.297861,
+        25.281007
+      ],
+      "navi_poiid": "G49F033019_15826;18965;15900;29795",
+      "business_area": "正阳",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s3ab6fdb8",
@@ -114,8 +175,8 @@
       "dur": 180,
       "intro": "穿山景区是桂林城内的山水类景点，建议游览时长约三小时。",
       "reason": "放慢节奏，按三小时从容游览。",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.304191,
@@ -131,7 +192,27 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/79a00f7b2ddd5db0f8885de7436b3d47"
+      "photo": "http://store.is.autonavi.com/showpic/79a00f7b2ddd5db0f8885de7436b3d47",
+      "address": "穿山小街55号",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/79a00f7b2ddd5db0f8885de7436b3d47",
+        "http://store.is.autonavi.com/showpic/df8ea6b96a76d0adeba3741e566be0d7",
+        "http://store.is.autonavi.com/showpic/7a366a1ed87476be0e46454d6903785c"
+      ],
+      "a_level": "4A",
+      "keytag": "名山丘陵",
+      "entrance": [
+        110.301736,
+        25.251629
+      ],
+      "navi_poiid": "G49F033019_754",
+      "business_area": "穿山景区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7f76d174",
@@ -145,8 +226,8 @@
       "dur": 180,
       "intro": "阳朔漓江景区是桂林的山水类景区，位于城郊，建议游览约三小时。",
       "reason": "适合放慢节奏，静看山水。",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.526334,
@@ -162,7 +243,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/f67d00bc2a7edd6883748d33a206261f"
+      "photo": "http://store.is.autonavi.com/showpic/f67d00bc2a7edd6883748d33a206261f",
+      "address": "兴坪古镇兴坪码头附近",
+      "district": "阳朔县",
+      "adcode": "450321",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f67d00bc2a7edd6883748d33a206261f",
+        "http://store.is.autonavi.com/showpic/22de95d6d678c5530de788a425d15399",
+        "http://store.is.autonavi.com/showpic/5261c7f7947c298eb2fc689f5f732aa4"
+      ],
+      "keytag": "湖泊河流",
+      "entrance": [
+        110.526548,
+        24.916995
+      ],
+      "navi_poiid": "G49F037021_472",
+      "business_area": "兴坪古镇",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s608aeeca",
@@ -174,7 +274,7 @@
       "intro": "日月双塔文化公园是桂林城内的古迹类景点，建议游览约两小时。",
       "reason": "慢行观赏，留意双塔与园景的层次。",
       "open": "08:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.294079,
@@ -191,7 +291,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-22:00",
       "tel": "0773-2582888",
-      "photo": "http://store.is.autonavi.com/showpic/8d9ab59d63688dce056b519ae964427a"
+      "photo": "http://store.is.autonavi.com/showpic/8d9ab59d63688dce056b519ae964427a",
+      "address": "文明路榕杉湖景区内",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/8d9ab59d63688dce056b519ae964427a",
+        "http://store.is.autonavi.com/showpic/1e8c861c153ef26a595dfd59b21072fa",
+        "https://store.is.autonavi.com/showpic/b554dd5d3b5ae0de0000003588176966?type=pic"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        110.293656,
+        25.270846
+      ],
+      "navi_poiid": "G49F033019_16578",
+      "business_area": "中山中路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s475da267",
@@ -205,7 +324,7 @@
       "intro": "芦笛岩是桂林城内的一处山水景点，建议安排约三个小时游览。",
       "reason": "放慢节奏游览，留意山水景致。",
       "open": "07:30-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.272429,
@@ -222,7 +341,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:30-18:00",
       "tel": "0773-2210889",
-      "photo": "http://store.is.autonavi.com/showpic/d9bed94effa350fede311ba76e0df014"
+      "photo": "http://store.is.autonavi.com/showpic/d9bed94effa350fede311ba76e0df014",
+      "address": "芦笛路1号",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d9bed94effa350fede311ba76e0df014",
+        "http://store.is.autonavi.com/showpic/066cc40e51a726bd4d3078a35f3796c2",
+        "http://store.is.autonavi.com/showpic/b45090932b3e3ce6421975f4e052bfb7"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.273481,
+        25.303735
+      ],
+      "navi_poiid": "G49F033019_907",
+      "business_area": "芦笛景区",
+      "website": "www.glludiyan.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s295278dc",
@@ -253,7 +392,27 @@
       "added_at": "2026-10-17",
       "open_text": "4月-10月:7:00-18:30,11月-次年3月:7:00-18:00",
       "tel": "0773-7594192",
-      "photo": "http://store.is.autonavi.com/showpic/aa4f497ac00fd0038fa3a7b403080ef8"
+      "photo": "http://store.is.autonavi.com/showpic/aa4f497ac00fd0038fa3a7b403080ef8",
+      "address": "叠彩街道龙珠路815号",
+      "district": "叠彩区",
+      "adcode": "450303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/aa4f497ac00fd0038fa3a7b403080ef8",
+        "http://store.is.autonavi.com/showpic/cbf0b838207547e06de4b01e70edd4e1",
+        "http://store.is.autonavi.com/showpic/a513a19c1e96be95f191b483054bbc94"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.302802,
+        25.287083
+      ],
+      "navi_poiid": "G49F033019_105654;941",
+      "business_area": "中山北路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf41a99b0",
@@ -267,7 +426,7 @@
       "intro": "桂林尧山景区是一处山水类景点，位于城内，建议游览三小时。",
       "reason": "建议预留三小时，缓步游览，感受山水。",
       "open": "08:30-17:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.374276,
@@ -283,7 +442,27 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-17:00",
-      "photo": "https://store.is.autonavi.com/showpic/2e05644650d5ef3d0000004027286739?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/2e05644650d5ef3d0000004027286739?type=pic",
+      "address": "靖江路(距市中心8公里)",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/2e05644650d5ef3d0000004027286739?type=pic",
+        "http://store.is.autonavi.com/showpic/efabbc9057ab6baaf24a2caa326140df",
+        "https://store.is.autonavi.com/showpic/246e461383aac9ed0000002444466482?type=pic"
+      ],
+      "a_level": "4A",
+      "keytag": "名山丘陵",
+      "entrance": [
+        110.369017,
+        25.292706
+      ],
+      "navi_poiid": "G49F033019_850",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s0b6f7dc5",
@@ -298,7 +477,7 @@
       "intro": "世外桃源是桂林城郊的一处山水景点，建议游览三小时左右。",
       "reason": "宜放慢脚步，安静看山水。",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.388372,
@@ -315,7 +494,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入16:30",
       "tel": "0773-8775666;0773-2819133;0773-2851088",
-      "photo": "http://store.is.autonavi.com/showpic/dab4c58ce2a795f26bd3b3902ca77f72"
+      "photo": "http://store.is.autonavi.com/showpic/dab4c58ce2a795f26bd3b3902ca77f72",
+      "address": "321国道",
+      "district": "阳朔县",
+      "adcode": "450321",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/dab4c58ce2a795f26bd3b3902ca77f72",
+        "http://store.is.autonavi.com/showpic/2436fd67defcd857a5e2882127a7a087",
+        "http://store.is.autonavi.com/showpic/0664292f0a6a7b87f6383bc568d7d8dd"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.393513,
+        24.861956
+      ],
+      "navi_poiid": "G49F038020_2",
+      "business_area": [],
+      "website": "www.niceview.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7853517e",
@@ -329,7 +528,7 @@
       "intro": "广西桂林国家森林公园属山水类景点，位于城内，建议游览约三小时。",
       "reason": "放慢脚步，安静感受山水与林木。",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.248333,
@@ -346,7 +545,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "tel": "0773-3902422;0773-3904878",
-      "photo": "http://store.is.autonavi.com/showpic/e6a1e3de9cb6e3a462791af5043446a5"
+      "photo": "http://store.is.autonavi.com/showpic/e6a1e3de9cb6e3a462791af5043446a5",
+      "address": "万福路6号",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/e6a1e3de9cb6e3a462791af5043446a5",
+        "http://store.is.autonavi.com/showpic/db5d50b9d48debddfebac5ca56422d0b",
+        "https://store.is.autonavi.com/showpic/83b7b936a56e006e0000004069850954?type=pic"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        110.252981,
+        25.211366
+      ],
+      "navi_poiid": "G49F034018_357",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s364a502a",
@@ -360,7 +578,7 @@
       "intro": "芦笛景区是桂林城内的一处山水景点，适合安排约三个小时游览。",
       "reason": "沿水慢行，随走随看，不必赶路。",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.272436,
@@ -377,7 +595,27 @@
       "added_at": "2026-10-17",
       "open_text": "1月至4月,11月至12月 周一至周日 08:00-17:30；5月至10月 周一至周日 07:30-18:00 最晚进入18:00",
       "tel": "0773-2210889",
-      "photo": "http://store.is.autonavi.com/showpic/7cf3b67b35c3dc55d9e0fcc26e393f77"
+      "photo": "http://store.is.autonavi.com/showpic/7cf3b67b35c3dc55d9e0fcc26e393f77",
+      "address": "甲山街道芦笛路1号",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7cf3b67b35c3dc55d9e0fcc26e393f77",
+        "https://aos-comment.amap.com/B03050VG4W/comment/content_media_external_file_8978_ss__1759019115952_46673872.jpg",
+        "https://aos-comment.amap.com/B03050VG4W/comment/content_media_external_file_100019008_1765463716429_23876159.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.273462,
+        25.30371
+      ],
+      "navi_poiid": [],
+      "business_area": "芦笛景区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sa76192c3",
@@ -391,7 +629,7 @@
       "intro": "鲁家村是桂林城内的一处山水景点，适合安排约三小时游览。",
       "reason": "沿水边慢行，留意山色变化即可。",
       "open": "07:30-23:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.272366,
@@ -408,7 +646,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:30-23:00",
       "tel": "0773-2615027;0773-7595289",
-      "photo": "https://aos-comment.amap.com/B03050X3MQ/comment/20260312-6e36bb35f7ca4a967cf05732-3c6pPA8Jtfd7EfLhk5URT5.jpg"
+      "photo": "https://aos-comment.amap.com/B03050X3MQ/comment/20260312-6e36bb35f7ca4a967cf05732-3c6pPA8Jtfd7EfLhk5URT5.jpg",
+      "address": [],
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B03050X3MQ/comment/20260312-6e36bb35f7ca4a967cf05732-3c6pPA8Jtfd7EfLhk5URT5.jpg",
+        "https://aos-comment.amap.com/B03050X3MQ/comment/112096DA_FAC7_4118_A53D_32BE89C221FD_L0_001_1500_200_1768450072902_18220153.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/efcc815b-e7f4-4382-a1d3-9eaff9ab616e.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.27401,
+        25.295265
+      ],
+      "navi_poiid": [],
+      "business_area": "桃花江",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s9f388dbb",
@@ -422,7 +679,7 @@
       "intro": "七星景区是桂林城内的山水类景区，建议安排约三个小时游览。",
       "reason": "可放慢节奏，分段游览，留出休息时间。",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.313397,
@@ -439,7 +696,27 @@
       "added_at": "2026-10-17",
       "open_text": "1月至3月,11月至12月 周一至周日 07:00-21:00 最晚进入21:00；4月至10月 周一至周日 06:30-21:00 最晚进入21:00",
       "tel": "0773-5812174;0773-5814343;0773-5815050;0773-5814342",
-      "photo": "http://store.is.autonavi.com/showpic/5590e1d0aa4c39d3f6b7d70401fee544"
+      "photo": "http://store.is.autonavi.com/showpic/5590e1d0aa4c39d3f6b7d70401fee544",
+      "address": "漓江东岸七星路1号(近龙隐小学)",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5590e1d0aa4c39d3f6b7d70401fee544",
+        "http://store.is.autonavi.com/showpic/9f08230c779d7c963c392fba30ac31bb",
+        "http://store.is.autonavi.com/showpic/73ddb49385c8671ea553d1ce5606b6d4"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.312439,
+        25.276512
+      ],
+      "navi_poiid": "G49F033019_480",
+      "business_area": "七星公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s5128ef35",
@@ -454,7 +731,7 @@
       "intro": "东漓古村景区位于桂林城郊，是一处古镇类景点，建议游览三小时左右。",
       "reason": "建议放慢节奏，从容游览不必赶。",
       "open": "09:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.460476,
@@ -471,7 +748,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-17:30 最晚进入17:30",
       "tel": "0773-5849898;0773-6350178",
-      "photo": "http://store.is.autonavi.com/showpic/6e997636afe522b9bfbe46100220466c"
+      "photo": "http://store.is.autonavi.com/showpic/6e997636afe522b9bfbe46100220466c",
+      "address": "大圩镇357国道旷心园南350米",
+      "district": "灵川县",
+      "adcode": "450323",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6e997636afe522b9bfbe46100220466c",
+        "http://store.is.autonavi.com/showpic/c0aff6c227d53e5c790d1870268ae8d5",
+        "https://store.is.autonavi.com/showpic/b9e83a181c8ce8dd0000004069270184?type=pic"
+      ],
+      "a_level": "4A",
+      "keytag": "古镇古村",
+      "entrance": [
+        110.460597,
+        25.185015
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s221253b2",
@@ -485,7 +782,7 @@
       "intro": "刘三姐大观园是桂林城内一处山水类景点，建议游览三小时。",
       "reason": "宜从容游览，感受山水景致。",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.269654,
@@ -502,7 +799,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入17:30",
       "tel": "0773-2891738;0773-2891758",
-      "photo": "http://store.is.autonavi.com/showpic/05efef937e6e0689e436f04708ad5ba7"
+      "photo": "http://store.is.autonavi.com/showpic/05efef937e6e0689e436f04708ad5ba7",
+      "address": "桃花江路1号(近西山路)",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/05efef937e6e0689e436f04708ad5ba7",
+        "http://store.is.autonavi.com/showpic/b831c35fadee5817639e9c1638cc447b",
+        "http://store.is.autonavi.com/showpic/f3ef18c9f67576aa71f13dd0bbe61665"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.270694,
+        25.280738
+      ],
+      "navi_poiid": "G49F033019_22446;104931",
+      "business_area": "西山公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sdad94e78",
@@ -517,7 +834,7 @@
       "intro": "适合带娃的景点，在城郊，排一整个上午。",
       "reason": "开门就到，午后孩子容易累",
       "open": "09:30-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.337794,
@@ -534,7 +851,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:30-17:30",
       "tel": "0773-3869009;0773-3869051",
-      "photo": "http://store.is.autonavi.com/showpic/610639c4215e0cb6d8d457a77253457d"
+      "photo": "http://store.is.autonavi.com/showpic/610639c4215e0cb6d8d457a77253457d",
+      "address": "026乡道小山",
+      "district": "雁山区",
+      "adcode": "450311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/610639c4215e0cb6d8d457a77253457d",
+        "http://store.is.autonavi.com/showpic/d7722a7d4c89be1e3f99b7f8524a927a",
+        "http://store.is.autonavi.com/showpic/a444817f983795acb7211949c567f0ad"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.333954,
+        25.044678
+      ],
+      "navi_poiid": "G49F036019_4",
+      "business_area": [],
+      "website": "www.yuzile.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s5a5827c3",
@@ -546,7 +883,7 @@
       "intro": "信昌·桂海晴岚景区是桂林城内的山水类景区，建议游览三小时。",
       "reason": "建议放慢节奏，留足时间细看山水。",
       "open": "08:30-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.359652,
@@ -563,7 +900,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-18:00",
       "tel": "0773-8982226;0773-8989999",
-      "photo": "http://store.is.autonavi.com/showpic/b48a5da8dbfd524cdcc3edd1f4777428"
+      "photo": "http://store.is.autonavi.com/showpic/b48a5da8dbfd524cdcc3edd1f4777428",
+      "address": "航天路22号",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/b48a5da8dbfd524cdcc3edd1f4777428",
+        "http://store.is.autonavi.com/showpic/9115d2a54a9df330c4252abaf908dea9",
+        "http://store.is.autonavi.com/showpic/4ccb3a013c334d64b227f07ddceb6604"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.356641,
+        25.266902
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s5e08efcc",
@@ -577,7 +933,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.520175,
@@ -594,7 +950,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "tel": "0773-8885068",
-      "photo": "https://store.is.autonavi.com/showpic/400e138a37b105a00000003034594690?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/400e138a37b105a00000003034594690?type=pic",
+      "address": [],
+      "district": "阳朔县",
+      "adcode": "450321",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/400e138a37b105a00000003034594690?type=pic",
+        "https://store.is.autonavi.com/showpic/4be632d44584be970000002742064344?type=pic",
+        "https://store.is.autonavi.com/showpic/514980b0db02c5e00000003581420213?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.520227,
+        24.922821
+      ],
+      "navi_poiid": [],
+      "business_area": "兴坪古镇",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se78856fb",
@@ -606,7 +981,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "11:00-23:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.299731,
@@ -623,7 +998,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 11:00-23:30",
       "tel": "0773-2886666;0773-2887777",
-      "photo": "http://store.is.autonavi.com/showpic/35c2043e9cb19e2bb3e6efc54aea73f5"
+      "photo": "http://store.is.autonavi.com/showpic/35c2043e9cb19e2bb3e6efc54aea73f5",
+      "address": "秀峰街道解放东路18号",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/35c2043e9cb19e2bb3e6efc54aea73f5",
+        "http://store.is.autonavi.com/showpic/355c03858ffddc7ed62a04bbdccc5152",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/b9a5b8ab-7984-4fdc-9a58-e81ce7b041b4.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        110.302308,
+        25.278571
+      ],
+      "navi_poiid": [],
+      "business_area": "正阳",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sdee1191e",
@@ -634,8 +1028,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.290605,
@@ -651,7 +1045,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B030509429/comment/6C81324E_193F_4F64_A87E_5AB849624A2B_L0_001_2133_1600_1726466442968_23185036.jpg"
+      "photo": "https://aos-comment.amap.com/B030509429/comment/6C81324E_193F_4F64_A87E_5AB849624A2B_L0_001_2133_1600_1726466442968_23185036.jpg",
+      "address": "榕荫路",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B030509429/comment/6C81324E_193F_4F64_A87E_5AB849624A2B_L0_001_2133_1600_1726466442968_23185036.jpg",
+        "https://aos-comment.amap.com/B030509429/comment/content_media_external_file_1000021562_ss__1763287998610_40304141.jpg",
+        "https://aos-comment.amap.com/B030509429/comment/ad36238b5ce8b1ae3d7585449d614065_2048_2048_80.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.29076,
+        25.276374
+      ],
+      "navi_poiid": "G49F033019_9192",
+      "business_area": "阳桥",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s88308f5b",
@@ -664,8 +1077,8 @@
       "dur": 180,
       "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
       "reason": "傍晚进来，灯亮之后更好看",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.427751,
@@ -681,7 +1094,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
-      "photo": "http://store.is.autonavi.com/showpic/e0d6d9de93b0d64f70773191a1c1ef10"
+      "photo": "http://store.is.autonavi.com/showpic/e0d6d9de93b0d64f70773191a1c1ef10",
+      "address": "临江路250号漓江景区",
+      "district": "灵川县",
+      "adcode": "450323",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/e0d6d9de93b0d64f70773191a1c1ef10",
+        "https://store.is.autonavi.com/showpic/172d6dde8e78383e0000002875956154?type=pic",
+        "https://aos-comment.amap.com/B0FFG6RK2W/comment/content_media_external_file_100000703_1767680791040_20036757.jpg"
+      ],
+      "keytag": "古镇古村",
+      "entrance": [
+        110.427029,
+        25.183175
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s226f6c3f",
@@ -693,7 +1125,7 @@
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         110.164615,
@@ -710,7 +1142,25 @@
       "added_at": "2026-10-17",
       "open_text": "周二-周日 09:00-17:00开放（16:30停止入园）；周一闭馆（法定节假日除外）；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00-17:00开放（16:30停止入园）；具体开放时间以官方通知为准",
       "tel": "0773-2898690",
-      "photo": "http://store.is.autonavi.com/showpic/5500ee27bedffa0712bd18e4b008a887"
+      "photo": "http://store.is.autonavi.com/showpic/5500ee27bedffa0712bd18e4b008a887",
+      "address": "平桂西路",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5500ee27bedffa0712bd18e4b008a887",
+        "http://store.is.autonavi.com/showpic/0eea70758d35b437c78c621e2c36cf73",
+        "http://store.is.autonavi.com/showpic/9e79aa24ff688b1995e0739489aadf3d"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        110.164268,
+        25.244324
+      ],
+      "navi_poiid": "G49F034018_11634",
+      "business_area": "吾悦广场(桂林店)",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s024d83d3",
@@ -724,7 +1174,7 @@
       "intro": "九马画山峡谷景区属桂林城郊的山水类景区，建议游览三小时。",
       "reason": "宜安排三小时，从容游览山水峡谷。",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.485465,
@@ -740,7 +1190,27 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30",
-      "photo": "http://store.is.autonavi.com/showpic/2ffd8776a0980f4ed24ca26b7f5e74ec"
+      "photo": "http://store.is.autonavi.com/showpic/2ffd8776a0980f4ed24ca26b7f5e74ec",
+      "address": "漓江景区",
+      "district": "阳朔县",
+      "adcode": "450321",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2ffd8776a0980f4ed24ca26b7f5e74ec",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/da116a45-63f5-4e92-9e48-31ef247a2d74.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/746efa96-1662-46a0-925f-3a1caf973c8f.jpg"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        110.491464,
+        24.931931
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s0ade94f3",
@@ -752,7 +1222,7 @@
       "intro": "尊神庙美食文化城是位于桂林城内的古迹类景点，建议游览两小时。",
       "reason": "可缓步游览，顺带品尝饮食。",
       "open": "08:00-21:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.268906,
@@ -768,7 +1238,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-21:30",
-      "photo": "https://aos-comment.amap.com/B0FFKH0C7W/comment/content_media_external_images_media_100005242_1729955730217_19300643.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFKH0C7W/comment/content_media_external_images_media_100005242_1729955730217_19300643.jpg",
+      "address": "中安路",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 52,
+      "photos": [
+        "https://aos-comment.amap.com/B0FFKH0C7W/comment/content_media_external_images_media_100005242_1729955730217_19300643.jpg",
+        "https://store.is.autonavi.com/showpic/9daba2b0128ac7557a10972b34105372",
+        "https://aos-comment.amap.com/B0FFKH0C7W/comment/content_media_external_images_media_100005241_1729955730216_78127655.jpg"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        110.268963,
+        25.270825
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sb56776df",
@@ -796,7 +1284,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": [],
-      "photo": "https://aos-comment.amap.com/B0JDKZ5M61/comment/1C6CD313_2670_4B48_9B91_6C171F28484E_L0_001_678_678_1730968615075_46488722.jpg"
+      "photo": "https://aos-comment.amap.com/B0JDKZ5M61/comment/1C6CD313_2670_4B48_9B91_6C171F28484E_L0_001_678_678_1730968615075_46488722.jpg",
+      "address": "阳光北路10号",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 24,
+      "photos": [
+        "https://aos-comment.amap.com/B0JDKZ5M61/comment/1C6CD313_2670_4B48_9B91_6C171F28484E_L0_001_678_678_1730968615075_46488722.jpg",
+        "https://store.is.autonavi.com/showpic/f70356d289e366214f280e5d2e9cfa8a",
+        "https://aos-comment.amap.com/B0JDKZ5M61/comment/71493562_6939_442E_AB66_D4ABCE4B81C4_L0_001_1079_700_1730968615072_40654936.jpg"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        110.20575,
+        25.252871
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s4485b284",
@@ -808,7 +1314,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.287386,
@@ -825,7 +1331,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00 最晚进入18:00；白龙洞:取票时间截止到17:00",
       "tel": "0773-3806005",
-      "photo": "http://store.is.autonavi.com/showpic/17a453388dfae578f3aca16a9e706d2f"
+      "photo": "http://store.is.autonavi.com/showpic/17a453388dfae578f3aca16a9e706d2f",
+      "address": "平山街道中山南路2号(近将军路)",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/17a453388dfae578f3aca16a9e706d2f",
+        "http://store.is.autonavi.com/showpic/56f661119e8210dbe1bd45f2d7b90226",
+        "http://store.is.autonavi.com/showpic/568c948ba49ae01b89a77a66962fce12"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.28446,
+        25.250172
+      ],
+      "navi_poiid": "G49F033019_29480",
+      "business_area": "中山南路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s76de3f6b",
@@ -854,7 +1380,26 @@
       "added_at": "2026-10-17",
       "open_text": "4月-10月:7:00-18:30,11月-次年3月:7:00-18:00",
       "tel": "0773-7594192",
-      "photo": "http://store.is.autonavi.com/showpic/ddef6f879cddbc70a9aa0521bb40a980"
+      "photo": "http://store.is.autonavi.com/showpic/ddef6f879cddbc70a9aa0521bb40a980",
+      "address": "滨江路27号",
+      "district": "叠彩区",
+      "adcode": "450303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ddef6f879cddbc70a9aa0521bb40a980",
+        "http://store.is.autonavi.com/showpic/198d5309630bbe051bbfd72c4e843b2c",
+        "http://store.is.autonavi.com/showpic/beb19682e7d4e8d9a3aa2df86a95e441"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.303603,
+        25.282436
+      ],
+      "navi_poiid": "G49F033019_933;105011",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s3749d64b",
@@ -865,8 +1410,8 @@
       "dur": 90,
       "intro": "桂林市山水公园是城内的一处公园，建议游览九十分钟左右。",
       "reason": "建议慢行游览，不必赶时间。",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.173255,
@@ -882,7 +1427,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0FFFOZR8C/comment/content_media_external_file_1000057982_ss__1766156215690_93881344.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFFOZR8C/comment/content_media_external_file_1000057982_ss__1766156215690_93881344.jpg",
+      "address": "西城大道",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFFOZR8C/comment/content_media_external_file_1000057982_ss__1766156215690_93881344.jpg",
+        "https://aos-comment.amap.com/B0FFFOZR8C/comment/content_media_external_file_100011090_1762387646128_99698687.jpg",
+        "https://store.is.autonavi.com/showpic/cd9555d3476b2bd9079ff21caed5eeec"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        110.171554,
+        25.23571
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s4d976773",
@@ -893,8 +1457,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.199609,
@@ -910,7 +1474,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/c31afa46f3a7535e0000003422354651?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/c31afa46f3a7535e0000003422354651?type=pic",
+      "address": "临桂田心",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/c31afa46f3a7535e0000003422354651?type=pic",
+        "https://aos-comment.amap.com/B0FFLCWFSE/comment/bd784d6b7323b9cfe0ae43306bc2f92d_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFLCWFSE/comment/content_media_external_file_117753_ss__1756907436554_05891987.jpg"
+      ],
+      "keytag": "古建筑",
+      "entrance": [
+        110.200391,
+        25.162855
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se2413343",
@@ -922,7 +1505,7 @@
       "intro": "这是一处山水观景台，位于桂林城内，建议游览约三小时。",
       "reason": "宜留出半天，从容看山水。",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.296118,
@@ -939,7 +1522,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "tel": "0773-2582112",
-      "photo": "https://aos-comment.amap.com/B0FFG1Q6G1/comment/content_media_external_file_18111_ss__1761878918222_30377133.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFG1Q6G1/comment/content_media_external_file_18111_ss__1761878918222_30377133.jpg",
+      "address": "滨江路1号象鼻山景区内(西北角)",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFG1Q6G1/comment/content_media_external_file_18111_ss__1761878918222_30377133.jpg",
+        "https://aos-comment.amap.com/B0FFG1Q6G1/comment/content_media_external_file_18124_ss__1761878918269_33393537.jpg",
+        "https://store.is.autonavi.com/showpic/27a2adb0cc90cd8c0000000853284682?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.296076,
+        25.268727
+      ],
+      "navi_poiid": [],
+      "business_area": "中心广场",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s0290c73b",
@@ -967,7 +1569,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "工作日:10月8日-10月10日、10月12日-10月16日、10月19日-10月23日、10月26日-10月30日:14:00-18:00；周末:10月11日、10月17日-18日:10:00-18:00；万圣节:10月24日-10月25日、10月31日-11月1日:10:00-21:00,提前1小时截止入园",
-      "photo": "http://store.is.autonavi.com/showpic/0e5364fd6e98ab69440feac9308e7b19"
+      "photo": "http://store.is.autonavi.com/showpic/0e5364fd6e98ab69440feac9308e7b19",
+      "address": "大雁路398号",
+      "district": "雁山区",
+      "adcode": "450311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/0e5364fd6e98ab69440feac9308e7b19",
+        "http://store.is.autonavi.com/showpic/a221806bf2d65085e12dc07fc1d08f03",
+        "http://store.is.autonavi.com/showpic/b54657addf924682b7b678155277186a"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.311131,
+        25.05829
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sc44f25ca",
@@ -979,7 +1600,7 @@
       "intro": "会仙玻璃田是桂林城内的一处山水类景点，建议游览约三个小时。",
       "reason": "宜从容游览，留意现场指引。",
       "open": "07:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.229126,
@@ -996,7 +1617,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:00-18:00",
       "tel": "13324837923",
-      "photo": "https://aos-comment.amap.com/B0FFIXEZTI/comment/b34870e28c628a7ddd261d8e6de36e4f_2048_2048_80.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFIXEZTI/comment/b34870e28c628a7ddd261d8e6de36e4f_2048_2048_80.jpg",
+      "address": "会仙镇同助村委沐宦头村3队8号",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFIXEZTI/comment/b34870e28c628a7ddd261d8e6de36e4f_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFIXEZTI/comment/40FEBA4B_FCE6_4CEC_9982_395D1BCAC6AE_L0_001_2000_150_1763336354779_87868007.jpg",
+        "https://store.is.autonavi.com/showpic/7cf9051fa9f9b8c20000000719748759?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        110.229126,
+        25.047359
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s27813b0f",
@@ -1010,7 +1650,7 @@
       "intro": "红溪大峡谷是桂林城郊的山水类景点，建议游览三小时左右。",
       "reason": "建议放慢节奏，留足时间游览。",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.11003,
@@ -1027,7 +1667,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入17:00",
       "tel": "0773-2818000",
-      "photo": "http://store.is.autonavi.com/showpic/597a64c53757eb8d143258e7214cbc86"
+      "photo": "http://store.is.autonavi.com/showpic/597a64c53757eb8d143258e7214cbc86",
+      "address": "中庸镇怡乐村",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/597a64c53757eb8d143258e7214cbc86",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B030507K1O/headerImg/content_media_external_images_media_1579913_1653789235044_75e542ab.jpg",
+        "http://store.is.autonavi.com/showpic/05f2e07f0138b8c5f81ed3ed1fbbf590"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.099054,
+        25.462375
+      ],
+      "navi_poiid": "G49F031017_37",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7cdeafb4",
@@ -1056,7 +1716,26 @@
       "added_at": "2026-10-17",
       "open_text": [],
       "tel": "18978337592",
-      "photo": "https://aos-comment.amap.com/B0FFFWHXIW/comment/content_media_external_images_media_1000042497_ss__1740133076725_46084467.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFFWHXIW/comment/content_media_external_images_media_1000042497_ss__1740133076725_46084467.jpg",
+      "address": "临桂镇飞虎路5号",
+      "district": "临桂区",
+      "adcode": "450312",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFFWHXIW/comment/content_media_external_images_media_1000042497_ss__1740133076725_46084467.jpg",
+        "https://store.is.autonavi.com/showpic/a28b085bc5309f8b8e1f7d69cb60cd9d",
+        "https://aos-comment.amap.com/B0FFFWHXIW/comment/content_media_external_file_1000038475_ss__1751609103034_92412857.jpg"
+      ],
+      "keytag": "纪念公园",
+      "entrance": [
+        110.161642,
+        25.212859
+      ],
+      "navi_poiid": "G49F034018_1510",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sa99ea472",
@@ -1070,7 +1749,7 @@
       "intro": "三千漓·中国山水人文度假区位于桂林城郊，属山水人文度假类景点，建议游览约三小时。",
       "reason": "可安排半日，沿山水缓缓而行。",
       "open": "08:30-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.538811,
@@ -1087,7 +1766,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-17:30 最晚进入17:00",
       "tel": "0773-8887777",
-      "photo": "https://aos-comment.amap.com/B0FFIUFDF9/comment/content_media_external_file_426121_ss__1763528113782_96204514.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFIUFDF9/comment/content_media_external_file_426121_ss__1763528113782_96204514.jpg",
+      "address": "兴坪镇凤凰路1号",
+      "district": "阳朔县",
+      "adcode": "450321",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFIUFDF9/comment/content_media_external_file_426121_ss__1763528113782_96204514.jpg",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFIUFDF9/comment/1646961948273_temp.jpg",
+        "https://store.is.autonavi.com/showpic/a27223c39e5b75650000004918474983?type=pic"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.539059,
+        24.919431
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s56f23f6f",
@@ -1115,7 +1814,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": [],
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/c9755e46-f72c-44a2-874e-463c8ffd588f.jpg"
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/c9755e46-f72c-44a2-874e-463c8ffd588f.jpg",
+      "address": "崇善路1号",
+      "district": "象山区",
+      "adcode": "450304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/c9755e46-f72c-44a2-874e-463c8ffd588f.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/f11c749a-d2d2-4f0f-96a4-aa93e59132b4.jpg",
+        "https://aos-comment.amap.com/B0305065FB/comment/content_media_external_images_media_1000042032_ss__1767417563854_88593583.jpg"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        110.287557,
+        25.272191
+      ],
+      "navi_poiid": "G49F033019_6935",
+      "business_area": "中山中路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s880b4eec",
@@ -1127,7 +1845,7 @@
       "intro": "适合带娃的景点，在城内，排一整个上午。",
       "reason": "开门就到，午后孩子容易累",
       "open": "09:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.315797,
@@ -1144,7 +1862,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-18:00 最晚进入17:30",
       "tel": "0773-5619626;0773-7987908",
-      "photo": "http://store.is.autonavi.com/showpic/738f4412eff8e17ae1f0d138f240a4ef"
+      "photo": "http://store.is.autonavi.com/showpic/738f4412eff8e17ae1f0d138f240a4ef",
+      "address": "东江街道七星路1号(龙隐小学旁)",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/738f4412eff8e17ae1f0d138f240a4ef",
+        "http://store.is.autonavi.com/showpic/70972b39edbd3bd2807b1990bd4112a3",
+        "http://store.is.autonavi.com/showpic/9f54904b4eb284579df9f063fc3707d4"
+      ],
+      "keytag": "动物园",
+      "entrance": [
+        110.312246,
+        25.268046
+      ],
+      "navi_poiid": "G49F033019_35719",
+      "business_area": "七星公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s72b432c8",
@@ -1156,7 +1893,7 @@
       "intro": "尚水美食街是桂林城内的一处街区，建议游览约一个半小时。",
       "reason": "可留约一个半小时，随意走走看看。",
       "open": "11:00-21:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.298058,
@@ -1172,7 +1909,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 11:00-21:30",
-      "photo": "https://aos-comment.amap.com/B03050VD1G/comment/content_media_external_file_1000014373_ss__1771772791372_30902879.jpg"
+      "photo": "https://aos-comment.amap.com/B03050VD1G/comment/content_media_external_file_1000014373_ss__1771772791372_30902879.jpg",
+      "address": "依仁路步行街与漓滨路交叉口西160米",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 29,
+      "photos": [
+        "https://aos-comment.amap.com/B03050VD1G/comment/content_media_external_file_1000014373_ss__1771772791372_30902879.jpg",
+        "https://aos-comment.amap.com/B03050VD1G/comment/3E9A14A9_4B64_4BF6_8A80_F225BA5FB75A_L0_001_1440_93_1773571382379_09629195.jpg",
+        "https://aos-comment.amap.com/B03050VD1G/comment/29f297cd75544ea034d3acec16c38728_2048_2048_80.jpg"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        110.29831,
+        25.27474
+      ],
+      "navi_poiid": "G49F033019_23232",
+      "business_area": "依仁路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s38783e30",
@@ -1184,7 +1939,7 @@
       "intro": "桂林园博园是位于城内的公园，适合安排约一个半小时游览。",
       "reason": "可沿园内步道慢行，留意水景与植物。",
       "open": "09:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.314488,
@@ -1201,7 +1956,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-18:00",
       "tel": "0773-3676200",
-      "photo": "http://store.is.autonavi.com/showpic/e3fa3d59a13a615c775fb87f03f844cd"
+      "photo": "http://store.is.autonavi.com/showpic/e3fa3d59a13a615c775fb87f03f844cd",
+      "address": "雁山镇雁山街389号",
+      "district": "雁山区",
+      "adcode": "450311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/e3fa3d59a13a615c775fb87f03f844cd",
+        "http://store.is.autonavi.com/showpic/f6a66bee5577429acc19b3cfc42e6a10",
+        "http://store.is.autonavi.com/showpic/e6b3eed65873c03f603f5cf9026dd2a0"
+      ],
+      "keytag": "生态公园",
+      "entrance": [
+        110.31226,
+        25.058821
+      ],
+      "navi_poiid": "G49F036019_124",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sd3e9fba6",
@@ -1213,7 +1987,7 @@
       "intro": "虞山公园位于桂林城内，是一处公园，建议游览约一个半小时。",
       "reason": "适合闲步，不必赶行程。",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.30149,
@@ -1230,7 +2004,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入17:30",
       "tel": "0773-2626645;0773-2605569",
-      "photo": "http://store.is.autonavi.com/showpic/5486d3c3e6f4a296f935305b0b366a31"
+      "photo": "http://store.is.autonavi.com/showpic/5486d3c3e6f4a296f935305b0b366a31",
+      "address": "叠彩街道中山北路70号",
+      "district": "叠彩区",
+      "adcode": "450303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5486d3c3e6f4a296f935305b0b366a31",
+        "http://store.is.autonavi.com/showpic/b757580818b878f6e1ffb5d54972a7e1",
+        "http://store.is.autonavi.com/showpic/5bd9db4496c198e28da6bd223cf63f79"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        110.301522,
+        25.297754
+      ],
+      "navi_poiid": "G49F033019_378",
+      "business_area": "中山北路",
+      "website": "www.cncn.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s3f2785c6",
@@ -1242,7 +2035,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.316815,
@@ -1258,7 +2051,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "6月至9月 周一至周日 06:30-18:30；1月至5月,10月至12月 周一至周日 06:30-18:00",
-      "photo": "https://store.is.autonavi.com/showpic/d209f95708aff7cf0000004934672010?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/d209f95708aff7cf0000004934672010?type=pic",
+      "address": "灵剑路",
+      "district": "七星区",
+      "adcode": "450305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/d209f95708aff7cf0000004934672010?type=pic",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/fe0eeca8-0e08-41e4-b9f4-d64a29a9fdf2.jpg",
+        "https://store.is.autonavi.com/showpic/87be2dd84a850aa2f9208912bc8a5665"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        110.316804,
+        25.273944
+      ],
+      "navi_poiid": "G49F033019_6704",
+      "business_area": "七星公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sb35934da",
@@ -1269,8 +2081,8 @@
       "dur": 180,
       "intro": "东山奇峰观景台是桂林城内的山水类观景台，建议游览约三小时。",
       "reason": "沿步道慢行，留意山间视野变化。",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.341859,
@@ -1286,7 +2098,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/6fe6762d053630470000001272550451"
+      "photo": "https://store.is.autonavi.com/showpic/6fe6762d053630470000001272550451",
+      "address": "东山奇峰镇",
+      "district": "雁山区",
+      "adcode": "450311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/6fe6762d053630470000001272550451",
+        "https://store.is.autonavi.com/showpic/94692111a3594b970000002442852864?type=pic",
+        "https://store.is.autonavi.com/showpic/97c195bd7bf1cb5a0000003294666023?type=pic"
+      ],
+      "keytag": "名山丘陵",
+      "entrance": [
+        110.341761,
+        25.170084
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se91cc8bf",
@@ -1298,7 +2129,7 @@
       "intro": "桂客花海乐园是桂林城内的亲子类景点，建议游览约三个半小时。",
       "reason": "适合与孩子从容游览，不必赶行程。",
       "open": "09:30-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         110.2966,
@@ -1314,7 +2145,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:30-22:00",
-      "photo": "https://store.is.autonavi.com/showpic/13298be665f981906beb51bd2b26786d"
+      "photo": "https://store.is.autonavi.com/showpic/13298be665f981906beb51bd2b26786d",
+      "address": "福利路5号",
+      "district": "秀峰区",
+      "adcode": "450302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/13298be665f981906beb51bd2b26786d",
+        "https://aos-comment.amap.com/B0KAA7C1AK/comment/content_media_external_file_117403_ss__1756716116620_66261148.jpg",
+        "https://store.is.autonavi.com/showpic/f458da37c0b7f3d80000003101858224?type=pic"
+      ],
+      "keytag": "游乐园",
+      "entrance": [
+        110.296615,
+        25.324953
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xc044ea77",
@@ -1328,8 +2178,8 @@
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         110.140047,
@@ -1347,7 +2197,27 @@
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0773-7583088;0773-7583188",
-      "photo": "http://store.is.autonavi.com/showpic/7b69d256c1aef3ab2e20d7b4a8a6fa52"
+      "photo": "http://store.is.autonavi.com/showpic/7b69d256c1aef3ab2e20d7b4a8a6fa52",
+      "address": "龙脊镇",
+      "district": "龙胜各族自治县",
+      "adcode": "450328",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7b69d256c1aef3ab2e20d7b4a8a6fa52",
+        "http://store.is.autonavi.com/showpic/5463f4e6b11ed40d7f65fe0d1712e090",
+        "http://store.is.autonavi.com/showpic/2834cc6a2ac154564b0c0a7472f80953"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        110.073769,
+        25.728586
+      ],
+      "navi_poiid": "G49F027018_101",
+      "business_area": [],
+      "website": "www.amongjia.com",
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }

@@ -1,0 +1,50 @@
+{
+  "city": "重庆",
+  "spots": 67,
+  "checked": 66,
+  "renamed": [
+    {
+      "id": "baixiangju",
+      "from": "白象居",
+      "to": "白象居2号江景民宿"
+    }
+  ],
+  "ratingUpd": [
+    {
+      "id": "liangjiang-cruise",
+      "name": "两江夜游",
+      "from": 4.2,
+      "to": 4.5
+    },
+    {
+      "id": "wfc-observatory",
+      "name": "WFC会仙楼观景台",
+      "from": 4.7,
+      "to": 4.6
+    },
+    {
+      "id": "diaoyu-fortress",
+      "name": "钓鱼城",
+      "to": 4.5
+    }
+  ],
+  "openUpd": 13,
+  "telUpd": 2,
+  "addrUpd": 66,
+  "photoUpd": 66,
+  "coordFixed": [
+    {
+      "id": "liangjiang-cruise",
+      "name": "两江夜游",
+      "drift_m": 385
+    },
+    {
+      "id": "wfc-observatory",
+      "name": "WFC会仙楼观景台",
+      "drift_m": 459
+    }
+  ],
+  "noPoi": [
+    "交通茶馆"
+  ]
+}

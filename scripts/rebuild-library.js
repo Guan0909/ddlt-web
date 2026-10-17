@@ -349,7 +349,9 @@ async function auditRules(cityName, apply) {
     const libRating = typeof s.rating === 'number' && s.rating > 0 ? s.rating : null;
     const rating = poiRating != null ? poiRating : libRating;
     const goodType = !!(poi && /风景名胜|国家级景点|省级景点/.test(poi.type));
-    const famous = fames.some(k => s.name.includes(k)) || (rating != null && rating >= 4.5) || goodType;
+    // 「非常知名」判据：FAME 名单 / 高德景区等级 5A·4A / 评分≥4.5 / 风景名胜·国家级
+    const aLevel = s.a_level || '';
+    const famous = fames.some(k => s.name.includes(k)) || aLevel === '5A' || aLevel === '4A' || (rating != null && rating >= 4.5) || goodType;
     // ① 名称对齐（产品锁名除外；子设施/店铺/连字符名不采信）
     if (poi && !s.name_locked && poi.name && RULE_norm(poi.name) !== RULE_norm(s.name)) {
       const placeOk = !RULE_SHOP_TYPE.test(poi.type) && !RULE_BAD_NAME.test(poi.name) && poi.name.length <= 40;

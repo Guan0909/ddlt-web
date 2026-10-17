@@ -27,7 +27,8 @@
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
     "add_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -63,7 +64,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 10
+      "heat_prev": 10,
+      "address": "熊猫大道1375号",
+      "district": "成华区",
+      "adcode": "510108",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B001C7WE5S/comment/content_media_external_file_40545_1767501720604_43994986.jpg",
+        "https://aos-comment.amap.com/B001C7WE5S/comment/D9A52A3A_A680_4447_9647_0C0069242BF2_L0_001_1500_200_1767303057334_10874921.jpg",
+        "http://store.is.autonavi.com/showpic/f8c5d8db0b8aa5fbbd3cd63202204c26"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.143966,
+        30.727906
+      ],
+      "navi_poiid": "H48F016018_1937",
+      "business_area": "熊猫基地",
+      "website": "www.panda.org.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "kuanzhai",
@@ -98,7 +118,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "少城街道金河路口宽窄巷子",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/5c32db1d32a823c00000008361414873?type=pic",
+        "https://store.is.autonavi.com/showpic/8ff1cd47593e169a8d6ddd44500a8004",
+        "https://store.is.autonavi.com/showpic/6f993a00bbf5fbe30000007746700643?type=pic"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        104.052335,
+        30.663476
+      ],
+      "navi_poiid": "H48F017017_240963;141740",
+      "business_area": "长顺街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jinli",
@@ -133,7 +171,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "武侯祠大街231号附1号",
+      "district": "武侯区",
+      "adcode": "510107",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d474b5c8c8e429854cf808e1445bc15e",
+        "http://store.is.autonavi.com/showpic/fa2f82b05e0bdf05626cd4bb7f3ffe50",
+        "http://store.is.autonavi.com/showpic/05afef84c3ef348eb593611b79a1783e"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        104.04735,
+        30.644147
+      ],
+      "navi_poiid": [],
+      "business_area": "高升桥",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wuhouci",
@@ -168,7 +224,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "武侯祠大街231号",
+      "district": "武侯区",
+      "adcode": "510107",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2a74b5da7192e4628a9bdcc368e002ac",
+        "http://store.is.autonavi.com/showpic/96a6372e5faa32096847b76b5a59af7c",
+        "http://store.is.autonavi.com/showpic/d60e252c0c13b260465aeba6b146c832"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.0473,
+        30.644339
+      ],
+      "navi_poiid": "H48F017017_407375;17067",
+      "business_area": "高升桥",
+      "website": "www.wuhouci.net.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dufu",
@@ -203,7 +277,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "address": "青华路37号",
+      "district": "青羊区",
+      "adcode": "510105",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/afa4c7dfa19bb60e18618913136bda7d",
+        "http://store.is.autonavi.com/showpic/59f06bb43e1b5cd7f6ec27052fa220af",
+        "http://store.is.autonavi.com/showpic/5c37ea973d74d7949607dd75d9f36821"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        104.028793,
+        30.658315
+      ],
+      "navi_poiid": "H48F017017_60880",
+      "business_area": "草堂",
+      "website": "www.cddfct.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dujiangyan",
@@ -238,7 +329,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "公园路",
+      "district": "都江堰市",
+      "adcode": "510181",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/31fab45390b5932dfa51a67dbf8548f4",
+        "http://store.is.autonavi.com/showpic/9dd769964bd96b13c2990058c0bfce5c",
+        "http://store.is.autonavi.com/showpic/7b311531ba597ec4464683df23df3365"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        103.614486,
+        30.994157
+      ],
+      "navi_poiid": "H48F012013_37817;21586",
+      "business_area": "玉垒山公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qingcheng",
@@ -273,7 +383,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "address": "青城山内",
+      "district": "都江堰市",
+      "adcode": "510181",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B001C8SBIF/comment/BEDE0002_9DAF_4E64_AE46_44FB5B936B35_L0_001_2000_112_1764087182311_08131384.jpg",
+        "https://store.is.autonavi.com/showpic/3379bf9e728daaa30000006160406218?type=pic",
+        "https://store.is.autonavi.com/showpic/0e732a52d26088840000003387290259?type=pic"
+      ],
+      "keytag": "名山大川",
+      "entrance": [
+        103.606088,
+        30.887416
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "chunxi",
@@ -306,7 +434,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "address": "春熙路街道",
+      "district": "锦江区",
+      "adcode": "510104",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/023908e1ac8e27470b30bced7c4eb58c",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/70f19abf-88d4-4228-ad8f-bc31d638d747.jpg",
+        "https://store.is.autonavi.com/showpic/b77b70e3451c0ebf21cdeaaf1cc3acad"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        104.0786,
+        30.657882
+      ],
+      "navi_poiid": "H48F017017_249133",
+      "business_area": "东大街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "taikooli",
@@ -341,7 +486,24 @@
       "photo": "http://store.is.autonavi.com/showpic/4E377E858534426097901E10EEAFCD8E",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9
+      "heat_prev": 9,
+      "address": "中纱帽街8号",
+      "district": "锦江区",
+      "adcode": "510104",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/4E377E858534426097901E10EEAFCD8E",
+        "http://store.is.autonavi.com/showpic/8b692655d3f68031abdae39110a0dc84",
+        "https://store.is.autonavi.com/showpic/e316c5e16ba6cb9a0000008930646972?type=pic"
+      ],
+      "keytag": "商场",
+      "entrance": [
+        104.08155,
+        30.65276
+      ],
+      "navi_poiid": "H48F017017_234741;554725",
+      "business_area": "大慈寺",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "renmin-park",
@@ -356,8 +518,8 @@
       "dur": 75,
       "intro": "成都人生活标本，百年鹤鸣茶社所在地。",
       "reason": "一杯盖碗茶坐一中午",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         104.057641,
@@ -371,7 +533,29 @@
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "heat_prev": 9,
-      "rating": 4.8
+      "rating": 4.8,
+      "open_text": "周一至周日 00:00-24:00；具体营业状态以当天开放情况为准",
+      "tel": "028-86132021",
+      "address": "小南街8号(人民公园地铁站B口步行250米)",
+      "district": "青羊区",
+      "adcode": "510105",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B001C7X8QA/comment/content_media_external_file_100003153_1767367568289_40288788.jpg",
+        "https://aos-comment.amap.com/B001C7X8QA/comment/57CB8B05_1E45_4134_9A2D_865DBEEE553B_L0_001_1179_86_1766480459732_07341334.jpg",
+        "https://aos-comment.amap.com/B001C7X8QA/comment/1F5D05D1_071C_45F4_B86C_1DE32DB1151A_L0_001_1206_120_1767139271327_64300218.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.058854,
+        30.657759
+      ],
+      "navi_poiid": "H48F017017_16787",
+      "business_area": "小南街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "chengdu-museum",
@@ -386,7 +570,7 @@
       "dur": 100,
       "intro": "天府广场旁的城市博物馆，镇馆之宝石犀。",
       "reason": "下午最热时正好进馆看展",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -406,7 +590,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "小河街1号",
+      "district": "青羊区",
+      "adcode": "510105",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2892dfb3b4f73400dc26209b74a74fdb",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B001C8SBG2/headerImg/content_media_external_images_media_430_1651815910144_4885fc78.jpg",
+        "http://store.is.autonavi.com/showpic/2f26f6db24cd260224f15cfe1060075c"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        104.06428,
+        30.656979
+      ],
+      "navi_poiid": "H48F017017_412186",
+      "business_area": "人民中路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jinsha",
@@ -456,7 +657,7 @@
       "dur": 110,
       "intro": "西南最大综合博物馆，张大千书画馆藏丰富。",
       "reason": "紧挨浣花溪，可与草堂连游",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -476,7 +677,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "青华路5号",
+      "district": "青羊区",
+      "adcode": "510105",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/836d32ef2e76c2a17135c284dde5fe79",
+        "http://store.is.autonavi.com/showpic/9844ec34e25766f924dc264d0e2c6bde",
+        "http://store.is.autonavi.com/showpic/fa5a27611ec15cd1d4f1819367772a15"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        104.034792,
+        30.660161
+      ],
+      "navi_poiid": "H48F017017_152764",
+      "business_area": "草堂",
+      "website": "www.scmuseum.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wenshu",
@@ -510,7 +728,25 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "文殊院街66号(文殊院地铁站K口步行400米)",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5651e33f9486e7100862d905161aa4b1",
+        "http://store.is.autonavi.com/showpic/fe9557ac4c7d8d363fad3392868b2ed6",
+        "http://store.is.autonavi.com/showpic/13ae8501a205f8e5ad365c6fee04a3b0"
+      ],
+      "keytag": "人文景观",
+      "entrance": [
+        104.070338,
+        30.675545
+      ],
+      "navi_poiid": "H48F016017_56970",
+      "business_area": "德盛路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qingyang",
@@ -544,7 +780,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "一环路西二段9号(青羊宫地铁站C口向后步行90米)",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3a705c47a0dccba3e7eb61b7b6599084",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B001C04CFE/headerImg/content_media_external_images_media_852165_1654615078169_2c07f209.jpg",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B001C04CFE/headerImg/content_media_external_images_media_852166_1654615078169_a0c1b8e8.jpg"
+      ],
+      "keytag": "道观",
+      "entrance": [
+        104.040925,
+        30.659698
+      ],
+      "navi_poiid": "H48F017017_408558",
+      "business_area": "小南街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "daci",
@@ -579,7 +833,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "大慈寺路21-23号(春熙路地铁站C口步行360米)",
+      "district": "锦江区",
+      "adcode": "510104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5fa3898c347ba4e69fcf0e5648589af3",
+        "https://store.is.autonavi.com/showpic/c0396de5924d1f2e0000002796116673?type=pic",
+        "https://store.is.autonavi.com/showpic/d3515c28de4a70b60000008098768550?type=pic"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        104.084154,
+        30.655362
+      ],
+      "navi_poiid": "H48F017017_129511",
+      "business_area": "东大街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jiuyanqiao",
@@ -614,7 +886,25 @@
       "photo": "http://store.is.autonavi.com/showpic/1813efbac9b98469295896d23f10622c",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "滨江东路66号(九眼桥地铁站A口步行320米)",
+      "district": "武侯区",
+      "adcode": "510107",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1813efbac9b98469295896d23f10622c",
+        "https://store.is.autonavi.com/showpic/a8f24ebefff259f80000003573656041?type=pic",
+        "https://store.is.autonavi.com/showpic/c9d898a95ee274a40000002871550888?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        104.086073,
+        30.642318
+      ],
+      "navi_poiid": "H48F017017_26650;275302",
+      "business_area": "小天竺",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wangjianglou",
@@ -649,7 +939,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "望江路30号",
+      "district": "武侯区",
+      "adcode": "510107",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/910ec7d0a46baac93ccef6a0d71ff17d",
+        "http://store.is.autonavi.com/showpic/13ac42b178fbad7e89925f94eef6cf0c",
+        "http://store.is.autonavi.com/showpic/5b07c78f700d027b01dda11745ad167e"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        104.090042,
+        30.627469
+      ],
+      "navi_poiid": "H48F017017_34268;158217",
+      "business_area": "磨子桥",
+      "website": "www.wangjianglou.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dongjiao",
@@ -684,7 +993,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "跳蹬河街道建设南支路1号",
+      "district": "成华区",
+      "adcode": "510108",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B001C8NUD2/comment/content_media_external_file_1000018078_ss__1766945941519_25102748.jpg",
+        "http://store.is.autonavi.com/showpic/ba1c78ab21106091a7027c75c0335830",
+        "https://aos-comment.amap.com/comment/content_service_b8aac0586f8c618e139dadc65ee889df_1767443600980_63303145.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.124849,
+        30.669946
+      ],
+      "navi_poiid": "H48F016017_169287",
+      "business_area": "东郊记忆",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jianshe-road",
@@ -699,20 +1027,41 @@
       "dur": 90,
       "intro": "成都最火的小吃夜市街，排队是常态。",
       "reason": "降龙爪爪和烤苕皮必须安排",
-      "open": null,
-      "closed_mon": null,
+      "open": "09:00-22:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         104.102816,
         30.671142
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0FFL1BJCX",
+      "amap_poi_id": "B001C8OXSS",
       "refreshed_at": "2026-10-13",
-      "rating": 4.7,
+      "rating": 4.5,
       "heat_prev": 8,
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "open_text": "周一至周日 09:00-22:00",
+      "tel": "028-85538914",
+      "address": "武侯祠大街231号附1号锦里内",
+      "district": "武侯区",
+      "adcode": "510107",
+      "cost": 41,
+      "photos": [
+        "https://aos-comment.amap.com/B001C8OXSS/comment/50E95AE9_2CD4_4CBB_B9C7_09A6704E0E97_L0_001_1502_200_1769430256471_76325963.jpg",
+        "https://store.is.autonavi.com/showpic/a7fd1b742b0e07570000001543800847",
+        "http://store.is.autonavi.com/showpic/7ce4de48406ab66a20f4abfede620d93"
+      ],
+      "photo": "https://aos-comment.amap.com/B001C8OXSS/comment/50E95AE9_2CD4_4CBB_B9C7_09A6704E0E97_L0_001_1502_200_1769430256471_76325963.jpg",
+      "keytag": "美食街",
+      "entrance": [
+        104.050046,
+        30.644661
+      ],
+      "navi_poiid": [],
+      "business_area": "高升桥",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yulin",
@@ -806,7 +1155,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "草堂街道青华路9号(近杜甫草堂)",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/36939d51bb4264f5f38ce5b548396e4a",
+        "http://store.is.autonavi.com/showpic/fb908ef6d72e2bedacd7dd0183d15e4b",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/8302d34c-b6b9-4061-a156-f2f3ae1b8334.jpg"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        104.03254,
+        30.662105
+      ],
+      "navi_poiid": "H48F017017_60825",
+      "business_area": "草堂",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "baihuatan",
@@ -841,7 +1208,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "芳邻路5号",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/426b558552b51bd89e09a6d86a3cc8fa",
+        "http://store.is.autonavi.com/showpic/53ade87f82f31d8a81fcb2b89a308c56",
+        "http://store.is.autonavi.com/showpic/5faddb826a888e949abd1a77b237aab6"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        104.043362,
+        30.655009
+      ],
+      "navi_poiid": "H48F017017_395148",
+      "business_area": "小南街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yongling",
@@ -876,7 +1261,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "永陵路10号永陵公园",
+      "district": "金牛区",
+      "adcode": "510106",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d22c581f7234d47466518d41c9dde985",
+        "http://store.is.autonavi.com/showpic/17871a3598117f239c5c6eb24f6a5b7d",
+        "http://store.is.autonavi.com/showpic/5c50ac2cb262bada269240267eb34489"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        104.045992,
+        30.674611
+      ],
+      "navi_poiid": "H48F016017_415619",
+      "business_area": "永陵路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sichuan-science",
@@ -891,7 +1293,7 @@
       "dur": 120,
       "intro": "天府广场旁的互动科技馆，遛娃圣地。",
       "reason": "雨天备选，孩子能玩一下午",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -911,7 +1313,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "人民中路一段16号",
+      "district": "青羊区",
+      "adcode": "510105",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5f65993508b40c58bb19239c2bf87e89",
+        "http://store.is.autonavi.com/showpic/85aaf439fe82b0dd189ecf026e3a087f",
+        "http://store.is.autonavi.com/showpic/2f057c7a083d78369b4f36971cf846c5"
+      ],
+      "keytag": "科技馆",
+      "entrance": [
+        104.067248,
+        30.660045
+      ],
+      "navi_poiid": "H48F017017_411957",
+      "business_area": "西华",
+      "website": "www.scstm.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nature-museum",
@@ -926,7 +1345,7 @@
       "dur": 120,
       "intro": "新开的自然馆，合川马门溪龙化石镇馆。",
       "reason": "恐龙骨架下小朋友走不动路",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -946,7 +1365,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "成华大道十里店路88号(十里店地铁站B口步行110米)",
+      "district": "成华区",
+      "adcode": "510108",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/31a0b4d97a84e7c1fd81262bbcddaef4",
+        "http://store.is.autonavi.com/showpic/433310393fd007c289a36508b8755d35",
+        "https://aos-comment.amap.com/B0FFLA0FTW/headerImg/7ac4fcebc2888b8a9163887112e206d6_2048_2048_80.jpg"
+      ],
+      "keytag": "地质博物馆",
+      "entrance": [
+        104.142764,
+        30.677895
+      ],
+      "navi_poiid": [],
+      "business_area": "二仙桥",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zoo",
@@ -980,7 +1416,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "昭觉寺南路234号(动物园地铁站A口步行460米)",
+      "district": "成华区",
+      "adcode": "510108",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/12868c6b4e5a3d9a3095f554e990c174",
+        "http://store.is.autonavi.com/showpic/27ef83d3e3330ecc7d2fbd0ab7cfe77a",
+        "http://store.is.autonavi.com/showpic/f1fc780b6fe3335791bef7055ea59cb6"
+      ],
+      "keytag": "动物园",
+      "entrance": [
+        104.102696,
+        30.71188
+      ],
+      "navi_poiid": "H48F016017_54440",
+      "business_area": "青龙",
+      "website": "www.cdzoo.com.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zhaojue",
@@ -1014,7 +1468,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "昭青路333号",
+      "district": "成华区",
+      "adcode": "510108",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5692519d8768d1d053cfc2588b0a0873",
+        "http://store.is.autonavi.com/showpic/5288bfe3628a00bc538e1f98956a5544",
+        "http://store.is.autonavi.com/showpic/4c71d119d1cf5d779f9e9e723adfbd1f"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        104.105888,
+        30.705694
+      ],
+      "navi_poiid": "H48F016017_54528",
+      "business_area": "青龙",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "happy-valley",
@@ -1047,7 +1519,24 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "西华街道西华大道16号",
+      "district": "金牛区",
+      "adcode": "510106",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ec13684de30a6f00675d37481add6dd2",
+        "http://store.is.autonavi.com/showpic/2134057a0205d8c6d85af95e79b8a30e",
+        "http://store.is.autonavi.com/showpic/f381820221442d035e501c89070ee66c"
+      ],
+      "keytag": "游乐园",
+      "entrance": [
+        104.032564,
+        30.718698
+      ],
+      "navi_poiid": "H48F016017_524159",
+      "business_area": "欢乐谷",
+      "website": "www.happyvalley.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "fangsuo",
@@ -1106,7 +1595,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "铁像寺路88号",
+      "district": "武侯区",
+      "adcode": "510107",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f8551c9093ae77f52ec1f624def23892",
+        "http://store.is.autonavi.com/showpic/ec8850f1accca577673a103b5261bf79",
+        "http://store.is.autonavi.com/showpic/ae61857d6d22448dc13a4e9c2c576c79"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        104.048299,
+        30.556359
+      ],
+      "navi_poiid": "H48F018017_19810",
+      "business_area": "四川天府新区成都直管区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jincheng-lake",
@@ -1140,7 +1647,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "锦城大道1333号",
+      "district": "武侯区",
+      "adcode": "510107",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/70eb2a8f-d7f8-4cc8-80c0-6319b06b2008.jpg",
+        "https://store.is.autonavi.com/showpic/0c4bf19f6b0069f00000002846676465?type=pic",
+        "https://aos-comment.amap.com/B0FFF5TVI7/comment/content_media_external_file_100004037_1765686862499_98297802.jpg"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        104.0426,
+        30.575475
+      ],
+      "navi_poiid": "H48F018017_465607",
+      "business_area": "石羊场",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "huanglongxi",
@@ -1175,7 +1700,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "黄龙溪镇黄金路70号",
+      "district": "双流区",
+      "adcode": "510116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c7f52a244944ad3c980d93daf15663de",
+        "http://store.is.autonavi.com/showpic/7c42b697aa0b675dfb6f19da6ee9484c",
+        "http://store.is.autonavi.com/showpic/dd879d962e5482834c07d045a245d079"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        103.96843,
+        30.321575
+      ],
+      "navi_poiid": "H48F021016_1072;2258",
+      "business_area": "四川天府新区成都直管区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "luodai",
@@ -1210,7 +1754,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "三峨街999号",
+      "district": "龙泉驿区",
+      "adcode": "510112",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/44457060236040337212c1acc0b34d2c",
+        "http://store.is.autonavi.com/showpic/2e229529cffc48a5bec7735e3ac6a7c3",
+        "https://aos-comment.amap.com/B001C8P5T0/headerImg/47AEC55B_6594_4DDA_AAB4_CA1566EE3530_L0_001__DSC4595_1657113976940_b4bd23f8.jpeg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.321766,
+        30.638425
+      ],
+      "navi_poiid": "H48F017019_1741;2211",
+      "business_area": "洛带古镇",
+      "website": "www.luodai.gov.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jiezi",
@@ -1244,7 +1807,25 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "惠丰路1号",
+      "district": "崇州市",
+      "adcode": "510184",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f6832aa4c85fe5286b81092d411f9e3a",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/40c496a2-4dfb-415a-bae2-166abddd521e.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/5bb748cf-4d25-4abf-8839-31b6ab691998.jpg"
+      ],
+      "keytag": "古镇古村",
+      "entrance": [
+        103.559462,
+        30.808553
+      ],
+      "navi_poiid": "H48F015013_163",
+      "business_area": "街子",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "pingle",
@@ -1278,7 +1859,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "福惠街136号",
+      "district": "邛崃市",
+      "adcode": "510183",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/21f9aed82d1623c02877d1a8c9e0e9fc",
+        "https://store.is.autonavi.com/showpic/813d7f3a844022f20000003085220226?type=pic",
+        "https://store.is.autonavi.com/showpic/c12361e3acc4ec3f0000002359020170?type=pic"
+      ],
+      "keytag": "古镇古村",
+      "entrance": [
+        103.339775,
+        30.3438
+      ],
+      "navi_poiid": "H48F020011_2880",
+      "business_area": "平乐古镇",
+      "website": "www.plgz.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "anren",
@@ -1313,7 +1912,21 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "安仁镇大新路(安仁古镇附近)",
+      "district": "大邑县",
+      "adcode": "510129",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/b00414f7ada1399b0000002762658769?type=pic",
+        "https://aos-comment.amap.com/B0FFFE80HY/comment/B6121433_5472_4479_890E_1F829D53A391_L0_001_2000_150_1746859725826_64853438.jpg",
+        "https://store.is.autonavi.com/showpic/49284dba9236e6330000002379228738?type=pic"
+      ],
+      "keytag": "特色街区",
+      "navi_poiid": [],
+      "business_area": "安仁古镇",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jianchuan",
@@ -1347,7 +1960,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "安仁古镇(西南角)",
+      "district": "大邑县",
+      "adcode": "510129",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2987ae62cdbbf9debe98890bffb49e3d",
+        "http://store.is.autonavi.com/showpic/73731767ab8369b9ba79bad2a2eda5f3",
+        "http://store.is.autonavi.com/showpic/f1e04e92ce7c9582a6d9d1f0d1b1dbe6"
+      ],
+      "keytag": "红色景点",
+      "entrance": [
+        103.62201,
+        30.501022
+      ],
+      "navi_poiid": "H48F018013_1064",
+      "business_area": "安仁古镇",
+      "website": "www.jc-museum.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiling",
@@ -1382,7 +2012,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "西岭镇云华村2组90号",
+      "district": "大邑县",
+      "adcode": "510129",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/230dec102ba1f426f528ab4aa357531e",
+        "http://store.is.autonavi.com/showpic/94f545ae7f214094f95a83dd4bbf0575",
+        "http://store.is.autonavi.com/showpic/5b720a3e0f518edabb7a93bb9db4379a"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        103.24304,
+        30.701628
+      ],
+      "navi_poiid": "H48F017010_5531",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "longquan",
@@ -1417,7 +2066,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "老马埂附近",
+      "district": "简阳市",
+      "adcode": "510185",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c0f93ddc9c65cf950f70fd7ff7c58551",
+        "http://store.is.autonavi.com/showpic/3f34759e7288a8c1c6724b7fdf5d2097",
+        "http://store.is.autonavi.com/showpic/0a1a3872e03b0feb4144f954cca669cc"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.260104,
+        30.350301
+      ],
+      "navi_poiid": [],
+      "business_area": "天府新区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "pengzhen",
@@ -1480,7 +2148,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "宝光街81号",
+      "district": "新都区",
+      "adcode": "510114",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9d4e15ab1e9bf9e2c16008cfc37dd32e",
+        "http://store.is.autonavi.com/showpic/0d7a5a45e68c6a9774fbfae5d10130f2",
+        "http://store.is.autonavi.com/showpic/a24e4a23d294f3a9ca72bd5ca0d9a095"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        104.161604,
+        30.830402
+      ],
+      "navi_poiid": "H48F014018_4911",
+      "business_area": "宝光寺",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "chuan-cuisine-museum",
@@ -1515,7 +2201,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "荣华北巷8号",
+      "district": "郫都区",
+      "adcode": "510117",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/65c688651a3cdcf300de613ac2075704",
+        "http://store.is.autonavi.com/showpic/833f69525fcaf0a66b2e2c5972e1b8fd",
+        "http://store.is.autonavi.com/showpic/771521d1e9e73b38f8165b9173161e05"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        103.930652,
+        30.894889
+      ],
+      "navi_poiid": "H48F014016_6389",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shujin",
@@ -1550,7 +2253,24 @@
       "biz_at": "2026-10-17",
       "heat_prev": 5.5,
       "verify_src": "amap",
-      "verified_at": "2026-10-17"
+      "verified_at": "2026-10-17",
+      "address": "草堂东路18号锦绣工场古玩城3号楼",
+      "district": "青羊区",
+      "adcode": "510105",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ed2df5dfc3c64453df393e54e9b0a993",
+        "http://store.is.autonavi.com/showpic/84b2d2ff9f43edc3766f2918bac6c3ba",
+        "http://store.is.autonavi.com/showpic/1ef183b1a6c7a640dd2799bb46f5732f"
+      ],
+      "keytag": "工业博物馆",
+      "entrance": [
+        104.036694,
+        30.657036
+      ],
+      "navi_poiid": "H48F017017_154881",
+      "business_area": "草堂",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yanhua",
@@ -1585,7 +2305,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "大东街52-54号",
+      "district": "崇州市",
+      "adcode": "510184",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/279ab707e47d6a5cc09a5c6e508ac81a",
+        "https://store.is.autonavi.com/showpic/2175583a26cf7daa0000008163950032?type=pic",
+        "https://store.is.autonavi.com/showpic/d1ec10143b6982450000002563124806?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        103.673745,
+        30.62582
+      ],
+      "navi_poiid": "H48F017014_7602",
+      "business_area": "上南街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qinglong-lake",
@@ -1619,11 +2357,29 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "十陵风景区内",
+      "district": "龙泉驿区",
+      "adcode": "510112",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/fa37fa100ddad216bedeee9c896cce9c",
+        "http://store.is.autonavi.com/showpic/5c0a6aee0b4d0da9256835e999fb391d",
+        "http://store.is.autonavi.com/showpic/b218609531fb7678377d5b3a5aead351"
+      ],
+      "keytag": "湿地公园",
+      "entrance": [
+        104.18374,
+        30.646782
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yuanyang",
-      "name": "鸳鸯楼",
+      "name": "陈家堡长城鸳鸯楼",
       "cat": "街区",
       "tags": [
         "老居民楼",
@@ -1634,23 +2390,38 @@
       "dur": 40,
       "intro": "红瓦寺街的老式鸳鸯楼，摄影圈打卡点。",
       "reason": "香港公屋即视感的怀旧楼",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-17:00",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         104.138175,
         30.684525
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0M2L6NWDG",
+      "amap_poi_id": "B0FFJ4TY9H",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": [],
-      "rating": 0,
+      "open_text": "周一至周日 08:00-17:00",
+      "rating": 3.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": [],
+      "district": "延庆区",
+      "adcode": "110119",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/948c093f29b3df980000007819168231?type=pic",
+        "https://store.is.autonavi.com/showpic/5deeecd9c96c76e26d300a6a8606faa1",
+        "https://store.is.autonavi.com/showpic/8997eef4849684120000007819150447?type=pic"
+      ],
+      "photo": "https://store.is.autonavi.com/showpic/948c093f29b3df980000007819168231?type=pic",
+      "keytag": "文物古迹",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "u37",
@@ -1676,15 +2447,32 @@
       "tencent_poi_id": "18231571110525805080",
       "refreshed_at": "2026-10-16",
       "photo": "https://aos-comment.amap.com/B001C8XPVV/comment/3fbb867eac350b15d0b7bfc71145770c_2048_2048_80.jpg",
-      "amap_poi_id": "B001C8XPVV",
+      "amap_poi_id": "B0FFGSEDC0",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "周一至周日 08:00-24:00",
+      "open_text": [],
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "水碾河南三街与水碾河路交叉口南220米",
+      "district": "锦江区",
+      "adcode": "510104",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/90e8ab942fdd36a47f319ac8836c3c6d",
+        "http://store.is.autonavi.com/showpic/e33df387cbe885802c7ef5584a092b6f",
+        "http://store.is.autonavi.com/showpic/680b20774e8a273fcdb780933b67ecd7"
+      ],
+      "keytag": "住宅区",
+      "entrance": [
+        104.098484,
+        30.64733
+      ],
+      "navi_poiid": [],
+      "business_area": "牛市口",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "jiuyanqiao-bar",
@@ -1717,7 +2505,24 @@
       "photo": "http://store.is.autonavi.com/showpic/a05aa1b327e2b7a2f85782503f95d5de",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "水津街1号1栋",
+      "district": "锦江区",
+      "adcode": "510104",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/a05aa1b327e2b7a2f85782503f95d5de",
+        "https://store.is.autonavi.com/showpic/657a2a656144073902cbff93c1b3f877",
+        "http://store.is.autonavi.com/showpic/f8ddeabbf6596ab407eb2aa93b20570f"
+      ],
+      "keytag": "夜店",
+      "entrance": [
+        104.084905,
+        30.645926
+      ],
+      "navi_poiid": [],
+      "business_area": "东门大桥",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "wenshu-fang",
@@ -1751,7 +2556,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "草市街街道文殊院大街66号(近省市政务中心)",
+      "district": "青羊区",
+      "adcode": "510105",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2d9356d9941ab69e1bf191438e8e09c2",
+        "http://store.is.autonavi.com/showpic/7dd7296dd16d4d3bf16bece2b99ca9d4",
+        "http://store.is.autonavi.com/showpic/14a2fc2f018b8a7e69361812d3d2cc08"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        104.073432,
+        30.671985
+      ],
+      "navi_poiid": "H48F016017_159160",
+      "business_area": "德盛路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "tianfu-art",
@@ -1786,7 +2609,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "金泉街道金牛大道金牛坝路388号",
+      "district": "金牛区",
+      "adcode": "510106",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/a88fe706eaf899500000002647320571",
+        "https://store.is.autonavi.com/showpic/f436c09ed4efd6366a4abaa4576782e8",
+        "https://store.is.autonavi.com/showpic/71a37f3987eda7a40000003172806874?type=pic"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        104.026053,
+        30.712951
+      ],
+      "navi_poiid": [],
+      "business_area": "茶店子",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dujiangyan-night",
@@ -1821,7 +2662,21 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "公园路青城山-都江堰景区旁",
+      "district": "都江堰市",
+      "adcode": "510181",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0G1XCHVIZ/comment/C455A74A_877E_4D62_8B6F_B993E8B4E33C_L0_001_2048_153_1762049429881_25519347.jpg",
+        "https://store.is.autonavi.com/showpic/0d61b09db9a340620000002255320585?type=pic",
+        "https://aos-comment.amap.com/B0G1XCHVIZ/comment/365cb73c8919d5984032dc9b5033841c_2048_2048_80.jpg"
+      ],
+      "keytag": "广场",
+      "navi_poiid": [],
+      "business_area": "幸福",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "panda-valley",
@@ -1856,7 +2711,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "环山旅游路玉堂段408号",
+      "district": "都江堰市",
+      "adcode": "510181",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/bb4b05d48f3e3bd6f7aa62e307fb0d15",
+        "http://store.is.autonavi.com/showpic/aa0b6552d9e3d64425561f75553894bf",
+        "http://store.is.autonavi.com/showpic/74bd16fe3108a648b696940eaad3fe61"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        103.591425,
+        30.962405
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "zhongshuge",
@@ -1866,7 +2739,7 @@
         "最美书店",
         "镜像"
       ],
-      "heat": 7,
+      "heat": 9,
       "dur": 40,
       "intro": "都江堰融创茂内的镜像魔幻书店。",
       "reason": "都江堰行程中的雨天备案",
@@ -1881,11 +2754,33 @@
       "tencent_poi_id": "3142922732095807449",
       "refreshed_at": "2026-10-16",
       "photo": "https://store.is.autonavi.com/showpic/34f6825211a5be720000002910078682?type=pic",
-      "amap_poi_id": "B0G22ZTS45",
+      "amap_poi_id": "B001C06PA9",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "rating": 4.7,
-      "heat_prev": 6
+      "rating": 4.8,
+      "heat_prev": 7,
+      "open_text": "03-02至10-31 周一至周日 08:00-18:00 最晚进入17:30；11-01至03-01 周一至周日 08:00-17:30 最晚进入17:00",
+      "tel": "028-96526",
+      "address": "公园路",
+      "district": "都江堰市",
+      "adcode": "510181",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/31fab45390b5932dfa51a67dbf8548f4",
+        "http://store.is.autonavi.com/showpic/9dd769964bd96b13c2990058c0bfce5c",
+        "http://store.is.autonavi.com/showpic/7b311531ba597ec4464683df23df3365"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        103.614486,
+        30.994157
+      ],
+      "navi_poiid": "H48F012013_37817;21586",
+      "business_area": "玉垒山公园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiangxiang-lane",
@@ -1919,7 +2814,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "望平街25号附1号",
+      "district": "成华区",
+      "adcode": "510108",
+      "photos": [
+        "https://aos-comment.amap.com/B001C8OQ5G/comment/1b566c6ccd4af8acfab97460918dfaf4_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B001C8OQ5G/comment/content_media_external_file_1000062644_ss__1770680698200_36164925.jpg",
+        "https://store.is.autonavi.com/showpic/7da5e70a80bfdb630000002889884516?type=pic"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        104.090104,
+        30.65365
+      ],
+      "navi_poiid": "H48F017017_182545",
+      "business_area": "猛追湾",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nfb5ad5f2",
@@ -1934,8 +2846,8 @@
       "dur": 180,
       "intro": "川西老街沿河铺开，木楼和茶馆挨在一起。",
       "reason": "留半天，把饭点安排在镇上",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-18:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         103.623717,
@@ -1953,7 +2865,26 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.7）"
+      "added_reason": "rebuild 建议新增（高德评分 4.7）",
+      "address": "元通镇聚源村号",
+      "district": "崇州市",
+      "adcode": "510184",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/39c7d1cb9e847e8bc63c8694be997171",
+        "http://store.is.autonavi.com/showpic/ead98088d99e8a4947d0fecd28090c59",
+        "https://store.is.autonavi.com/showpic/132c581fe8987a8d0000002531778391?type=pic"
+      ],
+      "keytag": "古镇古村",
+      "entrance": [
+        103.619341,
+        30.733745
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "n1549bc88",
@@ -1986,7 +2917,27 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.7）"
+      "added_reason": "rebuild 建议新增（高德评分 4.7）",
+      "address": "天乡路二段88号",
+      "district": "温江区",
+      "adcode": "510115",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/bd92a2dda669dde59879a58f83f20b59",
+        "http://store.is.autonavi.com/showpic/557e7b70d58260248b6b1e2fdd56f9c5",
+        "http://store.is.autonavi.com/showpic/d489e2ea1bec4517d523d82223db372a"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        103.826676,
+        30.721674
+      ],
+      "navi_poiid": "H48F016015_129752;157570;155893",
+      "business_area": "万春",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nb4201057",
@@ -2000,8 +2951,8 @@
       "dur": 90,
       "intro": "三圣乡的花木园区，成片梅林和农家乐。",
       "reason": "梅花开时来，别赶正午",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         104.136323,
@@ -2019,7 +2970,26 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.6）"
+      "added_reason": "rebuild 建议新增（高德评分 4.6）",
+      "address": "锦江大道",
+      "district": "锦江区",
+      "adcode": "510104",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7bcb4982fd5b6fc8e120d935a6a56e55",
+        "https://store.is.autonavi.com/showpic/8f9f222fd5a7383e0000003184886617?type=pic",
+        "https://store.is.autonavi.com/showpic/25323b2e9640f38b0000000712844849?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        104.135446,
+        30.589621
+      ],
+      "navi_poiid": "H48F017018_107379",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "n32a6def9",
@@ -2034,8 +3004,8 @@
       "dur": 180,
       "intro": "沱江边的山地古镇，五条街顺坡而下。",
       "reason": "顺坡往下走，走到河边收尾",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         104.483152,
@@ -2053,7 +3023,26 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.6）"
+      "added_reason": "rebuild 建议新增（高德评分 4.6）",
+      "address": "五凤镇五凤溪景区",
+      "district": "金堂县",
+      "adcode": "510121",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/fdfd7312deef43ffd373faf8655e2eda",
+        "http://store.is.autonavi.com/showpic/0947b12b76b104002fe0c7acd459d48e",
+        "http://store.is.autonavi.com/showpic/2b81de16bd868b91ba4c3e4a1a3fa415"
+      ],
+      "keytag": "古镇古村",
+      "entrance": [
+        104.478825,
+        30.604554
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nb784fe0d",
@@ -2067,8 +3056,8 @@
       "dur": 90,
       "intro": "民国风街巷，砖墙和招牌复刻得细，适合拍照。",
       "reason": "傍晚来，灯亮之后更好拍",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         104.130358,
@@ -2086,7 +3075,27 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.5）"
+      "added_reason": "rebuild 建议新增（高德评分 4.5）",
+      "address": "三河街道承顺街17号(绕城新都出口)",
+      "district": "新都区",
+      "adcode": "510114",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/da2182e9c90a1d05d6d70324f57c1921",
+        "http://store.is.autonavi.com/showpic/029b1fac90ef7c8fffc9a954275d032a",
+        "http://store.is.autonavi.com/showpic/446187e303629a216eefb9ce4403d190"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        104.131757,
+        30.779574
+      ],
+      "navi_poiid": [],
+      "business_area": "三河",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }

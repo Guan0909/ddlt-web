@@ -8,7 +8,8 @@
     "generated_at": "2026-10-17",
     "source": "amap",
     "rule_version": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -21,7 +22,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
       "open": "18:00-24:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.428775,
@@ -38,7 +39,25 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 18:00-24:00",
       "tel": "15670381618",
-      "photo": "https://store.is.autonavi.com/showpic/81d0045667aee4660000004654176790?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/81d0045667aee4660000004654176790?type=pic",
+      "address": "国花路与状元红路交叉口(国花路地铁站B口步行90米)",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 17,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/81d0045667aee4660000004654176790?type=pic",
+        "https://aos-comment.amap.com/B0KD2SVFJD/comment/content_media_external_file_100000789_1757171196342_69677973.jpg",
+        "https://aos-comment.amap.com/B0KD2SVFJD/comment/C9F75C6D_E413_4AF1_B7F4_6D44DA616FC5_L0_001_1440_192_1758785019050_49143974.jpg"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        112.428954,
+        34.694753
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sd0d71c71",
@@ -50,7 +69,7 @@
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "开门就到，人少先看常设展",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         112.451541,
@@ -66,7 +85,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "5月6日至12月31日 周一 不开放；周二至周日 09:00-19:00开放(18:30停止入园)；4月1日至4月30日 09:00-19:00开放(18:30停止入园)；特殊营业时间:劳动节,端午节,中秋节,国庆节 09:00-19:00开放(18:30停止入园)；具体开放时间以官方通知为准",
-      "photo": "http://store.is.autonavi.com/showpic/25295da6d28adf1f9e16f70384ddd95f"
+      "photo": "http://store.is.autonavi.com/showpic/25295da6d28adf1f9e16f70384ddd95f",
+      "address": "聂泰路6号",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/25295da6d28adf1f9e16f70384ddd95f",
+        "http://store.is.autonavi.com/showpic/53852081140be6b49dfec7ca4605b669",
+        "http://store.is.autonavi.com/showpic/a776ea37102d9416f5ee141278aadfad"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.453505,
+        34.642109
+      ],
+      "navi_poiid": "I49F017036_18870",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s16e07195",
@@ -78,7 +115,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-21:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.477482,
@@ -95,7 +132,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-21:00；19:30停止售票",
       "tel": "0379-65980972",
-      "photo": "http://store.is.autonavi.com/showpic/90fc4281626b617c1fc0d347e782bfd0"
+      "photo": "http://store.is.autonavi.com/showpic/90fc4281626b617c1fc0d347e782bfd0",
+      "address": "龙门中街13号",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/90fc4281626b617c1fc0d347e782bfd0",
+        "https://aos-comment.amap.com/B017B00X4D/comment/content_media_external_file_1000025984_ss__1766842954599_93051509.jpg",
+        "http://store.is.autonavi.com/showpic/6a0c360aaf9bc273a827380fdd27874e"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        112.475295,
+        34.56849
+      ],
+      "navi_poiid": "I49F018036_9",
+      "business_area": "龙门石窟",
+      "website": "www.lmsk.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s880885b5",
@@ -107,7 +164,7 @@
       "intro": "古镇街区，在城内，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.485027,
@@ -124,7 +181,26 @@
       "added_at": "2026-10-17",
       "open_text": "1月至9月 周一至周日 09:00-22:30 最晚进入22:30 10-01至10-07 周一至周日 09:00-24:00；10-08至12-31 周一至周日 09:00-22:30 最晚进入22:30",
       "tel": "0379-60696969",
-      "photo": "http://store.is.autonavi.com/showpic/ad61ea36704a704aa44573a73680ec4e"
+      "photo": "http://store.is.autonavi.com/showpic/ad61ea36704a704aa44573a73680ec4e",
+      "address": "柳林街44号",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ad61ea36704a704aa44573a73680ec4e",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/3bd0f0e4-7e3b-44ec-b5af-db4fa74990ce.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/90a36a28-5dd3-496e-ba26-610d6f9bb3e4.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.486922,
+        34.677216
+      ],
+      "navi_poiid": [],
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sda11ca0c",
@@ -153,7 +229,25 @@
       "added_at": "2026-10-17",
       "open_text": "5月1日至12月31日 周二至周日 09:00-17:00开放(16:30停止入园)；周一 例行日常维护闭馆(法定节假日除外)；特殊营业时间:端午节,中秋节,国庆节 09:00-17:00开放(16:30停止入园)；具体开放时间以官方通知为准",
       "tel": "0379-69896198",
-      "photo": "http://store.is.autonavi.com/showpic/50d66f760420ae4d0bcb220c220a05ee"
+      "photo": "http://store.is.autonavi.com/showpic/50d66f760420ae4d0bcb220c220a05ee",
+      "address": "机场路6号(近国际牡丹园)",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/50d66f760420ae4d0bcb220c220a05ee",
+        "http://store.is.autonavi.com/showpic/ca4d3e9ac2dd23ef87b75f31d886a0bc",
+        "http://store.is.autonavi.com/showpic/b04a15456cd2a0cd89ba5efe64571abb"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.415308,
+        34.731936
+      ],
+      "navi_poiid": "I49F016036_1224",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s6bb95cfd",
@@ -182,7 +276,26 @@
       "added_at": "2026-10-17",
       "open_text": "5月至10月6日: 07:40-18:30,最晚进入18:00；10月7日至次年4月: 08:00-17:30,最晚进入17:00",
       "tel": "0379-63789090;0379-63789053",
-      "photo": "http://store.is.autonavi.com/showpic/06cf4e5b9f5086fa9f6cd70dffc7651c"
+      "photo": "http://store.is.autonavi.com/showpic/06cf4e5b9f5086fa9f6cd70dffc7651c",
+      "address": "白马寺镇洛白路6号",
+      "district": "瀍河回族区",
+      "adcode": "410304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/06cf4e5b9f5086fa9f6cd70dffc7651c",
+        "http://store.is.autonavi.com/showpic/d6412cae9ba3bd5d50eb761f50eecda0",
+        "http://store.is.autonavi.com/showpic/87c6bf7fdee7fc88ae9e24f163eb5864"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        112.607244,
+        34.71195
+      ],
+      "navi_poiid": "I49F016037_133;11",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sea466d8f",
@@ -194,7 +307,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
       "open": "09:00-23:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.416787,
@@ -210,7 +323,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-23:00",
-      "photo": "https://aos-comment.amap.com/B017B02M8V/comment/1E5DB3BD_0023_441E_9A0E_56F6820E5613_L0_001_1500_200_1760074168845_82816303.jpg"
+      "photo": "https://aos-comment.amap.com/B017B02M8V/comment/1E5DB3BD_0023_441E_9A0E_56F6820E5613_L0_001_1500_200_1760074168845_82816303.jpg",
+      "address": "古城街道开元大道河南科技大学对面",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/B017B02M8V/comment/1E5DB3BD_0023_441E_9A0E_56F6820E5613_L0_001_1500_200_1760074168845_82816303.jpg",
+        "https://aos-comment.amap.com/B017B02M8V/comment/574FEEA1_B97C_4C3F_A73E_85240D3F15C5_L0_001_1500_200_1772623442034_30975773.jpg",
+        "https://aos-comment.amap.com/B017B02M8V/comment/content_media_external_file_1000123923_ss__1758971676289_53938386.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        112.416835,
+        34.607369
+      ],
+      "navi_poiid": "I49F017036_6050",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s6fc67611",
@@ -241,7 +372,26 @@
       "added_at": "2026-10-17",
       "open_text": "夏令时 全年 08:30–18:00开放 最晚进入17:30；冬令时 全年 08:30–17:30开放 最晚进入17:00；每逢农历初一、十五，开园时间为上午8:00",
       "tel": "0379-65951746",
-      "photo": "https://aos-comment.amap.com/B0L0RU5TAB/comment/20260322-c483e8328ba7edb839bbbb88-6D63SqttPpB9SWsX6AjOUu.jpg"
+      "photo": "https://aos-comment.amap.com/B0L0RU5TAB/comment/20260322-c483e8328ba7edb839bbbb88-6D63SqttPpB9SWsX6AjOUu.jpg",
+      "address": "关林东路与新九街交叉口西北200米",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0L0RU5TAB/comment/20260322-c483e8328ba7edb839bbbb88-6D63SqttPpB9SWsX6AjOUu.jpg",
+        "https://store.is.autonavi.com/showpic/b54439c0a15afa280000002603440312?type=pic",
+        "https://aos-comment.amap.com/B0L0RU5TAB/comment/content_media_external_file_1000027692_ss__1768963024464_65134875.jpg"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        112.481341,
+        34.606069
+      ],
+      "navi_poiid": [],
+      "business_area": "关林",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s66fac87b",
@@ -253,7 +403,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:30-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.483366,
@@ -270,7 +420,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-18:00 最晚进入17:30；每逢农历初一、十五，开园时间为上午8:00，闭园时间为下午17:30",
       "tel": "0379-69865181",
-      "photo": "http://store.is.autonavi.com/showpic/60a4850c009e371eb1a440ce7162a336"
+      "photo": "http://store.is.autonavi.com/showpic/60a4850c009e371eb1a440ce7162a336",
+      "address": "关林镇关林南街2号",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/60a4850c009e371eb1a440ce7162a336",
+        "http://store.is.autonavi.com/showpic/f5b16daa94d6d15611ab530020ac5c9e",
+        "https://aos-comment.amap.com/B017B01ONY/headerImg/content_media_external_images_media_471808_1657249097936_8d5cf261.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        112.481341,
+        34.606088
+      ],
+      "navi_poiid": "I49F017036_53692",
+      "business_area": "关林",
+      "website": "www.guanlinmiao.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s9832354c",
@@ -282,7 +452,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
       "open": "09:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.460318,
@@ -299,7 +469,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:00",
       "tel": "0379-60658081;0379-61109905;0379-65063201",
-      "photo": "http://store.is.autonavi.com/showpic/8544705d1d7005f961ae71d29d701cbf"
+      "photo": "http://store.is.autonavi.com/showpic/8544705d1d7005f961ae71d29d701cbf",
+      "address": "定鼎路与中州路交汇处(应天门地铁站C2口步行220米)",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/8544705d1d7005f961ae71d29d701cbf",
+        "http://store.is.autonavi.com/showpic/391e873734f8ded77cde63acf185f054",
+        "http://store.is.autonavi.com/showpic/634cef822105d31408d63b8f1079225f"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        112.459257,
+        34.678763
+      ],
+      "navi_poiid": "I49F016036_31811",
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s4248b938",
@@ -311,7 +501,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.459829,
@@ -328,7 +518,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:30 最晚进入22:00；8月12日 周一至周日 09:00-23:00 最晚进入17:00；如遇景区客流量较大，闭园及工作时间以景区现场调整为准。",
       "tel": "0379-61109905",
-      "photo": "https://store.is.autonavi.com/showpic/59fa93a6c4f694410000003358666916?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/59fa93a6c4f694410000003358666916?type=pic",
+      "address": "唐宫路毛线市场对面(应天门地铁站C2口步行200米)",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/59fa93a6c4f694410000003358666916?type=pic",
+        "https://store.is.autonavi.com/showpic/43d95b0d7c858c070000004442486929?type=pic",
+        "https://store.is.autonavi.com/showpic/57e116a80a98521d0000003060246588?type=pic"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        112.45923,
+        34.678808
+      ],
+      "navi_poiid": [],
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s963112ba",
@@ -340,7 +549,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:30-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.471252,
@@ -357,7 +566,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-22:00 最晚进入21:00",
       "tel": "0379-63503777",
-      "photo": "http://store.is.autonavi.com/showpic/7107807455eccc1a4099f5f57513ba96"
+      "photo": "http://store.is.autonavi.com/showpic/7107807455eccc1a4099f5f57513ba96",
+      "address": "西门口街与金业路交叉口东",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7107807455eccc1a4099f5f57513ba96",
+        "http://store.is.autonavi.com/showpic/9ed9ce57f273d9df013de37cbb176574",
+        "http://store.is.autonavi.com/showpic/f9da886a26c7f502b364a4637cb40477"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        112.472423,
+        34.677215
+      ],
+      "navi_poiid": "I49F016036_3906",
+      "business_area": "西关",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s37f76329",
@@ -386,7 +614,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周五 09:30-21:30；周六至周日 09:30-22:00",
       "tel": "0379-60355666",
-      "photo": "https://store.is.autonavi.com/showpic/3c9d437196dd51880000002439940617?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/3c9d437196dd51880000002439940617?type=pic",
+      "address": "连霍高速连接线g30号",
+      "district": "孟津区",
+      "adcode": "410308",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/3c9d437196dd51880000002439940617?type=pic",
+        "https://store.is.autonavi.com/showpic/3443ea9494576fa60000002990752905?type=pic",
+        "https://store.is.autonavi.com/showpic/66d2fc80567b23be4b91de1c255dfeb8"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.418396,
+        34.756791
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf155d3b0",
@@ -397,7 +644,7 @@
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "开门就到，人少先看常设展",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -415,7 +662,25 @@
       "added_at": "2026-10-17",
       "open_text": "周二至周日 09:00-19:00开放 最晚进入18:30 周一 全天不开放(法定节假日除外)；端午节,中秋节,国庆节 09:00-19:00开放 最晚进入18:30；每日闭关前半小时不再接待观众；具体开放时间以官方通知为准",
       "tel": "0379-65556001",
-      "photo": "http://store.is.autonavi.com/showpic/563d0c0d59861d0d7522c6254853e5be"
+      "photo": "http://store.is.autonavi.com/showpic/563d0c0d59861d0d7522c6254853e5be",
+      "address": "新街与滨河北路交叉口路北",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/563d0c0d59861d0d7522c6254853e5be",
+        "http://store.is.autonavi.com/showpic/e4efa72c5056680d8a351a6bd53915f4",
+        "http://store.is.autonavi.com/showpic/2e585bb2bfa67c8b6749d14e7cf178ee"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.494629,
+        34.672738
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s5271adf5",
@@ -426,8 +691,8 @@
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "开门就到，人少先看常设展",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         112.614803,
@@ -443,7 +708,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "04/01-04/30 09:00–18:00开放 最晚进入17:30；05/01-12/31 周二–周日 09:00–17:00开放 最晚进入16:30；05/01-12/31 周一 全天不开放；劳动节,端午节 09:00–17:00开放 最晚进入16:30；中秋节,国庆节 09:00–18:00开放 最晚进入17:30；周一闭馆，国家法定节假日对公众开放，具体营业状态以当天开放情况为准",
-      "photo": "https://store.is.autonavi.com/showpic/d00a538d5560a9a10000009022980304?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/d00a538d5560a9a10000009022980304?type=pic",
+      "address": "铁发机械东侧220米",
+      "district": "瀍河回族区",
+      "adcode": "410304",
+      "cost": 0,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/d00a538d5560a9a10000009022980304?type=pic",
+        "https://store.is.autonavi.com/showpic/de2b1f58fbad55044ede41294c896fec",
+        "https://store.is.autonavi.com/showpic/cc54716d6b756f770635c077628292d7"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.613211,
+        34.721811
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s902931a9",
@@ -454,8 +737,8 @@
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         112.694607,
@@ -472,7 +755,25 @@
       "added_at": "2026-10-17",
       "open_text": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30；每周一闭馆（国家法定节假日、牡丹文化节除外）",
       "tel": "0379-65091899",
-      "photo": "http://store.is.autonavi.com/showpic/7f43e73c34ad371662a7c2846817241b"
+      "photo": "http://store.is.autonavi.com/showpic/7f43e73c34ad371662a7c2846817241b",
+      "address": "翟镇镇二里头村古城快速路北50米",
+      "district": "偃师区",
+      "adcode": "410307",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7f43e73c34ad371662a7c2846817241b",
+        "https://store.is.autonavi.com/showpic/4db6654d2f4a2e240000002238658017?type=pic",
+        "https://store.is.autonavi.com/showpic/db4e5573342677760000003061586503?type=pic"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.695419,
+        34.679777
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s6a9d5d15",
@@ -483,8 +784,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.45016,
@@ -500,7 +801,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_139657_1769485692282_11375563.jpg"
+      "photo": "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_139657_1769485692282_11375563.jpg",
+      "address": "御博路与滨河北路交叉口东北260米",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_139657_1769485692282_11375563.jpg",
+        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_images_media_1000004846_ss__1770387878699_36879605.jpg",
+        "https://aos-comment.amap.com/B0JRLS7LG4/comment/content_media_external_file_100002749_1759403304148_34618634.jpg"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        112.449968,
+        34.662663
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s43da6e55",
@@ -512,7 +832,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
       "open": "07:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.448335,
@@ -529,7 +849,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:00-22:00",
       "tel": "0379-65917101",
-      "photo": "http://store.is.autonavi.com/showpic/be161a7abef1c495b8b82ef132b28c15"
+      "photo": "http://store.is.autonavi.com/showpic/be161a7abef1c495b8b82ef132b28c15",
+      "address": "王城大道281号",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/be161a7abef1c495b8b82ef132b28c15",
+        "http://store.is.autonavi.com/showpic/cbcec979827baae94646d25146948d1d",
+        "http://store.is.autonavi.com/showpic/74ef4ec0e70a2f93d4031d0e18fb8206"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        112.453072,
+        34.629843
+      ],
+      "navi_poiid": "I49F017036_53669",
+      "business_area": [],
+      "website": "www.stzwy.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s853d9044",
@@ -541,7 +881,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.457846,
@@ -558,7 +898,26 @@
       "added_at": "2026-10-17",
       "open_text": "05-01至10-08 周一至周日 06:00-22:00；10-09至04-30 周一至周日 06:00-21:30",
       "tel": "0379-63237879",
-      "photo": "https://store.is.autonavi.com/showpic/906f70445a1ef3ea0000003202226814?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/906f70445a1ef3ea0000003202226814?type=pic",
+      "address": "永通门里坊展示路",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/906f70445a1ef3ea0000003202226814?type=pic",
+        "https://aos-comment.amap.com/B0G0DY5IZX/comment/177216685493_1772166859180_34702972.jpg",
+        "https://store.is.autonavi.com/showpic/f921fbf0a1388fcae63c1b2253dcbd68"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        112.457562,
+        34.636972
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s4a79d48e",
@@ -570,7 +929,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
       "open": "06:00-21:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.421575,
@@ -586,7 +945,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 06:00-21:30 最晚进入21:00",
-      "photo": "http://store.is.autonavi.com/showpic/84d952a9775b4b5f0214606ec419f1a7"
+      "photo": "http://store.is.autonavi.com/showpic/84d952a9775b4b5f0214606ec419f1a7",
+      "address": "中州中路312号",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/84d952a9775b4b5f0214606ec419f1a7",
+        "http://store.is.autonavi.com/showpic/028f7db3a4ee1c82c589cba22e19a8c0",
+        "http://store.is.autonavi.com/showpic/7828b0c48b5aec4fe5276c9a08274ca1"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        112.420823,
+        34.664014
+      ],
+      "navi_poiid": "I49F016036_31923",
+      "business_area": "王府井",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s2a78b6e9",
@@ -598,7 +976,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
       "open": "07:00-21:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.406739,
@@ -614,7 +992,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:00-21:00；具体营业状态以当天开放情况为准。",
-      "photo": "http://store.is.autonavi.com/showpic/01ba5c07c6bd0041b28c384aeee509c0"
+      "photo": "http://store.is.autonavi.com/showpic/01ba5c07c6bd0041b28c384aeee509c0",
+      "address": "南昌路口北",
+      "district": "涧西区",
+      "adcode": "410305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/01ba5c07c6bd0041b28c384aeee509c0",
+        "http://store.is.autonavi.com/showpic/51d3c33433b03c2b438878ab21b0e999",
+        "https://aos-comment.amap.com/B017B01I1B/comment/7D8966DC_E6E6_42B8_BD5D_2F62C55A510E_L0_001_1080_144_1770456230756_97488808.jpg"
+      ],
+      "keytag": "自然风光",
+      "entrance": [
+        112.404961,
+        34.648894
+      ],
+      "navi_poiid": "I49F017036_111604",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s2135356d",
@@ -625,8 +1022,8 @@
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.460685,
@@ -643,7 +1040,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0379-61109862",
-      "photo": "https://store.is.autonavi.com/showpic/89fc183bd21ef8940000002460304151?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/89fc183bd21ef8940000002460304151?type=pic",
+      "address": "西关街道定鼎南路与中州中路交叉口",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/89fc183bd21ef8940000002460304151?type=pic",
+        "https://store.is.autonavi.com/showpic/afc7c662be0bdeda0000002387610054?type=pic",
+        "https://store.is.autonavi.com/showpic/7c4cd4d2777f9ba70000000959942579?type=pic"
+      ],
+      "keytag": "广场",
+      "entrance": [
+        112.459272,
+        34.678838
+      ],
+      "navi_poiid": [],
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf4d8b520",
@@ -655,7 +1071,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "10:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.450074,
@@ -672,7 +1088,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 10:00-22:00",
       "tel": "4000379800",
-      "photo": "http://store.is.autonavi.com/showpic/c2db744db6372fe879e60d0f1cf0efda"
+      "photo": "http://store.is.autonavi.com/showpic/c2db744db6372fe879e60d0f1cf0efda",
+      "address": "金城寨街与通衢路交叉口东南200米",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c2db744db6372fe879e60d0f1cf0efda",
+        "http://store.is.autonavi.com/showpic/0d3284157a16f3512d2ac3f5da812595",
+        "http://store.is.autonavi.com/showpic/38a2c685ffe71e8906c2e622c5da0381"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.448539,
+        34.594648
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s019820ae",
@@ -684,7 +1119,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.453624,
@@ -701,7 +1136,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-12:00,14:30-18:00",
       "tel": "0379-60331150",
-      "photo": "http://store.is.autonavi.com/showpic/3c89ae3c10e2638fa21d74ea1b9b729d"
+      "photo": "http://store.is.autonavi.com/showpic/3c89ae3c10e2638fa21d74ea1b9b729d",
+      "address": "龙缘路与结义路交叉口",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3c89ae3c10e2638fa21d74ea1b9b729d",
+        "https://aos-comment.amap.com/B0HABMOSLH/comment/df5d31a552e2575feda9c951efbf842a_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0HABMOSLH/comment/content_media_external_images_media_1000063710_ss__1737108540300_35354553.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.453872,
+        34.579609
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s33a7b8fd",
@@ -712,8 +1166,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.385176,
@@ -729,7 +1183,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/7a05711e3de5579739a82f0b43f5e81e"
+      "photo": "http://store.is.autonavi.com/showpic/7a05711e3de5579739a82f0b43f5e81e",
+      "address": "周王陵路",
+      "district": "涧西区",
+      "adcode": "410305",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7a05711e3de5579739a82f0b43f5e81e",
+        "https://aos-comment.amap.com/B017B0OMG7/comment/176429509304_1764295098078_42142363.jpg",
+        "https://store.is.autonavi.com/showpic/d8620e7d947f2d9f7a7b3492f142fa8f"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        112.387821,
+        34.623299
+      ],
+      "navi_poiid": "I49F017036_65751",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se3d25e05",
@@ -741,7 +1214,7 @@
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": true,
       "suburb": false,
       "coord": [
         112.443146,
@@ -758,7 +1231,25 @@
       "added_at": "2026-10-17",
       "open_text": "周二-周日 08:30-18:30开放（18:00停止入园）；周一 不开放；元旦节,清明节,劳动节,端午节,中秋节,国庆节 08:30-18:30开放（18:00停止入园）；具体营业状态以当天开放情况为准",
       "tel": "0379-63912399",
-      "photo": "http://store.is.autonavi.com/showpic/06ad3a676720186dba82d3e514a2acaf"
+      "photo": "http://store.is.autonavi.com/showpic/06ad3a676720186dba82d3e514a2acaf",
+      "address": "中州中路226号",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/06ad3a676720186dba82d3e514a2acaf",
+        "http://store.is.autonavi.com/showpic/9a9a7a1827188090ea176376a45f27e0",
+        "http://store.is.autonavi.com/showpic/cb57d7638913eb8ccd0bb964a4c6b9d6"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.443885,
+        34.672912
+      ],
+      "navi_poiid": "I49F016036_2734",
+      "business_area": "新都汇",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s332a610a",
@@ -769,7 +1260,7 @@
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "开门就到，人少先看常设展",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -787,7 +1278,25 @@
       "added_at": "2026-10-17",
       "open_text": "全年 周二–周日 09:00–12:00,13:30–17:00开放 最晚进入16:30；全年 周一 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–12:00,13:30–17:00开放 最晚进入16:30",
       "tel": "0379-60335237;0379-60335235",
-      "photo": "https://aos-comment.amap.com/B017B01GW9/comment/f16ec5904be3562cd5a38e8d45098e5b_2048_2048_80.jpg"
+      "photo": "https://aos-comment.amap.com/B017B01GW9/comment/f16ec5904be3562cd5a38e8d45098e5b_2048_2048_80.jpg",
+      "address": "新街433号",
+      "district": "瀍河回族区",
+      "adcode": "410304",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/B017B01GW9/comment/f16ec5904be3562cd5a38e8d45098e5b_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B017B01GW9/comment/content_media_external_file_1000033119_ss__1757752318944_07050411.jpg",
+        "https://store.is.autonavi.com/showpic/5503ff6b7ee329010000002922436358?type=pic"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.488978,
+        34.678824
+      ],
+      "navi_poiid": "I49F016036_7406;50757",
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sd0df0c02",
@@ -798,8 +1307,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.483116,
@@ -815,7 +1324,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/996b78ec9e4261d8571619a8c02458d3"
+      "photo": "http://store.is.autonavi.com/showpic/996b78ec9e4261d8571619a8c02458d3",
+      "address": "东南隅街道东南隅街道东大街与道尊街交叉口",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/996b78ec9e4261d8571619a8c02458d3",
+        "https://store.is.autonavi.com/showpic/2d63672b3e0310a40000000976282407?type=pic",
+        "https://aos-comment.amap.com/B017B01ZFG/comment/content_media_external_file_1000001971_ss__1754358871848_36628073.jpg"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        112.481582,
+        34.682492
+      ],
+      "navi_poiid": "I49F016036_4265",
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se24e2632",
@@ -827,7 +1355,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.400114,
@@ -844,7 +1372,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00 最晚进入18:00",
       "tel": "0379-62261229",
-      "photo": "http://store.is.autonavi.com/showpic/74c5dfc14279fe79b72a532bbb02424c"
+      "photo": "http://store.is.autonavi.com/showpic/74c5dfc14279fe79b72a532bbb02424c",
+      "address": "邙岭大道与周山大道交叉口东200米路北",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/74c5dfc14279fe79b72a532bbb02424c",
+        "http://store.is.autonavi.com/showpic/9ac1b453a78a27ac713cf93cf5062fb2",
+        "http://store.is.autonavi.com/showpic/e20c94171fc5750942cac065ef59cf7c"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.395524,
+        34.707959
+      ],
+      "navi_poiid": "I49F016036_93578",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7afd5012",
@@ -873,7 +1420,26 @@
       "added_at": "2026-10-17",
       "open_text": "周二至周日 08:00-17:30",
       "tel": "0379-63783703;0379-63780009",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/84c2d040-1302-4194-95e8-e7d4d99a8411.jpg"
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/84c2d040-1302-4194-95e8-e7d4d99a8411.jpg",
+      "address": "洛白路3号(白马寺斜对面)",
+      "district": "瀍河回族区",
+      "adcode": "410304",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/84c2d040-1302-4194-95e8-e7d4d99a8411.jpg",
+        "http://store.is.autonavi.com/showpic/cbfe775a30e8b16ad698cefe79869abd",
+        "http://store.is.autonavi.com/showpic/5de67ac5fb85eeb4a25041572c4f86ea"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.60638,
+        34.7201
+      ],
+      "navi_poiid": "I49F016037_12",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s64291622",
@@ -884,7 +1450,7 @@
       "dur": 120,
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -902,7 +1468,25 @@
       "added_at": "2026-10-17",
       "open_text": "03/04-12/31 周二–周日 09:00–17:00开放 最晚进入16:30；03/04-12/31 周一 全天不开放；元旦节,清明节,劳动节,端午节,中秋节,国庆节 09:00–18:00开放 最晚进入17:30",
       "tel": "0379-65989096",
-      "photo": "http://store.is.autonavi.com/showpic/0f1573d7aa1a670776252513e12f3dbe"
+      "photo": "http://store.is.autonavi.com/showpic/0f1573d7aa1a670776252513e12f3dbe",
+      "address": "古城路",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/0f1573d7aa1a670776252513e12f3dbe",
+        "http://store.is.autonavi.com/showpic/ec288138aa9ebacad668bfdf73e2aede",
+        "https://store.is.autonavi.com/showpic/4704efbeed3b50220000002263244533"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.46749,
+        34.630608
+      ],
+      "navi_poiid": "I49F017036_6642;53160",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf03d849e",
@@ -931,7 +1515,26 @@
       "added_at": "2026-10-17",
       "open_text": "9:00-18:00,最晚入园17:00",
       "tel": "0379-65998998",
-      "photo": "http://store.is.autonavi.com/showpic/06a4636aa5bcdb2a755a67e1c7c95c1a"
+      "photo": "http://store.is.autonavi.com/showpic/06a4636aa5bcdb2a755a67e1c7c95c1a",
+      "address": "龙门镇龙缘路与神韵路交叉口",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/06a4636aa5bcdb2a755a67e1c7c95c1a",
+        "http://store.is.autonavi.com/showpic/3110b58ffb62828f3d84c12331419174",
+        "http://store.is.autonavi.com/showpic/7fe851ca25e8d03bc69aaa02966b79dd"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.458805,
+        34.574982
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s8b29d2a1",
@@ -943,7 +1546,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
       "open": "08:00-21:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.426562,
@@ -960,7 +1563,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-21:30",
       "tel": "0379-60655777;18238803325",
-      "photo": "http://store.is.autonavi.com/showpic/5a1beaad4a336619ee026e6041354edb"
+      "photo": "http://store.is.autonavi.com/showpic/5a1beaad4a336619ee026e6041354edb",
+      "address": "王城路街道上阳路28号",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5a1beaad4a336619ee026e6041354edb",
+        "http://store.is.autonavi.com/showpic/2752e2142c0a9d20cde96e58d3dc8c07",
+        "http://store.is.autonavi.com/showpic/1cd9d04b033a2f9854b041163c9d587b"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        112.42554,
+        34.645126
+      ],
+      "navi_poiid": "I49F017036_53742",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s346bc511",
@@ -974,7 +1596,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "09:00-18:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         112.10392,
@@ -991,7 +1613,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-18:30 最晚进入17:00",
       "tel": "15737999560",
-      "photo": "https://store.is.autonavi.com/showpic/e22c41aa959bdaa20000002333982444?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/e22c41aa959bdaa20000002333982444?type=pic",
+      "address": "李贺大道与水城东路交叉口西南角",
+      "district": "宜阳县",
+      "adcode": "410327",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/e22c41aa959bdaa20000002333982444?type=pic",
+        "https://store.is.autonavi.com/showpic/54ec04c21fef0b7b0000002827038860?type=pic",
+        "https://aos-comment.amap.com/B0IDNZJGTA/comment/539c33ff-6f27-4e37-a8ad-8c95654adb0a.png"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.127925,
+        34.522146
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sa9ea5f80",
@@ -1002,8 +1643,8 @@
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.48111,
@@ -1019,7 +1660,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B017B02EXV/comment/content_media_external_images_media_612634_ss__1726597390490_84217123.jpg"
+      "photo": "https://aos-comment.amap.com/B017B02EXV/comment/content_media_external_images_media_612634_ss__1726597390490_84217123.jpg",
+      "address": "中州东路369号(青年宫地铁站C口步行270米)",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B017B02EXV/comment/content_media_external_images_media_612634_ss__1726597390490_84217123.jpg",
+        "https://aos-comment.amap.com/B017B02EXV/comment/9decf76222a372efa6f88e2135e0f584_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B017B02EXV/comment/content_media_external_file_100000792_1750054448873_48345344.jpg"
+      ],
+      "keytag": "广场",
+      "entrance": [
+        112.481493,
+        34.685886
+      ],
+      "navi_poiid": "I49F016036_31648",
+      "business_area": "北大街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "seb7b8108",
@@ -1031,7 +1691,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
       "open": "08:00-21:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.480026,
@@ -1047,7 +1707,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-21:00",
-      "photo": "http://store.is.autonavi.com/showpic/df3e1f1e251d90c2a5e9e8a5dc2c65e4"
+      "photo": "http://store.is.autonavi.com/showpic/df3e1f1e251d90c2a5e9e8a5dc2c65e4",
+      "address": "龙门桥下龙门石窟伊河东岸东山",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/df3e1f1e251d90c2a5e9e8a5dc2c65e4",
+        "http://store.is.autonavi.com/showpic/a5be77b3706f07b370407d3464208611",
+        "https://aos-comment.amap.com/B017B00C56/comment/content_media_external_file_100008451_1763126598955_85829669.jpg"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        112.48775,
+        34.569275
+      ],
+      "navi_poiid": "I49F018036_10",
+      "business_area": "龙门石窟",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sed997aa4",
@@ -1059,7 +1738,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "09:00-17:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.306703,
@@ -1076,7 +1755,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-17:00",
       "tel": "0379-69801888",
-      "photo": "http://store.is.autonavi.com/showpic/5ce8cfc36ae108d0774ada91a7ff7861"
+      "photo": "http://store.is.autonavi.com/showpic/5ce8cfc36ae108d0774ada91a7ff7861",
+      "address": "瀍涧大道宁洛高速交叉口西北角2km",
+      "district": "西工区",
+      "adcode": "410303",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5ce8cfc36ae108d0774ada91a7ff7861",
+        "http://store.is.autonavi.com/showpic/c45df9b3f3da83cfff02881d8648e02d",
+        "http://store.is.autonavi.com/showpic/1894da4d38c5573c4e2c582b1b7d2a70"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.31542,
+        34.712523
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sff3eb9c7",
@@ -1104,7 +1802,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一 全天关闭；周二至周日 09:00-17:00 最晚进入16:30",
-      "photo": "http://store.is.autonavi.com/showpic/b09ef48c2ea73a0d4b906d47503142fe"
+      "photo": "http://store.is.autonavi.com/showpic/b09ef48c2ea73a0d4b906d47503142fe",
+      "address": "定鼎南路21号",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/b09ef48c2ea73a0d4b906d47503142fe",
+        "https://aos-comment.amap.com/B017B00VJL/comment/e165b6cb5aa8b1dc7808b02aea14f206_2048_2048_80.jpg",
+        "https://store.is.autonavi.com/showpic/cd3aeb3eb9da13cd0000003493868395?type=pic"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        112.462631,
+        34.675648
+      ],
+      "navi_poiid": "I49F016036_1119",
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7bce82b1",
@@ -1116,7 +1832,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "上午来，人少光线也好",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.476277,
@@ -1132,7 +1848,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://store.is.autonavi.com/showpic/1d71645510db94e50000003217628112?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/1d71645510db94e50000003217628112?type=pic",
+      "address": "井沟村",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/1d71645510db94e50000003217628112?type=pic",
+        "https://store.is.autonavi.com/showpic/65ee9f12a0226ec90000001283140685?type=pic",
+        "https://store.is.autonavi.com/showpic/635cf0caa40d57056fab8af7a53e63d7"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        112.475983,
+        34.715617
+      ],
+      "navi_poiid": "I49F016036_6444",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s411ff5ed",
@@ -1146,7 +1881,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         112.222228,
@@ -1162,7 +1897,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://store.is.autonavi.com/showpic/63f843737ca200ced71191393313a2f6"
+      "photo": "https://store.is.autonavi.com/showpic/63f843737ca200ced71191393313a2f6",
+      "address": "大横线",
+      "district": "新安县",
+      "adcode": "410323",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/63f843737ca200ced71191393313a2f6",
+        "https://store.is.autonavi.com/showpic/2919e973aadc65da0000002458652992?type=pic",
+        "https://store.is.autonavi.com/showpic/26c6d0ff8ce844e30000007054304595?type=pic"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        112.222577,
+        34.929718
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7de9f958",
@@ -1174,7 +1928,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.486704,
@@ -1190,7 +1944,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-11:30,13:30-17:00",
-      "photo": "http://store.is.autonavi.com/showpic/1e08b96885a79ef52e5cd3a56151f572"
+      "photo": "http://store.is.autonavi.com/showpic/1e08b96885a79ef52e5cd3a56151f572",
+      "address": "北新街与西一街交叉口向西270米路北",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1e08b96885a79ef52e5cd3a56151f572",
+        "https://store.is.autonavi.com/showpic/7111e97e1acfbacb73053a3f8fa853af",
+        "http://store.is.autonavi.com/showpic/08e6514cb48c4338ab1ba7b20cd5cf17"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        112.486922,
+        34.641637
+      ],
+      "navi_poiid": "I49F017036_1513",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf42b17f6",
@@ -1202,7 +1975,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
       "open": "09:00-22:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.465089,
@@ -1218,7 +1991,21 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:30",
-      "photo": "https://aos-comment.amap.com/B0GKPYUF27/comment/DD3EF24C_4209_4B04_91DE_3832819318AF_L0_001_2000_150_1747439993174_16414502.jpg"
+      "photo": "https://aos-comment.amap.com/B0GKPYUF27/comment/DD3EF24C_4209_4B04_91DE_3832819318AF_L0_001_2000_150_1747439993174_16414502.jpg",
+      "address": "广利街与展览路交叉口西南40米",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/B0GKPYUF27/comment/DD3EF24C_4209_4B04_91DE_3832819318AF_L0_001_2000_150_1747439993174_16414502.jpg",
+        "http://store.is.autonavi.com/showpic/5ba3c00b8d9f5d8ef32bfab3ea0510b8",
+        "https://store.is.autonavi.com/showpic/361272f1b5153f660000005398928705?type=pic"
+      ],
+      "keytag": "特色商业街",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s225401f9",
@@ -1230,7 +2017,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "傍晚进来，边走边吃",
       "open": "10:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.406472,
@@ -1246,7 +2033,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 10:00-22:00",
-      "photo": "https://store.is.autonavi.com/showpic/76c99b2ce9927d780000005694876932?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/76c99b2ce9927d780000005694876932?type=pic",
+      "address": "西苑路7-9号附近",
+      "district": "涧西区",
+      "adcode": "410305",
+      "cost": 0,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/76c99b2ce9927d780000005694876932?type=pic",
+        "https://aos-comment.amap.com/B0FFFEWB7H/comment/21B4ABF0_3B50_4BED_85A5_4CAF4A94673B_L0_001_1500_200_1766819352256_39088792.jpg",
+        "https://store.is.autonavi.com/showpic/4c32d68c89fb7d1700af05d68d34837b"
+      ],
+      "keytag": "购物服务,特色商业街,特色商业街",
+      "entrance": [
+        112.406362,
+        34.655628
+      ],
+      "navi_poiid": "I49F017036_26889",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sd541290d",
@@ -1257,8 +2062,8 @@
       "dur": 210,
       "intro": "适合带娃的景点，在城内，排一整个上午。",
       "reason": "带娃排一整个上午",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.463933,
@@ -1274,7 +2079,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/5425c7fa277bc0f8d5a4b2c7da2cd827"
+      "photo": "http://store.is.autonavi.com/showpic/5425c7fa277bc0f8d5a4b2c7da2cd827",
+      "address": "13公里的伊河两岸东、西山上迎宾大道附近",
+      "district": "洛龙区",
+      "adcode": "410311",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5425c7fa277bc0f8d5a4b2c7da2cd827",
+        "https://aos-comment.amap.com/B017B00F7F/comment/175785804167_1757858042421_55571043.jpg",
+        "https://aos-comment.amap.com/B017B00F7F/comment/content_media_external_file_17189_1771732171962_83044876.jpg"
+      ],
+      "keytag": "自然风光",
+      "entrance": [
+        112.467286,
+        34.557944
+      ],
+      "navi_poiid": "I49F018036_3",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sb173f066",
@@ -1286,7 +2110,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "饭点前到，少排队",
       "open": "06:00-23:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         112.480032,
@@ -1302,7 +2126,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 06:00-23:30",
-      "photo": "https://store.is.autonavi.com/showpic/3e1d11d4555f11f65017fbad882836fb"
+      "photo": "https://store.is.autonavi.com/showpic/3e1d11d4555f11f65017fbad882836fb",
+      "address": "贴廓巷与南大街交叉口东北20米",
+      "district": "老城区",
+      "adcode": "410302",
+      "cost": 0,
+      "photos": [
+        "https://store.is.autonavi.com/showpic/3e1d11d4555f11f65017fbad882836fb",
+        "https://aos-comment.amap.com/B0G30HJKF5/comment/4fb4d236070225f21d7a9d84ee8b3241_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0G30HJKF5/comment/612fa6e3c36d1b3cdf3692056ad4918f_2048_2048_80.jpg"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        112.47992,
+        34.677439
+      ],
+      "navi_poiid": [],
+      "business_area": "老城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "x47f80cb7",
@@ -1316,8 +2158,8 @@
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         111.657836,
@@ -1335,7 +2177,26 @@
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00；徒步白天场:7:30-15:30 索道上山时间:现执行7:30-16:00（由于游览时间不足，老君山景区索道每日下午16:00索道上行停运，建议游客选择第二天再乘坐索道上山游览。） 下行索道的截止运营以当天运营为准，请游客朋友们注意游览时间，如因极端天气影响索道运行，游客存在滞留情况，可电话联系救援中心: 0379-66775268",
       "tel": "0379-66838888",
-      "photo": "http://store.is.autonavi.com/showpic/57970a97407475e0c18f094f4255dfcc"
+      "photo": "http://store.is.autonavi.com/showpic/57970a97407475e0c18f094f4255dfcc",
+      "address": "七里坪村21组",
+      "district": "栾川县",
+      "adcode": "410324",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/57970a97407475e0c18f094f4255dfcc",
+        "http://store.is.autonavi.com/showpic/0ef5ab521279974d3e762879bc0d4acb",
+        "http://store.is.autonavi.com/showpic/8ae85af41dfc331054b00ed029ab116e"
+      ],
+      "keytag": "名山丘陵",
+      "entrance": [
+        111.652837,
+        33.775164
+      ],
+      "navi_poiid": "I49F027030_29",
+      "business_area": [],
+      "website": "www.laojunshan.cn",
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }

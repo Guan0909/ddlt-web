@@ -27,7 +27,8 @@
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
     "add_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -62,7 +63,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 10
+      "heat_prev": 10,
+      "address": "秦陵北路",
+      "district": "临潼区",
+      "adcode": "610115",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7fff5e779ae4b3f4b01307e04e3a40d7",
+        "https://store.is.autonavi.com/showpic/81b396f790b955bd0000008176252813?type=pic",
+        "https://store.is.autonavi.com/showpic/d20702fa70bd143e0000008113406138?type=pic"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        109.284953,
+        34.390144
+      ],
+      "navi_poiid": "I49F020011_191;8984",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "city-wall",
@@ -96,7 +115,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "南大街2号西安城墙内(南侧)",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f88bc32b844ba6097b594f71e8a6cc88",
+        "https://store.is.autonavi.com/showpic/37901e4746b9d3f10000003172046778?type=pic",
+        "https://store.is.autonavi.com/showpic/135e85b3edc70c720000002817814173?type=pic"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        108.94609,
+        34.248343
+      ],
+      "navi_poiid": [],
+      "business_area": "南院门",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shaanxi-history",
@@ -112,7 +149,7 @@
       "dur": 150,
       "intro": "华夏第一宝库，周秦汉唐国宝一次看够。",
       "reason": "抢最早时段，何家村窖藏先去看",
-      "open": "09:00-17:30",
+      "open": "00:00-23:59",
       "closed_mon": true,
       "suburb": false,
       "coord": [
@@ -131,7 +168,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "小寨东路91号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/62a12f5596a19455be8bddea89f87bb3",
+        "http://store.is.autonavi.com/showpic/0cfe4d22d29720d3d7730e1ae0585bd4",
+        "http://store.is.autonavi.com/showpic/f2bb35105a79341302aaa0a329b29c25"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.955039,
+        34.222894
+      ],
+      "navi_poiid": "I49F022008_32172",
+      "business_area": "小寨",
+      "website": "www.sxhm.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dayanta",
@@ -164,7 +219,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "慈恩路1号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/7fe93a8ea8185c31fb0e79711fa3ad6a",
+        "http://store.is.autonavi.com/showpic/cdb115e63076a8e5ba1069cb09f7eca8",
+        "http://store.is.autonavi.com/showpic/2dce6ff53fca0956d562dbe487e30f31"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        108.966115,
+        34.21917
+      ],
+      "navi_poiid": "I49F022008_27981",
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "datang-everbright",
@@ -197,7 +270,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 9.5,
+      "address": "雁塔南路428号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/f90b753858943d71771aec94e12fa93c",
+        "http://store.is.autonavi.com/showpic/c65cb3c266a4d568b67cf50fb7705af3",
+        "https://store.is.autonavi.com/showpic/df918c048942db0e3b1a5ae421f0805e"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        108.964013,
+        34.204077
+      ],
+      "navi_poiid": "I49F022008_81368;338375",
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "mount-hua",
@@ -208,11 +299,11 @@
         "长空栈道",
         "早去"
       ],
-      "heat": 8,
+      "heat": 7,
       "dur": 420,
       "intro": "奇险天下第一山，五岳之西岳。",
       "reason": "西峰索道上北峰下，一天走五峰",
-      "open": "00:00-23:59",
+      "open": "08:00-18:00",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -221,17 +312,35 @@
       ],
       "coord_src": "amap",
       "photo": "https://store.is.autonavi.com/showpic/fa3e94be057f4842c836fcc05e8d3a95",
-      "amap_poi_id": "B0391003ON",
+      "amap_poi_id": "B0FFGCUV29",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "周一至周日 00:00-24:00；华山西峰索道、北峰索道运营时间: 2026年10月1日—2026年10月7日期间，华山景区乘索进山（游客中心检票）入园时间:6:00-16:00；步行登山（华山门检票）:24小时开放；索道运营时间:6:00-16:00（上行） 6:00-20:00（下行）。 冬季12月1日-2月28日08:00-18:00，索道上山入园检票时间08:00-16:00； 旺季3月1日-11月30日07:00-19:00，索道上山入园检票时间07:00-16:00； 步行登山全天24小时开放。",
+      "open_text": "周一至周日 08:00-18:00",
       "tel": "0913-8375999;0913-8376888",
-      "rating": 4.9,
+      "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 9.5
+      "heat_prev": 8,
+      "address": "青华山",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/196d8527a1dc0786d852010a816ad4f6",
+        "http://store.is.autonavi.com/showpic/02bb6f64a03ce9de875b10d228c6285b",
+        "http://store.is.autonavi.com/showpic/2f070189f602e90cec85f879971eecdb"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        108.833529,
+        34.038456
+      ],
+      "navi_poiid": "I49F024007_3302",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "bell-tower",
@@ -265,7 +374,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "西安地铁2号线钟楼站C出口正对面",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/3b525983-7154-4c03-9423-6683ecfef221.jpg",
+        "http://store.is.autonavi.com/showpic/ac2ed4de49dc97fe83bf7b5cd008a38b",
+        "https://store.is.autonavi.com/showpic/cae1878a9b386a60d8d0260652544890"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        108.947106,
+        34.260244
+      ],
+      "navi_poiid": "I49F021008_57963",
+      "business_area": "钟楼",
+      "website": "www.xazgl.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "drum-tower",
@@ -299,7 +426,25 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "北院门74号(广济街地铁站D1口步行370米)",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6a0ee775f907dbd566bc65d211e8bd07",
+        "http://store.is.autonavi.com/showpic/14b3471974cd21c8f2f867d25ac44c20",
+        "http://store.is.autonavi.com/showpic/3af50e24b9969cfe7361485c940e3175"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        108.943455,
+        34.259327
+      ],
+      "navi_poiid": "I49F021008_297362",
+      "business_area": "北院门",
+      "website": "www.xazgl.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "muslim-quarter",
@@ -334,7 +479,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "北院门与西华门大街交汇处",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B001D07MPJ/comment/content_media_external_file_220055_ss__1769236693776_67465932.jpg",
+        "https://aos-comment.amap.com/B001D07MPJ/comment/content_media_external_file_3214_1764685228122_69424644.jpg",
+        "https://aos-comment.amap.com/B001D07MPJ/comment/content_media_external_file_1000028839_ss__1771597662050_13690737.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        108.943568,
+        34.264475
+      ],
+      "navi_poiid": "I49F021008_58748",
+      "business_area": "西华门",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "huaqing-palace",
@@ -368,7 +531,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "华清路38号华清池内(华清池地铁站C口步行480米)",
+      "district": "临潼区",
+      "adcode": "610115",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/2D0EF040627744389B0E32327009AF12",
+        "https://store.is.autonavi.com/showpic/c8723e0203d4c6750000005124712150?type=pic",
+        "https://store.is.autonavi.com/showpic/ec15250bdc52cbed0000005124716019?type=pic"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        109.212969,
+        34.36302
+      ],
+      "navi_poiid": "I49F020010_42735",
+      "business_area": "骊山",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "beilin-museum",
@@ -402,7 +582,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "三学街15号",
+      "district": "碑林区",
+      "adcode": "610103",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/31b765e59af511398d4be0efcecd1598",
+        "http://store.is.autonavi.com/showpic/afc03127a286251c0ab55521d0748d3b",
+        "http://store.is.autonavi.com/showpic/be25df6f462800762bb42ca1a897eb59"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.953359,
+        34.252205
+      ],
+      "navi_poiid": "I49F021008_76677",
+      "business_area": "南院门",
+      "website": "www.beilin-museum.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "tang-paradise",
@@ -436,7 +633,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8.5
+      "heat_prev": 8.5,
+      "address": "曲江新区芙蓉西路99号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/40F18EC737C4455F8B85235F262C6124",
+        "http://store.is.autonavi.com/showpic/9a7e0a30c7fd906c074e298cf5c424e9",
+        "https://store.is.autonavi.com/showpic/7CC2F5A188C64CDCB662EF5095ED6DBA"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        108.96971,
+        34.212799
+      ],
+      "navi_poiid": "I49F022008_263463",
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "daming-palace",
@@ -470,7 +686,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "自强东路585号",
+      "district": "新城区",
+      "adcode": "610102",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/b8e2ab87ada50a64f4697ca58c527097",
+        "http://store.is.autonavi.com/showpic/f46a48e6df9855daa5a3bd9522fb7b77",
+        "http://store.is.autonavi.com/showpic/d39d883b57deb9595d36d7f9ccd0e2b8"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        108.971307,
+        34.287189
+      ],
+      "navi_poiid": "I49F021008_103055;349557",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiaoyanta",
@@ -505,7 +740,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "友谊西路74号",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/cf0b424e61f5ab9a7c40c4dd0a410758",
+        "http://store.is.autonavi.com/showpic/7490ef39e96d35e0884c3d4eed459991",
+        "http://store.is.autonavi.com/showpic/070c97f55be9f9829a77638a3c526785"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.943054,
+        34.241005
+      ],
+      "navi_poiid": "I49F022008_262522",
+      "business_area": "长安路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xian-museum",
@@ -538,7 +792,25 @@
       "rating": 4.8,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "友谊西路72号",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/79db7fd7451da35ee939cb797c8f22e9",
+        "http://store.is.autonavi.com/showpic/cf8dfe78fc744751c8df581401c2264b",
+        "http://store.is.autonavi.com/showpic/9202d90c717b42509292a1431cdf82fe"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.939288,
+        34.238037
+      ],
+      "navi_poiid": "I49F022008_289970",
+      "business_area": "长安路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "famen-temple",
@@ -549,11 +821,11 @@
         "地宫珍宝",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 180,
       "intro": "供奉佛指舍利的皇家寺院，地宫珍宝惊艳。",
       "reason": "地宫出土的金银器值回车程",
-      "open": "08:30-17:30",
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -562,17 +834,35 @@
       ],
       "coord_src": "amap",
       "photo": "http://store.is.autonavi.com/showpic/608526327613e1c217fc0d2f5cd71954",
-      "amap_poi_id": "B0FFGWO56F",
+      "amap_poi_id": "B0FFI2V5U5",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "周一至周日 08:30-17:30",
+      "open_text": "周一至周日 00:00-24:00",
       "tel": "0917-5254002;0917-5258858;4000011899",
-      "rating": 4.6,
+      "rating": 2.6,
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 7,
+      "address": "长缨东路377-附1号附近",
+      "district": "新城区",
+      "adcode": "610102",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/382af10d3a30e2892bbe32460028e47a",
+        "https://store.is.autonavi.com/showpic/238e09d46cf3f74f86e6dc5a733af0b1",
+        "http://store.is.autonavi.com/showpic/fdd26247bed754aadb1cdf678a3d4a34"
+      ],
+      "keytag": "风景名胜,风景名胜相关,旅游景点",
+      "entrance": [
+        108.998698,
+        34.277556
+      ],
+      "navi_poiid": [],
+      "business_area": "胡家庙",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yongningmen-night",
@@ -605,7 +895,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "西安城墙-南门广场",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/5abda913ce67dd4d0000003088980209?type=pic",
+        "https://store.is.autonavi.com/showpic/3975ad14ad5b6cbef142260184b2a77e"
+      ],
+      "keytag": "观景点",
+      "entrance": [
+        108.947024,
+        34.250452
+      ],
+      "navi_poiid": [],
+      "business_area": "环城南路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dayanta-fountain",
@@ -638,7 +945,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "芙蓉东路3号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6ed073d1838a18cfd5aba59cd89c8ee1",
+        "http://store.is.autonavi.com/showpic/afdbd5b0b39217f23df16b873f2ae4c7",
+        "http://store.is.autonavi.com/showpic/9873d74e3870304010aae5a29906dc92"
+      ],
+      "keytag": "广场",
+      "entrance": [
+        108.966056,
+        34.219272
+      ],
+      "navi_poiid": "I49F022008_27987",
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yongxing-fang",
@@ -671,7 +996,25 @@
       "rating": 4.8,
       "cost": 68,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "永兴坊关中巷1-5号",
+      "district": "新城区",
+      "adcode": "610102",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d3dd18fa5fb617d02cf7f1aabae80b78",
+        "http://store.is.autonavi.com/showpic/f98c362dd4f0203080c10af3b029fb4c",
+        "http://store.is.autonavi.com/showpic/4a345c9ba6888493b79f8be4b52ad0e4"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        108.970937,
+        34.265286
+      ],
+      "navi_poiid": "I49F021008_297328",
+      "business_area": "民乐园",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sajinqiao",
@@ -705,7 +1048,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "洒金桥110号(洒金桥地铁站B西南口步行390米)",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "photos": [
+        "https://aos-comment.amap.com/B0LACDK5UU/comment/content_media_external_file_25848_ss__1770628549501_32058246.jpg",
+        "https://aos-comment.amap.com/B0LACDK5UU/comment/20260209-f4d3e32613c631ff5846ba4f-1DXt3tXS7OsA58A4oXfs2B.jpg",
+        "https://store.is.autonavi.com/showpic/3e5e7144994e69f9c012ee0d41c9a9d9"
+      ],
+      "keytag": "购物服务,购物相关场所,购物相关场所",
+      "entrance": [
+        108.93269,
+        34.266482
+      ],
+      "navi_poiid": [],
+      "business_area": "北院门",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "changan-12",
@@ -739,7 +1099,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 8
+      "heat_prev": 8,
+      "address": "大唐不夜城东侧曼蒂广场南门",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/0be3481df63f1a7a61c4ca6878a47118",
+        "http://store.is.autonavi.com/showpic/e30f59cc7220c68b4555dfb27f852e44",
+        "http://store.is.autonavi.com/showpic/ee55ffeae8f22b1103a8fb712342589b"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        108.965952,
+        34.211682
+      ],
+      "navi_poiid": [],
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiaozhai-seg",
@@ -772,7 +1149,24 @@
       "rating": 4.9,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "小寨东路(小寨地铁站D口出入口旁)",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/e609d93aad5557070000002909454169?type=pic",
+        "https://store.is.autonavi.com/showpic/9f30756d695c0c30c509c3cfa6c6e038",
+        "https://store.is.autonavi.com/showpic/5486266a57bc62331fbc34a8850def7f"
+      ],
+      "keytag": "商场",
+      "entrance": [
+        108.946844,
+        34.223304
+      ],
+      "navi_poiid": "I49F022008_280127",
+      "business_area": "小寨",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shaanxi-archaeology",
@@ -788,7 +1182,7 @@
       "dur": 120,
       "intro": "全国首座考古学科博物馆，出土现场搬进馆。",
       "reason": "看文物怎么从土里到展柜",
-      "open": "09:00-17:00",
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -806,7 +1200,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "文苑南路与终南大道交汇处东北侧",
+      "district": "长安区",
+      "adcode": "610116",
+      "photos": [
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFIPVQRV/headerImg/content_media_external_images_media_1690866_1651745612877_93fe9528.jpg",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFIPVQRV/headerImg/content_media_external_images_media_60305_1652079438801_fcff02b3.jpg",
+        "http://store.is.autonavi.com/showpic/ee080f17f49e924406e4575cfb98f3d8"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.882253,
+        34.116642
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "big-mosque",
@@ -841,7 +1252,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "北院门化觉巷30号",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6e54d5316d72db1298ffca984d3a36aa",
+        "http://store.is.autonavi.com/showpic/403385994041da53c396bca1e6040eaf",
+        "http://store.is.autonavi.com/showpic/5075e1bc4243a45f70df454d8050e9a0"
+      ],
+      "keytag": "清真寺",
+      "entrance": [
+        108.94165,
+        34.26203
+      ],
+      "navi_poiid": "I49F021008_81935",
+      "business_area": "广济街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qianling",
@@ -852,7 +1281,7 @@
         "无字碑",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 8,
       "dur": 150,
       "intro": "唐高宗与武则天合葬陵，无字碑立千年。",
       "reason": "司马道石像生走完像读唐史",
@@ -865,17 +1294,35 @@
       ],
       "coord_src": "amap",
       "photo": "https://store.is.autonavi.com/showpic/3b1674cf31445a707aca00c575779d46",
-      "amap_poi_id": "B038E01WUG",
+      "amap_poi_id": "B001D0WRTA",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "1月至2月,12月 周一至周日 08:30-17:30 最晚进入16:30；3月至11月 周一至周日 08:00-18:00 最晚进入17:00",
+      "open_text": "周一至周日 06:30-22:30；景区开放时间:06:30-22:30（22:00清园） 大风阁开放时间:09:00-18:00",
       "tel": "029-35510353;029-35510222",
-      "rating": 4.7,
+      "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7,
+      "address": "北二环与朱宏路交汇处西北角",
+      "district": "未央区",
+      "adcode": "610112",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c0c6ad84e859c52ad08083e45e78150c",
+        "http://store.is.autonavi.com/showpic/da2e3e996bdbed7d6001bd5dfc133fef",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/d018217d-4e78-4b97-89d8-7bfbe1f7c9cb.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        108.918927,
+        34.29808
+      ],
+      "navi_poiid": "I49F021008_91115;106265",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shuyuanmen",
@@ -908,7 +1355,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "书院门24号西安书院门步行街",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0HAJD5VUL/comment/content_media_external_file_1000064728_ss__1763973193032_29702216.jpg",
+        "https://aos-comment.amap.com/B0HAJD5VUL/comment/20260309-0e7b1e899bb2de21baf3004d-4QxMKsaRyeD9VVafFrzXI0.jpg",
+        "https://aos-comment.amap.com/B0HAJD5VUL/comment/content_media_external_file_38454_1766022986888_49089736.jpg"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        108.947069,
+        34.253082
+      ],
+      "navi_poiid": [],
+      "business_area": "环城南路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "dapiyuan",
@@ -942,7 +1407,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "大皮院108号",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/558a5b4ba310684d7f7a9bef",
+        "https://store.is.autonavi.com/showpic/9a579dda8a95c4d10000002437158911?type=pic",
+        "https://store.is.autonavi.com/showpic/1ff57fee5fd042790000002437224892"
+      ],
+      "keytag": "清真寺",
+      "entrance": [
+        108.939884,
+        34.264456
+      ],
+      "navi_poiid": "I49F021008_160829;71868",
+      "business_area": "大皮院",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xingqing-palace",
@@ -975,7 +1458,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "咸宁西路55号",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2884acc88bb3f8725c514f8422a75b60",
+        "http://store.is.autonavi.com/showpic/55921f64d388e72807fb22b57be6e26f",
+        "https://store.is.autonavi.com/showpic/2837c0c0a5b54b3e0a51de5fa5308563"
+      ],
+      "keytag": "园林",
+      "entrance": [
+        108.9833,
+        34.251143
+      ],
+      "navi_poiid": "I49F021008_70096",
+      "business_area": "东关正街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qujiang-ocean",
@@ -1009,7 +1510,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "曲江二路1号(北池头一路与芙蓉东路交叉口)",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9f4df0637272aad4eba28275845e93c6",
+        "http://store.is.autonavi.com/showpic/f700fb72ab84330ac59ec171047c2294?operate=original&query_type=oss&operate_gif=1",
+        "https://store.is.autonavi.com/showpic/5a89b5c9f7521d6a0000003140576384?type=pic"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.979588,
+        34.215858
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qinling-zoo",
@@ -1043,7 +1563,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7.5,
+      "address": "滦镇107省道南500米",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/b8f45d511003d565c7d9111ac5d1f9d2",
+        "http://store.is.autonavi.com/showpic/8f3073cad950974728e4b79afe1e1fdf",
+        "http://store.is.autonavi.com/showpic/687f37e2d24bd1fabf740e2c16574d4e"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.85464,
+        34.054372
+      ],
+      "navi_poiid": "I49F024007_13",
+      "business_area": [],
+      "website": "www.xianzoo.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "taibai-shan",
@@ -1054,30 +1593,42 @@
         "大爷海",
         "远郊"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 420,
       "intro": "秦岭主峰拔仙台，六月积雪的高山秘境。",
       "reason": "一日历四季，山顶还有冰川湖",
-      "open": null,
-      "closed_mon": null,
+      "open": "08:00-17:00",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         107.878659,
         34.048156
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B039500BA7",
+      "amap_poi_id": "B0FFGNFSD4",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "08:30-14:00最晚进入14:00；景交车运营时间:08:00-17:00索道运营时间:08:00-16:00,具体营业状态以当天开放情况为准",
+      "open_text": "周一至周日 08:00-17:00",
       "tel": "0917-5716685",
-      "rating": 4.7,
+      "rating": 3.3,
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/a898e08c026e492e194f0ac610845d19",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 7.5
+      "heat_prev": 7,
+      "address": "太白山国家森林公园",
+      "district": "周至县",
+      "adcode": "610124",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/e8ceae3da0f1e0e6ca3e44201df39dd2"
+      ],
+      "keytag": "湖泊河流",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "banpo-museum",
@@ -1110,7 +1661,24 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "半坡路155号",
+      "district": "灞桥区",
+      "adcode": "610111",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3e0da755a699d94376fb337e7ca463ca",
+        "http://store.is.autonavi.com/showpic/99eec04c978bfcf1a058a01ff3d841ca",
+        "http://store.is.autonavi.com/showpic/1da2e4ba791e822981e2c9f916674361"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        109.050826,
+        34.273198
+      ],
+      "navi_poiid": "I49F021009_4618",
+      "business_area": "纺织城",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "tang-west-market",
@@ -1125,7 +1693,7 @@
       "dur": 80,
       "intro": "建在唐长安西市遗址上的民营博物馆。",
       "reason": "站在丝绸之路起点的车辙印上",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": false,
       "coord": [
@@ -1143,7 +1711,24 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "劳动南路118号",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/90c64e82741c92fb41f9d7517de51fe9",
+        "http://store.is.autonavi.com/showpic/f629de1a6bc7e865412a27f2367b5a0d",
+        "http://store.is.autonavi.com/showpic/104926e4ec14b95ce46a90a4e6620865"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.90851,
+        34.247973
+      ],
+      "navi_poiid": "I49F022008_294696",
+      "business_area": "劳动南路",
+      "website": "www.dtxsmuseum.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "guanzhong-minsu",
@@ -1158,7 +1743,7 @@
       "dur": 120,
       "intro": "整体搬迁复建的四十座明清关中古民居。",
       "reason": "八千根拴马桩排成阵，场面罕见",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": null,
       "suburb": true,
       "coord": [
@@ -1176,7 +1761,25 @@
       "rating": 4.5,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "五台镇南五台山路1号",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5f310c245319e3916aac0bd259212cfa",
+        "http://store.is.autonavi.com/showpic/a426b1f33bb1358fcb7b499fb6af39c7",
+        "http://store.is.autonavi.com/showpic/aa3b77511ae699981c53cc6ae91891ec"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.972713,
+        34.028391
+      ],
+      "navi_poiid": "I49F024008_317",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "maoling-museum",
@@ -1191,7 +1794,7 @@
       "dur": 90,
       "intro": "汉武帝茂陵旁，霍去病墓石雕群在馆。",
       "reason": "马踏匈奴原石，教科书配图真身",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1199,17 +1802,34 @@
         34.338487
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B038E00115",
+      "amap_poi_id": "B0FFIPVQRV",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "1月至3月,11月至12月 周一至周日 08:30-17:30 最晚进入17:00；4月至10月 周一至周日 08:30-18:00 最晚进入17:30",
+      "open_text": "全年 周一–周二, 周四–周日 09:00–17:00开放 最晚进入16:20；全年 周三 全天不开放；元旦节,春节,清明节,劳动节,端午节,中秋节,国庆节 09:00–17:00开放 最晚进入16:20",
       "tel": "029-38456140",
-      "rating": 4.6,
+      "rating": 4.7,
       "cost": 0,
       "photo": "http://store.is.autonavi.com/showpic/eb6fea876c347a057dfe88334fe66aa0",
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "文苑南路与终南大道交汇处东北侧",
+      "district": "长安区",
+      "adcode": "610116",
+      "photos": [
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFIPVQRV/headerImg/content_media_external_images_media_1690866_1651745612877_93fe9528.jpg",
+        "https://comment-oss-online.oss-cn-wulanchabu.aliyuncs.com/B0FFIPVQRV/headerImg/content_media_external_images_media_60305_1652079438801_fcff02b3.jpg",
+        "http://store.is.autonavi.com/showpic/ee080f17f49e924406e4575cfb98f3d8"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.882253,
+        34.116642
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "gaos-mansion",
@@ -1243,7 +1863,25 @@
       "rating": 4.6,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "北院门144号(鼓楼向北200米、回民街内)",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/4b579228b1b7b93f2000ee2686bc9612",
+        "http://store.is.autonavi.com/showpic/384dd0fb8e4a78d07b330a97be182079",
+        "http://store.is.autonavi.com/showpic/723208d0ce3073a47fc0572cdc4b1dbc"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        108.943667,
+        34.26287
+      ],
+      "navi_poiid": "I49F021008_137088",
+      "business_area": "广济街",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qujiang-pool",
@@ -1276,7 +1914,26 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "曲江池西路与曲江池北路交叉口东南角",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2360f70b424625c90b901b107a170420",
+        "http://store.is.autonavi.com/showpic/52c05f972d82f4a39528cfdb8a4cb191",
+        "http://store.is.autonavi.com/showpic/09286d132e2e52b046c6272aa248610d"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        108.978686,
+        34.203215
+      ],
+      "navi_poiid": "I49F022008_254353;126093",
+      "business_area": "曲江池",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "kunming-pool",
@@ -1309,7 +1966,26 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "昆明池七夕公园内",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1b8e3f57d3d4913f6df505cce7296654",
+        "http://store.is.autonavi.com/showpic/271a24ad4edaed03912e8282b3406f11",
+        "http://store.is.autonavi.com/showpic/69f5d93f3d09967071fd5ea94093d24b"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.770002,
+        34.214118
+      ],
+      "navi_poiid": [],
+      "business_area": "西咸新区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qujiang-joy-city",
@@ -1344,7 +2020,24 @@
       "biz_at": "2026-10-17",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "heat_prev": 7
+      "heat_prev": 7,
+      "address": "慈恩西路66号西安大悦城",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9744531bed4b02eaa1f0ec91e53b8ccf",
+        "https://store.is.autonavi.com/showpic/772febafcdd823ca0000008484596054?type=pic",
+        "https://store.is.autonavi.com/showpic/dc06ceb712419e800000006699640873?type=pic"
+      ],
+      "keytag": "商场",
+      "entrance": [
+        108.960942,
+        34.216481
+      ],
+      "navi_poiid": [],
+      "business_area": "大雁塔",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiaonanmen",
@@ -1404,7 +2097,26 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "太乙宫镇",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/2eeb1cfdfb230e0002f5915294f6a7ac",
+        "http://store.is.autonavi.com/showpic/8ebb521db7d20b02a1089e53cddd5929",
+        "http://store.is.autonavi.com/showpic/d847b44547cea7decb6fc9fcadc770f1"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.009897,
+        33.997244
+      ],
+      "navi_poiid": "I49F025009_123;2",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nanwutai",
@@ -1437,7 +2149,26 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "五台街办南五台景区",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3f3831a963964d6038df23039b916fc5",
+        "http://store.is.autonavi.com/showpic/34aecef982bc3000dacd47f86297d912",
+        "http://store.is.autonavi.com/showpic/69980845b4117b037b2112a479d738fb"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.971186,
+        34.019215
+      ],
+      "navi_poiid": "I49F024008_1",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "lishan",
@@ -1452,7 +2183,7 @@
       "dur": 150,
       "intro": "烽火戏诸侯发生地，西安事变兵谏亭。",
       "reason": "坐索道上看华清宫全景",
-      "open": null,
+      "open": "00:00-23:59",
       "closed_mon": false,
       "suburb": true,
       "coord": [
@@ -1470,7 +2201,25 @@
       "rating": 4.7,
       "cost": 0,
       "biz_src": "amap",
-      "biz_at": "2026-10-17"
+      "biz_at": "2026-10-17",
+      "address": "华清路3号",
+      "district": "临潼区",
+      "adcode": "610115",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6692b5c55287b1f58d5a4004908ff98d",
+        "http://store.is.autonavi.com/showpic/ae8d154e27a7cb45d95c7677072eeaa5",
+        "http://store.is.autonavi.com/showpic/1d8731340ecbf1b4097aec9fd56fda2d"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.209206,
+        34.365648
+      ],
+      "navi_poiid": "I49F020010_261",
+      "business_area": "骊山",
+      "website": "www.xalishan.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "qinglong-temple",
@@ -1504,7 +2253,24 @@
       "photo": "http://store.is.autonavi.com/showpic/1651123d7753fc8944a053803fde8501",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "西影路铁炉庙村北1号",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/1651123d7753fc8944a053803fde8501",
+        "https://store.is.autonavi.com/showpic/768052999e55dd1e0000003135104729?type=pic",
+        "https://store.is.autonavi.com/showpic/1f7cd4cd4dce8c16132576803be9e121"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.99217,
+        34.233479
+      ],
+      "navi_poiid": "I49F022008_127218",
+      "business_area": "西影路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "guangren-temple",
@@ -1539,7 +2305,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "城墙西北角西北一路152号",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c09b518f33c17363603a346f2e054ff7",
+        "http://store.is.autonavi.com/showpic/42afb749d29921f5a542f2f4f56328ff",
+        "http://store.is.autonavi.com/showpic/75390ab15e85dce08953f2949a0d2d28"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        108.926046,
+        34.273763
+      ],
+      "navi_poiid": "I49F021008_295782",
+      "business_area": [],
+      "website": "www.guangrensi.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shuilu-an",
@@ -1574,7 +2358,26 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "普化镇河湾口村",
+      "district": "蓝田县",
+      "adcode": "610122",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/17ea0f6abe0343c9c10c656db22416e0",
+        "https://store.is.autonavi.com/showpic/9605cc70e1ff203f0000003288622260?type=pic",
+        "https://store.is.autonavi.com/showpic/070422a9c7ada7550000003288622261?type=pic"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        109.417426,
+        34.132377
+      ],
+      "navi_poiid": "I49F023012_2;268",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xian-incident",
@@ -1610,7 +2413,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "建国路甲字69号(建国路与建国三巷交叉口)",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5f3f959b5fb911131bf96911c42fd2b6",
+        "https://aos-comment.amap.com/B0FFH1ZO2S/comment/content_media_external_file_1000071205_ss__1761128555173_07360491.jpg",
+        "https://store.is.autonavi.com/showpic/38dd0967a86bac790000002455884590"
+      ],
+      "keytag": "2A景区",
+      "entrance": [
+        108.967057,
+        34.257385
+      ],
+      "navi_poiid": "I49F021008_56503;383026",
+      "business_area": "和平门",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "expo-park",
@@ -1644,11 +2465,30 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "世博大道1号",
+      "district": "灞桥区",
+      "adcode": "610111",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/41f6dcd3aa46677d41676ca75e5e1d1c",
+        "http://store.is.autonavi.com/showpic/be892db3faac547d0e44919f80479990",
+        "http://store.is.autonavi.com/showpic/8d83c6d397ab372d484a71a55aca7959"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.068557,
+        34.324753
+      ],
+      "navi_poiid": "I49F021009_364479;367387;55587;9558",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shunchengxiang",
-      "name": "顺城巷",
+      "name": "顺城巷老菜场4号楼",
       "cat": "街区",
       "tags": [
         "城墙根",
@@ -1663,18 +2503,32 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.949007,
-        34.252055
+        108.969575,
+        34.252625
       ],
       "coord_src": "amap",
       "tencent_poi_id": "11167312986927397109",
       "refreshed_at": "2026-10-16",
       "photo": "http://store.is.autonavi.com/showpic/10f3c07fe0d2f3126a36ded9f16442c4",
-      "amap_poi_id": "B0FFGQ6AEP",
+      "amap_poi_id": "B0L1P75ZJD",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
       "rating": 0,
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "open_text": [],
+      "address": "顺城南路东段与信义巷交叉口东80米",
+      "district": "碑林区",
+      "adcode": "610103",
+      "cost": 0,
+      "keytag": "购物服务,综合市场,综合市场",
+      "entrance": [
+        108.969584,
+        34.25251
+      ],
+      "navi_poiid": [],
+      "business_area": "环城南路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiying-film",
@@ -1693,8 +2547,8 @@
       "closed_mon": null,
       "suburb": false,
       "coord": [
-        108.971759,
-        34.221602
+        108.973375,
+        34.222925
       ],
       "coord_src": "amap",
       "tencent_poi_id": "2040948695299541955",
@@ -1708,7 +2562,19 @@
       "biz_at": "2026-10-17",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "西影路辅路与后村南路交叉口东160米",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/24adad22c7fdb9f7fd5c5ca4b746cace",
+        "https://store.is.autonavi.com/showpic/3b24d63128652a5141a74bde4a3e2457"
+      ],
+      "keytag": "电影院",
+      "navi_poiid": [],
+      "business_area": "西影路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "yisushe-block",
@@ -1742,7 +2608,25 @@
       "photo": "https://aos-comment.amap.com/B0G3TOSUMA/comment/BEE0C16D_1128_49DB_9D7A_E81437288D7D_L0_001_1500_200_1763219219810_16245189.jpg",
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "柏树林街道东大街619号钟楼邮电广场",
+      "district": "碑林区",
+      "adcode": "610103",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0G3TOSUMA/comment/BEE0C16D_1128_49DB_9D7A_E81437288D7D_L0_001_1500_200_1763219219810_16245189.jpg",
+        "https://aos-comment.amap.com/B0G3TOSUMA/headerImg/27532c125f9c96cf842c5b8c3b6e2550_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0G3TOSUMA/headerImg/7a4967017ae3ad7c7c8d2a8fefac9c0d_2048_2048_80.jpg"
+      ],
+      "keytag": "特色商业街",
+      "entrance": [
+        108.947907,
+        34.260739
+      ],
+      "navi_poiid": [],
+      "business_area": "钟楼",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shaanxi-nature",
@@ -1777,7 +2661,24 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "长安南路88号电视塔1层(电视塔地铁站B西南口旁)",
+      "district": "雁塔区",
+      "adcode": "610113",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d003bd7980a4baae57a058b8f1c7930d",
+        "http://store.is.autonavi.com/showpic/8d4c6e8321d0508b058d6962ed03ffa5",
+        "http://store.is.autonavi.com/showpic/59d12cd9b78346a8c2788eb355eed2fb"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        108.945635,
+        34.197308
+      ],
+      "navi_poiid": "I49F022008_266417",
+      "business_area": "长延堡",
+      "website": "www.sxnm.net",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "taiping-forest",
@@ -1812,7 +2713,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6.5
+      "heat_prev": 6.5,
+      "address": "煤场村",
+      "district": "鄠邑区",
+      "adcode": "610118",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/b81889e644ac2173ee077f4b9937fc19",
+        "http://store.is.autonavi.com/showpic/ddfa86e740e56ddd1494464cb86496fe",
+        "http://store.is.autonavi.com/showpic/eefcc6d54cb86de641e5117e3b1ca951"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        108.660268,
+        33.92312
+      ],
+      "navi_poiid": "I49F025006_25",
+      "business_area": [],
+      "website": "www.tppark.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "xiangji-temple",
@@ -1847,7 +2766,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "香积寺村",
+      "district": "长安区",
+      "adcode": "610116",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/2f788439b970d66b0000008938306486?type=pic",
+        "https://store.is.autonavi.com/showpic/0895c9d4d0ddfdfdb737a8dc03172c97",
+        "https://store.is.autonavi.com/showpic/c518c488cf7cd0dd74f29c37f4e3da4a"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        108.892801,
+        34.121283
+      ],
+      "navi_poiid": "I49F023008_101",
+      "business_area": [],
+      "website": "www.xiangjisi.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "louguantai",
@@ -1881,7 +2818,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "近郊周至楼观台城东南15公里楼观十字向南300米万达超市",
+      "district": "周至县",
+      "adcode": "610124",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/75a06d5f67c55b8151c858dceffa608e",
+        "http://store.is.autonavi.com/showpic/247b663391bb51caccb8e6c963bf3cef",
+        "http://store.is.autonavi.com/showpic/cf8334d2c900c10451a51073081e2369"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        108.327384,
+        34.059001
+      ],
+      "navi_poiid": "I49F024003_1",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "chanba-wetland",
@@ -1916,7 +2871,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "启源三路1号",
+      "district": "未央区",
+      "adcode": "610112",
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/e7c4009a5af09ee78a47e74332562c11",
+        "http://store.is.autonavi.com/showpic/e4543d53ed081c20803389c072ab30b9",
+        "http://store.is.autonavi.com/showpic/cbda1d3ac0f9c82434744c7e02564bc5"
+      ],
+      "keytag": "湿地",
+      "entrance": [
+        109.007411,
+        34.410211
+      ],
+      "navi_poiid": "I49F019009_35649",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "futa-town",
@@ -1927,11 +2900,11 @@
         "关中美食",
         "免费"
       ],
-      "heat": 7,
+      "heat": 6,
       "dur": 120,
       "intro": "泾河边的茯茶主题小镇，茶馆小吃密集。",
       "reason": "一壶茯茶配辣子锅盔，很关中",
-      "open": "10:00-21:00",
+      "open": "09:15-20:00",
       "closed_mon": false,
       "suburb": false,
       "coord": [
@@ -1940,17 +2913,34 @@
       ],
       "coord_src": "amap",
       "photo": "https://aos-comment.amap.com/B0FFLO0JG8/headerImg/bd4fd1393bf0bc5a8924a2e6bf745575_2048_2048_80.jpg",
-      "amap_poi_id": "B0FFGG4MG0",
+      "amap_poi_id": "B0FFLO0JG8",
       "refreshed_at": "2026-10-16",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "open_text": "周一至周日 10:00-21:00",
+      "open_text": "周一至周日 09:15-20:00",
       "tel": "029-36201810;029-36518296",
-      "rating": 4.6,
+      "rating": 3.9,
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 7,
+      "address": "金康路188号华东国际茶城4-9号",
+      "district": "新城区",
+      "adcode": "610102",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFLO0JG8/headerImg/bd4fd1393bf0bc5a8924a2e6bf745575_2048_2048_80.jpg",
+        "http://store.is.autonavi.com/showpic/c4e2ed26b9de08c92ce4074a9cf98959",
+        "http://store.is.autonavi.com/showpic/f71acca14ca40867ddce2271c2a06d11"
+      ],
+      "keytag": "茶业",
+      "entrance": [
+        109.00107,
+        34.267899
+      ],
+      "navi_poiid": [],
+      "business_area": "金花路沿线",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "shijingli",
@@ -1985,7 +2975,25 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 6
+      "heat_prev": 6,
+      "address": "沣东新城沣河东路818号",
+      "district": "长安区",
+      "adcode": "610116",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFICEIL2/headerImg/5830d8a0518c10aaa0dd146136a4a204_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFICEIL2/headerImg/245cfeb502eb241a62b2ead59d2bba37_2048_2048_80.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/6a9b4e53-cbcf-4421-890d-9c6b759d1491.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        108.740886,
+        34.229309
+      ],
+      "navi_poiid": [],
+      "business_area": "西咸新区",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "han-weiyang",
@@ -2020,7 +3028,21 @@
       "cost": 0,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
-      "heat_prev": 5.5
+      "heat_prev": 5.5,
+      "address": "丰景路69号",
+      "district": "未央区",
+      "adcode": "610112",
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/22668578c73cbc280000003362558303",
+        "https://store.is.autonavi.com/showpic/1b80ac87f001cb50ed720d160814b555",
+        "https://aos-comment.amap.com/B0FFJMKLMX/comment/35A2BD1D_52E2_4E04_9408_5D98C92166ED_L0_001_2000_150_1762423779305_82727151.jpg"
+      ],
+      "keytag": "文物古迹",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "nb602e466",
@@ -2035,7 +3057,7 @@
       "intro": "汉长安城遗址边的人工湖，水面长，适合骑行。",
       "reason": "傍晚沿湖走，风比较凉",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         108.918796,
@@ -2053,7 +3075,26 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "added_reason": "rebuild 建议新增（高德评分 4.6）"
+      "added_reason": "rebuild 建议新增（高德评分 4.6）",
+      "address": "北二环与朱宏路交汇处西北角",
+      "district": "未央区",
+      "adcode": "610112",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c0c6ad84e859c52ad08083e45e78150c",
+        "http://store.is.autonavi.com/showpic/da2e3e996bdbed7d6001bd5dfc133fef",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/d018217d-4e78-4b97-89d8-7bfbe1f7c9cb.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        108.918927,
+        34.29808
+      ],
+      "navi_poiid": "I49F021008_91115;106265",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "x972e9744",
@@ -2064,8 +3105,8 @@
       "dur": 90,
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "傍晚进来，边走边吃",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         108.936378,
@@ -2082,7 +3123,25 @@
       "added_at": "2026-10-17",
       "note": "标志性景点补录",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486"
+      "photo": "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486",
+      "address": "西仓南巷4号",
+      "district": "莲湖区",
+      "adcode": "610104",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d26415f3cec64b43dec8326299534486",
+        "http://store.is.autonavi.com/showpic/80e8f02ef048dfea1ac1df45e38dcca8",
+        "https://store.is.autonavi.com/showpic/fe6aa957d31afc380000008519692563?type=pic"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        108.943472,
+        34.25933
+      ],
+      "navi_poiid": "I49F021008_112513",
+      "business_area": "北院门",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }

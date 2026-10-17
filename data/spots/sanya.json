@@ -8,7 +8,8 @@
     "generated_at": "2026-10-17",
     "source": "amap",
     "rule_version": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "enrich_at": "2026-10-17"
   },
   "spots": [
     {
@@ -40,7 +41,26 @@
       "added_at": "2026-10-17",
       "open_text": "00:00-24:00,大东海旅游区游客中心09:00-22:00,游泳区09:00-18:00",
       "tel": "19044130521",
-      "photo": "http://store.is.autonavi.com/showpic/d13e9b08dd3a19359b1102934dc08782"
+      "photo": "http://store.is.autonavi.com/showpic/d13e9b08dd3a19359b1102934dc08782",
+      "address": "榆亚大道(明月广场西南400米至大东海广场2.9公里海岸线)",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/d13e9b08dd3a19359b1102934dc08782",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/39681614-448b-49a2-82cd-296f2c020fb8.jpg",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/ce5c7ea1-d85e-444a-8809-7eade65cc73c.jpg"
+      ],
+      "keytag": "度假村",
+      "entrance": [
+        109.524881,
+        18.223021
+      ],
+      "navi_poiid": "E49F022013_2172;5966",
+      "business_area": "海韵路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s8c922e14",
@@ -53,8 +73,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.649664,
@@ -71,7 +91,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "18889989351",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/a8a27a93-ae69-4bd2-97cf-5f92f4a07119.jpg"
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/a8a27a93-ae69-4bd2-97cf-5f92f4a07119.jpg",
+      "address": "亚龙湾路100号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/a8a27a93-ae69-4bd2-97cf-5f92f4a07119.jpg",
+        "http://store.is.autonavi.com/showpic/a8e7ad9fc117e1a9fe1542b24b5f6bf3",
+        "http://store.is.autonavi.com/showpic/549c3095e062f8299a1fe2c03199a114"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.646354,
+        18.231294
+      ],
+      "navi_poiid": "E49F022014_38",
+      "business_area": [],
+      "website": "www.ylb.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s009741fb",
@@ -85,7 +125,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.373711,
@@ -102,7 +142,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30",
       "tel": "0898-88910888",
-      "photo": "http://store.is.autonavi.com/showpic/6453bbab078771ef2a5cf9837f0be30b"
+      "photo": "http://store.is.autonavi.com/showpic/6453bbab078771ef2a5cf9837f0be30b",
+      "address": "三亚湾路肖旗港码头",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6453bbab078771ef2a5cf9837f0be30b",
+        "http://store.is.autonavi.com/showpic/96a23ce5d0a01a2226a4b1d54a3054db",
+        "http://store.is.autonavi.com/showpic/9dae35d6cfb57490a31070d34b64d7e6"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.367152,
+        18.293081
+      ],
+      "navi_poiid": "E49F021011_682;168",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sf043f5a6",
@@ -133,7 +193,27 @@
       "added_at": "2026-10-17",
       "open_text": "3月至11月 08:00-19:00,12月至2月08:00-18:30",
       "tel": "0898-88910131;0898-88592908;0898-88592956",
-      "photo": "http://store.is.autonavi.com/showpic/a73b1b6e8914654c9b83d5a8d0518a3b"
+      "photo": "http://store.is.autonavi.com/showpic/a73b1b6e8914654c9b83d5a8d0518a3b",
+      "address": "天涯镇马岭山麓",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/a73b1b6e8914654c9b83d5a8d0518a3b",
+        "http://store.is.autonavi.com/showpic/65efc845a5e74bef054e7cdf355ba26e",
+        "http://store.is.autonavi.com/showpic/ada6fa24ad7689b82012b8a55aa28f28"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        109.352966,
+        18.294436
+      ],
+      "navi_poiid": "E49F021011_2",
+      "business_area": [],
+      "website": "www.aitianya.cn",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sb4ba154f",
@@ -148,7 +228,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.765947,
@@ -165,7 +245,27 @@
       "added_at": "2026-10-17",
       "open_text": "10-08至10-08 周一至周日 08:30-19:30 最晚进入16:00；10-09至12-31 周一至周日 08:30-18:30 最晚进入16:00；上岛通航时间（船次滚动发班）:08:30-16:00； 下岛通航时间（船次滚动发班）:10月8日09:00-19:30；10月9日起09:00-18:30； 潜水项目检票截止时间16:30； 海上娱乐项目检票截止时间17:00 ； 电瓶车环岛游+蜈支洲City walk检票截止时间17:00； (各时间点受海况与天气的影响会随时调整，实际情况请以当天景区现场情况为准，敬请谅解配合)",
       "tel": "4001146666",
-      "photo": "https://store.is.autonavi.com/showpic/FB987A825D3C460684E009C9487D6AB8"
+      "photo": "https://store.is.autonavi.com/showpic/FB987A825D3C460684E009C9487D6AB8",
+      "address": "林旺蜈支洲岛",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/FB987A825D3C460684E009C9487D6AB8",
+        "https://store.is.autonavi.com/showpic/AF4F70C2B59B45238C0F0A873B71820B",
+        "http://store.is.autonavi.com/showpic/3a39d7dc2ba95d0b3ccaed4fd1a4810c"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        109.725662,
+        18.272577
+      ],
+      "navi_poiid": [],
+      "business_area": "蜈支洲",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s4bb2fef3",
@@ -180,7 +280,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "08:00-17:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.212558,
@@ -196,7 +296,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:00 最晚进入17:00",
-      "photo": "http://store.is.autonavi.com/showpic/beb7e6fd54534dfa94a833bb17b84338"
+      "photo": "http://store.is.autonavi.com/showpic/beb7e6fd54534dfa94a833bb17b84338",
+      "address": "观音岛2层",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/beb7e6fd54534dfa94a833bb17b84338",
+        "http://store.is.autonavi.com/showpic/58af228d54380ccf31fec3e232759a6b",
+        "http://store.is.autonavi.com/showpic/45d171d466a56146826dd96e3e5d8868"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.208559,
+        18.317106
+      ],
+      "navi_poiid": "E49F021010_118",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s940e7e04",
@@ -211,7 +330,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-17:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.208349,
@@ -228,7 +347,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:00；17:00后景区室内、寺庙景观停止开放",
       "tel": "0898-88837888;12301",
-      "photo": "http://store.is.autonavi.com/showpic/4e6f68323f2bc80f42d4939a250b6258"
+      "photo": "http://store.is.autonavi.com/showpic/4e6f68323f2bc80f42d4939a250b6258",
+      "address": "南山村",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/4e6f68323f2bc80f42d4939a250b6258",
+        "http://store.is.autonavi.com/showpic/9f18a5d269b26d6f59a3ad018169c41e",
+        "http://store.is.autonavi.com/showpic/4af42fd013e559f29ecbc2c241487b82"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        109.20946,
+        18.30817
+      ],
+      "navi_poiid": "E49F021010_5840",
+      "business_area": [],
+      "website": "www.nanshan.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "scf76f4de",
@@ -243,7 +382,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "08:30-18:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.158067,
@@ -260,7 +399,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-18:30 最晚进入18:30",
       "tel": "0898-88830188;0898-88830335;0898-88830137",
-      "photo": "http://store.is.autonavi.com/showpic/5991767133d0dd752bbca2d5b59e355b"
+      "photo": "http://store.is.autonavi.com/showpic/5991767133d0dd752bbca2d5b59e355b",
+      "address": "崖城",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5991767133d0dd752bbca2d5b59e355b",
+        "http://store.is.autonavi.com/showpic/26579eb6de86dfc0440814177900ba2e",
+        "http://store.is.autonavi.com/showpic/051db041cc681a3e42026d5af7b70dc5"
+      ],
+      "a_level": "5A",
+      "keytag": "5A景区",
+      "entrance": [
+        109.15557,
+        18.304467
+      ],
+      "navi_poiid": "E49F021010_2",
+      "business_area": [],
+      "website": "www.sanyapark.com",
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s455bf4e5",
@@ -291,7 +450,26 @@
       "added_at": "2026-10-17",
       "open_text": "全年 08:00-18:00开放(17:30停止售票,17:30停止入园)；7月19日 09:00-18:00开放",
       "tel": "0898-38238888",
-      "photo": "http://store.is.autonavi.com/showpic/09e822ba5b1a7ab5423832a38980476c"
+      "photo": "http://store.is.autonavi.com/showpic/09e822ba5b1a7ab5423832a38980476c",
+      "address": "吉阳镇亚龙湾",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/09e822ba5b1a7ab5423832a38980476c",
+        "http://store.is.autonavi.com/showpic/361e7f674e3ba5556bb7c59cb45d447f",
+        "http://store.is.autonavi.com/showpic/375092290421aaedbf90f969eb6d081d"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        109.628266,
+        18.247966
+      ],
+      "navi_poiid": "E49F021014_920",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s43a82b73",
@@ -302,8 +480,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.332659,
@@ -319,7 +497,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0J0ZSDRG6/headerImg/d4075cbdde496446ae9a8606b0514d69_2048_2048_80.jpg"
+      "photo": "https://aos-comment.amap.com/B0J0ZSDRG6/headerImg/d4075cbdde496446ae9a8606b0514d69_2048_2048_80.jpg",
+      "address": "黄龙街212号",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0J0ZSDRG6/headerImg/d4075cbdde496446ae9a8606b0514d69_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0J0ZSDRG6/headerImg/2067ae4f5ab3a31150b82ad768a17e28_2048_2048_80.jpg",
+        "https://store.is.autonavi.com/showpic/f7503911dbce0cc50000003089880518?type=pic"
+      ],
+      "keytag": "特色街区",
+      "entrance": [
+        109.33864,
+        18.303599
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s87bd1a10",
@@ -331,7 +528,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
       "open": "08:00-22:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.50131,
@@ -348,7 +545,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-22:30 最晚进入22:00",
       "tel": "0898-88210808;0898-88213740",
-      "photo": "http://store.is.autonavi.com/showpic/5e741e3870348298407cc04bf881b99b"
+      "photo": "http://store.is.autonavi.com/showpic/5e741e3870348298407cc04bf881b99b",
+      "address": "鹿岭路",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/5e741e3870348298407cc04bf881b99b",
+        "http://store.is.autonavi.com/showpic/a7188fdacd7748c0acbc3c2b42b462af",
+        "http://store.is.autonavi.com/showpic/f994dcf1956dc801c97bc1550ea569ed"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.507213,
+        18.220783
+      ],
+      "navi_poiid": [],
+      "business_area": "鹿回头",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s563eeb2a",
@@ -379,7 +596,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一,周三至周日 09:00-23:00 最晚进入21:30；周二 13:00-23:00 最晚进入21:30",
       "tel": "0898-88665778;18117690790",
-      "photo": "http://store.is.autonavi.com/showpic/6ceaecd8cd655a5587ac78a84f6dbe12"
+      "photo": "http://store.is.autonavi.com/showpic/6ceaecd8cd655a5587ac78a84f6dbe12",
+      "address": "凤凰岭公园狗岭路300号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/6ceaecd8cd655a5587ac78a84f6dbe12",
+        "http://store.is.autonavi.com/showpic/cd732ac9baa7bda49571edac42c604a4",
+        "http://store.is.autonavi.com/showpic/c3e8bf95da901d30105f89d5e76010db"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        109.534763,
+        18.249835
+      ],
+      "navi_poiid": "E49F021013_7687",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s6710fcf7",
@@ -408,7 +645,26 @@
       "added_at": "2026-10-17",
       "open_text": "9月21日-30日:15:00-21:30；10月1日-10月5日:12:00-21:30；10月6日-10月31日:15:00-21:30",
       "tel": "4008888518",
-      "photo": "http://store.is.autonavi.com/showpic/86d53a0556e65ebfffcd96ca5f7d58bd"
+      "photo": "http://store.is.autonavi.com/showpic/86d53a0556e65ebfffcd96ca5f7d58bd",
+      "address": "河东区街道迎宾路333号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/86d53a0556e65ebfffcd96ca5f7d58bd",
+        "http://store.is.autonavi.com/showpic/dc936aa6679d44923d24166e40d6dc13",
+        "http://store.is.autonavi.com/showpic/55cb53eb896b7c9154afadcf01d485a0"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.531786,
+        18.290638
+      ],
+      "navi_poiid": "E49F021013_4781",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s31def772",
@@ -421,8 +677,8 @@
       "dur": 180,
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.744248,
@@ -439,7 +695,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
       "tel": "0898-88986666",
-      "photo": "https://store.is.autonavi.com/showpic/7da935f250c380ee0000003140408415?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/7da935f250c380ee0000003140408415?type=pic",
+      "address": "海棠湾海棠北路36号",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/7da935f250c380ee0000003140408415?type=pic",
+        "https://store.is.autonavi.com/showpic/4648d7885cb5ce630000006572212658?type=pic",
+        "http://store.is.autonavi.com/showpic/1b82f63a287c04f9adbfb71ff7d80ee6"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.741452,
+        18.35576
+      ],
+      "navi_poiid": [],
+      "business_area": "亚特兰蒂斯平台",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s2fe8dcde",
@@ -453,7 +728,7 @@
       "intro": "历史古迹，在城郊，看半天。",
       "reason": "上午来，人少光线也好",
       "open": "08:00-17:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.200489,
@@ -470,7 +745,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:00",
       "tel": "0898-88837727;0898-88837873;0898-88837946",
-      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/3a0c31e3-9ebb-4853-a699-7ea727f57f29.jpg"
+      "photo": "http://aos-cdn-image.amap.com/sns/ugccomment/3a0c31e3-9ebb-4853-a699-7ea727f57f29.jpg",
+      "address": "南山文化旅游区内",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://aos-cdn-image.amap.com/sns/ugccomment/3a0c31e3-9ebb-4853-a699-7ea727f57f29.jpg",
+        "http://store.is.autonavi.com/showpic/9093db3d9d8661f1071a329d26fd44c9",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/66519267-8618-4176-b894-0774d294d4bc.jpg"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        109.210525,
+        18.317051
+      ],
+      "navi_poiid": "E49F021010_5",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sbb85cecb",
@@ -482,7 +776,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
       "open": "07:00-22:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.526536,
@@ -499,7 +793,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 07:00-22:30",
       "tel": "0898-88704481",
-      "photo": "https://store.is.autonavi.com/showpic/f79039acdf3693d54f2666b492eb6448"
+      "photo": "https://store.is.autonavi.com/showpic/f79039acdf3693d54f2666b492eb6448",
+      "address": "河东区街道凤凰路临春段(近艺术家新村)",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/f79039acdf3693d54f2666b492eb6448",
+        "http://store.is.autonavi.com/showpic/b9ff0081e882c317992450910e739625",
+        "https://aos-comment.amap.com/B0FFFGZYT1/comment/content_media_external_file_100008105_1763340680708_81962306.jpg"
+      ],
+      "keytag": "森林公园",
+      "entrance": [
+        109.521152,
+        18.26113
+      ],
+      "navi_poiid": "E49F021013_14413",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se6c8233d",
@@ -511,7 +824,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.731944,
@@ -528,7 +841,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
       "tel": "0898-88759192;15595986566",
-      "photo": "http://store.is.autonavi.com/showpic/4aa363846f00088d8545498749062c86"
+      "photo": "http://store.is.autonavi.com/showpic/4aa363846f00088d8545498749062c86",
+      "address": "海棠南路1号",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/4aa363846f00088d8545498749062c86",
+        "http://store.is.autonavi.com/showpic/c50d7f3aba20aeb61f0fa18b39b19c2f",
+        "http://store.is.autonavi.com/showpic/49f90bb3b2ad1b74514e7007e6ea7cc0"
+      ],
+      "keytag": "广场",
+      "entrance": [
+        109.730253,
+        18.316987
+      ],
+      "navi_poiid": "E49F021014_1345",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sfde752d5",
@@ -539,8 +871,8 @@
       "dur": 90,
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.500812,
@@ -556,7 +888,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/a7fd89e47025ac4f0000003776132286?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/a7fd89e47025ac4f0000003776132286?type=pic",
+      "address": "三亚湾路与光明街交叉口西60米",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/a7fd89e47025ac4f0000003776132286?type=pic",
+        "https://store.is.autonavi.com/showpic/44f1f9c79a7d66e30000002688960733?type=pic",
+        "https://store.is.autonavi.com/showpic/87cc29ef1f5002320000004869870516?type=pic"
+      ],
+      "keytag": "公园",
+      "entrance": [
+        109.500968,
+        18.245894
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "scaf244e7",
@@ -568,7 +919,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-16:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.366433,
@@ -585,7 +936,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-16:00",
       "tel": "0898-88910888",
-      "photo": "http://store.is.autonavi.com/showpic/63118812fd95bd7deae196d340daccb6"
+      "photo": "http://store.is.autonavi.com/showpic/63118812fd95bd7deae196d340daccb6",
+      "address": "三亚旅游区西岛牛王岭景区",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/63118812fd95bd7deae196d340daccb6",
+        "https://aos-comment.amap.com/B0FFFAN3JX/comment/9C2EEF13_18D0_4AF2_995A_7AFB40D34D5E_L0_001_1500_200_1758040603925_02631472.jpg",
+        "https://aos-comment.amap.com/B0FFFAN3JX/comment/content_media_external_file_1000059786_ss__1764246429283_68741452.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.367221,
+        18.293092
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s70898048",
@@ -596,8 +966,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.72763,
@@ -613,7 +983,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "http://store.is.autonavi.com/showpic/98304cce176c39788c441fd46890bd12"
+      "photo": "http://store.is.autonavi.com/showpic/98304cce176c39788c441fd46890bd12",
+      "address": "海棠湾镇海棠湾铁炉港(近蜈支洲岛)",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/98304cce176c39788c441fd46890bd12",
+        "http://store.is.autonavi.com/showpic/5a2945d11ae245d0dbc8d4e00416debc",
+        "http://store.is.autonavi.com/showpic/1099d7d483dfe64bc9427e94a345c78e"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.724647,
+        18.269052
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s44a9d219",
@@ -642,7 +1031,25 @@
       "added_at": "2026-10-17",
       "open_text": "周二至周日 09:00-17:30",
       "tel": "0898-88696212",
-      "photo": "https://aos-comment.amap.com/B0K6CH1XVB/comment/content_media_external_images_media_1000089468_ss__1744772407698_20469412.jpg"
+      "photo": "https://aos-comment.amap.com/B0K6CH1XVB/comment/content_media_external_images_media_1000089468_ss__1744772407698_20469412.jpg",
+      "address": "榆亚路680号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "photos": [
+        "https://aos-comment.amap.com/B0K6CH1XVB/comment/content_media_external_images_media_1000089468_ss__1744772407698_20469412.jpg",
+        "https://aos-comment.amap.com/B0K6CH1XVB/comment/content_media_external_images_media_1000008399_ss__1764335017127_55992075.jpg",
+        "https://aos-comment.amap.com/B0K6CH1XVB/comment/content_media_external_file_43913_ss__1766895574489_95857699.jpg"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        109.570004,
+        18.257318
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "scc9b76a7",
@@ -656,7 +1063,7 @@
       "intro": "古镇街区，在城郊，适合留一整天边走边吃。",
       "reason": "留半天，把饭点安排在镇上",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": true,
       "suburb": true,
       "coord": [
         109.166017,
@@ -672,7 +1079,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周二至周日07:00-19:00周一不开放,节假日以官方通知为准",
-      "photo": "https://aos-comment.amap.com/comment/content_service__1770359756323_67134255_1770359842197_40325689.jpg"
+      "photo": "https://aos-comment.amap.com/comment/content_service__1770359756323_67134255_1770359842197_40325689.jpg",
+      "address": "崖城村崖保路(G225)",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/comment/content_service__1770359756323_67134255_1770359842197_40325689.jpg",
+        "https://store.is.autonavi.com/showpic/f561a4697ddb6df80000002752266703?type=pic",
+        "https://aos-comment.amap.com/B038300GWH/comment/content_media_external_images_media_1000096225_ss__1734588731914_05557723.jpg"
+      ],
+      "keytag": "人文景观",
+      "entrance": [
+        109.166151,
+        18.37006
+      ],
+      "navi_poiid": "E49F020010_2",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s98980c7f",
@@ -684,7 +1110,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "傍晚进来，边走边吃",
       "open": "09:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.504418,
@@ -701,7 +1127,25 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 09:00-22:00",
       "tel": "18289203439",
-      "photo": "http://store.is.autonavi.com/showpic/dd345f2f4b9e4c3e09b0088c28d3fbf9"
+      "photo": "http://store.is.autonavi.com/showpic/dd345f2f4b9e4c3e09b0088c28d3fbf9",
+      "address": "解放路步行街(东北角)",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 55,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/dd345f2f4b9e4c3e09b0088c28d3fbf9",
+        "http://aos-cdn-image.amap.com/sns/ugccomment/a5869d1a-ae3a-4d33-8834-36092ad3737c.jpg",
+        "https://aos-comment.amap.com/B0FFH0SVWR/comment/8b9a761cc707cefcbdb52cb3a943a8b9_2048_2048_80.jpg"
+      ],
+      "keytag": "美食城",
+      "entrance": [
+        109.504512,
+        18.250251
+      ],
+      "navi_poiid": "E49F021013_7765",
+      "business_area": "解放二路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s20d82d84",
@@ -710,28 +1154,39 @@
       "tags": [
         "远郊"
       ],
-      "heat": 7,
+      "heat": 5,
       "dur": 90,
       "intro": "城市公园，在城郊，走一圈一小时上下。",
       "reason": "顺路进来歇脚就好",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.740958,
         18.357606
       ],
       "coord_src": "amap",
-      "amap_poi_id": "B0J15CYIM3",
+      "amap_poi_id": "B0M2BC9VP3",
       "refreshed_at": "2026-10-17",
       "verify_src": "amap",
       "verified_at": "2026-10-17",
-      "rating": 4.6,
+      "rating": 2.5,
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0J15CYIM3/comment/content_media_external_file_1000034182_ss__1766237115693_37475012.jpg"
+      "photo": "https://aos-comment.amap.com/B0J15CYIM3/comment/content_media_external_file_1000034182_ss__1766237115693_37475012.jpg",
+      "heat_prev": 7,
+      "address": "依江路与C11A线交叉口东400米",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "keytag": "公园",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s271bf62c",
@@ -743,7 +1198,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.492889,
@@ -760,7 +1215,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-22:00 最晚进入21:00",
       "tel": "0898-88207735",
-      "photo": "http://store.is.autonavi.com/showpic/fb6ae58f07e54f5e204b09387b13ea2a"
+      "photo": "http://store.is.autonavi.com/showpic/fb6ae58f07e54f5e204b09387b13ea2a",
+      "address": "鹿回头村一组202号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/fb6ae58f07e54f5e204b09387b13ea2a",
+        "https://aos-comment.amap.com/B0H6VDG3WH/comment/content_media_external_file_187237_ss__1768271943214_20401729.jpg",
+        "https://aos-comment.amap.com/B0H6VDG3WH/comment/content_media_external_file_1000098146_ss__1757686870835_78414577.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.494625,
+        18.217218
+      ],
+      "navi_poiid": [],
+      "business_area": "鹿回头",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sbeb78094",
@@ -771,8 +1245,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.37543,
@@ -788,7 +1262,22 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00；西岛渔村全天开放，西岛景区上岛时间:8:00 - 16:00；下岛时间:8:30 - 18:00。",
-      "photo": "https://aos-comment.amap.com/B0J3VU7U07/comment/F00517F4_4684_4105_83B6_7E897D421374_L0_001_1500_200_1768534095953_98550184.jpg"
+      "photo": "https://aos-comment.amap.com/B0J3VU7U07/comment/F00517F4_4684_4105_83B6_7E897D421374_L0_001_1500_200_1768534095953_98550184.jpg",
+      "address": "西岛市场路105号",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0J3VU7U07/comment/F00517F4_4684_4105_83B6_7E897D421374_L0_001_1500_200_1768534095953_98550184.jpg",
+        "https://aos-comment.amap.com/B0J3VU7U07/comment/D8A86AA0_12B6_4409_B526_0FEEF3B9B73D_L0_001_1920_1080_1741512017444_12049048.jpg",
+        "https://aos-comment.amap.com/comment/content_service__1772796684016_86717357_1772796694544_04053752.jpg"
+      ],
+      "keytag": "景区",
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s858e2dd6",
@@ -799,8 +1288,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.510696,
@@ -816,7 +1305,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0FFH2GI88/comment/B2AB5CAB_F611_4471_B6A7_7985F5EDF70C_L0_001_2000_150_1770454736765_71509854.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFH2GI88/comment/B2AB5CAB_F611_4471_B6A7_7985F5EDF70C_L0_001_2000_150_1770454736765_71509854.jpg",
+      "address": "凤凰路东",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0FFH2GI88/comment/B2AB5CAB_F611_4471_B6A7_7985F5EDF70C_L0_001_2000_150_1770454736765_71509854.jpg",
+        "https://store.is.autonavi.com/showpic/ddc39706208cdcf8d668f6a4be0c4666",
+        "https://aos-comment.amap.com/B0FFH2GI88/comment/72d2b922b994b1b07eb467204a3fc30b_2048_2048_80.jpg"
+      ],
+      "keytag": "湿地公园",
+      "entrance": [
+        109.510384,
+        18.279736
+      ],
+      "navi_poiid": [],
+      "business_area": "河东",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "scca1743a",
@@ -843,7 +1351,21 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "open_text": []
+      "open_text": [],
+      "address": "凤凰镇回新村",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "keytag": "清真寺",
+      "entrance": [
+        109.476927,
+        18.286924
+      ],
+      "navi_poiid": "E49F021012_16589",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sabd79c18",
@@ -854,8 +1376,8 @@
       "dur": 210,
       "intro": "适合带娃的景点，在城内，排一整个上午。",
       "reason": "开门就到，午后孩子容易累",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.5079,
@@ -871,7 +1393,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/585d17bbe19c82560000000859164509?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/585d17bbe19c82560000000859164509?type=pic",
+      "address": "三亚河西路",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/585d17bbe19c82560000000859164509?type=pic",
+        "https://aos-comment.amap.com/comment/content_service__1769470202695_50871249_1769470396401_32015486.jpg",
+        "https://aos-comment.amap.com/B038300352/comment/content_media_external_file_583_ss__1771853059592_49409238.jpg"
+      ],
+      "keytag": "城市公园",
+      "entrance": [
+        109.506788,
+        18.254679
+      ],
+      "navi_poiid": "E49F021013_83",
+      "business_area": "河西路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s1ac263ce",
@@ -883,7 +1424,7 @@
       "intro": "城市公园，在城内，走一圈一小时上下。",
       "reason": "清晨或傍晚来，走一圈就够",
       "open": "08:30-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.687432,
@@ -900,7 +1441,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-18:00",
       "tel": "0898-38895599",
-      "photo": "https://store.is.autonavi.com/showpic/e83f1113924e15000000003080620674?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/e83f1113924e15000000003080620674?type=pic",
+      "address": "湾坡村湾坡路与C2路入口处200米右侧",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/e83f1113924e15000000003080620674?type=pic",
+        "https://store.is.autonavi.com/showpic/a103b63bbe3a4a840000007840912302?type=pic",
+        "https://aos-comment.amap.com/B0FFHMCS2T/comment/content_media_external_file_1000015393_ss__1769690342083_33388499.jpg"
+      ],
+      "a_level": "4A",
+      "keytag": "4A景区",
+      "entrance": [
+        109.690204,
+        18.316363
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s2f8011d7",
@@ -912,7 +1473,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.616002,
@@ -929,7 +1490,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入17:00",
       "tel": "0898-38232350;19989766342",
-      "photo": "http://store.is.autonavi.com/showpic/c18c51d59840d1067483421fac9bdd28"
+      "photo": "http://store.is.autonavi.com/showpic/c18c51d59840d1067483421fac9bdd28",
+      "address": "吉阳镇博后北路9号",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/c18c51d59840d1067483421fac9bdd28",
+        "http://store.is.autonavi.com/showpic/b3a88c1a320c2d38d3f52a618ec076b6",
+        "http://store.is.autonavi.com/showpic/97a6b804d67cdee5f718dfb30ab52295"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.61788,
+        18.241058
+      ],
+      "navi_poiid": "E49F022013_6755",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s815d700b",
@@ -943,7 +1523,7 @@
       "intro": "自然山水，在城郊，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "08:00-17:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": true,
       "coord": [
         109.245393,
@@ -960,7 +1540,27 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-17:30 最晚进入17:00",
       "tel": "0898-88827181;0898-88827185",
-      "photo": "http://store.is.autonavi.com/showpic/ada3895518dc64003d95b0113527304c"
+      "photo": "http://store.is.autonavi.com/showpic/ada3895518dc64003d95b0113527304c",
+      "address": "天涯镇塔岭那亲村",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ada3895518dc64003d95b0113527304c",
+        "http://store.is.autonavi.com/showpic/173e5b269228e85a10013b17936cdd7b",
+        "http://store.is.autonavi.com/showpic/3615d3ab943ba49060ff0b80c056e1bb"
+      ],
+      "a_level": "3A",
+      "keytag": "3A景区",
+      "entrance": [
+        109.245434,
+        18.314306
+      ],
+      "navi_poiid": "E49F021010_16",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "sd05ea5bc",
@@ -972,7 +1572,7 @@
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "开门就到，人少先看常设展",
       "open": "10:00-19:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.489875,
@@ -988,7 +1588,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日:10:00-19:00(18:30停止检票入园)",
-      "photo": "http://store.is.autonavi.com/showpic/3762fb398e2f5d6139086125782969a7"
+      "photo": "http://store.is.autonavi.com/showpic/3762fb398e2f5d6139086125782969a7",
+      "address": "育秀路2号夏日站商业5楼",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/3762fb398e2f5d6139086125782969a7",
+        "http://store.is.autonavi.com/showpic/bf2596a6102d20450d7dfe75c99423ae",
+        "http://store.is.autonavi.com/showpic/16421751cba9f06a5b90cb49fa1f7660"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        109.490696,
+        18.294654
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s945f4020",
@@ -1000,7 +1618,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
       "open": "08:00-18:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.499425,
@@ -1016,7 +1634,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:00-18:00",
-      "photo": "https://store.is.autonavi.com/showpic/06243b597cbd2dd40000002677498473"
+      "photo": "https://store.is.autonavi.com/showpic/06243b597cbd2dd40000002677498473",
+      "address": "南边海路",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/06243b597cbd2dd40000002677498473",
+        "https://store.is.autonavi.com/showpic/d67e6b2f1306a1dd0000002677470622",
+        "https://aos-comment.amap.com/B0GUT5HOCO/comment/content_media_external_file_1000094258_ss__1765251917748_96000022.jpg"
+      ],
+      "keytag": "文物古迹",
+      "entrance": [
+        109.49934,
+        18.231806
+      ],
+      "navi_poiid": [],
+      "business_area": "鹿回头·HUAMULAN",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s8ced76f9",
@@ -1028,7 +1665,7 @@
       "intro": "自然山水，在城内，排一整天。",
       "reason": "上午来，慢慢走",
       "open": "10:00-22:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.345824,
@@ -1045,7 +1682,26 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 10:00-22:00",
       "tel": "0898-88592956",
-      "photo": "http://store.is.autonavi.com/showpic/9e2dd734deb201b80571ac4fc911e365"
+      "photo": "http://store.is.autonavi.com/showpic/9e2dd734deb201b80571ac4fc911e365",
+      "address": "天涯海角游览区内(西北角)",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "http://store.is.autonavi.com/showpic/9e2dd734deb201b80571ac4fc911e365",
+        "https://aos-comment.amap.com/B038300490/comment/file_media_Photo_4003_IMG_1735548242_3505_IMG_20241218_150256_edit_366782633828928_jpg_ss_2.jpg",
+        "https://aos-comment.amap.com/B038300490/comment/e8bbf59a53fba1a0d4e36243bbf0d7b3_2048_2048_80.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.352935,
+        18.294378
+      ],
+      "navi_poiid": "E49F021011_163;28",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7c717332",
@@ -1076,7 +1732,26 @@
       "added_at": "2026-10-17",
       "open_text": "08:00-17:00, 17:00后景区室内、寺庙景观停止开放, 具体开放时间以现场公示为准",
       "tel": "0898-88837888",
-      "photo": "https://aos-comment.amap.com/B03830NT45/comment/34d45e1baeea735a17a10b13709c5830_2048_2048_80.jpg"
+      "photo": "https://aos-comment.amap.com/B03830NT45/comment/34d45e1baeea735a17a10b13709c5830_2048_2048_80.jpg",
+      "address": "崖城镇三亚南山文化旅游区内(东北角)",
+      "district": "崖州区",
+      "adcode": "460205",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B03830NT45/comment/34d45e1baeea735a17a10b13709c5830_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B03830NT45/comment/content_media_external_file_292600_ss__1772877859458_09347675.jpg",
+        "https://aos-comment.amap.com/B03830NT45/comment/content_media_external_file_1000607085_ss__1748683245710_45628082.jpg"
+      ],
+      "keytag": "景区",
+      "entrance": [
+        109.209014,
+        18.3035
+      ],
+      "navi_poiid": "E49F021010_120",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s54ef20fd",
@@ -1088,7 +1763,7 @@
       "intro": "博物馆，在城内，看展两小时上下。",
       "reason": "午后进馆，躲开一天里最热的时段",
       "open": null,
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.440131,
@@ -1105,7 +1780,25 @@
       "added_at": "2026-10-17",
       "open_text": "周一至周日 08:30-17:30 10-01至10-07 周一至周日 08:30-17:30",
       "tel": "0898-88341167;12301",
-      "photo": "http://store.is.autonavi.com/showpic/ac167fcc53c4912356bb10d1d1d85db0"
+      "photo": "http://store.is.autonavi.com/showpic/ac167fcc53c4912356bb10d1d1d85db0",
+      "address": "凤凰镇凤凰机场路口西侧京润珍珠博物馆",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "photos": [
+        "http://store.is.autonavi.com/showpic/ac167fcc53c4912356bb10d1d1d85db0",
+        "http://store.is.autonavi.com/showpic/38777bd4d6637f540f60b11558128883",
+        "http://store.is.autonavi.com/showpic/9b4c6bd76bd8a8d2b718e721af3f7910"
+      ],
+      "keytag": "博物馆",
+      "entrance": [
+        109.440245,
+        18.301353
+      ],
+      "navi_poiid": "E49F021012_1082;10034",
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s3c16bcf2",
@@ -1116,8 +1809,8 @@
       "dur": 180,
       "intro": "自然山水，在城内，排一整天。",
       "reason": "赶早进山，中午前到主要观景点",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.511485,
@@ -1133,7 +1826,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/99e91579f77f1fdd0000003098374777?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/99e91579f77f1fdd0000003098374777?type=pic",
+      "address": "荔枝沟路三亚体育中心旁",
+      "district": "吉阳区",
+      "adcode": "460203",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/99e91579f77f1fdd0000003098374777?type=pic",
+        "https://aos-comment.amap.com/B0FFKAYVO9/comment/ce2a4844f1d6a7cbe8700bb2f6bec389_2048_2048_80.jpg",
+        "https://aos-comment.amap.com/B0FFKAYVO9/comment/content_media_external_file_149294_ss__1765350377285_08297556.jpg"
+      ],
+      "keytag": "湿地公园",
+      "entrance": [
+        109.508579,
+        18.295145
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s1fe08ef4",
@@ -1144,8 +1856,8 @@
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.445307,
@@ -1161,7 +1873,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://store.is.autonavi.com/showpic/4283e03ef54a66fc185c7ba264a0e6dd"
+      "photo": "https://store.is.autonavi.com/showpic/4283e03ef54a66fc185c7ba264a0e6dd",
+      "address": "凤凰镇827县道与回辉三村二路交叉口西100米",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/4283e03ef54a66fc185c7ba264a0e6dd",
+        "https://store.is.autonavi.com/showpic/776f81674c1c9d010000005894184222?type=pic",
+        "https://store.is.autonavi.com/showpic/60ee999ca9ad280dc2387be01e08f02c"
+      ],
+      "keytag": "清真寺",
+      "entrance": [
+        109.445337,
+        18.301517
+      ],
+      "navi_poiid": [],
+      "business_area": "鲁能·三亚湾美丽MALL",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s0acc167f",
@@ -1172,8 +1903,8 @@
       "dur": 120,
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
-      "open": null,
-      "closed_mon": null,
+      "open": "00:00-23:59",
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.727149,
@@ -1189,7 +1920,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 00:00-24:00",
-      "photo": "https://aos-comment.amap.com/comment/content_service__1770796744314_88765261_1770796753296_79186421.jpg"
+      "photo": "https://aos-comment.amap.com/comment/content_service__1770796744314_88765261_1770796753296_79186421.jpg",
+      "address": "腾海村铁炉港口",
+      "district": "海棠区",
+      "adcode": "460202",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/comment/content_service__1770796744314_88765261_1770796753296_79186421.jpg",
+        "https://aos-comment.amap.com/B0GUJ7SZ1A/comment/content_media_external_file_12079_ss__1765694913600_45185157.jpg",
+        "https://aos-comment.amap.com/comment/content_service__1770796744308_61142426_1770796753295_79509614.jpg"
+      ],
+      "keytag": "寺庙",
+      "entrance": [
+        109.726544,
+        18.259978
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s2994cc4a",
@@ -1201,7 +1951,7 @@
       "intro": "历史古迹，在城内，看半天。",
       "reason": "避开正午，慢慢看",
       "open": "09:00-21:15",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.476195,
@@ -1216,7 +1966,21 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
-      "open_text": "周一至周日 09:00-21:15"
+      "open_text": "周一至周日 09:00-21:15",
+      "address": "解放路1380号",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "keytag": "清真寺",
+      "entrance": [
+        109.476651,
+        18.283062
+      ],
+      "navi_poiid": "E49F021012_1183",
+      "business_area": "三亚湾",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se191cf06",
@@ -1244,7 +2008,22 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": [],
-      "photo": "https://store.is.autonavi.com/showpic/d55e9924a9d2ea5a0000003049560335?type=pic"
+      "photo": "https://store.is.autonavi.com/showpic/d55e9924a9d2ea5a0000003049560335?type=pic",
+      "address": "凤凰路与景园巷交叉口东南380米",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 0,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://store.is.autonavi.com/showpic/d55e9924a9d2ea5a0000003049560335?type=pic",
+        "https://store.is.autonavi.com/showpic/bf008329cd521ef80000003049546638?type=pic",
+        "https://store.is.autonavi.com/showpic/fbbfac83dd6ff1290000003049560334?type=pic"
+      ],
+      "keytag": "美食街",
+      "navi_poiid": [],
+      "business_area": "河东路",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "se1d0d101",
@@ -1256,7 +2035,7 @@
       "intro": "吃的街区，在城内，饭点来。",
       "reason": "饭点提前半小时到",
       "open": "06:00-24:00",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.372391,
@@ -1272,7 +2051,26 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 06:00-24:00",
-      "photo": "https://aos-comment.amap.com/B0JDHXA4ID/comment/2026-01-17-16-13-47%2BB56F9E8B-BF7C-46D3-A478-F4CF6E39CBE_1768637640281_93210767.jpg"
+      "photo": "https://aos-comment.amap.com/B0JDHXA4ID/comment/2026-01-17-16-13-47%2BB56F9E8B-BF7C-46D3-A478-F4CF6E39CBE_1768637640281_93210767.jpg",
+      "address": "西岛社区西路36-1号",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 32,
+      "ticket_ordering": "0",
+      "photos": [
+        "https://aos-comment.amap.com/B0JDHXA4ID/comment/2026-01-17-16-13-47%2BB56F9E8B-BF7C-46D3-A478-F4CF6E39CBE_1768637640281_93210767.jpg",
+        "https://aos-comment.amap.com/B0JDHXA4ID/comment/2026-01-17-16-13-53%2B9D22EE86-799B-4E5B-9CDE-DD2965E4BE9_1768637640279_05284591.jpg",
+        "https://aos-comment.amap.com/B0JDHXA4ID/comment/content_media_external_file_100013223_1768787398241_03402361.jpg"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        109.372353,
+        18.241917
+      ],
+      "navi_poiid": [],
+      "business_area": [],
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     },
     {
       "id": "s7d3b28b5",
@@ -1284,7 +2082,7 @@
       "intro": "街区，在城内，边走边吃一两小时。",
       "reason": "傍晚进来，边走边吃",
       "open": "10:00-22:30",
-      "closed_mon": null,
+      "closed_mon": false,
       "suburb": false,
       "coord": [
         109.505718,
@@ -1300,7 +2098,25 @@
       "biz_at": "2026-10-17",
       "added_at": "2026-10-17",
       "open_text": "周一至周日 10:00-22:30",
-      "photo": "https://aos-comment.amap.com/B0FFK9FCZ9/comment/202511_19-09592_1763517577359_29559658.jpg"
+      "photo": "https://aos-comment.amap.com/B0FFK9FCZ9/comment/202511_19-09592_1763517577359_29559658.jpg",
+      "address": "区解放路步行街对面(近KFC)",
+      "district": "天涯区",
+      "adcode": "460204",
+      "cost": 64,
+      "photos": [
+        "https://aos-comment.amap.com/B0FFK9FCZ9/comment/202511_19-09592_1763517577359_29559658.jpg",
+        "https://aos-comment.amap.com/B0FFK9FCZ9/comment/202511_19-09593_1763517577365_54409628.jpg",
+        "http://store.is.autonavi.com/showpic/09dcd08fb3d5a0eada318c473a251e20"
+      ],
+      "keytag": "美食街",
+      "entrance": [
+        109.505837,
+        18.250967
+      ],
+      "navi_poiid": [],
+      "business_area": "河西",
+      "website": [],
+      "amap_checked_at": "2026-10-17"
     }
   ]
 }
