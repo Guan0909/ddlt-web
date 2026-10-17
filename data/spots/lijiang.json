@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1885,29 +1886,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 7.5
-    },
-    {
-      "id": "daluoshui",
-      "name": "大落水村游客咨询点",
-      "cat": "古镇",
-      "tags": [
-        "湖景",
-        "住宿",
-        "码头"
-      ],
-      "heat": 7,
-      "dur": 60,
-      "intro": "泸沽湖最大的村子，客栈餐馆最集中。",
-      "reason": "环湖落脚首选，出门就是码头",
-      "open": null,
-      "closed_mon": null,
-      "suburb": true,
-      "coord": [
-        100.809,
-        27.687
-      ],
-      "coord_src": "estimate",
-      "rating": 4.4
     },
     {
       "id": "wenbi-lake",

@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -893,29 +894,6 @@
       "biz_at": "2026-10-17"
     },
     {
-      "id": "chenghuang-miao",
-      "name": "城隍庙小吃城",
-      "cat": "美食",
-      "tags": [
-        "小吃",
-        "老城",
-        "便宜"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "老城隍庙边的小吃聚集地。",
-      "reason": "本地人从小吃到大的地方",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        121.5447,
-        29.867
-      ],
-      "coord_src": "estimate",
-      "heat_prev": 7
-    },
-    {
       "id": "baisha-seafood",
       "name": "白沙码头海鲜大排档",
       "cat": "美食",
@@ -1751,27 +1729,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6
-    },
-    {
-      "id": "nanbu-shuijie",
-      "name": "南部商务区水街",
-      "cat": "街区",
-      "tags": [
-        "夜景",
-        "咖啡",
-        "鄞州"
-      ],
-      "heat": 6,
-      "dur": 70,
-      "intro": "鄞州南部商务区的水街，夜里灯火好看。",
-      "reason": "新城区晚上散步吃饭的地方",
-      "suburb": false,
-      "coord": [
-        121.546,
-        29.8
-      ],
-      "coord_src": "estimate",
-      "photo": "https://store.is.autonavi.com/showpic/cc54ee5e9b22fd3e0000007841154995?type=pic"
     },
     {
       "id": "yifu-theatre",

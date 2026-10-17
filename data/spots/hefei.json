@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -1638,30 +1639,6 @@
       "verified_at": "2026-10-17",
       "rating": 0,
       "heat_prev": 7.5
-    },
-    {
-      "id": "guanting-road",
-      "name": "官亭路",
-      "cat": "美食",
-      "tags": [
-        "小吃",
-        "学生街",
-        "晚上"
-      ],
-      "heat": 5,
-      "dur": 60,
-      "intro": "三里庵一带的学生小吃街，摊位密集。",
-      "reason": "十几块钱能吃得很饱",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        117.2545,
-        31.8435
-      ],
-      "coord_src": "estimate",
-      "rating": 0,
-      "heat_prev": 7
     },
     {
       "id": "lihongzhang-xiangtang",

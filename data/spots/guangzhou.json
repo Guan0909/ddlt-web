@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -865,28 +866,6 @@
       "heat_prev": 7.5
     },
     {
-      "id": "wende-road",
-      "name": "文明路甜品街",
-      "cat": "美食",
-      "tags": [
-        "糖水",
-        "老字号",
-        "夜宵"
-      ],
-      "heat": 7.5,
-      "dur": 60,
-      "intro": "糖水老店一条街，百花甜品就在这。",
-      "reason": "一碗双皮奶结束广州的晚上",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        113.2694,
-        23.1237
-      ],
-      "coord_src": "estimate"
-    },
-    {
       "id": "guangzhou-science",
       "name": "广东科学中心",
       "cat": "亲子",
@@ -1138,28 +1117,6 @@
       "verified_at": "2026-10-17",
       "rating": 0,
       "heat_prev": 7
-    },
-    {
-      "id": "baoye-road",
-      "name": "宝业路夜宵街",
-      "cat": "美食",
-      "tags": [
-        "夜宵",
-        "海鲜",
-        "本地人"
-      ],
-      "heat": 7,
-      "dur": 80,
-      "intro": "海珠的夜宵大排档一条街。",
-      "reason": "凌晨还热闹的广式夜宵",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        113.2407,
-        23.0772
-      ],
-      "coord_src": "estimate"
     },
     {
       "id": "liurong",

@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -464,30 +465,6 @@
       "heat_prev": 8
     },
     {
-      "id": "nanqiang-lane",
-      "name": "南强街",
-      "cat": "美食",
-      "tags": [
-        "夜市",
-        "老宅",
-        "小吃"
-      ],
-      "heat": 5,
-      "dur": 70,
-      "intro": "老宅改的餐饮巷子，入夜最热闹。",
-      "reason": "晚上来吃烤豆腐和小锅米线",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        102.713,
-        25.033
-      ],
-      "coord_src": "estimate",
-      "rating": 0,
-      "heat_prev": 8
-    },
-    {
       "id": "jiuxiang",
       "name": "宜良九乡风景区",
       "cat": "山水",
@@ -754,28 +731,6 @@
       "heat_prev": 7
     },
     {
-      "id": "xiangyun-street",
-      "name": "祥云街小吃街",
-      "cat": "美食",
-      "tags": [
-        "老字号",
-        "小吃",
-        "巷子"
-      ],
-      "heat": 7,
-      "dur": 50,
-      "intro": "老城小吃巷，豆花米线人气最旺。",
-      "reason": "十几块钱吃一顿地道早点",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        102.7145,
-        25.0355
-      ],
-      "coord_src": "estimate"
-    },
-    {
       "id": "yesheng-dongwuyuan",
       "name": "云南野生动物园",
       "cat": "亲子",
@@ -969,33 +924,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6.5
-    },
-    {
-      "id": "shiboyuan",
-      "name": "昆明世博园",
-      "cat": "公园",
-      "tags": [
-        "园艺",
-        "大园区",
-        "缆车"
-      ],
-      "heat": 7,
-      "dur": 150,
-      "intro": "1999 年世园会旧址，园林花园连成大片。",
-      "reason": "和旁边植物园串成一条线",
-      "suburb": false,
-      "coord": [
-        102.760496,
-        25.074235
-      ],
-      "coord_src": "estimate",
-      "amap_poi_id": "B0367063QA",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/query_pic?id=st64fb9c5c-2e0b-4e84-a44b-d4ca47afa304&user=search&operate=original",
-      "rating": 4.5,
-      "heat_prev": 6.5,
-      "verify_src": "amap",
-      "verified_at": "2026-10-17"
     },
     {
       "id": "pubu-park",
@@ -1503,28 +1431,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 5.5
-    },
-    {
-      "id": "m60",
-      "name": "M60 文化创意园",
-      "cat": "街区",
-      "tags": [
-        "文创",
-        "咖啡",
-        "拍照"
-      ],
-      "heat": 5.5,
-      "dur": 60,
-      "intro": "老厂房改造的文创园，咖啡馆与小店密集。",
-      "reason": "红砖厂房里喝一杯咖啡",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        102.69,
-        25.092
-      ],
-      "coord_src": "estimate"
     },
     {
       "id": "laoyuhe-wetland",

@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -884,52 +885,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6
-    },
-    {
-      "id": "chongsaikang",
-      "name": "冲赛康",
-      "cat": "街区",
-      "tags": [
-        "老市场",
-        "藏面",
-        "早去"
-      ],
-      "heat": 7,
-      "dur": 60,
-      "intro": "拉萨最老的市集，藏面摊与杂货铺挤着。",
-      "reason": "早上来碗藏面，感受老拉萨烟火",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.129,
-        29.657
-      ],
-      "coord_src": "estimate"
-    },
-    {
-      "id": "zangyiyuan-road",
-      "name": "藏医院路便民警务站",
-      "cat": "美食",
-      "tags": [
-        "小吃街",
-        "藏餐",
-        "晚上"
-      ],
-      "heat": 5,
-      "dur": 80,
-      "intro": "藏餐与小吃集中的一条街，晚上最热闹。",
-      "reason": "一条街吃完藏面甜茶和酸奶",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        91.128,
-        29.655
-      ],
-      "coord_src": "estimate",
-      "rating": 0,
-      "heat_prev": 7
     },
     {
       "id": "tianhai-night",

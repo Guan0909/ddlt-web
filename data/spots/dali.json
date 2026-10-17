@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -159,28 +160,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6.5
-    },
-    {
-      "id": "taiye-plaza",
-      "name": "泰业城市广场",
-      "cat": "商圈",
-      "tags": [
-        "商场",
-        "吃饭",
-        "室内"
-      ],
-      "heat": 6,
-      "dur": 90,
-      "intro": "下关的购物中心，吃饭补给都在这儿解决。",
-      "reason": "进城吃饭买东西，一站搞定",
-      "open": "10:00-22:00",
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        100.2346,
-        25.6052
-      ],
-      "coord_src": "estimate"
     },
     {
       "id": "aiqinhai-mall",
@@ -343,60 +322,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 7.5
-    },
-    {
-      "id": "honglongjing",
-      "name": "红龙井",
-      "cat": "夜景",
-      "tags": [
-        "夜景",
-        "晚上",
-        "水街"
-      ],
-      "heat": 6,
-      "dur": 60,
-      "intro": "古城西侧的水街，小桥流水配一排红灯笼。",
-      "reason": "晚上来，灯笼倒影最好看",
-      "suburb": false,
-      "coord": [
-        100.162325,
-        25.690475
-      ],
-      "coord_src": "estimate",
-      "amap_poi_id": "B0MAT9X5X7",
-      "refreshed_at": "2026-10-16",
-      "photo": "http://store.is.autonavi.com/showpic/a57ba8be1fe55dc036da91049b4b7000",
-      "rating": 4.1,
-      "heat_prev": 7,
-      "verify_src": "amap",
-      "verified_at": "2026-10-17"
-    },
-    {
-      "id": "sanyue-street",
-      "name": "三月街",
-      "cat": "街区",
-      "tags": [
-        "赶集",
-        "老街",
-        "本地人"
-      ],
-      "heat": 7,
-      "dur": 80,
-      "intro": "古城西门外老街，三月街民族节的主场。",
-      "reason": "赶上有集市的日子再来",
-      "suburb": false,
-      "coord": [
-        100.153299,
-        25.693274
-      ],
-      "coord_src": "estimate",
-      "amap_poi_id": "B0368159Z8",
-      "refreshed_at": "2026-10-16",
-      "photo": "https://store.is.autonavi.com/showpic/f84ca17fabf7444d37cec5010585837c",
-      "heat_prev": 6.5,
-      "rating": 4.7,
-      "verify_src": "amap",
-      "verified_at": "2026-10-17"
     },
     {
       "id": "wuhua-tower",

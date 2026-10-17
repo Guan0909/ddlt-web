@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -118,28 +119,6 @@
       "heat_prev": 6.5
     },
     {
-      "id": "shuomen-street",
-      "name": "朔门古街",
-      "cat": "街区",
-      "tags": [
-        "古码头",
-        "市井",
-        "小吃"
-      ],
-      "heat": 7,
-      "dur": 50,
-      "intro": "瓯江边的古码头老街，烟火气十足。",
-      "reason": "老墙门里藏着本地人早餐摊",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        120.6902,
-        28.0222
-      ],
-      "coord_src": "estimate"
-    },
-    {
       "id": "shuomen-port",
       "name": "朔门古港遗址",
       "cat": "古迹",
@@ -171,28 +150,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6.5
-    },
-    {
-      "id": "qingnianfang",
-      "name": "庆年坊历史街区",
-      "cat": "街区",
-      "tags": [
-        "老宅",
-        "市井",
-        "免费"
-      ],
-      "heat": 6,
-      "dur": 40,
-      "intro": "温州老城保存最完整的传统民居街区之一。",
-      "reason": "游客少，看原汁原味的老温州",
-      "open": null,
-      "closed_mon": null,
-      "suburb": false,
-      "coord": [
-        120.701,
-        28.0132
-      ],
-      "coord_src": "estimate"
     },
     {
       "id": "zhongshan-park",

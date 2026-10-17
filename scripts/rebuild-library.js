@@ -338,7 +338,8 @@ async function auditRules(cityName, apply) {
     }
     // ②③ 删除判定
     let why = null;
-    if (RULE_SHOW.test(s.name) && !RULE_VENUE.test(s.name)) why = '演出/体验类';
+    if (s.coord_src === 'estimate') why = '估算坐标（规则：坐标必须来自高德实体，估算不入库）';
+    else if (RULE_SHOW.test(s.name) && !RULE_VENUE.test(s.name)) why = '演出/体验类';
     else if (banned.some(k => s.name.includes(k))) why = '黑名单';
     else if (RULE_CORE.has(s.cat) && rating != null && rating < 4.0 && !famous) why = '核心类评分 ' + rating + ' < 4.0';
     else if (RULE_CORE.has(s.cat) && rating == null && !famous) why = '核心类无评分且非知名';

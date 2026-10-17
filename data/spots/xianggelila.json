@@ -24,7 +24,8 @@
     "rematch_at": "2026-10-17",
     "biz_at": "2026-10-17",
     "rebuild_at": "2026-10-17",
-    "rule_audit_at": "2026-10-17"
+    "rule_audit_at": "2026-10-17",
+    "prune_estimate_at": "2026-10-17"
   },
   "spots": [
     {
@@ -220,30 +221,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 7.5
-    },
-    {
-      "id": "pijiangpo",
-      "name": "皮匠坡",
-      "cat": "美食",
-      "tags": [
-        "家常藏餐",
-        "青稞饼",
-        "石板路"
-      ],
-      "heat": 7,
-      "dur": 60,
-      "intro": "古城北侧的老街，藏着口碑家常藏餐。",
-      "reason": "旧皮匠铺改的小馆，坐门口吃",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        99.7046,
-        27.829
-      ],
-      "coord_src": "estimate",
-      "rating": 4.3,
-      "heat_prev": 6.5
     },
     {
       "id": "huaxiang",
@@ -808,30 +785,6 @@
       "biz_src": "amap",
       "biz_at": "2026-10-17",
       "heat_prev": 6
-    },
-    {
-      "id": "nixi-chicken",
-      "name": "赞拉尼西土锅鸡",
-      "cat": "美食",
-      "tags": [
-        "土锅鸡",
-        "藏族菜",
-        "农家"
-      ],
-      "heat": 7,
-      "dur": 90,
-      "intro": "尼西黑陶锅慢炖的土鸡，藏区名菜。",
-      "reason": "一锅炖到酥，汤先喝三碗",
-      "open": null,
-      "closed_mon": false,
-      "suburb": false,
-      "coord": [
-        99.59,
-        27.78
-      ],
-      "coord_src": "estimate",
-      "rating": 4.5,
-      "heat_prev": 6.5
     },
     {
       "id": "xiaozhongdian",
