@@ -272,7 +272,7 @@
     cloudTimer = setTimeout(async () => {
       try {
         const j = await DDN.cloudPost('searchPoi', { keyword: keyword, region: city || '' }, 5000);
-        const NOISE = /\[地铁站\]|\[公交站\]|\[停车场\]|地铁站|公交站|停车场|购物中心|商场|超市|便利店|银行|收费站/;
+        const NOISE = /\[地铁站\]|\[公交站\]|\[停车场\]|地铁站|公交站|停车场|购物中心|商场|超市|便利店|银行|收费站|入口|出口|售票|游客中心|服务中心|检票|-[A-Za-z0-9]|-[东南西北]|[A-Za-z]口$/;
         let list = (j.data || []).filter(d => !NOISE.test(d.title));
         list = list.map(d => Object.assign({ __same: !!(city && normCity(d.city) === city) }, d))
           .sort((x, y) => (y.__same ? 1 : 0) - (x.__same ? 1 : 0)).slice(0, 8);

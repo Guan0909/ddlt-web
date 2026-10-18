@@ -271,7 +271,8 @@ window.DDN = (() => {
   // 直连 CloudBase HTTP 触发器（CORS 已开）：Vercel 的 /api 代理偶发 502/超时，作为回退通道
   const DIRECT_BASE = 'https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com';
   function apiBases() {
-    return API_BASE === '/api' ? [DIRECT_BASE, '/api'] : [API_BASE];
+    // 直连 CloudBase（text/plain 简单请求，无 CORS 预检）为唯一主通道；/api 代理仅作最后兜底
+    return API_BASE === '/api' ? [DIRECT_BASE, DIRECT_BASE, '/api'] : [API_BASE];
   }
   function cloudAvailable() { return true; }   // CORS 已开，任意源可直连；失败由调用方 catch 回退
   // 单通道请求：业务错误码直接抛出（不回退），网络/5xx/超时由调用方换通道重试
@@ -304,7 +305,7 @@ window.DDN = (() => {
     let lastErr = null;
     for (let i = 0; i < bases.length; i++) {
       try {
-        const per = i === 0 && bases.length > 1 ? Math.max(2500, Math.min(timeoutMs, 4000)) : timeoutMs;
+        const per = i < bases.length - 1 ? Math.max(2500, Math.min(timeoutMs, 5000)) : timeoutMs;
         return await postOnce(bases[i], fn, body, per);
       } catch (e) {
         lastErr = e;
