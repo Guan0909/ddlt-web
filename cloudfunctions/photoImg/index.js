@@ -26,7 +26,8 @@ exports.main = async (event) => {
   if (!items.length) return fail('缺 urls');
   const images = [];
   for (const cands of items) {
-    const list = (Array.isArray(cands) ? cands : [cands]).slice(0, 3).map(u => {
+    const rawList = Array.isArray(cands) ? cands : (cands && Array.isArray(cands.urls) ? cands.urls : []);
+    const list = rawList.slice(0, 3).map(u => {
       let s2 = String(u || '');
       if (s2.indexOf('http://') === 0) s2 = 'https://' + s2.slice(7);
       return s2;

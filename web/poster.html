@@ -285,6 +285,29 @@
 
   // ---------- 站点徽章 + 景点图 + 标签 ----------
   const placed = [];
+  // 日图例（左上角）：D1/D2 + 当天主题；占位加入避让集合，避免照片压住
+  ctx.font = '600 6.6px ' + SANS;
+  let legendY = mapY + 10;
+  for (let di = 0; di < days.length; di++) {
+    const label = 'D' + (di + 1) + ' · ' + (days[di].label || '').replace(' · ', ' ');
+    const tw = ctx.measureText(label).width;
+    const cw = tw + 18, ch = 12.6;
+    const cx = mapX + 10, cy = legendY;
+    rrect(cx, cy, cw, ch, 6.3);
+    ctx.fillStyle = 'rgba(255,253,246,.94)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(60,66,52,.12)';
+    ctx.lineWidth = 0.5;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(cx + 6.6, cy + ch / 2, 2.6, 0, Math.PI * 2);
+    ctx.fillStyle = DAY_COLORS[di % 5];
+    ctx.fill();
+    ctx.fillStyle = '#4A4E42';
+    ctx.fillText(label, cx + 11.6, cy + ch / 2 + 2.3);
+    placed.push({ x: cx, y: cy, w: cw, h: ch });
+    legendY += ch + 4;
+  }
   function overlaps(box) {
     for (const b of placed) {
       if (box.x < b.x + b.w + 2 && box.x + box.w + 2 > b.x && box.y < b.y + b.h + 2 && box.y + box.h + 2 > b.y) return true;
