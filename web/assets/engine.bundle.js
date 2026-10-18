@@ -334,6 +334,24 @@ function planDays(candidates, days, anchorSpot, opts) {
   return { buckets: ordered.slice(0, days), overflow };
 }
 
+// 环线扫描：按相对起点的方位角排序（顺时针/逆时针），再逐个旋转起点位置；
+// 这是「一日游环线」最直观的几何解，避免出现「南→东→西」的折返式顺序。
+function sweepOrders(stops, origin) {
+  if (stops.length < 2) return [];
+  const o = pt(origin);
+  const k = Math.cos(o.lat * Math.PI / 180);
+  const withAngle = stops.map(s => {
+    const q = pt(s.coord);
+    return { s, a: Math.atan2(q.lat - o.lat, (q.lng - o.lng) * k) };
+  });
+  const outs = [];
+  for (const dir of [1, -1]) {
+    const arr = withAngle.slice().sort((x, y) => dir * (x.a - y.a)).map(x => x.s);
+    for (let r = 0; r < arr.length; r++) outs.push(arr.slice(r).concat(arr.slice(0, r)));
+  }
+  return outs;
+}
+
 // ---------- 日内排序：贪心 + 2-opt（带线段交叉惩罚） ----------
 
 // 平面近似坐标（米）：用于交叉判定与距离代价
@@ -367,12 +385,18 @@ function routeCostOf(order, origin) {
       if (cos < -0.82) backTracks++;
     }
   }
+  // 原路折返：两条线段端点互为反向（同一段路走了两次）→ 视觉上会画成两条线，重罚
+  let reversals = 0;
   for (let i = 0; i < pts.length - 1; i++) {
-    for (let j = i + 2; j < pts.length - 1; j++) {
-      if (segsCross(pts[i], pts[i + 1], pts[j], pts[j + 1])) crossings++;
+    for (let j = i + 1; j < pts.length - 1; j++) {
+      const a = pts[i], b = pts[i + 1], c = pts[j], d = pts[j + 1];
+      const sameForward = Math.hypot(a.x - c.x, a.y - c.y) < 120 && Math.hypot(b.x - d.x, b.y - d.y) < 120;
+      const sameReverse = Math.hypot(a.x - d.x, a.y - d.y) < 120 && Math.hypot(b.x - c.x, b.y - c.y) < 120;
+      if (sameForward || sameReverse) reversals++;
+      else if (segsCross(a, b, c, d)) crossings++;
     }
   }
-  return dist + crossings * CROSS_PENALTY_M + backTracks * 350;
+  return dist + crossings * CROSS_PENALTY_M + reversals * 900 + backTracks * 350;
 }
 
 function orderStops(spots, origin, pinnedId) {
@@ -395,7 +419,20 @@ function orderStops(spots, origin, pinnedId) {
     order.push(next);
     cur = pt(next.coord);
   }
-  return slotFix(twoOpt(order, origin, !!pinned), origin, pinnedId);
+  const greedy = twoOpt(order, origin, !!pinned);
+  // 候选：贪心 2-opt + 环线扫描（含正/反两向、各旋转起点），按代价函数取最优
+  const candidates = [greedy];
+  const plain = spots.filter(s => !pinned || s.id !== pinned.id);
+  for (const cand of sweepOrders(plain, origin)) {
+    candidates.push(pinned ? [pinned, ...cand] : cand);
+  }
+  let best = greedy, bestCost = routeCostOf(greedy, origin);
+  for (const cand of candidates) {
+    if (cand.length !== (pinned ? spots.length : plain.length)) continue;
+    const c = routeCostOf(cand, origin);
+    if (c < bestCost - 5) { best = cand; bestCost = c; }
+  }
+  return slotFix(best, origin, pinnedId);
 }
 
 // 时间槽修正：算法定序后只做解释性微调——
@@ -728,7 +765,7 @@ function validateInputs(spots, origin, days) {
   return { ok: true };
 }
 
-module.exports = { genRoute, retimeDay, validateInputs, estimateCommute, fmt, addDays, isMonday, DAY_START, DAY_END };
+module.exports = { genRoute, retimeDay, validateInputs, estimateCommute, fmt, addDays, isMonday, DAY_START, DAY_END, orderStops, routeCostOf, sweepOrders };
 
 return module.exports;
 })({ exports: {} }, undefined, __req);

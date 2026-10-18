@@ -231,16 +231,34 @@ window.DDNGL = (() => {
         const links = [], fallbackGeoms = [];
         // 主流地图观感：相邻腿在站点处相接 → 合并为一条连续折线（不再多条叠加交叉）
         const merged = [];
-        const pushPath = pts => {
-          if (!pts || pts.length < 2) return;
+        // 已绘制网格：约 20m 精度，用来跳过「同一段路第二次经过」的点，避免双线
+        const covered = new Set();
+        const cellKey = p => Math.round(p[1] * 100000 / 2) + ',' + Math.round(p[0] * 100000 / 2);
+        const pushRun = run => {
+          if (run.length < 2) return;
           const last = merged[merged.length - 1];
           if (last) {
             const tail = last[last.length - 1];
-            const head = pts[0];
+            const head = run[0];
             const d = metersBetween(tail[1], tail[0], head[1], head[0]);
-            if (d <= 45) { last.push.apply(last, pts.slice(1)); return; }
+            if (d <= 45) { last.push.apply(last, run.slice(1)); return; }
           }
-          merged.push(pts.slice());
+          merged.push(run.slice());
+        };
+        const pushPath = pts => {
+          if (!pts || pts.length < 2) return;
+          let run = [];
+          for (const p of pts) {
+            const k = cellKey(p);
+            if (covered.has(k)) {
+              pushRun(run);
+              run = [];
+            } else {
+              covered.add(k);
+              run.push(p);
+            }
+          }
+          pushRun(run);
         };
         // 「线点分离」补线：服务端已把 ≤120m 的端头吸附掉；120~600m（实测远郊驾车 171~254m，
         // 路网只到景区门口）用一条浅色细线连到圆点，明确表达「最后一段步行」，不冒充真实路网。

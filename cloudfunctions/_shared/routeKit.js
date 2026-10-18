@@ -214,6 +214,61 @@ function twoOptCross(stops, origin, mins, pinnedFirst) {
   return best;
 }
 
+// 精确 TSP（Held-Karp 动态规划）：真实分钟矩阵上的最优访问顺序，含回程；n ≤ 8 时状态数 ≤ 2048
+function optimalOrderByMatrix(stops, origin, commute) {
+  const n = stops.length;
+  if (n < 3 || n > 8) return null;
+  const mins = (a, b) => {
+    try { return commute.minutes(ptOf(a), ptOf(b)); } catch (e) { return 30; }
+  };
+  const size = 1 << n;
+  const INF = Infinity;
+  const dp = [];
+  const paths = [];
+  for (let m = 0; m < size; m++) { dp.push(new Float64Array(n).fill(INF)); paths.push(new Array(n).fill(-1)); }
+  for (let i = 0; i < n; i++) { dp[1 << i][i] = mins(origin, stops[i]); paths[1 << i][i] = -2; }
+  for (let mask = 1; mask < size; mask++) {
+    for (let last = 0; last < n; last++) {
+      if (!(mask & (1 << last))) continue;
+      const cur = dp[mask][last];
+      if (!(cur < INF)) continue;
+      for (let nxt = 0; nxt < n; nxt++) {
+        if (mask & (1 << nxt)) continue;
+        const nm = mask | (1 << nxt);
+        const v = cur + mins(stops[last], stops[nxt]);
+        if (v < dp[nm][nxt]) { dp[nm][nxt] = v; paths[nm][nxt] = last; }
+      }
+    }
+  }
+  const full = size - 1;
+  let best = INF, lastBest = -1;
+  for (let i = 0; i < n; i++) {
+    if (!(dp[full][i] < INF)) continue;
+    const total = dp[full][i] + mins(stops[i], origin);
+    if (total < best) { best = total; lastBest = i; }
+  }
+  if (lastBest < 0) return null;
+  const order = [];
+  let mask = full, last = lastBest;
+  while (last >= 0) {
+    order.push(stops[last]);
+    const pv = paths[mask][last];
+    mask &= ~(1 << last);
+    last = pv;
+  }
+  order.reverse();
+  if (order.length !== n) return null;
+  return { order, minutes: best };
+}
+
+// 晚期项目（夜游/夜市/演出）必须靠后：DP 结果不满足时退回分组顺序
+function lateOk(order) {
+  for (let i = 0; i < order.length; i++) {
+    if (isLateSpot(order[i]) && i < order.length - 2) return false;
+  }
+  return true;
+}
+
 function reorderByRealMinutes(stops, origin, commute) {
   if (stops.length < 3) return stops;
   const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
@@ -251,7 +306,16 @@ async function refineWithRealCommute(route, spots) {
     if (!stopObjs.length) continue;
     const suburb = stopObjs.every(s => s.suburb);
     const commute = await buildCommuteFn(route.origin, stopObjs, suburb);
-    const ordered = reorderByRealMinutes(stopObjs, route.origin, commute);   // 真实时长再优化（带守卫）
+    // 高德式智能排序：真实路网分钟矩阵上做精确 TSP（含回程），夜间项目仍压尾
+    let ordered = stopObjs;
+    const opt = optimalOrderByMatrix(stopObjs, route.origin, commute);
+    if (opt && lateOk(opt.order)) {
+      const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
+      const curCost = loopMinutes(stopObjs, route.origin, mins);
+      const optCost = loopMinutes(opt.order, route.origin, mins);
+      if (optCost <= curCost - 1) ordered = opt.order;
+    }
+    if (ordered === stopObjs) ordered = reorderByRealMinutes(stopObjs, route.origin, commute);
     const sim = engine.retimeDay(ordered, route.origin, dp.date, {
       suburb, startMin: toMin(dp.startTime), commute,
     });
