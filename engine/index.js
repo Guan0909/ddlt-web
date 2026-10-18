@@ -165,7 +165,46 @@ function planDays(candidates, days, anchorSpot, opts) {
   return { buckets: ordered.slice(0, days), overflow };
 }
 
-// ---------- 日内排序：贪心 + 2-opt ----------
+// ---------- 日内排序：贪心 + 2-opt（带线段交叉惩罚） ----------
+
+// 平面近似坐标（米）：用于交叉判定与距离代价
+function flatXY(p, lat0) {
+  const k = Math.cos((lat0 || p.lat) * Math.PI / 180) * 111320;
+  return { x: p.lng * k, y: p.lat * 111320 };
+}
+function segsCross(a, b, c, d) {
+  const d1 = (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+  const d2 = (b.x - a.x) * (d.y - a.y) - (b.y - a.y) * (d.x - a.x);
+  const d3 = (d.x - c.x) * (a.y - c.y) - (d.y - c.y) * (a.x - c.x);
+  const d4 = (d.x - c.x) * (b.y - c.y) - (d.y - c.y) * (b.x - c.x);
+  return ((d1 > 0) !== (d2 > 0)) && ((d3 > 0) !== (d4 > 0));
+}
+// 路线代价 = 直线总距离 + 交叉惩罚（一段交叉约等于 600m 绕路）+ 折返惩罚
+const CROSS_PENALTY_M = 600;
+function routeCostOf(order, origin) {
+  const lat0 = origin.lat;
+  const pts = [flatXY({ lat: origin.lat, lng: origin.lng }, lat0)].concat(order.map(s => {
+    const c = s.coord;
+    return flatXY({ lat: Array.isArray(c) ? c[1] : c.lat, lng: Array.isArray(c) ? c[0] : c.lng }, lat0);
+  }));
+  let dist = 0, crossings = 0, backTracks = 0;
+  for (let i = 0; i < pts.length - 1; i++) {
+    dist += Math.hypot(pts[i + 1].x - pts[i].x, pts[i + 1].y - pts[i].y);
+    if (i >= 2) {
+      // 折返：连续两段夹角接近 180°
+      const ax = pts[i].x - pts[i - 1].x, ay = pts[i].y - pts[i - 1].y;
+      const bx = pts[i + 1].x - pts[i].x, by = pts[i + 1].y - pts[i].y;
+      const cos = (ax * bx + ay * by) / (Math.hypot(ax, ay) * Math.hypot(bx, by) || 1);
+      if (cos < -0.82) backTracks++;
+    }
+  }
+  for (let i = 0; i < pts.length - 1; i++) {
+    for (let j = i + 2; j < pts.length - 1; j++) {
+      if (segsCross(pts[i], pts[i + 1], pts[j], pts[j + 1])) crossings++;
+    }
+  }
+  return dist + crossings * CROSS_PENALTY_M + backTracks * 350;
+}
 
 function orderStops(spots, origin, pinnedId) {
   let pinned = null;
@@ -187,44 +226,47 @@ function orderStops(spots, origin, pinnedId) {
     order.push(next);
     cur = pt(next.coord);
   }
-  return slotFix(twoOpt(order, origin, !!pinned), pinnedId);
+  return slotFix(twoOpt(order, origin, !!pinned), origin, pinnedId);
 }
 
 // 时间槽修正：算法定序后只做解释性微调——
 // 含「早去」标签的点尽量靠前，夜景/演出类尽量压尾（pinned 始终第 1 站不动）
-function slotFix(order, pinnedId) {
+function slotFix(order, origin, pinnedId) {
   const isEarly = s => s.id !== pinnedId && (s.tags || []).some(t => /早去|赶早/.test(t));
   const isLate = s => s.id !== pinnedId &&
     (s.cat === '夜景' || s.cat === '演出' || (s.tags || []).some(t => /夜景|晚上/.test(t)));
   const early = order.filter(s => isEarly(s) && !isLate(s));
   const late = order.filter(isLate);
   const mid = order.filter(s => !early.includes(s) && !late.includes(s));
-  mid.sort((a, b) => (a.id === pinnedId ? -1 : 0) - (b.id === pinnedId ? -1 : 0));
-  return [...mid.filter(s => s.id === pinnedId), ...early, ...mid.filter(s => s.id !== pinnedId), ...late];
+  if (!early.length && !late.length) return order;
+  const pinned = mid.find(s => s.id === pinnedId) || null;
+  const mids = mid.filter(s => s.id !== pinnedId);
+  // 时段优先的顺序：pinned → mid → early（早去靠前）→ late（夜景压尾）
+  const slotOrder = [...(pinned ? [pinned] : []), ...early, ...mids, ...late];
+  const baseCost = routeCostOf(order, origin);
+  const slotCost = routeCostOf(slotOrder, origin);
+  // 软约束：强行按标签排若绕路/交叉代价明显变差（>8%），保留空间更顺的顺序
+  if (slotCost > baseCost * 1.08) return order;
+  return slotOrder;
 }
 
 function twoOpt(order, origin, pinnedFirst) {
-  if (order.length < 3) return order;
-  const dist = (a, b) => haversineM(pt(a.coord ? a.coord : a), pt(b.coord ? b.coord : b));
-  for (let iter = 0; iter < 30; iter++) {
+  if (order.length < 3) return order.slice();
+  let best = order.slice();
+  let bestCost = routeCostOf(best, origin);
+  for (let iter = 0; iter < 40; iter++) {
     let improved = false;
-    for (let i = 0; i < order.length - 1; i++) {
+    for (let i = 0; i < best.length - 1; i++) {
       if (pinnedFirst && i === 0) continue;
-      for (let j = i + 1; j < order.length; j++) {
-        const a = i === 0 ? origin : order[i - 1];
-        const b = order[i], c = order[j];
-        const d = j + 1 < order.length ? order[j + 1] : origin;
-        const delta = dist(a, b) + dist(c, d) - dist(a, c) - dist(b, d);
-        if (delta > 50) {
-          const seg = order.slice(i, j + 1).reverse();
-          order.splice(i, seg.length, ...seg);
-          improved = true;
-        }
+      for (let j = i + 1; j < best.length; j++) {
+        const cand = best.slice(0, i).concat(best.slice(i, j + 1).reverse(), best.slice(j + 1));
+        const c = routeCostOf(cand, origin);
+        if (c < bestCost - 5) { best = cand; bestCost = c; improved = true; }
       }
     }
     if (!improved) break;
   }
-  return order;
+  return best;
 }
 
 // ---------- 时钟推演 ----------

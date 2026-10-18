@@ -157,6 +157,62 @@ function loopMinutes(order, origin, mins) {
   for (const s of order) { total += mins(prev, s); prev = s; }
   return total + mins(prev, origin);   // 环线口径：含回起点（与引擎目标一致）
 }
+// ---------- 交叉/折返惩罚的排序（真实分钟口径） ----------
+// 目的：时段标签（早去/夜景）不应造成「西→东→西」的折返；先按空间+交叉排序，再与时段分组比较择优。
+function segCross2(a, b, c, d) {
+  const d1 = (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+  const d2 = (b.x - a.x) * (d.y - a.y) - (b.y - a.y) * (d.x - a.x);
+  const d3 = (d.x - c.x) * (a.y - c.y) - (d.y - c.y) * (a.x - c.x);
+  const d4 = (d.x - c.x) * (b.y - c.y) - (d.y - c.y) * (b.x - c.x);
+  return ((d1 > 0) !== (d2 > 0)) && ((d3 > 0) !== (d4 > 0));
+}
+function flatPts(order, origin) {
+  const lat0 = (origin.lat || 0);
+  const k = Math.cos(lat0 * Math.PI / 180) * 111320;
+  const conv = a => {
+    const c = a.coord || a;
+    const lng = Array.isArray(c) ? c[0] : c.lng;
+    const lat = Array.isArray(c) ? c[1] : c.lat;
+    return { x: lng * k, y: lat * 111320 };
+  };
+  return [conv(origin)].concat(order.map(conv));
+}
+function crossAndBack(pts) {
+  let crossings = 0, backTracks = 0;
+  for (let i = 0; i < pts.length - 1; i++) {
+    for (let j = i + 2; j < pts.length - 1; j++) if (segCross2(pts[i], pts[i + 1], pts[j], pts[j + 1])) crossings++;
+  }
+  for (let i = 2; i < pts.length - 1; i++) {
+    const ax = pts[i].x - pts[i - 1].x, ay = pts[i].y - pts[i - 1].y;
+    const bx = pts[i + 1].x - pts[i].x, by = pts[i + 1].y - pts[i].y;
+    const cos = (ax * bx + ay * by) / (Math.hypot(ax, ay) * Math.hypot(bx, by) || 1);
+    if (cos < -0.82) backTracks++;
+  }
+  return { crossings, backTracks };
+}
+function costMins(order, origin, mins) {
+  const pts = flatPts(order, origin);
+  const { crossings, backTracks } = crossAndBack(pts);
+  return loopMinutes(order, origin, mins) + crossings * 8 + backTracks * 4;
+}
+function twoOptCross(stops, origin, mins, pinnedFirst) {
+  let best = stops.slice();
+  let bestCost = costMins(best, origin, mins);
+  for (let iter = 0; iter < 30; iter++) {
+    let improved = false;
+    for (let i = 0; i < best.length - 1; i++) {
+      if (pinnedFirst && i === 0) continue;
+      for (let j = i + 1; j < best.length; j++) {
+        const cand = best.slice(0, i).concat(best.slice(i, j + 1).reverse(), best.slice(j + 1));
+        const c = costMins(cand, origin, mins);
+        if (c < bestCost - 0.5) { best = cand; bestCost = c; improved = true; }
+      }
+    }
+    if (!improved) break;
+  }
+  return best;
+}
+
 function reorderByRealMinutes(stops, origin, commute) {
   if (stops.length < 3) return stops;
   const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
@@ -174,8 +230,15 @@ function reorderByRealMinutes(stops, origin, commute) {
     }
   });
   const after = loopMinutes(out, origin, mins);
-  if (before - after >= 3 && after <= before * 0.95) return out;
-  return stops;
+  // 空间更顺的顺序（交叉/折返惩罚）作为对照：时段分组若明显绕路，改用空间顺序
+  const crossOrder = twoOptCross(stops, origin, mins, true);
+  const groupedCost = costMins(out, origin, mins);
+  const crossCost = costMins(crossOrder, origin, mins);
+  const pick = crossCost + 2 < groupedCost ? crossOrder : out;
+  if (before - after >= 3 && after <= before * 0.95) return pick;
+  // 即使整体时长收益不显著，也允许「无绕路且交叉更少」的空间顺序
+  if (crossCost <= costMins(stops, origin, mins) - 4) return crossOrder;
+  return pick;
 }
 
 // 用真实通勤重排已生成路线的每一天（retimeDay 强制全量重校验）
