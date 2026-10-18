@@ -281,7 +281,8 @@ window.DDN = (() => {
     try {
       const r = await fetch(`${base}/${fn}`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        // text/plain = CORS「简单请求」，不触发 OPTIONS 预检（CloudBase HTTP 触发器对 OPTIONS 返回 400）
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         body: JSON.stringify(body),
         signal: ctrl.signal,
       });
