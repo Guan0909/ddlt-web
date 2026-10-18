@@ -279,11 +279,6 @@
   window.addEventListener('resize', fitFrame);
   setTimeout(fitFrame, 80);
 
-  // 品牌行
-  const brand = DDN.el('div', 'brand');
-  brand.appendChild(DDN.el('b', null, '点定旅途'));
-  brand.appendChild(DDN.el('span', null, '从任何地点 · 生成你的路线'));
-  content.appendChild(brand);
 
   // dock
   dock.hidden = false;
