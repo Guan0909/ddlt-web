@@ -15,7 +15,7 @@ const ROOT = path.join(__dirname, '..');
 const BUILD = path.join(ROOT, 'build');
 const ENV_ID = process.env.TCB_ENV_ID || 'ddlt-d7gvi23us2cc67847';
 const NEEDS_ENGINE = new Set(['genRoute', 'reRoute', 'aiCopy']);
-const ALL = ['searchPoi', 'genRoute', 'reRoute', 'routeGet', 'posterImg', 'feedback', 'aiCopy', 'routePaths'];
+const ALL = ['searchPoi', 'genRoute', 'reRoute', 'routeGet', 'posterImg', 'photoImg', 'feedback', 'aiCopy', 'routePaths'];
 const STAGE_ONLY = process.argv.includes('--stage-only');
 const targets = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const fns = targets.length ? targets : ALL;
