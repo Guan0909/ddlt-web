@@ -128,3 +128,22 @@ node scripts/rebuild-library.js --audit-rules <城市|all> --apply  # 逐点复�
 - `heat` 只参与选点与分组排序，**不进时长公式**；
 - `tags` 里的「早去 / 夜景」被 `slotFix` 消费（决定早/晚时段），不随意改；
 - 改库后必须跑 `engine/test.js`，并重新构建 `web/assets/engine.bundle.js`（若动引擎）→ 部署云函数 + 托管 `data/` → 双端抽验。
+
+
+## 图片规则（2026-10-19 补充）
+
+1. **每个景点 3 张图**（`photos` 数组，主图 = `photos[0]`，同时同步 `photo` 字段）。
+2. **统一 HTTPS**：历史数据里有 http 链接（https 站点下会被浏览器拦截），已全部升级为 https。
+3. **高德 CDN 支持 OSS 高清参数**：`store.is.autonavi.com` / `aos-comment.amap.com` / `*.aliyuncs.com` 的图片 URL 追加
+   `?x-oss-process=image/resize,w_1440` 可取回**真原图重采样**（例：500×330 缩略图 → 1440×953、体积 66KB→360KB，非放大）。
+4. **分辨率门槛**：升级后逐张校验，宽度 <1000px 的图不采纳（回退原图/下一张候选），避免「马赛克/糊图」。
+5. **来源**：优先高德 POI 图（`amap_poi_id` 对应的图片），保证同库风格一致；高德无合适图时再考虑外部来源。
+6. 前端使用：景点详情/时间轴缩略图/海报统一读 `photos`，`onerror` 自动跳到下一张或首字兜底，不留空白。
+7. 海报侧通过云函数 `photoImg` 代理（HTTP 抓取 + base64 + 30 天缓存），避免 canvas 跨域污染；单图上限 700KB。
+
+### 本次升级结果（2026-10-19）
+- 唯一图片 URL 8033 个：**高清升级成功 7661**，回退原图 372，完全不可用 46；
+- 升级后抽样 209 张主图：**宽度 ≥1000px 占 95%**（升级前抽样约 44%），宽度 <1000px 仅 8 张、不可访问 3 张；
+- 所有 URL 统一为 HTTPS（修复 https 站点下被浏览器拦截的 3616 条 http 图链）。
+
+重跑脚本：`node scripts/supplement-photos.js`（输出 `build/photo-upgrade-report.json`）。

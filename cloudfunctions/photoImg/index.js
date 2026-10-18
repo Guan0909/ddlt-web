@@ -7,7 +7,7 @@ const store = require('./store');
 const { parseBody, ok, fail } = require('./http');
 
 const HOSTS = ['store.is.autonavi.com', 'aos-comment.amap.com', 'aos-cdn-image.amap.com'];
-const MAX_BYTES = 420 * 1024;
+const MAX_BYTES = 700 * 1024;
 const TTL = 30 * 86400000;
 
 function hash(s) {
