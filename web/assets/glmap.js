@@ -111,7 +111,8 @@ window.DDNGL = (() => {
         const wp = labelWidth(p.name, 12);
         const near = crowded(placed, p.lng, p.lat, wp);
         placed.push({ lng: p.lng, lat: p.lat, w: wp });
-        const seqIdx = stops.findIndex(s => s.id === p.id);
+        const sid = String(p.id).replace(/^lb/, '');
+        const seqIdx = stops.findIndex(s => s.id === sid);
         const seq = seqIdx >= 0 ? (seqIdx + 1) + '. ' : '';
         return {
           id: p.id, styleId: near ? 'stopLabelAlt' : 'stopLabel', rank: 2,
