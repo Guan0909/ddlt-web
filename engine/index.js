@@ -96,6 +96,48 @@ function selectCandidates(spots, days) {
 
 // ---------- 分日 ----------
 
+// 分日再平衡：每天的点若放在另一天更顺（链长更短），就挪过去；减少「跨区拼日」
+function chainKm(spots, origin) {
+if (!spots.length) return 0;
+const o = pt(origin);
+let total = 0, cur = o;
+const rest = spots.slice();
+while (rest.length) {
+  let bi = 0, bd = Infinity;
+  rest.forEach((s, i) => { const d = haversineM(cur, pt(s.coord)); if (d < bd) { bd = d; bi = i; } });
+  total += bd;
+  cur = pt(rest.splice(bi, 1)[0].coord);
+}
+return total;
+}
+function rebalanceBuckets(buckets, origin, cityVisitCap) {
+const capOf = b => (b.suburb ? SUBURB_GROUP_MAX_MIN : cityVisitCap);
+const costOf = b => chainKm(b.spots.filter(s => s.id !== b.pinned), origin);
+for (let round = 0; round < 12; round++) {
+  let best = null;
+  for (let i = 0; i < buckets.length; i++) {
+    for (let j = 0; j < buckets.length; j++) {
+      if (i === j) continue;
+      const bi = buckets[i], bj = buckets[j];
+      if (bi.suburb !== bj.suburb || bi.spots.length <= 1) continue;
+      const base = costOf(bi) + costOf(bj);
+      for (const s of bi.spots) {
+        if (s.id === bi.pinned) continue;
+        if (bj.spots.reduce((t, x) => t + (x.dur || 90), 0) + (s.dur || 90) > capOf(bj)) continue;
+        const ni = { ...bi, spots: bi.spots.filter(x => x !== s) };
+        const nj = { ...bj, spots: bj.spots.concat(s) };
+        const delta = costOf(ni) + costOf(nj) - base;
+        if (delta < -1500 && (!best || delta < best.delta)) best = { i, j, s, delta };
+      }
+    }
+  }
+  if (!best) break;
+  buckets[best.i].spots = buckets[best.i].spots.filter(x => x !== best.s);
+  buckets[best.j].spots.push(best.s);
+}
+return buckets;
+}
+
 function planDays(candidates, days, anchorSpot, opts) {
   const cityVisitCap = (opts && opts.cityVisitCap) || 480;
   const buckets = candidates.suburbGroups.map(g => ({ spots: g.slice(), pinned: null, suburb: true }));
@@ -133,8 +175,7 @@ function planDays(candidates, days, anchorSpot, opts) {
       locked.add(over);
     }
   }
-
-  // 起点命中库内景点：所在桶置顶并钉为第一日第 1 站；
+// 起点命中库内景点：所在桶置顶并钉为第一日第 1 站；
   // 若不在任何桶内，并入最近的同类桶（避免锚点单独空转一天）
   if (anchorSpot) {
     let bucket = buckets.find(b => b.spots.some(s => s.id === anchorSpot.id));
@@ -183,6 +224,51 @@ function sweepOrders(stops, origin) {
   return outs;
 }
 
+// 精确开放路径 TSP（Held-Karp，≤8 站；pinned 固定首站）—— 用直线米数作代价
+function optimalOpenPath(stops, origin, pinnedId) {
+  const pinned = pinnedId ? stops.find(s => s.id === pinnedId) : null;
+  const rest = stops.filter(s => s !== pinned);
+  const n = rest.length;
+  if (n > 8) return null;
+  const pts = [pt(origin)].concat(rest.map(s => pt(s.coord)));
+  const d = (a, b) => haversineM(pts[a], pts[b]);
+  const start = 0;
+  const size = 1 << n;
+  const INF = Infinity;
+  const dp = [];
+  const paths = [];
+  for (let m = 0; m < size; m++) { dp.push(new Float64Array(n).fill(INF)); paths.push(new Array(n).fill(-1)); }
+  for (let i = 0; i < n; i++) { dp[1 << i][i] = d(start, i + 1); paths[1 << i][i] = -2; }
+  for (let mask = 1; mask < size; mask++) {
+    for (let last = 0; last < n; last++) {
+      if (!(mask & (1 << last))) continue;
+      const cur = dp[mask][last];
+      if (!(cur < INF)) continue;
+      for (let nxt = 0; nxt < n; nxt++) {
+        if (mask & (1 << nxt)) continue;
+        const nm = mask | (1 << nxt);
+        const v = cur + d(last + 1, nxt + 1);
+        if (v < dp[nm][nxt]) { dp[nm][nxt] = v; paths[nm][nxt] = last; }
+      }
+    }
+  }
+  const full = size - 1;
+  let best = INF, lastBest = -1;
+  for (let i = 0; i < n; i++) if (dp[full][i] < best) { best = dp[full][i]; lastBest = i; }
+  if (lastBest < 0) return null;
+  const order = [];
+  let mask = full, last = lastBest;
+  while (last >= 0) {
+    order.push(rest[last]);
+    const pv = paths[mask][last];
+    mask &= ~(1 << last);
+    last = pv;
+  }
+  order.reverse();
+  if (pinned) order.unshift(pinned);
+  return order;
+}
+
 // ---------- 日内排序：贪心 + 2-opt（带线段交叉惩罚） ----------
 
 // 平面近似坐标（米）：用于交叉判定与距离代价
@@ -199,6 +285,28 @@ function segsCross(a, b, c, d) {
 }
 // 路线代价 = 直线总距离 + 交叉惩罚（一段交叉约等于 600m 绕路）+ 折返惩罚
 const CROSS_PENALTY_M = 600;
+// 方向回摆次数：相对起点的方位角序列出现「大幅反向摆动」即一次回摆（视觉折返）
+function inversionsOfOrder(order, origin) {
+  const o = origin;
+  const k = Math.cos((o.lat || 30) * Math.PI / 180);
+  const ang = order.map(s => {
+    const c = s.coord;
+    const lng = Array.isArray(c) ? c[0] : c.lng;
+    const lat = Array.isArray(c) ? c[1] : c.lat;
+    return Math.atan2(lat - o.lat, (lng - o.lng) * k);
+  });
+  let inv = 0, lastSign = 0;
+  for (let i = 1; i < ang.length; i++) {
+    let d = ang[i] - ang[i - 1];
+    while (d > Math.PI) d -= 2 * Math.PI;
+    while (d < -Math.PI) d += 2 * Math.PI;
+    if (Math.abs(d) < Math.PI / 6) continue;
+    const sign = d > 0 ? 1 : -1;
+    if (lastSign !== 0 && sign !== lastSign) inv++;
+    lastSign = sign;
+  }
+  return inv;
+}
 function routeCostOf(order, origin) {
   const lat0 = origin.lat;
   const pts = [flatXY({ lat: origin.lat, lng: origin.lng }, lat0)].concat(order.map(s => {
@@ -227,19 +335,7 @@ function routeCostOf(order, origin) {
       else if (segsCross(a, b, c, d)) crossings++;
     }
   }
-  // 方向一致性：相对起点的方位角序列若出现「大幅反向摆动」，视觉上就是折返，重罚
-  let inversions = 0, lastSign = 0;
-  const org = pts[0];
-  const ang = pts.slice(1).map(p => Math.atan2(p.y - org.y, p.x - org.x));
-  for (let i = 1; i < ang.length; i++) {
-    let d = ang[i] - ang[i - 1];
-    while (d > Math.PI) d -= 2 * Math.PI;
-    while (d < -Math.PI) d += 2 * Math.PI;
-    if (Math.abs(d) < Math.PI / 6) continue;      // 小角度变化不算
-    const sign = d > 0 ? 1 : -1;
-    if (lastSign !== 0 && sign !== lastSign) inversions++;
-    lastSign = sign;
-  }
+  const inversions = inversionsOfOrder(order, origin);
   return dist + crossings * CROSS_PENALTY_M + reversals * 900 + inversions * 500 + backTracks * 350;
 }
 
@@ -276,7 +372,20 @@ function orderStops(spots, origin, pinnedId) {
     const c = routeCostOf(cand, origin);
     if (c < bestCost - 5) { best = cand; bestCost = c; }
   }
-  return slotFix(best, origin, pinnedId);
+  // 精确开放路径解
+  const exact = optimalOpenPath(spots, origin, pinnedId);
+  const allCands = exact ? candidates.concat([exact]) : candidates.slice();
+  // 选择：**优先不回摆**（lexicographic），再比较代价；代价劣化 >20%+1km 时退回代价最优
+  const chosen0 = best;
+  let pick = chosen0, pickInv = inversionsOfOrder(chosen0, origin), pickCost = bestCost;
+  for (const cand of allCands) {
+    if (cand.length !== (pinned ? spots.length : plain.length)) continue;
+    const inv = inversionsOfOrder(cand, origin);
+    const c = routeCostOf(cand, origin);
+    if (inv < pickInv || (inv === pickInv && c < pickCost - 5)) { pick = cand; pickInv = inv; pickCost = c; }
+  }
+  if (pickCost > bestCost * 1.2 + 1000) pick = best;   // 安全阀
+  return slotFix(pick, origin, pinnedId);
 }
 
 // 时间槽修正：算法定序后只做解释性微调——
@@ -498,7 +607,7 @@ function genRoute(opts) {
       candidates.suburbGroups.unshift(merged);
     }
   }
-  const { buckets, overflow } = planDays(candidates, days, anchorSpot, { cityVisitCap });
+  const { buckets, overflow } = planDays(candidates, days, anchorSpot, { cityVisitCap, origin });
 
   // 周一闭馆点前向迁移：挪到后续同类型日（容量允许），挪不动的留给时钟推演上报
   for (let i = 0; i < buckets.length; i++) {
@@ -547,7 +656,14 @@ function genRoute(opts) {
   }
 
   const dayPlans = pairs.map((p, i) => {
-    const dirOf = ss => bearing8(origin, { lng: avg(ss, 'lng'), lat: avg(ss, 'lat') });
+    const dirOf = ss => {
+      const lngs = ss.map(s => (Array.isArray(s.coord) ? +s.coord[0] : +s.lng)).filter(isFinite);
+      const lats = ss.map(s => (Array.isArray(s.coord) ? +s.coord[1] : +s.lat)).filter(isFinite);
+      if (!lngs.length || !lats.length) return '城内';
+      const lng = lngs.reduce((t, v) => t + v, 0) / lngs.length;
+      const lat = lats.reduce((t, v) => t + v, 0) / lats.length;
+      return bearing8(origin, { lng, lat });
+    };
     return {
       day: i + 1,
       date: p.dateISO,
