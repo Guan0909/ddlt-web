@@ -266,10 +266,11 @@ window.DDNGL = (() => {
 
     // 线宽随缩放分级：低倍率加粗（并保留细描边），放大后回到精细线宽
     function routeWidths(zoom) {
+      // 腾讯 GL 的 PolylineStyle.width 只接受整数
       if (zoom >= 14.5) return { main: 3, halo: 6, link: 2, fb: 2 };
-      if (zoom >= 13) return { main: 4, halo: 7, link: 2.5, fb: 2.5 };
+      if (zoom >= 13) return { main: 4, halo: 7, link: 3, fb: 3 };
       if (zoom >= 11.5) return { main: 5, halo: 8, link: 3, fb: 3 };
-      return { main: 6, halo: 9, link: 3.5, fb: 3.5 };
+      return { main: 6, halo: 9, link: 4, fb: 4 };
     }
     function applyRouteWidths(zoom) {
       const w = routeWidths(zoom);
