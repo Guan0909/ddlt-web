@@ -21,7 +21,6 @@
   .topbar-title { flex: 1; min-width: 0; }
   .topbar-title b { font-family: var(--serif); font-size: 16.5px; display: block; letter-spacing: .02em; }
   .topbar-title span { font-size: 11px; color: var(--ink-2); letter-spacing: .04em; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .ai-flag { font-size: 10px; letter-spacing: .14em; color: var(--ink-3); border: .5px solid var(--hairline); padding: 4px 8px; border-radius: 999px; flex: none; }
 
   /* 全幅地图（P3 离线 SVG 自绘，无在线底图） */
   .map-hero { position: relative; }
@@ -70,13 +69,49 @@
     box-shadow: 0 2px 8px rgba(24,33,25,.08);
   }
   .map-hint {
-    position: absolute; left: 12px; bottom: 10px; z-index: 5;
+    position: absolute; left: 12px; bottom: 34px; z-index: 5;
     font-size: 10px; letter-spacing: .06em; color: var(--ink-3);
     background: rgba(251,251,248,.85); padding: 3px 8px; border-radius: 999px;
     pointer-events: none;
   }
   .spot-hit { cursor: pointer; }
   .drawer-photo { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
+
+  /* --- 浏览态/编辑态分离 · 卡片详情 · 编辑天上下文（2026-10-18） --- */
+  .stop-thumb.ph {
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: var(--ink-3); background: var(--hairline);
+  }
+  .card-toggle {
+    margin-top: 6px; font-size: 11.5px; color: var(--ink-3); letter-spacing: .04em;
+    display: inline-flex; align-items: center; gap: 4px; min-height: 36px; padding: 0 2px;
+  }
+  .card-toggle .ic { width: 12px; height: 12px; }
+  .card-edit { display: none; }
+  .t-body.expanded .card-edit { display: block; }
+  .dur-row span, .edit-bar button { min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+  .edit-day-bar {
+    position: absolute; left: 0; right: 0; top: 58px; z-index: 25;
+    display: flex; align-items: center; gap: 6px; padding: 8px 12px;
+    background: linear-gradient(rgba(250,251,248,.97), rgba(250,251,248,.82));
+    pointer-events: auto;
+  }
+  .edit-day-bar .chip {
+    font-size: 12px; min-height: 30px; padding: 0 11px; border-radius: 999px;
+    border: .5px solid var(--hairline); background: var(--card); color: var(--ink-2);
+  }
+  .edit-day-bar .chip.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .edit-day-bar .sum { margin-left: auto; font-size: 11px; color: var(--ink-3); }
+  .edit-day-bar[hidden] { display: none; }
+  .sheet-photos { display: flex; gap: 6px; overflow-x: auto; margin: 6px 0 2px; scroll-snap-type: x mandatory; }
+  .sheet-photos img { width: 84%; height: 130px; object-fit: cover; border-radius: 8px; flex: none; scroll-snap-align: start; background: var(--hairline); }
+  .sheet-addr { font-size: 12px; color: var(--ink-2); margin-top: 6px; display: flex; gap: 6px; align-items: flex-start; line-height: 1.5; }
+  .sheet-addr .ic { width: 13px; height: 13px; margin-top: 2px; flex: none; }
+  .sheet-intro { font-size: 13px; line-height: 1.7; color: var(--ink-2); margin-top: 8px; }
+  .sheet-acts { display: flex; gap: 8px; margin-top: 12px; }
+  .sheet-acts button { flex: 1; min-height: 44px; }
+  .commute-note { margin: 10px 22px 0; font-size: 11.5px; color: var(--ink-3); text-align: center; letter-spacing: .02em; }
+  .day-tabs { position: sticky; top: 0; z-index: 6; background: var(--paper); }
 
   /* 编辑旅途：两级搜索（精选库 / 地图地点） */
   .edit-search {
@@ -283,7 +318,6 @@
       <b id="ttTitle"></b>
       <span id="ttSub"></span>
     </div>
-    <span class="ai-flag">AI 文案</span>
   </header>
 
   <div class="map-hero" id="mapHero">
@@ -299,10 +333,11 @@
     <div class="edit-search" id="editSearch" hidden>
       <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="editSearchInput" placeholder="搜景点，或任意地点加入今天" autocomplete="off">
-      <button id="editSearchClose">取消</button>
+      <button id="editSearchClose">关闭</button>
     </div>
     <div class="edit-results" id="editResults" hidden></div>
     <div class="map-fade"></div>
+    <div class="edit-day-bar" id="editDayBar" hidden></div>
   </div>
 
   <div class="day-tabs" id="dayTabs"></div>
@@ -431,6 +466,10 @@
     box.appendChild(statCell(String(t.stops), null, '站点'));
     box.appendChild(statCell(DDN.fmtHour(t.visitMin), 'h', '游览'));
     box.appendChild(statCell(DDN.fmtHour(t.commuteMin), 'h', '通勤'));
+    // 通勤占比过高时给一句可执行的提示（纯前端文案，不改数据）
+    if (t.visitMin > 0 && t.commuteMin > t.visitMin * 0.4) {
+      box.appendChild(DDN.el('p', 'commute-note', '通勤占比较多：可减少远郊点，或把交通方式换成驾车'));
+    }
   }
 
   // ---------- 动态交互地图：大图拖拽平移（免重拉）+ 按钮缩放（重拉）+ 点选景点加入当天 ----------
@@ -805,14 +844,24 @@
     const spot = spotById(item.id);
     if (spot && spot.a_level) name.appendChild(DDN.el('span', 'stop-alevel', String(spot.a_level).toUpperCase() + ' 景区'));
     body.appendChild(name);
-    // 景点缩略图（高德 POI 首图，低成本富化；无图不占位）
+    // 缩略图（高德首图）：加载失败回退类目占位，点了打开轻详情
     if (spot && spot.photo) {
-      const im = DDN.el('img', 'stop-thumb');
+      const holder = DDN.el('div', 'stop-thumb');
+      const im = DDN.el('img');
       im.src = spot.photo;
-      im.alt = spot.name;
+      im.alt = '';
       im.loading = 'lazy';
+      im.decoding = 'async';
       im.referrerPolicy = 'no-referrer';
-      body.appendChild(im);
+      im.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:8px;display:block';
+      im.onerror = () => { im.remove(); holder.className = 'stop-thumb ph'; holder.textContent = String(spot.cat || '景').slice(0, 1); };
+      holder.appendChild(im);
+      holder.onclick = () => openSpotSheet(spot);
+      body.appendChild(holder);
+    }
+    if (spot) {
+      name.style.cursor = 'pointer';
+      name.onclick = () => openSpotSheet(spot);
     }
     const tags = spot ? [spot.cat, ...(spot.tags || [])].slice(0, 3).join(' · ') : item.cat;
     body.appendChild(DDN.el('div', 'stop-tags', tags));
@@ -828,6 +877,16 @@
     if (item.reason) body.appendChild(DDN.el('p', 'stop-reason', item.reason));
     if (item.notice) body.appendChild(DDN.el('div', 'notice', item.notice));
 
+    // 编辑操作收进 card-edit，默认收起（浏览态只读；展开后才出现时长档与排序/删除）
+    const editWrap = DDN.el('div', 'card-edit');
+    const toggle = DDN.el('button', 'card-toggle', '编辑这一站');
+    toggle.onclick = () => {
+      const expanded = body.classList.toggle('expanded');
+      toggle.textContent = expanded ? '收起' : '编辑这一站';
+    };
+    body.appendChild(toggle);
+    body.appendChild(editWrap);
+
     // dur-row：以该站当前 dur 为基准的时长档位（自定义站点同样可调）
     const selfSpot = isCustom ? (route.__stops[cur] || []).find(s => s.id === item.id) : null;
     if (spot || selfSpot) {
@@ -842,7 +901,7 @@
         };
         row.appendChild(s);
       }
-      body.appendChild(row);
+      editWrap.appendChild(row);
     }
 
     const clock = DDN.el('div', 'stop-clock');
@@ -874,17 +933,89 @@
     moveDay.onclick = () => openMoveDay(idx);
     const del = DDN.el('button', 'danger', '删除');
     del.onclick = () => {
-      route.__stops[cur].splice(idx, 1);
+      const removed = route.__stops[cur].splice(idx, 1)[0];
       applyRetime(cur);
+      if (removed) {
+        DDN.toast('已移除「' + removed.name + '」', {
+          label: '撤销',
+          run: () => { route.__stops[cur].splice(Math.min(idx, route.__stops[cur].length), 0, removed); applyRetime(cur); },
+        });
+      }
     };
     const report = DDN.el('button', 'report', '信息有误');
     report.onclick = () => openFeedback(spot, item);
     bar.append(up, down, swap, moveDay, del, report);
-    body.appendChild(bar);
+    editWrap.appendChild(bar);
 
     wrap.appendChild(body);
     return wrap;
   }
+
+  // 轻详情抽屉：多图轮播 + 地址 + 事实信息 + 去这里（浏览态也能看，数据已在库）
+  function openSpotSheet(spot) {
+    if (!spot) return;
+    DDN.openDrawer(spot.name, (body, close) => {
+      const photos = (spot.photos && spot.photos.length ? spot.photos : (spot.photo ? [spot.photo] : [])).slice(0, 3);
+      if (photos.length) {
+        const wrap = DDN.el('div', 'sheet-photos');
+        for (const u of photos) {
+          const im = DDN.el('img');
+          im.src = u;
+          im.alt = spot.name;
+          im.loading = 'lazy';
+          im.referrerPolicy = 'no-referrer';
+          im.onerror = () => im.remove();
+          wrap.appendChild(im);
+        }
+        body.appendChild(wrap);
+      }
+      const facts = [];
+      if (spot.a_level) facts.push(String(spot.a_level).toUpperCase() + ' 景区');
+      if (typeof spot.rating === 'number' && spot.rating > 0) facts.push('评分 ' + spot.rating);
+      if (spot.open) facts.push('营业 ' + (spot.open === '00:00-23:59' ? '24 小时' : spot.open));
+      if (spot.tel) facts.push('电话 ' + String(spot.tel).split(';')[0]);
+      if (facts.length) body.appendChild(DDN.el('div', 'stop-facts', facts.join(' · ')));
+      if (spot.address) {
+        const a = DDN.el('div', 'sheet-addr');
+        a.appendChild(DDN.icon('pin', 'ic'));
+        a.appendChild(DDN.el('span', null, spot.address));
+        body.appendChild(a);
+      }
+      if (spot.intro) body.appendChild(DDN.el('p', 'sheet-intro', spot.intro));
+      const acts = DDN.el('div', 'sheet-acts');
+      const go = DDN.el('button', 'btn-primary', '去这里');
+      go.onclick = () => {
+        const url = 'https://uri.amap.com/marker?position=' + spot.coord[0] + ',' + spot.coord[1] +
+          '&name=' + encodeURIComponent(spot.name) + '&src=ddlt&coordinate=gaode';
+        window.open(url, '_blank');
+      };
+      const add = DDN.el('button', 'btn-text', '加入今天');
+      add.onclick = () => { close(); confirmAddStop(spot, route.dayPlans[cur]); };
+      acts.append(go, add);
+      body.appendChild(acts);
+    });
+  }
+
+  // 时间轴左右滑动切天（吸顶 tab 的补充手势）
+  (function bindSwipe() {
+    const tl = $('timeline');
+    let sx = 0, sy = 0, tracking = false;
+    tl.addEventListener('touchstart', e => {
+      if (e.touches.length !== 1) return;
+      sx = e.touches[0].clientX; sy = e.touches[0].clientY; tracking = true;
+    }, { passive: true });
+    tl.addEventListener('touchend', e => {
+      if (!tracking) return;
+      tracking = false;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - sx, dy = t.clientY - sy;
+      if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.4) return;
+      const next = cur + (dx < 0 ? 1 : -1);
+      if (next < 0 || next >= route.dayPlans.length) return;
+      cur = next;
+      renderDay(); renderMap();
+    }, { passive: true });
+  })();
 
   function renderTimeline() {
     const box = $('timeline');
@@ -1200,17 +1331,41 @@
       ? '本日目的地较远，地图只显示起点周边 · 双指缩小可看更远'
       : '「编辑旅途」可加减今天的景点';
   }
+  function renderEditDayBar() {
+    const bar = $('editDayBar');
+    if (!bar) return;
+    if (!editMode) { bar.hidden = true; return; }
+    bar.hidden = false;
+    bar.textContent = '';
+    route.dayPlans.forEach((dp, i) => {
+      const b = DDN.el('button', 'chip' + (i === cur ? ' on' : ''), 'D' + dp.day);
+      b.onclick = () => {
+        if (i === cur) return;
+        cur = i;
+        renderDay(); renderMap(); renderEditDayBar();
+      };
+      bar.appendChild(b);
+    });
+    const sum = DDN.el('span', 'sum');
+    const dp = route.dayPlans[cur] || {};
+    const st = (route.__stops[cur] || []).length;
+    const visit = (dp.items || []).filter(i => i.type === 'stop').reduce((n, i) => n + (i.dur || 0), 0);
+    sum.textContent = '已选 ' + st + ' 站 · 游览 ' + DDN.fmtHour(visit) + 'h';
+    bar.appendChild(sum);
+  }
   function toggleSpotEdit(s) {
     const arr = route.__stops[cur];
     const i = arr.findIndex(x => x.id === s.id);
     if (i >= 0) { arr.splice(i, 1); DDN.toast(`已移出「${s.name}」`); }
     else { arr.push(s); DDN.toast(`已加入「${s.name}」，完成后重排`); }
     renderMap(true);   // 保持视野，只重绘标记
+    renderEditDayBar();
   }
   $('editBtn').onclick = () => {
     if (!glCtl) return;
     editMode = true;
     $('mapHero').classList.add('fullscreen', 'editing');
+    renderEditDayBar();
     document.body.classList.add('map-lock');
     $('editDone').hidden = false;
     $('editSearch').hidden = false;   // 两级搜索：精选库 + 地图地点
@@ -1219,6 +1374,7 @@
   };
   $('editDone').onclick = async () => {
     editMode = false;
+    const barEl = $('editDayBar'); if (barEl) barEl.hidden = true;
     $('editDone').hidden = true;
     $('editSearch').hidden = true;
     $('editResults').hidden = true;

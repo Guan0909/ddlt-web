@@ -65,6 +65,14 @@
   .note p { font-size: 12.5px; color: var(--ink-2); line-height: 1.8; }
 
   .foot { margin-top: 44px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
+  .suggest .sl { display: flex; align-items: center; gap: 7px; padding: 11px 13px; font-size: 12.5px; color: var(--ink-3); }
+  .suggest .sl i { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--hairline); border-top-color: var(--ink-3); animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .suggest button .tp { margin-left: 6px; font-size: 9.5px; letter-spacing: .06em; color: var(--ink-3); border: .5px solid var(--hairline); border-radius: 999px; padding: 1px 5px; flex: none; }
+  .suggest button small.away { color: #9C998C; }
+  .drawer-search { width: 100%; box-sizing: border-box; margin: 2px 0 10px; padding: 10px 12px; border: .5px solid var(--hairline); border-radius: 10px; font-family: var(--font); font-size: 14px; color: var(--ink); outline: none; background: var(--card); }
+  .drawer-search:focus { border-color: var(--ink-3); }
+  .drawer-sub.hot { color: var(--d2, #3B7356); }
 </style>
 </head>
 <body>
@@ -159,43 +167,88 @@
     if (!c || c.status !== 'done') return false;
     city = name; cityEntry = c; cityName.textContent = name;
     spots = await DDN.loadSpots(city).catch(() => null);
-    genBtn.disabled = !spots;
+    refreshCta();
     if (!spots) DDN.toast('城市数据加载失败，请刷新重试');
     else if (tip) DDN.toast(tip);
     return !!spots;
   }
+  // 最近去过的城市（localStorage，最多 5 个）
+  function recentCities() {
+    try { return JSON.parse(localStorage.getItem('ddn_recent_cities') || '[]'); } catch (e) { return []; }
+  }
+  function pushRecent(name) {
+    try {
+      const arr = recentCities().filter(x => x !== name);
+      arr.unshift(name);
+      localStorage.setItem('ddn_recent_cities', JSON.stringify(arr.slice(0, 5)));
+    } catch (e) {}
+  }
   $('cityBtn').onclick = () => {
     DDN.openDrawer('切换城市', (body, close) => {
       const regions = window.__cities.regions || {};
-      for (const region of Object.keys(regions)) {
-        body.appendChild(DDN.el('div', 'drawer-sub', region));
-        for (const name of regions[region]) {
-          const c = window.__cities.cities.find(x => x.name === name);
-          const item = DDN.el('button', 'drawer-item' + (c && c.status === 'done' ? '' : ' dim'));
-          item.appendChild(DDN.el('span', 'n', name));
-          item.appendChild(DDN.el('span', 'g', c && c.status === 'done' ? '已开通' : '即将开通'));
-          item.onclick = async () => {
-            if (c && c.status === 'done') {
-              input.value = ''; selectedSpot = null; located = null; suggested = null;
-              close();
-              await setCity(name);
-            } else {
-              close();
-              DDN.toast(city ? `「${name}」即将开通，先陪你玩${city}` : `「${name}」即将开通`);
-            }
-          };
-          body.appendChild(item);
+      const search = DDN.el('input', 'drawer-search');
+      search.placeholder = '搜城市，如 武汉 / 敦煌';
+      search.autocomplete = 'off';
+      body.appendChild(search);
+      const listBox = DDN.el('div');
+      body.appendChild(listBox);
+      const addCityItem = (host, name) => {
+        const c = window.__cities.cities.find(x => x.name === name);
+        const item = DDN.el('button', 'drawer-item' + (c && c.status === 'done' ? '' : ' dim'));
+        item.appendChild(DDN.el('span', 'n', name));
+        item.appendChild(DDN.el('span', 'g', c && c.status === 'done' ? '已开通' : '即将开通'));
+        item.onclick = async () => {
+          if (c && c.status === 'done') {
+            input.value = ''; selectedSpot = null; located = null; suggested = null;
+            close();
+            await setCity(name);
+            pushRecent(name);
+            refreshCta();
+          } else {
+            close();
+            DDN.toast(city ? ('「' + name + '」即将开通，先陪你玩' + city) : ('「' + name + '」即将开通'));
+          }
+        };
+        host.appendChild(item);
+      };
+      const draw = q => {
+        listBox.textContent = '';
+        const kw = String(q || '').trim();
+        const recent = recentCities().filter(n => !kw || n.includes(kw));
+        if (!kw && recent.length) {
+          listBox.appendChild(DDN.el('div', 'drawer-sub hot', '最近去过'));
+          for (const name of recent) addCityItem(listBox, name);
         }
-      }
+        for (const region of Object.keys(regions)) {
+          const names = regions[region].filter(n => !kw || n.includes(kw));
+          if (!names.length) continue;
+          listBox.appendChild(DDN.el('div', 'drawer-sub', region));
+          for (const name of names) addCityItem(listBox, name);
+        }
+        if (!listBox.children.length) listBox.appendChild(DDN.el("div", "drawer-sub", "没找到这座城市"));
+      };
+      search.addEventListener('input', () => draw(search.value));
+      draw('');
+      setTimeout(() => search.focus(), 60);
     });
   };
 
   // ---------- 搜索建议（本地库子串匹配 + 云端关键词提示，textContent 渲染） ----------
   function hideSuggest() { suggest.hidden = true; suggest.textContent = ''; }
+  function poiType(t) {
+    const x = String(t || '');
+    if (/地铁|公交|车站/.test(x)) return '交通';
+    if (/购物|商场|超市|便利店|商城/.test(x)) return '购物';
+    if (/酒店|宾馆|民宿|客栈/.test(x)) return '住宿';
+    if (/餐厅|小吃|美食|咖啡|茶/.test(x)) return '餐饮';
+    return '';
+  }
   function addSuggestItem(s, label, onPick) {
     const b = DDN.el('button');
     b.appendChild(DDN.el('span', null, s.name || s.title));
-    b.appendChild(DDN.el('small', null, label));
+    const tp = poiType(s.name || s.title);
+    if (tp) b.appendChild(DDN.el('span', 'tp', tp));
+    b.appendChild(DDN.el('small' + (/外地/.test(label) ? ' away' : ''), null, label));
     b.onmousedown = e => {   // 先于 input blur 触发
       e.preventDefault();
       onPick();
@@ -213,16 +266,26 @@
       });
     }
     suggest.hidden = local.length === 0 && !(DDN.cloudAvailable() && keyword);
+    if (local.length === 0 && DDN.cloudAvailable() && keyword) {
+      const sl = DDN.el('div', 'sl');
+      sl.appendChild(DDN.el('i'));
+      sl.appendChild(document.createTextNode('正在搜索…'));
+      suggest.appendChild(sl);   // 云端结果返回后整块重绘
+    }
     // 云端补充：本地结果少于 3 条时调关键词提示（未选城市时 region 留空 = 全国提示）
     clearTimeout(cloudTimer);
     if (DDN.cloudAvailable() && keyword && local.length < 3) {
       cloudTimer = setTimeout(async () => {
         try {
           const j = await DDN.cloudPost('searchPoi', { keyword, region: city || '' }, 4000);
-          const extra = (j.data || []).filter(d => !local.some(s => s.name === d.title)).slice(0, 6);
+          const NOISE = /\[地铁站\]|\[公交站\]|\[停车场\]|地铁站|公交站|停车场|购物中心|商场|超市|便利店|银行|收费站/;
+          let extra = (j.data || []).filter(d => !NOISE.test(d.title) && !local.some(s => s.name === d.title));
+          extra = extra.map(d => Object.assign({ __same: !!(city && normCity(d.city) === city) }, d))
+            .sort((x, y) => (y.__same ? 1 : 0) - (x.__same ? 1 : 0)).slice(0, 6);
           if (input.value.trim() !== keyword) return;   // 输入已变，丢弃过期建议
           for (const d of extra) {
-            const label = [normCity(d.city), d.district].filter(Boolean).join(' · ') || d.address || '地点';
+            const base = [normCity(d.city), d.district].filter(Boolean).join(' · ') || d.address || '地点';
+            const label = (city && normCity(d.city) !== city ? '外地 · ' : '') + base;
             addSuggestItem(d, label, async () => {
               const cov = coveredCity(d.city);
               if (!cov) {
@@ -244,6 +307,7 @@
     if (selectedSpot && input.value.trim() !== selectedSpot.name) selectedSpot = null;
     if (suggested && input.value.trim() !== suggested.name) suggested = null;
     if (located && input.value.trim() !== '当前位置') located = null;
+    refreshCta();
     const q = input.value.trim();
     if (!q) { hideSuggest(); return; }
     showSuggest(spots ? spots.filter(s => s.name.includes(q)).slice(0, 8) : [], q);
@@ -278,6 +342,11 @@
     );
   };
 
+  // CTA 可用性：有城市库、或已输入起点（裸文本可在加载页解析并自动定城）
+  function refreshCta() {
+    genBtn.disabled = !(spots || input.value.trim() || located);
+  }
+
   // ---------- 生成路线：存请求快照 → 跳加载页（解析/校验/生成集中在加载页完成） ----------
   function resolveOrigin() {
     const text = input.value.trim();
@@ -293,10 +362,12 @@
   }
   genBtn.onclick = () => {
     const origin = resolveOrigin();
-    if (!city || !spots || !cityEntry || !origin) { DDN.toast('先选个城市，再写个起点'); return; }
+    // 没选城市但写了起点：允许提交，由加载页解析起点并自动定城
+    if (!origin) { DDN.toast('先写个起点，或选一座城市'); return; }
+    if (!city && !spots && !input.value.trim()) { DDN.toast('先选个城市，再写个起点'); return; }
     try {
       DDN.saveRequest({
-        city, days,
+        city: city || null, days,
         origin,
         startDate: window.Engine.addDays(DDN.todayISO(), 1),  // 默认明早 09:00 出发
         startNow: false,
@@ -315,7 +386,7 @@
     try {
       const cities = await DDN.loadCities();
       window.__cities = cities;
-      $('footCount').textContent = `已覆盖 ${cities.cities.length}+ 热门旅游城市`;
+      $('footCount').textContent = '已覆盖 ' + cities.cities.filter(c => c.status === 'done').length + ' 座热门旅游城市';
       // 从加载页返回时还原上次的城市与输入；首次进入保持「未选城市」
       if (backReq && backReq.city) await setCity(backReq.city);
       if (backReq && backReq.origin && backReq.origin.name

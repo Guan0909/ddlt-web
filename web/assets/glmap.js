@@ -111,10 +111,16 @@ window.DDNGL = (() => {
       // 其他景点名：只在编辑模式给（规划视图只留路线与站点）；GL 碰撞避让自动消解重叠
       const spotGeoms = [];
       if (edit) {
-        for (const s of others || []) {
+        // 低倍率下景点名会糊成一片：按评分降序只给前 N 个标签（缩放后自动重建）
+        const cap = zoom < 12.5 ? 10 : zoom < 13.5 ? 16 : 24;
+        let shown = 0;
+        const sorted = [...(others || [])].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+        for (const s of sorted) {
           if (inRoute.has(s.id) || !s.coord) continue;
+          if (shown >= cap) break;
           const wp = labelWidth(s.name, 11);
           if (crowded(placed, s.coord[0], s.coord[1], wp)) continue;
+          shown++;
           placed.push({ lng: s.coord[0], lat: s.coord[1], w: wp });
           spotGeoms.push({
             id: 'lb' + s.id, styleId: 'spotLabel', rank: 1,
