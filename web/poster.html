@@ -394,7 +394,7 @@
     ctx.fillStyle = '#FFFFFF';
     ctx.font = '700 9.6px ' + SANS;
     ctx.textAlign = 'center';
-    ctx.fillText(String(i + 1), pt.x, pt.y + 3.4);
+    ctx.fillText(String(f.si + 1), pt.x, pt.y + 3.4);
     ctx.textAlign = 'left';
   }
   // 起点
@@ -480,29 +480,53 @@
     ctx.textAlign = 'left';
   });
 
-  // ---------- 景点排序（两列） ----------
+  // ---------- 景点排序：按天分组，每天编号从 1 开始 ----------
   const listX = cardX + cardW + 18, listY = cardY + 15, listW = right - listX;
   ctx.font = '700 8.6px ' + SANS;
   ctx.fillStyle = INK;
   ctx.fillText('景点排序', listX, listY);
-  const perCol = Math.min(5, Math.ceil(flat.length / 2));
-  const lineH = 10.6;
-  for (let i = 0; i < flat.length; i++) {
-    const col = Math.floor(i / perCol), row = i % perCol;
-    if (col > 1) {
-      ctx.font = '400 7.4px ' + SANS;
-      ctx.fillStyle = MUTE;
-      ctx.fillText('… 共 ' + flat.length + ' 站', listX, listY + 24 + perCol * lineH);
-      break;
+  const listRows = [];
+  days.forEach((dp, di) => {
+    listRows.push({ type: 'day', label: 'D' + (di + 1) + ' · ' + (dp.label || ''), color: DAY_COLORS[di % 5] });
+    stopsOfDay[di].forEach((x, si) => listRows.push({ type: 'stop', si: si + 1, name: x.item.name, color: DAY_COLORS[di % 5] }));
+  });
+  const lineH = 8.8;
+  const colW = listW / 2;
+  const topY = listY + 15;
+  const colCount = 2;
+  const maxRowsPerCol = Math.floor((brandY - topY - 4) / lineH);
+  let idx = 0;
+  let truncated = false;
+  for (let col = 0; col < colCount && idx < listRows.length; col++) {
+    let rowInCol = 0;
+    const cx = listX + col * colW;
+    while (idx < listRows.length) {
+      const r = listRows[idx];
+      const need = r.type === 'day' ? 1 : 1;
+      if (rowInCol + need > maxRowsPerCol) { truncated = true; break; }
+      const y = topY + rowInCol * lineH;
+      if (r.type === 'day') {
+        ctx.font = '700 6.8px ' + SANS;
+        ctx.fillStyle = r.color;
+        ctx.fillText(fitText(r.label, colW - 8), cx, y + 4.4);
+      } else {
+        ctx.beginPath();
+        ctx.arc(cx + 2.4, y + 1.2, 2.1, 0, Math.PI * 2);
+        ctx.fillStyle = r.color;
+        ctx.fill();
+        ctx.font = '500 7px ' + SANS;
+        ctx.fillStyle = '#3A3E34';
+        const txt = r.si + '. ' + r.name;
+        ctx.fillText(fitText(txt, colW - 12), cx + 6.8, y + 4.2);
+      }
+      rowInCol++;
+      idx++;
     }
-    const x = listX + col * (listW / 2), y = listY + 24 + row * lineH;
-    ctx.beginPath();
-    ctx.arc(x + 2.4, y - 2.4, 2.2, 0, Math.PI * 2);
-    ctx.fillStyle = flat[i].color;
-    ctx.fill();
-    ctx.font = '500 7.1px ' + SANS;
-    ctx.fillStyle = '#3A3E34';
-    ctx.fillText(fitText(flat[i].item.name, listW / 2 - 16), x + 7.4, y);
+  }
+  if (truncated) {
+    ctx.font = '400 6.4px ' + SANS;
+    ctx.fillStyle = MUTE;
+    ctx.fillText('… 共 ' + flat.length + ' 站', listX + colW + 6.8, topY + (maxRowsPerCol - 1) * lineH + 4.2);
   }
 
   // ---------- 品牌行 ----------
