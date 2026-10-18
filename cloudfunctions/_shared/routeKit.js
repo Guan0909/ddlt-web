@@ -119,7 +119,8 @@ async function buildCommuteFn(origin, stopObjs, suburb) {
 // 江河/立交/单行，真实路网时长可以。这里在**不打破 slotFix 分组**、**钉住当天第 1 站**的前提下，
 // 用真实分钟做组内 2-opt；只有省得够多（≥5% 且 ≥3 分钟）才采用，否则保持引擎顺序。
 const isEarlySpot = s => (s.tags || []).some(t => /早去|赶早/.test(t));
-const isLateSpot = s => s.cat === '夜景' || s.cat === '演出' || (s.tags || []).some(t => /夜景|晚上/.test(t));
+// 只有真的只能晚上去的项目才归「late」组；「夜景」作为推荐词（湖滨步行街这类）不应被强制甩到最后
+const isLateSpot = s => s.cat === '夜景' || s.cat === '演出' || (s.tags || []).some(t => /夜游|夜市|看演出|灯光秀/.test(t));
 const ptOf = s => (s.coord ? { lng: s.coord[0], lat: s.coord[1] } : { lng: s.lng, lat: s.lat });
 
 function slotGroups(stops) {

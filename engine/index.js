@@ -233,8 +233,11 @@ function orderStops(spots, origin, pinnedId) {
 // 含「早去」标签的点尽量靠前，夜景/演出类尽量压尾（pinned 始终第 1 站不动）
 function slotFix(order, origin, pinnedId) {
   const isEarly = s => s.id !== pinnedId && (s.tags || []).some(t => /早去|赶早/.test(t));
+  // 只有「真的只能晚上去」的项目才强制压尾（夜游船/夜市/演出/夜景类）；
+  // 「夜景」只是推荐词（如湖滨步行街、商圈），不能因此把顺路的点甩到最后。
   const isLate = s => s.id !== pinnedId &&
-    (s.cat === '夜景' || s.cat === '演出' || (s.tags || []).some(t => /夜景|晚上/.test(t)));
+    (s.cat === '夜景' || s.cat === '演出' ||
+      (s.tags || []).some(t => /夜游|夜市|看演出|灯光秀/.test(t)));
   const early = order.filter(s => isEarly(s) && !isLate(s));
   const late = order.filter(isLate);
   const mid = order.filter(s => !early.includes(s) && !late.includes(s));
