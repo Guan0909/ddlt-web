@@ -360,7 +360,7 @@
           refreshCta();
         }).catch(() => {});
       },
-      () => { input.focus(); },
+      () => { DDN.toast('定位没成功，直接搜地点也一样'); input.focus(); },
       { timeout: 8000 }
     );
   };
