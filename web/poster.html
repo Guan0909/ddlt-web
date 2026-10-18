@@ -493,18 +493,17 @@
   const lineH = 8.8;
   const colW = listW / 2;
   const topY = listY + 15;
-  const colCount = 2;
-  const maxRowsPerCol = Math.floor((brandY - topY - 4) / lineH);
-  let idx = 0;
-  let truncated = false;
-  for (let col = 0; col < colCount && idx < listRows.length; col++) {
-    let rowInCol = 0;
+  const maxRowsPerCol = Math.floor((brandY - topY - 6) / lineH);
+  // 两列均衡切分：不把「天标题」留在列尾空着
+  let split = Math.ceil(listRows.length / 2);
+  if (split > 0 && split < listRows.length && listRows[split - 1].type === 'day') split += 1;
+  const cols = [listRows.slice(0, split), listRows.slice(split)];
+  let overflow = listRows.length > maxRowsPerCol * 2;
+  cols.forEach((colRows, col) => {
     const cx = listX + col * colW;
-    while (idx < listRows.length) {
-      const r = listRows[idx];
-      const need = r.type === 'day' ? 1 : 1;
-      if (rowInCol + need > maxRowsPerCol) { truncated = true; break; }
-      const y = topY + rowInCol * lineH;
+    colRows.forEach((r, ri) => {
+      if (ri >= maxRowsPerCol) return;
+      const y = topY + ri * lineH;
       if (r.type === 'day') {
         ctx.font = '700 6.8px ' + SANS;
         ctx.fillStyle = r.color;
@@ -519,16 +518,13 @@
         const txt = r.si + '. ' + r.name;
         ctx.fillText(fitText(txt, colW - 12), cx + 6.8, y + 4.2);
       }
-      rowInCol++;
-      idx++;
-    }
-  }
-  if (truncated) {
+    });
+  });
+  if (overflow) {
     ctx.font = '400 6.4px ' + SANS;
     ctx.fillStyle = MUTE;
-    ctx.fillText('… 共 ' + flat.length + ' 站', listX + colW + 6.8, topY + (maxRowsPerCol - 1) * lineH + 4.2);
+    ctx.fillText('… 共 ' + flat.length + ' 站', listX, topY + maxRowsPerCol * lineH + 4);
   }
-
   // ---------- 品牌行 ----------
   ctx.font = '700 8.6px ' + SERIF;
   setLS(2.8);
