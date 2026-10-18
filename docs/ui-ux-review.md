@@ -353,3 +353,18 @@
 ### 海报补充（2026-10-19）：每天编号从 1 开始
 - 地图徽章编号改为**按天重置**（D1: 1..n，D2: 1..n），与左上角 D1/D2 图例、日色区分配合；
 - 底部「景点排序」按天分组：每天一个「D1 · 主题线」标题，下面 1..n 编号；两列自动均衡切分（列尾不留空标题）。
+
+---
+
+## 十四、站点顶部加入产品头像（2026-10-19）
+
+| 位置 | 做法 |
+|---|---|
+| 首页 / 加载页 masthead | 产品 app-icon（`/brand/logo-icon-512.png`，34px，自带圆角底板）+ 「点定旅途」字标，整体可点击回首页 |
+| 分享页顶部 | 新增品牌条：app-icon 28px + 字标（作为对外分享的入口品牌露出） |
+| 全站 head | 新增 `apple-touch-icon`（avatar-square-512）与 `theme-color`；首页/分享页补 `og:image`（cover-1200x630）、`og:title/description`、twitter card |
+| 资源 | `brand/*` 同步一份到 `web/brand/`（TB 备份站从 web 部署，需要站内路径） |
+
+实测：首页头像 `naturalWidth=512`、显示 34×34 ✓；分享页 28×28 ✓；Vercel 与 CloudBase 两套站点均已生效。
+
+证据截图：build/c1-index-brand.png、build/c2-share-brand.png
