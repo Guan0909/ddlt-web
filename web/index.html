@@ -283,6 +283,8 @@
           extra = extra.map(d => Object.assign({ __same: !!(city && normCity(d.city) === city) }, d))
             .sort((x, y) => (y.__same ? 1 : 0) - (x.__same ? 1 : 0)).slice(0, 6);
           if (input.value.trim() !== keyword) return;   // 输入已变，丢弃过期建议
+          const holder = suggest.querySelector('.sl');
+          if (holder) holder.remove();                  // 移除「正在搜索…」占位
           for (const d of extra) {
             const base = [normCity(d.city), d.district].filter(Boolean).join(' · ') || d.address || '地点';
             const label = (city && normCity(d.city) !== city ? '外地 · ' : '') + base;

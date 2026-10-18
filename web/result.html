@@ -69,10 +69,8 @@
     box-shadow: 0 2px 8px rgba(24,33,25,.08);
   }
   .map-hint {
-    position: absolute; left: 12px; bottom: 34px; z-index: 5;
-    font-size: 10px; letter-spacing: .06em; color: var(--ink-3);
-    background: rgba(251,251,248,.85); padding: 3px 8px; border-radius: 999px;
-    pointer-events: none;
+    margin: 8px 22px 0; font-size: 11px; letter-spacing: .04em; color: var(--ink-3);
+    text-align: center; pointer-events: none;
   }
   .spot-hit { cursor: pointer; }
   .drawer-photo { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
@@ -110,7 +108,8 @@
   .sheet-intro { font-size: 13px; line-height: 1.7; color: var(--ink-2); margin-top: 8px; }
   .sheet-acts { display: flex; gap: 8px; margin-top: 12px; }
   .sheet-acts button { flex: 1; min-height: 44px; }
-  .commute-note { margin: 10px 22px 0; font-size: 11.5px; color: var(--ink-3); text-align: center; letter-spacing: .02em; }
+  .commute-note { margin: 8px 22px 0; font-size: 11.5px; color: var(--ink-3); text-align: center; letter-spacing: .02em; }
+  .commute-note[hidden] { display: none; }
   .day-tabs { position: sticky; top: 0; z-index: 6; background: var(--paper); }
 
   /* 编辑旅途：两级搜索（精选库 / 地图地点） */
@@ -329,7 +328,6 @@
     </button>
     <button class="edit-done" id="editDone" hidden>完成</button>
     <div class="map-zoom"><button id="zoomIn">+</button><button id="zoomOut">−</button></div>
-    <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
     <div class="edit-search" id="editSearch" hidden>
       <svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="editSearchInput" placeholder="搜景点，或任意地点加入今天" autocomplete="off">
@@ -340,6 +338,8 @@
     <div class="edit-day-bar" id="editDayBar" hidden></div>
   </div>
 
+  <div class="map-hint">拖动平移 · 点淡色圆点可把景点加入今天</div>
+
   <div class="day-tabs" id="dayTabs"></div>
 
   <div class="anchor-note" id="anchorNote"></div>
@@ -347,6 +347,7 @@
   <p class="narrative" id="narrative"></p>
 
   <div class="stats" id="statsBar"></div>
+  <div class="commute-note" id="statsNote" hidden></div>
 
   <div class="timeline" id="timeline"></div>
   <div class="dropped-note" id="droppedNote" hidden></div>
@@ -466,9 +467,12 @@
     box.appendChild(statCell(String(t.stops), null, '站点'));
     box.appendChild(statCell(DDN.fmtHour(t.visitMin), 'h', '游览'));
     box.appendChild(statCell(DDN.fmtHour(t.commuteMin), 'h', '通勤'));
-    // 通勤占比过高时给一句可执行的提示（纯前端文案，不改数据）
-    if (t.visitMin > 0 && t.commuteMin > t.visitMin * 0.4) {
-      box.appendChild(DDN.el('p', 'commute-note', '通勤占比较多：可减少远郊点，或把交通方式换成驾车'));
+    // 通勤占比过高时给一句可执行的提示（独立节点，避免挤坏统计行）
+    const note = $('statsNote');
+    if (note) {
+      const show = t.visitMin > 0 && t.commuteMin > t.visitMin * 0.4;
+      note.hidden = !show;
+      if (show) note.textContent = '通勤占比较多：可减少远郊点，或把交通方式换成驾车';
     }
   }
 
@@ -907,7 +911,7 @@
     const clock = DDN.el('div', 'stop-clock');
     clock.appendChild(DDN.icon('clock', 'ic'));
     clock.appendChild(document.createTextNode(`${item.arr} 到达 · 游览至 ${item.dep}（${DDN.fmtHourCn(item.dur)}）`));
-    body.appendChild(clock);
+    body.insertBefore(clock, toggle);
 
     // edit-bar
     const bar = DDN.el('div', 'edit-bar');
