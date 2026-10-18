@@ -325,11 +325,8 @@
       brandSub: '400 20px -apple-system, "PingFang SC", sans-serif',
     };
     const days = (route.dayPlans || []).map(dp => ({ dp, stops: (dp.items || []).filter(i => i.type === 'stop') }));
-    let H = PAD + 90 + 46 + 34 + 48 + 110 + 320 + 46 + 60;
-    for (const b of days) H += 60 + b.stops.length * 66;
-    H += 80 + PAD;
     const cv = document.createElement('canvas');
-    cv.width = W; cv.height = Math.round(H);
+    cv.width = W; cv.height = 4200;   // 临时画布：画完按实际内容裁剪
     const ctx = cv.getContext('2d');
     ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, cv.height);
     let y = PAD + 60;
@@ -387,7 +384,12 @@
     ctx.font = F.brandSub; ctx.fillStyle = MUTE; ctx.textAlign = 'right';
     ctx.fillText('DECIDENOW.ASIA · 从任何地点，生成你的路线', W - PAD, y);
     ctx.textAlign = 'left';
-    cv.toBlob(blob => {
+    // 按实际内容高度裁剪
+    const outH = Math.round(y + PAD);
+    const out = document.createElement('canvas');
+    out.width = W; out.height = outH;
+    out.getContext('2d').drawImage(cv, 0, 0, W, outH, 0, 0, W, outH);
+    out.toBlob(blob => {
       if (!blob) return;
       const url = URL.createObjectURL(blob);
       downloadUrl(url, '点定旅途-' + (route.city || '') + DDN.dayCn(route.days) + '日路线.png');
@@ -395,11 +397,24 @@
     }, 'image/png');
   }
   function drawCardMap(ctx, x, y, w, h, days) {
-    const pts = [{ lng: route.origin.lng, lat: route.origin.lat }];
-    for (const b of days) for (const it of b.stops) {
+    // 坐标两种形态：数组 [lng,lat]（库）或 {lng,lat}（路线 item）
+    const norm = c => {
+      if (!c) return null;
+      if (Array.isArray(c)) {
+        const lng = +c[0], lat = +c[1];
+        return isFinite(lng) && isFinite(lat) ? { lng: lng, lat: lat } : null;
+      }
+      const lng = +c.lng, lat = +c.lat;
+      return isFinite(lng) && isFinite(lat) ? { lng: lng, lat: lat } : null;
+    };
+    const stopPt = it => {
       const sp = spotById(it.id);
-      const c = it.coord || (sp && sp.coord);
-      if (c) pts.push({ lng: c[0], lat: c[1] });
+      return norm(it.coord) || norm(sp && sp.coord);
+    };
+    const pts = [{ lng: +route.origin.lng, lat: +route.origin.lat }];
+    for (const b of days) for (const it of b.stops) {
+      const p = stopPt(it);
+      if (p) pts.push(p);
     }
     ctx.fillStyle = '#F3F5F0';
     const r = 18;
@@ -416,11 +431,10 @@
     const ox = x + (w - sx * k) / 2, oy = y + (h - sy * k) / 2;
     const xy = p => [ox + (p.lng - minLng) * k, y + h - ((p.lat - minLat) * k + (h - sy * k) / 2)];
     days.forEach(b => {
-      const seq = [{ lng: route.origin.lng, lat: route.origin.lat }];
+      const seq = [{ lng: +route.origin.lng, lat: +route.origin.lat }];
       for (const it of b.stops) {
-        const sp = spotById(it.id);
-        const c = it.coord || (sp && sp.coord);
-        if (c) seq.push({ lng: c[0], lat: c[1] });
+        const p = stopPt(it);
+        if (p) seq.push(p);
       }
       if (seq.length < 2) return;
       ctx.strokeStyle = b.dp.color || '#3B7356';
