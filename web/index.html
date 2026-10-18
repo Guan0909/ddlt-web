@@ -73,6 +73,7 @@
   .drawer-search { width: 100%; box-sizing: border-box; margin: 2px 0 10px; padding: 10px 12px; border: .5px solid var(--hairline); border-radius: 10px; font-family: var(--font); font-size: 14px; color: var(--ink); outline: none; background: var(--card); }
   .drawer-search:focus { border-color: var(--ink-3); }
   .drawer-sub.hot { color: var(--d2, #3B7356); }
+  .search-hint { margin: 8px 2px 0; font-size: 11px; color: var(--ink-3); letter-spacing: .02em; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -98,6 +99,7 @@
       </button>
     </div>
     <div class="suggest" id="suggest" hidden></div>
+    <p class="search-hint" id="searchHint">全国任意地点都能搜，选中后自动匹配城市</p>
   </div>
 
   <section class="days">
@@ -131,6 +133,7 @@
 (() => {
   const $ = id => document.getElementById(id);
   const input = $('originInput'), suggest = $('suggest'), genBtn = $('genBtn');
+  const searchHint = $('searchHint');
 
   let city = null;           // 不再预设默认城市：由搜索/定位自动判定，或手动选择
   let cityEntry = null;      // cities.json 中当前城市条目
@@ -259,64 +262,75 @@
   let cloudTimer = null;
   function showSuggest(local, keyword) {
     suggest.textContent = '';
-    for (const s of local) {
-      addSuggestItem(s, s.cat, () => {
-        selectedSpot = s; suggested = null; located = null;
-        input.value = s.name;
-      });
-    }
-    suggest.hidden = local.length === 0 && !(DDN.cloudAvailable() && keyword);
-    if (local.length === 0 && DDN.cloudAvailable() && keyword) {
-      const sl = DDN.el('div', 'sl');
-      sl.appendChild(DDN.el('i'));
-      sl.appendChild(document.createTextNode('正在搜索…'));
-      suggest.appendChild(sl);   // 云端结果返回后整块重绘
-    }
-    // 云端补充：本地结果少于 3 条时调关键词提示（未选城市时 region 留空 = 全国提示）
+    suggest.hidden = false;
+    const sl = DDN.el('div', 'sl');
+    sl.appendChild(DDN.el('i'));
+    sl.appendChild(document.createTextNode('正在搜索…'));
+    suggest.appendChild(sl);
     clearTimeout(cloudTimer);
-    if (DDN.cloudAvailable() && keyword && local.length < 3) {
-      cloudTimer = setTimeout(async () => {
-        try {
-          const j = await DDN.cloudPost('searchPoi', { keyword, region: city || '' }, 4000);
-          const NOISE = /\[地铁站\]|\[公交站\]|\[停车场\]|地铁站|公交站|停车场|购物中心|商场|超市|便利店|银行|收费站/;
-          let extra = (j.data || []).filter(d => !NOISE.test(d.title) && !local.some(s => s.name === d.title));
-          extra = extra.map(d => Object.assign({ __same: !!(city && normCity(d.city) === city) }, d))
-            .sort((x, y) => (y.__same ? 1 : 0) - (x.__same ? 1 : 0)).slice(0, 6);
-          if (input.value.trim() !== keyword) return;   // 输入已变，丢弃过期建议
-          const holder = suggest.querySelector('.sl');
-          if (holder) holder.remove();                  // 移除「正在搜索…」占位
-          for (const d of extra) {
-            const base = [normCity(d.city), d.district].filter(Boolean).join(' · ') || d.address || '地点';
-            const label = (city && normCity(d.city) !== city ? '外地 · ' : '') + base;
-            addSuggestItem(d, label, async () => {
-              const cov = coveredCity(d.city);
-              if (!cov) {
-                input.value = d.title;
-                DDN.toast(`「${normCity(d.city) || d.title}」还没开通，先从已开通的城市里选一个起点`);
-                return;
-              }
-              suggested = { name: d.title, lng: d.lng, lat: d.lat };
-              selectedSpot = null; located = null;
-              input.value = d.title;
-              if (cov.name !== city) await setCity(cov.name, `已切到${cov.name} · 按这个起点规划`);
-            });
-          }
-        } catch (e) { /* 静默 */ }
-      }, 300);
-    }
+    if (!DDN.cloudAvailable() || !keyword) return;
+    cloudTimer = setTimeout(async () => {
+      try {
+        const j = await DDN.cloudPost('searchPoi', { keyword: keyword, region: city || '' }, 5000);
+        const NOISE = /\[地铁站\]|\[公交站\]|\[停车场\]|地铁站|公交站|停车场|购物中心|商场|超市|便利店|银行|收费站/;
+        let list = (j.data || []).filter(d => !NOISE.test(d.title));
+        list = list.map(d => Object.assign({ __same: !!(city && normCity(d.city) === city) }, d))
+          .sort((x, y) => (y.__same ? 1 : 0) - (x.__same ? 1 : 0)).slice(0, 8);
+        if (input.value.trim() !== keyword) return;
+        suggest.textContent = '';
+        if (!list.length) {
+          suggest.appendChild(DDN.el('div', 'sl', '没搜到，换个说法试试'));
+          return;
+        }
+        for (const d of list) {
+          const cov = coveredCity(d.city);
+          const base = [normCity(d.city), d.district].filter(Boolean).join(' · ') || d.address || '地点';
+          const label = cov ? base : ((normCity(d.city) || base) + ' · 未开通');
+          addSuggestItem(d, label, async () => {
+            input.value = d.title;   // 不完整输入 → 完整官方名称
+            selectedSpot = null; located = null;
+            suggested = { name: d.title, lng: d.lng, lat: d.lat };
+            hideSuggest();
+            if (!cov) {
+              DDN.toast('「' + (normCity(d.city) || '该城市') + '」还没开通，换一座已开通城市试试');
+              suggested = null;
+              return;
+            }
+            if (cov.name !== city) await setCity(cov.name, '已按起点匹配到' + cov.name);
+            if (searchHint) searchHint.textContent = '起点：' + d.title;
+            refreshCta();
+          });
+        }
+      } catch (e) {
+        if (input.value.trim() !== keyword) return;
+        suggest.textContent = '';
+        suggest.appendChild(DDN.el('div', 'sl', '网络不稳，再试一次'));
+      }
+    }, 300);
+  }
+  // 回车：有建议时自动选第一条（保证「不完整输入 → 完整名称」）
+  function pickFirstSuggest() {
+    const first = suggest.querySelector('button');
+    if (!first) return false;
+    first.dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
+    hideSuggest();
+    return true;
   }
   input.addEventListener('input', () => {
     if (selectedSpot && input.value.trim() !== selectedSpot.name) selectedSpot = null;
     if (suggested && input.value.trim() !== suggested.name) suggested = null;
-    if (located && input.value.trim() !== '当前位置') located = null;
+    if (located && input.value.trim() !== located.display) located = null;
     refreshCta();
     const q = input.value.trim();
     if (!q) { hideSuggest(); return; }
-    showSuggest(spots ? spots.filter(s => s.name.includes(q)).slice(0, 8) : [], q);
+    showSuggest([], q);   // 起点搜索走云端模糊搜索（全国），不依赖景点库/城市选择
   });
   input.addEventListener('blur', () => setTimeout(hideSuggest, 120));
   input.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { hideSuggest(); input.blur(); }
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    pickFirstSuggest();
+    input.blur();
   });
 
   // ---------- 定位：成功用坐标，失败/拒绝静默聚焦搜索框 ----------
@@ -324,19 +338,26 @@
     if (!navigator.geolocation) { input.focus(); return; }
     navigator.geolocation.getCurrentPosition(
       pos => {
-        located = {
-          name: '当前位置',
-          lng: +pos.coords.longitude.toFixed(6),
-          lat: +pos.coords.latitude.toFixed(6),
-        };
-        selectedSpot = null;
+        const lng = +pos.coords.longitude.toFixed(6);
+        const lat = +pos.coords.latitude.toFixed(6);
+        located = { name: '当前位置', display: '当前位置', lng, lat };
+        selectedSpot = null; suggested = null;
         input.value = '当前位置';
         hideSuggest();
-        // 逆地址判定城市：已开通就自动切城（否则保持未选，等用户手动选）
-        DDN.cloudPost('searchPoi', { lng: located.lng, lat: located.lat }, 6000).then(j => {
+        if (searchHint) searchHint.textContent = '定位中…';
+        // 逆地址：拿城市 + 完整地址（完整地址作为起点名，路线里也显示完整名称）
+        DDN.cloudPost('searchPoi', { lng: lng, lat: lat }, 6000).then(j => {
           const cov = coveredCity(j && j.city);
-          if (cov && cov.name !== city) setCity(cov.name, `定位在${cov.name}，已切换`);
-          else if (!cov && j && j.city) DDN.toast(`你当前位置在${normCity(j.city)}，还没开通`);
+          const addr = (j && j.address) || '';
+          if (addr) {
+            const short = addr.length > 15 ? addr.slice(0, 15) + '…' : addr;
+            input.value = short;
+            located = { name: addr, display: short, lng: lng, lat: lat };
+          }
+          if (searchHint) searchHint.textContent = addr ? ('已定位：' + addr) : '已获取当前位置';
+          if (cov && cov.name !== city) setCity(cov.name, '定位在' + cov.name + '，已切换');
+          else if (!cov && j && j.city) DDN.toast('你当前位置在' + normCity(j.city) + '，还没开通');
+          refreshCta();
         }).catch(() => {});
       },
       () => { input.focus(); },
@@ -356,7 +377,7 @@
       return { name: selectedSpot.name, lng: selectedSpot.coord[0], lat: selectedSpot.coord[1], spotId: selectedSpot.id };
     }
     if (suggested && text === suggested.name) return suggested;
-    if (located && text === '当前位置') return located;
+    if (located && text === located.display) return { name: located.name, lng: located.lng, lat: located.lat };
     if (text) return { name: text.slice(0, 30) };   // 裸文本：无坐标，由加载页 searchPoi 强匹配解析
     if (located) return located;
     if (!cityEntry) return null;                     // 未选城市且无起点：由调用方拦截

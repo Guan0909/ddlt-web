@@ -156,6 +156,11 @@
         originCity = hit.city || null;
       }
       setStage(0, 'done', origin.name);
+      // 解析出完整名称（用户输入不完整时）：回写请求快照，保证结果页/返回都用完整名称
+      if (req.origin.lng == null || req.origin.name !== origin.name) {
+        req.origin = { name: origin.name, lng: origin.lng, lat: origin.lat };
+        DDN.saveRequest(req);
+      }
       await sleep(200);
 
       // ② 校验可行性（与云端同一引擎规则）
