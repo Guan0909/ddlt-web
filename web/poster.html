@@ -38,7 +38,7 @@
 <div class="page">
   <p class="hint">海报预览 · 3:4 · 1200×1600 · 长按可保存</p>
 
-  <canvas id="pc" class="poster-view" width="1200" height="1600"></canvas>
+  <canvas id="pc" class="poster-view" width="1440" height="1920"></canvas>
   <img id="pimg" class="poster-view" alt="点定旅途路线海报" style="display:none">
 
   <button class="save-btn" id="saveBtn">
@@ -114,12 +114,10 @@
   const mapY = 90;
   const padB = 18, brandH = 30, brandGap = 10, statsH = 40;
   const statsTop = DH - padB - brandH - brandGap - statsH;               // 502
-  const daysGapTop = 12, daysGapBottom = 8;
-  const prefRowH = n <= 3 ? 19 : n === 4 ? 16.5 : 14;                    // 每日摘要行高
-  let mapH = statsTop - daysGapBottom - (mapY + daysGapTop + prefRowH * n);
-  mapH = Math.max(DH * 0.55, Math.min(DH * 0.62, mapH));                 // 地图占比锁定 55%~62%
-  const rowsTop = mapY + mapH + daysGapTop;
-  const rowH = Math.min(prefRowH, (statsTop - daysGapBottom - rowsTop) / n);
+  const daysGapTop = 12, daysGapBottom = 12;
+  // 海报去掉每日摘要行后，地图占比提高（66%~76%），路线更清晰
+  let mapH = statsTop - daysGapBottom - (mapY + daysGapTop);
+  mapH = Math.max(DH * 0.66, Math.min(DH * 0.76, mapH));
   const mapX = padX, mapW = boxW;
 
   // ---------- 头部：城市衬线大字 + 日期一行（拼音小标仅在有空隙时并列绘制） ----------
@@ -560,51 +558,6 @@
   ctx.strokeStyle = 'rgba(0,0,0,.16)';
   ctx.lineWidth = .8;
   ctx.stroke();
-
-  // ---------- 每日摘要行 ----------
-  const nameFont = Math.max(10.5, Math.min(13, rowH * .68));
-  const tagFont = `700 ${(nameFont * 1.32).toFixed(1)}px ${SERIF}`;
-  const kmFont = `400 ${(nameFont * .82).toFixed(1)}px ${SANS}`;
-  const nmFont = `600 ${nameFont.toFixed(1)}px ${SANS}`;
-  days.forEach((dp, i) => {
-    const mid = rowsTop + i * rowH + rowH * .66;
-    const tag = `D${dp.day}`;
-    ctx.font = tagFont;
-    ctx.fillStyle = dp.color;
-    ctx.fillText(tag, padX, mid);
-    const tagW = ctx.measureText(tag).width;
-    const kmText = `${dp.stats.km.toFixed(1)} km`;
-    ctx.font = kmFont;
-    const kmW = ctx.measureText(kmText).width;
-    ctx.fillStyle = MUTE;
-    ctx.textAlign = 'right';
-    ctx.fillText(kmText, right, mid);
-    ctx.textAlign = 'left';
-    const names = dayStops[i].map(s => s.name).join(' → ') || '（本日站点未排入）';
-    // 当日最高景区等级（5A > 4A > 3A）→ D 标后的小徽章
-    const lvRaw = (dayStops[i] || []).map(s => aLevelOf(s.id)).filter(Boolean).sort().reverse()[0] || '';
-    let chipW = 0;
-    if (lvRaw) {
-      ctx.font = '700 ' + (nameFont * .72).toFixed(1) + 'px ' + SANS;
-      chipW = ctx.measureText(lvRaw).width + 8;
-      const cx0 = padX + tagW + 5;
-      rrect(cx0, mid - nameFont * .82, chipW, nameFont * 1.05, 2.5);
-      ctx.strokeStyle = 'rgba(59,115,86,.55)';
-      ctx.lineWidth = .55;
-      ctx.stroke();
-      ctx.fillStyle = '#3B7356';
-      ctx.textAlign = 'left';
-      ctx.fillText(lvRaw, cx0 + 4, mid - nameFont * .82 + nameFont * .78);
-    }
-    const x0 = padX + tagW + 9 + (chipW ? chipW + 6 : 0);
-    ctx.font = nmFont;
-    ctx.fillStyle = INK;
-    ctx.fillText(fitText(names, right - x0 - kmW - 12), x0, mid);
-    if (i < n - 1) {
-      ctx.fillStyle = HAIR;
-      ctx.fillRect(padX, rowsTop + (i + 1) * rowH - .25, boxW, .5);
-    }
-  });
 
   // ---------- 底部统计行 ----------
   ctx.fillStyle = INK;

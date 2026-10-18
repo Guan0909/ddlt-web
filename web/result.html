@@ -75,6 +75,14 @@
   .spot-hit { cursor: pointer; }
   .drawer-photo { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; margin-top: 8px; }
 
+  /* 导航选择：两个入口同款按钮 */
+  .nav-actions { display: flex; gap: 10px; margin-top: 12px; }
+  .nav-btn {
+    flex: 1; min-height: 46px; border-radius: 999px;
+    border: .5px solid var(--ink); background: var(--card); color: var(--ink);
+    font-size: 14px; font-weight: 600; letter-spacing: .02em;
+  }
+
   /* --- 浏览态/编辑态分离 · 卡片详情 · 编辑天上下文（2026-10-18） --- */
   .stop-thumb.ph {
     display: flex; align-items: center; justify-content: center;
@@ -1054,8 +1062,8 @@
     const name = target.name || '目的地';
     DDN.openDrawer('导航到「' + name + '」', (body, close) => {
       body.appendChild(DDN.el('div', 'drawer-sub', '用第三方地图打开，目的地与站内一致。'));
-      const amap = DDN.el('button', 'btn-primary', '用高德地图导航');
-      amap.style.marginTop = '10px';
+      const rowWrap = DDN.el('div', 'nav-actions');
+      const amap = DDN.el('button', 'nav-btn', '用高德地图');
       amap.onclick = () => {
         close();
         launchNav(
@@ -1063,8 +1071,7 @@
           'https://uri.amap.com/route/plan?to=' + lng + ',' + lat + '&toname=' + encodeURIComponent(name) + '&src=ddlt&coordinate=gaode&callnative=1'
         );
       };
-      const tx = DDN.el('button', 'btn-text', '用腾讯地图导航');
-      tx.style.marginTop = '8px';
+      const tx = DDN.el('button', 'nav-btn', '用腾讯地图');
       tx.onclick = () => {
         close();
         launchNav(
@@ -1072,7 +1079,8 @@
           'https://apis.map.qq.com/uri/v1/routeplan?type=drive&to=' + encodeURIComponent(name) + '&tocoord=' + lat + ',' + lng + '&referer=ddlt'
         );
       };
-      body.append(amap, tx);
+      rowWrap.append(amap, tx);
+      body.appendChild(rowWrap);
     });
   }
   // 先尝试 App scheme；1.5s 内页面未被切走（App 未安装）则回退网页版
