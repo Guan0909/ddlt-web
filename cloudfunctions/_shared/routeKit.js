@@ -111,6 +111,17 @@ async function buildCommuteFn(origin, stopObjs, suburb) {
   };
   // 供排序再优化读取「任意两点」的真实分钟（无数据的对回退引擎估算，口径一致）
   fn.minutes = (a, b) => fn(a, b).min;
+  fn.pts = pts;
+  fn.cells = cells;
+  fn.hasAllPairs = function () {
+    for (let i = 0; i < pts.length; i++) {
+      for (let j = 0; j < pts.length; j++) {
+        if (i === j) continue;
+        if (!cells[keyOf(pts[i]) + '>' + keyOf(pts[j])]) return false;
+      }
+    }
+    return true;
+  };
   return fn;
 }
 
@@ -152,6 +163,12 @@ function twoOptByMinutes(items, prev, next, mins) {
     if (!improved) break;
   }
   return arr;
+}
+// 开放路径分钟（不含回程）
+function openMinutesOf(order, origin, mins) {
+  let total = 0, prev = origin;
+  for (const s of order) { total += mins(prev, s); prev = s; }
+  return total;
 }
 function loopMinutes(order, origin, mins) {
   let total = 0, prev = origin;
@@ -244,7 +261,7 @@ function optimalOrderByMatrix(stops, origin, commute) {
   let best = INF, lastBest = -1;
   for (let i = 0; i < n; i++) {
     if (!(dp[full][i] < INF)) continue;
-    const total = dp[full][i] + mins(stops[i], origin);
+    const total = dp[full][i];   // 开放路径：不含回程
     if (total < best) { best = total; lastBest = i; }
   }
   if (lastBest < 0) return null;
@@ -281,13 +298,13 @@ function inversionsOf(order, origin) {
   }
   return inv;
 }
-// 排序目标：开放路径分钟 + 0.4×回程分钟 + 回摆惩罚（1 次 ≈ 12 分钟）——避免「更快但来回穿」
+// 排序目标：只优化「起点 → 景点」的开放路径（不含回程），加方向回摆惩罚。
+// 用户明确要求：规划时不考虑回程路线，只保证景点顺序顺路、不回头。
 function orderCostMins(order, origin, mins) {
   let open = 0, prev = origin;
   for (const s of order) { open += mins(prev, s); prev = s; }
-  const ret = mins(prev, origin);
   const inv = inversionsOf(order, origin);
-  return open + ret * 0.4 + inv * 12;
+  return open + inv * 12;
 }
 
 // 以「开放路径分钟 + 回摆惩罚」为目标的 2-opt（夜游项目固定在尾部）
@@ -338,7 +355,7 @@ function lateOk(order) {
 function reorderByRealMinutes(stops, origin, commute) {
   if (stops.length < 3) return stops;
   const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
-  const before = loopMinutes(stops, origin, mins);
+  const before = openMinutesOf(stops, origin, mins);
   const groups = slotGroups(stops);
   const out = [];
   groups.forEach((g, gi) => {
@@ -351,7 +368,7 @@ function reorderByRealMinutes(stops, origin, commute) {
       out.push(...twoOptByMinutes(g.items, prev, next, mins));
     }
   });
-  const after = loopMinutes(out, origin, mins);
+  const after = openMinutesOf(out, origin, mins);
   // 空间更顺的顺序（交叉/折返惩罚）作为对照：时段分组若明显绕路，改用空间顺序
   const crossOrder = twoOptCross(stops, origin, mins, true);
   const groupedCost = costMins(out, origin, mins);
@@ -372,11 +389,40 @@ async function refineWithRealCommute(route, spots) {
     if (!stopObjs.length) continue;
     const suburb = stopObjs.every(s => s.suburb);
     const commute = await buildCommuteFn(route.origin, stopObjs, suburb);
+    // 排序口径：优先真实路网分钟；矩阵不全补一次全对矩阵；再不行用 km 折算（统一口径）
+    // 不能用 estimateCommute 分钟：它按距离切步行/公交/打车，长短腿口径不一致会扭曲排序
+    let orderMins = null;
+    if (!commute.hasAllPairs()) {
+      try {
+        const pts = commute.pts;
+        if (await store.tencentBudget(1)) {
+          const m = await lbs.matrix(pts, pts, 'driving');
+          const map = new Map();
+          for (let fi = 0; fi < pts.length; fi++) {
+            for (let ti = 0; ti < pts.length; ti++) {
+              const cell = m[fi + '>' + ti];
+              if (cell) map.set(fi + '>' + ti, cell.min);
+            }
+          }
+          const idxOf = new Map(pts.map(function (q, i) { return [keyOf(q), i]; }));
+          orderMins = function (a, b) {
+            const ai = idxOf.get(keyOf(ptOf(a))), bi = idxOf.get(keyOf(ptOf(b)));
+            const v = map.get(ai + '>' + bi);
+            if (Number.isFinite(v)) return v;
+            return engine.estimateCommute(ptOf(a), ptOf(b)).km / 0.4;
+          };
+        }
+      } catch (e) { orderMins = null; }
+    }
+    if (!orderMins) {
+      orderMins = function (a, b) { return engine.estimateCommute(ptOf(a), ptOf(b)).km / 0.4; };
+    }
+    const commuteForOrder = { minutes: orderMins };
     // 高德式智能排序：真实路网分钟矩阵上做精确 TSP（含回程），夜间项目仍压尾
     let ordered = stopObjs;
-    const opt = optimalOrderByMatrix(stopObjs, route.origin, commute);
+    const opt = optimalOrderByMatrix(stopObjs, route.origin, commuteForOrder);
     if (opt && lateOk(opt.order)) {
-      const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
+      const mins = orderMins;
       const curCost = orderCostMins(stopObjs, route.origin, mins);
       const optCost = orderCostMins(opt.order, route.origin, mins);
       let chosen = optCost <= curCost - 1 ? opt.order : stopObjs;
@@ -395,7 +441,7 @@ async function refineWithRealCommute(route, spots) {
       }
       ordered = chosen;
     }
-    if (ordered === stopObjs) ordered = reorderByRealMinutes(stopObjs, route.origin, commute);
+    if (ordered === stopObjs) ordered = reorderByRealMinutes(stopObjs, route.origin, commuteForOrder);
     const sim = engine.retimeDay(ordered, route.origin, dp.date, {
       suburb, startMin: toMin(dp.startTime), commute,
     });
@@ -414,4 +460,5 @@ async function refineWithRealCommute(route, spots) {
 
 module.exports = { loadSpots, refineWithRealCommute, buildCommuteFn, CITY_FILES, validOrigin,
   // 以下导出供本地回归直接验证排序再优化（云函数入口不受影响）
-  reorderByRealMinutes, slotGroups, twoOptByMinutes, loopMinutes };
+  reorderByRealMinutes, slotGroups, twoOptByMinutes, loopMinutes,
+  optimalOrderByMatrix, orderCostMins, inversionsOf, twoOptByCost, openMinutesOf };

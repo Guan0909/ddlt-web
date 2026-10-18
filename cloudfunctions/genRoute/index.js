@@ -41,10 +41,12 @@ exports.main = async (event) => {
       city: body.city,
     });
     if (!route.dayPlans.length) return fail('这条路线排不出来。换个起点，或减少天数试试。', 400, { code: 'PLAN_EMPTY' });
+    const dbgBefore = body.debug ? route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(s => s.name)) : null;
     await refineWithRealCommute(route, spots);
+    const dbgAfter = body.debug ? route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(s => s.name)) : null;
     route.dayStopIds = route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(i => i.id));
     const routeId = await store.routeSave(route).catch(() => null);
-    return ok({ route, routeId });
+    return ok(body.debug ? { route, routeId, debug: { before: dbgBefore, after: dbgAfter } } : { route, routeId });
   } catch (e) {
     console.error(e);
     return fail('路线生成失败，请重试', 500);
