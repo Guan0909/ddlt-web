@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- 点定旅途 · 方形头像（满幅，无圆角无透明角） -->
+  <rect width="512" height="512" fill="#FAFBF8"/>
+  <!-- 四条直线网格（内缩） -->
+  <g stroke="#DFEAE2" stroke-width="3" stroke-linecap="round">
+    <path d="M170 84V428M341 84V428"/>
+    <path d="M84 170H428M84 341H428"/>
+  </g>
+  <!-- 主路线：平滑长弧 -->
+  <path d="M148 354 C205 358 250 335 282 292 C310 255 322 236 340 218"
+        fill="none" stroke="#3B7356" stroke-width="16" stroke-linecap="round"/>
+  <!-- 燕尾箭头 -->
+  <path d="M366 178 L363.9 238.1 L348 206.9 L312.9 206.3 Z"
+        fill="#3B7356" stroke="#3B7356" stroke-width="12" stroke-linejoin="round"/>
+  <!-- 起点与中途站：实心墨点 + 光圈 -->
+  <circle cx="148" cy="354" r="12" fill="#182119" stroke="#FAFBF8" stroke-width="5"/>
+  <circle cx="282" cy="292" r="11" fill="#182119" stroke="#FAFBF8" stroke-width="5"/>
+</svg>

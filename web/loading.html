@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>点定旅途 · 正在生成</title>
 <link rel="icon" type="image/svg+xml" href="/brand/logo-icon.svg">
+<link rel="apple-touch-icon" href="/brand/avatar-square-512.png">
+<meta name="theme-color" content="#FAFBF8">
 <link rel="stylesheet" href="/assets/style.css">
 <style>
   .page { padding: 0 28px 120px; }
@@ -14,6 +16,9 @@
     padding: 22px 0 0;
   }
   .wordmark { font-family: var(--serif); font-size: 15px; font-weight: 700; letter-spacing: .3em; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+  .brand .logo { width: 34px; height: 34px; border-radius: 10px; border: .5px solid var(--hairline); display: block; }
+  .brand .wordmark { letter-spacing: .26em; }
 
   .hero { padding: 84px 0 0; }
   .hero .display { font-size: 40px; line-height: 1.2; }
@@ -54,7 +59,10 @@
 <div class="page">
 
   <header class="masthead">
-    <div class="wordmark">点定旅途</div>
+    <a class="brand" href="/" aria-label="点定旅途 首页">
+      <img class="logo" src="/brand/avatar-square-512.png" alt="点定旅途" width="34" height="34">
+      <span class="wordmark">点定旅途</span>
+    </a>
   </header>
 
   <!-- 进行态 -->

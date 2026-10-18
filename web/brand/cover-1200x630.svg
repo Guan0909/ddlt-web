@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- 点定旅途 · 产品封面图 1200×630（完整矩形，无圆角） -->
+  <rect width="1200" height="630" fill="#FAFBF8"/>
+  <!-- 内缩规整网格 -->
+  <g stroke="#E4EBE3" stroke-width="2" stroke-linecap="round">
+    <path d="M144 60V570M288 60V570M432 60V570M576 60V570M720 60V570M864 60V570M1008 60V570"/>
+    <path d="M60 144H1140M60 288H1140M60 432H1140M60 546H1140"/>
+  </g>
+
+  <!-- 左：品牌与文案 -->
+  <g transform="translate(84, 92) scale(0.2)">
+    <rect width="512" height="512" rx="112" fill="#FAFBF8"/>
+    <rect x="2" y="2" width="508" height="508" rx="110" fill="none" stroke="#E3E8E0" stroke-width="5"/>
+    <g stroke="#DFEAE2" stroke-width="3" stroke-linecap="round" clip-path="url(#clipc)">
+      <path d="M170 70V442M341 70V442"/>
+      <path d="M70 170H442M70 341H442"/>
+    </g>
+    <clipPath id="clipc"><rect width="512" height="512" rx="112"/></clipPath>
+    <path d="M148 354 C205 358 250 335 282 292 C310 255 322 236 340 218"
+          fill="none" stroke="#3B7356" stroke-width="16" stroke-linecap="round"/>
+    <path d="M366 178 L363.9 238.1 L348 206.9 L312.9 206.3 Z"
+          fill="#3B7356" stroke="#3B7356" stroke-width="12" stroke-linejoin="round"/>
+    <circle cx="148" cy="354" r="12" fill="#182119" stroke="#FAFBF8" stroke-width="5"/>
+    <circle cx="282" cy="292" r="11" fill="#182119" stroke="#FAFBF8" stroke-width="5"/>
+  </g>
+
+  <text x="84" y="310" font-family="Georgia, 'Songti SC', 'STSong', 'SimSun', serif"
+        font-size="84" font-weight="700" fill="#182119" letter-spacing="8">点定旅途</text>
+  <text x="88" y="368" font-family="Georgia, 'Songti SC', 'STSong', 'SimSun', serif"
+        font-size="30" fill="#3B7356" letter-spacing="6">点定旅途，现在就走。</text>
+
+  <path d="M88 402H690" stroke="#182119" stroke-width="2"/>
+
+  <text x="88" y="448" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="21" fill="#5F6B61" letter-spacing="2">从任何地点出发，30 秒生成带时钟时间轴的 1~5 日游览路线；</text>
+  <text x="88" y="484" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="21" fill="#5F6B61" letter-spacing="2">站间通勤、营业时间、用餐节奏全部排好，一键导出真实地图海报。</text>
+
+  <text x="88" y="560" font-family="Georgia, serif" font-size="20" fill="#3B7356" letter-spacing="8">DECIDENOW.ASIA</text>
+  <text x="520" y="560" font-family="-apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif"
+        font-size="16" fill="#8A9386" letter-spacing="2">60+ 热门城市 · 无需注册 · 打开即用</text>
+
+  <!-- 右：三日路线示意卡（直角白卡） -->
+  <g>
+    <rect x="800" y="92" width="316" height="446" fill="#FFFFFF" stroke="#E3E8E0"/>
+    <text x="824" y="146" font-family="Georgia, 'Songti SC', 'STSong', 'SimSun', serif"
+          font-size="26" font-weight="700" fill="#182119">成都 · 三日</text>
+    <text x="824" y="172" font-family="-apple-system, 'PingFang SC', sans-serif"
+          font-size="13" fill="#8A9386" letter-spacing="2">每日从春熙路出发返回</text>
+
+    <!-- 迷你地图（几何坐标来自真实投影换算） -->
+    <svg x="816" y="190" width="284" height="209" viewBox="68 40 484 356">
+      <g stroke="#EBF1EA" stroke-width="6">
+        <path d="M170 0V512M341 0V512M0 170H768M0 341H768"/>
+      </g>
+      <g fill="none" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="#3B7356" d="M296.8 319.4 L235.9 280.4 L255.1 299.7 L262.4 309.9 L214.3 368.8 L219 370.8"/>
+        <path stroke="#3E8E9E" d="M296.8 319.4 L512.6 63.3 L403.1 268.6 L353.6 261.8"/>
+        <path stroke="#B08A3E" d="M296.8 319.4 L155.5 329.5 L190.5 319.4 L111.8 234.7"/>
+      </g>
+      <g stroke="#fff" stroke-width="2.5">
+        <g fill="#3B7356"><circle cx="235.9" cy="280.4" r="6"/><circle cx="255.1" cy="299.7" r="6"/><circle cx="262.4" cy="309.9" r="6"/><circle cx="214.3" cy="368.8" r="6"/><circle cx="219" cy="370.8" r="6"/></g>
+        <g fill="#3E8E9E"><circle cx="512.6" cy="63.3" r="6"/><circle cx="403.1" cy="268.6" r="6"/><circle cx="353.6" cy="261.8" r="6"/></g>
+        <g fill="#B08A3E"><circle cx="155.5" cy="329.5" r="6"/><circle cx="190.5" cy="319.4" r="6"/><circle cx="111.8" cy="234.7" r="6"/></g>
+      </g>
+      <circle cx="296.8" cy="319.4" r="9" fill="#182119" stroke="#fff" stroke-width="3"/>
+    </svg>
+
+    <!-- 图例 -->
+    <g font-family="-apple-system, 'PingFang SC', sans-serif" font-size="13" fill="#5F6B61">
+      <circle cx="832" cy="424" r="5" fill="#3B7356"/><text x="846" y="429">D1 城西文化线</text>
+      <circle cx="832" cy="450" r="5" fill="#3E8E9E"/><text x="846" y="455">D2 城北熊猫线</text>
+      <circle cx="832" cy="476" r="5" fill="#B08A3E"/><text x="846" y="481">D3 西郊遗址线</text>
+    </g>
+    <path d="M816 500H1100" stroke="#E3E8E0" stroke-width="2"/>
+    <text x="824" y="526" font-family="Georgia, serif" font-size="15" font-weight="700" fill="#182119">3 天 · 11 站 · 56.8 公里</text>
+  </g>
+</svg>
