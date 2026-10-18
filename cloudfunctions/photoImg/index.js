@@ -18,33 +18,47 @@ function hash(s) {
 
 exports.main = async (event) => {
   const body = parseBody(event) || {};
-  const urls = (Array.isArray(body.urls) ? body.urls : []).slice(0, 12);
-  if (!urls.length) return fail('缺 urls');
+  // 兼容两种入参：urls:[..]（单图）或 items:[{urls:[..]}（多候选，逐张尝试）
+  let items = [];
+  if (Array.isArray(body.items)) items = body.items.slice(0, 12);
+  else if (Array.isArray(body.urls)) items = body.urls.slice(0, 12).map(u => [u]);
+  else items = [];
+  if (!items.length) return fail('缺 urls');
   const images = [];
-  for (const u of urls) {
-    try {
-      const url = String(u || '');
-      let host = '';
-      try { host = new URL(url).host; } catch (e) { host = ''; }
-      if (!/^https:\/\//.test(url) || HOSTS.indexOf(host) < 0) { images.push(null); continue; }
-      const key = 'img__' + hash(url);
-      let hit = null;
+  for (const cands of items) {
+    const list = (Array.isArray(cands) ? cands : [cands]).slice(0, 3).map(u => {
+      let s2 = String(u || '');
+      if (s2.indexOf('http://') === 0) s2 = 'https://' + s2.slice(7);
+      return s2;
+    }).filter(u => /^https:\/\//.test(u));
+    let hitImg = null;
+    for (const url of list) {
+      if (hitImg) break;
       try {
-        const doc = await store.db.collection('dist_cache').doc(key).get();
-        const d = doc.data && (Array.isArray(doc.data) ? doc.data[0] : doc.data);
-        if (d && d.expire_at > Date.now() && d.b64) hit = d;
-      } catch (e) {}
-      if (hit) { images.push({ b64: hit.b64, type: hit.type || 'image/jpeg' }); continue; }
-      const res = await fetch(url, { signal: AbortSignal.timeout(6000) });
-      if (!res.ok) { images.push(null); continue; }
-      const buf = Buffer.from(await res.arrayBuffer());
-      if (!buf.length || buf.length > MAX_BYTES) { images.push(null); continue; }
-      const rec = { b64: buf.toString('base64'), type: res.headers.get('content-type') || 'image/jpeg', updated_at: new Date().toISOString(), expire_at: Date.now() + TTL };
-      store.db.collection('dist_cache').doc(key).set(rec).catch(() => {});
-      images.push({ b64: rec.b64, type: rec.type });
-    } catch (e) {
-      images.push(null);
+        let host = '';
+        try { host = new URL(url).host; } catch (e) { host = ''; }
+        if (!/(^|\.)(store\.is\.autonavi\.com|aos-comment\.amap\.com|aos-cdn-image\.amap\.com)$/.test(host)) continue;
+        const key = 'img__' + hash(url);
+        let hit = null;
+        try {
+          const doc = await store.db.collection('dist_cache').doc(key).get();
+          const d = doc.data && (Array.isArray(doc.data) ? doc.data[0] : doc.data);
+          if (d && d.expire_at > Date.now() && d.b64) hit = d;
+        } catch (e) {}
+        if (hit) { hitImg = { b64: hit.b64, type: hit.type || 'image/jpeg' }; continue; }
+        const res = await fetch(url, {
+          headers: { 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1', Referer: 'https://www.amap.com/' },
+          signal: AbortSignal.timeout(6000),
+        });
+        if (!res.ok) continue;
+        const buf = Buffer.from(await res.arrayBuffer());
+        if (!buf.length || buf.length > MAX_BYTES) continue;
+        const rec = { b64: buf.toString('base64'), type: res.headers.get('content-type') || 'image/jpeg', updated_at: new Date().toISOString(), expire_at: Date.now() + TTL };
+        store.db.collection('dist_cache').doc(key).set(rec).catch(() => {});
+        hitImg = { b64: rec.b64, type: rec.type };
+      } catch (e) { /* 试下一张 */ }
     }
+    images.push(hitImg);
   }
   return ok({ images });
 };

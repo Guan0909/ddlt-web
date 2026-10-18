@@ -162,16 +162,18 @@
   // ---------- 景点图片：云端 photoImg 转 base64（跨域图直接画会污染 canvas） ----------
   const photoOf = {};
   try {
-    const list = [];
+    const items = [];
     for (const f of flat) {
       const sp = spotById[f.item.id];
-      const u = sp && Array.isArray(sp.photos) && sp.photos[0] ? sp.photos[0] : null;
-      if (u) { list.push(u); photoOf[f.item.id] = null; }
+      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 3) : [];
+      if (cands.length) { items.push({ urls: cands }); photoOf[f.item.id] = null; }
+      else { items.push(null); photoOf[f.item.id] = null; }
     }
     const CHUNK = 12;
     const got = [];
-    for (let i = 0; i < list.length; i += CHUNK) {
-      const j = await DDN.cloudPost('photoImg', { urls: list.slice(i, i + CHUNK) }, 12000).catch(() => null);
+    for (let i = 0; i < items.length; i += CHUNK) {
+      const part = items.slice(i, i + CHUNK).map(x => x || { urls: [] });
+      const j = await DDN.cloudPost('photoImg', { items: part }, 14000).catch(() => null);
       const arr = (j && j.images) || [];
       for (let k = 0; k < CHUNK; k++) got.push(arr[k] || null);
     }
@@ -241,16 +243,25 @@
   }
 
   // ---------- 概览路线（Catmull-Rom 平滑折线） ----------
-  function smoothPath(pts) {
+  // 概览线：相邻点之间用二次曲线，向「远离地图中心」的外侧微弯（视觉上绕过水面/城区，不像直线切过去）
+  const mapCX = mapX + mapW / 2, mapCY = mapY + mapH / 2;
+  function curvedPath(pts) {
     if (pts.length < 2) return pts.slice();
     const out = [pts[0]];
     for (let i = 0; i < pts.length - 1; i++) {
-      const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2;
-      for (let k = 1; k <= 12; k++) {
-        const t = k / 12, t2 = t * t, t3 = t2 * t;
+      const a = pts[i], b = pts[i + 1];
+      const dx = b.x - a.x, dy = b.y - a.y;
+      const len = Math.hypot(dx, dy) || 1;
+      const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      const ox = mx - mapCX, oy = my - mapCY;
+      const side = (ox * (-dy) + oy * dx) >= 0 ? 1 : -1;
+      const bow = Math.min(26, len * 0.14) * side;
+      const cx = mx + (-dy / len) * bow, cy = my + (dx / len) * bow;
+      for (let k = 1; k <= 14; k++) {
+        const t = k / 14;
         out.push({
-          x: 0.5 * (2 * p1.x + (-p0.x + p2.x) * t + (2 * p0.x - 5 * p1.x + 4 * p2.x - p3.x) * t2 + (-p0.x + 3 * p1.x - 3 * p2.x + p3.x) * t3),
-          y: 0.5 * (2 * p1.y + (-p0.y + p2.y) * t + (2 * p0.y - 5 * p1.y + 4 * p2.y - p3.y) * t2 + (-p0.y + 3 * p1.y - 3 * p2.y + p3.y) * t3),
+          x: (1 - t) * (1 - t) * a.x + 2 * (1 - t) * t * cx + t * t * b.x,
+          y: (1 - t) * (1 - t) * a.y + 2 * (1 - t) * t * cy + t * t * b.y,
         });
       }
     }
@@ -260,7 +271,7 @@
   ctx.lineJoin = 'round';
   const dayPathsGeo = days.map((dp, di) => {
     const pts = [O].concat(stopsOfDay[di].map(x => prj({ lng: x.item.coord.lng, lat: x.item.coord.lat })));
-    return smoothPath(pts);
+    return curvedPath(pts);
   });
   for (let di = 0; di < days.length; di++) {
     const path = dayPathsGeo[di];
@@ -328,11 +339,16 @@
       ctx.restore();
     } else {
       rrect(box.x, box.y, PH, PH, 5);
-      ctx.fillStyle = 'rgba(255,253,246,.95)';
+      ctx.fillStyle = 'rgba(255,253,246,.96)';
       ctx.fill();
-      ctx.strokeStyle = HAIR;
-      ctx.lineWidth = 0.7;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 0.9;
       ctx.stroke();
+      ctx.fillStyle = color;
+      ctx.font = '700 13px ' + SERIF;
+      ctx.textAlign = 'center';
+      ctx.fillText(String(f.item.name || '').slice(0, 1), box.x + PH / 2, box.y + PH / 2 + 4.4);
+      ctx.textAlign = 'left';
     }
     // 名称
     ctx.font = '600 6.2px ' + SANS;
