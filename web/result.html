@@ -400,19 +400,80 @@
   $('ttSub').textContent = `${DDN.dateRange(route.startDate, route.days)} · 从${route.origin.name}出发，晚上回到这里`;
   document.title = `点定旅途 · ${route.city || ''}${DDN.dayCn(route.days)}日`;
 
-  // ---------- 锚点说明条：明早排 / 现在就走 ----------
+  // ---------- 出发时间：可点选修改；按可用时间自动决定一天排几站 ----------
+  const START_OPTIONS = [
+    { m: 7 * 60 + 30, label: '早起', desc: '全天 · 可多排一两处' },
+    { m: 9 * 60, label: '标准', desc: '全天' },
+    { m: 10 * 60 + 30, label: '稍晚', desc: '大半天' },
+    { m: 12 * 60, label: '午间', desc: '大半天 · 比全天少一处' },
+    { m: 14 * 60, label: '午后', desc: '半天 · 少一两处' },
+    { m: 16 * 60, label: '傍晚前', desc: '半天 · 只排近处' },
+  ];
+  function startMinNow() {
+    const hm = (route.dayPlans[0] && route.dayPlans[0].startTime) || '09:00';
+    const parts = String(hm).split(':');
+    const h = +parts[0], m = +parts[1];
+    return (isFinite(h) ? h : 9) * 60 + (isFinite(m) ? m : 0);
+  }
+  function dayLoadLabel(mins) {
+    if (mins >= 12 * 60) return '半天';
+    if (mins >= 10 * 60 + 30) return '大半天';
+    return '全天';
+  }
   function renderAnchor() {
     const box = $('anchorNote');
     box.textContent = '';
+    const cur = startMinNow();
     box.appendChild(DDN.icon('clock', 'ic'));
     box.appendChild(document.createTextNode('按 '));
-    const b = DDN.el('b', null, route.__nowMode ? '现在' : `明早 ${route.dayPlans[0].startTime}`);
-    box.appendChild(b);
-    box.appendChild(document.createTextNode(' 出发排的  ·  '));
-    const a = DDN.el('a', null, route.__nowMode ? '明早再来 →' : '现在就走 →');
-    a.onclick = () => regen(!route.__nowMode);
-    box.appendChild(a);
+    box.appendChild(DDN.el('b', null, window.Engine.fmt(cur)));
+    box.appendChild(document.createTextNode(' 出发 · ' + dayLoadLabel(cur) + '  '));
+    box.appendChild(DDN.el('a', null, '改时间 →'));
+    if (cur >= 12 * 60) box.appendChild(DDN.el('span', 'anchor-tip', ' 想多玩几处可改早一点'));
+    box.onclick = () => openStartPicker();
   }
+  function openStartPicker() {
+    const cur = startMinNow();
+    DDN.openDrawer('出发时间', (body, close) => {
+      body.appendChild(DDN.el('div', 'drawer-sub', '出发越早，一天能排下的景点越多；晚出发会按剩余时间只排近处。'));
+      for (const o of START_OPTIONS) {
+        const item = DDN.el('button', 'drawer-item' + (o.m === cur ? ' on' : ''));
+        item.appendChild(DDN.el('span', 'n', window.Engine.fmt(o.m) + ' · ' + o.label));
+        item.appendChild(DDN.el('span', 'g', o.desc));
+        item.onclick = () => {
+          close();
+          if (o.m === cur) return;
+          reschedule(o.m);
+        };
+        body.appendChild(item);
+      }
+      body.appendChild(DDN.el('div', 'drawer-sub', '重新排线会重置手动调整过的顺序与时长。'));
+    });
+  }
+  async function reschedule(startMin) {
+    const box = $('anchorNote');
+    box.classList.add('busy');
+    box.textContent = '正在按 ' + window.Engine.fmt(startMin) + ' 重新排…';
+    let r = null;
+    try {
+      const j = await DDN.cloudGenRoute({
+        city: route.city, origin: route.origin, days: route.days,
+        startDate: route.startDate, startMin: startMin,
+      });
+      r = j.route;
+      if (j.routeId) r.routeId = j.routeId;
+    } catch (e) { /* 回退本地引擎 */ }
+    if (!r) {
+      r = window.Engine.genRoute({
+        spots, origin: route.origin, days: route.days,
+        startDate: route.startDate, startMin: startMin, city: route.city,
+      });
+    }
+    DDN.attachStops(r, spots);
+    DDN.saveRoute(r);
+    location.reload();
+  }
+
   // ---------- 日切换 Tab ----------
   function renderTabs() {
     const box = $('dayTabs');
