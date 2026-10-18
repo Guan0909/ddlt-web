@@ -315,6 +315,11 @@
   .pick-chip { min-height: 38px; padding: 0 14px; border-radius: 999px; border: .5px solid var(--hairline); background: var(--card); font-size: 13.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
   .pick-chip.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
   .pick-note { margin-top: 8px; }
+  .anchor-days { color: var(--ink-3); font-size: 10.5px; margin-left: 6px; }
+  .day-stepper { display: flex; align-items: center; gap: 10px; margin: 6px 0 2px; }
+  .step-btn { min-height: 42px; padding: 0 16px; border-radius: 999px; border: .5px solid var(--hairline); background: var(--card); font-size: 13.5px; color: var(--ink); }
+  .step-btn:disabled { opacity: .38; }
+  .step-num { font-family: var(--serif); font-size: 19px; min-width: 58px; text-align: center; }
 </style>
 </head>
 <body>
@@ -422,41 +427,78 @@
     if (mins >= 10 * 60 + 30) return '大半天';
     return '全天';
   }
+  function startMinOf(i) {
+    const arr = route.__startMin;
+    if (Array.isArray(arr) && Number.isFinite(arr[i])) return arr[i];
+    const dp = route.dayPlans[i] || {};
+    const hm = dp.startTime || '09:00';
+    const parts = String(hm).split(':');
+    const h = +parts[0], m = +parts[1];
+    return (isFinite(h) ? h : 9) * 60 + (isFinite(m) ? m : 0);
+  }
+  function dayLoadLabel(mins) {
+    if (mins >= 12 * 60) return '半天';
+    if (mins >= 10 * 60 + 30) return '大半天';
+    return '全天';
+  }
   function renderAnchor() {
     const box = $('anchorNote');
     box.textContent = '';
-    const cur = startMinNow();
+    const curMin = startMinOf(cur);
     box.appendChild(DDN.icon('clock', 'ic'));
     box.appendChild(document.createTextNode('按 '));
-    const t = DDN.el('b', 'anchor-time', window.Engine.fmt(cur));
-    t.title = '点击修改出发时间或天数';
+    const t = DDN.el('b', 'anchor-time', window.Engine.fmt(curMin));
+    t.title = cur === 0 ? '点击修改出发时间或天数' : '点击修改这一天的出发时间';
     box.appendChild(t);
-    box.appendChild(document.createTextNode(' 出发 · ' + dayLoadLabel(cur)));
-    if (cur >= 12 * 60) box.appendChild(DDN.el('span', 'anchor-tip', '  想多玩几处可改早一点'));
+    box.appendChild(document.createTextNode(' 出发 · ' + dayLoadLabel(curMin)));
+    if (cur === 0) box.appendChild(DDN.el('span', 'anchor-days', '共 ' + route.days + ' 天'));
+    if (curMin >= 12 * 60) box.appendChild(DDN.el('span', 'anchor-tip', '  想多玩几处可改早一点'));
     box.onclick = () => openStartPicker();
   }
   function openStartPicker() {
-    const cur = startMinNow();
+    const dayStart = startMinOf(cur);
     const curDays = route.days || route.dayPlans.length || 3;
-    DDN.openDrawer('出发时间 · 天数', (body, close) => {
+    DDN.openDrawer(cur === 0 ? '出发时间 · 天数' : 'D' + (cur + 1) + ' 出发时间', (body, close) => {
       body.appendChild(DDN.el('div', 'drawer-sub', '出发时间'));
       const timeWrap = DDN.el('div', 'pick-grid');
       for (const o of START_OPTIONS) {
-        const chip = DDN.el('button', 'pick-chip' + (o.m === cur ? ' on' : ''), window.Engine.fmt(o.m));
-        chip.onclick = () => { close(); if (o.m !== cur) reschedule(o.m, curDays); };
+        const chip = DDN.el('button', 'pick-chip' + (o.m === dayStart ? ' on' : ''), window.Engine.fmt(o.m));
+        chip.onclick = () => {
+          close();
+          if (o.m === dayStart) return;
+          if (cur === 0) reschedule(o.m, curDays);
+          else changeDayStart(cur, o.m);
+        };
         timeWrap.appendChild(chip);
       }
       body.appendChild(timeWrap);
-      body.appendChild(DDN.el('div', 'drawer-sub', '玩几天'));
-      const dayWrap = DDN.el('div', 'pick-grid');
-      for (let n = 1; n <= 5; n++) {
-        const chip = DDN.el('button', 'pick-chip' + (n === curDays ? ' on' : ''), n + ' 天');
-        chip.onclick = () => { close(); if (n !== curDays) reschedule(cur, n); };
-        dayWrap.appendChild(chip);
+      if (cur === 0) {
+        body.appendChild(DDN.el('div', 'drawer-sub', '天数'));
+        const stepper = DDN.el('div', 'day-stepper');
+        const minus = DDN.el('button', 'step-btn', '− 减少一天');
+        minus.disabled = curDays <= 1;
+        minus.onclick = () => { close(); if (curDays > 1) reschedule(dayStart, curDays - 1); };
+        const num = DDN.el('b', 'step-num', curDays + ' 天');
+        const plus = DDN.el('button', 'step-btn', '+ 增加一天');
+        plus.disabled = curDays >= 5;
+        plus.onclick = () => { close(); if (curDays < 5) reschedule(dayStart, curDays + 1); };
+        stepper.append(minus, num, plus);
+        body.appendChild(stepper);
+        body.appendChild(DDN.el('div', 'drawer-sub pick-note', '改时间或天数会重排整条路线。'));
+      } else {
+        body.appendChild(DDN.el('div', 'drawer-sub pick-note', '只调整第 ' + (cur + 1) + ' 天的出发时间，其余天不变。'));
       }
-      body.appendChild(dayWrap);
-      body.appendChild(DDN.el('div', 'drawer-sub pick-note', '早出发能多排几处；改时间或天数会重排路线。'));
     });
+  }
+  async function changeDayStart(i, mins) {
+    if (!Array.isArray(route.__startMin)) route.__startMin = route.dayPlans.map(dp => DDN.parseHM(dp.startTime));
+    route.__startMin[i] = mins;
+    const box = $('anchorNote');
+    box.classList.add('busy');
+    await applyRetime(i);
+    DDN.saveRoute(route);
+    box.classList.remove('busy');
+    renderAnchor();
   }
   async function reschedule(startMin, days) {
     const box = $('anchorNote');
@@ -470,7 +512,7 @@
       });
       r = j.route;
       if (j.routeId) r.routeId = j.routeId;
-    } catch (e) { /* 回退本地引擎 */ }
+    } catch (e) { /* fallback local */ }
     if (!r) {
       r = window.Engine.genRoute({
         spots, origin: route.origin, days: days,
@@ -491,7 +533,7 @@
       b.style.setProperty('--c', dp.color);
       b.appendChild(DDN.el('b', null, `D${dp.day}`));
       b.appendChild(DDN.el('small', null, DDN.themeOf(dp.label)));
-      b.onclick = () => { cur = i; renderDay(); };
+      b.onclick = () => { cur = i; renderDay(); renderAnchor(); };
       box.appendChild(b);
     });
   }
@@ -1097,6 +1139,7 @@
     await DDN.retime(route, i);
     DDN.saveRoute(route);
     renderDay();
+    renderAnchor();
   }
   function openSwap(idx) {
     const used = new Set(route.__stops.flat().map(s => s.id));
