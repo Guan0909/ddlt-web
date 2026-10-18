@@ -26,6 +26,12 @@
   }
   .save-btn .ic { width: 16px; height: 16px; }
   .tip { color: rgba(255,255,255,.3); font-size: 11px; margin-top: 16px; letter-spacing: .05em; }
+  /* 嵌入模式（分享页内联展示） */
+  body.embed { background: transparent; }
+  body.embed .page { padding: 0; background: transparent; }
+  body.embed .hint, body.embed .save-btn, body.embed .tip { display: none; }
+  body.embed .poster-view { width: 100%; box-shadow: none; border-radius: 10px; }
+  body.embed { overflow: hidden; }
 </style>
 </head>
 <body>
@@ -45,9 +51,12 @@
 <script src="/assets/app.js"></script>
 <script>
 (async () => {
-  const route = DDN.loadRoute();
+  const EMBED = new URLSearchParams(location.search).get('embed') === '1';
+  if (EMBED) document.body.classList.add('embed');
+  let route = DDN.loadRoute();
+  if (!route || !route.dayPlans || !route.dayPlans.length) route = DDN.loadShared();
   if (!route || !route.dayPlans || !route.dayPlans.length) {
-    location.replace('/index.html');
+    if (!EMBED) location.replace('/index.html');
     return;
   }
 
@@ -644,6 +653,8 @@
   // ---------- 长按可保存：img 替换显示 ----------
   const img = document.getElementById('pimg');
   img.src = canvas.toDataURL('image/png');
+  window.__posterImg = img.src;
+  window.__posterReady = true;
   img.onload = () => {
     canvas.style.display = 'none';
     img.style.display = 'block';
@@ -653,8 +664,9 @@
     ? '真实地图底图 © 腾讯位置服务 · 每天一条配色路线 · 无二维码全平台合规'
     : '底图加载失败，已用示意底图 · 每天一条配色路线';
 
-  // ---------- 保存图片 ----------
-  document.getElementById('saveBtn').onclick = () => {
+  // ---------- 保存图片（独立页面才有按钮；嵌入模式由分享页负责保存） ----------
+  const saveBtnEl = document.getElementById('saveBtn');
+  if (saveBtnEl) saveBtnEl.onclick = () => {
     canvas.toBlob(blob => {
       if (!blob) return;
       const url = URL.createObjectURL(blob);

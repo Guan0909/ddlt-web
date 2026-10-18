@@ -62,6 +62,12 @@
   .dock-row { display: flex; align-items: center; gap: 8px; }
   .dock-row .btn-primary { flex: 1; }
   .share-map { display: block; width: 100%; height: auto; margin: 14px 0 0; border-radius: 10px; background: #F3F5F0; }
+  .share-poster { padding: 22px 28px 0; }
+  .poster-title { font-family: var(--serif); font-size: 15px; color: var(--ink); margin-bottom: 10px; letter-spacing: .04em; }
+  .poster-frame { border-radius: 10px; overflow: hidden; background: #F3F5F0; }
+  .poster-frame iframe { width: 100%; border: 0; display: block; }
+  .poster-actions { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+  .poster-hint { font-size: 11px; color: var(--ink-3); }
   .share-skeleton { margin: 14px 0 0; height: 150px; border-radius: 10px; background: linear-gradient(90deg, #F3F5F0 25%, #EAEDE6 37%, #F3F5F0 63%); background-size: 400% 100%; animation: sk 1.2s ease-in-out infinite; }
   @keyframes sk { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
 </style>
@@ -215,7 +221,7 @@
     bar.style.background = dp.color;
     label.appendChild(bar);
     label.appendChild(DDN.el('b', null, `D${dp.day} · ${dp.label}`));
-    label.appendChild(DDN.el('span', null, `${dp.stats.km} KM`));
+    label.appendChild(DDN.el('span', null, `${dp.stats.stops} 站 · ${dp.stats.km} km`));
     group.appendChild(label);
     for (const it of dp.items) {
       if (it.type !== 'stop') continue;
@@ -230,6 +236,48 @@
     }
   }
   content.appendChild(group);
+
+  // ---------- 路线海报（可视化路线）：内嵌海报页渲染，复用同一套绘制逻辑 ----------
+  try { DDN.saveShared(route); } catch (e) {}
+  const posterSec = DDN.el('section', 'share-poster');
+  posterSec.appendChild(DDN.el('div', 'poster-title', '路线海报'));
+  const holder = DDN.el('div', 'poster-frame');
+  const frame = document.createElement('iframe');
+  frame.src = '/poster.html?embed=1';
+  frame.setAttribute('scrolling', 'no');
+  frame.setAttribute('title', '路线海报');
+  holder.appendChild(frame);
+  posterSec.appendChild(holder);
+  const saveRow = DDN.el('div', 'poster-actions');
+  const saveBtn = DDN.el('button', 'btn-text', '保存海报');
+  saveBtn.onclick = () => {
+    let src = null;
+    try { src = frame.contentWindow && frame.contentWindow.__posterImg; } catch (e) {}
+    if (!src) {
+      try {
+        const im = frame.contentDocument && frame.contentDocument.getElementById('pimg');
+        if (im && im.src && im.src.length > 100) src = im.src;
+      } catch (e) {}
+    }
+    if (!src) { DDN.toast('海报还在生成，稍等一下'); return; }
+    const a = document.createElement('a');
+    a.href = src;
+    a.download = '点定旅途-' + (route.city || '') + DDN.dayCn(route.days) + '日路线.png';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  };
+  saveRow.appendChild(saveBtn);
+  saveRow.appendChild(DDN.el('span', 'poster-hint', '也可长按图片保存'));
+  posterSec.appendChild(saveRow);
+  content.appendChild(posterSec);
+  const fitFrame = () => {
+    const w = holder.clientWidth || 380;
+    frame.style.height = Math.round(w * 4 / 3) + 'px';
+  };
+  frame.addEventListener('load', fitFrame);
+  window.addEventListener('resize', fitFrame);
+  setTimeout(fitFrame, 80);
 
   // 品牌行
   const brand = DDN.el('div', 'brand');

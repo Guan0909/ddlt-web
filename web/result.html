@@ -309,6 +309,12 @@
   .page { padding-bottom: 118px; }
   .dock-row { display: flex; align-items: center; gap: 8px; }
   .dock-row .btn-primary { flex: 1; }
+  .anchor-note .anchor-time { text-decoration: underline; text-underline-offset: 3px; }
+  .anchor-note .anchor-time:hover { color: var(--d2); }
+  .pick-grid { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 4px; }
+  .pick-chip { min-height: 38px; padding: 0 14px; border-radius: 999px; border: .5px solid var(--hairline); background: var(--card); font-size: 13.5px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+  .pick-chip.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .pick-note { margin-top: 8px; }
 </style>
 </head>
 <body>
@@ -363,13 +369,9 @@
         <svg class="ic" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
         编辑旅途
       </button>
-      <button class="btn-text" id="shareBtn">
-        <svg class="ic" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
-        分享
-      </button>
-      <button class="btn-primary" id="posterBtn">
-        <svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;width:15px;height:15px"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="9" cy="9" r="1.6"/><path d="m21 15-4.5-4.5L9 18"/></svg>
-        生成海报
+      <button class="btn-primary" id="shareBtn">
+        <svg class="ic" viewBox="0 0 24 24" style="stroke:#fff;width:15px;height:15px"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>
+        分享 / 海报
       </button>
     </div>
   </div>
@@ -426,38 +428,44 @@
     const cur = startMinNow();
     box.appendChild(DDN.icon('clock', 'ic'));
     box.appendChild(document.createTextNode('按 '));
-    box.appendChild(DDN.el('b', null, window.Engine.fmt(cur)));
-    box.appendChild(document.createTextNode(' 出发 · ' + dayLoadLabel(cur) + '  '));
-    box.appendChild(DDN.el('a', null, '改时间 →'));
-    if (cur >= 12 * 60) box.appendChild(DDN.el('span', 'anchor-tip', ' 想多玩几处可改早一点'));
+    const t = DDN.el('b', 'anchor-time', window.Engine.fmt(cur));
+    t.title = '点击修改出发时间或天数';
+    box.appendChild(t);
+    box.appendChild(document.createTextNode(' 出发 · ' + dayLoadLabel(cur)));
+    if (cur >= 12 * 60) box.appendChild(DDN.el('span', 'anchor-tip', '  想多玩几处可改早一点'));
     box.onclick = () => openStartPicker();
   }
   function openStartPicker() {
     const cur = startMinNow();
-    DDN.openDrawer('出发时间', (body, close) => {
-      body.appendChild(DDN.el('div', 'drawer-sub', '出发越早，一天能排下的景点越多；晚出发会按剩余时间只排近处。'));
+    const curDays = route.days || route.dayPlans.length || 3;
+    DDN.openDrawer('出发时间 · 天数', (body, close) => {
+      body.appendChild(DDN.el('div', 'drawer-sub', '出发时间'));
+      const timeWrap = DDN.el('div', 'pick-grid');
       for (const o of START_OPTIONS) {
-        const item = DDN.el('button', 'drawer-item' + (o.m === cur ? ' on' : ''));
-        item.appendChild(DDN.el('span', 'n', window.Engine.fmt(o.m) + ' · ' + o.label));
-        item.appendChild(DDN.el('span', 'g', o.desc));
-        item.onclick = () => {
-          close();
-          if (o.m === cur) return;
-          reschedule(o.m);
-        };
-        body.appendChild(item);
+        const chip = DDN.el('button', 'pick-chip' + (o.m === cur ? ' on' : ''), window.Engine.fmt(o.m));
+        chip.onclick = () => { close(); if (o.m !== cur) reschedule(o.m, curDays); };
+        timeWrap.appendChild(chip);
       }
-      body.appendChild(DDN.el('div', 'drawer-sub', '重新排线会重置手动调整过的顺序与时长。'));
+      body.appendChild(timeWrap);
+      body.appendChild(DDN.el('div', 'drawer-sub', '玩几天'));
+      const dayWrap = DDN.el('div', 'pick-grid');
+      for (let n = 1; n <= 5; n++) {
+        const chip = DDN.el('button', 'pick-chip' + (n === curDays ? ' on' : ''), n + ' 天');
+        chip.onclick = () => { close(); if (n !== curDays) reschedule(cur, n); };
+        dayWrap.appendChild(chip);
+      }
+      body.appendChild(dayWrap);
+      body.appendChild(DDN.el('div', 'drawer-sub pick-note', '早出发能多排几处；改时间或天数会重排路线。'));
     });
   }
-  async function reschedule(startMin) {
+  async function reschedule(startMin, days) {
     const box = $('anchorNote');
     box.classList.add('busy');
-    box.textContent = '正在按 ' + window.Engine.fmt(startMin) + ' 重新排…';
+    box.textContent = '正在重新排…';
     let r = null;
     try {
       const j = await DDN.cloudGenRoute({
-        city: route.city, origin: route.origin, days: route.days,
+        city: route.city, origin: route.origin, days: days,
         startDate: route.startDate, startMin: startMin,
       });
       r = j.route;
@@ -465,7 +473,7 @@
     } catch (e) { /* 回退本地引擎 */ }
     if (!r) {
       r = window.Engine.genRoute({
-        spots, origin: route.origin, days: route.days,
+        spots, origin: route.origin, days: days,
         startDate: route.startDate, startMin: startMin, city: route.city,
       });
     }
@@ -1216,10 +1224,6 @@
     DDN.saveShared(route);
     // 有云端 routeId 时走只读 URL（128 位不可猜测 ID），否则本地手递手预览
     location.href = route.routeId ? `/share.html?id=${route.routeId}` : 'share.html';
-  };
-  $('posterBtn').onclick = () => {
-    DDN.saveRoute(route);
-    location.href = '/poster.html';
   };
 
   // 放大地图：全屏/收起切换（GL 会自行监听容器尺寸变化重排，无需手动调用）
