@@ -78,6 +78,11 @@
   .tab-panel.active { display: block; }
   .share-poster { padding: 16px 16px 0; }
   .poster-hint { font-size: 11px; color: var(--ink-3); text-align: center; margin-top: 10px; }
+  .poster-loading {
+    display: flex; align-items: center; justify-content: center;
+    height: 300px; border-radius: 10px; background: #F3F5F0;
+    font-size: 12.5px; color: var(--ink-3); letter-spacing: .04em;
+  }
   .route-save-hint { font-size: 11px; color: var(--ink-3); text-align: center; margin-top: 14px; }
 </style>
 </head>
@@ -194,6 +199,8 @@
   try { DDN.saveShared(route); } catch (e) {}
   const posterSec = DDN.el('section', 'share-poster');
   posterSec.appendChild(DDN.el('div', 'poster-title', '路线海报'));
+  const posterLoading = DDN.el('div', 'poster-loading', '海报生成中，约十秒…');
+  posterSec.appendChild(posterLoading);
   const holder = DDN.el('div', 'poster-frame');
   const frame = document.createElement('iframe');
   frame.src = '/poster.html?embed=1';
@@ -203,6 +210,19 @@
   posterSec.appendChild(holder);
   posterSec.appendChild(DDN.el('div', 'poster-hint', '长按图片可直接保存到相册'));
   document.getElementById('panelPoster').appendChild(posterSec);
+  const waitPoster = () => {
+    let tries = 0;
+    const timer = setInterval(() => {
+      tries++;
+      let ready = false;
+      try { ready = !!(frame.contentWindow && frame.contentWindow.__posterReady); } catch (e) {}
+      if (ready || tries > 60) {
+        clearInterval(timer);
+        if (posterLoading.parentNode) posterLoading.remove();
+      }
+    }, 500);
+  };
+  waitPoster();
   const fitFrame = () => {
     const w = holder.clientWidth || 380;
     frame.style.height = Math.round(w * 4 / 3) + 'px';
