@@ -61,7 +61,6 @@
 
   .dock-row { display: flex; align-items: center; gap: 8px; }
   .dock-row .btn-primary { flex: 1; }
-  .share-map { display: block; width: 100%; height: auto; margin: 0; border-radius: 10px; background: #F3F5F0; }
   .share-poster { padding: 22px 28px 0; }
   .poster-title { font-family: var(--serif); font-size: 15px; color: var(--ink); margin-bottom: 10px; letter-spacing: .04em; }
   .poster-frame { border-radius: 10px; overflow: hidden; background: #F3F5F0; }
@@ -78,8 +77,6 @@
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
   .share-poster { padding: 16px 16px 0; }
-  .poster-map { padding: 16px 16px 24px; }
-  .poster-map .share-map { margin: 0; }
   .poster-hint { font-size: 11px; color: var(--ink-3); text-align: center; margin-top: 10px; }
   .route-save-hint { font-size: 11px; color: var(--ink-3); text-align: center; margin-top: 14px; }
 </style>
@@ -168,60 +165,6 @@
   sl.appendChild(cell(DDN.fmtHour(route.totals.visitMin) + 'h', '游览'));
   content.appendChild(sl);
 
-  // 路线缩略图（纯前端 SVG）：放在海报页、海报下方
-  function drawRouteMap(host) {
-    try {
-      const pts = [{ lng: route.origin.lng, lat: route.origin.lat }];
-      (route.dayPlans || []).forEach(dp => (dp.items || []).forEach(it => {
-        if (it.type === 'stop' && it.coord) pts.push({ lng: it.coord.lng, lat: it.coord.lat });
-      }));
-      if (pts.length < 2) return;
-      const W = 396, H = 150, PAD = 18;
-      const lngs = pts.map(p => p.lng), lats = pts.map(p => p.lat);
-      const minLng = Math.min.apply(null, lngs), maxLng = Math.max.apply(null, lngs);
-      const minLat = Math.min.apply(null, lats), maxLat = Math.max.apply(null, lats);
-      const sx = (maxLng - minLng) || 1e-6, sy = (maxLat - minLat) || 1e-6;
-      const k = Math.min((W - PAD * 2) / sx, (H - PAD * 2) / sy);
-      const ox = (W - sx * k) / 2, oy = (H - sy * k) / 2;
-      const xy = p => [ox + (p.lng - minLng) * k, H - (oy + (p.lat - minLat) * k)];
-      const ns = 'http://www.w3.org/2000/svg';
-      const svg = document.createElementNS(ns, 'svg');
-      svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-      svg.setAttribute('class', 'share-map');
-      const bg = document.createElementNS(ns, 'rect');
-      bg.setAttribute('width', W); bg.setAttribute('height', H); bg.setAttribute('rx', 10);
-      bg.setAttribute('fill', '#F3F5F0');
-      svg.appendChild(bg);
-      (route.dayPlans || []).forEach(dp => {
-        const seq = [{ lng: route.origin.lng, lat: route.origin.lat }].concat(
-          (dp.items || []).filter(it => it.type === 'stop' && it.coord).map(it => ({ lng: it.coord.lng, lat: it.coord.lat })));
-        if (seq.length < 2) return;
-        const poly = document.createElementNS(ns, 'polyline');
-        poly.setAttribute('points', seq.map(p => xy(p).join(',')).join(' '));
-        poly.setAttribute('fill', 'none');
-        poly.setAttribute('stroke', dp.color || '#3B7356');
-        poly.setAttribute('stroke-width', '2.2');
-        poly.setAttribute('stroke-linecap', 'round');
-        poly.setAttribute('stroke-linejoin', 'round');
-        poly.setAttribute('opacity', '.85');
-        svg.appendChild(poly);
-        seq.slice(1).forEach(p => {
-          const c = document.createElementNS(ns, 'circle');
-          const q = xy(p);
-          c.setAttribute('cx', q[0]); c.setAttribute('cy', q[1]); c.setAttribute('r', 3);
-          c.setAttribute('fill', dp.color || '#3B7356');
-          svg.appendChild(c);
-        });
-      });
-      const oq = xy({ lng: route.origin.lng, lat: route.origin.lat });
-      const oc = document.createElementNS(ns, 'circle');
-      oc.setAttribute('cx', oq[0]); oc.setAttribute('cy', oq[1]); oc.setAttribute('r', 4.5);
-      oc.setAttribute('fill', '#182119');
-      oc.setAttribute('stroke', '#FAFBF8'); oc.setAttribute('stroke-width', '2');
-      svg.appendChild(oc);
-      host.appendChild(svg);
-    } catch (e) {}
-  }
 
   // 按日分组 mini 行
   const group = DDN.el('div', 'day-group');
@@ -260,9 +203,6 @@
   posterSec.appendChild(holder);
   posterSec.appendChild(DDN.el('div', 'poster-hint', '长按图片可直接保存到相册'));
   document.getElementById('panelPoster').appendChild(posterSec);
-  const mapBox = DDN.el('div', 'poster-map');
-  drawRouteMap(mapBox);
-  document.getElementById('panelPoster').appendChild(mapBox);
   const fitFrame = () => {
     const w = holder.clientWidth || 380;
     frame.style.height = Math.round(w * 4 / 3) + 'px';
