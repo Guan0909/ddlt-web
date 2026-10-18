@@ -869,7 +869,7 @@
     d.appendChild(i);
     return d;
   }
-  function commuteRow(item) {
+  function commuteRow(item, nextTarget) {
     const wrap = DDN.el('div', 't-item');
     wrap.appendChild(tTime());
     wrap.appendChild(tNode('tiny'));
@@ -883,7 +883,9 @@
     txt.appendChild(DDN.el('b', null, label));
     txt.appendChild(document.createTextNode(String(item.text || '').slice(label.length)));
     c.appendChild(txt);
-    c.appendChild(DDN.el('span', 'go', '去这里'));
+    const goBtn = DDN.el('span', 'go', '去这里');
+    goBtn.onclick = () => openNavigation(nextTarget);
+    c.appendChild(goBtn);
     body.appendChild(c);
     wrap.appendChild(body);
     return wrap;
@@ -1045,6 +1047,46 @@
     return wrap;
   }
 
+  // 去这里：唤起第三方地图 App（目的地用库内同一景点的名称与坐标，保证与展示一致），装不上则回退网页版
+  function openNavigation(target) {
+    if (!target || !target.coord) { DDN.toast('这个地点没有坐标'); return; }
+    const lng = +target.coord[0], lat = +target.coord[1];
+    const name = target.name || '目的地';
+    DDN.openDrawer('导航到「' + name + '」', (body, close) => {
+      body.appendChild(DDN.el('div', 'drawer-sub', '用第三方地图打开，目的地与站内一致。'));
+      const amap = DDN.el('button', 'btn-primary', '用高德地图导航');
+      amap.style.marginTop = '10px';
+      amap.onclick = () => {
+        close();
+        launchNav(
+          'amapuri://route/plan/?dlat=' + lat + '&dlon=' + lng + '&dname=' + encodeURIComponent(name) + '&dev=0&t=0',
+          'https://uri.amap.com/route/plan?to=' + lng + ',' + lat + '&toname=' + encodeURIComponent(name) + '&src=ddlt&coordinate=gaode&callnative=1'
+        );
+      };
+      const tx = DDN.el('button', 'btn-text', '用腾讯地图导航');
+      tx.style.marginTop = '8px';
+      tx.onclick = () => {
+        close();
+        launchNav(
+          'qqmap://map/routeplan?type=drive&to=' + encodeURIComponent(name) + '&tocoord=' + lat + ',' + lng + '&referer=ddlt',
+          'https://apis.map.qq.com/uri/v1/routeplan?type=drive&to=' + encodeURIComponent(name) + '&tocoord=' + lat + ',' + lng + '&referer=ddlt'
+        );
+      };
+      body.append(amap, tx);
+    });
+  }
+  // 先尝试 App scheme；1.5s 内页面未被切走（App 未安装）则回退网页版
+  function launchNav(appUrl, webUrl) {
+    let left = false;
+    const onVis = () => { if (document.hidden) left = true; };
+    document.addEventListener('visibilitychange', onVis);
+    setTimeout(() => {
+      document.removeEventListener('visibilitychange', onVis);
+      if (!left && !document.hidden) window.location.href = webUrl;
+    }, 1500);
+    try { window.location.href = appUrl; } catch (e) { window.location.href = webUrl; }
+  }
+
   // 轻详情抽屉：多图轮播 + 地址 + 事实信息 + 去这里（浏览态也能看，数据已在库）
   function openSpotSheet(spot) {
     if (!spot) return;
@@ -1078,11 +1120,7 @@
       if (spot.intro) body.appendChild(DDN.el('p', 'sheet-intro', spot.intro));
       const acts = DDN.el('div', 'sheet-acts');
       const go = DDN.el('button', 'btn-primary', '去这里');
-      go.onclick = () => {
-        const url = 'https://uri.amap.com/marker?position=' + spot.coord[0] + ',' + spot.coord[1] +
-          '&name=' + encodeURIComponent(spot.name) + '&src=ddlt&coordinate=gaode';
-        window.open(url, '_blank');
-      };
+      go.onclick = () => openNavigation({ name: spot.name, coord: spot.coord });
       const add = DDN.el('button', 'btn-text', '加入今天');
       add.onclick = () => { close(); confirmAddStop(spot, route.dayPlans[cur]); };
       acts.append(go, add);
@@ -1119,7 +1157,12 @@
     for (const item of dp.items) {
       if (item.type === 'start') box.appendChild(endpointRow(item, true));
       else if (item.type === 'end') box.appendChild(endpointRow(item, false));
-      else if (item.type === 'commute') box.appendChild(commuteRow(item));
+      else if (item.type === 'commute') {
+      const later = dp.items.slice(dp.items.indexOf(item) + 1).find(x => x.type === 'stop');
+      const sp = later ? (spotById(later.id) || null) : null;
+      const target = sp ? { name: sp.name, coord: sp.coord } : (later && later.coord ? { name: later.name, coord: [later.coord.lng, later.coord.lat] } : null);
+      box.appendChild(commuteRow(item, target));
+    }
       else if (item.type === 'meal') box.appendChild(mealRow(item));
       else if (item.type === 'stop') box.appendChild(stopRow(item, seen.stop++, dp));
     }
