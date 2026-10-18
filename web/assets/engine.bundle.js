@@ -265,7 +265,8 @@ function selectCandidates(spots, days) {
 
 // ---------- 分日 ----------
 
-function planDays(candidates, days, anchorSpot) {
+function planDays(candidates, days, anchorSpot, opts) {
+  const cityVisitCap = (opts && opts.cityVisitCap) || 480;
   const buckets = candidates.suburbGroups.map(g => ({ spots: g.slice(), pinned: null, suburb: true }));
 
   const remainDays = days - buckets.length;
@@ -283,7 +284,7 @@ function planDays(candidates, days, anchorSpot) {
   const locked = new Set();
   for (let round = 0; round < 20; round++) {
     const over = buckets.find(b => !locked.has(b) &&
-      b.spots.reduce((t, s) => t + (s.dur || 90), 0) > 480 && b.spots.length > 1);
+      b.spots.reduce((t, s) => t + (s.dur || 90), 0) > (b.suburb ? SUBURB_GROUP_MAX_MIN : cityVisitCap) && b.spots.length > 1);
     if (!over) break;
     const worst = [...over.spots].sort((a, b) => a.heat - b.heat)[0];
     let target = null, td = Infinity;
@@ -523,9 +524,9 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped, commute) 
 
 // opts: { spots, origin:{name,lng,lat,spotId?}, days, startDate:'YYYY-MM-DD', startNow:false, nowMin, startMin }
 function clampStartMin(v) {
-  const n = Number(v);
-  if (!isFinite(n)) return null;
-  return Math.max(START_MIN_EARLIEST, Math.min(START_MIN_LATEST, Math.round(n)));
+  if (v == null || v === '' || !isFinite(Number(v))) return null;   // 注意 Number(null)=0，必须先判空
+  const n = Math.round(Number(v));
+  return Math.max(START_MIN_EARLIEST, Math.min(START_MIN_LATEST, n));
 }
 function genRoute(opts) {
   const { spots, origin, days, startDate } = opts;
@@ -545,6 +546,9 @@ function genRoute(opts) {
     if (estimateCommute(origin, pt(s.coord)).min > TOO_FAR_ONEWAY_MIN) tooFar.push(s);
     else usable.push(s);
   }
+  // 单日游览容量：随出发时间动态放宽（早出发 → 一天能排更多站），上限 660 分钟
+  // 单日游览容量：早出发放宽到 720，晚出发仍保留 480（由时钟按实际时间剔除，避免桶被提前掏空）
+  const cityVisitCap = Math.max(480, Math.min(720, (DAY_END - chosenStart) - 60));
   const candidates = selectCandidates(usable, days);
 
   if (anchorSpot && anchorSpot.suburb) {
@@ -566,7 +570,7 @@ function genRoute(opts) {
       candidates.suburbGroups.unshift(merged);
     }
   }
-  const { buckets, overflow } = planDays(candidates, days, anchorSpot);
+  const { buckets, overflow } = planDays(candidates, days, anchorSpot, { cityVisitCap });
 
   // 周一闭馆点前向迁移：挪到后续同类型日（容量允许），挪不动的留给时钟推演上报
   for (let i = 0; i < buckets.length; i++) {
@@ -577,7 +581,7 @@ function genRoute(opts) {
         if (buckets[j].suburb !== buckets[i].suburb) continue;
         // 容量阈值：远郊日 480（通勤长）；市区日放宽到 540——排不下由 runClock 裁最低价值点，
         // 好过整点丢失一个高热度博物馆
-        const capMin = buckets[j].suburb ? SUBURB_GROUP_MAX_MIN : 540;
+        const capMin = buckets[j].suburb ? SUBURB_GROUP_MAX_MIN : cityVisitCap;
         const sumMin = buckets[j].spots.reduce((t, x) => t + (x.dur || 90), 0);
         if (sumMin + (s.dur || 90) > capMin) continue;
         buckets[j].spots.push(s);
