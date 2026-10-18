@@ -261,6 +261,21 @@ function optimalOrderByMatrix(stops, origin, commute) {
   return { order, minutes: best };
 }
 
+// 方向偏好：优先以起点附近的「商圈/街区」开场（更接近用户直觉与主流 App 的观感）
+function preferredFirst(stops, origin) {
+  const o = origin;
+  let best = null, bd = Infinity;
+  for (const s of stops) {
+    if (s.cat !== '商圈' && s.cat !== '街区') continue;
+    const c = ptOf(s);
+    const dx = (c.lng - o.lng) * 111320 * Math.cos((o.lat || 30) * Math.PI / 180);
+    const dy = (c.lat - o.lat) * 111320;
+    const d = Math.hypot(dx, dy);
+    if (d <= 3000 && d < bd) { bd = d; best = s; }
+  }
+  return best;
+}
+
 // 晚期项目（夜游/夜市/演出）必须靠后：DP 结果不满足时退回分组顺序
 function lateOk(order) {
   for (let i = 0; i < order.length; i++) {
@@ -313,7 +328,15 @@ async function refineWithRealCommute(route, spots) {
       const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
       const curCost = loopMinutes(stopObjs, route.origin, mins);
       const optCost = loopMinutes(opt.order, route.origin, mins);
-      if (optCost <= curCost - 1) ordered = opt.order;
+      let chosen = optCost <= curCost - 1 ? opt.order : stopObjs;
+      // 首站方向偏好：优先从附近商圈/街区开场（最多多花 5 分钟通勤）
+      const want = preferredFirst(stopObjs, route.origin);
+      if (want && chosen.length > 2 && chosen[0] !== want && lateOk([want, ...chosen.filter(s => s !== want)])) {
+        const pref = [want, ...chosen.filter(s => s !== want)];
+        const prefCost = loopMinutes(pref, route.origin, mins);
+        if (prefCost <= loopMinutes(chosen, route.origin, mins) + 5) chosen = pref;
+      }
+      ordered = chosen;
     }
     if (ordered === stopObjs) ordered = reorderByRealMinutes(stopObjs, route.origin, commute);
     const sim = engine.retimeDay(ordered, route.origin, dp.date, {
