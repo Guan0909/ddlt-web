@@ -244,6 +244,10 @@ window.DDNGL = (() => {
         };
         // 「线点分离」补线：服务端已把 ≤120m 的端头吸附掉；120~600m（实测远郊驾车 171~254m，
         // 路网只到景区门口）用一条浅色细线连到圆点，明确表达「最后一段步行」，不冒充真实路网。
+        // 需要坐船/湖中岛的景点：涉及它的腿不画实线（否则会出现横穿湖面的直线假路）
+        const boatIds = new Set((curDay && curDay.stops ? curDay.stops : [])
+          .filter(s => (s.tags || []).some(t => /坐船|游船|轮渡/.test(t)))
+          .map(s => s.id));
         const LINK_MIN_M = 120, LINK_MAX_M = 600;
         const addLink = (tail, target) => {
           if (!tail || !target) return;
@@ -281,7 +285,11 @@ window.DDNGL = (() => {
             }
             return maxDev < Math.max(20, straight * 0.03);
           })();
-          if (fake) {
+          const st = (curDay && curDay.stops) || [];
+          const fromSpot = i === 0 ? null : st[i - 1];
+          const toSpot = st[i] || null;
+          const touchesBoat = (fromSpot && boatIds.has(fromSpot.id)) || (toSpot && boatIds.has(toSpot.id));
+          if (fake || touchesBoat) {
             fallbackGeoms.push({ id: 'fb' + i, styleId: 'fb', paths: [
               new TMap.LatLng(leg.from.lat, leg.from.lng),
               new TMap.LatLng(leg.to.lat, leg.to.lng)] });
