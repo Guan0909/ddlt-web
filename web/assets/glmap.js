@@ -67,17 +67,18 @@ window.DDNGL = (() => {
     // 未配自定义样式时退回默认样式 + 柔化滤镜，保持品牌观感
     if (!window.DDN_GL_STYLE_ID) container.style.filter = DDN.MAP_SOFT_FILTER;
 
-    let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null, routeLink = null;
+    let stopLayer = null, dotLayer = null, stopLabelLayer = null, spotLabelLayer = null, routeHalo = null, routeMain = null, routeLink = null, routeSchematic = null, routeFallback = null;
+    let curColor = '#3B7356';   // 当前天的路线色（线宽按缩放更新时用）
     let pathToken = 0;
     let fitSeq = 0;           // 视野 fit 的序号：延迟执行时只认最后一次
     let curDay = null;        // { origin, stops, others, edit }，供缩放停稳后重建标签
     let lastLabelZoom = null; // 上次重建标签时的 zoom（未变化则跳过）
 
     function clearLayers() {
-      for (const l of [stopLayer, dotLayer, stopLabelLayer, spotLabelLayer, routeHalo, routeMain, routeLink]) {
+      for (const l of [stopLayer, dotLayer, stopLabelLayer, spotLabelLayer, routeHalo, routeMain, routeLink, routeSchematic, routeFallback]) {
         if (l) { try { l.setMap(null); } catch (e) {} }
       }
-      stopLayer = dotLayer = stopLabelLayer = spotLabelLayer = routeMain = routeHalo = null;
+      stopLayer = dotLayer = stopLabelLayer = spotLabelLayer = routeMain = routeHalo = routeLink = routeSchematic = routeFallback = null;
     }
 
     // ---------- 标签层：站点名（必显）+ 编辑模式下的其他景点名（碰撞避让交给 GL） ----------
@@ -179,6 +180,7 @@ window.DDNGL = (() => {
     map.on('idle', () => {
       if (!curDay) return;
       const z = map.getZoom();
+      applyRouteMode(z);   // 概览模式：低倍率用平滑示意线，放大后再显示真实路网
       if (lastLabelZoom !== null && Math.abs(z - lastLabelZoom) < 0.5) return;
       rebuildLabels(256 * Math.pow(2, z) / 360, z);
     });
@@ -214,7 +216,7 @@ window.DDNGL = (() => {
       try {
         const j = await DDN.cloudPost('routePaths', { legs }, 12000);
         if (token !== pathToken || !j.paths) return;
-        const geoms = [], links = [];
+        const geoms = [], links = [], fallbackGeoms = [];
         // 「线点分离」补线：服务端已把 ≤120m 的端头吸附掉；120~600m（实测远郊驾车 171~254m，
         // 路网只到景区门口）用一条浅色细线连到圆点，明确表达「最后一段步行」，不冒充真实路网。
         const LINK_MIN_M = 120, LINK_MAX_M = 600;
@@ -228,7 +230,8 @@ window.DDNGL = (() => {
         j.paths.forEach((path, i) => {
           const leg = legs[i];
           if (!path || path.length < 2) {
-            geoms.push({ id: 'leg' + i, styleId: 'main', paths: [   // 单腿失败回退直线
+            // 单腿失败：用虚线浅色兜底（明确是估算段，不冒充真实路网）
+            fallbackGeoms.push({ id: 'fb' + i, styleId: 'fb', paths: [
               new TMap.LatLng(leg.from.lat, leg.from.lng),
               new TMap.LatLng(leg.to.lat, leg.to.lng)] });
             return;
@@ -240,9 +243,9 @@ window.DDNGL = (() => {
           if (i === 0) addLink(head, leg.from);   // 起点侧
           addLink(tail, leg.to);
         });
-        drawRoute(geoms, color, links);
+        drawRoute(geoms, color, links, fallbackGeoms);
       } catch (e) {
-        if (straightGeoms) drawRoute(straightGeoms, color);   // 整体失败：直线示意
+        if (straightGeoms) drawRoute([], color, [], straightGeoms);   // 整体失败：虚线示意 + 概览线
       }
     }
 
@@ -255,32 +258,105 @@ window.DDNGL = (() => {
 
     // 补线样式：细、淡，明显弱于主路线；dashArray 不被支持时退回同色实线（仍然远弱于主线）
     const LINK_COLOR = 'rgba(24,33,25,.34)';
-    function linkStyle() {
-      try { return new TMap.PolylineStyle({ color: LINK_COLOR, width: 2, lineCap: 'round', dashArray: [2, 2] }); }
-      catch (e) { return new TMap.PolylineStyle({ color: LINK_COLOR, width: 2, lineCap: 'round' }); }
+    function linkStyle(width) {
+      const w = width || 2;
+      try { return new TMap.PolylineStyle({ color: LINK_COLOR, width: w, lineCap: 'round', dashArray: [2, 2] }); }
+      catch (e) { return new TMap.PolylineStyle({ color: LINK_COLOR, width: w, lineCap: 'round' }); }
     }
 
-    function drawRoute(geoms, color, links) {
-      if (routeHalo) { try { routeHalo.setMap(null); routeMain.setMap(null); } catch (e) {} }
-      if (routeLink) { try { routeLink.setMap(null); } catch (e) {} }
+    // 线宽随缩放分级：低倍率加粗（并保留细描边），放大后回到精细线宽
+    function routeWidths(zoom) {
+      if (zoom >= 14.5) return { main: 3, halo: 6, link: 2, fb: 2 };
+      if (zoom >= 13) return { main: 4, halo: 7, link: 2.5, fb: 2.5 };
+      if (zoom >= 11.5) return { main: 5, halo: 8, link: 3, fb: 3 };
+      return { main: 6, halo: 9, link: 3.5, fb: 3.5 };
+    }
+    function applyRouteWidths(zoom) {
+      const w = routeWidths(zoom);
+      const setStyle = (layer, key, style) => { try { if (layer) layer.setStyles({ [key]: style }); } catch (e) {} };
+      setStyle(routeHalo, 'halo', new TMap.PolylineStyle({ color: 'rgba(255,255,255,.92)', width: w.halo, lineCap: 'round' }));
+      setStyle(routeMain, 'main', new TMap.PolylineStyle({ color: withAlpha(curColor, 0.95), width: w.main, lineCap: 'round' }));
+      setStyle(routeSchematic, 'sch', new TMap.PolylineStyle({ color: withAlpha(curColor, 0.9), width: w.main + 1, lineCap: 'round', lineJoin: 'round' }));
+      setStyle(routeLink, 'link', linkStyle(w.link));
+      setStyle(routeFallback, 'fb', fallbackStyle(w.fb));
+    }
+    function fallbackStyle(width) {
+      try { return new TMap.PolylineStyle({ color: 'rgba(24,33,25,.30)', width: width || 2, lineCap: 'round', dashArray: [5, 4] }); }
+      catch (e) { return new TMap.PolylineStyle({ color: 'rgba(24,33,25,.30)', width: width || 2, lineCap: 'round' }); }
+    }
+    // 概览模式：低倍率（<12.6）不画真实路网细节，改画「站点顺序的平滑示意线」
+    function buildSchematic() {
+      const cd = curDay;
+      if (!cd || !cd.origin) return [];
+      const pts = [{ lng: cd.origin.lng, lat: cd.origin.lat }].concat((cd.stops || []).map(s => ({ lng: s.coord[0], lat: s.coord[1] })));
+      const out = [];
+      for (let i = 0; i < pts.length - 1; i++) {
+        const a = pts[i], b = pts[i + 1];
+        const dLng = b.lng - a.lng, dLat = b.lat - a.lat;
+        const bow = 0.10 * (i % 2 === 0 ? 1 : -1);
+        const cLng = (a.lng + b.lng) / 2 - dLat * bow;
+        const cLat = (a.lat + b.lat) / 2 + dLng * bow;
+        const seg = [];
+        const N = 12;
+        for (let k = 0; k <= N; k++) {
+          const t = k / N;
+          const x = (1 - t) * (1 - t) * a.lng + 2 * (1 - t) * t * cLng + t * t * b.lng;
+          const y = (1 - t) * (1 - t) * a.lat + 2 * (1 - t) * t * cLat + t * t * b.lat;
+          seg.push(new TMap.LatLng(y, x));
+        }
+        out.push({ id: 'sch' + i, styleId: 'sch', paths: seg });
+      }
+      return out;
+    }
+    function applyRouteMode(zoom) {
+      const z = (typeof zoom === 'number' && isFinite(zoom)) ? zoom : (map.getZoom ? map.getZoom() : 13);
+      const overview = z < 12.6;   // 概览：只显示平滑示意线，隐藏真实路网细节
+      const show = (layer, on) => { try { if (layer) layer.setMap(on ? map : null); } catch (e) {} };
+      show(routeHalo, !overview);
+      show(routeMain, !overview);
+      show(routeLink, !overview);
+      show(routeFallback, !overview);
+      show(routeSchematic, overview);
+      applyRouteWidths(z);
+      try { window.__routeMode = overview ? 'overview' : 'detail'; window.__routeZoom = z; } catch (e) {}
+    }
+    function drawRoute(geoms, color, links, fallbackGeoms) {
+      curColor = color || '#3B7356';
+      for (const l of [routeHalo, routeMain, routeLink, routeSchematic, routeFallback]) {
+        if (l) { try { l.setMap(null); } catch (e) {} }
+      }
+      const w = routeWidths(map.getZoom ? map.getZoom() : 13);
       routeLink = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
-        styles: { link: linkStyle() },
+        styles: { link: linkStyle(w.link) },
         geometries: links || [],
       });
       routeHalo = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
-        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.9)', width: 6, lineCap: 'round' }) },
-        geometries: geoms.map(g => ({ ...g, styleId: 'halo' })),
+        styles: { halo: new TMap.PolylineStyle({ color: 'rgba(255,255,255,.92)', width: w.halo, lineCap: 'round' }) },
+        geometries: (geoms || []).map(g => ({ ...g, styleId: 'halo' })),
       });
       routeMain = new TMap.MultiPolyline({
         map,
         isStopPropagation: true,
-        styles: { main: new TMap.PolylineStyle({ color: withAlpha(color, 0.92), width: 3, lineCap: 'round' }) },
-        geometries: geoms,
+        styles: { main: new TMap.PolylineStyle({ color: withAlpha(curColor, 0.95), width: w.main, lineCap: 'round' }) },
+        geometries: geoms || [],
       });
+      routeFallback = new TMap.MultiPolyline({
+        map,
+        isStopPropagation: true,
+        styles: { fb: fallbackStyle(w.fb) },
+        geometries: (fallbackGeoms || []).map(x => ({ ...x, styleId: 'fb' })),
+      });
+      routeSchematic = new TMap.MultiPolyline({
+        map,
+        isStopPropagation: true,
+        styles: { sch: new TMap.PolylineStyle({ color: withAlpha(curColor, 0.9), width: w.main + 1, lineCap: 'round', lineJoin: 'round' }) },
+        geometries: buildSchematic(),
+      });
+      applyRouteMode(map.getZoom ? map.getZoom() : 13);
     }
 
     // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color,
@@ -336,7 +412,7 @@ window.DDNGL = (() => {
       const k = Math.max(1, Math.min((w - padBase - padRight) / spanLng, (h - padBase * 2) / spanLat)); // px / 度
       const fitZoom = Math.log2(k * 360 / 256);
 
-      curDay = { origin, stops, others, edit };   // others 全量保留：底图 POI 拾取匹配用；渲染层只在编辑模式画
+      curDay = { origin, stops, others, edit, color, legs };   // others 全量保留：底图 POI 拾取匹配用；渲染层只在编辑模式画
       rebuildLabels(k, fitZoom);
 
       // 路线（仅规划模式）：真实路径到达前不画线（避免"看似贴路的假象"）；
@@ -349,7 +425,7 @@ window.DDNGL = (() => {
         if (legs && legs.length && DDN.cloudAvailable()) {
           upgradeToRealPaths(legs, color, token, straightGeoms);
         } else {
-          drawRoute(straightGeoms, color);
+          drawRoute([], color, [], straightGeoms);
         }
       }
 
