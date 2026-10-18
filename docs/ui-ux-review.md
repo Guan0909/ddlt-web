@@ -283,3 +283,9 @@
 - 分享页：路线 tab 无地图（`.share-map` 数量 0），海报 tab 海报下方有地图（1 个）✓；海报 1440×1920、无每日路线文字、地图明显变大 ✓
 
 证据截图：build/z5-nav-equal.png、build/z1-share-route.png、build/z2-share-poster.png、build/z4-poster-big.png
+
+### 后续修订（2026-10-19）：海报下方地图也删除
+- 按产品要求，海报 tab 下方的路线 SVG 地图整体删除（`.poster-map` / `drawRouteMap` / `.share-map` 相关代码与样式已清理）；海报 tab 现在只有海报本体 + 「保存图片」。
+- 海报生成需要 10–20 秒，海报 tab 增加「海报生成中，约十秒…」占位，生成完成后自动移除。
+
+证据截图：build/y2-poster-loading.png、build/y3-poster-ready.png
