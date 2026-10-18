@@ -192,6 +192,27 @@ window.DDNGL = (() => {
     map.on('idle', () => {
       if (!curDay) return;
       const z = map.getZoom();
+      applyRouteMode(z);   // 只画真实路网：按当前缩放更新线宽
+      if (lastLabelZoom !== null && Math.abs(z - lastLabelZoom) < 0.5) return;
+      rebuildLabels(256 * Math.pow(2, z) / 360, z);
+    });
+
+    // ---------- 底图 POI 点击拾取（evt.poi：名字+坐标，仅 click） ----------
+    map.on('click', evt => {
+      const poi = evt.poi;
+      if (!poi || !curDay) return;
+      const all = [...(curDay.others || []), ...curDay.stops];
+      const pn = normName(poi.name);
+      if (!pn) return;
+      let best = null, bd = Infinity;
+      for (const s of all) {
+        if (!s.coord) continue;
+        const sn = normName(s.name);
+        const d = metersBetween(s.coord[0], s.coord[1], poi.latLng.lng, poi.latLng.lat);
+        const nameHit = sn === pn || sn.includes(pn) || pn.includes(sn);
+        if (nameHit && d < 300) { best = s; break; }   // 名字命中且距离合理
+        if (d < 120 && d < bd) { bd = d; best = s; }   // 纯距离兜底
+      }
       if (!best) { DDN.toast('这个点不在我们的精选库'); return; }
       const selected = curDay.stops.some(s => s.id === best.id);
       if (curDay.edit) {
