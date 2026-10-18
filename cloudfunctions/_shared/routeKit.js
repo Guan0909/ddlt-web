@@ -261,6 +261,57 @@ function optimalOrderByMatrix(stops, origin, commute) {
   return { order, minutes: best };
 }
 
+// 方向回摆次数（相对起点方位角序列的反向大幅摆动）：1 次回摆 ≈ 绕城一圈的观感
+function inversionsOf(order, origin) {
+  const o = ptOf(origin);
+  const k = Math.cos((o.lat || 30) * Math.PI / 180);
+  const ang = order.map(s => {
+    const p = ptOf(s);
+    return Math.atan2(p.lat - o.lat, (p.lng - o.lng) * k);
+  });
+  let inv = 0, lastSign = 0;
+  for (let i = 1; i < ang.length; i++) {
+    let d = ang[i] - ang[i - 1];
+    while (d > Math.PI) d -= 2 * Math.PI;
+    while (d < -Math.PI) d += 2 * Math.PI;
+    if (Math.abs(d) < Math.PI / 6) continue;
+    const sign = d > 0 ? 1 : -1;
+    if (lastSign !== 0 && sign !== lastSign) inv++;
+    lastSign = sign;
+  }
+  return inv;
+}
+// 排序目标：开放路径分钟 + 0.4×回程分钟 + 回摆惩罚（1 次 ≈ 12 分钟）——避免「更快但来回穿」
+function orderCostMins(order, origin, mins) {
+  let open = 0, prev = origin;
+  for (const s of order) { open += mins(prev, s); prev = s; }
+  const ret = mins(prev, origin);
+  const inv = inversionsOf(order, origin);
+  return open + ret * 0.4 + inv * 12;
+}
+
+// 以「开放路径分钟 + 回摆惩罚」为目标的 2-opt（夜游项目固定在尾部）
+function twoOptByCost(order, origin, mins) {
+  if (order.length < 3) return order.slice();
+  const late = order.filter(isLateSpot);
+  const head = order.filter(s => !isLateSpot(s));
+  const costOf = arr => orderCostMins(arr.concat(late), origin, mins);
+  let best = head.slice();
+  let bestCost = costOf(best);
+  for (let iter = 0; iter < 20; iter++) {
+    let improved = false;
+    for (let i = 0; i < best.length - 1; i++) {
+      for (let j = i + 1; j < best.length; j++) {
+        const cand = best.slice(0, i).concat(best.slice(i, j + 1).reverse(), best.slice(j + 1));
+        const c = costOf(cand);
+        if (c < bestCost - 0.5) { best = cand; bestCost = c; improved = true; }
+      }
+    }
+    if (!improved) break;
+  }
+  return best.concat(late);
+}
+
 // 方向偏好：优先以起点附近的「商圈/街区」开场（更接近用户直觉与主流 App 的观感）
 function preferredFirst(stops, origin) {
   const o = origin;
@@ -326,15 +377,21 @@ async function refineWithRealCommute(route, spots) {
     const opt = optimalOrderByMatrix(stopObjs, route.origin, commute);
     if (opt && lateOk(opt.order)) {
       const mins = (a, b) => commute.minutes(ptOf(a), ptOf(b));
-      const curCost = loopMinutes(stopObjs, route.origin, mins);
-      const optCost = loopMinutes(opt.order, route.origin, mins);
+      const curCost = orderCostMins(stopObjs, route.origin, mins);
+      const optCost = orderCostMins(opt.order, route.origin, mins);
       let chosen = optCost <= curCost - 1 ? opt.order : stopObjs;
+      // 在候选上再做一轮「方向 2-opt」：分钟略增但不回摆的解会被选中
+      const opt2 = twoOptByCost(opt.order, route.origin, mins);
+      const cur2 = twoOptByCost(stopObjs, route.origin, mins);
+      const bestCost2 = Math.min(orderCostMins(opt2, route.origin, mins), orderCostMins(cur2, route.origin, mins));
+      if (orderCostMins(opt2, route.origin, mins) <= bestCost2 + 0.1) chosen = opt2;
+      else chosen = cur2;
       // 首站方向偏好：优先从附近商圈/街区开场（最多多花 5 分钟通勤）
       const want = preferredFirst(stopObjs, route.origin);
       if (want && chosen.length > 2 && chosen[0] !== want && lateOk([want, ...chosen.filter(s => s !== want)])) {
         const pref = [want, ...chosen.filter(s => s !== want)];
-        const prefCost = loopMinutes(pref, route.origin, mins);
-        if (prefCost <= loopMinutes(chosen, route.origin, mins) + 5) chosen = pref;
+        const prefCost = orderCostMins(pref, route.origin, mins);
+        if (prefCost <= orderCostMins(chosen, route.origin, mins) + 6) chosen = pref;
       }
       ordered = chosen;
     }

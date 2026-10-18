@@ -227,7 +227,20 @@ function routeCostOf(order, origin) {
       else if (segsCross(a, b, c, d)) crossings++;
     }
   }
-  return dist + crossings * CROSS_PENALTY_M + reversals * 900 + backTracks * 350;
+  // 方向一致性：相对起点的方位角序列若出现「大幅反向摆动」，视觉上就是折返，重罚
+  let inversions = 0, lastSign = 0;
+  const org = pts[0];
+  const ang = pts.slice(1).map(p => Math.atan2(p.y - org.y, p.x - org.x));
+  for (let i = 1; i < ang.length; i++) {
+    let d = ang[i] - ang[i - 1];
+    while (d > Math.PI) d -= 2 * Math.PI;
+    while (d < -Math.PI) d += 2 * Math.PI;
+    if (Math.abs(d) < Math.PI / 6) continue;      // 小角度变化不算
+    const sign = d > 0 ? 1 : -1;
+    if (lastSign !== 0 && sign !== lastSign) inversions++;
+    lastSign = sign;
+  }
+  return dist + crossings * CROSS_PENALTY_M + reversals * 900 + inversions * 500 + backTracks * 350;
 }
 
 function orderStops(spots, origin, pinnedId) {
@@ -285,7 +298,9 @@ function slotFix(order, origin, pinnedId) {
   const slotOrder = [...(pinned ? [pinned] : []), ...early, ...mids, ...late];
   const baseCost = routeCostOf(order, origin);
   const slotCost = routeCostOf(slotOrder, origin);
-  // 软约束：强行按标签排若绕路/交叉代价明显变差（>8%），保留空间更顺的顺序
+  // 真正的夜间项目（夜游/夜市/演出）硬压尾：这些点上午排不进去，必须放最后
+  if (late.length) return slotOrder;
+  // 其余（早去）软约束：若绕路/交叉代价明显变差（>8%），保留空间更顺的顺序
   if (slotCost > baseCost * 1.08) return order;
   return slotOrder;
 }
