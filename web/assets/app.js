@@ -268,12 +268,18 @@ window.DDN = (() => {
   const API_BASE = /(^|\.)vercel\.app$|(^|\.)decidenow\.asia$/.test(location.hostname)
     ? '/api'
     : 'https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com';
+  // 直连 CloudBase HTTP 触发器（CORS 已开）：Vercel 的 /api 代理偶发 502/超时，作为回退通道
+  const DIRECT_BASE = 'https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com';
+  function apiBases() {
+    return API_BASE === '/api' ? [DIRECT_BASE, '/api'] : [API_BASE];
+  }
   function cloudAvailable() { return true; }   // CORS 已开，任意源可直连；失败由调用方 catch 回退
-  async function cloudPost(fn, body, timeoutMs = 6000) {
+  // 单通道请求：业务错误码直接抛出（不回退），网络/5xx/超时由调用方换通道重试
+  async function postOnce(base, fn, body, timeoutMs) {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), timeoutMs);
     try {
-      const r = await fetch(`${API_BASE}/${fn}`, {
+      const r = await fetch(`${base}/${fn}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
@@ -282,16 +288,32 @@ window.DDN = (() => {
       let j = null;
       try { j = await r.json(); } catch (e) { /* 非 JSON */ }
       if (!r.ok) {
-        // 透传业务错误码：校验类错误（ORIGIN_*/NOT_ENOUGH_SPOTS/PLAN_EMPTY/CITY_CLOSED）调用方不得回退本地引擎
         const err = new Error((j && j.error) || ('HTTP ' + r.status));
         err.code = (j && j.code) || null;
         err.httpStatus = r.status;
+        if (!err.code && r.status >= 500) err.retryable = true;
         throw err;
       }
       if (j && j.error) { const err = new Error(j.error); err.code = j.code || null; throw err; }
       return j;
     } finally { clearTimeout(timer); }
   }
+  async function cloudPost(fn, body, timeoutMs = 6000) {
+    const bases = apiBases();
+    let lastErr = null;
+    for (let i = 0; i < bases.length; i++) {
+      try {
+        const per = i === 0 && bases.length > 1 ? Math.max(2500, Math.min(timeoutMs, 4000)) : timeoutMs;
+        return await postOnce(bases[i], fn, body, per);
+      } catch (e) {
+        lastErr = e;
+        const retryable = (e && (e.retryable || !e.code)) || (e && e.name === 'AbortError');
+        if (!retryable) throw e;   // 业务错误码：不换通道
+      }
+    }
+    throw lastErr || new Error('网络不稳');
+  }
+
   // 云端生成路线：返回 { route, routeId }；失败抛错由调用方回退
   async function cloudGenRoute(opts) {
     const j = await cloudPost('genRoute', opts, 9000);
