@@ -172,6 +172,11 @@
   .anchor-note .ic { width: 13px; height: 13px; }
   .anchor-note b { color: var(--ink); font-weight: 600; }
   .anchor-note a { color: var(--ink); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .anchor-note { cursor: pointer; }
+  .anchor-note.busy { opacity: .7; pointer-events: none; }
+  .anchor-note .anchor-tip { color: var(--ink-3); font-size: 10.5px; }
+  .dur-row .dur-label { color: var(--ink-3); cursor: default; font-size: 10.5px; letter-spacing: .04em; align-self: center; }
+  .drawer-item.on .g { color: var(--d2); font-weight: 600; }
 
   /* AI 叙事行：衬线斜体，模板先行，AI 返回后替换并亮标 */
   .narrative {
@@ -408,33 +413,6 @@
     a.onclick = () => regen(!route.__nowMode);
     box.appendChild(a);
   }
-  async function regen(nowMode) {
-    const now = new Date();
-    const opts = {
-      spots, origin: route.origin, days: route.days, city: route.city,
-    };
-    if (nowMode) {
-      opts.startDate = DDN.todayISO();
-      opts.startNow = true;
-      opts.nowMin = Math.ceil((now.getHours() * 60 + now.getMinutes()) / 15) * 15; // 向上取整 15 分钟
-    } else {
-      opts.startDate = window.Engine.addDays(DDN.todayISO(), 1);
-      opts.startNow = false;
-    }
-    let r = null;
-    if (DDN.cloudAvailable()) {
-      try {
-        const j = await DDN.cloudGenRoute({ city: opts.city, origin: opts.origin, days: opts.days, startDate: opts.startDate, startNow: opts.startNow, nowMin: opts.nowMin });
-        r = j.route;
-      } catch (e) { /* 回退本地引擎 */ }
-    }
-    if (!r) r = window.Engine.genRoute(opts);
-    DDN.attachStops(r, spots);
-    r.__nowMode = nowMode;
-    DDN.saveRoute(r);
-    location.reload();
-  }
-
   // ---------- 日切换 Tab ----------
   function renderTabs() {
     const box = $('dayTabs');
@@ -896,6 +874,9 @@
     if (spot || selfSpot) {
       const baseDur = spot ? (spot.dur || 90) : (selfSpot.dur || 60);
       const row = DDN.el('div', 'dur-row');
+      const durLabel = DDN.el('span', 'dur-label', '游玩时长');
+      durLabel.title = '点选可调整这一站的停留时间，时间轴会自动重排';
+      row.appendChild(durLabel);
       for (const v of durOptions(baseDur)) {
         const s = DDN.el('span', v === baseDur ? 'on' : '', DDN.fmtDur(v));
         s.onclick = () => {
@@ -946,9 +927,7 @@
         });
       }
     };
-    const report = DDN.el('button', 'report', '信息有误');
-    report.onclick = () => openFeedback(spot, item);
-    bar.append(up, down, swap, moveDay, del, report);
+    bar.append(up, down, swap, moveDay, del);
     editWrap.appendChild(bar);
 
     wrap.appendChild(body);

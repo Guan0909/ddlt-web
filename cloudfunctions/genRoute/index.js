@@ -14,6 +14,14 @@ exports.main = async (event) => {
   if (!spots) return fail('该城市暂未开通', 400, { code: 'CITY_CLOSED' });
 
   const days = Math.min(5, Math.max(1, +body.days || 3));
+  // 第一天出发时间：'HH:MM' 或分钟数（结果页可点选；只作用于第一天，其余天默认 09:00）
+  let startMin = null;
+  if (body.startMin != null) {
+    if (typeof body.startMin === 'string' && /^\d{1,2}:\d{2}$/.test(body.startMin)) {
+      const hm = body.startMin.split(':');
+      startMin = (+hm[0]) * 60 + (+hm[1]);
+    } else if (Number.isFinite(+body.startMin)) startMin = +body.startMin;
+  }
   const startDate = /^\d{4}-\d{2}-\d{2}$/.test(body.startDate || '')
     ? body.startDate : engine.addDays(new Date().toISOString().slice(0, 10), 1);
 
@@ -29,6 +37,7 @@ exports.main = async (event) => {
       days, startDate,
       startNow: !!body.startNow,
       nowMin: Number.isFinite(body.nowMin) ? body.nowMin : null,
+      startMin: startMin,
       city: body.city,
     });
     if (!route.dayPlans.length) return fail('这条路线排不出来。换个起点，或减少天数试试。', 400, { code: 'PLAN_EMPTY' });

@@ -10,8 +10,10 @@ const DAY_START = 9 * 60;          // 明早 09:00 出发
 const DAY_END = 19 * 60 + 30;      // 19:30 收束（最后一站游览结束上限）
 const LUNCH = { from: 11 * 60 + 30, latest: 13 * 60, dur: 60 };
 const DINNER = { from: 17 * 60 + 30, latest: 18 * 60 + 30, dur: 60 };
-const MAX_STOPS_PER_DAY = 5;
-const MAX_PER_CAT = 3;             // 粗筛分类多样性上限
+const MAX_STOPS_PER_DAY = 8;        // 每日站数上限：按可用时间自然收敛（不再卡 3~5 站）
+const MAX_PER_CAT = 4;             // 粗筛分类多样性上限（放宽以支持「一天多玩几处」）
+const START_MIN_EARLIEST = 5 * 60;  // 可选择的最早出发时间
+const START_MIN_LATEST = 16 * 60;   // 可选择的最晚出发时间
 const SUBURB_GROUP_RADIUS_M = 25000; // 远郊打包半径（与数据 schema 口径一致）
 const SUBURB_GROUP_MAX_MIN = 480;    // 远郊单日游览总时长上限
 const TOO_FAR_ONEWAY_MIN = 165;      // 单程估时上限：超过视为当天往返不现实
@@ -350,9 +352,18 @@ function runClock(stopsIn, origin, dateISO, startMin, suburb, dropped, commute) 
 
 // ---------- 入口 ----------
 
-// opts: { spots, origin:{name,lng,lat,spotId?}, days, startDate:'YYYY-MM-DD', startNow:false, nowMin }
+// opts: { spots, origin:{name,lng,lat,spotId?}, days, startDate:'YYYY-MM-DD', startNow:false, nowMin, startMin }
+function clampStartMin(v) {
+  const n = Number(v);
+  if (!isFinite(n)) return null;
+  return Math.max(START_MIN_EARLIEST, Math.min(START_MIN_LATEST, Math.round(n)));
+}
 function genRoute(opts) {
   const { spots, origin, days, startDate } = opts;
+  // 第一天出发时间：优先 opts.startMin（用户点选），其次兼容旧「现在就走」nowMin，默认 09:00
+  const chosenStart = clampStartMin(opts.startMin) != null
+    ? clampStartMin(opts.startMin)
+    : (opts.startNow && Number.isFinite(opts.nowMin) ? clampStartMin(opts.nowMin) : DAY_START);
   let anchorSpot = origin.spotId ? spots.find(s => s.id === origin.spotId) || null : null;
   // 锚点 D1 闭馆（如周一闭馆的博物馆）：降级为普通候选，起点仅作坐标，
   // 该点由闭馆迁移挪到后续开放日，不再钉死 D1 第 1 站
@@ -414,8 +425,7 @@ function genRoute(opts) {
   for (let round = 0; round < 3; round++) {
     pairs.forEach((p, i) => {
       const dateISO = addDays(startDate, i);
-      const startMin = (i === 0 && opts.startNow && opts.nowMin != null && opts.nowMin > DAY_START)
-        ? opts.nowMin : DAY_START;
+      const startMin = (i === 0 && chosenStart != null) ? chosenStart : DAY_START;
       let sim = simulateDay(p.bucket, origin, dateISO, startMin, opts.commute);
       if (sim.stats.stops === 0) {
         const best = sim.dropped.filter(d => d.cause !== '周一闭馆').map(d => d.spot)
