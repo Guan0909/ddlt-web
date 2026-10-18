@@ -86,6 +86,27 @@ function finalizePath(path, mode, from, to) {
   return snapEnds(rdp(path, TOL_M[mode] || 10), from, to);
 }
 
+// 几何可信度：公交路径/极简路径常返回「近乎直线」的假几何——距离长、点数少、偏离直线很小的判为不可信
+function plausiblePath(path, from, to) {
+  if (!path || path.length < 2) return false;
+  const A = [+from.lat.toFixed(6), +from.lng.toFixed(6)];
+  const B = [+to.lat.toFixed(6), +to.lng.toFixed(6)];
+  const straight = distM(A, B);
+  if (straight < 400) return true;                    // 短腿不校验
+  if (path.length < 4) return false;                  // 点数过少 → 不可信
+  let maxDev = 0, len = 0;
+  for (let i = 0; i < path.length; i++) {
+    maxDev = Math.max(maxDev, pointSegM(path[i], A, B));
+    if (i > 0) len += distM(path[i - 1], path[i]);
+  }
+  // 真路径一定比直线长（绕路系数通常 ≥1.05），且会明显偏离直线；假几何两者都会接近 1/0
+  if (straight > 500) {
+    if (len / straight < 1.02) return false;                        // 几乎等于直线长度 → 假
+    if (maxDev < Math.max(20, straight * 0.03)) return false;       // 偏离过小 → 假
+  }
+  return true;
+}
+
 // transit 返回多段 steps，各自带 polyline，拼起来（在主流程内处理）
 
 exports.main = async (event) => {
@@ -107,33 +128,27 @@ exports.main = async (event) => {
       if (d && d.expire_at > Date.now() && Array.isArray(d.path)) path = d.path;
     } catch (e) {}
     if (path) {
-      // 旧缓存是未处理的原始折线：读出时同样过一遍（幂等）
-      paths.push(finalizePath(path, mode, leg.from, leg.to));
+      // 旧缓存是未处理的原始折线：读出时同样过一遍（幂等），并做可信度校验
+      const fin = finalizePath(path, mode, leg.from, leg.to);
+      paths.push(plausiblePath(fin, leg.from, leg.to) ? fin : null);
       continue;
     }
     if (!(await store.tencentBudget())) { paths.push(null); continue; }
     try {
       // 直接调底层拿原始 polyline（lbs.direction 只回距离/时长）
       const fmt = p => `${(+p.lat).toFixed(6)},${(+p.lng).toFixed(6)}`;
-      const apiMode = mode === 'walk' ? 'walking' : mode === 'transit' ? 'transit' : 'driving';
+      // 公交腿用「驾车」路网几何：公交 direction 的 polyline 常是简化直线，不能当真实道路用
+      const apiMode = mode === 'walk' ? 'walking' : 'driving';
       const key = process.env.TENCENT_WS_KEY;
       const res = await fetch(`https://apis.map.qq.com/ws/direction/v1/${apiMode}?from=${fmt(leg.from)}&to=${fmt(leg.to)}&key=${key}`,
         { signal: AbortSignal.timeout(5000) });
       const j = await res.json();
       if (j.status !== 0 || !j.result || !j.result.routes || !j.result.routes[0]) throw new Error('no route');
       const r0 = j.result.routes[0];
-      if (mode === 'transit' && Array.isArray(r0.steps)) {
-        const all = [];
-        for (const st of r0.steps) {
-          const seg = decompress(st.polyline);
-          if (seg) for (const p of seg) all.push(p);
-        }
-        path = all.length ? all : null;
-      } else {
-        path = decompress(r0.polyline);
-      }
+      path = decompress(r0.polyline);
       if (path) {
         path = finalizePath(path, mode, leg.from, leg.to);
+        if (!plausiblePath(path, leg.from, leg.to)) path = null;   // 假几何不返回，让前端画浅色虚线兜底
         const expire = mode === 'transit'
           ? new Date(new Date().toDateString()).getTime() + 86400000
           : Date.now() + 7 * 86400000;
@@ -148,4 +163,4 @@ exports.main = async (event) => {
 };
 
 // 供本地回归直接验证几何处理（云函数入口不受影响）
-exports.geom = { rdp, snapEnds, finalizePath, distM, pointSegM, TOL_M, SNAP_MAX_M };
+exports.geom = { rdp, snapEnds, finalizePath, distM, pointSegM, TOL_M, SNAP_MAX_M, plausiblePath };
