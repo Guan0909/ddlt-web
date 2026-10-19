@@ -1598,6 +1598,21 @@
   async function renderNarrative() {
     const box = $('narrative');
     if (!DDN.cloudAvailable()) return;
+    // 同一路线（城市/天数/日期/起点/站点序列）只生成一次，本地缓存 30 天
+    const sig = JSON.stringify([
+      route.city, route.days, route.startDate, route.origin && route.origin.name,
+      route.dayPlans.map(dp => dp.items.filter(i => i.type === 'stop').map(x => x.id)),
+    ]);
+    let hash = 5381;
+    for (let i = 0; i < sig.length; i++) hash = ((hash << 5) + hash + sig.charCodeAt(i)) >>> 0;
+    const cacheKey = 'ddn_narrative_' + hash.toString(36);
+    try {
+      const cached = localStorage.getItem(cacheKey);
+      if (cached && Date.now() - (+JSON.parse(cached).t || 0) < 30 * 86400000) {
+        const text = JSON.parse(cached).v;
+        if (text) { box.textContent = ''; box.appendChild(document.createTextNode(text)); box.appendChild(DDN.el('span', 'ai-tag', '由 AI 生成')); return; }
+      }
+    } catch (e) {}
     try {
       const j = await DDN.cloudPost('aiCopy', {
         kind: 'narrative',
@@ -1608,6 +1623,7 @@
         box.appendChild(document.createTextNode(j.text));
         const tag = DDN.el('span', 'ai-tag', '由 AI 生成');
         box.appendChild(tag);
+        try { localStorage.setItem(cacheKey, JSON.stringify({ t: Date.now(), v: j.text })); } catch (e) {}
       }
     } catch (e) { /* 保持隐藏 */ }
   }
