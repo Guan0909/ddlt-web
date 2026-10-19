@@ -38,8 +38,9 @@
     z-index: 2;   /* #glMap 已压在 z-index:1 的层叠上下文里 */
     display: inline-flex; align-items: center; gap: 6px;
     height: 34px; padding: 0 12px 0 10px; border-radius: 999px;
-    background: rgba(251,251,248,.96); border: .5px solid var(--hairline);
+    background: rgba(251,251,248,.86); border: .5px solid var(--hairline);
     box-shadow: 0 2px 10px rgba(24,33,25,.10);
+    -webkit-backdrop-filter: blur(10px) saturate(1.1); backdrop-filter: blur(10px) saturate(1.1);
     font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--ink);
     transition: transform .12s ease, background .15s ease;
   }
