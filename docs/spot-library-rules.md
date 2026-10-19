@@ -150,3 +150,21 @@ node scripts/rebuild-library.js --audit-rules <城市|all> --apply  # 逐点复�
 - 实测景点详情页三张图均为 1440×1080 / 1440×810 / 1080×1440 级别，无马赛克。
 
 重跑脚本：`node scripts/supplement-photos.js`（输出 `build/photo-upgrade-report.json`）。
+
+## 图片加载链路（2026-10-19 修复）
+
+**现象**：规划页部分景点不显示图片（数据里 100% 有图，但浏览器加载失败）。
+
+**根因**：高德 CDN 中 `store.is.autonavi.com` 的图片对**浏览器直连**会返回 `net::ERR_CONNECTION_CLOSED`（服务器端抓取 200 正常；`aos-comment.amap.com` 不受影响）。也就是说不是数据缺失，是 CDN 对浏览器请求的拦截。
+
+**修复**：
+1. `photoImg` 云函数新增 **GET 图片代理**：`/photoImg?w=320&url=<高德图>` → 服务端抓取后以二进制返回（`isBase64Encoded`），带 `Access-Control-Allow-Origin: *` 与 30 天浏览器缓存；支持 `w` 参数按需缩放。
+2. 前端统一 `DDN.imgSrc(url, width)`：
+   - 规划页时间轴缩略图：320px，最多 3 张候选逐张回退，全失败才显示类目占位字；
+   - 景点详情抽屉：720px；
+   - 海报：720px + `crossOrigin='anonymous'`（canvas 需要 CORS，否则无法导出）。
+3. 海报图片改为**浏览器并行加载**（不再走 base64 POST 分块），生成时间 13s → **6s**。
+
+**验证**：杭州 3 天路线（10 站）——规划页缩略图 5/5、详情抽屉 3/3（720px）全部加载；海报 10 张照片全部显示、导出成功；分享页海报生成 6 秒。
+
+证据截图：build/h2-thumbs-final.png、build/i1-poster-final.png
