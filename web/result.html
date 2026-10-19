@@ -54,6 +54,18 @@
     top: max(12px, env(safe-area-inset-top)); left: max(12px, env(safe-area-inset-left));
     background: rgba(251,251,248,.97);
   }
+  /* 腾讯 GL 原生缩放控件：统一成品牌观感（奶油底 / 细边框 / 圆角 / 轻阴影 / 34px 触区） */
+  #glMap .tmap-zoom-control {
+    background: rgba(251,251,248,.96);
+    border: .5px solid var(--hairline);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(24,33,25,.10);
+  }
+  #glMap .tmap-zoom-in, #glMap .tmap-zoom-out { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; }
+  #glMap .tmap-zoom-in-image, #glMap .tmap-zoom-out-image { width: 17px; height: 17px; opacity: .82; }
+  #glMap .tmap-zoom-spliter { background: var(--hairline); height: .5px; }
+  #glMap .tmap-compass-control, #glMap .tmap-rotate-control { filter: saturate(.4); opacity: .92; }
   body.map-lock { overflow: hidden; }
   /* 编辑模式：完成按钮浮在地图底部 */
   .edit-done {
