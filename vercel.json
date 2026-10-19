@@ -18,6 +18,7 @@
     { "source": "/privacy", "destination": "/web/privacy" },
     { "source": "/privacy.html", "destination": "/web/privacy" },
     { "source": "/assets/:path*", "destination": "/web/assets/:path*" },
+    { "source": "/photos/:path*", "destination": "/web/photos/:path*" },
     { "source": "/api/:fn", "destination": "https://ddlt-d7gvi23us2cc67847.service.tcloudbase.com/:fn" }
   ]
 }
