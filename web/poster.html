@@ -178,13 +178,17 @@
       photoOf[f.item.id] = null;
     }
     const CHUNK = 4;
+    const chunks = [];
+    for (let i = 0; i < items.length; i += CHUNK) chunks.push(items.slice(i, i + CHUNK).map(x => x || { urls: [] }));
+    const results = await Promise.all(chunks.map(async part => {
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const j = await DDN.cloudPost('photoImg', { items: part }, 26000).catch(() => null);
+        if (j && Array.isArray(j.images) && j.images.some(Boolean)) return j.images;
+      }
+      return [];
+    }));
     const got = [];
-    for (let i = 0; i < items.length; i += CHUNK) {
-      const part = items.slice(i, i + CHUNK).map(x => x || { urls: [] });
-      const j = await DDN.cloudPost('photoImg', { items: part }, 18000).catch(() => null);
-      const arr = (j && j.images) || [];
-      for (let k = 0; k < CHUNK; k++) got.push(arr[k] || null);
-    }
+    results.forEach(arr => { for (let k = 0; k < CHUNK; k++) got.push(arr[k] || null); });
     let gi = 0;
     for (const f of flat) {
       if (!(f.item.id in photoOf)) continue;
@@ -276,10 +280,10 @@
   const N = ordered.length;
   const half = Math.ceil(N / 2);
   const lefts = ordered.slice(0, half);
-  const rights = ordered.slice(half).reverse();
+  const rights = ordered.slice(half);
   const rowsMax = Math.max(lefts.length, rights.length, 1);
   const rowStep = (CONTENT_BOTTOM - CONTENT_TOP) / rowsMax;
-  const LEFT_X = 150, RIGHT_X = 300;
+  const LEFT_X = 182, RIGHT_X = 268;
   const posOf = new Map();
   lefts.forEach((f, i) => posOf.set(f, { x: LEFT_X, y: CONTENT_TOP + i * rowStep + rowStep / 2 }));
   rights.forEach((f, i) => posOf.set(f, { x: RIGHT_X, y: CONTENT_BOTTOM - i * rowStep - rowStep / 2 }));
@@ -323,7 +327,7 @@
   ctx.textAlign = 'left';
   ctx.font = '500 6.6px ' + SANS;
   ctx.fillStyle = MUTE;
-  ctx.fillText(fitText(String(route.origin.name || ''), 96), padX, startPt.y + 2.4);
+  ctx.fillText('起点 · ' + fitText(String(route.origin.name || ''), 104), startPt.x + 12, startPt.y + 2.6);
 
   // ---------- 站点：徽章 + 卡片（照片 + 名称 + 时间） ----------
   const photoSize = Math.max(24, Math.min(40, rowStep - 26));
@@ -331,9 +335,9 @@
     const pos = posOf.get(f);
     const color = f.color;
     const isLeft = pos.x < DW / 2;
-    const textW = 76;
+    const textW = 72;
     const cardW = photoSize + 6 + textW;
-    const cardX = isLeft ? LEFT_X - 30 - cardW : RIGHT_X + 30;
+    const cardX = isLeft ? LEFT_X - 26 - cardW : RIGHT_X + 26;
     const cardY = pos.y - photoSize / 2;
     // 照片
     const im = photoOf[f.item.id] || null;
