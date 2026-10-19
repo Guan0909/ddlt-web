@@ -172,12 +172,12 @@
     };
     for (const f of flat) {
       const sp = spotById[f.item.id];
-      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 3).map(posterUrl) : [];
+      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 2).map(posterUrl) : [];
       if (cands.length) { items.push({ urls: cands }); }
       else { items.push(null); }
       photoOf[f.item.id] = null;
     }
-    const CHUNK = 4;
+    const CHUNK = 5;
     const chunks = [];
     for (let i = 0; i < items.length; i += CHUNK) chunks.push(items.slice(i, i + CHUNK).map(x => x || { urls: [] }));
     const results = await Promise.all(chunks.map(async part => {
@@ -283,7 +283,7 @@
   const rights = ordered.slice(half);
   const rowsMax = Math.max(lefts.length, rights.length, 1);
   const rowStep = (CONTENT_BOTTOM - CONTENT_TOP) / rowsMax;
-  const LEFT_X = 182, RIGHT_X = 268;
+  const LEFT_X = 172, RIGHT_X = 278;
   const posOf = new Map();
   lefts.forEach((f, i) => posOf.set(f, { x: LEFT_X, y: CONTENT_TOP + i * rowStep + rowStep / 2 }));
   rights.forEach((f, i) => posOf.set(f, { x: RIGHT_X, y: CONTENT_BOTTOM - i * rowStep - rowStep / 2 }));
