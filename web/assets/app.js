@@ -321,6 +321,7 @@ window.DDN = (() => {
     if (!url) return '';
     const u = String(url);
     if (u.indexOf('data:') === 0) return u;
+    if (u.charAt(0) === '/') return u;   // 同源本地图（补图/静态资源）直接返回
     const w = Math.max(120, Math.min(1600, width || 360));
     return DIRECT_BASE + '/photoImg?w=' + w + '&url=' + encodeURIComponent(u);
   }

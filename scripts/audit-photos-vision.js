@@ -76,9 +76,16 @@ async function pool(tasks, n) {
     const city = j.city || j.cityName || f.replace(/\.json$/, '');
     for (const s of j.spots) spots.push(Object.assign({ _file: f, cityName: city, photos: s.photos || [] }, s));
   }
-  const todo = spots.filter(s => s.photos.length && !report[s._file + '|' + s.id]);
+  // 未处理的 + 上次失败的（err）都要跑；best===-1 的保留结论（另做人工/网络补图）
+  const todo = spots.filter(s => {
+    if (!s.photos.length) return false;
+    const rec = report[s._file + '|' + s.id];
+    if (!rec) return true;
+    return !!rec.err;
+  });
   console.log('总景点:', spots.length, '| 待处理:', todo.length);
   const list = LIMIT ? todo.slice(0, LIMIT) : todo;
+  if (!list.length) { console.log('没有待处理项'); return; }
   let done = 0, fail = 0;
   await pool(list.map(s => async () => {
     const imgs = [];
