@@ -368,3 +368,20 @@
 实测：首页头像 `naturalWidth=512`、显示 34×34 ✓；分享页 28×28 ✓；Vercel 与 CloudBase 两套站点均已生效。
 
 证据截图：build/c1-index-brand.png、build/c2-share-brand.png
+
+---
+
+## 十五、规划页地图左上角「放大地图」UI 优化（2026-10-19）
+
+| 项 | 改前 | 改后 |
+|---|---|---|
+| 形态 | 30px 无字小圆点（仅角落括号图标，含义不明确） | **118×34 胶囊按钮**：图标 + 文字「放大地图」，全屏态变「收起地图」 |
+| 触区/反馈 | 30px | 34px 高、圆角 999、按压 scale(.96) + 背景反馈 |
+| 底与边框 | rgba 底 + 头发丝边 | 84% 奶油底 + 10px 毛玻璃（backdrop-filter）+ 细边 + 轻阴影，压在地图文字上也干净 |
+| 安全区 | 仅 top | top/left 都适配 `safe-area-inset`（刘海屏/全屏态） |
+| 无障碍 | 有 aria-label | 补 `aria-pressed`，文案与状态同步 |
+| 原生缩放控件 | 腾讯默认白块 + 直角 | 奶油底 / 12px 圆角 / 细边 / 轻阴影 / 36px 触区 / 图标 17px（与全站一致） |
+
+实测：按钮 118×34、点击后文案「放大地图」→「收起地图」、`aria-pressed=true`、全屏贴 12/12 安全区 ✓。
+
+证据截图：build/d1-map-btn.png、build/d2-map-fullscreen.png、build/e1-map-final.png
