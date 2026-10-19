@@ -165,17 +165,23 @@
   const photoOf = {};
   try {
     const items = [];
+    const posterUrl = u => {
+      let x = String(u).replace(/^http:/, 'https:');
+      x = x.replace(/([?&])x-oss-process=[^&]*/g, '$1').replace(/[?&]$/, '');
+      return x + (x.indexOf('?') >= 0 ? '&' : '?') + 'x-oss-process=image/resize,w_720';
+    };
     for (const f of flat) {
       const sp = spotById[f.item.id];
-      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 3) : [];
-      if (cands.length) { items.push({ urls: cands }); photoOf[f.item.id] = null; }
-      else { items.push(null); photoOf[f.item.id] = null; }
+      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 3).map(posterUrl) : [];
+      if (cands.length) { items.push({ urls: cands }); }
+      else { items.push(null); }
+      photoOf[f.item.id] = null;
     }
-    const CHUNK = 12;
+    const CHUNK = 4;
     const got = [];
     for (let i = 0; i < items.length; i += CHUNK) {
       const part = items.slice(i, i + CHUNK).map(x => x || { urls: [] });
-      const j = await DDN.cloudPost('photoImg', { items: part }, 14000).catch(() => null);
+      const j = await DDN.cloudPost('photoImg', { items: part }, 18000).catch(() => null);
       const arr = (j && j.images) || [];
       for (let k = 0; k < CHUNK; k++) got.push(arr[k] || null);
     }
