@@ -16,7 +16,44 @@ function hash(s) {
   return h.toString(36);
 }
 
+// 高德部分图片 CDN 对浏览器直接请求会 ERR_CONNECTION_CLOSED（服务器抓取正常）；
+// 前端通过 GET /photoImg?url=... 走本函数代理，浏览器即可正常加载。
+async function imageGet(event) {
+  const q = event.queryStringParameters || {};
+  let url = String(q.url || '');
+  try { url = decodeURIComponent(url); } catch (e) {}
+  const w = Math.min(1600, Math.max(120, parseInt(q.w, 10) || 0));
+  if (!url) return { statusCode: 400, headers: { 'Content-Type': 'text/plain' }, body: 'missing url' };
+  let host = '';
+  try { host = new URL(url).host; } catch (e) { host = ''; }
+  if (!/(^\.|\b)(store\.is\.autonavi\.com|aos-comment\.amap\.com|aos-cdn-image\.amap\.com)$/.test(host) && !/aliyuncs\.com$/.test(host)) {
+    return { statusCode: 403, headers: { 'Content-Type': 'text/plain' }, body: 'host not allowed' };
+  }
+  if (w) {
+    url = url.replace(/([?&])x-oss-process=[^&]*/g, '$1').replace(/[?&]$/, '');
+    url += (url.indexOf('?') >= 0 ? '&' : '?') + 'x-oss-process=image/resize,w_' + w;
+  }
+  try {
+    const r = await fetch(url, { headers: { Referer: 'https://www.amap.com/' }, signal: AbortSignal.timeout(9000) });
+    if (!r.ok) return { statusCode: 502, headers: { 'Content-Type': 'text/plain' }, body: 'upstream ' + r.status };
+    const buf = Buffer.from(await r.arrayBuffer());
+    return {
+      statusCode: 200,
+      headers: {
+        'Content-Type': r.headers.get('content-type') || 'image/jpeg',
+        'Cache-Control': 'public, max-age=2592000, immutable',
+        'Access-Control-Allow-Origin': '*',
+      },
+      body: buf.toString('base64'),
+      isBase64Encoded: true,
+    };
+  } catch (e) {
+    return { statusCode: 504, headers: { 'Content-Type': 'text/plain' }, body: 'fetch failed' };
+  }
+}
+
 exports.main = async (event) => {
+  if ((event.httpMethod || '').toUpperCase() === 'GET' || event.queryStringParameters) return imageGet(event);
   const body = parseBody(event) || {};
   // 兼容两种入参：urls:[..]（单图）或 items:[{urls:[..]}（多候选，逐张尝试）
   let items = [];

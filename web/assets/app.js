@@ -316,6 +316,15 @@ window.DDN = (() => {
     throw lastErr || new Error('网络不稳');
   }
 
+  // 图片代理 URL：高德部分图片 CDN 对浏览器直连会断连，统一走 photoImg GET 代理（带缓存/可缩放）
+  function imgSrc(url, width) {
+    if (!url) return '';
+    const u = String(url);
+    if (u.indexOf('data:') === 0) return u;
+    const w = Math.max(120, Math.min(1600, width || 360));
+    return DIRECT_BASE + '/photoImg?w=' + w + '&url=' + encodeURIComponent(u);
+  }
+
   // 云端生成路线：返回 { route, routeId }；失败抛错由调用方回退
   async function cloudGenRoute(opts) {
     const j = await cloudPost('genRoute', opts, 9000);
@@ -414,7 +423,7 @@ window.DDN = (() => {
     makeProjector, mercatorProjector, fitZoom, fetchBaseMap,
     smoothPathD, smoothTrace, MAP_SOFT_FILTER,
     attachStops, refreshSuburb, recalcTotals, retime, rebuildStopsFromLib,
-    cloudPost, cloudAvailable, cloudGenRoute,
+    cloudPost, cloudAvailable, cloudGenRoute, imgSrc,
     toast, openDrawer,
   };
 })();

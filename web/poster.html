@@ -161,47 +161,26 @@
   const prj = p => projectRaw(p);
   const O = prj({ lng: route.origin.lng, lat: route.origin.lat });
 
-  // ---------- 景点图片：云端 photoImg 转 base64（跨域图直接画会污染 canvas） ----------
+
+  // ---------- 景点图片：GET 代理（浏览器并行加载，带缓存） ----------
   const photoOf = {};
   try {
-    const items = [];
-    const posterUrl = u => {
-      let x = String(u).replace(/^http:/, 'https:');
-      x = x.replace(/([?&])x-oss-process=[^&]*/g, '$1').replace(/[?&]$/, '');
-      return x + (x.indexOf('?') >= 0 ? '&' : '?') + 'x-oss-process=image/resize,w_720';
-    };
-    for (const f of flat) {
+    await Promise.all(flat.map(f => new Promise(res => {
       const sp = spotById[f.item.id];
-      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 2).map(posterUrl) : [];
-      if (cands.length) { items.push({ urls: cands }); }
-      else { items.push(null); }
+      const cands = sp && Array.isArray(sp.photos) ? sp.photos.slice(0, 2) : [];
       photoOf[f.item.id] = null;
-    }
-    const CHUNK = 5;
-    const chunks = [];
-    for (let i = 0; i < items.length; i += CHUNK) chunks.push(items.slice(i, i + CHUNK).map(x => x || { urls: [] }));
-    const results = await Promise.all(chunks.map(async part => {
-      for (let attempt = 0; attempt < 3; attempt++) {
-        const j = await DDN.cloudPost('photoImg', { items: part }, 26000).catch(() => null);
-        if (j && Array.isArray(j.images) && j.images.some(Boolean)) return j.images;
-      }
-      return [];
-    }));
-    const got = [];
-    results.forEach(arr => { for (let k = 0; k < CHUNK; k++) got.push(arr[k] || null); });
-    let gi = 0;
-    for (const f of flat) {
-      if (!(f.item.id in photoOf)) continue;
-      const rec = got[gi++];
-      if (!rec || !rec.b64) continue;
-      const im = await new Promise(res => {
-        const x = new Image();
-        x.onload = () => res(x);
-        x.onerror = () => res(null);
-        x.src = 'data:' + (rec.type || 'image/jpeg') + ';base64,' + rec.b64;
-      });
-      if (im) photoOf[f.item.id] = im;
-    }
+      if (!cands.length) { res(); return; }
+      let ci = 0;
+      const tryNext = () => {
+        if (ci >= cands.length) { res(); return; }
+        const im = new Image();
+        im.decoding = 'async';
+        im.onload = () => { photoOf[f.item.id] = im; res(); };
+        im.onerror = tryNext;
+        im.src = DDN.imgSrc(cands[ci++], 720);
+      };
+      tryNext();
+    })));
   } catch (e) { /* 图片失败不影响海报 */ }
 
   // ---------- 纸底 + 淡化底图（整版铺满，只做质感） ----------

@@ -970,17 +970,27 @@
     const spot = spotById(item.id);
     if (spot && spot.a_level) name.appendChild(DDN.el('span', 'stop-alevel', String(spot.a_level).toUpperCase() + ' 景区'));
     body.appendChild(name);
-    // 缩略图（高德首图）：加载失败回退类目占位，点了打开轻详情
-    if (spot && spot.photo) {
+    // 缩略图：走 photoImg 代理（高德 CDN 对浏览器直连会断连），多图回退，最后类目占位
+    const thumbCands = spot ? [...new Set((spot.photos || []).concat(spot.photo ? [spot.photo] : []).filter(Boolean))] : [];
+    if (thumbCands.length) {
       const holder = DDN.el('div', 'stop-thumb');
       const im = DDN.el('img');
-      im.src = spot.photo;
+      let ti = 0;
+      const tryNext = () => {
+        if (ti >= thumbCands.length) {
+          im.remove();
+          holder.className = 'stop-thumb ph';
+          holder.textContent = String((spot && spot.cat) || '景').slice(0, 1);
+          return;
+        }
+        im.src = DDN.imgSrc(thumbCands[ti++], 320);
+      };
       im.alt = '';
       im.loading = 'lazy';
       im.decoding = 'async';
-      im.referrerPolicy = 'no-referrer';
       im.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:8px;display:block';
-      im.onerror = () => { im.remove(); holder.className = 'stop-thumb ph'; holder.textContent = String(spot.cat || '景').slice(0, 1); };
+      im.onerror = tryNext;
+      tryNext();
       holder.appendChild(im);
       holder.onclick = () => openSpotSheet(spot);
       body.appendChild(holder);
@@ -1127,7 +1137,7 @@
         const wrap = DDN.el('div', 'sheet-photos');
         for (const u of photos) {
           const im = DDN.el('img');
-          im.src = u;
+          im.src = DDN.imgSrc(u, 720);
           im.alt = spot.name;
           im.loading = 'lazy';
           im.referrerPolicy = 'no-referrer';
