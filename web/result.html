@@ -73,7 +73,7 @@
   /* 比例尺：隐藏腾讯默认黑框样式，改用品牌胶囊（自绘，见 setMapScale） */
   #glMap .tmap-scale-control { display: none !important; }
   .map-scale {
-    position: absolute; left: max(14px, env(safe-area-inset-left)); bottom: 44px; z-index: 2;
+    position: absolute; left: max(12px, env(safe-area-inset-left)); bottom: 44px; z-index: 2;
     display: inline-flex; align-items: center; gap: 6px;
     height: 20px; padding: 0 8px; border-radius: 999px;
     background: rgba(251,251,248,.86); border: .5px solid var(--hairline);
@@ -89,12 +89,12 @@
   #glMap div:has(.logo-text) a img { height: 14px !important; width: auto !important; opacity: .65; }
   /* 指南针：奶油底 + 细边框，与缩放控件同一套语言 */
   #glMap .rotate-circle .compass-circle-background {
-    width: 34px; height: 34px; background: rgba(251,251,248,.94);
+    width: 30px; height: 30px; background: rgba(251,251,248,.88);
     border: .5px solid var(--hairline); border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(24,33,25,.10);
+    box-shadow: 0 2px 8px rgba(24,33,25,.09);
   }
-  #glMap .compass-circle { width: 34px; height: 34px; }
-  #glMap .compass-img { width: 11px; height: 26px; opacity: .9; filter: saturate(.75); }
+  #glMap .compass-circle { width: 30px; height: 30px; }
+  #glMap .compass-img { width: 9px; height: 22px; opacity: .85; filter: saturate(.7); }
   #glMap .rotate-circle { filter: none; }
   body.map-lock { overflow: hidden; }
   /* 编辑模式：完成按钮浮在地图底部 */
