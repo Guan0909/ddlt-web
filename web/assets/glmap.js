@@ -100,24 +100,27 @@ window.DDNGL = (() => {
       const labelWidth = (name, size) => Math.min(name.length, 9) * size + 6;
       const crowded = (placed, lng, lat, wp) => placed.some(q =>
         Math.abs(q.lng - lng) < (q.w + wp) / 2 / k && Math.abs(q.lat - lat) < 18 / k);
+      const shortName = (name, max) => {
+        const s = String(name || '');
+        return s.length > max ? s.slice(0, max - 1) + '…' : s;
+      };
 
       // 站点名先占位：必显，遇近邻换到点下方一档（不避让底图——路线主体的可读性优先）
+      // 序号由 marker 徽章（实心圆 + 白色数字）表达，标签只留名字，减少重复信息
       const placed = [];
+      const originLabel = curDay.originLabel || origin.name;
       const stopPts = [
-        { id: 'lborigin', lng: origin.lng, lat: origin.lat, name: origin.name },
+        { id: 'lborigin', lng: origin.lng, lat: origin.lat, name: originLabel, isOrigin: true },
         ...stops.map(s => ({ id: 'lb' + s.id, lng: s.coord[0], lat: s.coord[1], name: s.name })),
       ];
       const stopGeoms = stopPts.map(p => {
         const wp = labelWidth(p.name, 12);
         const near = crowded(placed, p.lng, p.lat, wp);
         placed.push({ lng: p.lng, lat: p.lat, w: wp });
-        const sid = String(p.id).replace(/^lb/, '');
-        const seqIdx = stops.findIndex(s => s.id === sid);
-        const seq = seqIdx >= 0 ? (seqIdx + 1) + '. ' : '';
         return {
           id: p.id, styleId: near ? 'stopLabelAlt' : 'stopLabel', rank: 2,
           position: new TMap.LatLng(p.lat, p.lng),
-          content: seq + (p.name.length > 9 ? p.name.slice(0, 8) + '…' : p.name),
+          content: shortName(p.name, p.isOrigin ? 11 : 9),
         };
       });
 
@@ -152,12 +155,12 @@ window.DDNGL = (() => {
         collisionOptions: { sameSource: true, crossSource: true, vectorBaseMapSource: false },
         styles: {
           stopLabel: new TMap.LabelStyle({
-            color: '#182119', size: 12, offset: { x: 0, y: -16 },
-            strokeColor: '#FBFBF8', strokeWidth: 3,
+            color: '#182119', size: 12, offset: { x: 0, y: -19 },
+            strokeColor: '#FBFBF8', strokeWidth: 3.4,
           }),
           stopLabelAlt: new TMap.LabelStyle({
             color: '#182119', size: 12, offset: { x: 0, y: 22 },
-            strokeColor: '#FBFBF8', strokeWidth: 3,
+            strokeColor: '#FBFBF8', strokeWidth: 3.4,
           }),
         },
         geometries: stopGeoms,
@@ -420,7 +423,7 @@ window.DDNGL = (() => {
     // setDay({ origin:{lng,lat,name}, stops:[{id,name,coord:[lng,lat]}], others:[spots 库], color,
     //        legs?:[{from,to,mode}], mode?:'plan'|'edit', keepView?:bool })
     // plan：只画路线+站点（其余景点不出现）；edit：画全部景点（无路线），站点更醒目，点击切换加入/移出
-    function setDay({ origin, stops, others, color, legs, mode, keepView }) {
+    function setDay({ origin, stops, others, color, legs, mode, keepView, originLabel, city }) {
       clearLayers();
       const token = ++pathToken;
       const edit = mode === 'edit';
@@ -470,7 +473,7 @@ window.DDNGL = (() => {
       const k = Math.max(1, Math.min((w - padBase - padRight) / spanLng, (h - padBase * 2) / spanLat)); // px / 度
       const fitZoom = Math.log2(k * 360 / 256);
 
-      curDay = { origin, stops, others, edit, color, legs };   // others 全量保留：底图 POI 拾取匹配用；渲染层只在编辑模式画
+      curDay = { origin, stops, others, edit, color, legs, originLabel, city };   // others 全量保留：底图 POI 拾取匹配用；渲染层只在编辑模式画
       rebuildLabels(k, fitZoom);
 
       // 路线（仅规划模式）：真实路径到达前不画线（避免"看似贴路的假象"）；
@@ -508,19 +511,25 @@ window.DDNGL = (() => {
         }
       }
 
-      // 起点 + 站点标记（编辑模式站点更大更醒目）
-      const stopSize = edit ? 26 : 22;
+      // 起点 + 站点标记：站点用「实心圆 + 白色序号」徽章（与主流地图一致，序号不再挤在文字里）
+      const stopSize = edit ? 30 : 24;
+      const stopStyles = {
+        origin: new TMap.MarkerStyle({ width: 34, height: 34, src: originURI(), anchor: { x: 17, y: 17 } }),
+      };
+      stops.forEach((s, i) => {
+        stopStyles['n' + (i + 1)] = new TMap.MarkerStyle({
+          width: stopSize, height: stopSize, src: badgeURI(color, i + 1),
+          anchor: { x: stopSize / 2, y: stopSize / 2 },
+        });
+      });
       const stopGeoms = [
         { id: 'origin', styleId: 'origin', position: new TMap.LatLng(origin.lat, origin.lng) },
-        ...stops.map(s => ({ id: s.id, styleId: 'stop', position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } })),
+        ...stops.map((s, i) => ({ id: s.id, styleId: 'n' + (i + 1), position: new TMap.LatLng(s.coord[1], s.coord[0]), properties: { spot: s } })),
       ];
       stopLayer = new TMap.MultiMarker({
         map,
         isStopPropagation: true,
-        styles: {
-          origin: new TMap.MarkerStyle({ width: 34, height: 34, src: originURI(), anchor: { x: 17, y: 17 } }),
-          stop: new TMap.MarkerStyle({ width: stopSize, height: stopSize, src: dotURI(color, edit ? 10 : 8, '#fff'), anchor: { x: stopSize / 2, y: stopSize / 2 } }),
-        },
+        styles: stopStyles,
         geometries: stopGeoms,
       });
       if (edit && onSpotToggle) {

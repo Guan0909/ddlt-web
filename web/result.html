@@ -70,6 +70,32 @@
   #glMap .tmap-zoom-in-image, #glMap .tmap-zoom-out-image { width: 17px; height: 17px; opacity: .82; }
   #glMap .tmap-zoom-spliter { background: var(--hairline); height: .5px; }
   #glMap .tmap-compass-control, #glMap .tmap-rotate-control { filter: saturate(.4); opacity: .92; }
+  /* 比例尺：隐藏腾讯默认黑框样式，改用品牌胶囊（自绘，见 setMapScale） */
+  #glMap .tmap-scale-control { display: none !important; }
+  .map-scale {
+    position: absolute; left: max(14px, env(safe-area-inset-left)); bottom: 44px; z-index: 2;
+    display: inline-flex; align-items: center; gap: 6px;
+    height: 20px; padding: 0 8px; border-radius: 999px;
+    background: rgba(251,251,248,.86); border: .5px solid var(--hairline);
+    box-shadow: 0 1px 6px rgba(24,33,25,.08);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    font-size: 10.5px; color: var(--ink-3); letter-spacing: .02em;
+    pointer-events: none;
+  }
+  .map-scale[hidden] { display: none; }
+  .map-scale i { display: block; height: 3px; border-radius: 2px; background: var(--ink-3); opacity: .75; }
+  /* 腾讯 logo / 版权：缩小降饱和，给比例尺让位 */
+  #glMap .logo-text { font-size: 9px !important; color: var(--ink-3) !important; opacity: .8; letter-spacing: 0; }
+  #glMap div:has(.logo-text) a img { height: 14px !important; width: auto !important; opacity: .65; }
+  /* 指南针：奶油底 + 细边框，与缩放控件同一套语言 */
+  #glMap .rotate-circle .compass-circle-background {
+    width: 34px; height: 34px; background: rgba(251,251,248,.94);
+    border: .5px solid var(--hairline); border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(24,33,25,.10);
+  }
+  #glMap .compass-circle { width: 34px; height: 34px; }
+  #glMap .compass-img { width: 11px; height: 26px; opacity: .9; filter: saturate(.75); }
+  #glMap .rotate-circle { filter: none; }
   body.map-lock { overflow: hidden; }
   /* 编辑模式：完成按钮浮在地图底部 */
   .edit-done {
@@ -384,6 +410,7 @@
     </div>
     <div class="edit-results" id="editResults" hidden></div>
     <div class="map-fade"></div>
+    <div class="map-scale" id="mapScale" hidden><i></i><span></span></div>
     <div class="edit-day-bar" id="editDayBar" hidden></div>
   </div>
 
@@ -597,6 +624,36 @@
     }
   }
 
+  // 起点名太长会挤占地图：去掉城市前缀并截断（如「成都四川大学科华北路亚朵酒店」→「四川大学科华北路亚朵…」）
+  function shortOriginName(name, city) {
+    let n = String(name || '');
+    if (city && n.indexOf(city) === 0) n = n.slice(city.length);
+    return n.length > 11 ? n.slice(0, 10) + '…' : n;
+  }
+
+  // 自绘比例尺：按当前缩放/纬度算「米/像素」，取 1/2/5×10ⁿ 的整数距离
+  function setMapScale() {
+    const el = $('mapScale');
+    if (!el) return;
+    const map = glCtl && glCtl.map;
+    if (!map || !map.getZoom || !map.getCenter) { el.hidden = true; return; }
+    try {
+      const z = map.getZoom();
+      const c = map.getCenter();
+      const mpp = 156543.03392 * Math.cos(c.getLat() * Math.PI / 180) / Math.pow(2, z);
+      const target = mpp * 56;
+      const pow = Math.pow(10, Math.floor(Math.log10(target)));
+      const n = target / pow;
+      const mult = n >= 5 ? 5 : n >= 2 ? 2 : 1;
+      const meters = mult * pow;
+      const px = Math.max(22, Math.round(meters / mpp));
+      el.querySelector('i').style.width = px + 'px';
+      const v = meters >= 1000 ? (meters / 1000) + '' : Math.round(meters) + '';
+      el.querySelector('span').textContent = meters >= 1000 ? v + ' 公里' : v + ' 米';
+      el.hidden = false;
+    } catch (e) { el.hidden = true; }
+  }
+
   // ---------- 动态交互地图：大图拖拽平移（免重拉）+ 按钮缩放（重拉）+ 点选景点加入当天 ----------
   const MW = 400, MH = 280, PAD = 36;          // 视口
   const BW = 800, BH = 560;                    // 底图实际取图尺寸（2 倍，平移有冗余）
@@ -625,7 +682,10 @@
         legs,
         mode: editMode ? 'edit' : 'plan',
         keepView: !!keepView,
+        city: route.city,
+        originLabel: shortOriginName(route.origin.name, route.city),
       });
+      requestAnimationFrame(setMapScale);
       return;
     }
     const reqId = ++mapReq;
@@ -1367,6 +1427,9 @@
     const on = $('mapHero').classList.toggle('fullscreen');
     document.body.classList.toggle('map-lock', on);
     syncMapExpand();
+    // 全屏切换后容器尺寸变化：GL 重排一次再刷新比例尺
+    setTimeout(setMapScale, 260);
+    setTimeout(setMapScale, 800);
   };
 
   // ---------- 编辑旅途：全屏选点模式 ----------
@@ -1589,6 +1652,11 @@
           onSpotTap: s => confirmAddStop(s, route.dayPlans[cur]),
           onSpotToggle: s => toggleSpotEdit(s),
         });
+        if (glCtl && glCtl.map) {
+          glCtl.map.on('idle', setMapScale);
+          glCtl.map.on('zoom', setMapScale);
+          setMapScale();
+        }
       } catch (e) { glCtl = null; }
     }
     if (!glCtl) $('editBtn').style.display = 'none';   // GL 不可用（回退静态图）时无编辑模式
