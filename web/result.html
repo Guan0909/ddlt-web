@@ -22,7 +22,6 @@
   .back-btn { display: flex; align-items: center; color: var(--ink); }
   .topbar-title { flex: 1; min-width: 0; }
   .topbar-title b { font-family: var(--serif); font-size: 16.5px; display: block; letter-spacing: .02em; }
-  .topbar-title span { font-size: 11px; color: var(--ink-2); letter-spacing: .04em; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
   /* 全幅地图（P3 离线 SVG 自绘，无在线底图） */
   .map-hero { position: relative; }
@@ -365,7 +364,6 @@
     </button>
     <div class="topbar-title">
       <b id="ttTitle"></b>
-      <span id="ttSub"></span>
     </div>
   </header>
 
@@ -439,7 +437,6 @@
   $('backBtn').onclick = () => { location.href = '/index.html'; };
   $('ttTitle').textContent = `${route.city || ''} · ${DDN.dayCn(route.days)}日`;
   // 地图/海报不画返程段（§9.5），文案不承诺「环线」，只说时刻表里真实存在的「晚上回到这里」
-  $('ttSub').textContent = `${DDN.dateRange(route.startDate, route.days)} · 从${route.origin.name}出发，晚上回到这里`;
   document.title = `点定旅途 · ${route.city || ''}${DDN.dayCn(route.days)}日`;
 
   // ---------- 出发时间：可点选修改；按可用时间自动决定一天排几站 ----------

@@ -307,6 +307,79 @@ for (let round = 0; round < 12; round++) {
 return buckets;
 }
 
+// ---------- 低载日补点 ----------
+// 目标：避免「某一天只有 1 个景点」的失衡（典型是远郊孤点日：黄龙溪这种单点远郊）。
+// 规则（确定性）：
+//   ① 目标站数 = round(总站数/天数)，夹在 2~5；远郊日最多补到 3 站（一天塞太多不现实）。
+//   ② 远郊日：以「离起点最远的点」为远端锚点，只补**顺路走廊**上的点
+//      （d(起点,s)+d(s,远端) ≤ 直线距离×1.25 + 5km，即绕路 ≤25%），避免为了凑数把西边的点塞进东南日；
+//   ③ 市区日：只补同类型、20km 内的点（不跨区拼日）。
+//   ④ 选点评分 = 闭环绕路增量 + 游览时长惩罚（远郊日通勤长，时长长的点容易排不下）；
+//      容量留 15% 余量，补进来排不下的点由时钟推演自然裁掉。无随机数。
+function padLowLoadDays(buckets, origin, allSpots, opts) {
+  const cityVisitCap = (opts && opts.cityVisitCap) || 480;
+  const days = buckets.length || 1;
+  let usedCount = 0;
+  const usedIds = new Set();
+  for (const b of buckets) for (const s of b.spots) { usedIds.add(s.id); usedCount++; }
+  const baseTarget = Math.max(2, Math.min(5, Math.round(usedCount / days)));
+  const capOf = b => (b.suburb ? SUBURB_GROUP_MAX_MIN : cityVisitCap);
+  const durOf = b => b.spots.reduce((t, x) => t + (x.dur || 90), 0);
+  const orderCost = spots => {
+    const ord = orderStops(spots, origin, null);
+    const last = ord[ord.length - 1];
+    const back = last ? haversineM(pt(last.coord), pt(origin)) : 0;
+    return routeCostOf(ord, origin) + back;
+  };
+  const sparePool = allSpots.filter(s => s && s.coord && !usedIds.has(s.id) &&
+    estimateCommute(origin, pt(s.coord)).min <= TOO_FAR_ONEWAY_MIN);
+  const distToBucket = (s, b) => Math.min(...b.spots.map(x => haversineM(pt(x.coord), pt(s.coord))));
+  const added = [];
+
+  for (let round = 0; round < 12; round++) {
+    const lows = buckets
+      .filter(b => b.spots.length < Math.min(b.suburb ? 3 : baseTarget, MAX_STOPS_PER_DAY))
+      .sort((x, y) => x.spots.length - y.spots.length || durOf(x) - durOf(y));
+    const low = lows[0];
+    if (!low) break;
+    const capEff = Math.round(capOf(low) * (low.suburb ? 0.85 : 0.95));
+    const base = orderCost(low.spots);
+    // 远郊日：以离起点最远的点为远端锚点，构造顺路走廊
+    let far = null, straight = 0;
+    if (low.suburb) {
+      for (const x of low.spots) {
+        const d = haversineM(pt(origin), pt(x.coord));
+        if (!far || d > straight) { far = x; straight = d; }
+      }
+    }
+    let best = null;
+    for (const s of sparePool) {
+      if (usedIds.has(s.id)) continue;
+      if (durOf(low) + (s.dur || 90) > capEff) continue;
+      const same = !!s.suburb === !!low.suburb;
+      const d = distToBucket(s, low);
+      if (low.suburb && far) {
+        const detour = haversineM(pt(origin), pt(s.coord)) + haversineM(pt(s.coord), pt(far.coord));
+        if (detour > straight * 1.35 + 8000) continue;                 // 不顺路（绕路超过 35%+8km）
+        if (!same && detour > straight * 1.12 + 3000) continue;   // 跨类型：只补基本顺路的（≤12% 绕路）
+      } else {
+        if (!same || d > 20000) continue;
+      }
+      const delta = orderCost(low.spots.concat([s])) - base;
+      const score = delta + Math.max(0, (s.dur || 90) - 60) * 180;
+      if (!best || score < best.score - 1 ||
+          (Math.abs(score - best.score) <= 1 && (s.heat > best.s.heat || (s.heat === best.s.heat && s.id < best.s.id)))) {
+        best = { s, score };
+      }
+    }
+    if (!best) break;
+    low.spots.push(best.s);
+    usedIds.add(best.s.id);
+    added.push(best.s);
+  }
+  return { target: baseTarget, added };
+}
+
 function planDays(candidates, days, anchorSpot, opts) {
   const cityVisitCap = (opts && opts.cityVisitCap) || 480;
   const buckets = candidates.suburbGroups.map(g => ({ spots: g.slice(), pinned: null, suburb: true }));
@@ -796,6 +869,9 @@ function genRoute(opts) {
       }
     }
   }
+
+  // 低载日补点：远郊孤点日 / 稀疏日补齐到目标站数（确定性，就近优先）
+  const padInfo = padLowLoadDays(buckets, origin, spots, { cityVisitCap });
 
   // 逐日推演 + 空日保护：0 站的日先用当日被裁点中热度最高者单点重试；
   // 仍为空则移除该日——日期前移会改变周一口径，幸存日按新日期重推演（最多 3 轮收敛）

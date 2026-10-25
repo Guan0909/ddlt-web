@@ -103,6 +103,16 @@
     font-size: 12.5px; color: var(--ink-3); letter-spacing: .04em;
   }
   .route-save-hint { font-size: 11px; color: var(--ink-3); text-align: center; margin-top: 14px; }
+  /* 底部操作条：主按钮 + 分享按钮（复制链接 / 系统分享） */
+  .btn-share {
+    flex: none; display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    min-width: 92px; padding: 16px 15px; border-radius: 999px;
+    border: .5px solid var(--hairline); background: rgba(251,251,248,.94);
+    font-size: 14px; font-weight: 600; letter-spacing: .04em; color: var(--ink);
+    transition: opacity .15s, transform .1s;
+  }
+  .btn-share:active { opacity: .8; transform: scale(.98); }
+  .btn-share .ic { width: 15px; height: 15px; }
 </style>
 </head>
 <body>
@@ -129,7 +139,13 @@
   <div class="tab-panel" id="panelPoster"></div>
 
   <div class="dock" id="dock" hidden>
-    <button class="btn-primary" id="saveBtn">保存图片</button>
+    <div class="dock-row">
+      <button class="btn-primary" id="saveBtn">保存图片</button>
+      <button class="btn-share" id="shareBtn" aria-label="分享链接">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5"/><path d="M4 14v5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"/></svg>
+        <span>分享</span>
+      </button>
+    </div>
   </div>
 
 </div>
@@ -455,6 +471,35 @@
   dock.hidden = false;
   const saveBtnEl = document.getElementById('saveBtn');
   if (saveBtnEl) saveBtnEl.onclick = () => { if (activeTab === 'poster') savePosterImage(); else saveRouteCard(); };
+
+  // 分享按钮：优先系统分享（移动端），否则复制分享链接
+  const shareBtnEl = document.getElementById('shareBtn');
+  if (shareBtnEl) shareBtnEl.onclick = async () => {
+    const url = id ? location.origin + '/share?id=' + id : location.href;
+    const title = `点定旅途 · ${route.city || ''}${DDN.dayCn(route.days)}日路线`;
+    if (navigator.share) {
+      try { await navigator.share({ title, text: '这条路线排得挺顺，看看：', url }); return; }
+      catch (e) { if (e && e.name === 'AbortError') return; }
+    }
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('no clipboard');
+      await navigator.clipboard.writeText(url);
+      DDN.toast('分享链接已复制');
+      return;
+    } catch (e) { /* 继续用兼容方案 */ }
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = url;
+      ta.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      DDN.toast('分享链接已复制');
+    } catch (e) {
+      DDN.toast('复制失败，请长按地址栏手动复制');
+    }
+  };
 })();
 </script>
 </body>
