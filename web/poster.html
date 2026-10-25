@@ -184,6 +184,15 @@
     })));
   } catch (e) { /* 图片失败不影响海报 */ }
 
+  // ---------- 品牌头像（页脚品牌区用；同源图片，canvas 不会跨域） ----------
+  const brandImg = await new Promise(res => {
+    const im = new Image();
+    im.crossOrigin = 'anonymous';
+    im.onload = () => res(im);
+    im.onerror = () => res(null);
+    im.src = '/brand/avatar-square-512.png';
+  });
+
   // ---------- 纸底 + 淡化底图（整版铺满，只做质感） ----------
   ctx.fillStyle = PAPER;
   ctx.fillRect(0, 0, DW, DH);
@@ -379,19 +388,49 @@
     ctx.textAlign = 'left';
   });
 
-  // ---------- 页脚 ----------
-  ctx.font = '700 8.2px ' + SERIF;
-  setLS(2.6);
+  // ---------- 页脚：品牌头像 + 名字（左），版权说明（右） ----------
+  const av = 22;                       // 头像直径（设计单位）
+  const avCx = padX + av / 2;
+  const avCy = brandY - av / 2 + 3.4;  // 与名字基线视觉居中
+  // 白色圆底 + 细描边，让透明底的产品头像在奶油纸面上有边界
+  ctx.beginPath();
+  ctx.arc(avCx, avCy, av / 2, 0, Math.PI * 2);
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fill();
+  ctx.lineWidth = 0.8;
+  ctx.strokeStyle = 'rgba(24,33,25,.16)';
+  ctx.stroke();
+  if (brandImg) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(avCx, avCy, av / 2 - 0.9, 0, Math.PI * 2);
+    ctx.clip();
+    const iw = av * 0.82;
+    ctx.drawImage(brandImg, avCx - iw / 2, avCy - iw / 2, iw, iw);
+    ctx.restore();
+  } else {
+    // 头像加载失败：画一个品牌色圆点兜底
+    ctx.beginPath();
+    ctx.arc(avCx, avCy, av * 0.22, 0, Math.PI * 2);
+    ctx.fillStyle = GREEN;
+    ctx.fill();
+  }
+  // 品牌名（稍大、加字距，和头像组成 lockup）
+  const brandTextX = padX + av + 7;
+  ctx.font = '700 9px ' + SERIF;
+  setLS(2.3);
   ctx.fillStyle = INK;
-  ctx.fillText('点定旅途', padX, brandY);
+  ctx.textAlign = 'left';
+  ctx.fillText('点定旅途', brandTextX, brandY);
   setLS(0);
+  // 右侧版权说明
   ctx.font = '400 6.2px ' + SANS;
   ctx.fillStyle = MUTE;
   ctx.textAlign = 'right';
-  ctx.fillText('概览路线（非真实导航）· DECIDENOW.ASIA', right, brandY);
+  ctx.fillText('概览路线（非真实导航）', right, brandY);
   ctx.font = '400 5.4px ' + SANS;
   ctx.fillStyle = 'rgba(90,90,78,.55)';
-  ctx.fillText(baseImg ? '底图 © 腾讯位置服务' : '', right, brandY + 8);
+  ctx.fillText((baseImg ? '底图 © 腾讯位置服务 · ' : '') + 'DECIDENOW.ASIA', right, brandY + 8);
   ctx.textAlign = 'left';
   // ---------- 导出 ----------
   const img = document.getElementById('pimg');
