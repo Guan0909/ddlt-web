@@ -46,6 +46,10 @@
   }
   .map-expand:active { transform: scale(.96); background: rgba(243,245,240,.98); }
   .map-expand .ic { width: 16px; height: 16px; color: var(--ink); flex: none; }
+  /* 展开/收起图标按全屏状态互斥显示（SVG 不认 hidden 属性，必须用 CSS 控制） */
+  .map-expand .ic-close { display: none; }
+  .map-hero.fullscreen .map-expand .ic-open { display: none; }
+  .map-hero.fullscreen .map-expand .ic-close { display: block; }
   .map-hero.fullscreen {
     position: fixed; inset: 0; z-index: 70; background: var(--paper);
   }
@@ -370,7 +374,7 @@
     <div id="glMap" style="display:none;width:100%;height:280px"></div>
     <button class="map-expand" id="mapExpand" aria-label="放大地图" aria-pressed="false">
       <svg class="ic ic-open" viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/></svg>
-      <svg class="ic ic-close" viewBox="0 0 24 24" hidden><path d="M5 8h5V3M19 8h-5V3M5 16h5v5M19 16h-5v5"/></svg>
+      <svg class="ic ic-close" viewBox="0 0 24 24"><path d="M5 8h5V3M19 8h-5V3M5 16h5v5M19 16h-5v5"/></svg>
       <span id="mapExpandLabel">放大地图</span>
     </button>
     <button class="edit-done" id="editDone" hidden>完成</button>
@@ -1354,16 +1358,18 @@
   };
 
   // 放大地图：全屏/收起切换（GL 会自行监听容器尺寸变化重排，无需手动调用）
-  $('mapExpand').onclick = () => {
-    const hero = $('mapHero');
-    const on = hero.classList.toggle('fullscreen');
-    document.body.classList.toggle('map-lock', on);
-    $('mapExpand').querySelector('.ic-open').hidden = on;
-    $('mapExpand').querySelector('.ic-close').hidden = !on;
+  // 图标显隐由 CSS 按 .fullscreen 控制；这里只同步文案与无障碍状态
+  function syncMapExpand() {
+    const on = $('mapHero').classList.contains('fullscreen');
     $('mapExpand').setAttribute('aria-label', on ? '收起地图' : '放大地图');
     $('mapExpand').setAttribute('aria-pressed', on ? 'true' : 'false');
     const lbl = $('mapExpandLabel');
     if (lbl) lbl.textContent = on ? '收起地图' : '放大地图';
+  }
+  $('mapExpand').onclick = () => {
+    const on = $('mapHero').classList.toggle('fullscreen');
+    document.body.classList.toggle('map-lock', on);
+    syncMapExpand();
   };
 
   // ---------- 编辑旅途：全屏选点模式 ----------
@@ -1559,6 +1565,7 @@
     $('editSearchInput').value = '';
     $('mapHero').classList.remove('fullscreen', 'editing');
     document.body.classList.remove('map-lock');
+    syncMapExpand();
     setHint();
     await applyRetime(cur);   // 时间轴全量重排校验
     // 自定义站点最容易被"时间排不下"挤掉：明确告知，别让用户以为加了没生效

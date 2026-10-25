@@ -20,6 +20,13 @@
   .brandbar a { display: inline-flex; align-items: center; gap: 9px; color: var(--ink); text-decoration: none; }
   .brandbar .logo { width: 28px; height: 28px; display: block; }
   .brandbar span { font-family: var(--serif); font-size: 13px; font-weight: 700; letter-spacing: .26em; }
+  .brandbar .back-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; margin-left: -8px; margin-right: 4px; border-radius: 50%;
+    color: var(--ink); -webkit-tap-highlight-color: transparent;
+  }
+  .brandbar .back-btn:active { background: rgba(24,33,25,.06); }
+  .brandbar .back-btn .ic { width: 18px; height: 18px; }
   .vis-note { padding: 20px 28px 0; font-size: 12.5px; color: var(--ink-2); line-height: 1.6; }
   .share-hero { padding: 34px 28px 0; }
   .from {
@@ -101,10 +108,15 @@
 <body>
 <div class="page" id="page">
 
-  <header class="brandbar"><a href="/" aria-label="点定旅途 首页">
-    <img class="logo" src="/brand/logo-icon-512.png" alt="点定旅途" width="28" height="28">
-    <span>点定旅途</span>
-  </a></header>
+  <header class="brandbar">
+    <button class="back-btn" id="backBtn" aria-label="返回">
+      <svg class="ic" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <a href="/" aria-label="点定旅途 首页">
+      <img class="logo" src="/brand/logo-icon-512.png" alt="点定旅途" width="28" height="28">
+      <span>点定旅途</span>
+    </a>
+  </header>
 
   <div class="vis-note">这是一条只读分享链接，任何拿到链接的人都能查看</div>
 
@@ -125,6 +137,13 @@
 <script src="/assets/app.js"></script>
 <script>
 (async () => {
+  // 返回：优先回上一页；分享链接被直接打开（无历史）时回首页
+  const backBtn = document.getElementById('backBtn');
+  if (backBtn) backBtn.onclick = () => {
+    if (history.length > 1) history.back();
+    else location.href = '/';
+  };
+
   // 读取顺序：URL ?id（云端 routeGet，128 位不可猜测 ID）→ localStorage 兜底
   const id = new URLSearchParams(location.search).get('id') ||
     (location.pathname.match(/\/share\/([0-9a-f]{32})/) || [])[1];

@@ -73,10 +73,7 @@
     width: 4px; height: 4px; border-radius: 50%; background: var(--ink);
   }
 
-  .note { margin-top: 52px; padding-top: 18px; border-top: .5px solid var(--hairline); }
-  .note p { font-size: 12.5px; color: var(--ink-2); line-height: 1.8; }
-
-  .foot { margin-top: 44px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
+  .foot { margin-top: 56px; font-size: 11px; letter-spacing: .18em; color: var(--ink-3); }
   .suggest .sl { display: flex; align-items: center; gap: 7px; padding: 11px 13px; font-size: 12.5px; color: var(--ink-3); }
   .suggest .sl i { width: 12px; height: 12px; border-radius: 50%; border: 1.5px solid var(--hairline); border-top-color: var(--ink-3); animation: spin .8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -85,7 +82,6 @@
   .drawer-search { width: 100%; box-sizing: border-box; margin: 2px 0 10px; padding: 10px 12px; border: .5px solid var(--hairline); border-radius: 10px; font-family: var(--font); font-size: 14px; color: var(--ink); outline: none; background: var(--card); }
   .drawer-search:focus { border-color: var(--ink-3); }
   .drawer-sub.hot { color: var(--d2, #3B7356); }
-  .search-hint { margin: 8px 2px 0; font-size: 11px; color: var(--ink-3); letter-spacing: .02em; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -114,7 +110,6 @@
       </button>
     </div>
     <div class="suggest" id="suggest" hidden></div>
-    <p class="search-hint" id="searchHint">全国任意地点都能搜，选中后自动匹配城市</p>
   </div>
 
   <section class="days">
@@ -127,10 +122,6 @@
       <button data-n="5">5<small>天</small></button>
     </div>
   </section>
-
-  <div class="note">
-    <p>起点是景区也可以——它会自动成为第 1 站，接着往下排。默认按明早出发排，生成后可一键切成「现在就走」。</p>
-  </div>
 
   <p class="foot" id="foot"><span id="footCount">已覆盖 60+ 热门旅游城市</span> · <a href="privacy.html" style="color:inherit;text-decoration:underline;text-underline-offset:2px">隐私政策</a></p>
 
@@ -148,7 +139,6 @@
 (() => {
   const $ = id => document.getElementById(id);
   const input = $('originInput'), suggest = $('suggest'), genBtn = $('genBtn');
-  const searchHint = $('searchHint');
 
   let city = null;           // 不再预设默认城市：由搜索/定位自动判定，或手动选择
   let cityEntry = null;      // cities.json 中当前城市条目
@@ -312,7 +302,6 @@
               return;
             }
             if (cov.name !== city) await setCity(cov.name, '已按起点匹配到' + cov.name);
-            if (searchHint) searchHint.textContent = '起点：' + d.title;
             refreshCta();
           });
         }
@@ -359,7 +348,6 @@
         selectedSpot = null; suggested = null;
         input.value = '当前位置';
         hideSuggest();
-        if (searchHint) searchHint.textContent = '定位中…';
         // 逆地址：拿城市 + 完整地址（完整地址作为起点名，路线里也显示完整名称）
         DDN.cloudPost('searchPoi', { lng: lng, lat: lat }, 6000).then(j => {
           const cov = coveredCity(j && j.city);
@@ -369,7 +357,6 @@
             input.value = short;
             located = { name: addr, display: short, lng: lng, lat: lat };
           }
-          if (searchHint) searchHint.textContent = addr ? ('已定位：' + addr) : '已获取当前位置';
           if (cov && cov.name !== city) setCity(cov.name, '定位在' + cov.name + '，已切换');
           else if (!cov && j && j.city) DDN.toast('你当前位置在' + normCity(j.city) + '，还没开通');
           refreshCta();
